@@ -432,10 +432,20 @@ export default function Home() {
       {/* ─── Hero ─── */}
       <section className="relative min-h-screen flex items-center justify-center dot-grid overflow-hidden">
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center pt-24">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-border bg-bg-card text-xs font-code text-text-tertiary mb-10">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-border bg-bg-card text-xs font-code text-text-tertiary mb-8">
             <Zap className="w-3.5 h-3.5 text-accent" />
             open source &middot; self-hosted &middot; file-based
           </div>
+
+          {/* ─── Hero Illustration ─── */}
+          <Image
+            src="/cabinet-icon.png"
+            alt="Cabinet — AI-first knowledge base"
+            width={180}
+            height={180}
+            className="mx-auto mb-10 drop-shadow-lg"
+            priority
+          />
 
           {/* ─── Dictionary Definition ─── */}
           <div className="max-w-2xl mx-auto mb-14 text-left">
