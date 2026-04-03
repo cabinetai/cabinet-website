@@ -36,6 +36,22 @@ export const metadata: Metadata = {
     description:
       "Shared memory between humans and AI agents. Markdown on disk. Self-hosted. Open source.",
     type: "website",
+    url: "https://runcabinet.com",
+    images: [
+      {
+        url: "https://runcabinet.com/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Cabinet — AI-first knowledge base with embedded apps, AI agents, and file-based storage",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cabinet — The AI-First Knowledge Base & Startup OS",
+    description:
+      "Shared memory between humans and AI agents. Markdown on disk. Self-hosted. Open source.",
+    images: ["https://runcabinet.com/og.png"],
   },
 };
 
