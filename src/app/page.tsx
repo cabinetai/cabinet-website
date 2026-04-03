@@ -30,25 +30,11 @@ import {
   AppWindow,
   FileType,
 } from "lucide-react";
-
-const DISCORD_URL = "https://discord.gg/rxd8BYnN";
-
-function GithubIcon({ className }: { className?: string }) {
-  return (
-    <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
-      <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-    </svg>
-  );
-}
-
-function DiscordIcon({ className }: { className?: string }) {
-  return (
-    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
-      <path d="M20.317 4.369A19.791 19.791 0 0 0 15.37 2.813a13.66 13.66 0 0 0-.637 1.302 18.27 18.27 0 0 0-5.464 0 13.66 13.66 0 0 0-.646-1.302 19.736 19.736 0 0 0-4.95 1.557C.533 9.046-.33 13.58.099 18.058a19.91 19.91 0 0 0 6.067 3.067 14.93 14.93 0 0 0 1.3-2.11 12.99 12.99 0 0 1-2.041-.984c.171-.125.339-.255.5-.389 3.94 1.852 8.214 1.852 12.108 0 .164.134.332.264.5.389a12.99 12.99 0 0 1-2.046.986 14.86 14.86 0 0 0 1.302 2.108 19.862 19.862 0 0 0 6.069-3.067c.503-5.19-.858-9.682-3.541-13.689ZM8.02 15.331c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.418 2.157-2.418 1.21 0 2.176 1.094 2.155 2.418 0 1.334-.955 2.419-2.155 2.419Zm7.975 0c-1.184 0-2.156-1.085-2.156-2.419 0-1.333.955-2.418 2.156-2.418 1.211 0 2.176 1.094 2.156 2.418 0 1.334-.945 2.419-2.156 2.419Z" />
-    </svg>
-  );
-}
-import { useState, useEffect, useRef } from "react";
+import { Suspense, useState, useEffect, useRef } from "react";
+import { DiscordIcon, GithubIcon } from "@/components/site-icons";
+import { WaitlistCapture } from "@/components/waitlist-capture";
+import { WaitlistPopup } from "@/components/waitlist-popup";
+import { DISCORD_URL, GITHUB_URL } from "@/lib/site-config";
 
 /* ─── Navbar ─── */
 function Navbar() {
@@ -75,7 +61,7 @@ function Navbar() {
             AI Agents
           </a>
           <a
-            href="https://github.com/hilash/cabinet"
+            href={GITHUB_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-text-primary transition-colors"
@@ -94,7 +80,7 @@ function Navbar() {
             <span className="hidden sm:inline">Discord</span>
           </a>
           <a
-            href="https://github.com/hilash/cabinet"
+            href={GITHUB_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border hover:border-border-dark text-text-secondary text-sm font-medium transition-colors"
@@ -1026,6 +1012,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-bg">
       <Navbar />
+      <WaitlistPopup />
 
       {/* ─── Hero ─── */}
       <section className="relative min-h-screen flex items-center justify-center dot-grid overflow-hidden">
@@ -1121,6 +1108,19 @@ export default function Home() {
           <p className="text-sm md:text-base text-text-tertiary max-w-2xl mx-auto mb-6 font-code">
             No subscription. No trial. No paywall. Clone it, run it, and make it your own.
           </p>
+
+          <Suspense
+            fallback={
+              <div className="max-w-2xl mx-auto mb-8 dict-card px-6 py-6 md:px-8 md:py-7 min-h-[320px]" />
+            }
+          >
+            <WaitlistCapture
+              source="hero"
+              originPage="/"
+              trackView
+              className="max-w-2xl mx-auto mb-8"
+            />
+          </Suspense>
 
           <p className="text-base font-code text-text-tertiary max-w-xl mx-auto mb-10">
             <TypingText
@@ -1459,7 +1459,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4">
             <a
-              href="https://github.com/hilash/cabinet"
+              href={GITHUB_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-accent hover:bg-accent-warm text-white font-medium transition-all shadow-sm"
@@ -1475,7 +1475,7 @@ export default function Home() {
               <DiscordIcon className="w-4 h-4" /> Join Discord
             </a>
             <a
-              href="https://github.com/hilash/cabinet"
+              href={GITHUB_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border border-border hover:border-border-dark text-text-secondary hover:text-text-primary font-medium transition-all"
@@ -1506,17 +1506,17 @@ export default function Home() {
               <h4 className="font-code text-xs uppercase tracking-wider text-text-tertiary mb-4">Developers</h4>
               <ul className="space-y-2.5 text-sm">
                 <li>
-                  <a href="https://github.com/hilash/cabinet" target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-text-primary transition-colors">
+                  <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-text-primary transition-colors">
                     GitHub
                   </a>
                 </li>
                 <li>
-                  <a href="https://github.com/hilash/cabinet#readme" target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-text-primary transition-colors">
+                  <a href={`${GITHUB_URL}#readme`} target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-text-primary transition-colors">
                     Documentation
                   </a>
                 </li>
                 <li>
-                  <a href="https://github.com/hilash/cabinet/issues" target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-text-primary transition-colors">
+                  <a href={`${GITHUB_URL}/issues`} target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-text-primary transition-colors">
                     Issues
                   </a>
                 </li>
@@ -1527,7 +1527,7 @@ export default function Home() {
               <ul className="space-y-2.5 text-sm">
                 <li><a href="#karpathy" className="text-text-secondary hover:text-text-primary transition-colors">Why Now</a></li>
                 <li>
-                  <a href="https://github.com/hilash/cabinet/blob/main/LICENSE" target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-text-primary transition-colors">
+                  <a href={`${GITHUB_URL}/blob/main/LICENSE`} target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-text-primary transition-colors">
                     License
                   </a>
                 </li>
@@ -1547,7 +1547,7 @@ export default function Home() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://github.com/hilash/cabinet" target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-text-primary transition-colors flex items-center gap-1.5">
+                  <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-text-primary transition-colors flex items-center gap-1.5">
                     <GithubIcon className="w-3.5 h-3.5" /> hilash/cabinet
                   </a>
                 </li>
