@@ -52,21 +52,8 @@ import { useState, useEffect, useRef } from "react";
 
 /* ─── Navbar ─── */
 function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-bg/80 backdrop-blur-xl border-b border-border"
-          : "bg-transparent"
-      }`}
-    >
+    <nav className="relative z-20 border-b border-border bg-bg-card/95 backdrop-blur-sm">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2.5">
           <Image src="/cabinet-icon.png" alt="Cabinet" width={36} height={36} className="rounded-lg" />
