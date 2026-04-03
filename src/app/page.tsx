@@ -25,6 +25,10 @@ import {
   Users,
   Layers,
   Mail,
+  Table,
+  Folder,
+  AppWindow,
+  FileType,
 } from "lucide-react";
 
 function GithubIcon({ className }: { className?: string }) {
@@ -423,6 +427,563 @@ function AgentShowcase() {
   );
 }
 
+/* ─── Use Cases Carousel ─── */
+const USE_CASES = [
+  {
+    tag: "B2C App",
+    persona: "Indie App Founder",
+    emoji: "📱",
+    headline: "My app runs itself while I sleep",
+    quote:
+      "I use it to run my B2C app. The App Store listing is a markdown page I can update any time. I have an hourly Reddit scout that surfaces user complaints, and a weekly competitor job that crawls the market and dumps everything into /market/competitors/. I wake up to a briefing.",
+    agents: [
+      { emoji: "🔍", name: "Reddit Scout", status: "running", job: "every hour", pulse: true },
+      { emoji: "📊", name: "Competitor Analyst", status: "idle", job: "every Monday" },
+      { emoji: "📝", name: "Content Writer", status: "idle", job: "every day 9am" },
+    ],
+    kb: {
+      projectName: "my-b2c-app",
+      tree: [
+        { name: "product/", type: "folder", depth: 0 },
+        { name: "app-store-listing.md", type: "md", depth: 1, active: true },
+        { name: "roadmap.md", type: "md", depth: 1 },
+        { name: "pricing.md", type: "md", depth: 1 },
+        { name: "market/", type: "folder", depth: 0 },
+        { name: "competitors/", type: "folder", depth: 1 },
+        { name: "week-14.md", type: "md", depth: 2, badge: "new" },
+        { name: "week-13.md", type: "md", depth: 2 },
+        { name: "positioning.md", type: "md", depth: 1 },
+        { name: "data/", type: "folder", depth: 0 },
+        { name: "analytics.csv", type: "csv", depth: 1 },
+        { name: "reviews.csv", type: "csv", depth: 1 },
+      ],
+      preview: {
+        title: "product/app-store-listing",
+        lines: [
+          { t: "h1", v: "App Store Listing" },
+          { t: "meta", v: "Updated by Content Writer · 2 hours ago" },
+          { t: "h2", v: "Short Description" },
+          { t: "p", w: 95 },
+          { t: "p", w: 72 },
+          { t: "h2", v: "Keywords" },
+          { t: "tags", v: ["b2c", "productivity", "ios", "mobile", "startup"] },
+          { t: "h2", v: "What's New in v4.2" },
+          { t: "p", w: 88 },
+          { t: "p", w: 60 },
+        ],
+      },
+    },
+  },
+  {
+    tag: "B2B Sales",
+    persona: "Small Business Owner",
+    emoji: "💼",
+    headline: "2,000 leads. One army of agents.",
+    quote:
+      "I have a CSV of leads. My agents read it, research each company, and draft personalised outreach. The pipeline CSV updates in real time — I watch it fill up from my dashboard. It's like having a sales team that never sleeps and never asks for a raise.",
+    agents: [
+      { emoji: "🕵️", name: "Lead Researcher", status: "running", job: "continuous", pulse: true },
+      { emoji: "✉️", name: "Outreach Writer", status: "running", job: "continuous", pulse: true },
+      { emoji: "📈", name: "Pipeline Tracker", status: "idle", job: "every 30 min" },
+    ],
+    kb: {
+      projectName: "acme-sales",
+      tree: [
+        { name: "leads/", type: "folder", depth: 0 },
+        { name: "pipeline.csv", type: "csv", depth: 1, active: true },
+        { name: "leads-raw.csv", type: "csv", depth: 1 },
+        { name: "intel/", type: "folder", depth: 0 },
+        { name: "companies/", type: "folder", depth: 1 },
+        { name: "techcorp.md", type: "md", depth: 2, badge: "new" },
+        { name: "globex.md", type: "md", depth: 2 },
+        { name: "outreach/", type: "folder", depth: 0 },
+        { name: "templates/", type: "folder", depth: 1 },
+        { name: "cold-email.md", type: "md", depth: 2 },
+        { name: "follow-up.md", type: "md", depth: 2 },
+        { name: "tools/", type: "folder", depth: 0 },
+        { name: "pipeline-dashboard/", type: "html", depth: 1 },
+      ],
+      preview: {
+        title: "leads/pipeline.csv",
+        lines: [
+          { t: "h1", v: "pipeline.csv" },
+          { t: "meta", v: "87 rows · Updated by Lead Researcher · just now" },
+          { t: "table",
+            cols: ["Company", "Contact", "Status", "Score"],
+            rows: [
+              ["TechCorp Inc", "Alice Chen", "✅ Researched", "87"],
+              ["StartupXYZ", "Bob Lee", "📝 Drafted", "72"],
+              ["GlobalDev", "Carol Kim", "📤 Sent", "91"],
+              ["NewCo Ltd", "Dan Park", "🔍 Researching…", "—"],
+            ],
+          },
+        ],
+      },
+    },
+  },
+  {
+    tag: "Newsletter",
+    persona: "Solo Creator",
+    emoji: "✍️",
+    headline: "Monday morning. Newsletter writes itself.",
+    quote:
+      "Every Monday my Trend Scout scans HN and Reddit, picks the top signals, and my Draft Writer assembles the issue. I open Cabinet, read the draft, make a few edits, and hit send. What used to take 3 hours now takes 10 minutes.",
+    agents: [
+      { emoji: "📡", name: "Trend Scout", status: "running", job: "daily 6am", pulse: true },
+      { emoji: "🖊️", name: "Draft Writer", status: "idle", job: "every Monday" },
+      { emoji: "🔎", name: "SEO Reviewer", status: "idle", job: "on publish" },
+    ],
+    kb: {
+      projectName: "my-newsletter",
+      tree: [
+        { name: "newsletter/", type: "folder", depth: 0 },
+        { name: "issues/", type: "folder", depth: 1 },
+        { name: "2026-w14.md", type: "md", depth: 2, active: true, badge: "new" },
+        { name: "2026-w13.md", type: "md", depth: 2 },
+        { name: "2026-w12.md", type: "md", depth: 2 },
+        { name: "brand/", type: "folder", depth: 0 },
+        { name: "voice-guide.md", type: "md", depth: 1 },
+        { name: "tone-examples.md", type: "md", depth: 1 },
+        { name: "research/", type: "folder", depth: 0 },
+        { name: "sources.md", type: "md", depth: 1 },
+        { name: "hn-picks.md", type: "md", depth: 1, badge: "updated" },
+        { name: "archive/", type: "folder", depth: 0 },
+      ],
+      preview: {
+        title: "newsletter/issues/2026-w14",
+        lines: [
+          { t: "h1", v: "Week 14 — The AI Stack Shift" },
+          { t: "meta", v: "Drafted by Draft Writer · Monday 8:14am · ready for review" },
+          { t: "h2", v: "This week's signal" },
+          { t: "p", w: 100 },
+          { t: "p", w: 82 },
+          { t: "p", w: 91 },
+          { t: "h2", v: "Top picks" },
+          { t: "p", w: 95 },
+          { t: "p", w: 70 },
+          { t: "tags", v: ["AI", "tooling", "indie hackers", "dev tools"] },
+        ],
+      },
+    },
+  },
+  {
+    tag: "Consulting",
+    persona: "Freelance Consultant",
+    emoji: "🏢",
+    headline: "Every client. One brain.",
+    quote:
+      "Each client gets their own folder. Meeting notes, proposals, deliverables — all markdown. When I switch clients, I just ask the AI about the folder. It has full context: the history, the decisions, the open questions. No re-reading, no catch-up.",
+    agents: [
+      { emoji: "🗒️", name: "Meeting Summariser", status: "idle", job: "after each call" },
+      { emoji: "📄", name: "Proposal Writer", status: "running", job: "on demand", pulse: true },
+      { emoji: "🔗", name: "Research Assistant", status: "idle", job: "on demand" },
+    ],
+    kb: {
+      projectName: "consulting-kb",
+      tree: [
+        { name: "clients/", type: "folder", depth: 0 },
+        { name: "acme/", type: "folder", depth: 1 },
+        { name: "strategy.md", type: "md", depth: 2, active: true },
+        { name: "proposal-v2.md", type: "md", depth: 2 },
+        { name: "meeting-notes/", type: "folder", depth: 2 },
+        { name: "2026-03-28.md", type: "md", depth: 3 },
+        { name: "2026-03-14.md", type: "md", depth: 3 },
+        { name: "globex/", type: "folder", depth: 1 },
+        { name: "proposal-v3.md", type: "md", depth: 2, badge: "updated" },
+        { name: "brief.md", type: "md", depth: 2 },
+        { name: "templates/", type: "folder", depth: 0 },
+        { name: "proposal.md", type: "md", depth: 1 },
+        { name: "discovery.md", type: "md", depth: 1 },
+      ],
+      preview: {
+        title: "clients/acme/strategy",
+        lines: [
+          { t: "h1", v: "Acme — Q2 Strategy" },
+          { t: "meta", v: "Updated after kickoff call · 3 days ago" },
+          { t: "h2", v: "Current Focus" },
+          { t: "p", w: 100 },
+          { t: "p", w: 75 },
+          { t: "h2", v: "Open Questions" },
+          { t: "p", w: 90 },
+          { t: "p", w: 65 },
+          { t: "h2", v: "Next Steps" },
+          { t: "p", w: 82 },
+          { t: "p", w: 55 },
+        ],
+      },
+    },
+  },
+  {
+    tag: "Open Source",
+    persona: "OSS Maintainer",
+    emoji: "⚙️",
+    headline: "Merge PR. Changelog writes itself.",
+    quote:
+      "I linked my GitHub repo with .repo.yaml. When I merge a PR, an agent reads the diff, updates CHANGELOG.md, drafts release notes, and queues a Discord announcement. Maintenance overhead dropped to almost zero.",
+    agents: [
+      { emoji: "📋", name: "Release Writer", status: "idle", job: "on PR merge" },
+      { emoji: "📖", name: "Docs Updater", status: "running", job: "continuous", pulse: true },
+      { emoji: "📣", name: "Announcer", status: "idle", job: "on release tag" },
+    ],
+    kb: {
+      projectName: "my-oss-lib",
+      tree: [
+        { name: "docs/", type: "folder", depth: 0 },
+        { name: "getting-started.md", type: "md", depth: 1 },
+        { name: "api-reference.md", type: "md", depth: 1 },
+        { name: "contributing.md", type: "md", depth: 1 },
+        { name: "changelog.md", type: "md", depth: 0, active: true, badge: "updated" },
+        { name: "releases/", type: "folder", depth: 0 },
+        { name: "v2.1.0.md", type: "md", depth: 1, badge: "new" },
+        { name: "v2.0.0.md", type: "md", depth: 1 },
+        { name: ".repo.yaml", type: "yaml", depth: 0 },
+      ],
+      preview: {
+        title: "changelog",
+        lines: [
+          { t: "h1", v: "Changelog" },
+          { t: "meta", v: "Written by Release Writer · just now · linked to github/my-lib" },
+          { t: "h2", v: "v2.1.0 — 2026-04-02" },
+          { t: "p", w: 98 },
+          { t: "p", w: 80 },
+          { t: "p", w: 68 },
+          { t: "h2", v: "v2.0.0 — 2026-03-15" },
+          { t: "p", w: 85 },
+          { t: "p", w: 72 },
+        ],
+      },
+    },
+  },
+  {
+    tag: "Startup OS",
+    persona: "Solo Founder",
+    emoji: "🚀",
+    headline: "Strategy, roadmap, market — one place.",
+    quote:
+      "I run my entire startup from here. Strategy in /strategy/, roadmap in /product/roadmap.md, ICP in /market/icp.md. My CEO agent attends every planning session — I open a page, describe the week, and it challenges my assumptions and updates the mission board.",
+    agents: [
+      { emoji: "🎯", name: "CEO Agent", status: "running", job: "daily standup", pulse: true },
+      { emoji: "📊", name: "Market Scout", status: "idle", job: "every Monday" },
+      { emoji: "✅", name: "OKR Tracker", status: "idle", job: "every Friday" },
+    ],
+    kb: {
+      projectName: "my-startup",
+      tree: [
+        { name: "strategy/", type: "folder", depth: 0 },
+        { name: "q2-plan.md", type: "md", depth: 1, active: true },
+        { name: "vision.md", type: "md", depth: 1 },
+        { name: "product/", type: "folder", depth: 0 },
+        { name: "roadmap.md", type: "md", depth: 1 },
+        { name: "specs/", type: "folder", depth: 1 },
+        { name: "market/", type: "folder", depth: 0 },
+        { name: "icp.md", type: "md", depth: 1 },
+        { name: "competitors.md", type: "md", depth: 1, badge: "updated" },
+        { name: "tools/", type: "folder", depth: 0 },
+        { name: "okr-tracker/", type: "app", depth: 1 },
+      ],
+      preview: {
+        title: "strategy/q2-plan",
+        lines: [
+          { t: "h1", v: "Q2 Plan — 2026" },
+          { t: "meta", v: "Reviewed by CEO Agent · today · 3 open questions flagged" },
+          { t: "h2", v: "North Star" },
+          { t: "p", w: 93 },
+          { t: "p", w: 70 },
+          { t: "h2", v: "OKRs" },
+          { t: "p", w: 88 },
+          { t: "p", w: 75 },
+          { t: "tags", v: ["growth", "retention", "Q2-2026", "fundraising"] },
+        ],
+      },
+    },
+  },
+];
+
+function getNodeIcon(type: string, isActive: boolean) {
+  const base = "w-3.5 h-3.5 shrink-0";
+  if (type === "folder")  return <Folder     className={`${base} text-text-tertiary`} />;
+  if (type === "csv")     return <Table      className={`${base} text-green-500`} />;
+  if (type === "html")    return <Globe      className={`${base} text-blue-500`} />;
+  if (type === "app")     return <AppWindow  className={`${base} text-green-500`} />;
+  if (type === "yaml")    return <GitBranch  className={`${base} text-orange-400`} />;
+  if (type === "pdf")     return <FileType   className={`${base} text-red-400`} />;
+  return <FileText className={`${base} ${isActive ? "text-accent" : "text-text-tertiary"}`} />;
+}
+
+function displayNodeName(name: string, type: string) {
+  if (type === "md" && name.endsWith(".md")) return name.slice(0, -3);
+  return name;
+}
+
+function CabinetMockup({ kb, caseEmoji, agents }: { kb: (typeof USE_CASES)[0]["kb"]; caseEmoji: string; agents: (typeof USE_CASES)[0]["agents"] }) {
+  return (
+    <div className="rounded-xl overflow-hidden border border-border text-left shadow-sm">
+      {/* Browser chrome — warm parchment */}
+      <div className="flex items-center gap-2 px-4 py-2 border-b border-border bg-bg-warm">
+        <div className="w-2.5 h-2.5 rounded-full bg-red-400/90" />
+        <div className="w-2.5 h-2.5 rounded-full bg-yellow-400/90" />
+        <div className="w-2.5 h-2.5 rounded-full bg-green-400/90" />
+        <div className="flex-1 mx-3 flex items-center justify-center gap-1.5">
+          <span className="text-[11px] font-display italic text-text-primary">Cabinet</span>
+          <span className="text-text-muted text-[10px]">/</span>
+          <span className="text-[10px] font-code text-text-tertiary truncate">{kb.projectName}</span>
+        </div>
+        <Search className="w-3 h-3 text-text-muted" />
+      </div>
+
+      {/* App body */}
+      <div className="flex" style={{ height: "264px" }}>
+
+        {/* Sidebar — #FAF6F1 */}
+        <div className="flex-shrink-0 border-r border-border flex flex-col bg-bg" style={{ width: "176px" }}>
+          {/* Project header */}
+          <div className="flex items-center gap-1.5 px-3 py-2.5 border-b border-border">
+            <span className="text-sm leading-none">{caseEmoji}</span>
+            <span className="text-[11px] font-code text-text-primary font-semibold truncate">{kb.projectName}</span>
+          </div>
+          {/* Agents */}
+          <div className="border-b border-border px-3 py-2">
+            <p className="text-[9px] font-code text-text-muted uppercase tracking-widest mb-1.5">Agents</p>
+            <div className="space-y-1">
+              {agents.map((agent) => (
+                <div key={agent.name} className="flex items-center gap-1.5">
+                  <span className="text-xs leading-none">{agent.emoji}</span>
+                  <span className="text-[10px] font-code text-text-secondary truncate flex-1">{agent.name}</span>
+                  {agent.pulse ? (
+                    <span className="relative flex h-1.5 w-1.5 shrink-0">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
+                      <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-green-500" />
+                    </span>
+                  ) : (
+                    <span className="h-1.5 w-1.5 rounded-full bg-border shrink-0" />
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Files */}
+          <div className="flex-1 overflow-y-auto py-1">
+            <p className="text-[9px] font-code text-text-muted uppercase tracking-widest px-3 pt-1.5 pb-1">Files</p>
+            {kb.tree.map((node, i) => {
+              const isActive = !!(node as { active?: boolean }).active;
+              const badge = (node as { badge?: string }).badge;
+              const label = displayNodeName(node.name, node.type);
+              return (
+                <div
+                  key={i}
+                  className={`flex items-center gap-1.5 py-[3px] text-[11px] font-code cursor-default select-none transition-colors
+                    ${isActive
+                      ? "bg-accent-bg border-l-2 border-accent text-accent"
+                      : "text-text-secondary hover:bg-bg-warm border-l-2 border-transparent"}`}
+                  style={{ paddingLeft: `${6 + (node.depth || 0) * 11}px`, paddingRight: "6px" }}
+                >
+                  {getNodeIcon(node.type, isActive)}
+                  <span className={`truncate flex-1 ${isActive ? "text-accent font-medium" : ""}`}>{label}</span>
+                  {badge && (
+                    <span className="shrink-0 text-[8px] font-code bg-green-50 text-green-600 border border-green-200 px-1 rounded leading-none py-px">
+                      {badge}
+                    </span>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Content pane — white card */}
+        <div className="flex-1 overflow-y-auto p-5 bg-bg-card">
+          {kb.preview.lines.map((line, i) => {
+            if (line.t === "h1") return (
+              <div key={i} className="text-sm font-bold text-text-primary mb-0.5 leading-tight font-display">
+                {(line as { t: string; v: string }).v}
+              </div>
+            );
+            if (line.t === "h2") return (
+              <div key={i} className="text-[10px] font-semibold text-text-primary mt-3 mb-1.5 uppercase tracking-wide">
+                {(line as { t: string; v: string }).v}
+              </div>
+            );
+            if (line.t === "meta") return (
+              <div key={i} className="text-[10px] font-code text-text-tertiary mb-2.5 pb-2 border-b border-border leading-tight">
+                {(line as { t: string; v: string }).v}
+              </div>
+            );
+            if (line.t === "p") return (
+              <div
+                key={i}
+                className="h-1.5 rounded-full bg-border mb-1.5"
+                style={{ width: `${(line as { t: string; w: number }).w}%` }}
+              />
+            );
+            if (line.t === "tags") return (
+              <div key={i} className="flex flex-wrap gap-1 mt-1">
+                {((line as { t: string; v: string[] }).v).map((tag) => (
+                  <span key={tag} className="text-[9px] font-code text-accent bg-accent-bg border border-accent/20 px-1.5 py-0.5 rounded">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            );
+            if (line.t === "table") {
+              const l = line as { t: string; cols: string[]; rows: string[][] };
+              return (
+                <div key={i} className="mt-0.5 overflow-hidden rounded border border-border text-[9px] font-code">
+                  <div className="flex bg-bg-warm border-b border-border">
+                    {l.cols.map((col) => (
+                      <div key={col} className="flex-1 px-2 py-1.5 text-text-tertiary font-semibold truncate">{col}</div>
+                    ))}
+                  </div>
+                  {l.rows.map((row, ri) => (
+                    <div key={ri} className={`flex border-b border-border/60 last:border-0 ${ri % 2 === 1 ? "bg-bg" : "bg-bg-card"}`}>
+                      {row.map((cell, ci) => (
+                        <div key={ci} className={`flex-1 px-2 py-1.5 truncate ${
+                          cell.includes("Researching") ? "text-amber-600" :
+                          cell.includes("Sent")        ? "text-green-600" :
+                          cell.includes("Researched")  ? "text-blue-600" :
+                          cell.includes("Drafted")     ? "text-violet-600" :
+                          ci === 3                     ? "text-text-primary font-medium" :
+                                                         "text-text-secondary"
+                        }`}>{cell}</div>
+                      ))}
+                    </div>
+                  ))}
+                </div>
+              );
+            }
+            return null;
+          })}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function UseCasesCarousel() {
+  const [active, setActive] = useState(0);
+  const total = USE_CASES.length;
+  const prev = () => setActive((a) => (a - 1 + total) % total);
+  const next = () => setActive((a) => (a + 1) % total);
+  const c = USE_CASES[active];
+
+  return (
+    <section className="py-24 border-t border-border bg-bg-warm overflow-hidden">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="text-center mb-12">
+          <p className="section-label mb-3">Real Use Cases</p>
+          <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-3">
+            How people actually use Cabinet
+          </h2>
+          <p className="text-text-secondary font-body-serif max-w-xl mx-auto">
+            Knowledge base + agents + files. One OS for wildly different workflows.
+          </p>
+        </div>
+
+        {/* Card */}
+        <div className="relative">
+          <div className="border border-border rounded-2xl bg-bg-card overflow-hidden">
+            <div className="grid md:grid-cols-2 gap-0">
+
+              {/* Left — quote + activity */}
+              <div className="p-8 md:p-10 flex flex-col justify-between border-b md:border-b-0 md:border-r border-border">
+                <div>
+                  <div className="flex items-center gap-3 mb-5">
+                    <span className="text-3xl">{c.emoji}</span>
+                    <div>
+                      <span className="text-[10px] font-code text-accent bg-accent-bg px-2 py-0.5 rounded uppercase tracking-wider">
+                        {c.tag}
+                      </span>
+                      <p className="text-xs text-text-tertiary font-code mt-1">{c.persona}</p>
+                    </div>
+                  </div>
+                  <h3 className="font-display text-xl md:text-2xl text-text-primary mb-4 leading-snug">
+                    {c.headline}
+                  </h3>
+                  <p className="text-text-secondary text-sm leading-relaxed font-body-serif italic">
+                    &ldquo;{c.quote}&rdquo;
+                  </p>
+                </div>
+
+                {/* Activity bar */}
+                <div className="mt-8 pt-6 border-t border-border">
+                  <p className="text-[10px] font-code text-text-tertiary uppercase tracking-widest mb-2">
+                    Activity — last 24h
+                  </p>
+                  <div className="flex gap-0.5 items-end h-7">
+                    {Array.from({ length: 24 }, (_, i) => {
+                      const heights = [2, 4, 3, 6, 4, 8, 5, 3, 7, 4, 9, 6, 4, 7, 5, 8, 3, 6, 4, 7, 5, 3, 6, 4];
+                      const h = heights[(i + active * 7) % heights.length];
+                      return (
+                        <div
+                          key={i}
+                          className={`flex-1 rounded-sm ${h > 5 ? "bg-accent" : "bg-border"}`}
+                          style={{ height: `${(h / 9) * 100}%` }}
+                        />
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
+
+              {/* Right — Cabinet KB mockup */}
+              <div className="p-6 md:p-8 bg-bg">
+                <CabinetMockup kb={c.kb} caseEmoji={c.emoji} agents={c.agents} />
+              </div>
+            </div>
+          </div>
+
+          {/* Prev / Next */}
+          <button
+            onClick={prev}
+            className="absolute left-0 top-1/3 -translate-y-1/2 -translate-x-4 md:-translate-x-6 w-10 h-10 rounded-full border border-border bg-bg-card shadow-md flex items-center justify-center text-text-secondary hover:text-text-primary hover:border-border-dark transition-all"
+            aria-label="Previous"
+          >
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8l4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+          </button>
+          <button
+            onClick={next}
+            className="absolute right-0 top-1/3 -translate-y-1/2 translate-x-4 md:translate-x-6 w-10 h-10 rounded-full border border-border bg-bg-card shadow-md flex items-center justify-center text-text-secondary hover:text-text-primary hover:border-border-dark transition-all"
+            aria-label="Next"
+          >
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+          </button>
+        </div>
+
+        {/* Dots */}
+        <div className="flex items-center justify-center gap-2 mt-8">
+          {USE_CASES.map((uc, i) => (
+            <button
+              key={i}
+              onClick={() => setActive(i)}
+              className={`transition-all rounded-full ${
+                i === active ? "w-6 h-2 bg-accent" : "w-2 h-2 bg-border hover:bg-border-dark"
+              }`}
+              aria-label={uc.tag}
+            />
+          ))}
+        </div>
+
+        {/* Tags row */}
+        <div className="flex flex-wrap items-center justify-center gap-2 mt-6">
+          {USE_CASES.map((uc, i) => (
+            <button
+              key={i}
+              onClick={() => setActive(i)}
+              className={`text-xs font-code px-3 py-1 rounded-full border transition-all ${
+                i === active
+                  ? "border-accent text-accent bg-accent-bg"
+                  : "border-border text-text-tertiary hover:border-border-dark hover:text-text-secondary"
+              }`}
+            >
+              {uc.tag}
+            </button>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 /* ─── Main Page ─── */
 export default function Home() {
   return (
@@ -549,7 +1110,17 @@ export default function Home() {
             </a>
           </div>
 
-          <TerminalDemo />
+          <div className="rounded-2xl overflow-hidden border border-border shadow-lg shadow-black/5">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full"
+            >
+              <source src="/demo.webm" type="video/webm" />
+            </video>
+          </div>
         </div>
 
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
@@ -568,28 +1139,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ─── Demo Video ─── */}
-      <section className="py-20 bg-bg">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="text-center mb-10">
-            <p className="section-label mb-3">See It In Action</p>
-            <h2 className="text-3xl md:text-4xl font-display text-text-primary">
-              Your startup OS, running
-            </h2>
-          </div>
-          <div className="rounded-2xl overflow-hidden border border-border shadow-lg shadow-black/5">
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full"
-            >
-              <source src="/demo.webm" type="video/webm" />
-            </video>
-          </div>
-        </div>
-      </section>
+      {/* ─── Use Cases Carousel ─── */}
+      <UseCasesCarousel />
 
       {/* ─── The Problem ─── */}
       <section className="py-24 bg-bg">
