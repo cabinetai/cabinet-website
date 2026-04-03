@@ -566,6 +566,29 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ─── Demo Video ─── */}
+      <section className="py-20 bg-bg">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="text-center mb-10">
+            <p className="section-label mb-3">See It In Action</p>
+            <h2 className="text-3xl md:text-4xl font-display text-text-primary">
+              Your startup OS, running
+            </h2>
+          </div>
+          <div className="rounded-2xl overflow-hidden border border-border shadow-lg shadow-black/5">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full"
+            >
+              <source src="/demo.webm" type="video/webm" />
+            </video>
+          </div>
+        </div>
+      </section>
+
       {/* ─── The Problem ─── */}
       <section className="py-24 bg-bg">
         <div className="max-w-6xl mx-auto px-6">
