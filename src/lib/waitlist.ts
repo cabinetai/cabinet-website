@@ -1,6 +1,12 @@
 import { TALLY_WAITLIST_FORM_URL } from "@/lib/site-config";
 
-export type WaitlistSource = "hero" | "popup" | "cloud-page";
+export type WaitlistSource =
+  | "hero"
+  | "homepage-section"
+  | "popup"
+  | "cloud-page"
+  | "waitlist-link"
+  | "wishlist-link";
 
 export const WAITLIST_STORAGE_KEYS = {
   submitted: "cabinet.waitlist.submitted",
@@ -54,6 +60,32 @@ export function buildTallyEmbedUrl(
   url.searchParams.set("hideTitle", "1");
   url.searchParams.set("transparentBackground", "1");
   url.searchParams.set("dynamicHeight", "1");
+  url.searchParams.set("source", source);
+  url.searchParams.set("originPage", originPage);
+
+  for (const key of [
+    "utm_source",
+    "utm_medium",
+    "utm_campaign",
+    "utm_term",
+    "utm_content",
+  ]) {
+    const value = searchParams.get(key);
+    if (value) {
+      url.searchParams.set(key, value);
+    }
+  }
+
+  return url.toString();
+}
+
+export function buildTallyShareUrl(
+  source: WaitlistSource,
+  originPage: string,
+  searchParams = new URLSearchParams(),
+) {
+  const url = new URL(TALLY_WAITLIST_FORM_URL);
+
   url.searchParams.set("source", source);
   url.searchParams.set("originPage", originPage);
 
@@ -183,4 +215,3 @@ export function consumePendingWaitlistSubmission() {
     return null;
   }
 }
-

@@ -33,6 +33,7 @@ import {
 import { Suspense, useState, useEffect, useRef } from "react";
 import { DiscordIcon, GithubIcon } from "@/components/site-icons";
 import { WaitlistCapture } from "@/components/waitlist-capture";
+import { WaitlistCloudBackdrop } from "@/components/waitlist-cloud-backdrop";
 import { WaitlistPopup } from "@/components/waitlist-popup";
 import { DISCORD_URL, GITHUB_URL } from "@/lib/site-config";
 
@@ -1109,19 +1110,6 @@ export default function Home() {
             No subscription. No trial. No paywall. Clone it, run it, and make it your own.
           </p>
 
-          <Suspense
-            fallback={
-              <div className="max-w-2xl mx-auto mb-8 dict-card px-6 py-6 md:px-8 md:py-7 min-h-[320px]" />
-            }
-          >
-            <WaitlistCapture
-              source="hero"
-              originPage="/"
-              trackView
-              className="max-w-2xl mx-auto mb-8"
-            />
-          </Suspense>
-
           <p className="text-base font-code text-text-tertiary max-w-xl mx-auto mb-10">
             <TypingText
               texts={[
@@ -1153,7 +1141,7 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="rounded-2xl overflow-hidden border border-border shadow-lg shadow-black/5">
+          <div className="mt-4 mb-8 rounded-2xl overflow-hidden border border-border shadow-lg shadow-black/5">
             <video
               autoPlay
               loop
@@ -1184,6 +1172,26 @@ export default function Home() {
 
       {/* ─── Use Cases Carousel ─── */}
       <UseCasesCarousel />
+
+      {/* ─── Cabinet Cloud Waitlist ─── */}
+      <section className="relative overflow-hidden py-20 md:py-24 bg-bg">
+        <WaitlistCloudBackdrop />
+
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
+          <Suspense
+            fallback={
+              <div className="mx-auto min-h-[320px] max-w-5xl rounded-[28px] border border-border bg-bg-card/70" />
+            }
+          >
+            <WaitlistCapture
+              source="homepage-section"
+              originPage="/"
+              trackView
+              className="max-w-5xl mx-auto"
+            />
+          </Suspense>
+        </div>
+      </section>
 
       {/* ─── Install Walkthrough ─── */}
       <InstallTerminalSection />

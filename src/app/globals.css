@@ -84,6 +84,46 @@ html {
   animation: blink 1s infinite;
 }
 
+@keyframes waitlist-cloud-sway {
+  0% {
+    transform: translate3d(11%, 0, 0);
+  }
+  50% {
+    transform: translate3d(-9%, 0, 0);
+  }
+  100% {
+    transform: translate3d(11%, 0, 0);
+  }
+}
+
+@keyframes waitlist-cloud-sway-reverse {
+  0% {
+    transform: translate3d(-10%, 0, 0);
+  }
+  50% {
+    transform: translate3d(8%, 0, 0);
+  }
+  100% {
+    transform: translate3d(-10%, 0, 0);
+  }
+}
+
+.waitlist-cloud-row {
+  animation: waitlist-cloud-sway var(--cloud-row-duration, 38s) ease-in-out infinite;
+  will-change: transform;
+}
+
+.waitlist-cloud-row-reverse {
+  animation-name: waitlist-cloud-sway-reverse;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .waitlist-cloud-row,
+  .waitlist-cloud-row-reverse {
+    animation: none;
+  }
+}
+
 /* Section label — monospace uppercase */
 .section-label {
   font-family: var(--font-mono), monospace;
