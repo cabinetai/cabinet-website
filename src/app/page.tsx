@@ -143,7 +143,7 @@ function TypingText({ texts }: { texts: string[] }) {
 /* ─── Terminal Demo ─── */
 function TerminalDemo() {
   const lines = [
-    { prompt: true, text: "cabinet init my-startup" },
+    { prompt: true, text: "npx create-cabinet my-startup" },
     { prompt: false, text: "Creating knowledge base..." },
     { prompt: false, text: "Setting up AI agents..." },
     { prompt: false, text: "" },
@@ -437,16 +437,6 @@ export default function Home() {
             open source &middot; self-hosted &middot; file-based
           </div>
 
-          {/* ─── Hero Illustration ─── */}
-          <Image
-            src="/cabinet-icon.png"
-            alt="Cabinet — AI-first knowledge base"
-            width={180}
-            height={180}
-            className="mx-auto mb-10 drop-shadow-lg"
-            priority
-          />
-
           {/* ─── Dictionary Definition ─── */}
           <div className="max-w-2xl mx-auto mb-14 text-left">
             <div className="dict-card px-8 py-8 md:px-10 md:py-10">
@@ -513,6 +503,18 @@ export default function Home() {
             <br />
             <span className="font-display italic gradient-text">Your AI team.</span>
           </h2>
+
+          {/* ─── Hero Illustration ─── */}
+          <div className="w-48 h-48 mx-auto mb-8 rounded-2xl overflow-hidden">
+            <Image
+              src="/cabinet-icon.png"
+              alt="Cabinet — AI-first knowledge base"
+              width={240}
+              height={240}
+              className="w-full h-full object-cover scale-120 drop-shadow-lg"
+              priority
+            />
+          </div>
 
           <p className="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto mb-4 leading-relaxed font-body-serif">
             The AI-first startup OS where everything lives as markdown files on disk. No database. No vendor lock-in.
@@ -817,7 +819,7 @@ export default function Home() {
 
           <div className="space-y-0">
             {[
-              { step: "01", title: "Install & Run", desc: "One command. Next.js + daemon start. Your knowledge base is a /data directory on disk.", code: "npx cabinet init && npm run start" },
+              { step: "01", title: "Install & Run", desc: "One command. Next.js + daemon start. Your knowledge base is a /data directory on disk.", code: "npx create-cabinet my-startup" },
               { step: "02", title: "Answer 5 Questions", desc: "What's your company? What do you do? What are your goals? Cabinet builds your custom AI team.", code: null },
               { step: "03", title: "Watch Your Team Work", desc: "Agents create missions, write content, scout Reddit, review quality — all on schedule.", code: null },
               { step: "04", title: "Knowledge Compounds", desc: "Every agent run, every edit, every research session adds to the KB. Your system gets smarter every day.", code: null },
@@ -855,7 +857,7 @@ export default function Home() {
           <div className="terminal-chrome p-6 mb-8 max-w-md mx-auto">
             <div className="font-code text-sm flex items-center gap-2">
               <span className="text-green-400">$</span>
-              <span className="text-zinc-200">npx cabinet init my-startup</span>
+              <span className="text-zinc-200">npx create-cabinet my-startup</span>
             </div>
           </div>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
