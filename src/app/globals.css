@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+:root {
+  /* Warm beige/parchment backgrounds */
+  --bg: #FAF6F1;
+  --bg-warm: #F3EDE4;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #FBF8F4;
+  --bg-terminal: #2C2520;
+
+  /* Rich brown text */
+  --text-primary: #3B2F2F;
+  --text-secondary: #6B5B4F;
+  --text-tertiary: #A89888;
+  --text-muted: #D4C8BB;
+
+  /* Warm brown accent */
+  --accent: #8B5E3C;
+  --accent-light: #A0714D;
+  --accent-warm: #7A4F30;
+  --accent-bg: #F5E6D3;
+  --accent-bg-subtle: #FAF2EA;
+
+  /* Borders */
+  --border: #E8DDD0;
+  --border-light: #F0E8DD;
+  --border-dark: #D4C4B0;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-warm: var(--bg-warm);
+  --color-bg-card: var(--bg-card);
+  --color-bg-card-hover: var(--bg-card-hover);
+  --color-bg-terminal: var(--bg-terminal);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary: var(--text-tertiary);
+  --color-text-muted: var(--text-muted);
+  --color-accent: var(--accent);
+  --color-accent-light: var(--accent-light);
+  --color-accent-warm: var(--accent-warm);
+  --color-accent-bg: var(--accent-bg);
+  --color-accent-bg-subtle: var(--accent-bg-subtle);
+  --color-border: var(--border);
+  --color-border-light: var(--border-light);
+  --color-border-dark: var(--border-dark);
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-body-serif);
+  --font-display: var(--font-display);
+  --font-mono: var(--font-mono);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+/* ─── Typography classes ─── */
+.font-display {
+  font-family: var(--font-display), Georgia, 'Times New Roman', serif;
+}
+
+.font-body-serif {
+  font-family: var(--font-serif), Georgia, serif;
+}
+
+.font-code {
+  font-family: var(--font-mono), 'Courier New', monospace;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Terminal cursor blink */
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+.cursor-blink {
+  animation: blink 1s infinite;
+}
+
+/* Section label — monospace uppercase */
+.section-label {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* Warm gradient text — brown/amber */
+.gradient-text {
+  background: linear-gradient(135deg, #3B2F2F 0%, #8B5E3C 50%, #A0714D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Terminal chrome — dark warm brown */
+.terminal-chrome {
+  background: var(--bg-terminal);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 25px 60px -12px rgba(59, 47, 47, 0.15);
+}
+
+/* Scanline overlay for terminal */
+.scanline::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0,0,0,0.015) 2px,
+    rgba(0,0,0,0.015) 4px
+  );
+  pointer-events: none;
+}
+
+/* Card hover */
+.card-hover {
+  transition: all 0.2s ease;
+}
+.card-hover:hover {
+  box-shadow: 0 2px 16px rgba(59, 47, 47, 0.06);
+  border-color: var(--border-dark);
+}
+
+/* Subtle dot grid bg */
+.dot-grid {
+  background-image: radial-gradient(circle, #D4C4B0 0.5px, transparent 0.5px);
+  background-size: 32px 32px;
+}
+
+/* Dictionary card — parchment feel */
+.dict-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 1px 3px rgba(59, 47, 47, 0.04), 0 8px 30px rgba(59, 47, 47, 0.04);
+}
