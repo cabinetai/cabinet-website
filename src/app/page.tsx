@@ -1098,7 +1098,7 @@ export default function Home() {
               href="#get-started"
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-accent hover:bg-accent-warm text-white font-medium transition-all shadow-sm"
             >
-              Get Started Free
+              Get Cabinet (Always Free!)
               <ArrowRight className="w-4 h-4" />
             </a>
             <a
