@@ -1,7 +1,7 @@
 "use client";
 
+import Image from "next/image";
 import {
-  Brain,
   Bot,
   FolderTree,
   Terminal,
@@ -23,7 +23,6 @@ import {
   ChevronDown,
   Star,
   Users,
-  Cpu,
   Layers,
 } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
@@ -47,9 +46,7 @@ function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2.5">
-          <div className="w-8 h-8 rounded-lg bg-accent-warm flex items-center justify-center">
-            <Brain className="w-4.5 h-4.5 text-white" />
-          </div>
+          <Image src="/cabinet-icon.png" alt="Cabinet" width={36} height={36} className="rounded-lg" />
           <span className="text-xl font-display italic tracking-tight text-text-primary">
             Cabinet
           </span>
@@ -559,9 +556,7 @@ export default function Home() {
               </p>
             </div>
             <div className="text-center p-8 rounded-xl border border-accent/20 bg-accent-bg-subtle">
-              <div className="w-12 h-12 mx-auto rounded-xl bg-accent-bg flex items-center justify-center mb-4">
-                <Brain className="w-6 h-6 text-accent" />
-              </div>
+              <Image src="/cabinet-icon.png" alt="Cabinet" width={48} height={48} className="mx-auto rounded-xl mb-4" />
               <h3 className="font-display text-lg mb-2 text-text-primary">With Cabinet</h3>
               <p className="text-sm text-text-primary">
                 One knowledge base. AI agents that remember everything. Scheduled jobs that compound. Your team grows while you sleep.
@@ -789,7 +784,7 @@ export default function Home() {
       {/* ─── CTA ─── */}
       <section id="get-started" className="py-24 border-t border-border bg-bg-warm">
         <div className="max-w-3xl mx-auto px-6 text-center">
-          <Cpu className="w-12 h-12 text-accent mx-auto mb-6" />
+          <Image src="/cabinet-icon.png" alt="Cabinet" width={64} height={64} className="mx-auto mb-6 rounded-xl" />
           <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
             Ready to build your AI team?
           </h2>
@@ -817,9 +812,7 @@ export default function Home() {
       <footer className="border-t border-border py-12 bg-bg">
         <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-2.5">
-            <div className="w-7 h-7 rounded-md bg-accent-warm flex items-center justify-center">
-              <Brain className="w-3.5 h-3.5 text-white" />
-            </div>
+            <Image src="/cabinet-icon.png" alt="Cabinet" width={28} height={28} className="rounded-md" />
             <span className="font-display italic text-text-primary">Cabinet</span>
             <span className="text-xs text-text-tertiary ml-2">The AI-first knowledge base</span>
           </div>
