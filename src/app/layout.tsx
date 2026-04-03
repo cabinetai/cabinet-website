@@ -28,13 +28,13 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Cabinet — The AI-First Knowledge Base & Startup OS",
+  title: "Cabinet — Free & Open-Source AI-First Knowledge Base",
   description:
-    "Your knowledge base is the shared memory between you and your AI team. Markdown files on disk. AI agents that actually work. No database. No vendor lock-in. Self-hosted.",
+    "Free and open-source AI-first knowledge base and startup OS. Markdown files on disk. AI agents that actually work. No database. No vendor lock-in. Self-hosted.",
   openGraph: {
-    title: "Cabinet — The AI-First Knowledge Base & Startup OS",
+    title: "Cabinet — Free & Open-Source AI-First Knowledge Base",
     description:
-      "Shared memory between humans and AI agents. Markdown on disk. Self-hosted. Open source.",
+      "Free and open-source AI-first knowledge base. Markdown on disk. Self-hosted. No vendor lock-in.",
     type: "website",
     url: "https://runcabinet.com",
     images: [
@@ -48,9 +48,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cabinet — The AI-First Knowledge Base & Startup OS",
+    title: "Cabinet — Free & Open-Source AI-First Knowledge Base",
     description:
-      "Shared memory between humans and AI agents. Markdown on disk. Self-hosted. Open source.",
+      "Free and open-source AI-first knowledge base. Markdown on disk. Self-hosted. No vendor lock-in.",
     images: ["https://runcabinet.com/og.png"],
   },
 };

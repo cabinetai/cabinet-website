@@ -984,6 +984,37 @@ function UseCasesCarousel() {
   );
 }
 
+function InstallTerminalSection() {
+  return (
+    <section className="py-24 border-t border-border bg-bg">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <p className="section-label mb-3">Install Flow</p>
+          <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
+            See Cabinet start up in the terminal
+          </h2>
+          <p className="text-text-secondary font-body-serif leading-relaxed">
+            The install walkthrough is back. One command scaffolds the workspace, sets up your AI team, and gets Cabinet running locally.
+          </p>
+        </div>
+
+        <div className="max-w-3xl mx-auto">
+          <TerminalDemo />
+          <div className="mt-8 text-center">
+            <a
+              href="#get-started"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent hover:bg-accent-warm text-white font-medium transition-all shadow-sm"
+            >
+              Install Cabinet
+              <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 /* ─── Main Page ─── */
 export default function Home() {
   return (
@@ -995,7 +1026,7 @@ export default function Home() {
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center pt-24">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-border bg-bg-card text-xs font-code text-text-tertiary mb-8">
             <Zap className="w-3.5 h-3.5 text-accent" />
-            open source &middot; self-hosted &middot; file-based
+            free project &middot; open source &middot; self-hosted
           </div>
 
           {/* ─── Dictionary Definition ─── */}
@@ -1078,7 +1109,11 @@ export default function Home() {
           </div>
 
           <p className="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto mb-4 leading-relaxed font-body-serif">
-            The AI-first startup OS where everything lives as markdown files on disk. No database. No vendor lock-in.
+            A free and open-source AI-first startup OS where everything lives as markdown files on disk. No database. No vendor lock-in.
+          </p>
+
+          <p className="text-sm md:text-base text-text-tertiary max-w-2xl mx-auto mb-6 font-code">
+            No subscription. No trial. No paywall. Clone it, run it, and make it your own.
           </p>
 
           <p className="text-base font-code text-text-tertiary max-w-xl mx-auto mb-10">
@@ -1098,7 +1133,7 @@ export default function Home() {
               href="#get-started"
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-accent hover:bg-accent-warm text-white font-medium transition-all shadow-sm"
             >
-              Get Cabinet (Always Free!)
+              Get Cabinet Free
               <ArrowRight className="w-4 h-4" />
             </a>
             <a
@@ -1141,6 +1176,9 @@ export default function Home() {
 
       {/* ─── Use Cases Carousel ─── */}
       <UseCasesCarousel />
+
+      {/* ─── Install Walkthrough ─── */}
+      <InstallTerminalSection />
 
       {/* ─── The Problem ─── */}
       <section className="py-24 bg-bg">
@@ -1185,36 +1223,6 @@ export default function Home() {
                 If it feels like enterprise workflow software, it&apos;s wrong. If it feels like watching a team work, it&apos;s right.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ─── Features Grid ─── */}
-      <section id="features" className="py-24 border-t border-border bg-bg-warm">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <p className="section-label mb-3">Features</p>
-            <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
-              Everything you need. Nothing you don&apos;t.
-            </h2>
-            <p className="text-text-secondary max-w-2xl mx-auto font-body-serif">
-              A complete operating system for your startup — knowledge base, AI agents, task management, and team chat in one self-hosted app.
-            </p>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <FeatureCard icon={Layout} title="WYSIWYG + Markdown" description="Rich text editing with Tiptap. Tables, code blocks, slash commands. Toggle to raw markdown anytime." />
-            <FeatureCard icon={Bot} title="AI Agents" description="Onboard a CEO, Editor, Marketer. Each has goals, skills, scheduled jobs. Watch them work like a real team." />
-            <FeatureCard icon={Globe} title="Embedded HTML Apps" description="Drop an index.html in any folder — it renders as an iframe. Full-screen mode for dashboards and tools." />
-            <FeatureCard icon={Terminal} title="Web Terminal" description="Full Claude Code terminal in the browser. xterm.js + node-pty. Run commands without leaving Cabinet." />
-            <FeatureCard icon={FolderTree} title="File-Based Everything" description="No database. Markdown on disk. Drag-and-drop tree sidebar. Your data is always yours, always portable." />
-            <FeatureCard icon={GitBranch} title="Git-Backed History" description="Every save auto-commits. Full diff viewer. Restore any page to any point in time. Linked repo support." />
-            <FeatureCard icon={Clock} title="Scheduled Jobs" description="Cron-based agent automation. Reddit scout every 6 hours. Weekly reports on Monday. Your AI team never sleeps." />
-            <FeatureCard icon={Kanban} title="Missions & Tasks" description="Break goals into missions. Assign tasks to agents. Track progress with Kanban boards and progress bars." />
-            <FeatureCard icon={MessageSquare} title="Internal Chat" description="Built-in team channels. Agents and humans communicate. @mention an agent to trigger a response." />
-            <FeatureCard icon={Search} title="Full-Text Search" description="Cmd+K instant search across all pages. Fuzzy matching. FlexSearch index rebuilt on every change." />
-            <FeatureCard icon={FileText} title="PDF & CSV First-Class" description="PDFs render inline. CSVs open as editable tables with add/delete rows and columns. Auto-save with git commit." />
-            <FeatureCard icon={Layers} title="Linked Git Repos" description="Add .repo.yaml to link KB directories to source code repos. AI agents read and reference your codebase." />
           </div>
         </div>
       </section>
@@ -1278,6 +1286,36 @@ export default function Home() {
                 <div className="ml-8 text-green-300">leads.csv</div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── Features Grid ─── */}
+      <section id="features" className="py-24 border-t border-border bg-bg-warm">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <p className="section-label mb-3">Features</p>
+            <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
+              Everything you need. Nothing you don&apos;t.
+            </h2>
+            <p className="text-text-secondary max-w-2xl mx-auto font-body-serif">
+              A complete operating system for your startup — knowledge base, AI agents, task management, and team chat in one self-hosted app.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <FeatureCard icon={Layout} title="WYSIWYG + Markdown" description="Rich text editing with Tiptap. Tables, code blocks, slash commands. Toggle to raw markdown anytime." />
+            <FeatureCard icon={Bot} title="AI Agents" description="Onboard a CEO, Editor, Marketer. Each has goals, skills, scheduled jobs. Watch them work like a real team." />
+            <FeatureCard icon={Globe} title="Embedded HTML Apps" description="Drop an index.html in any folder — it renders as an iframe. Full-screen mode for dashboards and tools." />
+            <FeatureCard icon={Terminal} title="Web Terminal" description="Full Claude Code terminal in the browser. xterm.js + node-pty. Run commands without leaving Cabinet." />
+            <FeatureCard icon={FolderTree} title="File-Based Everything" description="No database. Markdown on disk. Drag-and-drop tree sidebar. Your data is always yours, always portable." />
+            <FeatureCard icon={GitBranch} title="Git-Backed History" description="Every save auto-commits. Full diff viewer. Restore any page to any point in time. Linked repo support." />
+            <FeatureCard icon={Clock} title="Scheduled Jobs" description="Cron-based agent automation. Reddit scout every 6 hours. Weekly reports on Monday. Your AI team never sleeps." />
+            <FeatureCard icon={Kanban} title="Missions & Tasks" description="Break goals into missions. Assign tasks to agents. Track progress with Kanban boards and progress bars." />
+            <FeatureCard icon={MessageSquare} title="Internal Chat" description="Built-in team channels. Agents and humans communicate. @mention an agent to trigger a response." />
+            <FeatureCard icon={Search} title="Full-Text Search" description="Cmd+K instant search across all pages. Fuzzy matching. FlexSearch index rebuilt on every change." />
+            <FeatureCard icon={FileText} title="PDF & CSV First-Class" description="PDFs render inline. CSVs open as editable tables with add/delete rows and columns. Auto-save with git commit." />
+            <FeatureCard icon={Layers} title="Linked Git Repos" description="Add .repo.yaml to link KB directories to source code repos. AI agents read and reference your codebase." />
           </div>
         </div>
       </section>
@@ -1403,7 +1441,7 @@ export default function Home() {
             Ready to build your AI team?
           </h2>
           <p className="text-text-secondary mb-8 max-w-xl mx-auto leading-relaxed font-body-serif">
-            Cabinet is free, open source, and self-hosted. Your data never leaves your machine. Start in 2 minutes.
+            Cabinet is a free, open-source project you can run yourself. No subscription, no trial clock, and no vendor lock-in. Start in 2 minutes.
           </p>
           <div className="terminal-chrome p-6 mb-8 max-w-md mx-auto">
             <div className="font-code text-sm flex items-center gap-2">
@@ -1418,7 +1456,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-accent hover:bg-accent-warm text-white font-medium transition-all shadow-sm"
             >
-              Get Started <ArrowRight className="w-4 h-4" />
+              Get Started Free <ArrowRight className="w-4 h-4" />
             </a>
             <a
               href="https://github.com/hilash/cabinet"
@@ -1501,7 +1539,7 @@ export default function Home() {
               <Image src="/cabinet-icon.png" alt="Cabinet" width={24} height={24} className="rounded" />
               <span className="font-display italic text-sm text-text-primary">Cabinet</span>
               <span className="text-xs text-text-muted">&middot;</span>
-              <span className="text-xs text-text-tertiary">Open source &middot; MIT License</span>
+              <span className="text-xs text-text-tertiary">Free project &middot; Open source &middot; MIT License</span>
             </div>
             <p className="text-xs text-text-tertiary font-body-serif italic">
               Humans define intent. Agents do the work. The knowledge base is the shared memory.
