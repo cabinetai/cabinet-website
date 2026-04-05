@@ -37,18 +37,102 @@ import { WaitlistCloudBackdrop } from "@/components/waitlist-cloud-backdrop";
 import { WaitlistPopup } from "@/components/waitlist-popup";
 import { DISCORD_URL, GITHUB_URL } from "@/lib/site-config";
 
+type GitHubRepoResponse = {
+  stargazers_count?: number;
+};
+
+function formatStarCount(stars: number | null) {
+  if (stars === null) return "Star on GitHub";
+
+  return new Intl.NumberFormat("en", {
+    notation: stars >= 1000 ? "compact" : "standard",
+    maximumFractionDigits: stars >= 1000 ? 1 : 0,
+  }).format(stars);
+}
+
+function getGitHubRepoPath(url: string) {
+  const match = url.match(/github\.com\/([^/]+\/[^/?#]+)/i);
+  return match?.[1] ?? null;
+}
+
+function useGitHubStars() {
+  const [stars, setStars] = useState<number | null>(null);
+
+  useEffect(() => {
+    const repoPath = getGitHubRepoPath(GITHUB_URL);
+    if (!repoPath) return;
+
+    const controller = new AbortController();
+
+    async function loadStars() {
+      try {
+        const response = await fetch(`https://api.github.com/repos/${repoPath}`, {
+          signal: controller.signal,
+          headers: {
+            Accept: "application/vnd.github+json",
+          },
+        });
+
+        if (!response.ok) return;
+
+        const data = (await response.json()) as GitHubRepoResponse;
+        if (typeof data.stargazers_count === "number") {
+          setStars(data.stargazers_count);
+        }
+      } catch (error) {
+        if (!(error instanceof DOMException && error.name === "AbortError")) {
+          console.error("Unable to load GitHub stars", error);
+        }
+      }
+    }
+
+    loadStars();
+    return () => controller.abort();
+  }, []);
+
+  return stars;
+}
+
+function GitHubStarsButton({
+  stars,
+  className,
+  compact = false,
+}: {
+  stars: number | null;
+  className: string;
+  compact?: boolean;
+}) {
+  return (
+    <a
+      href={GITHUB_URL}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={className}
+    >
+      <span className="inline-flex items-center gap-2">
+        <GithubIcon className="w-4 h-4" />
+        <span>{compact ? "Star Cabinet" : "Star Cabinet on GitHub"}</span>
+      </span>
+      <span className="inline-flex items-center gap-1 rounded-full bg-accent-bg px-2.5 py-1 text-[0.72rem] font-semibold text-accent shadow-sm ring-1 ring-border-light">
+        <Star className="w-3.5 h-3.5 fill-current" />
+        {formatStarCount(stars)}
+      </span>
+    </a>
+  );
+}
+
 /* ─── Navbar ─── */
-function Navbar() {
+function Navbar({ stars }: { stars: number | null }) {
   return (
     <nav className="relative z-20 border-b border-border bg-bg-card/95 backdrop-blur-sm">
-      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-2.5">
+      <div className="max-w-6xl mx-auto px-6 min-h-16 py-3 flex items-center gap-6 lg:gap-10">
+        <a href="#" className="flex shrink-0 items-center gap-3 pr-4 lg:pr-6">
           <Image src="/cabinet-icon.png" alt="Cabinet" width={36} height={36} className="rounded-lg" />
-          <span className="text-xl font-display italic tracking-tight text-text-primary">
+          <span className="whitespace-nowrap text-xl font-display italic tracking-tight text-text-primary">
             Cabinet
           </span>
         </a>
-        <div className="hidden md:flex items-center gap-8 text-sm font-code text-text-tertiary">
+        <div className="hidden min-[1100px]:flex flex-1 items-center gap-8 text-sm font-code text-text-tertiary">
           <a href="#features" className="hover:text-text-primary transition-colors">
             Features
           </a>
@@ -61,37 +145,25 @@ function Navbar() {
           <a href="#agents" className="hover:text-text-primary transition-colors">
             AI Agents
           </a>
-          <a
-            href={GITHUB_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-text-primary transition-colors"
-          >
-            GitHub
-          </a>
         </div>
-        <div className="flex items-center gap-3">
+        <div className="ml-auto flex items-center gap-2 sm:gap-3">
+          <GitHubStarsButton
+            stars={stars}
+            compact
+            className="inline-flex h-12 min-w-[11rem] items-center justify-between gap-3 rounded-full border border-border bg-bg-card px-4 text-sm font-semibold text-text-primary shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
+          />
           <a
             href={DISCORD_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-[#5865F2] hover:bg-[#4752C4] text-white text-sm font-medium transition-colors shadow-sm shadow-[#5865F2]/20"
+            className="hidden sm:inline-flex h-12 min-w-[11rem] items-center justify-center gap-2 rounded-full bg-[#5865F2] px-5 text-sm font-medium text-white transition-colors shadow-sm shadow-[#5865F2]/20 hover:bg-[#4752C4]"
           >
             <DiscordIcon className="w-4 h-4" />
-            <span className="hidden sm:inline">Discord</span>
-          </a>
-          <a
-            href={GITHUB_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border hover:border-border-dark text-text-secondary text-sm font-medium transition-colors"
-          >
-            <GithubIcon className="w-4 h-4" />
-            Star on GitHub
+            <span>Discord</span>
           </a>
           <a
             href="#get-started"
-            className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-accent hover:bg-accent-warm text-white text-sm font-medium transition-colors"
+            className="hidden md:inline-flex h-12 min-w-[11rem] items-center justify-center gap-2 rounded-full bg-accent px-5 text-sm font-medium text-white transition-colors hover:bg-accent-warm"
           >
             Get Started
             <ArrowRight className="w-3.5 h-3.5" />
@@ -113,13 +185,15 @@ function TypingText({ texts }: { texts: string[] }) {
     const timeout = deleting ? 30 : 60;
 
     if (!deleting && charIndex === current.length) {
-      setTimeout(() => setDeleting(true), 2000);
-      return;
+      const timer = setTimeout(() => setDeleting(true), 2000);
+      return () => clearTimeout(timer);
     }
     if (deleting && charIndex === 0) {
-      setDeleting(false);
-      setTextIndex((i) => (i + 1) % texts.length);
-      return;
+      const timer = setTimeout(() => {
+        setDeleting(false);
+        setTextIndex((i) => (i + 1) % texts.length);
+      }, timeout);
+      return () => clearTimeout(timer);
     }
 
     const timer = setTimeout(() => {
@@ -1010,9 +1084,11 @@ function InstallTerminalSection() {
 
 /* ─── Main Page ─── */
 export default function Home() {
+  const stars = useGitHubStars();
+
   return (
     <div className="min-h-screen bg-bg">
-      <Navbar />
+      <Navbar stars={stars} />
       <WaitlistPopup />
 
       {/* ─── Hero ─── */}
@@ -1123,9 +1199,13 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 mb-16">
+            <GitHubStarsButton
+              stars={stars}
+              className="inline-flex w-full items-center justify-center gap-3 rounded-full border border-border-dark bg-bg-card px-6 py-4 text-base font-semibold text-text-primary shadow-sm transition-all hover:-translate-y-0.5 hover:border-accent hover:bg-bg-card-hover hover:shadow-md sm:w-auto sm:px-8"
+            />
             <a
               href="#get-started"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-accent hover:bg-accent-warm text-white font-medium transition-all shadow-sm"
+              className="inline-flex w-full items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-accent hover:bg-accent-warm text-white font-medium transition-all shadow-sm sm:w-auto"
             >
               Get Cabinet Free
               <ArrowRight className="w-4 h-4" />
@@ -1134,7 +1214,7 @@ export default function Home() {
               href={DISCORD_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border border-border hover:border-border-dark text-text-secondary hover:text-text-primary font-medium transition-all"
+              className="hidden lg:inline-flex items-center gap-2 px-8 py-3.5 rounded-full border border-border hover:border-border-dark text-text-secondary hover:text-text-primary font-medium transition-all"
             >
               <MessageSquare className="w-4 h-4" />
               Join Discord
@@ -1482,14 +1562,10 @@ export default function Home() {
             >
               <DiscordIcon className="w-4 h-4" /> Join Discord
             </a>
-            <a
-              href={GITHUB_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border border-border hover:border-border-dark text-text-secondary hover:text-text-primary font-medium transition-all"
-            >
-              <GithubIcon className="w-4 h-4" /> Star on GitHub
-            </a>
+            <GitHubStarsButton
+              stars={stars}
+              className="inline-flex h-12 min-w-[11rem] items-center justify-between gap-3 rounded-full border border-border bg-bg-card px-4 text-sm font-semibold text-text-primary shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
+            />
           </div>
           <p className="mt-6 text-sm text-text-tertiary">
             Questions? <a href="mailto:hi@runcabinet.com" className="text-accent hover:text-accent-warm underline underline-offset-2">hi@runcabinet.com</a>
@@ -1556,7 +1632,7 @@ export default function Home() {
                 </li>
                 <li>
                   <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-text-primary transition-colors flex items-center gap-1.5">
-                    <GithubIcon className="w-3.5 h-3.5" /> hilash/cabinet
+                    <GithubIcon className="w-3.5 h-3.5" /> hilash/cabinet {stars !== null ? `· ${formatStarCount(stars)} stars` : ""}
                   </a>
                 </li>
               </ul>
