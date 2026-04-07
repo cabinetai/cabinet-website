@@ -78,6 +78,10 @@ export default function RootLayout({
             gtag('config', 'G-4L81D0BVTP');
           `}
         </Script>
+        <Script
+          src="https://tally.so/widgets/embed.js"
+          strategy="afterInteractive"
+        />
       </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

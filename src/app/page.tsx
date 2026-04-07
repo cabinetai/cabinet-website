@@ -31,7 +31,7 @@ import {
   AppWindow,
   FileType,
 } from "lucide-react";
-import { Suspense, useState, useEffect, useRef } from "react";
+import { Suspense, useState, useEffect, useRef, useCallback } from "react";
 import { DiscordIcon, GithubIcon } from "@/components/site-icons";
 import { WaitlistCapture } from "@/components/waitlist-capture";
 import { WaitlistCloudBackdrop } from "@/components/waitlist-cloud-backdrop";
@@ -1083,14 +1083,63 @@ function InstallTerminalSection() {
   );
 }
 
+/* ─── Mac Download Modal ─── */
+function MacDownloadModal({ open, onClose }: { open: boolean; onClose: () => void }) {
+  if (!open) return null;
+
+  const handleWaitlist = () => {
+    onClose();
+    window.Tally?.openPopup?.("PdYKQd", {
+      layout: "modal",
+      width: 700,
+      autoClose: 3000,
+    });
+  };
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm" onClick={onClose}>
+      <div className="relative max-w-md mx-4 rounded-2xl border border-border bg-bg-card p-8 shadow-2xl" onClick={(e) => e.stopPropagation()}>
+        <button onClick={onClose} className="absolute top-4 right-4 text-text-tertiary hover:text-text-primary transition-colors">
+          <X className="w-5 h-5" />
+        </button>
+        <div className="text-center">
+          <div className="w-14 h-14 mx-auto mb-5 rounded-xl bg-accent-bg flex items-center justify-center">
+            <svg className="w-7 h-7 text-accent" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          </div>
+          <h3 className="text-xl font-display text-text-primary mb-3">Coming Soon</h3>
+          <p className="text-text-secondary text-sm leading-relaxed mb-6">
+            Our Mac app is not available at the moment as we are rolling out a new version. Would you like to join the waiting list?
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <button
+              onClick={handleWaitlist}
+              className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-accent hover:bg-accent-warm text-white font-semibold transition-all"
+            >
+              Join Waiting List
+            </button>
+            <button
+              onClick={onClose}
+              className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border border-border hover:border-border-dark text-text-secondary hover:text-text-primary font-medium transition-all"
+            >
+              Maybe Later
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 /* ─── Main Page ─── */
 export default function Home() {
   const stars = useGitHubStars();
+  const [macModalOpen, setMacModalOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-bg">
       <Navbar stars={stars} />
       <WaitlistPopup />
+      <MacDownloadModal open={macModalOpen} onClose={() => setMacModalOpen(false)} />
 
       {/* ─── Hero ─── */}
       <section className="relative min-h-screen flex items-center justify-center dot-grid overflow-hidden">
@@ -1164,13 +1213,13 @@ export default function Home() {
           {/* ─── Install Options ─── */}
           <div className="max-w-xl mx-auto mb-20">
             <div className="flex flex-col sm:flex-row items-stretch gap-3">
-              <a
-                href="https://github.com/hilash/cabinet/releases/download/v0.2.2/Cabinet-0.2.2-arm64.dmg"
-                className="shrink-0 inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl bg-accent hover:bg-accent-warm text-white font-semibold text-base transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5"
+              <button
+                onClick={() => setMacModalOpen(true)}
+                className="shrink-0 inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl bg-accent hover:bg-accent-warm text-white font-semibold text-base transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 cursor-pointer"
               >
                 <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
                 Download for Mac
-              </a>
+              </button>
               <span className="hidden sm:flex items-center text-text-muted text-sm font-code">or</span>
               <div className="flex-1 terminal-chrome flex items-center px-5 py-4 rounded-xl">
                 <div className="font-code text-sm flex items-center gap-2">
@@ -1539,13 +1588,13 @@ export default function Home() {
           </p>
           <div className="max-w-xl mx-auto mb-10">
             <div className="flex flex-col sm:flex-row items-stretch gap-3">
-              <a
-                href="https://github.com/hilash/cabinet/releases/download/v0.2.2/Cabinet-0.2.2-arm64.dmg"
-                className="shrink-0 inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl bg-accent hover:bg-accent-warm text-white font-semibold text-base transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5"
+              <button
+                onClick={() => setMacModalOpen(true)}
+                className="shrink-0 inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl bg-accent hover:bg-accent-warm text-white font-semibold text-base transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 cursor-pointer"
               >
                 <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
                 Download for Mac
-              </a>
+              </button>
               <span className="hidden sm:flex items-center text-text-muted text-sm font-code">or</span>
               <div className="flex-1 terminal-chrome flex items-center px-5 py-4 rounded-xl">
                 <div className="font-code text-sm flex items-center gap-2">
