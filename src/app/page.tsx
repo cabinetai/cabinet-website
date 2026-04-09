@@ -157,17 +157,10 @@ function Navbar({ stars }: { stars: number | null }) {
             href={DISCORD_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden sm:inline-flex h-12 min-w-[11rem] items-center justify-center gap-2 rounded-full bg-[#5865F2] px-5 text-sm font-medium text-white transition-colors shadow-sm shadow-[#5865F2]/20 hover:bg-[#4752C4]"
+            className="hidden sm:inline-flex h-12 items-center justify-center gap-2 rounded-full bg-[#5865F2] px-5 text-sm font-medium text-white transition-colors shadow-sm shadow-[#5865F2]/20 hover:bg-[#4752C4]"
           >
             <DiscordIcon className="w-4 h-4" />
             <span>Discord</span>
-          </a>
-          <a
-            href="#get-started"
-            className="hidden md:inline-flex h-12 min-w-[11rem] items-center justify-center gap-2 rounded-full bg-accent px-5 text-sm font-medium text-white transition-colors hover:bg-accent-warm"
-          >
-            Get Started
-            <ArrowRight className="w-3.5 h-3.5" />
           </a>
         </div>
       </div>
@@ -928,11 +921,88 @@ function CabinetMockup({ kb, caseEmoji, agents }: { kb: (typeof USE_CASES)[0]["k
 }
 
 function UseCasesCarousel() {
-  const [active, setActive] = useState(0);
   const total = USE_CASES.length;
-  const prev = () => setActive((a) => (a - 1 + total) % total);
-  const next = () => setActive((a) => (a + 1) % total);
-  const c = USE_CASES[active];
+  // We render [last, ...all, first] so we can seamlessly loop
+  const trackRef = useRef<HTMLDivElement>(null);
+  const [idx, setIdx] = useState(1); // 1-based because slot 0 is the clone of last
+  const [isTransitioning, setIsTransitioning] = useState(true);
+  const autoPlayRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const touchStartX = useRef(0);
+  const touchDeltaX = useRef(0);
+  const isSwiping = useRef(false);
+
+  // Real index into USE_CASES (0-based)
+  const realIndex = ((idx - 1) % total + total) % total;
+  const c = USE_CASES[realIndex];
+
+  // Slides: [clone-last, 0, 1, 2, ..., n-1, clone-first]
+  const slides = [USE_CASES[total - 1], ...USE_CASES, USE_CASES[0]];
+
+  const resetAutoPlay = useCallback(() => {
+    if (autoPlayRef.current) clearInterval(autoPlayRef.current);
+    autoPlayRef.current = setInterval(() => {
+      setIsTransitioning(true);
+      setIdx((i) => i + 1);
+    }, 5000);
+  }, []);
+
+  // Start auto-play on mount
+  useEffect(() => {
+    resetAutoPlay();
+    return () => { if (autoPlayRef.current) clearInterval(autoPlayRef.current); };
+  }, [resetAutoPlay]);
+
+  // When transition ends, if we're on a clone slide, jump instantly to the real one
+  const handleTransitionEnd = useCallback(() => {
+    if (idx === 0) {
+      setIsTransitioning(false);
+      setIdx(total);
+    } else if (idx === total + 1) {
+      setIsTransitioning(false);
+      setIdx(1);
+    }
+  }, [idx, total]);
+
+  const goTo = useCallback((i: number) => {
+    setIsTransitioning(true);
+    setIdx(i + 1); // +1 because slot 0 is clone
+    resetAutoPlay();
+  }, [resetAutoPlay]);
+
+  const prev = useCallback(() => {
+    setIsTransitioning(true);
+    setIdx((i) => i - 1);
+    resetAutoPlay();
+  }, [resetAutoPlay]);
+
+  const next = useCallback(() => {
+    setIsTransitioning(true);
+    setIdx((i) => i + 1);
+    resetAutoPlay();
+  }, [resetAutoPlay]);
+
+  // Touch / swipe handlers
+  const onTouchStart = useCallback((e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+    touchDeltaX.current = 0;
+    isSwiping.current = true;
+  }, []);
+
+  const onTouchMove = useCallback((e: React.TouchEvent) => {
+    if (!isSwiping.current) return;
+    touchDeltaX.current = e.touches[0].clientX - touchStartX.current;
+  }, []);
+
+  const onTouchEnd = useCallback(() => {
+    if (!isSwiping.current) return;
+    isSwiping.current = false;
+    const threshold = 50;
+    if (touchDeltaX.current < -threshold) {
+      next();
+    } else if (touchDeltaX.current > threshold) {
+      prev();
+    }
+  }, [next, prev]);
 
   return (
     <section className="py-24 border-t border-border bg-bg-warm overflow-hidden">
@@ -947,56 +1017,76 @@ function UseCasesCarousel() {
           </p>
         </div>
 
-        {/* Card */}
-        <div className="relative">
-          <div className="border border-border rounded-2xl bg-bg-card overflow-hidden">
-            <div className="grid md:grid-cols-2 gap-0">
+        {/* Sliding track */}
+        <div
+          className="relative"
+          onTouchStart={onTouchStart}
+          onTouchMove={onTouchMove}
+          onTouchEnd={onTouchEnd}
+        >
+          <div className="overflow-hidden rounded-2xl border border-border">
+            <div
+              ref={trackRef}
+              className="flex"
+              style={{
+                transform: `translateX(-${idx * 100}%)`,
+                transition: isTransitioning ? "transform 500ms ease-in-out" : "none",
+              }}
+              onTransitionEnd={handleTransitionEnd}
+            >
+              {slides.map((s, i) => (
+                <div key={i} className="w-full flex-shrink-0">
+                  <div className="bg-bg-card">
+                    <div className="grid md:grid-cols-2 gap-0">
+                      {/* Left — quote + activity */}
+                      <div className="p-8 md:p-10 flex flex-col justify-between border-b md:border-b-0 md:border-r border-border">
+                        <div>
+                          <div className="flex items-center gap-3 mb-5">
+                            <span className="text-3xl">{s.emoji}</span>
+                            <div>
+                              <span className="text-[10px] font-code text-accent bg-accent-bg px-2 py-0.5 rounded uppercase tracking-wider">
+                                {s.tag}
+                              </span>
+                              <p className="text-xs text-text-tertiary font-code mt-1">{s.persona}</p>
+                            </div>
+                          </div>
+                          <h3 className="font-display text-xl md:text-2xl text-text-primary mb-4 leading-snug">
+                            {s.headline}
+                          </h3>
+                          <p className="text-text-secondary text-sm leading-relaxed font-body-serif italic">
+                            &ldquo;{s.quote}&rdquo;
+                          </p>
+                        </div>
 
-              {/* Left — quote + activity */}
-              <div className="p-8 md:p-10 flex flex-col justify-between border-b md:border-b-0 md:border-r border-border">
-                <div>
-                  <div className="flex items-center gap-3 mb-5">
-                    <span className="text-3xl">{c.emoji}</span>
-                    <div>
-                      <span className="text-[10px] font-code text-accent bg-accent-bg px-2 py-0.5 rounded uppercase tracking-wider">
-                        {c.tag}
-                      </span>
-                      <p className="text-xs text-text-tertiary font-code mt-1">{c.persona}</p>
+                        {/* Activity bar */}
+                        <div className="mt-8 pt-6 border-t border-border">
+                          <p className="text-[10px] font-code text-text-tertiary uppercase tracking-widest mb-2">
+                            Activity — last 24h
+                          </p>
+                          <div className="flex gap-0.5 items-end h-7">
+                            {Array.from({ length: 24 }, (_, j) => {
+                              const heights = [2, 4, 3, 6, 4, 8, 5, 3, 7, 4, 9, 6, 4, 7, 5, 8, 3, 6, 4, 7, 5, 3, 6, 4];
+                              const h = heights[(j + i * 7) % heights.length];
+                              return (
+                                <div
+                                  key={j}
+                                  className={`flex-1 rounded-sm ${h > 5 ? "bg-accent" : "bg-border"}`}
+                                  style={{ height: `${(h / 9) * 100}%` }}
+                                />
+                              );
+                            })}
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Right — Cabinet KB mockup */}
+                      <div className="p-6 md:p-8 bg-bg">
+                        <CabinetMockup kb={s.kb} caseEmoji={s.emoji} agents={s.agents} />
+                      </div>
                     </div>
                   </div>
-                  <h3 className="font-display text-xl md:text-2xl text-text-primary mb-4 leading-snug">
-                    {c.headline}
-                  </h3>
-                  <p className="text-text-secondary text-sm leading-relaxed font-body-serif italic">
-                    &ldquo;{c.quote}&rdquo;
-                  </p>
                 </div>
-
-                {/* Activity bar */}
-                <div className="mt-8 pt-6 border-t border-border">
-                  <p className="text-[10px] font-code text-text-tertiary uppercase tracking-widest mb-2">
-                    Activity — last 24h
-                  </p>
-                  <div className="flex gap-0.5 items-end h-7">
-                    {Array.from({ length: 24 }, (_, i) => {
-                      const heights = [2, 4, 3, 6, 4, 8, 5, 3, 7, 4, 9, 6, 4, 7, 5, 8, 3, 6, 4, 7, 5, 3, 6, 4];
-                      const h = heights[(i + active * 7) % heights.length];
-                      return (
-                        <div
-                          key={i}
-                          className={`flex-1 rounded-sm ${h > 5 ? "bg-accent" : "bg-border"}`}
-                          style={{ height: `${(h / 9) * 100}%` }}
-                        />
-                      );
-                    })}
-                  </div>
-                </div>
-              </div>
-
-              {/* Right — Cabinet KB mockup */}
-              <div className="p-6 md:p-8 bg-bg">
-                <CabinetMockup kb={c.kb} caseEmoji={c.emoji} agents={c.agents} />
-              </div>
+              ))}
             </div>
           </div>
 
@@ -1022,9 +1112,9 @@ function UseCasesCarousel() {
           {USE_CASES.map((uc, i) => (
             <button
               key={i}
-              onClick={() => setActive(i)}
+              onClick={() => goTo(i)}
               className={`transition-all rounded-full ${
-                i === active ? "w-6 h-2 bg-accent" : "w-2 h-2 bg-border hover:bg-border-dark"
+                i === realIndex ? "w-6 h-2 bg-accent" : "w-2 h-2 bg-border hover:bg-border-dark"
               }`}
               aria-label={uc.tag}
             />
@@ -1036,9 +1126,9 @@ function UseCasesCarousel() {
           {USE_CASES.map((uc, i) => (
             <button
               key={i}
-              onClick={() => setActive(i)}
+              onClick={() => goTo(i)}
               className={`text-xs font-code px-3 py-1 rounded-full border transition-all ${
-                i === active
+                i === realIndex
                   ? "border-accent text-accent bg-accent-bg"
                   : "border-border text-text-tertiary hover:border-border-dark hover:text-text-secondary"
               }`}
@@ -1634,7 +1724,7 @@ export default function Home() {
                 <li><a href="#features" className="text-text-secondary hover:text-text-primary transition-colors">Features</a></li>
                 <li><a href="#agents" className="text-text-secondary hover:text-text-primary transition-colors">AI Agents</a></li>
                 <li><a href="#compare" className="text-text-secondary hover:text-text-primary transition-colors">Compare</a></li>
-                <li><a href="#get-started" className="text-text-secondary hover:text-text-primary transition-colors">Get Started</a></li>
+
               </ul>
             </div>
             <div>
