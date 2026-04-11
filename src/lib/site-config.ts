@@ -1,4 +1,4 @@
-export const DISCORD_URL = "https://discord.gg/rxd8BYnN";
+export const DISCORD_URL = "https://discord.gg/hJa5TRTbTH";
 export const GITHUB_URL = "https://github.com/hilash/cabinet";
 
 // Replace this with your published Tally share URL, or set NEXT_PUBLIC_TALLY_WAITLIST_FORM_URL at build time.
