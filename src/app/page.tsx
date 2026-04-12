@@ -30,6 +30,7 @@ import {
   Folder,
   AppWindow,
   FileType,
+  Copy,
 } from "lucide-react";
 import { Suspense, useState, useEffect, useRef, useCallback } from "react";
 import { DiscordIcon, GithubIcon } from "@/components/site-icons";
@@ -202,6 +203,25 @@ function TypingText({ texts }: { texts: string[] }) {
       {texts[textIndex].slice(0, charIndex)}
       <span className="cursor-blink text-accent-light">|</span>
     </span>
+  );
+}
+
+/* ─── Copy Button ─── */
+function CopyButton({ text }: { text: string }) {
+  const [copied, setCopied] = useState(false);
+  const handleCopy = useCallback(() => {
+    navigator.clipboard.writeText(text);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  }, [text]);
+  return (
+    <button
+      onClick={handleCopy}
+      className="shrink-0 p-1 rounded text-zinc-500 hover:text-zinc-200 hover:bg-white/10 transition-colors"
+      title="Copy to clipboard"
+    >
+      {copied ? <Check className="w-3.5 h-3.5 text-green-400" /> : <Copy className="w-3.5 h-3.5" />}
+    </button>
   );
 }
 
@@ -1311,11 +1331,12 @@ export default function Home() {
                 Download for Mac
               </button>
               <span className="hidden sm:flex items-center text-text-muted text-sm font-code">or</span>
-              <div className="flex-1 terminal-chrome flex items-center px-5 py-4 rounded-xl">
+              <div className="flex-1 terminal-chrome flex items-center justify-between px-5 py-4 rounded-xl" style={{ overflow: 'visible' }}>
                 <div className="font-code text-sm flex items-center gap-2">
                   <span className="text-green-400 shrink-0">$</span>
                   <span className="text-zinc-200 whitespace-nowrap">npx create-cabinet my-startup</span>
                 </div>
+                <CopyButton text="npx create-cabinet my-startup" />
               </div>
             </div>
           </div>
@@ -1657,7 +1678,10 @@ export default function Home() {
                   <h3 className="font-display text-xl mb-2 text-text-primary">{item.title}</h3>
                   <p className="text-sm text-text-secondary mb-3 leading-relaxed font-body-serif">{item.desc}</p>
                   {item.code && (
-                    <code className="text-xs font-code text-accent bg-accent-bg px-3 py-1.5 rounded-lg">{item.code}</code>
+                    <div className="inline-flex items-center gap-2 text-xs font-code text-accent bg-accent-bg px-3 py-1.5 rounded-lg">
+                      <code>{item.code}</code>
+                      <CopyButton text={item.code} />
+                    </div>
                   )}
                 </div>
               </div>
@@ -1686,11 +1710,12 @@ export default function Home() {
                 Download for Mac
               </button>
               <span className="hidden sm:flex items-center text-text-muted text-sm font-code">or</span>
-              <div className="flex-1 terminal-chrome flex items-center px-5 py-4 rounded-xl">
+              <div className="flex-1 terminal-chrome flex items-center justify-between px-5 py-4 rounded-xl" style={{ overflow: 'visible' }}>
                 <div className="font-code text-sm flex items-center gap-2">
                   <span className="text-green-400 shrink-0">$</span>
                   <span className="text-zinc-200 whitespace-nowrap">npx create-cabinet my-startup</span>
                 </div>
+                <CopyButton text="npx create-cabinet my-startup" />
               </div>
             </div>
           </div>
