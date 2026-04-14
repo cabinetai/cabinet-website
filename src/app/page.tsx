@@ -228,7 +228,7 @@ function CopyButton({ text }: { text: string }) {
 /* ─── Terminal Demo ─── */
 function TerminalDemo() {
   const lines = [
-    { prompt: true, text: "npx create-cabinet my-startup" },
+    { prompt: true, text: "npx cabinetai run" },
     { prompt: false, text: "Creating knowledge base..." },
     { prompt: false, text: "Setting up AI agents..." },
     { prompt: false, text: "" },
@@ -1334,9 +1334,9 @@ export default function Home() {
               <div className="flex-1 terminal-chrome flex items-center justify-between px-5 py-4 rounded-xl" style={{ overflow: 'visible' }}>
                 <div className="font-code text-sm flex items-center gap-2">
                   <span className="text-green-400 shrink-0">$</span>
-                  <span className="text-zinc-200 whitespace-nowrap">npx create-cabinet my-startup</span>
+                  <span className="text-zinc-200 whitespace-nowrap">npx cabinetai run</span>
                 </div>
-                <CopyButton text="npx create-cabinet my-startup" />
+                <CopyButton text="npx cabinetai run" />
               </div>
             </div>
           </div>
@@ -1662,7 +1662,7 @@ export default function Home() {
 
           <div className="space-y-0">
             {[
-              { step: "01", title: "Install & Run", desc: "One command. Next.js + daemon start. Your knowledge base is a /data directory on disk.", code: "npx create-cabinet my-startup" },
+              { step: "01", title: "Install & Run", desc: "One command. Next.js + daemon start. Your knowledge base is a /data directory on disk.", code: "npx cabinetai run" },
               { step: "02", title: "Answer 5 Questions", desc: "What's your company? What do you do? What are your goals? Cabinet builds your custom AI team.", code: null },
               { step: "03", title: "Watch Your Team Work", desc: "Agents create missions, write content, scout Reddit, review quality — all on schedule.", code: null },
               { step: "04", title: "Knowledge Compounds", desc: "Every agent run, every edit, every research session adds to the KB. Your system gets smarter every day.", code: null },
@@ -1713,9 +1713,9 @@ export default function Home() {
               <div className="flex-1 terminal-chrome flex items-center justify-between px-5 py-4 rounded-xl" style={{ overflow: 'visible' }}>
                 <div className="font-code text-sm flex items-center gap-2">
                   <span className="text-green-400 shrink-0">$</span>
-                  <span className="text-zinc-200 whitespace-nowrap">npx create-cabinet my-startup</span>
+                  <span className="text-zinc-200 whitespace-nowrap">npx cabinetai run</span>
                 </div>
-                <CopyButton text="npx create-cabinet my-startup" />
+                <CopyButton text="npx cabinetai run" />
               </div>
             </div>
           </div>
