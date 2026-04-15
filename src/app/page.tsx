@@ -147,6 +147,9 @@ function Navbar({ stars }: { stars: number | null }) {
           <a href="#agents" className="hover:text-text-primary transition-colors">
             AI Agents
           </a>
+          <a href="/media" className="hover:text-text-primary transition-colors">
+            In the Wild
+          </a>
         </div>
         <div className="ml-auto flex items-center gap-2 sm:gap-3">
           <GitHubStarsButton
