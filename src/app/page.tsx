@@ -1784,6 +1784,16 @@ export default function Home() {
                     License
                   </a>
                 </li>
+                <li>
+                  <a href="/terms" className="text-text-secondary hover:text-text-primary transition-colors">
+                    Terms of Service
+                  </a>
+                </li>
+                <li>
+                  <a href="/privacy" className="text-text-secondary hover:text-text-primary transition-colors">
+                    Privacy Policy
+                  </a>
+                </li>
               </ul>
             </div>
             <div>
@@ -1813,12 +1823,22 @@ export default function Home() {
               <Image src="/cabinet-icon.png" alt="Cabinet" width={24} height={24} className="rounded" />
               <span className="font-display italic text-sm text-text-primary">Cabinet</span>
               <span className="text-xs text-text-muted">&middot;</span>
-              <span className="text-xs text-text-tertiary">Free project &middot; Open source &middot; MIT License</span>
+              <span className="text-xs text-text-tertiary">
+                &copy; {new Date().getFullYear()} HOLY BIBLE APPS LTD &middot; Open source &middot; MIT License
+              </span>
             </div>
-            <p className="text-xs text-text-tertiary font-body-serif italic">
-              Humans define intent. Agents do the work. The knowledge base is the shared memory.
-            </p>
+            <div className="flex items-center gap-4 text-xs text-text-tertiary">
+              <a href="/terms" className="hover:text-text-primary transition-colors">Terms</a>
+              <a href="/privacy" className="hover:text-text-primary transition-colors">Privacy</a>
+            </div>
           </div>
+          <p className="mt-6 text-center text-[0.7rem] text-text-tertiary font-body-serif italic leading-relaxed max-w-3xl mx-auto">
+            Cabinet is provided &ldquo;as is,&rdquo; without warranty of any kind. The Software may
+            run autonomous AI agents with file-system, shell, and network access on systems you
+            control; you install and run Cabinet at your own risk. See the{" "}
+            <a href="/terms" className="underline underline-offset-2 hover:text-text-primary">Terms of Service</a>{" "}
+            for the full disclaimer and limitation of liability.
+          </p>
         </div>
       </footer>
     </div>
