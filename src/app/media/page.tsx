@@ -3,56 +3,88 @@ import { DiscordIcon } from "@/components/site-icons";
 import { SiteNavbar } from "@/components/site-navbar";
 import { DISCORD_URL } from "@/lib/site-config";
 
-const VIDEO_URL = "https://youtu.be/mK91g0QZpSk";
+type Video = {
+  id: string;
+  title: string;
+  authorName: string;
+  authorHandle: string;
+  channelUrl: string;
+  blurb: string;
+};
+
 const CHANNEL_URL = "https://www.youtube.com/@SyntaxGTM";
-const VIDEO_TITLE = "LLM Knowledge Bases, The Karpathy Effect & The Solution";
-const THUMBNAIL_URL = "https://i.ytimg.com/vi/mK91g0QZpSk/hqdefault.jpg";
+
+const VIDEOS: Video[] = [
+  {
+    id: "k4Bo2QolYTQ",
+    title: "Stop Losing Context in AI Conversations — Meet Cabinet, the Open Source Fix",
+    authorName: "Tom Granot",
+    authorHandle: "SyntaxGTM",
+    channelUrl: CHANNEL_URL,
+    blurb:
+      "Tom Granot walks through the problem every AI-native developer hits: context evaporates between sessions, prompts, and tools. Cabinet is the open-source fix — a persistent, file-based knowledge base your agents can actually read from and write to.",
+  },
+  {
+    id: "mK91g0QZpSk",
+    title: "LLM Knowledge Bases, The Karpathy Effect & The Solution",
+    authorName: "Tom Granot",
+    authorHandle: "SyntaxGTM",
+    channelUrl: CHANNEL_URL,
+    blurb:
+      "A deep dive into why LLM knowledge bases are the next frontier for AI-powered development — exploring Andrej Karpathy's vision for software 2.0, why context quality determines AI output quality, and how Cabinet solves the knowledge gap for developer teams.",
+  },
+];
+
+const FEATURED = VIDEOS[0];
+const FEATURED_THUMBNAIL = `https://i.ytimg.com/vi/${FEATURED.id}/hqdefault.jpg`;
 
 export const metadata: Metadata = {
-  title: "In the Wild — Cabinet | LLM Knowledge Bases & The Karpathy Effect",
+  title: "In the Wild — Cabinet | Stop Losing Context in AI Conversations",
   description:
-    "Watch Tom Granot (SyntaxGTM) break down LLM knowledge bases, the Karpathy Effect, and why Cabinet is the solution for AI-native developer teams.",
+    "Real demos, community builds, and coverage of Cabinet from around the web. Watch Tom Granot (SyntaxGTM) explain why Cabinet is the open-source fix for context loss in AI-native development.",
   openGraph: {
-    title: "LLM Knowledge Bases, The Karpathy Effect & The Solution — Cabinet",
+    title: "Stop Losing Context in AI Conversations — Meet Cabinet, the Open Source Fix",
     description:
-      "Tom Granot (SyntaxGTM) dives into why context quality defines AI output quality — and how Cabinet solves the knowledge gap for developer teams.",
-    images: [{ url: THUMBNAIL_URL, width: 480, height: 360, alt: VIDEO_TITLE }],
+      "Tom Granot (SyntaxGTM) walks through why context evaporates in AI workflows — and how Cabinet's persistent, file-based knowledge base fixes it.",
+    images: [{ url: FEATURED_THUMBNAIL, width: 480, height: 360, alt: FEATURED.title }],
     type: "video.other",
     url: "https://runcabinet.com/media",
   },
   twitter: {
     card: "summary_large_image",
-    title: "LLM Knowledge Bases, The Karpathy Effect & The Solution — Cabinet",
+    title: "Stop Losing Context in AI Conversations — Meet Cabinet, the Open Source Fix",
     description:
-      "Tom Granot (SyntaxGTM) explains why your AI is only as good as its knowledge base — and how Cabinet fixes that.",
-    images: [THUMBNAIL_URL],
+      "Tom Granot (SyntaxGTM) on why Cabinet is the open-source fix for context loss in AI-native development.",
+    images: [FEATURED_THUMBNAIL],
   },
 };
 
 export default function MediaPage() {
   return (
     <main className="min-h-screen bg-bg">
-      {/* JSON-LD VideoObject for Google rich results */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "VideoObject",
-            name: VIDEO_TITLE,
-            description:
-              "Tom Granot (SyntaxGTM) breaks down LLM knowledge bases, the Karpathy Effect, and why Cabinet is the solution for AI-native developer teams.",
-            thumbnailUrl: THUMBNAIL_URL,
-            embedUrl: "https://www.youtube.com/embed/mK91g0QZpSk",
-            url: VIDEO_URL,
-            author: {
-              "@type": "Person",
-              name: "Tom Granot",
-              url: CHANNEL_URL,
-            },
-          }),
-        }}
-      />
+      {/* JSON-LD VideoObject entries for Google rich results */}
+      {VIDEOS.map((video) => (
+        <script
+          key={video.id}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "VideoObject",
+              name: video.title,
+              description: video.blurb,
+              thumbnailUrl: `https://i.ytimg.com/vi/${video.id}/hqdefault.jpg`,
+              embedUrl: `https://www.youtube.com/embed/${video.id}`,
+              url: `https://youtu.be/${video.id}`,
+              author: {
+                "@type": "Person",
+                name: video.authorName,
+                url: video.channelUrl,
+              },
+            }),
+          }}
+        />
+      ))}
 
       <SiteNavbar />
 
@@ -71,71 +103,75 @@ export default function MediaPage() {
             </p>
           </div>
 
-          {/* YouTube embed */}
-          <div className="mb-14">
-            <a
-              href={VIDEO_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group inline-block mb-4"
-            >
-              <h2 className="text-xl md:text-2xl font-display text-text-primary leading-snug group-hover:text-accent transition-colors">
-                {VIDEO_TITLE}
-              </h2>
-            </a>
+          {/* Video list */}
+          <div className="space-y-14 mb-14">
+            {VIDEOS.map((video) => {
+              const videoUrl = `https://youtu.be/${video.id}`;
+              return (
+                <div key={video.id}>
+                  <a
+                    href={videoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group inline-block mb-4"
+                  >
+                    <h2 className="text-xl md:text-2xl font-display text-text-primary leading-snug group-hover:text-accent transition-colors">
+                      {video.title}
+                    </h2>
+                  </a>
 
-            <div className="rounded-2xl overflow-hidden border border-border shadow-lg bg-bg-card">
-              <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-                <iframe
-                  src="https://www.youtube.com/embed/mK91g0QZpSk"
-                  title={VIDEO_TITLE}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                  className="absolute inset-0 w-full h-full"
-                />
-              </div>
-            </div>
+                  <div className="rounded-2xl overflow-hidden border border-border shadow-lg bg-bg-card">
+                    <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+                      <iframe
+                        src={`https://www.youtube.com/embed/${video.id}`}
+                        title={video.title}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                        className="absolute inset-0 w-full h-full"
+                      />
+                    </div>
+                  </div>
 
-            <div className="mt-4">
-              <p className="text-sm font-code text-text-tertiary mb-2">
-                by{" "}
-                <a
-                  href={CHANNEL_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-accent hover:underline"
-                >
-                  Tom Granot
-                </a>
-                {" · "}
-                <a
-                  href={CHANNEL_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-text-primary transition-colors"
-                >
-                  SyntaxGTM
-                </a>
-                {" on "}
-                <a
-                  href={VIDEO_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-text-primary transition-colors"
-                >
-                  YouTube
-                </a>
-              </p>
-              <p className="text-sm text-text-secondary font-body-serif leading-relaxed">
-                A deep dive into why LLM knowledge bases are the next frontier for AI-powered
-                development — exploring Andrej Karpathy&apos;s vision for software 2.0, why context
-                quality determines AI output quality, and how Cabinet solves the knowledge gap for
-                developer teams.
-              </p>
-            </div>
+                  <div className="mt-4">
+                    <p className="text-sm font-code text-text-tertiary mb-2">
+                      by{" "}
+                      <a
+                        href={video.channelUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-accent hover:underline"
+                      >
+                        {video.authorName}
+                      </a>
+                      {" · "}
+                      <a
+                        href={video.channelUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-text-primary transition-colors"
+                      >
+                        {video.authorHandle}
+                      </a>
+                      {" on "}
+                      <a
+                        href={videoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:text-text-primary transition-colors"
+                      >
+                        YouTube
+                      </a>
+                    </p>
+                    <p className="text-sm text-text-secondary font-body-serif leading-relaxed">
+                      {video.blurb}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
 
-          {/* Content below the video */}
+          {/* Content below the videos */}
           <div className="grid md:grid-cols-2 gap-12 mb-14">
             <div>
               <h2 className="text-2xl font-display text-text-primary mb-4">
