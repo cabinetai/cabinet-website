@@ -156,19 +156,21 @@ export function WaitlistPopup() {
         <div className="relative z-[1] px-6 pb-7 pt-9 md:px-8">
           <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-border-dark/60 bg-white/70 px-3 py-1.5 text-[11px] font-code uppercase tracking-[0.28em] text-accent">
             <Cloud className="h-3.5 w-3.5" />
-            Cabinet Cloud ☁️
+            Cabinet Cloud ☁️ is coming soon
           </div>
 
           <h3
             id="cabinet-waitlist-title"
-            className="mb-2 text-2xl font-display leading-tight text-text-primary"
+            className="mb-3 text-2xl font-display leading-tight text-text-primary"
           >
-            Your Cabinet, anywhere. Your AI team, always on.
+            Your Cabinet, anywhere.
+            <br />
+            Your AI team, always on.
           </h3>
 
           <p className="mb-5 text-[15px] text-text-secondary font-body-serif leading-relaxed">
-            Open your Cabinet from any device while your AI agents keep working — drafting,
-            researching, organizing — even when your laptop is closed.
+            Open your Cabinet from any device while your AI agents keep working for
+            you 24/7, even when your laptop is closed.
           </p>
 
           {status === "success" || status === "already" ? (
