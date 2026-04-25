@@ -1,15 +1,20 @@
 "use client";
 
-import { useEffect, useMemo, useRef } from "react";
-import { usePathname, useSearchParams } from "next/navigation";
-import { ArrowRight, Check, Cloud } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
+import { ArrowRight, Check, CheckCircle2, Cloud, Loader2 } from "lucide-react";
 import { trackEvent } from "@/lib/analytics";
 import { WAITLIST_COPY } from "@/lib/site-config";
 import {
-  buildTallyShareUrl,
-  IS_TALLY_WAITLIST_CONFIGURED,
+  hasWaitlistSubmission,
+  markWaitlistSubmitted,
   type WaitlistSource,
 } from "@/lib/waitlist";
+import {
+  recordWaitlistStart,
+  recordWaitlistView,
+  submitWaitlistEmail,
+} from "@/lib/waitlist-client";
 
 type WaitlistCaptureProps = {
   source: WaitlistSource;
@@ -19,6 +24,8 @@ type WaitlistCaptureProps = {
   trackView?: boolean;
 };
 
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 export function WaitlistCapture({
   source,
   className = "",
@@ -27,23 +34,20 @@ export function WaitlistCapture({
   trackView = false,
 }: WaitlistCaptureProps) {
   const pathname = usePathname();
-  const searchParams = useSearchParams();
   const cardRef = useRef<HTMLDivElement>(null);
   const ctaTrackedRef = useRef(false);
   const viewTrackedRef = useRef(false);
+  const startedRef = useRef(false);
   const resolvedOriginPage = originPage ?? pathname;
-  const queryString = searchParams.toString();
 
-  const ctaUrl = useMemo(
-    () =>
-      buildTallyShareUrl(
-        source,
-        resolvedOriginPage,
-        new URLSearchParams(queryString),
-      ),
-    [queryString, resolvedOriginPage, source],
-  );
+  const [email, setEmail] = useState("");
+  const [status, setStatus] = useState<
+    "idle" | "submitting" | "success" | "already" | "error"
+  >(() => (typeof window !== "undefined" && hasWaitlistSubmission() ? "already" : "idle"));
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
+  // IntersectionObserver: fire backend "view" + analytics view-event when the
+  // card is at least 55% on-screen.
   useEffect(() => {
     if (!trackView || !cardRef.current || viewTrackedRef.current) {
       return;
@@ -54,8 +58,8 @@ export function WaitlistCapture({
         if (!entry.isIntersecting || viewTrackedRef.current) {
           return;
         }
-
         viewTrackedRef.current = true;
+        recordWaitlistView(source);
         trackEvent("waitlist_inline_view", {
           source,
           originPage: resolvedOriginPage,
@@ -69,16 +73,49 @@ export function WaitlistCapture({
     return () => observer.disconnect();
   }, [resolvedOriginPage, source, trackView]);
 
-  const trackCtaClick = () => {
-    if (ctaTrackedRef.current) {
+  const handleInput = (value: string) => {
+    setEmail(value);
+    if (status === "error") setStatus("idle");
+    if (errorMsg) setErrorMsg(null);
+    if (!startedRef.current && value.length > 0) {
+      startedRef.current = true;
+      recordWaitlistStart(source);
+    }
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!ctaTrackedRef.current) {
+      ctaTrackedRef.current = true;
+      trackEvent("waitlist_cta_click", {
+        source,
+        originPage: resolvedOriginPage,
+      });
+    }
+
+    const trimmed = email.trim();
+    if (!EMAIL_RE.test(trimmed)) {
+      setStatus("error");
+      setErrorMsg("Enter a valid email.");
       return;
     }
 
-    ctaTrackedRef.current = true;
-    trackEvent("waitlist_cta_click", {
-      source,
-      originPage: resolvedOriginPage,
-    });
+    setStatus("submitting");
+    const result = await submitWaitlistEmail(trimmed, source);
+    if (!result.ok) {
+      setStatus("error");
+      setErrorMsg("Something went wrong. Please try again.");
+      return;
+    }
+
+    markWaitlistSubmitted(source, "");
+    if (result.alreadyOnList) {
+      setStatus("already");
+      trackEvent("waitlist_submit_duplicate", { source, originPage: resolvedOriginPage });
+    } else {
+      setStatus("success");
+      trackEvent("waitlist_submit_success", { source, originPage: resolvedOriginPage });
+    }
   };
 
   return (
@@ -127,23 +164,61 @@ export function WaitlistCapture({
             Hosted version coming soon
           </p>
 
-          <p className="text-text-secondary font-body-serif leading-relaxed mb-5">
-            Get launch updates and early access when Cabinet Cloud is ready.
-          </p>
-
-          {IS_TALLY_WAITLIST_CONFIGURED ? (
-            <a
-              href={ctaUrl}
-              onClick={trackCtaClick}
-              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-accent px-6 py-3.5 text-white font-medium transition-all shadow-sm hover:bg-accent-warm"
-            >
-              {WAITLIST_COPY.button}
-              <ArrowRight className="h-4 w-4" />
-            </a>
-          ) : (
-            <div className="rounded-xl border border-dashed border-border-dark bg-accent-bg-subtle px-4 py-4 text-sm text-text-secondary leading-relaxed">
-              Add your published Tally form URL to <code className="font-code text-xs text-accent">NEXT_PUBLIC_TALLY_WAITLIST_FORM_URL</code> to activate the waitlist.
+          {status === "success" || status === "already" ? (
+            <div className="rounded-xl border border-accent/40 bg-accent-bg-subtle px-4 py-4 text-text-primary leading-relaxed">
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
+                <div className="text-sm">
+                  {status === "already"
+                    ? "You're already on the list — we'll be in touch as soon as Cabinet Cloud opens up."
+                    : "You're on the list. We'll email you when Cabinet Cloud opens up."}
+                </div>
+              </div>
             </div>
+          ) : (
+            <>
+              <p className="text-text-secondary font-body-serif leading-relaxed mb-5">
+                Get launch updates and early access when Cabinet Cloud is ready.
+              </p>
+
+              <form onSubmit={handleSubmit} className="flex flex-col gap-3">
+                <label className="sr-only" htmlFor={`waitlist-email-${source}`}>
+                  Email
+                </label>
+                <input
+                  id={`waitlist-email-${source}`}
+                  type="email"
+                  inputMode="email"
+                  autoComplete="email"
+                  required
+                  placeholder="you@company.com"
+                  value={email}
+                  onChange={(e) => handleInput(e.target.value)}
+                  disabled={status === "submitting"}
+                  className={`h-12 w-full rounded-full border bg-white px-5 text-[15px] text-text-primary outline-none transition-colors placeholder:text-text-tertiary focus:border-accent focus:ring-2 focus:ring-accent/20 ${status === "error" ? "border-red-500" : "border-border-dark/70"}`}
+                />
+                <button
+                  type="submit"
+                  disabled={status === "submitting" || email.trim().length === 0}
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-accent px-6 py-3.5 text-white font-medium transition-all shadow-sm hover:bg-accent-warm disabled:opacity-60"
+                >
+                  {status === "submitting" ? (
+                    <>
+                      <Loader2 className="h-4 w-4 animate-spin" />
+                      Sending…
+                    </>
+                  ) : (
+                    <>
+                      {WAITLIST_COPY.button}
+                      <ArrowRight className="h-4 w-4" />
+                    </>
+                  )}
+                </button>
+                {errorMsg && (
+                  <p className="text-xs text-red-600">{errorMsg}</p>
+                )}
+              </form>
+            </>
           )}
 
           <p className="mt-4 text-xs text-text-tertiary font-code">
