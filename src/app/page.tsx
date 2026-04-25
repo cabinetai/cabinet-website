@@ -31,6 +31,7 @@ import {
   AppWindow,
   FileType,
   Copy,
+  Cloud,
 } from "lucide-react";
 import { Suspense, useState, useEffect, useRef, useCallback } from "react";
 import { DiscordIcon, GithubIcon } from "@/components/site-icons";
@@ -1752,7 +1753,13 @@ export default function Home() {
                 <li><a href="#features" className="text-text-secondary hover:text-text-primary transition-colors">Features</a></li>
                 <li><a href="#agents" className="text-text-secondary hover:text-text-primary transition-colors">AI Agents</a></li>
                 <li><a href="#compare" className="text-text-secondary hover:text-text-primary transition-colors">Compare</a></li>
-
+                <li>
+                  <a href="/cloud?source=footer" className="inline-flex items-center gap-1.5 text-text-secondary hover:text-text-primary transition-colors">
+                    <Cloud className="w-3.5 h-3.5 text-accent" />
+                    Cabinet Cloud
+                    <span className="ml-1 rounded-full bg-accent-bg-subtle px-1.5 py-0.5 text-[10px] font-code uppercase tracking-wider text-accent">Soon</span>
+                  </a>
+                </li>
               </ul>
             </div>
             <div>
