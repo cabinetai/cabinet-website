@@ -43,8 +43,14 @@ export function WaitlistCapture({
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<
     "idle" | "submitting" | "success" | "already" | "error"
-  >(() => (typeof window !== "undefined" && hasWaitlistSubmission() ? "already" : "idle"));
+  >("idle");
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
+
+  // localStorage is unavailable during SSR, so reading it in the initial state
+  // causes a hydration mismatch. Read it once after mount instead.
+  useEffect(() => {
+    if (hasWaitlistSubmission()) setStatus("already");
+  }, []);
 
   // IntersectionObserver: fire backend "view" + analytics view-event when the
   // card is at least 55% on-screen.
