@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
-import { buildTallyShareUrl } from "@/lib/waitlist";
 
 export const metadata: Metadata = {
   title: "Cabinet Cloud Waitlist",
@@ -11,6 +10,8 @@ export const metadata: Metadata = {
   },
 };
 
+// Inbound /waitlist links (e.g. shared on Discord) drop the visitor on the
+// /cloud page where the inline waitlist form lives.
 export default function WaitlistPage() {
-  redirect(buildTallyShareUrl("waitlist-link", "/waitlist"));
+  redirect("/cloud?source=waitlist-link#join-waitlist");
 }

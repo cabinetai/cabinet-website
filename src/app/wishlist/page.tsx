@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
-import { buildTallyShareUrl } from "@/lib/waitlist";
 
 export const metadata: Metadata = {
   title: "Cabinet Cloud Wishlist",
@@ -11,6 +10,7 @@ export const metadata: Metadata = {
   },
 };
 
+// Inbound /wishlist links go to the same self-hosted waitlist form on /cloud.
 export default function WishlistPage() {
-  redirect(buildTallyShareUrl("wishlist-link", "/wishlist"));
+  redirect("/cloud?source=wishlist-link#join-waitlist");
 }
