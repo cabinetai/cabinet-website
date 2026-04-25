@@ -1,26 +1,31 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Suspense } from "react";
-import { ArrowRight, Check, MessageSquare } from "lucide-react";
+import { ArrowRight, Check, Cloud, MessageSquare } from "lucide-react";
 import { DiscordIcon, GithubIcon } from "@/components/site-icons";
-import { WaitlistCapture } from "@/components/waitlist-capture";
+import { CloudHeroWaitlist } from "@/components/cloud-hero-waitlist";
+import { WaitlistCloudBackdrop } from "@/components/waitlist-cloud-backdrop";
 import { DISCORD_URL, GITHUB_URL } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "Cabinet Cloud — Join the Waitlist",
   description:
-    "Join the Cabinet Cloud waitlist for the hosted version of Cabinet. No setup, automatic updates, and priority access for early supporters.",
+    "Cabinet Cloud is coming. Connect to your Cabinet from anywhere while your AI team works 24/7 — no setup, automatic updates, priority access for early supporters.",
 };
 
 export default function CloudPage() {
   return (
     <main className="min-h-screen bg-bg">
       <section className="relative py-20 md:py-28 dot-grid overflow-hidden">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="text-center max-w-3xl mx-auto mb-12">
+        <div className="pointer-events-none absolute inset-0 opacity-90">
+          <WaitlistCloudBackdrop />
+        </div>
+
+        <div className="relative z-[1] max-w-5xl mx-auto px-6">
+          <div className="text-center max-w-3xl mx-auto mb-10">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-border bg-bg-card text-xs font-code text-text-tertiary mb-8">
-              <MessageSquare className="w-3.5 h-3.5 text-accent" />
-              hosted version coming soon
+              <Cloud className="w-3.5 h-3.5 text-accent" />
+              Cabinet Cloud — coming soon
             </div>
 
             <Image
@@ -32,49 +37,52 @@ export default function CloudPage() {
             />
 
             <h1 className="text-4xl md:text-5xl font-display text-text-primary tracking-tight leading-[1.05] mb-5">
-              Cabinet Cloud
+              Your Cabinet, anywhere.
               <br />
-              <span className="italic gradient-text">without the setup friction</span>
+              <span className="italic gradient-text">Your AI team, always on.</span>
             </h1>
 
-            <p className="text-lg text-text-secondary font-body-serif leading-relaxed mb-10">
-              Same Cabinet idea, but hosted for you. Join the waitlist if you want the knowledge base, agents, and updates without running it yourself.
+            <p className="text-lg text-text-secondary font-body-serif leading-relaxed">
+              Open your Cabinet from any device while your AI agents keep working —
+              drafting, researching, organizing — even when your laptop is closed.
             </p>
           </div>
 
           <Suspense
             fallback={
-              <div className="max-w-2xl mx-auto mb-12 dict-card px-6 py-6 md:px-8 md:py-7 min-h-[320px]" />
+              <div className="max-w-xl mx-auto mb-14 h-[160px] rounded-[28px] border border-border bg-bg-card/50" />
             }
           >
-            <WaitlistCapture
+            <CloudHeroWaitlist
               source="cloud-page"
               originPage="/cloud"
-              trackView
-              className="max-w-2xl mx-auto mb-12"
+              className="max-w-xl mx-auto mb-14"
             />
           </Suspense>
 
           <div className="grid md:grid-cols-3 gap-4 max-w-5xl mx-auto mb-12">
             <div className="rounded-xl border border-border bg-bg-card p-6">
               <Check className="w-5 h-5 text-accent mb-3" />
-              <h2 className="font-display text-xl text-text-primary mb-2">No local setup</h2>
+              <h2 className="font-display text-xl text-text-primary mb-2">Connect from anywhere</h2>
               <p className="text-sm text-text-secondary leading-relaxed">
-                Skip self-hosting when you just want to start using Cabinet right away.
+                One Cabinet across phone, laptop, and browser. Pick up exactly where
+                you left off, no setup required.
               </p>
             </div>
             <div className="rounded-xl border border-border bg-bg-card p-6">
               <Check className="w-5 h-5 text-accent mb-3" />
-              <h2 className="font-display text-xl text-text-primary mb-2">Automatic updates</h2>
+              <h2 className="font-display text-xl text-text-primary mb-2">Agents that don&apos;t sleep</h2>
               <p className="text-sm text-text-secondary leading-relaxed">
-                Get new capabilities and improvements without managing the deployment yourself.
+                Your AI team keeps running 24/7 in the background. Wake up to drafts
+                written, inboxes triaged, and research done.
               </p>
             </div>
             <div className="rounded-xl border border-border bg-bg-card p-6">
               <Check className="w-5 h-5 text-accent mb-3" />
               <h2 className="font-display text-xl text-text-primary mb-2">Priority access</h2>
               <p className="text-sm text-text-secondary leading-relaxed">
-                First 500 early supporters get priority access when Cabinet Cloud opens up.
+                First 500 early supporters get priority access when Cabinet Cloud
+                opens up.
               </p>
             </div>
           </div>
