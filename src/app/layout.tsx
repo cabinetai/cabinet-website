@@ -78,13 +78,6 @@ export default function RootLayout({
             gtag('config', 'G-4L81D0BVTP');
           `}
         </Script>
-        {/* Tally widget is still loaded for the Mac-download modal (form PdYKQd).
-            The Cabinet Cloud waitlist no longer goes through Tally — it posts
-            to reports.runcabinet.com via lib/waitlist-client.ts. */}
-        <Script
-          src="https://tally.so/widgets/embed.js"
-          strategy="afterInteractive"
-        />
       </head>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

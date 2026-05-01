@@ -1,5 +1,7 @@
 export const DISCORD_URL = "https://discord.gg/hJa5TRTbTH";
 export const GITHUB_URL = "https://github.com/hilash/cabinet";
+export const MACOS_DOWNLOAD_URL =
+  "https://github.com/hilash/cabinet/releases/download/v0.4.3/Cabinet-0.4.3-arm64.dmg";
 
 // Replace this with your published Tally share URL, or set NEXT_PUBLIC_TALLY_WAITLIST_FORM_URL at build time.
 export const TALLY_WAITLIST_FORM_URL =
