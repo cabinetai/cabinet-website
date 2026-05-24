@@ -50,15 +50,25 @@ export default function CloudPage() {
 
           <Suspense
             fallback={
-              <div className="max-w-xl mx-auto mb-14 h-[160px] rounded-[28px] border border-border bg-bg-card/50" />
+              <div className="max-w-xl mx-auto mb-6 h-[160px] rounded-[28px] border border-border bg-bg-card/50" />
             }
           >
             <CloudHeroWaitlist
               source="cloud-page"
               originPage="/cloud"
-              className="max-w-xl mx-auto mb-14"
+              className="max-w-xl mx-auto mb-6"
             />
           </Suspense>
+
+          <p className="mb-12 text-center text-sm text-text-tertiary font-code">
+            <a
+              href="/pricing"
+              className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-text-primary transition-colors"
+            >
+              See pricing
+              <ArrowRight className="h-3 w-3" />
+            </a>
+          </p>
 
           <div className="grid md:grid-cols-3 gap-4 max-w-5xl mx-auto mb-12">
             <div className="rounded-xl border border-border bg-bg-card p-6">

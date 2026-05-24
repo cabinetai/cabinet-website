@@ -6,7 +6,11 @@ export type WaitlistSource =
   | "popup"
   | "cloud-page"
   | "waitlist-link"
-  | "wishlist-link";
+  | "wishlist-link"
+  | "pricing-pro"
+  | "pricing-max"
+  | "pricing-team-early"
+  | "pricing-enterprise";
 
 export const WAITLIST_STORAGE_KEYS = {
   submitted: "cabinet.waitlist.submitted",

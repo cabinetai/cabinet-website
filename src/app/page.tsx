@@ -139,14 +139,19 @@ function Navbar({ stars }: { stars: number | null }) {
           <a href="#features" className="hover:text-text-primary transition-colors">
             Features
           </a>
-          <a href="#karpathy" className="hover:text-text-primary transition-colors">
-            Why Now
-          </a>
           <a href="#compare" className="hover:text-text-primary transition-colors">
             Compare
           </a>
-          <a href="#agents" className="hover:text-text-primary transition-colors">
-            AI Agents
+          <a href="/pricing" className="hover:text-text-primary transition-colors">
+            Pricing
+          </a>
+          <a
+            href="https://docs.runcabinet.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-text-primary transition-colors"
+          >
+            Docs
           </a>
           <a href="/media" className="hover:text-text-primary transition-colors">
             In the Wild
@@ -1711,6 +1716,7 @@ export default function Home() {
                     <span className="ml-1 rounded-full bg-accent-bg-subtle px-1.5 py-0.5 text-[10px] font-code uppercase tracking-wider text-accent">Soon</span>
                   </a>
                 </li>
+                <li><a href="/pricing" className="text-text-secondary hover:text-text-primary transition-colors">Pricing</a></li>
               </ul>
             </div>
             <div>

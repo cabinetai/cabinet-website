@@ -25,6 +25,13 @@
   --border: #E8DDD0;
   --border-light: #F0E8DD;
   --border-dark: #D4C4B0;
+
+  /* Sage green — secondary accent for "good / included / coming soon" */
+  --green: #5A7A4F;
+  --green-warm: #4A6A41;
+  --green-light: #7A9A6F;
+  --green-bg: #E8F0E3;
+  --green-bg-subtle: #F1F6EC;
 }
 
 @theme inline {
@@ -45,6 +52,11 @@
   --color-border: var(--border);
   --color-border-light: var(--border-light);
   --color-border-dark: var(--border-dark);
+  --color-green: var(--green);
+  --color-green-warm: var(--green-warm);
+  --color-green-light: var(--green-light);
+  --color-green-bg: var(--green-bg);
+  --color-green-bg-subtle: var(--green-bg-subtle);
   --font-sans: var(--font-inter);
   --font-serif: var(--font-body-serif);
   --font-display: var(--font-display);

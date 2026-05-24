@@ -53,11 +53,31 @@ export type WaitlistSubmitResult =
   | { ok: true; alreadyOnList: boolean }
   | { ok: false; error: string };
 
+export type PricingTier = "pro" | "max" | "team-early" | "enterprise";
+export type WaitlistAddOn = "managed-ai" | "multi-seat-interest";
+
+export type WaitlistSubmitOptions = {
+  tier?: PricingTier;
+  addOns?: WaitlistAddOn[];
+  message?: string;
+};
+
 export async function submitWaitlistEmail(
   email: string,
   source: string,
+  options?: WaitlistSubmitOptions,
 ): Promise<WaitlistSubmitResult> {
-  const res = await postJson("/waitlist", { email, source, visitId: getVisitId() });
+  const payload: Record<string, unknown> = {
+    email,
+    source,
+    visitId: getVisitId(),
+  };
+  if (options?.tier) payload.tier = options.tier;
+  if (options?.addOns && options.addOns.length > 0) payload.addOns = options.addOns;
+  if (options?.message && options.message.trim().length > 0) {
+    payload.message = options.message.trim();
+  }
+  const res = await postJson("/waitlist", payload);
   if (!res) return { ok: false, error: "network" };
   if (!res.ok) return { ok: false, error: "status_" + res.status };
   try {

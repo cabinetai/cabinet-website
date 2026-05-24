@@ -72,14 +72,19 @@ export function SiteNavbar() {
           <a href="/#features" className="hover:text-text-primary transition-colors">
             Features
           </a>
-          <a href="/#karpathy" className="hover:text-text-primary transition-colors">
-            Why Now
-          </a>
           <a href="/#compare" className="hover:text-text-primary transition-colors">
             Compare
           </a>
-          <a href="/#agents" className="hover:text-text-primary transition-colors">
-            AI Agents
+          <a href="/pricing" className="hover:text-text-primary transition-colors">
+            Pricing
+          </a>
+          <a
+            href="https://docs.runcabinet.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-text-primary transition-colors"
+          >
+            Docs
           </a>
           <a href="/media" className="text-text-primary transition-colors">
             In the Wild
