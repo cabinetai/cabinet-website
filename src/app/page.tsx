@@ -1444,6 +1444,26 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ─── Featured in (real press + live OSS proof) ─── */}
+      <section className="border-t border-border bg-bg-card py-8">
+        <div className="mx-auto flex max-w-6xl flex-col items-center justify-center gap-x-10 gap-y-3 px-6 text-text-tertiary sm:flex-row">
+          <span className="font-code text-xs uppercase tracking-widest">Featured in</span>
+          <a href="/media" className="font-display text-lg text-text-secondary transition-colors hover:text-text-primary">
+            SyntaxGTM
+          </a>
+          <a href="/media" className="font-display text-lg text-text-secondary transition-colors hover:text-text-primary">
+            Do Not Churn
+          </a>
+          <span className="hidden h-4 w-px bg-border sm:block" />
+          <span className="font-code text-sm">
+            {stars ? `${stars.toLocaleString()} ★ on GitHub` : "Open source"}
+          </span>
+          <a href="/media" className="font-code text-xs text-accent transition-colors hover:text-accent-warm">
+            See all coverage →
+          </a>
+        </div>
+      </section>
+
       {/* ─── Testimonials ─── */}
       <section className="relative overflow-hidden border-t border-border bg-bg-warm py-24">
         {/* soft accent wash */}
