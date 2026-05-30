@@ -42,7 +42,7 @@ import { WaitlistPopup } from "@/components/waitlist-popup";
 import { IntegrationScene } from "@/components/integration-scene";
 import { PrinciplesShowcase } from "@/components/principles-showcase";
 import { SolutionsMenu } from "@/components/solutions-menu";
-import { SOLUTIONS } from "@/lib/solutions";
+import { SOLUTIONS, SOLUTION_STORIES } from "@/lib/solutions";
 import { DISCORD_URL, GITHUB_URL, MACOS_DOWNLOAD_URL } from "@/lib/site-config";
 
 const PROVIDERS = [
@@ -1574,6 +1574,64 @@ export default function Home() {
               );
             })}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── Customer stories (illustrative) ─── */}
+      <section className="py-24 border-t border-border bg-bg">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="mb-3 flex items-center justify-center gap-2">
+            <p className="section-label">Customer stories</p>
+            <span className="rounded-full bg-bg-card px-2.5 py-0.5 font-code text-[10px] uppercase tracking-wider text-text-tertiary ring-1 ring-border-light">
+              Illustrative
+            </span>
+          </div>
+          <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4 text-center">
+            What teams ship with Cabinet
+          </h2>
+          <p className="text-text-secondary max-w-2xl mx-auto font-body-serif leading-relaxed mb-12 text-center">
+            Anonymized scenarios that mirror how teams put an AI crew to work. Real,
+            named case studies land here as teams go public.
+          </p>
+          <div className="grid md:grid-cols-3 gap-5 max-w-5xl mx-auto">
+            {["sales", "marketing", "founders"].map((slug) => {
+              const s = SOLUTION_STORIES[slug];
+              return (
+                <div key={slug} className="flex flex-col rounded-2xl border border-border bg-bg-card p-7 card-hover">
+                  <div className="font-display text-4xl tracking-tight text-accent">{s.metric}</div>
+                  <p className="mt-1.5 text-sm text-text-secondary font-body-serif">{s.metricLabel}</p>
+                  <blockquote className="mt-5 flex-1 font-body-serif leading-relaxed text-text-secondary">
+                    &ldquo;{s.quote}&rdquo;
+                  </blockquote>
+                  <p className="mt-4 font-code text-xs text-text-tertiary">{s.attribution}</p>
+                </div>
+              );
+            })}
+          </div>
+
+          {/* logo wall — placeholder tiles; swap in real customer logos as teams go public */}
+          <div className="mt-14">
+            <p className="mb-6 text-center font-code text-xs uppercase tracking-widest text-text-tertiary">
+              Teams building on Cabinet
+            </p>
+            <div className="mx-auto grid max-w-4xl grid-cols-2 gap-3 opacity-70 sm:grid-cols-3 lg:grid-cols-6">
+              {Array.from({ length: 6 }).map((_, i) => (
+                <div
+                  key={i}
+                  className="flex h-14 items-center justify-center rounded-xl border border-dashed border-border bg-bg-card"
+                >
+                  <span className="font-code text-[11px] text-text-muted">Your logo</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-5 text-center text-sm text-text-tertiary font-body-serif">
+              Using Cabinet at work?{" "}
+              <a href="/demo" className="text-accent underline underline-offset-2 hover:text-accent-warm">
+                Tell us your story
+              </a>
+              .
+            </p>
           </div>
         </div>
       </section>

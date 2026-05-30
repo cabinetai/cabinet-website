@@ -266,3 +266,55 @@ export const SOLUTIONS: Solution[] = [
 export function getSolution(slug: string): Solution | undefined {
   return SOLUTIONS.find((s) => s.slug === slug);
 }
+
+/**
+ * Illustrative customer stories per role — anonymized personas, not real named
+ * customers. Shown with an "illustrative" tag (same convention as the docs
+ * Stories page) and swapped for real, named case studies as they land.
+ */
+export type Story = { metric: string; metricLabel: string; quote: string; attribution: string };
+
+export const SOLUTION_STORIES: Record<string, Story> = {
+  sales: {
+    metric: "8 hrs",
+    metricLabel: "reclaimed per rep each week",
+    quote:
+      "Our reps stopped living in tabs. The SDR agent enriches and drafts overnight, so mornings start with reviewing, not researching.",
+    attribution: "VP Sales · Series B SaaS",
+  },
+  marketing: {
+    metric: "4×",
+    metricLabel: "more publish-ready drafts per week",
+    quote:
+      "Brand voice finally lives in a file instead of someone's head. New hires ship on-brand from day one, and the weekly recap writes itself.",
+    attribution: "Head of Marketing · DevTools company",
+  },
+  engineering: {
+    metric: "100%",
+    metricLabel: "of incidents now get a retro",
+    quote:
+      "Docs used to rot the moment code changed. Now an agent flags the drift and drafts the retro — we just edit and ship.",
+    attribution: "Staff Engineer · Fintech platform",
+  },
+  product: {
+    metric: "1 place",
+    metricLabel: "for every customer signal",
+    quote:
+      "Interviews, tickets, and feedback land as themes with quotes attached. Prioritization runs on evidence now, not the loudest voice.",
+    attribution: "Director of Product · B2B marketplace",
+  },
+  operations: {
+    metric: "Hours → mins",
+    metricLabel: "on the monthly board packet",
+    quote:
+      "The recurring work that used to live in my head is documented and scheduled. The packet assembles itself from the source exports.",
+    attribution: "Head of Ops · Scale-up",
+  },
+  founders: {
+    metric: "Self-hosted",
+    metricLabel: "crown-jewel data never leaves",
+    quote:
+      "It's the chief of staff I couldn't hire yet — it briefs me every morning and drafts the board update, all on infrastructure I control.",
+    attribution: "Founder & CEO · Seed-stage startup",
+  },
+};

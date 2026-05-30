@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 import { SiteNavbar } from "@/components/site-navbar";
 import { GITHUB_URL } from "@/lib/site-config";
-import { SOLUTIONS, type Solution } from "@/lib/solutions";
+import { SOLUTIONS, SOLUTION_STORIES, type Solution } from "@/lib/solutions";
 
 // The three claims only Cabinet can make — shown on every solution page so the
 // ownership/agentic wedge lands no matter which role page a buyer enters on.
@@ -35,6 +35,7 @@ const WEDGE = [
 export function SolutionTemplate({ solution }: { solution: Solution }) {
   const Icon = solution.icon;
   const others = SOLUTIONS.filter((s) => s.slug !== solution.slug);
+  const story = SOLUTION_STORIES[solution.slug];
 
   return (
     <main className="min-h-screen bg-bg">
@@ -222,17 +223,29 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
         </div>
       </section>
 
-      {/* ─── Testimonial placeholder ─── */}
+      {/* ─── Story (illustrative) ─── */}
       <section className="border-b border-border bg-bg-warm py-20">
-        <div className="mx-auto max-w-3xl px-6 text-center">
-          <p className="section-label mb-6">From the field</p>
-          <blockquote className="font-display text-2xl leading-snug tracking-tight text-text-primary md:text-3xl">
-            &ldquo;Placeholder for a {solution.label} leader quote — the kind of named,
-            specific proof that closes the deal.&rdquo;
-          </blockquote>
-          <p className="mt-5 font-code text-sm text-text-tertiary">
-            Add a real customer story here.
-          </p>
+        <div className="mx-auto max-w-4xl px-6">
+          <div className="flex items-center justify-center gap-2">
+            <p className="section-label">From the field</p>
+            <span className="rounded-full bg-bg-card px-2.5 py-0.5 font-code text-[10px] uppercase tracking-wider text-text-tertiary ring-1 ring-border-light">
+              Illustrative
+            </span>
+          </div>
+          <div className="mt-8 grid items-center gap-8 rounded-2xl border border-border bg-bg-card p-8 sm:p-10 md:grid-cols-[200px_1fr]">
+            <div className="text-center md:text-left">
+              <div className="font-display text-5xl tracking-tight text-accent">{story.metric}</div>
+              <p className="mt-2 font-body-serif text-sm leading-relaxed text-text-secondary">
+                {story.metricLabel}
+              </p>
+            </div>
+            <div>
+              <blockquote className="font-display text-xl leading-snug tracking-tight text-text-primary md:text-2xl">
+                &ldquo;{story.quote}&rdquo;
+              </blockquote>
+              <p className="mt-4 font-code text-sm text-text-tertiary">{story.attribution}</p>
+            </div>
+          </div>
         </div>
       </section>
 
