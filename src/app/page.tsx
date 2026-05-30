@@ -3,6 +3,7 @@
 import Image from "next/image";
 import {
   Bot,
+  Cpu,
   FolderTree,
   Terminal,
   GitBranch,
@@ -1371,6 +1372,54 @@ export default function Home() {
               ]}
             />
           </p>
+        </div>
+      </section>
+
+      {/* ─── Why Cabinet (differentiator triad) ─── */}
+      <section className="py-24 border-t border-border bg-bg">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <p className="section-label mb-3">Why Cabinet</p>
+            <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
+              The only AI workspace you actually own
+            </h2>
+            <p className="text-text-secondary max-w-2xl mx-auto font-body-serif leading-relaxed">
+              Search tools find. Chatbots answer. Cabinet does the work — on your
+              files, your models, your infrastructure.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-5 max-w-5xl mx-auto">
+            <div className="rounded-2xl border border-border bg-bg-card p-7 card-hover">
+              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent-bg text-accent mb-5">
+                <FileText className="h-5 w-5" />
+              </div>
+              <h3 className="font-display text-lg text-text-primary mb-2">Your work lives on disk</h3>
+              <p className="text-sm text-text-secondary font-body-serif leading-relaxed">
+                Everything is Markdown in a folder you own. Grep it, git it, back it up.
+                No export, no lock-in — unlike a cloud wiki holding your knowledge hostage.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-border bg-bg-card p-7 card-hover">
+              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent-bg text-accent mb-5">
+                <Cpu className="h-5 w-5" />
+              </div>
+              <h3 className="font-display text-lg text-text-primary mb-2">Bring your own AI</h3>
+              <p className="text-sm text-text-secondary font-body-serif leading-relaxed">
+                Cabinet routes to the model accounts you already pay for. No bundled
+                inference marked up on top, no new AI vendor to push through procurement.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-border bg-bg-card p-7 card-hover">
+              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent-bg text-accent mb-5">
+                <Bot className="h-5 w-5" />
+              </div>
+              <h3 className="font-display text-lg text-text-primary mb-2">Agents that do the work</h3>
+              <p className="text-sm text-text-secondary font-body-serif leading-relaxed">
+                Not just search and chat. A team of agents researches, drafts, and ships
+                on a schedule — 24/7, whether or not anyone&apos;s online.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
