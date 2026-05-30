@@ -106,22 +106,26 @@ export function PrinciplesShowcase() {
                 type="button"
                 onClick={() => handleClick(i)}
                 aria-expanded={isOpen}
-                className={`group relative flex aspect-square cursor-pointer flex-col items-center justify-center gap-4 border-b border-r border-border p-4 text-center transition-colors ${
-                  isOpen
-                    ? "z-10 bg-accent-bg-subtle ring-2 ring-inset ring-accent"
-                    : "hover:bg-bg-card-hover"
+                className={`group relative flex aspect-square cursor-pointer flex-col items-center justify-center overflow-hidden border-b border-r border-border p-5 text-center transition-colors ${
+                  isOpen ? `z-10 ${p.iconBg}` : "hover:bg-bg-card-hover"
                 }`}
               >
-                <div
-                  className={`flex h-16 w-16 items-center justify-center rounded-2xl ${p.iconBg} shadow-sm transition-transform duration-200 ease-out group-hover:-translate-y-0.5 group-hover:scale-105`}
-                >
-                  <Icon className={`h-8 w-8 ${p.iconFg}`} strokeWidth={2.25} />
-                </div>
-                <div className="min-w-0">
+                {/* the icon itself, oversized and heavily blurred → an ambient
+                    colour wash behind the label (replaces the old chip) */}
+                <Icon
+                  aria-hidden
+                  strokeWidth={2}
+                  className={`pointer-events-none absolute left-1/2 top-1/2 h-28 w-28 -translate-x-1/2 -translate-y-1/2 ${p.iconFg} blur-sm transition-all duration-300 ${
+                    isOpen
+                      ? "scale-110 opacity-55"
+                      : "opacity-30 group-hover:scale-105 group-hover:opacity-45"
+                  }`}
+                />
+                <div className="relative z-10 min-w-0">
                   <h3 className="font-display text-base leading-tight text-text-primary">
                     {p.name}
                   </h3>
-                  <p className="mt-1 text-xs leading-snug text-text-secondary">
+                  <p className="mt-1.5 text-xs leading-snug text-text-secondary">
                     {p.tagline}
                   </p>
                 </div>

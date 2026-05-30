@@ -30,6 +30,9 @@ import {
   FileType,
   Copy,
   Cloud,
+  ShieldCheck,
+  Server,
+  Lock,
 } from "lucide-react";
 import { Suspense, useState, useEffect, useRef, useCallback } from "react";
 import { DiscordIcon, GithubIcon } from "@/components/site-icons";
@@ -37,7 +40,43 @@ import { WaitlistCapture } from "@/components/waitlist-capture";
 import { WaitlistCloudBackdrop } from "@/components/waitlist-cloud-backdrop";
 import { WaitlistPopup } from "@/components/waitlist-popup";
 import { IntegrationScene } from "@/components/integration-scene";
+import { PrinciplesShowcase } from "@/components/principles-showcase";
 import { DISCORD_URL, GITHUB_URL, MACOS_DOWNLOAD_URL } from "@/lib/site-config";
+
+const PROVIDERS = [
+  { src: "/providers/claude.svg", name: "Claude" },
+  { src: "/providers/openai.png", name: "OpenAI" },
+  { src: "/providers/gemini.svg", name: "Gemini" },
+  { src: "/providers/grok.svg", name: "Grok" },
+  { src: "/providers/copilot.svg", name: "Copilot" },
+  { src: "/providers/cursor.svg", name: "Cursor" },
+  { src: "/providers/opencode.svg", name: "opencode" },
+  { src: "/providers/pi.svg", name: "Pi" },
+];
+
+const TRUST_BADGES = [
+  {
+    icon: ShieldCheck,
+    label: "SOC 2 Type II",
+    status: "In progress",
+    desc: "We're working toward it — and we'll show you the report, not just a badge.",
+  },
+  {
+    icon: Code2,
+    label: "Open source",
+    desc: "MIT licensed. Read every line, fork it, or run your own build.",
+  },
+  {
+    icon: Server,
+    label: "Self-hosted",
+    desc: "Runs in your environment, under the controls you already enforce.",
+  },
+  {
+    icon: Lock,
+    label: "Not training data",
+    desc: "Your prompts and content are never used to train a model.",
+  },
+];
 
 type GitHubRepoResponse = {
   stargazers_count?: number;
@@ -1213,42 +1252,6 @@ export default function Home() {
       {/* ─── Integration scrollytelling scene ─── */}
       <IntegrationScene />
 
-      {/* ─── Bring your own AI ─── */}
-      <section className="border-y border-border py-12 bg-bg-card">
-        <div className="max-w-5xl mx-auto px-6 text-center">
-          <p className="text-sm md:text-[15px] font-medium text-text-secondary mb-9">
-            Bring your own AI — Cabinet runs on the agents you already use
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6">
-            {[
-              { src: "/providers/claude.svg", name: "Claude" },
-              { src: "/providers/openai.png", name: "OpenAI" },
-              { src: "/providers/gemini.svg", name: "Gemini" },
-              { src: "/providers/grok.svg", name: "Grok" },
-              { src: "/providers/copilot.svg", name: "Copilot" },
-              { src: "/providers/cursor.svg", name: "Cursor" },
-              { src: "/providers/opencode.svg", name: "opencode" },
-              { src: "/providers/pi.svg", name: "Pi" },
-            ].map((p) => (
-              <div
-                key={p.name}
-                className="flex items-center gap-2.5 opacity-75 hover:opacity-100 transition-opacity"
-              >
-                <Image
-                  src={p.src}
-                  alt={p.name}
-                  width={26}
-                  height={26}
-                  className="object-contain"
-                  style={{ width: 26, height: 26 }}
-                />
-                <span className="text-sm font-medium text-text-secondary">{p.name}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ─── Hero ─── */}
       <section className="relative flex items-center justify-center dot-grid overflow-hidden">
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center pt-24 pb-12">
@@ -1374,6 +1377,44 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ─── Bring your own AI — provider logos ─── */}
+      <section id="byoai" className="py-24 border-t border-border bg-bg-card">
+        <div className="max-w-5xl mx-auto px-6 text-center">
+          <p className="section-label mb-3">Bring your own AI</p>
+          <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
+            Works with the AI you already pay for
+          </h2>
+          <p className="text-text-secondary max-w-2xl mx-auto font-body-serif leading-relaxed mb-12">
+            Cabinet runs on your existing model accounts and subscriptions. There&apos;s
+            no bundled inference marked up on top, and no new AI vendor to push through
+            procurement — point it at what your team already uses.
+          </p>
+
+          <div className="grid grid-cols-8 gap-2 sm:gap-3 max-w-4xl mx-auto">
+            {PROVIDERS.map((p) => (
+              <div key={p.name} className="group flex flex-col items-center gap-2">
+                <div className="flex aspect-square w-full items-center justify-center rounded-2xl border border-border bg-bg shadow-sm transition-all duration-200 ease-out group-hover:-translate-y-1 group-hover:scale-105 group-hover:border-border-dark group-hover:shadow-lg group-hover:bg-bg-card">
+                  <Image
+                    src={p.src}
+                    alt={p.name}
+                    width={40}
+                    height={40}
+                    className="h-6 w-6 sm:h-9 sm:w-9 object-contain transition-transform duration-200 ease-out group-hover:scale-110"
+                  />
+                </div>
+                <span className="text-[11px] sm:text-sm font-medium text-text-secondary text-center leading-tight">
+                  {p.name}
+                </span>
+              </div>
+            ))}
+          </div>
+
+          <p className="mt-10 text-sm font-code text-text-tertiary">
+            …plus local models, and whatever comes next.
+          </p>
+        </div>
+      </section>
+
       {/* ─── Social proof bar ─── */}
       <section className="border-y border-border py-8 bg-bg-card">
         <div className="max-w-6xl mx-auto px-6 flex flex-wrap items-center justify-center gap-8 md:gap-16 text-text-tertiary text-sm font-code">
@@ -1405,6 +1446,26 @@ export default function Home() {
               className="max-w-5xl mx-auto"
             />
           </Suspense>
+        </div>
+      </section>
+
+      {/* ─── Principles ─── */}
+      <section className="py-24 border-t border-border bg-bg-warm">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <p className="section-label mb-3">Principles</p>
+            <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
+              What Cabinet is <span className="italic gradient-text">built on</span>
+            </h2>
+            <p className="text-text-secondary font-body-serif leading-relaxed">
+              A few principles we think matter deeply for the future of AI + data
+              tools. Every product decision gets weighed against these.
+            </p>
+          </div>
+          <PrinciplesShowcase />
+          <p className="mt-12 text-center font-body-serif italic text-text-secondary text-lg">
+            If a feature would break any of these, it doesn&apos;t make it in.
+          </p>
         </div>
       </section>
 
@@ -1664,6 +1725,59 @@ export default function Home() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ─── Built for organizations ─── */}
+      <section className="py-24 border-t border-border bg-bg">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <p className="section-label mb-3">Built for organizations</p>
+            <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
+              Designed to clear a security review
+            </h2>
+            <p className="text-text-secondary max-w-2xl mx-auto font-body-serif leading-relaxed">
+              The people who sign off on new tools — security, legal, platform
+              owners — should come away with less to worry about, not more.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto">
+            {TRUST_BADGES.map((b) => (
+              <div
+                key={b.label}
+                className="rounded-2xl border border-border bg-bg-card p-6 card-hover"
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-accent-bg text-accent">
+                    <b.icon className="h-5 w-5" strokeWidth={2.25} />
+                  </div>
+                  {b.status && (
+                    <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-100 px-2.5 py-1 text-[11px] font-semibold text-amber-700">
+                      <span className="h-1.5 w-1.5 rounded-full bg-amber-500" />
+                      {b.status}
+                    </span>
+                  )}
+                </div>
+                <h3 className="font-display text-lg text-text-primary mb-1.5">
+                  {b.label}
+                </h3>
+                <p className="text-sm text-text-secondary font-body-serif leading-relaxed">
+                  {b.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <p className="mt-10 text-center text-sm text-text-tertiary font-body-serif">
+            Questions for a vendor review?{" "}
+            <a
+              href="mailto:hi@runcabinet.com"
+              className="text-accent underline underline-offset-2 hover:text-accent-warm"
+            >
+              hi@runcabinet.com
+            </a>
+          </p>
         </div>
       </section>
 
