@@ -91,6 +91,9 @@ export function SiteNavbar() {
           <a href="/media" className="text-text-primary transition-colors">
             In the Wild
           </a>
+          <a href="/demo" className="font-semibold text-accent transition-colors hover:text-accent-warm">
+            Book a demo
+          </a>
         </div>
         <div className="ml-auto flex items-center gap-2 sm:gap-3">
           <a

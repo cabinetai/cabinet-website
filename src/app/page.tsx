@@ -257,6 +257,9 @@ function Navbar({ stars }: { stars: number | null }) {
           <a href="/media" className="hover:text-text-primary transition-colors">
             In the Wild
           </a>
+          <a href="/demo" className="font-semibold text-accent hover:text-accent-warm transition-colors">
+            Book a demo
+          </a>
         </div>
         <div className="ml-auto flex items-center gap-2 sm:gap-3">
           <GitHubStarsButton
