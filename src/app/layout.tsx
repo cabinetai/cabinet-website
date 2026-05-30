@@ -1,22 +1,23 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { Source_Serif_4, Inter, Instrument_Serif, JetBrains_Mono } from "next/font/google";
+import { Inter, Instrument_Serif, JetBrains_Mono, Stack_Sans_Notch } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
-const sourceSerif = Source_Serif_4({
-  variable: "--font-body-serif",
+// Big "Apple-style" display sans for headlines (variable weight 200–700).
+const stackSans = Stack_Sans_Notch({
+  variable: "--font-stack-notch",
   subsets: ["latin"],
-  weight: ["400", "600"],
-  style: ["normal", "italic"],
 });
 
+// Kept only for the Cabinet brand wordmark.
 const instrumentSerif = Instrument_Serif({
-  variable: "--font-display",
+  variable: "--font-brand",
   subsets: ["latin"],
   weight: "400",
   style: ["normal", "italic"],
@@ -63,7 +64,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${sourceSerif.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable} h-full antialiased`}
+      className={`${inter.variable} ${stackSans.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
       <head>
         <Script

@@ -53,7 +53,7 @@ export function EnterpriseFooter() {
                 height={32}
                 className="rounded-md"
               />
-              <span className="font-display italic text-xl text-text-primary">Cabinet</span>
+              <span className="font-brand italic text-xl text-text-primary">Cabinet</span>
             </a>
             <p className="mt-4 text-[15px] text-text-secondary leading-relaxed font-body-serif">
               The substrate for strategy execution. Open source. File-based.
