@@ -256,6 +256,136 @@ function FloatingTile({
   );
 }
 
+// Beat 2 — once everything is "in one place", labelled category streams fly
+// IN FROM THE RIGHT and get sucked into the centered Cabinet: each lane leads
+// with a big category tag, followed by example items (files, dashboards, AI
+// agents, routines), staggered down the scroll.
+type LaneItem =
+  | { kind: "label"; text: string }
+  | { kind: "file"; name: string; color: string }
+  | { kind: "dash"; accent: string }
+  | { kind: "agent"; name: string }
+  | { kind: "task"; name: string };
+
+const SUCK_LANES: { y: number; start: number; items: LaneItem[] }[] = [
+  {
+    y: -195,
+    start: 0.38,
+    items: [
+      { kind: "label", text: "Files" },
+      { kind: "file", name: "roadmap.md", color: "#8B5E3C" },
+      { kind: "file", name: "spec.md", color: "#5A7A4F" },
+      { kind: "file", name: "notes.md", color: "#3B6FB0" },
+    ],
+  },
+  {
+    y: -65,
+    start: 0.43,
+    items: [
+      { kind: "label", text: "Dashboards" },
+      { kind: "dash", accent: "#3B6FB0" },
+      { kind: "dash", accent: "#5A7A4F" },
+      { kind: "dash", accent: "#C0392B" },
+    ],
+  },
+  {
+    y: 65,
+    start: 0.48,
+    items: [
+      { kind: "label", text: "AI agents" },
+      { kind: "agent", name: "SDR" },
+      { kind: "agent", name: "Marketing Expert" },
+      { kind: "agent", name: "Researcher" },
+    ],
+  },
+  {
+    y: 195,
+    start: 0.53,
+    items: [
+      { kind: "label", text: "Routines & tasks" },
+      { kind: "task", name: "Weekly report" },
+      { kind: "task", name: "Scout Reddit" },
+      { kind: "task", name: "Nightly backup" },
+    ],
+  },
+];
+
+function LaneChip({ item }: { item: LaneItem }) {
+  switch (item.kind) {
+    case "label":
+      return (
+        <span className="inline-flex items-center whitespace-nowrap rounded-full bg-accent px-9 py-4 font-display text-4xl sm:text-5xl font-bold text-white shadow-2xl shadow-accent/30">
+          {item.text}
+        </span>
+      );
+    case "file":
+      return (
+        <span className="inline-flex items-center gap-3 rounded-xl border border-black/5 bg-white px-5 py-3.5 shadow-xl shadow-black/10">
+          <span className="h-9 w-2 shrink-0 rounded-full" style={{ background: item.color }} />
+          <span className="font-code text-2xl text-text-secondary">{item.name}</span>
+        </span>
+      );
+    case "dash":
+      return (
+        <div className="rounded-xl border border-black/5 bg-white p-3.5 shadow-xl shadow-black/10" style={{ width: 168 }}>
+          <div className="mb-2 flex items-center gap-2">
+            <span className="h-3 w-3 rounded-full" style={{ background: item.accent }} />
+            <span className="h-2 w-20 rounded bg-black/10" />
+          </div>
+          <div className="flex h-14 items-end gap-1.5">
+            {[60, 85, 45, 92, 65, 78].map((bh, i) => (
+              <span key={i} className="flex-1 rounded-sm" style={{ height: `${bh}%`, background: `${item.accent}55` }} />
+            ))}
+          </div>
+        </div>
+      );
+    case "agent":
+      return (
+        <span className="inline-flex items-center gap-3 whitespace-nowrap rounded-full bg-accent-bg-subtle px-6 py-3.5 shadow-xl shadow-accent/10 ring-1 ring-accent/20">
+          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-accent text-base font-bold text-white">AI</span>
+          <span className="font-code text-2xl font-medium text-accent-warm">{item.name}</span>
+        </span>
+      );
+    case "task":
+      return (
+        <span className="inline-flex items-center gap-3 whitespace-nowrap rounded-xl border border-black/5 bg-white px-5 py-3.5 shadow-xl shadow-black/10">
+          <span className="flex h-7 w-7 items-center justify-center rounded-md bg-accent text-base font-bold leading-none text-white">✓</span>
+          <span className="font-code text-2xl text-text-secondary">{item.name}</span>
+        </span>
+      );
+    default:
+      return null;
+  }
+}
+
+function SuckItem({
+  progress,
+  start,
+  y: y0,
+  item,
+}: {
+  progress: MotionValue<number>;
+  start: number;
+  y: number;
+  item: LaneItem;
+}) {
+  const end = start + 0.14;
+  // From off-screen right into the Cabinet at centre (0,0). It stays full-size
+  // and fully readable for almost the entire trip, then shrinks + fades hard
+  // only in the final stretch — right as it reaches the Cabinet logo.
+  const x = useTransform(progress, [start, end], [820, 0]);
+  const y = useTransform(progress, [start, end], [y0, 0]);
+  const scale = useTransform(progress, [start, end - 0.025, end], [1, 1, 0.05]);
+  const opacity = useTransform(progress, [start, start + 0.02, end - 0.02, end], [0, 1, 1, 0]);
+  return (
+    <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+      <motion.div style={{ x, y, scale, opacity, willChange: "transform" }}>
+        <LaneChip item={item} />
+      </motion.div>
+    </div>
+  );
+}
+
 function DashCard({
   progress,
   card,
@@ -361,23 +491,14 @@ export function IntegrationScene() {
 
   const scrollYProgress = useTransform(scrollY, range, [0, 1], { clamp: true });
 
-  // Cabinet — the central hub. Grows as it absorbs, then shrinks and
-  // drifts left to become the connector beside the video.
-  const cabinetOpacity = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
-  const cabinetScale = useTransform(scrollYProgress, [0, 0.42, 0.58, 0.85], [0.4, 1.05, 1.05, 0.72]);
-  const cabinetX = useTransform(scrollYProgress, [0.56, 0.82], [0, -340]);
+  // Cabinet — the central hub. It appears, grows as it absorbs the cloud, and
+  // then simply stays put in the centre through the captions.
+  const cabinetOpacity = useTransform(scrollYProgress, [0, 0.08], [0, 1]);
+  const cabinetScale = useTransform(scrollYProgress, [0, 0.4, 0.5], [0.4, 1.05, 1]);
 
   // Absorption glow (stays centered while the suck-in happens).
   const glowScale = useTransform(scrollYProgress, [0, 0.45], [0.5, 1.5]);
   const glowOpacity = useTransform(scrollYProgress, [0.04, 0.24, 0.45, 0.54], [0, 0.9, 0.9, 0]);
-
-  // Demo video — slides in from the right and settles beside the Cabinet.
-  const videoX = useTransform(scrollYProgress, [0.54, 0.85], [820, 150]);
-  const videoOpacity = useTransform(scrollYProgress, [0.56, 0.72], [0, 1]);
-  const videoScale = useTransform(scrollYProgress, [0.54, 0.9], [0.62, 1]);
-
-  // Connector line between Cabinet (left) and video (right).
-  const linkOpacity = useTransform(scrollYProgress, [0.74, 0.86], [0, 1]);
 
   // Captions — beat 1 → beat 2 handoff.
   // The title doesn't just fade: as the Cabinet appears and swallows the cloud
@@ -391,19 +512,24 @@ export function IntegrationScene() {
   const titleBlur = useTransform(scrollYProgress, [0.18, 0.3], [0, 16]);
   const titleFilter = useMotionTemplate`blur(${titleBlur}px)`;
 
-  const capCapture = useTransform(scrollYProgress, [0.3, 0.42, 0.56, 0.66], [0, 1, 1, 0]);
-  const captureScale = useTransform(scrollYProgress, [0.3, 0.44], [0.8, 1]);
-  const captureY = useTransform(scrollYProgress, [0.3, 0.44], [28, 0]);
-  const captureBlur = useTransform(scrollYProgress, [0.3, 0.44], [18, 0]);
+  // Stays on much longer now: it holds while the category tags stream into the
+  // Cabinet from the right (~0.38–0.74) before handing off.
+  const capCapture = useTransform(scrollYProgress, [0.28, 0.37, 0.78, 0.84], [0, 1, 1, 0]);
+  const captureScale = useTransform(scrollYProgress, [0.28, 0.42], [0.8, 1]);
+  const captureY = useTransform(scrollYProgress, [0.28, 0.42], [28, 0]);
+  const captureBlur = useTransform(scrollYProgress, [0.28, 0.42], [18, 0]);
   const captureFilter = useMotionTemplate`blur(${captureBlur}px)`;
 
-  const capVideo = useTransform(scrollYProgress, [0.8, 0.9, 1], [0, 1, 1]);
+  // "…and your AI team takes it from here, 24/7." — the scene's final caption;
+  // it fades in and stays. The demo video follows in a plain block below.
+  const capVideo = useTransform(scrollYProgress, [0.84, 0.91, 1], [0, 1, 1]);
   const hintOpacity = useTransform(scrollYProgress, [0, 0.04], [1, 0]);
 
   if (prefersReduced) return <StaticFallback />;
 
   return (
-    <div ref={ref} className="relative h-[250vh] bg-bg">
+    <>
+    <div ref={ref} className="relative h-[320vh] bg-bg">
       {mounted && (
       <div
         ref={stickyRef}
@@ -431,6 +557,19 @@ export function IntegrationScene() {
           />
         ))}
 
+        {/* beat 2 — labelled category streams flying in from the right */}
+        {SUCK_LANES.map((lane) =>
+          lane.items.map((item, i) => (
+            <SuckItem
+              key={`${lane.y}-${i}`}
+              progress={scrollYProgress}
+              start={lane.start + i * 0.022}
+              y={lane.y}
+              item={item}
+            />
+          ))
+        )}
+
         {/* absorption glow */}
         <motion.div
           className="absolute left-1/2 top-1/2 rounded-full"
@@ -446,23 +585,10 @@ export function IntegrationScene() {
           }}
         />
 
-        {/* connector line: Cabinet → video */}
-        <motion.div
-          className="absolute left-1/2 top-1/2 h-[2px]"
-          style={{
-            x: -180,
-            width: 150,
-            marginLeft: -75,
-            marginTop: -1,
-            opacity: linkOpacity,
-            background: "linear-gradient(90deg, transparent, var(--accent), transparent)",
-          }}
-        />
-
-        {/* Cabinet hub */}
+        {/* Cabinet hub — stays centred throughout */}
         <motion.div
           className="absolute left-1/2 top-1/2"
-          style={{ x: cabinetX, scale: cabinetScale, opacity: cabinetOpacity, marginLeft: -90, marginTop: -90 }}
+          style={{ scale: cabinetScale, opacity: cabinetOpacity, marginLeft: -90, marginTop: -90 }}
         >
           <Image
             src="/Cabinet.png"
@@ -471,21 +597,6 @@ export function IntegrationScene() {
             height={180}
             priority
           />
-        </motion.div>
-
-        {/* demo video, sliding in from the right */}
-        <motion.div
-          className="absolute inset-0 flex items-center justify-center px-6 pointer-events-none"
-          style={{ opacity: videoOpacity }}
-        >
-          <motion.div
-            className="w-[min(84vw,520px)] rounded-2xl overflow-hidden border border-border shadow-2xl shadow-black/25"
-            style={{ x: videoX, scale: videoScale }}
-          >
-            <video autoPlay loop muted playsInline className="w-full">
-              <source src="/demo.webm" type="video/webm" />
-            </video>
-          </motion.div>
         </motion.div>
 
         {/* beat 1 — title beside the cloud (outer div positions; inner h2 is
@@ -507,7 +618,7 @@ export function IntegrationScene() {
         </div>
 
         {/* captions */}
-        <div className="absolute left-1/2 -translate-x-1/2 bottom-24 w-full max-w-4xl px-6 text-center pointer-events-none">
+        <div className="absolute top-1/2 left-[4vw] md:left-[8vw] lg:left-[11vw] -translate-y-1/2 max-w-xs sm:max-w-sm md:max-w-md text-left pointer-events-none">
           <motion.p
             className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.08] tracking-tight text-text-primary"
             style={{
@@ -517,7 +628,13 @@ export function IntegrationScene() {
               filter: captureFilter,
             }}
           >
-            <span className="gradient-text">Cabinet</span> pulls it all into one place.
+            <span className="gradient-text">Cabinet</span>
+            <br />
+            pulls it all
+            <br />
+            into one
+            <br />
+            place.
           </motion.p>
         </div>
         <motion.p
@@ -537,5 +654,15 @@ export function IntegrationScene() {
       </div>
       )}
     </div>
+
+      {/* demo video — a plain block right after the scene's "…AI team, 24/7" beat */}
+      <section className="bg-bg px-6 pb-24">
+        <div className="mx-auto w-[min(92vw,1200px)] overflow-hidden rounded-2xl border border-border shadow-2xl shadow-black/25">
+          <video autoPlay loop muted playsInline className="w-full">
+            <source src="/demo.webm" type="video/webm" />
+          </video>
+        </div>
+      </section>
+    </>
   );
 }
