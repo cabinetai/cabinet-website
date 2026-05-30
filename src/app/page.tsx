@@ -14,14 +14,12 @@ import {
   Clock,
   Kanban,
   MessageSquare,
-  Zap,
   Shield,
   Check,
   X,
   Minus,
   ArrowRight,
   Download,
-  ChevronDown,
   Star,
   Users,
   Layers,
@@ -38,6 +36,7 @@ import { DiscordIcon, GithubIcon } from "@/components/site-icons";
 import { WaitlistCapture } from "@/components/waitlist-capture";
 import { WaitlistCloudBackdrop } from "@/components/waitlist-cloud-backdrop";
 import { WaitlistPopup } from "@/components/waitlist-popup";
+import { IntegrationScene } from "@/components/integration-scene";
 import { DISCORD_URL, GITHUB_URL, MACOS_DOWNLOAD_URL } from "@/lib/site-config";
 
 type GitHubRepoResponse = {
@@ -127,15 +126,15 @@ function GitHubStarsButton({
 /* ─── Navbar ─── */
 function Navbar({ stars }: { stars: number | null }) {
   return (
-    <nav className="relative z-20 border-b border-border bg-bg-card/95 backdrop-blur-sm">
+    <nav className="fixed inset-x-0 top-0 z-50 border-b border-border bg-bg-card/95 backdrop-blur-sm">
       <div className="max-w-6xl mx-auto px-6 min-h-16 py-3 flex items-center gap-6 lg:gap-10">
         <a href="#" className="flex shrink-0 items-center gap-3 pr-4 lg:pr-6">
           <Image src="/cabinet-icon.png" alt="Cabinet" width={36} height={36} className="rounded-lg" />
-          <span className="whitespace-nowrap text-xl font-display italic tracking-tight text-text-primary">
+          <span className="whitespace-nowrap text-xl font-brand italic tracking-tight text-text-primary">
             Cabinet
           </span>
         </a>
-        <div className="hidden min-[1100px]:flex flex-1 items-center gap-8 text-sm font-code text-text-tertiary">
+        <div className="hidden min-[1100px]:flex flex-1 items-center gap-8 text-sm font-medium text-text-secondary">
           <a href="#features" className="hover:text-text-primary transition-colors">
             Features
           </a>
@@ -814,7 +813,7 @@ function CabinetMockup({ kb, caseEmoji, agents }: { kb: (typeof USE_CASES)[0]["k
         <div className="w-2.5 h-2.5 rounded-full bg-yellow-400/90" />
         <div className="w-2.5 h-2.5 rounded-full bg-green-400/90" />
         <div className="flex-1 mx-3 flex items-center justify-center gap-1.5">
-          <span className="text-[11px] font-display italic text-text-primary">Cabinet</span>
+          <span className="text-[11px] font-brand italic text-text-primary">Cabinet</span>
           <span className="text-text-muted text-[10px]">/</span>
           <span className="text-[10px] font-code text-text-tertiary truncate">{kb.projectName}</span>
         </div>
@@ -1207,23 +1206,78 @@ export default function Home() {
   const stars = useGitHubStars();
 
   return (
-    <div className="min-h-screen bg-bg">
+    <div className="relative min-h-screen bg-bg">
       <Navbar stars={stars} />
       <WaitlistPopup />
 
+      {/* ─── Integration scrollytelling scene ─── */}
+      <IntegrationScene />
+
+      {/* ─── Bring your own AI ─── */}
+      <section className="border-y border-border py-12 bg-bg-card">
+        <div className="max-w-5xl mx-auto px-6 text-center">
+          <p className="text-sm md:text-[15px] font-medium text-text-secondary mb-9">
+            Bring your own AI — Cabinet runs on the agents you already use
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6">
+            {[
+              { src: "/providers/claude.svg", name: "Claude" },
+              { src: "/providers/openai.png", name: "OpenAI" },
+              { src: "/providers/gemini.svg", name: "Gemini" },
+              { src: "/providers/grok.svg", name: "Grok" },
+              { src: "/providers/copilot.svg", name: "Copilot" },
+              { src: "/providers/cursor.svg", name: "Cursor" },
+              { src: "/providers/opencode.svg", name: "opencode" },
+              { src: "/providers/pi.svg", name: "Pi" },
+            ].map((p) => (
+              <div
+                key={p.name}
+                className="flex items-center gap-2.5 opacity-75 hover:opacity-100 transition-opacity"
+              >
+                <Image
+                  src={p.src}
+                  alt={p.name}
+                  width={26}
+                  height={26}
+                  className="object-contain"
+                  style={{ width: 26, height: 26 }}
+                />
+                <span className="text-sm font-medium text-text-secondary">{p.name}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ─── Hero ─── */}
-      <section className="relative min-h-screen flex items-center justify-center dot-grid overflow-hidden">
-        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center pt-24">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-border bg-bg-card text-xs font-code text-text-tertiary mb-8">
-            <Zap className="w-3.5 h-3.5 text-accent" />
-            free project &middot; open source &middot; self-hosted
+      <section className="relative flex items-center justify-center dot-grid overflow-hidden">
+        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center pt-24 pb-12">
+          {/* ─── Install Options ─── */}
+          <div className="max-w-xl mx-auto mb-20">
+            <div className="flex flex-col sm:flex-row items-stretch gap-3">
+              <a
+                href={MACOS_DOWNLOAD_URL}
+                className="shrink-0 inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl bg-accent hover:bg-accent-warm text-white font-semibold text-base transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 cursor-pointer"
+              >
+                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                Download for Mac
+              </a>
+              <span className="hidden sm:flex items-center text-text-muted text-sm font-code">or</span>
+              <div className="flex-1 terminal-chrome flex items-center justify-between px-5 py-4 rounded-xl" style={{ overflow: 'visible' }}>
+                <div className="font-code text-sm flex items-center gap-2">
+                  <span className="text-green-400 shrink-0">$</span>
+                  <span className="text-zinc-200 whitespace-nowrap">npx cabinetai run</span>
+                </div>
+                <CopyButton text="npx cabinetai run" />
+              </div>
+            </div>
           </div>
 
           {/* ─── Dictionary Definition ─── */}
           <div className="max-w-2xl mx-auto mb-14 text-left">
             <div className="dict-card px-8 py-8 md:px-10 md:py-10">
               <div className="flex items-baseline gap-3 mb-1">
-                <h1 className="font-display italic text-4xl sm:text-5xl md:text-6xl tracking-tight text-text-primary">
+                <h1 className="font-brand italic text-4xl sm:text-5xl md:text-6xl tracking-tight text-text-primary">
                   cabinet
                 </h1>
                 <span className="font-code text-xs text-text-tertiary">/ˈkab.ɪ.nət/</span>
@@ -1280,27 +1334,6 @@ export default function Home() {
             </div>
           </div>
 
-          {/* ─── Install Options ─── */}
-          <div className="max-w-xl mx-auto mb-20">
-            <div className="flex flex-col sm:flex-row items-stretch gap-3">
-              <a
-                href={MACOS_DOWNLOAD_URL}
-                className="shrink-0 inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl bg-accent hover:bg-accent-warm text-white font-semibold text-base transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 cursor-pointer"
-              >
-                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-                Download for Mac
-              </a>
-              <span className="hidden sm:flex items-center text-text-muted text-sm font-code">or</span>
-              <div className="flex-1 terminal-chrome flex items-center justify-between px-5 py-4 rounded-xl" style={{ overflow: 'visible' }}>
-                <div className="font-code text-sm flex items-center gap-2">
-                  <span className="text-green-400 shrink-0">$</span>
-                  <span className="text-zinc-200 whitespace-nowrap">npx cabinetai run</span>
-                </div>
-                <CopyButton text="npx cabinetai run" />
-              </div>
-            </div>
-          </div>
-
           <h2 className="text-3xl sm:text-4xl md:text-5xl tracking-tight leading-[1.1] mb-6">
             <span className="font-display text-text-primary">Your knowledge base.</span>
             <br />
@@ -1338,22 +1371,6 @@ export default function Home() {
               ]}
             />
           </p>
-
-          <div className="mt-4 mb-8 rounded-2xl overflow-hidden border border-border shadow-lg shadow-black/5">
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-full"
-            >
-              <source src="/demo.webm" type="video/webm" />
-            </video>
-          </div>
-        </div>
-
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <ChevronDown className="w-5 h-5 text-text-muted" />
         </div>
       </section>
 
@@ -1785,7 +1802,7 @@ export default function Home() {
           <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2.5">
               <Image src="/cabinet-icon.png" alt="Cabinet" width={24} height={24} className="rounded" />
-              <span className="font-display italic text-sm text-text-primary">Cabinet</span>
+              <span className="font-brand italic text-sm text-text-primary">Cabinet</span>
               <span className="text-xs text-text-muted">&middot;</span>
               <span className="text-xs text-text-tertiary">
                 &copy; {new Date().getFullYear()} HOLY BIBLE APPS LTD &middot; Open source &middot; MIT License

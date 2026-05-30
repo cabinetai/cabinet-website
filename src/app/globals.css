@@ -58,8 +58,9 @@
   --color-green-bg: var(--green-bg);
   --color-green-bg-subtle: var(--green-bg-subtle);
   --font-sans: var(--font-inter);
-  --font-serif: var(--font-body-serif);
-  --font-display: var(--font-display);
+  --font-serif: var(--font-inter);
+  --font-display: var(--font-stack-notch);
+  --font-brand: var(--font-brand);
   --font-mono: var(--font-mono);
 }
 
@@ -70,12 +71,18 @@ body {
 }
 
 /* ─── Typography classes ─── */
+/* .font-brand (Cabinet wordmark serif) is generated from the --font-brand
+   theme token above; apply it with `italic` in the markup. */
 .font-display {
-  font-family: var(--font-display), Georgia, 'Times New Roman', serif;
+  font-family: var(--font-stack-notch), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  letter-spacing: -0.022em;
 }
 
 .font-body-serif {
-  font-family: var(--font-serif), Georgia, serif;
+  font-family: var(--font-serif), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  letter-spacing: -0.005em;
 }
 
 .font-code {
@@ -227,21 +234,24 @@ html {
 
 /* Display typography — Instrument Serif italic capable */
 .ent-display-1 {
-  font-family: var(--font-display), Georgia, serif;
+  font-family: var(--font-stack-notch), -apple-system, sans-serif;
+  font-optical-sizing: auto;
   font-size: clamp(2.75rem, 5.5vw, 4.75rem);
   line-height: 1.04;
   letter-spacing: -0.02em;
   color: var(--text-primary);
 }
 .ent-display-2 {
-  font-family: var(--font-display), Georgia, serif;
+  font-family: var(--font-stack-notch), -apple-system, sans-serif;
+  font-optical-sizing: auto;
   font-size: clamp(2rem, 4vw, 3.25rem);
   line-height: 1.08;
   letter-spacing: -0.015em;
   color: var(--text-primary);
 }
 .ent-display-3 {
-  font-family: var(--font-display), Georgia, serif;
+  font-family: var(--font-stack-notch), -apple-system, sans-serif;
+  font-optical-sizing: auto;
   font-size: clamp(1.5rem, 2.5vw, 2rem);
   line-height: 1.15;
   letter-spacing: -0.01em;

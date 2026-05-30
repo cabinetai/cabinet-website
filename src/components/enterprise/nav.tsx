@@ -55,7 +55,7 @@ export function EnterpriseNav() {
             className="rounded-md"
           />
           <div className="flex items-center gap-2">
-            <span className="font-display italic text-[1.35rem] leading-none tracking-tight text-text-primary">
+            <span className="font-brand italic text-[1.35rem] leading-none tracking-tight text-text-primary">
               Cabinet
             </span>
             <span className="hidden sm:inline-flex items-center rounded border border-border bg-bg-warm px-1.5 py-0.5 text-[10px] font-medium tracking-wide text-text-secondary uppercase">
