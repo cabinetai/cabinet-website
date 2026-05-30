@@ -41,6 +41,7 @@ import { WaitlistPopup } from "@/components/waitlist-popup";
 import { IntegrationScene } from "@/components/integration-scene";
 import { PrinciplesShowcase } from "@/components/principles-showcase";
 import { SolutionsMenu } from "@/components/solutions-menu";
+import { SOLUTIONS } from "@/lib/solutions";
 import { DISCORD_URL, GITHUB_URL, MACOS_DOWNLOAD_URL } from "@/lib/site-config";
 
 const PROVIDERS = [
@@ -1259,6 +1260,15 @@ export default function Home() {
                 <CopyButton text="npx cabinetai run" />
               </div>
             </div>
+            <p className="mt-4 text-sm font-code text-text-tertiary">
+              Evaluating Cabinet for your team?{" "}
+              <a
+                href="mailto:hi@runcabinet.com?subject=Cabinet%20demo%20request"
+                className="text-accent underline underline-offset-2 hover:text-accent-warm"
+              >
+                Book a demo
+              </a>
+            </p>
           </div>
 
           {/* ─── Dictionary Definition (commented out) ─── */}
@@ -1771,6 +1781,50 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ─── Cabinet for every team ─── */}
+      <section id="solutions" className="py-24 border-t border-border bg-bg-warm">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <p className="section-label mb-3">Solutions</p>
+            <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
+              Cabinet for every team
+            </h2>
+            <p className="text-text-secondary max-w-2xl mx-auto font-body-serif leading-relaxed">
+              Same knowledge base — a different AI crew for each function, working on
+              your data, on your infrastructure, around the clock.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
+            {SOLUTIONS.map((s) => {
+              const Icon = s.icon;
+              return (
+                <a
+                  key={s.slug}
+                  href={`/solutions/${s.slug}`}
+                  className="group flex flex-col rounded-2xl border border-border bg-bg-card p-6 card-hover"
+                >
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-accent-bg text-accent">
+                      <Icon className="h-5 w-5" />
+                    </div>
+                    <h3 className="font-display text-lg text-text-primary">
+                      Cabinet for {s.label}
+                    </h3>
+                  </div>
+                  <p className="text-sm text-text-secondary font-body-serif leading-relaxed flex-1">
+                    {s.menuBlurb}
+                  </p>
+                  <span className="mt-4 inline-flex items-center gap-1.5 font-code text-sm text-accent transition-colors group-hover:text-accent-warm">
+                    Explore <ArrowRight className="w-4 h-4" />
+                  </span>
+                </a>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* ─── Built for organizations ─── */}
       <section className="py-24 border-t border-border bg-bg">
         <div className="max-w-6xl mx-auto px-6">
@@ -1855,6 +1909,12 @@ export default function Home() {
           </div>
           <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 mt-4">
             <a
+              href="mailto:hi@runcabinet.com?subject=Cabinet%20demo%20request"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border border-border bg-bg-card text-text-primary font-medium shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
+            >
+              Book a demo
+            </a>
+            <a
               href={DISCORD_URL}
               target="_blank"
               rel="noopener noreferrer"
@@ -1882,6 +1942,7 @@ export default function Home() {
               <ul className="space-y-2.5 text-sm">
                 <li><a href="#features" className="text-text-secondary hover:text-text-primary transition-colors">Features</a></li>
                 <li><a href="#agents" className="text-text-secondary hover:text-text-primary transition-colors">AI Agents</a></li>
+                <li><a href="/solutions" className="text-text-secondary hover:text-text-primary transition-colors">Solutions</a></li>
                 <li><a href="/compare" className="text-text-secondary hover:text-text-primary transition-colors">Compare</a></li>
                 <li>
                   <a href="/cloud?source=footer" className="inline-flex items-center gap-1.5 text-text-secondary hover:text-text-primary transition-colors">
