@@ -20,6 +20,7 @@ export async function generateMetadata({
 
   const title = `${solution.eyebrow} — Cabinet`;
   const description = solution.subhead;
+  const image = "https://runcabinet.com/solutions-hero.png";
   return {
     title,
     description,
@@ -28,8 +29,9 @@ export async function generateMetadata({
       description,
       type: "website",
       url: `https://runcabinet.com/solutions/${solution.slug}`,
+      images: [{ url: image, width: 1408, height: 768 }],
     },
-    twitter: { card: "summary_large_image", title, description },
+    twitter: { card: "summary_large_image", title, description, images: [image] },
   };
 }
 

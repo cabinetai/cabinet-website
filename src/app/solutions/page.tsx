@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { SiteNavbar } from "@/components/site-navbar";
@@ -14,6 +15,11 @@ export const metadata: Metadata = {
       "An AI team for Sales, Marketing, Engineering, Product, Operations, and the exec suite — self-hosted, on data you own.",
     type: "website",
     url: "https://runcabinet.com/solutions",
+    images: [{ url: "https://runcabinet.com/solutions-hero.png", width: 1408, height: 768 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["https://runcabinet.com/solutions-hero.png"],
   },
 };
 
@@ -40,6 +46,16 @@ export default function SolutionsIndexPage() {
             Each team gets its own AI crew working on top of one knowledge base you
             own — Markdown on disk, your models, your infrastructure.
           </p>
+          <div className="mx-auto mt-12 max-w-3xl overflow-hidden rounded-2xl border border-border shadow-xl shadow-black/10">
+            <Image
+              src="/solutions-hero.png"
+              alt="One Cabinet knowledge base with documents, dashboards, and AI agents flowing into it"
+              width={1408}
+              height={768}
+              className="w-full"
+              priority
+            />
+          </div>
         </div>
       </section>
 
