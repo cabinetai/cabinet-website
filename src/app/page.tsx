@@ -40,6 +40,7 @@ import { WaitlistCloudBackdrop } from "@/components/waitlist-cloud-backdrop";
 import { WaitlistPopup } from "@/components/waitlist-popup";
 import { IntegrationScene } from "@/components/integration-scene";
 import { PrinciplesShowcase } from "@/components/principles-showcase";
+import { SolutionsMenu } from "@/components/solutions-menu";
 import { DISCORD_URL, GITHUB_URL, MACOS_DOWNLOAD_URL } from "@/lib/site-config";
 
 const PROVIDERS = [
@@ -215,6 +216,7 @@ function Navbar({ stars }: { stars: number | null }) {
           <a href="#features" className="hover:text-text-primary transition-colors">
             Features
           </a>
+          <SolutionsMenu triggerClassName="text-text-secondary" />
           <a href="/compare" className="hover:text-text-primary transition-colors">
             Compare
           </a>

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { Star } from "lucide-react";
 import { DiscordIcon, GithubIcon } from "@/components/site-icons";
+import { SolutionsMenu } from "@/components/solutions-menu";
 import { DISCORD_URL, GITHUB_URL } from "@/lib/site-config";
 
 type GitHubRepoResponse = {
@@ -72,6 +73,7 @@ export function SiteNavbar() {
           <a href="/#features" className="hover:text-text-primary transition-colors">
             Features
           </a>
+          <SolutionsMenu triggerClassName="text-text-tertiary" />
           <a href="/compare" className="hover:text-text-primary transition-colors">
             Compare
           </a>
