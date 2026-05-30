@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { Inter, Instrument_Serif, JetBrains_Mono, Stack_Sans_Notch } from "next/font/google";
+import { Inter, Instrument_Serif, JetBrains_Mono, Stack_Sans_Notch, Ms_Madi } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -26,6 +26,13 @@ const instrumentSerif = Instrument_Serif({
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-mono",
   subsets: ["latin"],
+});
+
+// Handwriting signature font for testimonial names.
+const msMadi = Ms_Madi({
+  variable: "--font-hand",
+  subsets: ["latin"],
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -64,7 +71,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${stackSans.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable} h-full antialiased`}
+      className={`${inter.variable} ${stackSans.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable} ${msMadi.variable} h-full antialiased`}
     >
       <head>
         <Script

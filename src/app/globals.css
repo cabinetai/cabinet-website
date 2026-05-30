@@ -61,6 +61,7 @@
   --font-serif: var(--font-inter);
   --font-display: var(--font-stack-notch);
   --font-brand: var(--font-brand);
+  --font-hand: var(--font-hand);
   --font-mono: var(--font-mono);
 }
 
@@ -87,6 +88,11 @@ body {
 
 .font-code {
   font-family: var(--font-mono), 'Courier New', monospace;
+}
+
+/* Handwriting signature font (Ms Madi) for testimonial names. */
+.font-hand {
+  font-family: var(--font-hand), "Segoe Script", cursive;
 }
 
 /* Smooth scroll */
@@ -442,6 +448,16 @@ html {
   animation: entMarquee 60s linear infinite;
 }
 
+/* Testimonials ticker — horizontal auto-scroll, pauses on hover/focus */
+.testimonial-marquee {
+  animation: entMarquee 45s linear infinite;
+  will-change: transform;
+}
+.testimonial-marquee-viewport:hover .testimonial-marquee,
+.testimonial-marquee-viewport:focus-within .testimonial-marquee {
+  animation-play-state: paused;
+}
+
 /* Subtle dot ornament */
 .ent-dots {
   background-image: radial-gradient(circle, rgba(139, 94, 60, 0.18) 0.6px, transparent 0.6px);
@@ -459,7 +475,12 @@ html {
 @media (prefers-reduced-motion: reduce) {
   .ent-rise,
   .ent-fade,
-  .ent-marquee {
+  .ent-marquee,
+  .testimonial-marquee {
     animation: none;
+  }
+  /* Let users scroll the ticker manually when motion is reduced */
+  .testimonial-marquee-viewport {
+    overflow-x: auto;
   }
 }

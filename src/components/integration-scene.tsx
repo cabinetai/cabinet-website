@@ -6,6 +6,7 @@ import {
   motion,
   useScroll,
   useTransform,
+  useMotionTemplate,
   useReducedMotion,
   useMotionValue,
   useSpring,
@@ -308,7 +309,7 @@ function StaticFallback() {
             </div>
           ))}
         </div>
-        <Image src="/cabinet-icon.png" alt="Cabinet" width={120} height={120} className="mx-auto rounded-2xl shadow-lg" />
+        <Image src="/Cabinet.png" alt="Cabinet" width={120} height={120} className="mx-auto" />
       </div>
     </section>
   );
@@ -378,11 +379,24 @@ export function IntegrationScene() {
   // Connector line between Cabinet (left) and video (right).
   const linkOpacity = useTransform(scrollYProgress, [0.74, 0.86], [0, 1]);
 
-  // Captions.
-  // Beat 1 title — present from the very first frame, fades out as the cloud
-  // gets sucked into the Cabinet so it hands off to the capture caption.
-  const capTitle = useTransform(scrollYProgress, [0, 0.2, 0.32], [1, 1, 0]);
-  const capCapture = useTransform(scrollYProgress, [0.36, 0.46, 0.56, 0.66], [0, 1, 1, 0]);
+  // Captions — beat 1 → beat 2 handoff.
+  // The title doesn't just fade: as the Cabinet appears and swallows the cloud
+  // it gets "whisked away" — drifting up and blurring into a soft poof (a
+  // magic-wand dissolve) while keeping its own type intact. The capture line
+  // then materialises right behind it with a focus-pull: it unblurs, scales up,
+  // and rises into place.
+  const capTitle = useTransform(scrollYProgress, [0, 0.18, 0.3], [1, 1, 0]);
+  const titleScale = useTransform(scrollYProgress, [0.18, 0.3], [1, 1.06]);
+  const titleY = useTransform(scrollYProgress, [0.18, 0.3], [0, -36]);
+  const titleBlur = useTransform(scrollYProgress, [0.18, 0.3], [0, 16]);
+  const titleFilter = useMotionTemplate`blur(${titleBlur}px)`;
+
+  const capCapture = useTransform(scrollYProgress, [0.3, 0.42, 0.56, 0.66], [0, 1, 1, 0]);
+  const captureScale = useTransform(scrollYProgress, [0.3, 0.44], [0.8, 1]);
+  const captureY = useTransform(scrollYProgress, [0.3, 0.44], [28, 0]);
+  const captureBlur = useTransform(scrollYProgress, [0.3, 0.44], [18, 0]);
+  const captureFilter = useMotionTemplate`blur(${captureBlur}px)`;
+
   const capVideo = useTransform(scrollYProgress, [0.8, 0.9, 1], [0, 1, 1]);
   const hintOpacity = useTransform(scrollYProgress, [0, 0.04], [1, 0]);
 
@@ -451,12 +465,11 @@ export function IntegrationScene() {
           style={{ x: cabinetX, scale: cabinetScale, opacity: cabinetOpacity, marginLeft: -90, marginTop: -90 }}
         >
           <Image
-            src="/cabinet-icon.png"
+            src="/Cabinet.png"
             alt="Cabinet"
             width={180}
             height={180}
             priority
-            className="rounded-3xl shadow-2xl shadow-black/25"
           />
         </motion.div>
 
@@ -475,23 +488,38 @@ export function IntegrationScene() {
           </motion.div>
         </motion.div>
 
-        {/* beat 1 — title beside the cloud */}
-        <motion.div
-          className="absolute top-1/2 right-[6vw] md:right-[9vw] lg:right-[12vw] -translate-y-1/2 max-w-xs sm:max-w-sm md:max-w-md text-right pointer-events-none"
-          style={{ opacity: capTitle }}
-        >
-          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.08] tracking-tight text-text-primary">
-            Your work lives in <span className="text-text-tertiary">a hundred places.</span>
-          </h2>
-        </motion.div>
+        {/* beat 1 — title beside the cloud (outer div positions; inner h2 is
+            free to run its own magic-wand dissolve transform) */}
+        <div className="absolute top-1/2 right-[10vw] md:right-[16vw] lg:right-[20vw] -translate-y-1/2 max-w-xs sm:max-w-sm md:max-w-md text-right pointer-events-none">
+          <motion.h2
+            className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.08] tracking-tight text-text-primary"
+            style={{
+              opacity: capTitle,
+              scale: titleScale,
+              y: titleY,
+              filter: titleFilter,
+            }}
+          >
+            Your work
+            <br />
+            lives in <span className="text-text-tertiary">a hundred<br />places.</span>
+          </motion.h2>
+        </div>
 
         {/* captions */}
-        <motion.p
-          className="absolute left-1/2 -translate-x-1/2 bottom-24 w-full max-w-4xl px-6 text-center font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.08] tracking-tight text-text-primary"
-          style={{ opacity: capCapture }}
-        >
-          <span className="gradient-text">Cabinet</span> pulls it all into one place.
-        </motion.p>
+        <div className="absolute left-1/2 -translate-x-1/2 bottom-24 w-full max-w-4xl px-6 text-center pointer-events-none">
+          <motion.p
+            className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.08] tracking-tight text-text-primary"
+            style={{
+              opacity: capCapture,
+              scale: captureScale,
+              y: captureY,
+              filter: captureFilter,
+            }}
+          >
+            <span className="gradient-text">Cabinet</span> pulls it all into one place.
+          </motion.p>
+        </div>
         <motion.p
           className="absolute left-1/2 -translate-x-1/2 bottom-24 w-full max-w-4xl px-6 text-center font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.08] tracking-tight text-text-primary"
           style={{ opacity: capVideo }}
