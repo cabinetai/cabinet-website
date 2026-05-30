@@ -2130,6 +2130,7 @@ export default function Home() {
                 <li><a href="#features" className="text-text-secondary hover:text-text-primary transition-colors">Features</a></li>
                 <li><a href="#agents" className="text-text-secondary hover:text-text-primary transition-colors">AI Agents</a></li>
                 <li><a href="/solutions" className="text-text-secondary hover:text-text-primary transition-colors">Solutions</a></li>
+                <li><a href="/industries" className="text-text-secondary hover:text-text-primary transition-colors">Industries</a></li>
                 <li><a href="/compare" className="text-text-secondary hover:text-text-primary transition-colors">Compare</a></li>
                 <li>
                   <a href="/cloud?source=footer" className="inline-flex items-center gap-1.5 text-text-secondary hover:text-text-primary transition-colors">
