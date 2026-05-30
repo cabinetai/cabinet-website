@@ -12,8 +12,6 @@ import { SiteNavbar } from "@/components/site-navbar";
 import { GITHUB_URL } from "@/lib/site-config";
 import { SOLUTIONS, type Solution } from "@/lib/solutions";
 
-const DEMO_MAILTO = "mailto:hi@runcabinet.com?subject=Cabinet%20demo%20request";
-
 // The three claims only Cabinet can make — shown on every solution page so the
 // ownership/agentic wedge lands no matter which role page a buyer enters on.
 const WEDGE = [
@@ -70,12 +68,12 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
             >
               Get started free <ArrowRight className="h-4 w-4" />
             </Link>
-            <a
-              href={DEMO_MAILTO}
+            <Link
+              href="/demo"
               className="inline-flex items-center gap-2 rounded-xl border border-border bg-bg-card px-7 py-3.5 text-base font-semibold text-text-primary shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
             >
               Book a demo
-            </a>
+            </Link>
           </div>
           <p className="mt-4 font-code text-xs text-text-tertiary">
             Open source · self-hosted · bring your own AI
@@ -255,12 +253,12 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
             >
               Get started free <ArrowRight className="h-4 w-4" />
             </Link>
-            <a
-              href={DEMO_MAILTO}
+            <Link
+              href="/demo"
               className="inline-flex items-center gap-2 rounded-xl border border-border bg-bg-card px-7 py-3.5 text-base font-semibold text-text-primary shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
             >
               Book a demo
-            </a>
+            </Link>
             <a
               href={GITHUB_URL}
               target="_blank"

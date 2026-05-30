@@ -78,6 +78,27 @@ const TRUST_BADGES = [
     label: "Not training data",
     desc: "Your prompts and content are never used to train a model.",
   },
+  {
+    icon: Cpu,
+    label: "Bring your own keys",
+    desc: "Your model providers, your API keys. Inference never routes through us.",
+  },
+  {
+    icon: GitBranch,
+    label: "Audit log & git history",
+    desc: "Every change to data and agents is versioned, diffable, and attributable.",
+  },
+  {
+    icon: Users,
+    label: "SSO & SCIM",
+    status: "Enterprise track",
+    desc: "SAML single sign-on and provisioning for teams that need it.",
+  },
+  {
+    icon: Globe,
+    label: "Your data residency",
+    desc: "Self-hosted means your knowledge lives in your region, under your policies.",
+  },
 ];
 
 const TESTIMONIALS = [
@@ -1264,7 +1285,7 @@ export default function Home() {
             <p className="mt-4 text-sm font-code text-text-tertiary">
               Evaluating Cabinet for your team?{" "}
               <a
-                href="mailto:hi@runcabinet.com?subject=Cabinet%20demo%20request"
+                href="/demo"
                 className="text-accent underline underline-offset-2 hover:text-accent-warm"
               >
                 Book a demo
@@ -1874,6 +1895,42 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ─── The business case (outcomes band) ─── */}
+      <section className="py-20 border-t border-border bg-bg">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <p className="section-label mb-3">The business case</p>
+            <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
+              Own more. Pay less. Move faster.
+            </h2>
+            <p className="text-text-secondary max-w-2xl mx-auto font-body-serif leading-relaxed">
+              The numbers execs actually care about — before a single line of custom
+              integration.
+            </p>
+          </div>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
+            {[
+              { stat: "$0", label: "per-seat AI markup — you bring your own models" },
+              { stat: "100%", label: "of your data stays on your infrastructure" },
+              { stat: "1 folder", label: "replaces the wiki, the chatbot, and the agent platform" },
+              { stat: "24/7", label: "your AI team runs on a schedule, not on demand" },
+            ].map((o) => (
+              <div
+                key={o.label}
+                className="rounded-2xl border border-border bg-bg-card p-7 text-center"
+              >
+                <div className="font-display text-4xl md:text-5xl tracking-tight text-accent">
+                  {o.stat}
+                </div>
+                <p className="mt-2 text-sm text-text-secondary font-body-serif leading-relaxed">
+                  {o.label}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ─── Built for organizations ─── */}
       <section className="py-24 border-t border-border bg-bg">
         <div className="max-w-6xl mx-auto px-6">
@@ -1958,7 +2015,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 mt-4">
             <a
-              href="mailto:hi@runcabinet.com?subject=Cabinet%20demo%20request"
+              href="/demo"
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border border-border bg-bg-card text-text-primary font-medium shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
             >
               Book a demo
