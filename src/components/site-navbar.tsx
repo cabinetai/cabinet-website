@@ -72,7 +72,7 @@ export function SiteNavbar() {
           <a href="/#features" className="hover:text-text-primary transition-colors">
             Features
           </a>
-          <a href="/#compare" className="hover:text-text-primary transition-colors">
+          <a href="/compare" className="hover:text-text-primary transition-colors">
             Compare
           </a>
           <a href="/pricing" className="hover:text-text-primary transition-colors">

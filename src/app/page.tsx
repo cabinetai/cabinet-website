@@ -17,7 +17,6 @@ import {
   Shield,
   Check,
   X,
-  Minus,
   ArrowRight,
   Download,
   Star,
@@ -75,6 +74,45 @@ const TRUST_BADGES = [
     icon: Lock,
     label: "Not training data",
     desc: "Your prompts and content are never used to train a model.",
+  },
+];
+
+const TESTIMONIALS = [
+  {
+    quote:
+      "Cabinet is a big unlock for how I think about operating a business with AI.",
+    context:
+      "Before Cabinet, AI felt fragmented — great for single tasks, but hard to orchestrate across the business. Every business has different workflows, and Cabinet makes it possible to turn those workflows into an AI team.",
+    name: "Collin Davis",
+    role: "Chief Product Officer, Clover",
+    location: "Florida, USA",
+    image: "/testimonials/collin-davis.jpg",
+    linkedin: "https://www.linkedin.com/in/collinedavis/",
+    initials: "CD",
+  },
+  {
+    quote:
+      "Cabinet is exactly doing what it's strong at: orchestrating structure, standardization, opportunities, and challenges in a digital way.",
+    context:
+      "Cabinet is the missing persistence and memory layer that TOGAF, ISO, and many other framework tools have never had. The framework provides the skeleton; Cabinet provides the living connective tissue.",
+    name: "Jean Pierre Traets",
+    role: "Sustainability Solutions Architect, EMEA",
+    location: "Europe",
+    image: "/testimonials/jean-pierre-traets.jpg",
+    linkedin: "https://www.linkedin.com/in/jean-pierre-traets/",
+    initials: "JT",
+  },
+  {
+    quote:
+      "As one of the first users of Superhuman, I definitely see the same spark here.",
+    context:
+      "I use Cabinet to manage GTM and send emails through Apollo, and the whole system runs without me touching it, 24/7. The researcher agent built into Cabinet crafted award-winning GTM emails that blew my mind and achieved incredible open rates.",
+    name: "Assaf Haski",
+    role: "Strategic narratives for high-stakes systems — from B2B SaaS growth to national public guidance",
+    location: "",
+    image: "/testimonials/assaf-haski.jpg",
+    linkedin: "https://www.linkedin.com/in/assafhaski/",
+    initials: "AH",
   },
 ];
 
@@ -177,7 +215,7 @@ function Navbar({ stars }: { stars: number | null }) {
           <a href="#features" className="hover:text-text-primary transition-colors">
             Features
           </a>
-          <a href="#compare" className="hover:text-text-primary transition-colors">
+          <a href="/compare" className="hover:text-text-primary transition-colors">
             Compare
           </a>
           <a href="/pricing" className="hover:text-text-primary transition-colors">
@@ -367,61 +405,6 @@ function FeatureCard({
 }
 
 /* ─── Comparison Table ─── */
-function ComparisonTable() {
-  const features = [
-    { name: "Knowledge base / wiki", cabinet: true, obsidian: true, notion: true, paperclip: false },
-    { name: "Markdown files on disk", cabinet: true, obsidian: true, notion: false, paperclip: false },
-    { name: "Self-hosted / local-first", cabinet: true, obsidian: true, notion: false, paperclip: true },
-    { name: "AI agent orchestration", cabinet: true, obsidian: false, notion: "partial", paperclip: true },
-    { name: "Agent org chart / hierarchy", cabinet: true, obsidian: false, notion: false, paperclip: true },
-    { name: "Agent heartbeats / scheduling", cabinet: true, obsidian: false, notion: false, paperclip: true },
-    { name: "Agent budget controls", cabinet: "partial", obsidian: false, notion: false, paperclip: true },
-    { name: "Embedded HTML apps", cabinet: true, obsidian: false, notion: false, paperclip: false },
-    { name: "Web terminal (xterm.js)", cabinet: true, obsidian: false, notion: false, paperclip: false },
-    { name: "WYSIWYG editor", cabinet: true, obsidian: true, notion: true, paperclip: false },
-    { name: "PDF / CSV viewing & editing", cabinet: true, obsidian: "partial", notion: false, paperclip: false },
-    { name: "Git-backed version history", cabinet: true, obsidian: "partial", notion: "partial", paperclip: false },
-    { name: "Internal team chat", cabinet: true, obsidian: false, notion: false, paperclip: "partial" },
-    { name: "Mission / task system", cabinet: true, obsidian: false, notion: true, paperclip: true },
-    { name: "Linked Git repos", cabinet: true, obsidian: false, notion: false, paperclip: false },
-    { name: "Audit logs", cabinet: "partial", obsidian: false, notion: false, paperclip: true },
-    { name: "No database required", cabinet: true, obsidian: true, notion: false, paperclip: false },
-  ];
-
-  const renderIcon = (val: boolean | string) => {
-    if (val === true) return <Check className="w-4 h-4 text-accent mx-auto" />;
-    if (val === "partial") return <Minus className="w-4 h-4 text-accent-light mx-auto" />;
-    return <X className="w-4 h-4 text-text-muted mx-auto" />;
-  };
-
-  return (
-    <div className="overflow-x-auto">
-      <table className="w-full text-sm">
-        <thead>
-          <tr className="border-b border-border-dark">
-            <th className="text-left py-3 px-4 font-medium text-text-secondary">Feature</th>
-            <th className="text-center py-3 px-4 font-semibold text-accent">Cabinet</th>
-            <th className="text-center py-3 px-4 font-medium text-text-tertiary">Obsidian</th>
-            <th className="text-center py-3 px-4 font-medium text-text-tertiary">Notion</th>
-            <th className="text-center py-3 px-4 font-medium text-text-tertiary">Paperclip</th>
-          </tr>
-        </thead>
-        <tbody>
-          {features.map((f) => (
-            <tr key={f.name} className="border-b border-border-light hover:bg-bg-warm/50">
-              <td className="py-3 px-4 text-text-primary">{f.name}</td>
-              <td className="py-3 px-4">{renderIcon(f.cabinet)}</td>
-              <td className="py-3 px-4">{renderIcon(f.obsidian)}</td>
-              <td className="py-3 px-4">{renderIcon(f.notion)}</td>
-              <td className="py-3 px-4">{renderIcon(f.paperclip)}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
-}
-
 /* ─── Karpathy Quote Section ─── */
 function KarpathySection() {
   return (
@@ -1276,7 +1259,8 @@ export default function Home() {
             </div>
           </div>
 
-          {/* ─── Dictionary Definition ─── */}
+          {/* ─── Dictionary Definition (commented out) ─── */}
+          {/*
           <div className="max-w-2xl mx-auto mb-14 text-left">
             <div className="dict-card px-8 py-8 md:px-10 md:py-10">
               <div className="flex items-baseline gap-3 mb-1">
@@ -1336,6 +1320,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+          */}
 
           <h2 className="text-3xl sm:text-4xl md:text-5xl tracking-tight leading-[1.1] mb-6">
             <span className="font-display text-text-primary">Your knowledge base.</span>
@@ -1374,6 +1359,117 @@ export default function Home() {
               ]}
             />
           </p>
+        </div>
+      </section>
+
+      {/* ─── Testimonials ─── */}
+      <section className="relative overflow-hidden border-t border-border bg-bg-warm py-24">
+        {/* soft accent wash */}
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(60% 55% at 50% 0%, rgba(139, 94, 60, 0.07), transparent 70%)",
+          }}
+        />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <p className="section-label mb-3">Testimonials</p>
+            <h2 className="text-3xl md:text-4xl font-display text-text-primary">
+              How teams achieve 10x work with Cabinet
+            </h2>
+          </div>
+
+          <div className="testimonial-marquee-viewport relative overflow-hidden">
+            {/* edge fades */}
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-y-0 left-0 z-10 w-12 bg-gradient-to-r from-bg-warm to-transparent sm:w-24"
+            />
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-y-0 right-0 z-10 w-12 bg-gradient-to-l from-bg-warm to-transparent sm:w-24"
+            />
+            <div className="testimonial-marquee flex w-max items-stretch py-2">
+            {[...TESTIMONIALS, ...TESTIMONIALS].map((t, i) => {
+              const avatar = t.image ? (
+                <Image
+                  src={t.image}
+                  alt={t.name}
+                  width={56}
+                  height={56}
+                  className="h-14 w-14 rounded-full object-cover shadow-sm"
+                />
+              ) : (
+                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-accent font-display text-lg text-white shadow-sm">
+                  {t.initials}
+                </div>
+              );
+              return (
+                <figure
+                  key={`${t.name}-${i}`}
+                  aria-hidden={i >= TESTIMONIALS.length}
+                  className="mr-6 flex w-[340px] shrink-0 flex-col rounded-2xl border border-border bg-bg-card p-6 shadow-sm card-hover sm:w-[380px]"
+                >
+                  {/* Photo at the top — clickable to LinkedIn */}
+                  {t.linkedin ? (
+                    <a
+                      href={t.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${t.name} on LinkedIn`}
+                      className="mb-4 inline-block rounded-full transition-transform hover:scale-105"
+                    >
+                      {avatar}
+                    </a>
+                  ) : (
+                    <div className="mb-4">{avatar}</div>
+                  )}
+
+                  <blockquote
+                    className={`mb-3 font-display text-text-primary ${
+                      t.quote.length > 90
+                        ? "text-lg leading-relaxed tracking-normal md:text-xl"
+                        : "text-xl leading-snug tracking-tight md:text-2xl"
+                    }`}
+                  >
+                    {t.quote}
+                  </blockquote>
+                  <p className="mb-5 font-body-serif leading-relaxed text-text-secondary">
+                    {t.context}
+                  </p>
+
+                  <figcaption className="mt-auto">
+                    {t.linkedin ? (
+                      <a
+                        href={t.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group/who block"
+                      >
+                        <span className="block font-hand text-3xl leading-none text-text-primary transition-colors group-hover/who:text-accent">
+                          {t.name}
+                        </span>
+                        <span className="mt-0.5 block text-sm text-text-secondary transition-colors group-hover/who:text-accent">
+                          {t.role}
+                        </span>
+                      </a>
+                    ) : (
+                      <>
+                        <p className="font-hand text-3xl leading-none text-text-primary">
+                          {t.name}
+                        </p>
+                        <p className="mt-0.5 text-sm text-text-secondary">{t.role}</p>
+                      </>
+                    )}
+                    <p className="mt-1 text-xs font-code text-text-tertiary">{t.location}</p>
+                  </figcaption>
+                </figure>
+              );
+            })}
+            </div>
+          </div>
         </div>
       </section>
 
@@ -1615,61 +1711,6 @@ export default function Home() {
       {/* ─── Karpathy Section ─── */}
       <KarpathySection />
 
-      {/* ─── Comparison Table ─── */}
-      <section id="compare" className="py-24 border-t border-border bg-bg">
-        <div className="max-w-4xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <p className="section-label mb-3">Comparison</p>
-            <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
-              Not another note-taking app
-            </h2>
-            <p className="text-text-secondary max-w-2xl mx-auto font-body-serif">
-              Obsidian is a markdown editor. Notion is a team wiki. Paperclip
-              orchestrates agents. Cabinet is the only tool that combines a
-              knowledge base, AI agents, and embedded apps in one self-hosted OS.
-            </p>
-          </div>
-
-          <div className="border border-border rounded-xl bg-bg-card overflow-hidden">
-            <ComparisonTable />
-          </div>
-
-          <div className="mt-8 grid md:grid-cols-3 gap-6">
-            <div className="border border-border rounded-xl p-6 bg-bg-card">
-              <h3 className="font-display text-lg mb-3 flex items-center gap-2 text-text-primary">
-                <Star className="w-4 h-4 text-accent" /> vs Obsidian
-              </h3>
-              <p className="text-sm text-text-secondary leading-relaxed font-body-serif">
-                Obsidian is a great markdown editor with plugins. But it has no
-                AI agents, no scheduled jobs, no embedded HTML apps, no web
-                terminal. Cabinet is a knowledge OS, not just a note editor.
-              </p>
-            </div>
-            <div className="border border-border rounded-xl p-6 bg-bg-card">
-              <h3 className="font-display text-lg mb-3 flex items-center gap-2 text-text-primary">
-                <Star className="w-4 h-4 text-accent" /> vs Notion
-              </h3>
-              <p className="text-sm text-text-secondary leading-relaxed font-body-serif">
-                Notion locks your data in their cloud. Cabinet stores everything
-                as markdown files on disk. You own your data. You can grep it.
-                AI agents read and write directly. No API limits. No lock-in.
-              </p>
-            </div>
-            <div className="border border-border rounded-xl p-6 bg-bg-card">
-              <h3 className="font-display text-lg mb-3 flex items-center gap-2 text-text-primary">
-                <Star className="w-4 h-4 text-accent" /> vs Paperclip
-              </h3>
-              <p className="text-sm text-text-secondary leading-relaxed font-body-serif">
-                Paperclip is excellent at agent orchestration — org charts,
-                budgets, audit logs. But it has no knowledge base, no editor, no
-                content layer. Cabinet gives your agents a brain to read and
-                write to, plus HTML apps, a terminal, and a full wiki.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ─── AI Agents ─── */}
       <section id="agents" className="py-24 border-t border-border bg-bg-warm">
         <div className="max-w-6xl mx-auto px-6">
@@ -1839,7 +1880,7 @@ export default function Home() {
               <ul className="space-y-2.5 text-sm">
                 <li><a href="#features" className="text-text-secondary hover:text-text-primary transition-colors">Features</a></li>
                 <li><a href="#agents" className="text-text-secondary hover:text-text-primary transition-colors">AI Agents</a></li>
-                <li><a href="#compare" className="text-text-secondary hover:text-text-primary transition-colors">Compare</a></li>
+                <li><a href="/compare" className="text-text-secondary hover:text-text-primary transition-colors">Compare</a></li>
                 <li>
                   <a href="/cloud?source=footer" className="inline-flex items-center gap-1.5 text-text-secondary hover:text-text-primary transition-colors">
                     <Cloud className="w-3.5 h-3.5 text-accent" />
