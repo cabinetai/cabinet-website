@@ -36,11 +36,11 @@ const msMadi = Ms_Madi({
 });
 
 export const metadata: Metadata = {
-  title: "Cabinet — Free & Open-Source AI-First Knowledge Base",
+  title: "Cabinet: Free & Open-Source AI-First Knowledge Base",
   description:
     "Free and open-source AI-first knowledge base and startup OS. Markdown files on disk. AI agents that actually work. No database. No vendor lock-in. Self-hosted.",
   openGraph: {
-    title: "Cabinet — Free & Open-Source AI-First Knowledge Base",
+    title: "Cabinet: Free & Open-Source AI-First Knowledge Base",
     description:
       "Free and open-source AI-first knowledge base. Markdown on disk. Self-hosted. No vendor lock-in.",
     type: "website",
@@ -50,13 +50,13 @@ export const metadata: Metadata = {
         url: "https://runcabinet.com/og.png",
         width: 1200,
         height: 630,
-        alt: "Cabinet — AI-first knowledge base with embedded apps, AI agents, and file-based storage",
+        alt: "Cabinet: AI-first knowledge base with embedded apps, AI agents, and file-based storage",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cabinet — Free & Open-Source AI-First Knowledge Base",
+    title: "Cabinet: Free & Open-Source AI-First Knowledge Base",
     description:
       "Free and open-source AI-first knowledge base. Markdown on disk. Self-hosted. No vendor lock-in.",
     images: ["https://runcabinet.com/og.png"],

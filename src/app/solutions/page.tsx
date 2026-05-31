@@ -6,13 +6,13 @@ import { SiteNavbar } from "@/components/site-navbar";
 import { SOLUTIONS } from "@/lib/solutions";
 
 export const metadata: Metadata = {
-  title: "Cabinet for every team — Solutions",
+  title: "Cabinet for every team · Solutions",
   description:
     "Onboard an AI team for Sales, Marketing, Engineering, Product, Operations, or the exec suite. One self-hosted knowledge base, agents that do the work 24/7, and data you own.",
   openGraph: {
     title: "Cabinet for every team",
     description:
-      "An AI team for Sales, Marketing, Engineering, Product, Operations, and the exec suite — self-hosted, on data you own.",
+      "An AI team for Sales, Marketing, Engineering, Product, Operations, and the exec suite: self-hosted, on data you own.",
     type: "website",
     url: "https://runcabinet.com/solutions",
     images: [{ url: "https://runcabinet.com/solutions-hero.png", width: 1408, height: 768 }],
@@ -44,7 +44,7 @@ export default function SolutionsIndexPage() {
           </h1>
           <p className="mx-auto mt-6 max-w-2xl font-body-serif text-lg leading-relaxed text-text-secondary md:text-xl">
             Each team gets its own AI crew working on top of one knowledge base you
-            own — Markdown on disk, your models, your infrastructure.
+            own: Markdown on disk, your models, your infrastructure.
           </p>
           <div className="mx-auto mt-12 max-w-3xl overflow-hidden rounded-2xl border border-border shadow-xl shadow-black/10">
             <Image

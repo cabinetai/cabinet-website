@@ -6,27 +6,27 @@ import { DemoForm } from "@/components/demo-form";
 export const metadata: Metadata = {
   title: "Book a Cabinet demo",
   description:
-    "See Cabinet on your own stack — a 30-minute walkthrough of the knowledge base, your AI team, and how it runs self-hosted on data you own. No obligation, no prep needed.",
+    "See Cabinet on your own stack: a 30-minute walkthrough of the knowledge base, your AI team, and how it runs self-hosted on data you own. No obligation, no prep needed.",
   openGraph: {
     title: "Book a Cabinet demo",
     description:
-      "A 30-minute walkthrough of Cabinet on your own stack — self-hosted, on data you own.",
+      "A 30-minute walkthrough of Cabinet on your own stack: self-hosted, on data you own.",
     type: "website",
     url: "https://runcabinet.com/demo",
   },
 };
 
 const SEE = [
-  "Your AI team in action — agents that research, draft, and ship on a schedule.",
+  "Your AI team in action: agents that research, draft, and ship on a schedule.",
   "The file-based knowledge base: Markdown on disk, git history, no lock-in.",
   "Bring-your-own-AI routing to the model accounts you already pay for.",
   "What a self-hosted deployment looks like inside your environment.",
 ];
 
 const REASSURE = [
-  { icon: Server, text: "Self-hosted — your data stays on your infrastructure." },
+  { icon: Server, text: "Self-hosted. Your data stays on your infrastructure." },
   { icon: ShieldCheck, text: "Nothing you share trains a model. Ever." },
-  { icon: GitBranch, text: "Open source — inspect every line before you commit." },
+  { icon: GitBranch, text: "Open source: inspect every line before you commit." },
 ];
 
 export default function DemoPage() {
@@ -50,7 +50,7 @@ export default function DemoPage() {
               See Cabinet on your own stack
             </h1>
             <p className="mt-6 max-w-lg font-body-serif text-lg leading-relaxed text-text-secondary">
-              A 30-minute walkthrough tailored to your team — how Cabinet onboards an AI
+              A 30-minute walkthrough tailored to your team: how Cabinet onboards an AI
               crew, runs it on data you own, and replaces the tool sprawl you live in today.
             </p>
 

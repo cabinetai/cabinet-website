@@ -27,7 +27,7 @@ export function DemoForm() {
     e.preventDefault();
     const f = new FormData(e.currentTarget);
     const get = (k: string) => String(f.get(k) ?? "").trim();
-    const subject = `Cabinet demo request — ${get("company") || get("name")}`;
+    const subject = `Cabinet demo request: ${get("company") || get("name")}`;
     const body = [
       `Name: ${get("name")}`,
       `Work email: ${get("email")}`,

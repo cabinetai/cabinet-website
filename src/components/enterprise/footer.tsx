@@ -57,7 +57,7 @@ export function EnterpriseFooter() {
             </a>
             <p className="mt-4 text-[15px] text-text-secondary leading-relaxed font-body-serif">
               The substrate for strategy execution. Open source. File-based.
-              Built for the office of the CEO — and every manager beneath.
+              Built for the office of the CEO, and every manager beneath.
             </p>
             <p className="mt-5 text-xs text-text-tertiary">
               Built by{" "}

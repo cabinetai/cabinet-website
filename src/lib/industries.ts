@@ -35,7 +35,7 @@ export const INDUSTRIES: Industry[] = [
     menuBlurb: "Research and reporting where the data never leaves your walls.",
     icon: Landmark,
     eyebrow: "Cabinet for Financial Services",
-    headline: "AI on your most sensitive data — without sending it anywhere.",
+    headline: "AI on your most sensitive data, without sending it anywhere.",
     subhead:
       "Self-hosted by design: deal research, memos, and reporting run on your infrastructure, with your model keys, and a full git-backed audit trail. The data your compliance team worries about never leaves your walls.",
     stakes: {
@@ -61,9 +61,9 @@ export const INDUSTRIES: Industry[] = [
     menuBlurb: "Protocols, research, and ops on infrastructure you control.",
     icon: HeartPulse,
     eyebrow: "Cabinet for Healthcare",
-    headline: "Put AI to work on clinical knowledge — on your own infrastructure.",
+    headline: "Put AI to work on clinical knowledge, on your own infrastructure.",
     subhead:
-      "Protocols, literature reviews, and operational playbooks become a living knowledge base with an AI team — self-hosted, with no patient data crossing into a vendor cloud and no model training on what you share.",
+      "Protocols, literature reviews, and operational playbooks become a living knowledge base with an AI team, self-hosted, with no patient data crossing into a vendor cloud and no model training on what you share.",
     stakes: {
       heading: "Patient data and vendor clouds don't mix",
       points: [
@@ -87,9 +87,9 @@ export const INDUSTRIES: Industry[] = [
     menuBlurb: "Matter knowledge and drafting under privilege you preserve.",
     icon: Scale,
     eyebrow: "Cabinet for Legal",
-    headline: "Privileged work stays privileged — and your AI still helps.",
+    headline: "Privileged work stays privileged, and your AI still helps.",
     subhead:
-      "Matter research, first drafts, and a firm-wide knowledge base run on infrastructure you control, with a complete audit trail — so confidentiality and privilege aren't traded away for AI leverage.",
+      "Matter research, first drafts, and a firm-wide knowledge base run on infrastructure you control, with a complete audit trail, so confidentiality and privilege aren't traded away for AI leverage.",
     stakes: {
       heading: "Confidentiality is the whole job",
       points: [
@@ -115,7 +115,7 @@ export const INDUSTRIES: Industry[] = [
     eyebrow: "Cabinet for Professional Services",
     headline: "Turn every engagement into reusable, AI-leveraged IP.",
     subhead:
-      "Proposals, research, and delivery artifacts compound into a knowledge base your AI team draws on — so consultancies and agencies win more work and deliver faster without re-inventing the wheel each time.",
+      "Proposals, research, and delivery artifacts compound into a knowledge base your AI team draws on, so consultancies and agencies win more work and deliver faster without re-inventing the wheel each time.",
     stakes: {
       heading: "Your margin is in not redoing the same work",
       points: [
@@ -139,7 +139,7 @@ export const INDUSTRIES: Industry[] = [
     menuBlurb: "A whole AI org for a team that's still small.",
     icon: Rocket,
     eyebrow: "Cabinet for Startups & Scale-ups",
-    headline: "Run like a company 5× your size — before you hire for it.",
+    headline: "Run like a company 5× your size, before you hire for it.",
     subhead:
       "Onboard an AI team across go-to-market, product, and ops on day one. Open-source and self-hosted, so there's no per-seat AI tax and no vendor lock-in as you scale.",
     stakes: {

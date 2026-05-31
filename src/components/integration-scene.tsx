@@ -430,7 +430,7 @@ function StaticFallback() {
     <section className="relative bg-bg border-b border-border py-20">
       <div className="max-w-4xl mx-auto px-6 text-center">
         <p className="text-sm font-code text-text-tertiary uppercase tracking-widest mb-8">
-          Your whole stack — in one Cabinet
+          Your whole stack, in one Cabinet
         </p>
         <div className="flex flex-wrap items-center justify-center gap-2.5 mb-10">
           {[...LOGOS, ...PROVIDERS].map((src) => (

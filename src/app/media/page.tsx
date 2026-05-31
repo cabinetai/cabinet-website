@@ -34,13 +34,13 @@ const MEDIA: MediaItem[] = [
   {
     kind: "video",
     id: "k4Bo2QolYTQ",
-    title: "Stop Losing Context in AI Conversations — Meet Cabinet, the Open Source Fix",
+    title: "Stop Losing Context in AI Conversations: Meet Cabinet, the Open Source Fix",
     authorName: "Tom Granot",
     authorHandle: "SyntaxGTM",
     channelUrl: CHANNEL_URL,
     publishedAt: "2026-04-21",
     blurb:
-      "Tom Granot walks through the problem every AI-native developer hits: context evaporates between sessions, prompts, and tools. Cabinet is the open-source fix — a persistent, file-based knowledge base your agents can actually read from and write to.",
+      "Tom Granot walks through the problem every AI-native developer hits: context evaporates between sessions, prompts, and tools. Cabinet is the open-source fix: a persistent, file-based knowledge base your agents can actually read from and write to.",
   },
   {
     kind: "article",
@@ -51,14 +51,14 @@ const MEDIA: MediaItem[] = [
     publicationUrl: "https://www.donotchurn.com",
     publishedAt: "2026-04-15",
     blurb:
-      "Daria Littlefield analyses why personal knowledge bases churn when users outgrow them — and groups Cabinet with Mem and NotebookLM as products that have to design for that ceiling.",
+      "Daria Littlefield analyses why personal knowledge bases churn when users outgrow them, and groups Cabinet with Mem and NotebookLM as products that have to design for that ceiling.",
     quotes: [
       "Cabinet, Mem, and NotebookLM show what happens when a personal knowledge base hits its ceiling.",
-      "Cabinet is optimized for what I'd call autonomous compounding — a system where the knowledge base writes itself, continuously, without the user's active participation.",
+      "Cabinet is optimized for what I'd call autonomous compounding: a system where the knowledge base writes itself, continuously, without the user's active participation.",
       "Hila Shmuel is a former Engineering Manager at Apple who left to build Cabinet in public, with the open-source community.",
-      "Cabinet was her answer to that. Launched in 2026, it's free, self-hosted, and built on the belief that your AI context should live on your machine — not in a vendor's cloud.",
+      "Cabinet was her answer to that. Launched in 2026, it's free, self-hosted, and built on the belief that your AI context should live on your machine, not in a vendor's cloud.",
       "The tagline says it plainly: one knowledge base, AI agents that remember everything.",
-      "Cabinet needs a quality signal — some way for users to see whether agent outputs are being used, or quietly accumulating unread.",
+      "Cabinet needs a quality signal: some way for users to see whether agent outputs are being used, or quietly accumulating unread.",
     ],
   },
   {
@@ -70,7 +70,7 @@ const MEDIA: MediaItem[] = [
     channelUrl: CHANNEL_URL,
     publishedAt: "2026-04-13",
     blurb:
-      "A deep dive into why LLM knowledge bases are the next frontier for AI-powered development — exploring Andrej Karpathy's vision for software 2.0, why context quality determines AI output quality, and how Cabinet solves the knowledge gap for developer teams.",
+      "A deep dive into why LLM knowledge bases are the next frontier for AI-powered development. It explores Andrej Karpathy's vision for software 2.0, why context quality determines AI output quality, and how Cabinet solves the knowledge gap for developer teams.",
   },
 ];
 
@@ -91,20 +91,20 @@ function formatDate(iso: string): string {
 }
 
 export const metadata: Metadata = {
-  title: "In the Wild — Cabinet | Stop Losing Context in AI Conversations",
+  title: "In the Wild | Cabinet | Stop Losing Context in AI Conversations",
   description:
     "Real demos, community builds, and coverage of Cabinet from around the web. Watch Tom Granot (SyntaxGTM) explain why Cabinet is the open-source fix for context loss in AI-native development.",
   openGraph: {
-    title: "Stop Losing Context in AI Conversations — Meet Cabinet, the Open Source Fix",
+    title: "Stop Losing Context in AI Conversations: Meet Cabinet, the Open Source Fix",
     description:
-      "Tom Granot (SyntaxGTM) walks through why context evaporates in AI workflows — and how Cabinet's persistent, file-based knowledge base fixes it.",
+      "Tom Granot (SyntaxGTM) walks through why context evaporates in AI workflows, and how Cabinet's persistent, file-based knowledge base fixes it.",
     images: [{ url: FEATURED_THUMBNAIL, width: 480, height: 360, alt: FEATURED.title }],
     type: "video.other",
     url: "https://runcabinet.com/media",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Stop Losing Context in AI Conversations — Meet Cabinet, the Open Source Fix",
+    title: "Stop Losing Context in AI Conversations: Meet Cabinet, the Open Source Fix",
     description:
       "Tom Granot (SyntaxGTM) on why Cabinet is the open-source fix for context loss in AI-native development.",
     images: [FEATURED_THUMBNAIL],
@@ -317,8 +317,8 @@ export default function MediaPage() {
               </h2>
               <p className="text-text-secondary font-body-serif leading-relaxed mb-4">
                 LLMs don&apos;t know your codebase, your team&apos;s decisions, or your project history.
-                Every time you start a new session, that context is gone. The Karpathy Effect —
-                the compounding value of feeding rich, structured context into a model — only works
+                Every time you start a new session, that context is gone. The Karpathy Effect
+                (the compounding value of feeding rich, structured context into a model) only works
                 if you have a place to store and retrieve that context reliably.
               </p>
               <p className="text-text-secondary font-body-serif leading-relaxed">
@@ -332,7 +332,7 @@ export default function MediaPage() {
               </h2>
               <p className="text-text-secondary font-body-serif leading-relaxed mb-4">
                 Cabinet gives your AI agents a persistent, structured memory of everything that
-                matters: your docs, decisions, architecture, and tribal knowledge — all indexed and
+                matters: your docs, decisions, architecture, and tribal knowledge, all indexed and
                 ready to inject into any LLM context window.
               </p>
               <p className="text-text-secondary font-body-serif leading-relaxed">

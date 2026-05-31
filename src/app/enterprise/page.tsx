@@ -65,9 +65,9 @@ function Hero() {
 
             <p className="ent-lead mt-5 max-w-xl">
               Cabinet's AI teammates draft the brief, run the OKR cycle, and
-              prep every meeting — on a schedule that never slips. Every manager
+              prep every meeting, on a schedule that never slips. Every manager
               gets a Chief of Staff; every leader gets a coach. It all runs on
-              your own infrastructure — yours to inspect, down to the last line
+              your own infrastructure, yours to inspect, down to the last line
               of code.
             </p>
 
@@ -95,7 +95,7 @@ function Hero() {
           <Eyebrow muted>Built by</Eyebrow>
           <p className="text-sm text-text-secondary">
             <span className="font-semibold text-text-primary">Hila Shmuel</span>{" "}
-            — previously Engineering Manager at Apple, AI &amp; Data
+            was previously Engineering Manager at Apple, AI &amp; Data
             Infrastructure. Designed the platforms that train the on-device AI
             models running on billions of iPhones, Macs, and iPads.{" "}
             <a
@@ -172,7 +172,7 @@ function HeroBriefCard() {
               tone="risk"
               tag="OKR · slipping"
               title="EMEA expansion KR · 88% of target (Δ −12pts)"
-              detail="Mercedes pilot delayed — Jürgen requests Tuesday call"
+              detail="Mercedes pilot delayed. Jürgen requests Tuesday call"
             />
             <BriefRow
               tone="win"
@@ -252,7 +252,7 @@ function Problem() {
         }
         kicker={
           <>
-            Not because the strategy is wrong — because nobody knows it.
+            Not because the strategy is wrong, but because nobody knows it.
             Strategy lives in slides. The work lives in fourteen separate
             tools. The gap between them is where most enterprises stall.
           </>
@@ -266,11 +266,11 @@ function Problem() {
         />
         <StatCard
           stat="2%"
-          label="of leaders have access to a Chief of Staff — the other 98% fly blind"
+          label="of leaders have access to a Chief of Staff; the other 98% fly blind"
         />
         <StatCard
           stat="23"
-          label="meetings per week the average S&P 500 manager attends — and still misses the goal"
+          label="meetings per week the average S&P 500 manager attends, and still misses the goal"
         />
       </div>
 
@@ -289,7 +289,7 @@ function Problem() {
             </p>
             <p className="mt-3">
               Cabinet gives every manager a Chief of Staff and every leader a
-              coach — running on files the company already owns, not a SaaS
+              coach, running on files the company already owns, not a SaaS
               contract it has to renew.
             </p>
           </div>
@@ -321,10 +321,10 @@ function Substrate() {
           </p>
 
           <div className="mt-7 space-y-2.5">
-            <SubLine icon={Database} t="Everything in one place" d="OKRs, org chart, decisions, meetings — connected, kept up to date by the AI teammates." />
+            <SubLine icon={Database} t="Everything in one place" d="OKRs, org chart, decisions, meetings: connected, kept up to date by the AI teammates." />
             <SubLine icon={GitBranch} t="Versioned by git" d="Every change is a commit. Roll back a quarter, branch a strategy, diff a roadmap." />
             <SubLine icon={Cpu} t="Humans and AI read the same files" d="Plain markdown. No proprietary index. Nothing hidden from you." />
-            <SubLine icon={Lock} t="Your cloud or ours" d="Run on each manager's laptop, in your VPC, or on Cabinet Cloud — your choice." />
+            <SubLine icon={Lock} t="Your cloud or ours" d="Run on each manager's laptop, in your VPC, or on Cabinet Cloud. Your choice." />
           </div>
         </div>
 
@@ -429,7 +429,7 @@ function SubstrateVisual() {
               </p>
               <p className="text-[12px] text-text-secondary leading-relaxed">
                 A wiki of plain text files, linked together. The AI reads the
-                same files you do — nothing hidden, nothing in a vector
+                same files you do: nothing hidden, nothing in a vector
                 database, nothing to migrate.
               </p>
             </div>
@@ -522,7 +522,7 @@ function LiveBriefSection() {
         kicker={
           <>
             By 06:00 every weekday, Cabinet's AI teammates have read the
-            weekend — surfaced the risks, drafted the replies, queued the
+            weekend: surfaced the risks, drafted the replies, queued the
             meetings. You read the brief over coffee. The work is already done.
           </>
         }
@@ -676,7 +676,7 @@ function PanelBrief() {
       </p>
       <div className="space-y-3 mt-6">
         <BigBrief tone="risk" tag="OKR · falling behind" title="EMEA expansion KR · 88% of target (12 points behind plan)" body="The Mercedes pilot timeline slipped Friday after a legal escalation. Jürgen (VP) requested a 30-minute call Tuesday." link="okrs/emea-expansion.md" />
-        <BigBrief tone="win" tag="Good news" title="Q2 revenue 4 points above plan" body="The March pricing change is the driver. Marcus drafted a one-pager — flagged for your review." link="board/may-prep.md" />
+        <BigBrief tone="win" tag="Good news" title="Q2 revenue 4 points above plan" body="The March pricing change is the driver. Marcus drafted a one-pager, flagged for your review." link="board/may-prep.md" />
         <BigBrief tone="action" tag="Drafted · awaiting your OK" title="2 replies ready to send" body="Marcus one-on-one follow-up (a commitment from 3 weeks ago, now overdue). Mercedes apology and reschedule." link="1on1s/marcus.md" />
         <BigBrief tone="info" tag="In progress" title="May review brief drafts Wednesday 07:00" body="Twelve-month metric grid, scorecard, and discussion topics will be ready before your Wednesday prep block." link="mbr/2026-05.md" />
       </div>
@@ -720,7 +720,7 @@ function PanelOkr() {
       <div className="flex items-start justify-between mb-5">
         <div>
           <Pill>Live · all OKRs across 12 BUs</Pill>
-          <h3 className="font-display text-2xl text-text-primary mt-2">Q2 2026 — OKR tree</h3>
+          <h3 className="font-display text-2xl text-text-primary mt-2">Q2 2026 OKR tree</h3>
         </div>
         <div className="flex items-center gap-3 text-[11px]">
           <Legend dot="bg-green-500" l="47 on track" />
@@ -762,11 +762,11 @@ function PanelMbr() {
   return (
     <div>
       <Pill>Auto-drafted Wednesday 07:00 · ready for review</Pill>
-      <h3 className="font-display text-2xl text-text-primary mt-2 mb-1">May monthly review — brief</h3>
+      <h3 className="font-display text-2xl text-text-primary mt-2 mb-1">May monthly review: brief</h3>
       <p className="text-xs text-text-tertiary font-code mb-5">Drafted by Strategy AI · 1,420 words · 4 sources · 6 charts</p>
       <div className="space-y-4 font-body-serif text-[15px] leading-relaxed text-text-primary max-w-3xl">
         <p>
-          <strong>The short version.</strong> May closed with revenue 4 points above plan and 91% attendance at the executive standing review — a record. The one material risk this month is{" "}
+          <strong>The short version.</strong> May closed with revenue 4 points above plan and 91% attendance at the executive standing review, a record. The one material risk this month is{" "}
           <span className="text-accent font-semibold">EMEA expansion</span>: the Mercedes pilot shifted right by 6 weeks because of legal review.
         </p>
         <h4 className="font-display text-lg mt-5 mb-2">Twelve-month metric grid</h4>
@@ -783,8 +783,8 @@ function PanelMbr() {
         </div>
         <h4 className="font-display text-lg mt-5 mb-2">Three things to discuss</h4>
         <ol className="list-decimal pl-5 space-y-1.5 text-text-secondary">
-          <li>EMEA legal escalation — who owns the path forward?</li>
-          <li>Pricing change — hold through Q3 or revert?</li>
+          <li>EMEA legal escalation: who owns the path forward?</li>
+          <li>Pricing change: hold through Q3 or revert?</li>
           <li>Hiring: are we lifting the freeze, and where?</li>
         </ol>
       </div>
@@ -794,10 +794,10 @@ function PanelMbr() {
 
 function PanelRisk() {
   const risks = [
-    { t: "Mercedes EMEA pilot — timeline slipped", s: "high", o: "Jürgen K.", f: "12 hours ago", src: "1on1s/jurgen.md" },
+    { t: "Mercedes EMEA pilot: timeline slipped", s: "high", o: "Jürgen K.", f: "12 hours ago", src: "1on1s/jurgen.md" },
     { t: "Hiring freeze conflicts with Q3 plan", s: "high", o: "CHRO", f: "2 days ago", src: "/strategy/headcount.md" },
     { t: "Promised follow-up missed for 3 weeks", s: "med", o: "Sarah / Marcus", f: "found automatically", src: "/1on1s/marcus.md" },
-    { t: "4 OKRs have no clear owner", s: "med", o: "—", f: "this week", src: "/okrs/" },
+    { t: "4 OKRs have no clear owner", s: "med", o: "Unassigned", f: "this week", src: "/okrs/" },
     { t: "August metric projection looks weak", s: "low", o: "FP&A", f: "flagged by Strategy AI", src: "/mbr/2026-05.md" },
   ];
   return (
@@ -831,7 +831,7 @@ function PanelRisk() {
 function Versus() {
   const rows: { feature: string; cabinet: string | true; wb: string | true | false; viva: string | false; manual: string | true | false }[] = [
     { feature: "Your data stays in a folder you own", cabinet: true, wb: false, viva: false, manual: true },
-    { feature: "Open source — you can read the code", cabinet: true, wb: false, viva: false, manual: false },
+    { feature: "Open source: you can read the code", cabinet: true, wb: false, viva: false, manual: false },
     { feature: "Run on your servers (or fully offline)", cabinet: true, wb: false, viva: false, manual: false },
     { feature: "Uses your own AI keys", cabinet: true, wb: "Limited", viva: false, manual: false },
     { feature: "Time to first AI-drafted document", cabinet: "10 min", wb: "3–6 months", viva: false, manual: false },
@@ -929,9 +929,9 @@ function Templates() {
     { name: "chief-of-staff", tagline: "A Chief of Staff for every manager", desc: "Morning brief, weekly status, missed-commitment alerts, one-on-one prep, kudos. Schedule and AI teammates are all included.", delivers: ["Morning brief", "Weekly status", "1:1 prep", "Kudos"], cmd: "github:cabinetai/template-chief-of-staff", icon: Briefcase, featured: true },
     { name: "exec-strategy", tagline: "The CEO's operating room", desc: "OKR tree, scorecard, twelve-month metric grid, monthly review brief, cross-team heatmap, risk list.", delivers: ["OKR tree", "Scorecard", "Monthly review", "Risk list"], cmd: "github:cabinetai/template-exec-strategy", icon: Building2 },
     { name: "okr-cycle", tagline: "Quarterly planning, end to end", desc: "Drafting → reviewed → aligned → in progress → at risk → done. An OKR Coach lives in the same folder.", delivers: ["Playbook", "Alignment", "Coach"], cmd: "github:cabinetai/template-okr-cycle", icon: Target },
-    { name: "leadership-coach", tagline: "A coach in every manager's pocket", desc: "Feedback framing, prep for hard conversations, personal growth plan, Friday reflection — every week.", delivers: ["Feedback prep", "Growth plan", "Kudos"], cmd: "github:cabinetai/template-leadership-coach", icon: Users },
+    { name: "leadership-coach", tagline: "A coach in every manager's pocket", desc: "Feedback framing, prep for hard conversations, personal growth plan, Friday reflection, every week.", delivers: ["Feedback prep", "Growth plan", "Kudos"], cmd: "github:cabinetai/template-leadership-coach", icon: Users },
     { name: "initiative-tracker", tagline: "Cross-team portfolio in one place", desc: "One folder per initiative. Weekly auto-drafted briefing. Named owners, named dependencies, named milestones.", delivers: ["Portfolio", "Briefings", "Dependencies"], cmd: "github:cabinetai/template-initiatives", icon: Layers },
-    { name: "operating-schedule", tagline: "The schedule under everything", desc: "The set of jobs every other template installs — morning brief, weekly status, monthly review, quarterly cycle.", delivers: ["Morning", "Weekly", "Monthly", "Quarterly"], cmd: "github:cabinetai/template-operating-schedule", icon: Clock },
+    { name: "operating-schedule", tagline: "The schedule under everything", desc: "The set of jobs every other template installs: morning brief, weekly status, monthly review, quarterly cycle.", delivers: ["Morning", "Weekly", "Monthly", "Quarterly"], cmd: "github:cabinetai/template-operating-schedule", icon: Clock },
   ];
 
   return (
@@ -1033,7 +1033,7 @@ function Outcomes() {
         }
       />
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-        <StatCard stat="14h → 3h" label="Monthly review prep, per business unit" detail="The brief is drafted in advance — no more weekend war rooms." icon={Clock} />
+        <StatCard stat="14h → 3h" label="Monthly review prep, per business unit" detail="The brief is drafted in advance. No more weekend war rooms." icon={Clock} />
         <StatCard stat="+91%" label="Executive review attendance" detail="The agenda is ready the night before. No prep means no one cancels." icon={TrendingUp} />
         <StatCard stat="0" label="Missed one-on-one commitments per quarter" detail="The Risk Watcher checks every one-on-one log hourly for overdue follow-ups." icon={Target} />
         <StatCard stat="3×" label="Faster OKR cycle close" detail="Drafting, alignment, and ratification all happen in the same folder." icon={Zap} />
@@ -1052,10 +1052,10 @@ function Outcomes() {
    ────────────────────────────────────────────────────────────── */
 function SolutionsPreview() {
   const personas = [
-    { title: "Chief Executive", sub: "Operating model and board view", icon: Briefcase, items: ["A 06:00 morning brief grounded in every team's OKR", "The next monthly review brief is drafted 5 days ahead", "Re-plan continuously — the annual cycle is over"] },
-    { title: "Chief of Staff", sub: "Schedule, drafts, decisions", icon: Users, items: ["Every meeting writes a decision file", "Friday 16:00 — weekly status drafts itself", "Replace Slack threads with an auditable record"] },
+    { title: "Chief Executive", sub: "Operating model and board view", icon: Briefcase, items: ["A 06:00 morning brief grounded in every team's OKR", "The next monthly review brief is drafted 5 days ahead", "Re-plan continuously. The annual cycle is over"] },
+    { title: "Chief of Staff", sub: "Schedule, drafts, decisions", icon: Users, items: ["Every meeting writes a decision file", "Friday 16:00: weekly status drafts itself", "Replace Slack threads with an auditable record"] },
     { title: "CHRO / People", sub: "Performance and manager support", icon: Building2, items: ["A coach in every manager's pocket", "Kudos drafted from real contributions, not LinkedIn fluff", "Feedback prep before the hard conversation"] },
-    { title: "CIO / CISO", sub: "Data ownership and audit trail", icon: Shield, items: ["Open source — your team can read the code before signing", "Run on your servers, with your AI keys, fully offline if needed", "Export your data with one shell command — no 90-day queue"] },
+    { title: "CIO / CISO", sub: "Data ownership and audit trail", icon: Shield, items: ["Open source: your team can read the code before signing", "Run on your servers, with your AI keys, fully offline if needed", "Export your data with one shell command. No 90-day queue"] },
   ];
 
   return (
@@ -1071,7 +1071,7 @@ function SolutionsPreview() {
         kicker={
           <>
             Cabinet is the rare enterprise platform that lands at the CEO level
-            and on every manager's laptop in the same quarter — because the AI
+            and on every manager's laptop in the same quarter, because the AI
             teammates work at every altitude.
           </>
         }
@@ -1115,10 +1115,10 @@ function QuoteRow() {
         <p className="ent-display-3 italic max-w-3xl mx-auto">
           “Most software helps teams do work. Cabinet helps teams do the{" "}
           <span className="text-accent not-italic font-semibold">right</span>{" "}
-          work — and proves it.”
+          work, and proves it.”
         </p>
         <p className="mt-7 text-sm font-semibold text-text-tertiary uppercase tracking-widest">
-          — Cabinet
+          Cabinet
         </p>
       </div>
     </section>

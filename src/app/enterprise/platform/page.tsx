@@ -47,7 +47,7 @@ function Hero() {
           </h1>
           <p className="ent-lead mt-6 max-w-2xl">
             Cabinet is not an OKR tool, a coaching app, or a meeting assistant.
-            It is the layer those things sit on top of — your files (strategy,
+            It is the layer those things sit on top of: your files (strategy,
             OKRs, org chart, decisions, one-on-ones), a schedule that keeps
             them up to date, and four AI teammates that do the routine work
             for you.
@@ -64,13 +64,13 @@ function Hero() {
           <Pillar
             n="01"
             t="Your files"
-            d="Strategy, OKRs, org chart, decisions, one-on-one notes — all in plain text, in a folder you own, versioned by git."
+            d="Strategy, OKRs, org chart, decisions, one-on-one notes: all in plain text, in a folder you own, versioned by git."
             icon={Database}
           />
           <Pillar
             n="02"
             t="The schedule"
-            d="A simple list of recurring jobs — morning brief, weekly status, monthly review. Each one written down. Each one runs on time."
+            d="A simple list of recurring jobs: morning brief, weekly status, monthly review. Each one written down. Each one runs on time."
             icon={Workflow}
           />
           <Pillar
@@ -127,7 +127,7 @@ function SubstrateDeep() {
         kicker={
           <>
             Cabinet keeps your strategy as a folder of plain text files,
-            connected by simple links — like a private wiki. The AI teammates
+            connected by simple links, like a private wiki. The AI teammates
             read the same files you do.
           </>
         }
@@ -142,7 +142,7 @@ function SubstrateDeep() {
             </span>
           </div>
           <div className="p-6 font-code text-[12.5px] leading-relaxed text-text-secondary">
-            <p className="text-text-primary"># Q2 2026 — Narrative</p>
+            <p className="text-text-primary"># Q2 2026: Narrative</p>
             <p className="mt-2 text-text-tertiary"># Owners: [[org/sarah-kim]] · [[org/marcus-ren]]</p>
             <p className="mt-2"># Source for: <span className="text-accent">[[mbr/2026-05]]</span></p>
             <p className="mt-3">## North star</p>
@@ -172,7 +172,7 @@ function SubstrateDeep() {
           <FeatureRow
             icon={Network}
             t="Linked like a wiki"
-            d="A one-on-one file mentions [[okrs/emea]] — the AI follows the link to find the relevant OKR. Knowledge builds up the way you write it."
+            d="A one-on-one file mentions [[okrs/emea]]. The AI follows the link to find the relevant OKR. Knowledge builds up the way you write it."
           />
           <FeatureRow
             icon={Search}
@@ -226,7 +226,7 @@ function Agents() {
       role: "Works alongside the manager",
       pulse: false,
       jobs: ["1:1 prep", "Feedback prep", "Kudos drafts", "Growth plan"],
-      desc: "Sits in the one-on-one prep flow. Drafts kudos from real contributions. Helps frame the hard conversation before it happens. Never replaces the manager — gives them what a great coach would give them.",
+      desc: "Sits in the one-on-one prep flow. Drafts kudos from real contributions. Helps frame the hard conversation before it happens. Never replaces the manager. Gives them what a great coach would give them.",
     },
     {
       icon: LayoutDashboard,
@@ -260,7 +260,7 @@ function Agents() {
           <>
             Each AI teammate has a single job, a clear permission scope, and
             access to a defined slice of your files. None of them sends your
-            data to a general chatbot — every action is grounded in files you
+            data to a general chatbot. Every action is grounded in files you
             can read yourself.
           </>
         }
@@ -337,8 +337,8 @@ function Cadence() {
         }
         kicker={
           <>
-            Each scheduled task — morning brief, weekly status, monthly review
-            brief — is a short, readable file. When it runs, what it reads,
+            Each scheduled task (morning brief, weekly status, monthly review
+            brief) is a short, readable file. When it runs, what it reads,
             and what it writes. You can read it, change it, or version it like
             any other code.
           </>
@@ -382,7 +382,7 @@ prompt: |
         </div>
 
         <div className="space-y-4">
-          <CadenceRow t="Every weekday · 06:00" e="Morning brief" d="Today's top 3, missed commitments, drafted replies — ready before you open your laptop." />
+          <CadenceRow t="Every weekday · 06:00" e="Morning brief" d="Today's top 3, missed commitments, drafted replies, ready before you open your laptop." />
           <CadenceRow t="Every Friday · 16:00" e="Weekly status + kudos" d="What moved this week, what is at risk, who deserves a callout." />
           <CadenceRow t="1st of the month · 07:00" e="Monthly review brief" d="Twelve-month metric grid, scorecard, three things to discuss." />
           <CadenceRow t="Quarter -1" e="OKR cycle" d="Drafting → reviewed → aligned → in progress → done." />
@@ -469,7 +469,7 @@ function Integrations() {
           <>
             We don't ask your team to log into another tool. The AI teammates
             post into Slack and Teams, pull from Linear and Jira, query
-            Snowflake, and write back to your files — all running on your own
+            Snowflake, and write back to your files, all running on your own
             AI provider keys.
           </>
         }
@@ -512,15 +512,15 @@ function McpSection() {
             <em className="text-accent">No lock-in.</em>
           </h2>
           <p className="ent-lead mt-5 max-w-xl">
-            Cabinet exposes its data through MCP — an open standard. Your own
+            Cabinet exposes its data through MCP, an open standard. Your own
             AI tools (Claude Code, Cursor, anything that speaks MCP) can read
             your strategy files and add to them. Cabinet becomes the layer
             underneath, not the only window in.
           </p>
           <div className="mt-7">
             <CheckList items={[
-              "Open standard — no Cabinet-only SDK to learn",
-              "Permissions per tool — read-only by default",
+              "Open standard: no Cabinet-only SDK to learn",
+              "Permissions per tool: read-only by default",
               "Every request and every change is logged",
               "Works with Claude Code, Cursor, Cline, and your own scripts",
             ]} />

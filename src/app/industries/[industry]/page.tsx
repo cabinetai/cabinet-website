@@ -16,9 +16,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { industry } = await params;
   const found = getIndustry(industry);
-  if (!found) return { title: "Industries — Cabinet" };
+  if (!found) return { title: "Industries · Cabinet" };
 
-  const title = `${found.eyebrow} — Cabinet`;
+  const title = `${found.eyebrow} · Cabinet`;
   const description = found.subhead;
   const image = "https://runcabinet.com/solutions-hero.png";
   return {

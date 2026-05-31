@@ -8,9 +8,9 @@ import { WaitlistCloudBackdrop } from "@/components/waitlist-cloud-backdrop";
 import { DISCORD_URL, GITHUB_URL } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Cabinet Cloud — Join the Waitlist",
+  title: "Cabinet Cloud: Join the Waitlist",
   description:
-    "Cabinet Cloud is coming. Connect to your Cabinet from anywhere while your AI team works 24/7 — no setup, automatic updates, priority access for early supporters.",
+    "Cabinet Cloud is coming. Connect to your Cabinet from anywhere while your AI team works 24/7: no setup, automatic updates, priority access for early supporters.",
 };
 
 export default function CloudPage() {
@@ -25,7 +25,7 @@ export default function CloudPage() {
           <div className="text-center max-w-3xl mx-auto mb-10">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-border bg-bg-card text-xs font-code text-text-tertiary mb-8">
               <Cloud className="w-3.5 h-3.5 text-accent" />
-              Cabinet Cloud — coming soon
+              Cabinet Cloud is coming soon
             </div>
 
             <Image
@@ -43,8 +43,8 @@ export default function CloudPage() {
             </h1>
 
             <p className="text-lg text-text-secondary font-body-serif leading-relaxed">
-              Open your Cabinet from any device while your AI agents keep working —
-              drafting, researching, organizing — even when your laptop is closed.
+              Open your Cabinet from any device while your AI agents keep working
+              (drafting, researching, organizing) even when your laptop is closed.
             </p>
           </div>
 

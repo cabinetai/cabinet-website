@@ -43,7 +43,7 @@ const PRINCIPLES: Principle[] = [
     icon: Boxes,
     name: "BYOAI",
     tagline: "Use the AI you already pay for",
-    body: "Cabinet connects to the model accounts your organization already holds — Claude, Codex, OpenCode, local models, and whatever ships next. You bring the inference, so spend flows through contracts you control rather than a markup layered on top.",
+    body: "Cabinet connects to the model accounts your organization already holds: Claude, Codex, OpenCode, local models, and whatever ships next. You bring the inference, so spend flows through contracts you control rather than a markup layered on top.",
     iconBg: "bg-blue-100",
     iconFg: "text-blue-600",
     takeaway: "no second subscription and no per-seat AI markup.",

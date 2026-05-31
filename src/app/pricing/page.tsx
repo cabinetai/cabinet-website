@@ -9,11 +9,11 @@ import { PricingComparisonTable } from "@/components/pricing-comparison-table";
 import { DISCORD_URL, MACOS_DOWNLOAD_URL } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Pricing — Cabinet",
+  title: "Pricing | Cabinet",
   description:
-    "Cabinet is free and open source. Cabinet Cloud is hosted on a dedicated container — Pro from $20/mo, Max from $49/mo. Self-host always works.",
+    "Cabinet is free and open source. Cabinet Cloud is hosted on a dedicated container: Pro from $20/mo, Max from $49/mo. Self-host always works.",
   openGraph: {
-    title: "Pricing — Cabinet",
+    title: "Pricing | Cabinet",
     description:
       "Cabinet is free and open source. Hosted plans from $20/mo. Self-host always works.",
     type: "website",
@@ -28,7 +28,7 @@ const FAQS: Array<{ q: string; a: React.ReactNode }> = [
       <>
         You don&apos;t have to. Self-Hosted is free forever and gets every
         Cabinet feature. Pay only when you want it running 24/7 on a managed
-        container — no server to stand up, no OS to babysit, no backups to
+        container: no server to stand up, no OS to babysit, no backups to
         wire.
       </>
     ),
@@ -37,7 +37,7 @@ const FAQS: Array<{ q: string; a: React.ReactNode }> = [
     q: "Can I move from Cloud back to Self-Hosted later?",
     a: (
       <>
-        Yes. Your Cabinet is plain markdown on disk — export the whole directory
+        Yes. Your Cabinet is plain markdown on disk. Export the whole directory
         with one click and run it locally. We don&apos;t hold your data hostage
         and there&apos;s nothing to migrate.
       </>
@@ -62,7 +62,7 @@ const FAQS: Array<{ q: string; a: React.ReactNode }> = [
     a: (
       <>
         <strong>BYOAI</strong> (bring your own AI) is the default on every
-        Cloud tier — and it&apos;s free. Plug in OpenAI, Anthropic, Google
+        Cloud tier, and it&apos;s free. Plug in OpenAI, Anthropic, Google
         Gemini, xAI Grok, DeepSeek, or run a local model with Ollama. If
         you&apos;d rather not juggle keys, add <strong>Managed AI</strong> from
         $10/mo and we&apos;ll provide the access on one invoice.
@@ -73,7 +73,7 @@ const FAQS: Array<{ q: string; a: React.ReactNode }> = [
     q: "Is there a free trial of Cloud?",
     a: (
       <>
-        Self-Hosted <em>is</em> the free trial — same code, same features. Run
+        Self-Hosted <em>is</em> the free trial: same code, same features. Run
         it locally, fall in love, then move to Cloud when you want it always
         on.
       </>
@@ -103,8 +103,8 @@ const FAQS: Array<{ q: string; a: React.ReactNode }> = [
     a: (
       <>
         Cabinet is single-user today. Multi-user is shipping on the Enterprise
-        track first; a self-serve <strong>Team</strong> tier is in early access
-        — sign up and we&apos;ll prioritize you.
+        track first; a self-serve <strong>Team</strong> tier is in early access.
+        Sign up and we&apos;ll prioritize you.
       </>
     ),
   },
@@ -148,7 +148,7 @@ export default function PricingPage() {
 
           <p className="text-lg md:text-xl text-text-secondary font-body-serif leading-relaxed max-w-2xl mx-auto mb-4">
             Open your Cabinet from any device while your AI agents keep working
-            — drafting, researching, organizing — even when your laptop is
+            (drafting, researching, organizing) even when your laptop is
             closed.
           </p>
           <p className="text-base text-text-tertiary font-body-serif italic leading-relaxed max-w-2xl mx-auto mb-8">

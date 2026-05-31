@@ -53,18 +53,18 @@ export const SOLUTIONS: Solution[] = [
     eyebrow: "Cabinet for Sales",
     headline: "Your reps sell. Their AI team does everything else.",
     subhead:
-      "Account research, first-touch drafts, call prep, and CRM updates run as scheduled work inside one knowledge base — so every rep walks into every meeting prepared, without burning a day on busywork.",
+      "Account research, first-touch drafts, call prep, and CRM updates run as scheduled work inside one knowledge base, so every rep walks into every meeting prepared, without burning a day on busywork.",
     problem: {
       heading: "Selling time is leaking into tabs",
       points: [
         "Reps spend half the week researching accounts, copy-pasting between the CRM, LinkedIn, and ten docs.",
-        "Account knowledge lives in one rep's head — when they leave, the context leaves with them.",
+        "Account knowledge lives in one rep's head. When they leave, the context leaves with them.",
         "Generic AI chat doesn't know your ICP, your pricing, or last quarter's notes.",
       ],
     },
     team: [
       { name: "SDR", role: "Outbound", blurb: "Enriches new leads, drafts personalized first-touch emails against your ICP and proof points." },
-      { name: "Account Researcher", role: "Pre-call", blurb: "Builds a one-page brief on every account before the meeting — news, org chart, fit, objections." },
+      { name: "Account Researcher", role: "Pre-call", blurb: "Builds a one-page brief on every account before the meeting: news, org chart, fit, objections." },
       { name: "Deal Desk", role: "Pipeline", blurb: "Watches the pipeline for stalls, drafts follow-ups, keeps next-steps current." },
       { name: "Sales Ops", role: "Hygiene", blurb: "Reconciles CRM exports, flags missing fields, and keeps the source of truth clean." },
     ],
@@ -89,7 +89,7 @@ export const SOLUTIONS: Solution[] = [
     eyebrow: "Cabinet for Marketing",
     headline: "A content engine that compounds while you sleep.",
     subhead:
-      "Briefs, drafts, competitor scans, and performance recaps run as a team of agents on top of your messaging, brand voice, and past work — all version-controlled markdown you own.",
+      "Briefs, drafts, competitor scans, and performance recaps run as a team of agents on top of your messaging, brand voice, and past work, all version-controlled markdown you own.",
     problem: {
       heading: "Great marketing dies in coordination overhead",
       points: [
@@ -101,7 +101,7 @@ export const SOLUTIONS: Solution[] = [
     team: [
       { name: "Content Strategist", role: "Planning", blurb: "Turns a goal into briefs and an editorial calendar tied to your topic clusters." },
       { name: "Writer", role: "Drafting", blurb: "Drafts posts, emails, and landing copy in your brand voice from the knowledge base." },
-      { name: "Competitor Scout", role: "Research", blurb: "Tracks competitor launches, pricing, and messaging — files a digest you can act on." },
+      { name: "Competitor Scout", role: "Research", blurb: "Tracks competitor launches, pricing, and messaging, then files a digest you can act on." },
       { name: "Growth Analyst", role: "Reporting", blurb: "Pulls campaign numbers into a weekly recap with what to double down on." },
     ],
     routines: [
@@ -125,7 +125,7 @@ export const SOLUTIONS: Solution[] = [
     eyebrow: "Cabinet for Engineering",
     headline: "Docs that stay alive because agents keep them honest.",
     subhead:
-      "Link your repos, and agents draft RFCs, keep runbooks current, write incident retros, and answer 'how does this work?' against the actual codebase — all in markdown, all in git.",
+      "Link your repos, and agents draft RFCs, keep runbooks current, write incident retros, and answer 'how does this work?' against the actual codebase, all in markdown, all in git.",
     problem: {
       heading: "Your docs are wrong the moment they're written",
       points: [
@@ -161,7 +161,7 @@ export const SOLUTIONS: Solution[] = [
     eyebrow: "Cabinet for Product",
     headline: "From scattered signal to decisions you can defend.",
     subhead:
-      "Customer interviews, support tickets, and feedback get synthesized into themes; PRDs draft themselves from the evidence; competitors get tracked continuously — one knowledge base your whole team trusts.",
+      "Customer interviews, support tickets, and feedback get synthesized into themes; PRDs draft themselves from the evidence; competitors get tracked continuously. It all lives in one knowledge base your whole team trusts.",
     problem: {
       heading: "Insight is everywhere and usable nowhere",
       points: [
@@ -195,7 +195,7 @@ export const SOLUTIONS: Solution[] = [
     menuBlurb: "SOPs, recurring reports, and cross-tool reconciliation.",
     icon: Workflow,
     eyebrow: "Cabinet for Operations",
-    headline: "The recurring work that runs the company — running itself.",
+    headline: "The recurring work that runs the company, running itself.",
     subhead:
       "SOPs, vendor reviews, board-prep packets, and reconciliations become scheduled routines. The institutional knowledge that usually lives in one ops person's head lives in files instead.",
     problem: {
@@ -233,9 +233,9 @@ export const SOLUTIONS: Solution[] = [
     eyebrow: "Cabinet for Founders & Execs",
     headline: "Run the business from one place, with a team that never sleeps.",
     subhead:
-      "Strategy, board prep, investor updates, hiring, and competitive intel — coordinated by an AI team that reports to you, on infrastructure you control. Your company's brain, on your own disk.",
+      "Strategy, board prep, investor updates, hiring, and competitive intel, all coordinated by an AI team that reports to you, on infrastructure you control. Your company's brain, on your own disk.",
     problem: {
-      heading: "You're the integration layer — and it doesn't scale",
+      heading: "You're the integration layer, and it doesn't scale",
       points: [
         "Context for every decision is scattered across tools, inboxes, and your memory.",
         "You're the bottleneck: every update, brief, and recap routes through you.",
@@ -245,7 +245,7 @@ export const SOLUTIONS: Solution[] = [
     team: [
       { name: "Chief of Staff", role: "Coordination", blurb: "Dispatches work to the right agent and keeps the company's priorities current." },
       { name: "Board & Investor", role: "Reporting", blurb: "Drafts the monthly update and board deck from real metrics and notes." },
-      { name: "Strategy Researcher", role: "Decisions", blurb: "Builds the brief — market, competitors, options — before the big call." },
+      { name: "Strategy Researcher", role: "Decisions", blurb: "Builds the brief (market, competitors, options) before the big call." },
       { name: "Recruiter", role: "Hiring", blurb: "Drafts JDs, screens inbound, and preps interview kits from the role spec." },
     ],
     routines: [
@@ -293,7 +293,7 @@ export const SOLUTION_STORIES: Record<string, Story> = {
     metric: "100%",
     metricLabel: "of incidents now get a retro",
     quote:
-      "Docs used to rot the moment code changed. Now an agent flags the drift and drafts the retro — we just edit and ship.",
+      "Docs used to rot the moment code changed. Now an agent flags the drift and drafts the retro, and we just edit and ship.",
     attribution: "Staff Engineer · Fintech platform",
   },
   product: {
@@ -314,7 +314,7 @@ export const SOLUTION_STORIES: Record<string, Story> = {
     metric: "Self-hosted",
     metricLabel: "crown-jewel data never leaves",
     quote:
-      "It's the chief of staff I couldn't hire yet — it briefs me every morning and drafts the board update, all on infrastructure I control.",
+      "It's the chief of staff I couldn't hire yet: it briefs me every morning and drafts the board update, all on infrastructure I control.",
     attribution: "Founder & CEO · Seed-stage startup",
   },
 };
