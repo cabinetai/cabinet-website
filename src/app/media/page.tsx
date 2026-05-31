@@ -91,7 +91,7 @@ function formatDate(iso: string): string {
 }
 
 export const metadata: Metadata = {
-  title: "In the Wild | Cabinet | Stop Losing Context in AI Conversations",
+  title: "Media | Cabinet | Stop Losing Context in AI Conversations",
   description:
     "Real demos, community builds, and coverage of Cabinet from around the web. Watch Tom Granot (SyntaxGTM) explain why Cabinet is the open-source fix for context loss in AI-native development.",
   openGraph: {

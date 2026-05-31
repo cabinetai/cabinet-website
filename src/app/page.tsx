@@ -41,7 +41,7 @@ import { WaitlistCloudBackdrop } from "@/components/waitlist-cloud-backdrop";
 import { WaitlistPopup } from "@/components/waitlist-popup";
 import { IntegrationScene } from "@/components/integration-scene";
 import { PrinciplesShowcase } from "@/components/principles-showcase";
-import { SolutionsMenu } from "@/components/solutions-menu";
+import { SiteNavbar } from "@/components/site-navbar";
 import { SOLUTIONS, SOLUTION_STORIES } from "@/lib/solutions";
 import { DISCORD_URL, GITHUB_URL, MACOS_DOWNLOAD_URL } from "@/lib/site-config";
 
@@ -221,64 +221,6 @@ function GitHubStarsButton({
         {formatStarCount(stars)}
       </span>
     </a>
-  );
-}
-
-/* ─── Navbar ─── */
-function Navbar({ stars }: { stars: number | null }) {
-  return (
-    <nav className="fixed inset-x-0 top-0 z-50 border-b border-border bg-bg-card/95 backdrop-blur-sm">
-      <div className="max-w-6xl mx-auto px-6 min-h-16 py-3 flex items-center gap-6 lg:gap-10">
-        <a href="#" className="flex shrink-0 items-center gap-3 pr-4 lg:pr-6">
-          <Image src="/cabinet-icon.png" alt="Cabinet" width={36} height={36} className="rounded-lg" />
-          <span className="whitespace-nowrap text-xl font-brand italic tracking-tight text-text-primary">
-            Cabinet
-          </span>
-        </a>
-        <div className="hidden min-[1100px]:flex flex-1 items-center gap-8 text-sm font-medium text-text-secondary">
-          <a href="#features" className="hover:text-text-primary transition-colors">
-            Features
-          </a>
-          <SolutionsMenu triggerClassName="text-text-secondary" />
-          <a href="/compare" className="hover:text-text-primary transition-colors">
-            Compare
-          </a>
-          <a href="/pricing" className="hover:text-text-primary transition-colors">
-            Pricing
-          </a>
-          <a
-            href="https://docs.runcabinet.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-text-primary transition-colors"
-          >
-            Docs
-          </a>
-          <a href="/media" className="hover:text-text-primary transition-colors">
-            In the Wild
-          </a>
-          <a href="/demo" className="font-semibold text-accent hover:text-accent-warm transition-colors">
-            Book a demo
-          </a>
-        </div>
-        <div className="ml-auto flex items-center gap-2 sm:gap-3">
-          <GitHubStarsButton
-            stars={stars}
-            compact
-            className="inline-flex h-12 min-w-[11rem] items-center justify-between gap-3 rounded-full border border-border bg-bg-card px-4 text-sm font-semibold text-text-primary shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
-          />
-          <a
-            href={DISCORD_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden sm:inline-flex h-12 items-center justify-center gap-2 rounded-full bg-[#5865F2] px-5 text-sm font-medium text-white transition-colors shadow-sm shadow-[#5865F2]/20 hover:bg-[#4752C4]"
-          >
-            <DiscordIcon className="w-4 h-4" />
-            <span>Discord</span>
-          </a>
-        </div>
-      </div>
-    </nav>
   );
 }
 
@@ -1257,7 +1199,7 @@ export default function Home() {
 
   return (
     <div className="relative min-h-screen bg-bg">
-      <Navbar stars={stars} />
+      <SiteNavbar fixed />
       <WaitlistPopup />
 
       {/* ─── Integration scrollytelling scene ─── */}
@@ -1444,26 +1386,6 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* ─── Featured in (real press + live OSS proof) ─── */}
-      <section className="border-t border-border bg-bg-card py-8">
-        <div className="mx-auto flex max-w-6xl flex-col items-center justify-center gap-x-10 gap-y-3 px-6 text-text-tertiary sm:flex-row">
-          <span className="font-code text-xs uppercase tracking-widest">Featured in</span>
-          <a href="/media" className="font-display text-lg text-text-secondary transition-colors hover:text-text-primary">
-            SyntaxGTM
-          </a>
-          <a href="/media" className="font-display text-lg text-text-secondary transition-colors hover:text-text-primary">
-            Do Not Churn
-          </a>
-          <span className="hidden h-4 w-px bg-border sm:block" />
-          <span className="font-code text-sm">
-            {stars ? `${stars.toLocaleString()} ★ on GitHub` : "Open source"}
-          </span>
-          <a href="/media" className="font-code text-xs text-accent transition-colors hover:text-accent-warm">
-            See all coverage →
-          </a>
         </div>
       </section>
 

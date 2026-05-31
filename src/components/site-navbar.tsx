@@ -2,10 +2,10 @@
 
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import { Star } from "lucide-react";
-import { DiscordIcon, GithubIcon } from "@/components/site-icons";
+import { Download, Star } from "lucide-react";
+import { GithubIcon } from "@/components/site-icons";
 import { SolutionsMenu } from "@/components/solutions-menu";
-import { DISCORD_URL, GITHUB_URL } from "@/lib/site-config";
+import { GITHUB_URL } from "@/lib/site-config";
 
 type GitHubRepoResponse = {
   stargazers_count?: number;
@@ -57,23 +57,32 @@ function useGitHubStars() {
   return stars;
 }
 
-export function SiteNavbar() {
+/**
+ * The single site-wide navbar. Pass `fixed` on the homepage (it overlays the
+ * pinned scrollytelling scene); everywhere else it defaults to `sticky` so it
+ * stays in flow and pins to the top on scroll without needing a content offset.
+ */
+export function SiteNavbar({ fixed = false }: { fixed?: boolean }) {
   const stars = useGitHubStars();
 
   return (
-    <nav className="relative z-20 border-b border-border bg-bg-card/95 backdrop-blur-sm">
-      <div className="max-w-6xl mx-auto px-6 min-h-16 py-3 flex items-center gap-6 lg:gap-10">
+    <nav
+      className={`${
+        fixed ? "fixed inset-x-0 top-0" : "sticky top-0"
+      } z-50 border-b border-border bg-bg-card/95 backdrop-blur-sm`}
+    >
+      <div className="max-w-7xl mx-auto px-6 min-h-16 py-3 flex items-center gap-5 lg:gap-8">
         <a href="/" className="flex shrink-0 items-center gap-3 pr-4 lg:pr-6">
           <Image src="/cabinet-icon.png" alt="Cabinet" width={36} height={36} className="rounded-lg" />
-          <span className="whitespace-nowrap text-xl font-display italic tracking-tight text-text-primary">
+          <span className="whitespace-nowrap text-xl font-brand italic tracking-tight text-text-primary">
             Cabinet
           </span>
         </a>
-        <div className="hidden min-[1100px]:flex flex-1 items-center gap-8 text-sm font-code text-text-tertiary">
+        <div className="hidden min-[1100px]:flex flex-1 items-center gap-6 whitespace-nowrap text-sm font-medium text-text-secondary">
           <a href="/#features" className="hover:text-text-primary transition-colors">
             Features
           </a>
-          <SolutionsMenu triggerClassName="text-text-tertiary" />
+          <SolutionsMenu triggerClassName="text-text-secondary" />
           <a href="/compare" className="hover:text-text-primary transition-colors">
             Compare
           </a>
@@ -88,37 +97,37 @@ export function SiteNavbar() {
           >
             Docs
           </a>
-          <a href="/media" className="text-text-primary transition-colors">
-            In the Wild
-          </a>
-          <a href="/demo" className="font-semibold text-accent transition-colors hover:text-accent-warm">
-            Book a demo
+          <a href="/media" className="hover:text-text-primary transition-colors">
+            Media
           </a>
         </div>
-        <div className="ml-auto flex items-center gap-2 sm:gap-3">
+        <div className="ml-auto flex items-center gap-4 sm:gap-5">
+          {/* quiet social proof — not a CTA, so no box */}
           <a
             href={GITHUB_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex h-12 min-w-[11rem] items-center justify-between gap-3 rounded-full border border-border bg-bg-card px-4 text-sm font-semibold text-text-primary shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
+            aria-label={`Star Cabinet on GitHub (${formatStarCount(stars)} stars)`}
+            className="hidden items-center gap-1.5 whitespace-nowrap text-sm font-medium text-text-tertiary transition-colors hover:text-text-primary sm:inline-flex"
           >
-            <span className="inline-flex items-center gap-2">
-              <GithubIcon className="w-4 h-4" />
-              <span>Star Cabinet</span>
-            </span>
-            <span className="inline-flex items-center gap-1 rounded-full bg-accent-bg px-2.5 py-1 text-[0.72rem] font-semibold text-accent shadow-sm ring-1 ring-border-light">
-              <Star className="w-3.5 h-3.5 fill-current" />
-              {formatStarCount(stars)}
-            </span>
+            <GithubIcon className="w-4 h-4" />
+            <Star className="w-3.5 h-3.5 fill-current text-accent" />
+            {formatStarCount(stars)}
           </a>
+          {/* secondary action — light text button */}
           <a
-            href={DISCORD_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden sm:inline-flex h-12 items-center justify-center gap-2 rounded-full bg-[#5865F2] px-5 text-sm font-medium text-white transition-colors shadow-sm shadow-[#5865F2]/20 hover:bg-[#4752C4]"
+            href="/demo"
+            className="hidden whitespace-nowrap text-sm font-medium text-text-secondary transition-colors hover:text-text-primary sm:inline-flex"
           >
-            <DiscordIcon className="w-4 h-4" />
-            <span>Discord</span>
+            Book a demo
+          </a>
+          {/* the one primary CTA */}
+          <a
+            href="/#get-started"
+            className="inline-flex h-10 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-accent px-5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-accent-warm"
+          >
+            <Download className="w-4 h-4" />
+            <span>Download</span>
           </a>
         </div>
       </div>
