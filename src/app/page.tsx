@@ -61,7 +61,7 @@ const TRUST_BADGES = [
     icon: ShieldCheck,
     label: "SOC 2 Type II",
     status: "In progress",
-    desc: "We're working toward it — and we'll show you the report, not just a badge.",
+    desc: "We're working toward it, and we'll show you the report, not just a badge.",
   },
   {
     icon: Code2,
@@ -106,7 +106,7 @@ const TESTIMONIALS = [
     quote:
       "Cabinet is a big unlock for how I think about operating a business with AI.",
     context:
-      "Before Cabinet, AI felt fragmented — great for single tasks, but hard to orchestrate across the business. Every business has different workflows, and Cabinet makes it possible to turn those workflows into an AI team.",
+      "Before Cabinet, AI felt fragmented: great for single tasks, but hard to orchestrate across the business. Every business has different workflows, and Cabinet makes it possible to turn those workflows into an AI team.",
     name: "Collin Davis",
     role: "Chief Product Officer, Clover",
     location: "Florida, USA",
@@ -132,7 +132,7 @@ const TESTIMONIALS = [
     context:
       "I use Cabinet to manage GTM and send emails through Apollo, and the whole system runs without me touching it, 24/7. The researcher agent built into Cabinet crafted award-winning GTM emails that blew my mind and achieved incredible open rates.",
     name: "Assaf Haski",
-    role: "Strategic narratives for high-stakes systems — from B2B SaaS growth to national public guidance",
+    role: "Strategic narratives for high-stakes systems, from B2B SaaS growth to national public guidance",
     location: "",
     image: "/testimonials/assaf-haski.jpg",
     linkedin: "https://www.linkedin.com/in/assafhaski/",
@@ -619,7 +619,7 @@ const USE_CASES = [
     emoji: "💼",
     headline: "2,000 leads. One army of agents.",
     quote:
-      "I have a CSV of leads. My agents read it, research each company, and draft personalised outreach. The pipeline CSV updates in real time — I watch it fill up from my dashboard. It's like having a sales team that never sleeps and never asks for a raise.",
+      "I have a CSV of leads. My agents read it, research each company, and draft personalised outreach. The pipeline CSV updates in real time. I watch it fill up from my dashboard. It's like having a sales team that never sleeps and never asks for a raise.",
     agents: [
       { emoji: "🕵️", name: "Lead Researcher", status: "running", job: "continuous", pulse: true },
       { emoji: "✉️", name: "Outreach Writer", status: "running", job: "continuous", pulse: true },
@@ -653,7 +653,7 @@ const USE_CASES = [
               ["TechCorp Inc", "Alice Chen", "✅ Researched", "87"],
               ["StartupXYZ", "Bob Lee", "📝 Drafted", "72"],
               ["GlobalDev", "Carol Kim", "📤 Sent", "91"],
-              ["NewCo Ltd", "Dan Park", "🔍 Researching…", "—"],
+              ["NewCo Ltd", "Dan Park", "🔍 Researching…", "…"],
             ],
           },
         ],
@@ -691,7 +691,7 @@ const USE_CASES = [
       preview: {
         title: "newsletter/issues/2026-w14",
         lines: [
-          { t: "h1", v: "Week 14 — The AI Stack Shift" },
+          { t: "h1", v: "Week 14: The AI Stack Shift" },
           { t: "meta", v: "Drafted by Draft Writer · Monday 8:14am · ready for review" },
           { t: "h2", v: "This week's signal" },
           { t: "p", w: 100 },
@@ -711,7 +711,7 @@ const USE_CASES = [
     emoji: "🏢",
     headline: "Every client. One brain.",
     quote:
-      "Each client gets their own folder. Meeting notes, proposals, deliverables — all markdown. When I switch clients, I just ask the AI about the folder. It has full context: the history, the decisions, the open questions. No re-reading, no catch-up.",
+      "Each client gets their own folder. Meeting notes, proposals, deliverables: all markdown. When I switch clients, I just ask the AI about the folder. It has full context: the history, the decisions, the open questions. No re-reading, no catch-up.",
     agents: [
       { emoji: "🗒️", name: "Meeting Summariser", status: "idle", job: "after each call" },
       { emoji: "📄", name: "Proposal Writer", status: "running", job: "on demand", pulse: true },
@@ -737,7 +737,7 @@ const USE_CASES = [
       preview: {
         title: "clients/acme/strategy",
         lines: [
-          { t: "h1", v: "Acme — Q2 Strategy" },
+          { t: "h1", v: "Acme: Q2 Strategy" },
           { t: "meta", v: "Updated after kickoff call · 3 days ago" },
           { t: "h2", v: "Current Focus" },
           { t: "p", w: 100 },
@@ -782,11 +782,11 @@ const USE_CASES = [
         lines: [
           { t: "h1", v: "Changelog" },
           { t: "meta", v: "Written by Release Writer · just now · linked to github/my-lib" },
-          { t: "h2", v: "v2.1.0 — 2026-04-02" },
+          { t: "h2", v: "v2.1.0, 2026-04-02" },
           { t: "p", w: 98 },
           { t: "p", w: 80 },
           { t: "p", w: 68 },
-          { t: "h2", v: "v2.0.0 — 2026-03-15" },
+          { t: "h2", v: "v2.0.0, 2026-03-15" },
           { t: "p", w: 85 },
           { t: "p", w: 72 },
         ],
@@ -797,9 +797,9 @@ const USE_CASES = [
     tag: "Startup OS",
     persona: "Solo Founder",
     emoji: "🚀",
-    headline: "Strategy, roadmap, market — one place.",
+    headline: "Strategy, roadmap, market: one place.",
     quote:
-      "I run my entire startup from here. Strategy in /strategy/, roadmap in /product/roadmap.md, ICP in /market/icp.md. My CEO agent attends every planning session — I open a page, describe the week, and it challenges my assumptions and updates the mission board.",
+      "I run my entire startup from here. Strategy in /strategy/, roadmap in /product/roadmap.md, ICP in /market/icp.md. My CEO agent attends every planning session. I open a page, describe the week, and it challenges my assumptions and updates the mission board.",
     agents: [
       { emoji: "🎯", name: "CEO Agent", status: "running", job: "daily standup", pulse: true },
       { emoji: "📊", name: "Market Scout", status: "idle", job: "every Monday" },
@@ -823,7 +823,7 @@ const USE_CASES = [
       preview: {
         title: "strategy/q2-plan",
         lines: [
-          { t: "h1", v: "Q2 Plan — 2026" },
+          { t: "h1", v: "Q2 Plan, 2026" },
           { t: "meta", v: "Reviewed by CEO Agent · today · 3 open questions flagged" },
           { t: "h2", v: "North Star" },
           { t: "p", w: 93 },
@@ -1139,7 +1139,7 @@ function UseCasesCarousel() {
                         {/* Activity bar */}
                         <div className="mt-8 pt-6 border-t border-border">
                           <p className="text-[10px] font-code text-text-tertiary uppercase tracking-widest mb-2">
-                            Activity — last 24h
+                            Activity, last 24h
                           </p>
                           <div className="flex gap-0.5 items-end h-7">
                             {Array.from({ length: 24 }, (_, j) => {
@@ -1369,7 +1369,7 @@ export default function Home() {
           <div className="w-48 h-48 mx-auto mb-8 rounded-2xl overflow-hidden">
             <Image
               src="/cabinet-icon.png"
-              alt="Cabinet — AI-first knowledge base"
+              alt="Cabinet: AI-first knowledge base"
               width={240}
               height={240}
               className="w-full h-full object-cover scale-120 drop-shadow-lg"
@@ -1392,7 +1392,7 @@ export default function Home() {
                 "Ship HTML apps inside your KB",
                 "Cron-scheduled AI agents that work 24/7",
                 "Git-backed version history on every page",
-                "PDF, CSV, markdown — all first-class content",
+                "PDF, CSV, markdown: all first-class content",
               ]}
             />
           </p>
@@ -1408,7 +1408,7 @@ export default function Home() {
               The only AI workspace you actually own
             </h2>
             <p className="text-text-secondary max-w-2xl mx-auto font-body-serif leading-relaxed">
-              Search tools find. Chatbots answer. Cabinet does the work — on your
+              Search tools find. Chatbots answer. Cabinet does the work: on your
               files, your models, your infrastructure.
             </p>
           </div>
@@ -1420,7 +1420,7 @@ export default function Home() {
               <h3 className="font-display text-lg text-text-primary mb-2">Your work lives on disk</h3>
               <p className="text-sm text-text-secondary font-body-serif leading-relaxed">
                 Everything is Markdown in a folder you own. Grep it, git it, back it up.
-                No export, no lock-in — unlike a cloud wiki holding your knowledge hostage.
+                No export, no lock-in, unlike a cloud wiki holding your knowledge hostage.
               </p>
             </div>
             <div className="rounded-2xl border border-border bg-bg-card p-7 card-hover">
@@ -1440,7 +1440,7 @@ export default function Home() {
               <h3 className="font-display text-lg text-text-primary mb-2">Agents that do the work</h3>
               <p className="text-sm text-text-secondary font-body-serif leading-relaxed">
                 Not just search and chat. A team of agents researches, drafts, and ships
-                on a schedule — 24/7, whether or not anyone&apos;s online.
+                on a schedule, 24/7, whether or not anyone&apos;s online.
               </p>
             </div>
           </div>
@@ -1646,7 +1646,7 @@ export default function Home() {
           <p className="text-text-secondary max-w-2xl mx-auto font-body-serif leading-relaxed mb-12">
             Cabinet runs on your existing model accounts and subscriptions. There&apos;s
             no bundled inference marked up on top, and no new AI vendor to push through
-            procurement — point it at what your team already uses.
+            procurement. Point it at what your team already uses.
           </p>
 
           <div className="grid grid-cols-8 gap-2 sm:gap-3 max-w-4xl mx-auto">
@@ -1741,7 +1741,7 @@ export default function Home() {
             </h2>
             <p className="text-text-secondary text-lg leading-relaxed font-body-serif">
               Every time you start a new Claude session, it forgets everything.
-              Your project context, your decisions, your research — gone. You
+              Your project context, your decisions, your research. Gone. You
               keep re-explaining the same things. Cabinet gives your AI a
               persistent brain: a knowledge base that both you and your agents
               read and write to, 24/7.
@@ -1796,7 +1796,7 @@ export default function Home() {
               <ul className="space-y-3 text-sm text-text-secondary">
                 <li className="flex items-start gap-3">
                   <Check className="w-4 h-4 text-accent mt-0.5 shrink-0" />
-                  <span><strong className="text-text-primary">Full-screen mode:</strong> add a <code className="text-accent bg-accent-bg px-1 py-0.5 rounded text-xs font-code">.app</code> marker — sidebar and AI panel auto-collapse</span>
+                  <span><strong className="text-text-primary">Full-screen mode:</strong> add a <code className="text-accent bg-accent-bg px-1 py-0.5 rounded text-xs font-code">.app</code> marker. Sidebar and AI panel auto-collapse</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Check className="w-4 h-4 text-accent mt-0.5 shrink-0" />
@@ -1850,14 +1850,14 @@ export default function Home() {
               Everything you need. Nothing you don&apos;t.
             </h2>
             <p className="text-text-secondary max-w-2xl mx-auto font-body-serif">
-              A complete operating system for your startup — knowledge base, AI agents, task management, and team chat in one self-hosted app.
+              A complete operating system for your startup: knowledge base, AI agents, task management, and team chat in one self-hosted app.
             </p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <FeatureCard icon={Layout} title="WYSIWYG + Markdown" description="Rich text editing with Tiptap. Tables, code blocks, slash commands. Toggle to raw markdown anytime." />
             <FeatureCard icon={Bot} title="AI Agents" description="Onboard a CEO, Editor, Marketer. Each has goals, skills, scheduled jobs. Watch them work like a real team." />
-            <FeatureCard icon={Globe} title="Embedded HTML Apps" description="Drop an index.html in any folder — it renders as an iframe. Full-screen mode for dashboards and tools." />
+            <FeatureCard icon={Globe} title="Embedded HTML Apps" description="Drop an index.html in any folder. It renders as an iframe. Full-screen mode for dashboards and tools." />
             <FeatureCard icon={Terminal} title="Web Terminal" description="Full Claude Code terminal in the browser. xterm.js + node-pty. Run commands without leaving Cabinet." />
             <FeatureCard icon={FolderTree} title="File-Based Everything" description="No database. Markdown on disk. Drag-and-drop tree sidebar. Your data is always yours, always portable." />
             <FeatureCard icon={GitBranch} title="Git-Backed History" description="Every save auto-commits. Full diff viewer. Restore any page to any point in time. Linked repo support." />
@@ -1906,7 +1906,7 @@ export default function Home() {
             {[
               { step: "01", title: "Install & Run", desc: "One command. Next.js + daemon start. Your knowledge base is a /data directory on disk.", code: "npx cabinetai run" },
               { step: "02", title: "Answer 5 Questions", desc: "What's your company? What do you do? What are your goals? Cabinet builds your custom AI team.", code: null },
-              { step: "03", title: "Watch Your Team Work", desc: "Agents create missions, write content, scout Reddit, review quality — all on schedule.", code: null },
+              { step: "03", title: "Watch Your Team Work", desc: "Agents create missions, write content, scout Reddit, review quality, all on schedule.", code: null },
               { step: "04", title: "Knowledge Compounds", desc: "Every agent run, every edit, every research session adds to the KB. Your system gets smarter every day.", code: null },
             ].map((item, i) => (
               <div key={item.step} className="flex gap-6 relative">
@@ -1941,7 +1941,7 @@ export default function Home() {
               Cabinet for every team
             </h2>
             <p className="text-text-secondary max-w-2xl mx-auto font-body-serif leading-relaxed">
-              Same knowledge base — a different AI crew for each function, working on
+              Same knowledge base: a different AI crew for each function, working on
               your data, on your infrastructure, around the clock.
             </p>
           </div>
@@ -1985,13 +1985,13 @@ export default function Home() {
               Own more. Pay less. Move faster.
             </h2>
             <p className="text-text-secondary max-w-2xl mx-auto font-body-serif leading-relaxed">
-              The numbers execs actually care about — before a single line of custom
+              The numbers execs actually care about, before a single line of custom
               integration.
             </p>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
             {[
-              { stat: "$0", label: "per-seat AI markup — you bring your own models" },
+              { stat: "$0", label: "per-seat AI markup: you bring your own models" },
               { stat: "100%", label: "of your data stays on your infrastructure" },
               { stat: "1 folder", label: "replaces the wiki, the chatbot, and the agent platform" },
               { stat: "24/7", label: "your AI team runs on a schedule, not on demand" },
@@ -2021,8 +2021,8 @@ export default function Home() {
               Designed to clear a security review
             </h2>
             <p className="text-text-secondary max-w-2xl mx-auto font-body-serif leading-relaxed">
-              The people who sign off on new tools — security, legal, platform
-              owners — should come away with less to worry about, not more.
+              The people who sign off on new tools (security, legal, platform
+              owners) should come away with less to worry about, not more.
             </p>
           </div>
 

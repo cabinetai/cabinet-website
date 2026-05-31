@@ -19,7 +19,7 @@ const ROWS: Row[] = [
   },
   {
     feature: "Container size",
-    selfHosted: "—",
+    selfHosted: "N/A",
     pro: "2 GB RAM",
     max: "4 GB RAM",
     enterprise: "Custom",

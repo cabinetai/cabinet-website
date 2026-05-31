@@ -3,7 +3,7 @@ import Link from "next/link";
 import { SiteNavbar } from "@/components/site-navbar";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Cabinet",
+  title: "Privacy Policy: Cabinet",
   description:
     "Privacy Policy for Cabinet (runcabinet.com). The Cabinet software runs locally on your machine and does not transmit your files or knowledge base to us.",
   alternates: { canonical: "https://runcabinet.com/privacy" },
@@ -45,7 +45,7 @@ export default function PrivacyPage() {
               <a href="https://runcabinet.com" className="text-accent hover:underline">
                 runcabinet.com
               </a>{" "}
-              collects limited information — primarily analytics and, if you choose, an email
+              collects limited information: primarily analytics and, if you choose, an email
               address for the waitlist.
             </p>
           </div>
@@ -97,8 +97,8 @@ export default function PrivacyPage() {
                 </strong>
               </p>
               <p>
-                When you configure the Software to communicate with third-party services — for
-                example, AI providers (such as Anthropic or OpenAI), code hosts, or other APIs —
+                When you configure the Software to communicate with third-party services, such
+                as AI providers (Anthropic or OpenAI, for example), code hosts, or other APIs,
                 data may be sent to those services under{" "}
                 <strong className="text-text-primary">their</strong> privacy policies and{" "}
                 <strong className="text-text-primary">your</strong> account credentials. We are

@@ -176,7 +176,7 @@ export function WaitlistCapture({
                 <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
                 <div className="text-sm">
                   {status === "already"
-                    ? "You're already on the list — we'll be in touch as soon as Cabinet Cloud opens up."
+                    ? "You're already on the list. We'll be in touch as soon as Cabinet Cloud opens up."
                     : "You're on the list. We'll email you when Cabinet Cloud opens up."}
                 </div>
               </div>

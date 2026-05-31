@@ -47,7 +47,7 @@ function Hero() {
           <p className="ent-lead mt-6 max-w-2xl">
             Cabinet is rare in enterprise software: it lands at the CEO level
             and the bottom of the org chart in the same quarter. Pick the office
-            you sit in — every section below maps a real Cabinet deployment to
+            you sit in. Every section below maps a real Cabinet deployment to
             the budget that pays for it.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
@@ -181,7 +181,7 @@ function CeoVisual() {
             grounded in 142 OKRs · 38 1:1s · 14 initiatives
           </p>
           <div className="mt-5 space-y-2.5">
-            <Bullet color="bg-red-400" t="EMEA expansion KR slipping 12pts" s="Mercedes pilot — call Tuesday" />
+            <Bullet color="bg-red-400" t="EMEA expansion KR slipping 12pts" s="Mercedes pilot: call Tuesday" />
             <Bullet color="bg-green-light" t="Q2 revenue +4pts above plan" s="Marcus drafted the one-pager" />
             <Bullet color="bg-accent" t="2 follow-ups drafted" s="Approve in /1on1s/marcus.md" />
           </div>
@@ -396,7 +396,7 @@ function CeoSection() {
           <em className="text-accent">that survives Monday morning</em>.
         </>
       }
-      jtbd="The CEO walks into the week with too much to process. Cabinet's Chief of Staff agent reads the room over the weekend — the OKRs that slipped, the dependencies that broke, the commitments past due — and lands a briefing at 06:00 that grounds every decision for the week."
+      jtbd="The CEO walks into the week with too much to process. Cabinet's Chief of Staff agent reads the room over the weekend (the OKRs that slipped, the dependencies that broke, the commitments past due) and lands a briefing at 06:00 that grounds every decision for the week."
       outcomes={[
         { stat: "14h→3h", label: "MBR prep, per cycle" },
         { stat: "06:00", label: "Daily brief, every weekday" },
@@ -429,7 +429,7 @@ function ChroSection() {
           <em className="text-accent">One coach in their pocket.</em>
         </>
       }
-      jtbd="The CEO gets a Chief of Staff. The SVP gets a coach. Everyone else gets nothing. Cabinet's Coach agent sits with every people manager — drafts kudos from real contributions, frames hard conversations using SBI, builds personal growth plans grounded in actual project history. The most expensive perk in your org, made universal."
+      jtbd="The CEO gets a Chief of Staff. The SVP gets a coach. Everyone else gets nothing. Cabinet's Coach agent sits with every people manager: it drafts kudos from real contributions, frames hard conversations using SBI, builds personal growth plans grounded in actual project history. The most expensive perk in your org, made universal."
       outcomes={[
         { stat: "100%", label: "Manager coaching coverage" },
         { stat: "0", label: "Dropped 1:1 commitments per quarter" },
@@ -439,7 +439,7 @@ function ChroSection() {
         name: "cabinet:leadership-coach",
         lines: [
           "Coach agent runs in each manager's room",
-          "Friday reflection prompt — auto-drafts kudos",
+          "Friday reflection prompt: auto-drafts kudos",
           "SBI feedback frame before hard conversations",
           "Per-report growth plan grounded in 1:1 logs",
         ],
@@ -460,7 +460,7 @@ function CfoSection() {
           <em className="text-accent">the next board deck</em>.
         </>
       }
-      jtbd="The FP&A team spends 60% of a month preparing the next MBR. Cabinet's Strategy Analyst diffs OKR progress weekly, generates the bowler chart automatically, surfaces metric movements that matter and ignores the noise that doesn't. The pre-read lands Wednesday before your prep block — every month."
+      jtbd="The FP&A team spends 60% of a month preparing the next MBR. Cabinet's Strategy Analyst diffs OKR progress weekly, generates the bowler chart automatically, surfaces metric movements that matter and ignores the noise that doesn't. The pre-read lands Wednesday before your prep block, every month."
       outcomes={[
         { stat: "$240k", label: "Saved on Workboard-equivalent ARR" },
         { stat: "3×", label: "Faster OKR cycle close" },
@@ -505,7 +505,7 @@ function CioSection() {
           "Self-host in your VPC, on-prem, or air-gap",
           "SAML 2.0 + SCIM 2.0 + per-room RBAC",
           "Append-only audit log streamable to your SIEM",
-          "Per-agent permission scopes — read-only by default",
+          "Per-agent permission scopes: read-only by default",
         ],
       }}
       visual={<CioVisual />}

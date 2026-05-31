@@ -28,7 +28,7 @@ const WEDGE = [
   {
     icon: ShieldCheck,
     title: "Self-hosted by default",
-    body: "Run it on your machine or your cloud. Your data never leaves your infrastructure — sovereignty first, with SSO and audit on the enterprise track.",
+    body: "Run it on your machine or your cloud. Your data never leaves your infrastructure: sovereignty first, with SSO and audit on the enterprise track.",
   },
 ];
 
@@ -141,11 +141,11 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
         <div className="mx-auto max-w-5xl px-6">
           <p className="section-label mb-3">Always-on</p>
           <h2 className="max-w-2xl font-display text-3xl tracking-tight text-text-primary md:text-4xl">
-            Work that runs on a schedule — not when someone remembers
+            Work that runs on a schedule, not when someone remembers
           </h2>
           <p className="mt-4 max-w-2xl font-body-serif leading-relaxed text-text-secondary">
             Routines are scheduled prompts attached to an agent. Same agent, same shape,
-            every time — 24/7, whether or not anyone&apos;s online.
+            every time, 24/7, whether or not anyone&apos;s online.
           </p>
           <div className="mt-10 divide-y divide-border-light overflow-hidden rounded-2xl border border-border bg-bg-card">
             {solution.routines.map((r) => (
@@ -178,7 +178,7 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
             ))}
           </div>
           <p className="mt-4 text-center font-code text-xs text-text-tertiary">
-            Illustrative — real benchmarks coming as teams report them.
+            Illustrative. Real benchmarks coming as teams report them.
           </p>
         </div>
       </section>

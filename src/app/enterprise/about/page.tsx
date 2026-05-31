@@ -61,7 +61,7 @@ function Hero() {
             <div className="mt-7 space-y-5 text-[1.0625rem] text-text-secondary font-body-serif leading-relaxed max-w-2xl">
               <p>
                 I spent four years at Apple building the infrastructure behind
-                on-device AI — the training and data systems that produce the
+                on-device AI: the training and data systems that produce the
                 models running on billions of iPhones, Macs, and iPads.
                 Twenty years of engineering led me to one conclusion:{" "}
                 <span className="text-text-primary font-semibold">
@@ -70,7 +70,7 @@ function Hero() {
                 </span>
               </p>
               <p>
-                Cabinet is the application of that idea to a different problem —
+                Cabinet is the application of that idea to a different problem:
                 running strategy execution at the scale of an enterprise, on
                 files the enterprise actually owns.
               </p>
@@ -139,8 +139,8 @@ function AppleWork() {
             Training and data preparation became{" "}
             <span className="text-text-primary font-semibold">
               more than ten times faster
-            </span>{" "}
-            — at a scale where ten times faster meant tens of millions of
+            </span>
+            <span>, </span>at a scale where ten times faster meant tens of millions of
             dollars and many engineering quarters returned.
           </p>
           <p>
@@ -153,7 +153,7 @@ function AppleWork() {
               Cinematic Video on iPhone 13
             </span>
             . Both required new data infrastructure between research and
-            shipping — collaboration across teams, careful trade-offs between
+            shipping: collaboration across teams, careful trade-offs between
             quality and latency, and ML that had to feel reliable in a hand
             holding a phone.
           </p>
@@ -188,25 +188,25 @@ function Thesis() {
             Every CEO has a Chief of Staff. Every SVP has an executive coach.
             The remaining 98% of managers have neither.{" "}
             <span className="text-text-primary font-semibold">
-              That is not a tooling problem — it is an infrastructure problem.
+              That is not a tooling problem. It is an infrastructure problem.
             </span>{" "}
-            The work a Chief of Staff does — scan the room, surface what
-            slipped, draft the reply, queue the meeting — is the same kind of
+            The work a Chief of Staff does (scan the room, surface what
+            slipped, draft the reply, queue the meeting) is the same kind of
             invisible, scheduled, distributed work I built infrastructure for at
             Apple.
           </p>
           <p>
             Cabinet is built the way good infrastructure is built. The
             executive writes a few sentences. The platform schedules, retrieves,
-            drafts, and surfaces. The output lands in Slack, Teams, and email —
+            drafts, and surfaces. The output lands in Slack, Teams, and email,
             wherever the executive already lives.
           </p>
           <p>
-            And the data —{" "}
+            And the data <span>(</span>
             <span className="text-text-primary font-semibold">
               your strategy, your decisions, your one-on-one history
             </span>
-            {" "}— stays as plain files inside your company. Because the second
+            <span>) </span>stays as plain files inside your company. Because the second
             lesson of Apple-scale was simpler: when you are responsible for
             billions of users' data, you do not trust anyone else to hold it.
             You hold it yourself.
@@ -231,14 +231,14 @@ function Timeline() {
     {
       year: "2020 – 2024",
       role: "Engineering Manager · Software Engineer",
-      org: "Apple — AI & Data Infrastructure",
+      org: "Apple, AI & Data Infrastructure",
       detail:
         "Led orchestration for distributed training and on-device ML data pipelines. Shipped Night Mode Portrait and Cinematic Video.",
     },
     {
       year: "2022 – 2023",
       role: "One-year career break",
-      org: "Road trip — North America, then Asia",
+      org: "Road trip: North America, then Asia",
       detail:
         "Drove the United States and Canada in a van, then continued through Japan, Korea, Taiwan, Thailand, Vietnam, India, and Singapore. Returned with the perspective that launched Cabinet.",
     },
@@ -252,7 +252,7 @@ function Timeline() {
     {
       year: "2011 – 2014",
       role: "Software Engineer & Researcher",
-      org: "Israeli Defense Forces — Military Intelligence",
+      org: "Israeli Defense Forces, Military Intelligence",
       detail:
         "Embedded systems, reverse engineering, C/C++ on Linux and Windows. Owned projects from idea to deployment.",
     },
@@ -263,7 +263,7 @@ function Timeline() {
         eyebrow="The path"
         title={
           <>
-            Twenty years going down to the metal —{" "}
+            Twenty years going down to the metal,{" "}
             <em className="text-accent">and back up</em>.
           </>
         }
@@ -310,14 +310,14 @@ function Beyond() {
             revenue-generating company without venture capital. The
             infrastructure choices, the actual numbers, the pivots that saved
             the business. It is also how I keep my finger on where AI workflows
-            break in production — and where the next leverage point is hiding.
+            break in production, and where the next leverage point is hiding.
           </p>
         </article>
 
         <article>
           <Eyebrow>Education</Eyebrow>
           <h3 className="mt-3 font-display text-2xl text-text-primary leading-tight">
-            Two BSc degrees, deliberately — Computer Science and
+            Two BSc degrees, deliberately: Computer Science and
             Mathematics &amp; Physics.
           </h3>
           <p className="mt-4 text-[1.0625rem] text-text-secondary font-body-serif leading-relaxed">
@@ -343,7 +343,7 @@ function Connect() {
           <Eyebrow>Get in touch</Eyebrow>
           <h2 className="mt-3 font-display text-3xl md:text-4xl text-text-primary leading-tight">
             Whether you're running a Fortune-500 strategy function or building
-            your own thing — I'd like to hear from you.
+            your own thing, I'd like to hear from you.
           </h2>
           <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
             <a

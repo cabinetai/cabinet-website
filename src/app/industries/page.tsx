@@ -5,13 +5,13 @@ import { SiteNavbar } from "@/components/site-navbar";
 import { INDUSTRIES } from "@/lib/industries";
 
 export const metadata: Metadata = {
-  title: "Cabinet by industry — self-hosted AI for regulated teams",
+  title: "Cabinet by industry · self-hosted AI for regulated teams",
   description:
     "Financial services, healthcare, legal, professional services, and startups run AI on a self-hosted knowledge base where the data never leaves their control.",
   openGraph: {
     title: "Cabinet by industry",
     description:
-      "Self-hosted AI for financial services, healthcare, legal, professional services, and startups — data that never leaves your control.",
+      "Self-hosted AI for financial services, healthcare, legal, professional services, and startups: data that never leaves your control.",
     type: "website",
     url: "https://runcabinet.com/industries",
   },
@@ -37,7 +37,7 @@ export default function IndustriesIndexPage() {
             AI for teams that can&apos;t send their data away
           </h1>
           <p className="mx-auto mt-6 max-w-2xl font-body-serif text-lg leading-relaxed text-text-secondary md:text-xl">
-            Self-hosted by design — so regulated and sensitive industries get an AI team
+            Self-hosted by design, so regulated and sensitive industries get an AI team
             without their data ever leaving their own infrastructure.
           </p>
         </div>

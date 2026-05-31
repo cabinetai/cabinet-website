@@ -3,7 +3,7 @@ import Link from "next/link";
 import { SiteNavbar } from "@/components/site-navbar";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — Cabinet",
+  title: "Terms of Service: Cabinet",
   description:
     "Terms of Service for Cabinet (runcabinet.com) and the Cabinet open-source software. Use is at your own risk. No warranties. Limitations of liability apply.",
   alternates: { canonical: "https://runcabinet.com/terms" },
@@ -388,8 +388,8 @@ export default function TermsPage() {
               </p>
               <p>
                 The competent courts sitting in{" "}
-                <strong className="text-text-primary">Haifa, Israel</strong> — namely the Haifa
-                Magistrate Court and the Haifa District Court, as appropriate to the matter — shall
+                <strong className="text-text-primary">Haifa, Israel</strong> (namely the Haifa
+                Magistrate Court and the Haifa District Court, as appropriate to the matter) shall
                 have exclusive jurisdiction and venue over any Dispute, these being the courts
                 with territorial jurisdiction over the seat of HOLY BIBLE APPS LTD in Tirat
                 Carmel. Each party irrevocably consents to personal jurisdiction and venue in

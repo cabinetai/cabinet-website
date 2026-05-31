@@ -16,9 +16,9 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { role } = await params;
   const solution = getSolution(role);
-  if (!solution) return { title: "Solutions — Cabinet" };
+  if (!solution) return { title: "Solutions · Cabinet" };
 
-  const title = `${solution.eyebrow} — Cabinet`;
+  const title = `${solution.eyebrow} · Cabinet`;
   const description = solution.subhead;
   const image = "https://runcabinet.com/solutions-hero.png";
   return {

@@ -178,7 +178,7 @@ export function WaitlistPopup() {
               <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
               <span>
                 {status === "already"
-                  ? "You're already on the list — we'll be in touch."
+                  ? "You're already on the list. We'll be in touch."
                   : "You're on the list. We'll email you when Cabinet Cloud opens up."}
               </span>
             </div>

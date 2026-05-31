@@ -13,10 +13,10 @@ import { markWaitlistSubmitted } from "@/lib/waitlist";
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const TIER_LABEL: Record<PricingTier, string> = {
-  pro: "Pro — $20/mo",
-  max: "Max — $49/mo",
-  "team-early": "Team — early access",
-  enterprise: "Enterprise — custom",
+  pro: "Pro · $20/mo",
+  max: "Max · $49/mo",
+  "team-early": "Team · early access",
+  enterprise: "Enterprise · custom",
 };
 
 const TIER_TO_SOURCE: Record<PricingTier, string> = {
@@ -133,7 +133,7 @@ export function PricingCloudModal({ initialTier, onClose }: Props) {
             {isEnterprise
               ? "Enterprise enquiry"
               : isTeamEarly
-              ? "Team — early access"
+              ? "Team · early access"
               : "Cabinet Cloud waitlist"}
           </div>
 
@@ -161,7 +161,7 @@ export function PricingCloudModal({ initialTier, onClose }: Props) {
               <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
               <span>
                 {status === "already"
-                  ? "You're already on the list — we'll be in touch."
+                  ? "You're already on the list. We'll be in touch."
                   : isEnterprise
                   ? "Got it. We'll reach out within one business day."
                   : "You're on the list. We'll email you when Cabinet Cloud opens up."}
@@ -231,7 +231,7 @@ export function PricingCloudModal({ initialTier, onClose }: Props) {
                     className="mt-0.5 h-4 w-4 accent-accent"
                   />
                   <span className="text-sm text-text-primary leading-relaxed">
-                    Add <strong>Managed AI</strong> — skip the API key.{" "}
+                    Add <strong>Managed AI</strong> to skip the API key.{" "}
                     <span className="text-text-tertiary">From $10/mo.</span>
                   </span>
                 </label>

@@ -3,11 +3,11 @@ import { Check, X, Minus, Star } from "lucide-react";
 import { SiteNavbar } from "@/components/site-navbar";
 
 export const metadata: Metadata = {
-  title: "Compare — Cabinet vs Obsidian, Notion & Paperclip",
+  title: "Compare Cabinet vs Obsidian, Notion & Paperclip",
   description:
     "Obsidian is a markdown editor. Notion is a team wiki. Paperclip orchestrates agents. Cabinet is the only tool that combines a knowledge base, AI agents, and embedded apps in one self-hosted OS.",
   openGraph: {
-    title: "Not another note-taking app — Cabinet compared",
+    title: "Not another note-taking app: Cabinet compared",
     description:
       "How Cabinet compares to Obsidian, Notion, and Paperclip across knowledge base, AI agents, embedded apps, and self-hosting.",
     type: "website",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Not another note-taking app — Cabinet compared",
+    title: "Not another note-taking app: Cabinet compared",
     description:
       "How Cabinet compares to Obsidian, Notion, and Paperclip across knowledge base, AI agents, embedded apps, and self-hosting.",
   },
@@ -130,7 +130,7 @@ export default function ComparePage() {
                 <Star className="w-4 h-4 text-accent" /> vs Paperclip
               </h3>
               <p className="text-sm text-text-secondary leading-relaxed font-body-serif">
-                Paperclip is excellent at agent orchestration — org charts,
+                Paperclip is excellent at agent orchestration: org charts,
                 budgets, audit logs. But it has no knowledge base, no editor, no
                 content layer. Cabinet gives your agents a brain to read and
                 write to, plus HTML apps, a terminal, and a full wiki.
@@ -141,7 +141,7 @@ export default function ComparePage() {
                 <Star className="w-4 h-4 text-accent" /> vs Glean
               </h3>
               <p className="text-sm text-text-secondary leading-relaxed font-body-serif">
-                Glean is enterprise AI search — it indexes your existing apps
+                Glean is enterprise AI search. It indexes your existing apps
                 and answers questions across them. But it&apos;s a cloud search
                 layer: no files you own, no editor, no embedded apps, no
                 terminal. Cabinet is where knowledge is authored and lives, not
@@ -154,8 +154,8 @@ export default function ComparePage() {
               </h3>
               <p className="text-sm text-text-secondary leading-relaxed font-body-serif">
                 Dust builds AI assistants on top of your company data through
-                connectors. But your content stays locked in those other tools —
-                there&apos;s no knowledge base you author in, no markdown on
+                connectors. But your content stays locked in those other tools.
+                There&apos;s no knowledge base you author in, no markdown on
                 disk, no editor. Cabinet gives agents a file-based brain they
                 read and write directly.
               </p>

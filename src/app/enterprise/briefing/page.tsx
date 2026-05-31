@@ -41,7 +41,7 @@ function HeroForm() {
       "What we'd like to focus on:",
       `${form.get("notes") ?? ""}`,
     ].join("\n");
-    const mailto = `mailto:hi@runcabinet.com?subject=Executive briefing request — ${encodeURIComponent(String(form.get("company") ?? ""))}&body=${encodeURIComponent(body)}`;
+    const mailto = `mailto:hi@runcabinet.com?subject=Executive briefing request: ${encodeURIComponent(String(form.get("company") ?? ""))}&body=${encodeURIComponent(body)}`;
     window.location.href = mailto;
     setSubmitted(true);
   }
@@ -68,7 +68,7 @@ function HeroForm() {
             </p>
 
             <div className="mt-8 space-y-3">
-              <Bullet icon={Video} t="Live working session" s="Not a sales pitch — we build alongside you." />
+              <Bullet icon={Video} t="Live working session" s="Not a sales pitch. We build alongside you." />
               <Bullet icon={Users} t="Founders in the room" s="Hila + an engineer on the call. No SDR layer." />
               <Bullet icon={FileCheck} t="NDA-friendly" s="Send yours over ahead of time, we'll sign." />
               <Bullet icon={Coffee} t="No slides" s="A live Cabinet room on your top three OKRs." />
@@ -282,12 +282,12 @@ function Agenda() {
     {
       n: "0:35",
       t: "Daily brief on your real data",
-      d: "Run the morning-brief job against your room. You see the artefact you would receive Monday at 06:00 — grounded, cited, ready to ship.",
+      d: "Run the morning-brief job against your room. You see the artefact you would receive Monday at 06:00: grounded, cited, ready to ship.",
     },
     {
       n: "0:50",
       t: "MBR pre-read live",
-      d: "Trigger the monthly-mbr job. Watch the Strategy Analyst draft your next pre-read — bowler, scorecard, three discussion points.",
+      d: "Trigger the monthly-mbr job. Watch the Strategy Analyst draft your next pre-read: bowler, scorecard, three discussion points.",
     },
     {
       n: "1:10",

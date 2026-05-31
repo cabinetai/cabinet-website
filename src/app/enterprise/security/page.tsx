@@ -48,8 +48,8 @@ function Hero() {
             <p className="ent-lead mt-6 max-w-xl">
               Cabinet is the only platform of its kind your team can read line
               by line, run inside your own network, and power with the AI
-              keys you already pay for. Five layers — code, data, AI, hosting,
-              and identity — all under your control.
+              keys you already pay for. Five layers (code, data, AI, hosting,
+              and identity), all under your control.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <PrimaryButton href="/enterprise/briefing">
@@ -133,7 +133,7 @@ function Pillars() {
       icon: Server,
       tag: "Host",
       title: "Run it where you want",
-      body: "On your laptops, in your VPC, on an offline machine in a secured facility, or on Cabinet Cloud. AI calls go to your provider with your keys — we never see them.",
+      body: "On your laptops, in your VPC, on an offline machine in a secured facility, or on Cabinet Cloud. AI calls go to your provider with your keys. We never see them.",
     },
     {
       icon: Network,
@@ -207,8 +207,8 @@ function Architecture() {
           <>
             Cabinet runs entirely inside your perimeter. The orchestrator, the
             files, and the inference calls all happen on your infrastructure
-            and your keys. Nothing — not telemetry, not prompts, not artefacts
-            — leaves the boundary you choose.
+            and your keys. Nothing (not telemetry, not prompts, not artefacts)
+            leaves the boundary you choose.
           </>
         }
       />
@@ -331,7 +331,7 @@ function Controls() {
         { l: "Encryption in transit", v: "TLS 1.3" },
         { l: "Encryption at rest", v: "AES-256 · BYOK option" },
         { l: "Secrets management", v: "Vault · AWS KMS · GCP KMS" },
-        { l: "Data residency", v: "Pick your region — or your laptop" },
+        { l: "Data residency", v: "Pick your region, or your laptop" },
       ],
     },
     {
@@ -362,7 +362,7 @@ function Controls() {
         eyebrow="Controls catalogue"
         title={
           <>
-            What you get out of the box —{" "}
+            What you get out of the box,{" "}
             <em className="text-accent">before any add-on</em>.
           </>
         }
@@ -408,7 +408,7 @@ function Compliance() {
     { t: "HIPAA path", s: "On request · BAA available", state: "request" },
     { t: "FedRAMP", s: "Planned · Q3 2027", state: "planned" },
     { t: "CCPA / CPRA", s: "Covered by data sovereignty", state: "ready" },
-    { t: "PCI DSS", s: "N/A — no card data processed", state: "na" },
+    { t: "PCI DSS", s: "N/A: no card data processed", state: "na" },
   ];
 
   const map = {
@@ -432,7 +432,7 @@ function Compliance() {
         kicker={
           <>
             We don't claim certifications we haven't earned. The roadmap below
-            is the public source of truth — updated quarterly with named
+            is the public source of truth, updated quarterly with named
             auditors.
           </>
         }
@@ -464,11 +464,11 @@ function Faq() {
   const faqs = [
     {
       q: "Can we run Cabinet entirely inside our perimeter?",
-      a: "Yes. Cabinet is a Node application with a markdown filesystem. Deploy it on a VM in your VPC, in an air-gapped facility, or on each employee's laptop. No outbound connection is required for the application to function — only your chosen inference provider (and you can self-host that too via vLLM or Ollama).",
+      a: "Yes. Cabinet is a Node application with a markdown filesystem. Deploy it on a VM in your VPC, in an air-gapped facility, or on each employee's laptop. No outbound connection is required for the application to function, only your chosen inference provider (and you can self-host that too via vLLM or Ollama).",
     },
     {
       q: "How does inference work? Do you see our prompts?",
-      a: "No. Inference calls go directly from your Cabinet host to the inference provider of your choice using your API key. Cabinet's servers are not in the path. We literally cannot see your prompts — there is no telemetry endpoint receiving them.",
+      a: "No. Inference calls go directly from your Cabinet host to the inference provider of your choice using your API key. Cabinet's servers are not in the path. We literally cannot see your prompts. There is no telemetry endpoint receiving them.",
     },
     {
       q: "What happens to our data if we churn?",
@@ -484,7 +484,7 @@ function Faq() {
     },
     {
       q: "What about SOC 2? Can we sign a contract before you have it?",
-      a: "Yes — many of our pilot customers do. We're happy to share our security questionnaire responses, our pen-test reports, the SOC 2 readiness plan with our auditor, and our roadmap. For regulated industries we can also offer the air-gap deployment, which sidesteps most of the typical SOC 2 concerns.",
+      a: "Yes. Many of our pilot customers do. We're happy to share our security questionnaire responses, our pen-test reports, the SOC 2 readiness plan with our auditor, and our roadmap. For regulated industries we can also offer the air-gap deployment, which sidesteps most of the typical SOC 2 concerns.",
     },
   ];
 
@@ -543,7 +543,7 @@ function FinalCta() {
         </h2>
         <p className="ent-lead mt-5 max-w-2xl mx-auto">
           Whether you're at a regulated bank, a defence contractor, or a
-          healthcare payer — we'll meet your security team where they are,
+          healthcare payer, we'll meet your security team where they are,
           with the documentation they're used to seeing.
         </p>
         <div className="mt-7 flex flex-wrap justify-center gap-3">

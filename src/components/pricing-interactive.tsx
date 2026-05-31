@@ -61,7 +61,7 @@ export function PricingInteractive() {
           billingPeriod={billing}
           bullets={[
             "MIT licensed, run locally",
-            "BYOAI — bring your own AI",
+            "BYOAI · bring your own AI",
             "Every Cabinet feature",
             "Community support on Discord",
           ]}

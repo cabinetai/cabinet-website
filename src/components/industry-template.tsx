@@ -106,7 +106,7 @@ export function IndustryTemplate({ industry }: { industry: Industry }) {
       <section className="border-b border-border py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="font-display text-3xl tracking-tight text-text-primary md:text-4xl">
-            Put AI to work — keep the data yours.
+            Put AI to work. Keep the data yours.
           </h2>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <Link
