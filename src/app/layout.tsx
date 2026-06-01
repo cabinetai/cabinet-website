@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { Inter, Instrument_Serif, JetBrains_Mono, Stack_Sans_Notch, Ms_Madi } from "next/font/google";
+import { Inter, Instrument_Serif, Source_Code_Pro, Stack_Sans_Notch, Ms_Madi } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -23,7 +23,7 @@ const instrumentSerif = Instrument_Serif({
   style: ["normal", "italic"],
 });
 
-const jetbrainsMono = JetBrains_Mono({
+const sourceCodePro = Source_Code_Pro({
   variable: "--font-mono",
   subsets: ["latin"],
 });
@@ -72,7 +72,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${stackSans.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable} ${msMadi.variable} h-full antialiased`}
+      className={`${inter.variable} ${stackSans.variable} ${instrumentSerif.variable} ${sourceCodePro.variable} ${msMadi.variable} h-full antialiased`}
     >
       <head>
         <Script

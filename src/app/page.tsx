@@ -1250,7 +1250,7 @@ export default function Home() {
                 <CopyButton text="npx cabinetai run" />
               </div>
             </div>
-            <p className="mt-4 text-sm font-code text-text-tertiary">
+            <p className="mt-4 text-sm font-body-serif text-text-tertiary">
               Evaluating Cabinet for your team?{" "}
               <a
                 href="/demo"
