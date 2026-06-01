@@ -36,6 +36,7 @@ const msMadi = Ms_Madi({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://runcabinet.com"),
   title: "Cabinet: Free & Open-Source AI-First Knowledge Base",
   description:
     "Free and open-source AI-first knowledge base and startup OS. Markdown files on disk. AI agents that actually work. No database. No vendor lock-in. Self-hosted.",
