@@ -458,6 +458,26 @@ html {
   animation-play-state: paused;
 }
 
+/* Integrations logo wall — multi-row auto-scroll, alternating direction */
+@keyframes entMarqueeReverse {
+  from { transform: translateX(-50%); }
+  to { transform: translateX(0); }
+}
+.logo-marquee {
+  animation: entMarquee 55s linear infinite;
+  will-change: transform;
+}
+.logo-marquee-reverse {
+  animation: entMarqueeReverse 55s linear infinite;
+  will-change: transform;
+}
+.logo-marquee-viewport:hover .logo-marquee,
+.logo-marquee-viewport:focus-within .logo-marquee,
+.logo-marquee-viewport:hover .logo-marquee-reverse,
+.logo-marquee-viewport:focus-within .logo-marquee-reverse {
+  animation-play-state: paused;
+}
+
 /* Subtle dot ornament */
 .ent-dots {
   background-image: radial-gradient(circle, rgba(139, 94, 60, 0.18) 0.6px, transparent 0.6px);
@@ -476,11 +496,14 @@ html {
   .ent-rise,
   .ent-fade,
   .ent-marquee,
-  .testimonial-marquee {
+  .testimonial-marquee,
+  .logo-marquee,
+  .logo-marquee-reverse {
     animation: none;
   }
-  /* Let users scroll the ticker manually when motion is reduced */
-  .testimonial-marquee-viewport {
+  /* Let users scroll the tickers manually when motion is reduced */
+  .testimonial-marquee-viewport,
+  .logo-marquee-viewport {
     overflow-x: auto;
   }
 }

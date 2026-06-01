@@ -56,6 +56,29 @@ const PROVIDERS = [
   { src: "/providers/pi.svg", name: "Pi" },
 ];
 
+// Tools your company runs on — rendered as a scrolling, multi-row logo wall.
+const INTEGRATION_LOGOS: string[] = [
+  ..."slack microsoft-teams notion github hubspot confluence google-drive gmail stripe zendesk figma workday intercom servicenow airtable bamboohr brex docusign looker mixpanel quickbooks tableau greenhouse google-calendar google-meet onedrive sharepoint bigquery gong"
+    .split(" ")
+    .map((n) => `/logos/${n}.svg`),
+  ..."salesforce jira zoom snowflake asana calendly clickup dropbox box gitlab databricks datadog amplitude linear"
+    .split(" ")
+    .map((n) => `/logos/${n}.webp`),
+];
+
+// Three interleaved rows so each band mixes brands evenly.
+const INTEGRATION_ROWS = [0, 1, 2].map((r) =>
+  INTEGRATION_LOGOS.filter((_, i) => i % 3 === r),
+);
+
+function integrationName(src: string): string {
+  const base = src.split("/").pop()!.replace(/\.(svg|webp|png)$/, "");
+  return base
+    .split("-")
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(" ");
+}
+
 const TRUST_BADGES = [
   {
     icon: ShieldCheck,
@@ -1594,6 +1617,56 @@ export default function Home() {
             …plus local models, and whatever comes next.
           </p>
         </div>
+      </section>
+
+      {/* ─── Integrations — the tools that run your company ─── */}
+      <section id="integrations" className="overflow-hidden border-t border-border bg-bg-warm py-24">
+        <div className="mx-auto max-w-5xl px-6 text-center">
+          <p className="section-label mb-3">Integrations</p>
+          <h2 className="mb-4 font-display text-3xl text-text-primary md:text-4xl">
+            Connect to everything that runs your company
+          </h2>
+          <p className="mx-auto max-w-2xl font-body-serif leading-relaxed text-text-secondary">
+            Your company runs on dozens of tools. Cabinet brings the work scattered
+            across them into one place you own, where your team and its agents can find
+            it, act on it, and keep it moving.
+          </p>
+        </div>
+
+        <div className="mt-14 flex flex-col gap-4">
+          {INTEGRATION_ROWS.map((row, r) => (
+            <div key={r} className="logo-marquee-viewport relative overflow-hidden">
+              <div
+                aria-hidden
+                className="pointer-events-none absolute inset-y-0 left-0 z-10 w-12 bg-gradient-to-r from-bg-warm to-transparent sm:w-24"
+              />
+              <div
+                aria-hidden
+                className="pointer-events-none absolute inset-y-0 right-0 z-10 w-12 bg-gradient-to-l from-bg-warm to-transparent sm:w-24"
+              />
+              <div className={`flex w-max ${r % 2 === 1 ? "logo-marquee-reverse" : "logo-marquee"}`}>
+                {[...row, ...row].map((src, i) => (
+                  <div
+                    key={`${src}-${i}`}
+                    className="mr-3 flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border border-border bg-bg-card shadow-sm sm:h-20 sm:w-20"
+                  >
+                    <Image
+                      src={src}
+                      alt={integrationName(src)}
+                      width={40}
+                      height={40}
+                      className="h-8 w-8 object-contain sm:h-10 sm:w-10"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <p className="mx-auto mt-12 max-w-2xl px-6 text-center text-sm font-code text-text-tertiary">
+          …and the rest of the stack your team already uses.
+        </p>
       </section>
 
       {/* ─── Social proof bar ─── */}
