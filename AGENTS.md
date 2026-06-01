@@ -4,6 +4,16 @@
 This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
 <!-- END:nextjs-agent-rules -->
 
+# What Cabinet is
+
+Cabinet is not only markdown files on disk. Copy and positioning must reflect the whole product, and must never reduce it to "local MD files":
+
+- It shows your entire knowledge base and files, not just markdown. Everything you work with lives in one place you can see and navigate.
+- It visualizes web apps, so your knowledge base renders as interactive views and dashboards, not static text.
+- It lets you share your work and collaborate with colleagues.
+
+The local-first, own-your-data story stays true. Just do not let it shrink Cabinet into "a folder of markdown." Cabinet is the place that surfaces your whole KB and files, visualizes web apps, and lets a team share and work together.
+
 # Writing style
 
 This is a marketing site for C-level executives, VPs, and decision-makers in organizations. Every word of copy must read as if a credible human professional wrote it, not an AI.
