@@ -3,21 +3,36 @@ import { notFound } from "next/navigation";
 import {
   COMPARISONS,
   ROUNDUPS,
+  THREEWAYS,
+  MIGRATIONS,
   getComparison,
   getRoundup,
+  getThreeWay,
+  getMigration,
   type Faq,
 } from "@/lib/compare";
 import { CompareHeadToHead } from "@/components/compare-head-to-head";
 import { CompareRoundup } from "@/components/compare-roundup";
+import { CompareThreeWay } from "@/components/compare-three-way";
+import { CompareMigration } from "@/components/compare-migration";
 
 const SITE = "https://runcabinet.com";
-const DEFAULT_OG = `${SITE}/og.png`;
+
+type AnyCompare = { title: string; metaDescription: string; slug: string };
 
 export function generateStaticParams() {
-  return [...COMPARISONS, ...ROUNDUPS].map((x) => ({ slug: x.slug }));
+  return [...COMPARISONS, ...ROUNDUPS, ...THREEWAYS, ...MIGRATIONS].map((x) => ({
+    slug: x.slug,
+  }));
 }
 
 export const dynamicParams = false;
+
+function find(slug: string): AnyCompare | undefined {
+  return (
+    getComparison(slug) ?? getRoundup(slug) ?? getThreeWay(slug) ?? getMigration(slug)
+  );
+}
 
 export async function generateMetadata({
   params,
@@ -25,11 +40,12 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const data = getComparison(slug) ?? getRoundup(slug);
+  const data = find(slug);
   if (!data) return { title: "Compare · Cabinet" };
 
   const url = `${SITE}/compare/${data.slug}`;
-  const image = data.ogImage ? `${SITE}${data.ogImage}` : DEFAULT_OG;
+  // og:image and twitter:image come from the colocated opengraph-image.tsx
+  // (build-time generated), so they are intentionally omitted here.
   return {
     title: data.title,
     description: data.metaDescription,
@@ -39,13 +55,11 @@ export async function generateMetadata({
       description: data.metaDescription,
       type: "website",
       url,
-      images: [{ url: image, width: 1200, height: 630 }],
     },
     twitter: {
       card: "summary_large_image",
       title: data.title,
       description: data.metaDescription,
-      images: [image],
     },
   };
 }
@@ -102,10 +116,9 @@ export default async function ComparePage({
 
   const comparison = getComparison(slug);
   if (comparison) {
-    const crumbName = `Cabinet vs ${comparison.competitor}`;
     return (
       <>
-        <JsonLd data={breadcrumbSchema(slug, crumbName)} />
+        <JsonLd data={breadcrumbSchema(slug, `Cabinet vs ${comparison.competitor}`)} />
         <JsonLd data={faqSchema(comparison.faqs)} />
         <JsonLd data={softwareSchema} />
         <CompareHeadToHead data={comparison} />
@@ -115,13 +128,37 @@ export default async function ComparePage({
 
   const roundup = getRoundup(slug);
   if (roundup) {
-    const crumbName = `${roundup.competitor} alternatives`;
     return (
       <>
-        <JsonLd data={breadcrumbSchema(slug, crumbName)} />
+        <JsonLd data={breadcrumbSchema(slug, `${roundup.competitor} alternatives`)} />
         <JsonLd data={faqSchema(roundup.faqs)} />
         <JsonLd data={softwareSchema} />
         <CompareRoundup data={roundup} />
+      </>
+    );
+  }
+
+  const threeWay = getThreeWay(slug);
+  if (threeWay) {
+    const name = threeWay.contenders.map((c) => c.name).join(" vs ");
+    return (
+      <>
+        <JsonLd data={breadcrumbSchema(slug, name)} />
+        <JsonLd data={faqSchema(threeWay.faqs)} />
+        <JsonLd data={softwareSchema} />
+        <CompareThreeWay data={threeWay} />
+      </>
+    );
+  }
+
+  const migration = getMigration(slug);
+  if (migration) {
+    return (
+      <>
+        <JsonLd data={breadcrumbSchema(slug, `Migrate from ${migration.from}`)} />
+        <JsonLd data={faqSchema(migration.faqs)} />
+        <JsonLd data={softwareSchema} />
+        <CompareMigration data={migration} />
       </>
     );
   }

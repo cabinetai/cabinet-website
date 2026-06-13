@@ -11,21 +11,9 @@ import { SiteNavbar } from "@/components/site-navbar";
 import { CompareVerdict } from "@/components/compare-verdict";
 import { CompareTable } from "@/components/compare-table";
 import { GITHUB_URL } from "@/lib/site-config";
-import {
-  COMPARISONS,
-  ROUNDUPS,
-  type Comparison,
-} from "@/lib/compare";
+import { compareLabel, type Comparison } from "@/lib/compare";
 
 const CTA_MICRO = "Open source · self-hosted · bring your own AI";
-
-function relatedLabel(slug: string): string {
-  const c = COMPARISONS.find((x) => x.slug === slug);
-  if (c) return `Cabinet vs ${c.competitor}`;
-  const r = ROUNDUPS.find((x) => x.slug === slug);
-  if (r) return `${r.competitor} alternatives`;
-  return slug;
-}
 
 function PrimaryActions({ size = "lg" }: { size?: "lg" | "md" }) {
   const pad = size === "lg" ? "px-7 py-3.5 text-base" : "px-6 py-3 text-sm";
@@ -270,7 +258,7 @@ export function CompareHeadToHead({ data }: { data: Comparison }) {
                 href={`/compare/${slug}`}
                 className="group flex items-center justify-between gap-3 rounded-xl border border-border bg-bg-card p-5 transition-all hover:border-border-dark hover:bg-bg-card-hover"
               >
-                <span className="font-display text-text-primary">{relatedLabel(slug)}</span>
+                <span className="font-display text-text-primary">{compareLabel(slug)}</span>
                 <ArrowRight className="h-4 w-4 shrink-0 text-text-muted transition-colors group-hover:text-accent" />
               </Link>
             ))}

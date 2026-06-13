@@ -2,8 +2,8 @@
 
 **Owner:** Growth / PMM
 **Surface:** `runcabinet.com/compare/*`
-**Status:** Draft v1 (for build)
-**Last updated:** 2026-05-31
+**Status:** Phases 1 to 3 built and shipping (16 pages live)
+**Last updated:** 2026-06-01
 
 ---
 
@@ -409,22 +409,29 @@ Score = search demand × strategic fit × ease of an honest win.
 
 ---
 
-## 13. Implementation plan
+## 13. Implementation plan (status)
 
-**Phase 1 — Foundation + P0 spokes (this build)**
-1. `lib/compare.ts` + types; author Notion, Obsidian, Glean, Dust records (real, fair copy).
-2. `compare/[slug]/page.tsx` (`generateStaticParams`, `dynamicParams=false`, `generateMetadata` with canonical + OG + JSON-LD).
-3. `compare-head-to-head.tsx` + shared `compare-table.tsx` + `compare-verdict.tsx`.
-4. Rebuild `compare/page.tsx` as the hub (keep master matrix, add card grids).
-5. Infra: `metadataBase` in layout, `sitemap.ts`, `robots.ts`, FAQ/Breadcrumb/SoftwareApplication JSON-LD.
-6. Internal links from `/solutions/*`, homepage feature block, hub.
+**Phase 1 — Foundation + P0 spokes — DONE**
+1. ✅ `lib/compare.ts` + types; Notion, Obsidian, Glean, Dust records.
+2. ✅ `compare/[slug]/page.tsx` (`generateStaticParams`, `dynamicParams=false`, `generateMetadata` with canonical + OG + JSON-LD).
+3. ✅ `compare-head-to-head.tsx` + shared `compare-table.tsx` + `compare-verdict.tsx`.
+4. ✅ Rebuilt `compare/page.tsx` hub (master matrix + card grids).
+5. ✅ Infra: `metadataBase` in layout, `sitemap.ts`, `robots.ts`, FAQ/Breadcrumb/SoftwareApplication JSON-LD.
 
-**Phase 2 — Round-ups + more spokes**
-7. `compare-roundup.tsx` + `notion/glean/obsidian-alternatives` records.
-8. Paperclip, Mem, Guru, Coda spokes. Per-competitor OG images.
+**Phase 2 — Round-ups + more spokes — DONE**
+6. ✅ `compare-roundup.tsx` + `notion-alternatives`, `glean-alternatives`, `obsidian-alternatives`.
+7. ✅ Paperclip, Mem, Guru, Coda spokes.
+8. ✅ Per-competitor OG images via build-time `opengraph-image.tsx` (`ImageResponse`, static-export compatible).
 
-**Phase 3 — Depth**
-9. 1v1v1 pages, migration guides as standalone, Copilot/ChatGPT-Enterprise spokes, real switcher case studies replacing illustrative quotes.
+**Phase 3 — Depth — DONE**
+9. ✅ Three-way page type + `notion-vs-obsidian-vs-cabinet` (`compare-three-way.tsx`).
+10. ✅ Migration-guide page type + `migrate-from-notion`, `migrate-from-obsidian` (`compare-migration.tsx`).
+11. ✅ Enterprise spokes: Microsoft Copilot, ChatGPT Enterprise.
+12. ⏳ Real, named switcher case studies still replace the illustrative-tagged quotes as customers report them (cannot be fabricated).
+
+**Now live: 16 compare pages** (10 head-to-head, 3 alternatives round-ups, 1 three-way, 2 migration guides), each with a build-time OG image, full JSON-LD, canonical, and sitemap entry. Build is green under `output: export`; 0 em dashes; ESLint clean.
+
+**Remaining follow-ups (not blockers):** event-level analytics instrumentation (§11); homepage/`/solutions`/`/industries` inbound links into the new spokes; long-tail competitors and round-ups (now a pure data add in `lib/compare.ts`); swap illustrative quotes for real ones.
 
 ---
 

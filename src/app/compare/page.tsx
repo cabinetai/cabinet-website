@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import { SiteNavbar } from "@/components/site-navbar";
 import { GITHUB_URL } from "@/lib/site-config";
-import { COMPARISONS, ROUNDUPS, type Cell } from "@/lib/compare";
+import { COMPARISONS, ROUNDUPS, THREEWAYS, MIGRATIONS, type Cell } from "@/lib/compare";
 
 const SITE = "https://runcabinet.com";
 
@@ -245,6 +245,67 @@ export default function CompareHubPage() {
                 <div className="min-w-0">
                   <div className="font-display text-text-primary">{r.competitor} alternatives</div>
                   <div className="font-code text-xs text-text-tertiary">{r.oneLiner}</div>
+                </div>
+                <ArrowRight className="ml-auto h-4 w-4 shrink-0 text-text-muted transition-colors group-hover:text-accent" />
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── Three-way comparisons ─── */}
+      <section className="border-b border-border bg-bg-warm py-20">
+        <div className="mx-auto max-w-5xl px-6">
+          <p className="section-label mb-3">Three at once</p>
+          <h2 className="font-display text-3xl tracking-tight text-text-primary md:text-4xl">
+            Three-way comparisons
+          </h2>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+            {THREEWAYS.map((t) => (
+              <Link
+                key={t.slug}
+                href={`/compare/${t.slug}`}
+                className="group flex items-center gap-3 rounded-2xl border border-border bg-bg-card p-5 transition-all hover:border-border-dark hover:bg-bg-card-hover"
+              >
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent-bg text-accent">
+                  <t.icon className="h-5 w-5" aria-hidden />
+                </div>
+                <div className="min-w-0">
+                  <div className="font-display text-text-primary">
+                    {t.contenders.map((c) => c.name).join(" vs ")}
+                  </div>
+                  <div className="font-code text-xs text-text-tertiary">{t.oneLiner}</div>
+                </div>
+                <ArrowRight className="ml-auto h-4 w-4 shrink-0 text-text-muted transition-colors group-hover:text-accent" />
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── Migration guides ─── */}
+      <section className="border-b border-border py-20">
+        <div className="mx-auto max-w-5xl px-6">
+          <p className="section-label mb-3">Switching</p>
+          <h2 className="font-display text-3xl tracking-tight text-text-primary md:text-4xl">
+            Migration guides
+          </h2>
+          <p className="mt-4 max-w-2xl font-body-serif leading-relaxed text-text-secondary">
+            Moving from another tool? These walk you through it, end to end, so you keep your work and end up owning it.
+          </p>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+            {MIGRATIONS.map((m) => (
+              <Link
+                key={m.slug}
+                href={`/compare/${m.slug}`}
+                className="group flex items-center gap-3 rounded-2xl border border-border bg-bg-card p-5 transition-all hover:border-border-dark hover:bg-bg-card-hover"
+              >
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent-bg text-accent">
+                  <m.icon className="h-5 w-5" aria-hidden />
+                </div>
+                <div className="min-w-0">
+                  <div className="font-display text-text-primary">Migrate from {m.from}</div>
+                  <div className="font-code text-xs text-text-tertiary">{m.oneLiner}</div>
                 </div>
                 <ArrowRight className="ml-auto h-4 w-4 shrink-0 text-text-muted transition-colors group-hover:text-accent" />
               </Link>

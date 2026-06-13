@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   ArrowRight,
   Check,
@@ -52,33 +53,47 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
           }}
         />
         <div className="relative z-10 mx-auto max-w-5xl px-6 py-20 md:py-28">
-          <div className="inline-flex items-center gap-2 rounded-full border border-border bg-bg-card px-4 py-1.5 text-sm font-code text-accent shadow-sm">
-            <Icon className="h-4 w-4" />
-            {solution.eyebrow}
+          <div className="grid items-center gap-10 lg:grid-cols-2">
+            <div>
+              <div className="inline-flex items-center gap-2 rounded-full border border-border bg-bg-card px-4 py-1.5 text-sm font-code text-accent shadow-sm">
+                <Icon className="h-4 w-4" />
+                {solution.eyebrow}
+              </div>
+              <h1 className="mt-6 font-display text-4xl leading-[1.05] tracking-tight text-text-primary sm:text-5xl">
+                {solution.headline}
+              </h1>
+              <p className="mt-6 font-body-serif text-lg leading-relaxed text-text-secondary md:text-xl">
+                {solution.subhead}
+              </p>
+              <div className="mt-9 flex flex-wrap items-center gap-3">
+                <Link
+                  href="/#get-started"
+                  className="inline-flex items-center gap-2 rounded-xl bg-accent px-7 py-3.5 text-base font-semibold text-white shadow-md transition-all hover:-translate-y-0.5 hover:bg-accent-warm hover:shadow-lg"
+                >
+                  Get started free <ArrowRight className="h-4 w-4" />
+                </Link>
+                <Link
+                  href="/demo"
+                  className="inline-flex items-center gap-2 rounded-xl border border-border bg-bg-card px-7 py-3.5 text-base font-semibold text-text-primary shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
+                >
+                  Book a demo
+                </Link>
+              </div>
+              <p className="mt-4 font-code text-xs text-text-tertiary">
+                Open source · self-hosted · bring your own AI
+              </p>
+            </div>
+            <div className="relative">
+              <Image
+                src={`/heroes/solution-${solution.slug}.jpg`}
+                alt={`${solution.label} illustration`}
+                width={1200}
+                height={630}
+                priority
+                className="w-full rounded-2xl border border-border shadow-lg"
+              />
+            </div>
           </div>
-          <h1 className="mt-6 max-w-3xl font-display text-4xl leading-[1.05] tracking-tight text-text-primary sm:text-5xl md:text-6xl">
-            {solution.headline}
-          </h1>
-          <p className="mt-6 max-w-2xl font-body-serif text-lg leading-relaxed text-text-secondary md:text-xl">
-            {solution.subhead}
-          </p>
-          <div className="mt-9 flex flex-wrap items-center gap-3">
-            <Link
-              href="/#get-started"
-              className="inline-flex items-center gap-2 rounded-xl bg-accent px-7 py-3.5 text-base font-semibold text-white shadow-md transition-all hover:-translate-y-0.5 hover:bg-accent-warm hover:shadow-lg"
-            >
-              Get started free <ArrowRight className="h-4 w-4" />
-            </Link>
-            <Link
-              href="/demo"
-              className="inline-flex items-center gap-2 rounded-xl border border-border bg-bg-card px-7 py-3.5 text-base font-semibold text-text-primary shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
-            >
-              Book a demo
-            </Link>
-          </div>
-          <p className="mt-4 font-code text-xs text-text-tertiary">
-            Open source · self-hosted · bring your own AI
-          </p>
         </div>
       </section>
 

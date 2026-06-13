@@ -8,6 +8,13 @@ import {
   AppWindow,
   Users,
   Database,
+  Workflow,
+  Sparkles,
+  BookOpen,
+  Table,
+  MessageSquare,
+  ArrowRightLeft,
+  Lock,
   type LucideIcon,
 } from "lucide-react";
 
@@ -469,6 +476,513 @@ export const COMPARISONS: Comparison[] = [
     ],
     related: ["cabinet-vs-glean", "cabinet-vs-notion", "cabinet-vs-obsidian"],
   },
+
+  {
+    slug: "cabinet-vs-paperclip",
+    kind: "head-to-head",
+    competitor: "Paperclip",
+    competitorSlug: "paperclip",
+    category: "Agent orchestration",
+    icon: Workflow,
+    oneLiner: "Orchestrate agents, or give those agents a brain to work in.",
+    title: "Paperclip vs Cabinet: Agents, Plus the Knowledge They Run On",
+    metaDescription:
+      "Paperclip orchestrates AI agents with org charts and budgets. Cabinet gives agents a knowledge base you own to read and write, plus a workspace your team shares. An honest comparison.",
+    h1: "Paperclip vs Cabinet: an honest comparison",
+    lead: "Paperclip is built to orchestrate AI agents: org charts, budgets, audit trails. Cabinet runs agents too, but gives them a knowledge base you own to read and write, with live apps, a terminal, and a place your team works together. One coordinates agents, the other gives them somewhere to think.",
+    verdict: {
+      chooseUs: [
+        "You want agents working inside a knowledge base you own, not orchestrated in isolation.",
+        "You want an editor, live apps, a terminal, and a team workspace around your agents, not only a control plane.",
+        "Self-hosting and owning the files your agents produce are requirements.",
+      ],
+      chooseThem: [
+        "Your only need is to coordinate a large fleet of agents, and you already have a knowledge system.",
+        "You want the most granular agent budget and org-chart controls available today.",
+      ],
+    },
+    coreDifference: {
+      heading: "Paperclip coordinates agents. Cabinet gives them a brain.",
+      paras: [
+        "Paperclip is strong at the control plane for agents: hierarchies, budgets, scheduling, and audit logs. It is about managing a workforce of agents.",
+        "Cabinet is the workspace those agents work in. Your whole knowledge base lives as files you own, agents read and write them directly, and your team sees the same knowledge base, live apps, and dashboards in one place.",
+        "If Paperclip is the org chart, Cabinet is the office: the documents, the tools, and the shared space where the work actually lands.",
+      ],
+    },
+    differentiators: [
+      {
+        icon: FileText,
+        title: "A knowledge base agents own",
+        body: "Paperclip coordinates agents but gives them no place to keep their work. Cabinet agents read and write files on your disk, so what they produce becomes a knowledge base you keep, not output that scatters.",
+        code: "knowledge/\n  research/\n    market-scan.md\n  decisions/\n    q3-plan.md",
+      },
+      {
+        icon: AppWindow,
+        title: "A workspace, not just a control plane",
+        body: "An editor, live web apps and dashboards, a web terminal, and team chat sit around your agents. Cabinet is where people and agents work side by side, not only where agents are scheduled.",
+      },
+      {
+        icon: Cpu,
+        title: "Self-hosted, bring your own AI",
+        body: "Run Cabinet in your own environment and route inference through model accounts you already pay for. The agents and the knowledge they build stay on infrastructure you control.",
+      },
+    ],
+    rows: [
+      { feature: "Knowledge base agents read and write", cabinet: true, them: false },
+      { feature: "AI agent orchestration", cabinet: true, them: true },
+      { feature: "Agent org chart / hierarchy", cabinet: "partial", them: true },
+      { feature: "Agent budget controls", cabinet: "partial", them: true },
+      { feature: "Scheduled routines / heartbeats", cabinet: true, them: true },
+      { feature: "Audit logs", cabinet: "partial", them: true },
+      { feature: "Markdown files on disk you own", cabinet: true, them: false },
+      { feature: "Visualize web apps and dashboards", cabinet: true, them: false },
+      { feature: "Web terminal", cabinet: true, them: false },
+      { feature: "Authoring / knowledge editor", cabinet: true, them: false },
+      { feature: "Team collaboration workspace", cabinet: true, them: "partial" },
+      { feature: "Self-hosted", cabinet: true, them: "partial" },
+      { feature: "Bring your own AI model keys", cabinet: true, them: "partial" },
+      { feature: "Open source (MIT)", cabinet: true, them: false },
+    ],
+    whenThemWins: {
+      heading: "When Paperclip is the better choice",
+      points: [
+        "Your single need is orchestrating a large fleet of agents, and the knowledge already lives elsewhere.",
+        "You need the most detailed budget, hierarchy, and audit controls for agents available today.",
+        "You do not need an authoring surface, apps, or a shared team workspace.",
+      ],
+    },
+    switcher: {
+      quote: "Paperclip ran our agents well, but their output had nowhere to live. Cabinet gave the agents a knowledge base they write to, so the work compounds instead of scattering.",
+      attribution: "Head of AI, scale-up",
+    },
+    faqs: [
+      { q: "Is Cabinet a Paperclip alternative?", a: "For teams that want agents working inside a knowledge base they own, yes. Cabinet runs agents and gives them files to read and write, plus a workspace your team shares. Paperclip is the better fit if your only need is granular agent orchestration on top of an existing knowledge system." },
+      { q: "Does Cabinet orchestrate agents like Paperclip?", a: "Cabinet runs agents with personas and schedules. Paperclip's org-chart, budget, and audit controls are more granular today. Cabinet's wedge is the knowledge base and workspace the agents act in." },
+      { q: "Can I self-host Cabinet?", a: "Yes. Cabinet runs in your own environment with your own model keys, so the agents and the knowledge they build stay in your control." },
+      { q: "Is Cabinet open source?", a: "Yes, under the MIT license. You can read every line, fork it, or run your own build." },
+    ],
+    related: ["cabinet-vs-dust", "cabinet-vs-glean", "cabinet-vs-notion"],
+  },
+
+  {
+    slug: "cabinet-vs-mem",
+    kind: "head-to-head",
+    competitor: "Mem",
+    competitorSlug: "mem",
+    category: "AI notes",
+    icon: Sparkles,
+    oneLiner: "AI notes in the cloud, or a knowledge base you own with agents.",
+    title: "Mem vs Cabinet: AI Notes in the Cloud, or a KB You Own",
+    metaDescription:
+      "Mem is an AI note-taking app in the cloud. Cabinet keeps your whole knowledge base as files you own, with agents that act on them and a workspace your team shares. An honest comparison.",
+    h1: "Mem vs Cabinet: an honest comparison",
+    lead: "Mem is a fast, AI-first note app that organizes your notes in the cloud. Cabinet keeps your whole knowledge base as files you own, renders live apps alongside them, and runs agents that read and write your work. One captures notes, the other is a workspace you control.",
+    verdict: {
+      chooseUs: [
+        "You want to own your knowledge as files, not store notes in another company's cloud.",
+        "You want agents that act on your knowledge on a schedule, not only AI that helps you write and recall.",
+        "You want a shared team workspace with live apps and a terminal, not only personal notes.",
+      ],
+      chooseThem: [
+        "You want a fast, polished personal note-capture app with zero setup.",
+        "You do not need self-hosting, file ownership, or agents that run work.",
+      ],
+    },
+    coreDifference: {
+      heading: "Mem captures your notes. Cabinet is a workspace you own.",
+      paras: [
+        "Mem focuses on frictionless capture and AI recall: write quickly, let AI organize and resurface. It is a cloud product built around your personal notes.",
+        "Cabinet is broader and owned. Your whole knowledge base and files live in one place you control, live apps and dashboards render alongside, your team works in it, and agents read and write the files on a schedule.",
+        "Mem helps you remember. Cabinet helps your team and its agents do the work, on knowledge you keep.",
+      ],
+    },
+    differentiators: [
+      {
+        icon: FileText,
+        title: "Own your knowledge, do not rent it",
+        body: "Mem keeps your notes in its cloud. Cabinet keeps your whole knowledge base as files on your disk, so you can grep it, git it, back it up, and self-host the lot.",
+      },
+      {
+        icon: Bot,
+        title: "Agents that act, not just recall",
+        body: "Mem's AI helps you find and connect notes. Cabinet agents run on a schedule and write back: drafting, summarizing, and keeping your knowledge current on their own.",
+      },
+      {
+        icon: Users,
+        title: "A team workspace, not a personal app",
+        body: "Cabinet is built for a team: shared knowledge, live apps and dashboards, a terminal, chat, and tasks, all on files everyone still owns.",
+      },
+    ],
+    rows: [
+      { feature: "Files on disk you own", cabinet: true, them: false },
+      { feature: "Self-hosted", cabinet: true, them: false },
+      { feature: "AI organization and recall", cabinet: "partial", them: true },
+      { feature: "AI agents that act on your knowledge", cabinet: true, them: false },
+      { feature: "Scheduled routines", cabinet: true, them: false },
+      { feature: "Bring your own AI model keys", cabinet: true, them: false },
+      { feature: "Visualize web apps and dashboards", cabinet: true, them: false },
+      { feature: "Web terminal", cabinet: true, them: false },
+      { feature: "Team collaboration workspace", cabinet: true, them: "partial" },
+      { feature: "Fast personal capture", cabinet: "partial", them: true },
+      { feature: "Mature mobile apps", cabinet: "partial", them: true },
+      { feature: "Open source (MIT)", cabinet: true, them: false },
+    ],
+    whenThemWins: {
+      heading: "When Mem is the better choice",
+      points: [
+        "You want a fast personal note app with strong AI capture and recall, and nothing to host.",
+        "Mobile-first capture matters more than owning files or running agents.",
+        "You do not need a shared team workspace or self-hosting.",
+      ],
+    },
+    switcher: {
+      quote: "Mem was great for catching thoughts, but our team's knowledge needed a home we owned. Cabinet kept the capture habit and added files we control plus agents that maintain them.",
+      attribution: "Chief of Staff, startup",
+    },
+    faqs: [
+      { q: "Is Cabinet a Mem alternative?", a: "Yes, for teams that want to own their knowledge as files and have agents act on it. Mem is the better fit if you want a fast personal note app in the cloud with strong AI recall." },
+      { q: "Can I import my Mem notes into Cabinet?", a: "Export your notes as Markdown or text and drop them into a Cabinet folder, where they become files you own and can version with git." },
+      { q: "Does Cabinet work on mobile like Mem?", a: "Mem's mobile capture is more mature. Cabinet's focus is an owned, self-hosted workspace with agents and live apps." },
+      { q: "Is Cabinet open source?", a: "Yes, under the MIT license, and free to self-host." },
+    ],
+    related: ["cabinet-vs-notion", "cabinet-vs-obsidian", "notion-alternatives"],
+  },
+
+  {
+    slug: "cabinet-vs-guru",
+    kind: "head-to-head",
+    competitor: "Guru",
+    competitorSlug: "guru",
+    category: "Knowledge management",
+    icon: BookOpen,
+    oneLiner: "A verified card wiki in the cloud, or a KB you own with agents.",
+    title: "Guru vs Cabinet: A Verified Wiki, or Knowledge You Own",
+    metaDescription:
+      "Guru is a cloud knowledge base with verified cards and a browser extension. Cabinet keeps your whole knowledge base as files you own, with agents that maintain it and a workspace your team shares. An honest comparison.",
+    h1: "Guru vs Cabinet: an honest comparison",
+    lead: "Guru keeps knowledge in verified cards in the cloud, surfaced through a browser extension and AI answers. Cabinet keeps your whole knowledge base as files you own, with agents that keep it current and a workspace your team works in. One delivers answers, the other is where the knowledge is authored and owned.",
+    verdict: {
+      chooseUs: [
+        "You want to own your knowledge as files, not store cards in a vendor's cloud.",
+        "You want agents that keep docs current, not only human verification reminders.",
+        "You want an authoring workspace with live apps and a terminal, not only a card layer in the browser.",
+      ],
+      chooseThem: [
+        "Your main need is verified answers surfaced in a browser extension across support and sales tools.",
+        "You want a managed cloud product with built-in verification workflows and do not need self-hosting.",
+      ],
+    },
+    coreDifference: {
+      heading: "Guru verifies cards. Cabinet owns the whole knowledge base.",
+      paras: [
+        "Guru is a knowledge layer: short, verified cards delivered where your team already works, with a verification cadence to keep them trusted. It lives in the cloud and connects to your tools.",
+        "Cabinet is the substrate. Your whole knowledge base lives as files you own, agents draft and refresh them on a schedule, and your team sees the same knowledge base, live apps, and dashboards in one place.",
+        "Guru is built to surface answers. Cabinet is built to own and produce the knowledge those answers come from.",
+      ],
+    },
+    differentiators: [
+      {
+        icon: FileText,
+        title: "Own the source, not just the cards",
+        body: "Guru stores cards in its cloud. Cabinet keeps the whole knowledge base as files on your disk, so the source of truth is yours to grep, git, back up, and self-host.",
+      },
+      {
+        icon: Clock,
+        title: "Agents keep it current",
+        body: "Guru relies on people verifying cards on a cadence. Cabinet agents draft and refresh documents on a schedule, so the knowledge stays current without a manual review queue.",
+      },
+      {
+        icon: AppWindow,
+        title: "A full workspace, not a browser layer",
+        body: "An editor, live web apps and dashboards, a terminal, and team collaboration sit around your knowledge, instead of a card overlay on top of the tools you already use.",
+      },
+    ],
+    rows: [
+      { feature: "Knowledge you own as files", cabinet: true, them: false },
+      { feature: "Self-hosted", cabinet: true, them: false },
+      { feature: "AI answers over your knowledge", cabinet: true, them: true },
+      { feature: "Agents that draft and maintain docs", cabinet: true, them: "partial" },
+      { feature: "Verification workflows (trust, expiry)", cabinet: "partial", them: true },
+      { feature: "Browser-extension delivery inside other tools", cabinet: false, them: true },
+      { feature: "Scheduled routines", cabinet: true, them: "partial" },
+      { feature: "Bring your own AI model keys", cabinet: true, them: false },
+      { feature: "Visualize web apps and dashboards", cabinet: true, them: false },
+      { feature: "Web terminal", cabinet: true, them: false },
+      { feature: "Markdown files on disk", cabinet: true, them: false },
+      { feature: "Open source (MIT)", cabinet: true, them: false },
+    ],
+    whenThemWins: {
+      heading: "When Guru is the better choice",
+      points: [
+        "Your main need is verified answers delivered inside support, sales, and browser tools.",
+        "You value Guru's verification workflows and do not need to own the underlying files.",
+        "You want a managed cloud product and do not need self-hosting or agents that author docs.",
+      ],
+    },
+    switcher: {
+      quote: "Guru kept our answers verified, but the knowledge still lived in their cloud as cards. Cabinet gave us the source files we own, and agents that keep them current for us.",
+      attribution: "Head of Enablement, SaaS company",
+    },
+    faqs: [
+      { q: "Is Cabinet a Guru alternative?", a: "For teams that want to own and author their knowledge as files with agents maintaining it, yes. Guru is the better fit if your priority is verified answers delivered in a browser extension across your tools." },
+      { q: "Does Cabinet deliver answers in other tools like Guru's extension?", a: "Guru's in-browser card delivery is its strength. Cabinet's focus is owning the knowledge base itself, with agents that author and refresh it and a workspace your team works in." },
+      { q: "Can I self-host Cabinet?", a: "Yes, in your own environment with your own model keys, so sensitive knowledge stays inside your walls." },
+      { q: "Is Cabinet open source?", a: "Yes, under the MIT license." },
+    ],
+    related: ["cabinet-vs-glean", "cabinet-vs-notion", "glean-alternatives"],
+  },
+
+  {
+    slug: "cabinet-vs-coda",
+    kind: "head-to-head",
+    competitor: "Coda",
+    competitorSlug: "coda",
+    category: "Docs and tables",
+    icon: Table,
+    oneLiner: "Cloud docs that act like apps, or a KB you own that runs them.",
+    title: "Coda vs Cabinet: Cloud Docs-as-Apps, or a KB You Own",
+    metaDescription:
+      "Coda turns docs into apps with tables and Packs in the cloud. Cabinet keeps your whole knowledge base as files you own, visualizes live web apps, and runs agents. An honest comparison.",
+    h1: "Coda vs Cabinet: an honest comparison",
+    lead: "Coda blends documents, tables, and integrations into cloud docs that behave like apps. Cabinet keeps your whole knowledge base as files you own, visualizes live web apps and dashboards alongside your docs, and runs agents that act on them. Both go beyond static pages, the difference is ownership and what your AI can do.",
+    verdict: {
+      chooseUs: [
+        "You want to own your knowledge as files, not build docs inside a vendor's cloud.",
+        "You want AI agents that read and write your work on a schedule, not only formulas and automations.",
+        "You want self-hosting and bring-your-own-AI, with live apps and a terminal built in.",
+      ],
+      chooseThem: [
+        "You want a polished cloud builder for interactive docs, relational tables, and no-code automations.",
+        "You rely on Coda's Packs ecosystem and do not need self-hosting or file ownership.",
+      ],
+    },
+    coreDifference: {
+      heading: "Coda builds docs-as-apps in its cloud. Cabinet owns the KB and runs the apps.",
+      paras: [
+        "Coda is a powerful cloud builder: documents that combine text, relational tables, buttons, and Packs into interactive tools. The docs live in Coda's cloud.",
+        "Cabinet keeps your whole knowledge base as files you own and visualizes live web apps and dashboards next to them, with agents reading and writing the files and a terminal when you need one.",
+        "Coda makes a document feel like an app. Cabinet renders real apps over a knowledge base you keep, and puts agents to work on it.",
+      ],
+    },
+    differentiators: [
+      {
+        icon: AppWindow,
+        title: "Visualize real web apps over knowledge you own",
+        body: "Coda builds app-like docs from its own blocks. Cabinet renders live web apps and dashboards over your files, so your knowledge base shows up as interactive views, not static text.",
+      },
+      {
+        icon: FileText,
+        title: "Own the files, not the cloud doc",
+        body: "Coda docs live in Coda's cloud. Cabinet keeps everything as files on your disk you can grep, git, back up, and self-host.",
+      },
+      {
+        icon: Bot,
+        title: "Agents that act, not just automations",
+        body: "Coda has AI and automations inside the doc. Cabinet agents run on a schedule across your whole knowledge base, reading and writing files with your own model keys.",
+      },
+    ],
+    rows: [
+      { feature: "Knowledge you own as files", cabinet: true, them: false },
+      { feature: "Self-hosted", cabinet: true, them: false },
+      { feature: "Interactive docs with relational tables", cabinet: "partial", them: true },
+      { feature: "Render arbitrary web apps and dashboards", cabinet: true, them: "partial" },
+      { feature: "AI agents that act on your knowledge", cabinet: true, them: "partial" },
+      { feature: "Scheduled routines", cabinet: true, them: "partial" },
+      { feature: "No-code automations and buttons", cabinet: "partial", them: true },
+      { feature: "Packs / integration ecosystem", cabinet: "partial", them: true },
+      { feature: "Bring your own AI model keys", cabinet: true, them: false },
+      { feature: "Web terminal", cabinet: true, them: false },
+      { feature: "Markdown files on disk", cabinet: true, them: false },
+      { feature: "Open source (MIT)", cabinet: true, them: false },
+    ],
+    whenThemWins: {
+      heading: "When Coda is the better choice",
+      points: [
+        "You want a polished cloud builder for interactive docs, relational tables, and no-code automations.",
+        "You depend on Coda's Packs ecosystem and do not need to own the underlying files.",
+        "Self-hosting and bring-your-own-AI are not requirements.",
+      ],
+    },
+    switcher: {
+      quote: "Coda let us build doc-apps fast, but everything lived in their cloud. Cabinet gave us files we own with live apps rendered over them, and agents doing the upkeep.",
+      attribution: "Operations Lead, growth-stage company",
+    },
+    faqs: [
+      { q: "Is Cabinet a Coda alternative?", a: "Yes, for teams that want to own their knowledge as files, visualize live apps over it, and have agents act on it. Coda is the better fit if you want a cloud builder for interactive docs and relational tables." },
+      { q: "Can Cabinet do tables and interactive views like Coda?", a: "Coda's relational tables and no-code building blocks are more mature. Cabinet renders live web apps and dashboards over files you own, and runs agents on them." },
+      { q: "Can I self-host Cabinet and use my own AI?", a: "Yes. Cabinet self-hosts and brings your own model keys across providers." },
+      { q: "Is Cabinet open source?", a: "Yes, under the MIT license." },
+    ],
+    related: ["cabinet-vs-notion", "cabinet-vs-obsidian", "notion-alternatives"],
+  },
+
+  {
+    slug: "cabinet-vs-microsoft-copilot",
+    kind: "head-to-head",
+    competitor: "Microsoft Copilot",
+    competitorSlug: "microsoft-copilot",
+    category: "Bundled enterprise AI",
+    icon: Cpu,
+    oneLiner: "AI bundled into Microsoft 365, or AI on a KB you own.",
+    title: "Microsoft Copilot vs Cabinet: Bundled AI, or a KB You Own",
+    metaDescription:
+      "Microsoft 365 Copilot adds AI across Office in Microsoft's cloud. Cabinet is a knowledge base you own and self-host, with bring-your-own-AI and agents that act on your files. An honest comparison.",
+    h1: "Microsoft Copilot vs Cabinet: an honest comparison",
+    lead: "Microsoft 365 Copilot puts AI across Word, Excel, Outlook, and Teams, tied to your Microsoft Graph and cloud. Cabinet is a knowledge base you own and self-host, with bring-your-own-AI and agents that read and write your files. One is AI inside Microsoft's stack, the other is AI on infrastructure and knowledge you control.",
+    verdict: {
+      chooseUs: [
+        "You want to own and self-host your knowledge, not deepen reliance on one vendor's cloud.",
+        "You want bring-your-own-AI across providers, not a single bundled model.",
+        "You want agents that persist work to files you keep, with org-wide ownership.",
+      ],
+      chooseThem: [
+        "Your company runs on Microsoft 365 and you want AI inside the apps you already use.",
+        "You want a fully managed assistant grounded in your existing Microsoft Graph and identity.",
+      ],
+    },
+    coreDifference: {
+      heading: "Copilot adds AI inside Microsoft. Cabinet is AI on a KB you own.",
+      paras: [
+        "Microsoft 365 Copilot is excellent if your work lives in Office and Teams: it reasons over your Microsoft Graph and drafts inside the apps. It is bundled, managed, and tied to Microsoft's cloud and model choices.",
+        "Cabinet is independent and owned. Your whole knowledge base lives as files you control, you bring your own AI keys across providers, and agents read and write the files on a schedule. Self-host it anywhere.",
+        "Copilot makes Microsoft smarter. Cabinet gives you an AI knowledge base that does not depend on one vendor.",
+      ],
+    },
+    differentiators: [
+      {
+        icon: Lock,
+        title: "Own and self-host your knowledge",
+        body: "Copilot reasons over data in Microsoft's cloud. Cabinet keeps your knowledge base as files you own and run in your own environment, so your most sensitive material never has to leave your walls.",
+      },
+      {
+        icon: Cpu,
+        title: "Bring your own AI, any provider",
+        body: "Copilot is tied to Microsoft's bundled model. Cabinet routes to the model accounts you already pay for, across providers, with no bundled inference marked up on top.",
+      },
+      {
+        icon: FileText,
+        title: "Knowledge as files, not locked in Graph",
+        body: "Cabinet's knowledge is plain files you can grep, git, and back up, independent of any one suite, with agents that write back to them on a schedule.",
+      },
+    ],
+    rows: [
+      { feature: "Knowledge you own as files", cabinet: true, them: "partial", note: "Microsoft files live in OneDrive and SharePoint, in Microsoft's cloud." },
+      { feature: "Self-hosted", cabinet: true, them: false },
+      { feature: "Bring your own AI across providers", cabinet: true, them: false },
+      { feature: "Agents that act on your files on a schedule", cabinet: true, them: "partial" },
+      { feature: "Works without Microsoft 365", cabinet: true, them: false },
+      { feature: "Deep Office and Teams integration", cabinet: false, them: true },
+      { feature: "Grounded in enterprise identity and Graph", cabinet: "partial", them: true },
+      { feature: "Visualize web apps and dashboards", cabinet: true, them: "partial" },
+      { feature: "Web terminal", cabinet: true, them: false },
+      { feature: "Markdown files on disk you own", cabinet: true, them: false },
+      { feature: "Data not used to train models", cabinet: true, them: true },
+      { feature: "Open source (MIT)", cabinet: true, them: false },
+    ],
+    whenThemWins: {
+      heading: "When Microsoft Copilot is the better choice",
+      points: [
+        "Your organization runs on Microsoft 365 and you want AI inside Word, Excel, Outlook, and Teams.",
+        "You want a managed assistant grounded in your existing Microsoft Graph and identity.",
+        "Self-hosting, file ownership, and multi-provider AI are not priorities.",
+      ],
+    },
+    switcher: {
+      quote: "Copilot was great inside Office, but we wanted an AI knowledge base we owned and could self-host. Cabinet gave us that, with our own model keys instead of one bundled provider.",
+      attribution: "IT Director, regulated industry",
+    },
+    faqs: [
+      { q: "Is Cabinet a Microsoft Copilot alternative?", a: "For teams that want to own and self-host an AI knowledge base with bring-your-own-AI, yes. Copilot is the better fit if your work lives inside Microsoft 365 and you want AI in those apps." },
+      { q: "Can Cabinet use models other than the bundled one?", a: "Yes. Cabinet brings your own keys across providers, so you choose the models and pay for inference directly." },
+      { q: "Does Cabinet need Microsoft 365?", a: "No. Cabinet is independent of any suite and runs on its own." },
+      { q: "Is my data used for training?", a: "No. Cabinet is self-hosted with your own keys, and your content is never used to train a model." },
+    ],
+    related: ["cabinet-vs-chatgpt-enterprise", "cabinet-vs-glean", "cabinet-vs-notion"],
+  },
+
+  {
+    slug: "cabinet-vs-chatgpt-enterprise",
+    kind: "head-to-head",
+    competitor: "ChatGPT Enterprise",
+    competitorSlug: "chatgpt-enterprise",
+    category: "Enterprise AI assistant",
+    icon: MessageSquare,
+    oneLiner: "A hosted chat assistant, or a KB you own that agents work in.",
+    title: "ChatGPT Enterprise vs Cabinet: Hosted Chat, or a KB You Own",
+    metaDescription:
+      "ChatGPT Enterprise is a hosted assistant on one provider's models. Cabinet is a knowledge base you own and self-host, with bring-your-own-AI and agents that persist work to files. An honest comparison.",
+    h1: "ChatGPT Enterprise vs Cabinet: an honest comparison",
+    lead: "ChatGPT Enterprise is a hosted assistant with strong models, admin controls, and your data kept out of training. Cabinet is a knowledge base you own and self-host, with bring-your-own-AI across providers and agents that write work to files you keep. One is a chat product, the other is a workspace you control.",
+    verdict: {
+      chooseUs: [
+        "You want knowledge that persists as files you own, not chat history in a vendor's cloud.",
+        "You want bring-your-own-AI across providers, not a single provider's models.",
+        "You want scheduled agents and a team workspace, not only an interactive chat assistant.",
+      ],
+      chooseThem: [
+        "You want the simplest path to one provider's latest models for your whole company, fully managed.",
+        "You do not need self-hosting, file ownership, or multi-provider flexibility.",
+      ],
+    },
+    coreDifference: {
+      heading: "ChatGPT Enterprise is a chat product. Cabinet is a KB you own.",
+      paras: [
+        "ChatGPT Enterprise gives your company managed access to frontier models with admin controls and a promise not to train on your data. The work happens in chat, in the provider's cloud.",
+        "Cabinet keeps your whole knowledge base as files you own, lets you bring model keys from any provider, and runs agents that read and write those files on a schedule, alongside live apps and a terminal.",
+        "ChatGPT Enterprise answers questions. Cabinet turns the answers into a knowledge base your team and its agents keep building.",
+      ],
+    },
+    differentiators: [
+      {
+        icon: FileText,
+        title: "Work persists to files you own",
+        body: "In a chat product, the output lives in threads. In Cabinet, agents write to files on your disk, so the work becomes a knowledge base you keep, grep, git, and back up.",
+      },
+      {
+        icon: Cpu,
+        title: "Bring your own AI, any provider",
+        body: "ChatGPT Enterprise is one provider's models. Cabinet routes to whichever providers you choose, with your own keys, so you are not locked to a single model vendor.",
+      },
+      {
+        icon: Users,
+        title: "A workspace and agents, not just chat",
+        body: "Cabinet gives a team a shared knowledge base, scheduled agents, live apps, and a terminal, not only an interactive assistant to ask questions of.",
+      },
+    ],
+    rows: [
+      { feature: "Knowledge persists as files you own", cabinet: true, them: false },
+      { feature: "Self-hosted", cabinet: true, them: false },
+      { feature: "Bring your own AI across providers", cabinet: true, them: false },
+      { feature: "Scheduled agents that act on your files", cabinet: true, them: "partial" },
+      { feature: "Shared team knowledge base", cabinet: true, them: "partial" },
+      { feature: "Visualize web apps and dashboards", cabinet: true, them: "partial" },
+      { feature: "Web terminal", cabinet: true, them: false },
+      { feature: "Frontier model quality out of the box", cabinet: "partial", them: true },
+      { feature: "Zero-setup managed service", cabinet: "partial", them: true },
+      { feature: "Data not used for training", cabinet: true, them: true },
+      { feature: "Markdown files on disk", cabinet: true, them: false },
+      { feature: "Open source (MIT)", cabinet: true, them: false },
+    ],
+    whenThemWins: {
+      heading: "When ChatGPT Enterprise is the better choice",
+      points: [
+        "You want the simplest managed access to one provider's frontier models for everyone, with admin controls.",
+        "Chat is the primary interface and you do not need work to persist as files you own.",
+        "Self-hosting and multi-provider AI are not requirements.",
+      ],
+    },
+    switcher: {
+      quote: "ChatGPT Enterprise answered questions well, but nothing it produced stayed put. Cabinet made the answers into a knowledge base we own, with agents that keep writing to it.",
+      attribution: "VP Operations, mid-market company",
+    },
+    faqs: [
+      { q: "Is Cabinet a ChatGPT Enterprise alternative?", a: "For teams that want an owned, self-hosted knowledge base with bring-your-own-AI and agents that persist work, yes. ChatGPT Enterprise is simpler if you only want managed chat on one provider's models." },
+      { q: "Can Cabinet use OpenAI models?", a: "Yes, plus other providers, with your own keys. You are not locked to a single model vendor." },
+      { q: "Does Cabinet keep my data private?", a: "Yes. Cabinet is self-hosted with your own keys, and your content is never used to train a model." },
+      { q: "Is Cabinet open source?", a: "Yes, under the MIT license." },
+    ],
+    related: ["cabinet-vs-microsoft-copilot", "cabinet-vs-dust", "cabinet-vs-glean"],
+  },
 ];
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -528,6 +1042,303 @@ export const ROUNDUPS: Roundup[] = [
     ],
     related: ["cabinet-vs-notion", "cabinet-vs-obsidian", "cabinet-vs-glean"],
   },
+
+  {
+    slug: "glean-alternatives",
+    kind: "round-up",
+    competitor: "Glean",
+    competitorSlug: "glean",
+    icon: Search,
+    oneLiner: "Enterprise AI tools that fit your ownership and cost needs.",
+    title: "5 Best Glean Alternatives in 2026 (Own Your Knowledge)",
+    metaDescription:
+      "The best Glean alternatives for teams weighing cost, self-hosting, and ownership: Cabinet, Dust, Microsoft Copilot, Guru, and self-hosted search, compared honestly.",
+    h1: "The best Glean alternatives, compared honestly",
+    intro: "Teams evaluate Glean alternatives for a few reasons: enterprise pricing, limited self-hosting, or the realization that they want to own and author knowledge, not only search what is scattered across other tools. Here is an honest shortlist, and where Cabinet fits.",
+    whyLeave: {
+      heading: "Why teams look for a Glean alternative",
+      points: [
+        "Glean is a premium enterprise product, with enterprise pricing to match.",
+        "It searches the tools you already have; it does not give you knowledge you own and author.",
+        "Self-hosting and data residency can be constrained for sensitive environments.",
+        "You may want agents that produce and maintain knowledge, not only retrieve it.",
+      ],
+    },
+    topPick: {
+      heading: "Our pick for teams that want ownership: Cabinet",
+      body: "Cabinet keeps your whole knowledge base as files you own, runs self-hosted with your own model keys, and puts agents to work reading and writing those files. If the reason you are looking past Glean is ownership and control, this is the most direct answer.",
+      reasons: [
+        "You own and author the knowledge as files, not just search someone else's index.",
+        "Self-hosted with bring-your-own-AI, so sensitive material stays in your environment.",
+        "Agents maintain the knowledge base on a schedule, and live apps render over it.",
+      ],
+    },
+    alternatives: [
+      { name: "Cabinet", line: "A knowledge base you own and author, with agents acting on it and live apps over it.", bestFor: "Teams that want to own knowledge and self-host, not only search it.", theCatch: "Federated search across many existing SaaS tools is less mature than Glean's." },
+      { name: "Dust", line: "AI assistants assembled over your connected tools.", bestFor: "Teams that want hosted assistants across many SaaS sources.", theCatch: "Knowledge stays in the tools it connects to, not files you own.", vsSlug: "cabinet-vs-dust" },
+      { name: "Microsoft Copilot", line: "AI search and assistance across Microsoft 365 and the Graph.", bestFor: "Microsoft-centric organizations.", theCatch: "Tied to Microsoft's cloud and bundled model.", vsSlug: "cabinet-vs-microsoft-copilot" },
+      { name: "Guru", line: "Verified knowledge cards and AI answers in a browser extension.", bestFor: "Support and sales answer delivery.", theCatch: "Cloud cards, not files you own.", vsSlug: "cabinet-vs-guru" },
+      { name: "OpenSearch / Elastic", line: "Self-hosted search you run and tune yourself.", bestFor: "Teams that only need a search layer and want to own it.", theCatch: "Infrastructure to build on, not a finished product." },
+    ],
+    framework: [
+      { need: "Federated search across many existing SaaS tools", pick: "Glean" },
+      { need: "Hosted assistants across your connected tools", pick: "Dust" },
+      { need: "AI search inside Microsoft 365", pick: "Microsoft Copilot" },
+      { need: "Verified answers delivered in a browser extension", pick: "Guru" },
+      { need: "Knowledge you own and author, with agents acting on it", pick: "Cabinet" },
+    ],
+    faqs: [
+      { q: "What is the best self-hosted Glean alternative?", a: "Cabinet, if you want to own and author the knowledge and self-host it. If you only need a search layer, self-hosted search such as OpenSearch or Elastic is an option." },
+      { q: "Is there an open-source Glean alternative?", a: "Cabinet is open source (MIT) for owning and authoring knowledge. OpenSearch and Elastic cover the search layer." },
+      { q: "What is the most affordable Glean alternative?", a: "Cabinet is free to self-host under the MIT license, with inference billed directly through your own model keys." },
+      { q: "How does Glean compare to Cabinet directly?", a: "Glean searches the tools you already have; Cabinet is where knowledge is authored and owned, with agents acting on it. See the full Glean vs Cabinet comparison." },
+    ],
+    related: ["cabinet-vs-glean", "cabinet-vs-dust", "cabinet-vs-microsoft-copilot"],
+  },
+
+  {
+    slug: "obsidian-alternatives",
+    kind: "round-up",
+    competitor: "Obsidian",
+    competitorSlug: "obsidian",
+    icon: FileText,
+    oneLiner: "Markdown tools that scale from a personal vault to a team.",
+    title: "5 Best Obsidian Alternatives in 2026 (For Teams)",
+    metaDescription:
+      "The best Obsidian alternatives for teams that still want to own their files: Cabinet, Logseq, Notion, Anytype, and AppFlowy, compared honestly.",
+    h1: "The best Obsidian alternatives, compared honestly",
+    intro: "Obsidian is a brilliant personal vault, and people look past it when they need team collaboration, built-in AI and agents, or a workspace beyond notes, while still owning their files. Here is an honest shortlist, and where Cabinet fits.",
+    whyLeave: {
+      heading: "Why people look for an Obsidian alternative",
+      points: [
+        "Obsidian is single-player by design; team collaboration needs paid add-ons.",
+        "AI is bolted on through community plugins, not built in.",
+        "It is a note editor, not a workspace with apps, dashboards, and agents.",
+        "You want a team to share the same knowledge, without giving up files you own.",
+      ],
+    },
+    topPick: {
+      heading: "Our pick for teams that want ownership: Cabinet",
+      body: "Cabinet keeps the same files-on-disk model Obsidian users love and adds what a team needs: shared knowledge, AI agents that act on the notes, live apps and dashboards, chat, tasks, and a terminal. Your files stay yours and self-hosted.",
+      reasons: [
+        "Markdown on disk like Obsidian, so there is no conversion and no lock-in.",
+        "Built-in agents and scheduled routines, not plugins you wire up yourself.",
+        "A shared team workspace with live apps, dashboards, chat, and a terminal.",
+      ],
+    },
+    alternatives: [
+      { name: "Cabinet", line: "Files on disk like Obsidian, plus a team, agents, and live apps.", bestFor: "Teams that want to keep their files and add collaboration and AI.", theCatch: "Smaller plugin ecosystem than Obsidian's.", vsSlug: "cabinet-vs-obsidian" },
+      { name: "Logseq", line: "An open-source, local-first outliner for Markdown notes.", bestFor: "Outliner-style personal note-taking.", theCatch: "Single-player, with a niche outliner workflow." },
+      { name: "Notion", line: "A polished cloud workspace for teams.", bestFor: "Teams that want a managed all-in-one.", theCatch: "Cloud lock-in, not files you own.", vsSlug: "cabinet-vs-notion" },
+      { name: "Anytype", line: "A local-first, open-source workspace with a Notion-like feel.", bestFor: "Notion's blocks without the cloud.", theCatch: "Custom data model and a younger ecosystem." },
+      { name: "AppFlowy", line: "An open-source Notion-style app with docs, boards, and tables.", bestFor: "A self-hostable open-source workspace.", theCatch: "Fewer integrations than Notion." },
+    ],
+    framework: [
+      { need: "An outliner-style personal vault", pick: "Logseq" },
+      { need: "A managed all-in-one cloud workspace", pick: "Notion" },
+      { need: "Notion's blocks without the cloud", pick: "Anytype" },
+      { need: "A self-hostable open-source workspace", pick: "AppFlowy" },
+      { need: "Files you own plus a team, agents, and live apps", pick: "Cabinet" },
+    ],
+    faqs: [
+      { q: "What is the best Obsidian alternative for teams?", a: "Cabinet keeps your Markdown on disk like Obsidian and adds team collaboration, agents, and live apps, so a team shares the same knowledge without giving up files they own." },
+      { q: "Is there an open-source Obsidian alternative?", a: "Logseq, Anytype, AppFlowy, and Cabinet are all open source. Cabinet is MIT licensed and adds agents and a team workspace." },
+      { q: "Can I keep my Markdown files?", a: "Yes. Cabinet uses Markdown on disk like Obsidian, so your notes move over with no conversion." },
+      { q: "How does Obsidian compare to Cabinet directly?", a: "Both store Markdown you own; Cabinet adds a team, agents, and live apps. See the full Obsidian vs Cabinet comparison." },
+    ],
+    related: ["cabinet-vs-obsidian", "cabinet-vs-notion", "notion-alternatives"],
+  },
+];
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Three-way comparisons (1v1v1)
+// ─────────────────────────────────────────────────────────────────────────────
+
+export type Contender = { name: string; tagline: string };
+/** Cells align to the `contenders` array order. Cabinet is always last. */
+export type ThreeRow = { feature: string; cells: Cell[] };
+
+export type ThreeWay = {
+  slug: string;
+  kind: "three-way";
+  icon: LucideIcon;
+  oneLiner: string;
+  // SEO
+  title: string;
+  metaDescription: string;
+  ogImage?: string;
+  // Content
+  h1: string;
+  intro: string;
+  contenders: Contender[];
+  rows: ThreeRow[];
+  bestFor: { contender: string; who: string }[];
+  verdictParas: string[];
+  faqs: Faq[];
+  related: string[];
+};
+
+export const THREEWAYS: ThreeWay[] = [
+  {
+    slug: "notion-vs-obsidian-vs-cabinet",
+    kind: "three-way",
+    icon: FileText,
+    oneLiner: "A cloud wiki, a local vault, and a KB you own, side by side.",
+    title: "Notion vs Obsidian vs Cabinet: Which Knowledge Base Wins?",
+    metaDescription:
+      "Notion, Obsidian, and Cabinet compared across ownership, AI, collaboration, and cost. A cloud wiki, a local note vault, and a knowledge base you own with agents. An honest three-way comparison.",
+    h1: "Notion vs Obsidian vs Cabinet",
+    intro: "Three popular ways to run a knowledge base, three very different trade-offs. Notion is a polished cloud wiki. Obsidian is a local, single-player Markdown vault. Cabinet keeps your whole knowledge base as files you own, with team collaboration, live apps, and AI agents. Here is how they compare.",
+    contenders: [
+      { name: "Notion", tagline: "Polished cloud wiki, managed and multiplayer." },
+      { name: "Obsidian", tagline: "Local-first Markdown vault for one person." },
+      { name: "Cabinet", tagline: "A knowledge base you own, with agents and apps." },
+    ],
+    rows: [
+      { feature: "Files on disk you own", cells: [false, true, true] },
+      { feature: "Self-hosted", cells: [false, true, true] },
+      { feature: "Built for teams", cells: [true, "partial", true] },
+      { feature: "AI agents that act on your knowledge", cells: ["partial", "partial", true] },
+      { feature: "Scheduled routines", cells: [false, false, true] },
+      { feature: "Bring your own AI keys", cells: [false, "partial", true] },
+      { feature: "Visualize web apps and dashboards", cells: [false, false, true] },
+      { feature: "Real-time multiplayer editing", cells: [true, "partial", "partial"] },
+      { feature: "Plugin ecosystem", cells: ["partial", true, "partial"] },
+      { feature: "Open source", cells: [false, false, true] },
+      { feature: "No vendor lock-in", cells: [false, true, true] },
+      { feature: "Managed, zero-setup", cells: [true, "partial", "partial"] },
+    ],
+    bestFor: [
+      { contender: "Notion", who: "Teams that want a polished, managed cloud workspace and live multiplayer, and are fine with their knowledge living in the cloud." },
+      { contender: "Obsidian", who: "Solo note-takers who want the lightest local Markdown vault and a deep plugin ecosystem." },
+      { contender: "Cabinet", who: "Teams that want to own their knowledge as files, with agents acting on it, live apps, and self-hosting." },
+    ],
+    verdictParas: [
+      "If you want zero setup and live multiplayer above all, Notion is the easy pick, as long as you accept that your knowledge lives in their cloud.",
+      "If you work alone and want the fastest, most hackable local editor, Obsidian is hard to beat.",
+      "If you want to own your knowledge, give a team and its AI agents one place to work, and render live apps over it, Cabinet is the one of the three you actually control.",
+    ],
+    faqs: [
+      { q: "Notion vs Obsidian vs Cabinet, which should I choose?", a: "Pick Notion for a managed cloud workspace with multiplayer, Obsidian for a personal local vault, and Cabinet if you want to own your knowledge as files with a team and AI agents working in it." },
+      { q: "Which is best for teams?", a: "Notion and Cabinet are both built for teams. Choose Cabinet if owning your files and having agents act on them matters; choose Notion for the most polished managed multiplayer." },
+      { q: "Which is open source?", a: "Cabinet is open source under the MIT license. Obsidian's core app is free but not open source, and Notion is closed source." },
+      { q: "Which lets me own my files?", a: "Obsidian and Cabinet both store Markdown on disk you own. Notion keeps your pages in its cloud and proprietary format." },
+    ],
+    related: ["cabinet-vs-notion", "cabinet-vs-obsidian", "notion-alternatives"],
+  },
+];
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Migration guides
+// ─────────────────────────────────────────────────────────────────────────────
+
+export type Migration = {
+  slug: string;
+  kind: "migration";
+  from: string;
+  fromSlug: string;
+  icon: LucideIcon;
+  oneLiner: string;
+  // SEO
+  title: string;
+  metaDescription: string;
+  ogImage?: string;
+  // Content
+  h1: string;
+  intro: string;
+  steps: { title: string; body: string }[];
+  whatMovesOver: string[];
+  watchOut: string[];
+  afterValue: string[];
+  faqs: Faq[];
+  related: string[];
+};
+
+export const MIGRATIONS: Migration[] = [
+  {
+    slug: "migrate-from-notion",
+    kind: "migration",
+    from: "Notion",
+    fromSlug: "notion",
+    icon: ArrowRightLeft,
+    oneLiner: "Move your Notion workspace to files you own, step by step.",
+    title: "How to Migrate from Notion to Cabinet (Step by Step)",
+    metaDescription:
+      "A step-by-step guide to migrating from Notion to Cabinet: export your workspace, import the Markdown and CSV, and put AI agents to work on knowledge you now own.",
+    h1: "Migrating from Notion to Cabinet",
+    intro: "Leaving Notion does not mean losing your work. Notion exports clean Markdown and CSV, and Cabinet runs on exactly that: files on your disk. Here is how to move over in an afternoon and end up owning your knowledge.",
+    steps: [
+      { title: "Export your Notion workspace", body: "In Notion, choose Export with the Markdown and CSV format and include subpages. You get a zip of Markdown files and CSV tables that mirror your page tree." },
+      { title: "Drop it into a Cabinet folder", body: "Unzip the export into your Cabinet knowledge folder. Your pages are now Markdown files on your disk, organized the way they were in Notion." },
+      { title: "Tidy the structure", body: "Rename the export folders to match how your team thinks. Cabinet renders the tree, and live apps and dashboards over it, while everything stays plain Markdown you can grep and git." },
+      { title: "Point your agents at it", body: "Add agent personas and routines so agents start reading and writing the imported knowledge: drafting, summarizing, and keeping docs current on a schedule." },
+      { title: "Invite your team", body: "Share the workspace so colleagues work in the same knowledge base, now on files you own and self-host." },
+    ],
+    whatMovesOver: [
+      "Pages and subpages, as Markdown files",
+      "Databases and tables, as CSV you can keep or convert",
+      "Your page hierarchy and most formatting",
+      "Images and file attachments referenced from the export",
+    ],
+    watchOut: [
+      "Notion-specific blocks such as synced blocks and some embeds may need a quick cleanup.",
+      "Relational database links become CSV columns; complex relations may need reshaping.",
+      "Real-time multiplayer works differently from Notion, so review the collaboration model with your team.",
+    ],
+    afterValue: [
+      "Your knowledge is files you own: grep it, git it, back it up, self-host it.",
+      "Agents read and write it on a schedule, using your own model keys.",
+      "Live apps and dashboards render over the same files, for the whole team.",
+    ],
+    faqs: [
+      { q: "Is migrating from Notion to Cabinet hard?", a: "No. Notion exports Markdown and CSV, which is exactly what Cabinet runs on, so most of the work is exporting and tidying." },
+      { q: "Will I lose my databases?", a: "No. They export as CSV, so you keep the data and can reshape it in Cabinet as needed." },
+      { q: "Can I keep using Notion during the move?", a: "Yes. The export is a copy, so you can migrate at your own pace and keep Notion running until you are ready." },
+      { q: "How do Notion and Cabinet compare overall?", a: "Notion is a managed cloud wiki; Cabinet is a knowledge base you own with agents and apps. See the full Notion vs Cabinet comparison." },
+    ],
+    related: ["cabinet-vs-notion", "notion-alternatives", "migrate-from-obsidian"],
+  },
+  {
+    slug: "migrate-from-obsidian",
+    kind: "migration",
+    from: "Obsidian",
+    fromSlug: "obsidian",
+    icon: ArrowRightLeft,
+    oneLiner: "Bring your Obsidian vault into a team workspace, with no conversion.",
+    title: "How to Migrate from Obsidian to Cabinet (Keep Your Vault)",
+    metaDescription:
+      "Move from Obsidian to Cabinet without converting anything. Both use Markdown on disk, so you point Cabinet at your vault and gain agents, team collaboration, and live apps.",
+    h1: "Migrating from Obsidian to Cabinet",
+    intro: "There is barely a migration here. Obsidian and Cabinet both store plain Markdown files on disk, so your vault moves over as-is. What changes is what you can do with it: a team, agents, and live apps over the same notes.",
+    steps: [
+      { title: "Locate your vault", body: "Find the folder where Obsidian stores your Markdown files. That folder is your knowledge base." },
+      { title: "Open it in Cabinet", body: "Point Cabinet at the vault folder. Your notes appear immediately, still Markdown, still yours." },
+      { title: "Keep your links and structure", body: "Wikilinks and folders carry over. Cabinet renders the tree and can visualize live apps and dashboards over your notes." },
+      { title: "Add agents and routines", body: "Create agent personas so agents read and write the vault: summaries, digests, and upkeep on a schedule." },
+      { title: "Bring in your team", body: "Share the workspace so colleagues collaborate in the same vault, now with chat, tasks, and apps around it." },
+    ],
+    whatMovesOver: [
+      "Every Markdown note, unchanged",
+      "Your folder structure and wikilinks",
+      "Attachments stored alongside your notes",
+    ],
+    watchOut: [
+      "Obsidian community plugins do not carry over; Cabinet replaces many with built-in features rather than a plugin marketplace.",
+      "Graph view and some plugin-specific syntax differ, so review anything that depends on a specific plugin.",
+    ],
+    afterValue: [
+      "Your vault is now a shared team workspace, still files you own.",
+      "Agents act on your notes on a schedule, with your own model keys.",
+      "Live apps, dashboards, chat, and tasks sit alongside the same Markdown.",
+    ],
+    faqs: [
+      { q: "Do I have to convert my Obsidian notes?", a: "No. Both Obsidian and Cabinet use Markdown on disk, so there is no conversion: you point Cabinet at the vault." },
+      { q: "Will my wikilinks still work?", a: "Yes. Links and folder structure carry over with your notes." },
+      { q: "What about my plugins?", a: "Plugins do not transfer. Cabinet provides built-in agents, team features, and apps instead of a plugin marketplace." },
+      { q: "How do Obsidian and Cabinet compare overall?", a: "Both keep Markdown you own; Cabinet adds a team, agents, and live apps. See the full Obsidian vs Cabinet comparison." },
+    ],
+    related: ["cabinet-vs-obsidian", "obsidian-alternatives", "migrate-from-notion"],
+  },
 ];
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -542,6 +1353,27 @@ export function getRoundup(slug: string): Roundup | undefined {
   return ROUNDUPS.find((r) => r.slug === slug);
 }
 
+export function getThreeWay(slug: string): ThreeWay | undefined {
+  return THREEWAYS.find((t) => t.slug === slug);
+}
+
+export function getMigration(slug: string): Migration | undefined {
+  return MIGRATIONS.find((m) => m.slug === slug);
+}
+
 export function allCompareSlugs(): string[] {
-  return [...COMPARISONS, ...ROUNDUPS].map((x) => x.slug);
+  return [...COMPARISONS, ...ROUNDUPS, ...THREEWAYS, ...MIGRATIONS].map((x) => x.slug);
+}
+
+/** Human label for a compare slug, used for related-page cross-links. */
+export function compareLabel(slug: string): string {
+  const c = COMPARISONS.find((x) => x.slug === slug);
+  if (c) return `Cabinet vs ${c.competitor}`;
+  const r = ROUNDUPS.find((x) => x.slug === slug);
+  if (r) return `${r.competitor} alternatives`;
+  const t = THREEWAYS.find((x) => x.slug === slug);
+  if (t) return t.contenders.map((x) => x.name).join(" vs ");
+  const m = MIGRATIONS.find((x) => x.slug === slug);
+  if (m) return `Migrate from ${m.from}`;
+  return slug;
 }

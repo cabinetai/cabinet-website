@@ -269,7 +269,7 @@ type LaneItem =
 
 const SUCK_LANES: { y: number; start: number; items: LaneItem[] }[] = [
   {
-    y: -195,
+    y: -600,
     start: 0.38,
     items: [
       { kind: "label", text: "Files" },
@@ -279,7 +279,7 @@ const SUCK_LANES: { y: number; start: number; items: LaneItem[] }[] = [
     ],
   },
   {
-    y: -65,
+    y: -200,
     start: 0.43,
     items: [
       { kind: "label", text: "Dashboards" },
@@ -289,7 +289,7 @@ const SUCK_LANES: { y: number; start: number; items: LaneItem[] }[] = [
     ],
   },
   {
-    y: 65,
+    y: 200,
     start: 0.48,
     items: [
       { kind: "label", text: "AI agents" },
@@ -299,7 +299,7 @@ const SUCK_LANES: { y: number; start: number; items: LaneItem[] }[] = [
     ],
   },
   {
-    y: 195,
+    y: 600,
     start: 0.53,
     items: [
       { kind: "label", text: "Routines & tasks" },
@@ -377,8 +377,14 @@ function SuckItem({
   const y = useTransform(progress, [start, end], [y0, 0]);
   const scale = useTransform(progress, [start, end - 0.025, end], [1, 1, 0.05]);
   const opacity = useTransform(progress, [start, start + 0.02, end - 0.02, end], [0, 1, 1, 0]);
+  // Category labels ride one layer above the example chips so the "Files",
+  // "Dashboards", etc. tags stay legible when a lane's items overlap them.
+  // (The chips already paint behind the centred Cabinet hub, so dropping the
+  // non-labels to -1 changes nothing there — it only lifts the labels above
+  // their own stream.)
+  const z = item.kind === "label" ? 0 : -1;
   return (
-    <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+    <div className="absolute inset-0 flex items-center justify-center pointer-events-none" style={{ zIndex: z }}>
       <motion.div style={{ x, y, scale, opacity, willChange: "transform" }}>
         <LaneChip item={item} />
       </motion.div>

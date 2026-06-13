@@ -49,7 +49,7 @@ const PROVIDERS = [
   { src: "/providers/claude.svg", name: "Claude" },
   { src: "/providers/openai.png", name: "OpenAI" },
   { src: "/providers/gemini.svg", name: "Gemini" },
-  { src: "/providers/grok.svg", name: "Grok" },
+  { src: "/providers/grok.svg", name: "Grok Code" },
   { src: "/providers/copilot.svg", name: "Copilot" },
   { src: "/providers/cursor.svg", name: "Cursor" },
   { src: "/providers/opencode.svg", name: "opencode" },
@@ -1553,30 +1553,6 @@ export default function Home() {
                 </div>
               );
             })}
-          </div>
-
-          {/* logo wall — placeholder tiles; swap in real customer logos as teams go public */}
-          <div className="mt-14">
-            <p className="mb-6 text-center font-code text-xs uppercase tracking-widest text-text-tertiary">
-              Teams building on Cabinet
-            </p>
-            <div className="mx-auto grid max-w-4xl grid-cols-2 gap-3 opacity-70 sm:grid-cols-3 lg:grid-cols-6">
-              {Array.from({ length: 6 }).map((_, i) => (
-                <div
-                  key={i}
-                  className="flex h-14 items-center justify-center rounded-xl border border-dashed border-border bg-bg-card"
-                >
-                  <span className="font-code text-[11px] text-text-muted">Your logo</span>
-                </div>
-              ))}
-            </div>
-            <p className="mt-5 text-center text-sm text-text-tertiary font-body-serif">
-              Using Cabinet at work?{" "}
-              <a href="/demo" className="text-accent underline underline-offset-2 hover:text-accent-warm">
-                Tell us your story
-              </a>
-              .
-            </p>
           </div>
         </div>
       </section>
