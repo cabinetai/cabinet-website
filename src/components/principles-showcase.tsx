@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { motion, useReducedMotion } from "framer-motion";
 import {
   HardDrive,
   GitBranch,
@@ -71,103 +72,161 @@ const PRINCIPLES: Principle[] = [
     name: "Self-hosted",
     tagline: "Runs in infrastructure you control",
     body: "Cabinet is open source and self-hosted by default, so plans, research, and operating memory live where your existing policies already apply. The only data that ever leaves is the prompt and response of a cloud-model call you explicitly invoke.",
-    iconBg: "bg-teal-100",
-    iconFg: "text-teal-600",
+    iconBg: "bg-slate-100",
+    iconFg: "text-slate-600",
     takeaway: "your context stays inside your own environment.",
   },
 ];
 
-export function PrinciplesShowcase() {
-  const [open, setOpen] = useState<number | null>(null);
-  const [detailIdx, setDetailIdx] = useState(0);
-  const detail = PRINCIPLES[detailIdx];
-  const DetailIcon = detail.icon;
+// Translucent colour wash for the active glass card. Mirrors PRINCIPLES order.
+const ACTIVE_TINT = [
+  "bg-amber-200/25",
+  "bg-violet-200/25",
+  "bg-blue-200/25",
+  "bg-emerald-200/25",
+  "bg-rose-200/25",
+  "bg-slate-200/25",
+];
 
-  const handleClick = (i: number) => {
-    if (open === i) {
-      setOpen(null);
-    } else {
-      setDetailIdx(i);
-      setOpen(i);
-    }
+export function PrinciplesShowcase() {
+  const [active, setActive] = useState(0);
+  const refs = useRef<(HTMLElement | null)[]>([]);
+  const prefersReduced = useReducedMotion();
+
+  // Scrollspy: highlight the sidebar card whose elaboration sits in the
+  // vertical center band of the viewport.
+  useEffect(() => {
+    const els = refs.current.filter(Boolean) as HTMLElement[];
+    if (els.length === 0) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries.filter((e) => e.isIntersecting);
+        if (visible.length === 0) return;
+        const top = visible.reduce((a, b) =>
+          a.intersectionRatio >= b.intersectionRatio ? a : b,
+        );
+        const idx = Number((top.target as HTMLElement).dataset.index);
+        if (!Number.isNaN(idx)) setActive(idx);
+      },
+      { rootMargin: "-45% 0px -45% 0px", threshold: [0, 0.5, 1] },
+    );
+
+    els.forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
+
+  const goTo = (i: number) => {
+    refs.current[i]?.scrollIntoView({ behavior: "smooth", block: "center" });
   };
 
   return (
-    <div>
-      {/* Full-width row of flush square cards — no gaps, shared hairline borders */}
-      <div className="overflow-hidden rounded-2xl border-l border-t border-border bg-bg-card">
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6">
-          {PRINCIPLES.map((p, i) => {
-            const isOpen = open === i;
-            const Icon = p.icon;
-            return (
-              <button
-                key={p.name}
-                type="button"
-                onClick={() => handleClick(i)}
-                aria-expanded={isOpen}
-                className={`group relative flex aspect-square cursor-pointer flex-col items-center justify-center overflow-hidden border-b border-r border-border p-5 text-center transition-colors ${
-                  isOpen ? `z-10 ${p.iconBg}` : "hover:bg-bg-card-hover"
-                }`}
-              >
-                {/* the icon itself, oversized and heavily blurred → an ambient
-                    colour wash behind the label (replaces the old chip) */}
-                <Icon
-                  aria-hidden
-                  strokeWidth={2}
-                  className={`pointer-events-none absolute left-1/2 top-1/2 h-28 w-28 -translate-x-1/2 -translate-y-1/2 ${p.iconFg} blur-sm transition-all duration-300 ${
-                    isOpen
-                      ? "scale-110 opacity-55"
-                      : "opacity-30 group-hover:scale-105 group-hover:opacity-45"
+    <div className="grid gap-10 lg:grid-cols-12 lg:gap-14">
+      {/* ── Left: title + sidebar of all principle cards (sticky) ── */}
+      <div className="lg:col-span-5">
+        <div className="lg:sticky lg:top-24">
+          <p className="section-label mb-3">Principles</p>
+          <h2 className="mb-4 font-display text-3xl text-text-primary md:text-4xl">
+            What Cabinet is{" "}
+            <span className="italic gradient-text">built on</span>
+          </h2>
+          <p className="font-body-serif leading-relaxed text-text-secondary">
+            A few principles we think matter deeply for the future of AI + data
+            tools. Every product decision gets weighed against these.
+          </p>
+
+          <nav className="relative mt-8 flex flex-col gap-2.5">
+            {/* ambient colour blobs the glass cards refract */}
+            <div
+              aria-hidden
+              className="pointer-events-none absolute -inset-6 -z-10"
+            >
+              <div className="absolute left-2 top-0 h-36 w-36 rounded-full bg-amber-300/45 blur-3xl" />
+              <div className="absolute right-0 top-1/3 h-44 w-44 rounded-full bg-violet-300/45 blur-3xl" />
+              <div className="absolute bottom-2 left-1/4 h-40 w-40 rounded-full bg-teal-300/45 blur-3xl" />
+            </div>
+
+            {PRINCIPLES.map((p, i) => {
+              const on = active === i;
+              return (
+                <button
+                  key={p.name}
+                  type="button"
+                  onClick={() => goTo(i)}
+                  aria-current={on ? "true" : undefined}
+                  className={`group relative overflow-hidden rounded-2xl border border-white/40 px-4 py-3 text-left shadow-[inset_0_1px_0_rgba(255,255,255,0.6),0_8px_24px_-12px_rgba(0,0,0,0.18)] backdrop-blur-xl transition-all duration-300 ${
+                    on
+                      ? `${ACTIVE_TINT[i]} scale-[1.03] ring-1 ring-white/60`
+                      : "bg-white/10 hover:bg-white/25"
                   }`}
-                />
-                <div className="relative z-10 min-w-0">
-                  <h3 className="font-display text-base leading-tight text-text-primary">
+                >
+                  {/* top-edge glass sheen */}
+                  <span
+                    aria-hidden
+                    className="pointer-events-none absolute inset-x-0 top-0 h-1/2 bg-gradient-to-b from-white/40 to-transparent"
+                  />
+                  <span
+                    className={`relative font-display text-xl leading-tight ${p.iconFg} transition-all duration-300 ${
+                      on ? "" : "opacity-60"
+                    }`}
+                  >
                     {p.name}
-                  </h3>
-                  <p className="mt-1.5 text-xs leading-snug text-text-secondary">
-                    {p.tagline}
-                  </p>
-                </div>
-              </button>
-            );
-          })}
+                  </span>
+                </button>
+              );
+            })}
+          </nav>
         </div>
       </div>
 
-      {/* Detail panel — revealed only on click */}
-      <div
-        className={`grid transition-all duration-300 ease-in-out ${
-          open !== null ? "mt-4 grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
-        }`}
-      >
-        <div className="overflow-hidden">
-          <div className="rounded-2xl border border-border bg-bg-card p-7">
-            {/* Takeaway — the title, at the top */}
-            <div className="flex items-center gap-3">
-              <div
-                className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-xl ${detail.iconBg}`}
-              >
-                <DetailIcon className={`h-6 w-6 ${detail.iconFg}`} strokeWidth={2.25} />
+      {/* ── Right: deep-dive elaboration, one screen per principle ── */}
+      <div className="lg:col-span-7">
+        {PRINCIPLES.map((p, i) => {
+          const Icon = p.icon;
+          return (
+            <motion.article
+              key={p.name}
+              ref={(el) => {
+                refs.current[i] = el;
+              }}
+              data-index={i}
+              initial={prefersReduced ? false : { opacity: 0, y: 28 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ amount: 0.4, margin: "-10% 0px -10% 0px" }}
+              transition={
+                prefersReduced
+                  ? { duration: 0 }
+                  : { type: "spring", stiffness: 280, damping: 26, mass: 0.8 }
+              }
+              className="flex min-h-[58vh] flex-col justify-center py-8"
+            >
+              <div className="relative overflow-hidden rounded-3xl border border-white/50 bg-white/40 p-8 shadow-[inset_0_1px_0_rgba(255,255,255,0.7),0_24px_60px_-28px_rgba(0,0,0,0.30)] backdrop-blur-xl sm:p-10">
+                {/* oversized blurred icon — ambient watermark, bottom-right */}
+                <Icon
+                  aria-hidden
+                  strokeWidth={1.5}
+                  className={`pointer-events-none absolute -bottom-10 -right-8 h-56 w-56 ${p.iconFg} opacity-[0.14] blur-sm`}
+                />
+                <div className="relative">
+                  <h3 className="font-display text-2xl">
+                    <span className={p.iconFg}>{p.name}</span>
+                  </h3>
+                  <p className="mt-1 text-sm font-medium text-text-tertiary">
+                    {p.tagline}
+                  </p>
+                  <p className="mt-4 max-w-xl font-body-serif text-lg leading-relaxed text-text-secondary">
+                    {p.body}
+                  </p>
+                  <p className="mt-6 font-display text-base text-text-primary">
+                    <span className={`font-semibold ${p.iconFg}`}>{p.name}</span>
+                    <span className="mx-2 text-accent">=</span>
+                    {p.takeaway}
+                  </p>
+                </div>
               </div>
-              <p className="font-display text-lg leading-snug text-text-primary">
-                <span className={`font-semibold ${detail.iconFg}`}>{detail.name}</span>
-                <span className="mx-2 text-accent">=</span>
-                {detail.takeaway}
-              </p>
-            </div>
-
-            {/* Tagline */}
-            <p className="mt-5 text-sm font-medium text-text-tertiary">
-              {detail.tagline}
-            </p>
-
-            {/* Full explanation */}
-            <p className="mt-2 font-body-serif leading-relaxed text-text-secondary">
-              {detail.body}
-            </p>
-          </div>
-        </div>
+            </motion.article>
+          );
+        })}
       </div>
     </div>
   );
