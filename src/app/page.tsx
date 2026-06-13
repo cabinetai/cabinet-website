@@ -1682,18 +1682,8 @@ export default function Home() {
       {/* ─── Principles ─── */}
       <section className="py-24 border-t border-border bg-bg-warm">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <p className="section-label mb-3">Principles</p>
-            <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
-              What Cabinet is <span className="italic gradient-text">built on</span>
-            </h2>
-            <p className="text-text-secondary font-body-serif leading-relaxed">
-              A few principles we think matter deeply for the future of AI + data
-              tools. Every product decision gets weighed against these.
-            </p>
-          </div>
           <PrinciplesShowcase />
-          <p className="mt-12 text-center font-body-serif italic text-text-secondary text-lg">
+          <p className="mt-16 text-center font-body-serif italic text-text-secondary text-lg">
             If a feature would break any of these, it doesn&apos;t make it in.
           </p>
         </div>
