@@ -14,7 +14,7 @@ export function CompareVerdict({
   verdict: Verdict;
 }) {
   return (
-    <div className="grid gap-px overflow-hidden rounded-2xl border border-border bg-border md:grid-cols-2">
+    <div className="grid gap-px overflow-hidden rounded-2xl bg-border shadow-[0_10px_34px_-16px_rgba(150,108,68,0.34)] ring-1 ring-[rgba(59,47,47,0.06)] md:grid-cols-2">
       <div className="bg-bg-card p-6 sm:p-7">
         <p className="ent-eyebrow mb-4">Choose Cabinet if</p>
         <ul className="space-y-3">

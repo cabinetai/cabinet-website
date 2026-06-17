@@ -122,7 +122,7 @@ export function CloudHeroWaitlist({ source, originPage, className = "" }: Props)
         <button
           type="submit"
           disabled={status === "submitting" || email.trim().length === 0}
-          className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-accent px-7 py-3.5 text-base font-medium text-white shadow-sm transition-all hover:bg-accent-warm disabled:opacity-60"
+          className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full px-7 py-3.5 text-base font-semibold btn-wood disabled:opacity-60"
         >
           {status === "submitting" ? (
             <>

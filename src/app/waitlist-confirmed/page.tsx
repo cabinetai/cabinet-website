@@ -25,11 +25,12 @@ export default function WaitlistConfirmedPage() {
 
       <div className="max-w-2xl w-full text-center dict-card px-8 py-10 md:px-12 md:py-12">
         <Image
-          src="/cabinet-icon.png"
+          src="/brand/cabinet-logo-face-2-512.png"
           alt="Cabinet"
-          width={72}
-          height={72}
-          className="mx-auto mb-6 rounded-2xl"
+          width={104}
+          height={104}
+          priority
+          className="mx-auto mb-6 h-[88px] w-auto object-contain drop-shadow-[0_12px_28px_rgba(150,108,68,0.35)]"
         />
 
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-border bg-accent-bg-subtle text-xs font-code text-accent mb-6">
@@ -70,7 +71,7 @@ export default function WaitlistConfirmedPage() {
           </a>
           <a
             href="/#get-started"
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-accent hover:bg-accent-warm text-white font-medium transition-all shadow-sm"
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full font-semibold btn-wood"
           >
             Try Cabinet now
             <ArrowRight className="w-4 h-4" />

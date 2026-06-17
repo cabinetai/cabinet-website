@@ -131,7 +131,7 @@ export default function CompareHubPage() {
           <p className="mt-4 max-w-2xl font-body-serif leading-relaxed text-text-secondary">
             The features that define the category. Open any head-to-head below for the full picture, including where each competitor comes out ahead.
           </p>
-          <div className="mt-8 overflow-hidden rounded-2xl border border-border bg-bg-card">
+          <div className="mt-8 overflow-hidden rounded-2xl bg-bg-card shadow-[0_8px_30px_-14px_rgba(150,108,68,0.32)] ring-1 ring-[rgba(59,47,47,0.05)]">
             <div className="overflow-x-auto">
               <table className="w-full min-w-[44rem] text-sm">
                 <thead>
@@ -200,7 +200,7 @@ export default function CompareHubPage() {
               <Link
                 key={c.slug}
                 href={`/compare/${c.slug}`}
-                className="group flex gap-4 rounded-2xl border border-border bg-bg-card p-6 transition-all hover:border-border-dark hover:bg-bg-card-hover"
+                className="group flex gap-4 soft-card p-6"
               >
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent-bg text-accent">
                   <c.icon className="h-5 w-5" aria-hidden />
@@ -237,7 +237,7 @@ export default function CompareHubPage() {
               <Link
                 key={r.slug}
                 href={`/compare/${r.slug}`}
-                className="group flex items-center gap-3 rounded-2xl border border-border bg-bg-card p-5 transition-all hover:border-border-dark hover:bg-bg-card-hover"
+                className="group flex items-center gap-3 soft-card p-5"
               >
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent-bg text-accent">
                   <r.icon className="h-5 w-5" aria-hidden />
@@ -265,7 +265,7 @@ export default function CompareHubPage() {
               <Link
                 key={t.slug}
                 href={`/compare/${t.slug}`}
-                className="group flex items-center gap-3 rounded-2xl border border-border bg-bg-card p-5 transition-all hover:border-border-dark hover:bg-bg-card-hover"
+                className="group flex items-center gap-3 soft-card p-5"
               >
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent-bg text-accent">
                   <t.icon className="h-5 w-5" aria-hidden />
@@ -298,7 +298,7 @@ export default function CompareHubPage() {
               <Link
                 key={m.slug}
                 href={`/compare/${m.slug}`}
-                className="group flex items-center gap-3 rounded-2xl border border-border bg-bg-card p-5 transition-all hover:border-border-dark hover:bg-bg-card-hover"
+                className="group flex items-center gap-3 soft-card p-5"
               >
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent-bg text-accent">
                   <m.icon className="h-5 w-5" aria-hidden />
@@ -323,7 +323,7 @@ export default function CompareHubPage() {
           </h2>
           <div className="mt-10 grid gap-4 md:grid-cols-3">
             {WEDGE.map((w) => (
-              <div key={w.title} className="rounded-2xl border border-border bg-bg-card p-6">
+              <div key={w.title} className="soft-card p-6">
                 <w.icon className="h-6 w-6 text-accent" aria-hidden />
                 <h3 className="mt-4 font-display text-lg text-text-primary">{w.title}</h3>
                 <p className="mt-2 font-body-serif text-sm leading-relaxed text-text-secondary">
@@ -348,7 +348,7 @@ export default function CompareHubPage() {
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Link
                 href="/#get-started"
-                className="inline-flex items-center gap-2 rounded-xl bg-accent px-7 py-3.5 text-base font-semibold text-white shadow-md transition-all hover:-translate-y-0.5 hover:bg-accent-warm hover:shadow-lg"
+                className="inline-flex items-center gap-2 rounded-xl px-7 py-3.5 text-base font-semibold btn-wood"
               >
                 Get started free <ArrowRight className="h-4 w-4" />
               </Link>

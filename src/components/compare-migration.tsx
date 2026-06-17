@@ -36,7 +36,7 @@ export function CompareMigration({ data }: { data: Migration }) {
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <Link
               href="/#get-started"
-              className="inline-flex items-center gap-2 rounded-xl bg-accent px-7 py-3.5 text-base font-semibold text-white shadow-md transition-all hover:-translate-y-0.5 hover:bg-accent-warm hover:shadow-lg"
+              className="inline-flex items-center gap-2 rounded-xl btn-wood px-7 py-3.5 text-base font-semibold"
             >
               Get started free <ArrowRight className="h-4 w-4" />
             </Link>
@@ -59,7 +59,7 @@ export function CompareMigration({ data }: { data: Migration }) {
           </h2>
           <ol className="mt-8 space-y-4">
             {data.steps.map((s, i) => (
-              <li key={s.title} className="flex gap-4 rounded-2xl border border-border bg-bg-card p-6">
+              <li key={s.title} className="flex gap-4 soft-card p-6">
                 <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-accent-bg font-display text-accent">
                   {i + 1}
                 </div>
@@ -84,7 +84,7 @@ export function CompareMigration({ data }: { data: Migration }) {
           </h2>
           <ul className="mt-8 grid gap-3 sm:grid-cols-2">
             {data.whatMovesOver.map((m) => (
-              <li key={m} className="flex gap-3 rounded-xl border border-border bg-bg-card p-5">
+              <li key={m} className="flex gap-3 soft-card p-5">
                 <Check className="mt-0.5 h-4 w-4 shrink-0 text-green" aria-hidden />
                 <span className="font-body-serif leading-relaxed text-text-secondary">{m}</span>
               </li>
@@ -102,7 +102,7 @@ export function CompareMigration({ data }: { data: Migration }) {
           </h2>
           <ul className="mt-6 space-y-3">
             {data.watchOut.map((w) => (
-              <li key={w} className="flex gap-3 rounded-xl border border-border bg-bg-card p-5">
+              <li key={w} className="flex gap-3 soft-card p-5">
                 <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0 text-accent-light" aria-hidden />
                 <span className="font-body-serif leading-relaxed text-text-secondary">{w}</span>
               </li>
@@ -136,7 +136,7 @@ export function CompareMigration({ data }: { data: Migration }) {
           <h2 className="font-display text-3xl tracking-tight text-text-primary md:text-4xl">
             Migration, answered
           </h2>
-          <div className="mt-8 divide-y divide-border-light overflow-hidden rounded-2xl border border-border bg-bg-card">
+          <div className="mt-8 divide-y divide-border-light overflow-hidden soft-card">
             {data.faqs.map((f) => (
               <details key={f.q} className="group px-6 py-5">
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-base text-text-primary marker:hidden">
@@ -166,7 +166,7 @@ export function CompareMigration({ data }: { data: Migration }) {
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Link
                 href="/#get-started"
-                className="inline-flex items-center gap-2 rounded-xl bg-accent px-7 py-3.5 text-base font-semibold text-white shadow-md transition-all hover:-translate-y-0.5 hover:bg-accent-warm hover:shadow-lg"
+                className="inline-flex items-center gap-2 rounded-xl btn-wood px-7 py-3.5 text-base font-semibold"
               >
                 Get started free <ArrowRight className="h-4 w-4" />
               </Link>
@@ -198,7 +198,7 @@ export function CompareMigration({ data }: { data: Migration }) {
               <Link
                 key={slug}
                 href={`/compare/${slug}`}
-                className="group flex items-center justify-between gap-3 rounded-xl border border-border bg-bg-card p-5 transition-all hover:border-border-dark hover:bg-bg-card-hover"
+                className="group flex items-center justify-between gap-3 soft-card p-5 transition-all hover:border-border-dark hover:bg-bg-card-hover"
               >
                 <span className="font-display text-text-primary">{compareLabel(slug)}</span>
                 <ArrowRight className="h-4 w-4 shrink-0 text-text-muted transition-colors group-hover:text-accent" />

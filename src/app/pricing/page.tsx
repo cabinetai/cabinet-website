@@ -133,11 +133,12 @@ export default function PricingPage() {
 
         <div className="relative z-[1] max-w-4xl mx-auto px-6 text-center">
           <Image
-            src="/cabinet-icon.png"
+            src="/brand/cabinet-logo-face-2-512.png"
             alt="Cabinet"
-            width={64}
-            height={64}
-            className="mx-auto mb-6 mt-2 rounded-2xl"
+            width={96}
+            height={96}
+            priority
+            className="mx-auto mb-6 mt-2 h-20 w-auto object-contain drop-shadow-[0_12px_28px_rgba(150,108,68,0.35)]"
           />
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display text-text-primary tracking-tight leading-[1.05] mb-5">
@@ -260,7 +261,7 @@ export default function PricingPage() {
             </a>
             <a
               href="/cloud?source=pricing-final"
-              className="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-accent-warm shadow-sm"
+              className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold btn-wood"
             >
               <Cloud className="h-4 w-4" />
               See Cabinet Cloud

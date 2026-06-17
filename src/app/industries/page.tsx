@@ -46,29 +46,28 @@ export default function IndustriesIndexPage() {
       <section className="py-16 md:py-20">
         <div className="mx-auto max-w-5xl px-6">
           <div className="grid gap-4 sm:grid-cols-2">
-            {INDUSTRIES.map((i) => {
-              const Icon = i.icon;
-              return (
-                <Link
-                  key={i.slug}
-                  href={`/industries/${i.slug}`}
-                  className="group flex flex-col rounded-2xl border border-border bg-bg-card p-7 transition-all hover:-translate-y-0.5 hover:border-border-dark hover:shadow-lg"
-                >
-                  <div className="flex items-center gap-3">
-                    <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent-bg text-accent">
-                      <Icon className="h-5 w-5" />
-                    </div>
-                    <h2 className="font-display text-xl text-text-primary">{i.label}</h2>
-                  </div>
-                  <p className="mt-4 font-body-serif leading-relaxed text-text-secondary">
-                    {i.headline}
-                  </p>
-                  <span className="mt-5 inline-flex items-center gap-1.5 font-code text-sm text-accent transition-colors group-hover:text-accent-warm">
-                    Explore <ArrowRight className="h-4 w-4" />
-                  </span>
-                </Link>
-              );
-            })}
+            {INDUSTRIES.map((i) => (
+              <Link
+                key={i.slug}
+                href={`/industries/${i.slug}`}
+                className="group flex flex-col soft-card card-hover p-7"
+              >
+                <div className="flex items-center gap-3.5">
+                  <img
+                    src={`/brand/icons/${i.slug}.png`}
+                    alt=""
+                    className="h-12 w-12 shrink-0 object-contain transition-transform duration-200 group-hover:scale-110 group-hover:-rotate-2"
+                  />
+                  <h2 className="font-display text-xl text-text-primary">{i.label}</h2>
+                </div>
+                <p className="mt-4 font-body-serif leading-relaxed text-text-secondary">
+                  {i.headline}
+                </p>
+                <span className="mt-5 inline-flex items-center gap-1.5 font-code text-sm text-accent transition-colors group-hover:text-accent-warm">
+                  Explore <ArrowRight className="h-4 w-4" />
+                </span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>

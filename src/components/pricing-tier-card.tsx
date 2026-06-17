@@ -19,7 +19,7 @@ export type PricingTierCardProps = {
   bullets: string[];
   inheritsFromLabel?: string;
   cta: TierCta;
-  ctaStyle?: "accent" | "green" | "outline";
+  ctaStyle?: "accent" | "green" | "outline" | "wood";
   highlighted?: boolean;
   selected?: boolean;
   onSelect?: () => void;
@@ -57,27 +57,31 @@ export function PricingTierCard({
     : priceOverrideLabel ?? "";
 
   const ctaClass =
-    ctaStyle === "green"
+    ctaStyle === "wood"
+      ? "btn-wood"
+      : ctaStyle === "green"
       ? "bg-green text-white hover:bg-green-warm shadow-sm"
       : ctaStyle === "accent"
       ? "bg-accent text-white hover:bg-accent-warm shadow-sm"
       : "border border-border-dark text-text-primary hover:bg-bg-card-hover bg-bg-card";
 
-  // Uniform card surface — no gradients. Highlighted Max gets a soft warm tint
-  // and accent border; selection adds a green ring.
+  // Borderless, soft warm-shadow surfaces. Highlighted Max gets a warm tint,
+  // a stronger lift, and a faint accent ring; selection adds a green ring.
   const cardBg = highlighted ? "bg-accent-bg-subtle" : "bg-bg-card";
-  const cardBorder = highlighted ? "border-accent/40" : "border-border";
+  const cardShadow = highlighted
+    ? "shadow-[0_20px_52px_-18px_rgba(150,108,68,0.45)]"
+    : "shadow-[0_8px_30px_-14px_rgba(150,108,68,0.32)]";
   const ring = selected
     ? "ring-2 ring-green ring-offset-2 ring-offset-bg"
     : highlighted
-    ? "ring-1 ring-accent/15"
-    : "";
+    ? "ring-1 ring-accent/25"
+    : "ring-1 ring-[rgba(59,47,47,0.05)]";
 
   // Use a div (not a button) for the card so the inner CTA and BYOAI info
   // buttons remain valid HTML — nested buttons cause hydration errors. We
   // keep radio semantics + keyboard activation manually.
   const interactive = onSelect
-    ? "cursor-pointer hover:shadow-[0_8px_28px_-10px_rgba(59,47,47,0.18)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green focus-visible:ring-offset-2 focus-visible:ring-offset-bg"
+    ? "cursor-pointer hover:-translate-y-1 hover:shadow-[0_26px_58px_-18px_rgba(150,108,68,0.5)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green focus-visible:ring-offset-2 focus-visible:ring-offset-bg"
     : "";
 
   return (
@@ -97,7 +101,9 @@ export function PricingTierCard({
       tabIndex={onSelect ? 0 : undefined}
       aria-checked={onSelect ? selected : undefined}
       aria-labelledby={selectionId}
-      className={`relative overflow-hidden rounded-2xl border ${cardBorder} ${cardBg} ${ring} ${interactive} flex flex-col w-full text-left transition-all`}
+      className={`relative overflow-hidden rounded-2xl ${cardBg} ${cardShadow} ${ring} ${
+        highlighted ? "lg:scale-[1.02] z-10" : ""
+      } ${interactive} flex flex-col w-full text-left transition-all duration-300`}
     >
       {selected && (
         <div className="absolute right-4 top-4 z-10 inline-flex h-7 w-7 items-center justify-center rounded-full bg-green text-white shadow-md">

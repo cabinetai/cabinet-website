@@ -206,7 +206,7 @@ export function WaitlistCapture({
                 <button
                   type="submit"
                   disabled={status === "submitting" || email.trim().length === 0}
-                  className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-accent px-6 py-3.5 text-white font-medium transition-all shadow-sm hover:bg-accent-warm disabled:opacity-60"
+                  className="inline-flex w-full items-center justify-center gap-2 rounded-full px-6 py-3.5 font-semibold btn-wood disabled:opacity-60"
                 >
                   {status === "submitting" ? (
                     <>

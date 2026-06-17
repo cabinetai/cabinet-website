@@ -102,7 +102,7 @@ export function EnterpriseNav() {
           </a>
           <a
             href="/enterprise/briefing"
-            className="hidden sm:inline-flex items-center gap-2 h-10 px-5 rounded-full bg-accent text-white text-[13px] font-semibold hover:bg-accent-warm transition-colors shadow-sm"
+            className="hidden sm:inline-flex items-center gap-2 h-10 px-5 rounded-full text-[13px] font-semibold btn-wood"
           >
             Request briefing
             <ArrowRight className="w-3.5 h-3.5" />

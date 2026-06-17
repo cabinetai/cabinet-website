@@ -32,7 +32,7 @@ export default function TermsPage() {
             </p>
           </header>
 
-          <div className="rounded-2xl border border-border bg-bg-card p-6 md:p-8 mb-10 shadow-sm">
+          <div className="rounded-2xl bg-accent-bg-subtle p-6 md:p-8 mb-10 ring-1 ring-accent/15 shadow-[0_10px_34px_-18px_rgba(150,108,68,0.34)]">
             <p className="text-sm font-code uppercase tracking-wider text-accent mb-3">
               Please read carefully
             </p>

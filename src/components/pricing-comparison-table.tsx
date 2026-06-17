@@ -122,7 +122,7 @@ function renderCell(value: Cell) {
 
 export function PricingComparisonTable() {
   return (
-    <div className="overflow-x-auto rounded-2xl border border-border bg-bg-card">
+    <div className="overflow-x-auto rounded-2xl bg-bg-card shadow-[0_8px_30px_-14px_rgba(150,108,68,0.32)] ring-1 ring-[rgba(59,47,47,0.05)]">
       <table className="w-full min-w-[760px] text-sm">
         <thead>
           <tr className="border-b border-border-dark">
@@ -146,7 +146,7 @@ export function PricingComparisonTable() {
             </th>
             <th
               scope="col"
-              className="text-center py-4 px-4 font-semibold text-accent"
+              className="text-center py-4 px-4 font-semibold text-accent bg-accent-bg-subtle"
             >
               Max
             </th>
@@ -176,7 +176,7 @@ export function PricingComparisonTable() {
               <td className="py-3.5 px-4 text-center text-text-secondary">
                 {renderCell(row.pro)}
               </td>
-              <td className="py-3.5 px-4 text-center text-text-secondary">
+              <td className="py-3.5 px-4 text-center text-text-secondary bg-accent-bg-subtle">
                 {renderCell(row.max)}
               </td>
               <td className="py-3.5 px-4 text-center text-text-secondary">

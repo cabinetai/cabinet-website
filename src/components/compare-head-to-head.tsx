@@ -21,7 +21,7 @@ function PrimaryActions({ size = "lg" }: { size?: "lg" | "md" }) {
     <div className="flex flex-wrap items-center gap-3">
       <Link
         href="/#get-started"
-        className={`inline-flex items-center gap-2 rounded-xl bg-accent ${pad} font-semibold text-white shadow-md transition-all hover:-translate-y-0.5 hover:bg-accent-warm hover:shadow-lg`}
+        className={`inline-flex items-center gap-2 rounded-xl btn-wood ${pad} font-semibold`}
       >
         Get started free <ArrowRight className="h-4 w-4" />
       </Link>
@@ -102,7 +102,7 @@ export function CompareHeadToHead({ data }: { data: Comparison }) {
           </h2>
           <div className="mt-10 grid gap-5 md:grid-cols-3">
             {data.differentiators.map((d) => (
-              <div key={d.title} className="flex flex-col rounded-2xl border border-border bg-bg-card p-6">
+              <div key={d.title} className="flex flex-col soft-card p-6">
                 <d.icon className="h-6 w-6 text-accent" aria-hidden />
                 <h3 className="mt-4 font-display text-lg text-text-primary">{d.title}</h3>
                 <p className="mt-2 font-body-serif text-sm leading-relaxed text-text-secondary">
@@ -145,7 +145,7 @@ export function CompareHeadToHead({ data }: { data: Comparison }) {
           </h2>
           <ul className="mt-8 space-y-4">
             {data.whenThemWins.points.map((p) => (
-              <li key={p} className="flex gap-3 rounded-xl border border-border bg-bg-card p-5">
+              <li key={p} className="flex gap-3 soft-card p-5">
                 <Check className="mt-0.5 h-4 w-4 shrink-0 text-text-tertiary" aria-hidden />
                 <span className="font-body-serif leading-relaxed text-text-secondary">{p}</span>
               </li>
@@ -158,7 +158,7 @@ export function CompareHeadToHead({ data }: { data: Comparison }) {
       {data.migration && (
         <section className="border-b border-border py-16">
           <div className="mx-auto max-w-3xl px-6">
-            <div className="flex flex-col gap-4 rounded-2xl border border-border bg-bg-card p-7 sm:flex-row sm:items-start sm:gap-6">
+            <div className="flex flex-col gap-4 soft-card p-7 sm:flex-row sm:items-start sm:gap-6">
               <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent-bg text-accent">
                 <ArrowRightLeft className="h-5 w-5" aria-hidden />
               </div>
@@ -185,7 +185,7 @@ export function CompareHeadToHead({ data }: { data: Comparison }) {
                 Illustrative
               </span>
             </div>
-            <figure className="mt-8 rounded-2xl border border-border bg-bg-card p-8 sm:p-10">
+            <figure className="mt-8 soft-card p-8 sm:p-10">
               <Quote className="h-7 w-7 text-accent-light" aria-hidden />
               <blockquote className="mt-4 font-display text-xl leading-snug tracking-tight text-text-primary md:text-2xl">
                 {data.switcher.quote}
@@ -205,7 +205,7 @@ export function CompareHeadToHead({ data }: { data: Comparison }) {
           <h2 className="font-display text-3xl tracking-tight text-text-primary md:text-4xl">
             Cabinet vs {data.competitor}, answered
           </h2>
-          <div className="mt-8 divide-y divide-border-light overflow-hidden rounded-2xl border border-border bg-bg-card">
+          <div className="mt-8 divide-y divide-border-light overflow-hidden soft-card">
             {data.faqs.map((f) => (
               <details key={f.q} className="group px-6 py-5">
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-base text-text-primary marker:hidden">
@@ -256,7 +256,7 @@ export function CompareHeadToHead({ data }: { data: Comparison }) {
               <Link
                 key={slug}
                 href={`/compare/${slug}`}
-                className="group flex items-center justify-between gap-3 rounded-xl border border-border bg-bg-card p-5 transition-all hover:border-border-dark hover:bg-bg-card-hover"
+                className="group flex items-center justify-between gap-3 soft-card p-5 transition-all hover:border-border-dark hover:bg-bg-card-hover"
               >
                 <span className="font-display text-text-primary">{compareLabel(slug)}</span>
                 <ArrowRight className="h-4 w-4 shrink-0 text-text-muted transition-colors group-hover:text-accent" />

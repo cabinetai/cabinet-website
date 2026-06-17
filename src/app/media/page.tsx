@@ -196,7 +196,7 @@ export default function MediaPage() {
                       </h2>
                     </a>
 
-                    <div className="rounded-2xl overflow-hidden border border-border shadow-lg bg-bg-card">
+                    <div className="rounded-2xl overflow-hidden bg-bg-card shadow-[0_18px_44px_-22px_rgba(150,108,68,0.42)] ring-1 ring-[rgba(59,47,47,0.05)]">
                       <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
                         <iframe
                           src={`https://www.youtube.com/embed/${item.id}`}
@@ -261,7 +261,7 @@ export default function MediaPage() {
                     </h2>
                   </a>
 
-                  <div className="rounded-2xl border border-border shadow-lg bg-bg-card p-6 md:p-8">
+                  <div className="soft-card p-6 md:p-8">
                     <ul className="space-y-4">
                       {item.quotes.map((quote) => (
                         <li

@@ -40,7 +40,7 @@ export function CompareTable({
 }) {
   const hasNotes = rows.some((r) => r.note);
   return (
-    <div className="overflow-hidden rounded-2xl border border-border bg-bg-card">
+    <div className="overflow-hidden rounded-2xl bg-bg-card shadow-[0_8px_30px_-14px_rgba(150,108,68,0.32)] ring-1 ring-[rgba(59,47,47,0.05)]">
       <div className="overflow-x-auto">
         <table className="w-full min-w-[34rem] text-sm">
           <thead>

@@ -104,7 +104,7 @@ export function PricingInteractive() {
             label: "Join the waitlist",
             onClick: () => openModal("pro"),
           }}
-          ctaStyle="green"
+          ctaStyle="wood"
           selected={selected === "pro"}
           onSelect={() => select("pro")}
         />
@@ -132,7 +132,7 @@ export function PricingInteractive() {
             label: "Join the waitlist",
             onClick: () => openModal("max"),
           }}
-          ctaStyle="green"
+          ctaStyle="wood"
           selected={selected === "max"}
           onSelect={() => select("max")}
         />
@@ -166,7 +166,7 @@ export function PricingInteractive() {
 
       {/* Team — early access callout */}
       <div className="mt-12 max-w-3xl mx-auto">
-        <div className="rounded-xl border border-border bg-bg-card px-6 py-5 md:px-7 md:py-6">
+        <div className="soft-card px-6 py-5 md:px-7 md:py-6">
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between md:gap-6">
             <div className="flex items-start gap-3">
               <div className="shrink-0 inline-flex h-9 w-9 items-center justify-center rounded-lg bg-green-bg text-green-warm">

@@ -93,7 +93,7 @@ export function CompareThreeWay({ data }: { data: ThreeWay }) {
           <h2 className="font-display text-3xl tracking-tight text-text-primary md:text-4xl">
             The features that decide it
           </h2>
-          <div className="mt-8 overflow-hidden rounded-2xl border border-border bg-bg-card">
+          <div className="mt-8 overflow-hidden soft-card">
             <div className="overflow-x-auto">
               <table className="w-full min-w-[40rem] text-sm">
                 <thead>
@@ -159,7 +159,7 @@ export function CompareThreeWay({ data }: { data: ThreeWay }) {
           </h2>
           <div className="mt-8 grid gap-4 md:grid-cols-3">
             {data.bestFor.map((b) => (
-              <div key={b.contender} className="rounded-2xl border border-border bg-bg-card p-6">
+              <div key={b.contender} className="soft-card p-6">
                 <h3 className="font-display text-lg text-text-primary">{b.contender}</h3>
                 <p className="mt-2 font-body-serif text-sm leading-relaxed text-text-secondary">
                   {b.who}
@@ -194,7 +194,7 @@ export function CompareThreeWay({ data }: { data: ThreeWay }) {
           <h2 className="font-display text-3xl tracking-tight text-text-primary md:text-4xl">
             Answered
           </h2>
-          <div className="mt-8 divide-y divide-border-light overflow-hidden rounded-2xl border border-border bg-bg-card">
+          <div className="mt-8 divide-y divide-border-light overflow-hidden soft-card">
             {data.faqs.map((f) => (
               <details key={f.q} className="group px-6 py-5">
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-base text-text-primary marker:hidden">
@@ -224,7 +224,7 @@ export function CompareThreeWay({ data }: { data: ThreeWay }) {
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Link
                 href="/#get-started"
-                className="inline-flex items-center gap-2 rounded-xl bg-accent px-7 py-3.5 text-base font-semibold text-white shadow-md transition-all hover:-translate-y-0.5 hover:bg-accent-warm hover:shadow-lg"
+                className="inline-flex items-center gap-2 rounded-xl btn-wood px-7 py-3.5 text-base font-semibold"
               >
                 Get started free <ArrowRight className="h-4 w-4" />
               </Link>
@@ -256,7 +256,7 @@ export function CompareThreeWay({ data }: { data: ThreeWay }) {
               <Link
                 key={slug}
                 href={`/compare/${slug}`}
-                className="group flex items-center justify-between gap-3 rounded-xl border border-border bg-bg-card p-5 transition-all hover:border-border-dark hover:bg-bg-card-hover"
+                className="group flex items-center justify-between gap-3 soft-card p-5 transition-all hover:border-border-dark hover:bg-bg-card-hover"
               >
                 <span className="font-display text-text-primary">{compareLabel(slug)}</span>
                 <ArrowRight className="h-4 w-4 shrink-0 text-text-muted transition-colors group-hover:text-accent" />

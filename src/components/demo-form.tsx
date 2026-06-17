@@ -46,7 +46,7 @@ export function DemoForm() {
 
   if (sent) {
     return (
-      <div className="rounded-2xl border border-border bg-bg-card p-8 text-center">
+      <div className="soft-card p-8 text-center">
         <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-accent-bg text-accent">
           <Check className="h-6 w-6" />
         </div>
@@ -66,7 +66,7 @@ export function DemoForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="rounded-2xl border border-border bg-bg-card p-6 sm:p-8">
+    <form onSubmit={handleSubmit} className="soft-card p-6 sm:p-8">
       <div className="grid gap-4 sm:grid-cols-2">
         <Field label="Name" name="name" required />
         <Field label="Work email" name="email" type="email" required />
@@ -105,7 +105,7 @@ export function DemoForm() {
       </div>
       <button
         type="submit"
-        className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-accent px-7 py-3.5 text-base font-semibold text-white shadow-md transition-all hover:-translate-y-0.5 hover:bg-accent-warm hover:shadow-lg"
+        className="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl px-7 py-3.5 text-base font-semibold btn-wood"
       >
         Request a demo <ArrowRight className="h-4 w-4" />
       </button>

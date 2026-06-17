@@ -51,7 +51,7 @@ export function CompareRoundup({ data }: { data: Roundup }) {
           </h2>
           <ul className="mt-8 grid gap-3 sm:grid-cols-2">
             {data.whyLeave.points.map((p) => (
-              <li key={p} className="rounded-xl border border-border bg-bg-card p-5">
+              <li key={p} className="soft-card p-5">
                 <p className="font-body-serif leading-relaxed text-text-secondary">{p}</p>
               </li>
             ))}
@@ -82,7 +82,7 @@ export function CompareRoundup({ data }: { data: Roundup }) {
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <Link
               href="/#get-started"
-              className="inline-flex items-center gap-2 rounded-xl bg-accent px-7 py-3.5 text-base font-semibold text-white shadow-md transition-all hover:-translate-y-0.5 hover:bg-accent-warm hover:shadow-lg"
+              className="inline-flex items-center gap-2 rounded-xl btn-wood px-7 py-3.5 text-base font-semibold"
             >
               Get started free <ArrowRight className="h-4 w-4" />
             </Link>
@@ -105,7 +105,7 @@ export function CompareRoundup({ data }: { data: Roundup }) {
           </h2>
           <div className="mt-8 space-y-4">
             {data.alternatives.map((a, i) => (
-              <div key={a.name} className="rounded-2xl border border-border bg-bg-card p-6">
+              <div key={a.name} className="soft-card p-6">
                 <div className="flex items-baseline gap-3">
                   <span className="font-display text-sm text-text-tertiary">{i + 1}</span>
                   <h3 className="font-display text-lg text-text-primary">{a.name}</h3>
@@ -142,7 +142,7 @@ export function CompareRoundup({ data }: { data: Roundup }) {
           <h2 className="font-display text-3xl tracking-tight text-text-primary md:text-4xl">
             Which one is right for you
           </h2>
-          <div className="mt-8 divide-y divide-border-light overflow-hidden rounded-2xl border border-border bg-bg-card">
+          <div className="mt-8 divide-y divide-border-light overflow-hidden soft-card">
             {data.framework.map((f) => (
               <div key={f.need} className="flex flex-col gap-1 p-5 sm:flex-row sm:items-center sm:gap-6">
                 <p className="font-body-serif leading-relaxed text-text-secondary sm:flex-1">
@@ -162,7 +162,7 @@ export function CompareRoundup({ data }: { data: Roundup }) {
           <h2 className="font-display text-3xl tracking-tight text-text-primary md:text-4xl">
             {data.competitor} alternatives, answered
           </h2>
-          <div className="mt-8 divide-y divide-border-light overflow-hidden rounded-2xl border border-border bg-bg-card">
+          <div className="mt-8 divide-y divide-border-light overflow-hidden soft-card">
             {data.faqs.map((f) => (
               <details key={f.q} className="group px-6 py-5">
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-base text-text-primary marker:hidden">
@@ -192,7 +192,7 @@ export function CompareRoundup({ data }: { data: Roundup }) {
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Link
                 href="/#get-started"
-                className="inline-flex items-center gap-2 rounded-xl bg-accent px-7 py-3.5 text-base font-semibold text-white shadow-md transition-all hover:-translate-y-0.5 hover:bg-accent-warm hover:shadow-lg"
+                className="inline-flex items-center gap-2 rounded-xl btn-wood px-7 py-3.5 text-base font-semibold"
               >
                 Get started free <ArrowRight className="h-4 w-4" />
               </Link>
@@ -224,7 +224,7 @@ export function CompareRoundup({ data }: { data: Roundup }) {
               <Link
                 key={slug}
                 href={`/compare/${slug}`}
-                className="group flex items-center justify-between gap-3 rounded-xl border border-border bg-bg-card p-5 transition-all hover:border-border-dark hover:bg-bg-card-hover"
+                className="group flex items-center justify-between gap-3 soft-card p-5 transition-all hover:border-border-dark hover:bg-bg-card-hover"
               >
                 <span className="font-display text-text-primary">{compareLabel(slug)}</span>
                 <ArrowRight className="h-4 w-4 shrink-0 text-text-muted transition-colors group-hover:text-accent" />

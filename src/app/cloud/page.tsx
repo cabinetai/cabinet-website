@@ -29,11 +29,12 @@ export default function CloudPage() {
             </div>
 
             <Image
-              src="/cabinet-icon.png"
+              src="/brand/cabinet-logo-face-2-512.png"
               alt="Cabinet"
-              width={72}
-              height={72}
-              className="mx-auto mb-6 rounded-2xl"
+              width={104}
+              height={104}
+              priority
+              className="mx-auto mb-6 h-[88px] w-auto object-contain drop-shadow-[0_12px_28px_rgba(150,108,68,0.35)]"
             />
 
             <h1 className="text-4xl md:text-5xl font-display text-text-primary tracking-tight leading-[1.05] mb-5">
@@ -71,7 +72,7 @@ export default function CloudPage() {
           </p>
 
           <div className="grid md:grid-cols-3 gap-4 max-w-5xl mx-auto mb-12">
-            <div className="rounded-xl border border-border bg-bg-card p-6">
+            <div className="soft-card p-6">
               <Check className="w-5 h-5 text-accent mb-3" />
               <h2 className="font-display text-xl text-text-primary mb-2">Connect from anywhere</h2>
               <p className="text-sm text-text-secondary leading-relaxed">
@@ -79,7 +80,7 @@ export default function CloudPage() {
                 you left off, no setup required.
               </p>
             </div>
-            <div className="rounded-xl border border-border bg-bg-card p-6">
+            <div className="soft-card p-6">
               <Check className="w-5 h-5 text-accent mb-3" />
               <h2 className="font-display text-xl text-text-primary mb-2">Agents that don&apos;t sleep</h2>
               <p className="text-sm text-text-secondary leading-relaxed">
@@ -87,7 +88,7 @@ export default function CloudPage() {
                 written, inboxes triaged, and research done.
               </p>
             </div>
-            <div className="rounded-xl border border-border bg-bg-card p-6">
+            <div className="soft-card p-6">
               <Check className="w-5 h-5 text-accent mb-3" />
               <h2 className="font-display text-xl text-text-primary mb-2">Priority access</h2>
               <p className="text-sm text-text-secondary leading-relaxed">
@@ -118,7 +119,7 @@ export default function CloudPage() {
             </a>
             <a
               href="/#get-started"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-accent hover:bg-accent-warm text-white font-medium transition-all shadow-sm"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full font-semibold btn-wood"
             >
               Try Cabinet now
               <ArrowRight className="w-4 h-4" />
