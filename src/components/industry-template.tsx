@@ -5,7 +5,6 @@ import { SiteNavbar } from "@/components/site-navbar";
 import { INDUSTRIES, type Industry } from "@/lib/industries";
 
 export function IndustryTemplate({ industry }: { industry: Industry }) {
-  const Icon = industry.icon;
   const others = INDUSTRIES.filter((i) => i.slug !== industry.slug);
 
   return (
@@ -25,8 +24,8 @@ export function IndustryTemplate({ industry }: { industry: Industry }) {
         <div className="relative z-10 mx-auto max-w-5xl px-6 py-20 md:py-28">
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <div>
-              <div className="inline-flex items-center gap-2 rounded-full border border-border bg-bg-card px-4 py-1.5 text-sm font-code text-accent shadow-sm">
-                <Icon className="h-4 w-4" />
+              <div className="inline-flex items-center gap-2.5 rounded-full border border-border bg-bg-card py-1.5 pl-2 pr-4 text-sm font-medium text-accent shadow-sm">
+                <img src={`/brand/icons/${industry.slug}.png`} alt="" className="h-6 w-6 object-contain" />
                 {industry.eyebrow}
               </div>
               <h1 className="mt-6 font-display text-4xl leading-[1.05] tracking-tight text-text-primary sm:text-5xl">
@@ -38,7 +37,7 @@ export function IndustryTemplate({ industry }: { industry: Industry }) {
               <div className="mt-9 flex flex-wrap items-center gap-3">
                 <Link
                   href="/#get-started"
-                  className="inline-flex items-center gap-2 rounded-xl bg-accent px-7 py-3.5 text-base font-semibold text-white shadow-md transition-all hover:-translate-y-0.5 hover:bg-accent-warm hover:shadow-lg"
+                  className="inline-flex items-center gap-2 rounded-xl px-7 py-3.5 text-base font-semibold btn-wood"
                 >
                   Get started free <ArrowRight className="h-4 w-4" />
                 </Link>
@@ -50,14 +49,19 @@ export function IndustryTemplate({ industry }: { industry: Industry }) {
                 </Link>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative flex items-center justify-center">
+              <div
+                aria-hidden
+                className="pointer-events-none absolute h-72 w-72 rounded-full md:h-80 md:w-80"
+                style={{ background: "radial-gradient(circle, rgba(224,178,60,0.22), transparent 70%)" }}
+              />
               <Image
-                src={`/heroes/industry-${industry.slug}.jpg`}
-                alt={`${industry.label} illustration`}
-                width={1200}
-                height={630}
+                src={`/brand/heroes/ind-${industry.slug}.png`}
+                alt={`Cabinet for ${industry.label}`}
+                width={720}
+                height={720}
                 priority
-                className="w-full rounded-2xl border border-border shadow-lg"
+                className="relative mx-auto h-auto w-full max-w-md object-contain drop-shadow-2xl"
               />
             </div>
           </div>
@@ -73,7 +77,7 @@ export function IndustryTemplate({ industry }: { industry: Industry }) {
           </h2>
           <div className="mt-10 grid gap-4 md:grid-cols-3">
             {industry.stakes.points.map((p) => (
-              <div key={p} className="rounded-xl border border-border bg-bg-card p-6">
+              <div key={p} className="soft-card p-6">
                 <p className="font-body-serif leading-relaxed text-text-secondary">{p}</p>
               </div>
             ))}
@@ -90,7 +94,7 @@ export function IndustryTemplate({ industry }: { industry: Industry }) {
           </h2>
           <div className="mt-10 grid gap-4 sm:grid-cols-2">
             {industry.uses.map((u) => (
-              <div key={u} className="flex items-start gap-3 rounded-2xl border border-border bg-bg-card p-6">
+              <div key={u} className="flex items-start gap-3 soft-card p-6">
                 <Check className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
                 <span className="font-body-serif leading-relaxed text-text-secondary">{u}</span>
               </div>
@@ -126,7 +130,7 @@ export function IndustryTemplate({ industry }: { industry: Industry }) {
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <Link
               href="/#get-started"
-              className="inline-flex items-center gap-2 rounded-xl bg-accent px-7 py-3.5 text-base font-semibold text-white shadow-md transition-all hover:-translate-y-0.5 hover:bg-accent-warm hover:shadow-lg"
+              className="inline-flex items-center gap-2 rounded-xl px-7 py-3.5 text-base font-semibold btn-wood"
             >
               Get started free <ArrowRight className="h-4 w-4" />
             </Link>
@@ -145,22 +149,21 @@ export function IndustryTemplate({ industry }: { industry: Industry }) {
         <div className="mx-auto max-w-5xl px-6">
           <p className="section-label mb-6">Cabinet across industries</p>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-            {others.map((o) => {
-              const OIcon = o.icon;
-              return (
-                <Link
-                  key={o.slug}
-                  href={`/industries/${o.slug}`}
-                  className="group flex items-center gap-3 rounded-xl border border-border bg-bg-card p-5 transition-all hover:border-border-dark hover:bg-bg-card-hover"
-                >
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent-bg text-accent">
-                    <OIcon className="h-5 w-5" />
-                  </div>
-                  <div className="font-display text-text-primary">{o.label}</div>
-                  <ArrowRight className="ml-auto h-4 w-4 shrink-0 text-text-muted transition-colors group-hover:text-accent" />
-                </Link>
-              );
-            })}
+            {others.map((o) => (
+              <Link
+                key={o.slug}
+                href={`/industries/${o.slug}`}
+                className="group flex items-center gap-3 rounded-2xl bg-bg-card p-5 card-hover"
+              >
+                <img
+                  src={`/brand/icons/${o.slug}.png`}
+                  alt=""
+                  className="h-11 w-11 shrink-0 object-contain transition-transform duration-200 group-hover:scale-110 group-hover:-rotate-2"
+                />
+                <div className="font-display text-text-primary">{o.label}</div>
+                <ArrowRight className="ml-auto h-4 w-4 shrink-0 -translate-x-1 text-text-muted opacity-0 transition-all group-hover:translate-x-0 group-hover:text-accent group-hover:opacity-100" />
+              </Link>
+            ))}
           </div>
         </div>
       </section>

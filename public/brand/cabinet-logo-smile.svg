@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Cabinet">
+  <title>Cabinet</title>
+  <!-- body -->
+  <rect x="44" y="36" width="168" height="184" rx="26" fill="#ECDCC4" stroke="#8B5E3C" stroke-width="7"/>
+  <!-- top inner edge highlight -->
+  <path d="M62 53 H194" stroke="#D8C3A3" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+
+  <!-- drawer 1 -->
+  <rect x="62" y="60" width="132" height="72" rx="16" fill="#E6D2B4" stroke="#C29A6C" stroke-width="4"/>
+  <circle cx="112" cy="86" r="6" fill="#5A3E2B"/>
+  <circle cx="144" cy="86" r="6" fill="#5A3E2B"/>
+  <path d="M107 99 Q128 123 149 99" fill="none" stroke="#C28B3C" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- drawer 2 -->
+  <rect x="62" y="140" width="132" height="72" rx="16" fill="#E6D2B4" stroke="#C29A6C" stroke-width="4"/>
+  <circle cx="112" cy="166" r="6" fill="#5A3E2B"/>
+  <circle cx="144" cy="166" r="6" fill="#5A3E2B"/>
+  <path d="M107 179 Q128 203 149 179" fill="none" stroke="#C28B3C" stroke-width="7" stroke-linecap="round"/>
+</svg>

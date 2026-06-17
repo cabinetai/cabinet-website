@@ -42,6 +42,8 @@ export type Solution = {
   stack: string[];
   /** A starter cabinet template (cabinets.sh registry). */
   template: string;
+  /** Optional transparent, single-motif hero illustration (public/generated). */
+  heroMotif?: string;
 };
 
 export const SOLUTIONS: Solution[] = [
@@ -80,6 +82,7 @@ export const SOLUTIONS: Solution[] = [
     ],
     stack: ["Salesforce / HubSpot", "Apollo", "LinkedIn", "Gmail", "Slack"],
     template: "cabinet:sales-room",
+    heroMotif: "/generated/solution-sales.png",
   },
   {
     slug: "marketing",

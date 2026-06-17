@@ -4,15 +4,12 @@ import Image from "next/image";
 import {
   Bot,
   Cpu,
-  FolderTree,
   Terminal,
   GitBranch,
   FileText,
   Code2,
   Globe,
-  Layout,
   Search,
-  Clock,
   Kanban,
   MessageSquare,
   Shield,
@@ -22,7 +19,6 @@ import {
   Download,
   Star,
   Users,
-  Layers,
   Mail,
   Table,
   Folder,
@@ -378,21 +374,40 @@ function TerminalDemo() {
 
 /* ─── Feature Card ─── */
 function FeatureCard({
-  icon: Icon,
+  img,
   title,
   description,
+  className = "",
+  featured = false,
 }: {
-  icon: React.ElementType;
+  img: string;
   title: string;
   description: string;
+  className?: string;
+  featured?: boolean;
 }) {
   return (
-    <div className="group p-6 rounded-xl border border-border bg-bg-card card-hover">
-      <div className="w-10 h-10 rounded-lg bg-accent-bg flex items-center justify-center mb-4 group-hover:bg-accent-bg transition-colors">
-        <Icon className="w-5 h-5 text-accent" />
-      </div>
-      <h3 className="font-display text-lg mb-2 text-text-primary">{title}</h3>
-      <p className="text-sm text-text-secondary leading-relaxed">{description}</p>
+    <div
+      className={`group relative overflow-hidden rounded-2xl p-6 card-hover ${
+        featured ? "bg-gradient-to-br from-[#FBF2E4] to-[#F2E5CF]" : "bg-bg-card"
+      } ${className}`}
+    >
+      {featured && (
+        <div
+          aria-hidden
+          className="pointer-events-none absolute -right-8 -top-10 h-44 w-44 rounded-full"
+          style={{ background: "radial-gradient(circle, rgba(224,178,60,0.18), transparent 70%)" }}
+        />
+      )}
+      <img
+        src={img}
+        alt=""
+        className={`relative z-10 mb-4 object-contain transition-transform duration-200 group-hover:scale-105 group-hover:-rotate-2 ${
+          featured ? "h-[88px] w-[88px]" : "h-16 w-16"
+        }`}
+      />
+      <h3 className="relative z-10 mb-2 font-display text-lg text-text-primary">{title}</h3>
+      <p className="relative z-10 text-sm leading-relaxed text-text-secondary">{description}</p>
     </div>
   );
 }
@@ -1204,7 +1219,7 @@ function InstallTerminalSection() {
           <div className="mt-8 text-center">
             <a
               href="#get-started"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent hover:bg-accent-warm text-white font-medium transition-all shadow-sm"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium btn-wood"
             >
               Install Cabinet
               <ArrowRight className="w-4 h-4" />
@@ -1236,7 +1251,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row items-stretch gap-3">
               <a
                 href={MACOS_DOWNLOAD_URL}
-                className="shrink-0 inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl bg-accent hover:bg-accent-warm text-white font-semibold text-base transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 cursor-pointer"
+                className="shrink-0 inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-semibold text-base cursor-pointer btn-wood"
               >
                 <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
                 Download for Mac
@@ -1331,13 +1346,13 @@ export default function Home() {
           </h2>
 
           {/* ─── Hero Illustration ─── */}
-          <div className="w-48 h-48 mx-auto mb-8 rounded-2xl overflow-hidden">
+          <div className="mx-auto mb-8 w-60 sm:w-72 md:w-80">
             <Image
-              src="/cabinet-icon.png"
-              alt="Cabinet: AI-first knowledge base"
-              width={240}
-              height={240}
-              className="w-full h-full object-cover scale-120 drop-shadow-lg"
+              src="/brand/cabinet-logo-flip.png"
+              alt="Cabinet: your files and knowledge in one drawer, a team of AI agents in the other"
+              width={812}
+              height={835}
+              className="h-auto w-full drop-shadow-2xl"
               priority
             />
           </div>
@@ -1377,36 +1392,48 @@ export default function Home() {
               files, your models, your infrastructure.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-5 max-w-5xl mx-auto">
-            <div className="rounded-2xl border border-border bg-bg-card p-7 card-hover">
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent-bg text-accent mb-5">
-                <FileText className="h-5 w-5" />
+          <div className="grid gap-5 md:grid-cols-3 max-w-6xl mx-auto">
+            {/* Files */}
+            <div className="group rounded-3xl bg-bg-card p-8 card-hover">
+              <div className="relative flex h-52 items-center justify-center">
+                <div aria-hidden className="pointer-events-none absolute left-1/2 top-1/2 h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full" style={{ background: "radial-gradient(circle, rgba(224,178,60,0.18), transparent 70%)" }} />
+                <img src="/brand/icons/files.png" alt="" className="relative h-36 w-36 object-contain float-slow" />
               </div>
-              <h3 className="font-display text-lg text-text-primary mb-2">Your work lives on disk</h3>
-              <p className="text-sm text-text-secondary font-body-serif leading-relaxed">
-                Everything is Markdown in a folder you own. Grep it, git it, back it up.
-                No export, no lock-in, unlike a cloud wiki holding your knowledge hostage.
-              </p>
+              <span className="section-label">Your work lives on disk</span>
+              <h3 className="mt-2 mb-2 font-display text-xl text-text-primary">Own your data</h3>
+              <p className="text-sm font-body-serif leading-relaxed text-text-secondary">Everything is Markdown in a folder you own. Grep it, git it, back it up. No export, no lock-in.</p>
             </div>
-            <div className="rounded-2xl border border-border bg-bg-card p-7 card-hover">
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent-bg text-accent mb-5">
-                <Cpu className="h-5 w-5" />
+
+            {/* Bring your own AI — rotating vendor ring */}
+            <div className="group rounded-3xl bg-bg-card p-8 card-hover">
+              <div className="relative flex h-52 items-center justify-center">
+                <div aria-hidden className="pointer-events-none absolute left-1/2 top-1/2 h-44 w-44 -translate-x-1/2 -translate-y-1/2 rounded-full" style={{ background: "radial-gradient(circle, rgba(139,94,60,0.12), transparent 70%)" }} />
+                <div className="orbit relative h-[200px] w-[200px]">
+                  {[
+                    { v: "claude", l: 156, t: 78 }, { v: "openai", l: 133, t: 133 }, { v: "gemini", l: 78, t: 156 }, { v: "grok", l: 23, t: 133 },
+                    { v: "opencode", l: 0, t: 78 }, { v: "copilot", l: 23, t: 23 }, { v: "cursor", l: 78, t: 0 }, { v: "pi", l: 133, t: 23 },
+                  ].map((p) => (
+                    <span key={p.v} className="orbit__item absolute" style={{ left: p.l, top: p.t }}>
+                      <img src={`/brand/vendors/${p.v}.png`} alt="" className="h-11 w-11 object-contain" />
+                    </span>
+                  ))}
+                </div>
+                <img src="/brand/cabinet-logo-512.png" alt="" className="absolute left-1/2 top-1/2 h-16 w-16 -translate-x-1/2 -translate-y-1/2 object-contain drop-shadow-lg" />
               </div>
-              <h3 className="font-display text-lg text-text-primary mb-2">Bring your own AI</h3>
-              <p className="text-sm text-text-secondary font-body-serif leading-relaxed">
-                Cabinet routes to the model accounts you already pay for. No bundled
-                inference marked up on top, no new AI vendor to push through procurement.
-              </p>
+              <span className="section-label">Bring your own AI</span>
+              <h3 className="mt-2 mb-2 font-display text-xl text-text-primary">No AI tax</h3>
+              <p className="text-sm font-body-serif leading-relaxed text-text-secondary">Plug in the model accounts you already pay for: Claude, GPT, Gemini, Grok, local models. No markup, no new vendor.</p>
             </div>
-            <div className="rounded-2xl border border-border bg-bg-card p-7 card-hover">
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent-bg text-accent mb-5">
-                <Bot className="h-5 w-5" />
+
+            {/* Agents — abstract floating shapes */}
+            <div className="group rounded-3xl bg-bg-card p-8 card-hover">
+              <div className="relative flex h-52 items-center justify-center">
+                <div aria-hidden className="agent-aura pointer-events-none absolute left-1/2 top-1/2 h-44 w-44 -translate-x-1/2 -translate-y-1/2 rounded-full" style={{ background: "radial-gradient(circle, rgba(111,164,90,0.16), transparent 70%)" }} />
+                <img src="/brand/agents-shapes.png" alt="" className="relative h-44 w-44 object-contain agent-heartbeat" />
               </div>
-              <h3 className="font-display text-lg text-text-primary mb-2">Agents that do the work</h3>
-              <p className="text-sm text-text-secondary font-body-serif leading-relaxed">
-                Not just search and chat. A team of agents researches, drafts, and ships
-                on a schedule, 24/7, whether or not anyone&apos;s online.
-              </p>
+              <span className="section-label">Agents that do the work</span>
+              <h3 className="mt-2 mb-2 font-display text-xl text-text-primary">Always on</h3>
+              <p className="text-sm font-body-serif leading-relaxed text-text-secondary">Not just search and chat. A team of agents researches, drafts, and ships on a schedule, 24/7.</p>
             </div>
           </div>
         </div>
@@ -1815,19 +1842,23 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <FeatureCard icon={Layout} title="WYSIWYG + Markdown" description="Rich text editing with Tiptap. Tables, code blocks, slash commands. Toggle to raw markdown anytime." />
-            <FeatureCard icon={Bot} title="AI Agents" description="Onboard a CEO, Editor, Marketer. Each has goals, skills, scheduled jobs. Watch them work like a real team." />
-            <FeatureCard icon={Globe} title="Embedded HTML Apps" description="Drop an index.html in any folder. It renders as an iframe. Full-screen mode for dashboards and tools." />
-            <FeatureCard icon={Terminal} title="Web Terminal" description="Full Claude Code terminal in the browser. xterm.js + node-pty. Run commands without leaving Cabinet." />
-            <FeatureCard icon={FolderTree} title="File-Based Everything" description="No database. Markdown on disk. Drag-and-drop tree sidebar. Your data is always yours, always portable." />
-            <FeatureCard icon={GitBranch} title="Git-Backed History" description="Every save auto-commits. Full diff viewer. Restore any page to any point in time. Linked repo support." />
-            <FeatureCard icon={Clock} title="Scheduled Jobs" description="Cron-based agent automation. Reddit scout every 6 hours. Weekly reports on Monday. Your AI team never sleeps." />
-            <FeatureCard icon={Kanban} title="Missions & Tasks" description="Break goals into missions. Assign tasks to agents. Track progress with Kanban boards and progress bars." />
-            <FeatureCard icon={MessageSquare} title="Internal Chat" description="Built-in team channels. Agents and humans communicate. @mention an agent to trigger a response." />
-            <FeatureCard icon={Search} title="Full-Text Search" description="Cmd+K instant search across all pages. Fuzzy matching. FlexSearch index rebuilt on every change." />
-            <FeatureCard icon={FileText} title="PDF & CSV First-Class" description="PDFs render inline. CSVs open as editable tables with add/delete rows and columns. Auto-save with git commit." />
-            <FeatureCard icon={Layers} title="Linked Git Repos" description="Add .repo.yaml to link KB directories to source code repos. AI agents read and reference your codebase." />
+          <div className="grid grid-cols-2 lg:grid-cols-6 gap-4 max-w-6xl mx-auto auto-rows-fr">
+            {[
+              { img: "/brand/feat/agents.png", span: "col-span-2 lg:col-span-3", featured: true, title: "AI Agents", description: "Onboard a CEO, Editor, Marketer. Each has goals, skills, scheduled jobs. Watch them work like a real team." },
+              { img: "/brand/feat/files.png", span: "col-span-2 lg:col-span-3", featured: true, title: "File-Based Everything", description: "No database. Markdown on disk. Drag-and-drop tree sidebar. Your data is always yours, always portable." },
+              { img: "/brand/feat/editor.png", span: "lg:col-span-2", title: "WYSIWYG + Markdown", description: "Rich text editing with Tiptap. Tables, code blocks, slash commands. Toggle to raw markdown anytime." },
+              { img: "/brand/feat/htmlapp.png", span: "lg:col-span-2", title: "Embedded HTML Apps", description: "Drop an index.html in any folder. It renders as an iframe. Full-screen mode for dashboards." },
+              { img: "/brand/feat/terminal.png", span: "lg:col-span-2", title: "Web Terminal", description: "Full Claude Code terminal in the browser. xterm.js + node-pty. Run commands without leaving Cabinet." },
+              { img: "/brand/feat/git.png", span: "col-span-2 lg:col-span-4", featured: true, title: "Git-Backed History", description: "Every save auto-commits. Full diff viewer. Restore any page to any point in time. Linked repo support." },
+              { img: "/brand/feat/schedule.png", span: "lg:col-span-2", title: "Scheduled Jobs", description: "Cron-based agent automation. Reddit scout every 6 hours. Weekly reports on Monday. Your AI team never sleeps." },
+              { img: "/brand/feat/tasks.png", span: "lg:col-span-2", title: "Missions & Tasks", description: "Break goals into missions. Assign tasks to agents. Track progress with Kanban boards." },
+              { img: "/brand/feat/chat.png", span: "col-span-2 lg:col-span-4", featured: true, title: "Internal Chat", description: "Built-in team channels. Agents and humans communicate. @mention an agent to trigger a response." },
+              { img: "/brand/feat/search.png", span: "lg:col-span-2", title: "Full-Text Search", description: "Cmd+K instant search across all pages. Fuzzy matching. FlexSearch index rebuilt on every change." },
+              { img: "/brand/feat/docs.png", span: "lg:col-span-2", title: "PDF & CSV First-Class", description: "PDFs render inline. CSVs open as editable tables with add/delete rows and columns." },
+              { img: "/brand/feat/repos.png", span: "lg:col-span-2", title: "Linked Git Repos", description: "Add .repo.yaml to link KB directories to source code repos. Agents read your codebase." },
+            ].map((f) => (
+              <FeatureCard key={f.title} img={f.img} title={f.title} description={f.description} featured={f.featured} className={f.span} />
+            ))}
           </div>
         </div>
       </section>
@@ -2040,7 +2071,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row items-stretch gap-3">
               <a
                 href={MACOS_DOWNLOAD_URL}
-                className="shrink-0 inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl bg-accent hover:bg-accent-warm text-white font-semibold text-base transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 cursor-pointer"
+                className="shrink-0 inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-semibold text-base cursor-pointer btn-wood"
               >
                 <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
                 Download for Mac
