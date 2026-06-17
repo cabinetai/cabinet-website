@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { Inter, Instrument_Serif, Source_Code_Pro, Stack_Sans_Notch, Ms_Madi } from "next/font/google";
+import { Inter, Instrument_Serif, Source_Code_Pro, Stack_Sans_Notch, Ms_Madi, Jost } from "next/font/google";
+import { LiquidGlassFilter } from "@/components/liquid-glass-filter";
 import "./globals.css";
 
 const inter = Inter({
@@ -33,6 +34,13 @@ const msMadi = Ms_Madi({
   variable: "--font-hand",
   subsets: ["latin"],
   weight: "400",
+});
+
+// Labels / eyebrows (uppercase, letter-spaced). Separate from the code/mono font.
+const jost = Jost({
+  variable: "--font-label",
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
 });
 
 export const metadata: Metadata = {
@@ -72,7 +80,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${stackSans.variable} ${instrumentSerif.variable} ${sourceCodePro.variable} ${msMadi.variable} h-full antialiased`}
+      className={`${inter.variable} ${stackSans.variable} ${instrumentSerif.variable} ${sourceCodePro.variable} ${msMadi.variable} ${jost.variable} h-full antialiased`}
     >
       <head>
         <Script
@@ -88,7 +96,10 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <LiquidGlassFilter />
+        {children}
+      </body>
     </html>
   );
 }

@@ -151,9 +151,10 @@ html {
 
 /* Section label — monospace uppercase */
 .section-label {
-  font-family: var(--font-mono), monospace;
-  font-size: 0.7rem;
-  letter-spacing: 0.2em;
+  font-family: var(--font-label), system-ui, sans-serif;
+  font-weight: 500;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--accent);
 }
@@ -192,11 +193,11 @@ html {
 
 /* Card hover */
 .card-hover {
-  transition: all 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .card-hover:hover {
-  box-shadow: 0 2px 16px rgba(59, 47, 47, 0.06);
-  border-color: var(--border-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 18px 40px -24px rgba(150, 108, 68, 0.28);
 }
 
 /* Subtle dot grid bg */
@@ -208,9 +209,53 @@ html {
 /* Dictionary card — parchment feel */
 .dict-card {
   background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  box-shadow: 0 1px 3px rgba(59, 47, 47, 0.04), 0 8px 30px rgba(59, 47, 47, 0.04);
+  border-radius: 22px;
+  box-shadow: 0 1px 1px rgba(59, 47, 47, 0.03), 0 18px 42px -26px rgba(150, 108, 68, 0.22);
+}
+
+/* Borderless soft warm card — the default content surface. */
+.soft-card {
+  background: var(--bg-card);
+  border-radius: 18px;
+  box-shadow: 0 1px 1px rgba(59, 47, 47, 0.03), 0 16px 38px -26px rgba(150, 108, 68, 0.2);
+}
+
+/* Orbit ring (rotating vendor logos) + gentle float */
+@keyframes orbit-spin { to { transform: rotate(360deg); } }
+@keyframes orbit-spin-rev { to { transform: rotate(-360deg); } }
+@keyframes soft-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+.orbit { animation: orbit-spin 34s linear infinite; }
+.orbit__item img { animation: orbit-spin-rev 34s linear infinite; }
+.float-slow { animation: soft-float 6s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .orbit,
+  .orbit__item img,
+  .float-slow {
+    animation: none;
+  }
+}
+
+/* Agents "heartbeat" — a living lub-dub pulse + synced glow aura */
+@keyframes agent-heartbeat {
+  0% { transform: scale(1); }
+  12% { transform: scale(1.07); }
+  24% { transform: scale(1); }
+  36% { transform: scale(1.045); }
+  50% { transform: scale(1); }
+  100% { transform: scale(1); }
+}
+@keyframes agent-aura {
+  0%, 100% { opacity: 0.5; transform: translate(-50%, -50%) scale(1); }
+  18% { opacity: 1; transform: translate(-50%, -50%) scale(1.16); }
+  50% { opacity: 0.5; transform: translate(-50%, -50%) scale(1); }
+}
+.agent-heartbeat { animation: agent-heartbeat 2.6s ease-in-out infinite; }
+.agent-aura { animation: agent-aura 2.6s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .agent-heartbeat,
+  .agent-aura {
+    animation: none;
+  }
 }
 
 /* ──────────────────────────────────────────────────────────────
@@ -221,10 +266,10 @@ html {
 /* Eyebrow label — sans (NOT mono), small caps. Replaces the bad
    monospace nav labels that read as "side project". */
 .ent-eyebrow {
-  font-family: var(--font-inter), system-ui, sans-serif;
+  font-family: var(--font-label), system-ui, sans-serif;
   font-size: 0.6875rem;
   font-weight: 500;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--accent);
 }
@@ -275,15 +320,13 @@ html {
 /* Surface — white card with subtle shadow on cream */
 .ent-card {
   background: #ffffff;
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  box-shadow: 0 1px 2px rgba(36, 27, 21, 0.03);
-  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+  border-radius: 18px;
+  box-shadow: 0 1px 1px rgba(59, 47, 47, 0.03), 0 16px 38px -26px rgba(150, 108, 68, 0.2);
+  transition: transform 200ms ease, box-shadow 200ms ease;
 }
 .ent-card-hover:hover {
-  border-color: var(--border-dark);
-  transform: translateY(-1px);
-  box-shadow: 0 10px 28px rgba(36, 27, 21, 0.07), 0 2px 6px rgba(36, 27, 21, 0.04);
+  transform: translateY(-2px);
+  box-shadow: 0 22px 48px -26px rgba(150, 108, 68, 0.3);
 }
 
 .ent-card-flat {
@@ -299,6 +342,69 @@ html {
 }
 
 /* Buttons */
+/* Wooden primary button — homey light maple with brown text, matching the
+   cabinet craft. Applies skin only (no radius) so the element keeps its shape. */
+.btn-wood {
+  color: #5a3e2b;
+  font-weight: 700;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.12) 40%, rgba(255, 255, 255, 0) 56%),
+    linear-gradient(180deg, #ecd9b8 0%, #e1c79f 55%, #d7ba8b 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.65),
+    inset 0 -2px 5px rgba(120, 80, 45, 0.22),
+    inset 0 0 0 1px rgba(170, 125, 80, 0.45),
+    0 8px 20px -10px rgba(120, 80, 45, 0.45);
+  transition: transform 0.12s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+.btn-wood:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.03);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.7),
+    inset 0 -2px 5px rgba(120, 80, 45, 0.22),
+    inset 0 0 0 1px rgba(170, 125, 80, 0.5),
+    0 13px 26px -10px rgba(120, 80, 45, 0.5);
+}
+.btn-wood:active {
+  transform: translateY(1px);
+}
+.btn-wood svg {
+  color: #5a3e2b;
+}
+
+/* Liquid-glass coat over the wood: relative + clip, plus a shine sweep on hover */
+.btn-wood,
+.ent-btn-primary {
+  position: relative;
+  overflow: hidden;
+}
+.btn-wood::after,
+.ent-btn-primary::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -45%;
+  width: 40%;
+  pointer-events: none;
+  transform: skewX(-18deg);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+  opacity: 0;
+  transition: left 0.6s ease, opacity 0.3s ease;
+}
+.btn-wood:hover::after,
+.ent-btn-primary:hover::after {
+  left: 135%;
+  opacity: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn-wood::after,
+  .ent-btn-primary::after {
+    transition: none;
+  }
+}
+
 .ent-btn-primary {
   display: inline-flex;
   align-items: center;
@@ -306,18 +412,29 @@ html {
   height: 3rem;
   padding: 0 1.5rem;
   border-radius: 9999px;
-  background: var(--accent);
-  color: #ffffff;
+  color: #5a3e2b;
   font-family: var(--font-inter), system-ui, sans-serif;
   font-size: 0.875rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.005em;
-  box-shadow: 0 1px 2px rgba(36, 27, 21, 0.08), inset 0 -1px 0 rgba(0, 0, 0, 0.08);
-  transition: background 200ms ease, transform 100ms ease, box-shadow 200ms ease;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.12) 40%, rgba(255, 255, 255, 0) 56%),
+    linear-gradient(180deg, #ecd9b8 0%, #e1c79f 55%, #d7ba8b 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.65),
+    inset 0 -2px 5px rgba(120, 80, 45, 0.22),
+    inset 0 0 0 1px rgba(170, 125, 80, 0.45),
+    0 8px 20px -10px rgba(120, 80, 45, 0.45);
+  transition: transform 120ms ease, box-shadow 200ms ease, filter 200ms ease;
 }
 .ent-btn-primary:hover {
-  background: var(--accent-warm);
-  box-shadow: 0 4px 12px rgba(139, 94, 60, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
+  filter: brightness(1.03);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.7),
+    inset 0 -2px 5px rgba(120, 80, 45, 0.22),
+    inset 0 0 0 1px rgba(170, 125, 80, 0.5),
+    0 13px 26px -10px rgba(120, 80, 45, 0.5);
 }
 .ent-btn-primary:active {
   transform: translateY(1px);
@@ -490,6 +607,133 @@ html {
     radial-gradient(1000px 500px at 80% -10%, rgba(139, 94, 60, 0.06), transparent 60%),
     radial-gradient(800px 400px at 10% 110%, rgba(90, 122, 79, 0.04), transparent 60%),
     var(--bg);
+}
+
+/* ──────────────────────────────────────────────────────────────
+   LIQUID GLASS — frosted, refractive chrome for the site nav
+   Base look is robust CSS (background blur + saturation + specular
+   edges). The refraction layer adds true glass distortion of the
+   content scrolling underneath, and degrades to the frosted base
+   wherever SVG backdrop filters aren't supported.
+   ────────────────────────────────────────────────────────────── */
+.liquid-glass {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(255, 255, 255, 0.42) 100%
+  );
+  -webkit-backdrop-filter: blur(18px) saturate(185%);
+  backdrop-filter: blur(18px) saturate(185%);
+  box-shadow:
+    0 1px 0 rgba(59, 47, 47, 0.06),
+    0 16px 38px -22px rgba(59, 47, 47, 0.34);
+  transition:
+    background 320ms ease,
+    box-shadow 320ms ease,
+    -webkit-backdrop-filter 320ms ease,
+    backdrop-filter 320ms ease;
+}
+
+/* specular rim: bright top edge, faint full outline, soft inner base */
+.liquid-glass::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  box-shadow:
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.9),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.22),
+    inset 0 -18px 30px -24px rgba(59, 47, 47, 0.22);
+}
+
+/* lighter resting state at the very top of the page (over the hero) */
+.liquid-glass--top {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.32) 0%,
+    rgba(255, 255, 255, 0.14) 100%
+  );
+  -webkit-backdrop-filter: blur(10px) saturate(165%);
+  backdrop-filter: blur(10px) saturate(165%);
+  box-shadow: 0 1px 0 rgba(59, 47, 47, 0.03);
+}
+
+/* refraction layer — bends the content scrolling beneath the glass */
+.liquid-glass__refract {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  -webkit-backdrop-filter: url(#liquid-glass-filter);
+  backdrop-filter: url(#liquid-glass-filter);
+  opacity: 0.45;
+}
+
+/* higher-opacity variant for floating panels (dropdowns, drawers)
+   that carry small text and need stronger legibility */
+.liquid-glass-panel {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.85) 0%,
+    rgba(255, 255, 255, 0.74) 100%
+  );
+  -webkit-backdrop-filter: blur(22px) saturate(185%);
+  backdrop-filter: blur(22px) saturate(185%);
+  box-shadow:
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.9),
+    0 24px 56px -26px rgba(59, 47, 47, 0.42);
+}
+
+/* a single floating liquid-glass button (pill). Pair with the
+   .liquid-glass__refract child for the edge refraction. */
+.glass-pill {
+  position: relative;
+  border-radius: 9999px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.55) 0%,
+    rgba(255, 255, 255, 0.36) 100%
+  );
+  -webkit-backdrop-filter: blur(16px) saturate(185%);
+  backdrop-filter: blur(16px) saturate(185%);
+  box-shadow:
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.9),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.22),
+    0 10px 24px -14px rgba(59, 47, 47, 0.4);
+  transition:
+    background 200ms ease,
+    box-shadow 200ms ease,
+    transform 150ms ease;
+}
+.glass-pill:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.72) 0%,
+    rgba(255, 255, 255, 0.52) 100%
+  );
+  box-shadow:
+    inset 0 1px 0 0 rgba(255, 255, 255, 1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.32),
+    0 14px 30px -14px rgba(59, 47, 47, 0.46);
+  transform: translateY(-1px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .liquid-glass,
+  .glass-pill {
+    transition: none;
+  }
+  .glass-pill:hover {
+    transform: none;
+  }
+  /* the refraction only reads in motion (scrolling); drop it */
+  .liquid-glass__refract {
+    display: none;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -57,10 +57,34 @@ function useGitHubStars() {
   return stars;
 }
 
+/** A single floating liquid-glass nav button. */
+function GlassNavLink({
+  href,
+  external = false,
+  children,
+}: {
+  href: string;
+  external?: boolean;
+  children: React.ReactNode;
+}) {
+  const ext = external ? { target: "_blank", rel: "noopener noreferrer" } : {};
+  return (
+    <a
+      href={href}
+      {...ext}
+      className="glass-pill group inline-flex h-10 items-center px-4 text-sm font-medium text-text-secondary transition-colors hover:text-text-primary"
+    >
+      <span className="liquid-glass__refract" aria-hidden />
+      <span className="relative z-10">{children}</span>
+    </a>
+  );
+}
+
 /**
- * The single site-wide navbar. Pass `fixed` on the homepage (it overlays the
- * pinned scrollytelling scene); everywhere else it defaults to `sticky` so it
- * stays in flow and pins to the top on scroll without needing a content offset.
+ * The single site-wide navbar, rendered as floating liquid-glass buttons that
+ * sit on top of the page. Pass `fixed` on the homepage (it overlays the pinned
+ * scrollytelling scene); everywhere else it defaults to `sticky` so it stays in
+ * flow and pins to the top on scroll.
  */
 export function SiteNavbar({ fixed = false }: { fixed?: boolean }) {
   const stars = useGitHubStars();
@@ -69,62 +93,68 @@ export function SiteNavbar({ fixed = false }: { fixed?: boolean }) {
     <nav
       className={`${
         fixed ? "fixed inset-x-0 top-0" : "sticky top-0"
-      } z-50 border-b border-border bg-bg-card/95 backdrop-blur-sm`}
+      } z-50 pointer-events-none`}
     >
-      <div className="max-w-7xl mx-auto px-6 min-h-16 py-3 flex items-center gap-5 lg:gap-8">
-        <a href="/" className="flex shrink-0 items-center gap-3 pr-4 lg:pr-6">
-          <Image src="/cabinet-icon.png" alt="Cabinet" width={36} height={36} className="rounded-lg" />
-          <span className="whitespace-nowrap text-xl font-brand italic tracking-tight text-text-primary">
-            Cabinet
+      <div className="pointer-events-auto max-w-7xl mx-auto px-4 sm:px-6 pt-3 pb-3 flex items-center gap-2.5 lg:gap-3">
+        {/* Logo button */}
+        <a
+          href="/"
+          className="glass-pill group inline-flex h-11 shrink-0 items-center gap-2.5 pl-2.5 pr-4"
+        >
+          <span className="liquid-glass__refract" aria-hidden />
+          <span className="relative z-10 inline-flex items-center gap-2.5">
+            <Image
+              src="/brand/cabinet-logo-face-2-512.png"
+              alt="Cabinet"
+              width={38}
+              height={40}
+              className="h-9 w-auto object-contain"
+            />
+            <span className="whitespace-nowrap text-xl font-brand italic tracking-tight text-text-primary">
+              Cabinet
+            </span>
           </span>
         </a>
-        <div className="hidden min-[1100px]:flex flex-1 items-center gap-6 whitespace-nowrap text-sm font-medium text-text-secondary">
-          <a href="/#features" className="hover:text-text-primary transition-colors">
-            Features
-          </a>
+
+        {/* Section buttons */}
+        <div className="hidden min-[1100px]:flex items-center gap-2">
+          <GlassNavLink href="/#features">Features</GlassNavLink>
           <SolutionsMenu triggerClassName="text-text-secondary" />
-          <a href="/compare" className="hover:text-text-primary transition-colors">
-            Compare
-          </a>
-          <a href="/pricing" className="hover:text-text-primary transition-colors">
-            Pricing
-          </a>
-          <a
-            href="https://docs.runcabinet.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-text-primary transition-colors"
-          >
+          <GlassNavLink href="/compare">Compare</GlassNavLink>
+          <GlassNavLink href="/pricing">Pricing</GlassNavLink>
+          <GlassNavLink href="https://docs.runcabinet.com/" external>
             Docs
-          </a>
-          <a href="/media" className="hover:text-text-primary transition-colors">
-            Media
-          </a>
+          </GlassNavLink>
+          <GlassNavLink href="/media">Media</GlassNavLink>
         </div>
-        <div className="ml-auto flex items-center gap-4 sm:gap-5">
-          {/* quiet social proof — not a CTA, so no box */}
+
+        {/* Action buttons */}
+        <div className="ml-auto flex items-center gap-2.5">
           <a
             href={GITHUB_URL}
             target="_blank"
             rel="noopener noreferrer"
             aria-label={`Star Cabinet on GitHub (${formatStarCount(stars)} stars)`}
-            className="hidden items-center gap-1.5 whitespace-nowrap text-sm font-medium text-text-tertiary transition-colors hover:text-text-primary sm:inline-flex"
+            className="glass-pill group hidden h-10 items-center px-3.5 text-sm font-medium text-text-secondary transition-colors hover:text-text-primary sm:inline-flex"
           >
-            <GithubIcon className="w-4 h-4" />
-            <Star className="w-3.5 h-3.5 fill-current text-accent" />
-            {formatStarCount(stars)}
+            <span className="liquid-glass__refract" aria-hidden />
+            <span className="relative z-10 inline-flex items-center gap-1.5 whitespace-nowrap">
+              <GithubIcon className="w-4 h-4" />
+              <Star className="w-3.5 h-3.5 fill-current text-accent" />
+              {formatStarCount(stars)}
+            </span>
           </a>
-          {/* secondary action — light text button */}
           <a
             href="/demo"
-            className="hidden whitespace-nowrap text-sm font-medium text-text-secondary transition-colors hover:text-text-primary sm:inline-flex"
+            className="glass-pill group hidden h-10 items-center px-4 text-sm font-medium text-text-secondary transition-colors hover:text-text-primary sm:inline-flex"
           >
-            Book a demo
+            <span className="liquid-glass__refract" aria-hidden />
+            <span className="relative z-10 whitespace-nowrap">Book a demo</span>
           </a>
-          {/* the one primary CTA */}
+          {/* primary CTA — stays solid so it reads as the one action */}
           <a
             href="/#get-started"
-            className="inline-flex h-10 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-accent px-5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-accent-warm"
+            className="inline-flex h-11 items-center justify-center gap-2 whitespace-nowrap rounded-full px-5 text-sm font-semibold btn-wood"
           >
             <Download className="w-4 h-4" />
             <span>Download</span>

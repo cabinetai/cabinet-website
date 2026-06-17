@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { ArrowRight, Menu, X } from "lucide-react";
 import { GithubIcon } from "@/components/site-icons";
 import { GITHUB_URL } from "@/lib/site-config";
+import { useScrolled } from "@/lib/use-scrolled";
 
 type GitHubRepoResponse = { stargazers_count?: number };
 
@@ -41,18 +42,24 @@ export function EnterpriseNav() {
   const stars = useStars();
   const pathname = usePathname() ?? "";
   const [open, setOpen] = useState(false);
+  const scrolled = useScrolled();
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border bg-bg-card/85 backdrop-blur-md">
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 h-16 flex items-center gap-8">
+    <header
+      className={`sticky top-0 z-40 liquid-glass ${
+        scrolled || open ? "" : "liquid-glass--top"
+      }`}
+    >
+      <span className="liquid-glass__refract" aria-hidden />
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 h-16 flex items-center gap-8">
         {/* Logo */}
         <a href="/enterprise" className="flex shrink-0 items-center gap-3 group">
           <Image
-            src="/cabinet-icon.png"
+            src="/brand/cabinet-logo-face-2-512.png"
             alt="Cabinet"
-            width={30}
-            height={30}
-            className="rounded-md"
+            width={34}
+            height={36}
+            className="h-8 w-auto object-contain"
           />
           <div className="flex items-center gap-2">
             <span className="font-brand italic text-[1.35rem] leading-none tracking-tight text-text-primary">
@@ -114,7 +121,7 @@ export function EnterpriseNav() {
 
       {/* Mobile drawer */}
       {open && (
-        <div className="lg:hidden border-t border-border bg-bg-card">
+        <div className="relative z-10 lg:hidden liquid-glass-panel border-t border-white/40">
           <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col gap-1">
             {PRIMARY_NAV.map((item) => (
               <a
