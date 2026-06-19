@@ -3,7 +3,6 @@
 import Image from "next/image";
 import {
   Bot,
-  Cpu,
   Terminal,
   GitBranch,
   FileText,
@@ -26,9 +25,6 @@ import {
   FileType,
   Copy,
   Cloud,
-  ShieldCheck,
-  Server,
-  Lock,
 } from "lucide-react";
 import { Suspense, useState, useEffect, useRef, useCallback } from "react";
 import { DiscordIcon, GithubIcon } from "@/components/site-icons";
@@ -77,44 +73,44 @@ function integrationName(src: string): string {
 
 const TRUST_BADGES = [
   {
-    icon: ShieldCheck,
+    img: "/brand/trust/soc2.png",
     label: "SOC 2 Type II",
     status: "In progress",
     desc: "We're working toward it, and we'll show you the report, not just a badge.",
   },
   {
-    icon: Code2,
+    img: "/brand/trust/open-source.png",
     label: "Open source",
     desc: "MIT licensed. Read every line, fork it, or run your own build.",
   },
   {
-    icon: Server,
+    img: "/brand/trust/self-hosted.png",
     label: "Self-hosted",
     desc: "Runs in your environment, under the controls you already enforce.",
   },
   {
-    icon: Lock,
+    img: "/brand/trust/not-training.png",
     label: "Not training data",
     desc: "Your prompts and content are never used to train a model.",
   },
   {
-    icon: Cpu,
+    img: "/brand/trust/byo-keys.png",
     label: "Bring your own keys",
     desc: "Your model providers, your API keys. Inference never routes through us.",
   },
   {
-    icon: GitBranch,
+    img: "/brand/trust/audit-log.png",
     label: "Audit log & git history",
     desc: "Every change to data and agents is versioned, diffable, and attributable.",
   },
   {
-    icon: Users,
+    img: "/brand/trust/sso-scim.png",
     label: "SSO & SCIM",
     status: "Enterprise track",
     desc: "SAML single sign-on and provisioning for teams that need it.",
   },
   {
-    icon: Globe,
+    img: "/brand/trust/data-residency.png",
     label: "Your data residency",
     desc: "Self-hosted means your knowledge lives in your region, under your policies.",
   },
@@ -413,100 +409,6 @@ function FeatureCard({
 }
 
 /* ─── Comparison Table ─── */
-/* ─── Karpathy Quote Section ─── */
-function KarpathySection() {
-  return (
-    <section id="karpathy" className="py-24 bg-bg-warm">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <p className="section-label mb-3">The Shift</p>
-          <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
-            Why the world needs Cabinet
-          </h2>
-          <p className="text-text-secondary max-w-2xl mx-auto">
-            Andrej Karpathy recently described the future of knowledge work.
-            Cabinet is that future, built today.
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-8 items-start">
-          <div className="border border-border rounded-xl p-8 bg-bg-card">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-full bg-accent-bg flex items-center justify-center text-sm font-bold text-accent-warm">
-                AK
-              </div>
-              <div>
-                <p className="font-semibold text-sm text-text-primary">Andrej Karpathy</p>
-                <p className="text-xs text-text-tertiary">LLM Knowledge Bases</p>
-              </div>
-            </div>
-            <div className="space-y-4 text-sm text-text-secondary leading-relaxed font-body-serif">
-              <p>
-                &ldquo;Using LLMs to build personal knowledge bases for various
-                topics of research interest. A large fraction of my recent token
-                throughput is going less into manipulating code, and more into{" "}
-                <span className="text-accent font-semibold">manipulating knowledge</span>.&rdquo;
-              </p>
-              <p>
-                &ldquo;Raw data from a given number of sources is collected, then
-                compiled by an LLM into a .md wiki, then operated on by various
-                CLIs by the LLM to do Q&A and to incrementally enhance the wiki.&rdquo;
-              </p>
-              <p className="text-accent font-semibold">
-                &ldquo;I think there is room here for an incredible new product
-                instead of a hacky collection of scripts.&rdquo;
-              </p>
-            </div>
-          </div>
-
-          <div className="space-y-4">
-            {[
-              {
-                label: "Data Ingest",
-                karpathy: "Index source docs into raw/, LLM compiles a wiki of .md files",
-                cabinet: "Drag PDFs, CSVs, HTML apps, markdown into the KB. AI agents auto-organize and cross-link.",
-              },
-              {
-                label: "IDE / Viewer",
-                karpathy: "Uses Obsidian as the frontend to view compiled wiki",
-                cabinet: "Built-in WYSIWYG editor, PDF viewer, CSV editor, embedded HTML apps, web terminal - all in one UI.",
-              },
-              {
-                label: "Q&A",
-                karpathy: "Once wiki is big enough, ask LLM complex questions against it",
-                cabinet: "AI panel with @mentions. Agents reference the entire KB. Ask questions, get answers with page citations.",
-              },
-              {
-                label: "Output",
-                karpathy: "Render markdown, slide shows, matplotlib images back into Obsidian",
-                cabinet: "Agents write directly to the KB. Slides, dashboards, reports - all viewable inline. Output compounds.",
-              },
-              {
-                label: "Automation",
-                karpathy: "Manually runs LLM health checks, vibe-coded a search engine",
-                cabinet: "Scheduled cron jobs, agent heartbeats, mission boards. Your AI team runs 24/7 without scripts.",
-              },
-            ].map((item) => (
-              <div
-                key={item.label}
-                className="border border-border rounded-lg p-5 bg-bg-card card-hover"
-              >
-                <span className="text-xs font-code text-accent bg-accent-bg px-2 py-0.5 rounded">
-                  {item.label}
-                </span>
-                <p className="text-xs text-text-tertiary mt-2 mb-1.5 italic font-body-serif">
-                  Karpathy: {item.karpathy}
-                </p>
-                <p className="text-sm text-text-primary">{item.cabinet}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
 /* ─── Agent Cards ─── */
 function AgentShowcase() {
   const agents = [
@@ -1863,9 +1765,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ─── Karpathy Section ─── */}
-      <KarpathySection />
-
       {/* ─── AI Agents ─── */}
       <section id="agents" className="py-24 border-t border-border bg-bg-warm">
         <div className="max-w-6xl mx-auto px-6">
@@ -1939,31 +1838,28 @@ export default function Home() {
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
-            {SOLUTIONS.map((s) => {
-              const Icon = s.icon;
-              return (
-                <a
-                  key={s.slug}
-                  href={`/solutions/${s.slug}`}
-                  className="group flex flex-col rounded-2xl border border-border bg-bg-card p-6 card-hover"
-                >
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-accent-bg text-accent">
-                      <Icon className="h-5 w-5" />
-                    </div>
-                    <h3 className="font-display text-lg text-text-primary">
-                      Cabinet for {s.label}
-                    </h3>
-                  </div>
-                  <p className="text-sm text-text-secondary font-body-serif leading-relaxed flex-1">
-                    {s.menuBlurb}
-                  </p>
-                  <span className="mt-4 inline-flex items-center gap-1.5 font-code text-sm text-accent transition-colors group-hover:text-accent-warm">
-                    Explore <ArrowRight className="w-4 h-4" />
-                  </span>
-                </a>
-              );
-            })}
+            {SOLUTIONS.map((s) => (
+              <a
+                key={s.slug}
+                href={`/solutions/${s.slug}`}
+                className="group flex flex-col rounded-2xl border border-border bg-bg-card p-6 card-hover"
+              >
+                <img
+                  src={`/brand/solutions/${s.slug}.png`}
+                  alt=""
+                  className="mb-4 h-20 w-20 object-contain transition-transform duration-200 group-hover:scale-105 group-hover:-rotate-2"
+                />
+                <h3 className="mb-2 font-display text-lg text-text-primary">
+                  Cabinet for {s.label}
+                </h3>
+                <p className="text-sm text-text-secondary font-body-serif leading-relaxed flex-1">
+                  {s.menuBlurb}
+                </p>
+                <span className="mt-4 inline-flex items-center gap-1.5 font-code text-sm text-accent transition-colors group-hover:text-accent-warm">
+                  Explore <ArrowRight className="w-4 h-4" />
+                </span>
+              </a>
+            ))}
           </div>
         </div>
       </section>
@@ -2022,14 +1918,16 @@ export default function Home() {
             {TRUST_BADGES.map((b) => (
               <div
                 key={b.label}
-                className="rounded-2xl border border-border bg-bg-card p-6 card-hover"
+                className="group rounded-2xl border border-border bg-bg-card p-6 card-hover"
               >
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-accent-bg text-accent">
-                    <b.icon className="h-5 w-5" strokeWidth={2.25} />
-                  </div>
+                <div className="flex items-start justify-between gap-3 mb-3">
+                  <img
+                    src={b.img}
+                    alt=""
+                    className="h-16 w-16 object-contain transition-transform duration-200 group-hover:scale-105 group-hover:-rotate-2"
+                  />
                   {b.status && (
-                    <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-100 px-2.5 py-1 text-[11px] font-semibold text-amber-700">
+                    <span className="mt-1 inline-flex items-center gap-1.5 rounded-full bg-amber-100 px-2.5 py-1 text-[11px] font-semibold text-amber-700">
                       <span className="h-1.5 w-1.5 rounded-full bg-amber-500" />
                       {b.status}
                     </span>
@@ -2157,7 +2055,6 @@ export default function Home() {
             <div>
               <h4 className="font-code text-xs uppercase tracking-wider text-text-tertiary mb-4">Resources</h4>
               <ul className="space-y-2.5 text-sm">
-                <li><a href="#karpathy" className="text-text-secondary hover:text-text-primary transition-colors">Why Now</a></li>
                 <li>
                   <a href={`${GITHUB_URL}/blob/main/LICENSE`} target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-text-primary transition-colors">
                     License
