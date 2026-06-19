@@ -1,5 +1,6 @@
 "use client";
 
+import type { LucideIcon } from "lucide-react";
 import {
   ArrowRight,
   Check,
@@ -29,6 +30,7 @@ import {
   Section,
   SectionHeader,
 } from "@/components/enterprise/primitives";
+import { WoodIcon } from "@/components/wood-icon";
 
 /* ──────────────────────────────────────────────────────────────
    HERO
@@ -94,14 +96,14 @@ function SovLine({
   t,
   s,
 }: {
-  icon: React.ElementType;
+  icon: LucideIcon;
   t: string;
   s: string;
 }) {
   return (
     <div className="flex items-center gap-3 py-2 px-3 rounded-lg bg-bg-warm/60 border border-border">
       <div className="w-9 h-9 rounded-md bg-bg-card border border-border flex items-center justify-center">
-        <Icon className="w-4 h-4 text-accent" />
+        <WoodIcon icon={Icon} className="w-7 h-7" />
       </div>
       <div className="flex-1">
         <p className="text-sm font-semibold text-text-primary">{t}</p>
@@ -168,7 +170,7 @@ function PillarCard({
   title,
   body,
 }: {
-  icon: React.ElementType;
+  icon: LucideIcon;
   tag: string;
   title: string;
   body: string;
@@ -177,7 +179,7 @@ function PillarCard({
     <div className="ent-card ent-card-hover p-6">
       <div className="flex items-center justify-between mb-5">
         <div className="w-11 h-11 rounded-lg bg-accent-bg-subtle border border-accent-bg flex items-center justify-center">
-          <Icon className="w-5 h-5 text-accent" />
+          <WoodIcon icon={Icon} className="w-10 h-10" />
         </div>
         <span className="text-[10px] font-semibold uppercase tracking-widest text-accent bg-accent-bg-subtle border border-accent-bg px-2 py-0.5 rounded">
           {tag}
@@ -374,7 +376,7 @@ function Controls() {
             <div key={g.title} className="ent-card p-6">
               <div className="flex items-center gap-3 mb-5">
                 <div className="w-10 h-10 rounded-lg bg-accent-bg-subtle border border-accent-bg flex items-center justify-center">
-                  <Icon className="w-5 h-5 text-accent" />
+                  <WoodIcon icon={Icon} className="w-9 h-9" />
                 </div>
                 <h3 className="ent-display-3">{g.title}</h3>
               </div>

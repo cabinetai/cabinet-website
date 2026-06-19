@@ -11,6 +11,7 @@ import {
   Star,
 } from "lucide-react";
 import { SiteNavbar } from "@/components/site-navbar";
+import { WoodIcon } from "@/components/wood-icon";
 import { GITHUB_URL } from "@/lib/site-config";
 import { COMPARISONS, ROUNDUPS, THREEWAYS, MIGRATIONS, type Cell } from "@/lib/compare";
 
@@ -202,8 +203,8 @@ export default function CompareHubPage() {
                 href={`/compare/${c.slug}`}
                 className="group flex gap-4 soft-card p-6"
               >
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent-bg text-accent">
-                  <c.icon className="h-5 w-5" aria-hidden />
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl">
+                  <WoodIcon icon={c.icon} className="h-10 w-10" />
                 </div>
                 <div className="min-w-0">
                   <div className="flex items-baseline gap-2">
@@ -239,8 +240,8 @@ export default function CompareHubPage() {
                 href={`/compare/${r.slug}`}
                 className="group flex items-center gap-3 soft-card p-5"
               >
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent-bg text-accent">
-                  <r.icon className="h-5 w-5" aria-hidden />
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg">
+                  <WoodIcon icon={r.icon} className="h-9 w-9" />
                 </div>
                 <div className="min-w-0">
                   <div className="font-display text-text-primary">{r.competitor} alternatives</div>
@@ -267,8 +268,8 @@ export default function CompareHubPage() {
                 href={`/compare/${t.slug}`}
                 className="group flex items-center gap-3 soft-card p-5"
               >
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent-bg text-accent">
-                  <t.icon className="h-5 w-5" aria-hidden />
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg">
+                  <WoodIcon icon={t.icon} className="h-9 w-9" />
                 </div>
                 <div className="min-w-0">
                   <div className="font-display text-text-primary">
@@ -300,8 +301,8 @@ export default function CompareHubPage() {
                 href={`/compare/${m.slug}`}
                 className="group flex items-center gap-3 soft-card p-5"
               >
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-accent-bg text-accent">
-                  <m.icon className="h-5 w-5" aria-hidden />
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg">
+                  <WoodIcon icon={m.icon} className="h-9 w-9" />
                 </div>
                 <div className="min-w-0">
                   <div className="font-display text-text-primary">Migrate from {m.from}</div>
@@ -324,7 +325,7 @@ export default function CompareHubPage() {
           <div className="mt-10 grid gap-4 md:grid-cols-3">
             {WEDGE.map((w) => (
               <div key={w.title} className="soft-card p-6">
-                <w.icon className="h-6 w-6 text-accent" aria-hidden />
+                <WoodIcon icon={w.icon} className="h-12 w-12" />
                 <h3 className="mt-4 font-display text-lg text-text-primary">{w.title}</h3>
                 <p className="mt-2 font-body-serif text-sm leading-relaxed text-text-secondary">
                   {w.body}

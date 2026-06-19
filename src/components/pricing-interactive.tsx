@@ -6,6 +6,7 @@ import { trackEvent } from "@/lib/analytics";
 import { MACOS_DOWNLOAD_URL } from "@/lib/site-config";
 import type { PricingTier } from "@/lib/waitlist-client";
 import { PricingTierCard } from "@/components/pricing-tier-card";
+import { WoodIcon } from "@/components/wood-icon";
 import {
   type BillingPeriod,
   PricingBillingToggle,
@@ -169,8 +170,8 @@ export function PricingInteractive() {
         <div className="soft-card px-6 py-5 md:px-7 md:py-6">
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between md:gap-6">
             <div className="flex items-start gap-3">
-              <div className="shrink-0 inline-flex h-9 w-9 items-center justify-center rounded-lg bg-green-bg text-green-warm">
-                <Users className="h-4 w-4" />
+              <div className="shrink-0 inline-flex h-9 w-9 items-center justify-center rounded-lg">
+                <WoodIcon icon={Users} className="h-8 w-8" />
               </div>
               <div>
                 <h3 className="font-display text-lg text-text-primary mb-0.5">

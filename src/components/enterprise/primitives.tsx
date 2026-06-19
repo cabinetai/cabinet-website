@@ -1,5 +1,6 @@
 import { ArrowRight, Check } from "lucide-react";
 import type { ComponentPropsWithoutRef, ElementType, ReactNode } from "react";
+import { WoodIcon } from "@/components/wood-icon";
 
 /* ──────────────────────────────────────────────────────────────
    Enterprise primitives — shared across all /enterprise/* pages
@@ -161,8 +162,8 @@ export function StatCard({
           {stat}
         </p>
         {Icon && (
-          <div className="w-9 h-9 rounded-lg bg-accent-bg-subtle flex items-center justify-center shrink-0">
-            <Icon className="w-4 h-4 text-accent" />
+          <div className="w-9 h-9 rounded-lg flex items-center justify-center shrink-0">
+            <WoodIcon icon={Icon} className="h-8 w-8" />
           </div>
         )}
       </div>
@@ -191,8 +192,8 @@ export function FeatureCard({
 }) {
   return (
     <div className={`ent-card ent-card-hover p-6 ${className}`}>
-      <div className="w-10 h-10 rounded-lg bg-accent-bg-subtle border border-accent-bg flex items-center justify-center mb-4">
-        <Icon className="w-5 h-5 text-accent" />
+      <div className="w-10 h-10 rounded-lg flex items-center justify-center mb-4">
+        <WoodIcon icon={Icon} className="h-9 w-9" />
       </div>
       <h3 className="ent-display-3 mb-2">{title}</h3>
       <p className="text-[15px] text-text-secondary leading-relaxed font-body-serif">

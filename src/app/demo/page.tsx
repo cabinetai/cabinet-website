@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Check, ShieldCheck, Server, GitBranch } from "lucide-react";
 import { SiteNavbar } from "@/components/site-navbar";
 import { DemoForm } from "@/components/demo-form";
+import { WoodIcon } from "@/components/wood-icon";
 
 export const metadata: Metadata = {
   title: "Book a Cabinet demo",
@@ -71,7 +72,7 @@ export default function DemoPage() {
             <div className="mt-9 space-y-3 border-t border-border pt-6">
               {REASSURE.map((r) => (
                 <div key={r.text} className="flex items-center gap-3">
-                  <r.icon className="h-4 w-4 shrink-0 text-accent" />
+                  <WoodIcon icon={r.icon} className="h-6 w-6 shrink-0" />
                   <span className="font-code text-sm text-text-tertiary">{r.text}</span>
                 </div>
               ))}

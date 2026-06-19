@@ -10,6 +10,7 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import { SiteNavbar } from "@/components/site-navbar";
+import { WoodIcon } from "@/components/wood-icon";
 import { GITHUB_URL } from "@/lib/site-config";
 import { SOLUTIONS, SOLUTION_STORIES, type Solution } from "@/lib/solutions";
 
@@ -135,8 +136,8 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
                 key={a.name}
                 className="flex gap-4 soft-card p-6 card-hover"
               >
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent-bg text-accent">
-                  <Bot className="h-5 w-5" />
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center">
+                  <WoodIcon icon={Bot} className="h-10 w-10" />
                 </div>
                 <div>
                   <div className="flex items-baseline gap-2">
@@ -170,7 +171,7 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
             {solution.routines.map((r) => (
               <div key={r.when} className="flex flex-col gap-1 p-6 sm:flex-row sm:items-center sm:gap-6">
                 <div className="flex shrink-0 items-center gap-2 sm:w-56">
-                  <Clock className="h-4 w-4 text-accent" />
+                  <WoodIcon icon={Clock} className="h-6 w-6" />
                   <span className="font-code text-sm text-accent-warm">{r.when}</span>
                 </div>
                 <p className="font-body-serif leading-relaxed text-text-secondary">{r.what}</p>
@@ -212,7 +213,7 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
           <div className="mt-10 grid gap-4 md:grid-cols-3">
             {WEDGE.map((w) => (
               <div key={w.title} className="soft-card p-6">
-                <w.icon className="h-6 w-6 text-accent" />
+                <WoodIcon icon={w.icon} className="h-12 w-12" />
                 <h3 className="mt-4 font-display text-lg text-text-primary">{w.title}</h3>
                 <p className="mt-2 font-body-serif text-sm leading-relaxed text-text-secondary">
                   {w.body}

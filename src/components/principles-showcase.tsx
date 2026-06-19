@@ -10,6 +10,7 @@ import {
   ShieldCheck,
   Server,
 } from "lucide-react";
+import { woodSrcFor } from "./wood-icon";
 
 type Principle = {
   icon: React.ElementType;
@@ -201,12 +202,24 @@ export function PrinciplesShowcase() {
               className="flex min-h-[58vh] flex-col justify-center py-8"
             >
               <div className="relative overflow-hidden rounded-3xl border border-white/50 bg-white/40 p-8 shadow-[inset_0_1px_0_rgba(255,255,255,0.7),0_24px_60px_-28px_rgba(0,0,0,0.30)] backdrop-blur-xl sm:p-10">
-                {/* oversized blurred icon — ambient watermark, bottom-right */}
-                <Icon
-                  aria-hidden
-                  strokeWidth={1.5}
-                  className={`pointer-events-none absolute -bottom-10 -right-8 h-56 w-56 ${p.iconFg} opacity-[0.14] blur-sm`}
-                />
+                {/* oversized wooden motif — ambient mascot, bottom-right */}
+                {(() => {
+                  const wsrc = woodSrcFor(p.icon);
+                  return wsrc ? (
+                    <img
+                      src={wsrc}
+                      alt=""
+                      aria-hidden
+                      className="pointer-events-none absolute -bottom-6 -right-4 h-44 w-44 select-none object-contain opacity-90 drop-shadow-[0_18px_30px_rgba(0,0,0,0.12)] sm:h-52 sm:w-52"
+                    />
+                  ) : (
+                    <Icon
+                      aria-hidden
+                      strokeWidth={1.5}
+                      className={`pointer-events-none absolute -bottom-10 -right-8 h-56 w-56 ${p.iconFg} opacity-[0.14] blur-sm`}
+                    />
+                  );
+                })()}
                 <div className="relative">
                   <h3 className="font-display text-2xl">
                     <span className={p.iconFg}>{p.name}</span>

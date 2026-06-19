@@ -40,6 +40,7 @@ import {
   SectionHeader,
   StatCard,
 } from "@/components/enterprise/primitives";
+import { WoodIcon } from "@/components/wood-icon";
 
 /* ──────────────────────────────────────────────────────────────
    HERO
@@ -346,7 +347,7 @@ function SubLine({
   return (
     <div className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-card transition-colors">
       <div className="w-9 h-9 rounded-lg bg-bg-card border border-border flex items-center justify-center shrink-0">
-        <Icon className="w-4 h-4 text-accent" />
+        <WoodIcon icon={Icon} className="h-7 w-7" />
       </div>
       <div>
         <p className="text-[15px] font-semibold text-text-primary">{t}</p>
@@ -983,8 +984,8 @@ function TplCard(p: {
         </span>
       )}
       <div className="flex items-start gap-3 mb-4">
-        <div className="w-10 h-10 rounded-lg bg-accent-bg-subtle border border-accent-bg flex items-center justify-center">
-          <Icon className="w-5 h-5 text-accent" />
+        <div className="w-10 h-10 rounded-lg flex items-center justify-center">
+          <WoodIcon icon={Icon} className="h-9 w-9" />
         </div>
         <div>
           <p className="text-[11px] text-text-tertiary font-code">cabinet:{p.name}</p>
@@ -1082,8 +1083,8 @@ function SolutionsPreview() {
           return (
             <div key={p.title} className="ent-card ent-card-hover p-7">
               <div className="flex items-start gap-4 mb-5">
-                <div className="w-12 h-12 rounded-lg bg-accent-bg-subtle border border-accent-bg flex items-center justify-center">
-                  <Icon className="w-5 h-5 text-accent" />
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center">
+                  <WoodIcon icon={Icon} className="h-11 w-11" />
                 </div>
                 <div>
                   <h3 className="ent-display-3">{p.title}</h3>
@@ -1111,7 +1112,7 @@ function QuoteRow() {
   return (
     <section className="bg-bg-warm py-20 md:py-24 border-t border-border">
       <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-        <Quote className="w-8 h-8 mx-auto text-accent/40 mb-6" />
+        <WoodIcon icon={Quote} className="h-10 w-10 mx-auto mb-6" />
         <p className="ent-display-3 italic max-w-3xl mx-auto">
           “Most software helps teams do work. Cabinet helps teams do the{" "}
           <span className="text-accent not-italic font-semibold">right</span>{" "}
@@ -1172,8 +1173,8 @@ function FinalCta() {
 function TrustItem({ icon: Icon, t, b }: { icon: React.ElementType; t: string; b: string }) {
   return (
     <div className="flex items-start gap-3">
-      <div className="w-10 h-10 rounded-lg bg-accent-bg-subtle border border-accent-bg flex items-center justify-center shrink-0">
-        <Icon className="w-4 h-4 text-accent" />
+      <div className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0">
+        <WoodIcon icon={Icon} className="h-9 w-9" />
       </div>
       <div>
         <p className="text-[14px] font-semibold text-text-primary">{t}</p>

@@ -1,5 +1,6 @@
 "use client";
 
+import type { LucideIcon } from "lucide-react";
 import {
   ArrowRight,
   Briefcase,
@@ -29,6 +30,7 @@ import {
   Section,
   SectionHeader,
 } from "@/components/enterprise/primitives";
+import { WoodIcon } from "@/components/wood-icon";
 
 /* ──────────────────────────────────────────────────────────────
    HERO
@@ -78,7 +80,7 @@ function AnchorChip({
   label,
 }: {
   href: string;
-  icon: React.ElementType;
+  icon: LucideIcon;
   label: string;
 }) {
   return (
@@ -86,7 +88,7 @@ function AnchorChip({
       href={href}
       className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-bg-card hover:bg-bg-warm hover:border-border-dark transition-all"
     >
-      <Icon className="w-3.5 h-3.5 text-accent" />
+      <WoodIcon icon={Icon} className="w-5 h-5" />
       <span className="text-sm font-medium text-text-primary">{label}</span>
     </a>
   );

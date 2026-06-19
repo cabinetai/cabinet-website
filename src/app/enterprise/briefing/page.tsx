@@ -1,5 +1,6 @@
 "use client";
 
+import type { LucideIcon } from "lucide-react";
 import {
   ArrowRight,
   Briefcase,
@@ -20,6 +21,7 @@ import {
   Section,
   SectionHeader,
 } from "@/components/enterprise/primitives";
+import { WoodIcon } from "@/components/wood-icon";
 
 /* ──────────────────────────────────────────────────────────────
    HERO + FORM
@@ -142,14 +144,14 @@ function Bullet({
   t,
   s,
 }: {
-  icon: React.ElementType;
+  icon: LucideIcon;
   t: string;
   s: string;
 }) {
   return (
     <div className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-card transition-colors">
       <div className="w-10 h-10 rounded-lg bg-accent-bg-subtle border border-accent-bg flex items-center justify-center shrink-0">
-        <Icon className="w-5 h-5 text-accent" />
+        <WoodIcon icon={Icon} className="w-9 h-9" />
       </div>
       <div>
         <p className="text-[15px] font-semibold text-text-primary">{t}</p>

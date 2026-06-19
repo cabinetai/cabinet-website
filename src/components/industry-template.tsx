@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Check, ShieldCheck } from "lucide-react";
 import { SiteNavbar } from "@/components/site-navbar";
+import { WoodIcon } from "@/components/wood-icon";
 import { INDUSTRIES, type Industry } from "@/lib/industries";
 
 export function IndustryTemplate({ industry }: { industry: Industry }) {
@@ -106,8 +107,8 @@ export function IndustryTemplate({ industry }: { industry: Industry }) {
       {/* ─── Sovereignty ─── */}
       <section className="border-b border-border bg-bg-warm py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
-          <div className="mx-auto mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-accent-bg text-accent">
-            <ShieldCheck className="h-6 w-6" />
+          <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center">
+            <WoodIcon icon={ShieldCheck} className="h-14 w-14" />
           </div>
           <h2 className="font-display text-3xl tracking-tight text-text-primary md:text-4xl">
             Your data never leaves your control

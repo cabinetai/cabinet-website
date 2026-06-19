@@ -33,6 +33,7 @@ import {
   Section,
   SectionHeader,
 } from "@/components/enterprise/primitives";
+import { WoodIcon } from "@/components/wood-icon";
 
 function Hero() {
   return (
@@ -99,8 +100,8 @@ function Pillar({
   return (
     <div className="ent-card ent-card-hover p-6">
       <div className="flex items-start justify-between mb-4">
-        <div className="w-10 h-10 rounded-lg bg-accent-bg-subtle border border-accent-bg flex items-center justify-center">
-          <Icon className="w-5 h-5 text-accent" />
+        <div className="w-10 h-10 rounded-lg flex items-center justify-center">
+          <WoodIcon icon={Icon} className="h-9 w-9" />
         </div>
         <span className="font-display text-2xl text-text-tertiary leading-none">{n}</span>
       </div>
@@ -196,8 +197,8 @@ function FeatureRow({
 }) {
   return (
     <div className="flex items-start gap-4 p-4 rounded-xl border border-border bg-bg-card">
-      <div className="w-10 h-10 rounded-lg bg-accent-bg-subtle border border-accent-bg flex items-center justify-center shrink-0">
-        <Icon className="w-5 h-5 text-accent" />
+      <div className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0">
+        <WoodIcon icon={Icon} className="h-9 w-9" />
       </div>
       <div>
         <p className="text-[15px] font-semibold text-text-primary">{t}</p>
@@ -294,8 +295,8 @@ function AgentCard({
     <div className="ent-card ent-card-hover p-7">
       <div className="flex items-start justify-between mb-5">
         <div className="flex items-start gap-4">
-          <div className="w-12 h-12 rounded-lg bg-accent-bg-subtle border border-accent-bg flex items-center justify-center">
-            <Icon className="w-6 h-6 text-accent" />
+          <div className="w-12 h-12 rounded-lg flex items-center justify-center">
+            <WoodIcon icon={Icon} className="h-11 w-11" />
           </div>
           <div>
             <h3 className="ent-display-3">{name}</h3>
@@ -561,7 +562,7 @@ function McpBlock({
   return (
     <div className={`flex items-center gap-3 rounded-xl border ${tones} px-4 py-3`}>
       <div className="w-9 h-9 rounded-md bg-white/60 border border-border flex items-center justify-center">
-        <Icon className="w-4 h-4 text-accent" />
+        <WoodIcon icon={Icon} className="h-7 w-7" />
       </div>
       <div>
         <p className="text-sm font-semibold text-text-primary">{label}</p>

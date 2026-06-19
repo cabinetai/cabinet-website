@@ -7,6 +7,7 @@ import {
   Trophy,
 } from "lucide-react";
 import { SiteNavbar } from "@/components/site-navbar";
+import { WoodIcon } from "@/components/wood-icon";
 import { GITHUB_URL } from "@/lib/site-config";
 import { compareLabel, type Roundup } from "@/lib/compare";
 
@@ -63,7 +64,7 @@ export function CompareRoundup({ data }: { data: Roundup }) {
       <section className="border-b border-border bg-bg-warm py-20">
         <div className="mx-auto max-w-3xl px-6">
           <div className="inline-flex items-center gap-2 rounded-full border border-accent-bg bg-accent-bg-subtle px-3 py-1 font-code text-xs text-accent-warm">
-            <Trophy className="h-3.5 w-3.5" aria-hidden /> Our pick
+            <WoodIcon icon={Trophy} className="h-6 w-6" /> Our pick
           </div>
           <h2 className="mt-4 font-display text-3xl tracking-tight text-text-primary md:text-4xl">
             {data.topPick.heading}

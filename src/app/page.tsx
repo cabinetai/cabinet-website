@@ -34,6 +34,7 @@ import { WaitlistPopup } from "@/components/waitlist-popup";
 import { IntegrationScene } from "@/components/integration-scene";
 import { PrinciplesShowcase } from "@/components/principles-showcase";
 import { SiteNavbar } from "@/components/site-navbar";
+import { WoodIcon } from "@/components/wood-icon";
 import { SOLUTIONS, SOLUTION_STORIES } from "@/lib/solutions";
 import { DISCORD_URL, GITHUB_URL, MACOS_DOWNLOAD_URL } from "@/lib/site-config";
 
@@ -1577,11 +1578,11 @@ export default function Home() {
       {/* ─── Social proof bar ─── */}
       <section className="border-y border-border py-8 bg-bg-card">
         <div className="max-w-6xl mx-auto px-6 flex flex-wrap items-center justify-center gap-8 md:gap-16 text-text-tertiary text-sm font-code">
-          <div className="flex items-center gap-2"><FileText className="w-4 h-4" /><span>Markdown on disk</span></div>
-          <div className="flex items-center gap-2"><Shield className="w-4 h-4" /><span>Self-hosted</span></div>
-          <div className="flex items-center gap-2"><GitBranch className="w-4 h-4" /><span>Git-backed</span></div>
-          <div className="flex items-center gap-2"><Bot className="w-4 h-4" /><span>AI-native</span></div>
-          <div className="flex items-center gap-2"><Code2 className="w-4 h-4" /><span>Open source</span></div>
+          <div className="flex items-center gap-2"><WoodIcon icon={FileText} className="w-6 h-6" /><span>Markdown on disk</span></div>
+          <div className="flex items-center gap-2"><WoodIcon icon={Shield} className="w-6 h-6" /><span>Self-hosted</span></div>
+          <div className="flex items-center gap-2"><WoodIcon icon={GitBranch} className="w-6 h-6" /><span>Git-backed</span></div>
+          <div className="flex items-center gap-2"><WoodIcon icon={Bot} className="w-6 h-6" /><span>AI-native</span></div>
+          <div className="flex items-center gap-2"><WoodIcon icon={Code2} className="w-6 h-6" /><span>Open source</span></div>
         </div>
       </section>
 
@@ -1656,8 +1657,8 @@ export default function Home() {
               </p>
             </div>
             <div className="text-center p-8 rounded-xl border border-border bg-bg-card">
-              <div className="w-12 h-12 mx-auto rounded-xl bg-accent-bg-subtle flex items-center justify-center mb-4">
-                <Users className="w-6 h-6 text-accent" />
+              <div className="w-14 h-14 mx-auto flex items-center justify-center mb-4">
+                <WoodIcon icon={Users} className="w-12 h-12" />
               </div>
               <h3 className="font-display text-lg mb-2 text-text-primary">Design Principle</h3>
               <p className="text-sm text-text-secondary font-body-serif italic">

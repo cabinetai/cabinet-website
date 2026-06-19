@@ -8,6 +8,7 @@ import {
   ChevronDown,
 } from "lucide-react";
 import { SiteNavbar } from "@/components/site-navbar";
+import { WoodIcon } from "@/components/wood-icon";
 import { CompareVerdict } from "@/components/compare-verdict";
 import { CompareTable } from "@/components/compare-table";
 import { GITHUB_URL } from "@/lib/site-config";
@@ -103,7 +104,7 @@ export function CompareHeadToHead({ data }: { data: Comparison }) {
           <div className="mt-10 grid gap-5 md:grid-cols-3">
             {data.differentiators.map((d) => (
               <div key={d.title} className="flex flex-col soft-card p-6">
-                <d.icon className="h-6 w-6 text-accent" aria-hidden />
+                <WoodIcon icon={d.icon} className="h-12 w-12" />
                 <h3 className="mt-4 font-display text-lg text-text-primary">{d.title}</h3>
                 <p className="mt-2 font-body-serif text-sm leading-relaxed text-text-secondary">
                   {d.body}
@@ -159,8 +160,8 @@ export function CompareHeadToHead({ data }: { data: Comparison }) {
         <section className="border-b border-border py-16">
           <div className="mx-auto max-w-3xl px-6">
             <div className="flex flex-col gap-4 soft-card p-7 sm:flex-row sm:items-start sm:gap-6">
-              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent-bg text-accent">
-                <ArrowRightLeft className="h-5 w-5" aria-hidden />
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl">
+                <WoodIcon icon={ArrowRightLeft} className="h-10 w-10" />
               </div>
               <div>
                 <h2 className="font-display text-xl text-text-primary">
@@ -186,7 +187,7 @@ export function CompareHeadToHead({ data }: { data: Comparison }) {
               </span>
             </div>
             <figure className="mt-8 soft-card p-8 sm:p-10">
-              <Quote className="h-7 w-7 text-accent-light" aria-hidden />
+              <WoodIcon icon={Quote} className="h-10 w-10" />
               <blockquote className="mt-4 font-display text-xl leading-snug tracking-tight text-text-primary md:text-2xl">
                 {data.switcher.quote}
               </blockquote>
