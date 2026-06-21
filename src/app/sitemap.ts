@@ -23,6 +23,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/industries",
     "/enterprise",
     "/cloud",
+    "/use-cases",
+    "/use-cases/ai-agent-swarm-product-audit",
   ];
 
   const compareRoutes = allCompareSlugs().map((slug) => `/compare/${slug}`);

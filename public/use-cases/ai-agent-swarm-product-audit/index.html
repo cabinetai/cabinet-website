@@ -1,0 +1,1028 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Canonical & indexing -->
+<link rel="canonical" href="https://runcabinet.com/use-cases/ai-agent-swarm-product-audit" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="googlebot" content="index, follow" />
+
+<!-- Primary -->
+<title>My AI agent swarm shipped 60 UI fixes in 60 minutes. I never touched the code</title>
+<meta name="description" content="Cabinet runs on a swarm of AI agents. I put one specialist in the lead, let it audit my whole app, file 65 UX/UI issues and fix 60, then approve every change in a review app it built me. The exact setup, step by step." />
+<meta name="author" content="Hila Shmuel" />
+<meta name="publisher" content="Cabinet" />
+<meta name="keywords" content="AI agents, AI agent swarm, product audit, UX audit, UI fixes, Cabinet, runcabinet, AI workflow, agentic workflow, automated product review, review app, Nikita Bier, AI teammates, product polish, accessibility audit, ship faster, no code" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Cabinet" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content="https://runcabinet.com/use-cases/ai-agent-swarm-product-audit" />
+<meta property="og:title" content="My AI agent swarm shipped 60 UI fixes in 60 minutes. I never touched the code" />
+<meta property="og:description" content="How I aimed Cabinet's agent swarm at my own product, fixed 60 UI issues, and approved every change in a review app it built me. Steal the setup." />
+<meta property="og:image" content="https://runcabinet.com/use-cases/ai-agent-swarm-product-audit/assets/img/og-cover.png" />
+<meta property="og:image:secure_url" content="https://runcabinet.com/use-cases/ai-agent-swarm-product-audit/assets/img/og-cover.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Cabinet: 60 UI fixes in 60 minutes, shipped by an AI agent swarm." />
+<meta property="article:published_time" content="2026-06-20T09:00:00-07:00" />
+<meta property="article:modified_time" content="2026-06-20T09:00:00-07:00" />
+<meta property="article:author" content="https://x.com/HilaShmuel" />
+<meta property="article:section" content="How teams use Cabinet" />
+<meta property="article:tag" content="AI agents" />
+<meta property="article:tag" content="AI agent swarm" />
+<meta property="article:tag" content="Product audit" />
+<meta property="article:tag" content="UX" />
+<meta property="article:tag" content="Cabinet" />
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@HilaShmuel" />
+<meta name="twitter:creator" content="@HilaShmuel" />
+<meta name="twitter:title" content="My AI agent swarm shipped 60 UI fixes in 60 minutes" />
+<meta name="twitter:description" content="I aimed Cabinet's agent swarm at my own product, fixed 60 UI issues, and approved every change in a review app it built me. The exact setup." />
+<meta name="twitter:image" content="https://runcabinet.com/use-cases/ai-agent-swarm-product-audit/assets/img/og-cover.png" />
+<meta name="twitter:image:alt" content="Cabinet: 60 UI fixes in 60 minutes, shipped by an AI agent swarm." />
+
+<!-- Icons & theme -->
+<link rel="icon" type="image/png" sizes="64x64" href="/use-cases/ai-agent-swarm-product-audit/assets/img/favicon.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/use-cases/ai-agent-swarm-product-audit/assets/img/apple-touch-icon.png" />
+<meta name="theme-color" content="#FAF6F1" />
+
+<!-- Structured data: Article + HowTo + Organization + Person + Breadcrumb -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://runcabinet.com/#organization",
+      "name": "Cabinet",
+      "url": "https://runcabinet.com",
+      "logo": { "@type": "ImageObject", "url": "https://runcabinet.com/brand/cabinet-logo.png" },
+      "sameAs": ["https://x.com/HilaShmuel"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://runcabinet.com/#website",
+      "url": "https://runcabinet.com",
+      "name": "Cabinet",
+      "publisher": { "@id": "https://runcabinet.com/#organization" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://runcabinet.com/#hila",
+      "name": "Hila Shmuel",
+      "jobTitle": "Founder, Cabinet",
+      "url": "https://runcabinet.com",
+      "sameAs": ["https://x.com/HilaShmuel"]
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://runcabinet.com/use-cases/ai-agent-swarm-product-audit/#primaryimage",
+      "url": "https://runcabinet.com/use-cases/ai-agent-swarm-product-audit/assets/img/og-cover.png",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://runcabinet.com/use-cases/ai-agent-swarm-product-audit/#webpage",
+      "url": "https://runcabinet.com/use-cases/ai-agent-swarm-product-audit",
+      "name": "My AI agent swarm shipped 60 UI fixes in 60 minutes",
+      "isPartOf": { "@id": "https://runcabinet.com/#website" },
+      "primaryImageOfPage": { "@id": "https://runcabinet.com/use-cases/ai-agent-swarm-product-audit/#primaryimage" },
+      "inLanguage": "en-US",
+      "datePublished": "2026-06-20T09:00:00-07:00",
+      "dateModified": "2026-06-20T09:00:00-07:00"
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://runcabinet.com/use-cases/ai-agent-swarm-product-audit/#article",
+      "isPartOf": { "@id": "https://runcabinet.com/use-cases/ai-agent-swarm-product-audit/#webpage" },
+      "mainEntityOfPage": { "@id": "https://runcabinet.com/use-cases/ai-agent-swarm-product-audit/#webpage" },
+      "headline": "My AI agent swarm shipped 60 UI fixes in 60 minutes. I never touched the code",
+      "description": "How I aimed Cabinet's agent swarm at my own product, fixed 60 UI issues, and approved every change in a review app it built me. The exact setup, step by step.",
+      "image": { "@id": "https://runcabinet.com/use-cases/ai-agent-swarm-product-audit/#primaryimage" },
+      "datePublished": "2026-06-20T09:00:00-07:00",
+      "dateModified": "2026-06-20T09:00:00-07:00",
+      "author": { "@id": "https://runcabinet.com/#hila" },
+      "publisher": { "@id": "https://runcabinet.com/#organization" },
+      "articleSection": "How teams use Cabinet",
+      "inLanguage": "en-US",
+      "keywords": ["AI agents", "AI agent swarm", "product audit", "UX audit", "UI fixes", "Cabinet", "review app", "Nikita Bier", "agentic workflow"]
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://runcabinet.com/use-cases/ai-agent-swarm-product-audit/#howto",
+      "name": "Run an AI product audit with the Cabinet Audits cabinet",
+      "description": "Point an AI agent swarm at your product, file every UX/UI issue, ship the fixes, and approve each one in a review app the agent builds for you.",
+      "totalTime": "PT1H",
+      "tool": [
+        { "@type": "HowToTool", "name": "Cabinet" },
+        { "@type": "HowToTool", "name": "The Audits cabinet" }
+      ],
+      "step": [
+        { "@type": "HowToStep", "position": 1, "name": "Point the swarm at your product", "text": "Install the Audits cabinet and put a product-specialist agent in the lead. Tell it who to be and how high to aim, then let it open your product in a real browser." },
+        { "@type": "HowToStep", "position": 2, "name": "Let it look at every screen and write up the problems", "text": "The agent screenshots every screen and saves each problem as its own markdown file with a severity (P1 to P3) and an area tag." },
+        { "@type": "HowToStep", "position": 3, "name": "Pick the fixes that matter most", "text": "Ask for the top 10 highest-leverage fixes. The agent ranks them and flags root-cause issues that close several findings at once." },
+        { "@type": "HowToStep", "position": 4, "name": "Ship the fixes, one commit at a time", "text": "The Product Senior agent writes each fix in the real code, records the file and line it changed, and saves one commit per fix." },
+        { "@type": "HowToStep", "position": 5, "name": "Build an app to approve everything", "text": "The cabinet generates a small web app: one card per fix showing what was wrong, what changed, and the screenshot, with pass, fail, skip and comment." },
+        { "@type": "HowToStep", "position": 6, "name": "Approve, and loop the rejects back", "text": "Approve the good fixes and reject the rest with a note. Each rejection goes back to the agent as the new instruction, and it re-ships." }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://runcabinet.com/use-cases/ai-agent-swarm-product-audit/#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Cabinet", "item": "https://runcabinet.com" },
+        { "@type": "ListItem", "position": 2, "name": "How teams use Cabinet", "item": "https://runcabinet.com/use-cases" },
+        { "@type": "ListItem", "position": 3, "name": "AI agent swarm product audit" }
+      ]
+    }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#FAF6F1; --bg-warm:#F3EDE4; --paper:#FFFDFA;
+    --text:#3B2F2F; --text-dim:#6B5B4F; --text-faint:#9A8979;
+    --accent:#8B5E3C; --accent-bg:#F5E6D3; --accent-strong:#74492C;
+    --border:#E8DDD0; --border-soft:#EFE7DB;
+    --pass:#3F7E54; --pass-bg:#E9F1E9; --fail:#B23B3B; --fail-bg:#F6E6E2; --skip:#9A8979;
+    --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    --serif:"Instrument Serif",Georgia,serif;
+    --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+    --maxw:760px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:var(--sans); font-size:19px; line-height:1.7;
+    -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+  }
+  ::selection{background:var(--accent-bg)}
+
+  /* ---------- site nav (matches runcabinet.com) ---------- */
+  .site-nav{position:sticky; top:0; z-index:50; padding:12px 0; pointer-events:none}
+  .site-nav__inner{max-width:1200px; margin:0 auto; padding:0 24px; display:flex; align-items:center; gap:10px; pointer-events:auto}
+  .glass-pill{position:relative; border-radius:9999px;
+    background:linear-gradient(180deg, rgba(255,255,255,.55) 0%, rgba(255,255,255,.36) 100%);
+    -webkit-backdrop-filter:blur(16px) saturate(185%); backdrop-filter:blur(16px) saturate(185%);
+    box-shadow:inset 0 1px 0 0 rgba(255,255,255,.9), inset 0 0 0 1px rgba(255,255,255,.22), 0 10px 24px -14px rgba(59,47,47,.4);
+    transition:background .2s ease, box-shadow .2s ease, transform .15s ease}
+  .glass-pill:hover{background:linear-gradient(180deg, rgba(255,255,255,.72) 0%, rgba(255,255,255,.52) 100%); transform:translateY(-1px)}
+  .np-logo{display:inline-flex; align-items:center; gap:10px; height:44px; padding:0 16px 0 10px; flex-shrink:0; text-decoration:none}
+  .np-logo img{height:36px; width:auto; display:block}
+  .np-logo span{font-family:var(--serif); font-style:italic; font-size:22px; letter-spacing:-.5px; color:var(--text)}
+  .np-links{display:flex; align-items:center; gap:8px}
+  .np-link{display:inline-flex; align-items:center; height:40px; padding:0 16px; font-family:var(--sans); font-size:14px; font-weight:500; color:var(--text-dim); text-decoration:none; white-space:nowrap}
+  .np-link:hover{color:var(--text)}
+  .np-actions{margin-left:auto; display:flex; align-items:center; gap:10px}
+  .np-actions .star{color:var(--accent)}
+  .btn-wood{display:inline-flex; align-items:center; gap:8px; height:44px; padding:0 20px; border-radius:9999px;
+    font-family:var(--sans); font-weight:700; font-size:14px; color:#5a3e2b; text-decoration:none;
+    background:linear-gradient(180deg, rgba(255,255,255,.5) 0%, rgba(255,255,255,.12) 40%, rgba(255,255,255,0) 56%), linear-gradient(180deg, #ecd9b8 0%, #e1c79f 55%, #d7ba8b 100%);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.65), inset 0 -2px 5px rgba(120,80,45,.22), inset 0 0 0 1px rgba(170,125,80,.45), 0 8px 20px -10px rgba(120,80,45,.45);
+    transition:transform .12s ease, filter .2s ease}
+  .btn-wood:hover{transform:translateY(-1px); filter:brightness(1.03)}
+  @media(max-width:1100px){.np-links{display:none}}
+  @media(max-width:680px){.np-gh,.np-demo{display:none}}
+
+  /* ---------- layout ---------- */
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px}
+  .wide{max-width:1080px; margin:0 auto; padding:0 24px}
+
+  /* ---------- hero ---------- */
+  header.hero{padding:72px 0 26px; position:relative}
+  .hero-bot{position:absolute; right:3%; top:104px; width:158px; height:auto; pointer-events:none;
+    filter:drop-shadow(0 16px 32px rgba(59,47,47,.2)); animation:float 5.5s ease-in-out infinite}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+  @media(max-width:1180px){.hero-bot{display:none}}
+  .footer-logo{height:60px; width:auto; display:block; margin:0 auto 18px}
+  .tweet-embed{max-width:1100px; margin:22px auto 12px; padding:0 16px; text-align:center}
+  .tweet-embed .twitter-tweet{margin-left:auto !important; margin-right:auto !important;
+    border-left:0 !important; padding:0 !important; font-family:var(--sans) !important; font-style:normal !important; font-size:15px !important}
+  /* the rendered card maxes out at 550px, so scale it up; layout still reserves space */
+  .tweet-embed .twitter-tweet-rendered{zoom:1.95}
+  .tweet-embed iframe{border-radius:20px !important; box-shadow:0 22px 55px rgba(59,47,47,.18) !important; overflow:hidden !important}
+  .kicker{
+    font-family:var(--mono); font-size:13px; font-weight:600; letter-spacing:1.5px;
+    text-transform:uppercase; color:var(--accent); margin-bottom:22px;
+  }
+  h1.title{
+    font-family:var(--serif); font-weight:400; font-size:clamp(40px,6.4vw,68px);
+    line-height:1.04; letter-spacing:-1px; margin:0 0 24px; color:var(--text);
+  }
+  .dek{font-size:22px; line-height:1.55; color:var(--text-dim); margin:0 0 34px; max-width:660px}
+  .byline{display:flex; align-items:center; gap:14px; font-size:15px; color:var(--text-faint);
+    border-top:1px solid var(--border); border-bottom:1px solid var(--border); padding:16px 0; margin-bottom:8px}
+  .byline .avatar{width:44px;height:44px;border-radius:50%; object-fit:cover; border:1px solid var(--border); background:var(--bg-warm)}
+  .byline strong{color:var(--text); font-weight:600}
+
+  /* ---------- stat row ---------- */
+  .stats{display:flex; flex-wrap:wrap; gap:14px; margin:34px 0 8px}
+  .stat{flex:1 1 150px; background:var(--paper); border:1px solid var(--border);
+    border-radius:14px; padding:18px 20px; box-shadow:0 1px 0 rgba(0,0,0,.02)}
+  .stat .n{font-family:var(--serif); font-size:46px; line-height:1; color:var(--accent); letter-spacing:-1px}
+  .stat .l{font-size:14px; color:var(--text-dim); margin-top:8px}
+
+  /* ---------- prose ---------- */
+  main{padding:18px 0 40px}
+  section{margin:0 0 8px}
+  h2{font-family:var(--serif); font-weight:400; font-size:clamp(30px,4.2vw,40px);
+    line-height:1.12; letter-spacing:-.5px; margin:64px 0 6px; color:var(--text)}
+  h2 .num{font-family:var(--mono); font-size:15px; font-weight:600; color:var(--accent);
+    display:block; letter-spacing:1px; margin-bottom:10px; text-transform:uppercase}
+  h3{font-family:var(--sans); font-weight:700; font-size:21px; margin:38px 0 4px; letter-spacing:-.2px}
+  p{margin:18px 0}
+  a{color:var(--accent-strong); text-decoration:underline; text-underline-offset:2px; text-decoration-thickness:1px}
+  a:hover{color:var(--accent)}
+  strong{font-weight:600; color:var(--text)}
+  em{font-style:italic}
+  blockquote{margin:30px 0; padding:6px 0 6px 26px; border-left:3px solid var(--accent);
+    font-family:var(--serif); font-style:italic; font-size:27px; line-height:1.4; color:var(--text)}
+  ul.clean{list-style:none; padding:0; margin:22px 0}
+  ul.clean li{position:relative; padding:10px 0 10px 34px; border-bottom:1px solid var(--border-soft)}
+  ul.clean li:last-child{border-bottom:0}
+  ul.clean li::before{content:"→"; position:absolute; left:4px; top:10px; color:var(--accent); font-weight:700}
+  code{font-family:var(--mono); font-size:.84em; background:var(--accent-bg); color:var(--accent-strong);
+    padding:2px 7px; border-radius:6px}
+
+  /* ---------- callout / tldr ---------- */
+  .card{background:var(--paper); border:1px solid var(--border); border-radius:16px;
+    padding:28px 30px; margin:30px 0; box-shadow:0 6px 24px rgba(59,47,47,.05)}
+  .card.warm{background:var(--bg-warm)}
+  .card .label{font-family:var(--mono); font-size:12px; font-weight:600; letter-spacing:1.5px;
+    text-transform:uppercase; color:var(--accent); margin-bottom:14px}
+  .card h3{margin-top:0}
+
+  /* ---------- figures ---------- */
+  figure{margin:34px 0}
+  figure img{width:100%; display:block; border-radius:12px; border:1px solid var(--border);
+    box-shadow:0 18px 50px rgba(59,47,47,.13)}
+  figcaption{font-size:14px; color:var(--text-faint); margin-top:12px; text-align:center; font-style:italic}
+  .figrow{display:grid; grid-template-columns:1fr 1fr; gap:18px}
+  @media(max-width:680px){.figrow{grid-template-columns:1fr}}
+
+  /* ---------- prompt blocks ---------- */
+  .prompt{position:relative; background:#2A211C; color:#F3E9DD; border-radius:14px;
+    margin:26px 0; box-shadow:0 14px 40px rgba(42,33,28,.3); overflow:hidden}
+  .prompt .head{display:flex; align-items:center; justify-content:space-between;
+    padding:11px 16px; background:rgba(255,255,255,.05); border-bottom:1px solid rgba(255,255,255,.08)}
+  .prompt .head .who{font-family:var(--mono); font-size:12px; letter-spacing:1px; text-transform:uppercase; color:#E6B98A}
+  .prompt .copy{font-family:var(--sans); font-size:12px; font-weight:600; color:#F3E9DD;
+    background:rgba(255,255,255,.1); border:0; border-radius:7px; padding:6px 12px; cursor:pointer; transition:background .15s}
+  .prompt .copy:hover{background:rgba(255,255,255,.2)}
+  .prompt .copy.done{background:var(--pass); color:#fff}
+  .prompt pre{margin:0; padding:20px 22px; font-family:var(--mono); font-size:14.5px; line-height:1.65;
+    white-space:pre-wrap; word-break:break-word}
+
+  /* ---------- step chips ---------- */
+  .step{font-family:var(--mono); font-size:13px; font-weight:600; color:#fff; background:var(--accent);
+    display:inline-block; padding:4px 12px; border-radius:20px; letter-spacing:.5px; margin-bottom:4px}
+
+  /* ================= LIVE ARTIFACT: review app ================= */
+  .demo-frame{max-width:1080px; margin:30px auto; background:var(--bg); border:1px solid var(--border);
+    border-radius:18px; box-shadow:0 30px 70px rgba(59,47,47,.18); overflow:hidden}
+  .demo-tag{display:flex; gap:8px; align-items:center; font-family:var(--mono); font-size:12px; font-weight:600;
+    letter-spacing:1px; text-transform:uppercase; color:var(--accent); justify-content:center; margin:42px 0 -8px}
+  .demo-tag::before,.demo-tag::after{content:""; height:1px; width:60px; background:var(--border)}
+
+  .ra-top{display:flex; align-items:center; justify-content:space-between; padding:18px 26px 6px}
+  .ra-title{font-family:var(--serif); font-style:italic; font-size:26px; letter-spacing:-.3px}
+  .ra-title small{font-style:normal; font-family:var(--sans); font-size:13px; color:var(--text-faint); margin-left:8px; letter-spacing:0}
+  .ra-actions{display:flex; gap:8px}
+  .ra-btn{font-family:var(--sans); font-size:13px; font-weight:600; color:var(--text);
+    background:var(--paper); border:1px solid var(--border); border-radius:9px; padding:8px 14px; cursor:pointer; transition:.15s}
+  .ra-btn:hover{border-color:var(--accent); color:var(--accent)}
+  .ra-progress{height:6px; background:var(--border-soft); margin:8px 26px 0; border-radius:6px; overflow:hidden}
+  .ra-progress > i{display:block; height:100%; background:var(--accent); width:0%; transition:width .3s ease}
+  .ra-counts{display:flex; gap:16px; justify-content:flex-end; padding:8px 26px 0; font-family:var(--mono); font-size:13px; color:var(--text-dim)}
+  .ra-counts b{color:var(--text)}
+  .ra-counts .c-pass{color:var(--pass)} .ra-counts .c-fail{color:var(--fail)} .ra-counts .c-skip{color:var(--skip)}
+
+  .ra-stage{padding:18px 26px 26px}
+  .ra-card{background:var(--paper); border:1px solid var(--border); border-radius:16px; padding:26px; box-shadow:0 8px 24px rgba(59,47,47,.06)}
+  .ra-meta{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:12px}
+  .pill{font-family:var(--mono); font-size:12px; font-weight:600; padding:3px 10px; border-radius:20px; letter-spacing:.5px}
+  .pill.id{background:#EFE7DB; color:var(--text)}
+  .pill.sev{background:#EFE7DB; color:var(--text-dim)}
+  .pill.sev.P1{background:#F6E0DC; color:#A23A2E}
+  .pill.sev.P2{background:#F6EEDB; color:#9A6B1E}
+  .pill.area{background:transparent; color:var(--text-faint); border:1px solid var(--border)}
+  .pill.verdict{margin-left:auto; font-size:13px}
+  .pill.verdict.pass{background:var(--pass-bg); color:var(--pass)}
+  .pill.verdict.fail{background:var(--fail-bg); color:var(--fail)}
+  .pill.verdict.skip{background:#EFEAE2; color:var(--skip)}
+  .pill.verdict.none{background:#EFEAE2; color:var(--text-faint)}
+  .ra-card h3.issue{font-family:var(--serif); font-weight:400; font-size:30px; line-height:1.15; margin:2px 0 18px; letter-spacing:-.3px}
+  .ra-shot{width:100%; border-radius:10px; border:1px solid var(--border); display:block}
+  .ra-shotcap{font-family:var(--mono); font-size:12px; color:var(--text-faint); text-align:center; margin:8px 0 20px}
+  .ra-cols{display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-bottom:20px}
+  @media(max-width:680px){.ra-cols{grid-template-columns:1fr}}
+  .ra-col{background:var(--bg-warm); border-radius:12px; padding:18px 20px}
+  .ra-col .h{font-family:var(--mono); font-size:12px; font-weight:600; letter-spacing:1px; text-transform:uppercase; color:var(--text-dim); margin-bottom:10px; display:flex; align-items:center; gap:8px}
+  .ra-col .h::before{content:""; width:8px; height:8px; border-radius:50%; background:var(--accent)}
+  .ra-col p{margin:0; font-size:16px; line-height:1.55}
+  .ra-col code{font-size:12.5px}
+  .ra-comments label{font-family:var(--mono); font-size:12px; font-weight:600; letter-spacing:1px; text-transform:uppercase; color:var(--text-dim)}
+  .ra-comments textarea{width:100%; margin-top:8px; min-height:60px; resize:vertical; font-family:var(--sans);
+    font-size:15px; color:var(--text); background:var(--bg); border:1px solid var(--border); border-radius:10px; padding:12px 14px}
+  .ra-comments textarea:focus{outline:none; border-color:var(--accent)}
+  .ra-nav{display:flex; align-items:center; gap:10px; margin-top:20px; flex-wrap:wrap}
+  .vbtn{font-family:var(--sans); font-size:15px; font-weight:600; border-radius:10px; padding:11px 18px; cursor:pointer; border:1px solid var(--border); background:var(--paper); color:var(--text); transition:.15s; display:inline-flex; align-items:center; gap:8px}
+  .vbtn kbd{font-family:var(--mono); font-size:11px; background:rgba(0,0,0,.07); border-radius:4px; padding:1px 6px}
+  .vbtn.pass{border-color:var(--pass); color:var(--pass)} .vbtn.pass.on{background:var(--pass); color:#fff; border-color:var(--pass)}
+  .vbtn.fail{border-color:var(--fail); color:var(--fail)} .vbtn.fail.on{background:var(--fail); color:#fff; border-color:var(--fail)}
+  .vbtn.skip.on{background:var(--skip); color:#fff; border-color:var(--skip)}
+  .vbtn:hover{transform:translateY(-1px)}
+  .vbtn.ghost{margin-left:0}
+  .ra-nav .spacer{flex:1}
+  .ra-foot{font-family:var(--mono); font-size:12px; color:var(--text-faint); text-align:center; padding:0 26px 20px}
+  .ra-foot kbd{background:rgba(0,0,0,.06); border-radius:4px; padding:1px 5px}
+
+  /* summary table inside demo */
+  .ra-summary{padding:8px 26px 26px}
+  .ra-summary h3{font-family:var(--serif); font-weight:400; font-size:30px; margin:6px 0 4px}
+  .ra-summary .sub{color:var(--text-dim); font-size:15px; margin-bottom:18px}
+  table.sum{width:100%; border-collapse:collapse; font-size:14.5px}
+  table.sum th{font-family:var(--mono); font-size:11px; letter-spacing:1px; text-transform:uppercase; color:var(--text-faint); text-align:left; padding:10px 10px; border-bottom:1px solid var(--border)}
+  table.sum td{padding:12px 10px; border-bottom:1px solid var(--border-soft); vertical-align:top}
+  table.sum tr:hover{background:var(--bg-warm)}
+  table.sum .t-id{font-family:var(--mono); color:var(--text-faint)}
+  table.sum .t-sev{font-family:var(--mono); font-weight:600}
+  table.sum .t-area{font-family:var(--mono); font-size:12px; color:var(--text-faint)}
+  table.sum .v-pass{color:var(--pass); font-weight:600} .v-fail{color:var(--fail); font-weight:600} .v-skip{color:var(--skip)} .v-none{color:var(--text-faint)}
+  table.sum .t-cmt{color:var(--text-dim); font-style:italic; font-size:13.5px}
+  .hidden{display:none}
+
+  /* ---------- install / CTA ---------- */
+  .install{background:linear-gradient(160deg,#2A211C,#3B2A20); color:#F3E9DD; border-radius:22px;
+    padding:48px 40px; margin:54px auto; max-width:1080px; box-shadow:0 30px 80px rgba(42,33,28,.4)}
+  .install h2{color:#fff; margin:0 0 10px}
+  .install .num{color:#E6B98A}
+  .install p{color:#E2D3C4}
+  .install strong,.way strong{color:#FBEAD4; font-weight:600}
+  .install a:not(.bigcta){color:#E6B98A}
+  .install .ways{display:grid; grid-template-columns:1fr 1fr; gap:18px; margin:28px 0 6px}
+  @media(max-width:680px){.install .ways{grid-template-columns:1fr}}
+  .way{background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.12); border-radius:14px; padding:22px}
+  .way .w-h{font-family:var(--mono); font-size:12px; letter-spacing:1px; text-transform:uppercase; color:#E6B98A; margin-bottom:12px}
+  .way ol{margin:0; padding-left:20px} .way li{margin:6px 0; color:#EFE2D5}
+  .way code{background:rgba(255,255,255,.12); color:#FBEAD4}
+  .bigcta{display:inline-flex; align-items:center; gap:10px; font-family:var(--sans); font-weight:700; font-size:18px;
+    background:#E6B98A; color:#2A211C; text-decoration:none; padding:16px 28px; border-radius:12px; margin-top:18px;
+    box-shadow:0 12px 30px rgba(230,185,138,.3); transition:transform .15s}
+  .bigcta:hover{transform:translateY(-2px); color:#2A211C}
+  .install .meta{font-family:var(--mono); font-size:13px; color:#C9B6A4; margin-top:14px}
+
+  footer{padding:50px 0 70px; text-align:center; color:var(--text-faint); font-size:15px; border-top:1px solid var(--border); margin-top:40px}
+  footer a{font-family:var(--serif); font-style:italic; font-size:22px; color:var(--accent-strong)}
+
+  .tocjump{font-family:var(--sans); font-size:14px; font-weight:600}
+
+  /* ---------- use-case box ---------- */
+  .usecase{background:var(--accent-bg); border:1px solid #E7D2B8; border-radius:18px; padding:30px 32px; margin:34px 0}
+  .usecase .label{font-family:var(--mono); font-size:12px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; color:var(--accent-strong); margin-bottom:8px}
+  .usecase h3{font-family:var(--serif); font-weight:400; font-size:28px; margin:0 0 4px; letter-spacing:-.3px}
+  .usecase ul{list-style:none; padding:0; margin:18px 0 0}
+  .usecase li{display:flex; align-items:center; gap:18px; min-height:56px; padding:12px 0; font-size:18px; border-top:1px solid #EAD8C0}
+  .usecase li:first-child{border-top:0}
+  .usecase .uc-ico{flex:0 0 auto; width:52px; height:52px; object-fit:contain; filter:drop-shadow(0 4px 9px rgba(59,47,47,.14))}
+  .usecase li b{font-weight:600}
+
+  /* ---------- terminal / file-tree block ---------- */
+  .term{background:#221A15; color:#EAD9C6; border-radius:14px; margin:24px 0; overflow:hidden; box-shadow:0 12px 34px rgba(34,26,21,.28)}
+  .term .bar{display:flex; gap:7px; padding:12px 16px; background:rgba(255,255,255,.04); border-bottom:1px solid rgba(255,255,255,.07)}
+  .term .bar i{width:11px; height:11px; border-radius:50%; background:#5b4a3d; display:block}
+  .term pre{margin:0; padding:18px 20px; font-family:var(--mono); font-size:13.5px; line-height:1.7; white-space:pre; overflow-x:auto}
+  .term .cmt{color:#9C8775} .term .cmd{color:#FBE3C4} .term .arr{color:#8FB89A}
+
+  /* ---------- inline video ---------- */
+  figure.vid{position:relative}
+  figure.vid video{width:100%; display:block; border-radius:12px; border:1px solid var(--border);
+    box-shadow:0 18px 50px rgba(59,47,47,.13); background:#000}
+  .vidtag{position:absolute; top:14px; left:14px; z-index:2; display:flex; align-items:center; gap:7px;
+    font-family:var(--mono); font-size:11px; font-weight:600; letter-spacing:1px; text-transform:uppercase;
+    color:#fff; background:rgba(20,14,12,.62); padding:6px 11px; border-radius:20px; backdrop-filter:blur(4px); pointer-events:none}
+  .vidtag .dot{width:7px; height:7px; border-radius:50%; background:#FF5A5A; box-shadow:0 0 0 0 rgba(255,90,90,.6); animation:pulse 1.8s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,90,90,.55)}70%{box-shadow:0 0 0 7px rgba(255,90,90,0)}100%{box-shadow:0 0 0 0 rgba(255,90,90,0)}}
+
+  /* ---------- section + install brand icons ---------- */
+  .sec-ico{display:block; width:74px; height:74px; object-fit:contain; margin:72px 0 0; filter:drop-shadow(0 8px 18px rgba(59,47,47,.16))}
+  .sec-ico + h2{margin-top:12px}
+  .install{position:relative}
+  .install-ico{position:absolute; right:34px; top:28px; width:96px; height:auto; pointer-events:none; filter:drop-shadow(0 12px 26px rgba(0,0,0,.32))}
+  @media(max-width:680px){.install-ico{display:none}}
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="site-nav__inner">
+    <a class="np-logo glass-pill" href="/">
+      <img src="/brand/cabinet-logo-face-2-512.png" alt="Cabinet" />
+      <span>Cabinet</span>
+    </a>
+    <div class="np-links">
+      <a class="glass-pill np-link" href="/solutions">Solutions</a>
+      <a class="glass-pill np-link" href="/compare">Compare</a>
+      <a class="glass-pill np-link" href="/use-cases">Use cases</a>
+      <a class="glass-pill np-link" href="/pricing">Pricing</a>
+      <a class="glass-pill np-link" href="https://docs.runcabinet.com/" target="_blank" rel="noopener">Docs</a>
+      <a class="glass-pill np-link" href="/media">Media</a>
+    </div>
+    <div class="np-actions">
+      <a class="glass-pill np-link np-gh" href="https://github.com/hilash/cabinet" target="_blank" rel="noopener"><span class="star">★</span>&nbsp;GitHub</a>
+      <a class="glass-pill np-link np-demo" href="/demo">Book a demo</a>
+      <a class="btn-wood" href="/#get-started">↓&nbsp;Download</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <img class="hero-bot" src="/use-cases/ai-agent-swarm-product-audit/assets/brand/heroes/sol-product.png" alt="" />
+  <div class="wrap">
+    <div class="kicker">Cabinet use case · UX agent swarm</div>
+    <h1 class="title">My AI agent swarm shipped 60 UI fixes in 60&nbsp;minutes. I never touched the code</h1>
+    <p class="dek">Cabinet runs on a swarm of AI agents. I pointed them at my own app with one simple job: go through every screen and make it better. A product specialist took the lead, found 65 things to fix, and sent out a swarm of fixes, 60 in all. I just said <em>yes</em> or <em>no</em> to each one. Here’s exactly how it works, and the review app is right here in this post, so you can try it.</p>
+    <div class="byline">
+      <img class="avatar" src="/use-cases/ai-agent-swarm-product-audit/assets/img/hila.png" alt="Hila Shmuel" />
+      <div>By <a href="https://x.com/HilaShmuel" target="_blank" rel="noopener"><strong>Hila Shmuel</strong></a>, Cabinet Founder · 8 min read · <a class="tocjump" href="#install">skip to the install →</a></div>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="n">65</div><div class="l">friction issues filed, one markdown file each</div></div>
+      <div class="stat"><div class="n">60</div><div class="l">fixed &amp; shipped, one commit per issue</div></div>
+      <div class="stat"><div class="n">1</div><div class="l">agent, a Senior Product Lead with a 20-year bar</div></div>
+      <div class="stat"><div class="n">~60<span style="font-size:24px">m</span></div><div class="l">to review all of it, like clearing a dashboard</div></div>
+    </div>
+  </div>
+</header>
+
+<div class="tweet-embed">
+<blockquote class="twitter-tweet" data-media-max-width="560" data-theme="light" data-dnt="true"><p lang="en" dir="ltr">shipped 60 features in 60 minutes<br>told Cabinet to &quot;be as good at product as <a href="https://x.com/nikitabier?ref_src=twsrc%5Etfw">@nikitabier</a> . it worked.<br>thanks Nikita 👇 <a href="https://t.co/JRx2Ucmb9K">https://t.co/JRx2Ucmb9K</a> <a href="https://t.co/RyMbHJOYtN">pic.twitter.com/RyMbHJOYtN</a></p>&middot; Hila Shmuel (@HilaShmuel) <a href="https://x.com/HilaShmuel/status/2059997783201915011?ref_src=twsrc%5Etfw">May 28, 2026</a></blockquote> <script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<main>
+<div class="wrap">
+
+<section>
+  <div class="usecase">
+    <div class="label">Is this for you?</div>
+    <h3>Use this if you want to…</h3>
+    <ul>
+      <li><img class="uc-ico" src="/use-cases/ai-agent-swarm-product-audit/assets/brand/ui/rocket.png" alt="" /><span><b>Polish your app</b> before a launch, a demo, or an investor meeting.</span></li>
+      <li><img class="uc-ico" src="/use-cases/ai-agent-swarm-product-audit/assets/brand/ui/target.png" alt="" /><span><b>Catch the small stuff</b> (clumsy wording, loud buttons, confusing labels) before your users do.</span></li>
+      <li><img class="uc-ico" src="/use-cases/ai-agent-swarm-product-audit/assets/brand/ui/zap.png" alt="" /><span><b>Ship a big batch of fixes</b> without reading every line of code yourself.</span></li>
+      <li><img class="uc-ico" src="/use-cases/ai-agent-swarm-product-audit/assets/brand/ui/fingerprint.png" alt="" /><span><b>Check your product for accessibility problems</b> and fix them.</span></li>
+      <li><img class="uc-ico" src="/use-cases/ai-agent-swarm-product-audit/assets/brand/ui/handshake.png" alt="" /><span><b>Hand a teammate or client a clean report</b> they can approve one item at a time.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="card warm">
+    <div class="label">The short version</div>
+    <ul class="clean">
+      <li><strong>My Cabinet already runs a swarm of 70 AI agents.</strong> I aimed them at my own product.</li>
+      <li>I installed one cabinet, <strong>Audits</strong>, which puts a product specialist in the lead, with a method and a ready-made folder setup.</li>
+      <li>I told it to think like <a href="https://twitter.com/nikitabier">@nikitabier</a>: make the app <em>great</em>, not just okay.</li>
+      <li>It opened my product in Chrome, looked at every screen, and <strong>wrote up 65 problems</strong>, one file each.</li>
+      <li>It picked the most important ones, fixed them, and <strong>saved each fix as its own commit</strong>.</li>
+      <li>Then it built me a <strong>review app</strong>: one card per fix. Each one shows what was wrong, what changed, and the screenshot, with pass / fail / skip / comment.</li>
+      <li>I sat back and approved <strong>60 changes like clearing a to-do list</strong>. The rejects went back to the swarm with my notes.</li>
+    </ul>
+    <p style="margin-bottom:0">I’ve written software for 20 years and never seen anything like it. The hard part of product work was never the building, it was the <em>reviewing</em> and the <em>taste</em>. Give a good agent both, and a full afternoon of polish shrinks to an hour.</p>
+  </div>
+</section>
+
+<section>
+  <img class="sec-ico" src="/use-cases/ai-agent-swarm-product-audit/assets/brand/ui/scale.png" alt="" />
+  <h2>The hard part was never the building</h2>
+  <p>Every founder knows this feeling: the product is <em>okay</em>. It works. But it’s a hundred tiny things, a greeting that reads “Good morning, You,” a button that shouts when it shouldn’t, a number in the corner with no label. None is worth a ticket on its own. Together, they’re the gap between “okay” and “wow.”</p>
+  <p>These don’t get fixed because the work is boring, not because it’s hard. Someone has to find each one, write it down, fix it, and then check 60 changes by hand. <strong>That’s the real bottleneck, not the coding.</strong></p>
+  <blockquote>The bar isn’t “does it match the spec.” The bar is “would a competitor copy this.”</blockquote>
+  <p>That line matters. The agent doesn’t grade your app against a checklist. It grades it against the best apps out there: Linear’s command palette, Stripe’s checkout, Duolingo’s streak, Netflix’s autoplay. So the fixes don’t just close a bug; they raise the bar. I handed the whole loop (look, fix, review) to one agent. Here’s how, step by step, so you can run it on your own product by the end of this post.</p>
+</section>
+
+<section>
+  <img class="sec-ico" src="/use-cases/ai-agent-swarm-product-audit/assets/brand/ui/layers.png" alt="" />
+  <h2><span class="num">The setup</span>One cabinet. One agent. One method.</h2>
+  <p>In Cabinet, a <strong>cabinet</strong> is a ready-made workspace you import in one click. It brings its own agent, its own jobs, its own folders, and its own instructions. The <a href="https://cabinets.sh/cabinet/audits">Audits cabinet</a> does one job: go through a product, write up every problem as a file, fix them to a high bar, and hand you a review app at the end.</p>
+  <p>When you import it, you get three things:</p>
+  <ul class="clean">
+    <li><strong>A method</strong>, a doc called <code>how-to-audit.md</code> that tells the agent how to look: which screens to open and in what order (home → main flows → empty states → errors → edge cases → accessibility → speed), and how to write up each problem.</li>
+    <li><strong>An agent</strong>, <em>Product Senior</em>, a senior product lead with a 20-year bar. It picks up open problems, fixes them, writes down what it changed, and saves one commit per fix.</li>
+    <li><strong>A folder setup</strong>, a template you copy to start a new audit, plus a one-command tool that turns the whole thing into a shareable review app.</li>
+  </ul>
+  <figure class="vid">
+    <div class="vidtag"><span class="dot"></span>Recording</div>
+    <video muted loop playsinline controls preload="none" poster="/use-cases/ai-agent-swarm-product-audit/assets/frames/audits-template-a.jpg" data-autoplay>
+      <source src="/use-cases/ai-agent-swarm-product-audit/assets/video/audits-template.mp4" type="video/mp4" />
+    </video>
+    <figcaption>A quick tour of the Audits cabinet, what it gives you, and the one-click <strong>Import Cabinet</strong> button.</figcaption>
+  </figure>
+  <figure class="vid">
+    <div class="vidtag"><span class="dot"></span>Recording</div>
+    <video muted loop playsinline controls preload="none" poster="/use-cases/ai-agent-swarm-product-audit/assets/frames/report-a.jpg" data-autoplay>
+      <source src="/use-cases/ai-agent-swarm-product-audit/assets/video/report-summary.mp4" type="video/mp4" />
+    </video>
+    <figcaption>The method doc the agent follows. This exact format ran the real Cabinet audit: <strong>141 findings, 34 screenshots, in about a day.</strong></figcaption>
+  </figure>
+  <p>The folders are simple. Every problem is one file. Every screenshot sits next to it. One command builds the review app:</p>
+  <div class="term">
+    <div class="bar"><i></i><i></i><i></i></div>
+    <pre><span class="cmt"># from inside the audits cabinet</span>
+<span class="cmd">cp -r _template audit-2026-05-01</span>   <span class="arr">← start a fresh audit</span>
+<span class="cmd">cd audit-2026-05-01</span>
+
+<span class="cmt"># the agent walks your product, drops screenshots into screenshots/,</span>
+<span class="cmt"># and files each problem as issues/NNN-name.md</span>
+
+<span class="cmd">node build-review.mjs</span>             <span class="arr">→ builds review/index.html</span></pre>
+  </div>
+  <p>It also sets up two jobs that run on their own: an <strong>Audit fix loop</strong> every weekday morning, and a <strong>weekly status</strong> summary. So the cleanup keeps going even when you’re not watching.</p>
+  <figure>
+    <img src="/use-cases/ai-agent-swarm-product-audit/assets/img/audits-template-c.jpg" alt="The Audits cabinet registry page showing the folder structure and get-started commands" />
+    <figcaption>The cabinet’s page on the registry, the folder layout, the Product Senior agent, and the one-click <strong>Import Cabinet</strong> button.</figcaption>
+  </figure>
+</section>
+
+<section>
+  <img class="sec-ico" src="/use-cases/ai-agent-swarm-product-audit/assets/brand/feat/agents.png" alt="" />
+  <h2><span class="num">Step 1</span>Point the swarm at your product</h2>
+  <p>This is the only prompt that needs any real thought. Cabinet already has a swarm of agents on call, for the audit I put one specialist in the lead and told it <em>who to be</em> and <em>how high to aim</em>, not what to fix. Naming <a href="https://twitter.com/nikitabier">Nikita Bier</a> isn’t a gimmick; it sets the taste. “Make it as good as Nikita would” gets a very different result than “find bugs.”</p>
+  <div class="prompt" data-copy>
+    <div class="head"><span class="who">Prompt · kick off the audit</span><button class="copy">Copy</button></div>
+    <pre>You are my head of product. Think like Nikita Bier (product at X): your
+job is to make Cabinet genuinely great, not just okay.
+
+Use the Audits cabinet. Open the live product in Chrome and walk every
+surface in the order from how-to-audit.md:
+cold-boot → primary flows → empty states → errors → edge cases → a11y → perf.
+Screenshot as you go.
+
+File every friction you find as its own markdown issue in issues/, using
+the template format, one issue per file, each with: a severity (P1-P3),
+an area code, what's wrong, and why it costs the user.
+
+Don't fix anything yet. The bar isn't "matches the spec." The bar is
+"this is the version a competitor will copy."</pre>
+  </div>
+  <figure class="vid">
+    <div class="vidtag"><span class="dot"></span>Recording</div>
+    <video muted loop playsinline controls preload="none" poster="/use-cases/ai-agent-swarm-product-audit/assets/frames/cabinet-tabs-a.jpg" data-autoplay>
+      <source src="/use-cases/ai-agent-swarm-product-audit/assets/video/cabinet-tabs.mp4" type="video/mp4" />
+    </video>
+    <figcaption>Everything lives in one place, and the top bar shows the swarm: <strong>70 agents, 60 active, across 36 departments</strong>. The audit runs against the live product.</figcaption>
+  </figure>
+</section>
+
+<section>
+  <img class="sec-ico" src="/use-cases/ai-agent-swarm-product-audit/assets/brand/feat/search.png" alt="" />
+  <h2><span class="num">Step 2</span>It looks at every screen and writes up the problems</h2>
+  <p>This is where it stops feeling like a chatbot. The agent opens a real browser, takes a screenshot of every screen, and saves one file per problem. Not a wall of text, a clear, repeatable format. Each file gets an ID, how serious it is (P1-P3), and a tag for the area (<code>HOME</code>, <code>NAV</code>, <code>COPY</code>, <code>EDIT</code>, <code>A11Y</code>…). That structure is what makes everything after this possible.</p>
+  <figure>
+    <img src="/use-cases/ai-agent-swarm-product-audit/assets/img/issue-b.jpg" alt="The audit's screenshots folder, with one numbered screenshot per screen" />
+    <figcaption>It screenshots every screen as it goes, home, editor, agents, tasks, search, settings, and saves them in order.</figcaption>
+  </figure>
+  <p>Each file says what it saw, how to reproduce it, and what to do about it. Here’s a real one:</p>
+  <figure class="vid">
+    <div class="vidtag"><span class="dot"></span>Recording</div>
+    <video muted loop playsinline controls preload="none" poster="/use-cases/ai-agent-swarm-product-audit/assets/frames/issue-a.jpg" data-autoplay>
+      <source src="/use-cases/ai-agent-swarm-product-audit/assets/video/issue-with-screenshot.mp4" type="video/mp4" />
+    </video>
+    <figcaption>One problem, written up properly, <em>Observation</em>, <em>steps to reproduce</em>, and a <em>recommendation</em>, with the screenshot attached. Anyone on the team could pick this up and fix it.</figcaption>
+  </figure>
+  <p>Sixty-five came back. A few real ones, word for word:</p>
+  <ul class="clean">
+    <li><code>#001 · P1 · HOME</code>, the “Good morning, You.” greeting reads like a placeholder someone forgot to fill in, and it’s the first thing every user sees.</li>
+    <li><code>#004 · P3 · STATUS</code>, the <code>★ 1,769</code> in the corner has no label, so a new user can’t tell it’s GitHub stars.</li>
+    <li><code>#014 · P2 · EDIT</code>, a bright orange “+ New Task” is the loudest button in the editor, where it doesn’t belong.</li>
+    <li><code>#033 · P2 · EDIT</code>, a one-click “Delete all 37 tasks” trash icon sits in the toolbar with nothing to stop a mistake.</li>
+  </ul>
+  <p>Then it groups everything into <strong>themes</strong>, so the report reads like real product feedback, not a list of nitpicks:</p>
+  <figure>
+    <img src="/use-cases/ai-agent-swarm-product-audit/assets/img/version-plan-b.jpg" alt="Audit report grouped into themes" />
+    <figcaption>Problems grouped into themes, each pointing back to the file numbers it covers.</figcaption>
+  </figure>
+</section>
+
+<section>
+  <img class="sec-ico" src="/use-cases/ai-agent-swarm-product-audit/assets/brand/ui/trophy.png" alt="" />
+  <h2><span class="num">Step 3</span>It picks the fixes that matter most</h2>
+  <p>65 problems is just a list. A <em>plan</em> is knowing which 10 to do first. So I asked for that. The smartest thing it did was spot <strong>root causes</strong>, fix one, and four other problems go away on their own.</p>
+  <div class="prompt" data-copy>
+    <div class="head"><span class="who">Prompt · prioritize</span><button class="copy">Copy</button></div>
+    <pre>Read every open issue and write "Top 10 things I would fix this week",
+the highest-leverage findings, ranked. Call out any root-cause issue that
+closes multiple findings at once. Put it at the top of the audit page.</pre>
+  </div>
+  <figure class="vid">
+    <div class="vidtag"><span class="dot"></span>Recording</div>
+    <video muted loop playsinline controls preload="none" poster="/use-cases/ai-agent-swarm-product-audit/assets/frames/version-plan-a.jpg" data-autoplay>
+      <source src="/use-cases/ai-agent-swarm-product-audit/assets/video/version-fix-plan.mp4" type="video/mp4" />
+    </video>
+    <figcaption>The agent writing up the plan, the top fixes, ranked, on the audit page.</figcaption>
+  </figure>
+  <p>Here’s what it wrote, cleaned up so it’s easy to read:</p>
+
+  <div class="card" style="padding:34px 36px">
+    <div class="label">Audit 2026-05-01 · audit page</div>
+    <h3 style="font-family:var(--serif);font-weight:400;font-size:32px;margin:0 0 6px">Top 10 things I would fix this week</h3>
+    <p style="color:var(--text-dim);margin-top:6px">The 10 highest-leverage findings, closing them moves the perceived quality of Cabinet more than the next 30 combined.</p>
+    <ol style="padding-left:22px;line-height:1.6">
+      <li style="margin:14px 0"><code>#039</code>, <strong>Settings → Profile: Name defaults to literal “You.”</strong> Root cause of #001 / #017 / #027 / #065, fixing this one removes four findings at once.</li>
+      <li style="margin:14px 0"><code>#001</code>, <strong>“Good morning, You.” greeting</strong>, the first thing every user reads, and it reads as a forgotten placeholder.</li>
+      <li style="margin:14px 0"><code>#051</code>, <strong>No onboarding tour on first run.</strong> Cabinet’s mental model is novel; users dropped on the home page learn ~10% of the value.</li>
+      <li style="margin:14px 0"><code>#027</code>, <strong>Persona instructions hold a stale cabinet name.</strong> A correctness bug, agents speak the wrong cabinet name in their outputs. Templating is the fix.</li>
+      <li style="margin:14px 0"><code>#019</code>, <strong>Team-schedule calendar reads “did not run” on every past row.</strong> Looks broken even when everything ran fine.</li>
+    </ol>
+    <p style="margin-bottom:0;color:var(--text-faint);font-size:14px">…and five more. The full list lives on the audit page.</p>
+  </div>
+</section>
+
+<section>
+  <img class="sec-ico" src="/use-cases/ai-agent-swarm-product-audit/assets/brand/ui/filecheck.png" alt="" />
+  <h2><span class="num">Step 4</span>It fixes them, one commit at a time</h2>
+  <p>Now the Product Senior agent gets to work. For each problem it writes the fix in the real code, notes the exact file and line it changed, adds a line to the progress tracker, and <strong>saves one commit per fix</strong>. That last part is the quiet hero: every change is easy to read on its own, and easy to undo if you don’t like it.</p>
+  <div class="prompt" data-copy>
+    <div class="head"><span class="who">Prompt · ship</span><button class="copy">Copy</button></div>
+    <pre>Hand the open issues to @product-senior. For each status: open issue:
+ship the fix, fill in the issue's ## Resolution section with the file:line
+you changed, append a line to progress.md, and commit, one issue per
+commit. Work top-down from the Top 10.</pre>
+  </div>
+  <p>Here’s a real note it left behind, for the unlabeled star count (<code>#004</code>):</p>
+  <div class="card warm" style="font-family:var(--mono);font-size:14px;line-height:1.6">
+    <div class="label">## Resolution · #004</div>
+    <code style="display:inline-block;margin-bottom:8px">src/components/layout/status-bar.tsx:842</code>, added
+    <code>title="X GitHub stars, open Help &amp; community menu to star Cabinet"</code>
+    to the star count pill. The pill stays inside the Help button, which already opens a “Star on GitHub” popover, so no separate click target was needed.
+  </div>
+</section>
+
+<section>
+  <img class="sec-ico" src="/use-cases/ai-agent-swarm-product-audit/assets/brand/feat/htmlapp.png" alt="" />
+  <h2><span class="num">Step 5</span>It builds me an app to approve everything</h2>
+  <p>This is the part that still surprises me. Instead of handing me 60 code changes to read, the agent built me <strong>a small web app</strong>. One card per fix: what was wrong, what changed (with the exact file and line), the screenshot, and four buttons, <strong>pass, fail, skip, comment</strong>. Your answers save as you go, a summary view adds them all up, and one button exports the whole thing.</p>
+  <figure>
+    <img src="/use-cases/ai-agent-swarm-product-audit/assets/frames/slideshow-12_5.jpg" alt="The generated review app, a fixed issue with what-was / what-changed columns and Pass / Fail / Skip buttons" />
+    <figcaption>The real generated review app, one fixed issue per card, pass / fail / skip / comment.</figcaption>
+  </figure>
+
+  <p><strong>And here’s the thing, it’s just HTML.</strong> So I dropped a working slice of it right into this post. Use your keyboard: <kbd style="font-family:var(--mono);background:var(--accent-bg);padding:1px 7px;border-radius:5px">P</kbd> pass, <kbd style="font-family:var(--mono);background:var(--accent-bg);padding:1px 7px;border-radius:5px">F</kbd> fail, <kbd style="font-family:var(--mono);background:var(--accent-bg);padding:1px 7px;border-radius:5px">S</kbd> skip, <kbd style="font-family:var(--mono);background:var(--accent-bg);padding:1px 7px;border-radius:5px">←</kbd> <kbd style="font-family:var(--mono);background:var(--accent-bg);padding:1px 7px;border-radius:5px">→</kbd> to move, <kbd style="font-family:var(--mono);background:var(--accent-bg);padding:1px 7px;border-radius:5px">G</kbd> for the summary. Your verdicts save in your browser.</p>
+</section>
+</div>
+
+<!-- ===================== LIVE REVIEW APP ===================== -->
+<div class="demo-tag">Live · a working slice of the generated review app</div>
+<div class="demo-frame" id="reviewApp" tabindex="0">
+  <div class="ra-top">
+    <div class="ra-title">Audit 2026-05-01 <small id="raSub">Review · #001</small></div>
+    <div class="ra-actions">
+      <button class="ra-btn" id="raSummaryBtn">Summary</button>
+      <button class="ra-btn" id="raResetBtn">Reset</button>
+    </div>
+  </div>
+  <div class="ra-progress"><i id="raBar"></i></div>
+  <div class="ra-counts">
+    <span class="c-pass"><b id="cPass">0</b> pass</span>
+    <span class="c-fail"><b id="cFail">0</b> fail</span>
+    <span class="c-skip"><b id="cSkip">0</b> skip</span>
+    <span><b id="cPos">1</b> / <span id="cTot">16</span></span>
+  </div>
+
+  <!-- slide view -->
+  <div class="ra-stage" id="raStage"></div>
+  <div class="ra-foot">
+    <kbd>←</kbd> <kbd>→</kbd> navigate · <kbd>P</kbd> pass · <kbd>F</kbd> fail · <kbd>S</kbd> skip · <kbd>G</kbd> summary, verdicts autosave to your browser
+  </div>
+
+  <!-- summary view -->
+  <div class="ra-summary hidden" id="raSummary"></div>
+</div>
+
+<div class="wrap">
+<section>
+  <img class="sec-ico" src="/use-cases/ai-agent-swarm-product-audit/assets/brand/ui/dashboard.png" alt="" />
+  <h2><span class="num">Step 6</span>I approve, and the rejects loop back</h2>
+  <p>Reviewing stopped being a chore. Approve the ones it nailed. Reject the ones it didn’t, <em>and your note becomes the new instruction</em>. Skip anything you want to look at later. In one sitting: <strong>60 approved, 4 rejected, 1 saved for later.</strong></p>
+  <p>The rejections are the interesting part, that’s where my taste wins over the agent’s. Real notes from the run:</p>
+  <ul class="clean">
+    <li><code>#005</code> <span class="v-fail" style="font-weight:600">Fail</span>, “currently the size is too small. i liked the size before, just make it responsive.”</li>
+    <li><code>#008</code> <span class="v-fail" style="font-weight:600">Fail</span>, “No, revert the caps, and make the cabinet name (e.g. ‘Apple’) use caps too.”</li>
+    <li><code>#012</code> <span class="v-fail" style="font-weight:600">Fail</span>, “don’t change that, I liked the single scrollable row + gradient fade.”</li>
+  </ul>
+  <figure class="vid">
+    <div class="vidtag"><span class="dot"></span>Recording</div>
+    <video muted loop playsinline controls preload="none" poster="/use-cases/ai-agent-swarm-product-audit/assets/frames/report-a.jpg" data-autoplay>
+      <source src="/use-cases/ai-agent-swarm-product-audit/assets/video/report-summary.mp4" type="video/mp4" />
+    </video>
+    <figcaption>The summary rolls up every verdict and comment, copy it as a table, or export the whole thing as a file.</figcaption>
+  </figure>
+  <p>Then I close the loop with one message. The approved fixes are done. Every rejected one goes back to the agent <em>with my note as the new instruction</em>, and it tries again.</p>
+  <div class="prompt" data-copy>
+    <div class="head"><span class="who">Prompt · loop the fails back</span><button class="copy">Copy</button></div>
+    <pre>Here are my review verdicts (reviews.json attached). For every Fail,
+reopen the issue, treat my comment as the new requirement, and re-ship,
+then regenerate the review app for just those. Leave every Pass as-is.</pre>
+  </div>
+  <p>That’s the whole loop: <strong>look → plan → fix → review → repeat</strong>. And because the cabinet runs an <em>Audit fix loop</em> on its own, you can leave it going, it keeps clearing open problems every weekday morning and sends a weekly summary, with no prompting from you.</p>
+</section>
+
+<section>
+  <img class="sec-ico" src="/use-cases/ai-agent-swarm-product-audit/assets/brand/ui/brain.png" alt="" />
+  <h2>The lesson isn’t “AI is magic”</h2>
+  <p>It’s that the two things that really decide product quality, <strong>noticing what’s wrong</strong> and <strong>deciding what’s right</strong>, can now be handed off and organized. The agent does the noticing and the building. You keep the deciding. A code review turns into a dashboard you clear in an afternoon.</p>
+  <figure class="vid">
+    <div class="vidtag"><span class="dot"></span>Recording</div>
+    <video muted loop playsinline controls preload="none" poster="/use-cases/ai-agent-swarm-product-audit/assets/frames/summary-table-a.jpg" data-autoplay>
+      <source src="/use-cases/ai-agent-swarm-product-audit/assets/video/summary-table-2x.mp4" type="video/mp4" />
+    </video>
+    <figcaption>The whole audit in one scroll, every problem, its fix, and my verdict.</figcaption>
+  </figure>
+  <p>This was one specialist agent. Your Cabinet runs a whole swarm, so you can point this same loop at every product and surface you own, and let them work in parallel. Here’s how to get the cabinet.</p>
+</section>
+</div>
+</main>
+
+<!-- ===================== INSTALL / CTA ===================== -->
+<div class="install" id="install">
+  <img class="install-ico" src="/use-cases/ai-agent-swarm-product-audit/assets/brand/ui/rocket.png" alt="" />
+  <h2><span class="num" style="font-family:var(--mono);font-size:14px;display:block;letter-spacing:1px;text-transform:uppercase;margin-bottom:10px">Do it yourself</span>Install the Audits cabinet</h2>
+  <p>It’s free to import and brings everything from this post, the method, the Product Senior agent, the folder setup, and the review-app builder. Two ways in:</p>
+  <div class="ways">
+    <div class="way">
+      <div class="w-h">From the registry link</div>
+      <ol>
+        <li>Open <code>cabinets.sh/cabinet/audits</code></li>
+        <li>Hit <strong>Import Cabinet</strong>, the agent and both jobs set themselves up automatically</li>
+        <li>Run the Step-1 prompt against your product</li>
+      </ol>
+      <a class="bigcta" href="https://cabinets.sh/cabinet/audits">Open the Audits cabinet →</a>
+    </div>
+    <div class="way">
+      <div class="w-h">From inside Cabinet</div>
+      <ol>
+        <li>In the sidebar, click <strong>New Cabinet</strong></li>
+        <li>Choose <strong>From registry</strong></li>
+        <li>Pick <strong>Audits</strong> → <strong>Import</strong></li>
+        <li>Run the Step-1 prompt against your product</li>
+      </ol>
+      <div class="meta">Don’t have Cabinet yet? → <a href="https://runcabinet.com" style="color:#E6B98A">runcabinet.com</a></div>
+    </div>
+  </div>
+  <p class="meta">Then run the five prompts from this post in order: kick off → prioritize → ship → review → loop. That’s the entire workflow.</p>
+</div>
+
+<footer>
+  <img class="footer-logo" src="/use-cases/ai-agent-swarm-product-audit/assets/brand/cabinet-logo.png" alt="Cabinet" />
+  <p>Built with <a href="https://runcabinet.com">Cabinet</a>, an AI workspace with AI teammates that run workflows like this one end to end.</p>
+  <p style="font-size:13px;color:var(--text-faint);margin-top:14px">runcabinet.com</p>
+</footer>
+
+<!-- review data -->
+<script type="application/json" id="issues-data">
+[
+ {"id":"001","sev":"P1","area":"HOME","title":"Replace 'Good morning, You.' placeholder greeting","was":"The home greeting reads \"Good morning, You.\", the first thing every user sees, and it reads as a forgotten placeholder. The name defaults to the literal string \"You\".","changed":"Greeting now pulls the real profile name with a graceful fallback. Root cause #039 fixed, which also closed #017, #027 and #065.","shot":"cabinet-tabs-a","shotcap":"screenshots/01-homescreen-cold-boot.png","verdict":"pass","comment":""},
+ {"id":"002","sev":"P2","area":"A11Y","title":"'Run now' button: aria-description fights the visible label","was":"The \"Run now\" button's aria-description contradicts its visible label, so screen readers announce something different from what's shown. The button actually opens a schedule menu.","changed":"aria-label aligned to the visible text and the control relabeled to match what it does.","shot":"cabinet-tabs-a","shotcap":"screenshots/02-run-now-button.png","verdict":"pass","comment":""},
+ {"id":"003","sev":"P2","area":"COPY","title":"'Import a pre-made zero-human team' is jargon","was":"The H2 above the templates reads \"Import a pre-made zero-human team\", brand voice that reads like jargon to a first-time user who isn't on the brand bus yet.","changed":"Renamed the section header to \"Start from a template\" in src/components/home/home-screen.tsx:637 and onboarding-wizard.tsx:944. Plain, scannable, lets the cards do the pitch.","shot":"cabinet-tabs-a","shotcap":"screenshots/01-homescreen-cold-boot.png","verdict":"pass","comment":""},
+ {"id":"004","sev":"P3","area":"STATUS","title":"Bottom-right '1,769' count has no label or tooltip","was":"The status bar's rightmost cluster shows ★ 1,769 next to a Help button. No label, no tooltip on hover, no link. A first-time user can't tell if it's GitHub stars, tasks done, or an XP counter.","changed":"src/components/layout/status-bar.tsx:842, added title=\"X GitHub stars, open Help & community menu to star Cabinet\" to the star pill.","shot":"cabinet-tabs-a","shotcap":"screenshots/04-status-bar.png","verdict":"pass","comment":""},
+ {"id":"005","sev":"P2","area":"HOME","title":"Greeting H1 pushes the prompt input below the fold on 13\" laptops","was":"The greeting H1 is set at display size and pushes the prompt input below the fold on a 13\" laptop, the primary action isn't visible on first paint.","changed":"Reduced the H1 scale and tightened vertical rhythm so the prompt sits above the fold.","shot":"cabinet-tabs-a","shotcap":"screenshots/05-greeting-fold.png","verdict":"fail","comment":"currently the size is too small. i liked the size before, just make it responsive."},
+ {"id":"006","sev":"P3","area":"COPY","title":"'1 uncommitted files' singular/plural broken in status bar","was":"The status bar reads \"1 uncommitted files\", plural noun with a singular count.","changed":"Added a pluralization helper so the count and noun agree.","shot":"cabinet-tabs-a","shotcap":"screenshots/06-uncommitted.png","verdict":"pass","comment":""},
+ {"id":"007","sev":"P3","area":"COPY","title":"Template cards say '1 agents' (plural noun, singular count)","was":"Cabinet template cards read \"1 agents\", same pluralization leak as the status bar.","changed":"Reused the pluralization helper across template cards.","shot":"cabinet-tabs-a","shotcap":"screenshots/07-template-cards.png","verdict":"pass","comment":""},
+ {"id":"008","sev":"P3","area":"NAV","title":"Sidebar tab labels DATA / AGENTS / TASKS in all-caps","was":"The sidebar tabs are all-caps inside an otherwise sentence-case product, visually loud and inconsistent.","changed":"Switched the tab labels to sentence case to match the rest of the UI.","shot":"cabinet-tabs-a","shotcap":"screenshots/08-sidebar-tabs.png","verdict":"fail","comment":"No, revert the caps, and make the cabinet name (e.g. 'Apple') use caps too."},
+ {"id":"009","sev":"P2","area":"NAV","title":"'Own' filter pill in cabinet header has zero context","was":"A filter pill labelled \"Own\" sits in the cabinet header with no tooltip or explanation of what it filters.","changed":"Relabeled to \"Owned by me\" and added a tooltip describing the filter.","shot":"cabinet-tabs-a","shotcap":"screenshots/09-own-filter.png","verdict":"pass","comment":""},
+ {"id":"010","sev":"P3","area":"HOME","title":"Prompt suggestion chips: no shuffle / refresh / 'show more'","was":"The prompt suggestion chips are static, no way to shuffle, refresh, or see more, so they read as fixed UI rather than suggestions.","changed":"Added a subtle refresh affordance and a 'show more' expansion.","shot":"cabinet-tabs-a","shotcap":"screenshots/10-suggestion-chips.png","verdict":"pass","comment":""},
+ {"id":"011","sev":"P2","area":"URL","title":"URL hash encodes path separators as %2F","was":"Deep links encode path separators as %2F, producing ugly, fragile URLs that break when shared.","changed":"Switched to readable path segments in the hash router.","shot":"cabinet-tabs-a","shotcap":"screenshots/11-url-hash.png","verdict":"pass","comment":""},
+ {"id":"012","sev":"P2","area":"EDIT","title":"Editor toolbar shows 30+ icon buttons in one row","was":"The editor toolbar crams 30+ icon buttons into a single row with no grouping, hard to scan, easy to mis-click.","changed":"Grouped the toolbar into labelled clusters with overflow.","shot":"version-plan-a","shotcap":"screenshots/12-editor-toolbar.png","verdict":"fail","comment":"don't change that, I liked the single scrollable row + gradient fade."},
+ {"id":"013","sev":"P3","area":"EDIT","title":"'Markdown' toolbar button: function unclear from label","was":"A toolbar button just says \"Markdown\", unclear whether it toggles a mode, inserts syntax, or exports.","changed":"Renamed to \"View as Markdown\" with a tooltip.","shot":"version-plan-a","shotcap":"screenshots/13-markdown-btn.png","verdict":null,"comment":""},
+ {"id":"014","sev":"P2","area":"EDIT","title":"Editor's top-right '+ New Task' button is too loud, out of context","was":"A brand-orange filled \"+ New Task\" is the loudest CTA inside the editor, the visual loudness doesn't match the action's importance in that context.","changed":"Demoted to a secondary style; the editor's primary action now leads.","shot":"version-plan-a","shotcap":"screenshots/14-new-task-btn.png","verdict":"pass","comment":""},
+ {"id":"015","sev":"P3","area":"NAV","title":"Active page in the sidebar tree has weak visual selection","was":"The currently-open page in the sidebar tree barely differs from its siblings, easy to lose your place.","changed":"Strengthened the active-row treatment with a clear background and accent bar.","shot":"cabinet-tabs-a","shotcap":"screenshots/15-active-page.png","verdict":"pass","comment":""},
+ {"id":"016","sev":"P2","area":"NAV","title":"Sub-cabinets and folders look identical in the tree","was":"Sub-cabinets and plain folders share the same icon, so the hierarchy is ambiguous.","changed":"Gave sub-cabinets a distinct icon to separate them from folders.","shot":"cabinet-tabs-a","shotcap":"screenshots/16-subcabinets.png","verdict":"fail","comment":"no, revert to the archive icon."}
+]
+</script>
+
+<script>
+(function(){
+  // ---------- copy buttons ----------
+  document.querySelectorAll('.prompt[data-copy]').forEach(function(p){
+    var btn = p.querySelector('.copy'), pre = p.querySelector('pre');
+    btn.addEventListener('click', function(){
+      var txt = pre.innerText;
+      navigator.clipboard.writeText(txt).then(function(){
+        btn.textContent='Copied'; btn.classList.add('done');
+        setTimeout(function(){btn.textContent='Copy'; btn.classList.remove('done');},1400);
+      }).catch(function(){
+        var r=document.createRange(); r.selectNode(pre);
+        getSelection().removeAllRanges(); getSelection().addRange(r);
+        try{document.execCommand('copy');}catch(e){}
+        getSelection().removeAllRanges();
+        btn.textContent='Copied'; btn.classList.add('done');
+        setTimeout(function(){btn.textContent='Copy'; btn.classList.remove('done');},1400);
+      });
+    });
+  });
+
+  // ---------- inline videos: play only while in view ----------
+  var vids = document.querySelectorAll('video[data-autoplay]');
+  if ('IntersectionObserver' in window) {
+    var vio = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        var v = e.target;
+        if (e.isIntersecting && e.intersectionRatio >= 0.5) {
+          if (v.paused) { var p = v.play(); if (p && p.catch) p.catch(function(){}); }
+        } else if (!v.paused) {
+          v.pause();
+        }
+      });
+    }, { threshold: [0, 0.5, 1] });
+    vids.forEach(function(v){ vio.observe(v); });
+  }
+
+  // ---------- review app ----------
+  var KEY='cabinet-audit-blog-reviews-v1';
+  var SHOTS={
+    'cabinet-tabs-a':'/use-cases/ai-agent-swarm-product-audit/assets/img/cabinet-tabs-a.jpg',
+    'version-plan-a':'/use-cases/ai-agent-swarm-product-audit/assets/img/version-plan-a.jpg'
+  };
+  var data = JSON.parse(document.getElementById('issues-data').textContent);
+
+  // seed verdicts/comments from data, then overlay anything the reader saved
+  var saved={};
+  try{ saved = JSON.parse(localStorage.getItem(KEY))||{}; }catch(e){ saved={}; }
+  data.forEach(function(d){
+    if(saved[d.id]){
+      if('verdict' in saved[d.id]) d.verdict=saved[d.id].verdict;
+      if('comment' in saved[d.id]) d.comment=saved[d.id].comment;
+    }
+  });
+  function persist(){
+    var out={};
+    data.forEach(function(d){ out[d.id]={verdict:d.verdict, comment:d.comment}; });
+    try{ localStorage.setItem(KEY, JSON.stringify(out)); }catch(e){}
+  }
+
+  var pos=0;
+  var stage=document.getElementById('raStage');
+  var summary=document.getElementById('raSummary');
+  var bar=document.getElementById('raBar');
+  var app=document.getElementById('reviewApp');
+  document.getElementById('cTot').textContent=data.length;
+
+  function counts(){
+    var p=0,f=0,s=0;
+    data.forEach(function(d){ if(d.verdict==='pass')p++; else if(d.verdict==='fail')f++; else if(d.verdict==='skip')s++; });
+    return {p:p,f:f,s:s, done:p+f+s};
+  }
+  function updateChrome(){
+    var c=counts();
+    document.getElementById('cPass').textContent=c.p;
+    document.getElementById('cFail').textContent=c.f;
+    document.getElementById('cSkip').textContent=c.s;
+    document.getElementById('cPos').textContent=pos+1;
+    bar.style.width=(c.done/data.length*100)+'%';
+    document.getElementById('raSub').textContent='Review · #'+data[pos].id;
+  }
+  function vlabel(v){ return v==='pass'?'Passed':v==='fail'?'Failed':v==='skip'?'Skipped':'Not reviewed'; }
+
+  function renderSlide(){
+    var d=data[pos];
+    var shot=SHOTS[d.shot]||SHOTS['cabinet-tabs-a'];
+    var vclass=d.verdict||'none';
+    stage.innerHTML=
+      '<div class="ra-card">'+
+        '<div class="ra-meta">'+
+          '<span class="pill id">#'+d.id+'</span>'+
+          '<span class="pill sev '+d.sev+'">'+d.sev+'</span>'+
+          '<span class="pill area">'+d.area+'</span>'+
+          '<span class="pill verdict '+vclass+'">'+ (d.verdict?('✓ '+vlabel(d.verdict)).replace('✓ Failed','✕ Failed').replace('✓ Skipped','Skipped'):'Not reviewed') +'</span>'+
+        '</div>'+
+        '<h3 class="issue">'+esc(d.title)+'</h3>'+
+        '<img class="ra-shot" src="'+shot+'" alt="screen for issue '+d.id+'">'+
+        '<div class="ra-shotcap">'+esc(d.shotcap)+' · click to enlarge</div>'+
+        '<div class="ra-cols">'+
+          '<div class="ra-col"><div class="h">What was</div><p>'+esc(d.was)+'</p></div>'+
+          '<div class="ra-col"><div class="h">What changed</div><p>'+codeify(d.changed)+'</p></div>'+
+        '</div>'+
+        '<div class="ra-comments"><label for="raCmt">Comments</label>'+
+          '<textarea id="raCmt" placeholder="Notes for #'+d.id+'…">'+esc(d.comment||'')+'</textarea></div>'+
+        '<div class="ra-nav">'+
+          '<button class="vbtn ghost" data-go="-1">◀ Prev</button>'+
+          '<button class="vbtn pass'+(d.verdict==='pass'?' on':'')+'" data-v="pass">✓ Pass <kbd>P</kbd></button>'+
+          '<button class="vbtn fail'+(d.verdict==='fail'?' on':'')+'" data-v="fail">✕ Fail <kbd>F</kbd></button>'+
+          '<button class="vbtn skip'+(d.verdict==='skip'?' on':'')+'" data-v="skip">Skip <kbd>S</kbd></button>'+
+          '<span class="spacer"></span>'+
+          '<button class="vbtn ghost" data-go="1">Next ▶</button>'+
+        '</div>'+
+      '</div>';
+    // wire
+    stage.querySelectorAll('[data-go]').forEach(function(b){
+      b.addEventListener('click',function(){ go(parseInt(b.dataset.go,10)); });
+    });
+    stage.querySelectorAll('[data-v]').forEach(function(b){
+      b.addEventListener('click',function(){ setVerdict(b.dataset.v); });
+    });
+    var cmt=document.getElementById('raCmt');
+    cmt.addEventListener('input',function(){ d.comment=cmt.value; persist(); });
+    updateChrome();
+  }
+  function esc(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+  function codeify(s){
+    // wrap file:line and code-y tokens in <code>
+    return esc(s)
+      .replace(/([a-zA-Z0-9_\-\/]+\.tsx:\d+)/g,'<code>$1</code>')
+      .replace(/(title=\"[^\"]*\")/g,'<code>$1</code>')
+      .replace(/(status: open|## Resolution|progress\.md)/g,'<code>$1</code>');
+  }
+  function setVerdict(v){
+    var d=data[pos];
+    d.verdict=(d.verdict===v)?null:v;
+    persist();
+    renderSlide();
+    if(d.verdict){ setTimeout(function(){ if(pos<data.length-1) go(1); }, 220); }
+  }
+  function go(delta){
+    var n=pos+delta;
+    if(n<0)n=0; if(n>data.length-1)n=data.length-1;
+    pos=n; renderSlide();
+  }
+
+  // summary view
+  function renderSummary(){
+    var c=counts();
+    var rows=data.map(function(d){
+      var v=d.verdict;
+      var vcell = v==='pass'?'<span class="v-pass">✓ Pass</span>'
+                : v==='fail'?'<span class="v-fail">✕ Fail</span>'
+                : v==='skip'?'<span class="v-skip">Skip</span>'
+                : '<span class="v-none">·</span>';
+      return '<tr>'+
+        '<td class="t-id">'+d.id+'</td>'+
+        '<td class="t-sev">'+d.sev+'</td>'+
+        '<td class="t-area">'+d.area+'</td>'+
+        '<td>'+esc(d.title)+'</td>'+
+        '<td>'+vcell+'</td>'+
+        '<td class="t-cmt">'+esc(d.comment||'')+'</td>'+
+      '</tr>';
+    }).join('');
+    summary.innerHTML=
+      '<h3>Review summary</h3>'+
+      '<div class="sub">'+c.p+' passed · '+c.f+' failed · '+c.s+' skipped · '+(data.length-c.done)+' not yet reviewed (out of '+data.length+')</div>'+
+      '<div style="margin-bottom:16px"><button class="ra-btn" id="raCopyMd">Copy as markdown table</button> <button class="ra-btn" id="raBack">Back to slides</button></div>'+
+      '<table class="sum"><thead><tr><th>#</th><th>Sev</th><th>Area</th><th>Title</th><th>Verdict</th><th>Comment</th></tr></thead><tbody>'+rows+'</tbody></table>';
+    document.getElementById('raBack').addEventListener('click', showSlides);
+    document.getElementById('raCopyMd').addEventListener('click', function(){
+      var md='| # | Sev | Area | Title | Verdict | Comment |\n|---|---|---|---|---|---|\n'+
+        data.map(function(d){
+          var v=d.verdict?d.verdict:'-';
+          return '| '+d.id+' | '+d.sev+' | '+d.area+' | '+d.title.replace(/\|/g,'\\|')+' | '+v+' | '+(d.comment||'').replace(/\|/g,'\\|')+' |';
+        }).join('\n');
+      navigator.clipboard.writeText(md);
+      var b=document.getElementById('raCopyMd'); b.textContent='Copied!';
+      setTimeout(function(){b.textContent='Copy as markdown table';},1400);
+    });
+  }
+  var summaryOpen=false;
+  function showSummary(){ summaryOpen=true; renderSummary(); summary.classList.remove('hidden'); stage.classList.add('hidden'); document.querySelector('.ra-foot').classList.add('hidden'); document.getElementById('raSummaryBtn').textContent='Slides'; }
+  function showSlides(){ summaryOpen=false; summary.classList.add('hidden'); stage.classList.remove('hidden'); document.querySelector('.ra-foot').classList.remove('hidden'); document.getElementById('raSummaryBtn').textContent='Summary'; renderSlide(); }
+  document.getElementById('raSummaryBtn').addEventListener('click', function(){ summaryOpen?showSlides():showSummary(); });
+  document.getElementById('raResetBtn').addEventListener('click', function(){
+    if(!confirm('Reset all verdicts in this demo to the original audit result?')) return;
+    try{ localStorage.removeItem(KEY); }catch(e){}
+    location.reload();
+  });
+
+  // keyboard, only when the app is focused/hovered
+  var hot=false;
+  app.addEventListener('mouseenter',function(){hot=true;});
+  app.addEventListener('mouseleave',function(){hot=false;});
+  app.addEventListener('focusin',function(){hot=true;});
+  document.addEventListener('keydown',function(e){
+    if(!hot) return;
+    if(e.target && (e.target.tagName==='TEXTAREA'||e.target.tagName==='INPUT')){
+      if(e.key==='Escape'){ e.target.blur(); } return;
+    }
+    var k=e.key.toLowerCase();
+    if(k==='arrowright'){ e.preventDefault(); if(!summaryOpen) go(1); }
+    else if(k==='arrowleft'){ e.preventDefault(); if(!summaryOpen) go(-1); }
+    else if(k==='p'&&!summaryOpen){ e.preventDefault(); setVerdict('pass'); }
+    else if(k==='f'&&!summaryOpen){ e.preventDefault(); setVerdict('fail'); }
+    else if(k==='s'&&!summaryOpen){ e.preventDefault(); setVerdict('skip'); }
+    else if(k==='g'){ e.preventDefault(); summaryOpen?showSlides():showSummary(); }
+  });
+
+  renderSlide();
+})();
+</script>
+</body>
+</html>
