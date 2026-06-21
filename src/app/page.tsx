@@ -36,6 +36,7 @@ import { PrinciplesShowcase } from "@/components/principles-showcase";
 import { SiteNavbar } from "@/components/site-navbar";
 import { WoodIcon } from "@/components/wood-icon";
 import { SOLUTIONS, SOLUTION_STORIES } from "@/lib/solutions";
+import { CABINETS, CABINETS_SITE, cabinetUrl, cabinetCover } from "@/lib/cabinets";
 import { DISCORD_URL, GITHUB_URL, MACOS_DOWNLOAD_URL } from "@/lib/site-config";
 
 const PROVIDERS = [
@@ -1861,6 +1862,77 @@ export default function Home() {
                 </span>
               </a>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ─── Cabinet templates (cabinets.sh registry) ─── */}
+      <section id="cabinets" className="py-24 border-t border-border bg-bg">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <p className="section-label mb-3">Cabinet templates</p>
+            <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
+              Plug-and-play AI teams for AI agents
+            </h2>
+            <p className="text-text-secondary max-w-2xl mx-auto font-body-serif leading-relaxed">
+              Each cabinet is a complete AI team: agents, jobs, and knowledge.
+              Clone a directory. Run a company.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
+            {CABINETS.slice(0, 6).map((c) => (
+              <a
+                key={c.slug}
+                href={cabinetUrl(c.slug)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-bg-card card-hover"
+              >
+                <div
+                  className="relative w-full overflow-hidden"
+                  style={{ paddingBottom: "56%" }}
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={cabinetCover(c.slug)}
+                    alt=""
+                    loading="lazy"
+                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-200 group-hover:scale-105"
+                  />
+                </div>
+                <div className="flex flex-1 flex-col p-5">
+                  <h3 className="mb-2 font-display text-lg text-text-primary">
+                    {c.name}
+                  </h3>
+                  <p className="mb-3 flex-1 text-sm text-text-secondary font-body-serif leading-relaxed">
+                    {c.description}
+                  </p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {c.tags.slice(0, 3).map((t) => (
+                      <span
+                        key={t}
+                        className="rounded-full bg-accent-bg px-2 py-0.5 font-code text-[11px] text-accent"
+                      >
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+
+          <div className="mt-10 text-center">
+            <a
+              href={CABINETS_SITE}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex h-11 items-center justify-center gap-2 rounded-full px-6 text-sm font-semibold btn-wood"
+            >
+              Browse all cabinets
+              <ArrowRight className="w-4 h-4" />
+            </a>
           </div>
         </div>
       </section>

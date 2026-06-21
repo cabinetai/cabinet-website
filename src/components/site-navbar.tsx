@@ -118,9 +118,12 @@ export function SiteNavbar({ fixed = false }: { fixed?: boolean }) {
 
         {/* Section buttons */}
         <div className="hidden min-[1100px]:flex items-center gap-2">
-          <GlassNavLink href="/#features">Features</GlassNavLink>
           <SolutionsMenu triggerClassName="text-text-secondary" />
           <GlassNavLink href="/compare">Compare</GlassNavLink>
+          <GlassNavLink href="/use-cases">Use cases</GlassNavLink>
+          <GlassNavLink href="https://cabinets.sh" external>
+            Cabinets
+          </GlassNavLink>
           <GlassNavLink href="/pricing">Pricing</GlassNavLink>
           <GlassNavLink href="https://docs.runcabinet.com/" external>
             Docs

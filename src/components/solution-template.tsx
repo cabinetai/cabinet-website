@@ -13,6 +13,12 @@ import { SiteNavbar } from "@/components/site-navbar";
 import { WoodIcon } from "@/components/wood-icon";
 import { GITHUB_URL } from "@/lib/site-config";
 import { SOLUTIONS, SOLUTION_STORIES, type Solution } from "@/lib/solutions";
+import {
+  CABINETS_SITE,
+  cabinetBySlug,
+  cabinetUrl,
+  cabinetCover,
+} from "@/lib/cabinets";
 
 // The three claims only Cabinet can make — shown on every solution page so the
 // ownership/agentic wedge lands no matter which role page a buyer enters on.
@@ -101,6 +107,73 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
           </div>
         </div>
       </section>
+
+      {/* ─── Example cabinets (cabinets.sh registry) ─── */}
+      {solution.exampleCabinets.length > 0 && (
+        <section className="border-b border-border py-20">
+          <div className="mx-auto max-w-5xl px-6">
+            <div className="mb-10 text-center">
+              <p className="section-label mb-3">Starter cabinets</p>
+              <h2 className="font-display text-3xl tracking-tight text-text-primary md:text-4xl">
+                Example cabinets for {solution.label}
+              </h2>
+              <p className="mx-auto mt-4 max-w-2xl font-body-serif leading-relaxed text-text-secondary">
+                Clone a ready-made AI team from the registry and adapt it. Each
+                cabinet ships with agents, jobs, and knowledge.
+              </p>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {solution.exampleCabinets.map((slug) => {
+                const c = cabinetBySlug(slug);
+                if (!c) return null;
+                return (
+                  <a
+                    key={slug}
+                    href={cabinetUrl(slug)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-bg-card card-hover"
+                  >
+                    <div
+                      className="relative w-full overflow-hidden"
+                      style={{ paddingBottom: "56%" }}
+                    >
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={cabinetCover(slug)}
+                        alt=""
+                        loading="lazy"
+                        className="absolute inset-0 h-full w-full object-cover transition-transform duration-200 group-hover:scale-105"
+                      />
+                    </div>
+                    <div className="flex flex-1 flex-col p-5">
+                      <h3 className="mb-2 font-display text-lg text-text-primary">
+                        {c.name}
+                      </h3>
+                      <p className="flex-1 text-sm font-body-serif leading-relaxed text-text-secondary">
+                        {c.description}
+                      </p>
+                      <span className="mt-3 inline-flex items-center gap-1.5 font-code text-sm text-accent transition-colors group-hover:text-accent-warm">
+                        View on cabinets.sh <ArrowRight className="h-4 w-4" />
+                      </span>
+                    </div>
+                  </a>
+                );
+              })}
+            </div>
+            <div className="mt-8 text-center">
+              <a
+                href={CABINETS_SITE}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 font-code text-sm text-accent transition-colors hover:text-accent-warm"
+              >
+                Browse all cabinets <ArrowRight className="h-4 w-4" />
+              </a>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ─── The problem ─── */}
       <section className="border-b border-border bg-bg-warm py-20">

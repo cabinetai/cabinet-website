@@ -42,6 +42,8 @@ export type Solution = {
   stack: string[];
   /** A starter cabinet template (cabinets.sh registry). */
   template: string;
+  /** Example cabinets from the cabinets.sh registry, by slug. */
+  exampleCabinets: string[];
   /** Optional transparent, single-motif hero illustration (public/generated). */
   heroMotif?: string;
 };
@@ -82,6 +84,7 @@ export const SOLUTIONS: Solution[] = [
     ],
     stack: ["Salesforce / HubSpot", "Apollo", "LinkedIn", "Gmail", "Slack"],
     template: "cabinet:sales-room",
+    exampleCabinets: ["saas-startup", "agency", "ecommerce"],
     heroMotif: "/generated/solution-sales.png",
   },
   {
@@ -119,6 +122,7 @@ export const SOLUTIONS: Solution[] = [
     ],
     stack: ["Google Drive", "Figma", "Ahrefs", "GA / Posthog", "Slack"],
     template: "cabinet:marketing-desk",
+    exampleCabinets: ["content-creator", "ecommerce", "agency"],
   },
   {
     slug: "engineering",
@@ -155,6 +159,7 @@ export const SOLUTIONS: Solution[] = [
     ],
     stack: ["GitHub / GitLab", "Linear / Jira", "PagerDuty", "Datadog", "Slack"],
     template: "cabinet:eng-handbook",
+    exampleCabinets: ["saas-startup", "audits"],
   },
   {
     slug: "product",
@@ -191,6 +196,7 @@ export const SOLUTIONS: Solution[] = [
     ],
     stack: ["Linear / Jira", "Notion import", "Intercom / Zendesk", "Gong", "Figma"],
     template: "cabinet:product-room",
+    exampleCabinets: ["audits", "saas-startup", "content-creator"],
   },
   {
     slug: "operations",
@@ -227,6 +233,7 @@ export const SOLUTIONS: Solution[] = [
     ],
     stack: ["Google Sheets", "QuickBooks", "Ramp / Brex", "Airtable", "Slack"],
     template: "cabinet:ops-room",
+    exampleCabinets: ["agency", "ecommerce", "real-estate"],
   },
   {
     slug: "founders",
@@ -263,6 +270,7 @@ export const SOLUTIONS: Solution[] = [
     ],
     stack: ["Gmail / Outlook", "Google Workspace", "Stripe", "Carta", "Slack"],
     template: "cabinet:exec-room",
+    exampleCabinets: ["saas-startup", "agency", "audits"],
   },
 ];
 
