@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { ArrowRight, Users } from "lucide-react";
 import { trackEvent } from "@/lib/analytics";
-import { MACOS_DOWNLOAD_URL } from "@/lib/site-config";
+import { MACOS_DOWNLOAD_URL, WINDOWS_DOWNLOAD_URL } from "@/lib/site-config";
 import type { PricingTier } from "@/lib/waitlist-client";
 import { PricingTierCard } from "@/components/pricing-tier-card";
 import { WoodIcon } from "@/components/wood-icon";
@@ -81,6 +81,15 @@ export function PricingInteractive() {
               <code className="font-code text-text-secondary">
                 npx cabinetai run
               </code>
+              {" · "}
+              <a
+                href={WINDOWS_DOWNLOAD_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-accent underline underline-offset-2"
+              >
+                Windows installer
+              </a>
             </span>
           }
         />

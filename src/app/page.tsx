@@ -37,7 +37,7 @@ import { SiteNavbar } from "@/components/site-navbar";
 import { WoodIcon } from "@/components/wood-icon";
 import { SOLUTIONS, SOLUTION_STORIES } from "@/lib/solutions";
 import { CABINETS, CABINETS_SITE, cabinetUrl, cabinetCover } from "@/lib/cabinets";
-import { DISCORD_URL, GITHUB_URL, MACOS_DOWNLOAD_URL } from "@/lib/site-config";
+import { DISCORD_URL, GITHUB_URL, MACOS_DOWNLOAD_URL, WINDOWS_DOWNLOAD_URL } from "@/lib/site-config";
 
 const PROVIDERS = [
   { src: "/providers/claude.svg", name: "Claude" },
@@ -1170,6 +1170,15 @@ export default function Home() {
               </div>
             </div>
             <p className="mt-4 text-sm font-body-serif text-text-tertiary">
+              On Windows?{" "}
+              <a
+                href={WINDOWS_DOWNLOAD_URL}
+                className="text-accent underline underline-offset-2 hover:text-accent-warm"
+              >
+                Download the installer
+              </a>
+            </p>
+            <p className="mt-4 text-sm font-body-serif text-text-tertiary">
               Evaluating Cabinet for your team?{" "}
               <a
                 href="/demo"
@@ -2056,6 +2065,15 @@ export default function Home() {
                 <CopyButton text="npx cabinetai run" />
               </div>
             </div>
+            <p className="mt-4 text-sm font-body-serif text-text-tertiary">
+              On Windows?{" "}
+              <a
+                href={WINDOWS_DOWNLOAD_URL}
+                className="text-accent underline underline-offset-2 hover:text-accent-warm"
+              >
+                Download the installer
+              </a>
+            </p>
           </div>
           <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 mt-4">
             <a
