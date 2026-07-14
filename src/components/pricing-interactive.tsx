@@ -88,7 +88,7 @@ export function PricingInteractive() {
                 rel="noopener noreferrer"
                 className="text-accent underline underline-offset-2"
               >
-                Windows installer
+                Windows installer (unsigned)
               </a>
             </span>
           }
