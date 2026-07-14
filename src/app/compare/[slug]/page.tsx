@@ -95,7 +95,7 @@ const softwareSchema = {
   applicationCategory: "BusinessApplication",
   operatingSystem: "macOS, Linux, Windows",
   offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-  sameAs: ["https://github.com/hilash/cabinet"],
+  sameAs: ["https://github.com/cabinetai/cabinet"],
 };
 
 function JsonLd({ data }: { data: object }) {

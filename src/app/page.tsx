@@ -1177,6 +1177,7 @@ export default function Home() {
               >
                 Download the installer
               </a>
+              {" "}(currently unsigned; Windows may show Unknown publisher or SmartScreen)
             </p>
             <p className="mt-4 text-sm font-body-serif text-text-tertiary">
               Evaluating Cabinet for your team?{" "}
@@ -2073,6 +2074,7 @@ export default function Home() {
               >
                 Download the installer
               </a>
+              {" "}(currently unsigned; Windows may show Unknown publisher or SmartScreen)
             </p>
           </div>
           <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 mt-4">
@@ -2178,7 +2180,7 @@ export default function Home() {
                 </li>
                 <li>
                   <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-text-primary transition-colors flex items-center gap-1.5">
-                    <GithubIcon className="w-3.5 h-3.5" /> hilash/cabinet {stars !== null ? `· ${formatStarCount(stars)} stars` : ""}
+                    <GithubIcon className="w-3.5 h-3.5" /> cabinetai/cabinet {stars !== null ? `· ${formatStarCount(stars)} stars` : ""}
                   </a>
                 </li>
               </ul>

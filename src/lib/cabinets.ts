@@ -1,6 +1,6 @@
 /**
  * Featured cabinets from the public registry at cabinets.sh
- * (source: https://github.com/hilash/cabinets). Each cabinet is a complete
+ * (source: https://github.com/cabinetai/cabinets). Each cabinet is a complete
  * AI team — agents, jobs, and knowledge — that you clone and run.
  *
  * This is a curated snapshot for the marketing site; the full, always-current
