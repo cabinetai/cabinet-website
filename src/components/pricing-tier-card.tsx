@@ -121,7 +121,7 @@ export function PricingTierCard({
             {name}
           </h3>
           {badge && (
-            <span className="rounded-full bg-accent px-2 py-0.5 text-[0.55rem] font-code uppercase tracking-[0.16em] text-white shadow-sm">
+            <span className="rounded-full bg-accent px-2 py-0.5 text-[0.55rem] font-code uppercase tracking-[0.08em] text-white shadow-sm">
               {badge}
             </span>
           )}

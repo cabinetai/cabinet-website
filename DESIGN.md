@@ -66,7 +66,7 @@ The current problem-first scroll story ("lives in a hundred places → pulls it 
 No rebrand. The brand guide's palette, type stack, glass, and wood motifs stand. The redesign is about **discipline and intent** in how they are used.
 
 1. **Editorial grid, not floating islands.** Every section aligns to a 12-column grid at `max-w-7xl`. Headline column + media column. No more single small object centered in a void: the wooden motifs render large (40 to 55% of section width) or not at all.
-2. **Type does the talking.** The v2 stack (2026-07-17): Fraunces for display (a warm editorial serif that matches the wooden-craft identity and carries Town-scale headlines), Instrument Sans for body, UI, and eyebrows (pairing with the Instrument Serif wordmark as one family). Hero headlines at `clamp(2.75rem, 6vw, 5.5rem)` with a strict scale below; body at max 70ch. Spec in `docs/brand-guide.md` §6.
+2. **Type does the talking.** The locked stack (picked on `/styleguide/fonts`, 2026-07-18): Fraunces for display at -0.04em tracking (a warm editorial serif that matches the wooden-craft identity and carries Town-scale headlines), Geist for body and UI, Geist at 0.08em for uppercase labels, Martian Mono for code. Hero headlines at `clamp(2.75rem, 6vw, 5.5rem)` with a strict scale below; body at max 70ch. Spec in `docs/brand-guide.md` §6.
 3. **The product is the imagery.** Above the fold and in every capability section, show Cabinet itself: real screenshots or live embedded views, framed in the terminal/card chrome. Wooden motifs support; they stop being the only visual.
 4. **One signature moment per page** (§5). Everything else is quiet.
 5. **Warm stays warm.** No cold blues, no dark-mode sections copied from Linear. Our dark surface is `--bg-terminal` (warm brown-black) and it is used only for product/terminal frames.
@@ -152,6 +152,7 @@ Priority order. "Conform" = this doc + brand guide + world-class PRD floors.
 
 ## 10. Open items
 
+0. **The mark.** Round-1 audition (12 directions, `scripts/generate-logos.mjs`) narrowed to the wooden tile. Round 2 develops two families on `/styleguide` "Logo candidates": (a) a single-drawer wooden squircle whose handle is a carved smile with dot eyes (after the ref-trio and face-squircle explorations), in walnut, glowing, and brass finishes; (b) Notion-composition ivory tiles carrying a serif C or the face glyph. Winner gets wired into favicon, nav, and app-icon assets and recorded in brand guide §4.
 1. Hero H1 A/B candidates ("Your company's brain, with hands." / "The AI workspace you own.") : pick after the v1 ships and Search Console + CTA instrumentation report.
 2. The two capability gaps (calendar-ops, chief-of-staff cabinets) are specced in `TOWN.md` §4; building them unlocks two more explorer rows.
 3. r3f cabinet hero: revisit post-launch (§5.1).

@@ -45,7 +45,7 @@ export function SolutionsMenu({ triggerClassName = "" }: { triggerClassName?: st
             <div className="grid grid-cols-2 gap-x-2">
               {/* By team */}
               <div>
-                <p className="px-3 pb-1 pt-2 text-[11px] font-medium uppercase tracking-[0.14em] text-text-tertiary">
+                <p className="px-3 pb-1 pt-2 text-[11px] font-medium uppercase tracking-[0.08em] text-text-tertiary">
                   By team
                 </p>
                 {SOLUTIONS.map((s) => (
@@ -66,7 +66,7 @@ export function SolutionsMenu({ triggerClassName = "" }: { triggerClassName?: st
               </div>
               {/* By industry */}
               <div className="border-l border-border-light pl-2">
-                <p className="px-3 pb-1 pt-2 text-[11px] font-medium uppercase tracking-[0.14em] text-text-tertiary">
+                <p className="px-3 pb-1 pt-2 text-[11px] font-medium uppercase tracking-[0.08em] text-text-tertiary">
                   By industry
                 </p>
                 {INDUSTRIES.map((i) => (
