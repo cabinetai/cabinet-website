@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { usePathname } from "next/navigation";
 import { ArrowRight, Check, CheckCircle2, Cloud, Loader2 } from "lucide-react";
 import { trackEvent } from "@/lib/analytics";
@@ -26,6 +26,10 @@ type WaitlistCaptureProps = {
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+function subscribeToWaitlistState() {
+  return () => {};
+}
+
 export function WaitlistCapture({
   source,
   className = "",
@@ -45,12 +49,12 @@ export function WaitlistCapture({
     "idle" | "submitting" | "success" | "already" | "error"
   >("idle");
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
-
-  // localStorage is unavailable during SSR, so reading it in the initial state
-  // causes a hydration mismatch. Read it once after mount instead.
-  useEffect(() => {
-    if (hasWaitlistSubmission()) setStatus("already");
-  }, []);
+  const alreadySubmitted = useSyncExternalStore(
+    subscribeToWaitlistState,
+    hasWaitlistSubmission,
+    () => false,
+  );
+  const displayStatus = status === "idle" && alreadySubmitted ? "already" : status;
 
   // IntersectionObserver: fire backend "view" + analytics view-event when the
   // card is at least 55% on-screen.
@@ -170,12 +174,12 @@ export function WaitlistCapture({
             Hosted version coming soon
           </p>
 
-          {status === "success" || status === "already" ? (
+          {displayStatus === "success" || displayStatus === "already" ? (
             <div className="rounded-xl border border-accent/40 bg-accent-bg-subtle px-4 py-4 text-text-primary leading-relaxed">
               <div className="flex items-start gap-3">
                 <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
                 <div className="text-sm">
-                  {status === "already"
+                  {displayStatus === "already"
                     ? "You're already on the list. We'll be in touch as soon as Cabinet Cloud opens up."
                     : "You're on the list. We'll email you when Cabinet Cloud opens up."}
                 </div>

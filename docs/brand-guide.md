@@ -93,7 +93,7 @@ Assets (existing, do not redraw):
 - **Full logo:** `public/Cabinet.png`.
 - **Wordmark in type:** the word "Cabinet" set in the brand serif (Instrument Serif), italic, tight tracking. This is the canonical lockup in the navbars:
   `font-brand italic tracking-tight`.
-- **Product name in copy:** whenever the word "Cabinet" (the product) appears in user-facing copy, it renders in the wordmark serif: wrap it in `<span className="font-brand italic">Cabinet</span>`. For copy that arrives as plain strings from data files, pipe it through `brandify()` in `src/components/brand-word.tsx`. Generic uses ("a cabinet", "Cabinets" the templates section) stay in the body font.
+- **Product name in copy:** in body copy (paragraphs, list items, table cells, quotes), the word "Cabinet" (the product) renders in the wordmark serif: wrap it in `<span className="font-brand italic">Cabinet</span>`, or pipe data-file strings through `brandify()` in `src/components/brand-word.tsx`. In display type (h1-h6, `.font-display`, `.ent-display-*`, eyebrows) the name sets in the heading face like the rest of the line; the serif clashes at display sizes. Generic uses ("a cabinet", "Cabinets" the templates section) stay in the body font.
 
 ### Rules
 
@@ -183,17 +183,19 @@ Four typefaces plus a signature script, each with one job. Loaded in `src/app/la
 
 | Role | Family | Tracking | Token / class | Use |
 |---|---|---|---|---|
-| Display | Fraunces | -0.04em | `--font-heading` (theme `--font-display`), `.font-display`, `.ent-display-1/2/3` | Headlines, hero type. Optical sizing, weight ~600 |
+| Hero display | Fraunces | -0.04em | `--font-heading` (theme `--font-display`), `.font-display`, `.ent-display-1` | Homepage H1, quotations, selected outcome headlines. Optical sizing, weight ~600 |
+| Section heading | Geist | -0.045em | `.font-section`, `.ent-display-2/3` | H2 and H3 across marketing and product stories, weight 620 |
 | Body / UI sans | Geist | 0 | `--font-body` (theme `--font-sans`) | Body copy, nav, buttons, most UI |
 | Labels / eyebrows | Geist | 0.08em | `.section-label`, `.ent-eyebrow` | Uppercase tags and eyebrows |
-| Brand wordmark | Instrument Serif (italic) | tight | `--font-brand`, `.font-brand` | The product name "Cabinet" wherever it appears in copy |
+| Brand wordmark | Instrument Serif (italic) | tight | `--font-brand`, `.font-brand` | The wordmark lockup, and the product name "Cabinet" in body copy (never in display headings) |
 | Code / mono | Martian Mono | 0 | `--font-mono`, `.font-code` | Code, terminal, literal commands |
 | Handwriting | Ms Madi | default | `--font-hand`, `.font-hand` | Testimonial signatures only |
 
 ### Type roles in practice
 
 - **Eyebrow / section label:** `.section-label` and `.ent-eyebrow`, set in **Geist, weight 500**, uppercase, letter-spaced **0.08em**, accent color. Labels are kept **separate from code**: Martian Mono is reserved for code, terminal, and literal commands only, never for eyebrows.
-- **Headlines:** `.font-display` or the `.ent-display-*` scale (`clamp()`-based, responsive), tracked at **-0.04em**. Fraunces carries warmth on its own; do not add italics or extra weight for emphasis, use scale.
+- **Hero and outcome display:** `.font-display` or `.ent-display-1`, tracked at **-0.04em**. Fraunces is intentionally rare.
+- **Section and card headings:** `.font-section` or `.ent-display-2/3`, set in Geist at weight 620 and **-0.045em** tracking.
 - **Lead paragraph:** `.ent-lead` (Geist).
 - **Body prose:** Geist at comfortable measure (max ~70 characters), no extra tracking.
 - **Gradient emphasis:** `.gradient-text` on one word, sparingly.
@@ -242,7 +244,7 @@ Reuse these. Do not hand-roll new variants without adding them here.
 | Style | Class / pattern | Use |
 |---|---|---|
 | Primary | `.ent-btn-primary` (rounded-full, accent fill, inset highlight) | The one main action per view |
-| Secondary | `.ent-btn-secondary` (white, dark border) | Considered path (Book a demo) |
+| Secondary | `.ent-btn-secondary` (white, borderless, warm shadow) | Considered path (Book a demo) |
 | Ghost | `.ent-btn-ghost` | Low-emphasis inline action |
 | Glass pill | `.glass-pill` + refract child | Nav and floating actions |
 
@@ -250,7 +252,7 @@ Convention: **rounded-full** is the house button shape everywhere (the `rounded-
 
 ### Surfaces
 
-**House rule (v2): content surfaces are borderless.** Depth comes from one warm diffuse shadow (`rgba(150,108,68,…)` tones), never from a hairline. Borders remain only where they carry affordance: form inputs, the secondary button, glass panel edges over imagery, and comparison-table structure.
+**House rule (v3): content surfaces and buttons are borderless.** Depth comes from one warm diffuse shadow (`rgba(150,108,68,…)` tones) and background contrast, never from a hairline. Borders remain only where they carry necessary structure: form inputs, data tables, and dividers inside product UI.
 
 - **Card:** `.ent-card` (white, borderless, warm shadow) with `.ent-card-hover` for interactive lift. Marketing alias: `.dict-card`.
 - **Skin-only:** `.card-skin` / `.card-skin-warm` apply the surface without a radius, so markup keeps its own `rounded-*`. Use these instead of `border border-border bg-*` utility combos.
@@ -300,7 +302,7 @@ Comparison tables pin and tint the Cabinet column, use icon + label (not color a
 ## 11. Layout & spacing
 
 - **Container:** `max-w-7xl` for full marketing width, `max-w-6xl` for reading-dense sections, centered with `px-6` (responsive `px-4`).
-- **Rhythm:** generous vertical spacing (sections around `py-24`), one idea per section, lots of whitespace. Executives skim; let the page breathe.
+- **Rhythm:** homepage chapters occupy at least `100svh` on desktop with approximately `12svh` vertical padding. Tablet and mobile use natural content height. One idea per chapter, with enough whitespace to make the transition unmistakable.
 - **Radii:** `rounded-2xl`/`rounded-3xl` for cards and panels, `rounded-full` for buttons and pills.
 - **Shadows:** prefer the existing recipes (card, card-hover, terminal). Avoid inventing new shadow depths per component; a shadow scale is a PRD item.
 
@@ -346,7 +348,7 @@ Process: any change to a token, font, button style, or the glass system updates 
 ## Appendix A. Quick reference
 
 - **Palette mood:** warm parchment, rich brown, sage green. Light only.
-- **Type:** Fraunces -0.04em (display), Geist (body and UI; labels at 0.08em), Instrument Serif italic (wordmark), Martian Mono (code), Ms Madi (signatures).
+- **Type:** Fraunces -0.04em (hero, quotations, selected outcomes), Geist -0.045em (H2/H3), Geist (body and UI; labels at 0.08em), Instrument Serif italic (wordmark), Martian Mono (code), Ms Madi (signatures).
 - **Signature:** liquid-glass floating pills; warm light-wood illustration motifs with small touches of color.
 - **Voice:** confident operator, concrete, no em dashes, no AI filler, no fake numbers.
 - **One action per view.** Accent brown primary. Sage means good.

@@ -4,29 +4,22 @@ import {
   ArrowRight,
   Bot,
   Brain,
-  Calendar,
   Clock,
   Database,
   FileText,
   Folder,
   GitBranch,
-  Globe,
-  Layers,
   LayoutDashboard,
-  MessageSquare,
   Network,
   Search,
   Shield,
   Sparkles,
-  Terminal,
   Users,
   Workflow,
-  Zap,
 } from "lucide-react";
 import {
   CheckList,
   Eyebrow,
-  FeatureCard,
   Pill,
   PrimaryButton,
   SecondaryButton,
@@ -461,13 +454,13 @@ function Integrations() {
         eyebrow="Integrations"
         title={
           <>
-            <span className="font-brand italic">Cabinet</span>{" "}lives{" "}
+            Cabinet lives{" "}
             <em className="text-accent">where work already happens</em>.
                                   </>
         }
         kicker={
           <>
-            We don't ask your team to log into another tool. The AI teammates
+            We don’t ask your team to log into another tool. The AI teammates
             post into Slack and Teams, pull from Linear and Jira, query
             Snowflake, and write back to your files, all running on your own
             AI provider keys.

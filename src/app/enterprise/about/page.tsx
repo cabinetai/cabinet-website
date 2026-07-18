@@ -4,7 +4,6 @@ import Image from "next/image";
 import { ArrowRight, ArrowUpRight, Mail } from "lucide-react";
 import {
   Eyebrow,
-  PrimaryButton,
   SecondaryButton,
   Section,
   SectionHeader,
@@ -132,7 +131,7 @@ function AppleWork() {
         <div className="space-y-6 text-[1.0625rem] text-text-secondary font-body-serif leading-relaxed max-w-2xl">
           <p>
             I led the team that built the orchestration platform behind
-            Apple's on-device AI training. Machine-learning engineers wrote
+            Apple’s on-device AI training. Machine-learning engineers wrote
             Python. The platform handled fault tolerance, scheduling across
             thousands of GPUs, and the network topology across data centers.
             Training and data preparation became{" "}
@@ -177,7 +176,7 @@ function Thesis() {
         <div className="lg:pt-2">
           <Eyebrow>Why <span className="font-brand italic">Cabinet</span></Eyebrow>
           <h2 className="mt-3 font-display text-3xl md:text-4xl text-text-primary leading-tight">
-            Why I'm spending the next decade on this.
+            Why I’m spending the next decade on this.
           </h2>
         </div>
 
@@ -206,7 +205,7 @@ function Thesis() {
             </span>
             <span>) </span>stays as plain files inside your company. Because the second
             lesson of Apple-scale was simpler: when you are responsible for
-            billions of users' data, you do not trust anyone else to hold it.
+            billions of users’ data, you do not trust anyone else to hold it.
             You hold it yourself.
           </p>
         </div>
@@ -300,7 +299,7 @@ function Beyond() {
         <article>
           <Eyebrow>Builders Podcast</Eyebrow>
           <h3 className="mt-3 font-display text-2xl text-text-primary leading-tight">
-            Israel's first Hebrew podcast on bootstrapped and AI-powered
+            Israel’s first Hebrew podcast on bootstrapped and AI-powered
             startups.
           </h3>
           <p className="mt-4 text-[1.0625rem] text-text-secondary font-body-serif leading-relaxed">
@@ -340,8 +339,8 @@ function Connect() {
         <div className="ent-card p-10 md:p-14 text-center">
           <Eyebrow>Get in touch</Eyebrow>
           <h2 className="mt-3 font-display text-3xl md:text-4xl text-text-primary leading-tight">
-            Whether you're running a Fortune-500 strategy function or building
-            your own thing, I'd like to hear from you.
+            Whether you’re running a Fortune-500 strategy function or building
+            your own thing, I’d like to hear from you.
           </h2>
           <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
             <a

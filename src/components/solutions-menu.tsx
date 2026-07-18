@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { ChevronDown, ArrowRight } from "lucide-react";
 import { SOLUTIONS } from "@/lib/solutions";
@@ -54,9 +55,11 @@ export function SolutionsMenu({ triggerClassName = "" }: { triggerClassName?: st
                     href={`/solutions/${s.slug}`}
                     className="group flex items-center gap-3 rounded-xl p-2.5 transition-colors hover:bg-bg-warm"
                   >
-                    <img
+                    <Image
                       src={`/brand/icons/${s.slug}.png`}
                       alt=""
+                      width={72}
+                      height={72}
                       className="h-9 w-9 shrink-0 object-contain transition-transform duration-200 group-hover:scale-110 group-hover:-rotate-2"
                     />
                     <span className="text-sm font-semibold text-text-primary">{s.label}</span>
@@ -75,9 +78,11 @@ export function SolutionsMenu({ triggerClassName = "" }: { triggerClassName?: st
                     href={`/industries/${i.slug}`}
                     className="group flex items-center gap-3 rounded-xl p-2.5 transition-colors hover:bg-bg-warm"
                   >
-                    <img
+                    <Image
                       src={`/brand/icons/${i.slug}.png`}
                       alt=""
+                      width={72}
+                      height={72}
                       className="h-9 w-9 shrink-0 object-contain transition-transform duration-200 group-hover:scale-110 group-hover:-rotate-2"
                     />
                     <span className="text-sm font-semibold text-text-primary">{i.label}</span>

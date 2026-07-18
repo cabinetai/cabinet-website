@@ -35,7 +35,7 @@ export function CompareMigration({ data }: { data: Migration }) {
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <Link
-              href="/#get-started"
+              href="/#get-cabinet"
               className="inline-flex items-center gap-2 rounded-xl btn-wood px-7 py-3.5 text-base font-semibold"
             >
               Get started free <ArrowRight className="h-4 w-4" />
@@ -159,7 +159,7 @@ export function CompareMigration({ data }: { data: Migration }) {
           <div className="mt-8 flex flex-col items-center gap-3">
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Link
-                href="/#get-started"
+                href="/#get-cabinet"
                 className="inline-flex items-center gap-2 rounded-xl btn-wood px-7 py-3.5 text-base font-semibold"
               >
                 Get started free <ArrowRight className="h-4 w-4" />

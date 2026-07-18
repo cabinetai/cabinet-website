@@ -39,13 +39,13 @@ const msMadi = Ms_Madi({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://runcabinet.com"),
-  title: "Cabinet: Free & Open-Source AI-First Knowledge Base",
+  title: "Cabinet: The AI workspace your company owns",
   description:
-    "Free and open-source AI-first knowledge base and startup OS. Markdown files on disk. AI agents that actually work. No database. No vendor lock-in. Self-hosted.",
+    "Cabinet shows your entire knowledge base and files, puts AI teams to work on it, and renders results as live apps and dashboards. Open source, self-hosted, bring your own AI.",
   openGraph: {
-    title: "Cabinet: Free & Open-Source AI-First Knowledge Base",
+    title: "Cabinet: The AI workspace your company owns",
     description:
-      "Free and open-source AI-first knowledge base. Markdown on disk. Self-hosted. No vendor lock-in.",
+      "Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI.",
     type: "website",
     url: "https://runcabinet.com",
     images: [
@@ -53,15 +53,15 @@ export const metadata: Metadata = {
         url: "https://runcabinet.com/og.png",
         width: 1200,
         height: 630,
-        alt: "Cabinet: AI-first knowledge base with embedded apps, AI agents, and file-based storage",
+        alt: "Cabinet: the AI workspace your company owns, with knowledge, AI teams, and live apps in one place",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cabinet: Free & Open-Source AI-First Knowledge Base",
+    title: "Cabinet: The AI workspace your company owns",
     description:
-      "Free and open-source AI-first knowledge base. Markdown on disk. Self-hosted. No vendor lock-in.",
+      "Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI.",
     images: ["https://runcabinet.com/og.png"],
   },
 };

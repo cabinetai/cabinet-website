@@ -7,6 +7,20 @@
   --bg-card: #FFFFFF;
   --bg-card-hover: #FBF8F4;
   --bg-terminal: #2C2520;
+  --bg-stage: #211B18;
+  --bg-stage-soft: #2B2420;
+  --bg-stage-panel: #F8F4ED;
+  --stage-brass: #D7BA8B;
+  --stage-brass-strong: #C6A172;
+  --stage-sage: #B9C8AE;
+  --stage-sage-strong: #91A783;
+  --stage-soft: rgba(248, 244, 237, 0.68);
+  --stage-muted: rgba(248, 244, 237, 0.56);
+  --stage-faint: rgba(248, 244, 237, 0.42);
+  --stage-brass-surface: rgba(183, 130, 63, 0.18);
+  --stage-brass-surface-soft: rgba(183, 130, 63, 0.11);
+  --stage-brass-border: rgba(183, 130, 63, 0.34);
+  --stage-sage-surface: rgba(90, 122, 79, 0.18);
 
   /* Rich brown text */
   --text-primary: #3B2F2F;
@@ -40,6 +54,20 @@
   --color-bg-card: var(--bg-card);
   --color-bg-card-hover: var(--bg-card-hover);
   --color-bg-terminal: var(--bg-terminal);
+  --color-bg-stage: var(--bg-stage);
+  --color-bg-stage-soft: var(--bg-stage-soft);
+  --color-bg-stage-panel: var(--bg-stage-panel);
+  --color-stage-brass: var(--stage-brass);
+  --color-stage-brass-strong: var(--stage-brass-strong);
+  --color-stage-sage: var(--stage-sage);
+  --color-stage-sage-strong: var(--stage-sage-strong);
+  --color-stage-soft: var(--stage-soft);
+  --color-stage-muted: var(--stage-muted);
+  --color-stage-faint: var(--stage-faint);
+  --color-stage-brass-surface: var(--stage-brass-surface);
+  --color-stage-brass-surface-soft: var(--stage-brass-surface-soft);
+  --color-stage-brass-border: var(--stage-brass-border);
+  --color-stage-sage-surface: var(--stage-sage-surface);
   --color-text-primary: var(--text-primary);
   --color-text-secondary: var(--text-secondary);
   --color-text-tertiary: var(--text-tertiary);
@@ -71,6 +99,278 @@ body {
   font-family: var(--font-sans), system-ui, sans-serif;
 }
 
+html:has(.home-scroll-snap) {
+  scroll-padding-top: 5.5rem;
+  scroll-snap-type: y proximity;
+}
+
+.home-scroll-snap .home-snap-section {
+  scroll-margin-top: 0;
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+}
+
+/* Homepage rhythm: primary product stories occupy one deliberate visual beat.
+   Short proof and conversion moments use a smaller, still viewport-aware beat. */
+.home-viewport-section {
+  display: flex;
+  min-height: 100svh;
+  align-items: center;
+  padding-block: clamp(4.5rem, 8svh, 7rem);
+}
+
+.home-workflows-section {
+  align-items: flex-start;
+  padding-block: clamp(2.5rem, 6svh, 4.25rem);
+}
+
+.home-proof-section {
+  display: flex;
+  min-height: 100svh;
+  align-items: center;
+  padding-block: clamp(4.5rem, 8svh, 7rem);
+}
+
+.home-testimonials-section {
+  align-items: flex-start;
+  padding-block: clamp(4rem, 7svh, 5.5rem);
+}
+
+@media (max-width: 1023px) {
+  html:has(.home-scroll-snap) {
+    scroll-padding-top: 4.75rem;
+  }
+
+  .home-viewport-section,
+  .home-proof-section {
+    min-height: auto;
+    padding-block: clamp(5rem, 14vw, 7rem);
+  }
+
+  .home-workflows-section {
+    padding-block: clamp(4.5rem, 12vw, 6rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:has(.home-scroll-snap) {
+    scroll-snap-type: none;
+  }
+}
+
+.home-hero-wash {
+  background:
+    radial-gradient(circle at 18% 16%, color-mix(in srgb, var(--accent) 8%, transparent), transparent 27%),
+    radial-gradient(circle at 86% 22%, color-mix(in srgb, var(--green) 5%, transparent), transparent 25%);
+}
+
+.home-stage-wash {
+  background:
+    radial-gradient(circle at 18% 28%, color-mix(in srgb, var(--stage-brass) 16%, transparent), transparent 28%),
+    radial-gradient(circle at 82% 72%, color-mix(in srgb, var(--green) 12%, transparent), transparent 30%);
+}
+
+.home-stage-wash-reverse {
+  background:
+    radial-gradient(circle at 88% 20%, color-mix(in srgb, var(--stage-brass) 20%, transparent), transparent 27%),
+    radial-gradient(circle at 12% 88%, color-mix(in srgb, var(--green) 13%, transparent), transparent 30%);
+}
+
+.home-light-ai-wash {
+  background:
+    radial-gradient(circle at 16% 24%, color-mix(in srgb, var(--green) 10%, transparent), transparent 30%),
+    radial-gradient(circle at 86% 74%, color-mix(in srgb, var(--accent) 9%, transparent), transparent 32%);
+}
+
+.home-light-cta-wash {
+  background:
+    radial-gradient(circle at 88% 18%, color-mix(in srgb, var(--accent) 13%, transparent), transparent 28%),
+    radial-gradient(circle at 12% 88%, color-mix(in srgb, var(--green) 9%, transparent), transparent 32%);
+}
+
+.home-product-surface {
+  box-shadow: 0 30px 70px -48px color-mix(in srgb, var(--text-primary) 42%, transparent);
+}
+
+@media (min-width: 1024px) {
+  .outcome-tablist {
+    scrollbar-color: color-mix(in srgb, var(--accent) 42%, transparent) transparent;
+    scrollbar-gutter: stable;
+    scrollbar-width: thin;
+  }
+
+  .outcome-tablist::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .outcome-tablist::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .outcome-tablist::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--accent) 42%, transparent);
+  }
+}
+
+.home-stage-surface {
+  box-shadow: 0 30px 70px -42px color-mix(in srgb, var(--text-primary) 38%, transparent);
+}
+
+.home-role-card {
+  box-shadow: 0 20px 48px -38px color-mix(in srgb, var(--text-primary) 40%, transparent);
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.home-role-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 30px 58px -38px color-mix(in srgb, var(--text-primary) 48%, transparent);
+}
+
+.home-cta-surface {
+  box-shadow: 0 36px 80px -46px color-mix(in srgb, var(--text-primary) 40%, transparent);
+}
+
+/* Homepage story motion: working cabinets, connected knowledge, and provider choice. */
+.cabinet-template-card {
+  box-shadow: 0 24px 58px -42px color-mix(in srgb, var(--text-primary) 46%, transparent);
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.cabinet-template-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 34px 70px -42px color-mix(in srgb, var(--text-primary) 54%, transparent);
+}
+
+@keyframes cabinet-card-enter {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.cabinet-card-enter {
+  animation: cabinet-card-enter 420ms cubic-bezier(0.2, 0.75, 0.2, 1) both;
+}
+
+@keyframes knowledge-source-in {
+  from { opacity: 0; transform: translateY(-10px) scale(0.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes knowledge-row-in {
+  from { opacity: 0; transform: translateX(-12px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes knowledge-flow {
+  0% { opacity: 0; transform: translate(-50%, -2px); }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; transform: translate(-50%, 52px); }
+}
+
+.knowledge-source-chip {
+  opacity: 0;
+  animation: knowledge-source-in 520ms cubic-bezier(0.2, 0.75, 0.2, 1) forwards;
+}
+
+.knowledge-directory-row {
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.knowledge-directory-row:hover {
+  transform: translateX(4px);
+  box-shadow: 0 16px 28px -24px color-mix(in srgb, var(--text-primary) 44%, transparent);
+}
+
+.knowledge-flow-pulse {
+  animation: knowledge-flow 2.1s ease-in-out infinite;
+}
+
+@keyframes provider-path-draw {
+  0% { stroke-dashoffset: 1; opacity: 0.18; }
+  45% { opacity: 0.8; }
+  100% { stroke-dashoffset: 0; opacity: 0.38; }
+}
+
+@keyframes provider-node-in {
+  from { opacity: 0; transform: translateY(8px) scale(0.94); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes provider-core-breathe {
+  0%, 100% { transform: translate(-50%, -50%) scale(0.92); opacity: 0.52; }
+  50% { transform: translate(-50%, -50%) scale(1.08); opacity: 0.86; }
+}
+
+@keyframes provider-core-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes provider-token-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.provider-connector {
+  fill: none;
+  stroke: color-mix(in srgb, var(--accent) 58%, transparent);
+  stroke-width: 1.4;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: provider-path-draw 1.5s ease-out forwards;
+}
+
+.provider-node {
+  opacity: 0;
+  animation: provider-node-in 520ms cubic-bezier(0.2, 0.75, 0.2, 1) forwards;
+}
+
+.provider-token {
+  transform: translateY(0);
+}
+
+.provider-core-aura {
+  animation: provider-core-breathe 4.8s ease-in-out infinite;
+}
+
+.provider-core {
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cabinet-template-card,
+  .cabinet-template-card:hover {
+    transform: none;
+    transition: none;
+  }
+  .cabinet-card-enter,
+  .knowledge-source-chip,
+  .knowledge-directory-row,
+  .knowledge-flow-pulse,
+  .provider-connector,
+  .provider-node,
+  .provider-token,
+  .provider-core-aura,
+  .provider-core {
+    animation: none;
+    opacity: 1;
+  }
+
+  .home-role-card,
+  .home-role-card:hover,
+  .knowledge-directory-row,
+  .knowledge-directory-row:hover {
+    transform: none;
+    transition: none;
+  }
+}
+
+.mobile-nav-panel {
+  background: color-mix(in srgb, var(--bg) 94%, transparent);
+  box-shadow: 0 30px 80px -32px color-mix(in srgb, var(--bg-stage) 58%, transparent);
+}
+
 /* ─── Typography classes ─── */
 /* .font-brand (Cabinet wordmark serif) is generated from the --font-brand
    theme token above; apply it with `italic` in the markup. */
@@ -79,6 +379,14 @@ body {
   font-optical-sizing: auto;
   font-weight: 600;
   letter-spacing: -0.04em;
+}
+
+/* Readable section voice. Fraunces is reserved for the hero, quotations,
+   and the selected business outcome where its personality earns the space. */
+.font-section {
+  font-family: var(--font-body), system-ui, sans-serif;
+  font-weight: 620;
+  letter-spacing: -0.045em;
 }
 
 .font-body-serif {
@@ -98,6 +406,7 @@ body {
 /* Smooth scroll */
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
 /* Terminal cursor blink */
@@ -294,7 +603,8 @@ html {
   color: var(--text-tertiary);
 }
 
-/* Display typography — Instrument Serif italic capable */
+/* Hero display retains the editorial serif. Section and card headings switch
+   to the body grotesque for faster executive scanning. */
 .ent-display-1 {
   font-family: var(--font-heading), Georgia, serif;
   font-optical-sizing: auto;
@@ -304,19 +614,19 @@ html {
   color: var(--text-primary);
 }
 .ent-display-2 {
-  font-family: var(--font-heading), Georgia, serif;
-  font-optical-sizing: auto;
+  font-family: var(--font-body), system-ui, sans-serif;
+  font-weight: 620;
   font-size: clamp(2rem, 4vw, 3.25rem);
   line-height: 1.08;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.045em;
   color: var(--text-primary);
 }
 .ent-display-3 {
-  font-family: var(--font-heading), Georgia, serif;
-  font-optical-sizing: auto;
+  font-family: var(--font-body), system-ui, sans-serif;
+  font-weight: 620;
   font-size: clamp(1.5rem, 2.5vw, 2rem);
   line-height: 1.15;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.035em;
   color: var(--text-primary);
 }
 
@@ -363,7 +673,6 @@ html {
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.65),
     inset 0 -2px 5px rgba(120, 80, 45, 0.22),
-    inset 0 0 0 1px rgba(170, 125, 80, 0.45),
     0 8px 20px -10px rgba(120, 80, 45, 0.45);
   transition: transform 0.12s ease, box-shadow 0.2s ease, filter 0.2s ease;
 }
@@ -373,7 +682,6 @@ html {
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.7),
     inset 0 -2px 5px rgba(120, 80, 45, 0.22),
-    inset 0 0 0 1px rgba(170, 125, 80, 0.5),
     0 13px 26px -10px rgba(120, 80, 45, 0.5);
 }
 .btn-wood:active {
@@ -433,7 +741,6 @@ html {
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.65),
     inset 0 -2px 5px rgba(120, 80, 45, 0.22),
-    inset 0 0 0 1px rgba(170, 125, 80, 0.45),
     0 8px 20px -10px rgba(120, 80, 45, 0.45);
   transition: transform 120ms ease, box-shadow 200ms ease, filter 200ms ease;
 }
@@ -443,7 +750,6 @@ html {
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.7),
     inset 0 -2px 5px rgba(120, 80, 45, 0.22),
-    inset 0 0 0 1px rgba(170, 125, 80, 0.5),
     0 13px 26px -10px rgba(120, 80, 45, 0.5);
 }
 .ent-btn-primary:active {
@@ -463,13 +769,14 @@ html {
   font-size: 0.875rem;
   font-weight: 500;
   letter-spacing: -0.005em;
-  border: 1px solid var(--border-dark);
-  box-shadow: 0 1px 2px rgba(36, 27, 21, 0.04);
-  transition: background 200ms ease, border-color 200ms ease;
+  border: 0;
+  box-shadow: 0 12px 28px -20px rgba(59, 47, 47, 0.5);
+  transition: background 200ms ease, transform 160ms ease, box-shadow 200ms ease;
 }
 .ent-btn-secondary:hover {
   background: var(--bg-card-hover);
-  border-color: var(--text-tertiary);
+  transform: translateY(-1px);
+  box-shadow: 0 16px 32px -20px rgba(59, 47, 47, 0.58);
 }
 
 .ent-btn-ghost {

@@ -32,7 +32,6 @@ import { useState } from "react";
 import {
   CheckList,
   Eyebrow,
-  FeatureCard,
   Pill,
   PrimaryButton,
   SecondaryButton,
@@ -65,7 +64,7 @@ function Hero() {
             </p>
 
             <p className="ent-lead mt-5 max-w-xl">
-              <span className="font-brand italic">Cabinet's</span>{" "}AI teammates draft the brief, run the OKR cycle, and
+              <span className="font-brand italic">Cabinet’s</span>{" "}AI teammates draft the brief, run the OKR cycle, and
                                           prep every meeting, on a schedule that never slips. Every manager
                                           gets a Chief of Staff; every leader gets a coach. It all runs on
                                           your own infrastructure, yours to inspect, down to the last line
@@ -276,7 +275,7 @@ function Problem() {
       <div className="mt-12 ent-card p-8 md:p-10">
         <div className="grid md:grid-cols-[1fr_1.4fr] gap-8 md:gap-10">
           <div>
-            <Eyebrow>Today's only solution</Eyebrow>
+            <Eyebrow>Today’s only solution</Eyebrow>
             <h3 className="ent-display-3 mt-3">
               One Chief of Staff per CEO. One coach per SVP.
             </h3>
@@ -518,7 +517,7 @@ function LiveBriefSection() {
           </>
         }
         kicker={
-          <>By 06:00 every weekday, <span className="font-brand italic">Cabinet's</span>{" "}AI teammates have read the
+          <>By 06:00 every weekday, <span className="font-brand italic">Cabinet’s</span>{" "}AI teammates have read the
                                     weekend: surfaced the risks, drafted the replies, queued the
                                     meetings. You read the brief over coffee. The work is already done.
                                   </>
@@ -936,7 +935,7 @@ function Templates() {
         title={
           <>
             Workboard: three months to roll out.{" "}
-            <em className="text-accent"><span className="font-brand italic">Cabinet</span>: ten minutes.</em>
+            <em className="text-accent">Cabinet: ten minutes.</em>
           </>
         }
         kicker={
@@ -1032,7 +1031,7 @@ function Outcomes() {
         <StatCard stat="100%" label="Of decisions captured in writing" detail="Every meeting writes a decision file the AI reads the following week." icon={FileText} />
         <StatCard stat="$240k" label="Saved per year, vs. a Workboard contract" detail="Average enterprise replacing a six-figure SaaS contract." icon={Database} />
       </div>
-      <p className="mt-7 text-center text-xs text-text-tertiary">Targets based on Workboard's published customer benchmarks applied to <span className="font-brand italic">Cabinet's</span>{" "}open-source approach. Validated with pilot customers in Q2 2026.
+      <p className="mt-7 text-center text-xs text-text-tertiary">Targets based on Workboard’s published customer benchmarks applied to <span className="font-brand italic">Cabinet’s</span>{" "}open-source approach. Validated with pilot customers in Q2 2026.
                       </p>
     </Section>
   );
@@ -1062,7 +1061,7 @@ function SolutionsPreview() {
         kicker={
           <>
             <span className="font-brand italic">Cabinet</span>{" "}is the rare enterprise platform that lands at the CEO level
-                                    and on every manager's laptop in the same quarter, because the AI
+                                    and on every manager’s laptop in the same quarter, because the AI
                                     teammates work at every altitude.
                                   </>
         }

@@ -58,10 +58,16 @@ const FONTS: {
   use: string;
 }[] = [
   {
-    name: "Display",
+    name: "Hero display",
     className: "font-display",
     token: "Fraunces · --font-heading / --font-display · -0.04em",
-    use: "Headlines and section headings. A warm editorial serif; the loud voice.",
+    use: "The homepage H1, quotations, and selected outcome headlines. Character used with restraint.",
+  },
+  {
+    name: "Section heading",
+    className: "font-section",
+    token: "Geist 620 · --font-body · -0.045em",
+    use: "H2 and H3 across marketing and product stories. Clear, compact, and fast to scan.",
   },
   {
     name: "Body",
@@ -229,7 +235,7 @@ export default function StyleGuidePage() {
       {/* ─── Brand illustrations ─── */}
       <section className="border-b border-border py-16 md:py-20">
         <div className="mx-auto max-w-5xl px-6">
-          <h2 className="font-display text-3xl tracking-tight text-text-primary">
+          <h2 className="font-section text-3xl text-text-primary">
             Brand illustrations
           </h2>
           <p className="mt-4 max-w-2xl font-body-serif text-lg leading-relaxed text-text-secondary">
@@ -282,7 +288,7 @@ export default function StyleGuidePage() {
               <AssetGrid items={LOGO_NEW} />
             ) : (
               <p className="mt-6 font-code text-xs text-text-tertiary">
-                (none yet — drop PNGs in public/brand/logo-variations/)
+                (none yet. Drop PNGs in public/brand/logo-variations/)
               </p>
             )}
           </div>
@@ -317,7 +323,7 @@ export default function StyleGuidePage() {
       {/* ─── Typefaces ─── */}
       <section className="border-b border-border py-16 md:py-20">
         <div className="mx-auto max-w-5xl px-6">
-          <h2 className="font-display text-3xl tracking-tight text-text-primary">Typefaces</h2>
+          <h2 className="font-section text-3xl text-text-primary">Typefaces</h2>
           <p className="mt-3 font-body-serif text-sm text-text-secondary">
             Auditioning a change?{" "}
             <a href="/styleguide/fonts" className="font-medium text-accent underline underline-offset-2">
@@ -329,7 +335,7 @@ export default function StyleGuidePage() {
             {FONTS.map((f) => (
               <div key={f.name} className="rounded-2xl card-skin p-7">
                 <div className="flex flex-wrap items-baseline justify-between gap-2">
-                  <h3 className="font-display text-xl text-text-primary">{f.name}</h3>
+                  <h3 className="font-section text-xl text-text-primary">{f.name}</h3>
                   <code className="font-code text-xs text-text-tertiary">{f.token}</code>
                 </div>
                 <p className="mt-1 font-body-serif text-sm text-text-secondary">{f.use}</p>
@@ -355,7 +361,7 @@ export default function StyleGuidePage() {
       {/* ─── Components ─── */}
       <section className="border-b border-border bg-bg-warm py-16 md:py-20">
         <div className="mx-auto max-w-5xl px-6">
-          <h2 className="font-display text-3xl tracking-tight text-text-primary">Components</h2>
+          <h2 className="font-section text-3xl text-text-primary">Components</h2>
           <p className="mt-4 max-w-2xl font-body-serif leading-relaxed text-text-secondary">
             The canonical button, pill, and card styles. One primary action per view;
             rounded-full is the house button shape.
@@ -377,25 +383,25 @@ export default function StyleGuidePage() {
 
           <p className="section-label mt-10 mb-4">Cards (borderless, warm shadow)</p>
           <p className="mb-4 max-w-2xl font-body-serif text-sm text-text-secondary">
-            No hairline borders on content surfaces. Depth comes from one warm diffuse
-            shadow; borders remain only where they carry affordance (inputs, secondary
-            buttons, glass edges).
+            No strong borders on content surfaces or buttons. Depth comes from warm diffuse
+            shadows and background contrast. Borders remain only where they carry necessary
+            structure, such as inputs and data tables.
           </p>
           <div className="grid gap-4 sm:grid-cols-3">
             <div className="ent-card ent-card-hover p-6">
-              <h4 className="font-display text-lg text-text-primary">Card</h4>
+              <h4 className="font-section text-lg text-text-primary">Card</h4>
               <p className="mt-2 font-body-serif text-sm text-text-secondary">
                 White surface, warm diffuse shadow, lifts on hover. The default.
               </p>
             </div>
             <div className="ent-card-warm p-6">
-              <h4 className="font-display text-lg text-text-primary">Warm card</h4>
+              <h4 className="font-section text-lg text-text-primary">Warm card</h4>
               <p className="mt-2 font-body-serif text-sm text-text-secondary">
                 Soft cream fill on parchment. For insets and asides.
               </p>
             </div>
             <div className="ent-card-flat p-6">
-              <h4 className="font-display text-lg text-text-primary">Flat card</h4>
+              <h4 className="font-section text-lg text-text-primary">Flat card</h4>
               <p className="mt-2 font-body-serif text-sm text-text-secondary">
                 Quiet warm tint, no shadow. For dense grids and secondary info.
               </p>
@@ -414,7 +420,7 @@ export default function StyleGuidePage() {
       {/* ─── Liquid glass ─── */}
       <section className="border-b border-border py-16 md:py-20">
         <div className="mx-auto max-w-5xl px-6">
-          <h2 className="font-display text-3xl tracking-tight text-text-primary">Liquid glass</h2>
+          <h2 className="font-section text-3xl text-text-primary">Liquid glass</h2>
           <p className="mt-4 max-w-2xl font-body-serif leading-relaxed text-text-secondary">
             The site chrome: frosted floating pills with a bright specular edge, one solid
             accent pill as the single primary action. Shown here over a warm gradient so the
@@ -444,22 +450,22 @@ export default function StyleGuidePage() {
       {/* ─── Type scale ─── */}
       <section className="border-b border-border py-16 md:py-20">
         <div className="mx-auto max-w-5xl px-6">
-          <h2 className="font-display text-3xl tracking-tight text-text-primary">Display type scale</h2>
+          <h2 className="font-section text-3xl text-text-primary">Type scale</h2>
           <p className="mt-4 max-w-2xl font-body-serif leading-relaxed text-text-secondary">
-            How headings step down. All in Display unless noted.
+            Fraunces sets the hero and selected outcomes. Geist carries the section and card hierarchy.
           </p>
           <div className="mt-8 space-y-3">
             {[
-              { cls: "text-6xl", label: "text-6xl" },
-              { cls: "text-5xl", label: "text-5xl" },
-              { cls: "text-4xl", label: "text-4xl" },
-              { cls: "text-3xl", label: "text-3xl" },
-              { cls: "text-2xl", label: "text-2xl" },
-              { cls: "text-xl", label: "text-xl" },
+              { cls: "text-6xl", label: "Hero 6xl", family: "font-display" },
+              { cls: "text-5xl", label: "Outcome 5xl", family: "font-display" },
+              { cls: "text-4xl", label: "H2 4xl", family: "font-section" },
+              { cls: "text-3xl", label: "H2 3xl", family: "font-section" },
+              { cls: "text-2xl", label: "H3 2xl", family: "font-section" },
+              { cls: "text-xl", label: "H3 xl", family: "font-section" },
             ].map((s) => (
               <div key={s.label} className="flex items-baseline gap-5">
                 <code className="w-24 shrink-0 font-code text-xs text-text-tertiary">{s.label}</code>
-                <span className={`font-display ${s.cls} tracking-tight text-text-primary`}>
+                <span className={`${s.family} ${s.cls} text-text-primary`}>
                   Own your knowledge
                 </span>
               </div>
@@ -471,7 +477,7 @@ export default function StyleGuidePage() {
       {/* ─── Theme colors ─── */}
       <section className="py-16 md:py-20">
         <div className="mx-auto max-w-5xl px-6">
-          <h2 className="font-display text-3xl tracking-tight text-text-primary">Theme colors</h2>
+          <h2 className="font-section text-3xl text-text-primary">Theme colors</h2>
           <p className="mt-4 max-w-2xl font-body-serif leading-relaxed text-text-secondary">
             The warm parchment palette. Tailwind class on top, hex below.
           </p>

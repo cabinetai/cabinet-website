@@ -1,9 +1,8 @@
 import type { ReactNode } from "react";
 import { Check } from "lucide-react";
-import { BYOAIInfo } from "@/components/byoai-info";
 
 export type TierCta =
-  | { kind: "link"; label: string; href: string; external?: boolean }
+  | { kind: "link"; label: string; href: string; external?: boolean; onClick?: () => void }
   | { kind: "button"; label: string; onClick: () => void };
 
 export type PricingTierCardProps = {
@@ -63,78 +62,66 @@ export function PricingTierCard({
       ? "bg-green text-white hover:bg-green-warm shadow-sm"
       : ctaStyle === "accent"
       ? "bg-accent text-white hover:bg-accent-warm shadow-sm"
-      : "border border-border-dark text-text-primary hover:bg-bg-card-hover bg-bg-card";
+      : "ent-btn-secondary";
 
-  // Borderless, soft warm-shadow surfaces. Highlighted Max gets a warm tint,
-  // a stronger lift, and a faint accent ring; selection adds a green ring.
   const cardBg = highlighted ? "bg-accent-bg-subtle" : "bg-bg-card";
   const cardShadow = highlighted
     ? "shadow-[0_20px_52px_-18px_rgba(150,108,68,0.45)]"
     : "shadow-[0_8px_30px_-14px_rgba(150,108,68,0.32)]";
-  const ring = selected
-    ? "ring-2 ring-green ring-offset-2 ring-offset-bg"
-    : highlighted
-    ? "ring-1 ring-accent/25"
-    : "ring-1 ring-[rgba(59,47,47,0.05)]";
-
-  // Use a div (not a button) for the card so the inner CTA and BYOAI info
-  // buttons remain valid HTML — nested buttons cause hydration errors. We
-  // keep radio semantics + keyboard activation manually.
-  const interactive = onSelect
-    ? "cursor-pointer hover:-translate-y-1 hover:shadow-[0_26px_58px_-18px_rgba(150,108,68,0.5)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green focus-visible:ring-offset-2 focus-visible:ring-offset-bg"
-    : "";
 
   return (
-    <div
-      onClick={onSelect}
-      onKeyDown={
-        onSelect
-          ? (e) => {
-              if (e.key === " " || e.key === "Enter") {
-                e.preventDefault();
-                onSelect();
-              }
-            }
-          : undefined
-      }
-      role={onSelect ? "radio" : undefined}
-      tabIndex={onSelect ? 0 : undefined}
-      aria-checked={onSelect ? selected : undefined}
-      aria-labelledby={selectionId}
-      className={`relative overflow-hidden rounded-2xl ${cardBg} ${cardShadow} ${ring} ${
-        highlighted ? "lg:scale-[1.02] z-10" : ""
-      } ${interactive} flex flex-col w-full text-left transition-all duration-300`}
+    <article
+      className={`relative flex w-full flex-col overflow-hidden rounded-[26px] text-left ${cardBg} ${cardShadow} ${
+        selected ? "shadow-[0_24px_58px_-18px_rgba(90,122,79,0.38)]" : ""
+      } transition-shadow duration-300`}
     >
-      {selected && (
-        <div className="absolute right-4 top-4 z-10 inline-flex h-7 w-7 items-center justify-center rounded-full bg-green text-white shadow-md">
-          <Check className="h-4 w-4" strokeWidth={3} />
-        </div>
-      )}
-
       <div className="flex flex-1 flex-col p-7 md:p-8">
-        {/* Tier name + optional badge — uniform row */}
-        <div className="mb-2 flex items-center gap-2 min-h-[1.875rem]">
-          <h3
-            id={selectionId}
-            className="font-display text-xl text-text-primary leading-none"
-          >
-            {name}
-          </h3>
-          {badge && (
-            <span className="rounded-full bg-accent px-2 py-0.5 text-[0.55rem] font-code uppercase tracking-[0.08em] text-white shadow-sm">
-              {badge}
+        {onSelect && selectionId ? (
+          <label htmlFor={selectionId} className="mb-3 flex cursor-pointer items-start justify-between gap-4">
+            <span className="flex min-w-0 flex-wrap items-center gap-2">
+              <span className="font-section text-xl leading-none text-text-primary">{name}</span>
+              {badge && (
+                <span className="rounded-full bg-accent px-2.5 py-1 text-[9px] font-semibold uppercase tracking-[0.08em] text-white">
+                  {badge}
+                </span>
+              )}
             </span>
-          )}
-        </div>
+            <span className="relative grid h-7 w-7 shrink-0 place-items-center">
+              <input
+                id={selectionId}
+                type="radio"
+                name="pricing-plan"
+                value={name}
+                checked={selected}
+                onChange={onSelect}
+                className="peer sr-only"
+              />
+              <span className="absolute inset-0 rounded-full bg-bg-warm shadow-inner transition peer-focus-visible:ring-2 peer-focus-visible:ring-accent peer-focus-visible:ring-offset-2 peer-focus-visible:ring-offset-bg-card peer-checked:bg-green" />
+              <Check
+                aria-hidden
+                className="relative h-3.5 w-3.5 text-white opacity-0 transition-opacity peer-checked:opacity-100"
+                strokeWidth={3}
+              />
+              <span className="sr-only">Select {name}</span>
+            </span>
+          </label>
+        ) : (
+          <div className="mb-3 flex items-center gap-2">
+            <h3 className="font-section text-xl leading-none text-text-primary">{name}</h3>
+            {badge && (
+              <span className="rounded-full bg-accent px-2.5 py-1 text-[9px] font-semibold uppercase tracking-[0.08em] text-white">
+                {badge}
+              </span>
+            )}
+          </div>
+        )}
 
-        {/* Tagline — fixed min-height (~2 lines) */}
         <p className="text-sm text-text-secondary leading-relaxed mb-7 min-h-[2.75rem]">
           {tagline}
         </p>
 
-        {/* Price row — uniform height regardless of suffix */}
         <div className="flex items-baseline gap-1 min-h-[2.5rem]">
-          <span className="font-display text-4xl text-text-primary leading-none">
+          <span className="font-section text-4xl text-text-primary leading-none">
             {displayPrice}
           </span>
           {showNumeric && (
@@ -142,7 +129,6 @@ export function PricingTierCard({
           )}
         </div>
 
-        {/* Billing subline — always rendered, occupies same height */}
         <p className="mt-1.5 mb-7 text-xs font-code min-h-[1rem]">
           {showNumeric && annualNote && billingPeriod === "annual" ? (
             <span className="text-green-warm">{annualNote}</span>
@@ -153,7 +139,6 @@ export function PricingTierCard({
           )}
         </p>
 
-        {/* Inheritance line — always rendered (placeholder when absent) */}
         <div className="mb-3 min-h-[1.5rem]">
           {inheritsFromLabel ? (
             <p className="text-sm font-medium">
@@ -164,26 +149,19 @@ export function PricingTierCard({
           ) : null}
         </div>
 
-        {/* Bullets — flex-1 absorbs vertical slack so CTA aligns at bottom */}
         <ul className="mb-7 space-y-2.5 text-sm text-text-primary leading-relaxed flex-1">
-          {bullets.map((bullet) => {
-            const hasByoai = bullet.includes("BYOAI");
-            return (
-              <li key={bullet} className="flex items-start gap-2">
-                <Check
-                  className="mt-0.5 h-4 w-4 shrink-0 text-green"
-                  strokeWidth={2.5}
-                />
-                <span>
-                  {bullet}
-                  {hasByoai && <BYOAIInfo />}
-                </span>
-              </li>
-            );
-          })}
+          {bullets.map((bullet) => (
+            <li key={bullet} className="flex items-start gap-2">
+              <Check
+                aria-hidden
+                className="mt-0.5 h-4 w-4 shrink-0 text-green"
+                strokeWidth={2.5}
+              />
+              <span>{bullet}</span>
+            </li>
+          ))}
         </ul>
 
-        {/* CTA — pinned to bottom across all cards */}
         <div className="mt-auto">
           {cta.kind === "link" ? (
             <a
@@ -191,7 +169,7 @@ export function PricingTierCard({
               {...(cta.external
                 ? { target: "_blank", rel: "noopener noreferrer" }
                 : {})}
-              onClick={(e) => e.stopPropagation()}
+              onClick={cta.onClick}
               className={`inline-flex w-full items-center justify-center rounded-full px-5 py-3 text-sm font-semibold transition-all ${ctaClass}`}
             >
               {cta.label}
@@ -199,10 +177,7 @@ export function PricingTierCard({
           ) : (
             <button
               type="button"
-              onClick={(e) => {
-                e.stopPropagation();
-                cta.onClick();
-              }}
+              onClick={cta.onClick}
               className={`inline-flex w-full items-center justify-center rounded-full px-5 py-3 text-sm font-semibold transition-all ${ctaClass}`}
             >
               {cta.label}
@@ -216,6 +191,6 @@ export function PricingTierCard({
           {!footnote && <div className="mt-2.5 min-h-[1.1rem]" aria-hidden />}
         </div>
       </div>
-    </div>
+    </article>
   );
 }

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { Suspense } from "react";
-import { ArrowRight, Check, Cloud, MessageSquare } from "lucide-react";
+import { ArrowRight, Check, Cloud } from "lucide-react";
 import { DiscordIcon, GithubIcon } from "@/components/site-icons";
 import { CloudHeroWaitlist } from "@/components/cloud-hero-waitlist";
 import { WaitlistCloudBackdrop } from "@/components/waitlist-cloud-backdrop";
@@ -60,13 +61,13 @@ export default function CloudPage() {
           </Suspense>
 
           <p className="mb-12 text-center text-sm text-text-tertiary font-code">
-            <a
+            <Link
               href="/pricing"
               className="inline-flex items-center gap-1 underline underline-offset-4 hover:text-text-primary transition-colors"
             >
               See pricing
               <ArrowRight className="h-3 w-3" />
-            </a>
+            </Link>
           </p>
 
           <div className="grid md:grid-cols-3 gap-4 max-w-5xl mx-auto mb-12">
@@ -113,12 +114,12 @@ export default function CloudPage() {
               <GithubIcon className="w-4 h-4" />
               Star on GitHub
             </a>
-            <a
-              href="/#get-started"
+            <Link
+              href="/#get-cabinet"
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full font-semibold btn-wood"
             >Try <span className="font-brand italic">Cabinet</span>{" "}now
                                           <ArrowRight className="w-4 h-4" />
-            </a>
+            </Link>
           </div>
         </div>
       </section>

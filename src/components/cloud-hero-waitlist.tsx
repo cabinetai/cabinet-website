@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { usePathname } from "next/navigation";
 import { ArrowRight, CheckCircle2, Loader2 } from "lucide-react";
 import { trackEvent } from "@/lib/analytics";
@@ -23,7 +23,11 @@ type Props = {
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-// Big centered email field — used on the /cloud landing page. Distinct from
+function subscribeToWaitlistState() {
+  return () => {};
+}
+
+// Big centered email field used on the /cloud landing page. Distinct from
 // WaitlistCapture (the two-column card used in the homepage section).
 export function CloudHeroWaitlist({ source, originPage, className = "" }: Props) {
   const pathname = usePathname();
@@ -36,12 +40,14 @@ export function CloudHeroWaitlist({ source, originPage, className = "" }: Props)
     "idle" | "submitting" | "success" | "already" | "error"
   >("idle");
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
+  const alreadySubmitted = useSyncExternalStore(
+    subscribeToWaitlistState,
+    hasWaitlistSubmission,
+    () => false,
+  );
+  const displayStatus = status === "idle" && alreadySubmitted ? "already" : status;
 
-  // Read submission flag + record view after mount (avoids hydration mismatch).
   useEffect(() => {
-    if (hasWaitlistSubmission()) {
-      setStatus("already");
-    }
     if (!viewTrackedRef.current) {
       viewTrackedRef.current = true;
       recordWaitlistView(source);
@@ -86,13 +92,13 @@ export function CloudHeroWaitlist({ source, originPage, className = "" }: Props)
     }
   };
 
-  if (status === "success" || status === "already") {
+  if (displayStatus === "success" || displayStatus === "already") {
     return (
       <div className={className}>
         <div className="flex items-start gap-3 rounded-3xl border border-accent/40 bg-accent-bg-subtle px-6 py-5 text-text-primary leading-relaxed shadow-[0_8px_30px_rgba(62,43,18,0.08)]">
           <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
           <span className="text-base">
-            {status === "already"
+            {displayStatus === "already"
               ? "You're already on the list. We'll be in touch as soon as Cabinet Cloud opens up."
               : "You're on the list. We'll email you when Cabinet Cloud opens up."}
           </span>
