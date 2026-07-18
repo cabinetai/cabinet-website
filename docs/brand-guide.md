@@ -2,8 +2,8 @@
 
 **Owner:** Brand / Design
 **Surface:** runcabinet.com (marketing site) and all outward-facing material
-**Status:** v1, codifies the existing identity in code
-**Last updated:** 2026-06-13
+**Status:** v2, codifies the existing identity in code (v2: new type stack, design pages consolidated into `/styleguide`)
+**Last updated:** 2026-07-17
 
 ---
 
@@ -15,6 +15,7 @@ Two rules of engagement:
 
 1. **The code is canonical.** Tokens here mirror the CSS variables in `globals.css`. If you change one, change both, in the same commit.
 2. **No invention without intent.** New colors, fonts, shadows, or button styles are a brand decision, not a per-page convenience. Add them here first.
+3. **One living page.** `/styleguide` (internal, not indexed) renders everything in this guide: assets, type, colors, components, glass, and the explorations archive. It replaced the old `public/style-lab.html`; any reference to the style lab means `/styleguide` now.
 
 Note on this file: it deliberately contains zero em dashes and no dashes used as sentence breaks, because that is the house rule (see §3). Treat it as a worked example of the writing standard.
 
@@ -87,7 +88,7 @@ The standard: every word reads as if a credible human professional wrote it, not
 Assets (existing, do not redraw):
 
 - **Brand mark (illustration):** `public/brand/cabinet-logo.png` (master, transparent) and `public/brand/cabinet-logo-512.png` (web-optimized). The signature 3D cabinet in light tan wood: colorful file tabs in the top drawer stand for your files and knowledge, glowing tokens in the lower drawer stand for the AI agents. Use on a transparent background at larger sizes (hero, OG, feature lockups, app tile). Do not use below ~96px, the detail is lost; use the simple icon below for small nav/favicon contexts. Produced and background-cleaned with `scripts/cutout-checker.mjs`.
-  - **Drawer-state variants** (same mark, for storytelling and animation): `cabinet-logo-closed`, `cabinet-logo-top-open` (files), `cabinet-logo-bottom-open` (agents), and the default `cabinet-logo` (both open), each with a `-512` web version. Regenerate with `scripts/brand-states.mjs`. Each state also has a horizontally flipped (`-flip`) version (made with `magick -flop`) for left/right layouts. There is also a closed 3-drawer alt (`cabinet-logo-closed-3drawers`) and a playful **smiley** set (`cabinet-logo-face-1/2/3`) where each drawer's two holes are eyes and the gold handle is a smile, in 1, 2, and 3 drawers. For UI, favicon and print, use the **vector logo** `cabinet-logo-smile.svg` (a flat, scalable version of the 2-drawer smiley with perfectly even drawers). Preview everything explored this session at `public/style-lab.html`.
+  - **Drawer-state variants** (same mark, for storytelling and animation): `cabinet-logo-closed`, `cabinet-logo-top-open` (files), `cabinet-logo-bottom-open` (agents), and the default `cabinet-logo` (both open), each with a `-512` web version. Regenerate with `scripts/brand-states.mjs`. Each state also has a horizontally flipped (`-flip`) version (made with `magick -flop`) for left/right layouts. There is also a closed 3-drawer alt (`cabinet-logo-closed-3drawers`) and a playful **smiley** set (`cabinet-logo-face-1/2/3`) where each drawer's two holes are eyes and the gold handle is a smile, in 1, 2, and 3 drawers. For UI, favicon and print, use the **vector logo** `cabinet-logo-smile.svg` (a flat, scalable version of the 2-drawer smiley with perfectly even drawers). Preview every brand asset and exploration at `/styleguide`.
 - **App icon / mark:** `public/cabinet-icon.png` (also `src/app/icon.png`). Used in the navbar and favicons. Render with rounded corners (`rounded-lg` at small sizes).
 - **Full logo:** `public/Cabinet.png`.
 - **Wordmark in type:** the word "Cabinet" set in the brand serif (Instrument Serif), italic, tight tracking. This is the canonical lockup in the navbars:
@@ -177,28 +178,27 @@ Target WCAG AA (4.5:1 for body text, 3:1 for large text and UI). Two known watch
 
 ## 6. Typography
 
-Five typefaces, each with one job. Loaded in `src/app/layout.tsx` via `next/font`.
+Four typefaces plus a signature script, each with one job. Loaded in `src/app/layout.tsx` via `next/font`. The v2 stack (2026-07-17) replaced Stack Sans Notch, Inter, and Jost: the display voice is now a warm editorial serif that matches the wooden-craft identity, and the body sans pairs natively with the Instrument Serif wordmark.
 
 | Role | Family | Token / class | Use |
 |---|---|---|---|
-| Display | Stack Sans Notch | `--font-display`, `.font-display`, `.ent-display-1/2/3` | Headlines, hero type. Optical sizing, weight ~600, tight tracking |
-| Body / UI sans | Inter | `--font-inter` (theme `--font-sans`) | Body copy, nav, buttons, most UI |
+| Display | Fraunces | `--font-heading` (theme `--font-display`), `.font-display`, `.ent-display-1/2/3` | Headlines, hero type. Optical sizing, weight ~600, slight tightening (-0.01em) |
+| Body / UI sans | Instrument Sans | `--font-body` (theme `--font-sans`) | Body copy, nav, buttons, most UI, and uppercase eyebrows |
 | Brand wordmark | Instrument Serif (italic) | `--font-brand`, `.font-brand` | The "Cabinet" wordmark only |
-| Labels / eyebrows | Jost (500) | `.section-label` (to migrate) | Uppercase, letter-spaced eyebrows |
 | Code / mono | Source Code Pro | `--font-mono`, `.font-code` | Code, terminal, literal commands |
 | Handwriting | Ms Madi | `--font-hand`, `.font-hand` | Testimonial signatures only |
 
 ### Type roles in practice
 
-- **Eyebrow / section label:** set in **Jost, weight 500**, uppercase, letter-spaced (~0.16em), accent color. Labels are kept **separate from code**: Source Code Pro is reserved for code, terminal, and literal commands only, never for eyebrows. (Migrate the old `.section-label` mono eyebrows and the `.ent-eyebrow` sans eyebrows to this Jost label.)
-- **Headlines:** `.font-display` or the `.ent-display-*` scale (`clamp()`-based, responsive).
-- **Lead paragraph:** `.ent-lead`.
-- **Body prose:** Inter at comfortable measure (max ~70 characters).
+- **Eyebrow / section label:** `.section-label` and `.ent-eyebrow`, set in **Instrument Sans, weight 500**, uppercase, letter-spaced (~0.16em), accent color. Labels are kept **separate from code**: Source Code Pro is reserved for code, terminal, and literal commands only, never for eyebrows.
+- **Headlines:** `.font-display` or the `.ent-display-*` scale (`clamp()`-based, responsive). Fraunces carries warmth on its own; do not add italics or extra weight for emphasis, use scale.
+- **Lead paragraph:** `.ent-lead` (Instrument Sans).
+- **Body prose:** Instrument Sans at comfortable measure (max ~70 characters).
 - **Gradient emphasis:** `.gradient-text` on one word, sparingly.
 
-### Known caveat to fix (do not propagate)
+### Legacy naming caveat
 
-`.font-body-serif` and the theme `--font-serif` currently both resolve to **Inter**, so "serif body" is not actually serif anywhere. Decide one of: (a) rename to `.font-body` and drop the "serif" implication, or (b) load a real serif and apply it intentionally. Until resolved, treat body copy as Inter and do not describe it as serif in design specs. Tracked in the PRD.
+`.font-body-serif` is a legacy class name; it resolves to Instrument Sans (there is no serif body). Prefer writing new markup against it as the body class until a bulk rename to `.font-body` lands; do not describe body copy as serif in specs.
 
 ---
 
@@ -244,12 +244,15 @@ Reuse these. Do not hand-roll new variants without adding them here.
 | Ghost | `.ent-btn-ghost` | Low-emphasis inline action |
 | Glass pill | `.glass-pill` + refract child | Nav and floating actions |
 
-Convention to standardize: **rounded-full** is the house button shape (enterprise system). Marketing pages that still use `rounded-xl` buttons should migrate. One primary style, repeated, never two competing primaries in view.
+Convention: **rounded-full** is the house button shape everywhere (the `rounded-xl` marketing buttons were migrated 2026-07-18). One primary style, repeated, never two competing primaries in view.
 
 ### Surfaces
 
-- **Card:** `.ent-card` (white, hairline, soft shadow) with `.ent-card-hover` for interactive lift. Marketing alias: `.dict-card`.
-- **Warm card:** `.ent-card-warm`.
+**House rule (v2): content surfaces are borderless.** Depth comes from one warm diffuse shadow (`rgba(150,108,68,…)` tones), never from a hairline. Borders remain only where they carry affordance: form inputs, the secondary button, glass panel edges over imagery, and comparison-table structure.
+
+- **Card:** `.ent-card` (white, borderless, warm shadow) with `.ent-card-hover` for interactive lift. Marketing alias: `.dict-card`.
+- **Skin-only:** `.card-skin` / `.card-skin-warm` apply the surface without a radius, so markup keeps its own `rounded-*`. Use these instead of `border border-border bg-*` utility combos.
+- **Warm card:** `.ent-card-warm` (cream fill, faint warm shadow). **Flat card:** `.ent-card-flat` (quiet warm tint, no shadow) for dense grids.
 - **Terminal:** `.terminal-chrome` + optional `.scanline`.
 
 ### Pills & badges
@@ -340,7 +343,7 @@ Process: any change to a token, font, button style, or the glass system updates 
 ## Appendix A. Quick reference
 
 - **Palette mood:** warm parchment, rich brown, sage green. Light only.
-- **Type:** Stack Sans Notch (display), Inter (body), Jost 500 (labels/eyebrows), Instrument Serif italic (wordmark), Source Code Pro (code), Ms Madi (signatures).
+- **Type:** Fraunces (display), Instrument Sans (body, UI, labels), Instrument Serif italic (wordmark), Source Code Pro (code), Ms Madi (signatures).
 - **Signature:** liquid-glass floating pills; warm light-wood illustration motifs with small touches of color.
 - **Voice:** confident operator, concrete, no em dashes, no AI filler, no fake numbers.
 - **One action per view.** Accent brown primary. Sage means good.

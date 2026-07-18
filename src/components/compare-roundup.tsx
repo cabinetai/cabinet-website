@@ -89,7 +89,7 @@ export function CompareRoundup({ data }: { data: Roundup }) {
             </Link>
             <Link
               href={`/compare/cabinet-vs-${data.competitorSlug}`}
-              className="inline-flex items-center gap-2 rounded-xl border border-border bg-bg-card px-7 py-3.5 text-base font-semibold text-text-primary shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
+              className="inline-flex items-center gap-2 rounded-full card-skin px-7 py-3.5 text-base font-semibold text-text-primary shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
             >
               See Cabinet vs {data.competitor}
             </Link>
@@ -121,11 +121,11 @@ export function CompareRoundup({ data }: { data: Roundup }) {
                 </div>
                 <p className="mt-2 font-body-serif leading-relaxed text-text-secondary">{a.line}</p>
                 <div className="mt-4 grid gap-3 sm:grid-cols-2">
-                  <div className="rounded-lg border border-border-light bg-bg-warm px-4 py-3">
+                  <div className="rounded-lg bg-bg-warm px-4 py-3">
                     <p className="font-code text-[11px] uppercase tracking-wider text-green-warm">Best for</p>
                     <p className="mt-1 font-body-serif text-sm leading-relaxed text-text-secondary">{a.bestFor}</p>
                   </div>
-                  <div className="rounded-lg border border-border-light bg-bg-warm px-4 py-3">
+                  <div className="rounded-lg bg-bg-warm px-4 py-3">
                     <p className="font-code text-[11px] uppercase tracking-wider text-accent-warm">The catch</p>
                     <p className="mt-1 font-body-serif text-sm leading-relaxed text-text-secondary">{a.theCatch}</p>
                   </div>
@@ -199,7 +199,7 @@ export function CompareRoundup({ data }: { data: Roundup }) {
               </Link>
               <Link
                 href="/demo"
-                className="inline-flex items-center gap-2 rounded-xl border border-border bg-bg-card px-7 py-3.5 text-base font-semibold text-text-primary shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
+                className="inline-flex items-center gap-2 rounded-full card-skin px-7 py-3.5 text-base font-semibold text-text-primary shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
               >
                 Book a demo
               </Link>

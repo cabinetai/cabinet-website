@@ -17,7 +17,7 @@ export function PricingBillingToggle({
     <div
       role="radiogroup"
       aria-label="Billing period"
-      className="inline-flex items-center gap-1 rounded-full border border-border bg-bg-card p-1 shadow-sm"
+      className="inline-flex items-center gap-1 rounded-full card-skin p-1 shadow-sm"
     >
       <button
         type="button"

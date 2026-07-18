@@ -57,9 +57,9 @@
   --color-green-light: var(--green-light);
   --color-green-bg: var(--green-bg);
   --color-green-bg-subtle: var(--green-bg-subtle);
-  --font-sans: var(--font-inter);
-  --font-serif: var(--font-inter);
-  --font-display: var(--font-stack-notch);
+  --font-sans: var(--font-body);
+  --font-serif: var(--font-body);
+  --font-display: var(--font-heading);
   --font-brand: var(--font-brand);
   --font-hand: var(--font-hand);
   --font-mono: var(--font-mono);
@@ -75,10 +75,10 @@ body {
 /* .font-brand (Cabinet wordmark serif) is generated from the --font-brand
    theme token above; apply it with `italic` in the markup. */
 .font-display {
-  font-family: var(--font-stack-notch), -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: var(--font-heading), Georgia, serif;
   font-optical-sizing: auto;
   font-weight: 600;
-  letter-spacing: -0.022em;
+  letter-spacing: -0.01em;
 }
 
 .font-body-serif {
@@ -151,7 +151,7 @@ html {
 
 /* Section label — monospace uppercase */
 .section-label {
-  font-family: var(--font-label), system-ui, sans-serif;
+  font-family: var(--font-body), system-ui, sans-serif;
   font-weight: 500;
   font-size: 0.72rem;
   letter-spacing: 0.16em;
@@ -220,6 +220,17 @@ html {
   box-shadow: 0 1px 1px rgba(59, 47, 47, 0.03), 0 16px 38px -26px rgba(150, 108, 68, 0.2);
 }
 
+/* Skin-only card surfaces (no radius: markup keeps its rounded-*).
+   The house look: no hairline border, one warm diffuse shadow. */
+.card-skin {
+  background: var(--bg-card);
+  box-shadow: 0 1px 1px rgba(59, 47, 47, 0.03), 0 16px 38px -26px rgba(150, 108, 68, 0.2);
+}
+.card-skin-warm {
+  background: var(--bg-warm);
+  box-shadow: 0 1px 1px rgba(59, 47, 47, 0.03), 0 14px 32px -28px rgba(150, 108, 68, 0.16);
+}
+
 /* Orbit ring (rotating vendor logos) + gentle float */
 @keyframes orbit-spin { to { transform: rotate(360deg); } }
 @keyframes orbit-spin-rev { to { transform: rotate(-360deg); } }
@@ -266,7 +277,7 @@ html {
 /* Eyebrow label — sans (NOT mono), small caps. Replaces the bad
    monospace nav labels that read as "side project". */
 .ent-eyebrow {
-  font-family: var(--font-label), system-ui, sans-serif;
+  font-family: var(--font-body), system-ui, sans-serif;
   font-size: 0.6875rem;
   font-weight: 500;
   letter-spacing: 0.16em;
@@ -275,7 +286,7 @@ html {
 }
 
 .ent-eyebrow-muted {
-  font-family: var(--font-inter), system-ui, sans-serif;
+  font-family: var(--font-body), system-ui, sans-serif;
   font-size: 0.6875rem;
   font-weight: 500;
   letter-spacing: 0.18em;
@@ -285,7 +296,7 @@ html {
 
 /* Display typography — Instrument Serif italic capable */
 .ent-display-1 {
-  font-family: var(--font-stack-notch), -apple-system, sans-serif;
+  font-family: var(--font-heading), Georgia, serif;
   font-optical-sizing: auto;
   font-size: clamp(2.75rem, 5.5vw, 4.75rem);
   line-height: 1.04;
@@ -293,7 +304,7 @@ html {
   color: var(--text-primary);
 }
 .ent-display-2 {
-  font-family: var(--font-stack-notch), -apple-system, sans-serif;
+  font-family: var(--font-heading), Georgia, serif;
   font-optical-sizing: auto;
   font-size: clamp(2rem, 4vw, 3.25rem);
   line-height: 1.08;
@@ -301,7 +312,7 @@ html {
   color: var(--text-primary);
 }
 .ent-display-3 {
-  font-family: var(--font-stack-notch), -apple-system, sans-serif;
+  font-family: var(--font-heading), Georgia, serif;
   font-optical-sizing: auto;
   font-size: clamp(1.5rem, 2.5vw, 2rem);
   line-height: 1.15;
@@ -311,7 +322,7 @@ html {
 
 /* Body lead */
 .ent-lead {
-  font-family: var(--font-body-serif), Georgia, serif;
+  font-family: var(--font-body), system-ui, sans-serif;
   font-size: 1.125rem;
   line-height: 1.6;
   color: var(--text-secondary);
@@ -330,15 +341,14 @@ html {
 }
 
 .ent-card-flat {
-  background: #ffffff;
-  border: 1px solid var(--border);
+  background: var(--bg-warm);
   border-radius: 14px;
 }
 
 .ent-card-warm {
   background: var(--bg-warm);
-  border: 1px solid var(--border);
   border-radius: 14px;
+  box-shadow: 0 1px 1px rgba(59, 47, 47, 0.03), 0 14px 32px -28px rgba(150, 108, 68, 0.16);
 }
 
 /* Buttons */
@@ -413,7 +423,7 @@ html {
   padding: 0 1.5rem;
   border-radius: 9999px;
   color: #5a3e2b;
-  font-family: var(--font-inter), system-ui, sans-serif;
+  font-family: var(--font-body), system-ui, sans-serif;
   font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: -0.005em;
@@ -449,7 +459,7 @@ html {
   border-radius: 9999px;
   background: #ffffff;
   color: var(--text-primary);
-  font-family: var(--font-inter), system-ui, sans-serif;
+  font-family: var(--font-body), system-ui, sans-serif;
   font-size: 0.875rem;
   font-weight: 500;
   letter-spacing: -0.005em;
@@ -471,7 +481,7 @@ html {
   border-radius: 9999px;
   background: transparent;
   color: var(--text-primary);
-  font-family: var(--font-inter), system-ui, sans-serif;
+  font-family: var(--font-body), system-ui, sans-serif;
   font-size: 0.875rem;
   font-weight: 500;
   transition: background 150ms ease;
@@ -482,7 +492,7 @@ html {
 
 /* Nav links — sans, medium weight, NOT mono */
 .ent-nav-link {
-  font-family: var(--font-inter), system-ui, sans-serif;
+  font-family: var(--font-body), system-ui, sans-serif;
   font-size: 0.875rem;
   font-weight: 500;
   letter-spacing: -0.005em;
@@ -504,23 +514,20 @@ html {
   gap: 0.375rem;
   padding: 0.25rem 0.625rem;
   border-radius: 9999px;
-  font-family: var(--font-inter), system-ui, sans-serif;
+  font-family: var(--font-body), system-ui, sans-serif;
   font-size: 0.6875rem;
   font-weight: 500;
   letter-spacing: 0.02em;
-  background: var(--accent-bg-subtle);
+  background: var(--accent-bg);
   color: var(--accent-warm);
-  border: 1px solid var(--accent-bg);
 }
 .ent-pill-sage {
-  background: var(--green-bg-subtle);
+  background: var(--green-bg);
   color: var(--green-warm);
-  border-color: var(--green-bg);
 }
 .ent-pill-neutral {
   background: var(--bg-warm);
   color: var(--text-secondary);
-  border-color: var(--border);
 }
 
 /* Section divider — hairline */

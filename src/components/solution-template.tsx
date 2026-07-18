@@ -61,7 +61,7 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
         <div className="relative z-10 mx-auto max-w-5xl px-6 py-20 md:py-28">
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <div>
-              <div className="inline-flex items-center gap-2.5 rounded-full border border-border bg-bg-card py-1.5 pl-2 pr-4 text-sm font-medium text-accent shadow-sm">
+              <div className="inline-flex items-center gap-2.5 rounded-full card-skin py-1.5 pl-2 pr-4 text-sm font-medium text-accent shadow-sm">
                 <img src={`/brand/icons/${solution.slug}.png`} alt="" className="h-6 w-6 object-contain" />
                 {solution.eyebrow}
               </div>
@@ -80,7 +80,7 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
                 </Link>
                 <Link
                   href="/demo"
-                  className="inline-flex items-center gap-2 rounded-xl border border-border bg-bg-card px-7 py-3.5 text-base font-semibold text-text-primary shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
+                  className="inline-flex items-center gap-2 rounded-full card-skin px-7 py-3.5 text-base font-semibold text-text-primary shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
                 >
                   Book a demo
                 </Link>
@@ -132,7 +132,7 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
                     href={cabinetUrl(slug)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-bg-card card-hover"
+                    className="group flex flex-col overflow-hidden rounded-2xl card-skin card-hover"
                   >
                     <div
                       className="relative w-full overflow-hidden"
@@ -307,7 +307,7 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
             {solution.stack.map((s) => (
               <span
                 key={s}
-                className="rounded-full border border-border bg-bg-card px-4 py-2 font-code text-sm text-text-secondary"
+                className="rounded-full card-skin px-4 py-2 font-code text-sm text-text-secondary"
               >
                 {s}
               </span>
@@ -361,7 +361,7 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
             </Link>
             <Link
               href="/demo"
-              className="inline-flex items-center gap-2 rounded-xl border border-border bg-bg-card px-7 py-3.5 text-base font-semibold text-text-primary shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
+              className="inline-flex items-center gap-2 rounded-full card-skin px-7 py-3.5 text-base font-semibold text-text-primary shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
             >
               Book a demo
             </Link>

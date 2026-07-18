@@ -65,7 +65,7 @@ export function EnterpriseNav() {
             <span className="font-brand italic text-[1.35rem] leading-none tracking-tight text-text-primary">
               Cabinet
             </span>
-            <span className="hidden sm:inline-flex items-center rounded border border-border bg-bg-warm px-1.5 py-0.5 text-[10px] font-medium tracking-wide text-text-secondary uppercase">
+            <span className="hidden sm:inline-flex items-center rounded card-skin-warm px-1.5 py-0.5 text-[10px] font-medium tracking-wide text-text-secondary uppercase">
               Enterprise
             </span>
           </div>

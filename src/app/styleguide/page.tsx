@@ -1,11 +1,54 @@
 import type { Metadata } from "next";
+import { readdirSync } from "node:fs";
+import { join } from "node:path";
 import { SiteNavbar } from "@/components/site-navbar";
 
 export const metadata: Metadata = {
-  title: "Style guide — fonts & theme",
-  description: "Internal reference: every typeface and theme color used across the Cabinet site.",
+  title: "Brand & style guide",
+  description: "Internal reference: brand illustrations, typefaces, and theme colors used across the Cabinet site.",
   robots: { index: false, follow: false },
 };
+
+/* ─── Brand illustration sets (auto-listed from public/brand at build) ─── */
+function listAssets(dir: string): { src: string; label: string }[] {
+  let files: string[] = [];
+  try {
+    files = readdirSync(join(process.cwd(), "public", dir))
+      .filter((f) => f.endsWith(".png") || f.endsWith(".svg"))
+      .sort();
+  } catch {
+    files = [];
+  }
+  return files.map((f) => ({
+    src: `/${dir}/${f}`,
+    label: f.replace(/\.(png|svg)$/, "").replace(/-/g, " "),
+  }));
+}
+
+const LOGO_CORE: { src: string; label: string }[] = [
+  { src: "/brand/cabinet-logo.png", label: "primary" },
+  { src: "/brand/cabinet-logo-closed.png", label: "closed" },
+  { src: "/brand/cabinet-logo-top-open.png", label: "top open" },
+  { src: "/brand/cabinet-logo-bottom-open.png", label: "bottom open" },
+  { src: "/brand/cabinet-logo-closed-3drawers.png", label: "three drawers" },
+  { src: "/brand/cabinet-logo-face-1.png", label: "face 1" },
+  { src: "/brand/cabinet-logo-face-2.png", label: "face 2" },
+  { src: "/brand/cabinet-logo-face-3.png", label: "face 3" },
+];
+
+const ASSET_SECTIONS: { title: string; desc: string; items: { src: string; label: string }[] }[] = [
+  { title: "Heroes", desc: "Hero illustrations for the solution and industry pages.", items: listAssets("brand/heroes") },
+  { title: "Solutions", desc: "Card motifs for the “Cabinet for every team” solutions.", items: listAssets("brand/solutions") },
+  { title: "Trust & security", desc: "Motifs for the “Designed to clear a security review” section.", items: listAssets("brand/trust") },
+  { title: "Feature icons", desc: "The product feature grid on the homepage.", items: listAssets("brand/feat") },
+  { title: "Role & industry icons", desc: "Small icons for the solutions menu and cards.", items: listAssets("brand/icons") },
+  { title: "UI concept icons", desc: "General wooden icons that replace flat glyphs across the site.", items: listAssets("brand/ui") },
+  {
+    title: "Explorations archive",
+    desc: "Every generated exploration (public/generated/_explore). Each file name is its id; re-run one with its generator, for example: node scripts/generate-images.mjs <id>, node scripts/explore-styles.mjs <subject>, or node scripts/brand-states.mjs.",
+    items: listAssets("generated/_explore"),
+  },
+];
 
 /* ─── Typefaces in the system ─── */
 const FONTS: {
@@ -17,14 +60,14 @@ const FONTS: {
   {
     name: "Display",
     className: "font-display",
-    token: "Stack Sans Notch · --font-display",
-    use: "Headlines and section headings. The loud voice.",
+    token: "Fraunces · --font-heading / --font-display",
+    use: "Headlines and section headings. A warm editorial serif; the loud voice.",
   },
   {
     name: "Body",
     className: "font-body-serif",
-    token: "Inter · --font-serif / --font-sans",
-    use: "Body copy and most prose. The default reading voice (currently Inter).",
+    token: "Instrument Sans · --font-body / --font-sans",
+    use: "Body copy, UI, buttons, and uppercase eyebrows. Pairs with the Instrument Serif wordmark.",
   },
   {
     name: "Brand",
@@ -36,7 +79,7 @@ const FONTS: {
     name: "Mono / Code",
     className: "font-code",
     token: "Source Code Pro · --font-mono",
-    use: "Section labels, terminal, code, and small uppercase tags.",
+    use: "Terminal, code, and literal commands only. Never eyebrows.",
   },
   {
     name: "Hand",
@@ -44,16 +87,6 @@ const FONTS: {
     token: "Ms Madi · --font-hand",
     use: "Signatures only (testimonial names). Decorative, low readability.",
   },
-];
-
-/* ─── Candidates for the hero helper line ─── */
-const HELPER_LINE = "Evaluating Cabinet for your team? Book a demo";
-const HELPER_CANDIDATES: { label: string; className: string; tag?: string }[] = [
-  { label: "Body (Inter)", className: "font-body-serif", tag: "current" },
-  { label: "Mono (Source Code Pro)", className: "font-code" },
-  { label: "Display (Stack Sans)", className: "font-display" },
-  { label: "Brand (Instrument Serif), italic", className: "font-brand italic" },
-  { label: "Hand (Ms Madi)", className: "font-hand" },
 ];
 
 /* ─── Theme color tokens ─── */
@@ -113,7 +146,35 @@ const COLOR_GROUPS: {
 const PANGRAM = "The quick brown fox jumps over the lazy dog";
 const GLYPHS = "ABCDEFGHIJKLM abcdefghijklm 0123456789 & ? ! @ #";
 
+/* ─── A single asset tile ─── */
+function Tile({ src, label }: { src: string; label: string }) {
+  return (
+    <div className="group rounded-2xl bg-gradient-to-br from-[#FBF2E4] to-[#F2E5CF] p-4 shadow-[0_12px_28px_-20px_rgba(150,108,68,0.4)]">
+      <div className="flex h-28 items-center justify-center">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={src}
+          alt={label}
+          className="max-h-full max-w-full object-contain transition-transform duration-200 group-hover:scale-105"
+        />
+      </div>
+      <p className="mt-3 truncate text-center font-code text-[11px] text-text-tertiary">{label}</p>
+    </div>
+  );
+}
+
+function AssetGrid({ items }: { items: { src: string; label: string }[] }) {
+  return (
+    <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+      {items.map((it) => (
+        <Tile key={it.src} src={it.src} label={it.label} />
+      ))}
+    </div>
+  );
+}
+
 export default function StyleGuidePage() {
+  const LOGO_NEW = listAssets("brand/logo-variations");
   return (
     <main className="min-h-screen bg-bg">
       <SiteNavbar />
@@ -123,12 +184,71 @@ export default function StyleGuidePage() {
         <div className="mx-auto max-w-5xl px-6 py-16 md:py-20">
           <p className="section-label mb-3">Internal reference</p>
           <h1 className="font-display text-4xl tracking-tight text-text-primary sm:text-5xl">
-            Style guide: fonts &amp; theme
+            Brand &amp; style guide
           </h1>
           <p className="mt-4 max-w-2xl font-body-serif text-lg leading-relaxed text-text-secondary">
-            Every typeface and color token in the site, in one place. Use this to decide
-            type and palette choices. This page is not indexed and is not linked in the nav.
+            The single design page: illustrations, typefaces, color tokens, components, and
+            the liquid-glass chrome. The written spec lives in docs/brand-guide.md; this page
+            is the living proof. Not indexed, not linked in the nav.
           </p>
+        </div>
+      </section>
+
+      {/* ─── Brand illustrations ─── */}
+      <section className="border-b border-border py-16 md:py-20">
+        <div className="mx-auto max-w-5xl px-6">
+          <h2 className="font-display text-3xl tracking-tight text-text-primary">
+            Brand illustrations
+          </h2>
+          <p className="mt-4 max-w-2xl font-body-serif text-lg leading-relaxed text-text-secondary">
+            One distilled object per concept, sculpted in light maple with brushed brass and
+            muted bead accents, on transparent backgrounds. Every set used across the site.
+          </p>
+
+          {/* New logo variations */}
+          <div className="mt-12">
+            <div className="flex items-center gap-3">
+              <p className="section-label">Logo variations</p>
+              <span className="rounded-full bg-green-bg px-2 py-0.5 font-code text-[10px] uppercase tracking-wider text-green-warm ring-1 ring-green-light/40">
+                new
+              </span>
+            </div>
+            <p className="mt-2 max-w-2xl font-body-serif text-sm text-text-secondary">
+              Fresh takes on the Cabinet mark in the house wooden style. Drafts for review.
+            </p>
+            {LOGO_NEW.length > 0 ? (
+              <AssetGrid items={LOGO_NEW} />
+            ) : (
+              <p className="mt-6 font-code text-xs text-text-tertiary">
+                (none yet — drop PNGs in public/brand/logo-variations/)
+              </p>
+            )}
+          </div>
+
+          {/* Core logo set */}
+          <div className="mt-12">
+            <p className="section-label">Logo set</p>
+            <p className="mt-2 max-w-2xl font-body-serif text-sm text-text-secondary">
+              The established Cabinet mark and its open / closed / face variants.
+            </p>
+            <AssetGrid items={LOGO_CORE} />
+          </div>
+
+          {/* Every other asset set */}
+          {ASSET_SECTIONS.map((sec) => (
+            <div key={sec.title} className="mt-12">
+              <div className="flex flex-wrap items-baseline gap-x-3">
+                <p className="section-label">{sec.title}</p>
+                <span className="font-code text-[11px] text-text-tertiary">
+                  {sec.items.length} assets
+                </span>
+              </div>
+              <p className="mt-2 max-w-2xl font-body-serif text-sm text-text-secondary">
+                {sec.desc}
+              </p>
+              <AssetGrid items={sec.items} />
+            </div>
+          ))}
         </div>
       </section>
 
@@ -136,9 +256,16 @@ export default function StyleGuidePage() {
       <section className="border-b border-border py-16 md:py-20">
         <div className="mx-auto max-w-5xl px-6">
           <h2 className="font-display text-3xl tracking-tight text-text-primary">Typefaces</h2>
+          <p className="mt-3 font-body-serif text-sm text-text-secondary">
+            Auditioning a change?{" "}
+            <a href="/styleguide/fonts" className="font-medium text-accent underline underline-offset-2">
+              Spin the font picker
+            </a>
+            .
+          </p>
           <div className="mt-10 space-y-5">
             {FONTS.map((f) => (
-              <div key={f.name} className="rounded-2xl border border-border bg-bg-card p-7">
+              <div key={f.name} className="rounded-2xl card-skin p-7">
                 <div className="flex flex-wrap items-baseline justify-between gap-2">
                   <h3 className="font-display text-xl text-text-primary">{f.name}</h3>
                   <code className="font-code text-xs text-text-tertiary">{f.token}</code>
@@ -163,38 +290,91 @@ export default function StyleGuidePage() {
         </div>
       </section>
 
-      {/* ─── Decide: the hero helper line ─── */}
+      {/* ─── Components ─── */}
       <section className="border-b border-border bg-bg-warm py-16 md:py-20">
         <div className="mx-auto max-w-5xl px-6">
-          <p className="section-label mb-3">Decide</p>
-          <h2 className="font-display text-3xl tracking-tight text-text-primary">
-            The hero helper line, in each font
-          </h2>
+          <h2 className="font-display text-3xl tracking-tight text-text-primary">Components</h2>
           <p className="mt-4 max-w-2xl font-body-serif leading-relaxed text-text-secondary">
-            This is the line under the install options on the homepage. It was set in Mono.
-            I changed it to Body (Inter) for readability. Compare the options and tell me
-            which you want, and I will set it.
+            The canonical button, pill, and card styles. One primary action per view;
+            rounded-full is the house button shape.
           </p>
-          <div className="mt-8 divide-y divide-border-light overflow-hidden rounded-2xl border border-border bg-bg-card">
-            {HELPER_CANDIDATES.map((c) => (
-              <div key={c.label} className="flex flex-col gap-2 px-6 py-5 sm:flex-row sm:items-center sm:gap-6">
-                <div className="flex shrink-0 items-center gap-2 sm:w-56">
-                  <span className="font-code text-xs text-text-tertiary">{c.label}</span>
-                  {c.tag && (
-                    <span
-                      className={`rounded-full px-2 py-0.5 font-code text-[10px] uppercase tracking-wider ${
-                        c.tag === "new pick"
-                          ? "bg-green-bg text-green-warm ring-1 ring-green-light/40"
-                          : "bg-accent-bg text-accent-warm ring-1 ring-border-light"
-                      }`}
-                    >
-                      {c.tag}
-                    </span>
-                  )}
-                </div>
-                <p className={`${c.className} text-base text-text-secondary`}>{HELPER_LINE}</p>
-              </div>
-            ))}
+
+          <p className="section-label mt-10 mb-4">Buttons</p>
+          <div className="flex flex-wrap items-center gap-4">
+            <button className="ent-btn-primary">Download</button>
+            <button className="ent-btn-secondary">Book a demo</button>
+            <button className="ent-btn-ghost">Learn more</button>
+          </div>
+
+          <p className="section-label mt-10 mb-4">Pills</p>
+          <div className="flex flex-wrap items-center gap-3">
+            <span className="ent-pill">Accent</span>
+            <span className="ent-pill-sage">Included</span>
+            <span className="ent-pill-neutral">Soon</span>
+          </div>
+
+          <p className="section-label mt-10 mb-4">Cards (borderless, warm shadow)</p>
+          <p className="mb-4 max-w-2xl font-body-serif text-sm text-text-secondary">
+            No hairline borders on content surfaces. Depth comes from one warm diffuse
+            shadow; borders remain only where they carry affordance (inputs, secondary
+            buttons, glass edges).
+          </p>
+          <div className="grid gap-4 sm:grid-cols-3">
+            <div className="ent-card ent-card-hover p-6">
+              <h4 className="font-display text-lg text-text-primary">Card</h4>
+              <p className="mt-2 font-body-serif text-sm text-text-secondary">
+                White surface, warm diffuse shadow, lifts on hover. The default.
+              </p>
+            </div>
+            <div className="ent-card-warm p-6">
+              <h4 className="font-display text-lg text-text-primary">Warm card</h4>
+              <p className="mt-2 font-body-serif text-sm text-text-secondary">
+                Soft cream fill on parchment. For insets and asides.
+              </p>
+            </div>
+            <div className="ent-card-flat p-6">
+              <h4 className="font-display text-lg text-text-primary">Flat card</h4>
+              <p className="mt-2 font-body-serif text-sm text-text-secondary">
+                Quiet warm tint, no shadow. For dense grids and secondary info.
+              </p>
+            </div>
+          </div>
+
+          <p className="section-label mt-10 mb-4">Eyebrows</p>
+          <div className="space-y-2">
+            <p className="section-label">Section label (marketing)</p>
+            <p className="ent-eyebrow">Enterprise eyebrow</p>
+            <p className="ent-eyebrow-muted">Muted eyebrow</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── Liquid glass ─── */}
+      <section className="border-b border-border py-16 md:py-20">
+        <div className="mx-auto max-w-5xl px-6">
+          <h2 className="font-display text-3xl tracking-tight text-text-primary">Liquid glass</h2>
+          <p className="mt-4 max-w-2xl font-body-serif leading-relaxed text-text-secondary">
+            The site chrome: frosted floating pills with a bright specular edge, one solid
+            accent pill as the single primary action. Shown here over a warm gradient so the
+            frost and refraction are visible.
+          </p>
+          <div
+            className="mt-8 flex flex-wrap items-center gap-4 rounded-3xl p-8 shadow-[0_16px_38px_-26px_rgba(150,108,68,0.3)]"
+            style={{
+              background:
+                "linear-gradient(120deg, #f6ddba, #ecc79a 45%, #ddb78c)",
+            }}
+          >
+            <span className="glass-pill px-5 py-2.5 text-sm font-medium text-text-primary">
+              Product
+            </span>
+            <span className="glass-pill px-5 py-2.5 text-sm font-medium text-text-primary">
+              Compare
+            </span>
+            <span className="glass-pill px-5 py-2.5 text-sm font-medium text-text-primary">
+              Pricing
+            </span>
+            <button className="ent-btn-primary">Download</button>
           </div>
         </div>
       </section>

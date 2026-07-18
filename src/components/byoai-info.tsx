@@ -49,7 +49,7 @@ export function BYOAIInfo() {
       {open && (
         <span
           role="tooltip"
-          className="absolute left-1/2 -translate-x-1/2 top-full mt-2 z-30 w-max max-w-[260px] rounded-xl border border-border bg-bg-card px-3.5 py-2.5 text-xs leading-relaxed text-text-secondary shadow-[0_10px_30px_-10px_rgba(40,28,12,0.25)] text-left font-normal normal-case tracking-normal"
+          className="absolute left-1/2 -translate-x-1/2 top-full mt-2 z-30 w-max max-w-[260px] rounded-xl card-skin px-3.5 py-2.5 text-xs leading-relaxed text-text-secondary shadow-[0_10px_30px_-10px_rgba(40,28,12,0.25)] text-left font-normal normal-case tracking-normal"
           onMouseEnter={() => setOpen(true)}
           onMouseLeave={() => setOpen(false)}
         >

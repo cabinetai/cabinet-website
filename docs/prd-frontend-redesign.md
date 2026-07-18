@@ -7,6 +7,8 @@
 **Companion docs:** `docs/brand-guide.md`, `docs/sitemap.md`, `docs/prd-world-class-website.md`
 **Built with:** senior-frontend (component/perf/a11y patterns) + frontend-design (distinctive, non-generic aesthetics)
 
+> **Note (2026-07-17):** the style lab (`public/style-lab.html`) has been retired and consolidated into `/styleguide` (`src/app/styleguide/page.tsx`). Every "style lab" reference below now means `/styleguide`. The type stack also changed: Fraunces (display) and Instrument Sans (body/labels) replaced Stack Sans Notch, Inter, and Jost; see `docs/brand-guide.md` §6.
+
 ---
 
 ## 0. TL;DR

@@ -1,19 +1,20 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { Inter, Instrument_Serif, Source_Code_Pro, Stack_Sans_Notch, Ms_Madi, Jost } from "next/font/google";
+import { Instrument_Sans, Instrument_Serif, Source_Code_Pro, Fraunces, Ms_Madi } from "next/font/google";
 import { LiquidGlassFilter } from "@/components/liquid-glass-filter";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
+// Body / UI sans. Pairs with the Instrument Serif wordmark as one family.
+const instrumentSans = Instrument_Sans({
+  variable: "--font-body",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
 });
 
-// Big "Apple-style" display sans for headlines (variable weight 200–700).
-const stackSans = Stack_Sans_Notch({
-  variable: "--font-stack-notch",
+// Warm editorial serif for headlines (variable weight + optical sizing).
+const fraunces = Fraunces({
+  variable: "--font-heading",
   subsets: ["latin"],
+  axes: ["opsz"],
 });
 
 // Kept only for the Cabinet brand wordmark.
@@ -34,13 +35,6 @@ const msMadi = Ms_Madi({
   variable: "--font-hand",
   subsets: ["latin"],
   weight: "400",
-});
-
-// Labels / eyebrows (uppercase, letter-spaced). Separate from the code/mono font.
-const jost = Jost({
-  variable: "--font-label",
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
 });
 
 export const metadata: Metadata = {
@@ -80,7 +74,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${stackSans.variable} ${instrumentSerif.variable} ${sourceCodePro.variable} ${msMadi.variable} ${jost.variable} h-full antialiased`}
+      className={`${instrumentSans.variable} ${fraunces.variable} ${instrumentSerif.variable} ${sourceCodePro.variable} ${msMadi.variable} h-full antialiased`}
     >
       <head>
         <Script

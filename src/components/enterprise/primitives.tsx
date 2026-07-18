@@ -239,7 +239,7 @@ export function CalloutCard({
   cta?: { label: string; href: string };
 }) {
   return (
-    <div className="relative overflow-hidden rounded-2xl border border-border bg-gradient-to-br from-accent-bg-subtle via-bg-card to-bg-card p-8 md:p-10">
+    <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-accent-bg-subtle via-bg-card to-bg-card p-8 shadow-[0_16px_38px_-26px_rgba(150,108,68,0.25)] md:p-10">
       <div
         className="absolute -top-12 -right-12 w-48 h-48 rounded-full opacity-30"
         style={{
