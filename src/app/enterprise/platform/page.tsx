@@ -196,7 +196,7 @@ function FeatureRow({
   d: string;
 }) {
   return (
-    <div className="flex items-start gap-4 p-4 rounded-xl border border-border bg-bg-card">
+    <div className="flex items-start gap-4 p-4 rounded-xl card-skin">
       <div className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0">
         <WoodIcon icon={Icon} className="h-9 w-9" />
       </div>
@@ -404,7 +404,7 @@ function CadenceRow({
   d: string;
 }) {
   return (
-    <div className="flex items-start gap-4 p-4 rounded-xl border border-border bg-bg-card">
+    <div className="flex items-start gap-4 p-4 rounded-xl card-skin">
       <Clock className="w-4 h-4 text-accent shrink-0 mt-1" />
       <div>
         <p className="text-[11px] text-text-tertiary font-code">{t}</p>
@@ -482,7 +482,7 @@ function Integrations() {
             <div className="mt-3 space-y-2.5">
               {g.items.map((it) => (
                 <div key={it.name} className="flex items-start gap-2.5 py-1.5">
-                  <div className="w-7 h-7 rounded-md bg-bg-warm border border-border flex items-center justify-center text-xs font-semibold text-text-primary shrink-0">
+                  <div className="w-7 h-7 rounded-md card-skin-warm flex items-center justify-center text-xs font-semibold text-text-primary shrink-0">
                     {it.name.charAt(0)}
                   </div>
                   <div>
@@ -561,7 +561,7 @@ function McpBlock({
   }[tone];
   return (
     <div className={`flex items-center gap-3 rounded-xl border ${tones} px-4 py-3`}>
-      <div className="w-9 h-9 rounded-md bg-white/60 border border-border flex items-center justify-center">
+      <div className="w-9 h-9 rounded-md bg-white/60 shadow-sm flex items-center justify-center">
         <WoodIcon icon={Icon} className="h-7 w-7" />
       </div>
       <div>

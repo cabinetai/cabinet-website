@@ -138,7 +138,7 @@ function HeroBriefCard() {
             <span className="w-2.5 h-2.5 rounded-full bg-green-300" />
           </div>
           <div className="flex-1 flex justify-center">
-            <div className="flex items-center gap-1.5 rounded-md bg-bg-card border border-border px-2.5 py-1 text-[11px] font-code text-text-tertiary">
+            <div className="flex items-center gap-1.5 rounded-md card-skin px-2.5 py-1 text-[11px] font-code text-text-tertiary">
               <Lock className="w-3 h-3 text-green-warm" />
               cabinet · global-strategy · daily-brief
             </div>
@@ -346,7 +346,7 @@ function SubLine({
 }) {
   return (
     <div className="flex items-start gap-3 p-3 rounded-lg hover:bg-bg-card transition-colors">
-      <div className="w-9 h-9 rounded-lg bg-bg-card border border-border flex items-center justify-center shrink-0">
+      <div className="w-9 h-9 rounded-lg card-skin flex items-center justify-center shrink-0">
         <WoodIcon icon={Icon} className="h-7 w-7" />
       </div>
       <div>
@@ -424,7 +424,7 @@ function SubstrateVisual() {
               <Node x={310} y={320} label="meeting" tiny />
             </svg>
 
-            <div className="absolute bottom-3 left-4 right-4 rounded-md border border-border bg-bg/95 backdrop-blur p-3">
+            <div className="absolute bottom-3 left-4 right-4 rounded-md bg-bg/95 shadow-sm backdrop-blur p-3">
               <p className="text-[10px] font-semibold text-accent uppercase tracking-widest mb-1">
                 What the AI teammates see
               </p>
@@ -807,7 +807,7 @@ function PanelRisk() {
       <h3 className="font-display text-2xl text-text-primary mt-2 mb-5">Live risk list</h3>
       <div className="space-y-2">
         {risks.map((r, i) => (
-          <div key={i} className="grid grid-cols-[70px_1fr_150px_110px] gap-3 items-center px-3 py-2.5 rounded-lg border border-border bg-bg-warm/40 hover:bg-bg-warm transition-colors">
+          <div key={i} className="grid grid-cols-[70px_1fr_150px_110px] gap-3 items-center px-3 py-2.5 rounded-lg bg-bg-warm/50 hover:bg-bg-warm transition-colors">
             <span className={`text-[10px] uppercase tracking-widest text-center px-2 py-0.5 rounded font-semibold ${
               r.s === "high" ? "bg-red-50 text-red-700 border border-red-200"
               : r.s === "med" ? "bg-amber-50 text-amber-800 border border-amber-200"
@@ -1000,7 +1000,7 @@ function TplCard(p: {
           </span>
         ))}
       </div>
-      <div className="flex items-center gap-2 rounded-md bg-bg border border-border px-3 py-2">
+      <div className="flex items-center gap-2 rounded-md bg-bg-warm px-3 py-2">
         <Terminal className="w-3 h-3 text-text-tertiary shrink-0" />
         <code className="flex-1 text-[11px] font-code text-text-secondary truncate">{p.cmd}</code>
         <button

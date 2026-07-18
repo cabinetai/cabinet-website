@@ -86,7 +86,7 @@ function AnchorChip({
   return (
     <a
       href={href}
-      className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-bg-card hover:bg-bg-warm hover:border-border-dark transition-all"
+      className="inline-flex items-center gap-2 px-4 py-2 rounded-full card-skin hover:bg-bg-warm hover:border-border-dark transition-all"
     >
       <WoodIcon icon={Icon} className="w-5 h-5" />
       <span className="text-sm font-medium text-text-primary">{label}</span>
@@ -248,7 +248,7 @@ function CoachItem({
   detail: string;
 }) {
   return (
-    <div className="rounded-lg border border-border bg-bg-warm/40 px-4 py-3">
+    <div className="rounded-lg bg-bg-warm/60 px-4 py-3">
       <p className="text-[10px] font-semibold uppercase tracking-widest text-accent">{tag}</p>
       <p className="text-[14px] font-semibold text-text-primary mt-0.5 leading-snug">{title}</p>
       <p className="text-[12px] text-text-tertiary mt-1 font-body-serif">{detail}</p>

@@ -355,7 +355,7 @@ export default function CompareHubPage() {
               </Link>
               <Link
                 href="/demo"
-                className="inline-flex items-center gap-2 rounded-xl border border-border bg-bg-card px-7 py-3.5 text-base font-semibold text-text-primary shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
+                className="inline-flex items-center gap-2 rounded-full card-skin px-7 py-3.5 text-base font-semibold text-text-primary shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
               >
                 Book a demo
               </Link>

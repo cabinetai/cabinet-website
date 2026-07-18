@@ -25,7 +25,7 @@ export function IndustryTemplate({ industry }: { industry: Industry }) {
         <div className="relative z-10 mx-auto max-w-5xl px-6 py-20 md:py-28">
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <div>
-              <div className="inline-flex items-center gap-2.5 rounded-full border border-border bg-bg-card py-1.5 pl-2 pr-4 text-sm font-medium text-accent shadow-sm">
+              <div className="inline-flex items-center gap-2.5 rounded-full card-skin py-1.5 pl-2 pr-4 text-sm font-medium text-accent shadow-sm">
                 <img src={`/brand/icons/${industry.slug}.png`} alt="" className="h-6 w-6 object-contain" />
                 {industry.eyebrow}
               </div>
@@ -44,7 +44,7 @@ export function IndustryTemplate({ industry }: { industry: Industry }) {
                 </Link>
                 <Link
                   href="/demo"
-                  className="inline-flex items-center gap-2 rounded-xl border border-border bg-bg-card px-7 py-3.5 text-base font-semibold text-text-primary shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
+                  className="inline-flex items-center gap-2 rounded-full card-skin px-7 py-3.5 text-base font-semibold text-text-primary shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
                 >
                   Book a demo
                 </Link>
@@ -137,7 +137,7 @@ export function IndustryTemplate({ industry }: { industry: Industry }) {
             </Link>
             <Link
               href="/demo"
-              className="inline-flex items-center gap-2 rounded-xl border border-border bg-bg-card px-7 py-3.5 text-base font-semibold text-text-primary shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
+              className="inline-flex items-center gap-2 rounded-full card-skin px-7 py-3.5 text-base font-semibold text-text-primary shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
             >
               Book a demo
             </Link>

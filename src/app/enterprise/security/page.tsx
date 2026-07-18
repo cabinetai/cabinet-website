@@ -101,8 +101,8 @@ function SovLine({
   s: string;
 }) {
   return (
-    <div className="flex items-center gap-3 py-2 px-3 rounded-lg bg-bg-warm/60 border border-border">
-      <div className="w-9 h-9 rounded-md bg-bg-card border border-border flex items-center justify-center">
+    <div className="flex items-center gap-3 py-2 px-3 rounded-lg bg-bg-warm/70">
+      <div className="w-9 h-9 rounded-md card-skin flex items-center justify-center">
         <WoodIcon icon={Icon} className="w-7 h-7" />
       </div>
       <div className="flex-1">
@@ -288,12 +288,12 @@ function ArrowGlyph() {
 
 function ArchPanel({ label, sub, items }: { label: string; sub: string; items: string[] }) {
   return (
-    <div className="rounded-xl border border-border bg-bg-card p-5 flex flex-col">
+    <div className="rounded-xl card-skin p-5 flex flex-col">
       <Eyebrow muted>{label}</Eyebrow>
       <p className="text-[12px] text-text-tertiary font-code mt-1">{sub}</p>
       <div className="mt-4 space-y-2 flex-1">
         {items.map((it) => (
-          <div key={it} className="flex items-center gap-2 px-3 py-2 rounded-md bg-bg-warm border border-border">
+          <div key={it} className="flex items-center gap-2 px-3 py-2 rounded-md card-skin-warm">
             <span className="w-1.5 h-1.5 rounded-full bg-accent" />
             <span className="text-sm text-text-secondary">{it}</span>
           </div>

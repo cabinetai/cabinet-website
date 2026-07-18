@@ -30,7 +30,7 @@ function Hero() {
         <div className="grid lg:grid-cols-[480px_1fr] gap-12 lg:gap-20 items-start">
           {/* Photo */}
           <div className="relative">
-            <div className="aspect-[4/5] rounded-2xl overflow-hidden border border-border bg-bg-card shadow-md">
+            <div className="aspect-[4/5] rounded-2xl overflow-hidden card-skin shadow-md">
               <Image
                 src="/hila.png"
                 alt="Hila Shmuel, founder of Cabinet"

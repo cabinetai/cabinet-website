@@ -425,7 +425,7 @@ function AgentShowcase() {
   return (
     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
       {agents.map((agent) => (
-        <div key={agent.name} className="border border-border rounded-xl p-5 bg-bg-card card-hover group">
+        <div key={agent.name} className="rounded-xl p-5 card-skin card-hover group">
           <div className="flex items-start justify-between mb-3">
             <div className="flex items-center gap-3">
               <span className="text-2xl">{agent.emoji}</span>
@@ -740,7 +740,7 @@ function displayNodeName(name: string, type: string) {
 
 function CabinetMockup({ kb, caseEmoji, agents }: { kb: (typeof USE_CASES)[0]["kb"]; caseEmoji: string; agents: (typeof USE_CASES)[0]["agents"] }) {
   return (
-    <div className="rounded-xl overflow-hidden border border-border text-left shadow-sm">
+    <div className="rounded-xl overflow-hidden card-skin text-left">
       {/* Browser chrome — warm parchment */}
       <div className="flex items-center gap-2 px-4 py-2 border-b border-border bg-bg-warm">
         <div className="w-2.5 h-2.5 rounded-full bg-red-400/90" />
@@ -986,7 +986,7 @@ function UseCasesCarousel() {
           onTouchMove={onTouchMove}
           onTouchEnd={onTouchEnd}
         >
-          <div className="overflow-hidden rounded-2xl border border-border">
+          <div className="overflow-hidden rounded-2xl card-skin">
             <div
               ref={trackRef}
               className="flex"
@@ -1055,14 +1055,14 @@ function UseCasesCarousel() {
           {/* Prev / Next */}
           <button
             onClick={prev}
-            className="absolute left-0 top-1/3 -translate-y-1/2 -translate-x-4 md:-translate-x-6 w-10 h-10 rounded-full border border-border bg-bg-card shadow-md flex items-center justify-center text-text-secondary hover:text-text-primary hover:border-border-dark transition-all"
+            className="absolute left-0 top-1/3 -translate-y-1/2 -translate-x-4 md:-translate-x-6 w-10 h-10 rounded-full card-skin shadow-md flex items-center justify-center text-text-secondary hover:text-text-primary hover:border-border-dark transition-all"
             aria-label="Previous"
           >
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8l4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
           </button>
           <button
             onClick={next}
-            className="absolute right-0 top-1/3 -translate-y-1/2 translate-x-4 md:translate-x-6 w-10 h-10 rounded-full border border-border bg-bg-card shadow-md flex items-center justify-center text-text-secondary hover:text-text-primary hover:border-border-dark transition-all"
+            className="absolute right-0 top-1/3 -translate-y-1/2 translate-x-4 md:translate-x-6 w-10 h-10 rounded-full card-skin shadow-md flex items-center justify-center text-text-secondary hover:text-text-primary hover:border-border-dark transition-all"
             aria-label="Next"
           >
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
@@ -1400,7 +1400,7 @@ export default function Home() {
                 <figure
                   key={`${t.name}-${i}`}
                   aria-hidden={i >= TESTIMONIALS.length}
-                  className="mr-6 flex w-[340px] shrink-0 flex-col rounded-2xl border border-border bg-bg-card p-6 shadow-sm card-hover sm:w-[380px]"
+                  className="mr-6 flex w-[340px] shrink-0 flex-col rounded-2xl card-skin p-6 shadow-sm card-hover sm:w-[380px]"
                 >
                   {/* Photo at the top — clickable to LinkedIn */}
                   {t.linkedin ? (
@@ -1483,7 +1483,7 @@ export default function Home() {
             {["sales", "marketing", "founders"].map((slug) => {
               const s = SOLUTION_STORIES[slug];
               return (
-                <div key={slug} className="flex flex-col rounded-2xl border border-border bg-bg-card p-7 card-hover">
+                <div key={slug} className="flex flex-col rounded-2xl card-skin p-7 card-hover">
                   <div className="font-display text-4xl tracking-tight text-accent">{s.metric}</div>
                   <p className="mt-1.5 text-sm text-text-secondary font-body-serif">{s.metricLabel}</p>
                   <blockquote className="mt-5 flex-1 font-body-serif leading-relaxed text-text-secondary">
@@ -1513,7 +1513,7 @@ export default function Home() {
           <div className="grid grid-cols-8 gap-2 sm:gap-3 max-w-4xl mx-auto">
             {PROVIDERS.map((p) => (
               <div key={p.name} className="group flex flex-col items-center gap-2">
-                <div className="flex aspect-square w-full items-center justify-center rounded-2xl border border-border bg-bg shadow-sm transition-all duration-200 ease-out group-hover:-translate-y-1 group-hover:scale-105 group-hover:border-border-dark group-hover:shadow-lg group-hover:bg-bg-card">
+                <div className="flex aspect-square w-full items-center justify-center rounded-2xl card-skin transition-all duration-200 ease-out group-hover:-translate-y-1 group-hover:scale-105 group-hover:shadow-lg">
                   <Image
                     src={p.src}
                     alt={p.name}
@@ -1564,7 +1564,7 @@ export default function Home() {
                 {[...row, ...row].map((src, i) => (
                   <div
                     key={`${src}-${i}`}
-                    className="mr-3 flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border border-border bg-bg-card shadow-sm sm:h-20 sm:w-20"
+                    className="mr-3 flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl card-skin shadow-sm sm:h-20 sm:w-20"
                   >
                     <Image
                       src={src}
@@ -1606,7 +1606,7 @@ export default function Home() {
         <div className="relative z-10 max-w-6xl mx-auto px-6">
           <Suspense
             fallback={
-              <div className="mx-auto min-h-[320px] max-w-5xl rounded-[28px] border border-border bg-bg-card/70" />
+              <div className="mx-auto min-h-[320px] max-w-5xl rounded-[28px] card-skin/70" />
             }
           >
             <WaitlistCapture
@@ -1650,7 +1650,7 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="text-center p-8 rounded-xl border border-border bg-bg-card">
+            <div className="text-center p-8 rounded-xl card-skin">
               <div className="w-12 h-12 mx-auto rounded-xl bg-accent-bg flex items-center justify-center mb-4">
                 <X className="w-6 h-6 text-accent-warm" />
               </div>
@@ -1666,7 +1666,7 @@ export default function Home() {
                 One knowledge base. AI agents that remember everything. Scheduled jobs that compound. Your team grows while you sleep.
               </p>
             </div>
-            <div className="text-center p-8 rounded-xl border border-border bg-bg-card">
+            <div className="text-center p-8 rounded-xl card-skin">
               <div className="w-14 h-14 mx-auto flex items-center justify-center mb-4">
                 <WoodIcon icon={Users} className="w-12 h-12" />
               </div>
@@ -1853,7 +1853,7 @@ export default function Home() {
               <a
                 key={s.slug}
                 href={`/solutions/${s.slug}`}
-                className="group flex flex-col rounded-2xl border border-border bg-bg-card p-6 card-hover"
+                className="group flex flex-col rounded-2xl card-skin p-6 card-hover"
               >
                 <img
                   src={`/brand/solutions/${s.slug}.png`}
@@ -1896,7 +1896,7 @@ export default function Home() {
                 href={cabinetUrl(c.slug)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-bg-card card-hover"
+                className="group flex flex-col overflow-hidden rounded-2xl card-skin card-hover"
               >
                 <div
                   className="relative w-full overflow-hidden"
@@ -1968,7 +1968,7 @@ export default function Home() {
             ].map((o) => (
               <div
                 key={o.label}
-                className="rounded-2xl border border-border bg-bg-card p-7 text-center"
+                className="rounded-2xl card-skin p-7 text-center"
               >
                 <div className="font-display text-4xl md:text-5xl tracking-tight text-accent">
                   {o.stat}
@@ -2000,7 +2000,7 @@ export default function Home() {
             {TRUST_BADGES.map((b) => (
               <div
                 key={b.label}
-                className="group rounded-2xl border border-border bg-bg-card p-6 card-hover"
+                className="group rounded-2xl card-skin p-6 card-hover"
               >
                 <div className="flex items-start justify-between gap-3 mb-3">
                   <img
@@ -2078,7 +2078,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 mt-4">
             <a
               href="/demo"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border border-border bg-bg-card text-text-primary font-medium shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full card-skin text-text-primary font-medium shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
             >
               Book a demo
             </a>
@@ -2092,7 +2092,7 @@ export default function Home() {
             </a>
             <GitHubStarsButton
               stars={stars}
-              className="inline-flex h-12 min-w-[11rem] items-center justify-between gap-3 rounded-full border border-border bg-bg-card px-4 text-sm font-semibold text-text-primary shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
+              className="inline-flex h-12 min-w-[11rem] items-center justify-between gap-3 rounded-full card-skin px-4 text-sm font-semibold text-text-primary shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
             />
           </div>
           <p className="mt-6 text-sm text-text-tertiary">

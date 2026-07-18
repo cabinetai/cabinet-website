@@ -73,7 +73,7 @@ Two tracks share the same brand but use different chrome: the **public** track (
 
 - **Brand assets:** `public/brand/` (logo states + flips, smiley/face variants). Icon library = wood-object icons in `public/generated/_explore/obj-*.png` (promote locked ones to `public/brand/icons/`).
 - **Generated motifs:** `public/generated/` (home hero + per-page motifs); explorations in `public/generated/_explore/`.
-- **Style lab (asset + system review):** `public/style-lab.html`. Brand foundations plus every generated asset, each labeled with its id and re-run command (see PRD §"Asset review workflow").
+- **Design system review:** `/styleguide` (in-app, not indexed). Assets, type, colors, components, glass, and the explorations archive. Replaced the old `public/style-lab.html`.
 - **Generators:** `scripts/generate-images.mjs` (production motifs), `scripts/explore-styles.mjs` (explorations), `scripts/brand-states.mjs` (logo states), `scripts/cutout-checker.mjs` (background removal), `scripts/lib/imagegen.mjs` (shared).
 
 ## 4. Global elements

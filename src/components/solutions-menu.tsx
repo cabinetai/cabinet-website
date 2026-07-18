@@ -45,7 +45,7 @@ export function SolutionsMenu({ triggerClassName = "" }: { triggerClassName?: st
             <div className="grid grid-cols-2 gap-x-2">
               {/* By team */}
               <div>
-                <p className="px-3 pb-1 pt-2 font-code text-[11px] uppercase tracking-wider text-text-tertiary">
+                <p className="px-3 pb-1 pt-2 text-[11px] font-medium uppercase tracking-[0.14em] text-text-tertiary">
                   By team
                 </p>
                 {SOLUTIONS.map((s) => (
@@ -59,14 +59,14 @@ export function SolutionsMenu({ triggerClassName = "" }: { triggerClassName?: st
                       alt=""
                       className="h-9 w-9 shrink-0 object-contain transition-transform duration-200 group-hover:scale-110 group-hover:-rotate-2"
                     />
-                    <span className="font-display text-sm text-text-primary">{s.label}</span>
+                    <span className="text-sm font-semibold text-text-primary">{s.label}</span>
                     <ArrowRight className="ml-auto h-3.5 w-3.5 shrink-0 -translate-x-1 text-text-muted opacity-0 transition-all group-hover:translate-x-0 group-hover:text-accent group-hover:opacity-100" />
                   </Link>
                 ))}
               </div>
               {/* By industry */}
               <div className="border-l border-border-light pl-2">
-                <p className="px-3 pb-1 pt-2 font-code text-[11px] uppercase tracking-wider text-text-tertiary">
+                <p className="px-3 pb-1 pt-2 text-[11px] font-medium uppercase tracking-[0.14em] text-text-tertiary">
                   By industry
                 </p>
                 {INDUSTRIES.map((i) => (
@@ -80,7 +80,7 @@ export function SolutionsMenu({ triggerClassName = "" }: { triggerClassName?: st
                       alt=""
                       className="h-9 w-9 shrink-0 object-contain transition-transform duration-200 group-hover:scale-110 group-hover:-rotate-2"
                     />
-                    <span className="font-display text-sm text-text-primary">{i.label}</span>
+                    <span className="text-sm font-semibold text-text-primary">{i.label}</span>
                     <ArrowRight className="ml-auto h-3.5 w-3.5 shrink-0 -translate-x-1 text-text-muted opacity-0 transition-all group-hover:translate-x-0 group-hover:text-accent group-hover:opacity-100" />
                   </Link>
                 ))}
@@ -89,13 +89,13 @@ export function SolutionsMenu({ triggerClassName = "" }: { triggerClassName?: st
             <div className="mt-1 grid grid-cols-2 gap-x-2 border-t border-border-light pt-2">
               <Link
                 href="/solutions"
-                className="flex items-center justify-between rounded-xl px-3 py-2.5 font-code text-xs text-accent transition-colors hover:text-accent-warm"
+                className="flex items-center justify-between rounded-xl px-3 py-2.5 text-xs font-medium text-accent transition-colors hover:text-accent-warm"
               >
                 Every team <ArrowRight className="h-3.5 w-3.5" />
               </Link>
               <Link
                 href="/industries"
-                className="flex items-center justify-between rounded-xl px-3 py-2.5 font-code text-xs text-accent transition-colors hover:text-accent-warm"
+                className="flex items-center justify-between rounded-xl px-3 py-2.5 text-xs font-medium text-accent transition-colors hover:text-accent-warm"
               >
                 Every industry <ArrowRight className="h-3.5 w-3.5" />
               </Link>

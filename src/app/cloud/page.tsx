@@ -23,7 +23,7 @@ export default function CloudPage() {
 
         <div className="relative z-[1] max-w-5xl mx-auto px-6">
           <div className="text-center max-w-3xl mx-auto mb-10">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-border bg-bg-card text-xs font-code text-text-tertiary mb-8">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full card-skin text-xs font-code text-text-tertiary mb-8">
               <Cloud className="w-3.5 h-3.5 text-accent" />
               Cabinet Cloud is coming soon
             </div>
@@ -51,7 +51,7 @@ export default function CloudPage() {
 
           <Suspense
             fallback={
-              <div className="max-w-xl mx-auto mb-6 h-[160px] rounded-[28px] border border-border bg-bg-card/50" />
+              <div className="max-w-xl mx-auto mb-6 h-[160px] rounded-[28px] card-skin/50" />
             }
           >
             <CloudHeroWaitlist

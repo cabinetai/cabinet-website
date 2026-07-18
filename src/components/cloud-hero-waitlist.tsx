@@ -103,7 +103,7 @@ export function CloudHeroWaitlist({ source, originPage, className = "" }: Props)
 
   return (
     <form onSubmit={handleSubmit} className={className}>
-      <div className="flex flex-col gap-3 rounded-full border border-border bg-bg-card/95 p-2 shadow-[0_20px_60px_rgba(62,43,18,0.10)] backdrop-blur-sm sm:flex-row sm:items-center sm:gap-2 sm:p-1.5">
+      <div className="flex flex-col gap-3 rounded-full card-skin/95 p-2 shadow-[0_20px_60px_rgba(62,43,18,0.10)] backdrop-blur-sm sm:flex-row sm:items-center sm:gap-2 sm:p-1.5">
         <label htmlFor="cabinet-cloud-hero-email" className="sr-only">
           Email
         </label>
