@@ -1,7 +1,7 @@
 /**
  * Featured cabinets from the public registry at cabinets.sh
  * (source: https://github.com/hilash/cabinets). Each cabinet is a complete
- * AI team — agents, jobs, and knowledge — that you clone and run.
+ * AI team (agents, jobs, and knowledge) that you clone and run.
  *
  * This is a curated snapshot for the marketing site; the full, always-current
  * list lives on cabinets.sh. Covers are served from cabinets.sh/covers/<slug>.jpg.
@@ -81,7 +81,88 @@ export const CABINETS: Cabinet[] = [
       "A relatable B2C app company, used to show how nested cabinets behave inside a larger company.",
     tags: ["example", "b2c", "company"],
   },
+  // Assistant workflows: the daily-operating use cases (see TOWN.md for the
+  // competitive mapping). Each is a published registry cabinet.
+  {
+    slug: "email",
+    name: "Email",
+    description:
+      "A Gmail-integrated inbox workspace: triage what needs you, draft replies for your review, and keep label workflows running.",
+    tags: ["assistant", "email", "inbox"],
+  },
+  {
+    slug: "meeting-memory",
+    name: "Meeting Memory",
+    description:
+      "Captures every meeting as structured memory: summaries, decisions, action items, and owners, so nothing falls through the cracks.",
+    tags: ["assistant", "meetings", "action-items"],
+  },
+  {
+    slug: "company-brain",
+    name: "Company Brain",
+    description:
+      "The AI-native knowledge base that makes every doc findable and every question answerable, with sources.",
+    tags: ["assistant", "knowledge", "search"],
+  },
+  {
+    slug: "internal-faq",
+    name: "Internal FAQ",
+    description:
+      "Instant, sourced answers to HR, IT, finance, and policy questions, without a ticket or a Slack thread.",
+    tags: ["assistant", "knowledge", "ops"],
+  },
+  {
+    slug: "sales-call-prep",
+    name: "Sales Call Prep",
+    description:
+      "Briefings before every call: account context, recent activity, likely pain points, and discovery questions, delivered before 7 AM.",
+    tags: ["assistant", "sales", "briefings"],
+  },
+  {
+    slug: "prd-builder",
+    name: "PRD Builder",
+    description:
+      "Turns customer pain, goals, and constraints into a structured PRD draft, then runs a completeness QA pass before handoff.",
+    tags: ["assistant", "docs", "product"],
+  },
+  {
+    slug: "decision-log",
+    name: "Decision Log",
+    description:
+      "Extracts every material decision from meetings, docs, and email into a searchable register with owner, rationale, and status.",
+    tags: ["assistant", "decisions", "leadership"],
+  },
+  {
+    slug: "weekly-business-review",
+    name: "Weekly Business Review",
+    description:
+      "Auto-generates the Monday business review across revenue, product, support, and finance as one sourced memo.",
+    tags: ["assistant", "automation", "reporting"],
+  },
+  {
+    slug: "universal-request",
+    name: "Universal Request",
+    description:
+      "One intake flow for every team: requests are categorised, routed to an owner, given an SLA, and tracked to completion.",
+    tags: ["assistant", "team", "intake"],
+  },
 ];
+
+/**
+ * The Town-parity assistant workflow set (TOWN.md §3), in display order:
+ * inbox, meetings, answers, docs, automation, team.
+ */
+export const WORKFLOW_CABINET_SLUGS = [
+  "email",
+  "meeting-memory",
+  "company-brain",
+  "sales-call-prep",
+  "prd-builder",
+  "weekly-business-review",
+  "decision-log",
+  "internal-faq",
+  "universal-request",
+] as const;
 
 export const cabinetBySlug = (slug: string): Cabinet | undefined =>
   CABINETS.find((c) => c.slug === slug);
