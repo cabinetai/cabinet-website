@@ -2,14 +2,11 @@
 
 import type { LucideIcon } from "lucide-react";
 import {
-  ArrowRight,
   Check,
   ChevronDown,
   Database,
   FileText,
   Fingerprint,
-  Globe,
-  Key,
   KeyRound,
   Lock,
   Network,
@@ -17,12 +14,9 @@ import {
   Server,
   Shield,
   ShieldCheck,
-  Sparkles,
-  X,
 } from "lucide-react";
 import { useState } from "react";
 import {
-  CheckList,
   Eyebrow,
   Pill,
   PrimaryButton,
@@ -150,8 +144,8 @@ function Pillars() {
         eyebrow="The four guarantees"
         title={
           <>
-            Control isn't a checkbox.{" "}
-            <em className="text-accent">It's how <span className="font-brand italic">Cabinet</span>{" "}is built.</em>
+            Control isn’t a checkbox.{" "}
+            <em className="text-accent">It’s how Cabinet is built.</em>
           </>
         }
       />
@@ -202,7 +196,7 @@ function Architecture() {
         title={
           <>
             How data flows.{" "}
-            <em className="text-accent">And where it doesn't.</em>
+            <em className="text-accent">And where it doesn’t.</em>
           </>
         }
         kicker={
@@ -426,12 +420,12 @@ function Compliance() {
         title={
           <>
             Honest about where we are.{" "}
-            <em className="text-accent">And where we're going.</em>
+            <em className="text-accent">And where we’re going.</em>
           </>
         }
         kicker={
           <>
-            We don't claim certifications we haven't earned. The roadmap below
+            We don’t claim certifications we haven’t earned. The roadmap below
             is the public source of truth, updated quarterly with named
             auditors.
           </>
@@ -539,12 +533,12 @@ function FinalCta() {
         <Pill icon={ShieldCheck}>Security review · NDA-friendly</Pill>
         <h2 className="ent-display-2 mt-4 max-w-2xl mx-auto">
           Send us the security questionnaire.{" "}
-          <em className="text-accent">We'll send it back filled in.</em>
+          <em className="text-accent">We’ll send it back filled in.</em>
         </h2>
         <p className="ent-lead mt-5 max-w-2xl mx-auto">
-          Whether you're at a regulated bank, a defence contractor, or a
-          healthcare payer, we'll meet your security team where they are,
-          with the documentation they're used to seeing.
+          Whether you’re at a regulated bank, a defence contractor, or a
+          healthcare payer, we’ll meet your security team where they are,
+          with the documentation they’re used to seeing.
         </p>
         <div className="mt-7 flex flex-wrap justify-center gap-3">
           <PrimaryButton href="/enterprise/briefing">Request architecture review</PrimaryButton>

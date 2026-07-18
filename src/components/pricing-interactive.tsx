@@ -43,34 +43,36 @@ export function PricingInteractive() {
 
   return (
     <>
-      <div className="flex justify-center mb-12">
+      <div className="mb-12 flex justify-center">
         <PricingBillingToggle value={billing} onChange={handleBillingChange} />
       </div>
 
-      <div
-        role="radiogroup"
-        aria-label="Choose a plan"
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 items-stretch"
-      >
+      <fieldset className="grid grid-cols-1 items-stretch gap-5 lg:grid-cols-2">
+        <legend className="sr-only">Choose a Cabinet plan</legend>
         <PricingTierCard
           selectionId="tier-self-hosted"
           name="Self-Hosted"
-          tagline="Always free, always yours."
+          tagline="Run the complete product in an environment you control."
           priceMonthly={null}
           priceAnnualEffective={null}
           priceOverrideLabel="Free"
           billingPeriod={billing}
           bullets={[
-            "MIT licensed, run locally",
-            "BYOAI · bring your own AI",
-            "Every Cabinet feature",
+            "MIT licensed and free to run",
+            "Bring your own AI accounts",
+            "The complete Cabinet product",
             "Community support on Discord",
           ]}
           cta={{
             kind: "link",
-            label: "Download for Mac",
+            label: "Download Cabinet for Mac",
             href: MACOS_DOWNLOAD_URL,
             external: true,
+            onClick: () =>
+              trackEvent("pricing_tier_cta_click", {
+                tier: "self-hosted",
+                action: "download-mac",
+              }),
           }}
           ctaStyle="outline"
           selected={selected === "self-hosted"}
@@ -96,22 +98,22 @@ export function PricingInteractive() {
 
         <PricingTierCard
           selectionId="tier-pro"
-          name="Pro"
-          tagline="Cabinet, hosted for you. Always on."
+          name="Cabinet Cloud Pro"
+          tagline="Managed hosting for one always-on Cabinet."
           priceMonthly={20}
           priceAnnualEffective={16}
           billingPeriod={billing}
           annualNote="$192 billed annually"
           bullets={[
-            "One Cabinet across phone, laptop, and browser",
-            "AI agents that keep working 24/7",
-            "Daily backups · 7-day retention",
+            "Access across phone, laptop, and browser",
+            "Agents can keep scheduled work moving",
+            "Daily backups with 7-day retention",
             "Automatic updates",
-            "BYOAI · Managed AI add-on",
+            "Bring your own AI or add Managed AI",
           ]}
           cta={{
             kind: "button",
-            label: "Join the waitlist",
+            label: "Join the Cloud Pro waitlist",
             onClick: () => openModal("pro"),
           }}
           ctaStyle="wood"
@@ -121,25 +123,26 @@ export function PricingInteractive() {
 
         <PricingTierCard
           selectionId="tier-max"
-          name="Max"
-          tagline="More compute, hardened backups, instant support."
+          name="Cabinet Cloud Max"
+          tagline="More capacity, hardened backups, and faster support."
           badge="Recommended"
           highlighted
           priceMonthly={49}
           priceAnnualEffective={40}
           billingPeriod={billing}
           annualNote="$480 billed annually"
-          inheritsFromLabel="Pro"
+          inheritsFromLabel="Cloud Pro"
           bullets={[
-            "Bigger container · longer agent runs",
-            "Encrypted backups · 30-day · point-in-time restore",
+            "Larger container for longer agent runs",
+            "Encrypted backups with 30-day retention",
+            "Point-in-time restore",
             "Custom domain",
-            "Instant chat support · under 1h",
+            "Chat support under one hour during business hours",
             "Region pinning",
           ]}
           cta={{
             kind: "button",
-            label: "Join the waitlist",
+            label: "Join the Cloud Max waitlist",
             onClick: () => openModal("max"),
           }}
           ctaStyle="wood"
@@ -155,39 +158,44 @@ export function PricingInteractive() {
           priceAnnualEffective={null}
           priceOverrideLabel="Custom"
           billingPeriod={billing}
-          inheritsFromLabel="Max"
+          inheritsFromLabel="Cloud Max"
           bullets={[
-            "Multi-user / shared workspaces",
-            "Dedicated infra · data residency",
-            "SSO (SAML, OIDC) · 99.9% SLA",
-            "Security review docs (SOC 2 prep)",
+            "Shared workspaces in early access",
+            "Dedicated infrastructure and data residency",
+            "SSO with SAML or OIDC",
+            "99.9% SLA",
+            "Security review material and SOC 2 readiness plan",
             "Dedicated Slack channel",
           ]}
           cta={{
-            kind: "button",
-            label: "Talk to us",
-            onClick: () => openModal("enterprise"),
+            kind: "link",
+            label: "Book a technical review",
+            href: "/demo?source=pricing-enterprise",
+            onClick: () =>
+              trackEvent("pricing_tier_cta_click", {
+                tier: "enterprise",
+                action: "book-review",
+              }),
           }}
           ctaStyle="outline"
           selected={selected === "enterprise"}
           onSelect={() => select("enterprise")}
         />
-      </div>
+      </fieldset>
 
-      {/* Team — early access callout */}
-      <div className="mt-12 max-w-3xl mx-auto">
-        <div className="soft-card px-6 py-5 md:px-7 md:py-6">
+      <div className="mx-auto mt-12 max-w-3xl">
+        <div className="home-product-surface rounded-[24px] bg-green-bg-subtle px-6 py-5 md:px-7 md:py-6">
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between md:gap-6">
             <div className="flex items-start gap-3">
               <div className="shrink-0 inline-flex h-9 w-9 items-center justify-center rounded-lg">
                 <WoodIcon icon={Users} className="h-8 w-8" />
               </div>
               <div>
-                <h3 className="font-display text-lg text-text-primary mb-0.5">
+                <h3 className="mb-0.5 font-section text-lg text-text-primary">
                   Working with a team?
                 </h3>
                 <p className="text-sm text-text-secondary leading-relaxed">
-                  Shared workspaces are coming. Join early access and we&apos;ll
+                  Shared workspaces are coming. Join early access and we will
                   prioritize your team when multi-seat ships.
                 </p>
               </div>
@@ -198,7 +206,7 @@ export function PricingInteractive() {
                 trackEvent("pricing_team_early_click");
                 openModal("team-early");
               }}
-              className="inline-flex shrink-0 items-center justify-center gap-1.5 rounded-full border border-green/40 bg-green-bg-subtle px-4 py-2 text-sm font-medium text-green-warm transition-colors hover:bg-green-bg"
+              className="ent-btn-secondary shrink-0 justify-center px-4 py-2 text-sm text-green-warm"
             >
               Join Team early access
               <ArrowRight className="h-3.5 w-3.5" />

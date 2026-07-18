@@ -3,11 +3,7 @@
 import type { LucideIcon } from "lucide-react";
 import {
   ArrowRight,
-  Briefcase,
-  Calendar,
-  Check,
   CheckCircle2,
-  Clock,
   Coffee,
   FileCheck,
   Sparkles,
@@ -16,7 +12,6 @@ import {
 } from "lucide-react";
 import { FormEvent, useState } from "react";
 import {
-  Eyebrow,
   Pill,
   Section,
   SectionHeader,
@@ -252,7 +247,7 @@ function ThankYou() {
       </div>
       <h2 className="ent-display-3">Briefing request sent.</h2>
       <p className="ent-lead mt-3 max-w-md mx-auto">
-        Your email client just opened with the request. Send it and we'll
+        Your email client just opened with the request. Send it and we’ll
         respond within one business day with two proposed times.
       </p>
       <p className="mt-6 text-sm text-text-tertiary">
@@ -415,10 +410,10 @@ function FounderNote() {
         <p className="ent-display-3 italic mt-6">
           “Every demo I run starts the same way:{" "}
           <span className="not-italic text-accent">
-            what's the one initiative that scares you most this quarter?
+            what’s the one initiative that scares you most this quarter?
           </span>{" "}
           We build the room around it. By the end of the hour, the room is
-          already drafting your next pre-read. That's the only kind of demo I
+          already drafting your next pre-read. That’s the only kind of demo I
           know how to give.”
         </p>
         <div className="mt-7 inline-flex items-center gap-3">

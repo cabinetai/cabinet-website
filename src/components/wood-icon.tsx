@@ -1,4 +1,5 @@
 import type { ElementType } from "react";
+import Image from "next/image";
 import {
   GitBranch,
   Bot,
@@ -152,5 +153,14 @@ export function WoodIcon({
 }) {
   const src = WOOD.get(Icon);
   if (!src) return <Icon className={className} />;
-  return <img src={src} alt="" aria-hidden className={`object-contain ${className}`} />;
+  return (
+    <Image
+      src={src}
+      alt=""
+      aria-hidden
+      width={128}
+      height={128}
+      className={`object-contain ${className}`}
+    />
+  );
 }

@@ -61,9 +61,9 @@ const ROWS: Row[] = [
   },
   {
     feature: "AI access (BYOAI)",
-    selfHosted: "BYOAI",
-    pro: "BYOAI · Managed add-on",
-    max: "BYOAI · Managed add-on",
+    selfHosted: "Bring your own AI",
+    pro: "Bring your own · Managed add-on",
+    max: "Bring your own · Managed add-on",
     enterprise: "Custom",
   },
   {
@@ -103,10 +103,10 @@ const ROWS: Row[] = [
   },
   {
     feature: "Migration in / out",
-    selfHosted: "Markdown export",
-    pro: "Markdown export",
-    max: "Markdown export",
-    enterprise: "Markdown export",
+    selfHosted: "Whole Cabinet directory",
+    pro: "Whole Cabinet directory",
+    max: "Whole Cabinet directory",
+    enterprise: "Whole Cabinet directory",
   },
 ];
 
@@ -122,8 +122,11 @@ function renderCell(value: Cell) {
 
 export function PricingComparisonTable() {
   return (
-    <div className="overflow-x-auto rounded-2xl bg-bg-card shadow-[0_8px_30px_-14px_rgba(150,108,68,0.32)] ring-1 ring-[rgba(59,47,47,0.05)]">
+    <div className="overflow-x-auto rounded-[26px] bg-bg-card shadow-[0_12px_40px_-20px_rgba(150,108,68,0.38)]">
       <table className="w-full min-w-[760px] text-sm">
+        <caption className="sr-only">
+          Compare Cabinet hosting, backup, support, and enterprise plan details
+        </caption>
         <thead>
           <tr className="border-b border-border-dark">
             <th
@@ -142,13 +145,13 @@ export function PricingComparisonTable() {
               scope="col"
               className="text-center py-4 px-4 font-semibold text-text-primary"
             >
-              Pro
+              Cloud Pro
             </th>
             <th
               scope="col"
               className="text-center py-4 px-4 font-semibold text-accent bg-accent-bg-subtle"
             >
-              Max
+              Cloud Max
             </th>
             <th
               scope="col"

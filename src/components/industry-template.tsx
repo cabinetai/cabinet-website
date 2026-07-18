@@ -26,7 +26,13 @@ export function IndustryTemplate({ industry }: { industry: Industry }) {
           <div className="grid items-center gap-10 lg:grid-cols-2">
             <div>
               <div className="inline-flex items-center gap-2.5 rounded-full card-skin py-1.5 pl-2 pr-4 text-sm font-medium text-accent shadow-sm">
-                <img src={`/brand/icons/${industry.slug}.png`} alt="" className="h-6 w-6 object-contain" />
+                <Image
+                  src={`/brand/icons/${industry.slug}.png`}
+                  alt=""
+                  width={48}
+                  height={48}
+                  className="h-6 w-6 object-contain"
+                />
                 {brandify(industry.eyebrow)}
               </div>
               <h1 className="mt-6 font-display text-4xl leading-[1.05] tracking-tight text-text-primary sm:text-5xl">
@@ -37,7 +43,7 @@ export function IndustryTemplate({ industry }: { industry: Industry }) {
               </p>
               <div className="mt-9 flex flex-wrap items-center gap-3">
                 <Link
-                  href="/#get-started"
+                  href="/#get-cabinet"
                   className="inline-flex items-center gap-2 rounded-xl px-7 py-3.5 text-base font-semibold btn-wood"
                 >
                   Get started free <ArrowRight className="h-4 w-4" />
@@ -125,7 +131,7 @@ export function IndustryTemplate({ industry }: { industry: Industry }) {
           </h2>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <Link
-              href="/#get-started"
+              href="/#get-cabinet"
               className="inline-flex items-center gap-2 rounded-xl px-7 py-3.5 text-base font-semibold btn-wood"
             >
               Get started free <ArrowRight className="h-4 w-4" />
@@ -150,9 +156,11 @@ export function IndustryTemplate({ industry }: { industry: Industry }) {
                 href={`/industries/${o.slug}`}
                 className="group flex items-center gap-3 rounded-2xl bg-bg-card p-5 card-hover"
               >
-                <img
+                <Image
                   src={`/brand/icons/${o.slug}.png`}
                   alt=""
+                  width={88}
+                  height={88}
                   className="h-11 w-11 shrink-0 object-contain transition-transform duration-200 group-hover:scale-110 group-hover:-rotate-2"
                 />
                 <div className="font-display text-text-primary">{o.label}</div>

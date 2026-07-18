@@ -67,9 +67,11 @@ export default function SolutionsIndexPage() {
                 className="group flex flex-col soft-card card-hover p-7"
               >
                 <div className="flex items-center gap-3.5">
-                  <img
+                  <Image
                     src={`/brand/icons/${s.slug}.png`}
                     alt=""
+                    width={96}
+                    height={96}
                     className="h-12 w-12 shrink-0 object-contain transition-transform duration-200 group-hover:scale-110 group-hover:-rotate-2"
                   />
                   <h2 className="font-display text-xl text-text-primary">

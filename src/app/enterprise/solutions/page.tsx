@@ -4,25 +4,13 @@ import type { LucideIcon } from "lucide-react";
 import {
   ArrowRight,
   Briefcase,
-  Building2,
-  Calendar,
   Check,
-  Clock,
-  DollarSign,
-  FileText,
-  GitBranch,
   HeartHandshake,
   LineChart,
-  Lock,
-  PieChart,
-  ScrollText,
   Shield,
   Sparkles,
-  Target,
-  Users,
 } from "lucide-react";
 import {
-  CheckList,
   Eyebrow,
   Pill,
   PrimaryButton,
@@ -210,7 +198,7 @@ function ChroVisual() {
         </div>
         <div className="p-6">
           <h4 className="font-display text-xl text-text-primary leading-tight">
-            Friday reflection · Marcus's team
+            Friday reflection · Marcus’s team
           </h4>
           <p className="text-[12px] text-text-tertiary font-code mt-1">
             drafted by Coach · grounded in 1:1 history
@@ -525,8 +513,8 @@ function PaysFor() {
         eyebrow="One platform · four budgets"
         title={
           <>
-            <span className="font-brand italic">Cabinet</span>{" "}doesn't come out of{" "}
-            <em className="text-accent">one office's line item</em>.
+            Cabinet doesn’t come out of{" "}
+            <em className="text-accent">one office’s line item</em>.
                                   </>
         }
         kicker={
@@ -580,7 +568,7 @@ function FinalCta() {
         <Pill icon={Sparkles}>Your role · your deployment</Pill>
         <h2 className="ent-display-2 mt-4 max-w-2xl mx-auto">
           Tell us your seat.{" "}
-          <em className="text-accent">We'll map the deployment.</em>
+          <em className="text-accent">We’ll map the deployment.</em>
         </h2>
         <p className="ent-lead mt-5 max-w-2xl mx-auto">90-minute working session with the founders. We pre-load your top
                               three OKRs into a <span className="font-brand italic">Cabinet</span>{" "}room and walk you through the experience

@@ -1,8 +1,19 @@
 "use client";
 
 import Image from "next/image";
-import { useState, useEffect } from "react";
-import { Download, Star } from "lucide-react";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import {
+  ArrowRight,
+  BookOpen,
+  ChevronDown,
+  Download,
+  LibraryBig,
+  Menu,
+  ShieldCheck,
+  Star,
+  X,
+} from "lucide-react";
 import { GithubIcon } from "@/components/site-icons";
 import { SolutionsMenu } from "@/components/solutions-menu";
 import { GITHUB_URL } from "@/lib/site-config";
@@ -11,8 +22,46 @@ type GitHubRepoResponse = {
   stargazers_count?: number;
 };
 
+const RESOURCE_LINKS = [
+  {
+    label: "Cabinet library",
+    description: "Inspect and clone working AI teams.",
+    href: "https://cabinets.sh",
+    external: true,
+    icon: LibraryBig,
+  },
+  {
+    label: "Documentation",
+    description: "Install, configure, and operate Cabinet.",
+    href: "https://docs.runcabinet.com/",
+    external: true,
+    icon: BookOpen,
+  },
+  {
+    label: "Compare",
+    description: "Evaluate architecture, control, and fit.",
+    href: "/compare",
+    external: false,
+    icon: ShieldCheck,
+  },
+  {
+    label: "GitHub",
+    description: "Inspect the source and follow releases.",
+    href: GITHUB_URL,
+    external: true,
+    icon: GithubIcon,
+  },
+  {
+    label: "Get Cabinet",
+    description: "Download the desktop app or run the CLI.",
+    href: "/#get-cabinet",
+    external: false,
+    icon: Download,
+  },
+] as const;
+
 function formatStarCount(stars: number | null) {
-  if (stars === null) return "Star on GitHub";
+  if (stars === null) return "GitHub";
   return new Intl.NumberFormat("en", {
     notation: stars >= 1000 ? "compact" : "standard",
     maximumFractionDigits: stars >= 1000 ? 1 : 0,
@@ -40,9 +89,7 @@ function useGitHubStars() {
         });
         if (!response.ok) return;
         const data = (await response.json()) as GitHubRepoResponse;
-        if (typeof data.stargazers_count === "number") {
-          setStars(data.stargazers_count);
-        }
+        if (typeof data.stargazers_count === "number") setStars(data.stargazers_count);
       } catch (error) {
         if (!(error instanceof DOMException && error.name === "AbortError")) {
           console.error("Unable to load GitHub stars", error);
@@ -57,113 +104,274 @@ function useGitHubStars() {
   return stars;
 }
 
-/** A single floating liquid-glass nav button. */
-function GlassNavLink({
-  href,
-  external = false,
-  children,
-}: {
-  href: string;
-  external?: boolean;
-  children: React.ReactNode;
-}) {
-  const ext = external ? { target: "_blank", rel: "noopener noreferrer" } : {};
+function GlassNavLink({ href, children }: { href: string; children: React.ReactNode }) {
   return (
-    <a
+    <Link
       href={href}
-      {...ext}
-      className="glass-pill group inline-flex h-10 items-center px-4 text-sm font-medium text-text-secondary transition-colors hover:text-text-primary"
+      className="glass-pill group inline-flex h-10 items-center px-4 text-sm font-medium text-text-secondary transition-colors hover:text-text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/50"
     >
       <span className="liquid-glass__refract" aria-hidden />
       <span className="relative z-10">{children}</span>
-    </a>
+    </Link>
   );
 }
 
-/**
- * The single site-wide navbar, rendered as floating liquid-glass buttons that
- * sit on top of the page. Pass `fixed` on the homepage (it overlays the pinned
- * scrollytelling scene); everywhere else it defaults to `sticky` so it stays in
- * flow and pins to the top on scroll.
- */
 export function SiteNavbar({ fixed = false }: { fixed?: boolean }) {
   const stars = useGitHubStars();
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [resourcesOpen, setResourcesOpen] = useState(false);
+
+  useEffect(() => {
+    if (!mobileOpen) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setMobileOpen(false);
+    };
+    const onResize = () => {
+      if (window.innerWidth >= 1100) setMobileOpen(false);
+    };
+
+    window.addEventListener("keydown", onKeyDown);
+    window.addEventListener("resize", onResize);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener("keydown", onKeyDown);
+      window.removeEventListener("resize", onResize);
+    };
+  }, [mobileOpen]);
 
   return (
     <nav
-      className={`${
-        fixed ? "fixed inset-x-0 top-0" : "sticky top-0"
-      } z-50 pointer-events-none`}
+      aria-label="Primary navigation"
+      className={`site-navbar ${fixed ? "fixed inset-x-0 top-0" : "sticky top-0"} isolate z-50 pointer-events-none`}
     >
-      <div className="pointer-events-auto max-w-7xl mx-auto px-4 sm:px-6 pt-3 pb-3 flex items-center gap-2.5 lg:gap-3">
-        {/* Logo button */}
-        <a
+      <span
+        aria-hidden
+        style={{
+          position: "absolute",
+          inset: "0 0 -0.75rem",
+          zIndex: -1,
+          pointerEvents: "none",
+          background:
+            "linear-gradient(180deg, color-mix(in srgb, var(--bg) 94%, transparent) 0%, color-mix(in srgb, var(--bg) 86%, transparent) 72%, transparent 100%)",
+          WebkitBackdropFilter: "blur(14px) saturate(145%)",
+          backdropFilter: "blur(14px) saturate(145%)",
+          opacity: 1,
+        }}
+      />
+      <div className="pointer-events-auto mx-auto flex max-w-7xl items-center gap-2.5 px-4 pb-3 pt-3 sm:px-6 lg:gap-3">
+        <Link
           href="/"
-          className="glass-pill group inline-flex h-11 shrink-0 items-center gap-2.5 pl-2.5 pr-4"
+          aria-label="Cabinet home"
+          className="glass-pill group inline-flex h-11 shrink-0 items-center gap-2.5 pl-2.5 pr-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/50"
         >
           <span className="liquid-glass__refract" aria-hidden />
           <span className="relative z-10 inline-flex items-center gap-2.5">
             <Image
               src="/brand/cabinet-logo-face-2-512.png"
-              alt="Cabinet"
+              alt=""
               width={38}
               height={40}
               className="h-9 w-auto object-contain"
+              priority
             />
             <span className="whitespace-nowrap text-xl font-brand italic tracking-tight text-text-primary">
               Cabinet
             </span>
           </span>
-        </a>
+        </Link>
 
-        {/* Section buttons */}
         <div className="hidden min-[1100px]:flex items-center gap-2">
+          <GlassNavLink href="/#product">AI teams</GlassNavLink>
           <SolutionsMenu triggerClassName="text-text-secondary" />
-          <GlassNavLink href="/compare">Compare</GlassNavLink>
-          <GlassNavLink href="/use-cases">Use cases</GlassNavLink>
-          <GlassNavLink href="https://cabinets.sh" external>
-            Cabinets
-          </GlassNavLink>
+          <GlassNavLink href="/enterprise/security">Security</GlassNavLink>
           <GlassNavLink href="/pricing">Pricing</GlassNavLink>
-          <GlassNavLink href="https://docs.runcabinet.com/" external>
-            Docs
-          </GlassNavLink>
-          <GlassNavLink href="/media">Media</GlassNavLink>
+
+          <div
+            className="relative"
+            onMouseEnter={() => setResourcesOpen(true)}
+            onMouseLeave={() => setResourcesOpen(false)}
+            onFocus={() => setResourcesOpen(true)}
+            onBlur={(event) => {
+              if (!event.currentTarget.contains(event.relatedTarget as Node)) {
+                setResourcesOpen(false);
+              }
+            }}
+          >
+            <button
+              type="button"
+              aria-expanded={resourcesOpen}
+              aria-haspopup="menu"
+              className="glass-pill group inline-flex h-10 items-center px-4 text-sm font-medium text-text-secondary transition-colors hover:text-text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/50"
+              onClick={() => setResourcesOpen((open) => !open)}
+            >
+              <span className="liquid-glass__refract" aria-hidden />
+              <span className="relative z-10 inline-flex items-center gap-1">
+                Resources
+                <ChevronDown
+                  aria-hidden
+                  className={`h-3.5 w-3.5 transition-transform ${resourcesOpen ? "rotate-180" : ""}`}
+                />
+              </span>
+            </button>
+
+            {resourcesOpen && (
+              <div className="absolute right-0 top-full z-50 w-[360px] pt-3" role="menu">
+                <div className="liquid-glass-panel rounded-2xl p-2.5">
+                  {RESOURCE_LINKS.map((item) => {
+                    const Icon = item.icon;
+                    return (
+                      <a
+                        key={item.label}
+                        href={item.href}
+                        target={item.external ? "_blank" : undefined}
+                        rel={item.external ? "noopener noreferrer" : undefined}
+                        role="menuitem"
+                        className="group flex items-start gap-3 rounded-xl p-3 transition-colors hover:bg-bg-warm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/40"
+                      >
+                        <span className="mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-accent-bg text-accent">
+                          <Icon className="h-4 w-4" aria-hidden />
+                        </span>
+                        <span className="min-w-0 flex-1">
+                          <strong className="block text-sm text-text-primary">{item.label}</strong>
+                          <span className="mt-1 block text-xs leading-relaxed text-text-tertiary">
+                            {item.description}
+                          </span>
+                        </span>
+                        <ArrowRight
+                          aria-hidden
+                          className="mt-2 h-3.5 w-3.5 text-text-muted transition-transform group-hover:translate-x-0.5 group-hover:text-accent"
+                        />
+                      </a>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+          </div>
         </div>
 
-        {/* Action buttons */}
-        <div className="ml-auto flex items-center gap-2.5">
+        <div className="ml-auto flex items-center gap-2">
           <a
             href={GITHUB_URL}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label={`Star Cabinet on GitHub (${formatStarCount(stars)} stars)`}
-            className="glass-pill group hidden h-10 items-center px-3.5 text-sm font-medium text-text-secondary transition-colors hover:text-text-primary sm:inline-flex"
+            aria-label={`Cabinet on GitHub, ${formatStarCount(stars)}`}
+            className="glass-pill group hidden h-10 items-center px-3.5 text-sm font-medium text-text-secondary transition-colors hover:text-text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/50 sm:inline-flex"
           >
             <span className="liquid-glass__refract" aria-hidden />
             <span className="relative z-10 inline-flex items-center gap-1.5 whitespace-nowrap">
-              <GithubIcon className="w-4 h-4" />
-              <Star className="w-3.5 h-3.5 fill-current text-accent" />
+              <GithubIcon className="h-4 w-4" />
+              {stars !== null && <Star className="h-3.5 w-3.5 fill-current text-accent" />}
               {formatStarCount(stars)}
             </span>
           </a>
-          <a
+
+          <Link
             href="/demo"
-            className="glass-pill group hidden h-10 items-center px-4 text-sm font-medium text-text-secondary transition-colors hover:text-text-primary sm:inline-flex"
+            className="btn-wood inline-flex h-11 items-center justify-center gap-2 whitespace-nowrap rounded-full px-4 text-sm font-semibold sm:px-5"
+          >
+            <span className="hidden sm:inline">Book a demo</span>
+            <span className="sm:hidden">Demo</span>
+            <ArrowRight aria-hidden className="h-4 w-4" />
+          </Link>
+
+          <button
+            type="button"
+            aria-label={mobileOpen ? "Close navigation" : "Open navigation"}
+            aria-expanded={mobileOpen}
+            aria-controls="mobile-site-navigation"
+            className="glass-pill relative grid h-11 w-11 place-items-center text-text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/50 min-[1100px]:hidden"
+            onClick={() => setMobileOpen((open) => !open)}
           >
             <span className="liquid-glass__refract" aria-hidden />
-            <span className="relative z-10 whitespace-nowrap">Book a demo</span>
-          </a>
-          {/* primary CTA — stays solid so it reads as the one action */}
-          <a
-            href="/#get-started"
-            className="inline-flex h-11 items-center justify-center gap-2 whitespace-nowrap rounded-full px-5 text-sm font-semibold btn-wood"
-          >
-            <Download className="w-4 h-4" />
-            <span>Download</span>
-          </a>
+            {mobileOpen ? (
+              <X aria-hidden className="relative z-10 h-5 w-5" />
+            ) : (
+              <Menu aria-hidden className="relative z-10 h-5 w-5" />
+            )}
+          </button>
         </div>
       </div>
+
+      {mobileOpen && (
+        <div
+          id="mobile-site-navigation"
+          className="mobile-nav-panel pointer-events-auto fixed inset-x-3 bottom-3 top-[76px] z-40 overflow-y-auto rounded-[28px] p-3 backdrop-blur-2xl min-[1100px]:hidden"
+        >
+          <div className="grid gap-1">
+            <MobileLink href="/#product" label="AI teams" onNavigate={() => setMobileOpen(false)} />
+            <MobileLink href="/solutions" label="Solutions" onNavigate={() => setMobileOpen(false)} />
+            <MobileLink
+              href="/enterprise/security"
+              label="Security"
+              onNavigate={() => setMobileOpen(false)}
+            />
+            <MobileLink href="/pricing" label="Pricing" onNavigate={() => setMobileOpen(false)} />
+          </div>
+
+          <div className="my-4 h-px bg-border" />
+          <p className="px-3 pb-2 text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary">
+            Resources
+          </p>
+          <div className="grid gap-1 sm:grid-cols-2">
+            {RESOURCE_LINKS.map((item) => {
+              const Icon = item.icon;
+              return (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  target={item.external ? "_blank" : undefined}
+                  rel={item.external ? "noopener noreferrer" : undefined}
+                  className="flex items-center gap-3 rounded-2xl px-3 py-3 text-sm font-semibold text-text-primary transition-colors hover:bg-bg-warm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/40"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  <span className="grid h-9 w-9 place-items-center rounded-xl bg-accent-bg text-accent">
+                    <Icon aria-hidden className="h-4 w-4" />
+                  </span>
+                  {item.label}
+                </a>
+              );
+            })}
+          </div>
+
+          <div className="mt-5 rounded-2xl bg-accent-bg-subtle px-5 py-5 text-text-primary shadow-sm">
+            <p className="font-display text-2xl leading-tight tracking-[-0.04em]">
+              See Cabinet around one real company workflow.
+            </p>
+            <Link
+              href="/demo"
+              className="btn-wood mt-4 inline-flex items-center gap-2 rounded-full px-4 py-2.5 text-sm font-semibold"
+              onClick={() => setMobileOpen(false)}
+            >
+              Book an executive demo <ArrowRight aria-hidden className="h-4 w-4" />
+            </Link>
+          </div>
+        </div>
+      )}
     </nav>
+  );
+}
+
+function MobileLink({
+  href,
+  label,
+  onNavigate,
+}: {
+  href: string;
+  label: string;
+  onNavigate: () => void;
+}) {
+  return (
+    <Link
+      href={href}
+      className="flex items-center justify-between rounded-2xl px-4 py-3.5 text-lg font-semibold text-text-primary transition-colors hover:bg-bg-warm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/40"
+      onClick={onNavigate}
+    >
+      {label}
+      <ArrowRight aria-hidden className="h-4 w-4 text-text-tertiary" />
+    </Link>
   );
 }

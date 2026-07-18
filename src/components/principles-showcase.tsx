@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   HardDrive,
   GitBranch,
@@ -92,9 +93,11 @@ export function PrinciplesShowcase() {
                   }}
                 />
                 {wsrc ? (
-                  <img
+                  <Image
                     src={wsrc}
                     alt=""
+                    width={224}
+                    height={224}
                     className="relative h-28 w-28 object-contain drop-shadow-[0_12px_20px_rgba(0,0,0,0.10)]"
                   />
                 ) : (

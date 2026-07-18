@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { Suspense } from "react";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { DiscordIcon, GithubIcon } from "@/components/site-icons";
@@ -67,12 +68,12 @@ export default function WaitlistConfirmedPage() {
             <GithubIcon className="w-4 h-4" />
             Star on GitHub
           </a>
-          <a
-            href="/#get-started"
+          <Link
+            href="/#get-cabinet"
             className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full font-semibold btn-wood"
           >Try <span className="font-brand italic">Cabinet</span>{" "}now
                                     <ArrowRight className="w-4 h-4" />
-          </a>
+          </Link>
         </div>
       </div>
     </main>

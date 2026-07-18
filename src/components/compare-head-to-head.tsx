@@ -22,7 +22,7 @@ function PrimaryActions({ size = "lg" }: { size?: "lg" | "md" }) {
   return (
     <div className="flex flex-wrap items-center gap-3">
       <Link
-        href="/#get-started"
+        href="/#get-cabinet"
         className={`inline-flex items-center gap-2 rounded-xl btn-wood ${pad} font-semibold`}
       >
         Get started free <ArrowRight className="h-4 w-4" />
