@@ -17,7 +17,6 @@ export default function TermsPage() {
   return (
     <main className="min-h-screen bg-bg">
       <SiteNavbar />
-
       <section className="relative py-16 md:py-24 dot-grid overflow-hidden">
         <div className="max-w-3xl mx-auto px-6">
           <header className="mb-12 text-center">
@@ -37,43 +36,39 @@ export default function TermsPage() {
               Please read carefully
             </p>
             <p className="text-text-secondary font-body-serif leading-relaxed">
-              Cabinet is a free, open-source project provided on an{" "}
-              <strong className="text-text-primary">&ldquo;AS IS&rdquo; and &ldquo;AS AVAILABLE&rdquo;</strong>{" "}
-              basis. Cabinet is designed to work with autonomous AI agents that may read, write,
-              execute, and delete files, run shell commands, call external APIs, and take other
-              actions on your computer and networks. You install, configure, and run Cabinet and any
-              connected AI agents{" "}
+              <span className="font-brand italic">Cabinet</span>{" "}is a free, open-source project provided on an{" "}
+              <strong className="text-text-primary">&ldquo;AS IS&rdquo; and &ldquo;AS AVAILABLE&rdquo;</strong>{" "}basis. <span className="font-brand italic">Cabinet</span>{" "}is designed to work with autonomous AI agents that may read, write,
+                                          execute, and delete files, run shell commands, call external APIs, and take other
+                                          actions on your computer and networks. You install, configure, and run <span className="font-brand italic">Cabinet</span>{" "}and any
+                                          connected AI agents{" "}
               <strong className="text-text-primary">entirely at your own risk</strong>. If you do
-              not accept these Terms, do not access the Site or use the Software.
-            </p>
+                                          not accept these Terms, do not access the Site or use the Software.
+                                        </p>
           </div>
 
           <article className="space-y-10 text-text-secondary font-body-serif leading-relaxed">
             <section>
               <h2 className="text-2xl font-display text-text-primary mb-4">1. Acceptance of Terms</h2>
-              <p className="mb-4">
-                These Terms of Service (the &ldquo;Terms&rdquo;) constitute a binding legal
-                agreement between you (&ldquo;you,&rdquo; &ldquo;your,&rdquo; or
-                &ldquo;User&rdquo;) and{" "}
+              <p className="mb-4">These Terms of Service (the “Terms”) constitute a binding legal
+                                                agreement between you (“you,” “your,” or
+                                                “User”) and{" "}
                 <strong className="text-text-primary">HOLY BIBLE APPS LTD</strong>, a company
-                organized under the laws of the State of Israel and registered in Tirat Carmel,
-                Israel, that owns and operates the Cabinet project, together with its affiliates,
-                successors, assigns, officers, directors, employees, contractors, and the
-                open-source maintainers and contributors acting under its direction (collectively,
-                &ldquo;Cabinet,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;). All notices, legal inquiries, and contact
-                with us shall be directed to{" "}
+                                                organized under the laws of the State of Israel and registered in Tirat Carmel,
+                                                Israel, that owns and operates the <span className="font-brand italic">Cabinet</span>{" "}project, together with its affiliates,
+                                                successors, assigns, officers, directors, employees, contractors, and the
+                                                open-source maintainers and contributors acting under its direction (collectively,
+                                                “<span className="font-brand italic">Cabinet</span>,” “we,” “us,” or “our”). All notices, legal inquiries, and contact
+                                                with us shall be directed to{" "}
                 <a href="mailto:hi@runcabinet.com" className="text-accent hover:underline">
                   hi@runcabinet.com
-                </a>
-                . These Terms govern your access to and use of (a) the website located at{" "}
+                </a>. These Terms govern your access to and use of (a) the website located at{" "}
                 <a href="https://runcabinet.com" className="text-accent hover:underline">
                   runcabinet.com
-                </a>{" "}
-                and any subdomains (the &ldquo;Site&rdquo;), and (b) the Cabinet open-source
-                software, command-line interface, and related tools (collectively, the
-                &ldquo;Software&rdquo;). The Site and the Software are referred to together as the
-                &ldquo;Services.&rdquo;
-              </p>
+                </a>{" "}and any subdomains (the “Site”), and (b) the <span className="font-brand italic">Cabinet</span>{" "}open-source
+                                                software, command-line interface, and related tools (collectively, the
+                                                “Software”). The Site and the Software are referred to together as the
+                                                “Services.”
+                                              </p>
               <p>
                 By accessing the Site, downloading, installing, executing, running, or otherwise
                 using the Software, or clicking a button indicating acceptance, you acknowledge that
@@ -98,17 +93,15 @@ export default function TermsPage() {
                 the License with additional terms regarding your access to the Site, your
                 relationship with us, and your use of the Services as a whole.
               </p>
-              <p>
-                Nothing in these Terms limits or waives the disclaimers of warranty or limitations
-                of liability contained in the License; those disclaimers and limitations apply in
-                full and are{" "}
+              <p>Nothing in these Terms limits or waives the disclaimers of warranty or limitations
+                                                of liability contained in the License; those disclaimers and limitations apply in
+                                                full and are{" "}
                 <strong className="text-text-primary">
                   incorporated into these Terms by reference
-                </strong>
-                . Where these Terms and the License overlap, the provision most protective of the
-                Cabinet maintainers and contributors shall control to the maximum extent permitted
-                by applicable law.
-              </p>
+                </strong>. Where these Terms and the License overlap, the provision most protective of the
+                                                {" "}<span className="font-brand italic">Cabinet</span>{" "}maintainers and contributors shall control to the maximum extent permitted
+                                                by applicable law.
+                                              </p>
             </section>
 
             <section>
@@ -289,57 +282,53 @@ export default function TermsPage() {
                 IS PROVIDED FREE OF CHARGE AND THAT, ABSENT THESE LIMITATIONS, WE WOULD NOT MAKE
                 THE SOFTWARE AVAILABLE.
               </p>
-              <p>
-                Some jurisdictions do not allow the exclusion or limitation of certain damages, so
-                some of the above limitations may not apply to you. In such jurisdictions, the
-                Cabinet Parties&rsquo; liability shall be limited to the greatest extent permitted
-                by law.
-              </p>
+              <p>Some jurisdictions do not allow the exclusion or limitation of certain damages, so
+                                                some of the above limitations may not apply to you. In such jurisdictions, the
+                                                {" "}<span className="font-brand italic">Cabinet</span>{" "}Parties’ liability shall be limited to the greatest extent permitted
+                                                by law.
+                                              </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-display text-text-primary mb-4">
                 9. Indemnification
               </h2>
-              <p>
-                You agree to defend, indemnify, and hold harmless the Cabinet Parties from and
-                against any and all claims, liabilities, damages, losses, and expenses (including
-                reasonable attorneys&rsquo; fees and costs) arising out of or in any way connected
-                with (a) your access to or use of the Services; (b) Your Content; (c) any action
-                taken by, or omission of, an AI Agent operating on your systems or under your
-                account, credentials, or permissions; (d) your violation of these Terms or any
-                applicable law; or (e) your violation of any third-party right, including
-                intellectual-property, privacy, or contractual rights. We reserve the right, at
-                our own expense, to assume the exclusive defense and control of any matter
-                otherwise subject to indemnification by you, and you agree to cooperate with our
-                defense of such claim.
-              </p>
+              <p>You agree to defend, indemnify, and hold harmless the <span className="font-brand italic">Cabinet</span>{" "}Parties from and
+                                                against any and all claims, liabilities, damages, losses, and expenses (including
+                                                reasonable attorneys’ fees and costs) arising out of or in any way connected
+                                                with (a) your access to or use of the Services; (b) Your Content; (c) any action
+                                                taken by, or omission of, an AI Agent operating on your systems or under your
+                                                account, credentials, or permissions; (d) your violation of these Terms or any
+                                                applicable law; or (e) your violation of any third-party right, including
+                                                intellectual-property, privacy, or contractual rights. We reserve the right, at
+                                                our own expense, to assume the exclusive defense and control of any matter
+                                                otherwise subject to indemnification by you, and you agree to cooperate with our
+                                                defense of such claim.
+                                              </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-display text-text-primary mb-4">
                 10. Third-Party Services and Links
               </h2>
-              <p>
-                The Services may contain links to, or interoperate with, third-party websites,
-                APIs, models, or services (including GitHub, Discord, YouTube, Tally, Google
-                Analytics, and AI providers). The Cabinet Parties do not control and are not
-                responsible for such third-party services. Your use of third-party services is
-                subject to their terms and privacy policies, and any claim you have relating to a
-                third-party service is between you and that third party.
-              </p>
+              <p>The Services may contain links to, or interoperate with, third-party websites,
+                                                APIs, models, or services (including GitHub, Discord, YouTube, Tally, Google
+                                                Analytics, and AI providers). The <span className="font-brand italic">Cabinet</span>{" "}Parties do not control and are not
+                                                responsible for such third-party services. Your use of third-party services is
+                                                subject to their terms and privacy policies, and any claim you have relating to a
+                                                third-party service is between you and that third party.
+                                              </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-display text-text-primary mb-4">
                 11. Intellectual Property; Trademarks
               </h2>
-              <p>
-                Except as expressly licensed under the MIT License, all rights in and to the
-                Services, including the Cabinet name, logo, and trade dress, are reserved. Nothing
-                in these Terms grants you any right or license to use our trademarks, service
-                marks, or trade names without our prior written consent.
-              </p>
+              <p>Except as expressly licensed under the MIT License, all rights in and to the
+                                                Services, including the <span className="font-brand italic">Cabinet</span>{" "}name, logo, and trade dress, are reserved. Nothing
+                                                in these Terms grants you any right or license to use our trademarks, service
+                                                marks, or trade names without our prior written consent.
+                                              </p>
             </section>
 
             <section>

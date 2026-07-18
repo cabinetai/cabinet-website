@@ -47,11 +47,11 @@ function Hero() {
             <em className="text-accent">Four offices it pays for itself with.</em>
           </h1>
           <p className="ent-lead mt-6 max-w-2xl">
-            Cabinet is rare in enterprise software: it lands at the CEO level
-            and the bottom of the org chart in the same quarter. Pick the office
-            you sit in. Every section below maps a real Cabinet deployment to
-            the budget that pays for it.
-          </p>
+            <span className="font-brand italic">Cabinet</span>{" "}is rare in enterprise software: it lands at the CEO level
+                                    and the bottom of the org chart in the same quarter. Pick the office
+                                    you sit in. Every section below maps a real <span className="font-brand italic">Cabinet</span>{" "}deployment to
+                                    the budget that pays for it.
+                                  </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <PrimaryButton href="/enterprise/briefing">
               Request a briefing for my office
@@ -136,7 +136,7 @@ function PersonaSection({
           </div>
 
           <div className="mt-7 p-5 rounded-xl bg-accent-bg-subtle border border-accent-bg">
-            <Eyebrow>Cabinet template</Eyebrow>
+            <Eyebrow><span className="font-brand italic">Cabinet</span>{" "}template</Eyebrow>
             <p className="font-display text-lg text-text-primary mt-1.5">{template.name}</p>
             <ul className="mt-3 space-y-1.5">
               {template.lines.map((l) => (
@@ -525,9 +525,9 @@ function PaysFor() {
         eyebrow="One platform · four budgets"
         title={
           <>
-            Cabinet doesn't come out of{" "}
+            <span className="font-brand italic">Cabinet</span>{" "}doesn't come out of{" "}
             <em className="text-accent">one office's line item</em>.
-          </>
+                                  </>
         }
         kicker={
           <>
@@ -537,7 +537,6 @@ function PaysFor() {
           </>
         }
       />
-
       <div className="ent-card overflow-hidden">
         <div className="grid grid-cols-[1fr_1.2fr_1.2fr_140px] border-b border-border">
           <ColH t="Buyer" />
@@ -583,11 +582,10 @@ function FinalCta() {
           Tell us your seat.{" "}
           <em className="text-accent">We'll map the deployment.</em>
         </h2>
-        <p className="ent-lead mt-5 max-w-2xl mx-auto">
-          90-minute working session with the founders. We pre-load your top
-          three OKRs into a Cabinet room and walk you through the experience
-          your seat would actually have on Monday morning.
-        </p>
+        <p className="ent-lead mt-5 max-w-2xl mx-auto">90-minute working session with the founders. We pre-load your top
+                              three OKRs into a <span className="font-brand italic">Cabinet</span>{" "}room and walk you through the experience
+                              your seat would actually have on Monday morning.
+                            </p>
         <div className="mt-7">
           <PrimaryButton href="/enterprise/briefing">Request the briefing</PrimaryButton>
         </div>

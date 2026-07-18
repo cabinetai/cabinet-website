@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Check, ShieldCheck } from "lucide-react";
 import { SiteNavbar } from "@/components/site-navbar";
+import { brandify } from "@/components/brand-word";
 import { WoodIcon } from "@/components/wood-icon";
 import { INDUSTRIES, type Industry } from "@/lib/industries";
 
@@ -11,7 +12,6 @@ export function IndustryTemplate({ industry }: { industry: Industry }) {
   return (
     <main className="min-h-screen bg-bg">
       <SiteNavbar />
-
       {/* ─── Hero ─── */}
       <section className="relative overflow-hidden border-b border-border dot-grid">
         <div
@@ -27,13 +27,13 @@ export function IndustryTemplate({ industry }: { industry: Industry }) {
             <div>
               <div className="inline-flex items-center gap-2.5 rounded-full card-skin py-1.5 pl-2 pr-4 text-sm font-medium text-accent shadow-sm">
                 <img src={`/brand/icons/${industry.slug}.png`} alt="" className="h-6 w-6 object-contain" />
-                {industry.eyebrow}
+                {brandify(industry.eyebrow)}
               </div>
               <h1 className="mt-6 font-display text-4xl leading-[1.05] tracking-tight text-text-primary sm:text-5xl">
                 {industry.headline}
               </h1>
               <p className="mt-6 font-body-serif text-lg leading-relaxed text-text-secondary md:text-xl">
-                {industry.subhead}
+                {brandify(industry.subhead)}
               </p>
               <div className="mt-9 flex flex-wrap items-center gap-3">
                 <Link
@@ -68,7 +68,6 @@ export function IndustryTemplate({ industry }: { industry: Industry }) {
           </div>
         </div>
       </section>
-
       {/* ─── Stakes ─── */}
       <section className="border-b border-border bg-bg-warm py-20">
         <div className="mx-auto max-w-5xl px-6">
@@ -79,31 +78,28 @@ export function IndustryTemplate({ industry }: { industry: Industry }) {
           <div className="mt-10 grid gap-4 md:grid-cols-3">
             {industry.stakes.points.map((p) => (
               <div key={p} className="soft-card p-6">
-                <p className="font-body-serif leading-relaxed text-text-secondary">{p}</p>
+                <p className="font-body-serif leading-relaxed text-text-secondary">{brandify(p)}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
-
       {/* ─── What teams run ─── */}
       <section className="border-b border-border py-20">
         <div className="mx-auto max-w-5xl px-6">
           <p className="section-label mb-3">In practice</p>
-          <h2 className="max-w-2xl font-display text-3xl tracking-tight text-text-primary md:text-4xl">
-            What your teams put Cabinet to work on
-          </h2>
+          <h2 className="max-w-2xl font-display text-3xl tracking-tight text-text-primary md:text-4xl">What your teams put Cabinet{" "}to work on
+                                  </h2>
           <div className="mt-10 grid gap-4 sm:grid-cols-2">
             {industry.uses.map((u) => (
               <div key={u} className="flex items-start gap-3 soft-card p-6">
                 <Check className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
-                <span className="font-body-serif leading-relaxed text-text-secondary">{u}</span>
+                <span className="font-body-serif leading-relaxed text-text-secondary">{brandify(u)}</span>
               </div>
             ))}
           </div>
         </div>
       </section>
-
       {/* ─── Sovereignty ─── */}
       <section className="border-b border-border bg-bg-warm py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
@@ -114,14 +110,13 @@ export function IndustryTemplate({ industry }: { industry: Industry }) {
             Your data never leaves your control
           </h2>
           <p className="mt-4 font-body-serif text-lg leading-relaxed text-text-secondary">
-            {industry.complianceNote}
+            {brandify(industry.complianceNote)}
           </p>
           <p className="mt-3 font-code text-xs text-text-tertiary">
             Open source · self-hosted · bring your own keys · git-backed audit trail
           </p>
         </div>
       </section>
-
       {/* ─── CTA ─── */}
       <section className="border-b border-border py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
@@ -144,11 +139,10 @@ export function IndustryTemplate({ industry }: { industry: Industry }) {
           </div>
         </div>
       </section>
-
       {/* ─── Other industries ─── */}
       <section className="py-16">
         <div className="mx-auto max-w-5xl px-6">
-          <p className="section-label mb-6">Cabinet across industries</p>
+          <p className="section-label mb-6">Cabinet{" "}across industries</p>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {others.map((o) => (
               <Link

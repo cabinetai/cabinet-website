@@ -47,12 +47,12 @@ function Hero() {
             <em className="text-accent">Three simple parts.</em>
           </h1>
           <p className="ent-lead mt-6 max-w-2xl">
-            Cabinet is not an OKR tool, a coaching app, or a meeting assistant.
-            It is the layer those things sit on top of: your files (strategy,
-            OKRs, org chart, decisions, one-on-ones), a schedule that keeps
-            them up to date, and four AI teammates that do the routine work
-            for you.
-          </p>
+            <span className="font-brand italic">Cabinet</span>{" "}is not an OKR tool, a coaching app, or a meeting assistant.
+                                    It is the layer those things sit on top of: your files (strategy,
+                                    OKRs, org chart, decisions, one-on-ones), a schedule that keeps
+                                    them up to date, and four AI teammates that do the routine work
+                                    for you.
+                                  </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <PrimaryButton href="/enterprise/briefing">Request a demo</PrimaryButton>
             <SecondaryButton href="/enterprise/security" icon={Shield}>
@@ -127,13 +127,12 @@ function SubstrateDeep() {
         }
         kicker={
           <>
-            Cabinet keeps your strategy as a folder of plain text files,
-            connected by simple links, like a private wiki. The AI teammates
-            read the same files you do.
-          </>
+            <span className="font-brand italic">Cabinet</span>{" "}keeps your strategy as a folder of plain text files,
+                                    connected by simple links, like a private wiki. The AI teammates
+                                    read the same files you do.
+                                  </>
         }
       />
-
       <div className="grid lg:grid-cols-[1fr_1fr] gap-10 items-start">
         <div className="ent-card overflow-hidden">
           <div className="flex items-center gap-2 px-4 py-2.5 border-b border-border bg-bg-warm">
@@ -462,9 +461,9 @@ function Integrations() {
         eyebrow="Integrations"
         title={
           <>
-            Cabinet lives{" "}
+            <span className="font-brand italic">Cabinet</span>{" "}lives{" "}
             <em className="text-accent">where work already happens</em>.
-          </>
+                                  </>
         }
         kicker={
           <>
@@ -513,11 +512,11 @@ function McpSection() {
             <em className="text-accent">No lock-in.</em>
           </h2>
           <p className="ent-lead mt-5 max-w-xl">
-            Cabinet exposes its data through MCP, an open standard. Your own
-            AI tools (Claude Code, Cursor, anything that speaks MCP) can read
-            your strategy files and add to them. Cabinet becomes the layer
-            underneath, not the only window in.
-          </p>
+            <span className="font-brand italic">Cabinet</span>{" "}exposes its data through MCP, an open standard. Your own
+                                    AI tools (Claude Code, Cursor, anything that speaks MCP) can read
+                                    your strategy files and add to them. <span className="font-brand italic">Cabinet</span>{" "}becomes the layer
+                                    underneath, not the only window in.
+                                  </p>
           <div className="mt-7">
             <CheckList items={[
               "Open standard: no Cabinet-only SDK to learn",
@@ -593,11 +592,10 @@ function FinalCta() {
           Ninety minutes. Your strategy.{" "}
           <em className="text-accent">A live demo on your org.</em>
         </h2>
-        <p className="ent-lead mt-5 max-w-2xl mx-auto">
-          We set up Cabinet on your top three OKRs together, walk you through
-          the morning brief, and leave you with a working folder you can use
-          on Monday.
-        </p>
+        <p className="ent-lead mt-5 max-w-2xl mx-auto">We set up <span className="font-brand italic">Cabinet</span>{" "}on your top three OKRs together, walk you through
+                              the morning brief, and leave you with a working folder you can use
+                              on Monday.
+                            </p>
         <div className="mt-7 flex flex-wrap justify-center gap-3">
           <PrimaryButton href="/enterprise/briefing">Request the briefing</PrimaryButton>
           <SecondaryButton href="/enterprise/solutions" icon={ArrowRight}>

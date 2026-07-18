@@ -65,12 +65,12 @@ function Hero() {
             </p>
 
             <p className="ent-lead mt-5 max-w-xl">
-              Cabinet's AI teammates draft the brief, run the OKR cycle, and
-              prep every meeting, on a schedule that never slips. Every manager
-              gets a Chief of Staff; every leader gets a coach. It all runs on
-              your own infrastructure, yours to inspect, down to the last line
-              of code.
-            </p>
+              <span className="font-brand italic">Cabinet's</span>{" "}AI teammates draft the brief, run the OKR cycle, and
+                                          prep every meeting, on a schedule that never slips. Every manager
+                                          gets a Chief of Staff; every leader gets a coach. It all runs on
+                                          your own infrastructure, yours to inspect, down to the last line
+                                          of code.
+                                        </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <PrimaryButton href="/enterprise/briefing">
@@ -259,7 +259,6 @@ function Problem() {
           </>
         }
       />
-
       <div className="grid md:grid-cols-3 gap-5">
         <StatCard
           stat="40%"
@@ -274,7 +273,6 @@ function Problem() {
           label="meetings per week the average S&P 500 manager attends, and still misses the goal"
         />
       </div>
-
       <div className="mt-12 ent-card p-8 md:p-10">
         <div className="grid md:grid-cols-[1fr_1.4fr] gap-8 md:gap-10">
           <div>
@@ -289,10 +287,10 @@ function Problem() {
               <span className="text-accent font-semibold">No one.</span>
             </p>
             <p className="mt-3">
-              Cabinet gives every manager a Chief of Staff and every leader a
-              coach, running on files the company already owns, not a SaaS
-              contract it has to renew.
-            </p>
+              <span className="font-brand italic">Cabinet</span>{" "}gives every manager a Chief of Staff and every leader a
+                                          coach, running on files the company already owns, not a SaaS
+                                          contract it has to renew.
+                                        </p>
           </div>
         </div>
       </div>
@@ -313,13 +311,12 @@ function Substrate() {
             Your strategy is a{" "}
             <em className="text-accent">folder</em>, not a SaaS contract.
           </h2>
-          <p className="ent-lead mt-5 max-w-xl">
-            Workboard locks your strategy inside a closed database under a SaaS
-            contract. Cabinet stores it the other way around: your OKRs, org
-            chart, decisions, one-on-ones and meetings live as roughly 200
-            plain text files in a folder you control. Version-controlled by
-            git. Hosted wherever you choose.
-          </p>
+          <p className="ent-lead mt-5 max-w-xl">Workboard locks your strategy inside a closed database under a SaaS
+                                    contract. <span className="font-brand italic">Cabinet</span>{" "}stores it the other way around: your OKRs, org
+                                    chart, decisions, one-on-ones and meetings live as roughly 200
+                                    plain text files in a folder you control. Version-controlled by
+                                    git. Hosted wherever you choose.
+                                  </p>
 
           <div className="mt-7 space-y-2.5">
             <SubLine icon={Database} t="Everything in one place" d="OKRs, org chart, decisions, meetings: connected, kept up to date by the AI teammates." />
@@ -521,11 +518,10 @@ function LiveBriefSection() {
           </>
         }
         kicker={
-          <>
-            By 06:00 every weekday, Cabinet's AI teammates have read the
-            weekend: surfaced the risks, drafted the replies, queued the
-            meetings. You read the brief over coffee. The work is already done.
-          </>
+          <>By 06:00 every weekday, <span className="font-brand italic">Cabinet's</span>{" "}AI teammates have read the
+                                    weekend: surfaced the risks, drafted the replies, queued the
+                                    meetings. You read the brief over coffee. The work is already done.
+                                  </>
         }
       />
       <LiveBriefDemo />
@@ -863,14 +859,12 @@ function Versus() {
           </>
         }
         kicker={
-          <>
-            Workboard sells the dashboards. Microsoft retired Viva Goals at the
-            end of 2024. The rest of the market sells slides. Cabinet sells you
-            the files underneath all of them.
-          </>
+          <>Workboard sells the dashboards. Microsoft retired Viva Goals at the
+                                    end of 2024. The rest of the market sells slides. <span className="font-brand italic">Cabinet</span>{" "}sells you
+                                    the files underneath all of them.
+                                  </>
         }
       />
-
       <div className="ent-card overflow-hidden">
         <div className="grid grid-cols-[1.4fr_1fr_1fr_1fr_1fr]">
           <div className="px-5 py-4 border-b border-border">
@@ -895,7 +889,6 @@ function Versus() {
           </div>
         ))}
       </div>
-
       <p className="mt-5 text-xs text-text-tertiary text-center">
         Comparison based on publicly disclosed capabilities · workboard.com (May 2026) · Viva Goals deprecation notice (Dec 2024).
       </p>
@@ -943,18 +936,16 @@ function Templates() {
         title={
           <>
             Workboard: three months to roll out.{" "}
-            <em className="text-accent">Cabinet: ten minutes.</em>
+            <em className="text-accent"><span className="font-brand italic">Cabinet</span>: ten minutes.</em>
           </>
         }
         kicker={
-          <>
-            Each template is a folder with the AI teammates, the schedule, and
-            the layout already wired up. Copy from GitHub, install in Cabinet,
-            fill in two names, ship value the same afternoon.
-          </>
+          <>Each template is a folder with the AI teammates, the schedule, and
+                        the layout already wired up. Copy from GitHub, install in <span className="font-brand italic">Cabinet</span>,
+                        fill in two names, ship value the same afternoon.
+                      </>
         }
       />
-
       <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-5">
         {t.map((x) => (
           <TplCard key={x.name} {...x} />
@@ -1041,9 +1032,8 @@ function Outcomes() {
         <StatCard stat="100%" label="Of decisions captured in writing" detail="Every meeting writes a decision file the AI reads the following week." icon={FileText} />
         <StatCard stat="$240k" label="Saved per year, vs. a Workboard contract" detail="Average enterprise replacing a six-figure SaaS contract." icon={Database} />
       </div>
-      <p className="mt-7 text-center text-xs text-text-tertiary">
-        Targets based on Workboard's published customer benchmarks applied to Cabinet's open-source approach. Validated with pilot customers in Q2 2026.
-      </p>
+      <p className="mt-7 text-center text-xs text-text-tertiary">Targets based on Workboard's published customer benchmarks applied to <span className="font-brand italic">Cabinet's</span>{" "}open-source approach. Validated with pilot customers in Q2 2026.
+                      </p>
     </Section>
   );
 }
@@ -1071,10 +1061,10 @@ function SolutionsPreview() {
         }
         kicker={
           <>
-            Cabinet is the rare enterprise platform that lands at the CEO level
-            and on every manager's laptop in the same quarter, because the AI
-            teammates work at every altitude.
-          </>
+            <span className="font-brand italic">Cabinet</span>{" "}is the rare enterprise platform that lands at the CEO level
+                                    and on every manager's laptop in the same quarter, because the AI
+                                    teammates work at every altitude.
+                                  </>
         }
       />
       <div className="grid md:grid-cols-2 gap-5">
@@ -1113,13 +1103,11 @@ function QuoteRow() {
     <section className="bg-bg-warm py-20 md:py-24 border-t border-border">
       <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
         <WoodIcon icon={Quote} className="h-10 w-10 mx-auto mb-6" />
-        <p className="ent-display-3 italic max-w-3xl mx-auto">
-          “Most software helps teams do work. Cabinet helps teams do the{" "}
-          <span className="text-accent not-italic font-semibold">right</span>{" "}
-          work, and proves it.”
-        </p>
+        <p className="ent-display-3 italic max-w-3xl mx-auto">“Most software helps teams do work. Cabinet{" "}helps teams do the{" "}
+          <span className="text-accent not-italic font-semibold">right</span>{" "}work, and proves it.”
+                            </p>
         <p className="mt-7 text-sm font-semibold text-text-tertiary uppercase tracking-widest">
-          Cabinet
+          <span className="font-brand italic">Cabinet</span>
         </p>
       </div>
     </section>
@@ -1147,12 +1135,11 @@ function FinalCta() {
             Book a{" "}
             <em className="text-accent">90-minute executive briefing.</em>
           </h2>
-          <p className="ent-lead mt-5 max-w-2xl mx-auto">
-            The founder sits with you and your Chief of Staff. We set up
-            Cabinet on your top three OKRs, live. You leave with a working
-            folder, an AI teammate drafting your next monthly review brief,
-            and a clear 30-day rollout plan.
-          </p>
+          <p className="ent-lead mt-5 max-w-2xl mx-auto">The founder sits with you and your Chief of Staff. We set up
+                                    {" "}<span className="font-brand italic">Cabinet</span>{" "}on your top three OKRs, live. You leave with a working
+                                    folder, an AI teammate drafting your next monthly review brief,
+                                    and a clear 30-day rollout plan.
+                                  </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <PrimaryButton href="/enterprise/briefing">Request the briefing</PrimaryButton>
             <SecondaryButton href="/enterprise/security" icon={Shield}>

@@ -133,8 +133,8 @@ export function WaitlistCapture({
         <div className="text-left">
           <div className="inline-flex items-center gap-2 rounded-full border border-border-dark/60 bg-white/60 px-3 py-1.5 text-[11px] font-code uppercase tracking-[0.28em] text-accent mb-5">
             <Cloud className="h-3.5 w-3.5" />
-            Cabinet Cloud
-          </div>
+            <span className="font-brand italic">Cabinet</span>{" "}Cloud
+                                  </div>
 
           <h3 className={`${compact ? "text-2xl" : "text-2xl md:text-[2.15rem]"} font-display text-text-primary mb-3 leading-tight`}>
             {WAITLIST_COPY.title}
@@ -183,9 +183,8 @@ export function WaitlistCapture({
             </div>
           ) : (
             <>
-              <p className="text-text-secondary font-body-serif leading-relaxed mb-5">
-                Get launch updates and early access when Cabinet Cloud is ready.
-              </p>
+              <p className="text-text-secondary font-body-serif leading-relaxed mb-5">Get launch updates and early access when <span className="font-brand italic">Cabinet</span>{" "}Cloud is ready.
+                                              </p>
 
               <form onSubmit={handleSubmit} className="flex flex-col gap-3">
                 <label className="sr-only" htmlFor={`waitlist-email-${source}`}>
