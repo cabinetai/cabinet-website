@@ -95,9 +95,7 @@ export function EnterpriseFooter() {
         </div>
 
         <div className="mt-14 pt-6 border-t border-border flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 justify-between">
-          <p className="text-xs text-text-tertiary">
-            © {new Date().getFullYear()} Cabinet. A product of Holy Bible Apps Ltd.
-          </p>
+          <p className="text-xs text-text-tertiary">© {new Date().getFullYear()} Cabinet, Inc.</p>
           <p className="text-xs text-text-tertiary">
             Made with care in Tel Aviv · Open source · MIT licensed
           </p>

@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { Instrument_Sans, Instrument_Serif, Source_Code_Pro, Fraunces, Ms_Madi } from "next/font/google";
+import { Geist, Instrument_Serif, Martian_Mono, Fraunces, Ms_Madi } from "next/font/google";
 import { LiquidGlassFilter } from "@/components/liquid-glass-filter";
 import "./globals.css";
 
-// Body / UI sans. Pairs with the Instrument Serif wordmark as one family.
-const instrumentSans = Instrument_Sans({
+// Body / UI sans (also carries the uppercase labels at 0.08em tracking).
+const geist = Geist({
   variable: "--font-body",
   subsets: ["latin"],
 });
@@ -25,7 +25,7 @@ const instrumentSerif = Instrument_Serif({
   style: ["normal", "italic"],
 });
 
-const sourceCodePro = Source_Code_Pro({
+const martianMono = Martian_Mono({
   variable: "--font-mono",
   subsets: ["latin"],
 });
@@ -74,7 +74,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${instrumentSans.variable} ${fraunces.variable} ${instrumentSerif.variable} ${sourceCodePro.variable} ${msMadi.variable} h-full antialiased`}
+      className={`${geist.variable} ${fraunces.variable} ${instrumentSerif.variable} ${martianMono.variable} ${msMadi.variable} h-full antialiased`}
     >
       <head>
         <Script

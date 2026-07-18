@@ -93,6 +93,7 @@ Assets (existing, do not redraw):
 - **Full logo:** `public/Cabinet.png`.
 - **Wordmark in type:** the word "Cabinet" set in the brand serif (Instrument Serif), italic, tight tracking. This is the canonical lockup in the navbars:
   `font-brand italic tracking-tight`.
+- **Product name in copy:** whenever the word "Cabinet" (the product) appears in user-facing copy, it renders in the wordmark serif: wrap it in `<span className="font-brand italic">Cabinet</span>`. For copy that arrives as plain strings from data files, pipe it through `brandify()` in `src/components/brand-word.tsx`. Generic uses ("a cabinet", "Cabinets" the templates section) stay in the body font.
 
 ### Rules
 
@@ -178,22 +179,23 @@ Target WCAG AA (4.5:1 for body text, 3:1 for large text and UI). Two known watch
 
 ## 6. Typography
 
-Four typefaces plus a signature script, each with one job. Loaded in `src/app/layout.tsx` via `next/font`. The v2 stack (2026-07-17) replaced Stack Sans Notch, Inter, and Jost: the display voice is now a warm editorial serif that matches the wooden-craft identity, and the body sans pairs natively with the Instrument Serif wordmark.
+Four typefaces plus a signature script, each with one job. Loaded in `src/app/layout.tsx` via `next/font`. The stack was chosen on the `/styleguide/fonts` picker (2026-07-18), including the letter-spacing values, which are part of the spec.
 
-| Role | Family | Token / class | Use |
-|---|---|---|---|
-| Display | Fraunces | `--font-heading` (theme `--font-display`), `.font-display`, `.ent-display-1/2/3` | Headlines, hero type. Optical sizing, weight ~600, slight tightening (-0.01em) |
-| Body / UI sans | Instrument Sans | `--font-body` (theme `--font-sans`) | Body copy, nav, buttons, most UI, and uppercase eyebrows |
-| Brand wordmark | Instrument Serif (italic) | `--font-brand`, `.font-brand` | The "Cabinet" wordmark only |
-| Code / mono | Source Code Pro | `--font-mono`, `.font-code` | Code, terminal, literal commands |
-| Handwriting | Ms Madi | `--font-hand`, `.font-hand` | Testimonial signatures only |
+| Role | Family | Tracking | Token / class | Use |
+|---|---|---|---|---|
+| Display | Fraunces | -0.04em | `--font-heading` (theme `--font-display`), `.font-display`, `.ent-display-1/2/3` | Headlines, hero type. Optical sizing, weight ~600 |
+| Body / UI sans | Geist | 0 | `--font-body` (theme `--font-sans`) | Body copy, nav, buttons, most UI |
+| Labels / eyebrows | Geist | 0.08em | `.section-label`, `.ent-eyebrow` | Uppercase tags and eyebrows |
+| Brand wordmark | Instrument Serif (italic) | tight | `--font-brand`, `.font-brand` | The product name "Cabinet" wherever it appears in copy |
+| Code / mono | Martian Mono | 0 | `--font-mono`, `.font-code` | Code, terminal, literal commands |
+| Handwriting | Ms Madi | default | `--font-hand`, `.font-hand` | Testimonial signatures only |
 
 ### Type roles in practice
 
-- **Eyebrow / section label:** `.section-label` and `.ent-eyebrow`, set in **Instrument Sans, weight 500**, uppercase, letter-spaced (~0.16em), accent color. Labels are kept **separate from code**: Source Code Pro is reserved for code, terminal, and literal commands only, never for eyebrows.
-- **Headlines:** `.font-display` or the `.ent-display-*` scale (`clamp()`-based, responsive). Fraunces carries warmth on its own; do not add italics or extra weight for emphasis, use scale.
-- **Lead paragraph:** `.ent-lead` (Instrument Sans).
-- **Body prose:** Instrument Sans at comfortable measure (max ~70 characters).
+- **Eyebrow / section label:** `.section-label` and `.ent-eyebrow`, set in **Geist, weight 500**, uppercase, letter-spaced **0.08em**, accent color. Labels are kept **separate from code**: Martian Mono is reserved for code, terminal, and literal commands only, never for eyebrows.
+- **Headlines:** `.font-display` or the `.ent-display-*` scale (`clamp()`-based, responsive), tracked at **-0.04em**. Fraunces carries warmth on its own; do not add italics or extra weight for emphasis, use scale.
+- **Lead paragraph:** `.ent-lead` (Geist).
+- **Body prose:** Geist at comfortable measure (max ~70 characters), no extra tracking.
 - **Gradient emphasis:** `.gradient-text` on one word, sparingly.
 
 ### Legacy naming caveat
@@ -317,7 +319,8 @@ Comparison tables pin and tint the Cabinet column, use icon + label (not color a
 
 ## 13. Legal, naming, and footer
 
-- **Entity:** Holy Bible Apps Ltd (Israeli company). Standardize casing across both footers.
+- **Public copyright line:** both footers read "© <year> Cabinet, Inc." (decided 2026-07-18). Do not put the legal entity name in footers.
+- **Legal entity:** Holy Bible Apps Ltd (Israeli company) remains the named entity inside legal documents only (/terms, /privacy: data controller, liability, jurisdiction clauses).
 - **Public contact:** `hi@runcabinet.com`. This is the only contact to publish.
 - **No physical address.** Do not publish a street address. Review the enterprise footer "Made with care in Tel Aviv" line against this policy and confirm whether a city reference is acceptable; if in doubt, remove it.
 - **License:** open source, MIT. Keep the MIT note and the agent-capability disclaimer (autonomous agents can access the file system, shell, and network) in the footer.
@@ -343,7 +346,7 @@ Process: any change to a token, font, button style, or the glass system updates 
 ## Appendix A. Quick reference
 
 - **Palette mood:** warm parchment, rich brown, sage green. Light only.
-- **Type:** Fraunces (display), Instrument Sans (body, UI, labels), Instrument Serif italic (wordmark), Source Code Pro (code), Ms Madi (signatures).
+- **Type:** Fraunces -0.04em (display), Geist (body and UI; labels at 0.08em), Instrument Serif italic (wordmark), Martian Mono (code), Ms Madi (signatures).
 - **Signature:** liquid-glass floating pills; warm light-wood illustration motifs with small touches of color.
 - **Voice:** confident operator, concrete, no em dashes, no AI filler, no fake numbers.
 - **One action per view.** Accent brown primary. Sage means good.
