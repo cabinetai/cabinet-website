@@ -25,22 +25,20 @@ const FAQS: Array<{ q: string; a: React.ReactNode }> = [
   {
     q: "It's open source. Why would I pay?",
     a: (
-      <>
-        You don&apos;t have to. Self-Hosted is free forever and gets every
-        Cabinet feature. Pay only when you want it running 24/7 on a managed
-        container: no server to stand up, no OS to babysit, no backups to
-        wire.
-      </>
+      <>You don't have to. Self-Hosted is free forever and gets every
+                        {" "}<span className="font-brand italic">Cabinet</span>{" "}feature. Pay only when you want it running 24/7 on a managed
+                        container: no server to stand up, no OS to babysit, no backups to
+                        wire.
+                      </>
     ),
   },
   {
     q: "Can I move from Cloud back to Self-Hosted later?",
     a: (
-      <>
-        Yes. Your Cabinet is plain markdown on disk. Export the whole directory
-        with one click and run it locally. We don&apos;t hold your data hostage
-        and there&apos;s nothing to migrate.
-      </>
+      <>Yes. Your <span className="font-brand italic">Cabinet</span>{" "}is plain markdown on disk. Export the whole directory
+                        with one click and run it locally. We don't hold your data hostage
+                        and there's nothing to migrate.
+                      </>
     ),
   },
   {
@@ -55,7 +53,7 @@ const FAQS: Array<{ q: string; a: React.ReactNode }> = [
   },
   {
     q: "Do you train on my data?",
-    a: <>Never. Your Cabinet is your Cabinet.</>,
+    a: <>Never. Your <span className="font-brand italic">Cabinet</span>{" "}is your <span className="font-brand italic">Cabinet</span>.</>,
   },
   {
     q: "What about AI costs?",
@@ -102,10 +100,10 @@ const FAQS: Array<{ q: string; a: React.ReactNode }> = [
     q: "Do you have multi-user / team plans?",
     a: (
       <>
-        Cabinet is single-user today. Multi-user is shipping on the Enterprise
-        track first; a self-serve <strong>Team</strong> tier is in early access.
-        Sign up and we&apos;ll prioritize you.
-      </>
+        <span className="font-brand italic">Cabinet</span>{" "}is single-user today. Multi-user is shipping on the Enterprise
+                        track first; a self-serve <strong>Team</strong>tier is in early access.
+                        Sign up and we'll prioritize you.
+                      </>
     ),
   },
   {
@@ -124,7 +122,6 @@ export default function PricingPage() {
   return (
     <div className="min-h-screen bg-bg flex flex-col">
       <SiteNavbar />
-
       {/* ─── Hero (cloud backdrop, /cloud-inspired warmth) ─── */}
       <section className="relative py-20 md:py-24 dot-grid overflow-hidden">
         <div className="pointer-events-none absolute inset-0 opacity-90">
@@ -141,17 +138,15 @@ export default function PricingPage() {
             className="mx-auto mb-6 mt-2 h-20 w-auto object-contain drop-shadow-[0_12px_28px_rgba(150,108,68,0.35)]"
           />
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display text-text-primary tracking-tight leading-[1.05] mb-5">
-            Your Cabinet, anywhere.
-            <br />
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display text-text-primary tracking-tight leading-[1.05] mb-5">Your Cabinet, anywhere.
+                        <br />
             <span className="italic gradient-text">Your AI team, always on.</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-text-secondary font-body-serif leading-relaxed max-w-2xl mx-auto mb-4">
-            Open your Cabinet from any device while your AI agents keep working
-            (drafting, researching, organizing) even when your laptop is
-            closed.
-          </p>
+          <p className="text-lg md:text-xl text-text-secondary font-body-serif leading-relaxed max-w-2xl mx-auto mb-4">Open your <span className="font-brand italic">Cabinet</span>{" "}from any device while your AI agents keep working
+                                    (drafting, researching, organizing) even when your laptop is
+                                    closed.
+                                  </p>
           <p className="text-base text-text-tertiary font-body-serif italic leading-relaxed max-w-2xl mx-auto mb-8">
             Pick the plan that fits how you work. Self-host always stays free.
           </p>
@@ -165,7 +160,6 @@ export default function PricingPage() {
           </div>
         </div>
       </section>
-
       {/* ─── BYOAI providers band ─── */}
       <section className="border-t border-border bg-bg-warm py-10 md:py-12">
         <div className="max-w-5xl mx-auto px-6 text-center">
@@ -194,14 +188,12 @@ export default function PricingPage() {
           </div>
         </div>
       </section>
-
       {/* ─── Billing toggle + 4-card grid + Team early callout ─── */}
       <section className="border-t border-border bg-bg pt-16 pb-20 md:pt-20 md:pb-24">
         <div className="max-w-6xl mx-auto px-6">
           <PricingInteractive />
         </div>
       </section>
-
       {/* ─── Comparison table ─── */}
       <section className="border-t border-border bg-bg-warm py-20 md:py-24">
         <div className="max-w-6xl mx-auto px-6">
@@ -214,7 +206,6 @@ export default function PricingPage() {
           <PricingComparisonTable />
         </div>
       </section>
-
       {/* ─── FAQ ─── */}
       <section className="border-t border-border bg-bg py-20 md:py-24">
         <div className="max-w-3xl mx-auto px-6">
@@ -238,17 +229,15 @@ export default function PricingPage() {
           </div>
         </div>
       </section>
-
       {/* ─── Final CTA band ─── */}
       <section className="border-t border-border bg-bg-warm py-20">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-3">
             Still deciding?
           </h2>
-          <p className="text-base text-text-secondary font-body-serif leading-relaxed mb-8">
-            Try Self-Hosted first. It&apos;s the same Cabinet, just on your
-            machine.
-          </p>
+          <p className="text-base text-text-secondary font-body-serif leading-relaxed mb-8">Try Self-Hosted first. It's the same <span className="font-brand italic">Cabinet</span>, just on your
+                        machine.
+                      </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <a
               href={MACOS_DOWNLOAD_URL}
@@ -263,9 +252,8 @@ export default function PricingPage() {
               href="/cloud?source=pricing-final"
               className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold btn-wood"
             >
-              <Cloud className="h-4 w-4" />
-              See Cabinet Cloud
-              <ArrowRight className="h-4 w-4" />
+              <Cloud className="h-4 w-4" />See <span className="font-brand italic">Cabinet</span>{" "}Cloud
+                                          <ArrowRight className="h-4 w-4" />
             </a>
           </div>
           <p className="mt-6 text-xs text-text-tertiary font-code">

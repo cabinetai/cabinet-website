@@ -3,15 +3,18 @@
 import Image from "next/image";
 import { useEffect, useRef, useState, type PointerEvent as ReactPointerEvent } from "react";
 import {
+  AnimatePresence,
   motion,
   useScroll,
   useTransform,
   useMotionTemplate,
   useReducedMotion,
   useMotionValue,
+  useMotionValueEvent,
   useSpring,
   type MotionValue,
 } from "framer-motion";
+import { ScrollReveal } from "@/components/lightswind/scroll-reveal";
 
 /* ──────────────────────────────────────────────────────────────
    Integration scene — a pinned, horizontal scrollytelling hero.
@@ -176,10 +179,10 @@ function FloatingTile({
 }) {
   // Scroll-driven base: stream rightward into the Cabinet (0,0) from the
   // very first scroll.
-  const baseX = useTransform(progress, [0, 0.44 + s], [posX, 0]);
-  const baseY = useTransform(progress, [0, 0.44 + s], [posY, 0]);
-  const baseScale = useTransform(progress, [0, 0.44 + s], [1, 0.05]);
-  const opacity = useTransform(progress, [0, 0.34 + s, 0.44 + s], [1, 1, 0]);
+  const baseX = useTransform(progress, [0, 0.32 + s], [posX, 0]);
+  const baseY = useTransform(progress, [0, 0.32 + s], [posY, 0]);
+  const baseScale = useTransform(progress, [0, 0.32 + s], [1, 0.05]);
+  const opacity = useTransform(progress, [0, 0.24 + s, 0.32 + s], [1, 1, 0]);
 
   // Magnetic repel — push away from the cursor with a quadratic falloff,
   // gated by opacity so tiles stop reacting once they're absorbed.
@@ -270,7 +273,7 @@ type LaneItem =
 const SUCK_LANES: { y: number; start: number; items: LaneItem[] }[] = [
   {
     y: -600,
-    start: 0.38,
+    start: 0.44,
     items: [
       { kind: "label", text: "Files" },
       { kind: "file", name: "roadmap.md", color: "#8B5E3C" },
@@ -280,7 +283,7 @@ const SUCK_LANES: { y: number; start: number; items: LaneItem[] }[] = [
   },
   {
     y: -200,
-    start: 0.43,
+    start: 0.50,
     items: [
       { kind: "label", text: "Dashboards" },
       { kind: "dash", accent: "#3B6FB0" },
@@ -290,7 +293,7 @@ const SUCK_LANES: { y: number; start: number; items: LaneItem[] }[] = [
   },
   {
     y: 200,
-    start: 0.48,
+    start: 0.56,
     items: [
       { kind: "label", text: "AI agents" },
       { kind: "agent", name: "SDR" },
@@ -300,7 +303,7 @@ const SUCK_LANES: { y: number; start: number; items: LaneItem[] }[] = [
   },
   {
     y: 600,
-    start: 0.53,
+    start: 0.62,
     items: [
       { kind: "label", text: "Routines & tasks" },
       { kind: "task", name: "Weekly report" },
@@ -369,7 +372,7 @@ function SuckItem({
   y: number;
   item: LaneItem;
 }) {
-  const end = start + 0.14;
+  const end = start + 0.18;
   // From off-screen right into the Cabinet at centre (0,0). It stays full-size
   // and fully readable for almost the entire trip, then shrinks + fades hard
   // only in the final stretch — right as it reaches the Cabinet logo.
@@ -399,10 +402,10 @@ function DashCard({
   progress: MotionValue<number>;
   card: (typeof DASH)[number];
 }) {
-  const x = useTransform(progress, [0, 0.4], [card.x, 0]);
-  const y = useTransform(progress, [0, 0.4], [card.y, 0]);
-  const scale = useTransform(progress, [0, 0.4], [1, 0.05]);
-  const opacity = useTransform(progress, [0, 0.3, 0.4], [1, 1, 0]);
+  const x = useTransform(progress, [0, 0.3], [card.x, 0]);
+  const y = useTransform(progress, [0, 0.3], [card.y, 0]);
+  const scale = useTransform(progress, [0, 0.3], [1, 0.05]);
+  const opacity = useTransform(progress, [0, 0.22, 0.3], [1, 1, 0]);
 
   return (
     <motion.div
@@ -448,6 +451,42 @@ function StaticFallback() {
         <Image src="/Cabinet.png" alt="Cabinet" width={120} height={120} className="mx-auto" />
       </div>
     </section>
+  );
+}
+
+// Resets on every full page load; survives client-side route changes.
+let autoScrollPlayed = false;
+
+// Above the demo video: "Cabinet" plus a rotating benefit line.
+const BENEFITS = [
+  "works the way you already do.",
+  "holds your entire knowledge base.",
+  "is built for your whole team.",
+  "puts ready-made AI teams to work.",
+];
+
+function RotatingBenefits() {
+  const [i, setI] = useState(0);
+  useEffect(() => {
+    const t = setInterval(() => setI((v) => (v + 1) % BENEFITS.length), 2600);
+    return () => clearInterval(t);
+  }, []);
+  return (
+    <h2 className="font-display text-3xl leading-tight tracking-tight text-text-primary md:text-5xl">
+      <span className="gradient-text">Cabinet</span>{" "}
+      <AnimatePresence mode="wait">
+        <motion.span
+          key={i}
+          initial={{ opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -14 }}
+          transition={{ duration: 0.35 }}
+          className="inline-block"
+        >
+          {BENEFITS[i]}
+        </motion.span>
+      </AnimatePresence>
+    </h2>
   );
 }
 
@@ -500,11 +539,11 @@ export function IntegrationScene() {
   // Cabinet — the central hub. It appears, grows as it absorbs the cloud, and
   // then simply stays put in the centre through the captions.
   const cabinetOpacity = useTransform(scrollYProgress, [0, 0.08], [0, 1]);
-  const cabinetScale = useTransform(scrollYProgress, [0, 0.4, 0.5], [0.4, 1.05, 1]);
+  const cabinetScale = useTransform(scrollYProgress, [0, 0.3, 0.38], [0.4, 1.05, 1]);
 
   // Absorption glow (stays centered while the suck-in happens).
-  const glowScale = useTransform(scrollYProgress, [0, 0.45], [0.5, 1.5]);
-  const glowOpacity = useTransform(scrollYProgress, [0.04, 0.24, 0.45, 0.54], [0, 0.9, 0.9, 0]);
+  const glowScale = useTransform(scrollYProgress, [0, 0.36], [0.5, 1.5]);
+  const glowOpacity = useTransform(scrollYProgress, [0.04, 0.2, 0.36, 0.44], [0, 0.9, 0.9, 0]);
 
   // Captions — beat 1 → beat 2 handoff.
   // The title doesn't just fade: as the Cabinet appears and swallows the cloud
@@ -518,18 +557,98 @@ export function IntegrationScene() {
   const titleBlur = useTransform(scrollYProgress, [0.18, 0.3], [0, 16]);
   const titleFilter = useMotionTemplate`blur(${titleBlur}px)`;
 
-  // Stays on much longer now: it holds while the category tags stream into the
-  // Cabinet from the right (~0.38–0.74) before handing off.
-  const capCapture = useTransform(scrollYProgress, [0.28, 0.37, 0.78, 0.84], [0, 1, 1, 0]);
-  const captureScale = useTransform(scrollYProgress, [0.28, 0.42], [0.8, 1]);
-  const captureY = useTransform(scrollYProgress, [0.28, 0.42], [28, 0]);
-  const captureBlur = useTransform(scrollYProgress, [0.28, 0.42], [18, 0]);
+  // Appears first on its own (0.28–0.44 is caption-only breathing room), then
+  // holds while the category tags stream into the Cabinet (~0.44–0.87).
+  const capCapture = useTransform(scrollYProgress, [0.28, 0.37, 0.82, 0.88], [0, 1, 1, 0]);
+  // Fast, crisp focus-pull: fully sharp by 0.33, well before the caption's
+  // read moment (~0.4) and the first lane (0.44).
+  const captureScale = useTransform(scrollYProgress, [0.28, 0.33], [0.9, 1]);
+  const captureY = useTransform(scrollYProgress, [0.28, 0.33], [20, 0]);
+  const captureBlur = useTransform(scrollYProgress, [0.28, 0.33], [10, 0]);
   const captureFilter = useMotionTemplate`blur(${captureBlur}px)`;
 
   // "…and your AI team takes it from here, 24/7." — the scene's final caption;
   // it fades in and stays. The demo video follows in a plain block below.
-  const capVideo = useTransform(scrollYProgress, [0.84, 0.91, 1], [0, 1, 1]);
+  const capVideo = useTransform(scrollYProgress, [0.88, 0.94, 1], [0, 1, 1]);
   const hintOpacity = useTransform(scrollYProgress, [0, 0.04], [1, 0]);
+
+  // Word-stagger triggers for the later captions. Inside the pinned scene the
+  // caption elements sit in the viewport the whole time, so in-view detection
+  // would fire the reveal at scene entry; gate it on the caption's own beat.
+  const [captureRevealed, setCaptureRevealed] = useState(false);
+  const [videoCapRevealed, setVideoCapRevealed] = useState(false);
+  useMotionValueEvent(scrollYProgress, "change", (v) => {
+    setCaptureRevealed(v > 0.3);
+    setVideoCapRevealed(v > 0.9);
+  });
+
+  // Auto-scroll on page open: glide through the scene at a steady, human
+  // scrolling pace until the demo video is on screen. Any user input (wheel,
+  // touch, key, click) cancels it. The in-memory flag means it runs once per
+  // page load: client-side navigation back home won't replay it, a refresh will.
+  const demoRef = useRef<HTMLElement>(null);
+  useEffect(() => {
+    if (prefersReduced || window.scrollY > 10 || autoScrollPlayed) return;
+    let raf = 0;
+    let timer = 0;
+    let cancelled = false;
+    const cancel = () => {
+      cancelled = true;
+      cancelAnimationFrame(raf);
+      window.clearTimeout(timer);
+    };
+    const events = ["wheel", "touchstart", "keydown", "mousedown"];
+    events.forEach((e) => window.addEventListener(e, cancel, { passive: true }));
+    timer = window.setTimeout(() => {
+      const el = demoRef.current;
+      const scene = ref.current;
+      if (!el || !scene || cancelled) return;
+      autoScrollPlayed = true;
+      // Clear the fixed nav so the "Cabinet …" heading lands fully visible.
+      const to = el.getBoundingClientRect().top + window.scrollY - 100;
+      // Hold at each caption beat until its word reveal finishes, plus half a
+      // second of reading time. Positions mirror the caption reveal beats.
+      const sceneTop = scene.getBoundingClientRect().top + window.scrollY;
+      const sceneDist = Math.max(1, scene.offsetHeight - window.innerHeight);
+      const pauses = [
+        { at: sceneTop + 0.4 * sceneDist, ms: 1300, done: false },
+        // After the 24/7 caption the story is told — rush to the demo.
+        { at: sceneTop + 0.95 * sceneDist, ms: 1300, done: false, speedAfter: 1.6 },
+      ];
+      let waitUntil = 0;
+      // Constant speed like a person scrolling. Advancing by capped per-frame
+      // deltas (not wall time) so a stalled frame pauses instead of leaping.
+      let speed = 0.45; // px per ms
+      let pos = window.scrollY;
+      let last = performance.now();
+      const step = (now: number) => {
+        if (cancelled) return;
+        if (now < waitUntil) {
+          last = now;
+          raf = requestAnimationFrame(step);
+          return;
+        }
+        pos = Math.min(pos + speed * Math.min(now - last, 50), to);
+        last = now;
+        const pause = pauses.find((p) => !p.done && pos >= p.at);
+        if (pause) {
+          pause.done = true;
+          pos = Math.min(pause.at, to);
+          waitUntil = now + pause.ms;
+          if (pause.speedAfter) speed = pause.speedAfter;
+        }
+        // behavior:'instant' — the site sets scroll-behavior:smooth globally,
+        // which would turn every per-frame scrollTo into its own animation.
+        window.scrollTo({ top: pos, behavior: "instant" });
+        if (pos < to) raf = requestAnimationFrame(step);
+      };
+      raf = requestAnimationFrame(step);
+    }, 1700);
+    return () => {
+      cancel();
+      events.forEach((e) => window.removeEventListener(e, cancel));
+    };
+  }, [prefersReduced]);
 
   if (prefersReduced) return <StaticFallback />;
 
@@ -569,7 +688,7 @@ export function IntegrationScene() {
             <SuckItem
               key={`${lane.y}-${i}`}
               progress={scrollYProgress}
-              start={lane.start + i * 0.022}
+              start={lane.start + i * 0.03}
               y={lane.y}
               item={item}
             />
@@ -608,8 +727,9 @@ export function IntegrationScene() {
         {/* beat 1 — title beside the cloud (outer div positions; inner h2 is
             free to run its own magic-wand dissolve transform) */}
         <div className="absolute top-1/2 right-[10vw] md:right-[16vw] lg:right-[20vw] -translate-y-1/2 max-w-xs sm:max-w-sm md:max-w-md text-right pointer-events-none">
-          <motion.h2
-            className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.08] tracking-tight text-text-primary"
+          <motion.div
+            role="heading"
+            aria-level={2}
             style={{
               opacity: capTitle,
               scale: titleScale,
@@ -617,16 +737,24 @@ export function IntegrationScene() {
               filter: titleFilter,
             }}
           >
-            Your work
-            <br />
-            lives in <span className="text-text-tertiary">a hundred<br />places.</span>
-          </motion.h2>
+            <ScrollReveal
+              baseRotation={0}
+              threshold={0.3}
+              staggerDelay={0.08}
+              textClassName="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.08] tracking-tight text-right text-text-primary"
+            >
+              Your work
+              <br />
+              lives in
+              <br />
+              <span className="text-text-tertiary">a hundred<br />places.</span>
+            </ScrollReveal>
+          </motion.div>
         </div>
 
         {/* captions */}
         <div className="absolute top-1/2 left-[4vw] md:left-[8vw] lg:left-[11vw] -translate-y-1/2 max-w-xs sm:max-w-sm md:max-w-md text-left pointer-events-none">
-          <motion.p
-            className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.08] tracking-tight text-text-primary"
+          <motion.div
             style={{
               opacity: capCapture,
               scale: captureScale,
@@ -634,21 +762,35 @@ export function IntegrationScene() {
               filter: captureFilter,
             }}
           >
-            <span className="gradient-text">Cabinet</span>
-            <br />
-            pulls it all
-            <br />
-            into one
-            <br />
-            place.
-          </motion.p>
+            <ScrollReveal
+              baseRotation={0}
+              revealed={captureRevealed}
+              staggerDelay={0.08}
+              textClassName="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.08] tracking-tight text-left text-text-primary"
+            >
+              <span className="gradient-text">Cabinet</span>
+              <br />
+              pulls it all
+              <br />
+              into one
+              <br />
+              place.
+            </ScrollReveal>
+          </motion.div>
         </div>
-        <motion.p
-          className="absolute left-1/2 -translate-x-1/2 bottom-24 w-full max-w-4xl px-6 text-center font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.08] tracking-tight text-text-primary"
+        <motion.div
+          className="absolute left-1/2 -translate-x-1/2 bottom-24 w-full max-w-4xl px-6"
           style={{ opacity: capVideo }}
         >
-          …and your AI team takes it from here, 24/7.
-        </motion.p>
+          <ScrollReveal
+            baseRotation={0}
+            revealed={videoCapRevealed}
+            staggerDelay={0.08}
+            textClassName="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.08] tracking-tight text-center text-text-primary"
+          >
+            …and your AI team takes it from here, 24/7.
+          </ScrollReveal>
+        </motion.div>
 
         {/* scroll hint */}
         <motion.div
@@ -662,9 +804,18 @@ export function IntegrationScene() {
     </div>
 
       {/* demo video — a plain block right after the scene's "…AI team, 24/7" beat */}
-      <section className="bg-bg px-6 pb-24">
-        <div className="mx-auto w-[min(92vw,1200px)] overflow-hidden rounded-2xl border border-border shadow-2xl shadow-black/25">
-          <video autoPlay loop muted playsInline className="w-full">
+      <section ref={demoRef} className="bg-bg px-6 pb-24">
+        <div className="mx-auto mb-8 max-w-5xl text-center">
+          <RotatingBenefits />
+        </div>
+        <div className="mx-auto w-fit max-w-full overflow-hidden rounded-2xl border border-border shadow-2xl shadow-black/25">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="mx-auto max-h-[80vh] w-auto max-w-full"
+          >
             <source src="/demo.webm" type="video/webm" />
           </video>
         </div>

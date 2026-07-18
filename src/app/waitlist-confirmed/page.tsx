@@ -22,7 +22,6 @@ export default function WaitlistConfirmedPage() {
       <Suspense fallback={null}>
         <WaitlistConfirmationTracker />
       </Suspense>
-
       <div className="max-w-2xl w-full text-center dict-card px-8 py-10 md:px-12 md:py-12">
         <Image
           src="/brand/cabinet-logo-face-2-512.png"
@@ -38,9 +37,8 @@ export default function WaitlistConfirmedPage() {
           waitlist confirmed
         </div>
 
-        <h1 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
-          You’re on the Cabinet Cloud waitlist
-        </h1>
+        <h1 className="text-3xl md:text-4xl font-display text-text-primary mb-4">You’re on the Cabinet{" "}Cloud waitlist
+                            </h1>
 
         <p className="text-lg text-text-secondary font-body-serif leading-relaxed mb-3">
           Hosted version coming soon. Thanks for getting in early.
@@ -72,9 +70,8 @@ export default function WaitlistConfirmedPage() {
           <a
             href="/#get-started"
             className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full font-semibold btn-wood"
-          >
-            Try Cabinet now
-            <ArrowRight className="w-4 h-4" />
+          >Try <span className="font-brand italic">Cabinet</span>{" "}now
+                                    <ArrowRight className="w-4 h-4" />
           </a>
         </div>
       </div>

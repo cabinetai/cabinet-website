@@ -62,12 +62,11 @@ function HeroForm() {
                 Your operating model on a folder.
               </em>
             </h1>
-            <p className="ent-lead mt-6 max-w-xl">
-              The founders sit with you and your Chief of Staff. We map your
-              strategy graph to a Cabinet room live. You leave with a forked
-              template, an agent drafting your next MBR pre-read, and a 30-day
-              path to enterprise-wide rollout.
-            </p>
+            <p className="ent-lead mt-6 max-w-xl">The founders sit with you and your Chief of Staff. We map your
+                                          strategy graph to a <span className="font-brand italic">Cabinet</span>{" "}room live. You leave with a forked
+                                          template, an agent drafting your next MBR pre-read, and a 30-day
+                                          path to enterprise-wide rollout.
+                                        </p>
 
             <div className="mt-8 space-y-3">
               <Bullet icon={Video} t="Live working session" s="Not a sales pitch. We build alongside you." />
@@ -428,9 +427,8 @@ function FounderNote() {
           </div>
           <div className="text-left">
             <p className="text-sm font-semibold text-text-primary">Hila Shmuel</p>
-            <p className="text-xs text-text-tertiary">
-              Founder, Cabinet · ex-Apple AI Infrastructure
-            </p>
+            <p className="text-xs text-text-tertiary">Founder, <span className="font-brand italic">Cabinet</span>· ex-Apple AI Infrastructure
+                          </p>
           </div>
         </div>
       </div>

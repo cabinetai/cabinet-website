@@ -25,8 +25,8 @@ export default function CloudPage() {
           <div className="text-center max-w-3xl mx-auto mb-10">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full card-skin text-xs font-code text-text-tertiary mb-8">
               <Cloud className="w-3.5 h-3.5 text-accent" />
-              Cabinet Cloud is coming soon
-            </div>
+              <span className="font-brand italic">Cabinet</span>{" "}Cloud is coming soon
+                                        </div>
 
             <Image
               src="/brand/cabinet-logo-face-2-512.png"
@@ -37,16 +37,14 @@ export default function CloudPage() {
               className="mx-auto mb-6 h-[88px] w-auto object-contain drop-shadow-[0_12px_28px_rgba(150,108,68,0.35)]"
             />
 
-            <h1 className="text-4xl md:text-5xl font-display text-text-primary tracking-tight leading-[1.05] mb-5">
-              Your Cabinet, anywhere.
-              <br />
+            <h1 className="text-4xl md:text-5xl font-display text-text-primary tracking-tight leading-[1.05] mb-5">Your Cabinet, anywhere.
+                            <br />
               <span className="italic gradient-text">Your AI team, always on.</span>
             </h1>
 
-            <p className="text-lg text-text-secondary font-body-serif leading-relaxed">
-              Open your Cabinet from any device while your AI agents keep working
-              (drafting, researching, organizing) even when your laptop is closed.
-            </p>
+            <p className="text-lg text-text-secondary font-body-serif leading-relaxed">Open your <span className="font-brand italic">Cabinet</span>{" "}from any device while your AI agents keep working
+                                          (drafting, researching, organizing) even when your laptop is closed.
+                                        </p>
           </div>
 
           <Suspense
@@ -75,10 +73,9 @@ export default function CloudPage() {
             <div className="soft-card p-6">
               <Check className="w-5 h-5 text-accent mb-3" />
               <h2 className="font-display text-xl text-text-primary mb-2">Connect from anywhere</h2>
-              <p className="text-sm text-text-secondary leading-relaxed">
-                One Cabinet across phone, laptop, and browser. Pick up exactly where
-                you left off, no setup required.
-              </p>
+              <p className="text-sm text-text-secondary leading-relaxed">One <span className="font-brand italic">Cabinet</span>{" "}across phone, laptop, and browser. Pick up exactly where
+                                                you left off, no setup required.
+                                              </p>
             </div>
             <div className="soft-card p-6">
               <Check className="w-5 h-5 text-accent mb-3" />
@@ -91,10 +88,9 @@ export default function CloudPage() {
             <div className="soft-card p-6">
               <Check className="w-5 h-5 text-accent mb-3" />
               <h2 className="font-display text-xl text-text-primary mb-2">Priority access</h2>
-              <p className="text-sm text-text-secondary leading-relaxed">
-                First 500 early supporters get priority access when Cabinet Cloud
-                opens up.
-              </p>
+              <p className="text-sm text-text-secondary leading-relaxed">First 500 early supporters get priority access when <span className="font-brand italic">Cabinet</span>{" "}Cloud
+                                                opens up.
+                                              </p>
             </div>
           </div>
 
@@ -120,9 +116,8 @@ export default function CloudPage() {
             <a
               href="/#get-started"
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full font-semibold btn-wood"
-            >
-              Try Cabinet now
-              <ArrowRight className="w-4 h-4" />
+            >Try <span className="font-brand italic">Cabinet</span>{" "}now
+                                          <ArrowRight className="w-4 h-4" />
             </a>
           </div>
         </div>

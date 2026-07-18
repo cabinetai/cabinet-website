@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, Check, X, Minus, Star, ChevronDown } from "lucide-react";
 import { SiteNavbar } from "@/components/site-navbar";
+import { brandify } from "@/components/brand-word";
 import { GITHUB_URL } from "@/lib/site-config";
 import { compareLabel, type Cell, type ThreeWay } from "@/lib/compare";
 
@@ -33,7 +34,6 @@ export function CompareThreeWay({ data }: { data: ThreeWay }) {
   return (
     <main className="min-h-screen bg-bg">
       <SiteNavbar />
-
       {/* ─── Hero ─── */}
       <section className="relative overflow-hidden border-b border-border dot-grid">
         <div
@@ -51,14 +51,14 @@ export function CompareThreeWay({ data }: { data: ThreeWay }) {
             </Link>
             <span className="mx-2 text-text-muted">/</span>
             <span className="text-text-secondary">
-              {data.contenders.map((c) => c.name).join(" vs ")}
+              {brandify(data.contenders.map((c) => c.name).join(" vs "))}
             </span>
           </nav>
           <h1 className="mt-5 font-display text-4xl leading-[1.07] tracking-tight text-text-primary sm:text-5xl">
             {data.h1}
           </h1>
           <p className="mt-5 max-w-2xl font-body-serif text-lg leading-relaxed text-text-secondary">
-            {data.intro}
+            {brandify(data.intro)}
           </p>
           <div className="mt-9 grid gap-3 sm:grid-cols-3">
             {data.contenders.map((c, i) => (
@@ -78,14 +78,13 @@ export function CompareThreeWay({ data }: { data: ThreeWay }) {
                   {c.name}
                 </h2>
                 <p className="mt-1.5 font-body-serif text-sm leading-relaxed text-text-secondary">
-                  {c.tagline}
+                  {brandify(c.tagline)}
                 </p>
               </div>
             ))}
           </div>
         </div>
       </section>
-
       {/* ─── Matrix ─── */}
       <section className="border-b border-border py-20">
         <div className="mx-auto max-w-5xl px-6">
@@ -110,7 +109,7 @@ export function CompareThreeWay({ data }: { data: ThreeWay }) {
                             : "font-medium text-text-tertiary"
                         }`}
                       >
-                        {c.name}
+                        {brandify(c.name)}
                       </th>
                     ))}
                   </tr>
@@ -119,7 +118,7 @@ export function CompareThreeWay({ data }: { data: ThreeWay }) {
                   {data.rows.map((row) => (
                     <tr key={row.feature} className="border-b border-border-light last:border-0">
                       <td className="sticky left-0 bg-bg-card px-5 py-3.5 font-body-serif text-text-primary">
-                        {row.feature}
+                        {brandify(row.feature)}
                       </td>
                       {row.cells.map((cell, i) => (
                         <td
@@ -149,7 +148,6 @@ export function CompareThreeWay({ data }: { data: ThreeWay }) {
           </div>
         </div>
       </section>
-
       {/* ─── Best for ─── */}
       <section className="border-b border-border bg-bg-warm py-20">
         <div className="mx-auto max-w-5xl px-6">
@@ -162,14 +160,13 @@ export function CompareThreeWay({ data }: { data: ThreeWay }) {
               <div key={b.contender} className="soft-card p-6">
                 <h3 className="font-display text-lg text-text-primary">{b.contender}</h3>
                 <p className="mt-2 font-body-serif text-sm leading-relaxed text-text-secondary">
-                  {b.who}
+                  {brandify(b.who)}
                 </p>
               </div>
             ))}
           </div>
         </div>
       </section>
-
       {/* ─── Verdict ─── */}
       <section className="border-b border-border py-20">
         <div className="mx-auto max-w-3xl px-6">
@@ -180,13 +177,12 @@ export function CompareThreeWay({ data }: { data: ThreeWay }) {
           <div className="mt-6 space-y-4">
             {data.verdictParas.map((p) => (
               <p key={p} className="font-body-serif text-lg leading-relaxed text-text-secondary">
-                {p}
+                {brandify(p)}
               </p>
             ))}
           </div>
         </div>
       </section>
-
       {/* ─── FAQ ─── */}
       <section className="border-b border-border bg-bg-warm py-20">
         <div className="mx-auto max-w-3xl px-6">
@@ -204,22 +200,20 @@ export function CompareThreeWay({ data }: { data: ThreeWay }) {
                     aria-hidden
                   />
                 </summary>
-                <p className="mt-3 font-body-serif leading-relaxed text-text-secondary">{f.a}</p>
+                <p className="mt-3 font-body-serif leading-relaxed text-text-secondary">{brandify(f.a)}</p>
               </details>
             ))}
           </div>
         </div>
       </section>
-
       {/* ─── CTA ─── */}
       <section className="border-b border-border py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="font-display text-3xl tracking-tight text-text-primary md:text-4xl">
             Own your knowledge. Keep your AI. Start free.
           </h2>
-          <p className="mt-4 font-body-serif leading-relaxed text-text-secondary">
-            Run Cabinet in minutes, or get a guided walkthrough.
-          </p>
+          <p className="mt-4 font-body-serif leading-relaxed text-text-secondary">Run <span className="font-brand italic">Cabinet</span>{" "}in minutes, or get a guided walkthrough.
+                                  </p>
           <div className="mt-8 flex flex-col items-center gap-3">
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Link
@@ -241,12 +235,11 @@ export function CompareThreeWay({ data }: { data: ThreeWay }) {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 font-code text-sm text-text-tertiary transition-colors hover:text-text-primary"
             >
-              <Star className="h-4 w-4" /> Star Cabinet on GitHub
-            </a>
+              <Star className="h-4 w-4" />Star <span className="font-brand italic">Cabinet</span>{" "}on GitHub
+                                        </a>
           </div>
         </div>
       </section>
-
       {/* ─── Related ─── */}
       <section className="py-16">
         <div className="mx-auto max-w-5xl px-6">

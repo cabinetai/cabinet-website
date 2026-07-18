@@ -27,7 +27,6 @@ export default function SolutionsIndexPage() {
   return (
     <main className="min-h-screen bg-bg">
       <SiteNavbar />
-
       <section className="relative overflow-hidden border-b border-border dot-grid">
         <div
           aria-hidden
@@ -40,8 +39,8 @@ export default function SolutionsIndexPage() {
         <div className="relative z-10 mx-auto max-w-5xl px-6 py-20 text-center md:py-28">
           <p className="section-label mb-3">Solutions</p>
           <h1 className="mx-auto max-w-3xl font-display text-4xl leading-[1.05] tracking-tight text-text-primary sm:text-5xl md:text-6xl">
-            Cabinet for every team
-          </h1>
+            Cabinet{" "}for every team
+                                  </h1>
           <p className="mx-auto mt-6 max-w-2xl font-body-serif text-lg leading-relaxed text-text-secondary md:text-xl">
             Each team gets its own AI crew working on top of one knowledge base you
             own: Markdown on disk, your models, your infrastructure.
@@ -58,7 +57,6 @@ export default function SolutionsIndexPage() {
           </div>
         </div>
       </section>
-
       <section className="py-16 md:py-20">
         <div className="mx-auto max-w-5xl px-6">
           <div className="grid gap-4 sm:grid-cols-2">
@@ -75,7 +73,7 @@ export default function SolutionsIndexPage() {
                     className="h-12 w-12 shrink-0 object-contain transition-transform duration-200 group-hover:scale-110 group-hover:-rotate-2"
                   />
                   <h2 className="font-display text-xl text-text-primary">
-                    Cabinet for {s.label}
+                    Cabinet{" "}for {s.label}
                   </h2>
                 </div>
                 <p className="mt-4 font-body-serif leading-relaxed text-text-secondary">

@@ -48,11 +48,11 @@ function Hero() {
               <em className="text-accent">sign the contract</em>.
             </h1>
             <p className="ent-lead mt-6 max-w-xl">
-              Cabinet is the only platform of its kind your team can read line
-              by line, run inside your own network, and power with the AI
-              keys you already pay for. Five layers (code, data, AI, hosting,
-              and identity), all under your control.
-            </p>
+              <span className="font-brand italic">Cabinet</span>{" "}is the only platform of its kind your team can read line
+                                          by line, run inside your own network, and power with the AI
+                                          keys you already pay for. Five layers (code, data, AI, hosting,
+                                          and identity), all under your control.
+                                        </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <PrimaryButton href="/enterprise/briefing">
                 Request architecture review
@@ -151,7 +151,7 @@ function Pillars() {
         title={
           <>
             Control isn't a checkbox.{" "}
-            <em className="text-accent">It's how Cabinet is built.</em>
+            <em className="text-accent">It's how <span className="font-brand italic">Cabinet</span>{" "}is built.</em>
           </>
         }
       />
@@ -207,14 +207,13 @@ function Architecture() {
         }
         kicker={
           <>
-            Cabinet runs entirely inside your perimeter. The orchestrator, the
-            files, and the inference calls all happen on your infrastructure
-            and your keys. Nothing (not telemetry, not prompts, not artefacts)
-            leaves the boundary you choose.
-          </>
+            <span className="font-brand italic">Cabinet</span>{" "}runs entirely inside your perimeter. The orchestrator, the
+                                    files, and the inference calls all happen on your infrastructure
+                                    and your keys. Nothing (not telemetry, not prompts, not artefacts)
+                                    leaves the boundary you choose.
+                                  </>
         }
       />
-
       <div className="ent-card p-8 md:p-10 overflow-hidden">
         <ArchitectureDiagram />
         <div className="mt-8 grid md:grid-cols-3 gap-5 text-sm">
@@ -249,7 +248,7 @@ function ArchitectureDiagram() {
       {/* Center: Cabinet host */}
       <div className="relative rounded-xl border-2 border-accent/30 bg-accent-bg-subtle p-5">
         <Pill>Inside your perimeter</Pill>
-        <h4 className="mt-3 font-display text-xl text-text-primary">Cabinet host</h4>
+        <h4 className="mt-3 font-display text-xl text-text-primary">Cabinet{" "}host</h4>
         <p className="text-[12px] font-code text-text-tertiary mt-1">
           self-hosted · VPC · air-gap · cloud
         </p>
@@ -266,7 +265,6 @@ function ArchitectureDiagram() {
         sub="Your BYOK · choose any"
         items={["Anthropic", "OpenAI", "AWS Bedrock", "Azure OpenAI"]}
       />
-
       {/* Decorative arrows */}
       <div className="hidden lg:flex absolute top-1/2 -translate-y-1/2 left-[31%] w-[8%] h-6 items-center justify-center text-text-tertiary">
         <ArrowGlyph />

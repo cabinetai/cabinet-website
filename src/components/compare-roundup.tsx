@@ -7,6 +7,7 @@ import {
   Trophy,
 } from "lucide-react";
 import { SiteNavbar } from "@/components/site-navbar";
+import { brandify } from "@/components/brand-word";
 import { WoodIcon } from "@/components/wood-icon";
 import { GITHUB_URL } from "@/lib/site-config";
 import { compareLabel, type Roundup } from "@/lib/compare";
@@ -15,7 +16,6 @@ export function CompareRoundup({ data }: { data: Roundup }) {
   return (
     <main className="min-h-screen bg-bg">
       <SiteNavbar />
-
       {/* ─── Hero ─── */}
       <section className="relative overflow-hidden border-b border-border dot-grid">
         <div
@@ -38,11 +38,10 @@ export function CompareRoundup({ data }: { data: Roundup }) {
             {data.h1}
           </h1>
           <p className="mt-5 font-body-serif text-lg leading-relaxed text-text-secondary">
-            {data.intro}
+            {brandify(data.intro)}
           </p>
         </div>
       </section>
-
       {/* ─── Why leave ─── */}
       <section className="border-b border-border py-16">
         <div className="mx-auto max-w-3xl px-6">
@@ -53,13 +52,12 @@ export function CompareRoundup({ data }: { data: Roundup }) {
           <ul className="mt-8 grid gap-3 sm:grid-cols-2">
             {data.whyLeave.points.map((p) => (
               <li key={p} className="soft-card p-5">
-                <p className="font-body-serif leading-relaxed text-text-secondary">{p}</p>
+                <p className="font-body-serif leading-relaxed text-text-secondary">{brandify(p)}</p>
               </li>
             ))}
           </ul>
         </div>
       </section>
-
       {/* ─── Top pick: Cabinet ─── */}
       <section className="border-b border-border bg-bg-warm py-20">
         <div className="mx-auto max-w-3xl px-6">
@@ -70,13 +68,13 @@ export function CompareRoundup({ data }: { data: Roundup }) {
             {data.topPick.heading}
           </h2>
           <p className="mt-4 font-body-serif text-lg leading-relaxed text-text-secondary">
-            {data.topPick.body}
+            {brandify(data.topPick.body)}
           </p>
           <ul className="mt-6 space-y-3">
             {data.topPick.reasons.map((r) => (
               <li key={r} className="flex gap-3">
                 <Check className="mt-0.5 h-4 w-4 shrink-0 text-green" aria-hidden />
-                <span className="font-body-serif leading-relaxed text-text-secondary">{r}</span>
+                <span className="font-body-serif leading-relaxed text-text-secondary">{brandify(r)}</span>
               </li>
             ))}
           </ul>
@@ -90,13 +88,11 @@ export function CompareRoundup({ data }: { data: Roundup }) {
             <Link
               href={`/compare/cabinet-vs-${data.competitorSlug}`}
               className="inline-flex items-center gap-2 rounded-full card-skin px-7 py-3.5 text-base font-semibold text-text-primary shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
-            >
-              See Cabinet vs {data.competitor}
+            >See <span className="font-brand italic">Cabinet</span>{" "}vs {data.competitor}
             </Link>
           </div>
         </div>
       </section>
-
       {/* ─── The shortlist ─── */}
       <section className="border-b border-border py-20">
         <div className="mx-auto max-w-3xl px-6">
@@ -119,15 +115,15 @@ export function CompareRoundup({ data }: { data: Roundup }) {
                     </Link>
                   )}
                 </div>
-                <p className="mt-2 font-body-serif leading-relaxed text-text-secondary">{a.line}</p>
+                <p className="mt-2 font-body-serif leading-relaxed text-text-secondary">{brandify(a.line)}</p>
                 <div className="mt-4 grid gap-3 sm:grid-cols-2">
                   <div className="rounded-lg bg-bg-warm px-4 py-3">
                     <p className="font-code text-[11px] uppercase tracking-wider text-green-warm">Best for</p>
-                    <p className="mt-1 font-body-serif text-sm leading-relaxed text-text-secondary">{a.bestFor}</p>
+                    <p className="mt-1 font-body-serif text-sm leading-relaxed text-text-secondary">{brandify(a.bestFor)}</p>
                   </div>
                   <div className="rounded-lg bg-bg-warm px-4 py-3">
                     <p className="font-code text-[11px] uppercase tracking-wider text-accent-warm">The catch</p>
-                    <p className="mt-1 font-body-serif text-sm leading-relaxed text-text-secondary">{a.theCatch}</p>
+                    <p className="mt-1 font-body-serif text-sm leading-relaxed text-text-secondary">{brandify(a.theCatch)}</p>
                   </div>
                 </div>
               </div>
@@ -135,7 +131,6 @@ export function CompareRoundup({ data }: { data: Roundup }) {
           </div>
         </div>
       </section>
-
       {/* ─── Decision framework ─── */}
       <section className="border-b border-border bg-bg-warm py-20">
         <div className="mx-auto max-w-3xl px-6">
@@ -147,7 +142,7 @@ export function CompareRoundup({ data }: { data: Roundup }) {
             {data.framework.map((f) => (
               <div key={f.need} className="flex flex-col gap-1 p-5 sm:flex-row sm:items-center sm:gap-6">
                 <p className="font-body-serif leading-relaxed text-text-secondary sm:flex-1">
-                  {f.need}
+                  {brandify(f.need)}
                 </p>
                 <span className="shrink-0 font-display text-text-primary">{f.pick}</span>
               </div>
@@ -155,7 +150,6 @@ export function CompareRoundup({ data }: { data: Roundup }) {
           </div>
         </div>
       </section>
-
       {/* ─── FAQ ─── */}
       <section className="border-b border-border py-20">
         <div className="mx-auto max-w-3xl px-6">
@@ -173,22 +167,20 @@ export function CompareRoundup({ data }: { data: Roundup }) {
                     aria-hidden
                   />
                 </summary>
-                <p className="mt-3 font-body-serif leading-relaxed text-text-secondary">{f.a}</p>
+                <p className="mt-3 font-body-serif leading-relaxed text-text-secondary">{brandify(f.a)}</p>
               </details>
             ))}
           </div>
         </div>
       </section>
-
       {/* ─── Final CTA ─── */}
       <section className="border-b border-border py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="font-display text-3xl tracking-tight text-text-primary md:text-4xl">
             The {data.competitor} alternative you actually own
           </h2>
-          <p className="mt-4 font-body-serif leading-relaxed text-text-secondary">
-            Run Cabinet in minutes, or get a guided walkthrough. Your files, your models, your infrastructure.
-          </p>
+          <p className="mt-4 font-body-serif leading-relaxed text-text-secondary">Run <span className="font-brand italic">Cabinet</span>{" "}in minutes, or get a guided walkthrough. Your files, your models, your infrastructure.
+                                  </p>
           <div className="mt-8 flex flex-col items-center gap-3">
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Link
@@ -210,12 +202,11 @@ export function CompareRoundup({ data }: { data: Roundup }) {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 font-code text-sm text-text-tertiary transition-colors hover:text-text-primary"
             >
-              <Star className="h-4 w-4" /> Star Cabinet on GitHub
-            </a>
+              <Star className="h-4 w-4" />Star <span className="font-brand italic">Cabinet</span>{" "}on GitHub
+                                        </a>
           </div>
         </div>
       </section>
-
       {/* ─── Related ─── */}
       <section className="py-16">
         <div className="mx-auto max-w-5xl px-6">

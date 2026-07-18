@@ -17,7 +17,6 @@ export default function PrivacyPage() {
   return (
     <main className="min-h-screen bg-bg">
       <SiteNavbar />
-
       <section className="relative py-16 md:py-24 dot-grid overflow-hidden">
         <div className="max-w-3xl mx-auto px-6">
           <header className="mb-12 text-center">
@@ -37,17 +36,16 @@ export default function PrivacyPage() {
               Short version
             </p>
             <p className="text-text-secondary font-body-serif leading-relaxed">
-              Cabinet is an{" "}
-              <strong className="text-text-primary">open-source tool that runs locally</strong> on
-              your machine. The Software does{" "}
-              <strong className="text-text-primary">not</strong> transmit your files, knowledge
-              base, prompts, or source code to us. This website{" "}
+              <span className="font-brand italic">Cabinet</span>{" "}is an{" "}
+              <strong className="text-text-primary">open-source tool that runs locally</strong>on
+                                          your machine. The Software does{" "}
+              <strong className="text-text-primary">not</strong>transmit your files, knowledge
+                                          base, prompts, or source code to us. This website{" "}
               <a href="https://runcabinet.com" className="text-accent hover:underline">
                 runcabinet.com
-              </a>{" "}
-              collects limited information: primarily analytics and, if you choose, an email
-              address for the waitlist.
-            </p>
+              </a>{" "}collects limited information: primarily analytics and, if you choose, an email
+                                          address for the waitlist.
+                                        </p>
           </div>
 
           <article className="space-y-10 text-text-secondary font-body-serif leading-relaxed">
@@ -55,24 +53,21 @@ export default function PrivacyPage() {
               <h2 className="text-2xl font-display text-text-primary mb-4">
                 1. Who We Are; Data Controller
               </h2>
-              <p className="mb-4">
-                This Privacy Policy describes how{" "}
+              <p className="mb-4">This Privacy Policy describes how{" "}
                 <strong className="text-text-primary">HOLY BIBLE APPS LTD</strong>, a company
-                organized under the laws of the State of Israel and registered in Tirat Carmel,
-                Israel, that owns and operates the Cabinet project (&ldquo;Cabinet,&rdquo;
-                &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;), collects, uses, and
-                shares information in connection with the website at{" "}
+                                                organized under the laws of the State of Israel and registered in Tirat Carmel,
+                                                Israel, that owns and operates the <span className="font-brand italic">Cabinet</span>{" "}project (“<span className="font-brand italic">Cabinet</span>,”
+                                                “we,” “us,” or “our”), collects, uses, and
+                                                shares information in connection with the website at{" "}
                 <a href="https://runcabinet.com" className="text-accent hover:underline">
                   runcabinet.com
-                </a>{" "}
-                (the &ldquo;Site&rdquo;) and the Cabinet software (the &ldquo;Software&rdquo;).
-                HOLY BIBLE APPS LTD is the data controller for personal information processed
-                through the Site. All privacy inquiries and requests should be directed to{" "}
+                </a>{" "}(the “Site”) and the <span className="font-brand italic">Cabinet</span>{" "}software (the “Software”).
+                                                HOLY BIBLE APPS LTD is the data controller for personal information processed
+                                                through the Site. All privacy inquiries and requests should be directed to{" "}
                 <a href="mailto:hi@runcabinet.com" className="text-accent hover:underline">
                   hi@runcabinet.com
-                </a>
-                .
-              </p>
+                </a>.
+                                              </p>
               <p>
                 This Policy does not cover third-party websites, services, or AI providers you
                 connect to. Please also review our{" "}
@@ -87,14 +82,11 @@ export default function PrivacyPage() {
               <h2 className="text-2xl font-display text-text-primary mb-4">
                 2. The Software Runs Locally
               </h2>
-              <p className="mb-4">
-                The Cabinet Software is designed to operate on your own computer or infrastructure.
-                Your knowledge base files, prompts, source code, credentials, environment
-                variables, and other locally stored content remain on the systems you control.{" "}
-                <strong className="text-text-primary">
-                  We do not receive, store, or have access to the contents of your local Cabinet
-                  knowledge base, and we do not operate servers that collect that data.
-                </strong>
+              <p className="mb-4">The <span className="font-brand italic">Cabinet</span>{" "}Software is designed to operate on your own computer or infrastructure.
+                                                Your knowledge base files, prompts, source code, credentials, environment
+                                                variables, and other locally stored content remain on the systems you control.{" "}
+                <strong className="text-text-primary">We do not receive, store, or have access to the contents of your local <span className="font-brand italic">Cabinet</span>{" "}knowledge base, and we do not operate servers that collect that data.
+                                                    </strong>
               </p>
               <p>
                 When you configure the Software to communicate with third-party services, such

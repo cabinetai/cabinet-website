@@ -10,6 +10,7 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import { SiteNavbar } from "@/components/site-navbar";
+import { brandify } from "@/components/brand-word";
 import { WoodIcon } from "@/components/wood-icon";
 import { GITHUB_URL } from "@/lib/site-config";
 import { SOLUTIONS, SOLUTION_STORIES, type Solution } from "@/lib/solutions";
@@ -47,7 +48,6 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
   return (
     <main className="min-h-screen bg-bg">
       <SiteNavbar />
-
       {/* ─── Hero ─── */}
       <section className="relative overflow-hidden border-b border-border dot-grid">
         <div
@@ -63,13 +63,13 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
             <div>
               <div className="inline-flex items-center gap-2.5 rounded-full card-skin py-1.5 pl-2 pr-4 text-sm font-medium text-accent shadow-sm">
                 <img src={`/brand/icons/${solution.slug}.png`} alt="" className="h-6 w-6 object-contain" />
-                {solution.eyebrow}
+                {brandify(solution.eyebrow)}
               </div>
               <h1 className="mt-6 font-display text-4xl leading-[1.05] tracking-tight text-text-primary sm:text-5xl">
                 {solution.headline}
               </h1>
               <p className="mt-6 font-body-serif text-lg leading-relaxed text-text-secondary md:text-xl">
-                {solution.subhead}
+                {brandify(solution.subhead)}
               </p>
               <div className="mt-9 flex flex-wrap items-center gap-3">
                 <Link
@@ -107,7 +107,6 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
           </div>
         </div>
       </section>
-
       {/* ─── Example cabinets (cabinets.sh registry) ─── */}
       {solution.exampleCabinets.length > 0 && (
         <section className="border-b border-border py-20">
@@ -151,7 +150,7 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
                         {c.name}
                       </h3>
                       <p className="flex-1 text-sm font-body-serif leading-relaxed text-text-secondary">
-                        {c.description}
+                        {brandify(c.description)}
                       </p>
                       <span className="mt-3 inline-flex items-center gap-1.5 font-code text-sm text-accent transition-colors group-hover:text-accent-warm">
                         View on cabinets.sh <ArrowRight className="h-4 w-4" />
@@ -174,7 +173,6 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
           </div>
         </section>
       )}
-
       {/* ─── The problem ─── */}
       <section className="border-b border-border bg-bg-warm py-20">
         <div className="mx-auto max-w-5xl px-6">
@@ -185,13 +183,12 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
           <div className="mt-10 grid gap-4 md:grid-cols-3">
             {solution.problem.points.map((p) => (
               <div key={p} className="soft-card p-6">
-                <p className="font-body-serif leading-relaxed text-text-secondary">{p}</p>
+                <p className="font-body-serif leading-relaxed text-text-secondary">{brandify(p)}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
-
       {/* ─── The AI team ─── */}
       <section className="border-b border-border py-20">
         <div className="mx-auto max-w-5xl px-6">
@@ -220,7 +217,7 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
                     </span>
                   </div>
                   <p className="mt-1.5 font-body-serif text-sm leading-relaxed text-text-secondary">
-                    {a.blurb}
+                    {brandify(a.blurb)}
                   </p>
                 </div>
               </div>
@@ -228,7 +225,6 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
           </div>
         </div>
       </section>
-
       {/* ─── How it runs (routines) ─── */}
       <section className="border-b border-border bg-bg-warm py-20">
         <div className="mx-auto max-w-5xl px-6">
@@ -247,13 +243,12 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
                   <WoodIcon icon={Clock} className="h-6 w-6" />
                   <span className="font-code text-sm text-accent-warm">{r.when}</span>
                 </div>
-                <p className="font-body-serif leading-relaxed text-text-secondary">{r.what}</p>
+                <p className="font-body-serif leading-relaxed text-text-secondary">{brandify(r.what)}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
-
       {/* ─── Outcomes ─── */}
       <section className="border-b border-border py-20">
         <div className="mx-auto max-w-5xl px-6">
@@ -265,7 +260,7 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
                   {o.stat}
                 </div>
                 <p className="mt-2 font-body-serif text-sm leading-relaxed text-text-secondary">
-                  {o.label}
+                  {brandify(o.label)}
                 </p>
               </div>
             ))}
@@ -275,7 +270,6 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
           </p>
         </div>
       </section>
-
       {/* ─── Why Cabinet (the wedge) ─── */}
       <section className="border-b border-border bg-bg-warm py-20">
         <div className="mx-auto max-w-5xl px-6">
@@ -289,14 +283,13 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
                 <WoodIcon icon={w.icon} className="h-12 w-12" />
                 <h3 className="mt-4 font-display text-lg text-text-primary">{w.title}</h3>
                 <p className="mt-2 font-body-serif text-sm leading-relaxed text-text-secondary">
-                  {w.body}
+                  {brandify(w.body)}
                 </p>
               </div>
             ))}
           </div>
         </div>
       </section>
-
       {/* ─── Stack ─── */}
       <section className="border-b border-border py-16">
         <div className="mx-auto max-w-5xl px-6 text-center">
@@ -315,7 +308,6 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
           </div>
         </div>
       </section>
-
       {/* ─── Story (illustrative) ─── */}
       <section className="border-b border-border bg-bg-warm py-20">
         <div className="mx-auto max-w-4xl px-6">
@@ -329,19 +321,18 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
             <div className="text-center md:text-left">
               <div className="font-display text-5xl tracking-tight text-accent">{story.metric}</div>
               <p className="mt-2 font-body-serif text-sm leading-relaxed text-text-secondary">
-                {story.metricLabel}
+                {brandify(story.metricLabel)}
               </p>
             </div>
             <div>
               <blockquote className="font-display text-xl leading-snug tracking-tight text-text-primary md:text-2xl">
                 &ldquo;{story.quote}&rdquo;
               </blockquote>
-              <p className="mt-4 font-code text-sm text-text-tertiary">{story.attribution}</p>
+              <p className="mt-4 font-code text-sm text-text-tertiary">{brandify(story.attribution)}</p>
             </div>
           </div>
         </div>
       </section>
-
       {/* ─── CTA ─── */}
       <section className="border-b border-border py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
@@ -376,11 +367,10 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
           </div>
         </div>
       </section>
-
       {/* ─── Other solutions ─── */}
       <section className="py-16">
         <div className="mx-auto max-w-5xl px-6">
-          <p className="section-label mb-6">Cabinet for every team</p>
+          <p className="section-label mb-6">Cabinet{" "}for every team</p>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {others.map((o) => (
               <Link
@@ -394,8 +384,8 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
                   className="h-11 w-11 shrink-0 object-contain transition-transform duration-200 group-hover:scale-110 group-hover:-rotate-2"
                 />
                 <div>
-                  <div className="font-display text-text-primary">Cabinet for {o.label}</div>
-                  <div className="text-xs text-text-tertiary">{o.menuBlurb}</div>
+                  <div className="font-display text-text-primary">Cabinet{" "}for {o.label}</div>
+                  <div className="text-xs text-text-tertiary">{brandify(o.menuBlurb)}</div>
                 </div>
                 <ArrowRight className="ml-auto h-4 w-4 shrink-0 -translate-x-1 text-text-muted opacity-0 transition-all group-hover:translate-x-0 group-hover:text-accent group-hover:opacity-100" />
               </Link>

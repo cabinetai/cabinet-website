@@ -971,8 +971,7 @@ function UseCasesCarousel() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
           <p className="section-label mb-3">Real Use Cases</p>
-          <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-3">
-            How people actually use Cabinet
+          <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-3">How people actually use Cabinet
           </h2>
           <p className="text-text-secondary font-body-serif max-w-xl mx-auto">
             Knowledge base + agents + files. One OS for wildly different workflows.
@@ -1110,12 +1109,10 @@ function InstallTerminalSection() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <p className="section-label mb-3">Install Flow</p>
-          <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
-            See Cabinet start up in the terminal
-          </h2>
-          <p className="text-text-secondary font-body-serif leading-relaxed">
-            The install walkthrough is back. One command scaffolds the workspace, sets up your AI team, and gets Cabinet running locally.
-          </p>
+          <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">See Cabinet{" "}start up in the terminal
+                                  </h2>
+          <p className="text-text-secondary font-body-serif leading-relaxed">The install walkthrough is back. One command scaffolds the workspace, sets up your AI team, and gets <span className="font-brand italic">Cabinet</span>{" "}running locally.
+                                  </p>
         </div>
 
         <div className="max-w-3xl mx-auto">
@@ -1124,8 +1121,7 @@ function InstallTerminalSection() {
             <a
               href="#get-started"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium btn-wood"
-            >
-              Install Cabinet
+            >Install <span className="font-brand italic">Cabinet</span>
               <ArrowRight className="w-4 h-4" />
             </a>
           </div>
@@ -1143,10 +1139,8 @@ export default function Home() {
     <div className="relative min-h-screen bg-bg">
       <SiteNavbar fixed />
       <WaitlistPopup />
-
       {/* ─── Integration scrollytelling scene ─── */}
       <IntegrationScene />
-
       {/* ─── Hero ─── */}
       <section className="relative flex items-center justify-center dot-grid overflow-hidden">
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center pt-24 pb-12">
@@ -1178,8 +1172,7 @@ export default function Home() {
                 Download the installer
               </a>
             </p>
-            <p className="mt-4 text-sm font-body-serif text-text-tertiary">
-              Evaluating Cabinet for your team?{" "}
+            <p className="mt-4 text-sm font-body-serif text-text-tertiary">Evaluating <span className="font-brand italic">Cabinet</span>{" "}for your team?{" "}
               <a
                 href="/demo"
                 className="text-accent underline underline-offset-2 hover:text-accent-warm"
@@ -1291,7 +1284,6 @@ export default function Home() {
           </p>
         </div>
       </section>
-
       {/* ─── Why Cabinet (differentiator triad) ─── */}
       <section className="py-24 border-t border-border bg-bg">
         <div className="max-w-6xl mx-auto px-6">
@@ -1300,10 +1292,9 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
               The only AI workspace you actually own
             </h2>
-            <p className="text-text-secondary max-w-2xl mx-auto font-body-serif leading-relaxed">
-              Search tools find. Chatbots answer. Cabinet does the work: on your
-              files, your models, your infrastructure.
-            </p>
+            <p className="text-text-secondary max-w-2xl mx-auto font-body-serif leading-relaxed">Search tools find. Chatbots answer. <span className="font-brand italic">Cabinet</span>{" "}does the work: on your
+                                          files, your models, your infrastructure.
+                                        </p>
           </div>
           <div className="grid gap-5 md:grid-cols-3 max-w-6xl mx-auto">
             {/* Files */}
@@ -1351,7 +1342,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* ─── Testimonials ─── */}
       <section className="relative overflow-hidden border-t border-border bg-bg-warm py-24">
         {/* soft accent wash */}
@@ -1366,8 +1356,7 @@ export default function Home() {
         <div className="relative z-10 max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             <p className="section-label mb-3">Testimonials</p>
-            <h2 className="text-3xl md:text-4xl font-display text-text-primary">
-              How teams achieve 10x work with Cabinet
+            <h2 className="text-3xl md:text-4xl font-display text-text-primary">How teams achieve 10x work with Cabinet
             </h2>
           </div>
 
@@ -1462,7 +1451,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* ─── Customer stories (illustrative) ─── */}
       <section className="py-24 border-t border-border bg-bg">
         <div className="max-w-6xl mx-auto px-6">
@@ -1472,8 +1460,7 @@ export default function Home() {
               Illustrative
             </span>
           </div>
-          <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4 text-center">
-            What teams ship with Cabinet
+          <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4 text-center">What teams ship with Cabinet
           </h2>
           <p className="text-text-secondary max-w-2xl mx-auto font-body-serif leading-relaxed mb-12 text-center">
             Anonymized scenarios that mirror how teams put an AI crew to work. Real,
@@ -1496,7 +1483,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* ─── Bring your own AI — provider logos ─── */}
       <section id="byoai" className="py-24 border-t border-border bg-bg-card">
         <div className="max-w-5xl mx-auto px-6 text-center">
@@ -1505,10 +1491,10 @@ export default function Home() {
             Works with the AI you already pay for
           </h2>
           <p className="text-text-secondary max-w-2xl mx-auto font-body-serif leading-relaxed mb-12">
-            Cabinet runs on your existing model accounts and subscriptions. There&apos;s
-            no bundled inference marked up on top, and no new AI vendor to push through
-            procurement. Point it at what your team already uses.
-          </p>
+            <span className="font-brand italic">Cabinet</span>{" "}runs on your existing model accounts and subscriptions. There's
+                                    no bundled inference marked up on top, and no new AI vendor to push through
+                                    procurement. Point it at what your team already uses.
+                                  </p>
 
           <div className="grid grid-cols-8 gap-2 sm:gap-3 max-w-4xl mx-auto">
             {PROVIDERS.map((p) => (
@@ -1534,7 +1520,6 @@ export default function Home() {
           </p>
         </div>
       </section>
-
       {/* ─── Integrations — the tools that run your company ─── */}
       <section id="integrations" className="overflow-hidden border-t border-border bg-bg-warm py-24">
         <div className="mx-auto max-w-5xl px-6 text-center">
@@ -1542,11 +1527,10 @@ export default function Home() {
           <h2 className="mb-4 font-display text-3xl text-text-primary md:text-4xl">
             Connect to everything that runs your company
           </h2>
-          <p className="mx-auto max-w-2xl font-body-serif leading-relaxed text-text-secondary">
-            Your company runs on dozens of tools. Cabinet brings the work scattered
-            across them into one place you own, where your team and its agents can find
-            it, act on it, and keep it moving.
-          </p>
+          <p className="mx-auto max-w-2xl font-body-serif leading-relaxed text-text-secondary">Your company runs on dozens of tools. <span className="font-brand italic">Cabinet</span>{" "}brings the work scattered
+                                    across them into one place you own, where your team and its agents can find
+                                    it, act on it, and keep it moving.
+                                  </p>
         </div>
 
         <div className="mt-14 flex flex-col gap-4">
@@ -1584,7 +1568,6 @@ export default function Home() {
           …and the rest of the stack your team already uses.
         </p>
       </section>
-
       {/* ─── Social proof bar ─── */}
       <section className="border-y border-border py-8 bg-bg-card">
         <div className="max-w-6xl mx-auto px-6 flex flex-wrap items-center justify-center gap-8 md:gap-16 text-text-tertiary text-sm font-code">
@@ -1595,10 +1578,8 @@ export default function Home() {
           <div className="flex items-center gap-2"><WoodIcon icon={Code2} className="w-6 h-6" /><span>Open source</span></div>
         </div>
       </section>
-
       {/* ─── Use Cases Carousel ─── */}
       <UseCasesCarousel />
-
       {/* ─── Cabinet Cloud Waitlist ─── */}
       <section className="relative overflow-hidden py-20 md:py-24 bg-bg">
         <WaitlistCloudBackdrop />
@@ -1618,7 +1599,6 @@ export default function Home() {
           </Suspense>
         </div>
       </section>
-
       {/* ─── Principles ─── */}
       <section className="py-24 border-t border-border bg-bg-warm">
         <div className="max-w-6xl mx-auto px-6">
@@ -1628,10 +1608,8 @@ export default function Home() {
           </p>
         </div>
       </section>
-
       {/* ─── Install Walkthrough ─── */}
       <InstallTerminalSection />
-
       {/* ─── The Problem ─── */}
       <section className="py-24 bg-bg">
         <div className="max-w-6xl mx-auto px-6">
@@ -1640,13 +1618,12 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-6">
               Your AI agents have no memory
             </h2>
-            <p className="text-text-secondary text-lg leading-relaxed font-body-serif">
-              Every time you start a new Claude session, it forgets everything.
-              Your project context, your decisions, your research. Gone. You
-              keep re-explaining the same things. Cabinet gives your AI a
-              persistent brain: a knowledge base that both you and your agents
-              read and write to, 24/7.
-            </p>
+            <p className="text-text-secondary text-lg leading-relaxed font-body-serif">Every time you start a new Claude session, it forgets everything.
+                                          Your project context, your decisions, your research. Gone. You
+                                          keep re-explaining the same things. <span className="font-brand italic">Cabinet</span>{" "}gives your AI a
+                                          persistent brain: a knowledge base that both you and your agents
+                                          read and write to, 24/7.
+                                        </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
@@ -1678,7 +1655,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* ─── Embedded Apps Highlight ─── */}
       <section className="py-24 border-t border-border bg-bg">
         <div className="max-w-6xl mx-auto px-6">
@@ -1688,12 +1664,10 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-6">
                 Ship HTML apps inside<br />your knowledge base
               </h2>
-              <p className="text-text-secondary mb-6 leading-relaxed font-body-serif">
-                This is the biggest difference between Cabinet and tools like
-                Obsidian or Notion. Drop an{" "}
-                <code className="text-accent bg-accent-bg px-1.5 py-0.5 rounded text-sm font-code">index.html</code>{" "}
-                into any folder and it renders as a live, interactive app.
-              </p>
+              <p className="text-text-secondary mb-6 leading-relaxed font-body-serif">This is the biggest difference between <span className="font-brand italic">Cabinet</span>{" "}and tools like
+                                                Obsidian or Notion. Drop an{" "}
+                <code className="text-accent bg-accent-bg px-1.5 py-0.5 rounded text-sm font-code">index.html</code>{" "}into any folder and it renders as a live, interactive app.
+                                              </p>
               <ul className="space-y-3 text-sm text-text-secondary">
                 <li className="flex items-start gap-3">
                   <Check className="w-4 h-4 text-accent mt-0.5 shrink-0" />
@@ -1741,7 +1715,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* ─── Features Grid ─── */}
       <section id="features" className="py-24 border-t border-border bg-bg-warm">
         <div className="max-w-6xl mx-auto px-6">
@@ -1775,7 +1748,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* ─── AI Agents ─── */}
       <section id="agents" className="py-24 border-t border-border bg-bg-warm">
         <div className="max-w-6xl mx-auto px-6">
@@ -1793,7 +1765,6 @@ export default function Home() {
           <AgentShowcase />
         </div>
       </section>
-
       {/* ─── How It Works ─── */}
       <section className="py-24 border-t border-border bg-bg">
         <div className="max-w-4xl mx-auto px-6">
@@ -1833,15 +1804,14 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* ─── Cabinet for every team ─── */}
       <section id="solutions" className="py-24 border-t border-border bg-bg-warm">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             <p className="section-label mb-3">Solutions</p>
             <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
-              Cabinet for every team
-            </h2>
+              Cabinet{" "}for every team
+                                        </h2>
             <p className="text-text-secondary max-w-2xl mx-auto font-body-serif leading-relaxed">
               Same knowledge base: a different AI crew for each function, working on
               your data, on your infrastructure, around the clock.
@@ -1861,7 +1831,7 @@ export default function Home() {
                   className="mb-4 h-20 w-20 object-contain transition-transform duration-200 group-hover:scale-105 group-hover:-rotate-2"
                 />
                 <h3 className="mb-2 font-display text-lg text-text-primary">
-                  Cabinet for {s.label}
+                  Cabinet{" "}for {s.label}
                 </h3>
                 <p className="text-sm text-text-secondary font-body-serif leading-relaxed flex-1">
                   {s.menuBlurb}
@@ -1874,12 +1844,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* ─── Cabinet templates (cabinets.sh registry) ─── */}
       <section id="cabinets" className="py-24 border-t border-border bg-bg">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
-            <p className="section-label mb-3">Cabinet templates</p>
+            <p className="section-label mb-3">Cabinet{" "}templates</p>
             <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
               Plug-and-play AI teams for AI agents
             </h2>
@@ -1945,7 +1914,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* ─── The business case (outcomes band) ─── */}
       <section className="py-20 border-t border-border bg-bg">
         <div className="max-w-5xl mx-auto px-6">
@@ -1981,7 +1949,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* ─── Built for organizations ─── */}
       <section className="py-24 border-t border-border bg-bg">
         <div className="max-w-6xl mx-auto px-6">
@@ -2036,7 +2003,6 @@ export default function Home() {
           </p>
         </div>
       </section>
-
       {/* ─── CTA ─── */}
       <section id="get-started" className="py-24 border-t border-border bg-bg-warm">
         <div className="max-w-3xl mx-auto px-6 text-center">
@@ -2045,8 +2011,8 @@ export default function Home() {
             Ready to build your AI team?
           </h2>
           <p className="text-text-secondary mb-8 max-w-xl mx-auto leading-relaxed font-body-serif">
-            Cabinet is a free, open-source project you can run yourself. No subscription, no trial clock, and no vendor lock-in. Start in 2 minutes.
-          </p>
+            <span className="font-brand italic">Cabinet</span>{" "}is a free, open-source project you can run yourself. No subscription, no trial clock, and no vendor lock-in. Start in 2 minutes.
+                                  </p>
           <div className="max-w-xl mx-auto mb-10">
             <div className="flex flex-col sm:flex-row items-stretch gap-3">
               <a
@@ -2100,7 +2066,6 @@ export default function Home() {
           </p>
         </div>
       </section>
-
       {/* ─── Footer ─── */}
       <footer className="border-t border-border py-16 bg-bg">
         <div className="max-w-6xl mx-auto px-6">
@@ -2116,8 +2081,8 @@ export default function Home() {
                 <li>
                   <a href="/cloud?source=footer" className="inline-flex items-center gap-1.5 text-text-secondary hover:text-text-primary transition-colors">
                     <Cloud className="w-3.5 h-3.5 text-accent" />
-                    Cabinet Cloud
-                    <span className="ml-1 rounded-full bg-accent-bg-subtle px-1.5 py-0.5 text-[10px] font-code uppercase tracking-wider text-accent">Soon</span>
+                    <span className="font-brand italic">Cabinet</span>{" "}Cloud
+                                                            <span className="ml-1 rounded-full bg-accent-bg-subtle px-1.5 py-0.5 text-[10px] font-code uppercase tracking-wider text-accent">Soon</span>
                   </a>
                 </li>
                 <li><a href="/pricing" className="text-text-secondary hover:text-text-primary transition-colors">Pricing</a></li>
@@ -2191,7 +2156,7 @@ export default function Home() {
               <span className="font-brand italic text-sm text-text-primary">Cabinet</span>
               <span className="text-xs text-text-muted">&middot;</span>
               <span className="text-xs text-text-tertiary">
-                &copy; {new Date().getFullYear()} HOLY BIBLE APPS LTD &middot; Open source &middot; MIT License
+                &copy; {new Date().getFullYear()} Cabinet, Inc. &middot; Open source &middot; MIT License
               </span>
             </div>
             <div className="flex items-center gap-4 text-xs text-text-tertiary">
@@ -2200,12 +2165,11 @@ export default function Home() {
             </div>
           </div>
           <p className="mt-6 text-center text-[0.7rem] text-text-tertiary font-body-serif italic leading-relaxed max-w-3xl mx-auto">
-            Cabinet is provided &ldquo;as is,&rdquo; without warranty of any kind. The Software may
-            run autonomous AI agents with file-system, shell, and network access on systems you
-            control; you install and run Cabinet at your own risk. See the{" "}
-            <a href="/terms" className="underline underline-offset-2 hover:text-text-primary">Terms of Service</a>{" "}
-            for the full disclaimer and limitation of liability.
-          </p>
+            <span className="font-brand italic">Cabinet</span>{" "}is provided “as is,” without warranty of any kind. The Software may
+                                    run autonomous AI agents with file-system, shell, and network access on systems you
+                                    control; you install and run <span className="font-brand italic">Cabinet</span>{" "}at your own risk. See the{" "}
+            <a href="/terms" className="underline underline-offset-2 hover:text-text-primary">Terms of Service</a>{" "}for the full disclaimer and limitation of liability.
+                                  </p>
         </div>
       </footer>
     </div>

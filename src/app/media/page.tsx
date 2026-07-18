@@ -160,22 +160,18 @@ export default function MediaPage() {
           />
         );
       })}
-
       <SiteNavbar />
-
       <section className="relative py-20 md:py-28 dot-grid overflow-hidden">
         <div className="max-w-4xl mx-auto px-6">
 
           {/* Hero text */}
           <div className="max-w-3xl mx-auto mb-12 text-center">
-            <h1 className="text-4xl md:text-5xl font-display text-text-primary tracking-tight leading-[1.05] mb-5">
-              See Cabinet
+            <h1 className="text-4xl md:text-5xl font-display text-text-primary tracking-tight leading-[1.05] mb-5">See Cabinet
               <br />
               <span className="italic gradient-text">in action</span>
             </h1>
-            <p className="text-lg text-text-secondary font-body-serif leading-relaxed">
-              Real demos, community builds, and coverage of Cabinet from around the web.
-            </p>
+            <p className="text-lg text-text-secondary font-body-serif leading-relaxed">Real demos, community builds, and coverage of <span className="font-brand italic">Cabinet</span>{" "}from around the web.
+                                        </p>
           </div>
 
           {/* Media list */}
@@ -328,17 +324,16 @@ export default function MediaPage() {
             </div>
             <div>
               <h2 className="text-2xl font-display text-text-primary mb-4">
-                Cabinet is the solution
-              </h2>
+                Cabinet{" "}is the solution
+                                              </h2>
               <p className="text-text-secondary font-body-serif leading-relaxed mb-4">
-                Cabinet gives your AI agents a persistent, structured memory of everything that
-                matters: your docs, decisions, architecture, and tribal knowledge, all indexed and
-                ready to inject into any LLM context window.
-              </p>
-              <p className="text-text-secondary font-body-serif leading-relaxed">
-                Stop re-explaining your stack on every prompt. Let Cabinet handle the context so
-                you can focus on building.
-              </p>
+                <span className="font-brand italic">Cabinet</span>{" "}gives your AI agents a persistent, structured memory of everything that
+                                                matters: your docs, decisions, architecture, and tribal knowledge, all indexed and
+                                                ready to inject into any LLM context window.
+                                              </p>
+              <p className="text-text-secondary font-body-serif leading-relaxed">Stop re-explaining your stack on every prompt. Let <span className="font-brand italic">Cabinet</span>{" "}handle the context so
+                                                you can focus on building.
+                                              </p>
             </div>
           </div>
 

@@ -53,10 +53,9 @@ function Hero() {
             <h1 className="mt-3 font-display text-[clamp(2.5rem,5vw,4rem)] leading-[1.04] tracking-tight text-text-primary">
               Hila Shmuel
             </h1>
-            <p className="mt-3 text-[1.0625rem] text-text-secondary font-body-serif italic">
-              Founder, Cabinet. Previously Engineering Manager,
-              AI &amp; Data Infrastructure at Apple.
-            </p>
+            <p className="mt-3 text-[1.0625rem] text-text-secondary font-body-serif italic">Founder, <span className="font-brand italic">Cabinet</span>. Previously Engineering Manager,
+                            AI & Data Infrastructure at Apple.
+                          </p>
 
             <div className="mt-7 space-y-5 text-[1.0625rem] text-text-secondary font-body-serif leading-relaxed max-w-2xl">
               <p>
@@ -70,10 +69,10 @@ function Hero() {
                 </span>
               </p>
               <p>
-                Cabinet is the application of that idea to a different problem:
-                running strategy execution at the scale of an enterprise, on
-                files the enterprise actually owns.
-              </p>
+                <span className="font-brand italic">Cabinet</span>{" "}is the application of that idea to a different problem:
+                                                running strategy execution at the scale of an enterprise, on
+                                                files the enterprise actually owns.
+                                              </p>
             </div>
 
             <div className="mt-9 flex flex-wrap items-center gap-3">
@@ -157,12 +156,11 @@ function AppleWork() {
             quality and latency, and ML that had to feel reliable in a hand
             holding a phone.
           </p>
-          <p>
-            What I learned at that scale is what informs Cabinet now: the
-            interface to a powerful system should be a few sentences. The
-            complexity behind the interface should be invisible. The work of
-            the system should be observable and reversible.
-          </p>
+          <p>What I learned at that scale is what informs <span className="font-brand italic">Cabinet</span>{" "}now: the
+                                    interface to a powerful system should be a few sentences. The
+                                    complexity behind the interface should be invisible. The work of
+                                    the system should be observable and reversible.
+                                  </p>
         </div>
       </div>
     </Section>
@@ -177,7 +175,7 @@ function Thesis() {
     <Section tone="warm">
       <div className="grid lg:grid-cols-[1fr_2fr] gap-12 lg:gap-16">
         <div className="lg:pt-2">
-          <Eyebrow>Why Cabinet</Eyebrow>
+          <Eyebrow>Why <span className="font-brand italic">Cabinet</span></Eyebrow>
           <h2 className="mt-3 font-display text-3xl md:text-4xl text-text-primary leading-tight">
             Why I'm spending the next decade on this.
           </h2>
@@ -196,11 +194,11 @@ function Thesis() {
             Apple.
           </p>
           <p>
-            Cabinet is built the way good infrastructure is built. The
-            executive writes a few sentences. The platform schedules, retrieves,
-            drafts, and surfaces. The output lands in Slack, Teams, and email,
-            wherever the executive already lives.
-          </p>
+            <span className="font-brand italic">Cabinet</span>{" "}is built the way good infrastructure is built. The
+                                    executive writes a few sentences. The platform schedules, retrieves,
+                                    drafts, and surfaces. The output lands in Slack, Teams, and email,
+                                    wherever the executive already lives.
+                                  </p>
           <p>
             And the data <span>(</span>
             <span className="text-text-primary font-semibold">

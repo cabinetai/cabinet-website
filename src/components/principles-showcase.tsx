@@ -66,15 +66,13 @@ export function PrinciplesShowcase() {
     <div>
       <div className="mb-12 text-center">
         <p className="section-label mb-3">Principles</p>
-        <h2 className="mb-4 font-display text-3xl text-text-primary md:text-4xl">
-          What Cabinet is <span className="italic gradient-text">built on</span>
+        <h2 className="mb-4 font-display text-3xl text-text-primary md:text-4xl">What Cabinet{" "}is <span className="italic gradient-text">built on</span>
         </h2>
         <p className="mx-auto max-w-2xl font-body-serif leading-relaxed text-text-secondary">
           A few principles we think matter deeply for the future of AI + data
           tools. Every product decision gets weighed against these.
         </p>
       </div>
-
       <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
         {PRINCIPLES.map((p) => {
           const Icon = p.icon;

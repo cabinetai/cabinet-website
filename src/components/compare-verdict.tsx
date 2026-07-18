@@ -1,4 +1,5 @@
 import { Check } from "lucide-react";
+import { brandify } from "@/components/brand-word";
 import type { Verdict } from "@/lib/compare";
 
 /**
@@ -16,13 +17,13 @@ export function CompareVerdict({
   return (
     <div className="grid gap-px overflow-hidden rounded-2xl bg-border shadow-[0_10px_34px_-16px_rgba(150,108,68,0.34)] ring-1 ring-[rgba(59,47,47,0.06)] md:grid-cols-2">
       <div className="bg-bg-card p-6 sm:p-7">
-        <p className="ent-eyebrow mb-4">Choose Cabinet if</p>
+        <p className="ent-eyebrow mb-4">Choose Cabinet{" "}if</p>
         <ul className="space-y-3">
           {verdict.chooseUs.map((point) => (
             <li key={point} className="flex gap-3">
               <Check className="mt-0.5 h-4 w-4 shrink-0 text-green" aria-hidden />
               <span className="font-body-serif text-sm leading-relaxed text-text-secondary">
-                {point}
+                {brandify(point)}
               </span>
             </li>
           ))}
@@ -35,7 +36,7 @@ export function CompareVerdict({
             <li key={point} className="flex gap-3">
               <Check className="mt-0.5 h-4 w-4 shrink-0 text-text-tertiary" aria-hidden />
               <span className="font-body-serif text-sm leading-relaxed text-text-secondary">
-                {point}
+                {brandify(point)}
               </span>
             </li>
           ))}

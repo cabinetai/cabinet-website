@@ -1,5 +1,6 @@
 import { Check, X, Minus } from "lucide-react";
 import type { Cell, Row } from "@/lib/compare";
+import { brandify } from "@/components/brand-word";
 
 function CellIcon({ value }: { value: Cell }) {
   if (value === true) {
@@ -55,7 +56,7 @@ export function CompareTable({
                 scope="col"
                 className="w-28 bg-accent-bg-subtle px-4 py-4 text-center font-semibold text-accent"
               >
-                Cabinet
+                <span className="font-brand italic">Cabinet</span>
               </th>
               <th
                 scope="col"
@@ -69,10 +70,10 @@ export function CompareTable({
             {rows.map((r) => (
               <tr key={r.feature} className="border-b border-border-light last:border-0">
                 <td className="sticky left-0 bg-bg-card px-5 py-3.5 text-text-primary">
-                  <span className="font-body-serif">{r.feature}</span>
+                  <span className="font-body-serif">{brandify(r.feature)}</span>
                   {r.note && (
                     <span className="mt-0.5 block font-code text-[11px] leading-snug text-text-tertiary">
-                      {r.note}
+                      {brandify(r.note)}
                     </span>
                   )}
                 </td>

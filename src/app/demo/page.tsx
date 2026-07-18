@@ -34,7 +34,6 @@ export default function DemoPage() {
   return (
     <main className="min-h-screen bg-bg">
       <SiteNavbar />
-
       <section className="relative overflow-hidden border-b border-border dot-grid">
         <div
           aria-hidden
@@ -47,13 +46,11 @@ export default function DemoPage() {
         <div className="relative z-10 mx-auto grid max-w-6xl gap-12 px-6 py-16 md:py-24 lg:grid-cols-2 lg:gap-16">
           <div>
             <p className="section-label mb-3">Book a demo</p>
-            <h1 className="max-w-xl font-display text-4xl leading-[1.05] tracking-tight text-text-primary sm:text-5xl">
-              See Cabinet on your own stack
-            </h1>
-            <p className="mt-6 max-w-lg font-body-serif text-lg leading-relaxed text-text-secondary">
-              A 30-minute walkthrough tailored to your team: how Cabinet onboards an AI
-              crew, runs it on data you own, and replaces the tool sprawl you live in today.
-            </p>
+            <h1 className="max-w-xl font-display text-4xl leading-[1.05] tracking-tight text-text-primary sm:text-5xl">See Cabinet{" "}on your own stack
+                                        </h1>
+            <p className="mt-6 max-w-lg font-body-serif text-lg leading-relaxed text-text-secondary">A 30-minute walkthrough tailored to your team: how <span className="font-brand italic">Cabinet</span>{" "}onboards an AI
+                                          crew, runs it on data you own, and replaces the tool sprawl you live in today.
+                                        </p>
 
             <div className="mt-9">
               <p className="font-code text-xs uppercase tracking-wider text-text-tertiary">

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, Check, AlertTriangle, Star, ChevronDown } from "lucide-react";
 import { SiteNavbar } from "@/components/site-navbar";
+import { brandify } from "@/components/brand-word";
 import { GITHUB_URL } from "@/lib/site-config";
 import { compareLabel, type Migration } from "@/lib/compare";
 
@@ -8,7 +9,6 @@ export function CompareMigration({ data }: { data: Migration }) {
   return (
     <main className="min-h-screen bg-bg">
       <SiteNavbar />
-
       {/* ─── Hero ─── */}
       <section className="relative overflow-hidden border-b border-border dot-grid">
         <div
@@ -31,7 +31,7 @@ export function CompareMigration({ data }: { data: Migration }) {
             {data.h1}
           </h1>
           <p className="mt-5 font-body-serif text-lg leading-relaxed text-text-secondary">
-            {data.intro}
+            {brandify(data.intro)}
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <Link
@@ -44,12 +44,11 @@ export function CompareMigration({ data }: { data: Migration }) {
               href={`/compare/cabinet-vs-${data.fromSlug}`}
               className="inline-flex items-center gap-2 rounded-full card-skin px-7 py-3.5 text-base font-semibold text-text-primary shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
             >
-              {data.from} vs Cabinet
+              {data.from}vs <span className="font-brand italic">Cabinet</span>
             </Link>
           </div>
         </div>
       </section>
-
       {/* ─── Steps ─── */}
       <section className="border-b border-border py-20">
         <div className="mx-auto max-w-3xl px-6">
@@ -66,7 +65,7 @@ export function CompareMigration({ data }: { data: Migration }) {
                 <div>
                   <h3 className="font-display text-lg text-text-primary">{s.title}</h3>
                   <p className="mt-1.5 font-body-serif leading-relaxed text-text-secondary">
-                    {s.body}
+                    {brandify(s.body)}
                   </p>
                 </div>
               </li>
@@ -74,7 +73,6 @@ export function CompareMigration({ data }: { data: Migration }) {
           </ol>
         </div>
       </section>
-
       {/* ─── What moves over ─── */}
       <section className="border-b border-border bg-bg-warm py-20">
         <div className="mx-auto max-w-3xl px-6">
@@ -86,13 +84,12 @@ export function CompareMigration({ data }: { data: Migration }) {
             {data.whatMovesOver.map((m) => (
               <li key={m} className="flex gap-3 soft-card p-5">
                 <Check className="mt-0.5 h-4 w-4 shrink-0 text-green" aria-hidden />
-                <span className="font-body-serif leading-relaxed text-text-secondary">{m}</span>
+                <span className="font-body-serif leading-relaxed text-text-secondary">{brandify(m)}</span>
               </li>
             ))}
           </ul>
         </div>
       </section>
-
       {/* ─── What to watch out for (honest) ─── */}
       <section className="border-b border-border py-16">
         <div className="mx-auto max-w-3xl px-6">
@@ -104,13 +101,12 @@ export function CompareMigration({ data }: { data: Migration }) {
             {data.watchOut.map((w) => (
               <li key={w} className="flex gap-3 soft-card p-5">
                 <AlertTriangle className="mt-0.5 h-4 w-4 shrink-0 text-accent-light" aria-hidden />
-                <span className="font-body-serif leading-relaxed text-text-secondary">{w}</span>
+                <span className="font-body-serif leading-relaxed text-text-secondary">{brandify(w)}</span>
               </li>
             ))}
           </ul>
         </div>
       </section>
-
       {/* ─── After ─── */}
       <section className="border-b border-border bg-bg-warm py-20">
         <div className="mx-auto max-w-3xl px-6">
@@ -122,13 +118,12 @@ export function CompareMigration({ data }: { data: Migration }) {
             {data.afterValue.map((v) => (
               <li key={v} className="flex gap-3">
                 <Check className="mt-0.5 h-4 w-4 shrink-0 text-green" aria-hidden />
-                <span className="font-body-serif text-lg leading-relaxed text-text-secondary">{v}</span>
+                <span className="font-body-serif text-lg leading-relaxed text-text-secondary">{brandify(v)}</span>
               </li>
             ))}
           </ul>
         </div>
       </section>
-
       {/* ─── FAQ ─── */}
       <section className="border-b border-border py-20">
         <div className="mx-auto max-w-3xl px-6">
@@ -146,13 +141,12 @@ export function CompareMigration({ data }: { data: Migration }) {
                     aria-hidden
                   />
                 </summary>
-                <p className="mt-3 font-body-serif leading-relaxed text-text-secondary">{f.a}</p>
+                <p className="mt-3 font-body-serif leading-relaxed text-text-secondary">{brandify(f.a)}</p>
               </details>
             ))}
           </div>
         </div>
       </section>
-
       {/* ─── CTA ─── */}
       <section className="border-b border-border py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
@@ -183,12 +177,11 @@ export function CompareMigration({ data }: { data: Migration }) {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 font-code text-sm text-text-tertiary transition-colors hover:text-text-primary"
             >
-              <Star className="h-4 w-4" /> Star Cabinet on GitHub
-            </a>
+              <Star className="h-4 w-4" />Star <span className="font-brand italic">Cabinet</span>{" "}on GitHub
+                                        </a>
           </div>
         </div>
       </section>
-
       {/* ─── Related ─── */}
       <section className="py-16">
         <div className="mx-auto max-w-5xl px-6">

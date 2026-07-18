@@ -11,6 +11,7 @@ import {
   Star,
 } from "lucide-react";
 import { SiteNavbar } from "@/components/site-navbar";
+import { brandify } from "@/components/brand-word";
 import { WoodIcon } from "@/components/wood-icon";
 import { GITHUB_URL } from "@/lib/site-config";
 import { COMPARISONS, ROUNDUPS, THREEWAYS, MIGRATIONS, type Cell } from "@/lib/compare";
@@ -100,7 +101,6 @@ export default function CompareHubPage() {
   return (
     <main className="min-h-screen bg-bg">
       <SiteNavbar />
-
       {/* ─── Hero ─── */}
       <section className="relative overflow-hidden border-b border-border dot-grid">
         <div
@@ -116,19 +116,17 @@ export default function CompareHubPage() {
           <h1 className="max-w-3xl font-display text-4xl leading-[1.07] tracking-tight text-text-primary sm:text-5xl">
             Not another note-taking app
           </h1>
-          <p className="mt-5 max-w-2xl font-body-serif text-lg leading-relaxed text-text-secondary">
-            Notion is a cloud wiki. Obsidian is a single-player editor. Glean searches your tools. Dust connects assistants to them. Cabinet is the only one where you own your whole knowledge base and files, visualize live apps and dashboards, and have your team and AI agents work in it. Here is how they stack up, honestly.
-          </p>
+          <p className="mt-5 max-w-2xl font-body-serif text-lg leading-relaxed text-text-secondary">Notion is a cloud wiki. Obsidian is a single-player editor. Glean searches your tools. Dust connects assistants to them. <span className="font-brand italic">Cabinet</span>{" "}is the only one where you own your whole knowledge base and files, visualize live apps and dashboards, and have your team and AI agents work in it. Here is how they stack up, honestly.
+                                  </p>
         </div>
       </section>
-
       {/* ─── Master matrix ─── */}
       <section className="border-b border-border py-20">
         <div className="mx-auto max-w-5xl px-6">
           <p className="section-label mb-3">At a glance</p>
           <h2 className="font-display text-3xl tracking-tight text-text-primary md:text-4xl">
-            Cabinet vs the field
-          </h2>
+            Cabinet{" "}vs the field
+                                  </h2>
           <p className="mt-4 max-w-2xl font-body-serif leading-relaxed text-text-secondary">
             The features that define the category. Open any head-to-head below for the full picture, including where each competitor comes out ahead.
           </p>
@@ -149,7 +147,7 @@ export default function CompareHubPage() {
                             : "font-medium text-text-tertiary"
                         }`}
                       >
-                        {col}
+                        {brandify(col)}
                       </th>
                     ))}
                   </tr>
@@ -188,7 +186,6 @@ export default function CompareHubPage() {
           </div>
         </div>
       </section>
-
       {/* ─── Head-to-head spokes ─── */}
       <section className="border-b border-border bg-bg-warm py-20">
         <div className="mx-auto max-w-5xl px-6">
@@ -209,14 +206,14 @@ export default function CompareHubPage() {
                 <div className="min-w-0">
                   <div className="flex items-baseline gap-2">
                     <h3 className="font-display text-lg text-text-primary">
-                      Cabinet vs {c.competitor}
+                      Cabinet{" "}vs {c.competitor}
                     </h3>
                     <span className="font-code text-[11px] uppercase tracking-wider text-text-tertiary">
                       {c.category}
                     </span>
                   </div>
                   <p className="mt-1.5 font-body-serif text-sm leading-relaxed text-text-secondary">
-                    {c.oneLiner}
+                    {brandify(c.oneLiner)}
                   </p>
                 </div>
                 <ArrowRight className="ml-auto h-4 w-4 shrink-0 self-center text-text-muted transition-colors group-hover:text-accent" />
@@ -225,7 +222,6 @@ export default function CompareHubPage() {
           </div>
         </div>
       </section>
-
       {/* ─── Round-ups ─── */}
       <section className="border-b border-border py-20">
         <div className="mx-auto max-w-5xl px-6">
@@ -245,7 +241,7 @@ export default function CompareHubPage() {
                 </div>
                 <div className="min-w-0">
                   <div className="font-display text-text-primary">{r.competitor} alternatives</div>
-                  <div className="font-code text-xs text-text-tertiary">{r.oneLiner}</div>
+                  <div className="font-code text-xs text-text-tertiary">{brandify(r.oneLiner)}</div>
                 </div>
                 <ArrowRight className="ml-auto h-4 w-4 shrink-0 text-text-muted transition-colors group-hover:text-accent" />
               </Link>
@@ -253,7 +249,6 @@ export default function CompareHubPage() {
           </div>
         </div>
       </section>
-
       {/* ─── Three-way comparisons ─── */}
       <section className="border-b border-border bg-bg-warm py-20">
         <div className="mx-auto max-w-5xl px-6">
@@ -275,7 +270,7 @@ export default function CompareHubPage() {
                   <div className="font-display text-text-primary">
                     {t.contenders.map((c) => c.name).join(" vs ")}
                   </div>
-                  <div className="font-code text-xs text-text-tertiary">{t.oneLiner}</div>
+                  <div className="font-code text-xs text-text-tertiary">{brandify(t.oneLiner)}</div>
                 </div>
                 <ArrowRight className="ml-auto h-4 w-4 shrink-0 text-text-muted transition-colors group-hover:text-accent" />
               </Link>
@@ -283,7 +278,6 @@ export default function CompareHubPage() {
           </div>
         </div>
       </section>
-
       {/* ─── Migration guides ─── */}
       <section className="border-b border-border py-20">
         <div className="mx-auto max-w-5xl px-6">
@@ -306,7 +300,7 @@ export default function CompareHubPage() {
                 </div>
                 <div className="min-w-0">
                   <div className="font-display text-text-primary">Migrate from {m.from}</div>
-                  <div className="font-code text-xs text-text-tertiary">{m.oneLiner}</div>
+                  <div className="font-code text-xs text-text-tertiary">{brandify(m.oneLiner)}</div>
                 </div>
                 <ArrowRight className="ml-auto h-4 w-4 shrink-0 text-text-muted transition-colors group-hover:text-accent" />
               </Link>
@@ -314,7 +308,6 @@ export default function CompareHubPage() {
           </div>
         </div>
       </section>
-
       {/* ─── The wedge ─── */}
       <section className="border-b border-border bg-bg-warm py-20">
         <div className="mx-auto max-w-5xl px-6">
@@ -328,23 +321,21 @@ export default function CompareHubPage() {
                 <WoodIcon icon={w.icon} className="h-12 w-12" />
                 <h3 className="mt-4 font-display text-lg text-text-primary">{w.title}</h3>
                 <p className="mt-2 font-body-serif text-sm leading-relaxed text-text-secondary">
-                  {w.body}
+                  {brandify(w.body)}
                 </p>
               </div>
             ))}
           </div>
         </div>
       </section>
-
       {/* ─── CTA ─── */}
       <section className="py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="font-display text-3xl tracking-tight text-text-primary md:text-4xl">
             Own your knowledge. Keep your AI. Start free.
           </h2>
-          <p className="mt-4 font-body-serif leading-relaxed text-text-secondary">
-            Run Cabinet in minutes, or get a guided walkthrough.
-          </p>
+          <p className="mt-4 font-body-serif leading-relaxed text-text-secondary">Run <span className="font-brand italic">Cabinet</span>{" "}in minutes, or get a guided walkthrough.
+                                  </p>
           <div className="mt-8 flex flex-col items-center gap-3">
             <div className="flex flex-wrap items-center justify-center gap-3">
               <Link
@@ -366,8 +357,8 @@ export default function CompareHubPage() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 font-code text-sm text-text-tertiary transition-colors hover:text-text-primary"
             >
-              <Star className="h-4 w-4" /> Star Cabinet on GitHub
-            </a>
+              <Star className="h-4 w-4" />Star <span className="font-brand italic">Cabinet</span>{" "}on GitHub
+                                        </a>
           </div>
         </div>
       </section>
