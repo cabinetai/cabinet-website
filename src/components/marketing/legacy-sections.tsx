@@ -1,0 +1,2078 @@
+"use client";
+
+import Image from "next/image";
+import {
+  AppWindow,
+  ArrowRight,
+  Bot,
+  Check,
+  Code2,
+  Copy,
+  FileText,
+  FileType,
+  Folder,
+  GitBranch,
+  Globe,
+  Search,
+  Shield,
+  Star,
+  Table,
+  Users,
+  X,
+} from "lucide-react";
+import { Suspense, useCallback, useEffect, useRef, useState } from "react";
+import { IntegrationScene } from "@/components/integration-scene";
+import { PrinciplesShowcase } from "@/components/principles-showcase";
+import { DiscordIcon, GithubIcon } from "@/components/site-icons";
+import { WaitlistCapture } from "@/components/waitlist-capture";
+import { WaitlistCloudBackdrop } from "@/components/waitlist-cloud-backdrop";
+import { WoodIcon } from "@/components/wood-icon";
+import { CABINETS, CABINETS_SITE, cabinetCover, cabinetUrl } from "@/lib/cabinets";
+import {
+  DISCORD_URL,
+  GITHUB_URL,
+  MACOS_DOWNLOAD_URL,
+  WINDOWS_DOWNLOAD_URL,
+} from "@/lib/site-config";
+import { SOLUTIONS, SOLUTION_STORIES } from "@/lib/solutions";
+
+const PROVIDERS = [
+  { src: "/providers/claude.svg", name: "Claude" },
+  { src: "/providers/openai.png", name: "OpenAI" },
+  { src: "/providers/gemini.svg", name: "Gemini" },
+  { src: "/providers/grok.svg", name: "Grok Code" },
+  { src: "/providers/copilot.svg", name: "Copilot" },
+  { src: "/providers/cursor.svg", name: "Cursor" },
+  { src: "/providers/opencode.svg", name: "opencode" },
+  { src: "/providers/pi.svg", name: "Pi" },
+];
+
+// Tools your company runs on - rendered as a scrolling, multi-row logo wall.
+export const INTEGRATION_LOGOS: string[] = [
+  ..."slack microsoft-teams notion github hubspot confluence google-drive gmail stripe zendesk figma workday intercom servicenow airtable bamboohr brex docusign looker mixpanel quickbooks tableau greenhouse google-calendar google-meet onedrive sharepoint bigquery gong"
+    .split(" ")
+    .map((n) => `/logos/${n}.svg`),
+  ..."salesforce jira zoom snowflake asana calendly clickup dropbox box gitlab databricks datadog amplitude linear"
+    .split(" ")
+    .map((n) => `/logos/${n}.webp`),
+];
+
+// Three interleaved rows so each band mixes brands evenly.
+const INTEGRATION_ROWS = [0, 1, 2].map((r) =>
+  INTEGRATION_LOGOS.filter((_, i) => i % 3 === r),
+);
+
+function integrationName(src: string): string {
+  const base = src.split("/").pop()!.replace(/\.(svg|webp|png)$/, "");
+  return base
+    .split("-")
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(" ");
+}
+
+const TRUST_BADGES = [
+  {
+    img: "/brand/trust/soc2.png",
+    label: "SOC 2 Type II",
+    status: "In progress",
+    desc: "We're working toward it, and we'll show you the report, not just a badge.",
+  },
+  {
+    img: "/brand/trust/open-source.png",
+    label: "Open source",
+    desc: "MIT licensed. Read every line, fork it, or run your own build.",
+  },
+  {
+    img: "/brand/trust/self-hosted.png",
+    label: "Self-hosted",
+    desc: "Runs in your environment, under the controls you already enforce.",
+  },
+  {
+    img: "/brand/trust/not-training.png",
+    label: "Not training data",
+    desc: "Your prompts and content are never used to train a model.",
+  },
+  {
+    img: "/brand/trust/byo-keys.png",
+    label: "Bring your own keys",
+    desc: "Your model providers, your API keys. Inference never routes through us.",
+  },
+  {
+    img: "/brand/trust/audit-log.png",
+    label: "Audit log & git history",
+    desc: "Every change to data and agents is versioned, diffable, and attributable.",
+  },
+  {
+    img: "/brand/trust/sso-scim.png",
+    label: "SSO & SCIM",
+    status: "Enterprise track",
+    desc: "SAML single sign-on and provisioning for teams that need it.",
+  },
+  {
+    img: "/brand/trust/data-residency.png",
+    label: "Your data residency",
+    desc: "Self-hosted means your knowledge lives in your region, under your policies.",
+  },
+];
+
+const TESTIMONIALS = [
+  {
+    quote:
+      "Cabinet is a big unlock for how I think about operating a business with AI.",
+    context:
+      "Before Cabinet, AI felt fragmented: great for single tasks, but hard to orchestrate across the business. Every business has different workflows, and Cabinet makes it possible to turn those workflows into an AI team.",
+    name: "Collin Davis",
+    role: "Chief Product Officer, Clover",
+    location: "Florida, USA",
+    image: "/testimonials/collin-davis.jpg",
+    linkedin: "https://www.linkedin.com/in/collinedavis/",
+    initials: "CD",
+  },
+  {
+    quote:
+      "Cabinet is exactly doing what it's strong at: orchestrating structure, standardization, opportunities, and challenges in a digital way.",
+    context:
+      "Cabinet is the missing persistence and memory layer that TOGAF, ISO, and many other framework tools have never had. The framework provides the skeleton; Cabinet provides the living connective tissue.",
+    name: "Jean Pierre Traets",
+    role: "Sustainability Solutions Architect, EMEA",
+    location: "Europe",
+    image: "/testimonials/jean-pierre-traets.jpg",
+    linkedin: "https://www.linkedin.com/in/jean-pierre-traets/",
+    initials: "JT",
+  },
+  {
+    quote:
+      "As one of the first users of Superhuman, I definitely see the same spark here.",
+    context:
+      "I use Cabinet to manage GTM and send emails through Apollo, and the whole system runs without me touching it, 24/7. The researcher agent built into Cabinet crafted award-winning GTM emails that blew my mind and achieved incredible open rates.",
+    name: "Assaf Haski",
+    role: "Strategic narratives for high-stakes systems, from B2B SaaS growth to national public guidance",
+    location: "",
+    image: "/testimonials/assaf-haski.jpg",
+    linkedin: "https://www.linkedin.com/in/assafhaski/",
+    initials: "AH",
+  },
+];
+
+type GitHubRepoResponse = {
+  stargazers_count?: number;
+};
+
+function formatStarCount(stars: number | null) {
+  if (stars === null) return "Star on GitHub";
+
+  return new Intl.NumberFormat("en", {
+    notation: stars >= 1000 ? "compact" : "standard",
+    maximumFractionDigits: stars >= 1000 ? 1 : 0,
+  }).format(stars);
+}
+
+function getGitHubRepoPath(url: string) {
+  const match = url.match(/github\.com\/([^/]+\/[^/?#]+)/i);
+  return match?.[1] ?? null;
+}
+
+function useGitHubStars() {
+  const [stars, setStars] = useState<number | null>(null);
+
+  useEffect(() => {
+    const repoPath = getGitHubRepoPath(GITHUB_URL);
+    if (!repoPath) return;
+
+    const controller = new AbortController();
+
+    async function loadStars() {
+      try {
+        const response = await fetch(`https://api.github.com/repos/${repoPath}`, {
+          signal: controller.signal,
+          headers: {
+            Accept: "application/vnd.github+json",
+          },
+        });
+
+        if (!response.ok) return;
+
+        const data = (await response.json()) as GitHubRepoResponse;
+        if (typeof data.stargazers_count === "number") {
+          setStars(data.stargazers_count);
+        }
+      } catch (error) {
+        if (!(error instanceof DOMException && error.name === "AbortError")) {
+          console.error("Unable to load GitHub stars", error);
+        }
+      }
+    }
+
+    loadStars();
+    return () => controller.abort();
+  }, []);
+
+  return stars;
+}
+
+function GitHubStarsButton({
+  stars,
+  className,
+  compact = false,
+}: {
+  stars: number | null;
+  className: string;
+  compact?: boolean;
+}) {
+  return (
+    <a
+      href={GITHUB_URL}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={className}
+    >
+      <span className="inline-flex items-center gap-2">
+        <GithubIcon className="w-4 h-4" />
+        <span>{compact ? "Star Cabinet" : "Star Cabinet on GitHub"}</span>
+      </span>
+      <span className="inline-flex items-center gap-1 rounded-full bg-accent-bg px-2.5 py-1 text-[0.72rem] font-semibold text-accent shadow-sm ring-1 ring-border-light">
+        <Star className="w-3.5 h-3.5 fill-current" />
+        {formatStarCount(stars)}
+      </span>
+    </a>
+  );
+}
+
+/* Typing Animation */
+function TypingText({ texts }: { texts: string[] }) {
+  const [textIndex, setTextIndex] = useState(0);
+  const [charIndex, setCharIndex] = useState(0);
+  const [deleting, setDeleting] = useState(false);
+
+  useEffect(() => {
+    const current = texts[textIndex];
+    const timeout = deleting ? 30 : 60;
+
+    if (!deleting && charIndex === current.length) {
+      const timer = setTimeout(() => setDeleting(true), 2000);
+      return () => clearTimeout(timer);
+    }
+    if (deleting && charIndex === 0) {
+      const timer = setTimeout(() => {
+        setDeleting(false);
+        setTextIndex((i) => (i + 1) % texts.length);
+      }, timeout);
+      return () => clearTimeout(timer);
+    }
+
+    const timer = setTimeout(() => {
+      setCharIndex((c) => c + (deleting ? -1 : 1));
+    }, timeout);
+
+    return () => clearTimeout(timer);
+  }, [charIndex, deleting, textIndex, texts]);
+
+  return (
+    <span className="text-accent">
+      {texts[textIndex].slice(0, charIndex)}
+      <span className="cursor-blink text-accent-light">|</span>
+    </span>
+  );
+}
+
+/* Copy Button */
+function CopyButton({ text }: { text: string }) {
+  const [copied, setCopied] = useState(false);
+  const handleCopy = useCallback(() => {
+    navigator.clipboard.writeText(text);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  }, [text]);
+  return (
+    <button
+      onClick={handleCopy}
+      className="shrink-0 p-1 rounded text-zinc-500 hover:text-zinc-200 hover:bg-white/10 transition-colors"
+      title="Copy to clipboard"
+    >
+      {copied ? <Check className="w-3.5 h-3.5 text-green-400" /> : <Copy className="w-3.5 h-3.5" />}
+    </button>
+  );
+}
+
+/* Terminal Demo */
+function TerminalDemo() {
+  const lines = [
+    { prompt: true, text: "npx cabinetai run" },
+    { prompt: false, text: "Creating knowledge base..." },
+    { prompt: false, text: "Setting up AI agents..." },
+    { prompt: false, text: "" },
+    { prompt: false, text: "  CEO Agent        ready    strategic planning" },
+    { prompt: false, text: "  Content Writer   ready    blog, social, SEO" },
+    { prompt: false, text: "  Editor           ready    KB maintenance" },
+    { prompt: false, text: "" },
+    { prompt: false, text: "Cabinet is running at http://localhost:3000" },
+    { prompt: false, text: "Your AI team is ready." },
+  ];
+
+  const [visibleLines, setVisibleLines] = useState(0);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          let i = 0;
+          const interval = setInterval(() => {
+            i++;
+            setVisibleLines(i);
+            if (i >= lines.length) clearInterval(interval);
+          }, 300);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.3 }
+    );
+    if (containerRef.current) observer.observe(containerRef.current);
+    return () => observer.disconnect();
+  }, [lines.length]);
+
+  return (
+    <div ref={containerRef} className="terminal-chrome relative scanline">
+      <div className="flex items-center gap-2 px-4 py-3 border-b border-white/8">
+        <div className="w-3 h-3 rounded-full bg-red-500/70" />
+        <div className="w-3 h-3 rounded-full bg-yellow-500/70" />
+        <div className="w-3 h-3 rounded-full bg-green-500/70" />
+        <span className="ml-3 text-xs text-zinc-500 font-code">cabinet ~ zsh</span>
+      </div>
+      <div className="p-5 font-code text-sm leading-relaxed min-h-[280px]">
+        {lines.slice(0, visibleLines).map((line, i) => (
+          <div key={i} className="flex">
+            {line.prompt ? (
+              <>
+                <span className="text-green-400 mr-2">$</span>
+                <span className="text-zinc-200">{line.text}</span>
+              </>
+            ) : (
+              <span
+                className={
+                  line.text.startsWith("  ") && !line.text.startsWith("  Cabinet")
+                    ? "text-amber-300"
+                    : line.text.startsWith("Cabinet") || line.text.startsWith("Your")
+                      ? "text-green-400 font-semibold"
+                      : "text-zinc-500"
+                }
+              >
+                {line.text}
+              </span>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+/* Feature Card */
+function FeatureCard({
+  img,
+  title,
+  description,
+  className = "",
+  featured = false,
+}: {
+  img: string;
+  title: string;
+  description: string;
+  className?: string;
+  featured?: boolean;
+}) {
+  return (
+    <div
+      className={`group relative overflow-hidden rounded-2xl p-6 card-hover ${
+        featured ? "bg-gradient-to-br from-[#FBF2E4] to-[#F2E5CF]" : "bg-bg-card"
+      } ${className}`}
+    >
+      {featured && (
+        <div
+          aria-hidden
+          className="pointer-events-none absolute -right-8 -top-10 h-44 w-44 rounded-full"
+          style={{ background: "radial-gradient(circle, rgba(224,178,60,0.18), transparent 70%)" }}
+        />
+      )}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={img}
+        alt=""
+        className={`relative z-10 mb-4 object-contain transition-transform duration-200 group-hover:scale-105 group-hover:-rotate-2 ${
+          featured ? "h-[88px] w-[88px]" : "h-16 w-16"
+        }`}
+      />
+      <h3 className="relative z-10 mb-2 font-display text-lg text-text-primary">{title}</h3>
+      <p className="relative z-10 text-sm leading-relaxed text-text-secondary">{description}</p>
+    </div>
+  );
+}
+
+/* Agent Cards */
+function AgentShowcase() {
+  const agents = [
+    { emoji: "🎯", name: "CEO Agent", type: "Lead", desc: "Strategic planning, goal tracking, task delegation. Creates missions, coordinates the team.", jobs: ["Weekly report", "Goal review"] },
+    { emoji: "📝", name: "Editor", type: "Specialist", desc: "KB content editing, formatting, linking. Maintains documentation quality.", jobs: ["Content review", "Link checker"] },
+    { emoji: "📣", name: "Content Marketer", type: "Specialist", desc: "Blog posts, social media, newsletters. SEO-optimized content generation.", jobs: ["Reddit scout", "Blog drafts"] },
+    { emoji: "🔍", name: "SEO Specialist", type: "Specialist", desc: "Keyword research, site optimization, ranking analysis.", jobs: ["Keyword tracker", "Competitor scan"] },
+    { emoji: "💰", name: "Sales Agent", type: "Specialist", desc: "Lead generation, outreach, pipeline tracking.", jobs: ["Lead scorer", "Follow-up drafter"] },
+    { emoji: "🧪", name: "QA Agent", type: "Specialist", desc: "Review, proofread, fact-check content across the KB.", jobs: ["Content audit", "Broken link scan"] },
+  ];
+
+  return (
+    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {agents.map((agent) => (
+        <div key={agent.name} className="rounded-xl p-5 card-skin card-hover group">
+          <div className="flex items-start justify-between mb-3">
+            <div className="flex items-center gap-3">
+              <span className="text-2xl">{agent.emoji}</span>
+              <div>
+                <p className="font-semibold text-sm text-text-primary">{agent.name}</p>
+                <p className="text-xs text-text-tertiary">{agent.type}</p>
+              </div>
+            </div>
+            <div className="w-2 h-2 rounded-full bg-green-500 mt-2" />
+          </div>
+          <p className="text-xs text-text-secondary mb-3 leading-relaxed">{agent.desc}</p>
+          <div className="flex flex-wrap gap-1.5">
+            {agent.jobs.map((job) => (
+              <span key={job} className="text-[10px] font-code text-accent bg-accent-bg px-2 py-0.5 rounded">
+                {job}
+              </span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+/* Use Cases Carousel */
+const USE_CASES = [
+  {
+    tag: "B2C App",
+    persona: "Indie App Founder",
+    emoji: "📱",
+    headline: "My app runs itself while I sleep",
+    quote:
+      "I use it to run my B2C app. The App Store listing is a markdown page I can update any time. I have an hourly Reddit scout that surfaces user complaints, and a weekly competitor job that crawls the market and dumps everything into /market/competitors/. I wake up to a briefing.",
+    agents: [
+      { emoji: "🔍", name: "Reddit Scout", status: "running", job: "every hour", pulse: true },
+      { emoji: "📊", name: "Competitor Analyst", status: "idle", job: "every Monday" },
+      { emoji: "📝", name: "Content Writer", status: "idle", job: "every day 9am" },
+    ],
+    kb: {
+      projectName: "my-b2c-app",
+      tree: [
+        { name: "product/", type: "folder", depth: 0 },
+        { name: "app-store-listing.md", type: "md", depth: 1, active: true },
+        { name: "roadmap.md", type: "md", depth: 1 },
+        { name: "pricing.md", type: "md", depth: 1 },
+        { name: "market/", type: "folder", depth: 0 },
+        { name: "competitors/", type: "folder", depth: 1 },
+        { name: "week-14.md", type: "md", depth: 2, badge: "new" },
+        { name: "week-13.md", type: "md", depth: 2 },
+        { name: "positioning.md", type: "md", depth: 1 },
+        { name: "data/", type: "folder", depth: 0 },
+        { name: "analytics.csv", type: "csv", depth: 1 },
+        { name: "reviews.csv", type: "csv", depth: 1 },
+      ],
+      preview: {
+        title: "product/app-store-listing",
+        lines: [
+          { t: "h1", v: "App Store Listing" },
+          { t: "meta", v: "Updated by Content Writer · 2 hours ago" },
+          { t: "h2", v: "Short Description" },
+          { t: "p", w: 95 },
+          { t: "p", w: 72 },
+          { t: "h2", v: "Keywords" },
+          { t: "tags", v: ["b2c", "productivity", "ios", "mobile", "startup"] },
+          { t: "h2", v: "What's New in v4.2" },
+          { t: "p", w: 88 },
+          { t: "p", w: 60 },
+        ],
+      },
+    },
+  },
+  {
+    tag: "B2B Sales",
+    persona: "Small Business Owner",
+    emoji: "💼",
+    headline: "2,000 leads. One army of agents.",
+    quote:
+      "I have a CSV of leads. My agents read it, research each company, and draft personalised outreach. The pipeline CSV updates in real time. I watch it fill up from my dashboard. It's like having a sales team that never sleeps and never asks for a raise.",
+    agents: [
+      { emoji: "🕵️", name: "Lead Researcher", status: "running", job: "continuous", pulse: true },
+      { emoji: "✉️", name: "Outreach Writer", status: "running", job: "continuous", pulse: true },
+      { emoji: "📈", name: "Pipeline Tracker", status: "idle", job: "every 30 min" },
+    ],
+    kb: {
+      projectName: "acme-sales",
+      tree: [
+        { name: "leads/", type: "folder", depth: 0 },
+        { name: "pipeline.csv", type: "csv", depth: 1, active: true },
+        { name: "leads-raw.csv", type: "csv", depth: 1 },
+        { name: "intel/", type: "folder", depth: 0 },
+        { name: "companies/", type: "folder", depth: 1 },
+        { name: "techcorp.md", type: "md", depth: 2, badge: "new" },
+        { name: "globex.md", type: "md", depth: 2 },
+        { name: "outreach/", type: "folder", depth: 0 },
+        { name: "templates/", type: "folder", depth: 1 },
+        { name: "cold-email.md", type: "md", depth: 2 },
+        { name: "follow-up.md", type: "md", depth: 2 },
+        { name: "tools/", type: "folder", depth: 0 },
+        { name: "pipeline-dashboard/", type: "html", depth: 1 },
+      ],
+      preview: {
+        title: "leads/pipeline.csv",
+        lines: [
+          { t: "h1", v: "pipeline.csv" },
+          { t: "meta", v: "87 rows · Updated by Lead Researcher · just now" },
+          { t: "table",
+            cols: ["Company", "Contact", "Status", "Score"],
+            rows: [
+              ["TechCorp Inc", "Alice Chen", "✅ Researched", "87"],
+              ["StartupXYZ", "Bob Lee", "📝 Drafted", "72"],
+              ["GlobalDev", "Carol Kim", "📤 Sent", "91"],
+              ["NewCo Ltd", "Dan Park", "🔍 Researching…", "…"],
+            ],
+          },
+        ],
+      },
+    },
+  },
+  {
+    tag: "Newsletter",
+    persona: "Solo Creator",
+    emoji: "✍️",
+    headline: "Monday morning. Newsletter writes itself.",
+    quote:
+      "Every Monday my Trend Scout scans HN and Reddit, picks the top signals, and my Draft Writer assembles the issue. I open Cabinet, read the draft, make a few edits, and hit send. What used to take 3 hours now takes 10 minutes.",
+    agents: [
+      { emoji: "📡", name: "Trend Scout", status: "running", job: "daily 6am", pulse: true },
+      { emoji: "🖊️", name: "Draft Writer", status: "idle", job: "every Monday" },
+      { emoji: "🔎", name: "SEO Reviewer", status: "idle", job: "on publish" },
+    ],
+    kb: {
+      projectName: "my-newsletter",
+      tree: [
+        { name: "newsletter/", type: "folder", depth: 0 },
+        { name: "issues/", type: "folder", depth: 1 },
+        { name: "2026-w14.md", type: "md", depth: 2, active: true, badge: "new" },
+        { name: "2026-w13.md", type: "md", depth: 2 },
+        { name: "2026-w12.md", type: "md", depth: 2 },
+        { name: "brand/", type: "folder", depth: 0 },
+        { name: "voice-guide.md", type: "md", depth: 1 },
+        { name: "tone-examples.md", type: "md", depth: 1 },
+        { name: "research/", type: "folder", depth: 0 },
+        { name: "sources.md", type: "md", depth: 1 },
+        { name: "hn-picks.md", type: "md", depth: 1, badge: "updated" },
+        { name: "archive/", type: "folder", depth: 0 },
+      ],
+      preview: {
+        title: "newsletter/issues/2026-w14",
+        lines: [
+          { t: "h1", v: "Week 14: The AI Stack Shift" },
+          { t: "meta", v: "Drafted by Draft Writer · Monday 8:14am · ready for review" },
+          { t: "h2", v: "This week's signal" },
+          { t: "p", w: 100 },
+          { t: "p", w: 82 },
+          { t: "p", w: 91 },
+          { t: "h2", v: "Top picks" },
+          { t: "p", w: 95 },
+          { t: "p", w: 70 },
+          { t: "tags", v: ["AI", "tooling", "indie hackers", "dev tools"] },
+        ],
+      },
+    },
+  },
+  {
+    tag: "Consulting",
+    persona: "Freelance Consultant",
+    emoji: "🏢",
+    headline: "Every client. One brain.",
+    quote:
+      "Each client gets their own folder. Meeting notes, proposals, deliverables: all markdown. When I switch clients, I just ask the AI about the folder. It has full context: the history, the decisions, the open questions. No re-reading, no catch-up.",
+    agents: [
+      { emoji: "🗒️", name: "Meeting Summariser", status: "idle", job: "after each call" },
+      { emoji: "📄", name: "Proposal Writer", status: "running", job: "on demand", pulse: true },
+      { emoji: "🔗", name: "Research Assistant", status: "idle", job: "on demand" },
+    ],
+    kb: {
+      projectName: "consulting-kb",
+      tree: [
+        { name: "clients/", type: "folder", depth: 0 },
+        { name: "acme/", type: "folder", depth: 1 },
+        { name: "strategy.md", type: "md", depth: 2, active: true },
+        { name: "proposal-v2.md", type: "md", depth: 2 },
+        { name: "meeting-notes/", type: "folder", depth: 2 },
+        { name: "2026-03-28.md", type: "md", depth: 3 },
+        { name: "2026-03-14.md", type: "md", depth: 3 },
+        { name: "globex/", type: "folder", depth: 1 },
+        { name: "proposal-v3.md", type: "md", depth: 2, badge: "updated" },
+        { name: "brief.md", type: "md", depth: 2 },
+        { name: "templates/", type: "folder", depth: 0 },
+        { name: "proposal.md", type: "md", depth: 1 },
+        { name: "discovery.md", type: "md", depth: 1 },
+      ],
+      preview: {
+        title: "clients/acme/strategy",
+        lines: [
+          { t: "h1", v: "Acme: Q2 Strategy" },
+          { t: "meta", v: "Updated after kickoff call · 3 days ago" },
+          { t: "h2", v: "Current Focus" },
+          { t: "p", w: 100 },
+          { t: "p", w: 75 },
+          { t: "h2", v: "Open Questions" },
+          { t: "p", w: 90 },
+          { t: "p", w: 65 },
+          { t: "h2", v: "Next Steps" },
+          { t: "p", w: 82 },
+          { t: "p", w: 55 },
+        ],
+      },
+    },
+  },
+  {
+    tag: "Open Source",
+    persona: "OSS Maintainer",
+    emoji: "⚙️",
+    headline: "Merge PR. Changelog writes itself.",
+    quote:
+      "I linked my GitHub repo with .repo.yaml. When I merge a PR, an agent reads the diff, updates CHANGELOG.md, drafts release notes, and queues a Discord announcement. Maintenance overhead dropped to almost zero.",
+    agents: [
+      { emoji: "📋", name: "Release Writer", status: "idle", job: "on PR merge" },
+      { emoji: "📖", name: "Docs Updater", status: "running", job: "continuous", pulse: true },
+      { emoji: "📣", name: "Announcer", status: "idle", job: "on release tag" },
+    ],
+    kb: {
+      projectName: "my-oss-lib",
+      tree: [
+        { name: "docs/", type: "folder", depth: 0 },
+        { name: "getting-started.md", type: "md", depth: 1 },
+        { name: "api-reference.md", type: "md", depth: 1 },
+        { name: "contributing.md", type: "md", depth: 1 },
+        { name: "changelog.md", type: "md", depth: 0, active: true, badge: "updated" },
+        { name: "releases/", type: "folder", depth: 0 },
+        { name: "v2.1.0.md", type: "md", depth: 1, badge: "new" },
+        { name: "v2.0.0.md", type: "md", depth: 1 },
+        { name: ".repo.yaml", type: "yaml", depth: 0 },
+      ],
+      preview: {
+        title: "changelog",
+        lines: [
+          { t: "h1", v: "Changelog" },
+          { t: "meta", v: "Written by Release Writer · just now · linked to github/my-lib" },
+          { t: "h2", v: "v2.1.0, 2026-04-02" },
+          { t: "p", w: 98 },
+          { t: "p", w: 80 },
+          { t: "p", w: 68 },
+          { t: "h2", v: "v2.0.0, 2026-03-15" },
+          { t: "p", w: 85 },
+          { t: "p", w: 72 },
+        ],
+      },
+    },
+  },
+  {
+    tag: "Startup OS",
+    persona: "Solo Founder",
+    emoji: "🚀",
+    headline: "Strategy, roadmap, market: one place.",
+    quote:
+      "I run my entire startup from here. Strategy in /strategy/, roadmap in /product/roadmap.md, ICP in /market/icp.md. My CEO agent attends every planning session. I open a page, describe the week, and it challenges my assumptions and updates the mission board.",
+    agents: [
+      { emoji: "🎯", name: "CEO Agent", status: "running", job: "daily standup", pulse: true },
+      { emoji: "📊", name: "Market Scout", status: "idle", job: "every Monday" },
+      { emoji: "✅", name: "OKR Tracker", status: "idle", job: "every Friday" },
+    ],
+    kb: {
+      projectName: "my-startup",
+      tree: [
+        { name: "strategy/", type: "folder", depth: 0 },
+        { name: "q2-plan.md", type: "md", depth: 1, active: true },
+        { name: "vision.md", type: "md", depth: 1 },
+        { name: "product/", type: "folder", depth: 0 },
+        { name: "roadmap.md", type: "md", depth: 1 },
+        { name: "specs/", type: "folder", depth: 1 },
+        { name: "market/", type: "folder", depth: 0 },
+        { name: "icp.md", type: "md", depth: 1 },
+        { name: "competitors.md", type: "md", depth: 1, badge: "updated" },
+        { name: "tools/", type: "folder", depth: 0 },
+        { name: "okr-tracker/", type: "app", depth: 1 },
+      ],
+      preview: {
+        title: "strategy/q2-plan",
+        lines: [
+          { t: "h1", v: "Q2 Plan, 2026" },
+          { t: "meta", v: "Reviewed by CEO Agent · today · 3 open questions flagged" },
+          { t: "h2", v: "North Star" },
+          { t: "p", w: 93 },
+          { t: "p", w: 70 },
+          { t: "h2", v: "OKRs" },
+          { t: "p", w: 88 },
+          { t: "p", w: 75 },
+          { t: "tags", v: ["growth", "retention", "Q2-2026", "fundraising"] },
+        ],
+      },
+    },
+  },
+];
+
+function getNodeIcon(type: string, isActive: boolean) {
+  const base = "w-3.5 h-3.5 shrink-0";
+  if (type === "folder")  return <Folder     className={`${base} text-text-tertiary`} />;
+  if (type === "csv")     return <Table      className={`${base} text-green-500`} />;
+  if (type === "html")    return <Globe      className={`${base} text-blue-500`} />;
+  if (type === "app")     return <AppWindow  className={`${base} text-green-500`} />;
+  if (type === "yaml")    return <GitBranch  className={`${base} text-orange-400`} />;
+  if (type === "pdf")     return <FileType   className={`${base} text-red-400`} />;
+  return <FileText className={`${base} ${isActive ? "text-accent" : "text-text-tertiary"}`} />;
+}
+
+function displayNodeName(name: string, type: string) {
+  if (type === "md" && name.endsWith(".md")) return name.slice(0, -3);
+  return name;
+}
+
+function CabinetMockup({ kb, caseEmoji, agents }: { kb: (typeof USE_CASES)[0]["kb"]; caseEmoji: string; agents: (typeof USE_CASES)[0]["agents"] }) {
+  return (
+    <div className="rounded-xl overflow-hidden card-skin text-left">
+      {/* Browser chrome - warm parchment */}
+      <div className="flex items-center gap-2 px-4 py-2 border-b border-border bg-bg-warm">
+        <div className="w-2.5 h-2.5 rounded-full bg-red-400/90" />
+        <div className="w-2.5 h-2.5 rounded-full bg-yellow-400/90" />
+        <div className="w-2.5 h-2.5 rounded-full bg-green-400/90" />
+        <div className="flex-1 mx-3 flex items-center justify-center gap-1.5">
+          <span className="text-[11px] font-brand italic text-text-primary">Cabinet</span>
+          <span className="text-text-muted text-[10px]">/</span>
+          <span className="text-[10px] font-code text-text-tertiary truncate">{kb.projectName}</span>
+        </div>
+        <Search className="w-3 h-3 text-text-muted" />
+      </div>
+
+      {/* App body */}
+      <div className="flex" style={{ height: "264px" }}>
+
+        {/* Sidebar - #FAF6F1 */}
+        <div className="flex-shrink-0 border-r border-border flex flex-col bg-bg" style={{ width: "176px" }}>
+          {/* Project header */}
+          <div className="flex items-center gap-1.5 px-3 py-2.5 border-b border-border">
+            <span className="text-sm leading-none">{caseEmoji}</span>
+            <span className="text-[11px] font-code text-text-primary font-semibold truncate">{kb.projectName}</span>
+          </div>
+          {/* Agents */}
+          <div className="border-b border-border px-3 py-2">
+            <p className="text-[9px] font-code text-text-muted uppercase tracking-widest mb-1.5">Agents</p>
+            <div className="space-y-1">
+              {agents.map((agent) => (
+                <div key={agent.name} className="flex items-center gap-1.5">
+                  <span className="text-xs leading-none">{agent.emoji}</span>
+                  <span className="text-[10px] font-code text-text-secondary truncate flex-1">{agent.name}</span>
+                  {agent.pulse ? (
+                    <span className="relative flex h-1.5 w-1.5 shrink-0">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
+                      <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-green-500" />
+                    </span>
+                  ) : (
+                    <span className="h-1.5 w-1.5 rounded-full bg-border shrink-0" />
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Files */}
+          <div className="flex-1 overflow-y-auto py-1">
+            <p className="text-[9px] font-code text-text-muted uppercase tracking-widest px-3 pt-1.5 pb-1">Files</p>
+            {kb.tree.map((node, i) => {
+              const isActive = !!(node as { active?: boolean }).active;
+              const badge = (node as { badge?: string }).badge;
+              const label = displayNodeName(node.name, node.type);
+              return (
+                <div
+                  key={i}
+                  className={`flex items-center gap-1.5 py-[3px] text-[11px] font-code cursor-default select-none transition-colors
+                    ${isActive
+                      ? "bg-accent-bg border-l-2 border-accent text-accent"
+                      : "text-text-secondary hover:bg-bg-warm border-l-2 border-transparent"}`}
+                  style={{ paddingLeft: `${6 + (node.depth || 0) * 11}px`, paddingRight: "6px" }}
+                >
+                  {getNodeIcon(node.type, isActive)}
+                  <span className={`truncate flex-1 ${isActive ? "text-accent font-medium" : ""}`}>{label}</span>
+                  {badge && (
+                    <span className="shrink-0 text-[8px] font-code bg-green-50 text-green-600 border border-green-200 px-1 rounded leading-none py-px">
+                      {badge}
+                    </span>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Content pane - white card */}
+        <div className="flex-1 overflow-y-auto p-5 bg-bg-card">
+          {kb.preview.lines.map((line, i) => {
+            if (line.t === "h1") return (
+              <div key={i} className="text-sm font-bold text-text-primary mb-0.5 leading-tight font-display">
+                {(line as { t: string; v: string }).v}
+              </div>
+            );
+            if (line.t === "h2") return (
+              <div key={i} className="text-[10px] font-semibold text-text-primary mt-3 mb-1.5 uppercase tracking-wide">
+                {(line as { t: string; v: string }).v}
+              </div>
+            );
+            if (line.t === "meta") return (
+              <div key={i} className="text-[10px] font-code text-text-tertiary mb-2.5 pb-2 border-b border-border leading-tight">
+                {(line as { t: string; v: string }).v}
+              </div>
+            );
+            if (line.t === "p") return (
+              <div
+                key={i}
+                className="h-1.5 rounded-full bg-border mb-1.5"
+                style={{ width: `${(line as { t: string; w: number }).w}%` }}
+              />
+            );
+            if (line.t === "tags") return (
+              <div key={i} className="flex flex-wrap gap-1 mt-1">
+                {((line as { t: string; v: string[] }).v).map((tag) => (
+                  <span key={tag} className="text-[9px] font-code text-accent bg-accent-bg border border-accent/20 px-1.5 py-0.5 rounded">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            );
+            if (line.t === "table") {
+              const l = line as { t: string; cols: string[]; rows: string[][] };
+              return (
+                <div key={i} className="mt-0.5 overflow-hidden rounded border border-border text-[9px] font-code">
+                  <div className="flex bg-bg-warm border-b border-border">
+                    {l.cols.map((col) => (
+                      <div key={col} className="flex-1 px-2 py-1.5 text-text-tertiary font-semibold truncate">{col}</div>
+                    ))}
+                  </div>
+                  {l.rows.map((row, ri) => (
+                    <div key={ri} className={`flex border-b border-border/60 last:border-0 ${ri % 2 === 1 ? "bg-bg" : "bg-bg-card"}`}>
+                      {row.map((cell, ci) => (
+                        <div key={ci} className={`flex-1 px-2 py-1.5 truncate ${
+                          cell.includes("Researching") ? "text-amber-600" :
+                          cell.includes("Sent")        ? "text-green-600" :
+                          cell.includes("Researched")  ? "text-blue-600" :
+                          cell.includes("Drafted")     ? "text-violet-600" :
+                          ci === 3                     ? "text-text-primary font-medium" :
+                                                         "text-text-secondary"
+                        }`}>{cell}</div>
+                      ))}
+                    </div>
+                  ))}
+                </div>
+              );
+            }
+            return null;
+          })}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export function LegacyUseCases() {
+  const total = USE_CASES.length;
+  // We render [last, ...all, first] so we can seamlessly loop
+  const trackRef = useRef<HTMLDivElement>(null);
+  const [idx, setIdx] = useState(1); // 1-based because slot 0 is the clone of last
+  const [isTransitioning, setIsTransitioning] = useState(true);
+  const autoPlayRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const touchStartX = useRef(0);
+  const touchDeltaX = useRef(0);
+  const isSwiping = useRef(false);
+
+  // Real index into USE_CASES (0-based)
+  const realIndex = ((idx - 1) % total + total) % total;
+
+  // Slides: [clone-last, 0, 1, 2, ..., n-1, clone-first]
+  const slides = [USE_CASES[total - 1], ...USE_CASES, USE_CASES[0]];
+
+  const resetAutoPlay = useCallback(() => {
+    if (autoPlayRef.current) clearInterval(autoPlayRef.current);
+    autoPlayRef.current = setInterval(() => {
+      setIsTransitioning(true);
+      setIdx((i) => i + 1);
+    }, 5000);
+  }, []);
+
+  // Start auto-play on mount
+  useEffect(() => {
+    resetAutoPlay();
+    return () => { if (autoPlayRef.current) clearInterval(autoPlayRef.current); };
+  }, [resetAutoPlay]);
+
+  // When transition ends, if we're on a clone slide, jump instantly to the real one
+  const handleTransitionEnd = useCallback(() => {
+    if (idx === 0) {
+      setIsTransitioning(false);
+      setIdx(total);
+    } else if (idx === total + 1) {
+      setIsTransitioning(false);
+      setIdx(1);
+    }
+  }, [idx, total]);
+
+  const goTo = useCallback((i: number) => {
+    setIsTransitioning(true);
+    setIdx(i + 1); // +1 because slot 0 is clone
+    resetAutoPlay();
+  }, [resetAutoPlay]);
+
+  const prev = useCallback(() => {
+    setIsTransitioning(true);
+    setIdx((i) => i - 1);
+    resetAutoPlay();
+  }, [resetAutoPlay]);
+
+  const next = useCallback(() => {
+    setIsTransitioning(true);
+    setIdx((i) => i + 1);
+    resetAutoPlay();
+  }, [resetAutoPlay]);
+
+  // Touch / swipe handlers
+  const onTouchStart = useCallback((e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+    touchDeltaX.current = 0;
+    isSwiping.current = true;
+  }, []);
+
+  const onTouchMove = useCallback((e: React.TouchEvent) => {
+    if (!isSwiping.current) return;
+    touchDeltaX.current = e.touches[0].clientX - touchStartX.current;
+  }, []);
+
+  const onTouchEnd = useCallback(() => {
+    if (!isSwiping.current) return;
+    isSwiping.current = false;
+    const threshold = 50;
+    if (touchDeltaX.current < -threshold) {
+      next();
+    } else if (touchDeltaX.current > threshold) {
+      prev();
+    }
+  }, [next, prev]);
+
+  return (
+    <section className="py-24 border-t border-border bg-bg-warm overflow-hidden">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="text-center mb-12">
+          <p className="section-label mb-3">Real Use Cases</p>
+          <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-3">How people actually use <span className="font-brand italic">Cabinet</span>
+          </h2>
+          <p className="text-text-secondary font-body-serif max-w-xl mx-auto">
+            Knowledge base + agents + files. One OS for wildly different workflows.
+          </p>
+        </div>
+
+        {/* Sliding track */}
+        <div
+          className="relative"
+          onTouchStart={onTouchStart}
+          onTouchMove={onTouchMove}
+          onTouchEnd={onTouchEnd}
+        >
+          <div className="overflow-hidden rounded-2xl card-skin">
+            <div
+              ref={trackRef}
+              className="flex"
+              style={{
+                transform: `translateX(-${idx * 100}%)`,
+                transition: isTransitioning ? "transform 500ms ease-in-out" : "none",
+              }}
+              onTransitionEnd={handleTransitionEnd}
+            >
+              {slides.map((s, i) => (
+                <div key={i} className="w-full flex-shrink-0">
+                  <div className="bg-bg-card">
+                    <div className="grid md:grid-cols-2 gap-0">
+                      {/* Left - quote + activity */}
+                      <div className="p-8 md:p-10 flex flex-col justify-between border-b md:border-b-0 md:border-r border-border">
+                        <div>
+                          <div className="flex items-center gap-3 mb-5">
+                            <span className="text-3xl">{s.emoji}</span>
+                            <div>
+                              <span className="text-[10px] font-code text-accent bg-accent-bg px-2 py-0.5 rounded uppercase tracking-wider">
+                                {s.tag}
+                              </span>
+                              <p className="text-xs text-text-tertiary font-code mt-1">{s.persona}</p>
+                            </div>
+                          </div>
+                          <h3 className="font-display text-xl md:text-2xl text-text-primary mb-4 leading-snug">
+                            {s.headline}
+                          </h3>
+                          <p className="text-text-secondary text-sm leading-relaxed font-body-serif italic">
+                            &ldquo;{s.quote}&rdquo;
+                          </p>
+                        </div>
+
+                        {/* Activity bar */}
+                        <div className="mt-8 pt-6 border-t border-border">
+                          <p className="text-[10px] font-code text-text-tertiary uppercase tracking-widest mb-2">
+                            Activity, last 24h
+                          </p>
+                          <div className="flex gap-0.5 items-end h-7">
+                            {Array.from({ length: 24 }, (_, j) => {
+                              const heights = [2, 4, 3, 6, 4, 8, 5, 3, 7, 4, 9, 6, 4, 7, 5, 8, 3, 6, 4, 7, 5, 3, 6, 4];
+                              const h = heights[(j + i * 7) % heights.length];
+                              return (
+                                <div
+                                  key={j}
+                                  className={`flex-1 rounded-sm ${h > 5 ? "bg-accent" : "bg-border"}`}
+                                  style={{ height: `${(h / 9) * 100}%` }}
+                                />
+                              );
+                            })}
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Right - Cabinet KB mockup */}
+                      <div className="p-6 md:p-8 bg-bg">
+                        <CabinetMockup kb={s.kb} caseEmoji={s.emoji} agents={s.agents} />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Prev / Next */}
+          <button
+            onClick={prev}
+            className="absolute left-0 top-1/3 -translate-y-1/2 -translate-x-4 md:-translate-x-6 w-10 h-10 rounded-full card-skin shadow-md flex items-center justify-center text-text-secondary hover:text-text-primary hover:border-border-dark transition-all"
+            aria-label="Previous"
+          >
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8l4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+          </button>
+          <button
+            onClick={next}
+            className="absolute right-0 top-1/3 -translate-y-1/2 translate-x-4 md:translate-x-6 w-10 h-10 rounded-full card-skin shadow-md flex items-center justify-center text-text-secondary hover:text-text-primary hover:border-border-dark transition-all"
+            aria-label="Next"
+          >
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+          </button>
+        </div>
+
+        {/* Dots */}
+        <div className="flex items-center justify-center gap-2 mt-8">
+          {USE_CASES.map((uc, i) => (
+            <button
+              key={i}
+              onClick={() => goTo(i)}
+              className={`transition-all rounded-full ${
+                i === realIndex ? "w-6 h-2 bg-accent" : "w-2 h-2 bg-border hover:bg-border-dark"
+              }`}
+              aria-label={uc.tag}
+            />
+          ))}
+        </div>
+
+        {/* Tags row */}
+        <div className="flex flex-wrap items-center justify-center gap-2 mt-6">
+          {USE_CASES.map((uc, i) => (
+            <button
+              key={i}
+              onClick={() => goTo(i)}
+              className={`text-xs font-code px-3 py-1 rounded-full border transition-all ${
+                i === realIndex
+                  ? "border-accent text-accent bg-accent-bg"
+                  : "border-border text-text-tertiary hover:border-border-dark hover:text-text-secondary"
+              }`}
+            >
+              {uc.tag}
+            </button>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function LegacyInstallTerminal() {
+  return (
+    <section className="py-24 border-t border-border bg-bg">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <p className="section-label mb-3">Install Flow</p>
+          <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">See <span className="font-brand italic">Cabinet</span>{" "}start up in the terminal
+                                  </h2>
+          <p className="text-text-secondary font-body-serif leading-relaxed">The install walkthrough is back. One command scaffolds the workspace, sets up your AI team, and gets <span className="font-brand italic">Cabinet</span>{" "}running locally.
+                                  </p>
+        </div>
+
+        <div className="max-w-3xl mx-auto">
+          <TerminalDemo />
+          <div className="mt-8 text-center">
+            <a
+              href="#get-started"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium btn-wood"
+            >Install <span className="font-brand italic">Cabinet</span>
+              <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function LegacyIntegrationScene() {
+  return <IntegrationScene />;
+}
+
+export function LegacyHero() {
+  return (
+    <section className="relative flex items-center justify-center dot-grid overflow-hidden">
+      <div className="relative z-10 max-w-4xl mx-auto px-6 text-center pt-24 pb-12">
+        {/* Install Options */}
+        <div className="max-w-xl mx-auto mb-20">
+          <div className="flex flex-col sm:flex-row items-stretch gap-3">
+            <a
+              href={MACOS_DOWNLOAD_URL}
+              className="shrink-0 inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-semibold text-base cursor-pointer btn-wood"
+            >
+              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              Download for Mac
+            </a>
+            <span className="hidden sm:flex items-center text-text-muted text-sm font-code">or</span>
+            <div className="flex-1 terminal-chrome flex items-center justify-between px-5 py-4 rounded-xl" style={{ overflow: 'visible' }}>
+              <div className="font-code text-sm flex items-center gap-2">
+                <span className="text-green-400 shrink-0">$</span>
+                <span className="text-zinc-200 whitespace-nowrap">npx cabinetai run</span>
+              </div>
+              <CopyButton text="npx cabinetai run" />
+            </div>
+          </div>
+          <p className="mt-4 text-sm font-body-serif text-text-tertiary">
+            On Windows?{" "}
+            <a
+              href={WINDOWS_DOWNLOAD_URL}
+              className="text-accent underline underline-offset-2 hover:text-accent-warm"
+            >
+              Download the installer
+            </a>
+          </p>
+          <p className="mt-4 text-sm font-body-serif text-text-tertiary">Evaluating <span className="font-brand italic">Cabinet</span>{" "}for your team?{" "}
+            <a
+              href="/demo"
+              className="text-accent underline underline-offset-2 hover:text-accent-warm"
+            >
+              Book a demo
+            </a>
+          </p>
+        </div>
+
+        <h2 className="text-3xl sm:text-4xl md:text-5xl tracking-tight leading-[1.1] mb-6">
+          <span className="font-display text-text-primary">Your knowledge base.</span>
+          <br />
+          <span className="font-display italic gradient-text">Your AI team.</span>
+        </h2>
+
+        {/* Hero Illustration */}
+        <div className="mx-auto mb-8 w-60 sm:w-72 md:w-80">
+          <Image
+            src="/brand/cabinet-logo-flip.png"
+            alt="Cabinet: your files and knowledge in one drawer, a team of AI agents in the other"
+            width={812}
+            height={835}
+            className="h-auto w-full drop-shadow-2xl"
+            priority
+          />
+        </div>
+
+        <p className="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto mb-4 leading-relaxed font-body-serif">
+          A free and open-source AI-first startup OS where everything lives as markdown files on disk. No database. No vendor lock-in.
+        </p>
+
+        <p className="text-sm md:text-base text-text-tertiary max-w-2xl mx-auto mb-6 font-code">
+          No subscription. No trial. No paywall. Clone it, run it, and make it your own.
+        </p>
+
+        <p className="text-base font-code text-text-tertiary max-w-xl mx-auto mb-10">
+          <TypingText
+            texts={[
+              "Onboard an AI team in 5 questions",
+              "Ship HTML apps inside your KB",
+              "Cron-scheduled AI agents that work 24/7",
+              "Git-backed version history on every page",
+              "PDF, CSV, markdown: all first-class content",
+            ]}
+          />
+        </p>
+      </div>
+    </section>
+  );
+}
+
+export function LegacyWhyTriad() {
+  return (
+    <section className="py-24 border-t border-border bg-bg">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="text-center mb-12">
+          <p className="section-label mb-3">Why Cabinet</p>
+          <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
+            The only AI workspace you actually own
+          </h2>
+          <p className="text-text-secondary max-w-2xl mx-auto font-body-serif leading-relaxed">Search tools find. Chatbots answer. <span className="font-brand italic">Cabinet</span>{" "}does the work: on your
+                                        files, your models, your infrastructure.
+                                      </p>
+        </div>
+        <div className="grid gap-5 md:grid-cols-3 max-w-6xl mx-auto">
+          {/* Files */}
+          <div className="group rounded-3xl bg-bg-card p-8 card-hover">
+            <div className="relative flex h-52 items-center justify-center">
+              <div aria-hidden className="pointer-events-none absolute left-1/2 top-1/2 h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full" style={{ background: "radial-gradient(circle, rgba(224,178,60,0.18), transparent 70%)" }} />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/brand/icons/files.png" alt="" className="relative h-36 w-36 object-contain float-slow" />
+            </div>
+            <span className="section-label">Your work lives on disk</span>
+            <h3 className="mt-2 mb-2 font-display text-xl text-text-primary">Own your data</h3>
+            <p className="text-sm font-body-serif leading-relaxed text-text-secondary">Everything is Markdown in a folder you own. Grep it, git it, back it up. No export, no lock-in.</p>
+          </div>
+
+          {/* Bring your own AI - rotating vendor ring */}
+          <div className="group rounded-3xl bg-bg-card p-8 card-hover">
+            <div className="relative flex h-52 items-center justify-center">
+              <div aria-hidden className="pointer-events-none absolute left-1/2 top-1/2 h-44 w-44 -translate-x-1/2 -translate-y-1/2 rounded-full" style={{ background: "radial-gradient(circle, rgba(139,94,60,0.12), transparent 70%)" }} />
+              <div className="orbit relative h-[200px] w-[200px]">
+                {[
+                  { v: "claude", l: 156, t: 78 }, { v: "openai", l: 133, t: 133 }, { v: "gemini", l: 78, t: 156 }, { v: "grok", l: 23, t: 133 },
+                  { v: "opencode", l: 0, t: 78 }, { v: "copilot", l: 23, t: 23 }, { v: "cursor", l: 78, t: 0 }, { v: "pi", l: 133, t: 23 },
+                ].map((p) => (
+                  <span key={p.v} className="orbit__item absolute" style={{ left: p.l, top: p.t }}>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src={`/brand/vendors/${p.v}.png`} alt="" className="h-11 w-11 object-contain" />
+                  </span>
+                ))}
+              </div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/brand/cabinet-logo-512.png" alt="" className="absolute left-1/2 top-1/2 h-16 w-16 -translate-x-1/2 -translate-y-1/2 object-contain drop-shadow-lg" />
+            </div>
+            <span className="section-label">Bring your own AI</span>
+            <h3 className="mt-2 mb-2 font-display text-xl text-text-primary">No AI tax</h3>
+            <p className="text-sm font-body-serif leading-relaxed text-text-secondary">Plug in the model accounts you already pay for: Claude, GPT, Gemini, Grok, local models. No markup, no new vendor.</p>
+          </div>
+
+          {/* Agents - abstract floating shapes */}
+          <div className="group rounded-3xl bg-bg-card p-8 card-hover">
+            <div className="relative flex h-52 items-center justify-center">
+              <div aria-hidden className="agent-aura pointer-events-none absolute left-1/2 top-1/2 h-44 w-44 -translate-x-1/2 -translate-y-1/2 rounded-full" style={{ background: "radial-gradient(circle, rgba(111,164,90,0.16), transparent 70%)" }} />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/brand/agents-shapes.png" alt="" className="relative h-44 w-44 object-contain agent-heartbeat" />
+            </div>
+            <span className="section-label">Agents that do the work</span>
+            <h3 className="mt-2 mb-2 font-display text-xl text-text-primary">Always on</h3>
+            <p className="text-sm font-body-serif leading-relaxed text-text-secondary">Not just search and chat. A team of agents researches, drafts, and ships on a schedule, 24/7.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function LegacyTestimonials() {
+  return (
+    <section className="relative overflow-hidden border-t border-border bg-bg-warm py-24">
+      {/* soft accent wash */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(60% 55% at 50% 0%, rgba(139, 94, 60, 0.07), transparent 70%)",
+        }}
+      />
+      <div className="relative z-10 max-w-6xl mx-auto px-6">
+        <div className="text-center mb-12">
+          <p className="section-label mb-3">Testimonials</p>
+          <h2 className="text-3xl md:text-4xl font-display text-text-primary">How teams achieve 10x work with <span className="font-brand italic">Cabinet</span>
+          </h2>
+        </div>
+
+        <div className="testimonial-marquee-viewport relative overflow-hidden">
+          {/* edge fades */}
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-y-0 left-0 z-10 w-12 bg-gradient-to-r from-bg-warm to-transparent sm:w-24"
+          />
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-y-0 right-0 z-10 w-12 bg-gradient-to-l from-bg-warm to-transparent sm:w-24"
+          />
+          <div className="testimonial-marquee flex w-max items-stretch py-2">
+          {[...TESTIMONIALS, ...TESTIMONIALS].map((t, i) => {
+            const avatar = t.image ? (
+              <Image
+                src={t.image}
+                alt={t.name}
+                width={56}
+                height={56}
+                className="h-14 w-14 rounded-full object-cover shadow-sm"
+              />
+            ) : (
+              <div className="flex h-14 w-14 items-center justify-center rounded-full bg-accent font-display text-lg text-white shadow-sm">
+                {t.initials}
+              </div>
+            );
+            const isCollin = t.name === "Collin Davis";
+            return (
+              <figure
+                key={`${t.name}-${i}`}
+                aria-hidden={i >= TESTIMONIALS.length}
+                className={`mr-6 flex w-[340px] shrink-0 flex-col rounded-2xl card-skin p-6 shadow-sm card-hover sm:w-[380px] ${
+                  isCollin ? "text-center items-center" : ""
+                }`}
+              >
+                {/* Photo at the top - clickable to LinkedIn */}
+                {t.linkedin ? (
+                  <a
+                    href={t.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`${t.name} on LinkedIn`}
+                    className="mb-4 inline-block rounded-full transition-transform hover:scale-105"
+                  >
+                    {avatar}
+                  </a>
+                ) : (
+                  <div className="mb-4">{avatar}</div>
+                )}
+
+                <blockquote
+                  className={`mb-3 font-display text-text-primary ${
+                    t.quote.length > 90
+                      ? "text-lg leading-relaxed tracking-normal md:text-xl"
+                      : "text-xl leading-snug tracking-tight md:text-2xl"
+                  }`}
+                >
+                  {t.quote}
+                </blockquote>
+                <p className="mb-5 font-body-serif leading-relaxed text-text-secondary">
+                  {t.context}
+                </p>
+
+                <figcaption className="mt-auto">
+                  {t.linkedin ? (
+                    <a
+                      href={t.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group/who block"
+                    >
+                      <span className="block font-hand text-3xl leading-none text-text-primary transition-colors group-hover/who:text-accent">
+                        {t.name}
+                      </span>
+                      <span className="mt-0.5 block text-sm text-text-secondary transition-colors group-hover/who:text-accent">
+                        {t.role}
+                      </span>
+                    </a>
+                  ) : (
+                    <>
+                      <p className="font-hand text-3xl leading-none text-text-primary">
+                        {t.name}
+                      </p>
+                      <p className="mt-0.5 text-sm text-text-secondary">{t.role}</p>
+                    </>
+                  )}
+                  <p className="mt-1 text-xs font-code text-text-tertiary">{t.location}</p>
+                </figcaption>
+              </figure>
+            );
+          })}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function LegacyCustomerStories() {
+  return (
+    <section className="py-24 border-t border-border bg-bg">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="mb-3 flex items-center justify-center gap-2">
+          <p className="section-label">Customer stories</p>
+          <span className="rounded-full bg-bg-card px-2.5 py-0.5 font-code text-[10px] uppercase tracking-wider text-text-tertiary ring-1 ring-border-light">
+            Illustrative
+          </span>
+        </div>
+        <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4 text-center">What teams ship with <span className="font-brand italic">Cabinet</span>
+        </h2>
+        <p className="text-text-secondary max-w-2xl mx-auto font-body-serif leading-relaxed mb-12 text-center">
+          Anonymized scenarios that mirror how teams put an AI crew to work. Real,
+          named case studies land here as teams go public.
+        </p>
+        <div className="grid md:grid-cols-3 gap-5 max-w-5xl mx-auto">
+          {["sales", "marketing", "founders"].map((slug) => {
+            const s = SOLUTION_STORIES[slug];
+            return (
+              <div key={slug} className="flex flex-col rounded-2xl card-skin p-7 card-hover">
+                <div className="font-display text-4xl tracking-tight text-accent">{s.metric}</div>
+                <p className="mt-1.5 text-sm text-text-secondary font-body-serif">{s.metricLabel}</p>
+                <blockquote className="mt-5 flex-1 font-body-serif leading-relaxed text-text-secondary">
+                  &ldquo;{s.quote}&rdquo;
+                </blockquote>
+                <p className="mt-4 font-code text-xs text-text-tertiary">{s.attribution}</p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function LegacyByoai() {
+  return (
+    <section id="byoai" className="py-24 border-t border-border bg-bg-card">
+      <div className="max-w-5xl mx-auto px-6 text-center">
+        <p className="section-label mb-3">Bring your own AI</p>
+        <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
+          Works with the AI you already pay for
+        </h2>
+        <p className="text-text-secondary max-w-2xl mx-auto font-body-serif leading-relaxed mb-12">
+          <span className="font-brand italic">Cabinet</span>{" "}runs on your existing model accounts and subscriptions. There&apos;s
+                                  no bundled inference marked up on top, and no new AI vendor to push through
+                                  procurement. Point it at what your team already uses.
+                                </p>
+
+        <div className="grid grid-cols-8 gap-2 sm:gap-3 max-w-4xl mx-auto">
+          {PROVIDERS.map((p) => (
+            <div key={p.name} className="group flex flex-col items-center gap-2">
+              <div className="flex aspect-square w-full items-center justify-center rounded-2xl card-skin transition-all duration-200 ease-out group-hover:-translate-y-1 group-hover:scale-105 group-hover:shadow-lg">
+                <Image
+                  src={p.src}
+                  alt={p.name}
+                  width={40}
+                  height={40}
+                  className="h-6 w-6 sm:h-9 sm:w-9 object-contain transition-transform duration-200 ease-out group-hover:scale-110"
+                />
+              </div>
+              <span className="text-[11px] sm:text-sm font-medium text-text-secondary text-center leading-tight">
+                {p.name}
+              </span>
+            </div>
+          ))}
+        </div>
+
+        <p className="mt-10 text-sm font-code text-text-tertiary">
+          …plus local models, and whatever comes next.
+        </p>
+      </div>
+    </section>
+  );
+}
+
+export function LegacyIntegrationsMarquee() {
+  return (
+    <section id="integrations" className="overflow-hidden border-t border-border bg-bg-warm py-24">
+      <div className="mx-auto max-w-5xl px-6 text-center">
+        <p className="section-label mb-3">Integrations</p>
+        <h2 className="mb-4 font-display text-3xl text-text-primary md:text-4xl">
+          Connect to everything that runs your company
+        </h2>
+        <p className="mx-auto max-w-2xl font-body-serif leading-relaxed text-text-secondary">Your company runs on dozens of tools. <span className="font-brand italic">Cabinet</span>{" "}brings the work scattered
+                                  across them into one place you own, where your team and its agents can find
+                                  it, act on it, and keep it moving.
+                                </p>
+      </div>
+
+      <div className="mt-14 flex flex-col gap-4">
+        {INTEGRATION_ROWS.map((row, r) => (
+          <div key={r} className="logo-marquee-viewport relative overflow-hidden">
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-y-0 left-0 z-10 w-12 bg-gradient-to-r from-bg-warm to-transparent sm:w-24"
+            />
+            <div
+              aria-hidden
+              className="pointer-events-none absolute inset-y-0 right-0 z-10 w-12 bg-gradient-to-l from-bg-warm to-transparent sm:w-24"
+            />
+            <div className={`flex w-max ${r % 2 === 1 ? "logo-marquee-reverse" : "logo-marquee"}`}>
+              {[...row, ...row].map((src, i) => (
+                <div
+                  key={`${src}-${i}`}
+                  className="mr-3 flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl card-skin shadow-sm sm:h-20 sm:w-20"
+                >
+                  <Image
+                    src={src}
+                    alt={integrationName(src)}
+                    width={40}
+                    height={40}
+                    className="h-8 w-8 object-contain sm:h-10 sm:w-10"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <p className="mx-auto mt-12 max-w-2xl px-6 text-center text-sm font-code text-text-tertiary">
+        …and the rest of the stack your team already uses.
+      </p>
+    </section>
+  );
+}
+
+export function LegacySocialProofBar() {
+  return (
+    <section className="border-y border-border py-8 bg-bg-card">
+      <div className="max-w-6xl mx-auto px-6 flex flex-wrap items-center justify-center gap-8 md:gap-16 text-text-tertiary text-sm font-code">
+        <div className="flex items-center gap-2"><WoodIcon icon={FileText} className="w-6 h-6" /><span>Markdown on disk</span></div>
+        <div className="flex items-center gap-2"><WoodIcon icon={Shield} className="w-6 h-6" /><span>Self-hosted</span></div>
+        <div className="flex items-center gap-2"><WoodIcon icon={GitBranch} className="w-6 h-6" /><span>Git-backed</span></div>
+        <div className="flex items-center gap-2"><WoodIcon icon={Bot} className="w-6 h-6" /><span>AI-native</span></div>
+        <div className="flex items-center gap-2"><WoodIcon icon={Code2} className="w-6 h-6" /><span>Open source</span></div>
+      </div>
+    </section>
+  );
+}
+
+export function LegacyCloudWaitlist() {
+  return (
+    <section className="relative overflow-hidden py-20 md:py-24 bg-bg">
+      <WaitlistCloudBackdrop />
+
+      <div className="relative z-10 max-w-6xl mx-auto px-6">
+        <Suspense
+          fallback={
+            <div className="mx-auto min-h-[320px] max-w-5xl rounded-[28px] card-skin/70" />
+          }
+        >
+          <WaitlistCapture
+            source="homepage-section"
+            originPage="/"
+            trackView
+            className="max-w-5xl mx-auto"
+          />
+        </Suspense>
+      </div>
+    </section>
+  );
+}
+
+export function LegacyPrinciples() {
+  return (
+    <section className="py-24 border-t border-border bg-bg-warm">
+      <div className="max-w-6xl mx-auto px-6">
+        <PrinciplesShowcase />
+        <p className="mt-16 text-center font-body-serif italic text-text-secondary text-lg">
+          If a feature would break any of these, it doesn&apos;t make it in.
+        </p>
+      </div>
+    </section>
+  );
+}
+
+export function LegacyProblem() {
+  return (
+    <section className="py-24 bg-bg">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-3xl mx-auto text-center mb-16">
+          <p className="section-label mb-3">The Problem</p>
+          <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-6">
+            Your AI agents have no memory
+          </h2>
+          <p className="text-text-secondary text-lg leading-relaxed font-body-serif">Every time you start a new Claude session, it forgets everything.
+                                        Your project context, your decisions, your research. Gone. You
+                                        keep re-explaining the same things. <span className="font-brand italic">Cabinet</span>{" "}gives your AI a
+                                        persistent brain: a knowledge base that both you and your agents
+                                        read and write to, 24/7.
+                                      </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6">
+          <div className="text-center p-8 rounded-xl card-skin">
+            <div className="w-12 h-12 mx-auto rounded-xl bg-accent-bg flex items-center justify-center mb-4">
+              <X className="w-6 h-6 text-accent-warm" />
+            </div>
+            <h3 className="font-display text-lg mb-2 text-text-primary">Without <span className="font-brand italic">Cabinet</span></h3>
+            <p className="text-sm text-text-secondary">
+              Scattered docs in Notion. AI sessions that forget context. Manual copy-paste between tools. Scripts held together with tape.
+            </p>
+          </div>
+          <div className="text-center p-8 rounded-xl border border-accent/20 bg-accent-bg-subtle">
+            <Image src="/cabinet-icon.png" alt="Cabinet" width={48} height={48} className="mx-auto rounded-xl mb-4" />
+            <h3 className="font-display text-lg mb-2 text-text-primary">With <span className="font-brand italic">Cabinet</span></h3>
+            <p className="text-sm text-text-primary">
+              One knowledge base. AI agents that remember everything. Scheduled jobs that compound. Your team grows while you sleep.
+            </p>
+          </div>
+          <div className="text-center p-8 rounded-xl card-skin">
+            <div className="w-14 h-14 mx-auto flex items-center justify-center mb-4">
+              <WoodIcon icon={Users} className="w-12 h-12" />
+            </div>
+            <h3 className="font-display text-lg mb-2 text-text-primary">Design Principle</h3>
+            <p className="text-sm text-text-secondary font-body-serif italic">
+              If it feels like enterprise workflow software, it&apos;s wrong. If it feels like watching a team work, it&apos;s right.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function LegacyEmbeddedApps() {
+  return (
+    <section className="py-24 border-t border-border bg-bg">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <p className="section-label mb-3">Unique to Cabinet</p>
+            <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-6">
+              Ship HTML apps inside<br />your knowledge base
+            </h2>
+            <p className="text-text-secondary mb-6 leading-relaxed font-body-serif">This is the biggest difference between <span className="font-brand italic">Cabinet</span>{" "}and tools like
+                                              Obsidian or Notion. Drop an{" "}
+              <code className="text-accent bg-accent-bg px-1.5 py-0.5 rounded text-sm font-code">index.html</code>{" "}into any folder and it renders as a live, interactive app.
+                                            </p>
+            <ul className="space-y-3 text-sm text-text-secondary">
+              <li className="flex items-start gap-3">
+                <Check className="w-4 h-4 text-accent mt-0.5 shrink-0" />
+                <span><strong className="text-text-primary">Full-screen mode:</strong> add a <code className="text-accent bg-accent-bg px-1 py-0.5 rounded text-xs font-code">.app</code> marker. Sidebar and AI panel auto-collapse</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Check className="w-4 h-4 text-accent mt-0.5 shrink-0" />
+                <span><strong className="text-text-primary">AI-generated apps:</strong> ask Claude to build a dashboard, it writes the HTML directly into your KB</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Check className="w-4 h-4 text-accent mt-0.5 shrink-0" />
+                <span><strong className="text-text-primary">Version controlled:</strong> every change is tracked in git, same as your markdown pages</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Check className="w-4 h-4 text-accent mt-0.5 shrink-0" />
+                <span><strong className="text-text-primary">No build step:</strong> plain HTML/CSS/JS. Works with React, Vue, or vanilla</span>
+              </li>
+            </ul>
+          </div>
+          <div className="terminal-chrome">
+            <div className="flex items-center gap-2 px-4 py-3 border-b border-white/8">
+              <div className="w-3 h-3 rounded-full bg-red-500/70" />
+              <div className="w-3 h-3 rounded-full bg-yellow-500/70" />
+              <div className="w-3 h-3 rounded-full bg-green-500/70" />
+              <span className="ml-3 text-xs text-zinc-500 font-code">/tools/lead-scorer/index.html</span>
+            </div>
+            <div className="p-6 font-code text-xs text-zinc-400 leading-relaxed">
+              <div className="text-zinc-600">&lt;!-- Your KB file tree --&gt;</div>
+              <div className="mt-2"><span className="text-zinc-500">data/</span></div>
+              <div className="ml-4"><span className="text-zinc-500">tools/</span></div>
+              <div className="ml-8"><span className="text-zinc-500">lead-scorer/</span></div>
+              <div className="ml-12 text-green-400">index.html &larr; renders as app</div>
+              <div className="ml-12 text-green-400">.app &larr; full-screen mode</div>
+              <div className="ml-12 text-zinc-500">styles.css</div>
+              <div className="ml-12 text-zinc-500">app.js</div>
+              <div className="ml-4 mt-2"><span className="text-zinc-500">dashboards/</span></div>
+              <div className="ml-8"><span className="text-zinc-500">metrics/</span></div>
+              <div className="ml-12 text-blue-400">index.html &larr; embedded site</div>
+              <div className="ml-4 mt-2"><span className="text-zinc-500">research/</span></div>
+              <div className="ml-8 text-zinc-300">market-analysis.md</div>
+              <div className="ml-8 text-red-400">whitepaper.pdf</div>
+              <div className="ml-8 text-green-300">leads.csv</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function LegacyFeaturesGrid() {
+  return (
+    <section id="features" className="py-24 border-t border-border bg-bg-warm">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <p className="section-label mb-3">Features</p>
+          <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
+            Everything you need. Nothing you don&apos;t.
+          </h2>
+          <p className="text-text-secondary max-w-2xl mx-auto font-body-serif">
+            A complete operating system for your startup: knowledge base, AI agents, task management, and team chat in one self-hosted app.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-2 lg:grid-cols-6 gap-4 max-w-6xl mx-auto auto-rows-fr">
+          {[
+            { img: "/brand/feat/agents.png", span: "col-span-2 lg:col-span-3", featured: true, title: "AI Agents", description: "Onboard a CEO, Editor, Marketer. Each has goals, skills, scheduled jobs. Watch them work like a real team." },
+            { img: "/brand/feat/files.png", span: "col-span-2 lg:col-span-3", featured: true, title: "File-Based Everything", description: "No database. Markdown on disk. Drag-and-drop tree sidebar. Your data is always yours, always portable." },
+            { img: "/brand/feat/editor.png", span: "lg:col-span-2", title: "WYSIWYG + Markdown", description: "Rich text editing with Tiptap. Tables, code blocks, slash commands. Toggle to raw markdown anytime." },
+            { img: "/brand/feat/htmlapp.png", span: "lg:col-span-2", title: "Embedded HTML Apps", description: "Drop an index.html in any folder. It renders as an iframe. Full-screen mode for dashboards." },
+            { img: "/brand/feat/terminal.png", span: "lg:col-span-2", title: "Web Terminal", description: "Full Claude Code terminal in the browser. xterm.js + node-pty. Run commands without leaving Cabinet." },
+            { img: "/brand/feat/git.png", span: "col-span-2 lg:col-span-4", featured: true, title: "Git-Backed History", description: "Every save auto-commits. Full diff viewer. Restore any page to any point in time. Linked repo support." },
+            { img: "/brand/feat/schedule.png", span: "lg:col-span-2", title: "Scheduled Jobs", description: "Cron-based agent automation. Reddit scout every 6 hours. Weekly reports on Monday. Your AI team never sleeps." },
+            { img: "/brand/feat/tasks.png", span: "lg:col-span-2", title: "Missions & Tasks", description: "Break goals into missions. Assign tasks to agents. Track progress with Kanban boards." },
+            { img: "/brand/feat/chat.png", span: "col-span-2 lg:col-span-4", featured: true, title: "Internal Chat", description: "Built-in team channels. Agents and humans communicate. @mention an agent to trigger a response." },
+            { img: "/brand/feat/search.png", span: "lg:col-span-2", title: "Full-Text Search", description: "Cmd+K instant search across all pages. Fuzzy matching. FlexSearch index rebuilt on every change." },
+            { img: "/brand/feat/docs.png", span: "lg:col-span-2", title: "PDF & CSV First-Class", description: "PDFs render inline. CSVs open as editable tables with add/delete rows and columns." },
+            { img: "/brand/feat/repos.png", span: "lg:col-span-2", title: "Linked Git Repos", description: "Add .repo.yaml to link KB directories to source code repos. Agents read your codebase." },
+          ].map((f) => (
+            <FeatureCard key={f.title} img={f.img} title={f.title} description={f.description} featured={f.featured} className={f.span} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function LegacyAiTeam() {
+  return (
+    <section id="agents" className="py-24 border-t border-border bg-bg-warm">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <p className="section-label mb-3">AI Team</p>
+          <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
+            Hire your AI team in 5 questions
+          </h2>
+          <p className="text-text-secondary max-w-2xl mx-auto font-body-serif">
+            Answer 5 questions. A CEO agent appears. It suggests teammates.
+            Each agent has goals, skills, and recurring jobs. You watch them
+            work like watching a real team.
+          </p>
+        </div>
+        <AgentShowcase />
+      </div>
+    </section>
+  );
+}
+
+export function LegacyHowItWorks() {
+  return (
+    <section className="py-24 border-t border-border bg-bg">
+      <div className="max-w-4xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <p className="section-label mb-3">How It Works</p>
+          <h2 className="text-3xl md:text-4xl font-display text-text-primary">
+            From zero to AI team in 2 minutes
+          </h2>
+        </div>
+
+        <div className="space-y-0">
+          {[
+            { step: "01", title: "Install & Run", desc: "One command. Next.js + daemon start. Your knowledge base is a /data directory on disk.", code: "npx cabinetai run" },
+            { step: "02", title: "Answer 5 Questions", desc: "What's your company? What do you do? What are your goals? Cabinet builds your custom AI team.", code: null },
+            { step: "03", title: "Watch Your Team Work", desc: "Agents create missions, write content, scout Reddit, review quality, all on schedule.", code: null },
+            { step: "04", title: "Knowledge Compounds", desc: "Every agent run, every edit, every research session adds to the KB. Your system gets smarter every day.", code: null },
+          ].map((item, i) => (
+            <div key={item.step} className="flex gap-6 relative">
+              <div className="flex flex-col items-center">
+                <div className="w-10 h-10 rounded-full bg-accent text-white flex items-center justify-center text-sm font-code shrink-0">
+                  {item.step}
+                </div>
+                {i < 3 && <div className="w-px h-full bg-border mt-2" />}
+              </div>
+              <div className="pb-12">
+                <h3 className="font-display text-xl mb-2 text-text-primary">{item.title}</h3>
+                <p className="text-sm text-text-secondary mb-3 leading-relaxed font-body-serif">{item.desc}</p>
+                {item.code && (
+                  <div className="inline-flex items-center gap-2 text-xs font-code text-accent bg-accent-bg px-3 py-1.5 rounded-lg">
+                    <code>{item.code}</code>
+                    <CopyButton text={item.code} />
+                  </div>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function LegacySolutions() {
+  return (
+    <section id="solutions" className="py-24 border-t border-border bg-bg-warm">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="text-center mb-12">
+          <p className="section-label mb-3">Solutions</p>
+          <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
+            Cabinet{" "}for every team
+                                      </h2>
+          <p className="text-text-secondary max-w-2xl mx-auto font-body-serif leading-relaxed">
+            Same knowledge base: a different AI crew for each function, working on
+            your data, on your infrastructure, around the clock.
+          </p>
+        </div>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
+          {SOLUTIONS.map((s) => (
+            <a
+              key={s.slug}
+              href={`/solutions/${s.slug}`}
+              className="group flex flex-col rounded-2xl card-skin p-6 card-hover"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={`/brand/solutions/${s.slug}.png`}
+                alt=""
+                className="mb-4 h-20 w-20 object-contain transition-transform duration-200 group-hover:scale-105 group-hover:-rotate-2"
+              />
+              <h3 className="mb-2 font-display text-lg text-text-primary">
+                Cabinet{" "}for {s.label}
+              </h3>
+              <p className="text-sm text-text-secondary font-body-serif leading-relaxed flex-1">
+                {s.menuBlurb}
+              </p>
+              <span className="mt-4 inline-flex items-center gap-1.5 font-code text-sm text-accent transition-colors group-hover:text-accent-warm">
+                Explore <ArrowRight className="w-4 h-4" />
+              </span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function LegacyCabinetTemplates() {
+  return (
+    <section id="cabinets" className="py-24 border-t border-border bg-bg">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="text-center mb-12">
+          <p className="section-label mb-3">Cabinet{" "}templates</p>
+          <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
+            Plug-and-play AI teams for real results
+          </h2>
+          <p className="text-text-secondary max-w-2xl mx-auto font-body-serif leading-relaxed">
+            Each cabinet runs as an always-on team on its own dedicated machine,
+            self-hosted or in <span className="font-brand italic">Cabinet</span>{" "}Cloud.
+            Real software doing real work while you sleep.
+          </p>
+        </div>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
+          {CABINETS.slice(0, 6).map((c) => (
+            <a
+              key={c.slug}
+              href={cabinetUrl(c.slug)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex flex-col overflow-hidden rounded-2xl card-skin card-hover"
+            >
+              <div
+                className="relative w-full overflow-hidden"
+                style={{ paddingBottom: "56%" }}
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={cabinetCover(c.slug)}
+                  alt=""
+                  loading="lazy"
+                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-200 group-hover:scale-105"
+                />
+              </div>
+              <div className="flex flex-1 flex-col p-5">
+                <h3 className="mb-2 font-display text-lg text-text-primary">
+                  {c.name}
+                </h3>
+                <p className="mb-3 flex-1 text-sm text-text-secondary font-body-serif leading-relaxed">
+                  {c.description}
+                </p>
+                <div className="flex flex-wrap gap-1.5">
+                  {c.tags.slice(0, 3).map((t) => (
+                    <span
+                      key={t}
+                      className="rounded-full bg-accent-bg px-2 py-0.5 font-code text-[11px] text-accent"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+
+        <div className="mt-10 text-center">
+          <a
+            href={CABINETS_SITE}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex h-11 items-center justify-center gap-2 rounded-full px-6 text-sm font-semibold btn-wood"
+          >
+            Browse all cabinets
+            <ArrowRight className="w-4 h-4" />
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function LegacyBusinessCase() {
+  return (
+    <section className="py-20 border-t border-border bg-bg">
+      <div className="max-w-5xl mx-auto px-6">
+        <div className="text-center mb-12">
+          <p className="section-label mb-3">The business case</p>
+          <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
+            Own more. Pay less. Move faster.
+          </h2>
+          <p className="text-text-secondary max-w-2xl mx-auto font-body-serif leading-relaxed">
+            The numbers execs actually care about, before a single line of custom
+            integration.
+          </p>
+        </div>
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
+          {[
+            { stat: "$0", label: "per-seat AI markup: you bring your own models" },
+            { stat: "100%", label: "of your data stays on your infrastructure" },
+            { stat: "1 folder", label: "replaces the wiki, the chatbot, and the agent platform" },
+            { stat: "24/7", label: "your AI team runs on a schedule, not on demand" },
+          ].map((o) => (
+            <div
+              key={o.label}
+              className="rounded-2xl card-skin p-7 text-center"
+            >
+              <div className="font-display text-4xl md:text-5xl tracking-tight text-accent">
+                {o.stat}
+              </div>
+              <p className="mt-2 text-sm text-text-secondary font-body-serif leading-relaxed">
+                {o.label}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function LegacyOrgBadges() {
+  return (
+    <section className="py-24 border-t border-border bg-bg">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="text-center mb-12">
+          <p className="section-label mb-3">Built for organizations</p>
+          <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
+            Designed to clear a security review
+          </h2>
+          <p className="text-text-secondary max-w-2xl mx-auto font-body-serif leading-relaxed">
+            The people who sign off on new tools (security, legal, platform
+            owners) should come away with less to worry about, not more.
+          </p>
+        </div>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto">
+          {TRUST_BADGES.map((b) => (
+            <div
+              key={b.label}
+              className="group rounded-2xl card-skin p-6 card-hover"
+            >
+              <div className="flex items-start justify-between gap-3 mb-3">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={b.img}
+                  alt=""
+                  className="h-16 w-16 object-contain transition-transform duration-200 group-hover:scale-105 group-hover:-rotate-2"
+                />
+                {b.status && (
+                  <span className="mt-1 inline-flex items-center gap-1.5 rounded-full bg-amber-100 px-2.5 py-1 text-[11px] font-semibold text-amber-700">
+                    <span className="h-1.5 w-1.5 rounded-full bg-amber-500" />
+                    {b.status}
+                  </span>
+                )}
+              </div>
+              <h3 className="font-display text-lg text-text-primary mb-1.5">
+                {b.label}
+              </h3>
+              <p className="text-sm text-text-secondary font-body-serif leading-relaxed">
+                {b.desc}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        <p className="mt-10 text-center text-sm text-text-tertiary font-body-serif">
+          Questions for a vendor review?{" "}
+          <a
+            href="mailto:hi@runcabinet.com"
+            className="text-accent underline underline-offset-2 hover:text-accent-warm"
+          >
+            hi@runcabinet.com
+          </a>
+        </p>
+      </div>
+    </section>
+  );
+}
+
+export function LegacyCta() {
+  const stars = useGitHubStars();
+
+  return (
+    <section id="get-started" className="py-24 border-t border-border bg-bg-warm">
+      <div className="max-w-3xl mx-auto px-6 text-center">
+        <Image src="/cabinet-icon.png" alt="Cabinet" width={64} height={64} className="mx-auto mb-6 rounded-xl" />
+        <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
+          Ready to build your AI team?
+        </h2>
+        <p className="text-text-secondary mb-8 max-w-xl mx-auto leading-relaxed font-body-serif">
+          <span className="font-brand italic">Cabinet</span>{" "}is a free, open-source project you can run yourself. No subscription, no trial clock, and no vendor lock-in. Start in 2 minutes.
+                                </p>
+        <div className="max-w-xl mx-auto mb-10">
+          <div className="flex flex-col sm:flex-row items-stretch gap-3">
+            <a
+              href={MACOS_DOWNLOAD_URL}
+              className="shrink-0 inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-semibold text-base cursor-pointer btn-wood"
+            >
+              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              Download for Mac
+            </a>
+            <span className="hidden sm:flex items-center text-text-muted text-sm font-code">or</span>
+            <div className="flex-1 terminal-chrome flex items-center justify-between px-5 py-4 rounded-xl" style={{ overflow: 'visible' }}>
+              <div className="font-code text-sm flex items-center gap-2">
+                <span className="text-green-400 shrink-0">$</span>
+                <span className="text-zinc-200 whitespace-nowrap">npx cabinetai run</span>
+              </div>
+              <CopyButton text="npx cabinetai run" />
+            </div>
+          </div>
+          <p className="mt-4 text-sm font-body-serif text-text-tertiary">
+            On Windows?{" "}
+            <a
+              href={WINDOWS_DOWNLOAD_URL}
+              className="text-accent underline underline-offset-2 hover:text-accent-warm"
+            >
+              Download the installer
+            </a>
+          </p>
+        </div>
+        <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 mt-4">
+          <a
+            href="/demo"
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full card-skin text-text-primary font-medium shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
+          >
+            Book a demo
+          </a>
+          <a
+            href={DISCORD_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-[#5865F2] hover:bg-[#4752C4] text-white font-medium transition-colors shadow-sm shadow-[#5865F2]/20"
+          >
+            <DiscordIcon className="w-4 h-4" /> Join Discord
+          </a>
+          <GitHubStarsButton
+            stars={stars}
+            className="inline-flex h-12 min-w-[11rem] items-center justify-between gap-3 rounded-full card-skin px-4 text-sm font-semibold text-text-primary shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
+          />
+        </div>
+        <p className="mt-6 text-sm text-text-tertiary">
+          Questions? <a href="mailto:hi@runcabinet.com" className="text-accent hover:text-accent-warm underline underline-offset-2">hi@runcabinet.com</a>
+        </p>
+      </div>
+    </section>
+  );
+}

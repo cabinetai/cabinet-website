@@ -392,7 +392,7 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
                   className="h-11 w-11 shrink-0 object-contain transition-transform duration-200 group-hover:scale-110 group-hover:-rotate-2"
                 />
                 <div>
-                  <div className="font-display text-text-primary">Cabinet{" "}for {o.label}</div>
+                  <div className="font-display text-text-primary"><span className="font-brand italic">Cabinet</span>{" "}for {o.label}</div>
                   <div className="text-xs text-text-tertiary">{brandify(o.menuBlurb)}</div>
                 </div>
                 <ArrowRight className="ml-auto h-4 w-4 shrink-0 -translate-x-1 text-text-muted opacity-0 transition-all group-hover:translate-x-0 group-hover:text-accent group-hover:opacity-100" />

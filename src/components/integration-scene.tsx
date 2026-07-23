@@ -232,7 +232,7 @@ function FloatingTile({
         <div
           className={
             isAI
-              ? "flex items-center justify-center rounded-2xl bg-accent-bg-subtle shadow-lg shadow-accent/15 ring-1 ring-accent/25 border border-accent/10"
+              ? "flex items-center justify-center rounded-2xl card-skin-warm shadow-lg shadow-accent/10"
               : "flex items-center justify-center rounded-2xl bg-white shadow-lg shadow-black/10 border border-black/5"
           }
           style={{ width: w, height: h }}
@@ -454,9 +454,6 @@ function StaticFallback() {
   );
 }
 
-// Resets on every full page load; survives client-side route changes.
-let autoScrollPlayed = false;
-
 // Above the demo video: "Cabinet" plus a rotating benefit line.
 const BENEFITS = [
   "works the way you already do.",
@@ -473,19 +470,26 @@ function RotatingBenefits() {
   }, []);
   return (
     <h2 className="font-display text-3xl leading-tight tracking-tight text-text-primary md:text-5xl">
-      <span className="gradient-text">Cabinet</span>{" "}
-      <AnimatePresence mode="wait">
-        <motion.span
-          key={i}
-          initial={{ opacity: 0, y: 14 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -14 }}
-          transition={{ duration: 0.35 }}
-          className="inline-block"
-        >
-          {BENEFITS[i]}
-        </motion.span>
-      </AnimatePresence>
+      <span className="inline-flex items-baseline gap-3 text-left">
+        <span className="font-brand italic">Cabinet</span>
+        {/* invisible sizer reserves the widest phrase's width so Cabinet
+            stays anchored and the block doesn't recenter as text rotates */}
+        <span className="relative inline-block whitespace-nowrap">
+          <span aria-hidden className="invisible">holds your entire knowledge base.</span>
+          <AnimatePresence mode="wait">
+            <motion.span
+              key={i}
+              initial={{ opacity: 0, y: 14 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -14 }}
+              transition={{ duration: 0.35 }}
+              className="absolute left-0 top-0 inline-block"
+            >
+              {BENEFITS[i]}
+            </motion.span>
+          </AnimatePresence>
+        </span>
+      </span>
     </h2>
   );
 }
@@ -582,73 +586,7 @@ export function IntegrationScene() {
     setVideoCapRevealed(v > 0.9);
   });
 
-  // Auto-scroll on page open: glide through the scene at a steady, human
-  // scrolling pace until the demo video is on screen. Any user input (wheel,
-  // touch, key, click) cancels it. The in-memory flag means it runs once per
-  // page load: client-side navigation back home won't replay it, a refresh will.
   const demoRef = useRef<HTMLElement>(null);
-  useEffect(() => {
-    if (prefersReduced || window.scrollY > 10 || autoScrollPlayed) return;
-    let raf = 0;
-    let timer = 0;
-    let cancelled = false;
-    const cancel = () => {
-      cancelled = true;
-      cancelAnimationFrame(raf);
-      window.clearTimeout(timer);
-    };
-    const events = ["wheel", "touchstart", "keydown", "mousedown"];
-    events.forEach((e) => window.addEventListener(e, cancel, { passive: true }));
-    timer = window.setTimeout(() => {
-      const el = demoRef.current;
-      const scene = ref.current;
-      if (!el || !scene || cancelled) return;
-      autoScrollPlayed = true;
-      // Clear the fixed nav so the "Cabinet …" heading lands fully visible.
-      const to = el.getBoundingClientRect().top + window.scrollY - 100;
-      // Hold at each caption beat until its word reveal finishes, plus half a
-      // second of reading time. Positions mirror the caption reveal beats.
-      const sceneTop = scene.getBoundingClientRect().top + window.scrollY;
-      const sceneDist = Math.max(1, scene.offsetHeight - window.innerHeight);
-      const pauses = [
-        { at: sceneTop + 0.4 * sceneDist, ms: 1300, done: false },
-        // After the 24/7 caption the story is told — rush to the demo.
-        { at: sceneTop + 0.95 * sceneDist, ms: 1300, done: false, speedAfter: 1.6 },
-      ];
-      let waitUntil = 0;
-      // Constant speed like a person scrolling. Advancing by capped per-frame
-      // deltas (not wall time) so a stalled frame pauses instead of leaping.
-      let speed = 0.45; // px per ms
-      let pos = window.scrollY;
-      let last = performance.now();
-      const step = (now: number) => {
-        if (cancelled) return;
-        if (now < waitUntil) {
-          last = now;
-          raf = requestAnimationFrame(step);
-          return;
-        }
-        pos = Math.min(pos + speed * Math.min(now - last, 50), to);
-        last = now;
-        const pause = pauses.find((p) => !p.done && pos >= p.at);
-        if (pause) {
-          pause.done = true;
-          pos = Math.min(pause.at, to);
-          waitUntil = now + pause.ms;
-          if (pause.speedAfter) speed = pause.speedAfter;
-        }
-        // behavior:'instant' — the site sets scroll-behavior:smooth globally,
-        // which would turn every per-frame scrollTo into its own animation.
-        window.scrollTo({ top: pos, behavior: "instant" });
-        if (pos < to) raf = requestAnimationFrame(step);
-      };
-      raf = requestAnimationFrame(step);
-    }, 1700);
-    return () => {
-      cancel();
-      events.forEach((e) => window.removeEventListener(e, cancel));
-    };
-  }, [prefersReduced]);
 
   if (prefersReduced) return <StaticFallback />;
 
@@ -768,7 +706,7 @@ export function IntegrationScene() {
               staggerDelay={0.08}
               textClassName="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.08] tracking-tight text-left text-text-primary"
             >
-              <span className="gradient-text">Cabinet</span>
+              <span className="font-brand italic">Cabinet</span>
               <br />
               pulls it all
               <br />
@@ -805,19 +743,19 @@ export function IntegrationScene() {
 
       {/* demo video — a plain block right after the scene's "…AI team, 24/7" beat */}
       <section ref={demoRef} className="bg-bg px-6 pb-24">
-        <div className="mx-auto mb-8 max-w-5xl text-center">
-          <RotatingBenefits />
-        </div>
         <div className="mx-auto w-fit max-w-full overflow-hidden rounded-2xl border border-border shadow-2xl shadow-black/25">
           <video
             autoPlay
             loop
             muted
             playsInline
-            className="mx-auto max-h-[80vh] w-auto max-w-full"
+            className="mx-auto max-h-[64vh] w-auto max-w-full"
           >
             <source src="/demo.webm" type="video/webm" />
           </video>
+        </div>
+        <div className="mx-auto mt-8 max-w-5xl text-center">
+          <RotatingBenefits />
         </div>
       </section>
     </>

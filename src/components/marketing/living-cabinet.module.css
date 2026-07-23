@@ -1,26 +1,7 @@
 .shell {
   position: relative;
-  overflow: hidden;
-  border-radius: 32px;
-  background:
-    radial-gradient(circle at 16% 22%, rgba(183, 130, 63, 0.14), transparent 28%),
-    radial-gradient(circle at 84% 76%, rgba(90, 122, 79, 0.1), transparent 34%),
-    var(--bg-warm);
-  box-shadow: 0 36px 80px -44px rgba(59, 47, 47, 0.42);
   color: var(--text-primary);
   isolation: isolate;
-}
-
-.shell::before {
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background-image:
-    linear-gradient(rgba(139, 94, 60, 0.045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(139, 94, 60, 0.045) 1px, transparent 1px);
-  background-size: 32px 32px;
-  content: "";
-  mask-image: linear-gradient(to bottom, black, transparent 85%);
 }
 
 .toolbar {
@@ -39,12 +20,14 @@
 }
 
 .tab {
+  position: relative;
   display: inline-flex;
   min-width: 0;
   flex: 1;
   align-items: center;
   justify-content: center;
   gap: 7px;
+  overflow: hidden;
   border: 0;
   border-radius: 999px;
   padding: 9px 12px;
@@ -66,6 +49,26 @@
   background: var(--bg-card);
   box-shadow: 0 8px 20px -16px rgba(59, 47, 47, 0.6);
   color: var(--text-primary);
+}
+
+.tabProgress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2.5px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-light));
+  transform: scaleX(0);
+  transform-origin: left;
+  animation-name: tabFill;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes tabFill {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
 }
 
 .stage {
@@ -560,6 +563,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   .tab,
+  .tabProgress,
   .scene,
   .bar {
     animation: none;

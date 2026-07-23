@@ -38,7 +38,7 @@ export default function CloudPage() {
               className="mx-auto mb-6 h-[88px] w-auto object-contain drop-shadow-[0_12px_28px_rgba(150,108,68,0.35)]"
             />
 
-            <h1 className="text-4xl md:text-5xl font-display text-text-primary tracking-tight leading-[1.05] mb-5">Your Cabinet, anywhere.
+            <h1 className="text-4xl md:text-5xl font-display text-text-primary tracking-tight leading-[1.05] mb-5">Your <span className="font-brand italic">Cabinet</span>, anywhere.
                             <br />
               <span className="italic gradient-text">Your AI team, always on.</span>
             </h1>

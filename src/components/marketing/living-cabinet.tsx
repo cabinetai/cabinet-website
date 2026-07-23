@@ -19,8 +19,11 @@ import {
   SquareKanban,
   Users,
 } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./living-cabinet.module.css";
+
+// How long each tab stays open before the story advances.
+const STORY_MS = 4200;
 
 type SceneId = "knowledge" | "team" | "work";
 
@@ -127,11 +130,30 @@ const TASK_COLUMNS = [
 
 export function LivingCabinet() {
   const [active, setActive] = useState<SceneId>("knowledge");
+  const [paused, setPaused] = useState(false);
+  const [autoplay, setAutoplay] = useState(true);
   const activeIndex = SCENES.findIndex((scene) => scene.id === active);
   const scene = SCENES[activeIndex];
 
+  // Respect reduced-motion: no story autoplay, tabs stay click-only.
+  useEffect(() => {
+    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const apply = () => setAutoplay(!mq.matches);
+    apply();
+    mq.addEventListener("change", apply);
+    return () => mq.removeEventListener("change", apply);
+  }, []);
+
+  const advance = () => setActive(SCENES[(activeIndex + 1) % SCENES.length].id);
+
   return (
-    <div className={styles.shell}>
+    <div
+      className={styles.shell}
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+      onFocusCapture={() => setPaused(true)}
+      onBlurCapture={() => setPaused(false)}
+    >
       <div className={styles.toolbar}>
         <div className={styles.tabs} role="tablist" aria-label="Explore Cabinet">
           {SCENES.map((item) => {
@@ -150,6 +172,19 @@ export function LivingCabinet() {
               >
                 <Icon aria-hidden className="h-3.5 w-3.5" />
                 {item.label}
+                {selected && autoplay && (
+                  // Story timer: the bar fills over STORY_MS, then advances.
+                  // Pausing freezes the fill so onAnimationEnd never fires.
+                  <span
+                    key={active}
+                    className={styles.tabProgress}
+                    style={{
+                      animationDuration: `${STORY_MS}ms`,
+                      animationPlayState: paused ? "paused" : "running",
+                    }}
+                    onAnimationEnd={advance}
+                  />
+                )}
               </button>
             );
           })}

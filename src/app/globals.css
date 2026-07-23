@@ -373,7 +373,17 @@ html:has(.home-scroll-snap) {
 
 /* ─── Typography classes ─── */
 /* .font-brand (Cabinet wordmark serif) is generated from the --font-brand
-   theme token above; apply it with `italic` in the markup. */
+   theme token above; apply it with `italic` in the markup. The wordmark always
+   renders at weight 400 (Instrument Serif has no bold, so a heavier inherited
+   weight would trigger an ugly faux-bold) and in the warm brown gradient (same
+   ramp as .gradient-text). */
+.font-brand {
+  font-weight: 400;
+  background: linear-gradient(135deg, #3B2F2F 0%, #8B5E3C 50%, #A0714D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 .font-display {
   font-family: var(--font-heading), Georgia, serif;
   font-optical-sizing: auto;

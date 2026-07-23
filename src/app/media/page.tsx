@@ -166,7 +166,7 @@ export default function MediaPage() {
 
           {/* Hero text */}
           <div className="max-w-3xl mx-auto mb-12 text-center">
-            <h1 className="text-4xl md:text-5xl font-display text-text-primary tracking-tight leading-[1.05] mb-5">See Cabinet
+            <h1 className="text-4xl md:text-5xl font-display text-text-primary tracking-tight leading-[1.05] mb-5">See <span className="font-brand italic">Cabinet</span>
               <br />
               <span className="italic gradient-text">in action</span>
             </h1>

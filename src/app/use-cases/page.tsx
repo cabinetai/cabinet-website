@@ -68,7 +68,7 @@ export default function UseCasesPage() {
               Use cases
             </p>
             <h1 className="text-4xl md:text-5xl font-display text-text-primary tracking-tight leading-[1.05] mb-5">
-              How teams use <span className="italic gradient-text">Cabinet</span>
+              How teams use <span className="font-brand italic">Cabinet</span>
             </h1>
             <p className="text-lg text-text-secondary font-body-serif leading-relaxed">Real, end-to-end workflows people run in <span className="font-brand italic">Cabinet</span>, with the exact
                             setup so you can steal it.
