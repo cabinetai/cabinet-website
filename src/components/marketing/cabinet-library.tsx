@@ -547,15 +547,20 @@ export function CabinetLibrary() {
           className="grid items-end gap-6 lg:grid-cols-[1.08fr_0.92fr] lg:gap-12"
         >
           <div>
-            <p className="section-label">AI teams built around results</p>
+            <p className="section-label">Cabinet templates</p>
             <h2 className="mt-3 max-w-[15ch] font-section text-[clamp(2.15rem,3.35vw,3.4rem)] leading-[1.01] text-text-primary">
-              Start with the result you need.
+              Plug-and-play AI teams for real results.
             </h2>
+            <p className="mt-3 text-lg leading-relaxed text-text-secondary">
+              Each cabinet runs as an always-on team on its own dedicated
+              machine, self-hosted or in <span className="font-brand italic">Cabinet</span>{" "}Cloud.
+              Real software doing real work while you sleep.
+            </p>
           </div>
           <div className="lg:pb-1">
             <p className="max-w-xl text-base leading-relaxed text-text-secondary">
-              Choose a working team, connect the systems it needs, and inspect exactly how the work
-              runs.
+              Each cabinet is a complete AI team: agents, jobs, and knowledge. Clone a
+              directory. Run a company.
             </p>
             <a
               href={CABINETS_SITE}

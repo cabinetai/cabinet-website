@@ -242,7 +242,7 @@ function ArchitectureDiagram() {
       {/* Center: Cabinet host */}
       <div className="relative rounded-xl border-2 border-accent/30 bg-accent-bg-subtle p-5">
         <Pill>Inside your perimeter</Pill>
-        <h4 className="mt-3 font-display text-xl text-text-primary">Cabinet{" "}host</h4>
+        <h4 className="mt-3 font-display text-xl text-text-primary"><span className="font-brand italic">Cabinet</span>{" "}host</h4>
         <p className="text-[12px] font-code text-text-tertiary mt-1">
           self-hosted · VPC · air-gap · cloud
         </p>

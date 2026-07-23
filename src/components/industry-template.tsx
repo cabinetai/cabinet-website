@@ -94,7 +94,7 @@ export function IndustryTemplate({ industry }: { industry: Industry }) {
       <section className="border-b border-border py-20">
         <div className="mx-auto max-w-5xl px-6">
           <p className="section-label mb-3">In practice</p>
-          <h2 className="max-w-2xl font-display text-3xl tracking-tight text-text-primary md:text-4xl">What your teams put Cabinet{" "}to work on
+          <h2 className="max-w-2xl font-display text-3xl tracking-tight text-text-primary md:text-4xl">What your teams put <span className="font-brand italic">Cabinet</span>{" "}to work on
                                   </h2>
           <div className="mt-10 grid gap-4 sm:grid-cols-2">
             {industry.uses.map((u) => (

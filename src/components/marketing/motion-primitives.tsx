@@ -1,7 +1,7 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
-import type { ReactNode } from "react";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
+import { useEffect, useState, type ReactNode } from "react";
 
 type RevealVariant = "rise" | "pop" | "left" | "right";
 
@@ -39,53 +39,39 @@ export function MotionReveal({
   );
 }
 
-const HERO_WORDS = [
-  "Your",
-  "knowledge,",
-  "your",
-  "AI",
-  "team,",
-  "your",
-  "apps.",
-  "One",
-  "workspace.",
-];
+const HERO_ROTATING_WORDS = ["Knowledge Base", "AI team", "Work", "AI Workspace", "Cabinet"];
 
 export function HeroHeadline() {
   const reduceMotion = useReducedMotion();
+  const [i, setI] = useState(0);
+
+  useEffect(() => {
+    if (reduceMotion) return;
+    const t = setInterval(() => setI((v) => (v + 1) % HERO_ROTATING_WORDS.length), 2200);
+    return () => clearInterval(t);
+  }, [reduceMotion]);
+
+  const word = HERO_ROTATING_WORDS[i];
 
   return (
-    <motion.h1
-      aria-label="Your knowledge, your AI team, your apps. One workspace."
+    <h1
+      aria-label="Your Knowledge Base, AI team, Work, AI Workspace, Cabinet."
       className="max-w-[13ch] font-display text-[clamp(2.75rem,4.4vw,4.3rem)] leading-[0.98] tracking-[-0.04em] text-text-primary"
-      initial="hidden"
-      animate="visible"
-      variants={{
-        hidden: {},
-        visible: {
-          transition: { staggerChildren: reduceMotion ? 0 : 0.075, delayChildren: 0.16 },
-        },
-      }}
     >
-      {HERO_WORDS.map((word, index) => (
-        <span key={`${word}-${index}`} className="mr-[0.22em] inline-block overflow-hidden align-bottom">
-          <motion.span
-            aria-hidden
-            className="inline-block"
-            variants={{
-              hidden: reduceMotion ? { opacity: 1 } : { opacity: 0, y: "88%", rotate: 1.5 },
-              visible: {
-                opacity: 1,
-                y: "0%",
-                rotate: 0,
-                transition: { duration: 0.68, ease: [0.22, 1, 0.36, 1] },
-              },
-            }}
-          >
-            {word}
-          </motion.span>
-        </span>
-      ))}
-    </motion.h1>
+      Your{" "}
+      <AnimatePresence mode="wait">
+        <motion.span
+          key={word}
+          aria-hidden
+          initial={reduceMotion ? false : { opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={reduceMotion ? undefined : { opacity: 0, y: -14 }}
+          transition={{ duration: 0.35 }}
+          className="inline-block"
+        >
+          {word === "Cabinet" ? <span className="font-brand italic">Cabinet</span> : word}
+        </motion.span>
+      </AnimatePresence>
+    </h1>
   );
 }

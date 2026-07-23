@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Check, Folder, Link2 } from "lucide-react";
 import { MotionReveal } from "./motion-primitives";
+import { ScatteredIntegrationsFrame } from "./scattered-integrations";
 
 const DIRECTORY_ITEMS = [
   {
@@ -59,7 +60,8 @@ export function KnowledgeNetwork() {
       id="knowledge"
       className="home-snap-section home-viewport-section scroll-mt-24 px-5 sm:px-6 lg:px-8"
     >
-      <div className="mx-auto grid w-full max-w-7xl items-center gap-10 lg:grid-cols-[0.72fr_1.28fr] lg:gap-16">
+      <ScatteredIntegrationsFrame>
+      <div className="mx-auto grid w-full max-w-5xl items-center gap-10 lg:grid-cols-[0.72fr_1.28fr] lg:gap-16">
         <MotionReveal variant="left">
           <p className="section-label">Integrations</p>
           <h2 className="mt-5 max-w-[13ch] font-section text-[clamp(2.25rem,3.6vw,3.6rem)] leading-[1.02] text-text-primary">
@@ -182,6 +184,7 @@ export function KnowledgeNetwork() {
           </div>
         </MotionReveal>
       </div>
+      </ScatteredIntegrationsFrame>
     </section>
   );
 }

@@ -1102,7 +1102,7 @@ function QuoteRow() {
     <section className="bg-bg-warm py-20 md:py-24 border-t border-border">
       <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
         <WoodIcon icon={Quote} className="h-10 w-10 mx-auto mb-6" />
-        <p className="ent-display-3 italic max-w-3xl mx-auto">“Most software helps teams do work. Cabinet{" "}helps teams do the{" "}
+        <p className="ent-display-3 italic max-w-3xl mx-auto">“Most software helps teams do work. <span className="font-brand italic">Cabinet</span>{" "}helps teams do the{" "}
           <span className="text-accent not-italic font-semibold">right</span>{" "}work, and proves it.”
                             </p>
         <p className="mt-7 text-sm font-semibold text-text-tertiary uppercase tracking-widest">

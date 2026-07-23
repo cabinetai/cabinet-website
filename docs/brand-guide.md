@@ -93,14 +93,15 @@ Assets (existing, do not redraw):
 - **Full logo:** `public/Cabinet.png`.
 - **Wordmark in type:** the word "Cabinet" set in the brand serif (Instrument Serif), italic, tight tracking. This is the canonical lockup in the navbars:
   `font-brand italic tracking-tight`.
-- **Product name in copy:** in body copy (paragraphs, list items, table cells, quotes), the word "Cabinet" (the product) renders in the wordmark serif: wrap it in `<span className="font-brand italic">Cabinet</span>`, or pipe data-file strings through `brandify()` in `src/components/brand-word.tsx`. In display type (h1-h6, `.font-display`, `.ent-display-*`, eyebrows) the name sets in the heading face like the rest of the line; the serif clashes at display sizes. Generic uses ("a cabinet", "Cabinets" the templates section) stay in the body font.
+- **One wordmark style, everywhere.** `.font-brand` is self-contained: it always renders at **weight 400** and in the **warm brown gradient** (`#3B2F2F` to `#8B5E3C` to `#A0714D`, the `.gradient-text` ramp), regardless of the surrounding context. Instrument Serif ships only at 400, so any inherited heavier weight (for example inside a `.font-display` heading, which is 600) would make the browser synthesize a faux-bold. The class pins weight and color so this cannot happen. Do **not** add `font-bold`, a color utility, or a second gradient to a wordmark span; it is already fully styled by the one class. Add only `italic` and, where the lockup calls for it, `tracking-tight`.
+- **Product name everywhere:** the word "Cabinet" (the product) renders in the wordmark serif in **all** readable copy, body and display alike: wrap it in `<span className="font-brand italic">Cabinet</span>`, or pipe data-file strings through `brandify()` in `src/components/brand-word.tsx`. This now includes display headings (h1-h6, `.font-display`, `.ent-display-*`): the name reads as the italic brown-gradient wordmark inside the heading, not in the heading face. **Exceptions that stay in the system font:** uppercase eyebrows / `.section-label` (an italic serif fights the letter-spaced caps), and generic uses ("a cabinet", "Cabinets" the templates section). Decided 2026-07-23, replacing the earlier "display headings set the name in the heading face" rule.
 
 ### Rules
 
 - **Clear space:** keep at least the height of the "C" of clear space around the lockup.
 - **Minimum size:** icon no smaller than 24px; wordmark legible at 16px.
 - **Pairing:** in the main nav, the icon sits left of the italic wordmark with a small gap. In the enterprise nav, the wordmark may carry a small uppercase "Enterprise" badge.
-- **Do not:** recolor the mark, add effects, stretch, rotate, place on low-contrast backgrounds, or substitute a different font for the wordmark.
+- **Do not:** recolor the mark, add effects, stretch, rotate, place on low-contrast backgrounds, or substitute a different font for the wordmark. The type wordmark's brown gradient is fixed in `.font-brand`; do not override its weight or color per use.
 - **On glass:** the logo sits inside a `glass-pill` in the main nav. Keep the icon and wordmark on the content layer (above the refraction), never tinted by it.
 
 ---
@@ -159,7 +160,7 @@ amber, violet, blue, emerald, rose, slate (Tailwind `*-600` for text/icons, `*-1
 - **Primary action:** accent brown fill, white text. One per view.
 - **Positive / included / "Cabinet wins":** sage green.
 - **Neutral / competitor "no":** `text-muted` plus an icon, never color alone.
-- **Gradient text:** the warm brand gradient (`.gradient-text`, brown to amber) for a single hero emphasis word, not whole paragraphs.
+- **Gradient text:** the warm brand gradient (`.gradient-text`, brown to amber) for a single hero emphasis word, not whole paragraphs. The Cabinet wordmark (`.font-brand`) also carries this same gradient by default; that is the one standing exception to "one emphasis word," because it is the brand name, not emphasis.
 
 ### 5.6 Do / Don't
 
@@ -187,7 +188,7 @@ Four typefaces plus a signature script, each with one job. Loaded in `src/app/la
 | Section heading | Geist | -0.045em | `.font-section`, `.ent-display-2/3` | H2 and H3 across marketing and product stories, weight 620 |
 | Body / UI sans | Geist | 0 | `--font-body` (theme `--font-sans`) | Body copy, nav, buttons, most UI |
 | Labels / eyebrows | Geist | 0.08em | `.section-label`, `.ent-eyebrow` | Uppercase tags and eyebrows |
-| Brand wordmark | Instrument Serif (italic) | tight | `--font-brand`, `.font-brand` | The wordmark lockup, and the product name "Cabinet" in body copy (never in display headings) |
+| Brand wordmark | Instrument Serif (italic, weight 400, warm brown gradient) | tight | `--font-brand`, `.font-brand` | The wordmark lockup, and the product name "Cabinet" in body copy (never in display headings). `.font-brand` pins weight 400 and the gradient so it looks identical in every context |
 | Code / mono | Martian Mono | 0 | `--font-mono`, `.font-code` | Code, terminal, literal commands |
 | Handwriting | Ms Madi | default | `--font-hand`, `.font-hand` | Testimonial signatures only |
 

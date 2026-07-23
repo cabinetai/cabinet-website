@@ -78,8 +78,8 @@ const FONTS: {
   {
     name: "Brand",
     className: "font-brand italic",
-    token: "Instrument Serif · --font-brand",
-    use: "The Cabinet wordmark and the occasional italic flourish only.",
+    token: "Instrument Serif · --font-brand · weight 400 · brown gradient",
+    use: "The Cabinet wordmark only. Always weight 400 and the warm brown gradient, in every context; never bold or recolored.",
   },
   {
     name: "Mono / Code",

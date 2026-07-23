@@ -38,7 +38,7 @@ export default function WaitlistConfirmedPage() {
           waitlist confirmed
         </div>
 
-        <h1 className="text-3xl md:text-4xl font-display text-text-primary mb-4">You’re on the Cabinet{" "}Cloud waitlist
+        <h1 className="text-3xl md:text-4xl font-display text-text-primary mb-4">You’re on the <span className="font-brand italic">Cabinet</span>{" "}Cloud waitlist
                             </h1>
 
         <p className="text-lg text-text-secondary font-body-serif leading-relaxed mb-3">
