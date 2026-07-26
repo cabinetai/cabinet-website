@@ -831,6 +831,7 @@ export function IntegrationScene() {
             className="mx-auto max-h-[64vh] w-auto max-w-full scale-[1.01]"
           >
             <source src="/new-cabinet.webm" type="video/webm" />
+            <source src="/new-cabinet.mp4" type="video/mp4" />
           </video>
         </div>
         <div className="mx-auto mt-8 max-w-5xl text-center">
