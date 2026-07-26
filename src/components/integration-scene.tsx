@@ -64,12 +64,6 @@ const FILES: { name: string; color: string }[] = [
 
 const TILE = 74;
 const CABINET_HUB_IMAGE = "/brand/cabinet-logo-top-open-512.png";
-const CATEGORY_LABELS = [
-  { label: "Files", x: -260, y: -164, start: 0.1, end: 0.28 },
-  { label: "Apps", x: 250, y: -150, start: 0.12, end: 0.3 },
-  { label: "Tasks", x: -235, y: 168, start: 0.14, end: 0.32 },
-  { label: "AI agents", x: 260, y: 164, start: 0.16, end: 0.34 },
-] as const;
 
 // Cluster the clutter on the LEFT of the canvas (golden-angle spiral
 // around a left-of-center point → dense, even, organic). Radii widened a
@@ -283,47 +277,144 @@ function FloatingTile({
   );
 }
 
-function CategoryLabel({
+type LaneItem =
+  | { kind: "label"; text: string }
+  | { kind: "file"; name: string; color: string }
+  | { kind: "dash"; accent: string }
+  | { kind: "agent"; name: string }
+  | { kind: "task"; name: string };
+
+const SUCK_LANES: { y: number; start: number; items: LaneItem[] }[] = [
+  {
+    y: -600,
+    start: 0.42,
+    items: [
+      { kind: "label", text: "Files" },
+      { kind: "file", name: "roadmap.md", color: "#8B5E3C" },
+      { kind: "file", name: "spec.md", color: "#5A7A4F" },
+      { kind: "file", name: "notes.md", color: "#3B6FB0" },
+    ],
+  },
+  {
+    y: -200,
+    start: 0.52,
+    items: [
+      { kind: "label", text: "Dashboards" },
+      { kind: "dash", accent: "#3B6FB0" },
+      { kind: "dash", accent: "#5A7A4F" },
+      { kind: "dash", accent: "#C0392B" },
+    ],
+  },
+  {
+    y: 200,
+    start: 0.62,
+    items: [
+      { kind: "label", text: "AI agents" },
+      { kind: "agent", name: "SDR" },
+      { kind: "agent", name: "Marketing Expert" },
+      { kind: "agent", name: "Researcher" },
+    ],
+  },
+  {
+    y: 600,
+    start: 0.72,
+    items: [
+      { kind: "label", text: "Routines & tasks" },
+      { kind: "task", name: "Weekly report" },
+      { kind: "task", name: "Scout Reddit" },
+      { kind: "task", name: "Nightly backup" },
+    ],
+  },
+];
+
+function LaneChip({ item }: { item: LaneItem }) {
+  switch (item.kind) {
+    case "label":
+      return (
+        <span className="inline-flex items-center whitespace-nowrap rounded-full bg-accent px-9 py-4 font-display text-4xl font-bold text-white shadow-2xl shadow-accent/30 sm:text-5xl">
+          {item.text}
+        </span>
+      );
+    case "file":
+      return (
+        <span className="inline-flex items-center gap-3 rounded-xl border border-black/5 bg-white px-5 py-3.5 shadow-xl shadow-black/10">
+          <span className="h-9 w-2 shrink-0 rounded-full" style={{ background: item.color }} />
+          <span className="font-code text-2xl text-text-secondary">{item.name}</span>
+        </span>
+      );
+    case "dash":
+      return (
+        <div
+          className="rounded-xl border border-black/5 bg-white p-3.5 shadow-xl shadow-black/10"
+          style={{ width: 168 }}
+        >
+          <div className="mb-2 flex items-center gap-2">
+            <span className="h-3 w-3 rounded-full" style={{ background: item.accent }} />
+            <span className="h-2 w-20 rounded bg-black/10" />
+          </div>
+          <div className="flex h-14 items-end gap-1.5">
+            {[60, 85, 45, 92, 65, 78].map((barHeight, index) => (
+              <span
+                key={index}
+                className="flex-1 rounded-sm"
+                style={{ height: `${barHeight}%`, background: `${item.accent}55` }}
+              />
+            ))}
+          </div>
+        </div>
+      );
+    case "agent":
+      return (
+        <span className="inline-flex items-center gap-3 whitespace-nowrap rounded-full bg-accent-bg-subtle px-6 py-3.5 shadow-xl shadow-accent/10 ring-1 ring-accent/20">
+          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-accent text-base font-bold text-white">
+            AI
+          </span>
+          <span className="font-code text-2xl font-medium text-accent-warm">{item.name}</span>
+        </span>
+      );
+    case "task":
+      return (
+        <span className="inline-flex items-center gap-3 whitespace-nowrap rounded-xl border border-black/5 bg-white px-5 py-3.5 shadow-xl shadow-black/10">
+          <span className="flex h-7 w-7 items-center justify-center rounded-md bg-accent text-base font-bold leading-none text-white">
+            ✓
+          </span>
+          <span className="font-code text-2xl text-text-secondary">{item.name}</span>
+        </span>
+      );
+  }
+}
+
+function SuckItem({
   progress,
-  label,
   start,
-  end,
-  x: startX,
   y: startY,
+  item,
 }: {
   progress: MotionValue<number>;
-  label: string;
   start: number;
-  end: number;
-  x: number;
   y: number;
+  item: LaneItem;
 }) {
-  const hold = start + 0.055;
-  const x = useTransform(progress, [start, hold, end], [startX, startX, 0]);
-  const y = useTransform(progress, [start, hold, end], [startY, startY, 0]);
-  const scale = useTransform(progress, [start, hold, end], [0.86, 1, 0.12]);
+  const end = start + 0.14;
+  const x = useTransform(progress, [start, end], [820, 0]);
+  const y = useTransform(progress, [start, end], [startY, 0]);
+  const scale = useTransform(progress, [start, end - 0.025, end], [1, 1, 0.05]);
   const opacity = useTransform(
     progress,
-    [start, start + 0.025, end - 0.025, end],
+    [start, start + 0.02, end - 0.02, end],
     [0, 1, 1, 0]
   );
+  const zIndex = item.kind === "label" ? 0 : -1;
 
   return (
-    <motion.div
-      className="pointer-events-none absolute left-1/2 top-1/2 z-[5]"
-      style={{ x, y, scale, opacity, translateX: "-50%", translateY: "-50%" }}
+    <div
+      className="pointer-events-none absolute inset-0 flex items-center justify-center"
+      style={{ zIndex }}
     >
-      <span
-        className="inline-flex whitespace-nowrap rounded-full border border-[#6f4527]/30 px-5 py-2.5 font-code text-[12px] font-semibold uppercase tracking-[0.12em] text-[#fff8ec]"
-        style={{
-          background: "linear-gradient(135deg, #855330 0%, #aa7040 56%, #8b5833 100%)",
-          boxShadow:
-            "inset 0 1px 0 rgba(255,239,211,0.35), 0 8px 22px rgba(83,53,31,0.2)",
-        }}
-      >
-        {label}
-      </span>
-    </motion.div>
+      <motion.div style={{ x, y, scale, opacity, willChange: "transform" }}>
+        <LaneChip item={item} />
+      </motion.div>
+    </div>
   );
 }
 
@@ -380,7 +471,7 @@ function StaticFallback() {
             className="mx-auto h-[180px] w-[180px]"
           />
           <div className="mt-2 flex flex-wrap justify-center gap-1.5">
-            {CATEGORY_LABELS.map(({ label }) => (
+            {["Files", "Dashboards", "AI agents", "Routines & tasks"].map((label) => (
               <span
                 key={label}
                 className="rounded-full bg-[#8b5833] px-3 py-1 font-code text-[9px] font-semibold uppercase tracking-[0.1em] text-[#fff8ec]"
@@ -506,17 +597,17 @@ export function IntegrationScene() {
   // destination. It stays through the complete absorption beat.
   const hubOpacity = useTransform(
     sceneProgress,
-    [0.035, 0.1, 0.84, 0.92],
+    [0.035, 0.1, 0.94, 0.985],
     [0, 1, 1, 0]
   );
   const hubScale = useTransform(
     sceneProgress,
-    [0.035, 0.11, 0.84, 0.92],
+    [0.035, 0.11, 0.94, 0.985],
     [0.72, 1, 1, 0.9]
   );
   const hubGroundOpacity = useTransform(
     sceneProgress,
-    [0.08, 0.14, 0.84, 0.92],
+    [0.08, 0.14, 0.94, 0.985],
     [0, 0.28, 0.28, 0]
   );
 
@@ -536,14 +627,13 @@ export function IntegrationScene() {
   const titleBlur = useTransform(sceneProgress, [0.13, 0.23], [0, 7]);
   const titleFilter = useMotionTemplate`blur(${titleBlur}px)`;
 
-  const capCapture = useTransform(sceneProgress, [0.29, 0.38, 0.64, 0.72], [0, 1, 1, 0]);
+  const capCapture = useTransform(sceneProgress, [0.29, 0.38, 0.82, 0.89], [0, 1, 1, 0]);
   const captureScale = useTransform(sceneProgress, [0.29, 0.38], [0.9, 1]);
   const captureY = useTransform(sceneProgress, [0.29, 0.38], [20, 0]);
   const captureBlur = useTransform(sceneProgress, [0.29, 0.38], [10, 0]);
   const captureFilter = useMotionTemplate`blur(${captureBlur}px)`;
 
-  // The final caption follows immediately after the single absorption story.
-  const capVideo = useTransform(sceneProgress, [0.72, 0.82, 1], [0, 1, 1]);
+  const capVideo = useTransform(sceneProgress, [0.93, 0.985, 1], [0, 1, 1]);
   const hintOpacity = useTransform(sceneProgress, [0, 0.04], [1, 0]);
 
   // Word-stagger triggers for the later captions. Inside the pinned scene the
@@ -553,7 +643,7 @@ export function IntegrationScene() {
   const [videoCapRevealed, setVideoCapRevealed] = useState(false);
   useMotionValueEvent(sceneProgress, "change", (v) => {
     setCaptureRevealed(v > 0.33);
-    setVideoCapRevealed(v > 0.78);
+    setVideoCapRevealed(v > 0.96);
   });
 
   const demoRef = useRef<HTMLElement>(null);
@@ -562,7 +652,7 @@ export function IntegrationScene() {
 
   return (
     <>
-    <div ref={ref} className="relative h-[250vh] bg-bg">
+    <div ref={ref} className="relative h-[360vh] bg-bg">
       <div
         ref={stickyRef}
         onPointerMove={handlePointerMove}
@@ -596,17 +686,17 @@ export function IntegrationScene() {
           ))}
         </div>
 
-        {CATEGORY_LABELS.map((category) => (
-          <CategoryLabel
-            key={category.label}
-            progress={sceneProgress}
-            label={category.label}
-            start={category.start}
-            end={category.end}
-            x={category.x}
-            y={category.y}
-          />
-        ))}
+        {SUCK_LANES.map((lane) =>
+          lane.items.map((item, index) => (
+            <SuckItem
+              key={`${lane.y}-${index}`}
+              progress={sceneProgress}
+              start={lane.start + index * 0.025}
+              y={lane.y}
+              item={item}
+            />
+          ))
+        )}
 
         {/* absorption glow */}
         <motion.div
