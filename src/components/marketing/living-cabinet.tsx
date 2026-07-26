@@ -40,6 +40,7 @@ type SidebarRow = {
   depth?: number;
   directory?: boolean;
   image?: string;
+  hint: string;
 };
 
 const SCENES: Scene[] = [
@@ -62,46 +63,47 @@ const SCENES: Scene[] = [
 
 const SIDEBAR_ROWS: Record<SceneId, SidebarRow[]> = {
   knowledge: [
-    { label: "Company", icon: Folder },
-    { label: "Operating plan", icon: FileText, active: true, depth: 1 },
-    { label: "Research", icon: Folder },
-    { label: "Sources", icon: FolderOpen, directory: true },
+    { label: "Company", icon: Folder, hint: "Your whole company, organized in one place." },
+    { label: "Operating plan", icon: FileText, active: true, depth: 1, hint: "Open the Q3 plan as a live, editable view." },
+    { label: "Research", icon: Folder, hint: "Every research doc, structured and searchable." },
+    { label: "Sources", icon: FolderOpen, directory: true, hint: "Connect the tools your work already lives in." },
     {
       label: "Google Drive",
       icon: FileText,
       image: "/logos/google-drive.svg",
       depth: 1,
+      hint: "Connect your Google Drive to your knowledge base.",
     },
-    { label: "Gmail", icon: FileText, image: "/logos/gmail.svg", depth: 1 },
-    { label: "Slack", icon: MessageSquareText, image: "/logos/slack.svg", depth: 1 },
-    { label: "Notion", icon: FileText, image: "/logos/notion.svg", depth: 1 },
-    { label: "Forecast.xlsx", icon: FileSpreadsheet, depth: 1 },
-    { label: "Live dashboard", icon: LayoutDashboard, depth: 1 },
+    { label: "Gmail", icon: FileText, image: "/logos/gmail.svg", depth: 1, hint: "Connect your Gmail to your knowledge base." },
+    { label: "Slack", icon: MessageSquareText, image: "/logos/slack.svg", depth: 1, hint: "Connect your Slack to your knowledge base." },
+    { label: "Notion", icon: FileText, image: "/logos/notion.svg", depth: 1, hint: "Connect your Notion to your knowledge base." },
+    { label: "Forecast.xlsx", icon: FileSpreadsheet, depth: 1, hint: "Your spreadsheets render as live dashboards." },
+    { label: "Live dashboard", icon: LayoutDashboard, depth: 1, hint: "Watch the numbers update as work happens." },
   ],
   team: [
-    { label: "AI team", icon: Users, active: true },
-    { label: "Chief of Staff", icon: Bot },
-    { label: "Research Lead", icon: Bot },
-    { label: "Operations Lead", icon: Bot },
-    { label: "Product Analyst", icon: Bot },
-    { label: "Conversations", icon: MessageSquareText },
-    { label: "Providers", icon: Asterisk },
+    { label: "AI team", icon: Users, active: true, hint: "Specialists that share the same context." },
+    { label: "Chief of Staff", icon: Bot, hint: "Put the Chief of Staff to work on your brief." },
+    { label: "Research Lead", icon: Bot, hint: "Send the Research Lead to compare the market." },
+    { label: "Operations Lead", icon: Bot, hint: "Let the Operations Lead keep your weekly report current." },
+    { label: "Product Analyst", icon: Bot, hint: "Have the Product Analyst maintain your decision log." },
+    { label: "Conversations", icon: MessageSquareText, hint: "Every agent conversation, saved and searchable." },
+    { label: "Providers", icon: Asterisk, hint: "Bring your own AI. Use the models you already pay for." },
   ],
   work: [
-    { label: "Task board", icon: SquareKanban, active: true },
-    { label: "Running", icon: Clock3 },
-    { label: "Your review", icon: ShieldCheck },
-    { label: "Completed", icon: Check },
-    { label: "Routines", icon: GitBranch },
-    { label: "Artifacts", icon: Folder },
+    { label: "Task board", icon: SquareKanban, active: true, hint: "See every task your AI team is running." },
+    { label: "Running", icon: Clock3, hint: "Watch the work happen in real time." },
+    { label: "Your review", icon: ShieldCheck, hint: "Approve the decisions that need a human." },
+    { label: "Completed", icon: Check, hint: "Finished work, with every artifact kept." },
+    { label: "Routines", icon: GitBranch, hint: "Schedule the work that should just happen." },
+    { label: "Artifacts", icon: Folder, hint: "Every output saved back to your knowledge base." },
   ],
 };
 
 const AGENTS = [
-  { name: "Chief of Staff", task: "Preparing the Monday brief", icon: Asterisk },
-  { name: "Research Lead", task: "Comparing 14 market signals", icon: BarChart3 },
-  { name: "Operations Lead", task: "Reconciling the weekly report", icon: Clock3 },
-  { name: "Product Analyst", task: "Updating the decision log", icon: FileText },
+  { name: "Chief of Staff", task: "Preparing the Monday brief", icon: Asterisk, hint: "Put the Chief of Staff to work on your brief." },
+  { name: "Research Lead", task: "Comparing 14 market signals", icon: BarChart3, hint: "Send the Research Lead to compare the market." },
+  { name: "Operations Lead", task: "Reconciling the weekly report", icon: Clock3, hint: "Let the Operations Lead keep your weekly report current." },
+  { name: "Product Analyst", task: "Updating the decision log", icon: FileText, hint: "Have the Product Analyst maintain your decision log." },
 ];
 
 const TASK_COLUMNS = [
@@ -132,6 +134,8 @@ export function LivingCabinet() {
   const [active, setActive] = useState<SceneId>("knowledge");
   const [paused, setPaused] = useState(false);
   const [autoplay, setAutoplay] = useState(true);
+  // The contextual hint shown when a row or agent is clicked.
+  const [hint, setHint] = useState<string | null>(null);
   const activeIndex = SCENES.findIndex((scene) => scene.id === active);
   const scene = SCENES[activeIndex];
 
@@ -143,6 +147,9 @@ export function LivingCabinet() {
     mq.addEventListener("change", apply);
     return () => mq.removeEventListener("change", apply);
   }, []);
+
+  // A hint belongs to the scene it was raised in; drop it when the scene changes.
+  useEffect(() => setHint(null), [active]);
 
   const advance = () => setActive(SCENES[(activeIndex + 1) % SCENES.length].id);
 
@@ -215,10 +222,19 @@ export function LivingCabinet() {
           </header>
 
           <div className={styles.windowBody}>
-            <Sidebar scene={scene.id} />
+            <Sidebar scene={scene.id} onPick={setHint} />
             {scene.id === "knowledge" && <KnowledgeScene />}
-            {scene.id === "team" && <TeamScene />}
+            {scene.id === "team" && <TeamScene onPick={setHint} />}
             {scene.id === "work" && <WorkScene />}
+          </div>
+
+          <div className={styles.hintDock} aria-live="polite">
+            {hint && (
+              <span key={hint} className={styles.hintToast}>
+                <span className={styles.hintDot} aria-hidden />
+                {hint}
+              </span>
+            )}
           </div>
         </section>
       </div>
@@ -226,15 +242,17 @@ export function LivingCabinet() {
   );
 }
 
-function Sidebar({ scene }: { scene: SceneId }) {
+function Sidebar({ scene, onPick }: { scene: SceneId; onPick: (hint: string) => void }) {
   return (
     <aside className={styles.sidebar}>
       <p className={styles.sidebarLabel}>{scene === "team" ? "Team" : "Knowledge base"}</p>
       {SIDEBAR_ROWS[scene].map((row) => {
         const Icon = row.icon;
         return (
-          <div
+          <button
             key={row.label}
+            type="button"
+            onClick={() => onPick(row.hint)}
             className={`${styles.sidebarRow} ${row.active ? styles.sidebarRowActive : ""} ${row.depth ? styles.sidebarRowNested : ""} ${row.directory ? styles.sidebarDirectoryRow : ""}`}
           >
             {row.image ? (
@@ -249,7 +267,8 @@ function Sidebar({ scene }: { scene: SceneId }) {
               <Icon aria-hidden className="h-3 w-3 shrink-0" />
             )}
             <span>{row.label}</span>
-          </div>
+            <span className={styles.rowChevron} aria-hidden>›</span>
+          </button>
         );
       })}
     </aside>
@@ -292,7 +311,7 @@ function KnowledgeScene() {
   );
 }
 
-function TeamScene() {
+function TeamScene({ onPick }: { onPick: (hint: string) => void }) {
   return (
     <div className={styles.scene}>
       <p className={styles.sceneEyebrow}>AI team</p>
@@ -303,7 +322,12 @@ function TeamScene() {
         {AGENTS.map((agent) => {
           const Icon = agent.icon;
           return (
-            <div key={agent.name} className={styles.agentCard}>
+            <button
+              key={agent.name}
+              type="button"
+              onClick={() => onPick(agent.hint)}
+              className={styles.agentCard}
+            >
               <span className={styles.agentAvatar} aria-hidden>
                 <Icon className="h-3.5 w-3.5" />
               </span>
@@ -311,7 +335,8 @@ function TeamScene() {
                 <strong>{agent.name}</strong>
                 <span>{agent.task}</span>
               </span>
-            </div>
+              <span className={styles.rowChevron} aria-hidden>›</span>
+            </button>
           );
         })}
       </div>

@@ -726,6 +726,131 @@ html {
   left: 135%;
   opacity: 1;
 }
+/* ─── Paper tile ───
+   Ruled notebook page for the hero "pages" tiles: warm cream paper, faint blue
+   horizontal rules, a red margin line, and a soft lifted-page shadow. */
+.paper-tile {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 10px,
+      rgba(96, 132, 194, 0.26) 10px,
+      rgba(96, 132, 194, 0.26) 11px
+    ),
+    linear-gradient(180deg, #fdfbf4 0%, #f6efe0 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.9),
+    inset 0 0 0 1px rgba(120, 80, 45, 0.12),
+    0 2px 3px rgba(74, 48, 24, 0.16),
+    0 10px 18px -8px rgba(74, 48, 24, 0.26),
+    0 22px 36px -18px rgba(74, 48, 24, 0.3);
+}
+
+/* Red margin rule down the left edge. */
+.paper-tile::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 11px;
+  width: 1px;
+  background: rgba(196, 84, 66, 0.4);
+}
+
+/* ─── Wood tiles ───
+   Carved-maple surface for the hero app tiles. Pure CSS: a top-lit maple
+   gradient, fine wood-grain streaks, a faint knot vignette, an inset bevel
+   (bright top edge + carved bottom), and a warm drop shadow. The logo rides
+   on a `.wood-tile__face` layer above the grain. */
+.wood-tile {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background:
+    radial-gradient(120% 85% at 28% 12%, rgba(255, 246, 228, 0.65), transparent 58%),
+    repeating-linear-gradient(
+      93deg,
+      rgba(90, 58, 30, 0) 0px,
+      rgba(90, 58, 30, 0.08) 1px,
+      rgba(90, 58, 30, 0) 3px,
+      rgba(150, 100, 55, 0.09) 6px,
+      rgba(90, 58, 30, 0) 10px,
+      rgba(90, 58, 30, 0.06) 13px,
+      rgba(90, 58, 30, 0) 17px
+    ),
+    linear-gradient(158deg, #f2ddb0 0%, #e3c692 52%, #d3ac72 100%);
+  box-shadow:
+    /* lit top edge + carved bottom */
+    inset 0 1.5px 0 rgba(255, 250, 238, 0.95),
+    inset 0 -4px 8px rgba(90, 58, 30, 0.34),
+    /* crisp rim so it separates from a wood backdrop */
+    inset 0 0 0 1px rgba(90, 58, 30, 0.28),
+    /* raised block: tight contact shadow + wide soft drop */
+    0 2px 3px rgba(74, 48, 24, 0.35),
+    0 10px 16px -6px rgba(74, 48, 24, 0.5),
+    0 24px 40px -18px rgba(74, 48, 24, 0.55);
+}
+
+/* Soft knot / edge vignette so the wood is not flat. */
+.wood-tile::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(70% 60% at 78% 82%, rgba(120, 80, 45, 0.16), transparent 60%),
+    radial-gradient(60% 55% at 18% 88%, rgba(120, 80, 45, 0.1), transparent 62%);
+}
+
+/* AI-provider tiles: same maple, warmer with a soft brushed-gold rim + glow. */
+.wood-tile--ai {
+  background:
+    radial-gradient(120% 85% at 28% 12%, rgba(255, 248, 230, 0.7), transparent 58%),
+    repeating-linear-gradient(
+      93deg,
+      rgba(120, 78, 32, 0) 0px,
+      rgba(120, 78, 32, 0.08) 1px,
+      rgba(120, 78, 32, 0) 3px,
+      rgba(190, 140, 66, 0.1) 6px,
+      rgba(120, 78, 32, 0) 11px
+    ),
+    linear-gradient(158deg, #f4dda6 0%, #e6c684 52%, #d4ac66 100%);
+  box-shadow:
+    inset 0 1.5px 0 rgba(255, 251, 240, 0.98),
+    inset 0 -4px 8px rgba(120, 78, 32, 0.34),
+    inset 0 0 0 1px rgba(200, 152, 74, 0.7),
+    0 0 20px -4px rgba(200, 152, 74, 0.55),
+    0 2px 3px rgba(90, 58, 26, 0.35),
+    0 12px 20px -6px rgba(90, 58, 26, 0.5),
+    0 24px 40px -18px rgba(90, 58, 26, 0.55);
+}
+
+/* Painted hero variant: keep the app marks crisp, but soften their wooden
+   carriers into the same gouache-and-oil language as the desk sequence. */
+.painted-wood-tile,
+.wood-tile--ai.painted-wood-tile {
+  background:
+    radial-gradient(120% 90% at 24% 10%, rgba(255, 250, 235, 0.7), transparent 60%),
+    repeating-linear-gradient(
+      2deg,
+      rgba(116, 79, 45, 0.05) 0,
+      rgba(116, 79, 45, 0.05) 1px,
+      transparent 2px,
+      transparent 6px
+    ),
+    linear-gradient(150deg, #f2dfb9 0%, #e2c58f 58%, #d5ad73 100%);
+  box-shadow:
+    inset 0 0 0 1px rgba(105, 72, 42, 0.2),
+    inset 0 1px 0 rgba(255, 251, 240, 0.8),
+    0 3px 5px rgba(82, 54, 30, 0.2),
+    0 12px 20px -10px rgba(82, 54, 30, 0.38);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .btn-wood::after,
   .ent-btn-primary::after {

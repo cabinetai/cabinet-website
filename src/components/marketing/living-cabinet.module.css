@@ -79,6 +79,7 @@
 }
 
 .productWindow {
+  position: relative;
   display: grid;
   min-width: 0;
   overflow: hidden;
@@ -175,21 +176,60 @@
 
 .sidebarRow {
   display: flex;
+  width: 100%;
   align-items: center;
   gap: 7px;
   overflow: hidden;
+  border: 0;
   border-radius: 7px;
   padding: 6px 7px;
+  background: transparent;
   color: var(--text-secondary);
   font-family: var(--font-body), system-ui, sans-serif;
   font-size: 8px;
   font-weight: 560;
   white-space: nowrap;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    background 160ms ease,
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    color 160ms ease;
+}
+
+.sidebarRow:hover {
+  background: var(--bg-card);
+  box-shadow: 0 5px 14px -12px rgba(59, 47, 47, 0.5);
+  color: var(--text-primary);
+  transform: translateX(2px);
+}
+
+.sidebarRow:active {
+  transform: translateX(2px) scale(0.985);
 }
 
 .sidebarRow span {
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.rowChevron {
+  margin-left: auto;
+  padding-left: 4px;
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  opacity: 0;
+  transform: translateX(-3px);
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.sidebarRow:hover .rowChevron,
+.agentCard:hover .rowChevron {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .sidebarRowNested {
@@ -314,13 +354,28 @@
 
 .agentCard {
   display: grid;
+  width: 100%;
   min-width: 0;
-  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
   gap: 9px;
+  border: 0;
   border-radius: 12px;
   background: var(--bg-card);
   padding: 10px;
   box-shadow: inset 0 0 0 1px var(--border-light);
+  text-align: left;
+  cursor: pointer;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.agentCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px -14px rgba(59, 47, 47, 0.5), inset 0 0 0 1px var(--border-dark);
+}
+
+.agentCard:active {
+  transform: translateY(-1px) scale(0.99);
 }
 
 .agentAvatar {
@@ -441,6 +496,57 @@
   font-family: var(--font-mono), monospace;
   font-size: 6px;
   font-weight: 650;
+}
+
+.hintDock {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+  pointer-events: none;
+}
+
+.hintToast {
+  display: inline-flex;
+  max-width: 92%;
+  align-items: center;
+  gap: 7px;
+  border-radius: 999px;
+  background: rgba(44, 37, 32, 0.94);
+  padding: 8px 14px;
+  color: #f6ede0;
+  font-family: var(--font-body), system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.25;
+  box-shadow:
+    0 16px 32px -16px rgba(59, 47, 47, 0.75),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.07);
+  animation: hintPop 320ms cubic-bezier(0.2, 0.72, 0.2, 1) both;
+}
+
+.hintDot {
+  width: 6px;
+  height: 6px;
+  flex: 0 0 auto;
+  border-radius: 999px;
+  background: var(--green-light);
+  box-shadow: 0 0 0 3px rgba(122, 154, 111, 0.28);
+  animation: hintPulse 1.6s ease-in-out infinite;
+}
+
+@keyframes hintPop {
+  from { opacity: 0; transform: translateY(10px) scale(0.96); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes hintPulse {
+  0%, 100% { box-shadow: 0 0 0 2px rgba(122, 154, 111, 0.3); }
+  50% { box-shadow: 0 0 0 4px rgba(122, 154, 111, 0.12); }
 }
 
 @keyframes sceneArrive {
@@ -565,8 +671,19 @@
   .tab,
   .tabProgress,
   .scene,
-  .bar {
+  .bar,
+  .sidebarRow,
+  .agentCard,
+  .rowChevron,
+  .hintToast,
+  .hintDot {
     animation: none;
     transition: none;
+  }
+
+  /* Keep the click affordance visible without motion. */
+  .rowChevron {
+    opacity: 0.6;
+    transform: none;
   }
 }
