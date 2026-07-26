@@ -14,20 +14,14 @@ import {
   useSpring,
   type MotionValue,
 } from "framer-motion";
-import { Desk3DScene } from "@/components/desk-3d-scene";
 import { ScrollReveal } from "@/components/lightswind/scroll-reveal";
 
 /* ──────────────────────────────────────────────────────────────
-   Integration scene — a pinned, horizontal scrollytelling hero.
+   Integration scene: a pinned files-to-Cabinet story.
 
-   Left → Center → Right narrative (scrubbed by scroll):
-     LEFT    your app logos + AI providers + dashboards + pages,
-             clustered, visible from the very first frame.
-     CENTER  as you scroll they stream rightward and get sucked into
-             the Cabinet — the hub that captures everything.
-     RIGHT   keep scrolling and the demo video slides in from the
-             right. The Cabinet stays as the connector between your
-             stack (left) and the working product (right).
+   App and file tiles begin as a scattered cloud on the left. As the
+   visitor scrolls, every tile converges on the open Cabinet at centre.
+   The scene deliberately has one action and one destination.
 
    Two flourishes:
      • the cloud is reshuffled + jittered + rotated on every mount,
@@ -66,15 +60,6 @@ const FILES: { name: string; color: string }[] = [
   { name: "forecast.xlsx", color: "#1E8E5A" },
   { name: "invoice-Q1.pdf", color: "#C0392B" },
   { name: "brand-guide.md", color: "#8B5E3C" },
-];
-
-// Dashboards clustered on the left with everything else.
-const DASH = [
-  { x: -560, y: -150, w: 220, h: 144, accent: "#8B5E3C" },
-  { x: -300, y: 150, w: 210, h: 138, accent: "#5A7A4F" },
-  { x: -640, y: 110, w: 200, h: 128, accent: "#3B6FB0" },
-  { x: -360, y: -180, w: 210, h: 136, accent: "#6B4FB0" },
-  { x: -200, y: 20, w: 230, h: 148, accent: "#C0392B" },
 ];
 
 const TILE = 74;
@@ -194,8 +179,7 @@ function FloatingTile({
   rot: number;
   s: number;
 }) {
-  // Hold the opening composition, then clear the live work into Cabinet while
-  // the physical props are removed by the cleanup sweep underneath.
+  // Hold the opening composition, then draw every tile into Cabinet.
   const clearEnd = 0.24 + s * 0.55;
   const baseX = useTransform(progress, [0, 0.08, clearEnd], [posX, posX, 0]);
   const baseY = useTransform(progress, [0, 0.08, clearEnd], [posY, posY, 0]);
@@ -273,13 +257,12 @@ function FloatingTile({
         </div>
       ) : (
         <div
-          className="flex flex-col items-center justify-center gap-1"
+          className="wood-tile painted-wood-tile flex flex-col items-center justify-center gap-1 rounded-2xl px-1"
           style={{ width: w, height: h }}
         >
           <FileMark name={item.name} color={item.color} size={40} />
           <span
             className="w-full truncate text-center font-sans text-[9px] font-bold leading-none tracking-tight"
-            // Ink on the desk, no card: a light halo keeps it legible on wood.
             style={{
               color: "#3b2f2f",
               textShadow:
@@ -294,202 +277,23 @@ function FloatingTile({
   );
 }
 
-// Beat 2 — once everything is "in one place", labelled category streams fly
-// IN FROM THE RIGHT and get sucked into the centered Cabinet: each lane leads
-// with a big category tag, followed by example items (files, dashboards, AI
-// agents, routines), staggered down the scroll.
-type LaneItem =
-  | { kind: "label"; text: string }
-  | { kind: "file"; name: string; color: string }
-  | { kind: "dash"; accent: string }
-  | { kind: "agent"; name: string }
-  | { kind: "task"; name: string };
-
-const SUCK_LANES: { y: number; start: number; items: LaneItem[] }[] = [
-  {
-    y: -600,
-    start: 0.64,
-    items: [
-      { kind: "label", text: "Files" },
-      { kind: "file", name: "roadmap.md", color: "#8B5E3C" },
-      { kind: "file", name: "spec.md", color: "#5A7A4F" },
-      { kind: "file", name: "notes.md", color: "#3B6FB0" },
-    ],
-  },
-  {
-    y: -200,
-    start: 0.70,
-    items: [
-      { kind: "label", text: "Dashboards" },
-      { kind: "dash", accent: "#3B6FB0" },
-      { kind: "dash", accent: "#5A7A4F" },
-      { kind: "dash", accent: "#C0392B" },
-    ],
-  },
-  {
-    y: 200,
-    start: 0.76,
-    items: [
-      { kind: "label", text: "AI agents" },
-      { kind: "agent", name: "SDR" },
-      { kind: "agent", name: "Marketing Expert" },
-      { kind: "agent", name: "Researcher" },
-    ],
-  },
-  {
-    y: 600,
-    start: 0.82,
-    items: [
-      { kind: "label", text: "Routines & tasks" },
-      { kind: "task", name: "Weekly report" },
-      { kind: "task", name: "Scout Reddit" },
-      { kind: "task", name: "Nightly backup" },
-    ],
-  },
-];
-
-function LaneChip({ item }: { item: LaneItem }) {
-  switch (item.kind) {
-    case "label":
-      return (
-        <span className="inline-flex items-center whitespace-nowrap rounded-full bg-accent px-9 py-4 font-display text-4xl sm:text-5xl font-bold text-white shadow-2xl shadow-accent/30">
-          {item.text}
-        </span>
-      );
-    case "file":
-      return (
-        <span className="inline-flex items-center gap-3 rounded-xl border border-black/5 bg-white px-5 py-3.5 shadow-xl shadow-black/10">
-          <span className="h-9 w-2 shrink-0 rounded-full" style={{ background: item.color }} />
-          <span className="font-code text-2xl text-text-secondary">{item.name}</span>
-        </span>
-      );
-    case "dash":
-      return (
-        <div className="rounded-xl border border-black/5 bg-white p-3.5 shadow-xl shadow-black/10" style={{ width: 168 }}>
-          <div className="mb-2 flex items-center gap-2">
-            <span className="h-3 w-3 rounded-full" style={{ background: item.accent }} />
-            <span className="h-2 w-20 rounded bg-black/10" />
-          </div>
-          <div className="flex h-14 items-end gap-1.5">
-            {[60, 85, 45, 92, 65, 78].map((bh, i) => (
-              <span key={i} className="flex-1 rounded-sm" style={{ height: `${bh}%`, background: `${item.accent}55` }} />
-            ))}
-          </div>
-        </div>
-      );
-    case "agent":
-      return (
-        <span className="inline-flex items-center gap-3 whitespace-nowrap rounded-full bg-accent-bg-subtle px-6 py-3.5 shadow-xl shadow-accent/10 ring-1 ring-accent/20">
-          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-accent text-base font-bold text-white">AI</span>
-          <span className="font-code text-2xl font-medium text-accent-warm">{item.name}</span>
-        </span>
-      );
-    case "task":
-      return (
-        <span className="inline-flex items-center gap-3 whitespace-nowrap rounded-xl border border-black/5 bg-white px-5 py-3.5 shadow-xl shadow-black/10">
-          <span className="flex h-7 w-7 items-center justify-center rounded-md bg-accent text-base font-bold leading-none text-white">✓</span>
-          <span className="font-code text-2xl text-text-secondary">{item.name}</span>
-        </span>
-      );
-    default:
-      return null;
-  }
-}
-
-function SuckItem({
-  progress,
-  start,
-  y: y0,
-  item,
-}: {
-  progress: MotionValue<number>;
-  start: number;
-  y: number;
-  item: LaneItem;
-}) {
-  const end = start + 0.12;
-  // From off-screen right into the Cabinet at centre (0,0). It stays full-size
-  // and fully readable for almost the entire trip, then shrinks + fades hard
-  // only in the final stretch — right as it reaches the Cabinet logo.
-  const x = useTransform(progress, [start, end], [820, 0]);
-  const y = useTransform(progress, [start, end], [y0, 0]);
-  const scale = useTransform(progress, [start, end - 0.025, end], [1, 1, 0.05]);
-  const opacity = useTransform(progress, [start, start + 0.02, end - 0.02, end], [0, 1, 1, 0]);
-  // Category labels ride one layer above the example chips so the "Files",
-  // "Dashboards", etc. tags stay legible when a lane's items overlap them.
-  // (The chips already paint behind the centred Cabinet hub, so dropping the
-  // non-labels to -1 changes nothing there — it only lifts the labels above
-  // their own stream.)
-  const z = item.kind === "label" ? 0 : -1;
-  return (
-    <div className="absolute inset-0 flex items-center justify-center pointer-events-none" style={{ zIndex: z }}>
-      <motion.div style={{ x, y, scale, opacity, willChange: "transform" }}>
-        <LaneChip item={item} />
-      </motion.div>
-    </div>
-  );
-}
-
-function DashCard({
-  progress,
-  card,
-}: {
-  progress: MotionValue<number>;
-  card: (typeof DASH)[number];
-}) {
-  const x = useTransform(progress, [0, 0.08, 0.28], [card.x, card.x, 0]);
-  const y = useTransform(progress, [0, 0.08, 0.28], [card.y, card.y, 0]);
-  const scale = useTransform(progress, [0, 0.08, 0.28], [1, 1, 0.05]);
-  const opacity = useTransform(progress, [0, 0.08, 0.23, 0.28], [1, 1, 1, 0]);
-
-  return (
-    <motion.div
-      className="absolute left-1/2 top-1/2"
-      style={{ x, y, scale, opacity, marginLeft: -card.w / 2, marginTop: -card.h / 2 }}
-    >
-      <div
-        className="rounded-xl bg-white shadow-xl shadow-black/10 border border-black/5 p-3 overflow-hidden"
-        style={{ width: card.w, height: card.h }}
-      >
-        <div className="flex items-center gap-1.5 mb-2">
-          <span className="w-2 h-2 rounded-full" style={{ background: card.accent }} />
-          <span className="h-1.5 w-16 rounded bg-black/10" />
-        </div>
-        <div className="flex items-end gap-1.5 h-[56%]">
-          {[55, 80, 40, 95, 65, 75, 50].map((bh, i) => (
-            <span key={i} className="flex-1 rounded-sm" style={{ height: `${bh}%`, background: `${card.accent}33` }} />
-          ))}
-        </div>
-        <div className="mt-2 space-y-1">
-          <span className="block h-1.5 w-full rounded bg-black/5" />
-          <span className="block h-1.5 w-2/3 rounded bg-black/5" />
-        </div>
-      </div>
-    </motion.div>
-  );
-}
-
 function StaticFallback() {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-[#e9e1d7] pt-20">
+    <section className="dot-grid relative min-h-screen overflow-hidden bg-[#f2ece4] pt-20">
       <div
         aria-hidden
-        className="absolute inset-[8%_4%_5%] rounded-[3rem] border border-[#a8733e]/25 shadow-[0_28px_80px_rgba(83,55,34,0.18)]"
+        className="absolute inset-0"
         style={{
           background:
-            "repeating-linear-gradient(1deg, rgba(111,68,28,0.06) 0 1px, transparent 1px 9px), linear-gradient(105deg, #e2bb7d 0%, #f0d39f 46%, #d9aa69 100%)",
+            "radial-gradient(circle at 48% 50%, rgba(190,139,82,0.2), transparent 24%), radial-gradient(circle at 12% 48%, rgba(255,255,255,0.74), transparent 38%)",
         }}
       />
-      <div
-        aria-hidden
-        className="absolute inset-0 bg-[linear-gradient(90deg,rgba(250,246,241,0)_0%,rgba(250,246,241,0.04)_52%,rgba(250,246,241,0.14)_100%)]"
-      />
-      <div className="relative z-10 mx-auto grid min-h-[calc(100svh-5rem)] max-w-[1500px] items-center gap-10 px-6 py-16 lg:grid-cols-[1.1fr_0.9fr]">
-        <div className="hidden max-w-xl flex-wrap gap-2.5 lg:flex">
-          {[...LOGOS.slice(0, 10), ...PROVIDERS.slice(0, 4)].map((src) => (
+      <div className="relative z-10 mx-auto grid min-h-[calc(100svh-5rem)] max-w-[1500px] items-center gap-10 px-6 py-16 lg:grid-cols-[1fr_auto_1fr]">
+        <div className="flex max-w-xl flex-wrap justify-center gap-2.5 lg:justify-start">
+          {[...LOGOS.slice(0, 9), ...PROVIDERS.slice(0, 3)].map((src) => (
             <div
               key={src}
-              className="flex items-center justify-center rounded-2xl bg-white/95 shadow-lg shadow-black/10"
+              className="wood-tile painted-wood-tile flex items-center justify-center rounded-2xl"
               style={{ width: TILE, height: TILE }}
             >
               <Image
@@ -502,10 +306,33 @@ function StaticFallback() {
               />
             </div>
           ))}
+          {FILES.slice(0, 4).map((file) => (
+            <div
+              key={file.name}
+              className="wood-tile painted-wood-tile flex flex-col items-center justify-center gap-1 rounded-2xl"
+              style={{ width: TILE, height: TILE }}
+            >
+              <FileMark name={file.name} color={file.color} size={38} />
+              <span className="w-full truncate px-1 text-center font-sans text-[8px] font-bold text-[#3b2f2f]">
+                {file.name}
+              </span>
+            </div>
+          ))}
         </div>
-        <div className="ml-auto max-w-xl text-right">
+        <div className="relative mx-auto h-[180px] w-[180px]">
+          <div className="absolute left-1/2 top-[94%] h-6 w-28 -translate-x-1/2 rounded-full bg-[#59402f]/20 blur-xl" />
+          <Image
+            src={CABINET_HUB_IMAGE}
+            alt="Cabinet"
+            width={180}
+            height={180}
+            priority
+            className="h-[180px] w-[180px]"
+          />
+        </div>
+        <div className="mx-auto max-w-xl text-center lg:ml-auto lg:text-right">
           <p className="mb-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-accent">
-            Your company desktop
+            One place for your work
           </p>
           <h2
             className="text-[clamp(3.5rem,6vw,6.5rem)] leading-[0.88] tracking-[-0.045em] text-text-primary"
@@ -615,16 +442,23 @@ export function IntegrationScene() {
     restDelta: 0.0005,
   });
 
-  // The live work sits over a real WebGL tabletop. It clears before the camera
-  // lowers, leaving the actual 3D props and geometry to carry the transition.
-  const liveWorkOpacity = useTransform(sceneProgress, [0, 0.25, 0.31], [1, 1, 0]);
-  const threeSceneOpacity = useTransform(sceneProgress, [0, 0.59, 0.67], [1, 1, 0]);
-
-  // A flat hub takes over only after the physical desk composition has had its
-  // final beat, so the later category streams retain a crisp central target.
-  const hubOpacity = useTransform(sceneProgress, [0.61, 0.68], [0, 1]);
-  const hubScale = useTransform(sceneProgress, [0.61, 0.69], [0.72, 1]);
-  const hubGroundOpacity = useTransform(sceneProgress, [0.64, 0.7], [0, 0.28]);
+  // Cabinet appears before the cloud starts moving so every tile has a clear
+  // destination. It stays through the complete absorption beat.
+  const hubOpacity = useTransform(
+    sceneProgress,
+    [0.035, 0.1, 0.84, 0.92],
+    [0, 1, 1, 0]
+  );
+  const hubScale = useTransform(
+    sceneProgress,
+    [0.035, 0.11, 0.84, 0.92],
+    [0.72, 1, 1, 0.9]
+  );
+  const hubGroundOpacity = useTransform(
+    sceneProgress,
+    [0.08, 0.14, 0.84, 0.92],
+    [0, 0.28, 0.28, 0]
+  );
 
   // Absorption glow (stays centered while the suck-in happens).
   const glowScale = useTransform(sceneProgress, [0, 0.3], [0.5, 1.5]);
@@ -642,16 +476,14 @@ export function IntegrationScene() {
   const titleBlur = useTransform(sceneProgress, [0.13, 0.23], [0, 7]);
   const titleFilter = useMotionTemplate`blur(${titleBlur}px)`;
 
-  // This line begins after the standing-desk composition has had its own beat.
-  const capCapture = useTransform(sceneProgress, [0.62, 0.69, 0.86, 0.91], [0, 1, 1, 0]);
-  const captureScale = useTransform(sceneProgress, [0.62, 0.68], [0.9, 1]);
-  const captureY = useTransform(sceneProgress, [0.62, 0.68], [20, 0]);
-  const captureBlur = useTransform(sceneProgress, [0.62, 0.68], [10, 0]);
+  const capCapture = useTransform(sceneProgress, [0.29, 0.38, 0.64, 0.72], [0, 1, 1, 0]);
+  const captureScale = useTransform(sceneProgress, [0.29, 0.38], [0.9, 1]);
+  const captureY = useTransform(sceneProgress, [0.29, 0.38], [20, 0]);
+  const captureBlur = useTransform(sceneProgress, [0.29, 0.38], [10, 0]);
   const captureFilter = useMotionTemplate`blur(${captureBlur}px)`;
 
-  // "…and your AI team takes it from here, 24/7." — the scene's final caption;
-  // it fades in and stays. The demo video follows in a plain block below.
-  const capVideo = useTransform(sceneProgress, [0.92, 0.97, 1], [0, 1, 1]);
+  // The final caption follows immediately after the single absorption story.
+  const capVideo = useTransform(sceneProgress, [0.72, 0.82, 1], [0, 1, 1]);
   const hintOpacity = useTransform(sceneProgress, [0, 0.04], [1, 0]);
 
   // Word-stagger triggers for the later captions. Inside the pinned scene the
@@ -660,8 +492,8 @@ export function IntegrationScene() {
   const [captureRevealed, setCaptureRevealed] = useState(false);
   const [videoCapRevealed, setVideoCapRevealed] = useState(false);
   useMotionValueEvent(sceneProgress, "change", (v) => {
-    setCaptureRevealed(v > 0.64);
-    setVideoCapRevealed(v > 0.94);
+    setCaptureRevealed(v > 0.33);
+    setVideoCapRevealed(v > 0.78);
   });
 
   const demoRef = useRef<HTMLElement>(null);
@@ -670,32 +502,25 @@ export function IntegrationScene() {
 
   return (
     <>
-    <div ref={ref} className="relative h-[380vh] bg-bg">
+    <div ref={ref} className="relative h-[250vh] bg-bg">
       <div
         ref={stickyRef}
         onPointerMove={handlePointerMove}
         onPointerLeave={resetPointer}
-        className="sticky top-0 h-screen overflow-hidden bg-[#e9e1d7] dot-grid"
+        className="dot-grid sticky top-0 h-screen overflow-hidden bg-[#f2ece4]"
       >
-        {/* One continuous WebGL scene. The table, props, plant, Cabinet, floor,
-            lighting, shadows, and camera are all real 3D geometry. */}
-        <motion.div
+        <div
+          aria-hidden
           className="absolute inset-0"
-          style={{ opacity: threeSceneOpacity, willChange: "opacity" }}
-        >
-          <Desk3DScene progress={sceneProgress} />
-        </motion.div>
+          style={{
+            background:
+              "radial-gradient(circle at 50% 50%, rgba(193,139,78,0.2), transparent 20%), radial-gradient(circle at 14% 46%, rgba(255,255,255,0.7), transparent 38%)",
+          }}
+        />
 
-        {/* The real app and file cards remain DOM elements for legibility and
-            pointer response, then clear before the camera reaches eye level. */}
-        <motion.div
-          className="absolute inset-0 overflow-hidden"
-          style={{ opacity: liveWorkOpacity, willChange: "opacity" }}
-        >
-          {DASH.map((c, i) => (
-            <DashCard key={i} progress={sceneProgress} card={c} />
-          ))}
-
+        {/* Brown app and file tiles stay fully legible until they reach the
+            open Cabinet, where they shrink behind the cabinet image. */}
+        <div className="absolute inset-0 overflow-hidden">
           {layout.map((slot) => (
             <FloatingTile
               key={slot.item.kind === "logo" ? slot.item.src : slot.item.name}
@@ -709,20 +534,7 @@ export function IntegrationScene() {
               s={slot.s}
             />
           ))}
-        </motion.div>
-
-        {/* beat 2 — labelled category streams flying in from the right */}
-        {SUCK_LANES.map((lane) =>
-          lane.items.map((item, i) => (
-            <SuckItem
-              key={`${lane.y}-${i}`}
-              progress={sceneProgress}
-              start={lane.start + i * 0.03}
-              y={lane.y}
-              item={item}
-            />
-          ))
-        )}
+        </div>
 
         {/* absorption glow */}
         <motion.div
@@ -739,10 +551,9 @@ export function IntegrationScene() {
           }}
         />
 
-        {/* The narrative hub takes over from the physical 3D Cabinet only for
-            the later category streams. */}
+        {/* The only destination in the scene. */}
         <motion.div
-          className="absolute left-1/2 top-1/2"
+          className="absolute left-1/2 top-1/2 z-10"
           style={{
             scale: hubScale,
             opacity: hubOpacity,
