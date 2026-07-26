@@ -97,13 +97,7 @@ function Hero() {
             <span className="font-semibold text-text-primary">Hila Shmuel</span>{" "}
             was previously Engineering Manager at Apple, AI &amp; Data
             Infrastructure. Designed the platforms that train the on-device AI
-            models running on billions of iPhones, Macs, and iPads.{" "}
-            <a
-              href="/enterprise/about"
-              className="text-accent hover:text-accent-warm font-medium underline decoration-accent/30 underline-offset-2"
-            >
-              Read her story →
-            </a>
+            models running on billions of iPhones, Macs, and iPads.
           </p>
         </div>
       </div>

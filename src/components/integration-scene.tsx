@@ -519,7 +519,7 @@ function RotatingBenefits() {
     return () => clearInterval(t);
   }, []);
   return (
-    <h2 className="font-display text-3xl leading-tight tracking-tight text-text-primary md:text-5xl">
+    <h2 className="[font-family:var(--font-brand)] text-3xl leading-tight tracking-[-0.045em] text-text-primary md:text-5xl">
       <span className="inline-flex items-baseline gap-3 text-left">
         <span className="font-brand italic">Cabinet</span>
         {/* invisible sizer reserves the widest phrase's width so Cabinet
@@ -784,7 +784,7 @@ export function IntegrationScene() {
               baseRotation={0}
               revealed={captureRevealed}
               staggerDelay={0.08}
-              textClassName="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.08] tracking-tight text-left text-text-primary"
+              textClassName="[font-family:var(--font-brand)] text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[0.95] tracking-[-0.045em] text-left text-text-primary"
             >
               <span className="font-brand italic">Cabinet</span>
               <br />
@@ -804,7 +804,7 @@ export function IntegrationScene() {
             baseRotation={0}
             revealed={videoCapRevealed}
             staggerDelay={0.08}
-            textClassName="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[1.08] tracking-tight text-center text-text-primary"
+            textClassName="[font-family:var(--font-brand)] text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[0.95] tracking-[-0.045em] text-center text-text-primary"
           >
             …and your AI team takes it from here, 24/7.
           </ScrollReveal>
@@ -821,16 +821,16 @@ export function IntegrationScene() {
     </div>
 
       {/* demo video — a plain block right after the scene's "…AI team, 24/7" beat */}
-      <section ref={demoRef} className="bg-bg px-6 pb-24">
+      <section ref={demoRef} className="dot-grid bg-[#f2ece4] px-6 pb-24 pt-16">
         <div className="mx-auto w-fit max-w-full overflow-hidden rounded-2xl border border-border shadow-2xl shadow-black/25">
           <video
             autoPlay
             loop
             muted
             playsInline
-            className="mx-auto max-h-[64vh] w-auto max-w-full"
+            className="mx-auto max-h-[64vh] w-auto max-w-full scale-[1.01]"
           >
-            <source src="/demo.webm" type="video/webm" />
+            <source src="/new-cabinet.webm" type="video/webm" />
           </video>
         </div>
         <div className="mx-auto mt-8 max-w-5xl text-center">

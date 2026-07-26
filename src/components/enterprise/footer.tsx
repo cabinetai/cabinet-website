@@ -24,7 +24,6 @@ const COLUMNS: { title: string; links: { label: string; href: string; ext?: bool
   {
     title: "Company",
     links: [
-      { label: "Founder", href: "/enterprise/about" },
       { label: "Request a briefing", href: "/enterprise/briefing" },
       { label: "Contact", href: "mailto:hi@runcabinet.com", ext: true },
     ],
@@ -60,14 +59,8 @@ export function EnterpriseFooter() {
               Built for the office of the CEO, and every manager beneath.
             </p>
             <p className="mt-5 text-xs text-text-tertiary">
-              Built by{" "}
-              <a
-                href="/enterprise/about"
-                className="font-medium text-text-secondary hover:text-text-primary underline decoration-border-dark underline-offset-2"
-              >
-                Hila Shmuel
-              </a>
-              , ex-Apple AI &amp; Data Infrastructure.
+              Built by <span className="font-medium text-text-secondary">Hila Shmuel</span>,
+              ex-Apple AI &amp; Data Infrastructure.
             </p>
           </div>
 
