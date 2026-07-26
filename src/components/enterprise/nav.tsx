@@ -34,7 +34,6 @@ const PRIMARY_NAV = [
   { label: "Platform", href: "/enterprise/platform" },
   { label: "Security", href: "/enterprise/security" },
   { label: "Solutions", href: "/enterprise/solutions" },
-  { label: "Founder", href: "/enterprise/about" },
   { label: "Pricing", href: "/pricing" },
 ];
 

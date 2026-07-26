@@ -35,7 +35,7 @@ const FOOTER_COLUMNS = [
   {
     title: "Company",
     links: [
-      { label: "Founder", href: "/enterprise/about" },
+      { label: "Careers", href: "/careers" },
       { label: "Media", href: "/media" },
       { label: "Terms", href: "/terms" },
       { label: "Privacy", href: "/privacy" },
@@ -97,7 +97,7 @@ export function MarketingFooter() {
         </div>
 
         <div className="mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} Holy Bible Apps Ltd. MIT licensed.</p>
+          <p>© {new Date().getFullYear()} Cabinet, Inc. MIT licensed.</p>
           <p>Open source. Self-hosted. Bring your own AI.</p>
         </div>
       </div>
