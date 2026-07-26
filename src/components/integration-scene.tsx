@@ -64,6 +64,12 @@ const FILES: { name: string; color: string }[] = [
 
 const TILE = 74;
 const CABINET_HUB_IMAGE = "/brand/cabinet-logo-top-open-512.png";
+const CATEGORY_LABELS = [
+  { label: "Files", x: -260, y: -164, start: 0.1, end: 0.28 },
+  { label: "Apps", x: 250, y: -150, start: 0.12, end: 0.3 },
+  { label: "Tasks", x: -235, y: 168, start: 0.14, end: 0.32 },
+  { label: "AI agents", x: 260, y: 164, start: 0.16, end: 0.34 },
+] as const;
 
 // Cluster the clutter on the LEFT of the canvas (golden-angle spiral
 // around a left-of-center point → dense, even, organic). Radii widened a
@@ -277,6 +283,50 @@ function FloatingTile({
   );
 }
 
+function CategoryLabel({
+  progress,
+  label,
+  start,
+  end,
+  x: startX,
+  y: startY,
+}: {
+  progress: MotionValue<number>;
+  label: string;
+  start: number;
+  end: number;
+  x: number;
+  y: number;
+}) {
+  const hold = start + 0.055;
+  const x = useTransform(progress, [start, hold, end], [startX, startX, 0]);
+  const y = useTransform(progress, [start, hold, end], [startY, startY, 0]);
+  const scale = useTransform(progress, [start, hold, end], [0.86, 1, 0.12]);
+  const opacity = useTransform(
+    progress,
+    [start, start + 0.025, end - 0.025, end],
+    [0, 1, 1, 0]
+  );
+
+  return (
+    <motion.div
+      className="pointer-events-none absolute left-1/2 top-1/2 z-[5]"
+      style={{ x, y, scale, opacity, translateX: "-50%", translateY: "-50%" }}
+    >
+      <span
+        className="inline-flex whitespace-nowrap rounded-full border border-[#6f4527]/30 px-5 py-2.5 font-code text-[12px] font-semibold uppercase tracking-[0.12em] text-[#fff8ec]"
+        style={{
+          background: "linear-gradient(135deg, #855330 0%, #aa7040 56%, #8b5833 100%)",
+          boxShadow:
+            "inset 0 1px 0 rgba(255,239,211,0.35), 0 8px 22px rgba(83,53,31,0.2)",
+        }}
+      >
+        {label}
+      </span>
+    </motion.div>
+  );
+}
+
 function StaticFallback() {
   return (
     <section className="dot-grid relative min-h-screen overflow-hidden bg-[#f2ece4] pt-20">
@@ -319,7 +369,7 @@ function StaticFallback() {
             </div>
           ))}
         </div>
-        <div className="relative mx-auto h-[180px] w-[180px]">
+        <div className="relative mx-auto h-[230px] w-[220px]">
           <div className="absolute left-1/2 top-[94%] h-6 w-28 -translate-x-1/2 rounded-full bg-[#59402f]/20 blur-xl" />
           <Image
             src={CABINET_HUB_IMAGE}
@@ -327,8 +377,18 @@ function StaticFallback() {
             width={180}
             height={180}
             priority
-            className="h-[180px] w-[180px]"
+            className="mx-auto h-[180px] w-[180px]"
           />
+          <div className="mt-2 flex flex-wrap justify-center gap-1.5">
+            {CATEGORY_LABELS.map(({ label }) => (
+              <span
+                key={label}
+                className="rounded-full bg-[#8b5833] px-3 py-1 font-code text-[9px] font-semibold uppercase tracking-[0.1em] text-[#fff8ec]"
+              >
+                {label}
+              </span>
+            ))}
+          </div>
         </div>
         <div className="mx-auto max-w-xl text-center lg:ml-auto lg:text-right">
           <p className="mb-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-accent">
@@ -535,6 +595,18 @@ export function IntegrationScene() {
             />
           ))}
         </div>
+
+        {CATEGORY_LABELS.map((category) => (
+          <CategoryLabel
+            key={category.label}
+            progress={sceneProgress}
+            label={category.label}
+            start={category.start}
+            end={category.end}
+            x={category.x}
+            y={category.y}
+          />
+        ))}
 
         {/* absorption glow */}
         <motion.div
