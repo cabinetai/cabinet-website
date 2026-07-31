@@ -68,9 +68,9 @@ const CABINET_HUB_IMAGE = "/brand/cabinet-logo-top-open-512.png";
 // Cluster the clutter on the LEFT of the canvas (golden-angle spiral
 // around a left-of-center point → dense, even, organic). Radii widened a
 // touch to keep breathing room now that there are more pages.
-const LCX = -470;
-const LRX = 365;
-const LRY = 335;
+const LCX = -390;
+const LRX = 300;
+const LRY = 300;
 function scatterLeft(i: number, total: number) {
   const golden = Math.PI * (3 - Math.sqrt(5));
   const t = (i + 0.5) / total;
@@ -146,6 +146,8 @@ function FileMark({ name, color, size = 22 }: { name: string; color: string; siz
         alt=""
         width={size}
         height={size}
+        loading="lazy"
+        decoding="async"
         onError={() => setFailed(true)}
         className="shrink-0 object-contain"
         style={{ width: size, height: size, filter: "drop-shadow(0 2px 2px rgba(120,80,45,0.3))" }}
@@ -286,7 +288,7 @@ type LaneItem =
 
 const SUCK_LANES: { y: number; start: number; items: LaneItem[] }[] = [
   {
-    y: -600,
+    y: -420,
     start: 0.42,
     items: [
       { kind: "label", text: "Files" },
@@ -296,7 +298,7 @@ const SUCK_LANES: { y: number; start: number; items: LaneItem[] }[] = [
     ],
   },
   {
-    y: -200,
+    y: -140,
     start: 0.52,
     items: [
       { kind: "label", text: "Dashboards" },
@@ -306,7 +308,7 @@ const SUCK_LANES: { y: number; start: number; items: LaneItem[] }[] = [
     ],
   },
   {
-    y: 200,
+    y: 140,
     start: 0.62,
     items: [
       { kind: "label", text: "AI agents" },
@@ -316,7 +318,7 @@ const SUCK_LANES: { y: number; start: number; items: LaneItem[] }[] = [
     ],
   },
   {
-    y: 600,
+    y: 420,
     start: 0.72,
     items: [
       { kind: "label", text: "Routines & tasks" },
@@ -396,7 +398,7 @@ function SuckItem({
   item: LaneItem;
 }) {
   const end = start + 0.14;
-  const x = useTransform(progress, [start, end], [820, 0]);
+  const x = useTransform(progress, [start, end], [690, 0]);
   const y = useTransform(progress, [start, end], [startY, 0]);
   const scale = useTransform(progress, [start, end - 0.025, end], [1, 1, 0.05]);
   const opacity = useTransform(
@@ -460,15 +462,15 @@ function StaticFallback() {
             </div>
           ))}
         </div>
-        <div className="relative mx-auto h-[230px] w-[220px]">
+        <div className="relative mx-auto h-[250px] w-[240px]">
           <div className="absolute left-1/2 top-[94%] h-6 w-28 -translate-x-1/2 rounded-full bg-[#59402f]/20 blur-xl" />
           <Image
             src={CABINET_HUB_IMAGE}
             alt="Cabinet"
-            width={180}
-            height={180}
+            width={216}
+            height={216}
             priority
-            className="mx-auto h-[180px] w-[180px]"
+            className="mx-auto h-[216px] w-[216px]"
           />
           <div className="mt-2 flex flex-wrap justify-center gap-1.5">
             {["Files", "Dashboards", "AI agents", "Routines & tasks"].map((label) => (
@@ -567,12 +569,12 @@ export function IntegrationScene() {
 
   const { scrollY } = useScroll();
   const [range, setRange] = useState<[number, number]>([0, 1]);
+  const [mounted, setMounted] = useState(false);
   // Randomised after hydration, so Math.random() never causes a mismatch and
   // the cloud is fresh on every visit.
   const [layout, setLayout] = useState<Slot[]>([]);
 
   useEffect(() => {
-    setLayout(buildLayout());
     const el = ref.current;
     if (!el) return;
     const measure = () => {
@@ -580,9 +582,16 @@ export function IntegrationScene() {
       const dist = Math.max(1, el.offsetHeight - window.innerHeight);
       setRange([top, top + dist]);
     };
-    measure();
+    const animationFrame = requestAnimationFrame(() => {
+      setMounted(true);
+      setLayout(buildLayout());
+      measure();
+    });
     window.addEventListener("resize", measure);
-    return () => window.removeEventListener("resize", measure);
+    return () => {
+      cancelAnimationFrame(animationFrame);
+      window.removeEventListener("resize", measure);
+    };
   }, []);
 
   const scrollYProgress = useTransform(scrollY, range, [0, 1], { clamp: true });
@@ -641,14 +650,32 @@ export function IntegrationScene() {
   // would fire the reveal at scene entry; gate it on the caption's own beat.
   const [captureRevealed, setCaptureRevealed] = useState(false);
   const [videoCapRevealed, setVideoCapRevealed] = useState(false);
+  const [demoVideoReady, setDemoVideoReady] = useState(false);
+  const demoRef = useRef<HTMLElement>(null);
+
   useMotionValueEvent(sceneProgress, "change", (v) => {
     setCaptureRevealed(v > 0.33);
     setVideoCapRevealed(v > 0.96);
   });
 
-  const demoRef = useRef<HTMLElement>(null);
+  useEffect(() => {
+    const demo = demoRef.current;
+    if (!demo) return;
 
-  if (prefersReduced) return <StaticFallback />;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return;
+        setDemoVideoReady(true);
+        observer.disconnect();
+      },
+      { rootMargin: "600px 0px" },
+    );
+
+    observer.observe(demo);
+    return () => observer.disconnect();
+  }, []);
+
+  if (prefersReduced && mounted) return <StaticFallback />;
 
   return (
     <>
@@ -719,11 +746,11 @@ export function IntegrationScene() {
           style={{
             scale: hubScale,
             opacity: hubOpacity,
-            marginLeft: -90,
-            marginTop: -90,
+            marginLeft: -108,
+            marginTop: -108,
           }}
         >
-          <div className="relative h-[180px] w-[180px] origin-bottom max-sm:-translate-y-[15vh] max-sm:scale-[0.58]">
+          <div className="relative h-[216px] w-[216px] origin-bottom max-sm:-translate-y-[15vh] max-sm:scale-[0.52]">
             <motion.div
               aria-hidden
               className="absolute left-1/2 top-[96%] h-5 w-24 -translate-x-1/2 rounded-full bg-[#4b3424] blur-md"
@@ -732,17 +759,17 @@ export function IntegrationScene() {
             <Image
               src={CABINET_HUB_IMAGE}
               alt="Cabinet"
-              width={180}
-              height={180}
+              width={216}
+              height={216}
               priority
-              className="h-[180px] w-[180px]"
+              className="h-[216px] w-[216px]"
             />
           </div>
         </motion.div>
 
         {/* beat 1 — title beside the cloud (outer div positions; inner h2 is
             free to run its own magic-wand dissolve transform) */}
-        <div className="pointer-events-none absolute right-[7vw] top-1/2 z-20 max-w-xs -translate-y-1/2 text-right sm:max-w-sm md:right-[10vw] md:max-w-lg lg:right-[12vw]">
+        <div className="pointer-events-none absolute right-[10vw] top-1/2 z-20 max-w-xs -translate-y-1/2 text-right sm:max-w-sm md:right-[13vw] md:max-w-lg lg:right-[15vw]">
           <motion.div
             role="heading"
             aria-level={2}
@@ -759,7 +786,7 @@ export function IntegrationScene() {
               baseRotation={0}
               threshold={0.3}
               staggerDelay={0.08}
-              textClassName="text-[clamp(3.5rem,6vw,6.7rem)] leading-[0.88] tracking-[-0.045em] text-right text-text-primary"
+              textClassName="text-[clamp(3.4rem,5.7vw,6.25rem)] leading-[0.9] tracking-[-0.045em] text-right text-text-primary"
             >
               Your work
               <br />
@@ -824,14 +851,22 @@ export function IntegrationScene() {
       <section ref={demoRef} className="dot-grid bg-[#f2ece4] px-6 pb-24 pt-16">
         <div className="mx-auto w-fit max-w-full overflow-hidden rounded-2xl border border-border shadow-2xl shadow-black/25">
           <video
+            key={demoVideoReady ? "ready" : "idle"}
             autoPlay
             loop
             muted
             playsInline
+            preload="none"
+            width={2880}
+            height={1794}
             className="mx-auto max-h-[64vh] w-auto max-w-full scale-[1.01]"
           >
-            <source src="/new-cabinet.webm" type="video/webm" />
-            <source src="/new-cabinet.mp4" type="video/mp4" />
+            {demoVideoReady && (
+              <>
+                <source src="/new-cabinet.webm" type="video/webm" />
+                <source src="/new-cabinet.mp4" type="video/mp4" />
+              </>
+            )}
           </video>
         </div>
         <div className="mx-auto mt-8 max-w-5xl text-center">

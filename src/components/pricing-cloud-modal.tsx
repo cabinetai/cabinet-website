@@ -248,6 +248,7 @@ export function PricingCloudModal({ initialTier, onClose }: Props) {
                   <textarea
                     id="pricing-modal-message"
                     rows={3}
+                    maxLength={2000}
                     placeholder="Team size, compliance needs, timeline…"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}

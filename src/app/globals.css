@@ -968,24 +968,20 @@ html {
   animation-play-state: paused;
 }
 
-/* Integrations logo wall — multi-row auto-scroll, alternating direction */
+/* Integrations logo wall: two identical groups create a seamless loop. */
 @keyframes entMarqueeReverse {
   from { transform: translateX(-50%); }
   to { transform: translateX(0); }
 }
-.logo-marquee {
+.logo-marquee-track {
+  display: flex;
+  width: max-content;
   animation: entMarquee 55s linear infinite;
   will-change: transform;
+  transform: translate3d(0, 0, 0);
 }
-.logo-marquee-reverse {
+.logo-marquee-track-reverse {
   animation: entMarqueeReverse 55s linear infinite;
-  will-change: transform;
-}
-.logo-marquee-viewport:hover .logo-marquee,
-.logo-marquee-viewport:focus-within .logo-marquee,
-.logo-marquee-viewport:hover .logo-marquee-reverse,
-.logo-marquee-viewport:focus-within .logo-marquee-reverse {
-  animation-play-state: paused;
 }
 
 /* Subtle dot ornament */
@@ -1134,8 +1130,7 @@ html {
   .ent-fade,
   .ent-marquee,
   .testimonial-marquee,
-  .logo-marquee,
-  .logo-marquee-reverse {
+  .logo-marquee-track {
     animation: none;
   }
   /* Let users scroll the tickers manually when motion is reduced */

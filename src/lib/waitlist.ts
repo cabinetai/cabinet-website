@@ -157,12 +157,16 @@ export function markWaitlistSubmitted(source: string, submissionId: string) {
     return;
   }
 
-  window.localStorage.setItem(WAITLIST_STORAGE_KEYS.submitted, "1");
-  window.localStorage.removeItem(WAITLIST_STORAGE_KEYS.popupDismissedUntil);
-  window.sessionStorage.setItem(
-    WAITLIST_STORAGE_KEYS.pendingSubmission,
-    JSON.stringify({ source, submissionId }),
-  );
+  try {
+    window.localStorage.setItem(WAITLIST_STORAGE_KEYS.submitted, "1");
+    window.localStorage.removeItem(WAITLIST_STORAGE_KEYS.popupDismissedUntil);
+    window.sessionStorage.setItem(
+      WAITLIST_STORAGE_KEYS.pendingSubmission,
+      JSON.stringify({ source, submissionId }),
+    );
+  } catch {
+    // Storage may be unavailable in private browsing or hardened environments.
+  }
 }
 
 export function hasWaitlistSubmission() {
@@ -170,7 +174,11 @@ export function hasWaitlistSubmission() {
     return false;
   }
 
-  return window.localStorage.getItem(WAITLIST_STORAGE_KEYS.submitted) === "1";
+  try {
+    return window.localStorage.getItem(WAITLIST_STORAGE_KEYS.submitted) === "1";
+  } catch {
+    return false;
+  }
 }
 
 export function dismissWaitlistPopup() {
@@ -179,10 +187,14 @@ export function dismissWaitlistPopup() {
   }
 
   const dismissUntil = Date.now() + WAITLIST_POPUP_DISMISS_MS;
-  window.localStorage.setItem(
-    WAITLIST_STORAGE_KEYS.popupDismissedUntil,
-    String(dismissUntil),
-  );
+  try {
+    window.localStorage.setItem(
+      WAITLIST_STORAGE_KEYS.popupDismissedUntil,
+      String(dismissUntil),
+    );
+  } catch {
+    // Storage may be unavailable in private browsing or hardened environments.
+  }
 }
 
 export function shouldSuppressWaitlistPopup() {
@@ -194,11 +206,15 @@ export function shouldSuppressWaitlistPopup() {
     return true;
   }
 
-  const dismissedUntil = Number(
-    window.localStorage.getItem(WAITLIST_STORAGE_KEYS.popupDismissedUntil) ?? "0",
-  );
+  try {
+    const dismissedUntil = Number(
+      window.localStorage.getItem(WAITLIST_STORAGE_KEYS.popupDismissedUntil) ?? "0",
+    );
 
-  return dismissedUntil > Date.now();
+    return dismissedUntil > Date.now();
+  } catch {
+    return false;
+  }
 }
 
 export function consumePendingWaitlistSubmission() {
@@ -206,14 +222,13 @@ export function consumePendingWaitlistSubmission() {
     return null;
   }
 
-  const raw = window.sessionStorage.getItem(WAITLIST_STORAGE_KEYS.pendingSubmission);
-  if (!raw) {
-    return null;
-  }
-
-  window.sessionStorage.removeItem(WAITLIST_STORAGE_KEYS.pendingSubmission);
-
   try {
+    const raw = window.sessionStorage.getItem(WAITLIST_STORAGE_KEYS.pendingSubmission);
+    if (!raw) {
+      return null;
+    }
+
+    window.sessionStorage.removeItem(WAITLIST_STORAGE_KEYS.pendingSubmission);
     return JSON.parse(raw) as { source?: string; submissionId?: string };
   } catch {
     return null;

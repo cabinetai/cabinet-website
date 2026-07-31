@@ -15,6 +15,7 @@ import { CompareHeadToHead } from "@/components/compare-head-to-head";
 import { CompareRoundup } from "@/components/compare-roundup";
 import { CompareThreeWay } from "@/components/compare-three-way";
 import { CompareMigration } from "@/components/compare-migration";
+import { serializeJsonLd } from "@/lib/json-ld";
 
 const SITE = "https://runcabinet.com";
 
@@ -102,7 +103,7 @@ function JsonLd({ data }: { data: object }) {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      dangerouslySetInnerHTML={{ __html: serializeJsonLd(data) }}
     />
   );
 }

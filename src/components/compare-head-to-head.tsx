@@ -101,7 +101,7 @@ export function CompareHeadToHead({ data }: { data: Comparison }) {
           </h2>
           <div className="mt-10 grid gap-5 md:grid-cols-3">
             {data.differentiators.map((d) => (
-              <div key={d.title} className="flex flex-col soft-card p-6">
+              <div key={d.title} className="flex min-w-0 flex-col soft-card p-6">
                 <WoodIcon icon={d.icon} className="h-12 w-12" />
                 <h3 className="mt-4 font-display text-lg text-text-primary">{d.title}</h3>
                 <p className="mt-2 font-body-serif text-sm leading-relaxed text-text-secondary">

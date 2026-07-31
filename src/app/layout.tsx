@@ -35,10 +35,12 @@ const msMadi = Ms_Madi({
   variable: "--font-hand",
   subsets: ["latin"],
   weight: "400",
+  preload: false,
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://runcabinet.com"),
+  referrer: "strict-origin-when-cross-origin",
   title: "Cabinet: The AI workspace your company owns",
   description:
     "Cabinet shows your entire knowledge base and files, puts AI teams to work on it, and renders results as live apps and dashboards. Open source, self-hosted, bring your own AI.",
@@ -79,9 +81,9 @@ export default function RootLayout({
       <head>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-4L81D0BVTP"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="gtag-init" strategy="afterInteractive">
+        <Script id="gtag-init" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}

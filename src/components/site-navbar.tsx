@@ -11,16 +11,11 @@ import {
   LibraryBig,
   Menu,
   ShieldCheck,
-  Star,
   X,
 } from "lucide-react";
 import { GithubIcon } from "@/components/site-icons";
 import { SolutionsMenu } from "@/components/solutions-menu";
 import { GITHUB_URL } from "@/lib/site-config";
-
-type GitHubRepoResponse = {
-  stargazers_count?: number;
-};
 
 const RESOURCE_LINKS = [
   {
@@ -60,50 +55,6 @@ const RESOURCE_LINKS = [
   },
 ] as const;
 
-function formatStarCount(stars: number | null) {
-  if (stars === null) return "GitHub";
-  return new Intl.NumberFormat("en", {
-    notation: stars >= 1000 ? "compact" : "standard",
-    maximumFractionDigits: stars >= 1000 ? 1 : 0,
-  }).format(stars);
-}
-
-function getGitHubRepoPath(url: string) {
-  const match = url.match(/github\.com\/([^/]+\/[^/?#]+)/i);
-  return match?.[1] ?? null;
-}
-
-function useGitHubStars() {
-  const [stars, setStars] = useState<number | null>(null);
-
-  useEffect(() => {
-    const repoPath = getGitHubRepoPath(GITHUB_URL);
-    if (!repoPath) return;
-    const controller = new AbortController();
-
-    async function loadStars() {
-      try {
-        const response = await fetch(`https://api.github.com/repos/${repoPath}`, {
-          signal: controller.signal,
-          headers: { Accept: "application/vnd.github+json" },
-        });
-        if (!response.ok) return;
-        const data = (await response.json()) as GitHubRepoResponse;
-        if (typeof data.stargazers_count === "number") setStars(data.stargazers_count);
-      } catch (error) {
-        if (!(error instanceof DOMException && error.name === "AbortError")) {
-          console.error("Unable to load GitHub stars", error);
-        }
-      }
-    }
-
-    loadStars();
-    return () => controller.abort();
-  }, []);
-
-  return stars;
-}
-
 function GlassNavLink({ href, children }: { href: string; children: React.ReactNode }) {
   return (
     <Link
@@ -117,7 +68,6 @@ function GlassNavLink({ href, children }: { href: string; children: React.ReactN
 }
 
 export function SiteNavbar({ fixed = false }: { fixed?: boolean }) {
-  const stars = useGitHubStars();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [resourcesOpen, setResourcesOpen] = useState(false);
 
@@ -258,14 +208,13 @@ export function SiteNavbar({ fixed = false }: { fixed?: boolean }) {
             href={GITHUB_URL}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label={`Cabinet on GitHub, ${formatStarCount(stars)}`}
+            aria-label="Cabinet on GitHub"
             className="glass-pill group hidden h-10 items-center px-3.5 text-sm font-medium text-text-secondary transition-colors hover:text-text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/50 sm:inline-flex"
           >
             <span className="liquid-glass__refract" aria-hidden />
             <span className="relative z-10 inline-flex items-center gap-1.5 whitespace-nowrap">
               <GithubIcon className="h-4 w-4" />
-              {stars !== null && <Star className="h-3.5 w-3.5 fill-current text-accent" />}
-              {formatStarCount(stars)}
+              GitHub
             </span>
           </a>
 
