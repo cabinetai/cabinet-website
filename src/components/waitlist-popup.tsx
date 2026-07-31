@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { ArrowRight, CheckCircle2, Cloud, Loader2, X } from "lucide-react";
 import { trackEvent } from "@/lib/analytics";
 import { WaitlistCloudBackdrop } from "@/components/waitlist-cloud-backdrop";
@@ -22,7 +22,6 @@ const SOURCE = "popup";
 
 export function WaitlistPopup() {
   const [open, setOpen] = useState(false);
-  const [originPage, setOriginPage] = useState("/");
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<
     "idle" | "submitting" | "success" | "already" | "error"
@@ -30,6 +29,18 @@ export function WaitlistPopup() {
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const startedRef = useRef(false);
   const inputRef = useRef<HTMLInputElement>(null);
+  const originPageRef = useRef("/");
+
+  const handleDismiss = useCallback(() => {
+    if (!open) return;
+    setOpen(false);
+    if (status === "success" || status === "already") return;
+    dismissWaitlistPopup();
+    trackEvent("waitlist_popup_dismiss", {
+      source: SOURCE,
+      originPage: originPageRef.current,
+    });
+  }, [open, status]);
 
   // Open the popup once after the delay, unless suppressed.
   useEffect(() => {
@@ -38,7 +49,7 @@ export function WaitlistPopup() {
 
     const url = new URL(window.location.href);
     const path = url.pathname || "/";
-    setOriginPage(path);
+    originPageRef.current = path;
 
     const timer = window.setTimeout(() => {
       if (hasWaitlistSubmission()) return;
@@ -73,19 +84,7 @@ export function WaitlistPopup() {
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [open]);
-
-  const handleDismiss = () => {
-    if (!open) return;
-    setOpen(false);
-    if (status === "success" || status === "already") return;
-    dismissWaitlistPopup();
-    trackEvent("waitlist_popup_dismiss", {
-      source: SOURCE,
-      originPage,
-    });
-  };
+  }, [handleDismiss, open]);
 
   const handleInput = (value: string) => {
     setEmail(value);
@@ -117,10 +116,16 @@ export function WaitlistPopup() {
     markWaitlistSubmitted(SOURCE, "");
     if (result.alreadyOnList) {
       setStatus("already");
-      trackEvent("waitlist_submit_duplicate", { source: SOURCE, originPage });
+      trackEvent("waitlist_submit_duplicate", {
+        source: SOURCE,
+        originPage: originPageRef.current,
+      });
     } else {
       setStatus("success");
-      trackEvent("waitlist_submit_success", { source: SOURCE, originPage });
+      trackEvent("waitlist_submit_success", {
+        source: SOURCE,
+        originPage: originPageRef.current,
+      });
     }
 
     // Auto-close success state after a moment.

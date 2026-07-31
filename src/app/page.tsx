@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Check } from "lucide-react";
+import { ArrowRight, Check, Download } from "lucide-react";
 import { SiteNavbar } from "@/components/site-navbar";
 import { CabinetLibrary } from "@/components/marketing/cabinet-library";
 import { HeroProductReveal } from "@/components/marketing/hero-product-reveal";
@@ -22,6 +22,7 @@ import {
 import { MarketingFooter } from "@/components/marketing/marketing-footer";
 import { HeroHeadline, MotionReveal } from "@/components/marketing/motion-primitives";
 import { SectionBadge } from "@/components/marketing/section-badge";
+import { MACOS_DOWNLOAD_URL, WINDOWS_DOWNLOAD_URL } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "Cabinet: The AI workspace your company owns",
@@ -97,6 +98,38 @@ export default function HomePage() {
                 Explore AI teams <ArrowRight aria-hidden className="h-4 w-4" />
               </a>
             </div>
+            </MotionReveal>
+
+            <MotionReveal delay={0.66} amount={0.1}>
+              <div
+                className="mt-5 flex flex-wrap items-center gap-2.5 text-xs font-semibold"
+                aria-label="Desktop app availability"
+              >
+                <a
+                  href={MACOS_DOWNLOAD_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="card-skin inline-flex h-10 items-center gap-2 rounded-full px-4 text-text-primary transition-transform hover:-translate-y-0.5"
+                >
+                  <Download aria-hidden className="h-3.5 w-3.5 text-accent" />
+                  Download for macOS
+                </a>
+                <a
+                  href={WINDOWS_DOWNLOAD_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="card-skin inline-flex h-10 items-center gap-2 rounded-full px-4 text-text-primary transition-transform hover:-translate-y-0.5"
+                >
+                  <Download aria-hidden className="h-3.5 w-3.5 text-accent" />
+                  Download for Windows
+                </a>
+                <span className="inline-flex h-10 items-center gap-2 rounded-full border border-border bg-bg-card/70 px-4 text-text-secondary">
+                  Linux
+                  <span className="font-code text-[9px] uppercase tracking-[0.1em] text-text-tertiary">
+                    Coming soon
+                  </span>
+                </span>
+              </div>
             </MotionReveal>
 
             <MotionReveal delay={0.7} amount={0.1}>

@@ -2,33 +2,11 @@
 
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { ArrowRight, Menu, X } from "lucide-react";
 import { GithubIcon } from "@/components/site-icons";
 import { GITHUB_URL } from "@/lib/site-config";
 import { useScrolled } from "@/lib/use-scrolled";
-
-type GitHubRepoResponse = { stargazers_count?: number };
-
-function useStars() {
-  const [stars, setStars] = useState<number | null>(null);
-  useEffect(() => {
-    const m = GITHUB_URL.match(/github\.com\/([^/]+\/[^/?#]+)/i);
-    if (!m) return;
-    const controller = new AbortController();
-    fetch(`https://api.github.com/repos/${m[1]}`, {
-      signal: controller.signal,
-      headers: { Accept: "application/vnd.github+json" },
-    })
-      .then((r) => (r.ok ? r.json() : null))
-      .then((d: GitHubRepoResponse | null) => {
-        if (d && typeof d.stargazers_count === "number") setStars(d.stargazers_count);
-      })
-      .catch(() => {});
-    return () => controller.abort();
-  }, []);
-  return stars;
-}
 
 const PRIMARY_NAV = [
   { label: "Platform", href: "/enterprise/platform" },
@@ -38,7 +16,6 @@ const PRIMARY_NAV = [
 ];
 
 export function EnterpriseNav() {
-  const stars = useStars();
   const pathname = usePathname() ?? "";
   const [open, setOpen] = useState(false);
   const scrolled = useScrolled();
@@ -95,9 +72,7 @@ export function EnterpriseNav() {
             className="hidden md:inline-flex items-center gap-2 h-10 px-3.5 rounded-full border border-border hover:border-border-dark hover:bg-bg-warm transition-all text-text-primary"
           >
             <GithubIcon className="w-4 h-4" />
-            <span className="text-[13px] font-medium">
-              {stars === null ? "Star" : new Intl.NumberFormat("en", { notation: stars >= 1000 ? "compact" : "standard", maximumFractionDigits: 1 }).format(stars)}
-            </span>
+            <span className="text-[13px] font-medium">Star</span>
           </a>
           <a
             href="/enterprise/briefing"

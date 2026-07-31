@@ -154,68 +154,10 @@ const TESTIMONIALS = [
   },
 ];
 
-type GitHubRepoResponse = {
-  stargazers_count?: number;
-};
-
-function formatStarCount(stars: number | null) {
-  if (stars === null) return "Star on GitHub";
-
-  return new Intl.NumberFormat("en", {
-    notation: stars >= 1000 ? "compact" : "standard",
-    maximumFractionDigits: stars >= 1000 ? 1 : 0,
-  }).format(stars);
-}
-
-function getGitHubRepoPath(url: string) {
-  const match = url.match(/github\.com\/([^/]+\/[^/?#]+)/i);
-  return match?.[1] ?? null;
-}
-
-function useGitHubStars() {
-  const [stars, setStars] = useState<number | null>(null);
-
-  useEffect(() => {
-    const repoPath = getGitHubRepoPath(GITHUB_URL);
-    if (!repoPath) return;
-
-    const controller = new AbortController();
-
-    async function loadStars() {
-      try {
-        const response = await fetch(`https://api.github.com/repos/${repoPath}`, {
-          signal: controller.signal,
-          headers: {
-            Accept: "application/vnd.github+json",
-          },
-        });
-
-        if (!response.ok) return;
-
-        const data = (await response.json()) as GitHubRepoResponse;
-        if (typeof data.stargazers_count === "number") {
-          setStars(data.stargazers_count);
-        }
-      } catch (error) {
-        if (!(error instanceof DOMException && error.name === "AbortError")) {
-          console.error("Unable to load GitHub stars", error);
-        }
-      }
-    }
-
-    loadStars();
-    return () => controller.abort();
-  }, []);
-
-  return stars;
-}
-
 function GitHubStarsButton({
-  stars,
   className,
   compact = false,
 }: {
-  stars: number | null;
   className: string;
   compact?: boolean;
 }) {
@@ -232,7 +174,7 @@ function GitHubStarsButton({
       </span>
       <span className="inline-flex items-center gap-1 rounded-full bg-accent-bg px-2.5 py-1 text-[0.72rem] font-semibold text-accent shadow-sm ring-1 ring-border-light">
         <Star className="w-3.5 h-3.5 fill-current" />
-        {formatStarCount(stars)}
+        GitHub
       </span>
     </a>
   );
@@ -398,6 +340,8 @@ function FeatureCard({
       <img
         src={img}
         alt=""
+        loading="lazy"
+        decoding="async"
         className={`relative z-10 mb-4 object-contain transition-transform duration-200 group-hover:scale-105 group-hover:-rotate-2 ${
           featured ? "h-[88px] w-[88px]" : "h-16 w-16"
         }`}
@@ -1155,13 +1099,13 @@ export function LegacyHero() {
             </div>
           </div>
           <p className="mt-4 text-sm font-body-serif text-text-tertiary">
-            On Windows?{" "}
             <a
               href={WINDOWS_DOWNLOAD_URL}
               className="text-accent underline underline-offset-2 hover:text-accent-warm"
             >
-              Download the installer
+              Download for Windows
             </a>
+            . Linux is coming soon.
           </p>
           <p className="mt-4 text-sm font-body-serif text-text-tertiary">Evaluating <span className="font-brand italic">Cabinet</span>{" "}for your team?{" "}
             <a
@@ -1182,12 +1126,11 @@ export function LegacyHero() {
         {/* Hero Illustration */}
         <div className="mx-auto mb-8 w-60 sm:w-72 md:w-80">
           <Image
-            src="/brand/cabinet-logo-flip.png"
+            src="/brand/cabinet-logo-flip.webp"
             alt="Cabinet: your files and knowledge in one drawer, a team of AI agents in the other"
             width={812}
             height={835}
             className="h-auto w-full drop-shadow-2xl"
-            priority
           />
         </div>
 
@@ -1234,7 +1177,7 @@ export function LegacyWhyTriad() {
             <div className="relative flex h-52 items-center justify-center">
               <div aria-hidden className="pointer-events-none absolute left-1/2 top-1/2 h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full" style={{ background: "radial-gradient(circle, rgba(224,178,60,0.18), transparent 70%)" }} />
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/brand/icons/files.png" alt="" className="relative h-36 w-36 object-contain float-slow" />
+              <img src="/brand/icons/files.webp" alt="" loading="lazy" decoding="async" className="relative h-36 w-36 object-contain float-slow" />
             </div>
             <span className="section-label">Your work lives on disk</span>
             <h3 className="mt-2 mb-2 font-display text-xl text-text-primary">Own your data</h3>
@@ -1252,12 +1195,12 @@ export function LegacyWhyTriad() {
                 ].map((p) => (
                   <span key={p.v} className="orbit__item absolute" style={{ left: p.l, top: p.t }}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={`/brand/vendors/${p.v}.png`} alt="" className="h-11 w-11 object-contain" />
+                    <img src={`/brand/vendors/${p.v}.png`} alt="" loading="lazy" decoding="async" className="h-11 w-11 object-contain" />
                   </span>
                 ))}
               </div>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/brand/cabinet-logo-512.png" alt="" className="absolute left-1/2 top-1/2 h-16 w-16 -translate-x-1/2 -translate-y-1/2 object-contain drop-shadow-lg" />
+              <img src="/brand/cabinet-logo-512.png" alt="" loading="lazy" decoding="async" className="absolute left-1/2 top-1/2 h-16 w-16 -translate-x-1/2 -translate-y-1/2 object-contain drop-shadow-lg" />
             </div>
             <span className="section-label">Bring your own AI</span>
             <h3 className="mt-2 mb-2 font-display text-xl text-text-primary">No AI tax</h3>
@@ -1269,7 +1212,7 @@ export function LegacyWhyTriad() {
             <div className="relative flex h-52 items-center justify-center">
               <div aria-hidden className="agent-aura pointer-events-none absolute left-1/2 top-1/2 h-44 w-44 -translate-x-1/2 -translate-y-1/2 rounded-full" style={{ background: "radial-gradient(circle, rgba(111,164,90,0.16), transparent 70%)" }} />
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/brand/agents-shapes.png" alt="" className="relative h-44 w-44 object-contain agent-heartbeat" />
+              <img src="/brand/agents-shapes.webp" alt="" loading="lazy" decoding="async" className="relative h-44 w-44 object-contain agent-heartbeat" />
             </div>
             <span className="section-label">Agents that do the work</span>
             <h3 className="mt-2 mb-2 font-display text-xl text-text-primary">Always on</h3>
@@ -1499,19 +1442,29 @@ export function LegacyIntegrationsMarquee() {
               aria-hidden
               className="pointer-events-none absolute inset-y-0 right-0 z-10 w-12 bg-gradient-to-l from-bg-warm to-transparent sm:w-24"
             />
-            <div className={`flex w-max ${r % 2 === 1 ? "logo-marquee-reverse" : "logo-marquee"}`}>
-              {[...row, ...row].map((src, i) => (
+            <div
+              className={`logo-marquee-track ${r % 2 === 1 ? "logo-marquee-track-reverse" : ""}`}
+            >
+              {[0, 1].map((copy) => (
                 <div
-                  key={`${src}-${i}`}
-                  className="mr-3 flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl card-skin shadow-sm sm:h-20 sm:w-20"
+                  key={copy}
+                  aria-hidden={copy === 1 ? true : undefined}
+                  className="flex shrink-0 gap-3 pr-3"
                 >
-                  <Image
-                    src={src}
-                    alt={integrationName(src)}
-                    width={40}
-                    height={40}
-                    className="h-8 w-8 object-contain sm:h-10 sm:w-10"
-                  />
+                  {row.map((src) => (
+                    <div
+                      key={src}
+                      className="card-skin flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl shadow-sm sm:h-20 sm:w-20"
+                    >
+                      <Image
+                        src={src}
+                        alt={integrationName(src)}
+                        width={40}
+                        height={40}
+                        className="h-8 w-8 object-contain sm:h-10 sm:w-10"
+                      />
+                    </div>
+                  ))}
                 </div>
               ))}
             </div>
@@ -1816,6 +1769,8 @@ export function LegacySolutions() {
               <img
                 src={`/brand/solutions/${s.slug}.png`}
                 alt=""
+                loading="lazy"
+                decoding="async"
                 className="mb-4 h-20 w-20 object-contain transition-transform duration-200 group-hover:scale-105 group-hover:-rotate-2"
               />
               <h3 className="mb-2 font-display text-lg text-text-primary">
@@ -1869,6 +1824,7 @@ export function LegacyCabinetTemplates() {
                   src={cabinetCover(c.slug)}
                   alt=""
                   loading="lazy"
+                  decoding="async"
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-200 group-hover:scale-105"
                 />
               </div>
@@ -1975,6 +1931,8 @@ export function LegacyOrgBadges() {
                 <img
                   src={b.img}
                   alt=""
+                  loading="lazy"
+                  decoding="async"
                   className="h-16 w-16 object-contain transition-transform duration-200 group-hover:scale-105 group-hover:-rotate-2"
                 />
                 {b.status && (
@@ -2009,8 +1967,6 @@ export function LegacyOrgBadges() {
 }
 
 export function LegacyCta() {
-  const stars = useGitHubStars();
-
   return (
     <section id="get-started" className="py-24 border-t border-border bg-bg-warm">
       <div className="max-w-3xl mx-auto px-6 text-center">
@@ -2040,13 +1996,13 @@ export function LegacyCta() {
             </div>
           </div>
           <p className="mt-4 text-sm font-body-serif text-text-tertiary">
-            On Windows?{" "}
             <a
               href={WINDOWS_DOWNLOAD_URL}
               className="text-accent underline underline-offset-2 hover:text-accent-warm"
             >
-              Download the installer
+              Download for Windows
             </a>
+            . Linux is coming soon.
           </p>
         </div>
         <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 mt-4">
@@ -2065,7 +2021,6 @@ export function LegacyCta() {
             <DiscordIcon className="w-4 h-4" /> Join Discord
           </a>
           <GitHubStarsButton
-            stars={stars}
             className="inline-flex h-12 min-w-[11rem] items-center justify-between gap-3 rounded-full card-skin px-4 text-sm font-semibold text-text-primary shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
           />
         </div>

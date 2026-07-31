@@ -200,6 +200,7 @@ export function WorkflowExplorer() {
             src={cabinetCover(cabinet.slug)}
             alt=""
             loading="lazy"
+            decoding="async"
             className="aspect-[16/10] w-full object-cover"
           />
           <div className="p-5">

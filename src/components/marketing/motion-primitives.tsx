@@ -55,23 +55,28 @@ export function HeroHeadline() {
 
   return (
     <h1
-      aria-label="Your Knowledge Base, AI team, Work, AI Workspace, Cabinet."
-      className="max-w-[13ch] font-display text-[clamp(2.75rem,4.4vw,4.3rem)] leading-[0.98] tracking-[-0.04em] text-text-primary"
+      aria-label="Your knowledge base. Your AI team. Your work. Your AI workspace. Your Cabinet."
+      className="max-w-[14ch] font-display text-[clamp(2.55rem,4vw,3.85rem)] leading-[1.02] tracking-[-0.04em] text-text-primary"
     >
-      Your{" "}
-      <AnimatePresence mode="wait">
-        <motion.span
-          key={word}
-          aria-hidden
-          initial={reduceMotion ? false : { opacity: 0, y: 14 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={reduceMotion ? undefined : { opacity: 0, y: -14 }}
-          transition={{ duration: 0.35 }}
-          className="inline-block"
-        >
-          {word === "Cabinet" ? <span className="font-brand italic">Cabinet</span> : word}
-        </motion.span>
-      </AnimatePresence>
+      <span className="block">Your</span>
+      <span className="relative block min-h-[1.02em] whitespace-nowrap">
+        <span aria-hidden className="invisible block">
+          Knowledge Base
+        </span>
+        <AnimatePresence mode="wait">
+          <motion.span
+            key={word}
+            aria-hidden
+            initial={reduceMotion ? false : { opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={reduceMotion ? undefined : { opacity: 0, y: -10 }}
+            transition={{ duration: 0.3 }}
+            className="absolute inset-0 block"
+          >
+            {word === "Cabinet" ? <span className="font-brand italic">Cabinet</span> : word}
+          </motion.span>
+        </AnimatePresence>
+      </span>
     </h1>
   );
 }

@@ -92,6 +92,7 @@ export function PricingInteractive() {
               >
                 Windows installer
               </a>
+              {" · Linux coming soon"}
             </span>
           }
         />

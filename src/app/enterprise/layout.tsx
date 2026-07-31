@@ -23,7 +23,7 @@ export default function EnterpriseLayout({
   return (
     <>
       <EnterpriseNav />
-      <main className="min-h-[50vh] bg-bg">{children}</main>
+      <main className="min-h-[50vh] overflow-x-clip bg-bg">{children}</main>
       <EnterpriseFooter />
     </>
   );

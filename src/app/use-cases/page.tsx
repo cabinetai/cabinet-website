@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SiteNavbar } from "@/components/site-navbar";
 import { UseCasesBrowser } from "@/components/use-cases-browser";
+import { serializeJsonLd } from "@/lib/json-ld";
 import { USE_CASES } from "@/lib/use-cases";
 import {
   WORKFLOW_CABINET_SLUGS,
@@ -39,7 +40,7 @@ export default function UseCasesPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
+          __html: serializeJsonLd({
             "@context": "https://schema.org",
             "@type": "CollectionPage",
             name: "How teams use Cabinet",
@@ -114,6 +115,7 @@ export default function UseCasesPage() {
                       src={cabinetCover(c.slug)}
                       alt=""
                       loading="lazy"
+                      decoding="async"
                       className="absolute inset-0 h-full w-full object-cover transition-transform duration-200 group-hover:scale-105"
                     />
                   </div>
