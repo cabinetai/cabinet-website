@@ -47,3 +47,6 @@ next-env.d.ts
 # dev-only symlink to brand-explorations/ (see scripts/link-explorations.mjs);
 # the archive must not ship to the production CDN
 /public/generated/_explore
+
+# Build-time copy of the public Cabinet template registry.
+/.template-registry/
