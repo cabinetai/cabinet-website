@@ -104,7 +104,7 @@ const OUTCOMES = [
     status: "Planned",
     connectors: [
       { name: "HubSpot", src: "/logos/hubspot.svg" },
-      { name: "Salesforce", src: "/logos/salesforce.webp" },
+      { name: "Salesforce", src: "/logos/salesforce.svg" },
       { name: "Intercom", src: "/logos/intercom.svg" },
       { name: "Gmail", src: "/logos/gmail.svg" },
     ],
@@ -145,7 +145,7 @@ const OUTCOMES = [
     connectors: [
       { name: "Google Calendar", src: "/logos/google-calendar.svg" },
       { name: "Gmail", src: "/logos/gmail.svg" },
-      { name: "Zoom", src: "/logos/zoom.webp" },
+      { name: "Zoom", src: "/logos/zoom.svg" },
     ],
   },
   {
@@ -163,9 +163,9 @@ const OUTCOMES = [
     status: "Available",
     connectors: [
       { name: "Google Meet", src: "/logos/google-meet.svg" },
-      { name: "Zoom", src: "/logos/zoom.webp" },
+      { name: "Zoom", src: "/logos/zoom.svg" },
       { name: "Gmail", src: "/logos/gmail.svg" },
-      { name: "Salesforce", src: "/logos/salesforce.webp" },
+      { name: "Salesforce", src: "/logos/salesforce.svg" },
     ],
   },
   {
@@ -224,7 +224,7 @@ const OUTCOMES = [
       { name: "Slack", src: "/logos/slack.svg" },
       { name: "Google Drive", src: "/logos/google-drive.svg" },
       { name: "Microsoft 365", src: "/logos/microsoft-365.svg" },
-      { name: "Salesforce", src: "/logos/salesforce.webp" },
+      { name: "Salesforce", src: "/logos/salesforce.svg" },
     ],
   },
   {
@@ -243,8 +243,8 @@ const OUTCOMES = [
     connectors: [
       { name: "Slack", src: "/logos/slack.svg" },
       { name: "Microsoft Teams", src: "/logos/microsoft-teams.svg" },
-      { name: "Jira", src: "/logos/jira.webp" },
-      { name: "Salesforce", src: "/logos/salesforce.webp" },
+      { name: "Jira", src: "/logos/jira.svg" },
+      { name: "Salesforce", src: "/logos/salesforce.svg" },
     ],
   },
   {
@@ -281,7 +281,7 @@ const OUTCOMES = [
     status: "Available",
     connectors: [
       { name: "GitHub", src: "/logos/github.svg" },
-      { name: "Jira", src: "/logos/jira.webp" },
+      { name: "Jira", src: "/logos/jira.svg" },
       { name: "Zendesk", src: "/logos/zendesk.svg" },
       { name: "Slack", src: "/logos/slack.svg" },
     ],
@@ -302,7 +302,7 @@ const OUTCOMES = [
     connectors: [
       { name: "TikTok", src: "/logos/tiktok.svg" },
       { name: "Looker", src: "/logos/looker.svg" },
-      { name: "Salesforce", src: "/logos/salesforce.webp" },
+      { name: "Salesforce", src: "/logos/salesforce.svg" },
       { name: "Slack", src: "/logos/slack.svg" },
     ],
   },
@@ -320,7 +320,7 @@ const OUTCOMES = [
     slug: "qbr-generator",
     status: "Available",
     connectors: [
-      { name: "Salesforce", src: "/logos/salesforce.webp" },
+      { name: "Salesforce", src: "/logos/salesforce.svg" },
       { name: "Gong", src: "/logos/gong.svg" },
       { name: "Zendesk", src: "/logos/zendesk.svg" },
       { name: "Microsoft 365", src: "/logos/microsoft-365.svg" },
@@ -361,7 +361,7 @@ const OUTCOMES = [
     status: "Available",
     connectors: [
       { name: "Google Meet", src: "/logos/google-meet.svg" },
-      { name: "Zoom", src: "/logos/zoom.webp" },
+      { name: "Zoom", src: "/logos/zoom.svg" },
       { name: "Microsoft Teams", src: "/logos/microsoft-teams.svg" },
       { name: "Notion", src: "/logos/notion.svg" },
     ],
@@ -421,7 +421,7 @@ const OUTCOMES = [
     slug: "sales-call-prep",
     status: "Available",
     connectors: [
-      { name: "Salesforce", src: "/logos/salesforce.webp" },
+      { name: "Salesforce", src: "/logos/salesforce.svg" },
       { name: "Gong", src: "/logos/gong.svg" },
       { name: "Gmail", src: "/logos/gmail.svg" },
       { name: "Google Calendar", src: "/logos/google-calendar.svg" },
@@ -441,7 +441,7 @@ const OUTCOMES = [
     slug: null,
     status: "Planned",
     connectors: [
-      { name: "Salesforce", src: "/logos/salesforce.webp" },
+      { name: "Salesforce", src: "/logos/salesforce.svg" },
       { name: "Intercom", src: "/logos/intercom.svg" },
       { name: "Zendesk", src: "/logos/zendesk.svg" },
       { name: "Slack", src: "/logos/slack.svg" },
@@ -483,7 +483,7 @@ const OUTCOMES = [
     connectors: [
       { name: "Figma", src: "/logos/figma.svg" },
       { name: "GitHub", src: "/logos/github.svg" },
-      { name: "Linear", src: "/logos/linear.webp" },
+      { name: "Linear", src: "/logos/linear.svg" },
       { name: "Slack", src: "/logos/slack.svg" },
     ],
   },

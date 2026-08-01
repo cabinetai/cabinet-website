@@ -3,6 +3,14 @@
 import Image from "next/image";
 import { useEffect, useRef, useState, type PointerEvent as ReactPointerEvent } from "react";
 import {
+  FileCode,
+  FileSpreadsheet,
+  FileText,
+  PenTool,
+  Presentation,
+  type LucideIcon,
+} from "lucide-react";
+import {
   AnimatePresence,
   motion,
   useScroll,
@@ -36,13 +44,10 @@ const LOGOS = [
   "intercom", "servicenow", "airtable", "bamboohr", "brex", "docusign",
   "looker", "mixpanel", "quickbooks", "tableau", "greenhouse",
   "google-calendar", "google-meet", "onedrive", "sharepoint", "bigquery",
-  "gong",
-].map((n) => `/logos/${n}.svg`)
-  .concat(
-    ["salesforce", "jira", "zoom", "snowflake", "asana", "calendly",
-     "clickup", "dropbox", "box", "gitlab", "databricks", "datadog",
-     "amplitude", "linear"].map((n) => `/logos/${n}.webp`)
-  );
+  "gong", "salesforce", "jira", "zoom", "snowflake", "asana", "calendly",
+  "clickup", "dropbox", "box", "gitlab", "databricks", "datadog",
+  "amplitude", "linear",
+].map((n) => `/logos/${n}.svg`);
 
 // "Pages" — the markdown / docs / sheets that pile up around the tools.
 // Colour-coded by type: .md brown · .pdf red · .csv/.xlsx green ·
@@ -68,7 +73,7 @@ const CABINET_HUB_IMAGE = "/brand/cabinet-logo-top-open-512.png";
 // Cluster the clutter on the LEFT of the canvas (golden-angle spiral
 // around a left-of-center point → dense, even, organic). Radii widened a
 // touch to keep breathing room now that there are more pages.
-const LCX = -390;
+const LCX = -330;
 const LRX = 300;
 const LRY = 300;
 function scatterLeft(i: number, total: number) {
@@ -82,7 +87,7 @@ function scatterLeft(i: number, total: number) {
 // Bring-your-own-AI providers — the agents that operate the Cabinet,
 // mixed into the same cloud as the tools and pages they work on.
 const PROVIDERS = [
-  "claude.svg", "openai.png", "gemini.svg", "grok.svg",
+  "claude.svg", "openai.svg", "gemini.svg", "grok.svg",
   "copilot.svg", "cursor.svg", "opencode.svg", "pi.svg",
 ].map((f) => `/providers/${f}`);
 
@@ -125,33 +130,24 @@ const REPEL_RADIUS = 160;
 const REPEL_STRENGTH = 88;
 const REPEL_SPRING = { stiffness: 240, damping: 17, mass: 0.7 };
 
-// Map a filename's extension to its generated file-type badge (public/
-// generated/filetabs/*.webp, produced by scripts/generate-file-tabs.mjs).
-// Until those assets exist, FileMark falls back to the colored bar.
-const FILE_TAB: Record<string, string> = {
-  md: "md", pdf: "pdf", xlsx: "sheet", csv: "sheet", docx: "doc",
-  sql: "code", key: "deck", fig: "design",
+// Map a filename's extension to its file-type badge icon. Flat vector marks
+// (not raster) so they stay crisp at the tile's 22–40px display size.
+const FILE_TAB_ICON: Record<string, LucideIcon> = {
+  md: FileText, pdf: FileText, xlsx: FileSpreadsheet, csv: FileSpreadsheet,
+  docx: FileText, sql: FileCode, key: Presentation, fig: PenTool,
 };
 
 function FileMark({ name, color, size = 22 }: { name: string; color: string; size?: number }) {
   const ext = name.split(".").pop() ?? "";
-  const tab = FILE_TAB[ext];
-  const [failed, setFailed] = useState(false);
-  if (tab && !failed) {
-    // Native <img> so a missing asset degrades gracefully to the chip below.
+  const Icon = FILE_TAB_ICON[ext];
+  if (Icon) {
     return (
-      // eslint-disable-next-line @next/next/no-img-element
-      <img
-        src={`/generated/filetabs/${tab}.webp`}
-        alt=""
-        width={size}
-        height={size}
-        loading="lazy"
-        decoding="async"
-        onError={() => setFailed(true)}
-        className="shrink-0 object-contain"
-        style={{ width: size, height: size, filter: "drop-shadow(0 2px 2px rgba(120,80,45,0.3))" }}
-      />
+      <span
+        className="flex shrink-0 items-center justify-center rounded-md"
+        style={{ width: size, height: size, background: color }}
+      >
+        <Icon size={size * 0.62} color="#fff8ec" strokeWidth={2.25} />
+      </span>
     );
   }
   return (
@@ -431,7 +427,7 @@ function StaticFallback() {
             "radial-gradient(circle at 48% 50%, rgba(190,139,82,0.2), transparent 24%), radial-gradient(circle at 12% 48%, rgba(255,255,255,0.74), transparent 38%)",
         }}
       />
-      <div className="relative z-10 mx-auto grid min-h-[calc(100svh-5rem)] max-w-[1500px] items-center gap-10 px-6 py-16 lg:grid-cols-[1fr_auto_1fr]">
+      <div className="relative z-10 mx-auto grid min-h-[calc(100svh-5rem)] max-w-[1500px] items-center gap-6 px-6 py-16 lg:grid-cols-[1fr_auto_1fr]">
         <div className="flex max-w-xl flex-wrap justify-center gap-2.5 lg:justify-start">
           {[...LOGOS.slice(0, 9), ...PROVIDERS.slice(0, 3)].map((src) => (
             <div
@@ -555,10 +551,16 @@ export function IntegrationScene() {
   // anchored). Parked far away so nothing reacts until the cursor enters.
   const pointerX = useMotionValue(99999);
   const pointerY = useMotionValue(99999);
+  // Cached instead of re-measured on every pointermove (which can fire well
+  // above 60Hz) — the sticky container's rect only changes on resize.
+  const stickyRectRef = useRef<DOMRect | null>(null);
   const handlePointerMove = (e: ReactPointerEvent<HTMLDivElement>) => {
-    const el = stickyRef.current;
-    if (!el) return;
-    const r = el.getBoundingClientRect();
+    if (!stickyRectRef.current) {
+      const el = stickyRef.current;
+      if (!el) return;
+      stickyRectRef.current = el.getBoundingClientRect();
+    }
+    const r = stickyRectRef.current;
     pointerX.set(e.clientX - (r.left + r.width / 2));
     pointerY.set(e.clientY - (r.top + r.height / 2));
   };
@@ -573,6 +575,10 @@ export function IntegrationScene() {
   // Randomised after hydration, so Math.random() never causes a mismatch and
   // the cloud is fresh on every visit.
   const [layout, setLayout] = useState<Slot[]>([]);
+  // The scatter/repel physics (63 tiles' worth of chained motion values) only
+  // need to run while the scene is actually on screen — gated the same way
+  // the demo video below already gates its own load.
+  const [sceneInView, setSceneInView] = useState(false);
 
   useEffect(() => {
     const el = ref.current;
@@ -581,6 +587,7 @@ export function IntegrationScene() {
       const top = el.getBoundingClientRect().top + window.scrollY;
       const dist = Math.max(1, el.offsetHeight - window.innerHeight);
       setRange([top, top + dist]);
+      stickyRectRef.current = null;
     };
     const animationFrame = requestAnimationFrame(() => {
       setMounted(true);
@@ -588,9 +595,17 @@ export function IntegrationScene() {
       measure();
     });
     window.addEventListener("resize", measure);
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setSceneInView(entry.isIntersecting),
+      { rootMargin: "200px 0px" },
+    );
+    observer.observe(el);
+
     return () => {
       cancelAnimationFrame(animationFrame);
       window.removeEventListener("resize", measure);
+      observer.disconnect();
     };
   }, []);
 
@@ -696,21 +711,24 @@ export function IntegrationScene() {
         />
 
         {/* Brown app and file tiles stay fully legible until they reach the
-            open Cabinet, where they shrink behind the cabinet image. */}
+            open Cabinet, where they shrink behind the cabinet image. Only
+            mounted while the scene is on screen — 63 tiles' worth of chained
+            spring/repel motion values is real work to skip when scrolled away. */}
         <div className="absolute inset-0 overflow-hidden">
-          {layout.map((slot) => (
-            <FloatingTile
-              key={slot.item.kind === "logo" ? slot.item.src : slot.item.name}
-              progress={sceneProgress}
-              pointerX={pointerX}
-              pointerY={pointerY}
-              item={slot.item}
-              posX={slot.x}
-              posY={slot.y}
-              rot={slot.rot}
-              s={slot.s}
-            />
-          ))}
+          {sceneInView &&
+            layout.map((slot) => (
+              <FloatingTile
+                key={slot.item.kind === "logo" ? slot.item.src : slot.item.name}
+                progress={sceneProgress}
+                pointerX={pointerX}
+                pointerY={pointerY}
+                item={slot.item}
+                posX={slot.x}
+                posY={slot.y}
+                rot={slot.rot}
+                s={slot.s}
+              />
+            ))}
         </div>
 
         {SUCK_LANES.map((lane) =>
@@ -769,7 +787,7 @@ export function IntegrationScene() {
 
         {/* beat 1 — title beside the cloud (outer div positions; inner h2 is
             free to run its own magic-wand dissolve transform) */}
-        <div className="pointer-events-none absolute right-[10vw] top-1/2 z-20 max-w-xs -translate-y-1/2 text-right sm:max-w-sm md:right-[13vw] md:max-w-lg lg:right-[15vw]">
+        <div className="pointer-events-none absolute right-[7vw] top-1/2 z-20 max-w-xs -translate-y-1/2 text-right sm:max-w-sm md:right-[9vw] md:max-w-lg lg:right-[11vw]">
           <motion.div
             role="heading"
             aria-level={2}
