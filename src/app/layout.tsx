@@ -107,7 +107,11 @@ export default function RootLayout({
             );
             console.log(
               "%chttps://runcabinet.com/careers",
-              "color: #5A7A4F; font-family: ui-monospace, monospace; font-size: 13px; font-weight: 700;"
+              "color: #FFFFFF; font-family: ui-monospace, monospace; font-size: 13px; font-weight: 700;"
+            );
+            console.log(
+              "%c╭───────────────────╮\\n│  ╭─────────────╮  │\\n│  ╰─────▬▬▬─────╯  │\\n│  ╭─────────────╮  │\\n│  ╰─────▬▬▬─────╯  │\\n│  ╭─────────────╮  │\\n│  ╰─────▬▬▬─────╯  │\\n╰───────────────────╯",
+              "color: #8B5E3C; font-family: monospace; font-size: 14px; font-weight: 700; line-height: 1.2;"
             );
           `}
         </Script>
