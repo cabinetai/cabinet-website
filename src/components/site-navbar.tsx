@@ -248,7 +248,7 @@ export function SiteNavbar({ fixed = false }: { fixed?: boolean }) {
       {mobileOpen && (
         <div
           id="mobile-site-navigation"
-          className="mobile-nav-panel pointer-events-auto fixed inset-x-3 bottom-3 top-[76px] z-40 overflow-y-auto rounded-[28px] p-3 backdrop-blur-2xl min-[1100px]:hidden"
+          className="mobile-nav-panel pointer-events-auto fixed inset-x-3 bottom-3 top-[76px] z-40 overflow-y-auto overscroll-contain rounded-[28px] p-3 pb-[calc(1.25rem+env(safe-area-inset-bottom))] backdrop-blur-2xl min-[1100px]:hidden"
         >
           <div className="grid gap-1">
             <MobileLink href="/#product" label="AI teams" onNavigate={() => setMobileOpen(false)} />
@@ -292,7 +292,7 @@ export function SiteNavbar({ fixed = false }: { fixed?: boolean }) {
             </p>
             <Link
               href="/demo"
-              className="btn-wood mt-4 inline-flex items-center gap-2 rounded-full px-4 py-2.5 text-sm font-semibold"
+              className="btn-wood mt-4 inline-flex w-full items-center justify-center gap-2 rounded-full px-4 py-2.5 text-sm font-semibold"
               onClick={() => setMobileOpen(false)}
             >
               Book an executive demo <ArrowRight aria-hidden className="h-4 w-4" />

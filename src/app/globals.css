@@ -192,6 +192,29 @@ html:has(.home-scroll-snap) {
   box-shadow: 0 30px 70px -48px color-mix(in srgb, var(--text-primary) 42%, transparent);
 }
 
+.compare-matrix-scroll {
+  scrollbar-color: color-mix(in srgb, var(--accent) 48%, transparent) transparent;
+  scrollbar-width: thin;
+}
+
+.compare-matrix-scroll:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--accent) 55%, transparent);
+  outline-offset: -2px;
+}
+
+.compare-matrix-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.compare-matrix-scroll::-webkit-scrollbar-track {
+  background: var(--bg-warm);
+}
+
+.compare-matrix-scroll::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 48%, transparent);
+}
+
 @media (min-width: 1024px) {
   .outcome-tablist {
     scrollbar-color: color-mix(in srgb, var(--accent) 42%, transparent) transparent;
