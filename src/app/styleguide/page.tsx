@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { readdirSync } from "node:fs";
 import { join } from "node:path";
 import { SiteNavbar } from "@/components/site-navbar";
@@ -45,7 +46,7 @@ const ASSET_SECTIONS: { title: string; desc: string; items: { src: string; label
   { title: "UI concept icons", desc: "General wooden icons that replace flat glyphs across the site.", items: listAssets("brand/ui") },
   {
     title: "Explorations archive",
-    desc: "Every generated exploration (public/generated/_explore). Each file name is its id; re-run one with its generator, for example: node scripts/generate-images.mjs <id>, node scripts/explore-styles.mjs <subject>, or node scripts/brand-states.mjs.",
+    desc: "Every generated exploration. Each file name is its id; re-run one with its generator, for example: node scripts/generate-images.mjs <id>, node scripts/explore-styles.mjs <subject>, or node scripts/brand-states.mjs. These live in brand-explorations/ at the repo root and are symlinked into public/ for dev by scripts/link-explorations.mjs — they are deliberately not part of the production export.",
     items: listAssets("generated/_explore"),
   },
 ];
@@ -211,6 +212,14 @@ function AssetGrid({ items }: { items: { src: string; label: string }[] }) {
 }
 
 export default function StyleGuidePage() {
+  // Dev-only. This is an internal brand reference — it was `noindex` but still
+  // publicly reachable, and the explorations archive it lists is 16 MB of
+  // rejected studies we don't want on the CDN. Excluding the route from the
+  // production export is what lets the archive stay in the page at all.
+  if (process.env.NODE_ENV === "production") {
+    notFound();
+  }
+
   const LOGO_NEW = listAssets("brand/logo-variations");
   const LOGO_CANDIDATES = listAssets("brand/logo-candidates");
   return (
