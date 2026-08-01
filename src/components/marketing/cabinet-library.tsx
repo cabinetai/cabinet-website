@@ -574,10 +574,28 @@ export function CabinetLibrary() {
         </motion.div>
 
         <div className="home-product-surface mt-[clamp(1.25rem,2.4svh,2rem)] overflow-hidden rounded-[28px] bg-bg-card lg:grid lg:h-[clamp(450px,61svh,620px)] lg:grid-cols-[300px_minmax(0,1fr)]">
+          <div className="p-3 lg:hidden">
+            <label htmlFor="outcome-select" className="sr-only">
+              Business outcome
+            </label>
+            <select
+              id="outcome-select"
+              value={activeId}
+              onChange={(event) => setActiveId(event.target.value as OutcomeId)}
+              className="w-full rounded-xl border border-border bg-bg-warm px-4 py-3 text-sm font-semibold text-text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/35"
+            >
+              {OUTCOMES.map((outcome) => (
+                <option key={outcome.id} value={outcome.id}>
+                  {outcome.label}
+                  {outcome.status !== "Available" ? ` — ${outcome.status}` : ""}
+                </option>
+              ))}
+            </select>
+          </div>
           <div
             role="tablist"
             aria-label="Business outcomes"
-            className="outcome-tablist flex gap-2 overflow-x-auto bg-bg-card p-3 lg:h-full lg:flex-col lg:gap-1 lg:overflow-x-hidden lg:overflow-y-auto lg:overscroll-contain lg:border-r lg:border-border lg:bg-bg-card lg:p-3"
+            className="outcome-tablist hidden gap-2 bg-bg-card p-3 lg:flex lg:h-full lg:flex-col lg:gap-1 lg:overflow-x-hidden lg:overflow-y-auto lg:overscroll-contain lg:border-r lg:border-border lg:bg-bg-card lg:p-3"
           >
             {OUTCOMES.map((outcome, index) => {
               const selected = outcome.id === activeId;

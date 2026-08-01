@@ -1,7 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useRef, useState, type PointerEvent as ReactPointerEvent } from "react";
+import {
+  useEffect,
+  useRef,
+  useState,
+  type PointerEvent as ReactPointerEvent,
+  type RefObject,
+} from "react";
 import {
   FileCode,
   FileSpreadsheet,
@@ -517,7 +523,7 @@ function RotatingBenefits() {
     return () => clearInterval(t);
   }, []);
   return (
-    <h2 className="[font-family:var(--font-brand)] text-3xl leading-tight tracking-[-0.045em] text-text-primary md:text-5xl">
+    <h2 className="[font-family:var(--font-brand)] text-[clamp(1.05rem,4.4vw,1.875rem)] leading-tight tracking-[-0.045em] text-text-primary sm:text-3xl md:text-5xl">
       <span className="inline-flex items-baseline gap-3 text-left">
         <span className="font-brand italic">Cabinet</span>
         {/* invisible sizer reserves the widest phrase's width so Cabinet
@@ -865,32 +871,46 @@ export function IntegrationScene() {
       </div>
     </div>
 
-      {/* demo video — a plain block right after the scene's "…AI team, 24/7" beat */}
-      <section ref={demoRef} className="dot-grid bg-[#f2ece4] px-6 pb-24 pt-16">
-        <div className="mx-auto w-fit max-w-full overflow-hidden rounded-2xl border border-border shadow-2xl shadow-black/25">
-          <video
-            key={demoVideoReady ? "ready" : "idle"}
-            autoPlay
-            loop
-            muted
-            playsInline
-            preload="none"
-            width={2880}
-            height={1794}
-            className="mx-auto max-h-[64vh] w-auto max-w-full scale-[1.01]"
-          >
-            {demoVideoReady && (
-              <>
-                <source src="/new-cabinet.webm" type="video/webm" />
-                <source src="/new-cabinet.mp4" type="video/mp4" />
-              </>
-            )}
-          </video>
-        </div>
-        <div className="mx-auto mt-8 max-w-5xl text-center">
-          <RotatingBenefits />
-        </div>
-      </section>
+      <DemoVideoSection demoRef={demoRef} demoVideoReady={demoVideoReady} />
     </>
+  );
+}
+
+// A plain block right after the scene's "…AI team, 24/7" beat — shared by the
+// full pinned-scroll scene and the mobile/reduced-motion static intro so
+// neither loses the video or the rotating benefit line.
+function DemoVideoSection({
+  demoRef,
+  demoVideoReady,
+}: {
+  demoRef: RefObject<HTMLElement | null>;
+  demoVideoReady: boolean;
+}) {
+  return (
+    <section ref={demoRef} className="dot-grid bg-[#f2ece4] px-6 pb-24 pt-16">
+      <div className="mx-auto w-fit max-w-full overflow-hidden rounded-2xl border border-border shadow-2xl shadow-black/25">
+        <video
+          key={demoVideoReady ? "ready" : "idle"}
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="none"
+          width={2880}
+          height={1794}
+          className="mx-auto max-h-[64vh] w-auto max-w-full scale-[1.01]"
+        >
+          {demoVideoReady && (
+            <>
+              <source src="/new-cabinet.webm" type="video/webm" />
+              <source src="/new-cabinet.mp4" type="video/mp4" />
+            </>
+          )}
+        </video>
+      </div>
+      <div className="mx-auto mt-8 max-w-5xl text-center">
+        <RotatingBenefits />
+      </div>
+    </section>
   );
 }
