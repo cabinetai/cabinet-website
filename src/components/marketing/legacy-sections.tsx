@@ -27,6 +27,7 @@ import { DiscordIcon, GithubIcon } from "@/components/site-icons";
 import { WaitlistCapture } from "@/components/waitlist-capture";
 import { WaitlistCloudBackdrop } from "@/components/waitlist-cloud-backdrop";
 import { WoodIcon } from "@/components/wood-icon";
+import { AppleIcon, LinuxIcon, WindowsIcon } from "@/components/marketing/os-icons";
 import { CABINETS, CABINETS_SITE, cabinetCover, cabinetUrl } from "@/lib/cabinets";
 import {
   DISCORD_URL,
@@ -1137,16 +1138,23 @@ export function LegacyHero() {
           No subscription. No trial. No paywall. Clone it, run it, and make it your own.
         </p>
 
-        <p className="text-base font-code text-text-tertiary max-w-xl mx-auto mb-10">
-          <TypingText
-            texts={[
-              "Onboard an AI team in 5 questions",
-              "Ship HTML apps inside your KB",
-              "Cron-scheduled AI agents that work 24/7",
-              "Git-backed version history on every page",
-              "PDF, CSV, markdown: all first-class content",
-            ]}
-          />
+        {/* relative + invisible sizer reserves height for the longest phrase
+            so the typing/deleting animation never reflows the border below */}
+        <p className="relative text-base font-code text-text-tertiary max-w-xl mx-auto mb-10">
+          <span aria-hidden className="invisible">
+            PDF, CSV, markdown: all first-class content
+          </span>
+          <span className="absolute inset-0">
+            <TypingText
+              texts={[
+                "Onboard an AI team in 5 questions",
+                "Ship HTML apps inside your KB",
+                "Cron-scheduled AI agents that work 24/7",
+                "Git-backed version history on every page",
+                "PDF, CSV, markdown: all first-class content",
+              ]}
+            />
+          </span>
         </p>
       </div>
     </section>
@@ -1651,7 +1659,7 @@ export function LegacyFeaturesGrid() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-6 gap-4 max-w-6xl mx-auto lg:auto-rows-fr">
+        <div className="grid grid-cols-2 lg:grid-cols-6 gap-4 max-w-6xl mx-auto max-lg:grid-flow-dense lg:auto-rows-fr">
           {[
             { img: "/brand/feat/agents.png", span: "col-span-2 lg:col-span-3", featured: true, title: "AI Agents", description: "Onboard a CEO, Editor, Marketer. Each has goals, skills, scheduled jobs. Watch them work like a real team." },
             { img: "/brand/feat/files.png", span: "col-span-2 lg:col-span-3", featured: true, title: "File-Based Everything", description: "No database. Markdown on disk. Drag-and-drop tree sidebar. Your data is always yours, always portable." },
@@ -1973,12 +1981,36 @@ export function LegacyCta() {
           <span className="font-brand italic">Cabinet</span>{" "}is a free, open-source project you can run yourself. No subscription, no trial clock, and no vendor lock-in. Start in 2 minutes.
                                 </p>
         <div className="max-w-xl mx-auto mb-10">
-          <div className="flex flex-col sm:flex-row items-stretch gap-3">
+          {/* Mobile: no npx terminal (nothing to run from a phone), all three
+              OSes listed plainly instead of Windows/Linux being an afterthought */}
+          <div className="flex flex-col gap-3 sm:hidden">
+            <a
+              href={MACOS_DOWNLOAD_URL}
+              className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-semibold text-base cursor-pointer btn-wood"
+            >
+              <AppleIcon className="h-5 w-5" />
+              Download for Mac
+            </a>
+            <a
+              href={WINDOWS_DOWNLOAD_URL}
+              className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-semibold text-base cursor-pointer card-skin text-text-primary"
+            >
+              <WindowsIcon className="h-5 w-5 text-accent" />
+              Download for Windows
+            </a>
+            <span className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-semibold text-base border border-border bg-bg-card/70 text-text-secondary">
+              <LinuxIcon className="h-5 w-5 text-accent" />
+              Linux
+            </span>
+          </div>
+
+          {/* Tablet/desktop: unchanged */}
+          <div className="hidden sm:flex items-stretch gap-3">
             <a
               href={MACOS_DOWNLOAD_URL}
               className="shrink-0 inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-semibold text-base cursor-pointer btn-wood"
             >
-              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              <AppleIcon className="h-5 w-5" />
               Download for Mac
             </a>
             <span className="hidden sm:flex items-center text-text-muted text-sm font-code">or</span>
@@ -1990,7 +2022,7 @@ export function LegacyCta() {
               <CopyButton text="npx cabinetai run" />
             </div>
           </div>
-          <p className="mt-4 text-sm font-body-serif text-text-tertiary">
+          <p className="mt-4 hidden text-sm font-body-serif text-text-tertiary sm:block">
             <a
               href={WINDOWS_DOWNLOAD_URL}
               className="text-accent underline underline-offset-2 hover:text-accent-warm"

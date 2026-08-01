@@ -60,7 +60,7 @@ export default function HomePage() {
       </SectionBadge>
 
       <SectionBadge n="01" title="Hero: AI workspace" origin="kimi">
-      <section className="home-snap-section relative isolate flex min-h-0 items-center overflow-hidden px-5 pb-[clamp(3rem,7vh,6rem)] pt-[clamp(5rem,10vh,7rem)] sm:px-6 lg:min-h-[100svh] lg:pt-[clamp(7rem,12vh,9rem)] lg:px-8">
+      <section className="home-snap-section relative isolate flex min-h-[100svh] items-center overflow-hidden px-5 pb-[clamp(3rem,7vh,6rem)] pt-[clamp(7rem,12vh,9rem)] sm:px-6 lg:px-8">
         <div
           aria-hidden
           className="home-hero-wash pointer-events-none absolute inset-0 -z-20"
@@ -162,7 +162,7 @@ export default function HomePage() {
             </MotionReveal>
 
             <MotionReveal delay={0.7} amount={0.1}>
-            <div className="mt-7 flex flex-wrap gap-x-5 gap-y-2 text-xs font-semibold text-text-tertiary">
+            <div className="mt-7 flex flex-wrap justify-center gap-x-5 gap-y-2 text-xs font-semibold text-text-tertiary sm:justify-start">
               <span className="inline-flex items-center gap-1.5">
                 <Check aria-hidden className="h-3.5 w-3.5 text-green" /> Open source
               </span>

@@ -29,7 +29,6 @@ import {
   type MotionValue,
 } from "framer-motion";
 import { ScrollReveal } from "@/components/lightswind/scroll-reveal";
-import { useIsMobile } from "@/hooks/use-is-mobile";
 
 /* ──────────────────────────────────────────────────────────────
    Integration scene: a pinned files-to-Cabinet story.
@@ -579,10 +578,6 @@ export function IntegrationScene() {
   const { scrollY } = useScroll();
   const [range, setRange] = useState<[number, number]>([0, 1]);
   const [mounted, setMounted] = useState(false);
-  // Below this width the scattered/pinned story doesn't have room to read —
-  // the cloud's scatter radius assumes a wide viewport and crops badly on a
-  // phone. Swap to the same static composition used for reduced motion.
-  const isMobile = useIsMobile();
   // Randomised after hydration, so Math.random() never causes a mismatch and
   // the cloud is fresh on every visit.
   const [layout, setLayout] = useState<Slot[]>([]);
@@ -702,15 +697,6 @@ export function IntegrationScene() {
   }, []);
 
   if (prefersReduced && mounted) return <StaticFallback />;
-
-  if (isMobile && mounted) {
-    return (
-      <>
-        <StaticFallback />
-        <DemoVideoSection demoRef={demoRef} demoVideoReady={demoVideoReady} />
-      </>
-    );
-  }
 
   return (
     <>
