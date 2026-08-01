@@ -7,6 +7,7 @@ const FOOTER_COLUMNS = [
     title: "Product",
     links: [
       { label: "AI teams", href: "/#product" },
+      { label: "Templates", href: "/templates" },
       { label: "Connect knowledge", href: "/#knowledge" },
       { label: "Bring your own AI", href: "/#providers" },
       { label: "Security", href: "/enterprise/security" },

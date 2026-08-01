@@ -19,10 +19,10 @@ import { GITHUB_URL } from "@/lib/site-config";
 
 const RESOURCE_LINKS = [
   {
-    label: "Cabinet library",
+    label: "Templates",
     description: "Inspect and clone working AI teams.",
-    href: "https://cabinets.sh",
-    external: true,
+    href: "/templates",
+    external: false,
     icon: LibraryBig,
   },
   {
@@ -135,6 +135,7 @@ export function SiteNavbar({ fixed = false }: { fixed?: boolean }) {
 
         <div className="hidden min-[1100px]:flex items-center gap-2">
           <GlassNavLink href="/#product">AI teams</GlassNavLink>
+          <GlassNavLink href="/templates">Templates</GlassNavLink>
           <SolutionsMenu triggerClassName="text-text-secondary" />
           <GlassNavLink href="/enterprise/security">Security</GlassNavLink>
           <GlassNavLink href="/pricing">Pricing</GlassNavLink>
@@ -252,6 +253,7 @@ export function SiteNavbar({ fixed = false }: { fixed?: boolean }) {
         >
           <div className="grid gap-1">
             <MobileLink href="/#product" label="AI teams" onNavigate={() => setMobileOpen(false)} />
+            <MobileLink href="/templates" label="Templates" onNavigate={() => setMobileOpen(false)} />
             <MobileLink href="/solutions" label="Solutions" onNavigate={() => setMobileOpen(false)} />
             <MobileLink
               href="/enterprise/security"

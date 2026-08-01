@@ -4,22 +4,30 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "predev": "node scripts/link-explorations.mjs",
+    "predev": "node scripts/sync-templates.mjs && node scripts/link-explorations.mjs",
     "build": "next build",
-    "prebuild": "node scripts/link-explorations.mjs --unlink",
+    "prebuild": "node scripts/sync-templates.mjs && node scripts/link-explorations.mjs --unlink",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
     "framer-motion": "^12.43.0",
+    "gray-matter": "^4.0.3",
+    "js-yaml": "^4.1.1",
     "lucide-react": "^1.28.0",
     "next": "16.2.12",
     "react": "19.2.8",
     "react-dom": "19.2.8",
+    "rehype-stringify": "^10.0.1",
+    "remark-gfm": "^4.0.1",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.2",
+    "unified": "^11.0.5",
     "zustand": "^5.0.14"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.3",
+    "@types/js-yaml": "^4.0.9",
     "@types/node": "^20.19.43",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.4",
