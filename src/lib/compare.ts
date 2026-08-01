@@ -744,7 +744,7 @@ export const COMPARISONS: Comparison[] = [
     metaDescription:
       "Coda turns docs into apps with tables and Packs in the cloud. Cabinet keeps your whole knowledge base as files you own, visualizes live web apps, and runs agents. An honest comparison.",
     h1: "Coda vs Cabinet: an honest comparison",
-    lead: "Coda blends documents, tables, and integrations into cloud docs that behave like apps. Cabinet keeps your whole knowledge base as files you own, visualizes live web apps and dashboards alongside your docs, and runs agents that act on them. Both go beyond static pages, the difference is ownership and what your AI can do.",
+    lead: "Coda blends documents, tables, and integrations into cloud docs that behave like apps. Cabinet keeps your whole knowledge base as files you own, visualizes live web apps and dashboards alongside your docs, and runs agents that act on them. Both go beyond static pages; the difference is ownership and what your AI can do.",
     verdict: {
       chooseUs: [
         "You want to own your knowledge as files, not build docs inside a vendor's cloud.",
