@@ -119,7 +119,7 @@ The H1 is where we earn trust. Pattern: name both tools + an honesty marker.
 - Optional three-way (Phase 3): `/compare/<a>-vs-<b>-vs-cabinet`
 
 ### 4.4 Meta description — comparison framing + real proof
-Pattern: one honest sentence on the core difference + one proof point + soft CTA. Use **real** proof (open source, MIT, self-hosted, live GitHub stars), never invented customer counts.
+Pattern: one honest sentence on the core difference + one proof point + soft CTA. Use **real** proof (open source, self-hosted, live GitHub stars), never invented customer counts.
 
 > `Notion locks your data in their cloud. Cabinet keeps it as Markdown files you own, with AI agents and embedded apps built in. Open source, self-hosted. See the honest comparison.`
 
@@ -212,7 +212,7 @@ Synthesized from the highest-converting patterns (Powered by Search, Get Passion
 ├─────────────────────────────────────────────────────────────┤
 │ 7. SOCIAL PROOF (honest)                                     │
 │    Switcher quote (illustrative-tagged until real),          │
-│    real signals: GitHub stars (live), MIT, "Featured in".    │
+│    real signals: GitHub stars (live), open source, "Featured in".    │
 │    NO fake customer logos.                                   │
 ├─────────────────────────────────────────────────────────────┤
 │ 8. FAQ ACCORDION (5–7 Q, FAQPage schema)                     │
@@ -294,7 +294,7 @@ Differentiate from a plain table (Webflow's lesson). For the 3 headline differen
 These pages live or die on credibility. Follow `AGENTS.md` to the letter.
 
 1. **No em dashes.** Anywhere. Period, comma, colon, parentheses, or rewrite. (House rule; it reads as AI and costs us credibility with this audience.)
-2. **No invented numbers.** No "10,000+ teams", no fake G2 scores, no made-up time-savings on these pages. Use only: live GitHub stars, MIT/open-source, self-hosted, "Featured in" press we actually have. Anything illustrative gets the existing **"Illustrative"** tag (same convention as `solution-template`).
+2. **No invented numbers.** No "10,000+ teams", no fake G2 scores, no made-up time-savings on these pages. Use only: live GitHub stars, open source, self-hosted, "Featured in" press we actually have. Anything illustrative gets the existing **"Illustrative"** tag (same convention as `solution-template`).
 3. **Be fair.** Every spoke must credit the competitor in the hero acknowledgment and include a real "when they're the better choice" section. State competitor strengths in their own words where possible.
 4. **Be specific, not adjectival.** "Markdown files in a folder you can `grep` and `git`" beats "powerful, flexible knowledge management."
 5. **One core idea per page.** Notion = ownership/cloud-lock. Obsidian = single-player notes vs a team OS. Glean = search-over-your-tools vs author-and-own. Dust = connectors vs a file-based brain. Paperclip = agents vs agents + the knowledge they run on.

@@ -135,7 +135,7 @@ Routing and components already exist; this section sets the bar per surface. "Co
 
 - **Main nav (`SiteNavbar`):** liquid-glass pills. **Add a glass mobile menu** (drawer or sheet) so all sections are reachable below 1100px. Keep one solid primary (Download).
 - **Enterprise nav (`EnterpriseNav`):** unify with the glass language; keep active states and the mobile drawer.
-- **Footers:** one consistent legal block, contact (`hi@runcabinet.com`), MIT note, agent-capability disclaimer. No physical address (confirm the "Tel Aviv" line against policy).
+- **Footers:** one consistent legal block, contact (`hi@runcabinet.com`), and an agent-capability disclaimer. No physical address.
 
 ### 6.2 Home (`/`)
 
@@ -241,7 +241,7 @@ The flagship. Requirements:
 
 **Phase 1: Credibility bugs (highest trust per effort)**
 4. Build the glass **mobile menu** for `SiteNavbar`.
-5. Remove every em dash from `src/**`; standardize naming and legal/footer casing; confirm the "Tel Aviv" line against the no-address policy.
+5. Remove every em dash from `src/**`; standardize naming and legal/footer casing.
 6. Real alt text pass; fix pricing tier semantics (radios) and icon-only labels.
 
 **Phase 2: System conformance**
@@ -268,7 +268,7 @@ The flagship. Requirements:
 - [ ] Core Web Vitals: LCP < 2.5s mobile, CLS < 0.1, INP < 200ms on the key set.
 - [ ] 0 critical axe issues; keyboard pass clean; pricing selection uses radio semantics; all meaningful images have descriptive alt.
 - [ ] metadataBase, canonical, OG, sitemap, robots, and relevant JSON-LD present on all routes; one H1 per page.
-- [ ] Legal/contact consistent (one casing, `hi@runcabinet.com`, no physical address, MIT note, agent disclaimer).
+- [ ] Legal/contact consistent (one casing, `hi@runcabinet.com`, no physical address, agent disclaimer).
 - [ ] `/styleguide` reflects the live system with no drift.
 - [ ] Conversion events instrumented for nav, CTAs, pricing, compare, demo, waitlist.
 
@@ -287,7 +287,6 @@ The flagship. Requirements:
 2. **Eyebrows:** standardize on sans `.ent-eyebrow` everywhere, or keep mono `.section-label` on marketing pages? Recommendation: sans for the executive audience.
 3. **Enterprise nav:** convert to floating glass pills like the main nav, or keep a frosted bar (more formal)? Recommendation: keep a frosted bar but in the same glass family, so the two tracks feel related, not identical.
 4. **Mobile menu pattern:** full-screen glass sheet vs top drawer? Recommendation: glass sheet for the main nav (more room, more premium).
-5. **"Tel Aviv" line:** acceptable city reference, or remove to honor the no-address policy strictly? Needs owner call.
 6. **Company-name casing:** "Holy Bible Apps Ltd" everywhere (recommended) vs all caps?
 7. **Resources/blog:** stub the IA slot now, or defer entirely?
 

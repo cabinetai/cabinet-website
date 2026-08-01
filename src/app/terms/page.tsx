@@ -86,8 +86,8 @@ export default function TermsPage() {
                 2. Open-Source License and Relationship to These Terms
               </h2>
               <p className="mb-4">
-                The Software is made available by HOLY BIBLE APPS LTD under the MIT License (the
-                &ldquo;License&rdquo;), the text of which is available in the Software&rsquo;s
+                The Software is made available by HOLY BIBLE APPS LTD under the applicable
+                open-source license, the text of which is available in the Software&rsquo;s
                 source repository. The License governs your rights to copy, modify, and
                 redistribute the Software. These Terms govern your use of the Site and supplement
                 the License with additional terms regarding your access to the Site, your
@@ -324,7 +324,7 @@ export default function TermsPage() {
               <h2 className="text-2xl font-display text-text-primary mb-4">
                 11. Intellectual Property; Trademarks
               </h2>
-              <p>Except as expressly licensed under the MIT License, all rights in and to the
+              <p>Except as expressly licensed under the applicable open-source license, all rights in and to the
                                                 Services, including the <span className="font-brand italic">Cabinet</span>{" "}name, logo, and trade dress, are reserved. Nothing
                                                 in these Terms grants you any right or license to use our trademarks, service
                                                 marks, or trade names without our prior written consent.
@@ -416,7 +416,7 @@ export default function TermsPage() {
               </h2>
               <p className="mb-3">
                 <strong className="text-text-primary">Entire Agreement.</strong> These Terms,
-                together with the Privacy Policy and the MIT License, constitute the entire
+                together with the Privacy Policy and the applicable open-source license, constitute the entire
                 agreement between you and us regarding the Services and supersede all prior
                 agreements and understandings.
               </p>

@@ -141,7 +141,7 @@ The honest read: on capability we match or beat 6 of 8 today, with receipts (rea
 
 Where Cabinet structurally wins over Town, for site copy:
 
-1. **Own it all.** Town runs in their cloud on their terms. Every Cabinet workflow above lives as files on your disk, self-hosted, MIT licensed.
+1. **Own it all.** Town runs in their cloud on their terms. Every Cabinet workflow above lives as files on your disk and can be self-hosted.
 2. **A team, not a sidekick.** Town is one assistant. A cabinet is an org chart of agents with jobs, knowledge, and memory you can inspect.
 3. **Bring your own AI.** Town's model bill is baked into their pricing. Cabinet uses the model accounts you already pay for.
 4. **Visualized, not chat-shaped.** Cabinet renders your knowledge as interactive views, dashboards, and shipped HTML apps, not a chat transcript.
