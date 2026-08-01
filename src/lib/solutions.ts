@@ -243,7 +243,7 @@ export const SOLUTIONS: Solution[] = [
     eyebrow: "Cabinet for Founders & Execs",
     headline: "Run the business from one place, with a team that never sleeps.",
     subhead:
-      "Strategy, board prep, investor updates, hiring, and competitive intel, all coordinated by an AI team that reports to you, on infrastructure you control. Your company's brain, on your own disk.",
+      "Strategy, board prep, investor updates, hiring, and competitive intel are all coordinated by an AI team that reports to you, on infrastructure you control. Your company's brain, on your own disk.",
     problem: {
       heading: "You're the integration layer, and it doesn't scale",
       points: [

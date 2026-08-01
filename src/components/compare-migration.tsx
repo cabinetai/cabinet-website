@@ -44,7 +44,7 @@ export function CompareMigration({ data }: { data: Migration }) {
               href={`/compare/cabinet-vs-${data.fromSlug}`}
               className="inline-flex items-center gap-2 rounded-full card-skin px-7 py-3.5 text-base font-semibold text-text-primary shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
             >
-              {data.from}vs <span className="font-brand italic">Cabinet</span>
+              {data.from}{" "}vs <span className="font-brand italic">Cabinet</span>
             </Link>
           </div>
         </div>
