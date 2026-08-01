@@ -130,8 +130,12 @@ export default function CompareHubPage() {
           <p className="mt-4 max-w-2xl font-body-serif leading-relaxed text-text-secondary">
             The features that define the category. Open any head-to-head below for the full picture, including where each competitor comes out ahead.
           </p>
+          <p className="mt-5 inline-flex items-center gap-2 font-code text-[11px] uppercase tracking-[0.12em] text-text-tertiary md:hidden">
+            <span aria-hidden className="text-accent">↔</span>
+            Swipe to compare all competitors
+          </p>
           <div className="mt-8 overflow-hidden rounded-2xl bg-bg-card shadow-[0_8px_30px_-14px_rgba(150,108,68,0.32)] ring-1 ring-[rgba(59,47,47,0.05)]">
-            <div className="overflow-x-auto">
+            <div className="compare-matrix-scroll overflow-x-auto" tabIndex={0} aria-label="Comparison matrix. Swipe horizontally to see all competitors.">
               <table className="w-full min-w-[44rem] text-sm">
                 <thead>
                   <tr className="border-b border-border-dark">
