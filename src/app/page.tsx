@@ -21,6 +21,7 @@ import {
 } from "@/components/marketing/legacy-sections";
 import { MarketingFooter } from "@/components/marketing/marketing-footer";
 import { HeroHeadline, MotionReveal } from "@/components/marketing/motion-primitives";
+import { AppleIcon, LinuxIcon, WindowsIcon } from "@/components/marketing/os-icons";
 import { SectionBadge } from "@/components/marketing/section-badge";
 import { MACOS_DOWNLOAD_URL, WINDOWS_DOWNLOAD_URL } from "@/lib/site-config";
 
@@ -59,7 +60,7 @@ export default function HomePage() {
       </SectionBadge>
 
       <SectionBadge n="01" title="Hero: AI workspace" origin="kimi">
-      <section className="home-snap-section relative isolate flex min-h-[100svh] items-center overflow-hidden px-5 pb-[clamp(3rem,7vh,6rem)] pt-[clamp(7rem,12vh,9rem)] sm:px-6 lg:px-8">
+      <section className="home-snap-section relative isolate flex min-h-0 items-center overflow-hidden px-5 pb-[clamp(3rem,7vh,6rem)] pt-[clamp(5rem,10vh,7rem)] sm:px-6 lg:min-h-[100svh] lg:pt-[clamp(7rem,12vh,9rem)] lg:px-8">
         <div
           aria-hidden
           className="home-hero-wash pointer-events-none absolute inset-0 -z-20"
@@ -101,8 +102,36 @@ export default function HomePage() {
             </MotionReveal>
 
             <MotionReveal delay={0.66} amount={0.1}>
+              {/* Mobile: a quiet, non-interactive OS availability list */}
+              <div className="mt-5 sm:hidden" aria-label="Desktop app availability">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.1em] text-text-tertiary">
+                  Available on
+                </p>
+                <div className="mt-2.5 flex flex-col gap-2">
+                  {[
+                    { name: "macOS", Icon: AppleIcon },
+                    { name: "Windows", Icon: WindowsIcon },
+                    { name: "Linux", Icon: LinuxIcon, soon: true },
+                  ].map(({ name, Icon, soon }) => (
+                    <span
+                      key={name}
+                      className="card-skin inline-flex h-10 items-center gap-2.5 rounded-full px-4 text-sm font-semibold text-text-primary"
+                    >
+                      <Icon className="h-3.5 w-3.5 shrink-0 text-accent" />
+                      {name}
+                      {soon && (
+                        <span className="font-code text-[9px] uppercase tracking-[0.1em] text-text-tertiary">
+                          Coming soon
+                        </span>
+                      )}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Tablet/desktop: functional download links */}
               <div
-                className="mt-5 flex flex-wrap items-center gap-2.5 text-xs font-semibold"
+                className="mt-5 hidden flex-wrap items-center gap-2.5 text-xs font-semibold sm:flex"
                 aria-label="Desktop app availability"
               >
                 <a
