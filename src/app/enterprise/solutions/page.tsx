@@ -483,7 +483,7 @@ function CioSection() {
       }
       jtbd="Most enterprise AI vendors hand you a glossy security PDF and a closed binary. Cabinet hands you a GitHub repo. Your team pen-tests the code, your security architect reviews the agent permission model, your platform team chooses where it runs. Inference stays on your keys; data stays a folder you can `tar` and move."
       outcomes={[
-        { stat: "OSS", label: "MIT-licensed code · audit before signing" },
+        { stat: "OSS", label: "Open-source code · audit before signing" },
         { stat: "BYOK", label: "Your inference keys · your provider" },
         { stat: "`cp -r`", label: "Export your data in 1 command" },
       ]}

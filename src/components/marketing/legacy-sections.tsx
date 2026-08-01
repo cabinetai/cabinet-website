@@ -75,7 +75,7 @@ const TRUST_BADGES = [
   {
     img: "/brand/trust/open-source.png",
     label: "Open source",
-    desc: "MIT licensed. Read every line, fork it, or run your own build.",
+    desc: "Read every line, fork it, or run your own build.",
   },
   {
     img: "/brand/trust/self-hosted.png",
@@ -321,7 +321,7 @@ function FeatureCard({
   return (
     <div
       className={`group relative overflow-hidden rounded-2xl p-6 card-hover ${
-        featured ? "bg-gradient-to-br from-[#FBF2E4] to-[#F2E5CF]" : "bg-bg-card"
+        featured ? "bg-gradient-to-br from-[#FBF2E4] to-[#F2E5CF] max-lg:text-center" : "bg-bg-card"
       } ${className}`}
     >
       {featured && (
@@ -338,7 +338,7 @@ function FeatureCard({
         loading="lazy"
         decoding="async"
         className={`relative z-10 mb-4 object-contain transition-transform duration-200 group-hover:scale-105 group-hover:-rotate-2 ${
-          featured ? "h-[88px] w-[88px]" : "h-16 w-16"
+          featured ? "h-16 w-16 max-lg:mx-auto lg:h-[88px] lg:w-[88px]" : "h-16 w-16"
         }`}
       />
       <h3 className="relative z-10 mb-2 font-display text-lg text-text-primary">{title}</h3>
@@ -1075,7 +1075,7 @@ export function LegacyHero() {
     <section className="relative flex items-center justify-center dot-grid overflow-hidden">
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center pt-24 pb-12">
         {/* Install Options */}
-        <div className="max-w-xl mx-auto mb-20">
+        <div className="hidden max-w-xl mx-auto mb-20 lg:block">
           <div className="flex flex-col sm:flex-row items-stretch gap-3">
             <a
               href={MACOS_DOWNLOAD_URL}
@@ -1651,7 +1651,7 @@ export function LegacyFeaturesGrid() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-6 gap-4 max-w-6xl mx-auto auto-rows-fr">
+        <div className="grid grid-cols-2 lg:grid-cols-6 gap-4 max-w-6xl mx-auto lg:auto-rows-fr">
           {[
             { img: "/brand/feat/agents.png", span: "col-span-2 lg:col-span-3", featured: true, title: "AI Agents", description: "Onboard a CEO, Editor, Marketer. Each has goals, skills, scheduled jobs. Watch them work like a real team." },
             { img: "/brand/feat/files.png", span: "col-span-2 lg:col-span-3", featured: true, title: "File-Based Everything", description: "No database. Markdown on disk. Drag-and-drop tree sidebar. Your data is always yours, always portable." },
@@ -1758,7 +1758,7 @@ export function LegacySolutions() {
             <a
               key={s.slug}
               href={`/solutions/${s.slug}`}
-              className="group flex flex-col rounded-2xl card-skin p-6 card-hover"
+              className="group flex flex-col rounded-2xl card-skin p-6 card-hover max-lg:text-center"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
@@ -1766,7 +1766,7 @@ export function LegacySolutions() {
                 alt=""
                 loading="lazy"
                 decoding="async"
-                className="mb-4 h-20 w-20 object-contain transition-transform duration-200 group-hover:scale-105 group-hover:-rotate-2"
+                className="mb-4 h-20 w-20 object-contain transition-transform duration-200 group-hover:scale-105 group-hover:-rotate-2 max-lg:mx-auto"
               />
               <h3 className="mb-2 font-display text-lg text-text-primary">
                 Cabinet{" "}for {s.label}

@@ -71,7 +71,7 @@ function Hero() {
                 </span>
               </div>
               <div className="p-5 space-y-2.5">
-                <SovLine icon={FileText} t="Code" s="Open source · MIT · on GitHub" />
+                <SovLine icon={FileText} t="Code" s="Open source · on GitHub" />
                 <SovLine icon={Database} t="Data" s="Your folder · your git · your servers" />
                 <SovLine icon={KeyRound} t="AI" s="Your keys · Anthropic, OpenAI, AWS, or Azure" />
                 <SovLine icon={Server} t="Hosting" s="Your laptops, your VPC, offline, or Cabinet Cloud" />
@@ -117,7 +117,7 @@ function Pillars() {
       icon: Shield,
       tag: "Code",
       title: "Open source",
-      body: "MIT-licensed. Every line of code that touches your strategy data is in a public GitHub repo. Your security team reads it before procurement signs.",
+      body: "Every line of code that touches your strategy data is in a public GitHub repo. Your security team reads it before procurement signs.",
     },
     {
       icon: Lock,
@@ -247,7 +247,7 @@ function ArchitectureDiagram() {
           self-hosted · VPC · air-gap · cloud
         </p>
         <div className="mt-4 grid gap-2">
-          <ArchTile l="Orchestrator" s="MIT · open source · no telemetry by default" />
+          <ArchTile l="Orchestrator" s="Open source · no telemetry by default" />
           <ArchTile l="Files" s="Markdown · git-backed · on your disk" />
           <ArchTile l="Jobs" s="Cron · agents · audit log" />
           <ArchTile l="MCP server" s="Scoped · auditable" />

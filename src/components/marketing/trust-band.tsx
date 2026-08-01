@@ -15,7 +15,7 @@ import { MotionReveal } from "./motion-primitives";
 const ASSURANCES = [
   {
     icon: ScrollText,
-    title: "MIT open source",
+    title: "Open source",
     body: "Every line is readable. No black box.",
   },
   {

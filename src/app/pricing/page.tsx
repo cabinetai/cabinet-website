@@ -145,7 +145,7 @@ export default function PricingPage() {
 
             <div className="mt-7 flex flex-wrap gap-x-5 gap-y-2 text-xs font-semibold text-text-tertiary">
               <span className="inline-flex items-center gap-1.5">
-                <Check aria-hidden className="h-3.5 w-3.5 text-green" /> MIT licensed
+                <Check aria-hidden className="h-3.5 w-3.5 text-green" /> Open source
               </span>
               <span className="inline-flex items-center gap-1.5">
                 <Check aria-hidden className="h-3.5 w-3.5 text-green" /> Whole-Cabinet export

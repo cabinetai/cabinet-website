@@ -58,7 +58,7 @@ export function PricingInteractive() {
           priceOverrideLabel="Free"
           billingPeriod={billing}
           bullets={[
-            "MIT licensed and free to run",
+            "Open source and free to run",
             "Bring your own AI accounts",
             "The complete Cabinet product",
             "Community support on Discord",

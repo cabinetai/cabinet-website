@@ -1,6 +1,6 @@
 "use client";
 
-// Vendored from Lightswind UI (lightswind.com, MIT) with two local changes:
+// Vendored from Lightswind UI (lightswind.com) with two local changes:
 // children may contain styled <span>s and <br/>s (the stock version only
 // splits plain strings), and there is no clsx/tailwind-merge dependency.
 
