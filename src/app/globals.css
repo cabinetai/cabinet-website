@@ -110,6 +110,13 @@ html:has(.home-scroll-snap) {
   scroll-snap-stop: normal;
 }
 
+/* Keep the long marketing page in the DOM for search and navigation while
+   skipping layout and paint work for sections well below the viewport. */
+.home-scroll-snap > section {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 1000px;
+}
+
 /* Homepage rhythm: primary product stories occupy one deliberate visual beat.
    Short proof and conversion moments use a smaller, still viewport-aware beat. */
 .home-viewport-section {
