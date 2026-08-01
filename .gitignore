@@ -43,3 +43,7 @@ next-env.d.ts
 
 # local design scratch (screenshots captured while iterating)
 /.screenshots/
+
+# dev-only symlink to brand-explorations/ (see scripts/link-explorations.mjs);
+# the archive must not ship to the production CDN
+/public/generated/_explore

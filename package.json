@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "predev": "node scripts/link-explorations.mjs",
     "build": "next build",
+    "prebuild": "node scripts/link-explorations.mjs --unlink",
     "start": "next start",
     "lint": "eslint"
   },
