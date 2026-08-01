@@ -23,7 +23,8 @@ import { MarketingFooter } from "@/components/marketing/marketing-footer";
 import { HeroHeadline, MotionReveal } from "@/components/marketing/motion-primitives";
 import { AppleIcon, LinuxIcon, WindowsIcon } from "@/components/marketing/os-icons";
 import { SectionBadge } from "@/components/marketing/section-badge";
-import { MACOS_DOWNLOAD_URL, WINDOWS_DOWNLOAD_URL } from "@/lib/site-config";
+import { GithubIcon } from "@/components/site-icons";
+import { GITHUB_URL, MACOS_DOWNLOAD_URL, WINDOWS_DOWNLOAD_URL } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "Cabinet: The AI workspace your company owns",
@@ -111,19 +112,14 @@ export default function HomePage() {
                   {[
                     { name: "macOS", Icon: AppleIcon },
                     { name: "Windows", Icon: WindowsIcon },
-                    { name: "Linux", Icon: LinuxIcon, soon: true },
-                  ].map(({ name, Icon, soon }) => (
+                    { name: "Linux", Icon: LinuxIcon },
+                  ].map(({ name, Icon }) => (
                     <span
                       key={name}
                       className="card-skin inline-flex h-10 items-center gap-2.5 rounded-full px-4 text-sm font-semibold text-text-primary"
                     >
                       <Icon className="h-3.5 w-3.5 shrink-0 text-accent" />
                       {name}
-                      {soon && (
-                        <span className="font-code text-[9px] uppercase tracking-[0.1em] text-text-tertiary">
-                          Coming soon
-                        </span>
-                      )}
                     </span>
                   ))}
                 </div>
@@ -152,12 +148,15 @@ export default function HomePage() {
                   <Download aria-hidden className="h-3.5 w-3.5 text-accent" />
                   Download for Windows
                 </a>
-                <span className="inline-flex h-10 items-center gap-2 rounded-full border border-border bg-bg-card/70 px-4 text-text-secondary">
-                  Linux
-                  <span className="font-code text-[9px] uppercase tracking-[0.1em] text-text-tertiary">
-                    Coming soon
-                  </span>
-                </span>
+                <a
+                  href={GITHUB_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="card-skin inline-flex h-10 items-center gap-2 rounded-full px-4 text-text-primary transition-transform hover:-translate-y-0.5"
+                >
+                  <GithubIcon className="h-3.5 w-3.5 text-accent" />
+                  Linux via GitHub
+                </a>
               </div>
             </MotionReveal>
 

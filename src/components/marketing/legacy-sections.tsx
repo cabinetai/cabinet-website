@@ -1101,7 +1101,16 @@ export function LegacyHero() {
             >
               Download for Windows
             </a>
-            . Linux is coming soon.
+            .{" "}
+            <a
+              href={GITHUB_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-accent underline underline-offset-2 hover:text-accent-warm"
+            >
+              Linux via GitHub
+            </a>
+            .
           </p>
           <p className="mt-4 text-sm font-body-serif text-text-tertiary">Evaluating <span className="font-brand italic">Cabinet</span>{" "}for your team?{" "}
             <a
@@ -1998,10 +2007,15 @@ export function LegacyCta() {
               <WindowsIcon className="h-5 w-5 text-accent" />
               Download for Windows
             </a>
-            <span className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-semibold text-base border border-border bg-bg-card/70 text-text-secondary">
+            <a
+              href={GITHUB_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-semibold text-base cursor-pointer card-skin text-text-primary"
+            >
               <LinuxIcon className="h-5 w-5 text-accent" />
-              Linux
-            </span>
+              Linux via GitHub
+            </a>
           </div>
 
           {/* Tablet/desktop: unchanged */}
@@ -2029,7 +2043,16 @@ export function LegacyCta() {
             >
               Download for Windows
             </a>
-            . Linux is coming soon.
+            .{" "}
+            <a
+              href={GITHUB_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-accent underline underline-offset-2 hover:text-accent-warm"
+            >
+              Linux via GitHub
+            </a>
+            .
           </p>
         </div>
         <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 mt-4">
