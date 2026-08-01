@@ -794,9 +794,8 @@ export function IntegrationScene() {
         {/* beat 1 — title beside the cloud (outer div positions; inner h2 is
             free to run its own magic-wand dissolve transform) */}
         <div className="pointer-events-none absolute right-[7vw] top-1/2 z-20 max-w-xs -translate-y-1/2 text-right sm:max-w-sm md:right-[9vw] md:max-w-lg lg:right-[11vw]">
-          <motion.div
-            role="heading"
-            aria-level={2}
+          <motion.h2
+            className="text-[clamp(3.4rem,5.7vw,6.25rem)] leading-[0.9] tracking-[-0.045em] text-right text-text-primary"
             style={{
               opacity: capTitle,
               scale: titleScale,
@@ -806,19 +805,16 @@ export function IntegrationScene() {
               textShadow: "0 1px 18px rgba(250, 246, 241, 0.72)",
             }}
           >
-            <ScrollReveal
-              baseRotation={0}
-              threshold={0.3}
-              staggerDelay={0.08}
-              textClassName="text-[clamp(3.4rem,5.7vw,6.25rem)] leading-[0.9] tracking-[-0.045em] text-right text-text-primary"
-            >
-              Your work
+            Your work
+            <br />
+            lives in
+            <br />
+            <span className="italic text-text-secondary/75">
+              a hundred
               <br />
-              lives in
-              <br />
-              <span className="italic text-text-secondary/75">a hundred<br />places.</span>
-            </ScrollReveal>
-          </motion.div>
+              places.
+            </span>
+          </motion.h2>
         </div>
 
         {/* captions */}
