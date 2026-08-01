@@ -91,6 +91,26 @@ export default function RootLayout({
             gtag('config', 'G-4L81D0BVTP');
           `}
         </Script>
+        <Script id="cabinet-console-signature" strategy="lazyOnload">
+          {`
+            console.log(
+              "%c\n  ██████╗ █████╗ ██████╗ ██╗███╗   ██╗███████╗████████╗\n ██╔════╝██╔══██╗██╔══██╗██║████╗  ██║██╔════╝╚══██╔══╝\n ██║     ███████║██████╔╝██║██╔██╗ ██║█████╗     ██║   \n ██║     ██╔══██║██╔══██╗██║██║╚██╗██║██╔══╝     ██║   \n ╚██████╗██║  ██║██████╔╝██║██║ ╚████║███████╗   ██║   \n  ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   \n",
+              "color: #8B5E3C; font-family: monospace; font-size: 12px; font-weight: 700; line-height: 1.15;"
+            );
+            console.log(
+              "%cCurious enough to inspect the console? We should talk.",
+              "color: #3B2F2F; font-family: Georgia, serif; font-size: 16px; font-weight: 700;"
+            );
+            console.log(
+              "%cCabinet is hiring founding builders and a founding content lead.",
+              "color: #6B5B4F; font-family: system-ui, sans-serif; font-size: 13px;"
+            );
+            console.log(
+              "%chttps://runcabinet.com/careers",
+              "color: #5A7A4F; font-family: ui-monospace, monospace; font-size: 13px; font-weight: 700;"
+            );
+          `}
+        </Script>
       </head>
       <body className="min-h-full flex flex-col">
         <LiquidGlassFilter />
