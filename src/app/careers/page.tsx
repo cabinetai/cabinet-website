@@ -30,12 +30,12 @@ const ROLES = [
       "You ship features from idea to production by yourself: spec, design, code, deploy, and you stay responsible for them after they are live. Five or more years writing production code, before the models showed up. Agents make you faster. They do not make you qualified.",
     doing: [
       "Ship features end to end and own them in production",
-      "Talk to users and enterprise customers directly, then build what they actually needed",
+      "Talk to users and enterprise customers directly, then build what they actually need",
       "Build the backend behind Cabinet Cloud: agent orchestration, scheduled jobs, sync, tenant isolation",
       "Decide what gets built. Nobody hands you tickets.",
     ],
     fit: [
-      "Five or more years of production engineering. You could build this without an agent, you just would not want to.",
+      "Five or more years of production engineering. You could build this without an agent. You just would not want to.",
       "You have shipped something strangers used",
       "You do the product thinking and the design when there is nobody else to do it",
       "Backend and infrastructure depth is a strong plus. Cabinet Cloud runs agents on customer infrastructure with customer data on it.",

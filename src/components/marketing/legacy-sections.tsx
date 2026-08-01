@@ -1594,7 +1594,7 @@ export function LegacyEmbeddedApps() {
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-4 h-4 text-accent mt-0.5 shrink-0" />
-                <span><strong className="text-text-primary">AI-generated apps:</strong> ask Claude to build a dashboard, it writes the HTML directly into your KB</span>
+                <span><strong className="text-text-primary">AI-generated apps:</strong> ask Claude to build a dashboard, and it writes the HTML directly into your KB</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-4 h-4 text-accent mt-0.5 shrink-0" />
