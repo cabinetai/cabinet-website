@@ -38,7 +38,7 @@ import { SOLUTIONS, SOLUTION_STORIES } from "@/lib/solutions";
 
 const PROVIDERS = [
   { src: "/providers/claude.svg", name: "Claude" },
-  { src: "/providers/openai.png", name: "OpenAI" },
+  { src: "/providers/openai.svg", name: "OpenAI" },
   { src: "/providers/gemini.svg", name: "Gemini" },
   { src: "/providers/grok.svg", name: "Grok Code" },
   { src: "/providers/copilot.svg", name: "Copilot" },
@@ -48,14 +48,9 @@ const PROVIDERS = [
 ];
 
 // Tools your company runs on - rendered as a scrolling, multi-row logo wall.
-export const INTEGRATION_LOGOS: string[] = [
-  ..."slack microsoft-teams notion github hubspot confluence google-drive gmail stripe zendesk figma workday intercom servicenow airtable bamboohr brex docusign looker mixpanel quickbooks tableau greenhouse google-calendar google-meet onedrive sharepoint bigquery gong"
-    .split(" ")
-    .map((n) => `/logos/${n}.svg`),
-  ..."salesforce jira zoom snowflake asana calendly clickup dropbox box gitlab databricks datadog amplitude linear"
-    .split(" ")
-    .map((n) => `/logos/${n}.webp`),
-];
+export const INTEGRATION_LOGOS: string[] = "slack microsoft-teams notion github hubspot confluence google-drive gmail stripe zendesk figma workday intercom servicenow airtable bamboohr brex docusign looker mixpanel quickbooks tableau greenhouse google-calendar google-meet onedrive sharepoint bigquery gong salesforce jira zoom snowflake asana calendly clickup dropbox box gitlab databricks datadog amplitude linear"
+  .split(" ")
+  .map((n) => `/logos/${n}.svg`);
 
 // Three interleaved rows so each band mixes brands evenly.
 const INTEGRATION_ROWS = [0, 1, 2].map((r) =>
