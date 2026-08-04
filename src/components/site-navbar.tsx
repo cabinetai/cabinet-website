@@ -49,7 +49,7 @@ const RESOURCE_LINKS = [
   {
     label: "Get Cabinet",
     description: "Download the desktop app or run the CLI.",
-    href: "/#get-cabinet",
+    href: "/download",
     external: false,
     icon: Download,
   },
@@ -220,12 +220,11 @@ export function SiteNavbar({ fixed = false }: { fixed?: boolean }) {
           </a>
 
           <Link
-            href="/demo"
+            href="/download"
             className="btn-wood inline-flex h-11 items-center justify-center gap-2 whitespace-nowrap rounded-full px-4 text-sm font-semibold sm:px-5"
           >
-            <span className="hidden sm:inline">Book a demo</span>
-            <span className="sm:hidden">Demo</span>
-            <ArrowRight aria-hidden className="h-4 w-4" />
+            <Download aria-hidden className="h-4 w-4" />
+            Download
           </Link>
 
           <button
