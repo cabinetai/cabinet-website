@@ -148,6 +148,25 @@ const COLOR_GROUPS: {
       { cls: "bg-border-dark", label: "border-dark", hex: "#D4C4B0" },
     ],
   },
+  {
+    group: "Motif wood",
+    swatches: [
+      { cls: "bg-[#C9A47A]", label: "wood-tan", hex: "#C9A47A" },
+      { cls: "bg-[#E8D6B6]", label: "light-wood", hex: "#E8D6B6" },
+    ],
+  },
+  {
+    // ponytail: doc-only palette, promote to CSS tokens if these ever ship in components
+    group: "Color touches (file cards & agent tokens)",
+    swatches: [
+      { cls: "bg-[#E2725B]", label: "terracotta", hex: "#E2725B", light: true },
+      { cls: "bg-[#E08A3C]", label: "amber", hex: "#E08A3C", light: true },
+      { cls: "bg-[#E0B23C]", label: "gold", hex: "#E0B23C", light: true },
+      { cls: "bg-[#6FA45A]", label: "leaf", hex: "#6FA45A", light: true },
+      { cls: "bg-[#4FA39A]", label: "teal", hex: "#4FA39A", light: true },
+      { cls: "bg-[#5B8FD6]", label: "sky", hex: "#5B8FD6", light: true },
+    ],
+  },
 ];
 
 const PANGRAM = "The quick brown fox jumps over the lazy dog";
@@ -237,6 +256,12 @@ export default function StyleGuidePage() {
             The single design page: illustrations, typefaces, color tokens, components, and
             the liquid-glass chrome. The written spec lives in docs/brand-guide.md; this page
             is the living proof. Not indexed, not linked in the nav.
+          </p>
+          <p className="mt-4 max-w-2xl font-body-serif text-lg leading-relaxed text-text-secondary">
+            Theme: warm, owned, human. A parchment-and-brown world that feels like a calm,
+            well-made workspace, not a cold SaaS dashboard. Confident and plain-spoken,
+            specificity over adjectives, one primary action per view. Sage green means
+            good or included. Audience: C-level and the technical leaders who vet the tool.
           </p>
         </div>
       </section>
