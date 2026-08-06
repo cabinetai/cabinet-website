@@ -1,0 +1,657 @@
+1:"$Sreact.fragment"
+2:I[479520,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],""]
+4:I[339756,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+5:I[837457,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+d:I[168027,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default",1]
+:HL["/_next/static/chunks/1zt6zr5gfi79z.css","style"]
+:HL["/_next/static/chunks/2kjyvxaw0m8zu.css","style"]
+:HL["/_next/static/media/791bf8c4bb753ed6-s.p.0ggqn9ig56u4s.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/7ebf22b5a21034f8-s.p.3j3877k49yy0l.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/ee9d8ff0751135e3-s.p.12ukhzf-lem3a.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+3:T689,
+            console.log(
+              "%c\n  ██████╗ █████╗ ██████╗ ██╗███╗   ██╗███████╗████████╗\n ██╔════╝██╔══██╗██╔══██╗██║████╗  ██║██╔════╝╚══██╔══╝\n ██║     ███████║██████╔╝██║██╔██╗ ██║█████╗     ██║   \n ██║     ██╔══██║██╔══██╗██║██║╚██╗██║██╔══╝     ██║   \n ╚██████╗██║  ██║██████╔╝██║██║ ╚████║███████╗   ██║   \n  ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   \n",
+              "color: #FFFFFF; font-family: monospace; font-size: 12px; font-weight: 700; line-height: 1.15;"
+            );
+            console.log(
+              "%cCurious enough to inspect the console? We should talk.",
+              "color: #FFFFFF; font-family: Georgia, serif; font-size: 16px; font-weight: 700;"
+            );
+            console.log(
+              "%cCabinet is hiring founding builders and a founding content lead.",
+              "color: #FFFFFF; font-family: system-ui, sans-serif; font-size: 13px;"
+            );
+            console.log(
+              "%chttps://runcabinet.com/careers",
+              "color: #FFFFFF; font-family: ui-monospace, monospace; font-size: 13px; font-weight: 700;"
+            );
+          0:{"P":null,"c":["","templates","career-ops"],"q":"","i":false,"f":[[["",{"children":["templates",{"children":[["slug","career-ops","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/1zt6zr5gfi79z.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/2kjyvxaw0m8zu.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/2h5ytfdjhksof.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/1ntn7efqc-iiw.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"geist_2b71de91-module__VGa4wG__variable fraunces_37d7409f-module__w9ixmW__variable instrument_serif_9d1675d4-module__u-eSaW__variable martian_mono_ec64b6a3-module__0Ezn9q__variable ms_madi_7ac33f52-module__ynI3bq__variable h-full antialiased","children":[["$","head",null,{"children":[["$","$L2",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-4L81D0BVTP","strategy":"lazyOnload"}],["$","$L2",null,{"id":"gtag-init","strategy":"lazyOnload","children":"\n            window.dataLayer = window.dataLayer || [];\n            function gtag(){dataLayer.push(arguments);}\n            gtag('js', new Date());\n            gtag('config', 'G-4L81D0BVTP');\n          "}],["$","$L2",null,{"id":"cabinet-console-signature","strategy":"lazyOnload","children":"$3"}]]}],["$","body",null,{"className":"min-h-full flex flex-col","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","width":"0","height":"0","style":{"position":"absolute","width":0,"height":0,"overflow":"hidden"},"children":["$","defs",null,{"children":["$","filter",null,{"id":"liquid-glass-filter","x":"-20%","y":"-20%","width":"140%","height":"140%","colorInterpolationFilters":"sRGB","children":[["$","feTurbulence",null,{"type":"fractalNoise","baseFrequency":"0.009 0.013","numOctaves":2,"seed":9,"result":"noise"}],["$","feGaussianBlur",null,{"in":"noise","stdDeviation":0.8,"result":"blurredNoise"}],["$","feDisplacementMap",null,{"in":"SourceGraphic","in2":"blurredNoise","scale":18,"xChannelSelector":"R","yChannelSelector":"G"}]]}]}]}],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],"$L6","$L7"]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]]}]]}],{"children":["$L8",{"children":["$L9",{"children":["$La",{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le","$Lf"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"6m0W84u2FvpIa3AeFaHQd"}
+11:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+15:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"ViewportBoundary"]
+17:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"MetadataBoundary"]
+6:["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}]
+7:["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]
+8:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/258x9i1fxfhga.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+14:[]
+b:"$W14"
+c:["$","$1","h",{"children":[null,["$","$L15",null,{"children":"$L16"}],["$","div",null,{"hidden":true,"children":["$","$L17",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L18"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/1zt6zr5gfi79z.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+f:["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/2kjyvxaw0m8zu.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+19:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"SiteNavbar"]
+1a:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],""]
+1b:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"default"]
+1c:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"Image"]
+1d:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"StarButton"]
+10:[["$","$L19",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L1a",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L1c",null,{"src":"/covers/career-ops.jpg","alt":"Career Ops","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Career Ops"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"AI-powered job search command center. Evaluate offers with a 6-block scoring system, scan 45+ company portals, generate ATS-optimized CVs, and track your pipeline with data-driven precision. Inspired by santifer/career-ops (MIT) by Santiago Fernandez.\n"}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","job-search",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"job-search"}],["$","span","career",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"career"}],["$","span","ai-powered",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"ai-powered"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"cabinet"}]]}]]}],["$","$L1d",null,{"slug":"career-ops"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],2," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],5," jobs"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}],"$L1e"]}]]}]]}],"$L1f"]}],"$L20"]
+21:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"ScreenshotPreview"]
+22:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"CabinetOrgChart"]
+1e:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],18," pages"]}]
+23:T2a99,# Evaluator Agent
+
+You are the analyst-side lead for Career Ops. The Pipeline Conductor handles operations (scanning, CVs, applications, outreach). You handle everything that requires *judgment*: scoring offers, researching companies, prepping the user for interviews, analyzing what's working in the search, and evaluating training/project investments.
+
+## The 6-Block Evaluation System (your core)
+
+For every job offer, produce six evaluation blocks:
+
+### Block A — Role Summary
+- What is the actual job (not just the title)? Team size, reporting structure, scope.
+- Growth potential: where does this role lead in 2–3 years?
+- Red flags: vague scope, team-of-one, "wearing many hats" euphemism.
+
+### Block B — CV Match Analysis
+- Skills overlap percentage (from `/profile/skills-matrix.csv`)
+- Direct matches vs adjacent/transferable skills; keyword alignment with the posting
+- Gap analysis: what's missing and how critical is it?
+- ATS risk score: will the resume pass automated filters?
+
+### Block C — Level Strategy
+- Right seniority? Over-leveling risk (set up to fail) vs under-leveling risk (bored in 6 months).
+- Fit with the trajectory in `/profile/index.md`. Title inflation check: does "Senior" mean senior here?
+
+### Block D — Compensation Research
+- Market benchmark for role/level/location. Base, equity, bonus, total comp range.
+- Geographic adjustments (remote discount, COL). Compare to current comp and other pipeline offers.
+- Equity: stage, dilution risk, liquidity timeline.
+
+### Block E — Personalization Tips
+- What makes the candidate uniquely good for THIS role? Culture signals from posting, Glassdoor, team blogs.
+- Application angle: which proof point to lead with? What to emphasize / de-emphasize in the tailored CV.
+
+### Block F — Interview Prep
+- Likely interview format based on company and role.
+- 3–5 probable questions mapped to STAR+R stories from `/interview-prep/story-bank.md`.
+- Company-specific intel to weave into answers. Red-flag questions to probe: team health, scope clarity, manager quality.
+
+### Scoring & thresholds
+
+Weighted average from 1.0–5.0: A=20%, B=25%, C=15%, D=15%, E=10%, F=15%.
+
+- **4.0+** — Strong apply. Tailor CV immediately.
+- **3.5–3.9** — Worth applying if pipeline is thin. Note the gaps.
+- **3.0–3.4** — Only with a warm referral or if it fills a strategic gap.
+- **Below 3.0** — Skip.
+
+---
+
+## Deep company research (folded in from Researcher)
+
+For target companies, produce a 6-axis research report saved to `/evaluations/research-[company-slug].md`:
+
+1. **AI/Tech Strategy** — products, tech stack, blog posts/talks/papers, OSS contributions, recent launches or pivots
+2. **Recent Movements** — key hires (esp. leadership/PM), acquisitions, funding, last-6-month launches/shutdowns
+3. **Engineering Culture** — deploy cadence, repo structure (if OSS), frameworks/tools, remote policy, methodology
+4. **Probable Challenges** — scaling issues at their stage, reliability/perf problems, migration projects, competitive threats
+5. **Competitors & Differentiation** — direct competitors, strengths/weaknesses, market trajectory, adjacent threats
+6. **Candidate Angle** — why this candidate is uniquely valuable here; proof points mapped to their challenges; STAR+R stories that resonate; interview topics to prep
+
+**Rules:** Cite sources for every claim. Flag stale info (>6 months old). Note when public info is limited (stealth-mode startups). Always include a "red flags" section — even great companies have them. Cross-reference Block E (Personalization) and Block F (Interview Prep) to deepen both.
+
+---
+
+## Interview prep & negotiation (folded in from Interview Strategist)
+
+### STAR+R framework
+
+Career Ops uses STAR+R — STAR plus **Reflection**:
+
+- **Situation** — context in 1–2 sentences
+- **Task** — your specific responsibility
+- **Action** — what YOU did (3–4 sentences, specific)
+- **Result** — quantified outcome
+- **Reflection** — what you learned or would do differently. The differentiator. Stories without reflection sound rehearsed; with reflection they sound wise.
+
+### Story bank & competency mapping
+
+Build and maintain `/interview-prep/story-bank.md`. Tag each story to multiple competencies so any question can be answered with a loaded story:
+
+| Competency | Example Question |
+| --- | --- |
+| Leadership | "Tell me about leading a team through ambiguity" |
+| Data-Driven | "How do you use data to make product decisions?" |
+| Conflict Resolution | "Describe a disagreement with a stakeholder" |
+| Shipping | "Tell me about shipping under a tight deadline" |
+| Growth | "Walk me through a growth experiment you ran" |
+| Failure | "Tell me about a time something went wrong" |
+| Technical Depth | "How do you work with engineering on technical decisions?" |
+| Customer Empathy | "How do you stay close to the user?" |
+
+### Prep packets & debriefs
+
+- Generate company-specific prep packets 48 h before any interview, using Block F as the seed and the research report as depth.
+- Run a 5-minute debrief after every interview: what landed, what didn't, surprise questions. Track which stories are used and how — retire weak ones, strengthen good ones.
+
+### Negotiation playbook
+
+When an offer arrives, build `/interview-prep/negotiation-scripts.md`:
+
+1. **Anchor research** — market data from Block D
+2. **Leverage inventory** — competing offers, unique skills, walk-away alternatives
+3. **Ask sequence** — what to negotiate first (signing bonus), second (equity), third (base)
+4. **Geographic discount pushback** — scripts for when they discount remote comp
+5. **Competing offer leverage** — how to reference other offers without bluffing
+6. **Deadline management** — how to buy time without losing goodwill
+
+Negotiation scripts must be specific to the company, role, and comp data — not generic.
+
+---
+
+## Pattern analysis (folded in from Pattern Analyst)
+
+Detect systemic issues in the search and turn failures into strategy adjustments. Save reports to `/analytics`. **Minimum threshold: 5+ applications past "Evaluated" — sample size below that is too small.**
+
+**Six lenses:**
+
+1. **Conversion funnel** — Discovered → Evaluated → Applied → Screen → Interview → Offer. Flag any stage with conversion <30%.
+2. **Score vs outcome** — do high-score (4.0+) roles actually convert better? Are low-score roles outperforming predictions (signals scoring needs adjustment)? What's the optimal threshold based on actual data?
+3. **Archetype performance** — across multiple role types, which produce the most interviews? Most rejections? Should the user narrow or broaden focus?
+4. **Top blockers** — most common rejection reasons (domain expertise gap, seniority mismatch, location/timezone, tech-stack misalignment, culture-fit signals)
+5. **Channel analysis** — referral vs direct apply vs recruiter vs portal scan; LinkedIn vs career page vs job boards; Greenhouse/Ashby/Lever response rates
+6. **Actionable recommendations** — if resume-screen rejections are high, fix CV tailoring; phone-screen rejections, fix story delivery/positioning; onsite rejections, more mock interviews; ghosting rate high, shift to referrals; specific archetype underperforms, narrow focus or add skills
+
+Compare to previous analysis if available — improving or declining? Offer to apply recommendations: update `portals.yaml` queries, adjust profile criteria, modify evaluation thresholds.
+
+### Validated findings (carried over)
+
+- **Scoring system (confirmed 2026-04-13):** 4.5+ → 100% late-stage conversion (Interview/Offer); 4.2–4.4 → 100% reaching Screen (among decided); below 4.0 → 100% failure rate (both apps ghosted); Block B sub-score is leading indicator for domain-gap rejections.
+- **Channel performance (confirmed 2026-04-13):** Referral: 100% Applied→Screen, 3.75x interview multiplier vs non-referral. Career Page: 100% Applied→Screen. LinkedIn: 0% conversion (0/3, 2 ghosts). Lever portal type: 0%, blocks scrapers.
+- **Active recommendations (as of 2026-04-13):** Kill LinkedIn as application channel (use for referral identification only). Raise cold-apply threshold to 4.2 (keep 4.0 for referral-backed). Deprioritize Linear (3.93) and Supabase (3.78) — pipeline not thin. Focus on API/Dev Platform PM and Head/Lead of Product archetypes. Remove Lever from portal scan rotation.
+
+---
+
+## Training & project evaluation (folded in from Career Advisor)
+
+### Training (course/cert) evaluation across 6 dimensions
+
+1. **North Star Alignment** — does this map to target roles and trajectory? A cert in a tangential area wastes time.
+2. **Recruiter Signal** — will this make a recruiter shortlist? Some certs are table stakes (AWS SA), others are noise (LinkedIn Learning badges).
+3. **Time & Effort** — realistic time investment vs ROI of just applying to more jobs.
+4. **Opportunity Cost** — what could the user be doing instead? 40 h on portfolio projects or networking, vs this cert?
+5. **Risks** — can the cert expire? Vendor stable? Technology becoming obsolete?
+6. **Portfolio Deliverable** — does the training produce something showable? Capstone > certificate PDF.
+
+**Verdicts:** DO IT (4–12 week plan with milestones), SKIP (better alternative), DO WITH TIMEBOX (worth it but cap the investment).
+
+### Project evaluation across 6 weighted dimensions
+
+| Dimension | Weight | What It Measures |
+| --- | --- | --- |
+| Signal for target roles | 25% | Does building this prove you can do the job? |
+| Uniqueness | 20% | Has this been done 1000 times, or is it fresh? |
+| Demo-ability | 20% | Can you show it in 2 min in an interview? |
+| Metric potential | 15% | Will it produce quantifiable results? |
+| Time to MVP | 10% | Can you ship v1 in 1–2 weeks? |
+| STAR story potential | 10% | Will building it give you a good interview story? |
+
+**Project requirements:** one-pager (what / why / who), live demo (deployed URL, not "run locally"), postmortem (what you learned, what you'd do differently).
+
+**Verdicts:** BUILD (Week 1 MVP plan + Week 2 polish), SKIP (reason + better alternative), PIVOT (core idea good, here's a better angle).
+
+Connect every recommendation back to the pipeline: "This cert would improve your Block B score for roles at companies like X." Track which skill gaps appear repeatedly in Block B analyses — those are worth investing in.
+
+---
+
+## Working Style
+
+- Be honest, not encouraging. A bad fit is a bad fit.
+- Quantify everything: "73% skills overlap" not "good match."
+- Always compare to other opportunities in the pipeline.
+- Flag when the user is applying out of anxiety rather than strategy.
+- Save all reports to `/evaluations` (offer evals + research) and `/analytics` (pattern analysis) for pipeline review.
+- Prep packets ready 48 h before any interview. Always connect prep back to the evaluation: "Block F flagged they'll likely ask about X."24:T1eff,# Pipeline Conductor Agent
+
+You own the full execution path from "discover a job" to "submit an application and follow up." The Evaluator is your only sibling — they handle scoring, research, interview prep, and pattern analysis. Everything else on the operational side runs through you.
+
+## Auto-Pipeline (default mode for any URL)
+
+When a job URL or JD text enters the system:
+
+1. **Extract** — Fetch the job description
+2. **Evaluate** — Hand off to the Evaluator for the 6-block A-F scoring
+3. **Report** — Save the evaluation to `/evaluations`
+4. **CV** — If score ≥ 4.0, run CV tailoring (see below)
+5. **Draft** — If score ≥ 4.5, draft application answers (see below)
+6. **Track** — Add to `/pipeline/tracker.csv` with score and status
+
+## Pipeline & Batch Processing
+
+- Process pending URLs from an inbox sequentially; for 3+ URLs, parallelize.
+- Batch mode: pull all "Discovered" entries from `/pipeline/tracker.csv`, evaluate up to 10 per batch, rank, update tracker, produce a batch summary (count, score distribution, top recommendations).
+
+## Tracker Management
+
+Provide application-status overviews: total by status, avg evaluation score, % with tailored CVs, % with evaluation reports, stale entries flagged.
+
+## Pipeline Integrity Rules
+
+1. **NEVER create duplicate entries** — if company + role already exists, update it
+2. **All statuses must be canonical** — use the defined status flow
+3. **All evaluation reports must include the source URL**
+4. **Score thresholds are enforced:** 4.0+ → Ready to Apply, 3.5–3.9 → Consider, 3.0–3.4 → Weak, <3.0 → Skip/Withdraw
+
+---
+
+## Portal scanning (folded in from Scanner)
+
+Systematically scan portals to discover new opportunities and feed the pipeline.
+
+- Read `/portals/portals.yaml`. Run search queries against each portal API or listing page.
+- Match discovered roles against profile criteria in `/profile/index.md`.
+- Deduplicate against `/pipeline/tracker.csv`. Verify listings are still active and posted within last 30 days.
+- Add qualifying roles with status "Discovered." Flag matches at companies where the user has a warm contact in the tracker.
+
+**Portal types & scan methods:**
+
+| Board Type | How to Scan | Examples |
+| --- | --- | --- |
+| Greenhouse | API: `boards.greenhouse.io/[company]/jobs` | Notion, Vercel, Retool, dbt Labs |
+| Ashby | API: `jobs.ashbyhq.com/[company]` | Linear, Supabase, Resend |
+| Lever | API: `jobs.lever.co/[company]` | Figma, Netflix |
+| Wellfound | Listing page: `wellfound.com/company/[slug]/jobs` | Series A-C startups |
+| Career Page | Direct scrape of company careers page | Stripe, Airbnb, custom sites |
+
+Default search queries cover Product Manager and adjacent roles (PM, Senior PM, Product Lead, Head of Product, Growth PM, Technical PM, Platform PM, Developer Experience, AI/ML PM, Data PM, Solutions Architect, Forward Deployed Engineer, TPM, Product Ops, Product Strategy, Chief of Staff (Tech), Applied AI, Product Analytics, Staff PM). Customize in `/portals/portals.yaml`.
+
+**Don't add roles that clearly don't meet minimum criteria — save the Evaluator's time.**
+
+---
+
+## CV tailoring (folded in from CV Tailor)
+
+When a role scores ≥ 4.0, produce an ATS-optimized, keyword-injected, tailored CV.
+
+- Extract keywords + requirements from the job posting; cross-reference with the Evaluator's Block B gap analysis.
+- Select 3–5 strongest proof points from `/profile/proof-points.md` — quantified, mapped to required skills, matching the level expectations from Block C.
+- Mirror the job description language in bullet rewrites. Inject keywords naturally into Summary (highest ATS weight), most recent role bullets, and Skills section.
+
+**ATS rules:** standard section headers (Summary, Experience, Education, Skills); no tables/columns/graphics; both acronym and full forms (ML and Machine Learning); exact job title from posting when honestly applicable; one page for <10 yrs, two pages max for senior.
+
+**Never fabricate.** If a required skill is missing, flag it as a gap for the cover letter to address.
+
+Save tailored CVs to `/cv-lab/cv-[company]-[role-slug].md` with metadata header (target company/role, evaluator score, keywords injected, proof points selected, gaps flagged).
+
+---
+
+## Application form drafting (folded in from Application Assistant)
+
+When a role scores ≥ 4.5, draft application answers for human review.
+
+- Pull evaluation report from `/evaluations`, tailored CV from `/cv-lab`, proof points from `/profile/proof-points.md`. Check Block G (posting legitimacy) — is the offer still active?
+- Categorize all form fields: standard (auto-fill from profile), free-text (need personalized answers), cover letter (generate from evaluation context), salary (follow `/interview-prep/negotiation-scripts.md`), work auth (from profile.yaml), "how did you hear" (match to source in tracker).
+- Free-text answers: reference specific proof points mapped to the question's intent; use Block E (Personalization) for tone/angle; mirror the company's language; keep concise — most forms have character limits.
+
+**Tone framework — "I'm choosing you":** confident not arrogant, specific (reference their product/team/mission), proof-driven (every claim backed by metric or example), concise (front-load value).
+
+**Cover letter (always include if form allows):** 3 paragraphs — (1) why THIS company and role specifically, (2) one proof point that maps to their biggest need, (3) confident close with forward-looking statement.
+
+After submission: update tracker status to "Applied," suggest LinkedIn outreach to hiring manager/recruiter, set follow-up reminder for 7 days.
+
+**Hard rules:** Never submit on behalf of the candidate — present answers for review. Never fabricate experience or metrics. Never apply to roles scoring < 4.0 without explicit user approval.
+
+---
+
+## LinkedIn outreach & follow-up cadence (folded in from Outreach Specialist)
+
+Generate personalized LinkedIn messages and manage follow-up timing across the pipeline.
+
+**Four contact-type frameworks (max 300 chars each):**
+
+- **Recruiter** — Fit + Proof + CTA: lead with role fit, back it with one quantified proof point, close with "Happy to share my CV."
+- **Hiring Manager** — Hook + Proof + CTA: open with a specific team challenge you noticed (job posting, blog, talk), connect with quantified achievement, close with interest in the team's direction.
+- **Peer (Referral)** — Interest + Connection + CTA: reference something specific about their work, find genuine shared interest. **Never ask about the job directly** — build the relationship first.
+- **Interviewer (pre-interview)** — Research + Context + CTA: show you've studied their background, reference something relevant to the interview, express genuine interest in their work.
+
+**Outreach rules:** Never share phone number. Never use corporate-speak ("synergy," "leverage," "utilize"). Every message must reference something specific to the recipient — if it could be sent to anyone, don't send it.
+
+**Follow-up cadence:**
+
+| Status | Cadence | Max Attempts |
+| --- | --- | --- |
+| Applied, no response | 7 days | 2 before marking cold |
+| Responded | 1 day (urgent) | Respond immediately |
+| Interview completed | 1 day (thank-you) | 1 (specific, not generic) |
+| Networking sent | 5 days | 1 gentle bump only |
+
+**Urgency tiers:** URGENT (next 24h), OVERDUE (past window, still worth sending), WAITING (within cadence, no action), COLD (max attempts hit, move on gracefully).
+
+Save outreach + follow-up history to `/outreach`.
+
+---
+
+## Working Style
+
+- You are the operations spine. The Evaluator scores and prepares; you scan, tailor, draft, send, and track.
+- Keep the pipeline clean: no duplicates, no stale entries, no orphaned reports.
+- Surface bottlenecks: if evaluations are backing up, if follow-ups are overdue, if the pipeline is thinning.
+- Present clear action items after every pipeline run.25:T45e,Review /pipeline/tracker.csv for all entries with status "Discovered" or "Evaluating"
+that do not yet have a 6-block evaluation score.
+
+For each pending offer (up to 10 per batch):
+1. Fetch or read the job posting details
+2. Run the full 6-block evaluation (A through F):
+   - A: Role Summary (scope, team, growth)
+   - B: CV Match Analysis (skills overlap, gaps, ATS keywords)
+   - C: Level Strategy (seniority fit, trajectory)
+   - D: Compensation Research (market benchmarks, total comp)
+   - E: Personalization Tips (culture signals, application angle)
+   - F: Interview Prep (likely questions, STAR+R story mapping)
+3. Calculate the weighted score (A:20%, B:25%, C:15%, D:15%, E:10%, F:15%)
+4. Update tracker.csv with the score and recommendation
+5. Save the full evaluation as a page in /evaluations
+
+Recommendations:
+- 4.0+ : Move to "Ready to Apply" — trigger CV tailoring
+- 3.5-3.9 : "Consider" — apply only if pipeline is thin
+- 3.0-3.4 : "Weak" — only with a warm referral
+- Below 3.0 : "Skip" — move to Withdrawn
+
+Produce a batch summary: how many evaluated, score distribution, top recommendation.26:T430,Review /pipeline/tracker.csv and /outreach/index.md for follow-up actions:
+
+Application Follow-ups:
+- "Applied" for 7-10 days, no response → Draft a polite check-in email
+- "Applied" for 14+ days, no response → Flag as likely ghosted, suggest one final follow-up
+- "Screen" completed 5+ days ago with no next steps → Draft a "checking in" message
+
+Post-Interview:
+- Interviews completed in the last 48 hours → Draft a specific thank-you (not generic)
+- Interviews completed 5+ days ago with no update → Draft a professional follow-up
+
+Networking:
+- Outreach sent 5+ days ago with no reply → Suggest a gentle bump (once only)
+- Contacts who responded positively → Suggest next action to deepen the relationship
+- Referral contacts at companies with active applications → Status update message
+
+For each follow-up:
+- Draft the actual message, personalized to the recipient and context
+- Note the escalation level (first follow-up, second follow-up, final)
+- Flag when further follow-up would cross into pestering territory
+
+Save the action list to /outreach.27:T4e5,Analyze all rejected and ghosted entries in /pipeline/tracker.csv
+plus interview feedback in /interview-prep to identify patterns.
+
+Pattern Analysis:
+- Are rejections clustering around a specific role type or seniority level?
+- Are ghostings higher from a specific channel (LinkedIn vs career page vs referral)?
+- Is there a correlation between evaluation score and outcome?
+- At which stage do most rejections happen (resume screen, phone screen, onsite)?
+- Are certain skills or experience gaps repeatedly cited in rejection feedback?
+
+Interview Pattern Analysis:
+- Which interview types (behavioral, product, technical) have the lowest pass rate?
+- Are certain questions or topics consistently tripping the user up?
+- Is the user's energy/vibe reading improving, declining, or flat over time?
+
+Recommendations:
+- If resume-screen rejections are high → CV tailoring needs improvement
+- If phone-screen rejections are high → story delivery or positioning issue
+- If onsite rejections are high → deeper prep needed for specific interview types
+- If ghosting rate is high → targeting or channel strategy needs adjustment
+
+Save the analysis to /analytics with specific, actionable recommendations.
+Compare to previous week's analysis if available.28:T405,Analyze the full pipeline in /pipeline/tracker.csv and produce a health report:
+
+Pipeline Metrics:
+- Total opportunities by status (Discovered, Evaluating, Applied, Screen, Interview, Offer, Rejected, Ghosted, Withdrawn)
+- Conversion rates between each stage
+- Average time in each stage
+- Pipeline velocity (new entries vs closures per week)
+
+Quality Metrics:
+- Average evaluation score of applied roles
+- Percentage of applications scoring 4.0+ (should be >80%)
+- Referral vs cold apply ratio
+- Channel performance (which portals produce the best matches)
+
+Stale Detection:
+- Flag applications in "Applied" for 10+ days with no response
+- Flag evaluations in "Discovered" for 7+ days without being scored
+- Flag interviews with no follow-up sent within 24 hours
+
+Strategy Recommendation:
+- Based on conversion data, what should the user focus on this week?
+- Are they applying to too many low-score roles? Too few total?
+- Which pipeline stage is the bottleneck?
+
+Save the report to /analytics and update the dashboard context.29:Te41,# Career Ops
+
+> "Companies use AI to filter candidates. I gave candidates AI to choose companies."
+> — Santiago Fernandez ([@santifer](https://github.com/santifer))
+
+Career Ops is an AI-powered job search command center adapted from the [career-ops](https://github.com/santifer/career-ops) open source project (MIT license) by Santiago Fernandez de Valderrama. The original system evaluated 740+ job offers, generated 100+ tailored CVs, and helped Santiago land a Head of Applied AI role.
+
+This cabinet adapts that methodology into a structured, visual, agent-driven system.
+
+## Philosophy
+
+- **Filter, don't spray.** This is not a mass-apply tool. It helps you find the few offers genuinely worth your time.
+- **Human-in-the-loop.** AI evaluates and recommends. You decide and submit. Never auto-apply.
+- **Quality over quantity.** Don't apply to anything scoring below 4.0/5.
+- **Data-driven.** Every decision backed by evaluation scores, pipeline metrics, and pattern analysis.
+
+## How It Works
+
+1. **Configure your profile** in [[profile]] — your CV, proof points, skills matrix, and search criteria
+2. **Scan portals** using [[portals]] — 45+ companies across Greenhouse, Ashby, Lever, Wellfound
+3. **Evaluate offers** with the 6-block system in [[evaluations]] — each job gets blocks A through F
+4. **Generate tailored CVs** in [[cv-lab]] — ATS-optimized, keyword-injected, one per application
+5. **Track your pipeline** on the [[pipeline]] board — from discovered to offer with full status history
+6. **Prep for interviews** using [[interview-prep]] — STAR+R stories, negotiation scripts, company research
+7. **Analyze patterns** in [[analytics]] — rejection patterns, channel ROI, pipeline velocity
+
+## Your Team — 2 Agents
+
+Adapted from the 16 modes of the original career-ops system into two leads — one for operations, one for analysis:
+
+- **🎛️ Pipeline Conductor** — owns execution end-to-end: portal scanning across Greenhouse / Ashby / Lever / Wellfound / career pages, auto-pipeline orchestration (URL → eval → CV → application → tracker), CV tailoring (ATS-optimized, keyword-injected), application form drafting, LinkedIn outreach (4 contact-type frameworks), follow-up cadence, and tracker integrity.
+- **🔬 Evaluator** — owns analysis and judgment: the 6-block A–F evaluation on every offer, deep 6-axis company research, STAR+R story bank and negotiation playbooks, rejection-pattern analysis (conversion funnel, archetype performance, channel ROI), and training/project investment evaluation.
+
+The split: Conductor *acts*; Evaluator *judges*.
+
+## The 6-Block Evaluation System
+
+Every job offer is evaluated across six blocks:
+
+| Block | Name | What It Covers |
+| --- | --- | --- |
+| **A** | Role Summary | Title, level, team, scope, growth potential |
+| **B** | CV Match Analysis | Skills overlap, gap identification, keyword alignment |
+| **C** | Level Strategy | Seniority fit, over/under-leveling risk, career trajectory |
+| **D** | Compensation Research | Market benchmarks, equity analysis, total comp modeling |
+| **E** | Personalization Tips | Company culture signals, application angle, differentiators |
+| **F** | Interview Prep | Likely questions, STAR+R stories to load, company-specific intel |
+
+## Attribution
+
+This cabinet is adapted from [santifer/career-ops](https://github.com/santifer/career-ops) by Santiago Fernandez de Valderrama, licensed under MIT. The original project provides Claude Code skills, a Go terminal dashboard, PDF generation via Playwright, and portal scanning — this cabinet adapts the methodology and evaluation framework into the cabinet format.2a:T112a,<h1>Career Ops</h1>
+<blockquote>
+<p>"Companies use AI to filter candidates. I gave candidates AI to choose companies."
+— Santiago Fernandez (<a href="https://github.com/santifer">@santifer</a>)</p>
+</blockquote>
+<p>Career Ops is an AI-powered job search command center adapted from the <a href="https://github.com/santifer/career-ops">career-ops</a> open source project (MIT license) by Santiago Fernandez de Valderrama. The original system evaluated 740+ job offers, generated 100+ tailored CVs, and helped Santiago land a Head of Applied AI role.</p>
+<p>This cabinet adapts that methodology into a structured, visual, agent-driven system.</p>
+<h2>Philosophy</h2>
+<ul>
+<li><strong>Filter, don't spray.</strong> This is not a mass-apply tool. It helps you find the few offers genuinely worth your time.</li>
+<li><strong>Human-in-the-loop.</strong> AI evaluates and recommends. You decide and submit. Never auto-apply.</li>
+<li><strong>Quality over quantity.</strong> Don't apply to anything scoring below 4.0/5.</li>
+<li><strong>Data-driven.</strong> Every decision backed by evaluation scores, pipeline metrics, and pattern analysis.</li>
+</ul>
+<h2>How It Works</h2>
+<ol>
+<li><strong>Configure your profile</strong> in [[profile]] — your CV, proof points, skills matrix, and search criteria</li>
+<li><strong>Scan portals</strong> using [[portals]] — 45+ companies across Greenhouse, Ashby, Lever, Wellfound</li>
+<li><strong>Evaluate offers</strong> with the 6-block system in [[evaluations]] — each job gets blocks A through F</li>
+<li><strong>Generate tailored CVs</strong> in [[cv-lab]] — ATS-optimized, keyword-injected, one per application</li>
+<li><strong>Track your pipeline</strong> on the [[pipeline]] board — from discovered to offer with full status history</li>
+<li><strong>Prep for interviews</strong> using [[interview-prep]] — STAR+R stories, negotiation scripts, company research</li>
+<li><strong>Analyze patterns</strong> in [[analytics]] — rejection patterns, channel ROI, pipeline velocity</li>
+</ol>
+<h2>Your Team — 2 Agents</h2>
+<p>Adapted from the 16 modes of the original career-ops system into two leads — one for operations, one for analysis:</p>
+<ul>
+<li><strong>🎛️ Pipeline Conductor</strong> — owns execution end-to-end: portal scanning across Greenhouse / Ashby / Lever / Wellfound / career pages, auto-pipeline orchestration (URL → eval → CV → application → tracker), CV tailoring (ATS-optimized, keyword-injected), application form drafting, LinkedIn outreach (4 contact-type frameworks), follow-up cadence, and tracker integrity.</li>
+<li><strong>🔬 Evaluator</strong> — owns analysis and judgment: the 6-block A–F evaluation on every offer, deep 6-axis company research, STAR+R story bank and negotiation playbooks, rejection-pattern analysis (conversion funnel, archetype performance, channel ROI), and training/project investment evaluation.</li>
+</ul>
+<p>The split: Conductor <em>acts</em>; Evaluator <em>judges</em>.</p>
+<h2>The 6-Block Evaluation System</h2>
+<p>Every job offer is evaluated across six blocks:</p>
+<table>
+<thead>
+<tr>
+<th>Block</th>
+<th>Name</th>
+<th>What It Covers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A</strong></td>
+<td>Role Summary</td>
+<td>Title, level, team, scope, growth potential</td>
+</tr>
+<tr>
+<td><strong>B</strong></td>
+<td>CV Match Analysis</td>
+<td>Skills overlap, gap identification, keyword alignment</td>
+</tr>
+<tr>
+<td><strong>C</strong></td>
+<td>Level Strategy</td>
+<td>Seniority fit, over/under-leveling risk, career trajectory</td>
+</tr>
+<tr>
+<td><strong>D</strong></td>
+<td>Compensation Research</td>
+<td>Market benchmarks, equity analysis, total comp modeling</td>
+</tr>
+<tr>
+<td><strong>E</strong></td>
+<td>Personalization Tips</td>
+<td>Company culture signals, application angle, differentiators</td>
+</tr>
+<tr>
+<td><strong>F</strong></td>
+<td>Interview Prep</td>
+<td>Likely questions, STAR+R stories to load, company-specific intel</td>
+</tr>
+</tbody>
+</table>
+<h2>Attribution</h2>
+<p>This cabinet is adapted from <a href="https://github.com/santifer/career-ops">santifer/career-ops</a> by Santiago Fernandez de Valderrama, licensed under MIT. The original project provides Claude Code skills, a Go terminal dashboard, PDF generation via Playwright, and portal scanning — this cabinet adapts the methodology and evaluation framework into the cabinet format.</p>1f:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$L21",null,{"slug":"career-ops","pageName":"pipeline"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$L22",null,{"entry":{"slug":"career-ops","meta":{"schemaVersion":1,"id":"career-ops-root","name":"Career Ops","kind":"root","version":"0.1.0","description":"AI-powered job search command center. Evaluate offers with a 6-block scoring system, scan 45+ company portals, generate ATS-optimized CVs, and track your pipeline with data-driven precision. Inspired by santifer/career-ops (MIT) by Santiago Fernandez.\n","entry":"index.md","attribution":{"source":"https://github.com/santifer/career-ops","author":"Santiago Fernandez de Valderrama (@santifer)","license":"MIT"}},"agents":[{"name":"Evaluator","slug":"evaluator","emoji":"🔬","type":"lead","department":"evaluation","role":"6-block offer evaluation, scoring, deep company research, interview prep & negotiation, rejection-pattern analysis, training/project evaluation","heartbeat":"0 9 * * 1-5","budget":100,"active":false,"focus":["offer-evaluation","scoring","company-research","interview-prep","pattern-analysis","training-evaluation"],"tags":["evaluation","research","interviews","analytics","strategy"],"body":"$23"},{"name":"Pipeline Conductor","slug":"pipeline-conductor","emoji":"🎛️","type":"lead","department":"operations","role":"End-to-end pipeline ownership: portal scanning, auto-pipeline orchestration, CV tailoring, application form drafting, outreach, follow-up cadence, tracker integrity","heartbeat":"0 8 * * 1-5","budget":100,"active":false,"focus":["auto-pipeline","portal-scanning","cv-tailoring","applications","outreach","tracker-management"],"tags":["operations","pipeline","sourcing","applications","outreach"],"body":"$24"}],"jobs":[{"id":"batch-evaluate","name":"Batch Evaluate","enabled":true,"schedule":"0 10 * * 1-5","provider":"claude-code","adapterType":"claude_local","ownerAgent":"evaluator","agentSlug":"evaluator","timeout":600,"prompt":"$25","cabinetPath":"cabinets/career-ops","createdAt":"2026-04-12T00:00:00.000Z","updatedAt":"2026-04-12T00:00:00.000Z"},{"id":"daily-portal-scan","name":"Daily Portal Scan","enabled":true,"schedule":"0 7 * * 1-5","provider":"claude-code","adapterType":"claude_local","ownerAgent":"pipeline-conductor","agentSlug":"pipeline-conductor","timeout":600,"prompt":"Run the daily portal scan across all companies in /portals/portals.yaml.\nFor each portal:\n1. Execute configured search queries against the portal API or listing page\n2. Filter results against the profile criteria in /profile/index.md\n3. Deduplicate against /pipeline/tracker.csv\n4. Verify listings are still active and posted within the last 30 days\nFor qualifying matches:\n- Add to /pipeline/tracker.csv with status \"Discovered\" and today's date\n- Calculate a preliminary match score based on title, skills, and location overlap\n- Flag any matches at companies where the user has a warm contact\nProduce a brief scan digest with: new matches found, top 3 by preliminary score,\nportals that had errors or were unreachable.","cabinetPath":"cabinets/career-ops","createdAt":"2026-04-12T00:00:00.000Z","updatedAt":"2026-04-12T00:00:00.000Z"},{"id":"followup-cadence","name":"Follow-up Cadence","enabled":true,"schedule":"0 10 * * 2,4","provider":"claude-code","adapterType":"claude_local","ownerAgent":"pipeline-conductor","agentSlug":"pipeline-conductor","timeout":600,"prompt":"$26","cabinetPath":"cabinets/career-ops","createdAt":"2026-04-12T00:00:00.000Z","updatedAt":"2026-04-12T00:00:00.000Z"},{"id":"rejection-patterns","name":"Rejection Pattern Analysis","enabled":true,"schedule":"0 9 * * 5","provider":"claude-code","adapterType":"claude_local","ownerAgent":"evaluator","agentSlug":"evaluator","timeout":600,"prompt":"$27","cabinetPath":"cabinets/career-ops","createdAt":"2026-04-12T00:00:00.000Z","updatedAt":"2026-04-12T00:00:00.000Z"},{"id":"weekly-pipeline-health","name":"Weekly Pipeline Health","enabled":true,"schedule":"0 9 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"evaluator","agentSlug":"evaluator","timeout":600,"prompt":"$28","cabinetPath":"cabinets/career-ops","createdAt":"2026-04-12T00:00:00.000Z","updatedAt":"2026-04-12T00:00:00.000Z"}],"children":[],"readme":"$29","readmeHtml":"$2a","tags":["job-search","career","ai-powered","cabinet"],"section":"Product & Engineering","stats":{"totalAgents":2,"totalJobs":5,"totalCabinets":1,"totalPages":18}}}]}]]}],"$L2b","$L2c","$L2d","$L2e","$L2f"]}]
+20:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L1a",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L1c",null,{"src":"/brand/cabinet-logo-face-2-512.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],"$L30","$L31","$L32"]}]]}],"$L33"]]}],"$L34"]}]}]
+37:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"TerminalBlock"]
+2b:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Career Ops"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🔬"," ","Evaluator"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🎛️"," ","Pipeline Conductor"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Batch Evaluate"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Daily Portal Scan"}]]}],["$","div","2",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Follow-up Cadence"}]]}],["$","div","3",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Rejection Pattern Analysis"}]]}],["$","div","4",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Pipeline Health"}]]}]]]}],[]]}]}]]}]
+2c:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-evaluator-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🔬"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Evaluator"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"6-block offer evaluation, scoring, deep company research, interview prep & negotiation, rejection-pattern analysis, training/project evaluation"}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 9 * * 1-5"}]]}]]}],["$","div","root-pipeline-conductor-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🎛️"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Pipeline Conductor"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"End-to-end pipeline ownership: portal scanning, auto-pipeline orchestration, CV tailoring, application form drafting, outreach, follow-up cadence, tracker integrity"}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 8 * * 1-5"}]]}]]}]]}]]}]
+2d:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","batch-evaluate",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Batch Evaluate"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 10 * * 1-5"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","evaluator"]}]]}]]}],["$","div","daily-portal-scan",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Daily Portal Scan"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 7 * * 1-5"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","pipeline-conductor"]}]]}]]}],["$","div","followup-cadence",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Follow-up Cadence"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 10 * * 2,4"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","pipeline-conductor"]}]]}]]}],["$","div","rejection-patterns",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Rejection Pattern Analysis"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 9 * * 5"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","evaluator"]}]]}]]}],"$L35"]}]]}]
+36:T112a,<h1>Career Ops</h1>
+<blockquote>
+<p>"Companies use AI to filter candidates. I gave candidates AI to choose companies."
+— Santiago Fernandez (<a href="https://github.com/santifer">@santifer</a>)</p>
+</blockquote>
+<p>Career Ops is an AI-powered job search command center adapted from the <a href="https://github.com/santifer/career-ops">career-ops</a> open source project (MIT license) by Santiago Fernandez de Valderrama. The original system evaluated 740+ job offers, generated 100+ tailored CVs, and helped Santiago land a Head of Applied AI role.</p>
+<p>This cabinet adapts that methodology into a structured, visual, agent-driven system.</p>
+<h2>Philosophy</h2>
+<ul>
+<li><strong>Filter, don't spray.</strong> This is not a mass-apply tool. It helps you find the few offers genuinely worth your time.</li>
+<li><strong>Human-in-the-loop.</strong> AI evaluates and recommends. You decide and submit. Never auto-apply.</li>
+<li><strong>Quality over quantity.</strong> Don't apply to anything scoring below 4.0/5.</li>
+<li><strong>Data-driven.</strong> Every decision backed by evaluation scores, pipeline metrics, and pattern analysis.</li>
+</ul>
+<h2>How It Works</h2>
+<ol>
+<li><strong>Configure your profile</strong> in [[profile]] — your CV, proof points, skills matrix, and search criteria</li>
+<li><strong>Scan portals</strong> using [[portals]] — 45+ companies across Greenhouse, Ashby, Lever, Wellfound</li>
+<li><strong>Evaluate offers</strong> with the 6-block system in [[evaluations]] — each job gets blocks A through F</li>
+<li><strong>Generate tailored CVs</strong> in [[cv-lab]] — ATS-optimized, keyword-injected, one per application</li>
+<li><strong>Track your pipeline</strong> on the [[pipeline]] board — from discovered to offer with full status history</li>
+<li><strong>Prep for interviews</strong> using [[interview-prep]] — STAR+R stories, negotiation scripts, company research</li>
+<li><strong>Analyze patterns</strong> in [[analytics]] — rejection patterns, channel ROI, pipeline velocity</li>
+</ol>
+<h2>Your Team — 2 Agents</h2>
+<p>Adapted from the 16 modes of the original career-ops system into two leads — one for operations, one for analysis:</p>
+<ul>
+<li><strong>🎛️ Pipeline Conductor</strong> — owns execution end-to-end: portal scanning across Greenhouse / Ashby / Lever / Wellfound / career pages, auto-pipeline orchestration (URL → eval → CV → application → tracker), CV tailoring (ATS-optimized, keyword-injected), application form drafting, LinkedIn outreach (4 contact-type frameworks), follow-up cadence, and tracker integrity.</li>
+<li><strong>🔬 Evaluator</strong> — owns analysis and judgment: the 6-block A–F evaluation on every offer, deep 6-axis company research, STAR+R story bank and negotiation playbooks, rejection-pattern analysis (conversion funnel, archetype performance, channel ROI), and training/project investment evaluation.</li>
+</ul>
+<p>The split: Conductor <em>acts</em>; Evaluator <em>judges</em>.</p>
+<h2>The 6-Block Evaluation System</h2>
+<p>Every job offer is evaluated across six blocks:</p>
+<table>
+<thead>
+<tr>
+<th>Block</th>
+<th>Name</th>
+<th>What It Covers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A</strong></td>
+<td>Role Summary</td>
+<td>Title, level, team, scope, growth potential</td>
+</tr>
+<tr>
+<td><strong>B</strong></td>
+<td>CV Match Analysis</td>
+<td>Skills overlap, gap identification, keyword alignment</td>
+</tr>
+<tr>
+<td><strong>C</strong></td>
+<td>Level Strategy</td>
+<td>Seniority fit, over/under-leveling risk, career trajectory</td>
+</tr>
+<tr>
+<td><strong>D</strong></td>
+<td>Compensation Research</td>
+<td>Market benchmarks, equity analysis, total comp modeling</td>
+</tr>
+<tr>
+<td><strong>E</strong></td>
+<td>Personalization Tips</td>
+<td>Company culture signals, application angle, differentiators</td>
+</tr>
+<tr>
+<td><strong>F</strong></td>
+<td>Interview Prep</td>
+<td>Likely questions, STAR+R stories to load, company-specific intel</td>
+</tr>
+</tbody>
+</table>
+<h2>Attribution</h2>
+<p>This cabinet is adapted from <a href="https://github.com/santifer/career-ops">santifer/career-ops</a> by Santiago Fernandez de Valderrama, licensed under MIT. The original project provides Claude Code skills, a Go terminal dashboard, PDF generation via Playwright, and portal scanning — this cabinet adapts the methodology and evaluation framework into the cabinet format.</p>2e:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$36"}}]}]]}]
+2f:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L37",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set career-ops","label":"Install"}]}]}]]}]
+30:["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}]
+31:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+32:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+33:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+34:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+35:["$","div","weekly-pipeline-health",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Pipeline Health"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 9 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","evaluator"]}]]}]]}]
+16:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+38:I[27201,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"IconMark"]
+13:null
+18:[["$","title","0",{"children":"Career Ops template | Cabinet"}],["$","meta","1",{"name":"description","content":"AI-powered job search command center. Evaluate offers with a 6-block scoring system, scan 45+ company portals, generate ATS-optimized CVs, and track your pipeline with data-driven precision. Inspired by santifer/career-ops (MIT) by Santiago Fernandez.\n"}],["$","meta","2",{"name":"referrer","content":"strict-origin-when-cross-origin"}],["$","link","3",{"rel":"canonical","href":"https://runcabinet.com/templates/career-ops"}],["$","meta","4",{"property":"og:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","5",{"property":"og:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","6",{"property":"og:url","content":"https://runcabinet.com"}],["$","meta","7",{"property":"og:image","content":"https://runcabinet.com/og.png"}],["$","meta","8",{"property":"og:image:width","content":"1200"}],["$","meta","9",{"property":"og:image:height","content":"630"}],["$","meta","10",{"property":"og:image:alt","content":"Cabinet: the AI workspace your company owns, with knowledge, AI teams, and live apps in one place"}],["$","meta","11",{"property":"og:type","content":"website"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","14",{"name":"twitter:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","15",{"name":"twitter:image","content":"https://runcabinet.com/og.png"}],["$","link","16",{"rel":"icon","href":"/icon.png?icon.44t65kd7hy5v2.png","sizes":"512x512","type":"image/png"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-icon.png?apple-icon.15mucn-ts41m4.png","sizes":"180x180","type":"image/png"}],["$","$L38","18",{}]]

@@ -1,0 +1,318 @@
+1:"$Sreact.fragment"
+2:I[479520,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],""]
+4:I[339756,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+5:I[837457,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+d:I[168027,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default",1]
+:HL["/_next/static/chunks/1zt6zr5gfi79z.css","style"]
+:HL["/_next/static/chunks/2kjyvxaw0m8zu.css","style"]
+:HL["/_next/static/media/791bf8c4bb753ed6-s.p.0ggqn9ig56u4s.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/7ebf22b5a21034f8-s.p.3j3877k49yy0l.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/ee9d8ff0751135e3-s.p.12ukhzf-lem3a.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+3:T689,
+            console.log(
+              "%c\n  ██████╗ █████╗ ██████╗ ██╗███╗   ██╗███████╗████████╗\n ██╔════╝██╔══██╗██╔══██╗██║████╗  ██║██╔════╝╚══██╔══╝\n ██║     ███████║██████╔╝██║██╔██╗ ██║█████╗     ██║   \n ██║     ██╔══██║██╔══██╗██║██║╚██╗██║██╔══╝     ██║   \n ╚██████╗██║  ██║██████╔╝██║██║ ╚████║███████╗   ██║   \n  ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   \n",
+              "color: #FFFFFF; font-family: monospace; font-size: 12px; font-weight: 700; line-height: 1.15;"
+            );
+            console.log(
+              "%cCurious enough to inspect the console? We should talk.",
+              "color: #FFFFFF; font-family: Georgia, serif; font-size: 16px; font-weight: 700;"
+            );
+            console.log(
+              "%cCabinet is hiring founding builders and a founding content lead.",
+              "color: #FFFFFF; font-family: system-ui, sans-serif; font-size: 13px;"
+            );
+            console.log(
+              "%chttps://runcabinet.com/careers",
+              "color: #FFFFFF; font-family: ui-monospace, monospace; font-size: 13px; font-weight: 700;"
+            );
+          0:{"P":null,"c":["","templates","incident-postmortem"],"q":"","i":false,"f":[[["",{"children":["templates",{"children":[["slug","incident-postmortem","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/1zt6zr5gfi79z.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/2kjyvxaw0m8zu.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/2h5ytfdjhksof.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/1ntn7efqc-iiw.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"geist_2b71de91-module__VGa4wG__variable fraunces_37d7409f-module__w9ixmW__variable instrument_serif_9d1675d4-module__u-eSaW__variable martian_mono_ec64b6a3-module__0Ezn9q__variable ms_madi_7ac33f52-module__ynI3bq__variable h-full antialiased","children":[["$","head",null,{"children":[["$","$L2",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-4L81D0BVTP","strategy":"lazyOnload"}],["$","$L2",null,{"id":"gtag-init","strategy":"lazyOnload","children":"\n            window.dataLayer = window.dataLayer || [];\n            function gtag(){dataLayer.push(arguments);}\n            gtag('js', new Date());\n            gtag('config', 'G-4L81D0BVTP');\n          "}],["$","$L2",null,{"id":"cabinet-console-signature","strategy":"lazyOnload","children":"$3"}]]}],["$","body",null,{"className":"min-h-full flex flex-col","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","width":"0","height":"0","style":{"position":"absolute","width":0,"height":0,"overflow":"hidden"},"children":["$","defs",null,{"children":["$","filter",null,{"id":"liquid-glass-filter","x":"-20%","y":"-20%","width":"140%","height":"140%","colorInterpolationFilters":"sRGB","children":[["$","feTurbulence",null,{"type":"fractalNoise","baseFrequency":"0.009 0.013","numOctaves":2,"seed":9,"result":"noise"}],["$","feGaussianBlur",null,{"in":"noise","stdDeviation":0.8,"result":"blurredNoise"}],["$","feDisplacementMap",null,{"in":"SourceGraphic","in2":"blurredNoise","scale":18,"xChannelSelector":"R","yChannelSelector":"G"}]]}]}]}],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],"$L6","$L7"]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]]}]]}],{"children":["$L8",{"children":["$L9",{"children":["$La",{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le","$Lf"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"6m0W84u2FvpIa3AeFaHQd"}
+11:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+15:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"ViewportBoundary"]
+17:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"MetadataBoundary"]
+6:["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}]
+7:["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]
+8:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/258x9i1fxfhga.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+14:[]
+b:"$W14"
+c:["$","$1","h",{"children":[null,["$","$L15",null,{"children":"$L16"}],["$","div",null,{"hidden":true,"children":["$","$L17",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L18"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/1zt6zr5gfi79z.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+f:["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/2kjyvxaw0m8zu.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+19:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"SiteNavbar"]
+1a:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],""]
+1b:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"default"]
+1c:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"Image"]
+1d:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"StarButton"]
+10:[["$","$L19",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L1a",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L1c",null,{"src":"/covers/incident-postmortem.jpg","alt":"Incident Postmortem Cabinet","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Incident Postmortem Cabinet"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Builds complete incident timelines, root-cause analyses, and action-item registers from PagerDuty, Datadog, Sentry, and Slack — published within hours of resolution. Keep your alerting stack. Replace the blank Confluence page and the week-late postmortem."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","engineering",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"engineering"}],["$","span","sre",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"sre"}],["$","span","incident-management",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"incident-management"}],["$","span","postmortem",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"postmortem"}],["$","span","reliability",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"reliability"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"cabinet"}]]}]]}],["$","$L1d",null,{"slug":"incident-postmortem"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],3," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],2," jobs"]}],"$L1e","$L1f"]}]]}]]}],"$L20"]}],"$L21"]
+22:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"ScreenshotPreview"]
+23:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"CabinetOrgChart"]
+1e:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}]
+1f:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],2," pages"]}]
+24:Ta2d,# Engineering Agent
+
+You are the timeline builder and incident orchestrator. When a postmortem is triggered, you reconstruct the incident from the raw signals: PagerDuty or Opsgenie alert events, Datadog or Grafana metric spikes and deployment markers, Sentry error traces, and the Slack incident channel messages. You assemble a factual, minute-by-minute timeline — then hand it to the Summary Agent for the root-cause narrative and the QA Agent for the action-item review.
+
+## What you own
+
+1. **Event collection.** Pull from every source available: PagerDuty alert history, Datadog dashboards and deployment markers, Sentry error event counts and first-seen timestamps, Slack incident channel export. Write the raw event log to `postmortems/<incident-id>/raw-events.md`.
+2. **Timeline construction.** Order all events chronologically. Mark: alert fired, on-call paged, investigation started, mitigation attempted, service restored, all-clear. Include the metric values at each key moment (error rate, p99 latency, etc.). Write the timeline to `postmortems/<incident-id>/timeline.md`.
+3. **Deployment correlation.** Identify any deploy in the 60 minutes before the incident start. Flag it as a likely contributing factor if error rates spiked immediately after. Note deploy hash and service name.
+4. **Impact quantification.** Compute: incident duration (alert → all-clear), number of Sentry errors, number of affected users if Sentry has user counts, number of failed requests if Datadog has the metric. Write to `postmortems/<incident-id>/impact.md`.
+5. **Orchestration.** Once the timeline and impact files are ready, call the Summary Agent to write the narrative. Once the draft is returned, call the QA Agent to validate before publishing.
+
+## How you work
+
+- **Timeline is factual, not editorial.** Write what happened and when, with metric values. The Summary Agent writes the interpretation.
+- **Clocks matter.** Every timestamp is UTC. Timezones cause miscommunication; UTC is the incident language.
+- **The deploy is suspect until cleared.** If a deploy preceded the incident, it's listed as a contributing factor until the root cause clears it.
+- **Blameless framing from the start.** Log what the on-call person did; never log that they "caused" anything. Actions, not attributions.
+
+## What you do NOT do
+
+- You do not write the root-cause narrative or the 5-whys analysis — that is the Summary Agent's job.
+- You do not validate action items or assign owners — that is the QA Agent's job.
+- You do not send the postmortem to the team — a downstream notification job handles that.25:Ta00,# QA Agent
+
+You are the gate before every postmortem is published. You receive the Summary Agent's draft and run a completeness check: every action item must have an owner, a due date (within 30 days for SEV-1, within 60 days for SEV-2), and a Jira or Linear ticket. Vague action items ("improve monitoring") are sent back for rewrites. Once the report passes your review, you approve publication and register each action item in `postmortems/action-items.md`. Every Monday, you follow up on open items.
+
+## What you own
+
+1. **Completeness review.** For each action item in the draft postmortem: check for owner (a named person, not a team), due date, and ticket number. Return any item missing one of these to the Summary Agent with a specific rewrite request.
+2. **Action-item specificity.** Reject vague items. "Add better monitoring" → return with: "Write a Datadog monitor for payment-service p99 latency > 500ms, alert on-call. Owner: [name]. Due: [date]. Ticket: [#]."
+3. **Publication sign-off.** Once all action items pass review, write `status: approved` to the postmortem metadata and approve rendering to `report/index.html`.
+4. **Action-item register.** Append all new action items to `postmortems/action-items.md` with: incident ID, action description, owner, due date, ticket, and status (open/in-progress/done).
+5. **Weekly follow-up.** Every Monday: read `postmortems/action-items.md`, identify overdue items, and write a follow-up summary to `postmortems/followup-<YYYY-MM-DD>.md`. Flag any items >14 days overdue.
+
+## How you work
+
+- **Owner = a person.** "Platform team" is not an owner. "Maya Chen" is an owner. Push back until a specific person accepts accountability.
+- **30/60 day rule.** SEV-1 action items close in 30 days. SEV-2 in 60 days. Longer timelines are escalations, not action items.
+- **An open postmortem is an open wound.** The faster action items close, the faster the team learns and rebuilds confidence. Track relentlessly, not punitively.
+- **Overdue is a signal, not an accusation.** When an item goes overdue, write to the owner with context: "This was from INC-047 on May 12; we said it would be done by June 12. What's the status?"
+
+## What you do NOT do
+
+- You do not write the root cause or the timeline — those are the Engineering Agent's and Summary Agent's jobs.
+- You do not create Jira tickets yourself — you require the draft's action items to include a ticket number, and you verify it exists.
+- You do not close action items unilaterally — the owner confirms completion; you update the register.26:T9d5,# Summary Agent
+
+You write the analytical core of every postmortem — the sections that turn a timeline into understanding. You take the Engineering Agent's timeline and impact files and produce: the root cause statement, the 5-whys chain, the customer-impact paragraph, and the contributing-factors list. You do not gather data; you apply rigorous causal reasoning to data that's already been assembled.
+
+## What you own
+
+1. **Root cause statement.** One to three sentences: the proximate cause (what broke), the triggering condition (what caused the break), and the underlying factor (why the system was vulnerable). Not "the deploy was bad" — specific and falsifiable.
+2. **5-whys chain.** Walk back through five causal steps from the symptom to the systemic gap. Each "why" is a testable claim, not an assertion. End at a system or process property the team can actually change.
+3. **Customer impact.** Quantify the customer experience in terms they understand: service was unavailable for X minutes, Y% of requests failed, Z users could not complete checkout. Pull from the Engineering Agent's impact.md. Write one paragraph, plain language.
+4. **Contributing factors.** List 3–6 factors that made the incident worse or more likely — distinct from the root cause. Examples: lack of load-shedding, alert threshold set too high, no circuit breaker on the payment service. Each factor is a sentence.
+5. **Draft postmortem.** Assemble the full draft from the Engineering Agent's timeline and your analysis sections into `postmortems/<incident-id>/draft.md`. Hand to the QA Agent for validation.
+
+## How you work
+
+- **Blameless means systemic.** The 5-whys chain must end at a system property, a process gap, or a design assumption — never at a person. "The engineer deployed without testing" is not a root cause; "the deployment pipeline had no automated smoke test for the payment flow" is.
+- **One root cause, not five.** There may be multiple contributing factors, but there is one root cause. If you have five root causes, you have not found the real one yet.
+- **Customer impact is in customer language.** Not "elevated 5xx rates on the /api/checkout endpoint" — "customers were unable to complete purchases for 47 minutes."
+
+## What you do NOT do
+
+- You do not construct the timeline or pull data from Datadog/Sentry — the Engineering Agent owns that.
+- You do not validate or assign action items — the QA Agent owns that.
+- You do not publish the postmortem — the QA Agent validates it first.27:T854,Build a complete blameless postmortem for a resolved incident.
+
+Trigger with: incident ID, severity (SEV-1/SEV-2/SEV-3), alert start time (UTC),
+all-clear time (UTC), and the Slack incident channel name. If not provided, ask before proceeding.
+
+STEP 1 — Engineering Agent: build the timeline and quantify impact.
+
+Pull from all available sources for the incident window (start-time − 60 min → all-clear + 30 min):
+- PagerDuty or Opsgenie: alert events, acknowledgements, escalations, resolution.
+- Datadog or Grafana: metric graphs (error rate, p99 latency, throughput), deployment markers.
+- Sentry: error events, first-seen/last-seen, affected user count, stack trace summary.
+- Slack incident channel: key messages, decisions made, who joined and when.
+
+Write raw event log → incident-postmortem/postmortems/<incident-id>/raw-events.md
+Write timeline (chronological, UTC, with metric values) → incident-postmortem/postmortems/<incident-id>/timeline.md
+Write impact quantification → incident-postmortem/postmortems/<incident-id>/impact.md
+(Duration, error count, affected users, failed requests, customer-visible symptoms.)
+
+STEP 2 — Summary Agent: write the analytical sections.
+- Root cause statement (1–3 sentences: proximate cause + triggering condition + systemic vulnerability).
+- 5-whys chain (5 steps from symptom to systemic gap; end at something the team can change).
+- Customer impact paragraph (plain language, quantified).
+- Contributing factors list (3–6 items, each a system or process property).
+Write draft → incident-postmortem/postmortems/<incident-id>/draft.md
+
+STEP 3 — QA Agent: validate completeness.
+Check every action item for: named owner, due date (SEV-1: ≤30 days, SEV-2: ≤60 days),
+Jira/Linear ticket number. Return vague items to Summary Agent for rewrite.
+Once all items pass: write status: approved to the postmortem metadata.
+Append action items to: incident-postmortem/postmortems/action-items.md
+
+STEP 4 — Render the final postmortem to incident-postmortem/report/index.html
+
+Blameless framing throughout. No attributions to individuals; only system and process gaps.28:T4f5,Run the weekly postmortem action-item follow-up.
+
+Read incident-postmortem/postmortems/action-items.md — the running register of all open
+action items across incidents.
+
+For each action item with status "open" or "in-progress":
+1. Check if the due date has passed. Flag as OVERDUE if so.
+2. Check if the linked Jira/Linear ticket has moved to Done. If yes, mark as ready-to-close.
+3. Flag any item that has been open for >14 days with no status change.
+
+Write the follow-up report to:
+incident-postmortem/postmortems/followup-<YYYY-MM-DD>.md
+
+The report format:
+## Postmortem Action-Item Follow-up — <date>
+
+### Overdue Items (due date passed, status not Done)
+For each: incident ID, action description, owner, original due date, days overdue.
+
+### Due This Week (due date within next 7 days)
+For each: incident ID, action description, owner, due date, current ticket status.
+
+### Ready to Close (ticket Done, awaiting register update)
+List items to close. Update action-items.md to mark them as "done" with closed date.
+
+### No Movement >14 Days
+Items open >14 days with no status change. Include a one-line note to the owner.
+
+Update incident-postmortem/postmortems/action-items.md with any status changes identified
+(mark done items as done; note overdue items).29:T8f6,# Incident Postmortem Cabinet
+
+Three agents turn a resolved incident into a complete, blameless postmortem within hours: the Engineering Agent builds the timeline from PagerDuty, Datadog, and Sentry; the Summary Agent writes the root-cause analysis and customer-impact statement; the QA Agent validates the action items for completeness and owner assignment before the report is published.
+
+> **Keep PagerDuty, Datadog, and Sentry. Replace the blank Confluence page, the week-late postmortem, and the action items that fall into a Jira backlog nobody watches.**
+
+## The team
+
+- **[[.agents/engineering-agent]]** — Engineering Agent. Owns timeline construction: pulls alert events, deployment markers, error spikes, and Slack incident channel messages to build a minute-by-minute timeline. Orchestrates the other agents.
+- **[[.agents/summary-agent]]** — Summary Agent. Writes the root-cause narrative, 5-whys analysis, customer-impact quantification, and contributing-factors section from the timeline.
+- **[[.agents/qa-agent]]** — QA Agent. Reviews the full draft postmortem: checks every action item has an owner, a due date, and a Jira ticket; flags gaps before the report is published.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **On-demand** (per incident) | [[.jobs/per-incident-postmortem]] | Engineering Agent (all three) | Postmortem in [[report]] + `postmortems/<incident-id>.md` |
+| **Weekly** (Mon 09:00) | [[.jobs/weekly-action-item-followup]] | QA Agent | Action-item status in `postmortems/action-items.md` |
+
+## How to run the demo
+
+1. Open the [[report]] — the postmortem report for INC-2024-047: incident header with severity and duration, customer impact, timeline, root cause with 5-whys, contributing factors, and action items with owners.
+2. Open `postmortems/action-items.md` — the running action-item register across all recent incidents.
+
+## Connectors
+
+**Required:** PagerDuty or Opsgenie (alert timeline), Datadog or Grafana (metrics + deployment markers), Sentry (error traces).
+**Recommended:** Slack (incident channel export), Jira (action-item tickets), Statuspage (customer-impact wording).
+
+Every artifact is a file — the postmortem lives in `postmortems/` dated by incident ID, blameless, diffable, and searchable.2a:Ta9f,<h1>Incident Postmortem Cabinet</h1>
+<p>Three agents turn a resolved incident into a complete, blameless postmortem within hours: the Engineering Agent builds the timeline from PagerDuty, Datadog, and Sentry; the Summary Agent writes the root-cause analysis and customer-impact statement; the QA Agent validates the action items for completeness and owner assignment before the report is published.</p>
+<blockquote>
+<p><strong>Keep PagerDuty, Datadog, and Sentry. Replace the blank Confluence page, the week-late postmortem, and the action items that fall into a Jira backlog nobody watches.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/engineering-agent]]</strong> — Engineering Agent. Owns timeline construction: pulls alert events, deployment markers, error spikes, and Slack incident channel messages to build a minute-by-minute timeline. Orchestrates the other agents.</li>
+<li><strong>[[.agents/summary-agent]]</strong> — Summary Agent. Writes the root-cause narrative, 5-whys analysis, customer-impact quantification, and contributing-factors section from the timeline.</li>
+<li><strong>[[.agents/qa-agent]]</strong> — QA Agent. Reviews the full draft postmortem: checks every action item has an owner, a due date, and a Jira ticket; flags gaps before the report is published.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>On-demand</strong> (per incident)</td>
+<td>[[.jobs/per-incident-postmortem]]</td>
+<td>Engineering Agent (all three)</td>
+<td>Postmortem in [[report]] + <code>postmortems/&#x3C;incident-id>.md</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 09:00)</td>
+<td>[[.jobs/weekly-action-item-followup]]</td>
+<td>QA Agent</td>
+<td>Action-item status in <code>postmortems/action-items.md</code></td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[report]] — the postmortem report for INC-2024-047: incident header with severity and duration, customer impact, timeline, root cause with 5-whys, contributing factors, and action items with owners.</li>
+<li>Open <code>postmortems/action-items.md</code> — the running action-item register across all recent incidents.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> PagerDuty or Opsgenie (alert timeline), Datadog or Grafana (metrics + deployment markers), Sentry (error traces).
+<strong>Recommended:</strong> Slack (incident channel export), Jira (action-item tickets), Statuspage (customer-impact wording).</p>
+<p>Every artifact is a file — the postmortem lives in <code>postmortems/</code> dated by incident ID, blameless, diffable, and searchable.</p>20:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$L22",null,{"slug":"incident-postmortem","pageName":"report"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$L23",null,{"entry":{"slug":"incident-postmortem","meta":{"schemaVersion":1,"id":"incident-postmortem-root","name":"Incident Postmortem Cabinet","kind":"root","version":"0.1.0","description":"Builds complete incident timelines, root-cause analyses, and action-item registers from PagerDuty, Datadog, Sentry, and Slack — published within hours of resolution. Keep your alerting stack. Replace the blank Confluence page and the week-late postmortem.","entry":"index.md","domain":"Software"},"agents":[{"name":"Engineering Agent","slug":"engineering-agent","emoji":"🔧","type":"lead","department":"engineering","role":"Builds the incident timeline from PagerDuty, Datadog, Sentry, and Slack — the factual backbone of every postmortem — and orchestrates the Summary and QA Agents to complete the report.","heartbeat":"0 9 * * 1-5","budget":120,"active":true,"focus":["timeline-construction","alert-correlation","deploy-marker-analysis","incident-orchestration"],"tags":["engineering","sre"],"body":"$24"},{"name":"QA Agent","slug":"qa-agent","emoji":"✅","type":"specialist","department":"engineering","role":"Reviews the draft postmortem for completeness — every action item has an owner, a due date, and a Jira ticket — before the report is published and tracks action-item status weekly.","heartbeat":"0 9 * * 1","budget":60,"active":true,"focus":["action-item-validation","postmortem-completeness","follow-up-tracking","accountability"],"tags":["engineering","qa"],"body":"$25"},{"name":"Summary Agent","slug":"summary-agent","emoji":"📝","type":"specialist","department":"engineering","role":"Writes the root-cause analysis, 5-whys breakdown, customer-impact statement, and contributing-factors section from the Engineering Agent's incident timeline.","heartbeat":"","budget":80,"active":true,"focus":["root-cause-analysis","five-whys","customer-impact-writing","blameless-narrative"],"tags":["engineering","sre"],"body":"$26"}],"jobs":[{"id":"per-incident-postmortem","name":"Per-Incident Postmortem","enabled":false,"schedule":"","provider":"claude-code","adapterType":"claude_local","ownerAgent":"engineering-agent","agentSlug":"engineering-agent","timeout":1800,"prompt":"$27","cabinetPath":"cabinets/incident-postmortem","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"weekly-action-item-followup","name":"Weekly Action-Item Follow-up","enabled":true,"schedule":"0 9 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"qa-agent","agentSlug":"qa-agent","timeout":600,"prompt":"$28","cabinetPath":"cabinets/incident-postmortem","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$29","readmeHtml":"$2a","tags":["engineering","sre","incident-management","postmortem","reliability","cabinet"],"section":"Product & Engineering","stats":{"totalAgents":3,"totalJobs":2,"totalCabinets":1,"totalPages":2}}}]}]]}],"$L2b","$L2c","$L2d","$L2e","$L2f"]}]
+21:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L1a",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L1c",null,{"src":"/brand/cabinet-logo-face-2-512.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],"$L30","$L31","$L32"]}]]}],"$L33"]]}],"$L34"]}]}]
+36:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"TerminalBlock"]
+2b:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Incident Postmortem Cabinet"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🔧"," ","Engineering Agent"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["✅"," ","QA Agent"]}]]}],["$","div","2",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["📝"," ","Summary Agent"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Per-Incident Postmortem"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Action-Item Follow-up"}]]}]]]}],[]]}]}]]}]
+2c:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-engineering-agent-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🔧"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Engineering Agent"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Builds the incident timeline from PagerDuty, Datadog, Sentry, and Slack — the factual backbone of every postmortem — and orchestrates the Summary and QA Agents to complete the report."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 9 * * 1-5"}]]}]]}],["$","div","root-qa-agent-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"✅"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"QA Agent"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Reviews the draft postmortem for completeness — every action item has an owner, a due date, and a Jira ticket — before the report is published and tracks action-item status weekly."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 9 * * 1"}]]}]]}],["$","div","root-summary-agent-2",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"📝"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Summary Agent"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Writes the root-cause analysis, 5-whys breakdown, customer-impact statement, and contributing-factors section from the Engineering Agent's incident timeline."}],""]}]]}]]}]
+2d:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","per-incident-postmortem",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Per-Incident Postmortem"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"paused"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":""}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","engineering-agent"]}]]}]]}],["$","div","weekly-action-item-followup",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Action-Item Follow-up"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 9 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","qa-agent"]}]]}]]}]]}]]}]
+35:Ta9f,<h1>Incident Postmortem Cabinet</h1>
+<p>Three agents turn a resolved incident into a complete, blameless postmortem within hours: the Engineering Agent builds the timeline from PagerDuty, Datadog, and Sentry; the Summary Agent writes the root-cause analysis and customer-impact statement; the QA Agent validates the action items for completeness and owner assignment before the report is published.</p>
+<blockquote>
+<p><strong>Keep PagerDuty, Datadog, and Sentry. Replace the blank Confluence page, the week-late postmortem, and the action items that fall into a Jira backlog nobody watches.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/engineering-agent]]</strong> — Engineering Agent. Owns timeline construction: pulls alert events, deployment markers, error spikes, and Slack incident channel messages to build a minute-by-minute timeline. Orchestrates the other agents.</li>
+<li><strong>[[.agents/summary-agent]]</strong> — Summary Agent. Writes the root-cause narrative, 5-whys analysis, customer-impact quantification, and contributing-factors section from the timeline.</li>
+<li><strong>[[.agents/qa-agent]]</strong> — QA Agent. Reviews the full draft postmortem: checks every action item has an owner, a due date, and a Jira ticket; flags gaps before the report is published.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>On-demand</strong> (per incident)</td>
+<td>[[.jobs/per-incident-postmortem]]</td>
+<td>Engineering Agent (all three)</td>
+<td>Postmortem in [[report]] + <code>postmortems/&#x3C;incident-id>.md</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 09:00)</td>
+<td>[[.jobs/weekly-action-item-followup]]</td>
+<td>QA Agent</td>
+<td>Action-item status in <code>postmortems/action-items.md</code></td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[report]] — the postmortem report for INC-2024-047: incident header with severity and duration, customer impact, timeline, root cause with 5-whys, contributing factors, and action items with owners.</li>
+<li>Open <code>postmortems/action-items.md</code> — the running action-item register across all recent incidents.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> PagerDuty or Opsgenie (alert timeline), Datadog or Grafana (metrics + deployment markers), Sentry (error traces).
+<strong>Recommended:</strong> Slack (incident channel export), Jira (action-item tickets), Statuspage (customer-impact wording).</p>
+<p>Every artifact is a file — the postmortem lives in <code>postmortems/</code> dated by incident ID, blameless, diffable, and searchable.</p>2e:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$35"}}]}]]}]
+2f:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L36",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set incident-postmortem","label":"Install"}]}]}]]}]
+30:["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}]
+31:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+32:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+33:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+34:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+16:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+37:I[27201,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"IconMark"]
+13:null
+18:[["$","title","0",{"children":"Incident Postmortem Cabinet template | Cabinet"}],["$","meta","1",{"name":"description","content":"Builds complete incident timelines, root-cause analyses, and action-item registers from PagerDuty, Datadog, Sentry, and Slack — published within hours of resolution. Keep your alerting stack. Replace the blank Confluence page and the week-late postmortem."}],["$","meta","2",{"name":"referrer","content":"strict-origin-when-cross-origin"}],["$","link","3",{"rel":"canonical","href":"https://runcabinet.com/templates/incident-postmortem"}],["$","meta","4",{"property":"og:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","5",{"property":"og:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","6",{"property":"og:url","content":"https://runcabinet.com"}],["$","meta","7",{"property":"og:image","content":"https://runcabinet.com/og.png"}],["$","meta","8",{"property":"og:image:width","content":"1200"}],["$","meta","9",{"property":"og:image:height","content":"630"}],["$","meta","10",{"property":"og:image:alt","content":"Cabinet: the AI workspace your company owns, with knowledge, AI teams, and live apps in one place"}],["$","meta","11",{"property":"og:type","content":"website"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","14",{"name":"twitter:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","15",{"name":"twitter:image","content":"https://runcabinet.com/og.png"}],["$","link","16",{"rel":"icon","href":"/icon.png?icon.44t65kd7hy5v2.png","sizes":"512x512","type":"image/png"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-icon.png?apple-icon.15mucn-ts41m4.png","sizes":"180x180","type":"image/png"}],["$","$L37","18",{}]]

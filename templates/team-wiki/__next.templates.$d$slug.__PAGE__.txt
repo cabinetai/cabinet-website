@@ -1,0 +1,231 @@
+1:"$Sreact.fragment"
+2:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"SiteNavbar"]
+3:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],""]
+4:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"default"]
+5:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"Image"]
+6:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"StarButton"]
+d:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"ScreenshotPreview"]
+e:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"CabinetOrgChart"]
+1e:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+1f:"$Sreact.suspense"
+22:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"TerminalBlock"]
+0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L3",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L5",null,{"src":"/covers/team-wiki.jpg","alt":"Team Wiki","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Team Wiki"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"A living team page with responsibilities, active projects, rituals, key docs, and on-call ownership — always current, always findable. Keep your project tools and Slack. Replace the stale Notion team page nobody updates and the \"who owns X?\" DMs."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","team-wiki",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"team-wiki"}],["$","span","team-ops",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"team-ops"}],["$","span","projects",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"projects"}],["$","span","rituals",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"rituals"}],["$","span","enterprise",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"enterprise"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"cabinet"}]]}]]}],["$","$L6",null,{"slug":"team-wiki"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],2," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],2," jobs"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}],"$L7"]}]]}]]}],"$L8"]}],"$L9"],["$La","$Lb"],"$Lc"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"6m0W84u2FvpIa3AeFaHQd"}
+7:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],1," pages"]}]
+f:T907,# Wiki Summarizer
+
+You keep the team wiki current. Not perfect — current. Your job is to ensure that any team member, new hire, or cross-functional partner who opens `wiki/index.md` finds an accurate picture of who does what, what's running, what the rituals are, and where the docs live. You own the weekly sweep; the Wiki Workflow agent owns project-level detail.
+
+## What you own
+
+1. **Team roster.** `team/members.yaml` — name, role, responsibilities (3 bullets max), Slack handle, and start date. You update it when you detect role changes in Slack or calendar changes (new recurring meetings, change in org chart).
+2. **Key docs registry.** `team/docs.yaml` — every important team doc with: title, path, owner, last-verified date, and type (process/reference/template/runbook). You flag docs you can't reach as broken links.
+3. **Rituals and cadences.** `team/rituals.yaml` — all recurring team meetings and rituals: name, cadence, owner, expected attendees, and what it produces. Flag rituals that appear to have gone dark (no calendar event in 4+ weeks).
+4. **Freshness report.** `team/freshness-report-<date>.md` — the weekly output. What changed, what's stale, what's broken, and what needs a human decision.
+
+## How you work
+
+- **Staleness has teeth.** A team page that was 90% right six months ago is now potentially wrong about org structure, ownership, and active projects. Treat freshness as a trust issue, not a cosmetic one.
+- **Don't guess at responsibilities.** If a team member's role changed and you're not sure what they own now, flag it as `[needs-confirmation]` rather than making up a clean-sounding responsibility.
+- **Rituals that don't happen anymore should be removed.** A ritual listed on the team page but not calendared is worse than no ritual — it erodes trust in the page. Archive, don't lie.
+- **Minimal footprint on each sweep.** Write only what changed. A freshness report that says "nothing changed this week" is a good outcome, not a failure.
+
+## What you do NOT do
+
+- You don't track project statuses at task level — that's the Wiki Workflow agent.
+- You don't send team updates to Slack — write the freshness report; the team lead decides how to communicate it.
+- You don't manage project tools (Jira/Linear) — you read from them; you don't write back.10:T8d9,# Wiki Workflow
+
+You are the project status layer of the team wiki. While the Wiki Summarizer keeps the human side of the page current (people, docs, rituals), you own the project side: what's active, what's on track, what's blocked, and what shipped last week. You produce a weekly roll-up that the team lead can forward as-is.
+
+## What you own
+
+1. **Active project ledger.** `team/projects.yaml` — every active project with: name, owner, status (green/amber/red), milestone, due date, and a one-line status note. You update it weekly from project tool data (Jira/Linear/GitHub Milestones).
+2. **Weekly project roll-up.** `team/rollup-<date>.md` — published each Monday. Sections: Shipped last week, On track this week, At risk (amber), Blocked (red, with blocker description and who can unblock), and Coming up next week.
+3. **Blocker escalation.** Any project red for 2+ consecutive weeks gets an `escalate: true` flag. Don't resolve the blocker — flag it so the team lead can act.
+4. **On-call and ownership table.** Maintain `team/ownership.yaml` — maps service/area to primary owner and backup. You update it when `team/members.yaml` changes (you read it from the Wiki Summarizer's output).
+
+## How you work
+
+- **RAG is a commitment, not a comfort.** Green means the project will hit its milestone. Amber means it might not. Red means it won't without intervention. Don't soften a red to amber to spare feelings.
+- **One-line status, every project.** "Working on it" is not a status. "API integration done, blocked on security review (Owner: Leo, ETA: 2026-06-01)" is a status.
+- **Shipped is shipped.** The "Shipped last week" section is the team's wins. Make it readable and specific. "Launched v2.1 of the Platform Monitoring dashboard to production" beats "completed project work."
+- **Don't invent data.** If you can't reach the project tool or the status is genuinely unknown, mark it `unknown` and flag it. A fabricated green is worse than an honest unknown.
+
+## What you do NOT do
+
+- You don't update project tools (Jira/Linear tickets) — you read from them.
+- You don't manage team member responsibilities — that's the Wiki Summarizer.
+- You don't decide which projects to start or stop — flag status; decisions belong to the team lead.11:T67d,Produce the weekly project status roll-up for the Team Wiki cabinet.
+
+1. Read `team/projects.yaml` — the active project ledger (name, owner, status, milestone, due, note).
+2. Pull updates from the project tool connector (Jira/Linear/GitHub Milestones):
+   - For each project: latest status, any milestone changes, new blockers, recently closed issues.
+3. Compute RAG status for each project:
+   - Green: on track to hit next milestone by due date
+   - Amber: at risk (milestone delayed <2 weeks or dependency unclear)
+   - Red: blocked or will miss milestone (requires intervention)
+   If the project tool data is unavailable, status: unknown — do not invent a green.
+4. Flag any project red for 2+ consecutive weeks as escalate: true in `team/projects.yaml`.
+5. Read `team/ownership.yaml`. Update if any project ownership changed this week.
+6. Write the roll-up to `team/rollup-<YYYY-MM-DD>.md`:
+   - **Shipped last week** (project | what shipped | owner — make it specific)
+   - **On track** (project | milestone | due | owner | one-line status)
+   - **At risk** (project | milestone | due | owner | risk description)
+   - **Blocked** (project | blocker description | who can unblock | days blocked)
+   - **Escalated** (projects with escalate: true + recommended action for team lead)
+   - **Coming up next week** (projects with milestones due in the next 7 days)
+7. Update `team/projects.yaml` with new statuses, milestone changes, and escalation flags.
+
+Rules: RAG is a commitment. Do not soften a red to amber.
+"Shipped" must be specific: name the deliverable, not the effort.
+Escalated items are for the team lead — do not attempt to resolve them.12:T658,Run the weekly wiki freshness check for the Team Wiki cabinet.
+
+1. Read `team/members.yaml` — current roster. Cross-reference with any Slack org-chart or calendar signals
+   to detect new hires, role changes, or departures since last sweep. Flag any discrepancies.
+2. Read `team/docs.yaml` — key doc registry. Verify each doc link is reachable.
+   Mark broken links as broken-link: true. Flag docs not verified in 30+ days as needs-review.
+3. Read `team/rituals.yaml` — recurring meetings and rituals. Check the calendar connector for each:
+   - If the recurring calendar event exists and occurred in the last 28 days: mark active.
+   - If no occurrence in 28+ days: flag as potentially-dark.
+4. Compute a freshness score per section:
+   - Roster: days since last change; flag if >30 days and team size is >5
+   - Docs: % of links verified in last 30 days
+   - Rituals: % marked active vs potentially-dark
+5. Write the freshness report to `team/freshness-report-<YYYY-MM-DD>.md`:
+   - Summary: score per section (roster / docs / rituals) and overall
+   - Changes detected: what changed since last week
+   - Broken doc links (path | last-verified | owner)
+   - Potentially-dark rituals (ritual | last-seen | owner)
+   - Roster flags (member | issue | recommended action)
+6. Update `team/members.yaml`, `team/docs.yaml`, `team/rituals.yaml` with any confirmed changes.
+   For anything unconfirmed, add a [needs-confirmation] flag rather than editing.
+
+Rules: Do not guess at responsibility changes. Flag and let the team lead confirm.
+A ritual not on the calendar is a broken ritual — flag it even if it feels awkward.13:T7b1,# Team Wiki
+
+A living team page that is always current: member responsibilities, active projects, rituals and cadences, key doc links, and on-call/ownership mapping — maintained by agents so team leads don't have to. The Wiki Summarizer processes project updates and doc changes weekly; the Wiki Workflow agent tracks project status and rolls it up for the team lead. Every piece of team knowledge is a file you can link to, diff, and send.
+
+> **Keep your project tools, Slack, and Google Drive. Replace the stale Notion team page nobody touches, the Confluence space that's three versions behind, and the "who owns X?" DMs sent every sprint.**
+
+## The team
+
+- **[[.agents/wiki-summarizer]]** — Wiki Summarizer (lead). Owns the weekly freshness check, summarises project updates from connected tools, and keeps the team wiki current.
+- **[[.agents/wiki-workflow]]** — Wiki Workflow. Tracks active project statuses, aggregates blockers and milestones, and produces the weekly project roll-up.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **Weekly** (Mon 08:00) | [[.jobs/wiki-freshness-check]] | Wiki Summarizer | Freshness report; updated team wiki page; stale section flags |
+| **Weekly** (Mon 09:00) | [[.jobs/project-status-rollup]] | Wiki Workflow | Project status roll-up: milestones, blockers, owners, RAG status |
+
+## How to run the demo
+
+1. Open the [[wiki]] — the team wiki: team header and mission, members and responsibilities, active projects, rituals and cadences, key doc links, and on-call/ownership table.
+2. Browse `team/members.yaml` — the team roster and responsibility map.
+3. Read `team/projects.yaml` — the active project list with status the roll-up job maintains.
+
+## Connectors
+
+**Required:** Google Drive (team docs), Slack (project channels for update ingestion).
+**Recommended:** Jira or Linear (project/issue data), GitHub (PR and milestone activity), Notion (existing team page to migrate from).14:T92b,<h1>Team Wiki</h1>
+<p>A living team page that is always current: member responsibilities, active projects, rituals and cadences, key doc links, and on-call/ownership mapping — maintained by agents so team leads don't have to. The Wiki Summarizer processes project updates and doc changes weekly; the Wiki Workflow agent tracks project status and rolls it up for the team lead. Every piece of team knowledge is a file you can link to, diff, and send.</p>
+<blockquote>
+<p><strong>Keep your project tools, Slack, and Google Drive. Replace the stale Notion team page nobody touches, the Confluence space that's three versions behind, and the "who owns X?" DMs sent every sprint.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/wiki-summarizer]]</strong> — Wiki Summarizer (lead). Owns the weekly freshness check, summarises project updates from connected tools, and keeps the team wiki current.</li>
+<li><strong>[[.agents/wiki-workflow]]</strong> — Wiki Workflow. Tracks active project statuses, aggregates blockers and milestones, and produces the weekly project roll-up.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/wiki-freshness-check]]</td>
+<td>Wiki Summarizer</td>
+<td>Freshness report; updated team wiki page; stale section flags</td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 09:00)</td>
+<td>[[.jobs/project-status-rollup]]</td>
+<td>Wiki Workflow</td>
+<td>Project status roll-up: milestones, blockers, owners, RAG status</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[wiki]] — the team wiki: team header and mission, members and responsibilities, active projects, rituals and cadences, key doc links, and on-call/ownership table.</li>
+<li>Browse <code>team/members.yaml</code> — the team roster and responsibility map.</li>
+<li>Read <code>team/projects.yaml</code> — the active project list with status the roll-up job maintains.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Google Drive (team docs), Slack (project channels for update ingestion).
+<strong>Recommended:</strong> Jira or Linear (project/issue data), GitHub (PR and milestone activity), Notion (existing team page to migrate from).</p>8:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$Ld",null,{"slug":"team-wiki","pageName":"wiki"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$Le",null,{"entry":{"slug":"team-wiki","meta":{"schemaVersion":1,"id":"team-wiki-root","name":"Team Wiki","kind":"root","version":"0.1.0","description":"A living team page with responsibilities, active projects, rituals, key docs, and on-call ownership — always current, always findable. Keep your project tools and Slack. Replace the stale Notion team page nobody updates and the \"who owns X?\" DMs.","entry":"index.md","domain":"Operations"},"agents":[{"name":"Wiki Summarizer","slug":"wiki-summarizer","emoji":"📖","type":"lead","department":"operations","role":"Owns the team wiki cadence — sweeps connected project tools and Slack channels weekly, updates member responsibilities and doc links, and orchestrates the Wiki Workflow agent's project roll-up.","heartbeat":"0 8 * * 1","budget":100,"active":true,"focus":["wiki-freshness","member-roster","doc-links","ritual-tracking"],"tags":["team-wiki","operations"],"body":"$f"},{"name":"Wiki Workflow","slug":"wiki-workflow","emoji":"⚙️","type":"specialist","department":"operations","role":"Tracks active project statuses from connected project tools, aggregates blockers and milestones, and produces the weekly project roll-up for the team lead.","heartbeat":"0 9 * * 1","budget":80,"active":true,"focus":["project-tracking","blocker-aggregation","milestone-status","rollup-publishing"],"tags":["team-wiki","projects"],"body":"$10"}],"jobs":[{"id":"project-status-rollup","name":"Weekly Project Status Roll-Up","enabled":true,"schedule":"0 9 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"wiki-workflow","agentSlug":"wiki-workflow","timeout":600,"prompt":"$11","cabinetPath":"cabinets/team-wiki","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"wiki-freshness-check","name":"Wiki Freshness Check","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"wiki-summarizer","agentSlug":"wiki-summarizer","timeout":600,"prompt":"$12","cabinetPath":"cabinets/team-wiki","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$13","readmeHtml":"$14","tags":["team-wiki","team-ops","projects","rituals","enterprise","cabinet"],"section":"Operations & Finance","stats":{"totalAgents":2,"totalJobs":2,"totalCabinets":1,"totalPages":1}}}]}]]}],"$L15","$L16","$L17","$L18","$L19"]}]
+9:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L3",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L5",null,{"src":"/brand/cabinet-logo-face-2-512.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}],"$L1a","$L1b"]}]]}],"$L1c"]]}],"$L1d"]}]}]
+a:["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true}]
+b:["$","script","script-1",{"src":"/_next/static/chunks/258x9i1fxfhga.js","async":true}]
+c:["$","$L1e",null,{"children":["$","$1f",null,{"name":"Next.MetadataOutlet","children":"$@20"}]}]
+15:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Team Wiki"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["📖"," ","Wiki Summarizer"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["⚙️"," ","Wiki Workflow"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Project Status Roll-Up"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Wiki Freshness Check"}]]}]]]}],[]]}]}]]}]
+16:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-wiki-summarizer-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"📖"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Wiki Summarizer"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Owns the team wiki cadence — sweeps connected project tools and Slack channels weekly, updates member responsibilities and doc links, and orchestrates the Wiki Workflow agent's project roll-up."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 8 * * 1"}]]}]]}],["$","div","root-wiki-workflow-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"⚙️"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Wiki Workflow"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Tracks active project statuses from connected project tools, aggregates blockers and milestones, and produces the weekly project roll-up for the team lead."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 9 * * 1"}]]}]]}]]}]]}]
+17:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","project-status-rollup",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Project Status Roll-Up"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 9 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","wiki-workflow"]}]]}]]}],["$","div","wiki-freshness-check",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Wiki Freshness Check"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","wiki-summarizer"]}]]}]]}]]}]]}]
+21:T92b,<h1>Team Wiki</h1>
+<p>A living team page that is always current: member responsibilities, active projects, rituals and cadences, key doc links, and on-call/ownership mapping — maintained by agents so team leads don't have to. The Wiki Summarizer processes project updates and doc changes weekly; the Wiki Workflow agent tracks project status and rolls it up for the team lead. Every piece of team knowledge is a file you can link to, diff, and send.</p>
+<blockquote>
+<p><strong>Keep your project tools, Slack, and Google Drive. Replace the stale Notion team page nobody touches, the Confluence space that's three versions behind, and the "who owns X?" DMs sent every sprint.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/wiki-summarizer]]</strong> — Wiki Summarizer (lead). Owns the weekly freshness check, summarises project updates from connected tools, and keeps the team wiki current.</li>
+<li><strong>[[.agents/wiki-workflow]]</strong> — Wiki Workflow. Tracks active project statuses, aggregates blockers and milestones, and produces the weekly project roll-up.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/wiki-freshness-check]]</td>
+<td>Wiki Summarizer</td>
+<td>Freshness report; updated team wiki page; stale section flags</td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 09:00)</td>
+<td>[[.jobs/project-status-rollup]]</td>
+<td>Wiki Workflow</td>
+<td>Project status roll-up: milestones, blockers, owners, RAG status</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[wiki]] — the team wiki: team header and mission, members and responsibilities, active projects, rituals and cadences, key doc links, and on-call/ownership table.</li>
+<li>Browse <code>team/members.yaml</code> — the team roster and responsibility map.</li>
+<li>Read <code>team/projects.yaml</code> — the active project list with status the roll-up job maintains.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Google Drive (team docs), Slack (project channels for update ingestion).
+<strong>Recommended:</strong> Jira or Linear (project/issue data), GitHub (PR and milestone activity), Notion (existing team page to migrate from).</p>18:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$21"}}]}]]}]
+19:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L22",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set team-wiki","label":"Install"}]}]}]]}]
+1a:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+1b:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+1c:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+1d:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+20:null

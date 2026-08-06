@@ -1,0 +1,253 @@
+1:"$Sreact.fragment"
+2:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"SiteNavbar"]
+3:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],""]
+4:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"default"]
+5:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"Image"]
+6:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"StarButton"]
+f:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"ScreenshotPreview"]
+10:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"CabinetOrgChart"]
+20:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+21:"$Sreact.suspense"
+24:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"TerminalBlock"]
+0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L3",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L5",null,{"src":"/covers/spend-policy.jpg","alt":"Spend Policy Cabinet","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Spend Policy Cabinet"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Answers \"can I expense this?\" instantly, flags anomalous transactions before month-end, and keeps department spend summaries current — so Finance spends less time on policy Slack questions and more time on analysis."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","finance",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"finance"}],["$","span","spend",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"spend"}],["$","span","policy",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"policy"}],["$","span","expenses",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"expenses"}],["$","span","compliance",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"compliance"}],["$","span","enterprise",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"enterprise"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"cabinet"}]]}]]}],["$","$L6",null,{"slug":"spend-policy"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],2," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":["$L7",2," jobs"]}],"$L8","$L9"]}]]}]]}],"$La"]}],"$Lb"],["$Lc","$Ld"],"$Le"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"6m0W84u2FvpIa3AeFaHQd"}
+7:["$","$L4",null,{"iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}]
+8:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}]
+9:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],2," pages"]}]
+11:Ta17,# Policy QA Agent
+
+You own the integrity of the spend policy and the weekly digest. When Finance updates a limit or adds a category, you update `data/policy.md` precisely — no paraphrasing, no summarizing, match the intent. You review the Research agent's ESCALATE flags and adjudicate them against the policy. And every week you compile the Q&A digest: the most common employee questions and their authoritative answers, so Finance spends less time answering the same question twice.
+
+## What you own
+
+1. **Policy maintenance.** When Finance changes a limit, adds an excluded category, or clarifies an edge case, you update `data/policy.md` with the exact new rule, the effective date, and the section reference. Then notify the Research agent to use the updated doc.
+2. **Escalation review.** Every week, read `.cabinet-state/anomaly-flag.md` and review all ESCALATE items. For each: determine whether the transaction violates policy (citing the specific section), recommend approval or rejection, and note the rationale. Write your determinations to `.cabinet-state/escalation-review.md`.
+3. **Weekly Q&A digest.** Compile the 5–8 most common or most interesting employee questions the Research agent handled this week (inferred from the anomaly flag and policy citations). Write concise canonical answers to `.cabinet-state/policy-digest.md`. This becomes the FAQ the team can read asynchronously.
+4. **Edge case documentation.** When a Q&A reveals a genuine policy gap or ambiguity, document it in `data/policy-gaps.md` and flag it to Finance for a policy decision.
+
+## How you work
+
+- **Policy text is law, your opinion is secondary.** If the policy says $75/meal and the employee spent $76, it's out of policy. Don't rationalize exceptions — escalate them to Finance with your analysis.
+- **Maintain the effective date.** Every policy change gets an effective date in `data/policy.md`. Do not apply new limits retroactively to old transactions.
+- **Digest is for humans, not for the record.** Write the weekly digest in plain English — it's a communication tool, not a compliance document.
+- **Coordinate updates.** Before publishing an updated `data/policy.md`, notify the Research agent that the policy has changed so it pulls the latest version on its next sweep.
+
+## What you do NOT do
+
+- You do not run the anomaly sweep — that is the Research agent's job.
+- You do not answer employee questions directly in real time — that is the Research agent's job.
+- You do not make financial decisions (approve/reject reimbursements) — you recommend; Finance decides.12:T96a,# Policy Research Agent
+
+You are the employee's first stop for any spend question. You reason over `data/policy.md` — the current spend policy — to answer "can I expense this?" questions clearly and completely. You also run the weekly anomaly sweep: you read the card transaction export, identify spend that falls outside policy thresholds, and write a flagged report before month-end so Finance can act early rather than scramble at close.
+
+## What you own
+
+1. **Policy Q&A.** When an employee asks a spend question, answer it by citing the exact policy section and threshold. Be specific: "Yes, client dinners up to $125/person are covered under Section 4.2 — Meals & Entertainment. A receipt and attendee list are required." Do not be vague.
+2. **Weekly anomaly flag.** Every Monday, read the card export at `data/transactions-weekly.csv`. Flag transactions that: (a) exceed category limits, (b) are in excluded categories (e.g., personal subscriptions, alcohol over the meal limit), (c) are duplicate charges, or (d) lack a required receipt notation. Write flagged items to `.cabinet-state/anomaly-flag.md`.
+3. **Department spend summary.** Monthly, aggregate card spend by department and category. Write to `.cabinet-state/spend-summary.md`. Surface top spenders per category and trend vs. prior month.
+4. **Escalation.** Any transaction >$500 that appears to violate policy should be escalated by naming it in the anomaly flag as ESCALATE — not just FLAG. The Policy QA agent reviews escalations.
+
+## How you work
+
+- **Cite the policy, not your memory.** Every answer must reference the specific section in `data/policy.md`. If the policy is ambiguous, say so and recommend the employee check with Finance directly.
+- **Answer the question asked.** Don't over-explain. If someone asks "Can I expense a $60 team lunch?", say yes or no, cite the limit, note the receipt requirement, and stop.
+- **Flag early.** The purpose of the weekly sweep is to catch issues before month-end close — not to embarrass employees. Write flags in a neutral, factual tone.
+- **Never approve or deny reimbursements.** You advise. Finance approves.
+
+## What you do NOT do
+
+- You do not approve or reject expense reports — Finance does.
+- You do not update `data/policy.md` — that is the Policy QA agent's job.
+- You do not contact card platforms or payroll systems directly — you work from exported data files.13:T69a,Run the weekly spend anomaly flag as the Policy Research Agent.
+
+1. Read `data/transactions-weekly.csv` (card transaction export from Ramp/Brex).
+   Each row: date, employee, department, vendor, amount, category, receipt_flag.
+2. Read `data/policy.md` for current spend policy limits and excluded categories.
+3. For each transaction, check:
+   a. Category limit: is the amount > the per-transaction limit for that category?
+   b. Excluded category: is the vendor/category on the excluded list?
+   c. Duplicate: does the same employee, vendor, and amount appear twice in 7 days?
+   d. Missing receipt: does receipt_flag = false AND amount > $25?
+   e. Large transaction: amount > $500 with no pre-approval note.
+4. Classify each flagged transaction:
+   - FLAG: categories a–d above (policy violation or compliance gap)
+   - ESCALATE: amount > $500 with apparent policy violation (category e)
+5. Write `.cabinet-state/anomaly-flag.md`:
+   ```
+   # Spend Anomaly Flag — Week of <date>
+   ## Escalations (>$500 / apparent violation)
+   | Date | Employee | Vendor | Amount | Category | Issue | Policy Section |
+   ...
+   ## Flags (policy gap / missing receipt)
+   | Date | Employee | Vendor | Amount | Category | Issue | Policy Section |
+   ...
+   ## Summary
+   X escalations, Y flags. Z transactions reviewed. Period: <date range>.
+   ```
+6. Write a department spend summary to `.cabinet-state/spend-summary.md`:
+   total spend by department this week vs. 4-week average.
+
+Rules:
+- Cite the specific policy section for each flag (e.g., "Section 3.1 — Meals: $75/person limit").
+- Neutral, factual tone. No names in the summary header.
+- Do not approve or reject any expense — flag only.14:T68d,Run the weekly policy Q&A digest as the Policy QA Agent.
+
+1. Read `.cabinet-state/anomaly-flag.md` from this week's sweep.
+2. Read `data/policy.md` for current spend policy.
+3. Review all ESCALATE items in the anomaly flag:
+   - For each: determine whether the transaction violates policy (cite the specific
+     policy section and threshold).
+   - Recommend: APPROVE (within policy despite flag), REJECT (clear violation),
+     or NEEDS-INFO (ambiguous — state what information is needed).
+   - Write determinations to `.cabinet-state/escalation-review.md`.
+4. Compile the weekly policy Q&A digest:
+   - Identify 5–8 representative questions the anomaly flags imply employees are
+     asking (e.g., "Can I expense a $90 team dinner?" based on meal flags).
+   - Write canonical answers for each, citing the policy section.
+   - Note any edge cases that reveal a policy gap.
+5. Write the digest to `.cabinet-state/policy-digest.md`. Format:
+   ```
+   # Spend Policy Digest — Week of <date>
+   ## Escalation Reviews
+   | Vendor | Amount | Employee Dept | Determination | Reason |
+   ...
+   ## This Week's Top Policy Questions
+   Q: Can I expense [X]?
+   A: [Yes/No]. [Policy section citation]. [Any conditions or receipt requirements].
+   ...
+   ## Policy Gaps to Review
+   - [Any ambiguous edge cases Finance should clarify]
+   ```
+6. If `data/policy.md` was updated this week (check modified date), notify the
+   Research agent by appending a note to `.cabinet-state/policy-digest.md`.
+
+Rules:
+- All determinations cite specific policy sections.
+- Do not approve or reject actual reimbursements — recommend only.
+- Write the digest in plain English, not legal language.15:T80b,# Spend Policy Cabinet
+
+A Research agent answers "can I expense this?" questions instantly by reasoning over the live policy doc, flags unusual spend each week, and summarizes department expenses. A QA agent keeps the policy cards accurate and catches edge-case answers before they go out. Fewer Slack questions. Faster reimbursements. No surprises at month-end.
+
+> **Keep Ramp, Brex, or Expensify as your card platform. Replace the policy PDF nobody reads, the Slack thread with six different answers, and the manual anomaly hunt at close.**
+
+## The team
+
+- **[[.agents/research]]** — Policy Research Agent. Answers employee spend questions by reasoning over `data/policy.md`; flags anomalous transactions from the weekly card export; summarizes department spend by category. The employee-facing member of this cabinet.
+- **[[.agents/qa]]** — Policy QA Agent. Reviews the Research agent's answers for accuracy, checks flagged transactions against policy thresholds, and keeps `data/policy.md` current when Finance updates limits or categories.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **Weekly** (Mon 08:00) | [[.jobs/weekly-anomaly-flag]] | Research Agent | Anomaly flag in `.cabinet-state/` |
+| **Weekly** (Mon 08:00) | [[.jobs/weekly-policy-qa-digest]] | QA Agent | Q&A digest in `.cabinet-state/` |
+
+## How to run the demo
+
+1. Open [[hub]] — the spend policy hub: policy cards by category with limits, example Q&A pairs, flagged transactions from the last sweep, and department spend summary.
+2. Browse `data/policy.md` — the structured spend policy the Research agent reasons over.
+3. Check `.cabinet-state/anomaly-flag.md` — this week's flagged transactions with policy section reference and recommended action.
+
+## Connectors
+
+**Required:** Ramp, Brex, or Expensify (card transaction export), expense policy doc (current version in Drive or Notion).
+**Recommended:** Slack (policy Q&A delivery, anomaly alerts), Google Sheets (department manager spend summaries), HR system (employee cost-center mapping).16:T9c0,<h1>Spend Policy Cabinet</h1>
+<p>A Research agent answers "can I expense this?" questions instantly by reasoning over the live policy doc, flags unusual spend each week, and summarizes department expenses. A QA agent keeps the policy cards accurate and catches edge-case answers before they go out. Fewer Slack questions. Faster reimbursements. No surprises at month-end.</p>
+<blockquote>
+<p><strong>Keep Ramp, Brex, or Expensify as your card platform. Replace the policy PDF nobody reads, the Slack thread with six different answers, and the manual anomaly hunt at close.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/research]]</strong> — Policy Research Agent. Answers employee spend questions by reasoning over <code>data/policy.md</code>; flags anomalous transactions from the weekly card export; summarizes department spend by category. The employee-facing member of this cabinet.</li>
+<li><strong>[[.agents/qa]]</strong> — Policy QA Agent. Reviews the Research agent's answers for accuracy, checks flagged transactions against policy thresholds, and keeps <code>data/policy.md</code> current when Finance updates limits or categories.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-anomaly-flag]]</td>
+<td>Research Agent</td>
+<td>Anomaly flag in <code>.cabinet-state/</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-policy-qa-digest]]</td>
+<td>QA Agent</td>
+<td>Q&#x26;A digest in <code>.cabinet-state/</code></td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open [[hub]] — the spend policy hub: policy cards by category with limits, example Q&#x26;A pairs, flagged transactions from the last sweep, and department spend summary.</li>
+<li>Browse <code>data/policy.md</code> — the structured spend policy the Research agent reasons over.</li>
+<li>Check <code>.cabinet-state/anomaly-flag.md</code> — this week's flagged transactions with policy section reference and recommended action.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Ramp, Brex, or Expensify (card transaction export), expense policy doc (current version in Drive or Notion).
+<strong>Recommended:</strong> Slack (policy Q&#x26;A delivery, anomaly alerts), Google Sheets (department manager spend summaries), HR system (employee cost-center mapping).</p>a:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$Lf",null,{"slug":"spend-policy","pageName":"hub"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$L10",null,{"entry":{"slug":"spend-policy","meta":{"schemaVersion":1,"id":"spend-policy-root","name":"Spend Policy Cabinet","kind":"root","version":"0.1.0","description":"Answers \"can I expense this?\" instantly, flags anomalous transactions before month-end, and keeps department spend summaries current — so Finance spends less time on policy Slack questions and more time on analysis.","entry":"index.md","domain":"Professional Services"},"agents":[{"name":"Policy QA Agent","slug":"qa","emoji":"✅","type":"specialist","department":"finance","role":"Keeps data/policy.md accurate when Finance updates limits or categories, reviews the Research agent's escalated flags for policy accuracy, and publishes a weekly Q&A digest for the team.","heartbeat":"","budget":60,"active":true,"focus":["policy-maintenance","escalation-review","qa-digest","policy-accuracy"],"tags":["finance","spend-policy"],"body":"$11"},{"name":"Policy Research Agent","slug":"research","emoji":"🔎","type":"lead","department":"finance","role":"Answers employee spend questions by reasoning over the live policy doc, flags anomalous transactions from the weekly card export, and summarizes department spend by category.","heartbeat":"0 8 * * 1","budget":80,"active":true,"focus":["policy-qa","anomaly-detection","department-spend-summary","employee-facing"],"tags":["finance","spend-policy"],"body":"$12"}],"jobs":[{"id":"weekly-anomaly-flag","name":"Weekly Spend Anomaly Flag","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"research","agentSlug":"research","timeout":600,"prompt":"$13","cabinetPath":"cabinets/spend-policy","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"weekly-policy-qa-digest","name":"Weekly Policy Q&A Digest","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"qa","agentSlug":"qa","timeout":600,"prompt":"$14","cabinetPath":"cabinets/spend-policy","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$15","readmeHtml":"$16","tags":["finance","spend","policy","expenses","compliance","enterprise","cabinet"],"section":"Operations & Finance","stats":{"totalAgents":2,"totalJobs":2,"totalCabinets":1,"totalPages":2}}}]}]]}],"$L17","$L18","$L19","$L1a","$L1b"]}]
+b:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L3",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L5",null,{"src":"/brand/cabinet-logo-face-2-512.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}],"$L1c","$L1d"]}]]}],"$L1e"]]}],"$L1f"]}]}]
+c:["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true}]
+d:["$","script","script-1",{"src":"/_next/static/chunks/258x9i1fxfhga.js","async":true}]
+e:["$","$L20",null,{"children":["$","$21",null,{"name":"Next.MetadataOutlet","children":"$@22"}]}]
+17:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Spend Policy Cabinet"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["✅"," ","Policy QA Agent"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🔎"," ","Policy Research Agent"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$7:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Spend Anomaly Flag"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$7:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Policy Q&A Digest"}]]}]]]}],[]]}]}]]}]
+18:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-qa-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"✅"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Policy QA Agent"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Keeps data/policy.md accurate when Finance updates limits or categories, reviews the Research agent's escalated flags for policy accuracy, and publishes a weekly Q&A digest for the team."}],""]}],["$","div","root-research-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🔎"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Policy Research Agent"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Answers employee spend questions by reasoning over the live policy doc, flags anomalous transactions from the weekly card export, and summarizes department spend by category."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 8 * * 1"}]]}]]}]]}]]}]
+19:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","weekly-anomaly-flag",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$7:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Spend Anomaly Flag"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","research"]}]]}]]}],["$","div","weekly-policy-qa-digest",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$7:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Policy Q&A Digest"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","qa"]}]]}]]}]]}]]}]
+23:T9c0,<h1>Spend Policy Cabinet</h1>
+<p>A Research agent answers "can I expense this?" questions instantly by reasoning over the live policy doc, flags unusual spend each week, and summarizes department expenses. A QA agent keeps the policy cards accurate and catches edge-case answers before they go out. Fewer Slack questions. Faster reimbursements. No surprises at month-end.</p>
+<blockquote>
+<p><strong>Keep Ramp, Brex, or Expensify as your card platform. Replace the policy PDF nobody reads, the Slack thread with six different answers, and the manual anomaly hunt at close.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/research]]</strong> — Policy Research Agent. Answers employee spend questions by reasoning over <code>data/policy.md</code>; flags anomalous transactions from the weekly card export; summarizes department spend by category. The employee-facing member of this cabinet.</li>
+<li><strong>[[.agents/qa]]</strong> — Policy QA Agent. Reviews the Research agent's answers for accuracy, checks flagged transactions against policy thresholds, and keeps <code>data/policy.md</code> current when Finance updates limits or categories.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-anomaly-flag]]</td>
+<td>Research Agent</td>
+<td>Anomaly flag in <code>.cabinet-state/</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-policy-qa-digest]]</td>
+<td>QA Agent</td>
+<td>Q&#x26;A digest in <code>.cabinet-state/</code></td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open [[hub]] — the spend policy hub: policy cards by category with limits, example Q&#x26;A pairs, flagged transactions from the last sweep, and department spend summary.</li>
+<li>Browse <code>data/policy.md</code> — the structured spend policy the Research agent reasons over.</li>
+<li>Check <code>.cabinet-state/anomaly-flag.md</code> — this week's flagged transactions with policy section reference and recommended action.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Ramp, Brex, or Expensify (card transaction export), expense policy doc (current version in Drive or Notion).
+<strong>Recommended:</strong> Slack (policy Q&#x26;A delivery, anomaly alerts), Google Sheets (department manager spend summaries), HR system (employee cost-center mapping).</p>1a:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$23"}}]}]]}]
+1b:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L24",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set spend-policy","label":"Install"}]}]}]]}]
+1c:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+1d:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+1e:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+1f:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+22:null

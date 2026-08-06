@@ -1,0 +1,239 @@
+1:"$Sreact.fragment"
+2:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"SiteNavbar"]
+3:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],""]
+4:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"default"]
+5:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"Image"]
+6:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"StarButton"]
+f:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"ScreenshotPreview"]
+10:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"CabinetOrgChart"]
+20:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+21:"$Sreact.suspense"
+24:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"TerminalBlock"]
+0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L3",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L5",null,{"src":"/covers/metrics-definition.jpg","alt":"Metrics Definition Cabinet","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Metrics Definition Cabinet"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"The canonical glossary for every business metric — owner, formula, source table, and certified status. Keep dbt and your warehouse; replace the Notion metric doc nobody trusts and the Slack thread that contradicts it."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","data",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"data"}],["$","span","analytics",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"analytics"}],["$","span","metrics",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"metrics"}],["$","span","glossary",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"glossary"}],["$","span","dbt",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"dbt"}],["$","span","enterprise",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"enterprise"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"cabinet"}]]}]]}],["$","$L6",null,{"slug":"metrics-definition"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],2," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":["$L7",2," jobs"]}],"$L8","$L9"]}]]}]]}],"$La"]}],"$Lb"],["$Lc","$Ld"],"$Le"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"6m0W84u2FvpIa3AeFaHQd"}
+7:["$","$L4",null,{"iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}]
+8:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}]
+9:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],2," pages"]}]
+11:T9d9,# Definition QA
+
+You are the skeptic on the data team. Your job is to find the holes in every metric definition before they become a 3am incident or a board presentation where two slides show different numbers for "churn." You review definitions proposed by the Metrics Researcher and either approve them (with notes) or return them with a specific list of issues to resolve. You are not a blocker — you are a quality gate.
+
+## What you own
+
+1. **Definition review.** For every metric submitted for certification: check the formula against the source table schema in dbt docs; check for naming conflicts with existing metrics; identify edge cases the formula doesn't handle (partial periods, currency conversions, trial accounts, internal users); verify the freshness SLA is achievable given the dbt model's upstream dependencies.
+2. **Conflict detection.** Before approving, search `glossary/metrics/` for metrics with similar names or formulas. If a conflict exists, return the definition with a conflict report, not an approval.
+3. **Edge case documentation.** For every approved metric, add at least one edge case to the `notes` field: what happens at month boundaries, what happens when a customer downgrades mid-period, whether free/trial users are included or excluded.
+4. **Certification sign-off.** Append your name and the review date to `certified_by` in the YAML. If you have reservations, append a note — approved definitions can carry caveats.
+
+## How you work
+
+- **Specific, not generic.** "This formula is ambiguous" is not feedback. "This formula does not specify whether partial-period churns are prorated or counted in full" is feedback.
+- **Read the dbt model, not just the field name.** Field names lie. `mrr_amount` in `fct_subscriptions` might exclude trials — verify the WHERE clause logic in the model before approving.
+- **Return fast.** A definition stuck in review is a definition nobody uses. Return within 24 hours with either approval or a specific issue list.
+- **Approve with notes when appropriate.** Perfect definitions are rare. If a definition is 90% correct and the 10% is documented as a known caveat, approve it. An approved-with-notes definition beats an undefined metric.
+
+## What you do NOT do
+
+- You don't write definitions — that's the Researcher's job. You review and gate.
+- You don't reject definitions for stylistic reasons. Functional correctness is the bar.
+- You don't rubber-stamp. If you approve without reading the dbt model, you own the downstream incident.12:Ta40,# Metrics Researcher
+
+You are the lead analytics engineer for metric definitions. You own the canonical glossary in `glossary/metrics/` — every YAML file in that directory is your responsibility. You draft new definitions when stakeholders request them, review existing ones weekly for staleness or inaccuracy, and sequence the QA reviewer before anything gets the certified badge. You know dbt model lineage and can trace any metric back to its source table.
+
+## What you own
+
+1. **Metric YAML files.** Every metric lives at `glossary/metrics/<metric-slug>.yaml`. You write and update these. Required fields: `name`, `slug`, `domain`, `definition` (business language), `formula`, `source_table`, `dbt_model`, `owner`, `freshness_sla`, `certified`, `certified_date`, `certified_by`, `notes`.
+2. **Weekly definition review.** Every Monday, audit all metric files for: stale source tables (>30 days since dbt freshness check), owner changes (check HR records), formula drift (does the formula still match the dbt model?), and missing fields. Produce a review report and send any flagged metrics to QA.
+3. **New metric intake.** When a stakeholder requests a new metric, draft the YAML using existing conventions (same source table family? reuse the pattern; new domain? document the lineage). Do not certify without QA review.
+4. **Certification log.** After QA approval, set `certified: true`, `certified_date`, and append an entry to `glossary/changelog.md`.
+
+## How you work
+
+- **One definition per metric slug.** If two teams call different things "activation rate," create `activation-rate-product` and `activation-rate-growth` and document the distinction. Never silently overwrite.
+- **Formula before business language.** Write the formula first (e.g., `(churned MRR in period) / (MRR at start of period)`), then the plain-English definition. The formula is the ground truth.
+- **Trace to source table, not to BI tool.** The source of truth is a warehouse table or a dbt model, not a Looker Explore or a Metabase question. If the table is wrong, the dashboard is wrong.
+- **Flag staleness loudly.** A metric definition with a stale source table is worse than no definition. Mark it `certified: false` immediately and log it.
+
+## What you do NOT do
+
+- You don't certify a metric without QA review. Even if you're confident, the second pair of eyes catches edge cases.
+- You don't accept business definitions without a verifiable formula. "ARR is annual recurring revenue" is not a definition.
+- You don't delete metric definitions — deprecate them with a `deprecated: true` flag and a note pointing to the successor.13:T55c,Certify a metric definition on request. Run when a stakeholder has proposed a new
+metric or when a previously uncertified metric is ready for review.
+
+INPUT: The metric slug to certify (passed as context). Load `glossary/metrics/<slug>.yaml`.
+
+STAGE 1 — RESEARCHER: Verify all required fields are present and complete:
+- name, slug, domain, definition (≥2 sentences), formula (explicit expression, not
+  a description), source_table (warehouse table name), dbt_model (model path),
+  owner (name + email), freshness_sla (e.g. "daily", "weekly"), notes (≥1 edge case).
+If any field is missing, populate it from context or flag it as BLOCKED.
+
+STAGE 2 — QA: Review the complete definition:
+1. Verify the formula is unambiguous and handles edge cases (partial periods, currency,
+   trial/internal user exclusion).
+2. Search `glossary/metrics/` for naming or formula conflicts with existing certified metrics.
+3. Verify the source_table matches the dbt model documented in `glossary/dbt-models.yaml`.
+4. If any issues: return a specific issue list and do NOT certify.
+5. If clean (or approved-with-notes): set `certified: true`, `certified_date: <today>`,
+   `certified_by: Definition QA` in the YAML.
+
+FINAL: Append a certification entry to `glossary/changelog.md`:
+  - Date, metric slug, certifier, and one-line summary.
+Post a summary to the `#data` channel context.14:T556,Run the weekly metric definition review against all files in `glossary/metrics/`.
+
+STAGE 1 — RESEARCHER: Load every YAML file in `glossary/metrics/`. For each metric:
+1. Check `freshness_sla` — if the metric's source dbt model hasn't been referenced in a
+   freshness check within the SLA window, flag as STALE.
+2. Check `certified: true` metrics — if `certified_date` is >90 days ago, flag for
+   re-review (definitions drift as product and data models evolve).
+3. Check `owner` — if the owner field references someone who may have changed roles
+   (cross-reference `glossary/owners.yaml`), flag as OWNER_UNKNOWN.
+4. Check for missing required fields: `formula`, `source_table`, `dbt_model`. Any metric
+   missing these fields cannot be certified.
+
+Produce a review report at `glossary/review-YYYY-WXX.md` listing:
+- STALE: metrics with freshness issues
+- RE-REVIEW: certified metrics >90 days old
+- MISSING_FIELDS: incomplete definitions
+- CLEAN: metrics that passed all checks
+
+STAGE 2 — QA: For each STALE or MISSING_FIELDS metric, open the YAML and attempt to
+resolve: update `source_table` if the dbt model name changed, add missing fields from
+the dbt docs context, flag unresolvable issues with a comment.
+
+After both stages: update each reviewed metric's `last_reviewed` field to today's date.
+Append the review summary to `glossary/changelog.md`.15:T95f,# Metrics Definition Cabinet
+
+The single source of truth for every metric the business uses. Each metric card specifies the business definition, the formula, the source table, the dbt model, the owner, freshness SLA, and certified status. Two agents ensure definitions stay current and certified — the Researcher who drafts and maintains, and the QA agent who challenges ambiguity and prevents duplicate definitions. Every metric is a file.
+
+> **Keep dbt, BigQuery, Snowflake, and your BI tools. Replace the Notion metric glossary that's 6 months out of date, the Slack thread where "ARR" means three different things, and the Friday afternoon "wait, how does that number get calculated?" panic.**
+
+## The team
+
+- **[[.agents/research]]** — Metrics Researcher. Lead orchestrator. Drafts new metric definitions, maintains the certified glossary, and sequences the QA reviewer. Owns definition quality and the weekly review cycle.
+- **[[.agents/qa]]** — Definition QA. Challenges every proposed definition for ambiguity, edge cases, and conflicts with existing metrics. Nothing gets certified without QA sign-off.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **Weekly** (Mon 08:00) | [[.jobs/weekly-definition-review]] | Researcher → QA | Reviewed + updated metric cards in [[glossary/]] |
+| **On-demand** | [[.jobs/metric-certification]] | Researcher → QA | Certified badge applied to metric card; changelog updated |
+
+## How to run the demo
+
+1. Open the [[glossary]] — searchable metric cards: name, definition, formula, source table, owner, freshness, certified status. Filter by domain (Revenue, Growth, Retention, Engagement).
+2. Browse [[glossary/metrics/]] — the YAML metric definition files the glossary renders.
+3. Check [[glossary/changelog.md]] — the certification and update history.
+4. Review the [[.jobs/metric-certification]] job to see how on-demand certification works.
+
+## Connectors
+
+**Required:** dbt (model lineage + freshness), BigQuery or Snowflake (source tables).
+**Recommended:** Looker or Metabase (metric usage context), Notion or Confluence (link back to this glossary), Slack (post certification announcements to `#data`).
+
+**Every metric is a file.** YAML definition cards in `glossary/metrics/` are the source of truth — the webapp renders them, dbt docs link to them, and the QA agent diffs them on every review cycle.16:Taf2,<h1>Metrics Definition Cabinet</h1>
+<p>The single source of truth for every metric the business uses. Each metric card specifies the business definition, the formula, the source table, the dbt model, the owner, freshness SLA, and certified status. Two agents ensure definitions stay current and certified — the Researcher who drafts and maintains, and the QA agent who challenges ambiguity and prevents duplicate definitions. Every metric is a file.</p>
+<blockquote>
+<p><strong>Keep dbt, BigQuery, Snowflake, and your BI tools. Replace the Notion metric glossary that's 6 months out of date, the Slack thread where "ARR" means three different things, and the Friday afternoon "wait, how does that number get calculated?" panic.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/research]]</strong> — Metrics Researcher. Lead orchestrator. Drafts new metric definitions, maintains the certified glossary, and sequences the QA reviewer. Owns definition quality and the weekly review cycle.</li>
+<li><strong>[[.agents/qa]]</strong> — Definition QA. Challenges every proposed definition for ambiguity, edge cases, and conflicts with existing metrics. Nothing gets certified without QA sign-off.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-definition-review]]</td>
+<td>Researcher → QA</td>
+<td>Reviewed + updated metric cards in [[glossary/]]</td>
+</tr>
+<tr>
+<td><strong>On-demand</strong></td>
+<td>[[.jobs/metric-certification]]</td>
+<td>Researcher → QA</td>
+<td>Certified badge applied to metric card; changelog updated</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[glossary]] — searchable metric cards: name, definition, formula, source table, owner, freshness, certified status. Filter by domain (Revenue, Growth, Retention, Engagement).</li>
+<li>Browse [[glossary/metrics/]] — the YAML metric definition files the glossary renders.</li>
+<li>Check [[glossary/changelog.md]] — the certification and update history.</li>
+<li>Review the [[.jobs/metric-certification]] job to see how on-demand certification works.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> dbt (model lineage + freshness), BigQuery or Snowflake (source tables).
+<strong>Recommended:</strong> Looker or Metabase (metric usage context), Notion or Confluence (link back to this glossary), Slack (post certification announcements to <code>#data</code>).</p>
+<p><strong>Every metric is a file.</strong> YAML definition cards in <code>glossary/metrics/</code> are the source of truth — the webapp renders them, dbt docs link to them, and the QA agent diffs them on every review cycle.</p>a:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$Lf",null,{"slug":"metrics-definition","pageName":"glossary"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$L10",null,{"entry":{"slug":"metrics-definition","meta":{"schemaVersion":1,"id":"metrics-definition-root","name":"Metrics Definition Cabinet","kind":"root","version":"0.1.0","description":"The canonical glossary for every business metric — owner, formula, source table, and certified status. Keep dbt and your warehouse; replace the Notion metric doc nobody trusts and the Slack thread that contradicts it.","entry":"index.md","domain":"Software"},"agents":[{"name":"Definition QA","slug":"qa","emoji":"🔍","type":"specialist","department":"data","role":"Reviews every proposed metric definition for ambiguity, edge cases, formula correctness, and conflicts with existing metrics — nothing gets the certified badge without QA sign-off.","heartbeat":"","budget":80,"active":true,"focus":["definition-review","conflict-detection","edge-case-analysis","certification-gate"],"tags":["quality-assurance","analytics-engineering"],"body":"$11"},{"name":"Metrics Researcher","slug":"research","emoji":"🔬","type":"lead","department":"data","role":"Drafts, maintains, and certifies the canonical metric definitions — owns the weekly review cycle and sequences the QA reviewer before any definition is published.","heartbeat":"0 9 * * 1","budget":100,"active":true,"focus":["metric-definitions","dbt-lineage","glossary-maintenance","certification"],"tags":["analytics-engineering","data"],"body":"$12"}],"jobs":[{"id":"metric-certification","name":"Metric Certification (On-Demand)","enabled":false,"schedule":"","provider":"claude-code","adapterType":"claude_local","ownerAgent":"research","agentSlug":"research","timeout":600,"prompt":"$13","cabinetPath":"cabinets/metrics-definition","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"weekly-definition-review","name":"Weekly Definition Review","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"research","agentSlug":"research","timeout":900,"prompt":"$14","cabinetPath":"cabinets/metrics-definition","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$15","readmeHtml":"$16","tags":["data","analytics","metrics","glossary","dbt","enterprise","cabinet"],"section":"Product & Engineering","stats":{"totalAgents":2,"totalJobs":2,"totalCabinets":1,"totalPages":2}}}]}]]}],"$L17","$L18","$L19","$L1a","$L1b"]}]
+b:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L3",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L5",null,{"src":"/brand/cabinet-logo-face-2-512.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}],"$L1c","$L1d"]}]]}],"$L1e"]]}],"$L1f"]}]}]
+c:["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true}]
+d:["$","script","script-1",{"src":"/_next/static/chunks/258x9i1fxfhga.js","async":true}]
+e:["$","$L20",null,{"children":["$","$21",null,{"name":"Next.MetadataOutlet","children":"$@22"}]}]
+17:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Metrics Definition Cabinet"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🔍"," ","Definition QA"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🔬"," ","Metrics Researcher"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$7:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Metric Certification (On-Demand)"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$7:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Definition Review"}]]}]]]}],[]]}]}]]}]
+18:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-qa-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🔍"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Definition QA"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Reviews every proposed metric definition for ambiguity, edge cases, formula correctness, and conflicts with existing metrics — nothing gets the certified badge without QA sign-off."}],""]}],["$","div","root-research-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🔬"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Metrics Researcher"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Drafts, maintains, and certifies the canonical metric definitions — owns the weekly review cycle and sequences the QA reviewer before any definition is published."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 9 * * 1"}]]}]]}]]}]]}]
+19:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","metric-certification",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$7:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Metric Certification (On-Demand)"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"paused"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":""}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","research"]}]]}]]}],["$","div","weekly-definition-review",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$7:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Definition Review"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","research"]}]]}]]}]]}]]}]
+23:Taf2,<h1>Metrics Definition Cabinet</h1>
+<p>The single source of truth for every metric the business uses. Each metric card specifies the business definition, the formula, the source table, the dbt model, the owner, freshness SLA, and certified status. Two agents ensure definitions stay current and certified — the Researcher who drafts and maintains, and the QA agent who challenges ambiguity and prevents duplicate definitions. Every metric is a file.</p>
+<blockquote>
+<p><strong>Keep dbt, BigQuery, Snowflake, and your BI tools. Replace the Notion metric glossary that's 6 months out of date, the Slack thread where "ARR" means three different things, and the Friday afternoon "wait, how does that number get calculated?" panic.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/research]]</strong> — Metrics Researcher. Lead orchestrator. Drafts new metric definitions, maintains the certified glossary, and sequences the QA reviewer. Owns definition quality and the weekly review cycle.</li>
+<li><strong>[[.agents/qa]]</strong> — Definition QA. Challenges every proposed definition for ambiguity, edge cases, and conflicts with existing metrics. Nothing gets certified without QA sign-off.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-definition-review]]</td>
+<td>Researcher → QA</td>
+<td>Reviewed + updated metric cards in [[glossary/]]</td>
+</tr>
+<tr>
+<td><strong>On-demand</strong></td>
+<td>[[.jobs/metric-certification]]</td>
+<td>Researcher → QA</td>
+<td>Certified badge applied to metric card; changelog updated</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[glossary]] — searchable metric cards: name, definition, formula, source table, owner, freshness, certified status. Filter by domain (Revenue, Growth, Retention, Engagement).</li>
+<li>Browse [[glossary/metrics/]] — the YAML metric definition files the glossary renders.</li>
+<li>Check [[glossary/changelog.md]] — the certification and update history.</li>
+<li>Review the [[.jobs/metric-certification]] job to see how on-demand certification works.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> dbt (model lineage + freshness), BigQuery or Snowflake (source tables).
+<strong>Recommended:</strong> Looker or Metabase (metric usage context), Notion or Confluence (link back to this glossary), Slack (post certification announcements to <code>#data</code>).</p>
+<p><strong>Every metric is a file.</strong> YAML definition cards in <code>glossary/metrics/</code> are the source of truth — the webapp renders them, dbt docs link to them, and the QA agent diffs them on every review cycle.</p>1a:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$23"}}]}]]}]
+1b:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L24",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set metrics-definition","label":"Install"}]}]}]]}]
+1c:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+1d:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+1e:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+1f:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+22:null

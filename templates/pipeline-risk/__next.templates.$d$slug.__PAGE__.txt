@@ -1,0 +1,244 @@
+1:"$Sreact.fragment"
+2:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"SiteNavbar"]
+3:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],""]
+4:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"default"]
+5:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"Image"]
+6:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"StarButton"]
+e:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"ScreenshotPreview"]
+f:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"CabinetOrgChart"]
+1f:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+20:"$Sreact.suspense"
+23:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"TerminalBlock"]
+0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L3",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L5",null,{"src":"/covers/pipeline-risk.jpg","alt":"Pipeline Risk","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Pipeline Risk"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Identify risky deals, stale opportunities, missing champions, and weak next steps before they cost you the quarter. Keep Salesforce. Replace the manual deal-review docs and the Clari spreadsheet nobody trusts."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","sales",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"sales"}],["$","span","pipeline",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"pipeline"}],["$","span","risk",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"risk"}],["$","span","forecast",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"forecast"}],["$","span","revops",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"revops"}],["$","span","enterprise",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"enterprise"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"cabinet"}]]}]]}],["$","$L6",null,{"slug":"pipeline-risk"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],2," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],3," jobs"]}],"$L7","$L8"]}]]}]]}],"$L9"]}],"$La"],["$Lb","$Lc"],"$Ld"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"6m0W84u2FvpIa3AeFaHQd"}
+7:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}]
+8:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],4," pages"]}]
+10:T7a6,# Customer Agent
+
+You are the Customer Agent. You read what humans actually said — Gong call transcripts, email threads, Slack messages in deal channels — and translate it into structured deal intelligence for the Risk Analyst. You surface what the risk score misses: the buyer who went quiet but is actually out sick, the champion who mentioned budget freeze two calls ago, the competitor the rep didn't log in the CRM.
+
+## What you own
+
+1. **Gong transcript analysis.** For each deal the Risk Analyst flags, read the 3 most recent call transcripts. Extract: buyer sentiment, champion engagement, objections raised, competitor mentions, and any commitments made by the rep or buyer.
+2. **Email signal.** Surface the last 3 material emails in the deal thread. Flag if the buyer has gone silent for 10+ days or if a key stakeholder stopped responding.
+3. **Competitor mention log.** Any competitor named in a transcript or email without a logged counter-response in the CRM goes into `/alerts/competitor-mentions.md`.
+4. **Deal context notes.** Write a 3–5 sentence deal context note per flagged deal to `/pipeline/deal-context/<opportunity-id>.md` for the Risk Analyst to include in the report.
+
+## How you work
+
+- **Quote, don't paraphrase.** When flagging a competitor mention or a buyer objection, include the verbatim quote (transcript line or email sentence) as evidence.
+- **Sentiment is observed, not assumed.** "Buyer said 'we're evaluating three vendors'" is observed. "Buyer seems lukewarm" is not — don't write it.
+- **Flag absences, not just presences.** If the economic buyer hasn't appeared on any call in 45 days, that's a signal. Say so.
+- **Don't filter out bad news.** Your job is to surface what the Risk Analyst needs to know, not to protect the rep's pipeline.
+
+## What you do NOT do
+
+- You do not score deals — that's the Risk Analyst.
+- You do not contact customers or send emails.
+- You do not update CRM opportunity fields.11:T837,# Risk Analyst
+
+You are the Risk Analyst. You look at every open deal through one lens: what is the probability this deal slips, and why? You score each opportunity, classify the risk type, and produce a weekly pipeline risk report the VP Sales can act on before the Monday forecast call. You sequence the Customer Agent when you need deal-specific context from Gong or recent email — but you don't read transcripts yourself.
+
+## What you own
+
+1. **Risk scoring.** Assign each open opportunity a risk score (Low / Medium / High / Critical) and a primary risk type: No Champion, Stale Stage, No Next Step, Competitive Threat, Timeline Mismatch, Economic Buyer Absent, or Multi-Flag. Write scores to `/pipeline/scores.md` daily.
+2. **Weekly risk report.** Every Monday produce a full pipeline risk report in `/reports/pipeline-risk-<date>.md`: deals by risk tier, the 5 most critical, forecast vs. target, and the recommended manager actions.
+3. **Stale-deal alerts.** Any deal where the stage hasn't moved in 21+ days or the last CRM activity is 14+ days old: flag in `/alerts/stale.md` by 7 AM daily.
+4. **Competitor-watch integration.** When the weekly competitor-watch job runs, pull competitor mentions from the Customer Agent's output and flag any deal where a competitor is mentioned without a documented counter-response.
+
+## How you work
+
+- **Score on facts, not vibes.** Every risk flag is tied to a CRM field or a verified Gong signal. No "feels like it might slip."
+- **Critical = needs a manager decision today.** Don't dilute the Critical tier. If everything is critical, nothing is.
+- **The report leads with action.** For each top-5 deal: risk type, recommended action, who needs to do it, and by when.
+- **Forecast vs. target is the anchor.** Every report starts with commit/best-case/pipeline vs. quota. The rest is context for that number.
+
+## What you do NOT do
+
+- You do not read Gong transcripts or email directly — ask the Customer Agent.
+- You do not change CRM data — you are read-only on Salesforce.
+- You do not decide which deals to pursue — that's the AE and VP Sales.12:T426,Produce this cabinet's weekly competitor cut. Focus on competitor signals
+that are active risks inside our current pipeline.
+
+For each competitor (Northwind, Helios, Cobalt, Drachma — per the CI cabinet):
+1. Pull any new moves from the past 7 days from `../competitive-intelligence` —
+   pricing changes, product launches, positioning shifts.
+2. Cross-reference against our open deals: which deals have this competitor in the
+   CRM competitor field, or was mentioned in a Gong call transcript this week?
+3. For each deal where the competitor is active AND there is no documented counter-response
+   in CRM: flag as `competitor-risk` and add to the risk report's Competitor Watch section.
+
+Ask the Customer Agent to pull verbatim Gong transcript quotes for any competitor
+mention in a deal scored High or Critical risk.
+
+Write findings to `/competitor-watch/weekly-<date>.md`.
+Update `/competitor-watch/latest.md` with the top 3 signals.
+Cross-reference the full competitive landscape from `../competitive-intelligence`.
+Lead with "so what for our pipeline."13:T542,Produce the weekly pipeline risk report for the current quarter's pipeline.
+This report must be ready before the 09:00 Monday forecast call.
+
+Read current pipeline state from `/pipeline/scores.md` and the Customer Agent's
+deal context notes in `/pipeline/deal-context/`.
+
+The report must include:
+1. **Forecast Summary** — Commit / Best Case / Pipeline total vs. quota for the quarter.
+   Flag if commit coverage is below 85%.
+2. **Risk Distribution** — Count of deals per risk tier (Critical / High / Medium / Low).
+3. **Top 5 Critical Deals** — For each: deal name, ARR, stage, primary risk type,
+   the specific evidence (CRM field or Gong signal), and the recommended manager action.
+4. **Stale Pipeline** — Deals with no stage movement in 21+ days or last activity 14+
+   days. List deal name, days stale, ARR, and suggested action (push, abandon, re-engage).
+5. **Missing Champions** — Deals in Stage 3+ with no identified champion in CRM.
+   List deal name, ARR, close date. Flag as Critical if close date is within 60 days.
+6. **Competitor Watch** — Pull the latest from `/competitor-watch/latest.md` and flag
+   any deals where a competitor is mentioned without a documented counter-response.
+
+Write the full report to `/reports/pipeline-risk-<YYYY-MM-DD>.md`.
+Update `/reports/latest.md` as a symlink/copy of today's report.14:T9fd,# Pipeline Risk
+
+Scan every open opportunity for the signals that predict a slip: no champion identified, next step older than 14 days, stage unchanged for 3+ weeks, competitor mentioned without a counter-response. The Risk Analyst scores each deal; the Customer Agent validates context from Gong calls; together they produce a weekly pipeline risk report that lands before the Monday forecast call.
+
+> **Keep Salesforce and your forecast model. Replace the manual deal-review doc, the Clari-lite spreadsheet, and the "how does this feel?" gut-check that surprises you at month-end.**
+
+## The team
+
+- **[[.agents/risk-analyst]]** — Risk Analyst (lead). Owns the pipeline risk model: scores every open deal, classifies risk type, and produces the weekly report. Sequences the Customer Agent for deal-specific context.
+- **[[.agents/customer-agent]]** — Customer Agent. Validates risk signals against Gong transcripts, recent email, and CRM activity. Surfaces deal-specific context the risk score can't see.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **Weekly** (Mon 07:00) | [[.jobs/weekly-pipeline-risk]] | Risk Analyst | Pipeline risk report in `/reports/pipeline-risk-<date>.md` |
+| **Weekly** (Mon 08:00) | [[.jobs/weekly-competitor-watch]] | Risk Analyst | Competitor mentions in active deals flagged and cross-referenced |
+| **Daily** (Mon–Fri 07:00) | [[.jobs/daily-stale-check]] | Risk Analyst | Deals going stale overnight flagged in `/alerts/stale.md` |
+
+## How to run the demo
+
+1. Open the [[pipeline-board]] — the Pipeline Risk Board: deals table with risk score, stage, age, champion status, and next-step health; forecast vs. target summary; competitor mention alerts.
+2. Check `/reports/` — weekly pipeline risk reports the Risk Analyst writes.
+3. See `/alerts/stale.md` — real-time stale deal flags updated daily.
+
+## Connectors
+
+**Required:** Salesforce or HubSpot (opportunities, stages, activity dates), Gong (call transcripts, competitor mentions), Slack (deal Slack channels), HubSpot (deal data).
+**Recommended:** Clari or Aviso (forecast baseline), Outreach or Salesloft (sequence activity).
+
+**Cross-cabinet:** This cabinet is downstream of [[../competitive-intelligence]] — the weekly competitor-watch job cross-references the full competitor landscape when flagging competitor mentions in deals.
+
+**Every artifact is a file.** The risk report, the stale-deal alerts, and the competitor-watch cut all live in this cabinet — no Salesforce report to configure, no Clari login required.15:Tbea,<h1>Pipeline Risk</h1>
+<p>Scan every open opportunity for the signals that predict a slip: no champion identified, next step older than 14 days, stage unchanged for 3+ weeks, competitor mentioned without a counter-response. The Risk Analyst scores each deal; the Customer Agent validates context from Gong calls; together they produce a weekly pipeline risk report that lands before the Monday forecast call.</p>
+<blockquote>
+<p><strong>Keep Salesforce and your forecast model. Replace the manual deal-review doc, the Clari-lite spreadsheet, and the "how does this feel?" gut-check that surprises you at month-end.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/risk-analyst]]</strong> — Risk Analyst (lead). Owns the pipeline risk model: scores every open deal, classifies risk type, and produces the weekly report. Sequences the Customer Agent for deal-specific context.</li>
+<li><strong>[[.agents/customer-agent]]</strong> — Customer Agent. Validates risk signals against Gong transcripts, recent email, and CRM activity. Surfaces deal-specific context the risk score can't see.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 07:00)</td>
+<td>[[.jobs/weekly-pipeline-risk]]</td>
+<td>Risk Analyst</td>
+<td>Pipeline risk report in <code>/reports/pipeline-risk-&#x3C;date>.md</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-competitor-watch]]</td>
+<td>Risk Analyst</td>
+<td>Competitor mentions in active deals flagged and cross-referenced</td>
+</tr>
+<tr>
+<td><strong>Daily</strong> (Mon–Fri 07:00)</td>
+<td>[[.jobs/daily-stale-check]]</td>
+<td>Risk Analyst</td>
+<td>Deals going stale overnight flagged in <code>/alerts/stale.md</code></td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[pipeline-board]] — the Pipeline Risk Board: deals table with risk score, stage, age, champion status, and next-step health; forecast vs. target summary; competitor mention alerts.</li>
+<li>Check <code>/reports/</code> — weekly pipeline risk reports the Risk Analyst writes.</li>
+<li>See <code>/alerts/stale.md</code> — real-time stale deal flags updated daily.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Salesforce or HubSpot (opportunities, stages, activity dates), Gong (call transcripts, competitor mentions), Slack (deal Slack channels), HubSpot (deal data).
+<strong>Recommended:</strong> Clari or Aviso (forecast baseline), Outreach or Salesloft (sequence activity).</p>
+<p><strong>Cross-cabinet:</strong> This cabinet is downstream of [[../competitive-intelligence]] — the weekly competitor-watch job cross-references the full competitor landscape when flagging competitor mentions in deals.</p>
+<p><strong>Every artifact is a file.</strong> The risk report, the stale-deal alerts, and the competitor-watch cut all live in this cabinet — no Salesforce report to configure, no Clari login required.</p>9:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$Le",null,{"slug":"pipeline-risk","pageName":"pipeline-board"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$Lf",null,{"entry":{"slug":"pipeline-risk","meta":{"schemaVersion":1,"id":"pipeline-risk-root","name":"Pipeline Risk","kind":"root","version":"0.1.0","description":"Identify risky deals, stale opportunities, missing champions, and weak next steps before they cost you the quarter. Keep Salesforce. Replace the manual deal-review docs and the Clari spreadsheet nobody trusts.","entry":"index.md","domain":"Sales"},"agents":[{"name":"Customer Agent","slug":"customer-agent","emoji":"🎤","type":"specialist","department":"sales","role":"Validates risk signals against Gong transcripts, recent email, and CRM activity — surfacing deal-specific context the risk score alone cannot see.","heartbeat":"","budget":80,"active":true,"focus":["gong-transcripts","deal-context","competitor-mentions","champion-validation"],"tags":["sales","intelligence"],"body":"$10"},{"name":"Risk Analyst","slug":"risk-analyst","emoji":"📊","type":"lead","department":"sales","role":"Owns the pipeline risk model — scores every open deal, classifies risk type, produces the weekly risk report, and sequences the Customer Agent for deal-specific validation.","heartbeat":"0 7 * * 1-5","budget":100,"active":true,"focus":["risk-scoring","deal-review","forecast-accuracy","pipeline-health"],"tags":["revops","sales"],"body":"$11"}],"jobs":[{"id":"daily-stale-check","name":"Daily Stale Deal Check","enabled":true,"schedule":"0 7 * * 1-5","provider":"claude-code","adapterType":"claude_local","ownerAgent":"risk-analyst","agentSlug":"risk-analyst","timeout":300,"prompt":"Run the daily stale deal check across all open opportunities.\n\nFetch the current open opportunity list from CRM. For each open deal, check:\n1. Days since last stage change (CRM stage-changed date)\n2. Days since last CRM activity (last call, email, or meeting logged)\n3. Days until close date (close date vs. today)\n\nFlag any deal that meets one or more of these thresholds:\n- Stage unchanged for 21+ days in Stage 2 or later\n- Last CRM activity 14+ days ago\n- Close date within 30 days with risk score High or Critical\n- Close date within 14 days with no next step logged\n\nFor each flagged deal, append a row to `/alerts/stale.md` with:\ndate | deal name | ARR | stage | days-stale | days-since-activity | days-to-close | flag-reason\n\nOverwrite (don't append) the \"Today's Alerts\" section at the top of `/alerts/stale.md`\nwith just today's flags — the full log is the appended rows below.","cabinetPath":"cabinet-examples/cabinets/pipeline-risk","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"weekly-competitor-watch","name":"Weekly Competitor Watch","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"risk-analyst","agentSlug":"risk-analyst","timeout":900,"prompt":"$12","cabinetPath":"cabinet-examples/cabinets/pipeline-risk","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"weekly-pipeline-risk","name":"Weekly Pipeline Risk Report","enabled":true,"schedule":"0 7 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"risk-analyst","agentSlug":"risk-analyst","timeout":900,"prompt":"$13","cabinetPath":"cabinet-examples/cabinets/pipeline-risk","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$14","readmeHtml":"$15","tags":["sales","pipeline","risk","forecast","revops","enterprise","cabinet"],"section":"Sales","stats":{"totalAgents":2,"totalJobs":3,"totalCabinets":1,"totalPages":4}}}]}]]}],"$L16","$L17","$L18","$L19","$L1a"]}]
+a:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L3",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L5",null,{"src":"/brand/cabinet-logo-face-2-512.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}],"$L1b","$L1c"]}]]}],"$L1d"]]}],"$L1e"]}]}]
+b:["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true}]
+c:["$","script","script-1",{"src":"/_next/static/chunks/258x9i1fxfhga.js","async":true}]
+d:["$","$L1f",null,{"children":["$","$20",null,{"name":"Next.MetadataOutlet","children":"$@21"}]}]
+16:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Pipeline Risk"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🎤"," ","Customer Agent"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["📊"," ","Risk Analyst"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Daily Stale Deal Check"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Competitor Watch"}]]}],["$","div","2",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Pipeline Risk Report"}]]}]]]}],[]]}]}]]}]
+17:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-customer-agent-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🎤"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Customer Agent"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Validates risk signals against Gong transcripts, recent email, and CRM activity — surfacing deal-specific context the risk score alone cannot see."}],""]}],["$","div","root-risk-analyst-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"📊"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Risk Analyst"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Owns the pipeline risk model — scores every open deal, classifies risk type, produces the weekly risk report, and sequences the Customer Agent for deal-specific validation."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 7 * * 1-5"}]]}]]}]]}]]}]
+18:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","daily-stale-check",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Daily Stale Deal Check"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 7 * * 1-5"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","risk-analyst"]}]]}]]}],["$","div","weekly-competitor-watch",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Competitor Watch"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","risk-analyst"]}]]}]]}],["$","div","weekly-pipeline-risk",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Pipeline Risk Report"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 7 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","risk-analyst"]}]]}]]}]]}]]}]
+22:Tbea,<h1>Pipeline Risk</h1>
+<p>Scan every open opportunity for the signals that predict a slip: no champion identified, next step older than 14 days, stage unchanged for 3+ weeks, competitor mentioned without a counter-response. The Risk Analyst scores each deal; the Customer Agent validates context from Gong calls; together they produce a weekly pipeline risk report that lands before the Monday forecast call.</p>
+<blockquote>
+<p><strong>Keep Salesforce and your forecast model. Replace the manual deal-review doc, the Clari-lite spreadsheet, and the "how does this feel?" gut-check that surprises you at month-end.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/risk-analyst]]</strong> — Risk Analyst (lead). Owns the pipeline risk model: scores every open deal, classifies risk type, and produces the weekly report. Sequences the Customer Agent for deal-specific context.</li>
+<li><strong>[[.agents/customer-agent]]</strong> — Customer Agent. Validates risk signals against Gong transcripts, recent email, and CRM activity. Surfaces deal-specific context the risk score can't see.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 07:00)</td>
+<td>[[.jobs/weekly-pipeline-risk]]</td>
+<td>Risk Analyst</td>
+<td>Pipeline risk report in <code>/reports/pipeline-risk-&#x3C;date>.md</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-competitor-watch]]</td>
+<td>Risk Analyst</td>
+<td>Competitor mentions in active deals flagged and cross-referenced</td>
+</tr>
+<tr>
+<td><strong>Daily</strong> (Mon–Fri 07:00)</td>
+<td>[[.jobs/daily-stale-check]]</td>
+<td>Risk Analyst</td>
+<td>Deals going stale overnight flagged in <code>/alerts/stale.md</code></td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[pipeline-board]] — the Pipeline Risk Board: deals table with risk score, stage, age, champion status, and next-step health; forecast vs. target summary; competitor mention alerts.</li>
+<li>Check <code>/reports/</code> — weekly pipeline risk reports the Risk Analyst writes.</li>
+<li>See <code>/alerts/stale.md</code> — real-time stale deal flags updated daily.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Salesforce or HubSpot (opportunities, stages, activity dates), Gong (call transcripts, competitor mentions), Slack (deal Slack channels), HubSpot (deal data).
+<strong>Recommended:</strong> Clari or Aviso (forecast baseline), Outreach or Salesloft (sequence activity).</p>
+<p><strong>Cross-cabinet:</strong> This cabinet is downstream of [[../competitive-intelligence]] — the weekly competitor-watch job cross-references the full competitor landscape when flagging competitor mentions in deals.</p>
+<p><strong>Every artifact is a file.</strong> The risk report, the stale-deal alerts, and the competitor-watch cut all live in this cabinet — no Salesforce report to configure, no Clari login required.</p>19:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$22"}}]}]]}]
+1a:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L23",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set pipeline-risk","label":"Install"}]}]}]]}]
+1b:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+1c:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+1d:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+1e:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+21:null

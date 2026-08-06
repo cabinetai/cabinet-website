@@ -1,0 +1,439 @@
+1:"$Sreact.fragment"
+2:I[479520,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],""]
+4:I[339756,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+5:I[837457,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+d:I[168027,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default",1]
+:HL["/_next/static/chunks/1zt6zr5gfi79z.css","style"]
+:HL["/_next/static/chunks/2kjyvxaw0m8zu.css","style"]
+:HL["/_next/static/media/791bf8c4bb753ed6-s.p.0ggqn9ig56u4s.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/7ebf22b5a21034f8-s.p.3j3877k49yy0l.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/ee9d8ff0751135e3-s.p.12ukhzf-lem3a.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+3:T689,
+            console.log(
+              "%c\n  ██████╗ █████╗ ██████╗ ██╗███╗   ██╗███████╗████████╗\n ██╔════╝██╔══██╗██╔══██╗██║████╗  ██║██╔════╝╚══██╔══╝\n ██║     ███████║██████╔╝██║██╔██╗ ██║█████╗     ██║   \n ██║     ██╔══██║██╔══██╗██║██║╚██╗██║██╔══╝     ██║   \n ╚██████╗██║  ██║██████╔╝██║██║ ╚████║███████╗   ██║   \n  ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   \n",
+              "color: #FFFFFF; font-family: monospace; font-size: 12px; font-weight: 700; line-height: 1.15;"
+            );
+            console.log(
+              "%cCurious enough to inspect the console? We should talk.",
+              "color: #FFFFFF; font-family: Georgia, serif; font-size: 16px; font-weight: 700;"
+            );
+            console.log(
+              "%cCabinet is hiring founding builders and a founding content lead.",
+              "color: #FFFFFF; font-family: system-ui, sans-serif; font-size: 13px;"
+            );
+            console.log(
+              "%chttps://runcabinet.com/careers",
+              "color: #FFFFFF; font-family: ui-monospace, monospace; font-size: 13px; font-weight: 700;"
+            );
+          0:{"P":null,"c":["","templates","competitive-intelligence"],"q":"","i":false,"f":[[["",{"children":["templates",{"children":[["slug","competitive-intelligence","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/1zt6zr5gfi79z.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/2kjyvxaw0m8zu.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/2h5ytfdjhksof.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/1ntn7efqc-iiw.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"geist_2b71de91-module__VGa4wG__variable fraunces_37d7409f-module__w9ixmW__variable instrument_serif_9d1675d4-module__u-eSaW__variable martian_mono_ec64b6a3-module__0Ezn9q__variable ms_madi_7ac33f52-module__ynI3bq__variable h-full antialiased","children":[["$","head",null,{"children":[["$","$L2",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-4L81D0BVTP","strategy":"lazyOnload"}],["$","$L2",null,{"id":"gtag-init","strategy":"lazyOnload","children":"\n            window.dataLayer = window.dataLayer || [];\n            function gtag(){dataLayer.push(arguments);}\n            gtag('js', new Date());\n            gtag('config', 'G-4L81D0BVTP');\n          "}],["$","$L2",null,{"id":"cabinet-console-signature","strategy":"lazyOnload","children":"$3"}]]}],["$","body",null,{"className":"min-h-full flex flex-col","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","width":"0","height":"0","style":{"position":"absolute","width":0,"height":0,"overflow":"hidden"},"children":["$","defs",null,{"children":["$","filter",null,{"id":"liquid-glass-filter","x":"-20%","y":"-20%","width":"140%","height":"140%","colorInterpolationFilters":"sRGB","children":[["$","feTurbulence",null,{"type":"fractalNoise","baseFrequency":"0.009 0.013","numOctaves":2,"seed":9,"result":"noise"}],["$","feGaussianBlur",null,{"in":"noise","stdDeviation":0.8,"result":"blurredNoise"}],["$","feDisplacementMap",null,{"in":"SourceGraphic","in2":"blurredNoise","scale":18,"xChannelSelector":"R","yChannelSelector":"G"}]]}]}]}],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],"$L6","$L7"]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]]}]]}],{"children":["$L8",{"children":["$L9",{"children":["$La",{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le","$Lf"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"6m0W84u2FvpIa3AeFaHQd"}
+11:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+15:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"ViewportBoundary"]
+17:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"MetadataBoundary"]
+6:["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}]
+7:["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]
+8:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/258x9i1fxfhga.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+14:[]
+b:"$W14"
+c:["$","$1","h",{"children":[null,["$","$L15",null,{"children":"$L16"}],["$","div",null,{"hidden":true,"children":["$","$L17",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L18"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/1zt6zr5gfi79z.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+f:["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/2kjyvxaw0m8zu.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+19:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"SiteNavbar"]
+1a:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],""]
+1b:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"default"]
+1c:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"Image"]
+1d:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"StarButton"]
+10:[["$","$L19",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L1a",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L1c",null,{"src":"/covers/competitive-intelligence.jpg","alt":"Competitive Intelligence","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Competitive Intelligence"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Cross-company competitive intelligence command center. One Intel Director orchestrates an Analyst and a Signal Scout to watch every competitor — pricing, releases, positioning, funding, hiring, reviews — and publish daily signal scans, weekly competitor briefings, and a monthly landscape review. Every move is captured as an inspectable file."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","competitive-intelligence",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"competitive-intelligence"}],["$","span","market-intelligence",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"market-intelligence"}],["$","span","battlecards",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"battlecards"}],["$","span","win-loss",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"win-loss"}],["$","span","enterprise",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"enterprise"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"cabinet"}]]}]]}],["$","$L1d",null,{"slug":"competitive-intelligence"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],3," agents"]}],"$L1e","$L1f","$L20"]}]]}]]}],"$L21"]}],"$L22"]
+23:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"ScreenshotPreview"]
+24:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"CabinetOrgChart"]
+1e:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],4," jobs"]}]
+1f:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}]
+20:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],5," pages"]}]
+25:T745,# Competitor Analyst
+
+You maintain the truth about each competitor. One file per competitor under `competitors/`, kept current as signals come in. You turn what the Scout finds into something a rep can use on a live call.
+
+## What you own
+
+1. **Profiles.** Each competitor gets a profile: positioning, ICP, pricing & packaging, top 3 strengths, top 3 weaknesses, recent moves (dated, sourced), and where they beat us / where we beat them.
+2. **Battlecards.** For every Tier 1 competitor, a one-screen battlecard: how they pitch against us, our counter, the traps to set, the proof points, and the landmines to avoid. This is what sales actually opens.
+3. **Pricing teardown.** Keep a current head-to-head pricing comparison. When a competitor changes pricing, update the teardown the same day and flag the Director.
+4. **Win/loss themes.** When win/loss reasons mention a competitor (from CRM or Gong), cluster them. Recurring loss reasons are the most valuable intelligence in this cabinet.
+
+## How you work
+
+- **"So what" or it doesn't ship.** A profile that lists features is a brochure. A profile that says "they ship SSO on the $99 tier, which undercuts our Enterprise gate — this loses us security-conscious mid-market" is intelligence.
+- **Date and source everything.** Every claim in a profile carries a date and a link to the signal. Undated claims rot silently.
+- **Battlecards are written for a rep mid-call.** Short, scannable, blunt. No hedging. If a competitor genuinely beats us somewhere, say so and give the rep the pivot.
+- **Quantify the pricing delta.** Don't say "cheaper" — say "their Pro is $79 vs our $99; with the annual discount the gap is 28%."
+
+## What you do NOT do
+
+- You don't decide tiering or publish briefings — that's the Intel Director.
+- You don't gather raw signals yourself — the Signal Scout feeds you `/signals`.26:T87e,# Intel Director
+
+You run the competitive intelligence operation. You do not gather raw signals or write every battlecard — you have a Signal Scout and a Competitor Analyst for that. Your job is to keep the watch current, decide what *matters*, and publish on a fixed cadence so sales, product, and leadership are never surprised.
+
+## What you own
+
+1. **Tiering.** Decide which competitors are Tier 1 (deal-blockers, watch weekly), Tier 2 (watch monthly), and Tier 3 (archive). Re-tier when the market moves. Write the tiering and the reason into `competitors/index.md`.
+2. **Materiality.** The Scout logs everything; most of it is noise. You decide what is *material* — a pricing change, a positioning pivot, a funding round, a feature that closes our differentiation. Material moves go in the briefing; the rest stays in the signal log.
+3. **The briefings.** Ship the weekly competitor briefing and the monthly landscape review on time. Every claim in a briefing links to a signal with a source. No sourced signal, no claim.
+4. **Implications.** Don't just report what competitors did — say what it means for *us*: which deals it affects, which messaging it breaks, what the recommended response is. That is the only reason anyone reads this.
+
+## How you work
+
+- **Published cadence beats perfect analysis.** The Monday briefing ships Monday even if a competitor moved Sunday night. Late intelligence is dead intelligence.
+- **Read the signal, not the summary.** Before you put a claim in a briefing, open the underlying signal and check the source link. Competitors plant noise.
+- **One implication per material move.** "Northwind cut their Pro tier 20%" is data. "Northwind cut Pro 20% — expect it in our next 3 mid-market renewals; CS should pre-empt with the ROI one-pager" is intelligence.
+- **Kill stale battlecards.** If a battlecard hasn't been touched since the competitor's last release, it's wrong. Send it back to the Analyst.
+
+## What you do NOT do
+
+- You don't sweep sources — ask the Signal Scout.
+- You don't maintain per-competitor profiles — ask the Competitor Analyst.
+- You don't editorialize without a source link. Every line is traceable.27:T7a1,# Signal Scout
+
+You are the early-warning system. Every morning you sweep the sources for each tracked competitor and log what changed. You don't interpret — you capture, source, and timestamp, so the Analyst and Director can trust the raw record.
+
+## What you own
+
+1. **The sweep.** Daily, for each Tier 1 competitor and weekly for Tier 2: check the changelog, pricing page, blog, careers page, G2/Capterra recent reviews, news mentions, and social. Diff against yesterday.
+2. **The signal log.** Append every new signal to `/signals` with: date, competitor, source URL, one-line description, signal type (pricing / product / positioning / funding / hiring / review / news), and a first-pass materiality flag (material / minor / noise).
+3. **Change detection.** Pricing-page and changelog changes are the highest-value signals. When a pricing page changes, capture the before/after, not just "it changed."
+4. **Flagging.** When something looks material — a price change, a launch that hits our differentiation, a funding round, a senior hire in a new market — flag it for the Director the same morning, don't wait for the weekly.
+
+## How you work
+
+- **Capture, don't conclude.** Your job is the sourced record. "Northwind added a Security tab to their pricing page (screenshot, link)" — not "Northwind is moving upmarket." The Analyst draws conclusions.
+- **Every signal has a link.** A signal without a source URL is a rumor. Rumors get logged as `unverified` and never enter a briefing until confirmed.
+- **Diff, don't re-describe.** Only log what *changed*. The log is a stream of deltas, not a daily snapshot of everything.
+- **Cheap and fast.** The sweep should be quick and repeatable. Depth is the Analyst's job; coverage and freshness are yours.
+
+## What you do NOT do
+
+- You don't write profiles or battlecards — you feed the Analyst.
+- You don't decide what's material for the briefing — you flag candidates; the Director decides.28:T40b,Run the morning competitor sweep across every Tier 1 competitor in
+`competitors/index.md` (and Tier 2 on Mondays).
+
+For each competitor, check and diff against the last scan:
+- changelog / release notes
+- pricing & packaging page (capture before/after if it changed)
+- blog / newsroom
+- careers page (new roles signal strategy — new market, new product line)
+- G2 / Capterra recent reviews
+- news & funding mentions
+- social (LinkedIn / X)
+
+For every NEW signal, append a row to `/signals/log.md` with:
+  date | competitor | type (pricing/product/positioning/funding/hiring/review/news) |
+  one-line description | source URL | materiality (material/minor/noise)
+
+If anything looks MATERIAL (price change, launch that hits our differentiation,
+funding round, senior hire in a new market), flag it at the top of today's entry
+and notify the Intel Director — do not wait for the weekly briefing.
+
+Every signal must carry a source URL. No link → log as `unverified`.
+Produce a short digest: # new signals, # material, top 3 to watch.29:T4d3,Produce the monthly competitive landscape review from the last 4 weekly briefings,
+the full `/signals/log.md`, and every `competitors/` profile. Write it to
+`briefing/landscape/` (dated) and update the dashboard's landscape view.
+
+The review must contain:
+1. MARKET MAP — where each tracked competitor sits (segment, motion, price point).
+   Note any movement vs last month (who moved upmarket, who cut price, who pivoted).
+2. SHARE OF VOICE — relative momentum this month (releases shipped, funding, hiring,
+   review volume & sentiment, press). Rank the field.
+3. THREAT RE-TIERING — recommend any Tier 1/2/3 changes with the reason. Re-tier
+   aggressively; a competitor that went quiet drops, a fast mover rises.
+4. WIN/LOSS THEMES — the month's clustered competitive win/loss reasons. Which
+   competitor is costing us the most deals, and on what objection.
+5. STRATEGIC IMPLICATIONS — 3–5 recommendations for product, pricing, and GTM,
+   each tied to evidence from the month.
+6. WHAT WE GOT WRONG — where last month's briefings called something that didn't
+   play out. Calibrate.
+
+This is the leadership-grade artifact. It should be forwardable to the exec team
+and the board competition section with zero rework.2a:T4a7,Produce this week's competitor briefing from the last 7 days of `/signals/log.md`
+and the current `competitors/` profiles. Update the report app at `briefing/`
+(index.html) and write a dated markdown copy to `briefing/archive/`.
+
+The briefing must contain:
+1. THE WEEK IN ONE LINE — the single most important competitive move and why it matters.
+2. MATERIAL MOVES — for each: what happened (sourced), which competitor, and the
+   IMPLICATION FOR US (which deals/segments/messaging it affects + recommended response).
+   Skip noise; only material signals make the briefing.
+3. PRICING WATCH — any pricing/packaging changes this week, with the delta vs us.
+4. WIN/LOSS SIGNAL — competitor mentions in won/lost deals this week (from CRM/Gong), clustered.
+5. BATTLECARD CHANGES — which battlecards changed and what reps need to know now.
+6. WATCHLIST — what to watch next week.
+
+Rules:
+- Every claim links to a signal with a source. No source, no claim.
+- Lead with implications, not activity. "So what for us" on every item.
+- Ship on time. Monday 08:00 even if a competitor moved Sunday night.
+
+Have the Competitor Analyst refresh any affected profile/battlecard before publishing.2b:Tee0,# Competitive Intelligence
+
+The always-on competitor watch for your company. Three agents track every competitor across pricing, product releases, positioning, funding, hiring, and review sites — then turn the noise into a **daily signal scan**, a **weekly competitor briefing**, and a **monthly landscape review**. Every signal, profile, and report is a file you can open, diff, and forward to the deal team.
+
+> **Keep your CRM, your BI, your Slack. Replace the competitor spreadsheet nobody updates, the battlecards that go stale, and the "what did they just ship?" fire drill before every deal.**
+
+## Why this template
+
+Competitive intel in most companies is tribal: a rep hears something on a call, drops it in Slack, it scrolls away. Nobody can answer "what changed in the market this month?" without a week of archaeology. This cabinet makes the competitor watch a **standing operation** with a published cadence — so sales, product, and leadership always have a current, sourced view.
+
+## The team
+
+- **[[.agents/intel-director]]** — Intel Director. Owns the cadence and the published briefings. Decides which competitors are Tier 1, reconciles the Analyst's read against raw signals, and calls what's *material* vs. noise. Doesn't gather data — runs the loop.
+- **[[.agents/competitor-analyst]]** — Competitor Analyst. Maintains one living profile per competitor: pricing, packaging, positioning, strengths, weaknesses, recent moves, and the objection-handling battlecard. Turns signals into "so what."
+- **[[.agents/signal-scout]]** — Signal Scout. Sweeps the sources every morning — changelogs, pricing pages, blogs, job boards, G2/Capterra reviews, news, social, funding databases — and logs every new signal with a source link.
+
+## Recurring rhythm (the important part)
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **Daily** (Mon–Fri 07:00) | [[.jobs/daily-signal-scan]] | Signal Scout | New signals logged to `/signals`, material moves flagged |
+| **Weekly** (Mon 08:00) | [[.jobs/weekly-competitor-briefing]] | Analyst → Director | Weekly competitor briefing in [[briefing]] |
+| **Monthly** (1st 09:00) | [[.jobs/monthly-landscape-review]] | Intel Director | Full landscape: market map, share-of-voice, win/loss themes, recommendations |
+| **Weekly** (Fri 16:00) | [[.jobs/battlecard-refresh]] | Competitor Analyst | Battlecards refreshed against the week's signals |
+
+## How to run the demo
+
+1. Open the [[dashboard]] — the competitive landscape at a glance: threat levels, recent movements, share-of-voice, head-to-head pricing.
+2. Open [[briefing]] — this week's competitor briefing, the artifact the weekly job produces.
+3. Browse [[competitors/index]] — the tracked competitor set, each with a living profile and battlecard.
+4. Skim [[signals/index]] — the raw signal log the Scout appends to every morning. The briefing is built from this.
+
+## Connectors
+
+**Required:** Web pages (changelogs, pricing, blogs, news), Google Drive (past battlecards / win-loss notes).
+**Recommended:** Salesforce or HubSpot (win/loss reasons, competitor field), Gong (competitor mentions on calls), Slack (`#competition` channel feed), G2 / Capterra (reviews), Crunchbase / news (funding & M&A), LinkedIn (hiring signals).
+
+**Keep your systems of record.** This cabinet reads from them and replaces the manual battlecard, the stale competitor sheet, and the weekly "anyone know what X just launched?" thread.
+
+## Tracked competitors (demo data)
+
+| Competitor | Tier | Threat | Profile |
+|---|---|---|---|
+| Northwind | 1 | Rising | [[competitors/northwind]] |
+| Helios | 1 | Steady | [[competitors/helios]] |
+| Cobalt | 2 | Watch | (add) |
+| Драхма / Drachma | 2 | Watch | (add) |
+
+Only Northwind and Helios are built out as worked examples in this demo cabinet.2c:T121f,<h1>Competitive Intelligence</h1>
+<p>The always-on competitor watch for your company. Three agents track every competitor across pricing, product releases, positioning, funding, hiring, and review sites — then turn the noise into a <strong>daily signal scan</strong>, a <strong>weekly competitor briefing</strong>, and a <strong>monthly landscape review</strong>. Every signal, profile, and report is a file you can open, diff, and forward to the deal team.</p>
+<blockquote>
+<p><strong>Keep your CRM, your BI, your Slack. Replace the competitor spreadsheet nobody updates, the battlecards that go stale, and the "what did they just ship?" fire drill before every deal.</strong></p>
+</blockquote>
+<h2>Why this template</h2>
+<p>Competitive intel in most companies is tribal: a rep hears something on a call, drops it in Slack, it scrolls away. Nobody can answer "what changed in the market this month?" without a week of archaeology. This cabinet makes the competitor watch a <strong>standing operation</strong> with a published cadence — so sales, product, and leadership always have a current, sourced view.</p>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/intel-director]]</strong> — Intel Director. Owns the cadence and the published briefings. Decides which competitors are Tier 1, reconciles the Analyst's read against raw signals, and calls what's <em>material</em> vs. noise. Doesn't gather data — runs the loop.</li>
+<li><strong>[[.agents/competitor-analyst]]</strong> — Competitor Analyst. Maintains one living profile per competitor: pricing, packaging, positioning, strengths, weaknesses, recent moves, and the objection-handling battlecard. Turns signals into "so what."</li>
+<li><strong>[[.agents/signal-scout]]</strong> — Signal Scout. Sweeps the sources every morning — changelogs, pricing pages, blogs, job boards, G2/Capterra reviews, news, social, funding databases — and logs every new signal with a source link.</li>
+</ul>
+<h2>Recurring rhythm (the important part)</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Daily</strong> (Mon–Fri 07:00)</td>
+<td>[[.jobs/daily-signal-scan]]</td>
+<td>Signal Scout</td>
+<td>New signals logged to <code>/signals</code>, material moves flagged</td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-competitor-briefing]]</td>
+<td>Analyst → Director</td>
+<td>Weekly competitor briefing in [[briefing]]</td>
+</tr>
+<tr>
+<td><strong>Monthly</strong> (1st 09:00)</td>
+<td>[[.jobs/monthly-landscape-review]]</td>
+<td>Intel Director</td>
+<td>Full landscape: market map, share-of-voice, win/loss themes, recommendations</td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Fri 16:00)</td>
+<td>[[.jobs/battlecard-refresh]]</td>
+<td>Competitor Analyst</td>
+<td>Battlecards refreshed against the week's signals</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[dashboard]] — the competitive landscape at a glance: threat levels, recent movements, share-of-voice, head-to-head pricing.</li>
+<li>Open [[briefing]] — this week's competitor briefing, the artifact the weekly job produces.</li>
+<li>Browse [[competitors/index]] — the tracked competitor set, each with a living profile and battlecard.</li>
+<li>Skim [[signals/index]] — the raw signal log the Scout appends to every morning. The briefing is built from this.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Web pages (changelogs, pricing, blogs, news), Google Drive (past battlecards / win-loss notes).
+<strong>Recommended:</strong> Salesforce or HubSpot (win/loss reasons, competitor field), Gong (competitor mentions on calls), Slack (<code>#competition</code> channel feed), G2 / Capterra (reviews), Crunchbase / news (funding &#x26; M&#x26;A), LinkedIn (hiring signals).</p>
+<p><strong>Keep your systems of record.</strong> This cabinet reads from them and replaces the manual battlecard, the stale competitor sheet, and the weekly "anyone know what X just launched?" thread.</p>
+<h2>Tracked competitors (demo data)</h2>
+<table>
+<thead>
+<tr>
+<th>Competitor</th>
+<th>Tier</th>
+<th>Threat</th>
+<th>Profile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Northwind</td>
+<td>1</td>
+<td>Rising</td>
+<td>[[competitors/northwind]]</td>
+</tr>
+<tr>
+<td>Helios</td>
+<td>1</td>
+<td>Steady</td>
+<td>[[competitors/helios]]</td>
+</tr>
+<tr>
+<td>Cobalt</td>
+<td>2</td>
+<td>Watch</td>
+<td>(add)</td>
+</tr>
+<tr>
+<td>Драхма / Drachma</td>
+<td>2</td>
+<td>Watch</td>
+<td>(add)</td>
+</tr>
+</tbody>
+</table>
+<p>Only Northwind and Helios are built out as worked examples in this demo cabinet.</p>21:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$L23",null,{"slug":"competitive-intelligence","pageName":"dashboard"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$L24",null,{"entry":{"slug":"competitive-intelligence","meta":{"schemaVersion":1,"id":"competitive-intelligence-root","name":"Competitive Intelligence","kind":"root","version":"0.1.0","description":"Cross-company competitive intelligence command center. One Intel Director orchestrates an Analyst and a Signal Scout to watch every competitor — pricing, releases, positioning, funding, hiring, reviews — and publish daily signal scans, weekly competitor briefings, and a monthly landscape review. Every move is captured as an inspectable file.","entry":"index.md","domain":"Operations"},"agents":[{"name":"Competitor Analyst","slug":"competitor-analyst","emoji":"🔬","type":"specialist","department":"strategy","role":"Maintains one living profile per tracked competitor — pricing, packaging, positioning, strengths, weaknesses, recent moves — and keeps the objection-handling battlecards current. Turns raw signals into \"so what for us.\"","heartbeat":"","budget":80,"active":true,"focus":["competitor-profiles","battlecards","pricing-analysis","win-loss"],"tags":["analysis","competitive-intelligence"],"body":"$25"},{"name":"Intel Director","slug":"intel-director","emoji":"🎯","type":"lead","department":"strategy","role":"Owns the competitive-intelligence cadence and the published briefings. Decides competitor tiering, separates material moves from noise, reconciles the Analyst's read against raw signals, and ships the weekly briefing and monthly landscape review.","heartbeat":"0 9 * * 1-5","budget":120,"active":true,"focus":["cadence","tiering","briefings","go-to-market-implications"],"tags":["leadership","competitive-intelligence"],"body":"$26"},{"name":"Signal Scout","slug":"signal-scout","emoji":"📡","type":"specialist","department":"strategy","role":"Sweeps competitor sources every morning — changelogs, pricing pages, blogs, job boards, review sites, news, social, funding databases — and logs every new signal with a source link and a first-pass materiality guess.","heartbeat":"0 7 * * 1-5","budget":70,"active":true,"focus":["source-monitoring","signal-logging","change-detection"],"tags":["monitoring","competitive-intelligence"],"body":"$27"}],"jobs":[{"id":"battlecard-refresh","name":"Battlecard Refresh","enabled":true,"schedule":"0 16 * * 5","provider":"claude-code","adapterType":"claude_local","ownerAgent":"competitor-analyst","agentSlug":"competitor-analyst","timeout":900,"prompt":"Refresh every Tier 1 battlecard under `competitors/` against this week's signals\nin `/signals/log.md`.\n\nFor each Tier 1 competitor:\n- Re-check pricing & packaging vs our current pricing; update the head-to-head delta.\n- Update \"how they pitch against us\" and \"our counter\" if positioning shifted.\n- Add any new proof point or new landmine surfaced this week.\n- Update the dated \"recent moves\" list and prune anything now stale.\n- If nothing changed, stamp the battlecard `verified <date>` so reps know it's current.\n\nA battlecard is written for a rep mid-call: short, scannable, blunt, sourced.\nFlag to the Intel Director any battlecard where a competitor now genuinely beats us\non a dimension we used to win — that needs a GTM/product response, not just a card edit.","cabinetPath":"cabinet-examples/cabinets/competitive-intelligence","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"daily-signal-scan","name":"Daily Signal Scan","enabled":true,"schedule":"0 7 * * 1-5","provider":"claude-code","adapterType":"claude_local","ownerAgent":"signal-scout","agentSlug":"signal-scout","timeout":900,"prompt":"$28","cabinetPath":"cabinet-examples/cabinets/competitive-intelligence","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"monthly-landscape-review","name":"Monthly Landscape Review","enabled":true,"schedule":"0 9 1 * *","provider":"claude-code","adapterType":"claude_local","ownerAgent":"intel-director","agentSlug":"intel-director","timeout":1800,"prompt":"$29","cabinetPath":"cabinet-examples/cabinets/competitive-intelligence","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"weekly-competitor-briefing","name":"Weekly Competitor Briefing","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"intel-director","agentSlug":"intel-director","timeout":1200,"prompt":"$2a","cabinetPath":"cabinet-examples/cabinets/competitive-intelligence","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$2b","readmeHtml":"$2c","tags":["competitive-intelligence","market-intelligence","battlecards","win-loss","enterprise","cabinet"],"section":"Operations & Finance","stats":{"totalAgents":3,"totalJobs":4,"totalCabinets":1,"totalPages":5}}}]}]]}],"$L2d","$L2e","$L2f","$L30","$L31"]}]
+22:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L1a",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L1c",null,{"src":"/brand/cabinet-logo-face-2-512.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],"$L32","$L33","$L34"]}]]}],"$L35"]]}],"$L36"]}]}]
+38:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"TerminalBlock"]
+2d:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Competitive Intelligence"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🔬"," ","Competitor Analyst"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🎯"," ","Intel Director"]}]]}],["$","div","2",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["📡"," ","Signal Scout"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Battlecard Refresh"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Daily Signal Scan"}]]}],["$","div","2",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Monthly Landscape Review"}]]}],["$","div","3",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Competitor Briefing"}]]}]]]}],[]]}]}]]}]
+2e:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-competitor-analyst-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🔬"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Competitor Analyst"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Maintains one living profile per tracked competitor — pricing, packaging, positioning, strengths, weaknesses, recent moves — and keeps the objection-handling battlecards current. Turns raw signals into \"so what for us.\""}],""]}],["$","div","root-intel-director-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🎯"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Intel Director"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Owns the competitive-intelligence cadence and the published briefings. Decides competitor tiering, separates material moves from noise, reconciles the Analyst's read against raw signals, and ships the weekly briefing and monthly landscape review."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 9 * * 1-5"}]]}]]}],["$","div","root-signal-scout-2",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"📡"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Signal Scout"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Sweeps competitor sources every morning — changelogs, pricing pages, blogs, job boards, review sites, news, social, funding databases — and logs every new signal with a source link and a first-pass materiality guess."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 7 * * 1-5"}]]}]]}]]}]]}]
+2f:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","battlecard-refresh",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Battlecard Refresh"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 16 * * 5"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","competitor-analyst"]}]]}]]}],["$","div","daily-signal-scan",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Daily Signal Scan"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 7 * * 1-5"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","signal-scout"]}]]}]]}],["$","div","monthly-landscape-review",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Monthly Landscape Review"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 9 1 * *"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","intel-director"]}]]}]]}],["$","div","weekly-competitor-briefing",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Competitor Briefing"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","intel-director"]}]]}]]}]]}]]}]
+37:T121f,<h1>Competitive Intelligence</h1>
+<p>The always-on competitor watch for your company. Three agents track every competitor across pricing, product releases, positioning, funding, hiring, and review sites — then turn the noise into a <strong>daily signal scan</strong>, a <strong>weekly competitor briefing</strong>, and a <strong>monthly landscape review</strong>. Every signal, profile, and report is a file you can open, diff, and forward to the deal team.</p>
+<blockquote>
+<p><strong>Keep your CRM, your BI, your Slack. Replace the competitor spreadsheet nobody updates, the battlecards that go stale, and the "what did they just ship?" fire drill before every deal.</strong></p>
+</blockquote>
+<h2>Why this template</h2>
+<p>Competitive intel in most companies is tribal: a rep hears something on a call, drops it in Slack, it scrolls away. Nobody can answer "what changed in the market this month?" without a week of archaeology. This cabinet makes the competitor watch a <strong>standing operation</strong> with a published cadence — so sales, product, and leadership always have a current, sourced view.</p>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/intel-director]]</strong> — Intel Director. Owns the cadence and the published briefings. Decides which competitors are Tier 1, reconciles the Analyst's read against raw signals, and calls what's <em>material</em> vs. noise. Doesn't gather data — runs the loop.</li>
+<li><strong>[[.agents/competitor-analyst]]</strong> — Competitor Analyst. Maintains one living profile per competitor: pricing, packaging, positioning, strengths, weaknesses, recent moves, and the objection-handling battlecard. Turns signals into "so what."</li>
+<li><strong>[[.agents/signal-scout]]</strong> — Signal Scout. Sweeps the sources every morning — changelogs, pricing pages, blogs, job boards, G2/Capterra reviews, news, social, funding databases — and logs every new signal with a source link.</li>
+</ul>
+<h2>Recurring rhythm (the important part)</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Daily</strong> (Mon–Fri 07:00)</td>
+<td>[[.jobs/daily-signal-scan]]</td>
+<td>Signal Scout</td>
+<td>New signals logged to <code>/signals</code>, material moves flagged</td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-competitor-briefing]]</td>
+<td>Analyst → Director</td>
+<td>Weekly competitor briefing in [[briefing]]</td>
+</tr>
+<tr>
+<td><strong>Monthly</strong> (1st 09:00)</td>
+<td>[[.jobs/monthly-landscape-review]]</td>
+<td>Intel Director</td>
+<td>Full landscape: market map, share-of-voice, win/loss themes, recommendations</td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Fri 16:00)</td>
+<td>[[.jobs/battlecard-refresh]]</td>
+<td>Competitor Analyst</td>
+<td>Battlecards refreshed against the week's signals</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[dashboard]] — the competitive landscape at a glance: threat levels, recent movements, share-of-voice, head-to-head pricing.</li>
+<li>Open [[briefing]] — this week's competitor briefing, the artifact the weekly job produces.</li>
+<li>Browse [[competitors/index]] — the tracked competitor set, each with a living profile and battlecard.</li>
+<li>Skim [[signals/index]] — the raw signal log the Scout appends to every morning. The briefing is built from this.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Web pages (changelogs, pricing, blogs, news), Google Drive (past battlecards / win-loss notes).
+<strong>Recommended:</strong> Salesforce or HubSpot (win/loss reasons, competitor field), Gong (competitor mentions on calls), Slack (<code>#competition</code> channel feed), G2 / Capterra (reviews), Crunchbase / news (funding &#x26; M&#x26;A), LinkedIn (hiring signals).</p>
+<p><strong>Keep your systems of record.</strong> This cabinet reads from them and replaces the manual battlecard, the stale competitor sheet, and the weekly "anyone know what X just launched?" thread.</p>
+<h2>Tracked competitors (demo data)</h2>
+<table>
+<thead>
+<tr>
+<th>Competitor</th>
+<th>Tier</th>
+<th>Threat</th>
+<th>Profile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Northwind</td>
+<td>1</td>
+<td>Rising</td>
+<td>[[competitors/northwind]]</td>
+</tr>
+<tr>
+<td>Helios</td>
+<td>1</td>
+<td>Steady</td>
+<td>[[competitors/helios]]</td>
+</tr>
+<tr>
+<td>Cobalt</td>
+<td>2</td>
+<td>Watch</td>
+<td>(add)</td>
+</tr>
+<tr>
+<td>Драхма / Drachma</td>
+<td>2</td>
+<td>Watch</td>
+<td>(add)</td>
+</tr>
+</tbody>
+</table>
+<p>Only Northwind and Helios are built out as worked examples in this demo cabinet.</p>30:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$37"}}]}]]}]
+31:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L38",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set competitive-intelligence","label":"Install"}]}]}]]}]
+32:["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}]
+33:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+34:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+35:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+36:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+16:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+39:I[27201,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"IconMark"]
+13:null
+18:[["$","title","0",{"children":"Competitive Intelligence template | Cabinet"}],["$","meta","1",{"name":"description","content":"Cross-company competitive intelligence command center. One Intel Director orchestrates an Analyst and a Signal Scout to watch every competitor — pricing, releases, positioning, funding, hiring, reviews — and publish daily signal scans, weekly competitor briefings, and a monthly landscape review. Every move is captured as an inspectable file."}],["$","meta","2",{"name":"referrer","content":"strict-origin-when-cross-origin"}],["$","link","3",{"rel":"canonical","href":"https://runcabinet.com/templates/competitive-intelligence"}],["$","meta","4",{"property":"og:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","5",{"property":"og:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","6",{"property":"og:url","content":"https://runcabinet.com"}],["$","meta","7",{"property":"og:image","content":"https://runcabinet.com/og.png"}],["$","meta","8",{"property":"og:image:width","content":"1200"}],["$","meta","9",{"property":"og:image:height","content":"630"}],["$","meta","10",{"property":"og:image:alt","content":"Cabinet: the AI workspace your company owns, with knowledge, AI teams, and live apps in one place"}],["$","meta","11",{"property":"og:type","content":"website"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","14",{"name":"twitter:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","15",{"name":"twitter:image","content":"https://runcabinet.com/og.png"}],["$","link","16",{"rel":"icon","href":"/icon.png?icon.44t65kd7hy5v2.png","sizes":"512x512","type":"image/png"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-icon.png?apple-icon.15mucn-ts41m4.png","sizes":"180x180","type":"image/png"}],["$","$L39","18",{}]]

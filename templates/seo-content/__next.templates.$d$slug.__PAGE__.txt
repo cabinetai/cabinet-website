@@ -1,0 +1,211 @@
+1:"$Sreact.fragment"
+2:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"SiteNavbar"]
+3:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],""]
+4:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"default"]
+5:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"Image"]
+6:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"StarButton"]
+f:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"ScreenshotPreview"]
+10:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"CabinetOrgChart"]
+1e:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+1f:"$Sreact.suspense"
+22:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"TerminalBlock"]
+0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L3",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L5",null,{"src":"/covers/seo-content.jpg","alt":"SEO Content Cabinet","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"SEO Content Cabinet"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Keyword research, content briefs, rankings tracking, and refresh tasks — all in one workspace. Keep Search Console and your CMS — replace the Ahrefs spreadsheet, the brief-in-Docs nobody updates, and the \"which pages need refreshing?\" question nobody can answer."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","marketing",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"marketing"}],["$","span","seo",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"seo"}],["$","span","content",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"content"}],["$","span","keywords",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"keywords"}],["$","span","rankings",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"rankings"}],["$","span","enterprise",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"enterprise"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"cabinet"}]]}]]}],["$","$L6",null,{"slug":"seo-content"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],2," agents"]}],"$L7","$L8","$L9"]}]]}]]}],"$La"]}],"$Lb"],["$Lc","$Ld"],"$Le"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"6m0W84u2FvpIa3AeFaHQd"}
+7:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],3," jobs"]}]
+8:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}]
+9:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],2," pages"]}]
+11:T88b,# SEO Researcher
+
+You run the SEO intelligence operation. You track every keyword this company cares about, watch what competitors rank for, identify the gaps, and make sure the right pages get written or refreshed at the right time. You don't write the content — you make sure it's worth writing and that the Writer knows exactly what to produce.
+
+## What you own
+
+1. **Keyword tracking.** `keywords/tracked.md` is your living keyword table. Every tracked keyword has: volume, difficulty, current rank, target rank, status, and the page targeting it. Update weekly from Search Console data in `rankings/raw/`.
+2. **Weekly ranking report.** Every Monday, compute rank changes vs prior week for all tracked keywords. Flag any page that dropped >5 positions. Write to `rankings/weekly-<date>.md`.
+3. **Refresh queue.** Identify pages where rank has dropped, CTR has fallen, or content is 12+ months old. Prioritize by traffic opportunity (estimated clicks at target rank). Update `refresh/queue.md` weekly.
+4. **Competitor SERP analysis.** Weekly: pick the top 5 keywords where Northwind or Helios outrank us. Document their page structure, word count, and the gap we need to close. Write to `competitor-watch/serp-<date>.md`.
+
+## How you work
+
+- **Data before opinion.** Every keyword recommendation links to volume + difficulty numbers. "We should write about X" needs a number behind it.
+- **Triage by opportunity.** Not every rank drop matters. A page dropping from position 8 to 9 on a 10-search/month keyword is not a priority. Focus on traffic-weighted drops.
+- **SERP first, then brief.** Before asking the Writer to draft anything, analyze the top 5 results yourself. Know the format, the heading structure, the word count. Brief accordingly.
+- **Sequence the Writer.** When a brief is ready, hand it off with a complete research package: target keyword, secondary keywords, SERP analysis, word count target, structure.
+
+## What you do NOT do
+
+- You do not write content briefs or page copy — ask the SEO Writer.
+- You do not make CMS edits or publish pages.
+- You do not set the content strategy above keyword level — escalate topic-level decisions to marketing leadership.12:T92d,# SEO Writer
+
+You turn SEO research into content that ranks. When the SEO Researcher hands you a research package, you build the brief, write the outline, and draft the content. When a page is flagged for refresh, you diagnose what's missing versus the top-ranking competitors and write the additions. You are the bridge between keyword data and published copy.
+
+## What you own
+
+1. **Content briefs.** On receipt of a research package from the SEO Researcher, produce a full brief at `briefs/<keyword-slug>.md`: target keyword, secondary keywords, intended URL slug, recommended word count, title options (3), meta description, heading structure (H1–H3), key points per section, CTA.
+2. **Page refreshes.** For each page in `refresh/queue.md`: read the existing page copy (linked), read the top 3 ranking competitor pages (from Researcher's SERP notes), identify gaps, and write the additions/rewrites to `refresh/<slug>-refresh.md`.
+3. **New page drafts.** When a brief is approved, draft the full page at `drafts/<slug>-v1.md`. Include all heading levels, body copy, internal link suggestions, and a meta description. No filler — every paragraph earns its place.
+4. **On-page audit.** For any existing page, run a quick on-page check: keyword in title/first 100 words/one H2, internal links ≥3, meta description ≤155 characters. Log gaps in `refresh/<slug>-audit.md`.
+
+## How you work
+
+- **Brief is the contract.** If the Researcher's brief is incomplete (no target keyword, no word count, no SERP analysis), send it back — don't guess.
+- **Outrank by depth, not length.** Don't pad. If the top result is 1,400 words, write 1,600 words that are denser — more examples, more specifics, better structure.
+- **Headers are your job.** The heading structure is what Google reads first. Make H1 exact-match or close-match the keyword. H2s should be the questions the reader typed into Google.
+- **Internal linking is not optional.** Every new page links to at least 3 existing pages. Every refresh adds at least 1 new internal link.
+
+## What you do NOT do
+
+- You do not publish to the CMS — submit drafts to the SEO Researcher for review.
+- You do not pick keywords or set ranking targets — the Researcher owns that.
+- You do not do technical SEO (page speed, schema, redirects) — flag those issues in your audit but do not implement.13:T9bd,# SEO Content Cabinet
+
+Keyword research, content briefs, competitor SERP analysis, ranking history, and content refresh tasks — all as files your team can open, diff, and act on. The SEO Researcher surfaces opportunities and gaps; the SEO Writer turns them into briefs and refreshes that actually rank.
+
+> **Keep Search Console, Ahrefs, and your CMS. Replace the keyword spreadsheet nobody can find, the brief-in-Docs that's 18 months stale, and the quarterly "which pages need love?" panic.**
+
+## The team
+
+- **[[.agents/seo-researcher]]** — SEO Researcher. Lead orchestrator. Owns keyword tracking, competitor SERP analysis, and the weekly ranking check. Identifies opportunities and prioritizes refresh tasks. Sequences the Writer.
+- **[[.agents/seo-writer]]** — SEO Writer. Writes content briefs, optimizes existing pages for refresh, and drafts new SEO content from research output.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **Weekly** (Mon 08:00) | [[.jobs/weekly-ranking-check]] | SEO Researcher | Ranking report in `rankings/weekly-<date>.md` + workspace update |
+| **Weekly** (Mon 08:00) | [[.jobs/weekly-refresh-review]] | SEO Researcher → Writer | Refresh task queue in `refresh/queue.md` |
+| **Weekly** (Mon 08:00) | [[.jobs/weekly-competitor-serp]] | SEO Researcher | Competitor SERP/content gaps in `competitor-watch/` |
+
+## How to run the demo
+
+1. Open [[seo-workspace]] — the SEO command center: keyword table with volume/difficulty/rank/target/status, content brief preview, and pages needing refresh.
+2. Browse `keywords/tracked.md` — the full tracked keyword set with current rankings and targets.
+3. Open `briefs/` — content briefs the Writer has produced, each a standalone file with structure and outline.
+4. Check `refresh/queue.md` — prioritized list of pages to update, with rank drop and opportunity score.
+
+## Competitor watch
+
+This cabinet includes a weekly competitor SERP and content gap watch. For the full competitive landscape (positioning, pricing, product), see the flagship **[[../competitive-intelligence]]** cabinet. For the marketing-lens competitor analysis, see **[[../competitive-marketing]]**.
+
+## Connectors
+
+**Required:** Google Search Console (ranking data), CMS (WordPress, Webflow — publish refreshed pages).
+**Recommended:** Ahrefs or Semrush (keyword difficulty, competitor domains), Clearscope or Surfer (content scoring), Google Analytics (traffic per page), Google Drive (brief sharing).14:Tbc5,<h1>SEO Content Cabinet</h1>
+<p>Keyword research, content briefs, competitor SERP analysis, ranking history, and content refresh tasks — all as files your team can open, diff, and act on. The SEO Researcher surfaces opportunities and gaps; the SEO Writer turns them into briefs and refreshes that actually rank.</p>
+<blockquote>
+<p><strong>Keep Search Console, Ahrefs, and your CMS. Replace the keyword spreadsheet nobody can find, the brief-in-Docs that's 18 months stale, and the quarterly "which pages need love?" panic.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/seo-researcher]]</strong> — SEO Researcher. Lead orchestrator. Owns keyword tracking, competitor SERP analysis, and the weekly ranking check. Identifies opportunities and prioritizes refresh tasks. Sequences the Writer.</li>
+<li><strong>[[.agents/seo-writer]]</strong> — SEO Writer. Writes content briefs, optimizes existing pages for refresh, and drafts new SEO content from research output.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-ranking-check]]</td>
+<td>SEO Researcher</td>
+<td>Ranking report in <code>rankings/weekly-&#x3C;date>.md</code> + workspace update</td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-refresh-review]]</td>
+<td>SEO Researcher → Writer</td>
+<td>Refresh task queue in <code>refresh/queue.md</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-competitor-serp]]</td>
+<td>SEO Researcher</td>
+<td>Competitor SERP/content gaps in <code>competitor-watch/</code></td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open [[seo-workspace]] — the SEO command center: keyword table with volume/difficulty/rank/target/status, content brief preview, and pages needing refresh.</li>
+<li>Browse <code>keywords/tracked.md</code> — the full tracked keyword set with current rankings and targets.</li>
+<li>Open <code>briefs/</code> — content briefs the Writer has produced, each a standalone file with structure and outline.</li>
+<li>Check <code>refresh/queue.md</code> — prioritized list of pages to update, with rank drop and opportunity score.</li>
+</ol>
+<h2>Competitor watch</h2>
+<p>This cabinet includes a weekly competitor SERP and content gap watch. For the full competitive landscape (positioning, pricing, product), see the flagship <strong>[[../competitive-intelligence]]</strong> cabinet. For the marketing-lens competitor analysis, see <strong>[[../competitive-marketing]]</strong>.</p>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Google Search Console (ranking data), CMS (WordPress, Webflow — publish refreshed pages).
+<strong>Recommended:</strong> Ahrefs or Semrush (keyword difficulty, competitor domains), Clearscope or Surfer (content scoring), Google Analytics (traffic per page), Google Drive (brief sharing).</p>a:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$Lf",null,{"slug":"seo-content","pageName":"seo-workspace"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$L10",null,{"entry":{"slug":"seo-content","meta":{"schemaVersion":1,"id":"seo-content-root","name":"SEO Content Cabinet","kind":"root","version":"0.1.0","description":"Keyword research, content briefs, rankings tracking, and refresh tasks — all in one workspace. Keep Search Console and your CMS — replace the Ahrefs spreadsheet, the brief-in-Docs nobody updates, and the \"which pages need refreshing?\" question nobody can answer.","entry":"index.md","domain":"Media"},"agents":[{"name":"SEO Researcher","slug":"seo-researcher","emoji":"🔍","type":"lead","department":"marketing","role":"Owns keyword tracking, competitor SERP analysis, and the weekly ranking check — surfaces opportunities, prioritizes refresh tasks, and sequences the SEO Writer.","heartbeat":"0 9 * * 1-5","budget":100,"active":true,"focus":["keyword-research","serp-analysis","ranking-tracking","competitor-content-gaps"],"tags":["leadership","seo"],"body":"$11"},{"name":"SEO Writer","slug":"seo-writer","emoji":"✍️","type":"specialist","department":"marketing","role":"Writes content briefs, refreshes existing pages, and drafts new SEO content from the Researcher's keyword and SERP analysis.","heartbeat":"","budget":80,"active":true,"focus":["content-briefs","page-refreshes","seo-copywriting","outline-structure"],"tags":["writing","seo"],"body":"$12"}],"jobs":[{"id":"weekly-competitor-serp","name":"Weekly Competitor SERP & Content Gap Watch","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"seo-researcher","agentSlug":"seo-researcher","timeout":900,"prompt":"Produce the weekly competitor SERP and content gap analysis.\nFocus on Northwind and Helios as Tier-1 competitors. Also check any new competitor domains\nin `competitor-watch/tracked-domains.md`.\n\nFor each of the top 5 keywords where a competitor outranks us:\n1. Document the competitor's ranking page: URL, estimated word count, heading structure summary,\n   content angle, and what we're missing vs their page.\n2. Classify the gap: depth (they go deeper), freshness (their content is newer), format\n   (they have a table/tool/video we don't), or authority (more backlinks).\n3. Recommend: new page to create, existing page to refresh, or format to add.\n\nAlso: flag any new competitor content (blog posts, landing pages, tool pages) published in the\npast 7 days that targets keywords we care about.\n\nWrite findings to `competitor-watch/serp-<YYYY-MM-DD>.md`.\nSurface the top 3 SERP gaps in `seo-workspace/index.html`.\nCross-reference the flagship Competitive Intelligence cabinet for the broader competitive picture.","cabinetPath":"cabinets/seo-content","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"weekly-ranking-check","name":"Weekly Ranking Check","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"seo-researcher","agentSlug":"seo-researcher","timeout":600,"prompt":"Produce the weekly ranking report for all tracked keywords.\n1. Read `keywords/tracked.md` for the current tracked keyword set.\n2. Read the latest Search Console export in `rankings/raw/` — compare this week's positions to last week's.\n3. For each keyword: compute position delta (positive = improved, negative = dropped).\n4. Flag any page that dropped >5 positions — mark as \"Watch\" in tracked.md.\n5. Identify keywords where rank crossed a significant threshold (e.g., moved into/out of top 10, top 3).\n6. Compute the traffic delta for flagged pages using the estimated click model (CTR × volume).\n7. Write the full ranking report to `rankings/weekly-<YYYY-MM-DD>.md` with:\n   - Summary: keywords improved / held / dropped / new on page 1.\n   - Top movers (up and down).\n   - Traffic-weighted opportunity table.\n8. Update `seo-workspace/index.html` keyword table to reflect current ranks.\nLead with \"This week's ranking summary\" before the table.","cabinetPath":"cabinets/seo-content","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"weekly-refresh-review","name":"Weekly Content Refresh Review","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"seo-researcher","agentSlug":"seo-researcher","timeout":600,"prompt":"Produce the weekly content refresh task review.\n1. Read `refresh/queue.md` — the current prioritized list of pages to refresh.\n2. For the top 3 items by opportunity score: confirm the SERP landscape is still accurate (check\n   competitor page structure from `competitor-watch/` notes). If stale, update the SERP notes.\n3. For any refresh item that has been in queue for 3+ weeks without action: escalate with a note\n   explaining the estimated traffic cost of delay.\n4. Identify 1–2 new refresh candidates this week: pages with rank 11–20 on a keyword with >200\n   monthly searches that haven't been touched in 6+ months (check `keywords/tracked.md` for age).\n5. Update `refresh/queue.md` with new candidates and remove any completed refreshes.\n6. Brief the SEO Writer on the top-priority refresh: write the research package to\n   `refresh/<slug>-research.md` (target keyword, competitor gap, recommended additions).\n7. Write a summary to `status/refresh-review-<YYYY-MM-DD>.md`.","cabinetPath":"cabinets/seo-content","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$13","readmeHtml":"$14","tags":["marketing","seo","content","keywords","rankings","enterprise","cabinet"],"section":"Marketing","stats":{"totalAgents":2,"totalJobs":3,"totalCabinets":1,"totalPages":2}}}]}]]}],"$L15","$L16","$L17","$L18","$L19"]}]
+b:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L3",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L5",null,{"src":"/brand/cabinet-logo-face-2-512.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}],"$L1a","$L1b"]}]]}],"$L1c"]]}],"$L1d"]}]}]
+c:["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true}]
+d:["$","script","script-1",{"src":"/_next/static/chunks/258x9i1fxfhga.js","async":true}]
+e:["$","$L1e",null,{"children":["$","$1f",null,{"name":"Next.MetadataOutlet","children":"$@20"}]}]
+15:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"SEO Content Cabinet"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🔍"," ","SEO Researcher"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["✍️"," ","SEO Writer"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$7:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Competitor SERP & Content Gap Watch"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$7:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Ranking Check"}]]}],["$","div","2",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$7:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Content Refresh Review"}]]}]]]}],[]]}]}]]}]
+16:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-seo-researcher-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🔍"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"SEO Researcher"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Owns keyword tracking, competitor SERP analysis, and the weekly ranking check — surfaces opportunities, prioritizes refresh tasks, and sequences the SEO Writer."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 9 * * 1-5"}]]}]]}],["$","div","root-seo-writer-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"✍️"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"SEO Writer"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Writes content briefs, refreshes existing pages, and drafts new SEO content from the Researcher's keyword and SERP analysis."}],""]}]]}]]}]
+17:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","weekly-competitor-serp",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$7:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Competitor SERP & Content Gap Watch"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","seo-researcher"]}]]}]]}],["$","div","weekly-ranking-check",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$7:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Ranking Check"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","seo-researcher"]}]]}]]}],["$","div","weekly-refresh-review",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$7:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Content Refresh Review"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","seo-researcher"]}]]}]]}]]}]]}]
+21:Tbc5,<h1>SEO Content Cabinet</h1>
+<p>Keyword research, content briefs, competitor SERP analysis, ranking history, and content refresh tasks — all as files your team can open, diff, and act on. The SEO Researcher surfaces opportunities and gaps; the SEO Writer turns them into briefs and refreshes that actually rank.</p>
+<blockquote>
+<p><strong>Keep Search Console, Ahrefs, and your CMS. Replace the keyword spreadsheet nobody can find, the brief-in-Docs that's 18 months stale, and the quarterly "which pages need love?" panic.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/seo-researcher]]</strong> — SEO Researcher. Lead orchestrator. Owns keyword tracking, competitor SERP analysis, and the weekly ranking check. Identifies opportunities and prioritizes refresh tasks. Sequences the Writer.</li>
+<li><strong>[[.agents/seo-writer]]</strong> — SEO Writer. Writes content briefs, optimizes existing pages for refresh, and drafts new SEO content from research output.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-ranking-check]]</td>
+<td>SEO Researcher</td>
+<td>Ranking report in <code>rankings/weekly-&#x3C;date>.md</code> + workspace update</td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-refresh-review]]</td>
+<td>SEO Researcher → Writer</td>
+<td>Refresh task queue in <code>refresh/queue.md</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-competitor-serp]]</td>
+<td>SEO Researcher</td>
+<td>Competitor SERP/content gaps in <code>competitor-watch/</code></td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open [[seo-workspace]] — the SEO command center: keyword table with volume/difficulty/rank/target/status, content brief preview, and pages needing refresh.</li>
+<li>Browse <code>keywords/tracked.md</code> — the full tracked keyword set with current rankings and targets.</li>
+<li>Open <code>briefs/</code> — content briefs the Writer has produced, each a standalone file with structure and outline.</li>
+<li>Check <code>refresh/queue.md</code> — prioritized list of pages to update, with rank drop and opportunity score.</li>
+</ol>
+<h2>Competitor watch</h2>
+<p>This cabinet includes a weekly competitor SERP and content gap watch. For the full competitive landscape (positioning, pricing, product), see the flagship <strong>[[../competitive-intelligence]]</strong> cabinet. For the marketing-lens competitor analysis, see <strong>[[../competitive-marketing]]</strong>.</p>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Google Search Console (ranking data), CMS (WordPress, Webflow — publish refreshed pages).
+<strong>Recommended:</strong> Ahrefs or Semrush (keyword difficulty, competitor domains), Clearscope or Surfer (content scoring), Google Analytics (traffic per page), Google Drive (brief sharing).</p>18:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$21"}}]}]]}]
+19:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L22",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set seo-content","label":"Install"}]}]}]]}]
+1a:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+1b:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+1c:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+1d:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+20:null

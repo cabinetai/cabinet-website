@@ -1,0 +1,246 @@
+1:"$Sreact.fragment"
+2:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"SiteNavbar"]
+3:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],""]
+4:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"default"]
+5:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"Image"]
+6:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"StarButton"]
+e:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"ScreenshotPreview"]
+f:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"CabinetOrgChart"]
+1f:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+20:"$Sreact.suspense"
+23:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"TerminalBlock"]
+0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L3",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L5",null,{"src":"/covers/roadmap.jpg","alt":"Roadmap","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Roadmap"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Builds data-backed roadmap proposals from goals, customer feedback, capacity, and business impact — producing a structured Now/Next/Later plan with confidence ratings and linked evidence. Keep your Jira and Linear; replace the roadmap deck that's stale before it's presented."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","product",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"product"}],["$","span","roadmap",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"roadmap"}],["$","span","planning",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"planning"}],["$","span","strategy",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"strategy"}],["$","span","enterprise",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"enterprise"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"cabinet"}]]}]]}],["$","$L6",null,{"slug":"roadmap"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],2," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],2," jobs"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":["$L7",1," cabinets"]}],"$L8"]}]]}]]}],"$L9"]}],"$La"],["$Lb","$Lc"],"$Ld"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"6m0W84u2FvpIa3AeFaHQd"}
+7:["$","$L4",null,{"iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}]
+8:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],1," pages"]}]
+10:T91d,# Roadmap Lead
+
+You own the product roadmap. You don't gather evidence or estimate capacity — the Roadmap Analyst does that. You synthesize goals, feedback themes, competitive signals, and capacity into a coherent sequencing story that product, engineering, and leadership can rally around. Every decision is documented; every item has a reason.
+
+## What you own
+
+1. **Initiative definition.** Turn validated feedback themes and strategic goals into named, scoped initiatives. Each initiative has: a one-sentence problem statement, a success metric, a confidence rating, a theme grouping, and a Now/Next/Later placement.
+2. **Sequencing logic.** Decide the order of Now (this quarter), Next (next 1–2 quarters), and Later (backlog, not yet scheduled). Document the tradeoffs — what moved out of Now and why.
+3. **Weekly refresh.** Each Monday, review the Analyst's updated evidence and confidence scores. Adjust placements if new signals materially change the picture. Write a brief change note to `/reports/refresh-<YYYY-WW>.md` — what moved, what was added, what was removed.
+4. **Cross-cabinet alignment.** Pull top themes from the VoC cabinet and top-scored requests from the Feature Request cabinet each week. The roadmap should reflect both, not just internal intuition.
+
+## How you work
+
+- **Themes, not features.** Group initiatives by customer outcome themes (e.g., "Enterprise Access Controls", "Performance at Scale"), not by individual feature names. Features live in Jira; the roadmap lives here.
+- **Confidence ranges.** Rate confidence 1–5 for each initiative (1=hypothesis, 3=validated demand, 5=committed). Never show a fake "high confidence" to placate a stakeholder.
+- **Document the cuts.** Every initiative that was deprioritized gets a reason. "Not now because capacity is allocated to X and Y" is accountable. Silence is not.
+- **The roadmap is not a promise.** Communicate: Now = plan, Next = intention, Later = direction. Resist executive pressure to over-commit Later items.
+
+## What you do NOT do
+
+- You do not estimate engineering effort or manage sprint planning — that is engineering's scope.
+- You do not write detailed PRDs — route to the PRD Builder cabinet.
+- You do not run the competitive intelligence watch yourself — you consume outputs from the competitive-intelligence cabinet.11:T888,# Roadmap Analyst
+
+You are the evidence engine behind the roadmap. You don't sequence or present — you make sure every roadmap decision has a quantified rationale attached to it. When the Roadmap Lead says "Enterprise Access Controls is a Now initiative," you're the one who can show exactly why: 38 feedback mentions, $2.1M ARR requesting, 4.5 engineering weeks, confidence 4/5.
+
+## What you own
+
+1. **Evidence trails.** For each initiative, compile: mention count (from VoC cabinet), ARR requesting (from Feature Request cabinet), usage data (from BI), and any relevant competitive signal (from competitive-intelligence cabinet). Write to `/evidence/<initiative-slug>.md`.
+2. **Confidence scoring.** Score each initiative 1–5 on: demand validation, scope clarity, technical feasibility, and competitive urgency. Produce an overall confidence rating and a breakdown. Flag anything with <3 that is currently in the Now column.
+3. **Capacity mapping.** Cross-reference the engineering capacity data from Jira/Linear. Express each initiative as a percentage of quarterly engineering capacity. Flag if Now initiatives exceed 80% of available capacity.
+4. **Theme mapping.** Cluster initiatives into 3–5 product themes for the quarter. Themes should reflect customer outcome areas, not engineering domains.
+
+## How you work
+
+- **Multi-source triangulation.** A demand signal from one source is a data point. The same signal from three independent sources (feedback, sales, BI) is a validated need. Label your confidence source count.
+- **Capacity conservatism.** Always subtract 20% from raw capacity for unknowns, bugs, and tech debt. "100% capacity" is a fiction; plan for 80%.
+- **Flag over-commitment.** If the Roadmap Lead's Now column exceeds 80% capacity, surface it immediately with a specific suggestion for what could move to Next.
+- **Evidence freshness.** Flag evidence that is >90 days old — customer needs shift, and stale data misleads.
+
+## What you do NOT do
+
+- You do not make sequencing decisions — that is the Roadmap Lead's role.
+- You do not communicate the roadmap to engineering or stakeholders.
+- You do not define initiative scope or write user stories.12:T541,Produce the weekly roadmap competitor gap analysis. This job identifies where our roadmap
+has gaps vs. what competitors have already shipped or are signaling.
+
+Pull competitor recent moves from the company Competitive Intelligence cabinet
+(cross-reference /competitive-intelligence/signals/ and /competitive-intelligence/competitors/).
+
+For each competitor move in the last 30 days:
+1. Map it to a roadmap initiative (does it overlap with something in our Now/Next/Later?)
+2. If it overlaps a Now item: flag as "competitive urgency — they shipped first"
+3. If it overlaps a Later item: consider whether it should be accelerated
+4. If there is no matching initiative: flag as a "gap — evaluate adding"
+
+Also identify roadmap gaps: features in Later or not yet on the roadmap that 2+ competitors
+have shipped in the past 2 quarters. These are likely table-stakes items.
+
+Write the roadmap competitor gap report to /competitor-watch/roadmap-gaps-<YYYY-MM-DD>.md:
+- Competitive urgency flags (sorted by ARR impact of relevant Now initiatives)
+- Table-stakes gaps (features 2+ competitors have, we don't have on roadmap)
+- First-mover opportunities (our Now items where no competitor has shipped yet)
+
+Lead with the top 3 "so what for our roadmap" implications. Cross-reference the
+Competitive Intelligence cabinet for the full landscape context.13:T5d7,Produce the weekly roadmap refresh. Two-stage job:
+
+STAGE 1 — Ask the Roadmap Analyst to:
+- Pull the latest feedback theme data from /voice-of-customer/themes/ (if accessible)
+  and the scored feature request board from /feature-request/requests/board.md
+- For each initiative in /initiatives/, refresh the evidence trail at /evidence/<slug>.md:
+  · Updated mention count and ARR requesting from latest VoC/FR data
+  · Capacity estimate vs current Jira/Linear sprint data
+  · Confidence score (1–5) with breakdown across 4 dimensions
+- Flag any Now initiative where confidence dropped below 3 this week
+- Flag if total Now capacity exceeds 80% of available quarterly engineering capacity
+- Write a summary to /evidence/weekly-evidence-summary-<YYYY-WW>.md
+
+STAGE 2 — As Roadmap Lead, review the Analyst's findings:
+- Adjust Now/Next/Later placements if any evidence change is material
+- Document any placement change with a one-sentence reason in /reports/refresh-<YYYY-WW>.md
+- If any initiative moved from Later to Now, also check capacity flag before confirming
+- Update the roadmap view at /roadmap/index.html to reflect current placements,
+  confidence scores, themes, and capacity bars
+
+Rules:
+- Every initiative placement has a documented reason (even "no change — signals stable")
+- Confidence < 3 in Now column must be flagged with a recommendation (validate further or move to Next)
+- No hand-waving on capacity: every Now initiative shows an estimated engineering week cost14:T930,# Roadmap
+
+Two agents synthesize goals, customer feedback, engineering capacity, and business impact data into a structured roadmap proposal — with confidence ratings, linked evidence, and theme groupings — then publish a living roadmap view that stays current between planning cycles. Every roadmap item, its evidence trail, and the weekly refresh are inspectable files.
+
+> **Keep your Jira and your Linear. Replace the quarterly roadmap deck that's stale before it's presented, the spreadsheet nobody agrees on, and the "where are we on that?" stand-up question that derails 20 minutes every Friday.**
+
+## The team
+
+- **[[.agents/product-lead]]** — Roadmap Lead. Owns the roadmap proposal, translates goals and feedback into themed initiatives, decides Now/Next/Later placement, and publishes the weekly refresh.
+- **[[.agents/roadmap-analyst]]** — Roadmap Analyst. Maps feedback themes to roadmap items, estimates capacity impact, calculates business case confidence, and surfaces evidence trails per item.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **Weekly** (Mon 08:00) | [[.jobs/weekly-roadmap-refresh]] | Roadmap Lead → Analyst | Updated roadmap view in [[roadmap]], refresh notes in `/reports/` |
+| **Weekly** (Mon 08:00) | [[.jobs/weekly-competitor-watch]] | Roadmap Lead | Competitor roadmap gaps in `/competitor-watch/` |
+
+## How to run the demo
+
+1. Open [[roadmap]] — the Now/Next/Later roadmap board: themed initiatives with confidence bars, linked evidence, and capacity indicators.
+2. Browse `/initiatives/` — the structured initiative files with full evidence trails.
+3. Open `/reports/` — the weekly refresh notes with changes and reasoning.
+
+## Connectors
+
+**Required:** Jira or Linear (engineering backlog + capacity), CRM (ARR data for business case), customer feedback (VoC cabinet).
+**Recommended:** Productboard (theme sync), BI tool (usage metrics, retention by feature), Figma (design status).
+
+> Cross-reference [[competitive-intelligence]] for competitor roadmap signals, and [[voice-of-customer]] for the feedback themes that inform each initiative.
+
+## Every artifact is a file
+
+Every initiative, evidence file, and weekly refresh lives in `/initiatives/`, `/evidence/`, and `/reports/` as inspectable markdown. The roadmap view reflects these files — never the reverse.15:Tb0b,<h1>Roadmap</h1>
+<p>Two agents synthesize goals, customer feedback, engineering capacity, and business impact data into a structured roadmap proposal — with confidence ratings, linked evidence, and theme groupings — then publish a living roadmap view that stays current between planning cycles. Every roadmap item, its evidence trail, and the weekly refresh are inspectable files.</p>
+<blockquote>
+<p><strong>Keep your Jira and your Linear. Replace the quarterly roadmap deck that's stale before it's presented, the spreadsheet nobody agrees on, and the "where are we on that?" stand-up question that derails 20 minutes every Friday.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/product-lead]]</strong> — Roadmap Lead. Owns the roadmap proposal, translates goals and feedback into themed initiatives, decides Now/Next/Later placement, and publishes the weekly refresh.</li>
+<li><strong>[[.agents/roadmap-analyst]]</strong> — Roadmap Analyst. Maps feedback themes to roadmap items, estimates capacity impact, calculates business case confidence, and surfaces evidence trails per item.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-roadmap-refresh]]</td>
+<td>Roadmap Lead → Analyst</td>
+<td>Updated roadmap view in [[roadmap]], refresh notes in <code>/reports/</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-competitor-watch]]</td>
+<td>Roadmap Lead</td>
+<td>Competitor roadmap gaps in <code>/competitor-watch/</code></td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open [[roadmap]] — the Now/Next/Later roadmap board: themed initiatives with confidence bars, linked evidence, and capacity indicators.</li>
+<li>Browse <code>/initiatives/</code> — the structured initiative files with full evidence trails.</li>
+<li>Open <code>/reports/</code> — the weekly refresh notes with changes and reasoning.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Jira or Linear (engineering backlog + capacity), CRM (ARR data for business case), customer feedback (VoC cabinet).
+<strong>Recommended:</strong> Productboard (theme sync), BI tool (usage metrics, retention by feature), Figma (design status).</p>
+<blockquote>
+<p>Cross-reference [[competitive-intelligence]] for competitor roadmap signals, and [[voice-of-customer]] for the feedback themes that inform each initiative.</p>
+</blockquote>
+<h2>Every artifact is a file</h2>
+<p>Every initiative, evidence file, and weekly refresh lives in <code>/initiatives/</code>, <code>/evidence/</code>, and <code>/reports/</code> as inspectable markdown. The roadmap view reflects these files — never the reverse.</p>9:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$Le",null,{"slug":"roadmap","pageName":"roadmap"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$Lf",null,{"entry":{"slug":"roadmap","meta":{"schemaVersion":1,"id":"roadmap-root","name":"Roadmap","kind":"root","version":"0.1.0","description":"Builds data-backed roadmap proposals from goals, customer feedback, capacity, and business impact — producing a structured Now/Next/Later plan with confidence ratings and linked evidence. Keep your Jira and Linear; replace the roadmap deck that's stale before it's presented.","entry":"index.md","domain":"Software"},"agents":[{"name":"Roadmap Lead","slug":"product-lead","emoji":"🗺️","type":"lead","department":"product","role":"Owns the product roadmap proposal — translates company goals, customer feedback, and competitive signals into themed Now/Next/Later initiatives, decides placement, and publishes the weekly refresh.","heartbeat":"0 9 * * 1-5","budget":120,"active":true,"focus":["initiative-sequencing","now-next-later","stakeholder-alignment","weekly-refresh"],"tags":["leadership","product"],"body":"$10"},{"name":"Roadmap Analyst","slug":"roadmap-analyst","emoji":"📐","type":"specialist","department":"product","role":"Maps feedback themes to roadmap initiatives, calculates capacity impact percentages, builds evidence trails per initiative, and produces the confidence and business-case data the Roadmap Lead uses to sequence the plan.","heartbeat":"","budget":80,"active":true,"focus":["evidence-mapping","capacity-modeling","confidence-scoring","initiative-research"],"tags":["analytics","product"],"body":"$11"}],"jobs":[{"id":"weekly-competitor-watch","name":"Weekly Competitor Watch","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"product-lead","agentSlug":"product-lead","timeout":900,"prompt":"$12","cabinetPath":"cabinets/roadmap","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"weekly-roadmap-refresh","name":"Weekly Roadmap Refresh","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"product-lead","agentSlug":"product-lead","timeout":900,"prompt":"$13","cabinetPath":"cabinets/roadmap","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$14","readmeHtml":"$15","tags":["product","roadmap","planning","strategy","enterprise","cabinet"],"section":"Product & Engineering","stats":{"totalAgents":2,"totalJobs":2,"totalCabinets":1,"totalPages":1}}}]}]]}],"$L16","$L17","$L18","$L19","$L1a"]}]
+a:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L3",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L5",null,{"src":"/brand/cabinet-logo-face-2-512.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}],"$L1b","$L1c"]}]]}],"$L1d"]]}],"$L1e"]}]}]
+b:["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true}]
+c:["$","script","script-1",{"src":"/_next/static/chunks/258x9i1fxfhga.js","async":true}]
+d:["$","$L1f",null,{"children":["$","$20",null,{"name":"Next.MetadataOutlet","children":"$@21"}]}]
+16:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Roadmap"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🗺️"," ","Roadmap Lead"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["📐"," ","Roadmap Analyst"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Competitor Watch"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Roadmap Refresh"}]]}]]]}],[]]}]}]]}]
+17:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-product-lead-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🗺️"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Roadmap Lead"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Owns the product roadmap proposal — translates company goals, customer feedback, and competitive signals into themed Now/Next/Later initiatives, decides placement, and publishes the weekly refresh."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 9 * * 1-5"}]]}]]}],["$","div","root-roadmap-analyst-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"📐"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Roadmap Analyst"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Maps feedback themes to roadmap initiatives, calculates capacity impact percentages, builds evidence trails per initiative, and produces the confidence and business-case data the Roadmap Lead uses to sequence the plan."}],""]}]]}]]}]
+18:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","weekly-competitor-watch",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Competitor Watch"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","product-lead"]}]]}]]}],["$","div","weekly-roadmap-refresh",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Roadmap Refresh"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","product-lead"]}]]}]]}]]}]]}]
+22:Tb0b,<h1>Roadmap</h1>
+<p>Two agents synthesize goals, customer feedback, engineering capacity, and business impact data into a structured roadmap proposal — with confidence ratings, linked evidence, and theme groupings — then publish a living roadmap view that stays current between planning cycles. Every roadmap item, its evidence trail, and the weekly refresh are inspectable files.</p>
+<blockquote>
+<p><strong>Keep your Jira and your Linear. Replace the quarterly roadmap deck that's stale before it's presented, the spreadsheet nobody agrees on, and the "where are we on that?" stand-up question that derails 20 minutes every Friday.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/product-lead]]</strong> — Roadmap Lead. Owns the roadmap proposal, translates goals and feedback into themed initiatives, decides Now/Next/Later placement, and publishes the weekly refresh.</li>
+<li><strong>[[.agents/roadmap-analyst]]</strong> — Roadmap Analyst. Maps feedback themes to roadmap items, estimates capacity impact, calculates business case confidence, and surfaces evidence trails per item.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-roadmap-refresh]]</td>
+<td>Roadmap Lead → Analyst</td>
+<td>Updated roadmap view in [[roadmap]], refresh notes in <code>/reports/</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-competitor-watch]]</td>
+<td>Roadmap Lead</td>
+<td>Competitor roadmap gaps in <code>/competitor-watch/</code></td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open [[roadmap]] — the Now/Next/Later roadmap board: themed initiatives with confidence bars, linked evidence, and capacity indicators.</li>
+<li>Browse <code>/initiatives/</code> — the structured initiative files with full evidence trails.</li>
+<li>Open <code>/reports/</code> — the weekly refresh notes with changes and reasoning.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Jira or Linear (engineering backlog + capacity), CRM (ARR data for business case), customer feedback (VoC cabinet).
+<strong>Recommended:</strong> Productboard (theme sync), BI tool (usage metrics, retention by feature), Figma (design status).</p>
+<blockquote>
+<p>Cross-reference [[competitive-intelligence]] for competitor roadmap signals, and [[voice-of-customer]] for the feedback themes that inform each initiative.</p>
+</blockquote>
+<h2>Every artifact is a file</h2>
+<p>Every initiative, evidence file, and weekly refresh lives in <code>/initiatives/</code>, <code>/evidence/</code>, and <code>/reports/</code> as inspectable markdown. The roadmap view reflects these files — never the reverse.</p>19:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$22"}}]}]]}]
+1a:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L23",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set roadmap","label":"Install"}]}]}]]}]
+1b:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+1c:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+1d:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+1e:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+21:null

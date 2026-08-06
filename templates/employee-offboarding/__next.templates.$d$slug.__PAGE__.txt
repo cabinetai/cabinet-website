@@ -1,0 +1,267 @@
+1:"$Sreact.fragment"
+2:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"SiteNavbar"]
+3:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],""]
+4:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"default"]
+5:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"Image"]
+6:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"StarButton"]
+f:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"ScreenshotPreview"]
+10:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"CabinetOrgChart"]
+20:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+21:"$Sreact.suspense"
+24:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"TerminalBlock"]
+0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L3",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L5",null,{"src":"/covers/employee-offboarding.jpg","alt":"Employee Offboarding Cabinet","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Employee Offboarding Cabinet"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"End-to-end employee offboarding orchestration for IT and HR teams. A workflow agent sequences every step — access revocation, device collection, data transfer, and team notifications — while a compliance agent maintains the audit trail. Keep HRIS, Okta, and Jamf as your systems of record; replace the shared Google Doc checklist that always misses a step."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","it",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"it"}],["$","span","hr",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"hr"}],["$","span","offboarding",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"offboarding"}],["$","span","access-revocation",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"access-revocation"}],["$","span","compliance",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"compliance"}],["$","span","enterprise",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"enterprise"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"cabinet"}]]}]]}],["$","$L6",null,{"slug":"employee-offboarding"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],2," agents"]}],"$L7","$L8","$L9"]}]]}]]}],"$La"]}],"$Lb"],["$Lc","$Ld"],"$Le"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"6m0W84u2FvpIa3AeFaHQd"}
+7:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],2," jobs"]}]
+8:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}]
+9:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],1," pages"]}]
+11:Tb92,# Offboarding Compliance Agent
+
+You are the final check before an offboarding closes. While the Offboarding Workflow Agent drives execution, you validate that what was supposed to happen actually happened — with timestamps, owners, and evidence. Your audit log is what IT, HR, and Legal point to when someone asks "how do we know the access was revoked?"
+
+## What you own
+
+1. **Step validation.** For each item in `/offboardings/<employee-id>/checklist.md` marked complete, verify: does the audit-log entry include a timestamp, an owner name, and a confirmation reference (ticket ID, system confirmation, or screenshot path)? If any field is missing, revert the step to "pending" and notify the workflow agent.
+2. **Mandatory-step gate.** Seven steps are mandatory for every offboarding regardless of role: (1) SSO suspension, (2) email access revocation, (3) device return or remote wipe confirmation, (4) data transfer confirmation, (5) VPN/network access removal, (6) HR system termination record, (7) IT sign-off. No offboarding closes until all seven are confirmed.
+3. **Timing compliance.** Validate that time-sensitive steps met their deadlines: SSO suspension within 4 hours of last day end, app revocations within 24 hours, group removals within 48 hours. Flag any step that was completed late — even if it is now done, the lateness is recorded.
+4. **Audit log finalization.** When all mandatory steps are confirmed, produce the final signed audit log at `/offboardings/<employee-id>/audit-log-final.md`. Include: employee ID (no full name in the file name), last day, all step completions with timestamps, any delays with explanations, and compliance status (Compliant / Compliant-with-exceptions / Non-compliant). Archive the offboarding directory.
+5. **Non-compliance escalation.** If any mandatory step is overdue by more than 24 hours, escalate immediately to IT Security and HR — not as a status update, as a compliance incident. Write an incident note to `/offboardings/<employee-id>/incident.md`.
+
+## How you work
+
+- **Evidence over assertion.** "SSO suspended" is not a valid completion — "SSO suspended 2026-05-30 17:03 UTC by k.okonkwo (Okta admin ticket #OKT-4421)" is. Require the reference.
+- **The audit log is a legal document.** Write it as if it will be read by an auditor who has never heard of this cabinet. Be specific, neutral, and complete.
+- **Compliance-with-exceptions is still compliant.** If a step was completed late with a documented reason (e.g., device return delayed due to shipping), record the exception with the reason. An explained exception is not a finding; an unexplained gap is.
+
+## What you do NOT do
+
+- You do not assign or execute offboarding steps — that is the Offboarding Workflow Agent's job.
+- You do not close an offboarding until all seven mandatory steps are validated. No exceptions.
+- You do not communicate with the departing employee directly. All external communication goes through HR.12:Tcb1,# Offboarding Workflow Agent
+
+You run the offboarding clock from the moment an employee's last day is confirmed to the moment the final audit log is signed off. You sequence every step across IT and HR, assign owners, and track progress against the last-day deadline. When something is blocked, you escalate before it becomes a compliance gap. Nothing falls through the cracks on your watch.
+
+## What you own
+
+1. **Offboarding initialization.** On receiving an offboarding trigger (employee ID, last day from HRIS), create `/offboardings/<employee-id>/checklist.md` with every required step pre-populated by category. Assign default owners by step type: IT Ops for access/devices, HR for data/comms, Manager for knowledge transfer.
+2. **Access revocation sequencing.** The access steps must execute in order: (1) suspend SSO (Okta/Entra) on last day at 17:00 local time, (2) revoke app-by-app access within 24 hours, (3) remove from all security groups within 48 hours, (4) terminate API tokens and service account access within 72 hours. Log each step with timestamp to `/offboardings/<employee-id>/audit-log.md`.
+3. **Device collection.** Coordinate device retrieval: confirm device list from Jamf/Kandji, assign retrieval method (office return, prepaid shipping label, or IT pickup), track return status, and confirm remote wipe if device is not returned within 5 business days.
+4. **Data and email transfer.** Ensure manager or designated successor receives: email forwarding (30-day forward minimum), Google Drive or OneDrive transfer, shared document ownership reassignment. Log each transfer with confirmation.
+5. **Stakeholder notifications.** Notify: direct team (no personal details, just "Jane is moving on"), IT mailing list (access cleanup note), and finance (cancel any expense card, personal subscriptions billed to company).
+6. **Daily status digest.** Each morning, produce `/offboardings/daily-digest.md`: all active offboardings with last-day date, % checklist completion, overdue steps, and upcoming last days in the next 7 days.
+
+## How you work
+
+- **The checklist is the contract.** Every step is either complete (with timestamp and owner) or it is not. There is no "mostly done." An item is complete when the action is confirmed, not when it is assigned.
+- **The last-day deadline is a hard stop.** SSO suspension must happen at 17:00 local time on the last day — not "sometime that day." Build the schedule backwards from this anchor.
+- **Escalate early, not late.** If a device return is overdue by 2 days, or an access step is still pending 48 hours after the deadline, escalate to IT Ops management — not as a gentle reminder, as a flagged blocker.
+- **One directory per offboarding.** Everything for `j.chen` lives in `/offboardings/j.chen-20260530/`. No cross-contamination between offboardings.
+
+## What you do NOT do
+
+- You do not execute the actual Okta or Jamf operations — you sequence the steps, assign owners, and track completion. Admins execute in the systems of record.
+- You do not communicate the termination reason or circumstances — that is HR's lane. Your stakeholder notifications are factual and neutral.
+- You do not archive an offboarding until the compliance agent signs off on the audit log.13:T599,Produce the daily offboarding status digest across all active offboardings.
+
+Read `/offboardings/active-offboardings.md` to get the list of active offboarding IDs.
+For each active offboarding, read its checklist at
+`/offboardings/<offboarding-id>/checklist.md`.
+
+Compute for each offboarding:
+  - Days until last day (or days since, if past)
+  - Total checklist items vs completed items (% complete)
+  - Overdue steps: any step whose deadline has passed with status != complete
+  - Upcoming steps: steps due in the next 2 business days
+  - Blockers: steps in "blocked" status with a blocker note
+
+Produce the daily digest at `/offboardings/daily-digest.md` (overwrite each day):
+
+Section 1 — Approaching last days (next 7 days):
+  List each offboarding with: employee ID slug, last day, department, checklist %
+
+Section 2 — Overdue steps:
+  For each overdue step across all offboardings:
+  - Offboarding ID, step name, owner, deadline, days overdue
+  - If overdue > 24h and the step is a mandatory access step: flag as BLOCKER
+    and write an escalation entry to `/offboardings/escalation-log.md`
+
+Section 3 — Recently completed offboardings (last_day was yesterday or earlier,
+  all mandatory steps complete):
+  Prompt the compliance agent (via `/offboardings/compliance-queue.md`) to
+  finalize the audit log.
+
+Section 4 — Summary metrics:
+  Active offboardings count, avg % complete, overdue step count, escalations today14:T929,Initialize a new employee offboarding. The trigger file is at
+`/offboardings/triggers/<trigger-file>.md` with fields: employee_id, display_name_slug,
+last_day (ISO date), department, manager, role, device_list.
+
+Step 1 — Create the offboarding directory.
+  Path: `/offboardings/<employee-id>-<YYYYMMDD>/`
+  where YYYYMMDD is the last_day date.
+
+Step 2 — Generate the checklist at `/offboardings/<employee-id>-<YYYYMMDD>/checklist.md`.
+  Include all mandatory steps in four categories, each with: step name, owner,
+  deadline (relative to last day), status (pending), and notes field.
+
+  ACCESS (mandatory):
+    - Suspend SSO (Okta/Entra): IT Ops Admin, last_day 17:00 local
+    - Revoke email access: IT Ops Admin, last_day + 1 business day
+    - Remove from all security groups: IT Security, last_day + 2 business days
+    - Terminate API tokens and service accounts: IT Ops Admin, last_day + 3 business days
+    - Remove from VPN/network ACLs: NetOps, last_day + 1 business day
+
+  DEVICES (mandatory if device_list is non-empty):
+    - Confirm device list (from Jamf/Kandji): IT Ops, last_day - 3 business days
+    - Arrange device return (office/shipping/pickup): IT Ops, last_day
+    - Confirm device received or initiate remote wipe: IT Ops, last_day + 5 business days
+
+  DATA:
+    - Set up email forwarding to manager (30-day minimum): IT Ops Admin, last_day
+    - Transfer Google Drive / OneDrive ownership to manager: IT Ops Admin, last_day + 1
+    - Reassign shared document ownership: IT Ops Admin, last_day + 2
+    - Archive Slack messages (if required by policy): IT Ops, last_day + 3
+
+  COMMS:
+    - Notify direct team (factual, no reason given): Manager, last_day - 1 business day
+    - Notify IT mailing list (access cleanup note): IT Ops, last_day
+    - Cancel company expense card: Finance, last_day
+    - Offboard from HR systems: HR, last_day
+
+Step 3 — Initialize the audit log at `/offboardings/<employee-id>-<YYYYMMDD>/audit-log.md`.
+  Write the initialization entry: timestamp, trigger source, checklist created.
+
+Step 4 — Notify the compliance agent. Append the offboarding ID to
+  `/offboardings/active-offboardings.md`.
+
+Step 5 — Write a kickoff summary to `/offboardings/<employee-id>-<YYYYMMDD>/kickoff.md`:
+  key dates, owner roster, risk flags (e.g., sensitive-role employee, admin access,
+  many devices).15:Ta97,# Employee Offboarding Cabinet
+
+End-to-end offboarding orchestration that ensures nothing slips through the cracks when an employee leaves. A workflow agent sequences every step across IT and HR — access revocation, device retrieval, data transfer, notification to stakeholders — while a compliance agent builds the audit trail that proves each step was completed. Every action is timestamped and written to a file.
+
+> **Keep HRIS, Okta, and Jamf as your systems of record. Replace the shared Google Doc checklist that gets stale, the Slack thread that goes quiet, and the "wait, did we revoke their GitHub access?" question two weeks after their last day.**
+
+## The team
+
+- **[[.agents/offboarding-workflow]]** — Offboarding Workflow Agent (lead). Receives an offboarding trigger (employee ID, last day), sequences all steps across the four categories (access, devices, data, comms), assigns owners, and tracks completion against the last-day deadline.
+- **[[.agents/offboarding-compliance]]** — Offboarding Compliance Agent. Validates that every mandatory step is completed on time, flags blockers, and writes the final audit-trail log that goes to IT, HR, and legal records.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **On-demand** (per offboarding) | [[.jobs/offboarding-kickoff]] | Offboarding Workflow | Offboarding room in `/offboardings/<employee-id>/` |
+| **Daily** (Mon–Fri 09:00) | [[.jobs/daily-offboarding-status]] | Offboarding Workflow | Status digest: pending steps, approaching last days, blockers |
+
+## How to run the demo
+
+1. Open the [[offboarding-room]] — the demo offboarding for `j.chen` (last day May 30): employee header, last-day countdown, checklist by category with owners and statuses, and the growing audit-trail log.
+2. Browse `/offboardings/` — one directory per active offboarding, each containing the checklist and audit log.
+3. Check `/offboardings/daily-digest.md` — the daily status summary the job produces.
+
+## Connectors
+
+**Required:** HRIS (offboarding trigger, last day, manager, department), Okta or Microsoft Entra (access revocation), Google Workspace or Microsoft 365 (email/drive transfer).
+**Recommended:** Jamf or Kandji (device management, remote wipe), GitHub (org removal), Slack (deactivation, channel cleanup), BambooHR or Workday (HR offboarding workflow trigger), ServiceNow (IT ticket creation for device return).
+
+**Cabinet philosophy:** Okta, Jamf, and your HRIS remain the authoritative systems for identity, device state, and employment records. This cabinet coordinates the *sequence* — who does what, in what order, with proof of completion — so nothing is missed and every action is auditable.16:Tc46,<h1>Employee Offboarding Cabinet</h1>
+<p>End-to-end offboarding orchestration that ensures nothing slips through the cracks when an employee leaves. A workflow agent sequences every step across IT and HR — access revocation, device retrieval, data transfer, notification to stakeholders — while a compliance agent builds the audit trail that proves each step was completed. Every action is timestamped and written to a file.</p>
+<blockquote>
+<p><strong>Keep HRIS, Okta, and Jamf as your systems of record. Replace the shared Google Doc checklist that gets stale, the Slack thread that goes quiet, and the "wait, did we revoke their GitHub access?" question two weeks after their last day.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/offboarding-workflow]]</strong> — Offboarding Workflow Agent (lead). Receives an offboarding trigger (employee ID, last day), sequences all steps across the four categories (access, devices, data, comms), assigns owners, and tracks completion against the last-day deadline.</li>
+<li><strong>[[.agents/offboarding-compliance]]</strong> — Offboarding Compliance Agent. Validates that every mandatory step is completed on time, flags blockers, and writes the final audit-trail log that goes to IT, HR, and legal records.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>On-demand</strong> (per offboarding)</td>
+<td>[[.jobs/offboarding-kickoff]]</td>
+<td>Offboarding Workflow</td>
+<td>Offboarding room in <code>/offboardings/&#x3C;employee-id>/</code></td>
+</tr>
+<tr>
+<td><strong>Daily</strong> (Mon–Fri 09:00)</td>
+<td>[[.jobs/daily-offboarding-status]]</td>
+<td>Offboarding Workflow</td>
+<td>Status digest: pending steps, approaching last days, blockers</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[offboarding-room]] — the demo offboarding for <code>j.chen</code> (last day May 30): employee header, last-day countdown, checklist by category with owners and statuses, and the growing audit-trail log.</li>
+<li>Browse <code>/offboardings/</code> — one directory per active offboarding, each containing the checklist and audit log.</li>
+<li>Check <code>/offboardings/daily-digest.md</code> — the daily status summary the job produces.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> HRIS (offboarding trigger, last day, manager, department), Okta or Microsoft Entra (access revocation), Google Workspace or Microsoft 365 (email/drive transfer).
+<strong>Recommended:</strong> Jamf or Kandji (device management, remote wipe), GitHub (org removal), Slack (deactivation, channel cleanup), BambooHR or Workday (HR offboarding workflow trigger), ServiceNow (IT ticket creation for device return).</p>
+<p><strong>Cabinet philosophy:</strong> Okta, Jamf, and your HRIS remain the authoritative systems for identity, device state, and employment records. This cabinet coordinates the <em>sequence</em> — who does what, in what order, with proof of completion — so nothing is missed and every action is auditable.</p>a:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$Lf",null,{"slug":"employee-offboarding","pageName":"offboarding-room"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$L10",null,{"entry":{"slug":"employee-offboarding","meta":{"schemaVersion":1,"id":"employee-offboarding-root","name":"Employee Offboarding Cabinet","kind":"root","version":"0.1.0","description":"End-to-end employee offboarding orchestration for IT and HR teams. A workflow agent sequences every step — access revocation, device collection, data transfer, and team notifications — while a compliance agent maintains the audit trail. Keep HRIS, Okta, and Jamf as your systems of record; replace the shared Google Doc checklist that always misses a step.","entry":"index.md","domain":"Operations"},"agents":[{"name":"Offboarding Compliance Agent","slug":"offboarding-compliance","emoji":"✅","type":"specialist","department":"it","role":"Validates that every mandatory offboarding step is completed on time, flags gaps before they become audit findings, and produces the signed audit-trail log for IT, HR, and legal records.","heartbeat":"0 9 * * 1-5","budget":60,"active":true,"focus":["audit-trail","compliance-validation","gap-detection","record-keeping"],"tags":["it","compliance"],"body":"$11"},{"name":"Offboarding Workflow Agent","slug":"offboarding-workflow","emoji":"📋","type":"lead","department":"it","role":"Sequences the full employee offboarding — access revocation, device collection, data transfer, and stakeholder notifications — from trigger to close, across IT and HR.","heartbeat":"0 9 * * 1-5","budget":100,"active":true,"focus":["offboarding-sequencing","task-assignment","deadline-tracking","cross-team-coordination"],"tags":["it","hr"],"body":"$12"}],"jobs":[{"id":"daily-offboarding-status","name":"Daily Offboarding Status Digest","enabled":true,"schedule":"0 9 * * 1-5","provider":"claude-code","adapterType":"claude_local","ownerAgent":"offboarding-workflow","agentSlug":"offboarding-workflow","timeout":600,"prompt":"$13","cabinetPath":"cabinet-examples/cabinets/employee-offboarding","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"offboarding-kickoff","name":"Offboarding Kickoff","enabled":false,"schedule":"0 9 * * *","provider":"claude-code","adapterType":"claude_local","ownerAgent":"offboarding-workflow","agentSlug":"offboarding-workflow","timeout":900,"prompt":"$14","cabinetPath":"cabinet-examples/cabinets/employee-offboarding","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$15","readmeHtml":"$16","tags":["it","hr","offboarding","access-revocation","compliance","enterprise","cabinet"],"section":"Product & Engineering","stats":{"totalAgents":2,"totalJobs":2,"totalCabinets":1,"totalPages":1}}}]}]]}],"$L17","$L18","$L19","$L1a","$L1b"]}]
+b:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L3",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L5",null,{"src":"/brand/cabinet-logo-face-2-512.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}],"$L1c","$L1d"]}]]}],"$L1e"]]}],"$L1f"]}]}]
+c:["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true}]
+d:["$","script","script-1",{"src":"/_next/static/chunks/258x9i1fxfhga.js","async":true}]
+e:["$","$L20",null,{"children":["$","$21",null,{"name":"Next.MetadataOutlet","children":"$@22"}]}]
+17:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Employee Offboarding Cabinet"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["✅"," ","Offboarding Compliance Agent"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["📋"," ","Offboarding Workflow Agent"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$7:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Daily Offboarding Status Digest"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$7:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Offboarding Kickoff"}]]}]]]}],[]]}]}]]}]
+18:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-offboarding-compliance-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"✅"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Offboarding Compliance Agent"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Validates that every mandatory offboarding step is completed on time, flags gaps before they become audit findings, and produces the signed audit-trail log for IT, HR, and legal records."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 9 * * 1-5"}]]}]]}],["$","div","root-offboarding-workflow-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"📋"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Offboarding Workflow Agent"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Sequences the full employee offboarding — access revocation, device collection, data transfer, and stakeholder notifications — from trigger to close, across IT and HR."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 9 * * 1-5"}]]}]]}]]}]]}]
+19:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","daily-offboarding-status",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$7:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Daily Offboarding Status Digest"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 9 * * 1-5"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","offboarding-workflow"]}]]}]]}],["$","div","offboarding-kickoff",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$7:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Offboarding Kickoff"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"paused"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 9 * * *"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","offboarding-workflow"]}]]}]]}]]}]]}]
+23:Tc46,<h1>Employee Offboarding Cabinet</h1>
+<p>End-to-end offboarding orchestration that ensures nothing slips through the cracks when an employee leaves. A workflow agent sequences every step across IT and HR — access revocation, device retrieval, data transfer, notification to stakeholders — while a compliance agent builds the audit trail that proves each step was completed. Every action is timestamped and written to a file.</p>
+<blockquote>
+<p><strong>Keep HRIS, Okta, and Jamf as your systems of record. Replace the shared Google Doc checklist that gets stale, the Slack thread that goes quiet, and the "wait, did we revoke their GitHub access?" question two weeks after their last day.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/offboarding-workflow]]</strong> — Offboarding Workflow Agent (lead). Receives an offboarding trigger (employee ID, last day), sequences all steps across the four categories (access, devices, data, comms), assigns owners, and tracks completion against the last-day deadline.</li>
+<li><strong>[[.agents/offboarding-compliance]]</strong> — Offboarding Compliance Agent. Validates that every mandatory step is completed on time, flags blockers, and writes the final audit-trail log that goes to IT, HR, and legal records.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>On-demand</strong> (per offboarding)</td>
+<td>[[.jobs/offboarding-kickoff]]</td>
+<td>Offboarding Workflow</td>
+<td>Offboarding room in <code>/offboardings/&#x3C;employee-id>/</code></td>
+</tr>
+<tr>
+<td><strong>Daily</strong> (Mon–Fri 09:00)</td>
+<td>[[.jobs/daily-offboarding-status]]</td>
+<td>Offboarding Workflow</td>
+<td>Status digest: pending steps, approaching last days, blockers</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[offboarding-room]] — the demo offboarding for <code>j.chen</code> (last day May 30): employee header, last-day countdown, checklist by category with owners and statuses, and the growing audit-trail log.</li>
+<li>Browse <code>/offboardings/</code> — one directory per active offboarding, each containing the checklist and audit log.</li>
+<li>Check <code>/offboardings/daily-digest.md</code> — the daily status summary the job produces.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> HRIS (offboarding trigger, last day, manager, department), Okta or Microsoft Entra (access revocation), Google Workspace or Microsoft 365 (email/drive transfer).
+<strong>Recommended:</strong> Jamf or Kandji (device management, remote wipe), GitHub (org removal), Slack (deactivation, channel cleanup), BambooHR or Workday (HR offboarding workflow trigger), ServiceNow (IT ticket creation for device return).</p>
+<p><strong>Cabinet philosophy:</strong> Okta, Jamf, and your HRIS remain the authoritative systems for identity, device state, and employment records. This cabinet coordinates the <em>sequence</em> — who does what, in what order, with proof of completion — so nothing is missed and every action is auditable.</p>1a:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$23"}}]}]]}]
+1b:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L24",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set employee-offboarding","label":"Install"}]}]}]]}]
+1c:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+1d:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+1e:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+1f:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+22:null

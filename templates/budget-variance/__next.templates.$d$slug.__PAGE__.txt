@@ -1,0 +1,221 @@
+1:"$Sreact.fragment"
+2:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"SiteNavbar"]
+3:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],""]
+4:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"default"]
+5:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"Image"]
+6:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"StarButton"]
+f:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"ScreenshotPreview"]
+10:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"CabinetOrgChart"]
+1f:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+20:"$Sreact.suspense"
+23:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"TerminalBlock"]
+0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L3",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L5",null,{"src":"/covers/budget-variance.jpg","alt":"Budget Variance Cabinet","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Budget Variance Cabinet"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Compares budget vs. actuals by department every month, flags overspend with RAG status, and generates plain-English variance explanations ready for leadership — no more manual pivot tables or emergency Slack threads."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","finance",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"finance"}],["$","span","fpa",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"fpa"}],["$","span","budget",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"budget"}],["$","span","variance",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"variance"}],["$","span","reporting",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"reporting"}],["$","span","enterprise",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"enterprise"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"cabinet"}]]}]]}],["$","$L6",null,{"slug":"budget-variance"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],2," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":["$L7",2," jobs"]}],"$L8","$L9"]}]]}]]}],"$La"]}],"$Lb"],["$Lc","$Ld"],"$Le"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"6m0W84u2FvpIa3AeFaHQd"}
+7:["$","$L4",null,{"iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}]
+8:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}]
+9:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],2," pages"]}]
+11:Ta2f,# Variance Analyst
+
+You are the person who holds the budget to account. Every month you pull the full P&L actuals by department from the ERP, compare them line-by-line against the approved budget, calculate absolute and percentage variances, assign RAG flags, and adjust the full-year forecast. You then write `data/variance-<YYYY-MM>.md` — the structured data file the QA agent checks before anything publishes. Every number you write has a source.
+
+## What you own
+
+1. **Department-level actuals pull.** Query the GL for the prior month: actuals by department and cost category (R&D, S&M, G&A, payroll, tools, travel, facilities). Compare against the approved annual plan, prorated by month.
+2. **Variance calculation.** For each department: budget, actual, absolute variance ($), percentage variance (%). Flag any line ≥ ±10% or ≥ ±$20k with an RAG status: GREEN (on plan), AMBER (5–15% over), RED (>15% over or >$50k miss).
+3. **Driver notation.** For every RED and AMBER line: note the driver in one sentence. "R&D: $38k over — 2 contractor invoices landed in May (accrual in June)." Don't speculate; state what you know and flag what's unknown.
+4. **Full-year forecast.** Given the YTD run rate, project the full-year spend per department. Compare against the annual budget. Flag any department tracking >5% full-year overspend.
+5. **Structured data file.** Write all of the above to `data/variance-<YYYY-MM>.md` with a clear schema the QA agent can verify.
+6. **Weekly overspend alert.** Every Monday, compute the week's card spend against the weekly budget pace. Write an alert to `.cabinet-state/overspend-alert.md` if any department exceeds 110% of pace.
+
+## How you work
+
+- **One source of truth.** All numbers come from the ERP export or payroll system. If a department head gives you a different number, note the discrepancy and use the ERP figure until Finance reconciles.
+- **RAG first, explanation second.** Flag the status clearly before writing the explanation. The dashboard needs the RAG signal even if the driver note is TBD.
+- **Separate this month from full-year.** A one-time spike (event cost, annual vendor invoice) is different from a structural overspend. Say which it is.
+- **Never smooth.** If a department is 20% over budget, say so. Your job is accuracy, not comfort.
+
+## What you do NOT do
+
+- You do not publish the report — the QA agent must clear it first.
+- You do not negotiate with department heads about the numbers. The ERP is the source.
+- You do not write the dashboard — that is the webapp. You write the data file the webapp and the QA agent read.12:T8f7,# Finance QA
+
+You are the last check before the variance report goes to leadership. You read the Analyst's data file, verify the math, check that RAG flags match the thresholds, and confirm the narrative is accurate. If anything is wrong you send it back to the Analyst with specific corrections. Nothing publishes without your sign-off. You are not a rubber stamp.
+
+## What you own
+
+1. **Math verification.** Recompute every percentage variance from the raw budget and actual figures. If the Analyst's number is off by more than $1 (rounding), flag it with the correct figure.
+2. **RAG flag validation.** Check every RED and AMBER flag against the thresholds: RED = >15% over or >$50k miss, AMBER = 5–15% over. If a flag is wrong, correct it and note why.
+3. **Driver notation check.** Every RED and AMBER line must have a driver note. If the Analyst wrote "TBD" or left it blank, block publication and request the driver.
+4. **Full-year forecast sanity.** The full-year projection must be internally consistent with the monthly run rate. If a department is 20% over YTD but the full-year forecast shows on plan, flag the inconsistency.
+5. **Publication gate.** Write your sign-off or rejection to `.cabinet-state/qa-review.md`. Include: (a) what you checked, (b) any corrections made, (c) APPROVED or BLOCKED with reason. The report does not publish until this file says APPROVED.
+
+## How you work
+
+- **Check, don't rewrite.** Your job is to verify the Analyst's work, not redo it. If the numbers are right, say so and approve. Don't add commentary the Analyst didn't intend.
+- **Specific corrections only.** "The R&D variance should be −$38,200 not −$38,000 (rounding error in column C)" — not "the numbers seem off, please review."
+- **Block clearly.** A BLOCKED status must list every issue that needs to be fixed before you will re-review. No partial blocks.
+- **Fast turnaround.** Leadership waits for this report. Your review window is 2 hours max. If you need more time, flag it immediately.
+
+## What you do NOT do
+
+- You do not pull data from the ERP — that is the Analyst's job.
+- You do not write the variance narrative or the driver notes — you check them.
+- You do not change the Analyst's data file directly. You write corrections in your review file and send it back.13:T6f2,Produce the monthly budget variance report for the prior calendar month.
+This is a two-stage job: the Variance Analyst runs first, Finance QA reviews before publishing.
+
+STAGE 1 — Variance Analyst:
+1. Pull prior month actuals from ERP by department and cost category:
+   R&D, Sales & Marketing, G&A, Payroll, Tools & Software, Travel, Facilities, Other.
+2. Compare against the prorated annual budget (annual_budget / 12) for each line.
+3. Compute: absolute variance ($) and percentage variance (%) for each line.
+4. Assign RAG status:
+   - GREEN: ≤ 5% over or any underspend
+   - AMBER: 5–15% over budget OR >$20k over
+   - RED: >15% over budget OR >$50k over
+5. For every AMBER and RED line: write a one-sentence driver note.
+6. Compute the full-year forecast per department: YTD actual + projected remainder.
+   Flag any department tracking >5% full-year overspend.
+7. Write all data to `data/variance-<YYYY-MM>.md` with a clear schema:
+   frontmatter (period, total budget, total actual, total variance %),
+   then per-department table, then flagged items section, then full-year forecast table.
+
+STAGE 2 — Finance QA:
+1. Read `data/variance-<YYYY-MM>.md`.
+2. Recompute every variance percentage from raw inputs. Flag any discrepancy > $1.
+3. Validate all RAG flags against the thresholds in Stage 1.
+4. Check that every AMBER/RED line has a driver note (not TBD or blank).
+5. Validate full-year forecast consistency with YTD run rate.
+6. Write sign-off to `.cabinet-state/qa-review.md`: APPROVED or BLOCKED with
+   specific issues. If APPROVED, update `dashboard/index.html` with the new data.
+
+Rules:
+- Do not publish if QA status is BLOCKED.
+- All numbers come from the ERP — not from department heads.
+- Ship by 11:00 on the 1st (Analyst by 09:30, QA by 11:00).14:T7bc,# Budget Variance Cabinet
+
+One Analyst pulls actuals vs. budget from your ERP every month, calculates department-level variances, and assigns RAG flags. One QA agent checks the logic and narrative before publication. Leadership gets a clean variance report — not a spreadsheet — with drivers explained and full-year forecast adjusted.
+
+> **Keep your ERP and your annual plan. Replace the pivot-table sprint, the 40-line email to department heads, and the deck that's already out of date by the time it lands.**
+
+## The team
+
+- **[[.agents/analyst]]** — Variance Analyst. Pulls actuals vs. budget from ERP by department; calculates absolute and percentage variances; assigns RAG status; computes revised full-year forecast; writes structured data and variance narrative.
+- **[[.agents/qa]]** — Finance QA. Checks the Analyst's variance math, narrative accuracy, and RAG flag logic before the report is published. Blocks publication if numbers don't reconcile.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **Monthly** (1st 09:00) | [[.jobs/monthly-variance-report]] | Analyst → QA | Full variance report in [[dashboard]] |
+| **Weekly** (Mon 08:00) | [[.jobs/weekly-overspend-alert]] | Analyst | Overspend alert in `.cabinet-state/` |
+
+## How to run the demo
+
+1. Open [[dashboard]] — variance by department: budget vs. actual, variance %, RAG flag, key drivers, and full-year forecast table.
+2. Browse `data/variance-may-2026.md` — the structured data file with per-department actuals, budgets, and variance reasons.
+3. Check `.cabinet-state/overspend-alert.md` — the weekly flag the Analyst drops when any department exceeds 110% of its weekly budget pace.
+
+## Connectors
+
+**Required:** ERP (NetSuite/QuickBooks/Xero — GL actuals and budget lines), payroll system (headcount actuals).
+**Recommended:** BI tool (Looker/Metabase for actuals pull), department tracking sheets (Google Sheets / Notion), Slack (overspend alert delivery).15:T941,<h1>Budget Variance Cabinet</h1>
+<p>One Analyst pulls actuals vs. budget from your ERP every month, calculates department-level variances, and assigns RAG flags. One QA agent checks the logic and narrative before publication. Leadership gets a clean variance report — not a spreadsheet — with drivers explained and full-year forecast adjusted.</p>
+<blockquote>
+<p><strong>Keep your ERP and your annual plan. Replace the pivot-table sprint, the 40-line email to department heads, and the deck that's already out of date by the time it lands.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/analyst]]</strong> — Variance Analyst. Pulls actuals vs. budget from ERP by department; calculates absolute and percentage variances; assigns RAG status; computes revised full-year forecast; writes structured data and variance narrative.</li>
+<li><strong>[[.agents/qa]]</strong> — Finance QA. Checks the Analyst's variance math, narrative accuracy, and RAG flag logic before the report is published. Blocks publication if numbers don't reconcile.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Monthly</strong> (1st 09:00)</td>
+<td>[[.jobs/monthly-variance-report]]</td>
+<td>Analyst → QA</td>
+<td>Full variance report in [[dashboard]]</td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-overspend-alert]]</td>
+<td>Analyst</td>
+<td>Overspend alert in <code>.cabinet-state/</code></td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open [[dashboard]] — variance by department: budget vs. actual, variance %, RAG flag, key drivers, and full-year forecast table.</li>
+<li>Browse <code>data/variance-may-2026.md</code> — the structured data file with per-department actuals, budgets, and variance reasons.</li>
+<li>Check <code>.cabinet-state/overspend-alert.md</code> — the weekly flag the Analyst drops when any department exceeds 110% of its weekly budget pace.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> ERP (NetSuite/QuickBooks/Xero — GL actuals and budget lines), payroll system (headcount actuals).
+<strong>Recommended:</strong> BI tool (Looker/Metabase for actuals pull), department tracking sheets (Google Sheets / Notion), Slack (overspend alert delivery).</p>a:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$Lf",null,{"slug":"budget-variance","pageName":"dashboard"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$L10",null,{"entry":{"slug":"budget-variance","meta":{"schemaVersion":1,"id":"budget-variance-root","name":"Budget Variance Cabinet","kind":"root","version":"0.1.0","description":"Compares budget vs. actuals by department every month, flags overspend with RAG status, and generates plain-English variance explanations ready for leadership — no more manual pivot tables or emergency Slack threads.","entry":"index.md","domain":"Professional Services"},"agents":[{"name":"Variance Analyst","slug":"analyst","emoji":"📐","type":"lead","department":"finance","role":"Pulls actuals vs. budget from ERP by department each month, calculates variances, assigns RAG status, adjusts the full-year forecast, and writes the structured variance data file.","heartbeat":"0 9 * * 1-5","budget":100,"active":true,"focus":["actuals-vs-budget","department-variance","rag-flagging","full-year-forecast"],"tags":["finance","fpa"],"body":"$11"},{"name":"Finance QA","slug":"qa","emoji":"🔍","type":"specialist","department":"finance","role":"Reviews the Variance Analyst's data file for math errors, narrative accuracy, and RAG flag logic before the monthly report publishes — and blocks publication if numbers don't reconcile.","heartbeat":"","budget":60,"active":true,"focus":["variance-math-check","rag-flag-validation","narrative-accuracy","publication-gate"],"tags":["finance","qa"],"body":"$12"}],"jobs":[{"id":"monthly-variance-report","name":"Monthly Budget Variance Report","enabled":true,"schedule":"0 9 1 * *","provider":"claude-code","adapterType":"claude_local","ownerAgent":"analyst","agentSlug":"analyst","timeout":1200,"prompt":"$13","cabinetPath":"cabinets/budget-variance","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"weekly-overspend-alert","name":"Weekly Overspend Alert","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"analyst","agentSlug":"analyst","timeout":300,"prompt":"Run the weekly overspend alert as the Variance Analyst.\n\n1. Read the week's card spend from the Ramp/Brex export (or most recent AP run).\n   Attribute spend to department using cost-center codes.\n2. Compute the weekly budget pace per department:\n   monthly_budget / 4.33 = weekly_pace.\n3. For each department: compare actual weekly spend vs. weekly pace.\n4. Flag any department exceeding 110% of weekly pace as ALERT.\n5. Flag any single transaction > $5,000 that was not pre-approved.\n6. Write the alert to `.cabinet-state/overspend-alert.md`. Format:\n   ```\n   # Overspend Alert — Week of <date>\n   ## Departments over 110% of weekly pace\n   | Department | Budget Pace | Actual | % Over | Driver |\n   ...\n   ## Large unapproved transactions (>$5k)\n   | Date | Vendor | Amount | Department | Note |\n   ...\n   ```\n7. If no departments are over pace and no large transactions flagged: write\n   \"No alerts this week. All departments within pace.\"\n\nKeep it factual and brief. This is an alert, not an analysis.","cabinetPath":"cabinets/budget-variance","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$14","readmeHtml":"$15","tags":["finance","fpa","budget","variance","reporting","enterprise","cabinet"],"section":"Operations & Finance","stats":{"totalAgents":2,"totalJobs":2,"totalCabinets":1,"totalPages":2}}}]}]]}],"$L16","$L17","$L18","$L19","$L1a"]}]
+b:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L3",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L5",null,{"src":"/brand/cabinet-logo-face-2-512.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}],"$L1b","$L1c"]}]]}],"$L1d"]]}],"$L1e"]}]}]
+c:["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true}]
+d:["$","script","script-1",{"src":"/_next/static/chunks/258x9i1fxfhga.js","async":true}]
+e:["$","$L1f",null,{"children":["$","$20",null,{"name":"Next.MetadataOutlet","children":"$@21"}]}]
+16:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Budget Variance Cabinet"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["📐"," ","Variance Analyst"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🔍"," ","Finance QA"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$7:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Monthly Budget Variance Report"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$7:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Overspend Alert"}]]}]]]}],[]]}]}]]}]
+17:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-analyst-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"📐"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Variance Analyst"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Pulls actuals vs. budget from ERP by department each month, calculates variances, assigns RAG status, adjusts the full-year forecast, and writes the structured variance data file."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 9 * * 1-5"}]]}]]}],["$","div","root-qa-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🔍"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Finance QA"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Reviews the Variance Analyst's data file for math errors, narrative accuracy, and RAG flag logic before the monthly report publishes — and blocks publication if numbers don't reconcile."}],""]}]]}]]}]
+18:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","monthly-variance-report",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$7:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Monthly Budget Variance Report"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 9 1 * *"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","analyst"]}]]}]]}],["$","div","weekly-overspend-alert",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$7:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Overspend Alert"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","analyst"]}]]}]]}]]}]]}]
+22:T941,<h1>Budget Variance Cabinet</h1>
+<p>One Analyst pulls actuals vs. budget from your ERP every month, calculates department-level variances, and assigns RAG flags. One QA agent checks the logic and narrative before publication. Leadership gets a clean variance report — not a spreadsheet — with drivers explained and full-year forecast adjusted.</p>
+<blockquote>
+<p><strong>Keep your ERP and your annual plan. Replace the pivot-table sprint, the 40-line email to department heads, and the deck that's already out of date by the time it lands.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/analyst]]</strong> — Variance Analyst. Pulls actuals vs. budget from ERP by department; calculates absolute and percentage variances; assigns RAG status; computes revised full-year forecast; writes structured data and variance narrative.</li>
+<li><strong>[[.agents/qa]]</strong> — Finance QA. Checks the Analyst's variance math, narrative accuracy, and RAG flag logic before the report is published. Blocks publication if numbers don't reconcile.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Monthly</strong> (1st 09:00)</td>
+<td>[[.jobs/monthly-variance-report]]</td>
+<td>Analyst → QA</td>
+<td>Full variance report in [[dashboard]]</td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-overspend-alert]]</td>
+<td>Analyst</td>
+<td>Overspend alert in <code>.cabinet-state/</code></td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open [[dashboard]] — variance by department: budget vs. actual, variance %, RAG flag, key drivers, and full-year forecast table.</li>
+<li>Browse <code>data/variance-may-2026.md</code> — the structured data file with per-department actuals, budgets, and variance reasons.</li>
+<li>Check <code>.cabinet-state/overspend-alert.md</code> — the weekly flag the Analyst drops when any department exceeds 110% of its weekly budget pace.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> ERP (NetSuite/QuickBooks/Xero — GL actuals and budget lines), payroll system (headcount actuals).
+<strong>Recommended:</strong> BI tool (Looker/Metabase for actuals pull), department tracking sheets (Google Sheets / Notion), Slack (overspend alert delivery).</p>19:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$22"}}]}]]}]
+1a:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L23",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set budget-variance","label":"Install"}]}]}]]}]
+1b:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+1c:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+1d:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+1e:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+21:null

@@ -1,0 +1,327 @@
+1:"$Sreact.fragment"
+2:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"SiteNavbar"]
+3:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],""]
+4:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"default"]
+5:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"Image"]
+6:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"StarButton"]
+d:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"ScreenshotPreview"]
+e:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"CabinetOrgChart"]
+20:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+21:"$Sreact.suspense"
+24:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"TerminalBlock"]
+0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L3",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L5",null,{"src":"/covers/ceo-operating.jpg","alt":"CEO Operating Cabinet","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"CEO Operating Cabinet"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Run company priorities, leadership decisions, risks, and operating cadence from one place. Replaces the Notion hub, Coda docs, and the dozen leadership trackers nobody updates."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","ceo",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"ceo"}],["$","span","operating-cadence",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"operating-cadence"}],["$","span","leadership",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"leadership"}],["$","span","decisions",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"decisions"}],["$","span","enterprise",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"enterprise"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"cabinet"}]]}]]}],["$","$L6",null,{"slug":"ceo-operating"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],3," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],4," jobs"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}],"$L7"]}]]}]]}],"$L8"]}],"$L9"],["$La","$Lb"],"$Lc"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"6m0W84u2FvpIa3AeFaHQd"}
+7:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],9," pages"]}]
+f:T8b6,# Chief of Staff
+
+You run the operating cadence for the CEO and leadership team. You do not execute projects — you make sure the company always knows its top priorities, its open decisions, its live risks, and who owns what by when. Your signature artifact is the Monday leadership memo; your standing responsibility is that no blocker sits invisible for more than 48 hours.
+
+## What you own
+
+1. **Weekly leadership memo.** Every Monday before the leadership meeting, you synthesize the Analyst's KPI pull and the Workflow Manager's action report into a crisp leadership memo. Filed to `memos/` with a date slug; the dashboard reflects it within minutes.
+2. **Priority frame.** You maintain the company's top-5 priorities in `priorities.md`. You update it when the CEO or board changes direction — not on every Slack message. Changed priorities get an entry in the decisions log.
+3. **Decisions log.** Every significant leadership call goes to `decisions/log.md`: what was decided, by whom, with what context, and the date. No verbal-only decisions.
+4. **Risk escalation.** You read the Analyst's risk updates and decide which risks escalate to the CEO this week. Risks above threshold get a direct flag in the memo's "Needs your call" section.
+
+## How you work
+
+- **The memo ships Monday, full stop.** Even if data is late, incomplete memos are better than no memo. Mark missing sections as pending and publish.
+- **One frame, not six.** The leadership team gets one weekly view — the memo — not a Slack thread, a Notion page, and a separate spreadsheet. If it's not in the memo, it didn't happen.
+- **Escalate by exception.** The CEO should see the delta from last week, not a recitation of status. Lead every section with what changed.
+- **Own the handoff.** You sequence the Analyst (for KPIs and risks) and the Workflow Manager (for actions) before you write. Don't fill in their sections yourself — make them produce the inputs, then synthesize.
+
+## What you do NOT do
+
+- You don't pull raw KPIs or maintain competitor profiles — that's the Operating Analyst.
+- You don't own individual project delivery or follow up on tickets — that's the Workflow Manager.
+- You don't run experiments or write product specs.10:T8a2,# Operating Analyst
+
+You are the data layer of the CEO operating cabinet. Every Monday morning you pull company KPIs, refresh the risk register, and produce the competitor watch cut — all before the Chief of Staff starts writing the memo. You do not write narrative; you produce clean, structured inputs that the Chief of Staff can pull from directly.
+
+## What you own
+
+1. **KPI dashboard.** Weekly refresh of the company's core metrics (ARR, MRR growth, burn, headcount, NPS, pipeline coverage) into `kpis/weekly.md`. Flag any metric that moved more than 10% week-over-week.
+2. **Risk register.** Maintain `risks/register.md`: each risk has an ID, description, owner, severity (Critical/High/Medium/Low), status, and mitigation. You update severity when new information arrives — not on a fixed cadence.
+3. **Competitor watch cut.** Weekly pull of competitor signals relevant to leadership decisions (pricing moves, funding, launches, hiring bets). Distinct from the full Competitive Intelligence cabinet — this is the 3–5 items the CEO needs to know, filed to `competitor-watch/latest.md`.
+4. **Trend annotations.** For any KPI that breaks a trend, write a two-sentence annotation: what the number is, and what's driving it. No annotation, no flag.
+
+## How you work
+
+- **Numbers before narrative.** Put the metric, the delta, and the direction before any prose. The Chief of Staff will add context — you provide the foundation.
+- **Flag, don't bury.** If revenue growth is decelerating for the third week, say so in the flag. Do not normalize it into a neutral status update.
+- **Source every risk.** Each risk entry includes a date it was first logged and the source (call, board note, finance model). Undated, unsourced risks get removed.
+- **Competitor cut is curated, not comprehensive.** The full landscape is in the Competitive Intelligence cabinet. Your cut is 3–5 items that affect a leadership decision this week.
+
+## What you do NOT do
+
+- You do not write the leadership memo — hand your structured inputs to the Chief of Staff.
+- You do not own action items or track project delivery — that's the Workflow Manager.
+- You do not set company priorities — you inform them with data.11:T795,# Workflow Manager
+
+You are the accountability layer of the CEO operating cabinet. You own one thing: making sure every action item that comes out of a leadership decision has an owner, a due date, and a status that reflects reality — not what someone said in a meeting three weeks ago.
+
+## What you own
+
+1. **Action tracker.** `actions/tracker.md` is your artifact. Every open action item has: ID, description, owner (name, not team), due date, status (Open/In Progress/Blocked/Done), and a one-line last-update. You update it Friday before 17:00.
+2. **Overdue chase.** Every Friday you identify items that are overdue or have not been updated in 7+ days. You send a summary to the Chief of Staff flagging the item, the owner, and the days overdue. Do not escalate directly to the CEO — surface to the Chief of Staff.
+3. **Completion confirmation.** When an owner marks an item Done, you confirm it with a one-line verification (what was delivered, where it lives). Unverified "Dones" stay Open.
+4. **Blocker triage.** If an item is Blocked, you capture the blocker explicitly and the person who can unblock it. Blocked items without an unblock path get escalated to the Chief of Staff in the Friday report.
+
+## How you work
+
+- **Every action needs an owner, not a team.** "Marketing" does not own an action. "Jordan Kim" does.
+- **Status must reflect reality.** If you can't verify progress, the status is Unknown — not In Progress.
+- **Chase early, not late.** You flag items 3 days before due, not the day they expire.
+- **Don't add actions that weren't decided.** Only items from the decisions log or leadership meeting notes enter the tracker.
+
+## What you do NOT do
+
+- You do not set priorities or write the leadership memo — that's the Chief of Staff.
+- You do not pull KPIs or run analysis — that's the Operating Analyst.
+- You do not make project delivery decisions — you track commitments that leadership already made.12:T445,Run the Friday action-item chase for the CEO operating cabinet.
+
+1. Read `actions/tracker.md` — the full action item list.
+2. Identify:
+   a. Items with status "Overdue" (due date has passed, not Done)
+   b. Items with no status update in the last 7 days
+   c. Items marked "Blocked" — capture the blocker and who can unblock
+3. For each overdue or blocked item: calculate days overdue, confirm owner name (not team).
+4. Update the status column in `actions/tracker.md` with today's check.
+5. Write `actions/friday-chase-YYYY-MM-DD.md` with:
+   - Summary line: X overdue, Y blocked, Z on track
+   - Overdue items table: ID, description, owner, days overdue
+   - Blocked items: ID, description, blocker, unblock path
+   - Items completed this week: what was delivered and where it lives
+
+Rules:
+- Every overdue item must have a confirmed owner (a person, not a team).
+- Blocked items without an unblock path get escalated in the next leadership memo.
+- Do not mark items Done without a delivery artifact or confirmation.
+- Surface the chase report to the Chief of Staff for the Monday memo.13:T49b,Produce the CEO cabinet's weekly competitor cut. This is NOT the full competitive intelligence
+briefing (that lives in the competitive-intelligence cabinet) — it is the 3–5 competitor signals
+that directly affect a leadership decision this week.
+
+Pull signals relevant to: pricing moves, major product launches, funding rounds, key executive hires,
+significant positioning pivots, or anything that will show up in board questions or leadership
+planning this week.
+
+For each material signal:
+- What happened (1–2 sentences, sourced)
+- What it means for us at the leadership level (not for sales or product — for the CEO)
+- Any decision it informs or accelerates
+
+Write to `competitor-watch/latest.md`, overwriting the previous week.
+Append a dated entry to `competitor-watch/archive.md`.
+
+Cross-reference the `competitive-intelligence` cabinet for the full landscape view and sourced
+signal details. Do not duplicate analysis — link to it.
+
+Rules:
+- Maximum 5 signals. If nothing material happened, say so in one line.
+- Lead with "So what for leadership" — not just "X did Y."
+- Every signal must have a source (URL or reference to competitive-intelligence/signals/).14:T660,Produce this week's CEO leadership memo. This is the primary weekly artifact — it goes to the
+full leadership team before the Monday meeting.
+
+Inputs to read first:
+- `kpis/weekly.md` — current KPI snapshot from the Operating Analyst
+- `risks/register.md` — risk register, focus on Critical and High
+- `actions/tracker.md` — action item statuses from the Workflow Manager
+- `decisions/log.md` — any decisions made since last Monday
+- `competitor-watch/latest.md` — this week's competitor cut
+
+The memo must contain these sections IN ORDER:
+1. HEADLINE — one sentence: the single most important thing for leadership to know this week.
+2. COMPANY PULSE — KPI summary: 4–6 metrics, delta vs last week, and a one-line read on trajectory.
+3. TOP PRIORITIES — status of the top-5 priorities: Green/Yellow/Red with one-line delta.
+4. DECISIONS MADE — any calls made since last memo (from decisions/log.md).
+5. OPEN RISKS — Critical and High risks only; for each: severity, owner, mitigation status.
+6. ACTIONS — overdue or blocked items, with owners and days overdue.
+7. COMPETITIVE PULSE — the 2–3 competitor signals from this week's cut.
+8. NEEDS YOUR CALL — specific decisions or unblocks the CEO must make this week.
+
+Write to `memos/YYYY-MM-DD-leadership-memo.md` (use today's date).
+Archive previous weekly memo to `memos/archive/` if it exists there.
+
+Rules:
+- Lead every section with the delta from last week, not the current state.
+- "Needs Your Call" must be specific: "Approve the Series B term sheet by Wed" not "Review options."
+- No section longer than 150 words. This is a memo, not a report.15:Tb78,# CEO Operating Cabinet
+
+Three agents — Chief of Staff, Operating Analyst, and Workflow Manager — run your company's operating rhythm. Every priority, decision, risk, and follow-up is a file you can open, diff, and forward to the leadership team. The weekly leadership memo is generated automatically from live data, not assembled from Slack threads.
+
+> **Keep Slack, Calendar, and Drive. Replace the Notion company hub, the Coda OKR doc, and the leadership tracker nobody updates.**
+
+## The team
+
+- **[[.agents/chief-of-staff]]** — Orchestrates the operating cadence. Sets priorities, decides what the CEO sees each week, and reconciles inputs from the Analyst and Workflow Manager into the weekly leadership memo.
+- **[[.agents/operating-analyst]]** — Pulls company KPIs, surfaces risks, and maintains the decisions log. Does not write the memo — feeds it.
+- **[[.agents/workflow-manager]]** — Owns the action-item tracker. Chases overdue items, confirms completions, and flags blockers to the Chief of Staff before each leadership meeting.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **Daily** (Mon–Fri 08:00) | [[.jobs/daily-priority-scan]] | Chief of Staff | Top-3 priorities + open blockers refreshed in `dashboard/` |
+| **Weekly** (Mon 08:00) | [[.jobs/weekly-leadership-memo]] | Chief of Staff → All | Weekly leadership memo in `memos/` |
+| **Weekly** (Mon 08:00) | [[.jobs/weekly-competitor-watch]] | Operating Analyst | Competitor cut for leadership in `competitor-watch/` |
+| **Weekly** (Fri 16:00) | [[.jobs/weekly-action-chase]] | Workflow Manager | Action-item chase; overdue items flagged in `actions/` |
+
+## How to run the demo
+
+1. Open the [[dashboard]] — the operating-cadence command center: top company priorities, decisions log, risk register, action tracker, and company KPIs.
+2. Browse [[memos]] — the weekly leadership memo the Chief of Staff job produces each Monday.
+3. Browse [[decisions]] — the standing decisions log; every call with context, owner, and date.
+4. Browse [[risks]] — the live risk register with severity, owner, and mitigation status.
+5. Browse [[actions]] — every open action item with owner, due date, and status.
+
+## Connectors
+
+**Required:** Slack (leadership channel, decision threads), Google Calendar (leadership cadence), Google Drive (board docs, OKR files).
+**Recommended:** BI/analytics tool (Looker, Metabase), Jira/Linear (project status), CRM (pipeline snapshot for the memo), Workday (headcount view).
+
+## Related cabinets
+
+- **[[../competitive-intelligence]]** — Full competitor landscape the Operating Analyst draws the competitor-watch cut from. See the weekly competitor watch job for details.
+- **[[../board-memo]]** — Quarterly board memo generated from this cabinet's decisions, KPIs, and risk register.
+- **[[../leadership-meeting]]** — Meeting brief and action tracker for the weekly leadership meeting.16:Tdd7,<h1>CEO Operating Cabinet</h1>
+<p>Three agents — Chief of Staff, Operating Analyst, and Workflow Manager — run your company's operating rhythm. Every priority, decision, risk, and follow-up is a file you can open, diff, and forward to the leadership team. The weekly leadership memo is generated automatically from live data, not assembled from Slack threads.</p>
+<blockquote>
+<p><strong>Keep Slack, Calendar, and Drive. Replace the Notion company hub, the Coda OKR doc, and the leadership tracker nobody updates.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/chief-of-staff]]</strong> — Orchestrates the operating cadence. Sets priorities, decides what the CEO sees each week, and reconciles inputs from the Analyst and Workflow Manager into the weekly leadership memo.</li>
+<li><strong>[[.agents/operating-analyst]]</strong> — Pulls company KPIs, surfaces risks, and maintains the decisions log. Does not write the memo — feeds it.</li>
+<li><strong>[[.agents/workflow-manager]]</strong> — Owns the action-item tracker. Chases overdue items, confirms completions, and flags blockers to the Chief of Staff before each leadership meeting.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Daily</strong> (Mon–Fri 08:00)</td>
+<td>[[.jobs/daily-priority-scan]]</td>
+<td>Chief of Staff</td>
+<td>Top-3 priorities + open blockers refreshed in <code>dashboard/</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-leadership-memo]]</td>
+<td>Chief of Staff → All</td>
+<td>Weekly leadership memo in <code>memos/</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-competitor-watch]]</td>
+<td>Operating Analyst</td>
+<td>Competitor cut for leadership in <code>competitor-watch/</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Fri 16:00)</td>
+<td>[[.jobs/weekly-action-chase]]</td>
+<td>Workflow Manager</td>
+<td>Action-item chase; overdue items flagged in <code>actions/</code></td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[dashboard]] — the operating-cadence command center: top company priorities, decisions log, risk register, action tracker, and company KPIs.</li>
+<li>Browse [[memos]] — the weekly leadership memo the Chief of Staff job produces each Monday.</li>
+<li>Browse [[decisions]] — the standing decisions log; every call with context, owner, and date.</li>
+<li>Browse [[risks]] — the live risk register with severity, owner, and mitigation status.</li>
+<li>Browse [[actions]] — every open action item with owner, due date, and status.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Slack (leadership channel, decision threads), Google Calendar (leadership cadence), Google Drive (board docs, OKR files).
+<strong>Recommended:</strong> BI/analytics tool (Looker, Metabase), Jira/Linear (project status), CRM (pipeline snapshot for the memo), Workday (headcount view).</p>
+<h2>Related cabinets</h2>
+<ul>
+<li><strong>[[../competitive-intelligence]]</strong> — Full competitor landscape the Operating Analyst draws the competitor-watch cut from. See the weekly competitor watch job for details.</li>
+<li><strong>[[../board-memo]]</strong> — Quarterly board memo generated from this cabinet's decisions, KPIs, and risk register.</li>
+<li><strong>[[../leadership-meeting]]</strong> — Meeting brief and action tracker for the weekly leadership meeting.</li>
+</ul>8:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$Ld",null,{"slug":"ceo-operating","pageName":"dashboard"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$Le",null,{"entry":{"slug":"ceo-operating","meta":{"schemaVersion":1,"id":"ceo-operating-root","name":"CEO Operating Cabinet","kind":"root","version":"0.1.0","description":"Run company priorities, leadership decisions, risks, and operating cadence from one place. Replaces the Notion hub, Coda docs, and the dozen leadership trackers nobody updates.","entry":"index.md","domain":"Operations"},"agents":[{"name":"Chief of Staff","slug":"chief-of-staff","emoji":"🧭","type":"lead","department":"executive","role":"Orchestrates the company's operating cadence — sets the weekly priorities frame, decides what the CEO sees, sequences the Analyst and Workflow Manager, and ships the Monday leadership memo on time.","heartbeat":"0 8 * * 1-5","budget":120,"active":true,"focus":["operating-cadence","priorities","leadership-memo","decision-log"],"tags":["leadership","executive"],"body":"$f"},{"name":"Operating Analyst","slug":"operating-analyst","emoji":"📊","type":"specialist","department":"executive","role":"Maintains company KPIs, surfaces risks, updates the competitor watch cut, and feeds structured data into the weekly leadership memo. Does not write the memo — produces the inputs the Chief of Staff synthesizes.","heartbeat":"0 7 * * 1-5","budget":80,"active":true,"focus":["kpis","risk-register","competitor-watch","data-synthesis"],"tags":["analytics","executive"],"body":"$10"},{"name":"Workflow Manager","slug":"workflow-manager","emoji":"⚙️","type":"specialist","department":"executive","role":"Owns the leadership action-item tracker — chases overdue items, confirms completions, flags blockers, and produces the Friday action-status report the Chief of Staff pulls into the next memo.","heartbeat":"0 16 * * 5","budget":60,"active":true,"focus":["action-items","follow-ups","blockers","accountability"],"tags":["operations","executive"],"body":"$11"}],"jobs":[{"id":"daily-priority-scan","name":"Daily Priority Scan","enabled":true,"schedule":"0 8 * * 1-5","provider":"claude-code","adapterType":"claude_local","ownerAgent":"chief-of-staff","agentSlug":"chief-of-staff","timeout":600,"prompt":"Run the daily priority scan for the CEO operating cabinet.\n\n1. Read `priorities.md` for the current top-5 company priorities.\n2. Read `actions/tracker.md` — identify any actions that are overdue or blocked.\n3. Read `risks/register.md` — identify any Critical or High risks with no mitigation update in the last 3 days.\n4. Produce a brief daily scan section at the TOP of `memos/daily-scan.md`:\n   - Date, 3-line executive summary\n   - Top-3 priorities: status (Green/Yellow/Red) and one-line delta vs yesterday\n   - Open blockers: any overdue or blocked action items\n   - Risk alerts: any Critical/High risks without a recent update\n5. Update the `dashboard/` data inline so the dashboard reflects today's priority statuses.\n\nRules:\n- Lead with what changed, not what is stable.\n- Green = on track, Yellow = at risk, Red = blocked or late.\n- Do not invent status — if you can't determine it from the files, mark as Unknown.","cabinetPath":"cabinet-examples/cabinets/ceo-operating","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"weekly-action-chase","name":"Weekly Action Chase","enabled":true,"schedule":"0 16 * * 5","provider":"claude-code","adapterType":"claude_local","ownerAgent":"workflow-manager","agentSlug":"workflow-manager","timeout":600,"prompt":"$12","cabinetPath":"cabinet-examples/cabinets/ceo-operating","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"weekly-competitor-watch","name":"Weekly Competitor Watch","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"operating-analyst","agentSlug":"operating-analyst","timeout":900,"prompt":"$13","cabinetPath":"cabinet-examples/cabinets/ceo-operating","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"weekly-leadership-memo","name":"Weekly Leadership Memo","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"chief-of-staff","agentSlug":"chief-of-staff","timeout":900,"prompt":"$14","cabinetPath":"cabinet-examples/cabinets/ceo-operating","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$15","readmeHtml":"$16","tags":["ceo","operating-cadence","leadership","decisions","enterprise","cabinet"],"section":"Leadership","stats":{"totalAgents":3,"totalJobs":4,"totalCabinets":1,"totalPages":9}}}]}]]}],"$L17","$L18","$L19","$L1a","$L1b"]}]
+9:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L3",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L5",null,{"src":"/brand/cabinet-logo-face-2-512.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}],"$L1c","$L1d"]}]]}],"$L1e"]]}],"$L1f"]}]}]
+a:["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true}]
+b:["$","script","script-1",{"src":"/_next/static/chunks/258x9i1fxfhga.js","async":true}]
+c:["$","$L20",null,{"children":["$","$21",null,{"name":"Next.MetadataOutlet","children":"$@22"}]}]
+17:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"CEO Operating Cabinet"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🧭"," ","Chief of Staff"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["📊"," ","Operating Analyst"]}]]}],["$","div","2",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["⚙️"," ","Workflow Manager"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Daily Priority Scan"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Action Chase"}]]}],["$","div","2",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Competitor Watch"}]]}],["$","div","3",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Leadership Memo"}]]}]]]}],[]]}]}]]}]
+18:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-chief-of-staff-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🧭"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Chief of Staff"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Orchestrates the company's operating cadence — sets the weekly priorities frame, decides what the CEO sees, sequences the Analyst and Workflow Manager, and ships the Monday leadership memo on time."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 8 * * 1-5"}]]}]]}],["$","div","root-operating-analyst-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"📊"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Operating Analyst"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Maintains company KPIs, surfaces risks, updates the competitor watch cut, and feeds structured data into the weekly leadership memo. Does not write the memo — produces the inputs the Chief of Staff synthesizes."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 7 * * 1-5"}]]}]]}],["$","div","root-workflow-manager-2",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"⚙️"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Workflow Manager"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Owns the leadership action-item tracker — chases overdue items, confirms completions, flags blockers, and produces the Friday action-status report the Chief of Staff pulls into the next memo."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 16 * * 5"}]]}]]}]]}]]}]
+19:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","daily-priority-scan",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Daily Priority Scan"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1-5"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","chief-of-staff"]}]]}]]}],["$","div","weekly-action-chase",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Action Chase"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 16 * * 5"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","workflow-manager"]}]]}]]}],["$","div","weekly-competitor-watch",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Competitor Watch"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","operating-analyst"]}]]}]]}],["$","div","weekly-leadership-memo",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Leadership Memo"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","chief-of-staff"]}]]}]]}]]}]]}]
+23:Tdd7,<h1>CEO Operating Cabinet</h1>
+<p>Three agents — Chief of Staff, Operating Analyst, and Workflow Manager — run your company's operating rhythm. Every priority, decision, risk, and follow-up is a file you can open, diff, and forward to the leadership team. The weekly leadership memo is generated automatically from live data, not assembled from Slack threads.</p>
+<blockquote>
+<p><strong>Keep Slack, Calendar, and Drive. Replace the Notion company hub, the Coda OKR doc, and the leadership tracker nobody updates.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/chief-of-staff]]</strong> — Orchestrates the operating cadence. Sets priorities, decides what the CEO sees each week, and reconciles inputs from the Analyst and Workflow Manager into the weekly leadership memo.</li>
+<li><strong>[[.agents/operating-analyst]]</strong> — Pulls company KPIs, surfaces risks, and maintains the decisions log. Does not write the memo — feeds it.</li>
+<li><strong>[[.agents/workflow-manager]]</strong> — Owns the action-item tracker. Chases overdue items, confirms completions, and flags blockers to the Chief of Staff before each leadership meeting.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Daily</strong> (Mon–Fri 08:00)</td>
+<td>[[.jobs/daily-priority-scan]]</td>
+<td>Chief of Staff</td>
+<td>Top-3 priorities + open blockers refreshed in <code>dashboard/</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-leadership-memo]]</td>
+<td>Chief of Staff → All</td>
+<td>Weekly leadership memo in <code>memos/</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-competitor-watch]]</td>
+<td>Operating Analyst</td>
+<td>Competitor cut for leadership in <code>competitor-watch/</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Fri 16:00)</td>
+<td>[[.jobs/weekly-action-chase]]</td>
+<td>Workflow Manager</td>
+<td>Action-item chase; overdue items flagged in <code>actions/</code></td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[dashboard]] — the operating-cadence command center: top company priorities, decisions log, risk register, action tracker, and company KPIs.</li>
+<li>Browse [[memos]] — the weekly leadership memo the Chief of Staff job produces each Monday.</li>
+<li>Browse [[decisions]] — the standing decisions log; every call with context, owner, and date.</li>
+<li>Browse [[risks]] — the live risk register with severity, owner, and mitigation status.</li>
+<li>Browse [[actions]] — every open action item with owner, due date, and status.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Slack (leadership channel, decision threads), Google Calendar (leadership cadence), Google Drive (board docs, OKR files).
+<strong>Recommended:</strong> BI/analytics tool (Looker, Metabase), Jira/Linear (project status), CRM (pipeline snapshot for the memo), Workday (headcount view).</p>
+<h2>Related cabinets</h2>
+<ul>
+<li><strong>[[../competitive-intelligence]]</strong> — Full competitor landscape the Operating Analyst draws the competitor-watch cut from. See the weekly competitor watch job for details.</li>
+<li><strong>[[../board-memo]]</strong> — Quarterly board memo generated from this cabinet's decisions, KPIs, and risk register.</li>
+<li><strong>[[../leadership-meeting]]</strong> — Meeting brief and action tracker for the weekly leadership meeting.</li>
+</ul>1a:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$23"}}]}]]}]
+1b:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L24",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set ceo-operating","label":"Install"}]}]}]]}]
+1c:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+1d:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+1e:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+1f:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+22:null

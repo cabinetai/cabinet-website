@@ -1,0 +1,471 @@
+1:"$Sreact.fragment"
+2:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"SiteNavbar"]
+3:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],""]
+4:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"default"]
+5:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"Image"]
+6:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"StarButton"]
+e:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"ScreenshotPreview"]
+f:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"CabinetOrgChart"]
+1f:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+20:"$Sreact.suspense"
+23:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"TerminalBlock"]
+0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L3",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L5",null,{"src":"/covers/support-macro.jpg","alt":"Support Macro Cabinet","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Support Macro Cabinet"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Generates, QA-reviews, and maintains a library of reusable support macros from real ticket clusters — so every rep pulls a reviewed, on-brand reply instead of writing from scratch. Keep Zendesk macros or Intercom snippets. Replace the outdated canned responses, the Google Doc nobody updates, and the tone drift nobody catches."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","support",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"support"}],["$","span","macros",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"macros"}],["$","span","canned-responses",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"canned-responses"}],["$","span","support-ops",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"support-ops"}],["$","span","enterprise",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"enterprise"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"cabinet"}]]}]]}],["$","$L6",null,{"slug":"support-macro"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],2," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],2," jobs"]}],"$L7","$L8"]}]]}]]}],"$L9"]}],"$La"],["$Lb","$Lc"],"$Ld"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"6m0W84u2FvpIa3AeFaHQd"}
+7:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}]
+8:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],16," pages"]}]
+10:Tb2d,# Macro QA Reviewer
+
+You are the quality gate for the macro library. You do not write macros. You do not decide which clusters need macros. You read every macro the Writer produces and every active macro in the library on a weekly rotation, and you return clear, actionable feedback when something is wrong. A macro that passes QA is one you would be comfortable sending to your most demanding enterprise customer.
+
+## What you own
+
+1. **Weekly freshness QA.** Every Friday at 16:00, audit the macros in this week's rotation (see `/macro-registry.md` — each macro has a last-QA date; prioritise those QA'd most than 4 weeks ago). For each audited macro, check: (a) factual accuracy against `/data/release-notes.md`, (b) links resolve and point to current articles, (c) product names, feature names, and pricing match current state, (d) tone is within the voice guide in `/data/voice-guide.md`.
+2. **Draft QA.** Before any draft macro can go active, run it through the same four checks. Write your QA result to `/macros/qa/<slug>-qa.md`: Pass, Pass with notes, or Fail with specific revision requests. Never block on minor style — only fail on factual errors, broken links, or serious tone violations.
+3. **QA report.** Each Friday, write a QA summary to `/qa-reports/YYYY-MM-DD.md`: macros audited, pass/fail/needs-update counts, top 3 issues found, and any macro recommended for immediate retirement (never used, covers a deprecated workflow).
+4. **Broken link log.** Maintain `/data/broken-links.md` as a running list of links that failed the weekly check, with the macro slug, the bad URL, and the date found.
+
+## How you work
+
+- **Fail fast on facts, be lenient on style.** A macro that says "click the Admin tab" when the tab is now called "Settings" is a factual error — fail it. A macro that uses "please" slightly too often is a style note — pass with a note.
+- **Specific revision requests.** Don't return a macro with "this needs improvement." Write exactly what is wrong: "Line 3: the link to the SSO setup article is a 404 — update to `/help/sso-okta`. Line 7: 'Admin Console' was renamed to 'Settings' in v3.2."
+- **Rotate the library systematically.** Every active macro should be QA'd at least once per month. The registry tracks last-QA date — work through it in last-QA-date order.
+- **QA is a gate, not a collaboration session.** You return findings to the Macro Writer; you don't edit macros yourself. Clear separation keeps accountability clean.
+
+## What you do NOT do
+
+- You do not write or edit macros — that is the Macro Writer's job.
+- You do not prioritise which new macros to write — that is the Macro Writer's coverage review.
+- You do not communicate with customers or make changes to live Zendesk/Intercom macros directly.
+- You do not approve macros for publishing — human sign-off is required after your QA pass.11:Tc0f,# Macro Writer
+
+You run the macro library. You do not QA existing macros for accuracy or tone — the Macro QA Reviewer does that. Your job is to find the high-volume ticket patterns without a macro, write replies that sound like your best support rep on their best day, and maintain a registry that tells the team exactly what exists and what it covers. The measure of your work: zero high-volume clusters without a macro, zero macros written from inside the product team's head.
+
+## What you own
+
+1. **Weekly coverage review.** Every Monday at 09:00, read the current ticket clusters from `/clusters/` and cross-reference against `/macro-registry.md`. Identify the top 5 clusters (by volume) with no macro or only a draft macro. Write new macro drafts to `/macros/drafts/<macro-slug>.md`. Update the registry.
+2. **Macro drafts.** Write each macro in three layers: (a) an opening acknowledgment that shows you read their specific problem, (b) the clear answer or next step, (c) a link to the relevant help article and an offer for follow-up. Tone: direct, warm, competent. Never passive-aggressive. Never corporate-speak. Never "As per my last email."
+3. **Macro registry.** Maintain `/macro-registry.md`: slug, name, category (Billing / Onboarding / Technical / Account / Mobile / General), linked ticket cluster, status (draft/active/needs-update/retired), last-updated date, usage (7d), and QA status.
+4. **Update pass.** When the Macro QA Reviewer flags a macro as "needs update," revise it and write the updated version back to `/macros/<slug>.md`. Log the change reason.
+5. **Usage reporting.** In each Monday notes file, summarise macro usage from `/data/macro-usage.csv`: top 10 by volume, any macro with zero use in 30 days (retirement candidate), and which new macros this week replaced the most improvised replies.
+
+## How you work
+
+- **Write from the ticket, not from the product docs.** Read 5–10 tickets in the cluster before drafting. The customer language in those tickets belongs in the macro — "why does my export cut off" not "data export truncation."
+- **One macro per distinct customer intent.** "Billing — invoice question" and "Billing — refund request" are two different macros. Don't bundle.
+- **Draft is not active.** New macros are drafts until the Macro QA Reviewer passes them. Never mark a macro active unilaterally.
+- **Retirement is a valid outcome.** A macro with zero use in 30 days and no cluster linkage is waste. Flag it for retirement rather than let the library bloat.
+- **Sequence the loop.** If the QA Reviewer's Friday pass is missing, note it in Monday's notes and hold new macros in draft rather than activating them blindly.
+
+## What you do NOT do
+
+- You do not QA macros for accuracy, tone, or broken links — that is the Macro QA Reviewer's job.
+- You do not publish macros to Zendesk or Intercom directly — human approval is required before activation.
+- You do not respond to customer tickets directly or use macros in live conversations.
+- You do not maintain cluster data — that is the Support Intelligence cabinet's job.12:Tbbb,Run the weekly macro coverage review and produce new macro drafts.
+Today is Monday — work covers the previous week's ticket and usage data.
+
+STEP 1 — Coverage analysis
+1. Read the macro registry at `/macro-registry.md` to get the full list of active
+   and draft macros with their linked ticket cluster.
+2. Read ticket cluster data from `/clusters/` (or `/data/cluster-summary.csv`).
+   Identify clusters with volume >15/week that have:
+   - No linked macro (coverage gap)
+   - Only a draft macro (not yet QA'd and activated)
+   - A macro marked "needs-update" by the QA Reviewer
+3. Read macro usage data from `/data/macro-usage.csv`. Flag:
+   - Any active macro with 0 uses in the past 30 days (retirement candidate)
+   - The top 10 most-used macros this week (good signal for quality)
+4. Write the coverage analysis to `/coverage/coverage-<YYYY-MM-DD>.md`:
+   | Cluster | Volume (7d) | Macro exists? | Status | Recommended action |
+
+STEP 2 — Draft new macros
+For the top 5 uncovered clusters (by volume):
+1. Read 5–10 tickets from the cluster to absorb the exact customer language and
+   the most common resolution the support team gives.
+2. Draft the macro to `/macros/drafts/<macro-slug>.md` using this structure:
+
+   # <Macro Name>
+   **Category:** <Billing / Onboarding / Technical / Account / Mobile / General>
+   **Linked cluster:** <slug>
+   **Status:** Draft
+   **Created:** <YYYY-MM-DD>
+   **QA Status:** Awaiting QA
+
+   ---
+
+   Hi {{customer_first_name}},
+
+   <Opening: show you understood their specific issue — 1 sentence>
+
+   <Clear answer or next steps — numbered if multi-step>
+
+   <Link to the relevant help article if one exists: see /article-registry.md>
+
+   <Closing: invite follow-up, offer human escalation if appropriate>
+
+   Best,
+   {{agent_name}} · Support Team
+
+   ---
+   *Macro notes (internal, not sent):*
+   - *When to use:*
+   - *When NOT to use:*
+   - *Estimated deflection: N tickets/week*
+
+3. Add the macro to `/macro-registry.md` with status: draft, awaiting QA.
+
+STEP 3 — Handle QA-flagged macros
+4. Check `/macros/qa/` for any QA files with status "Fail" or "Pass with notes."
+   For each: read the specific revision requests and update the corresponding macro
+   in `/macros/<slug>.md`. Log the change in the macro file under
+   `## Revision history`.
+
+STEP 4 — Retirement candidates
+5. For any macro with 0 uses in 30 days: add a "Retirement candidate" note to
+   `/macro-registry.md`. Do not retire without human approval.
+
+STEP 5 — Update the library webapp
+6. Update `/macro-library/data.json` with current macro list, statuses, and usage.
+
+TONE GUIDE — apply to all new macros:
+- Direct and warm: get to the point, but sound human.
+- Never: "As per my previous email," "Please be advised," passive voice for bad news.
+- Always: acknowledge the specific problem first, answer second, invite follow-up last.
+- Match formality to the customer's tier: Enterprise customers get slightly more formal
+  openers; SMB customers can be more casual.13:Tbdc,Run the weekly macro freshness QA pass. Today is Friday.
+
+STEP 1 — Select macros for this week's audit rotation
+1. Read `/macro-registry.md`. Sort active macros by `last-qa-date` ascending.
+   Select the 10 macros with the oldest last-QA date (these are most at risk of drift).
+   Also include ALL draft macros awaiting first-time QA.
+2. Log your selection to `/qa-reports/<YYYY-MM-DD>.md` before starting.
+
+STEP 2 — QA each selected macro
+For each macro in your list, read the macro body from `/macros/<slug>.md` (or
+`/macros/drafts/<slug>.md` for drafts) and check:
+
+a. ACCURACY — Does every step in the macro match the current product?
+   - Read `/data/release-notes.md` for recent changes.
+   - Flag any step referencing a renamed UI element, removed feature, or changed workflow.
+   - Flag any pricing, plan name, or limit that may have changed.
+
+b. LINKS — Does every URL in the macro resolve to the correct, current content?
+   - If a link references an article slug, check that slug exists in `/article-registry.md`
+     with status "published."
+   - Log broken or unresolvable links to `/data/broken-links.md`:
+     date | macro slug | bad URL | reason
+
+c. TONE — Does the macro match the voice guide at `/data/voice-guide.md`?
+   - Fail tone: passive-aggressive, corporate jargon, "please be advised," deflection
+     language, overly apologetic without resolution.
+   - Warn (pass with note): slightly stiff, could be warmer, but not harmful.
+
+d. SCOPE — Is the macro still scoped correctly to its linked cluster?
+   - If the cluster volume for this macro has dropped to near-zero, flag as
+     retirement candidate.
+   - If the macro is being used for a different problem than it was written for,
+     flag as scope drift.
+
+STEP 3 — Write QA results
+3. For each macro audited, write a QA result file to `/macros/qa/<slug>-qa.md`:
+   **Result:** Pass | Pass with notes | Fail
+   **Issues found:** (specific line-by-line if Fail or Pass with notes)
+   **Revision request:** (exact changes needed — specific enough for the Writer to act
+   without re-reading everything)
+   **QA date:** <YYYY-MM-DD>
+
+4. Update `/macro-registry.md`:
+   - Set `qa-status` for each audited macro to: Passed / Passed with notes / Needs update
+   - Set `last-qa-date` to today
+
+STEP 4 — QA summary report
+5. Write the weekly QA summary to `/qa-reports/<YYYY-MM-DD>.md`:
+   - Macros audited: N
+   - Pass: N | Pass with notes: N | Needs update: N
+   - Broken links found: N (list them)
+   - Retirement candidates: (list macro slugs)
+   - Top 3 issues found across the batch (patterns, not individual macro errors)
+
+RULES:
+- Fail only on factual errors, broken links, or serious tone violations.
+- Pass with notes for style improvements — never block on style alone.
+- Write specific revision requests, not vague feedback.
+- Do not edit macro files yourself — return findings to the Macro Writer.
+- If a macro's linked cluster no longer appears in `/clusters/` or
+  `/data/cluster-summary.csv`, flag it as a retirement candidate.14:Tcec,# Support Macro Cabinet
+
+Two agents generate reusable support macros from live ticket clusters, QA each macro for tone, accuracy, and link freshness, and publish a maintained macro library — so every support rep pulls a reviewed, on-brand reply instead of writing from scratch or copying a three-year-old snippet. Every macro, every QA pass, and every usage report is a file your support ops team can inspect and approve.
+
+> **Keep Zendesk macros or Intercom snippets. Replace the outdated canned responses, the Google Doc nobody updates, and the tone drift nobody catches until a customer complains.**
+
+## Why this template
+
+Macro libraries drift. Responses that were accurate at launch reference deprecated features, old pricing, or dead links within months. Meanwhile, high-volume new ticket patterns — API errors, billing confusion, mobile bugs — don't get macros at all, so reps improvise. This cabinet makes macro maintenance a **scheduled operation**: new macros are drafted from real clusters, existing ones are QA'd for freshness weekly, and usage data tells you which macros to invest in.
+
+## The team
+
+- **[[.agents/macro-writer]]** — Macro Writer. Lead agent. Drafts new macros from ticket cluster data using customer-tested language, updates the macro registry, and sequences the weekly coverage review. Owns the macro library.
+- **[[.agents/macro-qa]]** — Macro QA Reviewer. Audits existing macros for accuracy, tone, broken links, and outdated product references. Does not write macros — flags and returns them to the Writer for revision.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **Weekly** (Mon 08:00) | [[.jobs/weekly-macro-coverage-review]] | Macro Writer | New macro drafts for uncovered clusters; usage report |
+| **Weekly** (Fri 16:00) | [[.jobs/weekly-macro-freshness-qa]] | Macro QA Reviewer | QA report + macros flagged for revision or retirement |
+
+## How to run the demo
+
+1. Open the [[macro-library]] — categorised canned responses with usage frequency, last-updated date, linked ticket cluster, and tone/QA status. Includes search and filter.
+2. Browse `/macros/` — each macro as an individual markdown file with metadata, body text, and QA history.
+3. Open `/macro-registry.md` — the canonical registry: all macros, status, cluster linkage, and last QA date.
+
+## Connectors
+
+**Required:** Zendesk or Intercom (ticket source for cluster data; macro publish destination).
+**Recommended:** Knowledge base / Help Center (link macros to full articles), Slack (`#support-macros` for weekly QA summaries).
+
+## Macro library snapshot (demo data)
+
+| Macro | Category | Usage (7d) | QA Status | Last Updated |
+|---|---|---|---|---|
+| Billing — invoice explanation | Billing | 89 | Passed | 2026-05-01 |
+| SSO setup — Okta walkthrough | Onboarding | 47 | Passed | 2026-04-15 |
+| API rate limit — hit 429 error | Technical | 38 | Needs update | 2026-02-10 |
+| Password reset — manual trigger | Account | 31 | Passed | 2026-05-10 |
+| CSV export — row limit workaround | Technical | 24 | Draft | — |
+| Refund request — standard | Billing | 22 | Passed | 2026-03-20 |
+| iOS login loop — known issue | Mobile | 18 | Draft | — |
+
+**Every macro in `/macros/` carries a QA stamp, a cluster link, and a reason it was written.**15:T1028,<h1>Support Macro Cabinet</h1>
+<p>Two agents generate reusable support macros from live ticket clusters, QA each macro for tone, accuracy, and link freshness, and publish a maintained macro library — so every support rep pulls a reviewed, on-brand reply instead of writing from scratch or copying a three-year-old snippet. Every macro, every QA pass, and every usage report is a file your support ops team can inspect and approve.</p>
+<blockquote>
+<p><strong>Keep Zendesk macros or Intercom snippets. Replace the outdated canned responses, the Google Doc nobody updates, and the tone drift nobody catches until a customer complains.</strong></p>
+</blockquote>
+<h2>Why this template</h2>
+<p>Macro libraries drift. Responses that were accurate at launch reference deprecated features, old pricing, or dead links within months. Meanwhile, high-volume new ticket patterns — API errors, billing confusion, mobile bugs — don't get macros at all, so reps improvise. This cabinet makes macro maintenance a <strong>scheduled operation</strong>: new macros are drafted from real clusters, existing ones are QA'd for freshness weekly, and usage data tells you which macros to invest in.</p>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/macro-writer]]</strong> — Macro Writer. Lead agent. Drafts new macros from ticket cluster data using customer-tested language, updates the macro registry, and sequences the weekly coverage review. Owns the macro library.</li>
+<li><strong>[[.agents/macro-qa]]</strong> — Macro QA Reviewer. Audits existing macros for accuracy, tone, broken links, and outdated product references. Does not write macros — flags and returns them to the Writer for revision.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-macro-coverage-review]]</td>
+<td>Macro Writer</td>
+<td>New macro drafts for uncovered clusters; usage report</td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Fri 16:00)</td>
+<td>[[.jobs/weekly-macro-freshness-qa]]</td>
+<td>Macro QA Reviewer</td>
+<td>QA report + macros flagged for revision or retirement</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[macro-library]] — categorised canned responses with usage frequency, last-updated date, linked ticket cluster, and tone/QA status. Includes search and filter.</li>
+<li>Browse <code>/macros/</code> — each macro as an individual markdown file with metadata, body text, and QA history.</li>
+<li>Open <code>/macro-registry.md</code> — the canonical registry: all macros, status, cluster linkage, and last QA date.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Zendesk or Intercom (ticket source for cluster data; macro publish destination).
+<strong>Recommended:</strong> Knowledge base / Help Center (link macros to full articles), Slack (<code>#support-macros</code> for weekly QA summaries).</p>
+<h2>Macro library snapshot (demo data)</h2>
+<table>
+<thead>
+<tr>
+<th>Macro</th>
+<th>Category</th>
+<th>Usage (7d)</th>
+<th>QA Status</th>
+<th>Last Updated</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Billing — invoice explanation</td>
+<td>Billing</td>
+<td>89</td>
+<td>Passed</td>
+<td>2026-05-01</td>
+</tr>
+<tr>
+<td>SSO setup — Okta walkthrough</td>
+<td>Onboarding</td>
+<td>47</td>
+<td>Passed</td>
+<td>2026-04-15</td>
+</tr>
+<tr>
+<td>API rate limit — hit 429 error</td>
+<td>Technical</td>
+<td>38</td>
+<td>Needs update</td>
+<td>2026-02-10</td>
+</tr>
+<tr>
+<td>Password reset — manual trigger</td>
+<td>Account</td>
+<td>31</td>
+<td>Passed</td>
+<td>2026-05-10</td>
+</tr>
+<tr>
+<td>CSV export — row limit workaround</td>
+<td>Technical</td>
+<td>24</td>
+<td>Draft</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Refund request — standard</td>
+<td>Billing</td>
+<td>22</td>
+<td>Passed</td>
+<td>2026-03-20</td>
+</tr>
+<tr>
+<td>iOS login loop — known issue</td>
+<td>Mobile</td>
+<td>18</td>
+<td>Draft</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Every macro in <code>/macros/</code> carries a QA stamp, a cluster link, and a reason it was written.</strong></p>9:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$Le",null,{"slug":"support-macro","pageName":"macro-library"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$Lf",null,{"entry":{"slug":"support-macro","meta":{"schemaVersion":1,"id":"support-macro-root","name":"Support Macro Cabinet","kind":"root","version":"0.1.0","description":"Generates, QA-reviews, and maintains a library of reusable support macros from real ticket clusters — so every rep pulls a reviewed, on-brand reply instead of writing from scratch. Keep Zendesk macros or Intercom snippets. Replace the outdated canned responses, the Google Doc nobody updates, and the tone drift nobody catches.","entry":"index.md","domain":"Operations"},"agents":[{"name":"Macro QA Reviewer","slug":"macro-qa","emoji":"🔎","type":"specialist","department":"support","role":"Audits active and draft macros for accuracy, tone, broken links, and outdated product references — returning flagged macros to the Macro Writer for revision before they reach a customer.","heartbeat":"0 16 * * 5","budget":60,"active":true,"focus":["macro-qa","tone-audit","accuracy-review","link-freshness"],"tags":["support","quality"],"body":"$10"},{"name":"Macro Writer","slug":"macro-writer","emoji":"✏️","type":"lead","department":"support","role":"Drafts new support macros from ticket cluster data, updates the macro registry, and sequences the weekly coverage review — ensuring every high-volume ticket pattern has a reviewed, on-brand canned response.","heartbeat":"0 8 * * 1","budget":100,"active":true,"focus":["macro-drafting","coverage-gaps","macro-registry","tone-consistency"],"tags":["leadership","support"],"body":"$11"}],"jobs":[{"id":"weekly-macro-coverage-review","name":"Weekly Macro Coverage Review","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"macro-writer","agentSlug":"macro-writer","timeout":900,"prompt":"$12","cabinetPath":"cabinet-examples/cabinets/support-macro","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"weekly-macro-freshness-qa","name":"Weekly Macro Freshness QA","enabled":true,"schedule":"0 16 * * 5","provider":"claude-code","adapterType":"claude_local","ownerAgent":"macro-qa","agentSlug":"macro-qa","timeout":600,"prompt":"$13","cabinetPath":"cabinet-examples/cabinets/support-macro","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$14","readmeHtml":"$15","tags":["support","macros","canned-responses","support-ops","enterprise","cabinet"],"section":"Sales","stats":{"totalAgents":2,"totalJobs":2,"totalCabinets":1,"totalPages":16}}}]}]]}],"$L16","$L17","$L18","$L19","$L1a"]}]
+a:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L3",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L5",null,{"src":"/brand/cabinet-logo-face-2-512.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}],"$L1b","$L1c"]}]]}],"$L1d"]]}],"$L1e"]}]}]
+b:["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true}]
+c:["$","script","script-1",{"src":"/_next/static/chunks/258x9i1fxfhga.js","async":true}]
+d:["$","$L1f",null,{"children":["$","$20",null,{"name":"Next.MetadataOutlet","children":"$@21"}]}]
+16:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Support Macro Cabinet"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🔎"," ","Macro QA Reviewer"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["✏️"," ","Macro Writer"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Macro Coverage Review"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Macro Freshness QA"}]]}]]]}],[]]}]}]]}]
+17:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-macro-qa-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🔎"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Macro QA Reviewer"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Audits active and draft macros for accuracy, tone, broken links, and outdated product references — returning flagged macros to the Macro Writer for revision before they reach a customer."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 16 * * 5"}]]}]]}],["$","div","root-macro-writer-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"✏️"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Macro Writer"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Drafts new support macros from ticket cluster data, updates the macro registry, and sequences the weekly coverage review — ensuring every high-volume ticket pattern has a reviewed, on-brand canned response."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 8 * * 1"}]]}]]}]]}]]}]
+18:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","weekly-macro-coverage-review",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Macro Coverage Review"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","macro-writer"]}]]}]]}],["$","div","weekly-macro-freshness-qa",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Macro Freshness QA"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 16 * * 5"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","macro-qa"]}]]}]]}]]}]]}]
+22:T1028,<h1>Support Macro Cabinet</h1>
+<p>Two agents generate reusable support macros from live ticket clusters, QA each macro for tone, accuracy, and link freshness, and publish a maintained macro library — so every support rep pulls a reviewed, on-brand reply instead of writing from scratch or copying a three-year-old snippet. Every macro, every QA pass, and every usage report is a file your support ops team can inspect and approve.</p>
+<blockquote>
+<p><strong>Keep Zendesk macros or Intercom snippets. Replace the outdated canned responses, the Google Doc nobody updates, and the tone drift nobody catches until a customer complains.</strong></p>
+</blockquote>
+<h2>Why this template</h2>
+<p>Macro libraries drift. Responses that were accurate at launch reference deprecated features, old pricing, or dead links within months. Meanwhile, high-volume new ticket patterns — API errors, billing confusion, mobile bugs — don't get macros at all, so reps improvise. This cabinet makes macro maintenance a <strong>scheduled operation</strong>: new macros are drafted from real clusters, existing ones are QA'd for freshness weekly, and usage data tells you which macros to invest in.</p>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/macro-writer]]</strong> — Macro Writer. Lead agent. Drafts new macros from ticket cluster data using customer-tested language, updates the macro registry, and sequences the weekly coverage review. Owns the macro library.</li>
+<li><strong>[[.agents/macro-qa]]</strong> — Macro QA Reviewer. Audits existing macros for accuracy, tone, broken links, and outdated product references. Does not write macros — flags and returns them to the Writer for revision.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-macro-coverage-review]]</td>
+<td>Macro Writer</td>
+<td>New macro drafts for uncovered clusters; usage report</td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Fri 16:00)</td>
+<td>[[.jobs/weekly-macro-freshness-qa]]</td>
+<td>Macro QA Reviewer</td>
+<td>QA report + macros flagged for revision or retirement</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[macro-library]] — categorised canned responses with usage frequency, last-updated date, linked ticket cluster, and tone/QA status. Includes search and filter.</li>
+<li>Browse <code>/macros/</code> — each macro as an individual markdown file with metadata, body text, and QA history.</li>
+<li>Open <code>/macro-registry.md</code> — the canonical registry: all macros, status, cluster linkage, and last QA date.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Zendesk or Intercom (ticket source for cluster data; macro publish destination).
+<strong>Recommended:</strong> Knowledge base / Help Center (link macros to full articles), Slack (<code>#support-macros</code> for weekly QA summaries).</p>
+<h2>Macro library snapshot (demo data)</h2>
+<table>
+<thead>
+<tr>
+<th>Macro</th>
+<th>Category</th>
+<th>Usage (7d)</th>
+<th>QA Status</th>
+<th>Last Updated</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Billing — invoice explanation</td>
+<td>Billing</td>
+<td>89</td>
+<td>Passed</td>
+<td>2026-05-01</td>
+</tr>
+<tr>
+<td>SSO setup — Okta walkthrough</td>
+<td>Onboarding</td>
+<td>47</td>
+<td>Passed</td>
+<td>2026-04-15</td>
+</tr>
+<tr>
+<td>API rate limit — hit 429 error</td>
+<td>Technical</td>
+<td>38</td>
+<td>Needs update</td>
+<td>2026-02-10</td>
+</tr>
+<tr>
+<td>Password reset — manual trigger</td>
+<td>Account</td>
+<td>31</td>
+<td>Passed</td>
+<td>2026-05-10</td>
+</tr>
+<tr>
+<td>CSV export — row limit workaround</td>
+<td>Technical</td>
+<td>24</td>
+<td>Draft</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Refund request — standard</td>
+<td>Billing</td>
+<td>22</td>
+<td>Passed</td>
+<td>2026-03-20</td>
+</tr>
+<tr>
+<td>iOS login loop — known issue</td>
+<td>Mobile</td>
+<td>18</td>
+<td>Draft</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Every macro in <code>/macros/</code> carries a QA stamp, a cluster link, and a reason it was written.</strong></p>19:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$22"}}]}]]}]
+1a:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L23",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set support-macro","label":"Install"}]}]}]]}]
+1b:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+1c:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+1d:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+1e:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+21:null

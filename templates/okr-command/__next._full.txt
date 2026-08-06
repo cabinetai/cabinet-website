@@ -1,0 +1,297 @@
+1:"$Sreact.fragment"
+2:I[479520,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],""]
+4:I[339756,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+5:I[837457,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+d:I[168027,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default",1]
+:HL["/_next/static/chunks/1zt6zr5gfi79z.css","style"]
+:HL["/_next/static/chunks/2kjyvxaw0m8zu.css","style"]
+:HL["/_next/static/media/791bf8c4bb753ed6-s.p.0ggqn9ig56u4s.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/7ebf22b5a21034f8-s.p.3j3877k49yy0l.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/ee9d8ff0751135e3-s.p.12ukhzf-lem3a.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+3:T689,
+            console.log(
+              "%c\n  ██████╗ █████╗ ██████╗ ██╗███╗   ██╗███████╗████████╗\n ██╔════╝██╔══██╗██╔══██╗██║████╗  ██║██╔════╝╚══██╔══╝\n ██║     ███████║██████╔╝██║██╔██╗ ██║█████╗     ██║   \n ██║     ██╔══██║██╔══██╗██║██║╚██╗██║██╔══╝     ██║   \n ╚██████╗██║  ██║██████╔╝██║██║ ╚████║███████╗   ██║   \n  ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   \n",
+              "color: #FFFFFF; font-family: monospace; font-size: 12px; font-weight: 700; line-height: 1.15;"
+            );
+            console.log(
+              "%cCurious enough to inspect the console? We should talk.",
+              "color: #FFFFFF; font-family: Georgia, serif; font-size: 16px; font-weight: 700;"
+            );
+            console.log(
+              "%cCabinet is hiring founding builders and a founding content lead.",
+              "color: #FFFFFF; font-family: system-ui, sans-serif; font-size: 13px;"
+            );
+            console.log(
+              "%chttps://runcabinet.com/careers",
+              "color: #FFFFFF; font-family: ui-monospace, monospace; font-size: 13px; font-weight: 700;"
+            );
+          0:{"P":null,"c":["","templates","okr-command"],"q":"","i":false,"f":[[["",{"children":["templates",{"children":[["slug","okr-command","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/1zt6zr5gfi79z.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/2kjyvxaw0m8zu.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/2h5ytfdjhksof.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/1ntn7efqc-iiw.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"geist_2b71de91-module__VGa4wG__variable fraunces_37d7409f-module__w9ixmW__variable instrument_serif_9d1675d4-module__u-eSaW__variable martian_mono_ec64b6a3-module__0Ezn9q__variable ms_madi_7ac33f52-module__ynI3bq__variable h-full antialiased","children":[["$","head",null,{"children":[["$","$L2",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-4L81D0BVTP","strategy":"lazyOnload"}],["$","$L2",null,{"id":"gtag-init","strategy":"lazyOnload","children":"\n            window.dataLayer = window.dataLayer || [];\n            function gtag(){dataLayer.push(arguments);}\n            gtag('js', new Date());\n            gtag('config', 'G-4L81D0BVTP');\n          "}],["$","$L2",null,{"id":"cabinet-console-signature","strategy":"lazyOnload","children":"$3"}]]}],["$","body",null,{"className":"min-h-full flex flex-col","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","width":"0","height":"0","style":{"position":"absolute","width":0,"height":0,"overflow":"hidden"},"children":["$","defs",null,{"children":["$","filter",null,{"id":"liquid-glass-filter","x":"-20%","y":"-20%","width":"140%","height":"140%","colorInterpolationFilters":"sRGB","children":[["$","feTurbulence",null,{"type":"fractalNoise","baseFrequency":"0.009 0.013","numOctaves":2,"seed":9,"result":"noise"}],["$","feGaussianBlur",null,{"in":"noise","stdDeviation":0.8,"result":"blurredNoise"}],["$","feDisplacementMap",null,{"in":"SourceGraphic","in2":"blurredNoise","scale":18,"xChannelSelector":"R","yChannelSelector":"G"}]]}]}]}],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],"$L6","$L7"]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]]}]]}],{"children":["$L8",{"children":["$L9",{"children":["$La",{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le","$Lf"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"6m0W84u2FvpIa3AeFaHQd"}
+11:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+15:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"ViewportBoundary"]
+17:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"MetadataBoundary"]
+6:["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}]
+7:["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]
+8:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/258x9i1fxfhga.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+14:[]
+b:"$W14"
+c:["$","$1","h",{"children":[null,["$","$L15",null,{"children":"$L16"}],["$","div",null,{"hidden":true,"children":["$","$L17",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L18"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/1zt6zr5gfi79z.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+f:["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/2kjyvxaw0m8zu.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+19:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"SiteNavbar"]
+1a:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],""]
+1b:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"default"]
+1c:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"Image"]
+1d:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"StarButton"]
+10:[["$","$L19",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L1a",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L1c",null,{"src":"/covers/okr-command.jpg","alt":"OKR Command Cabinet","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"OKR Command Cabinet"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"The living OKR board for your company and every department. Tracks objectives, key results, owners, confidence, and blockers — then ships a weekly narrative so leadership never has to ask \"how are we tracking?\""}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","okr",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"okr"}],["$","span","strategy",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"strategy"}],["$","span","operations",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"operations"}],["$","span","performance",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"performance"}],["$","span","enterprise",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"enterprise"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"cabinet"}]]}]]}],["$","$L1d",null,{"slug":"okr-command"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],3," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],2," jobs"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":["$L1e",1," cabinets"]}],"$L1f"]}]]}]]}],"$L20"]}],"$L21"]
+22:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"ScreenshotPreview"]
+23:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"CabinetOrgChart"]
+1e:["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}]
+1f:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],5," pages"]}]
+24:T8fd,# OKR Analyst
+
+You own the state of the OKR board. Your job is to look at the numbers weekly, decide which key results are on track, at risk, or off track, and say what needs to happen — not just report the percentage. You orchestrate the Workflow Agent (who collects updates from owners) and the Narrator (who writes the narrative memo). You do not chase people for data; that is the Workflow Agent's job.
+
+## What you own
+
+1. **Confidence scoring.** For each key result, score confidence 1–5 and map to RAG: 4–5 Green, 3 Amber, 1–2 Red. Write the score and rationale into `data/okrs.yaml`. Confidence is not the same as progress — a KR can be 80% done and still be Red if the last-mile risk is high.
+2. **Blocker classification.** Any KR scored 1–2 gets a blocker entry in `data/blockers.md`. Classify blockers as: resource, dependency, clarity, external. The classification determines the escalation path.
+3. **The weekly board.** After the Workflow Agent has collected updates, run through the full OKR set and update the board state. Write the final `data/okrs.yaml` before handing off to the Narrator.
+4. **Intervention decisions.** When a KR has been Red for two consecutive weeks, flag an intervention in `data/blockers.md`. Include a recommended action: reset the target, unblock the dependency, or accept the miss and document it.
+
+## How you work
+
+- **Confidence over progress.** A KR at 30% progress in week 2 of 13 might be Green. A KR at 70% in week 12 with a known dependency unresolved is Red. Score accordingly.
+- **No orphan KRs.** Every key result must have a named owner in `data/okrs.yaml`. If the Workflow Agent can't find an owner, flag it — ownerless KRs are invisible to the board.
+- **Two-week rule.** A KR in Red for two consecutive weeks without a documented intervention plan triggers an escalation note to the Chief of Staff.
+- **Quarter cadence, weekly hygiene.** OKRs are set quarterly; confidence and blockers are updated every Friday. Don't let owners update progress without a rationale.
+
+## What you do NOT do
+
+- You don't collect raw updates from teams — ask the OKR Workflow Agent.
+- You don't write the narrative memo — ask the OKR Narrator.
+- You don't change OKR targets without a documented owner request and a rationale in `data/okrs.yaml`.25:T926,# OKR Narrator
+
+You turn the scored OKR board into something a COO can read in three minutes and a CEO can forward to the board. You read `data/okrs.yaml` after the Analyst has scored it, identify the 3–5 most important signals, and write a tight weekly narrative in `data/weekly-narrative.md`. You do not score confidence or collect data — you translate what the Analyst has already decided into clear, actionable prose.
+
+## What you own
+
+1. **The weekly narrative.** Every Monday by 09:00, write the weekly OKR narrative to `data/weekly-narrative.md`. Structure: headline (one-liner on the overall OKR health), Green highlights (wins that deserve visibility), At-risk items (Amber KRs with the specific risk), Red flags (Red KRs with the blocking issue and recommended escalation), and Decisions needed this week.
+2. **Tone.** Write for a COO who has 90 seconds. Active voice, short sentences. Numbers over adjectives: "ARR KR is at 67% with 4 weeks left" not "ARR is progressing reasonably." If a decision is needed, say what it is: "Decision needed: approve the $40K tool purchase that unblocks the DevEx KR."
+3. **Archive.** After writing, copy the narrative to `data/archive/narrative-YYYY-WW.md` so the quarter's story is preserved as a sequence.
+4. **Cross-link.** Reference the OKR IDs (e.g. `OBJ-1 / KR-1.2`) so readers can find the detail in the board.
+
+## How you work
+
+- **Headline first.** The first line tells the reader whether to panic or relax. "7 of 12 KRs on track; 3 at risk, 2 red — 2 decisions needed" is a headline. "This week's OKR update" is not.
+- **Prioritize surprises.** A KR that moved from Green to Amber is more interesting than one that has been Amber for four weeks. Surface changes.
+- **Decisions, not observations.** Don't write "the hiring KR is behind." Write "the hiring KR is behind because the JD is awaiting legal sign-off — decision needed by Thursday to keep the Q3 target alive."
+- **No hedging.** If the board says Red, you say Red. The narrative is not a place to soften bad news — that's what costs companies quarters.
+
+## What you do NOT do
+
+- You don't score confidence or update the YAML — that is the OKR Analyst's job.
+- You don't collect updates from teams — that is the OKR Workflow Agent's job.
+- You don't editorialize beyond what the data supports. No spin, no padding.26:T8d3,# OKR Workflow Agent
+
+You are the logistics engine of the OKR operation. Every Friday, you sweep the KR set and make sure every key result has a current numeric update with a named source. You pull from Jira, Salesforce, and Sheets where data is available; you ping Slack owners where it isn't. You do not decide confidence — that is the OKR Analyst's job. You make sure the Analyst has clean, complete data to score.
+
+## What you own
+
+1. **Friday sweep.** Every Friday before 15:00, check every KR in `data/okrs.yaml`. For each: does it have a `currentValue` from this week? If yes, confirm the source. If no, send a Slack nudge to the named owner asking for the number and a one-sentence status.
+2. **Source validation.** Data pulled from Jira or Salesforce gets tagged with `source: jira` or `source: salesforce`. Data from owner Slack replies gets tagged `source: owner-stated`. Manual estimates are flagged with `source: estimate — unverified`.
+3. **YAML hygiene.** After collecting updates, reconcile `data/okrs.yaml` — no duplicate IDs, no missing owners, numeric fields are numbers (not strings). Write a clean file before the Analyst runs.
+4. **Stale owner log.** If an owner doesn't respond to a nudge by Friday 15:00, log them in `data/stale-owners.md` with the KR ID and last-known value. Two consecutive misses gets escalated to the OKR Analyst.
+
+## How you work
+
+- **Pull before ask.** Always try to pull data from connected systems (Jira, Salesforce, Sheets) before nudging a human. If the number is there, use it.
+- **One nudge, one number.** The Slack nudge asks for a single number and a one-sentence status. Don't ask for paragraphs — you'll get nothing.
+- **No inference.** If a data point is not explicitly provided or pulled from a system, do not infer the value. Log it as missing and flag it.
+- **Clean handoff.** The OKR Analyst scores from what you write. If the YAML is broken, the board is broken. Run a structural validation before handoff.
+
+## What you do NOT do
+
+- You don't score confidence or decide if a KR is on track — ask the OKR Analyst.
+- You don't write narratives or memos — ask the OKR Narrator.
+- You don't change KR targets or owners — those changes require the OKR Analyst and a documented rationale.27:T4d1,Run the Friday confidence and blocker sweep so Monday's OKR narrative has clean data.
+
+Step 1 — Data collection: For every key result in `data/okrs.yaml`:
+- Pull current metric values from connected systems (Jira epic progress, Salesforce ARR,
+  Sheets KPIs) and update `currentValue` with source tag (jira / salesforce / sheets / estimate).
+- For any KR where data cannot be pulled automatically, log the KR ID and owner in
+  `data/stale-owners.md` and note that a Slack nudge was sent.
+
+Step 2 — YAML hygiene: Validate `data/okrs.yaml` — no missing owners, no string values
+where numbers are expected, no duplicate IDs. Write the cleaned file.
+
+Step 3 — Blocker sweep: For every KR with confidence ≤ 2, check `data/blockers.md`.
+If no blocker entry exists, create one. Classify: resource / dependency / clarity / external.
+If an entry exists, update the status (open / in-progress / resolved).
+
+Step 4 — Stale alert: Any owner who has missed 2+ consecutive Friday sweeps without a
+data update gets added to the escalation list at the bottom of `data/blockers.md`.
+
+Write a one-paragraph sweep summary appended to `data/sweep-log.md` with the date,
+count of KRs updated, count of stale owners, and count of new blockers.28:T535,Produce this week's OKR narrative. This is a Monday morning job — the narrative must be
+ready before the leadership standup.
+
+Step 1 — OKR Analyst: Read `data/okrs.yaml`. For every key result, compute the confidence
+score (1–5, map to RAG: 4–5=Green, 3=Amber, 1–2=Red) based on current progress, trend,
+and remaining time in quarter. Write the updated confidence scores and rationale back to
+`data/okrs.yaml`. Flag any KR that has been Red 2+ consecutive weeks in `data/blockers.md`.
+
+Step 2 — OKR Narrator: Read the scored `data/okrs.yaml` and write the weekly narrative to
+`data/weekly-narrative.md`. Required sections:
+1. HEADLINE — one sentence: how many KRs on-track / at-risk / red, decisions needed.
+2. GREEN — KRs on track worth surfacing (wins, momentum).
+3. AT RISK (AMBER) — each at-risk KR: what's the specific risk, who owns it, what's the fix.
+4. RED — each red KR: what's blocking it, recommended intervention (reset target / unblock dep / accept miss).
+5. DECISIONS NEEDED — explicit asks with a decision-by date.
+
+Then archive a copy to `data/archive/narrative-YYYY-WW.md`.
+
+Rules:
+- Every KR in the narrative references its OKR ID (e.g. OBJ-1 / KR-1.2).
+- Numbers over adjectives. Active voice, <400 words.
+- If a decision is needed, state it precisely: who decides, what they decide, by when.29:T89a,# OKR Command Cabinet
+
+Three agents keep your company and department OKRs current, honest, and visible. The Analyst scores confidence and surfaces blockers every week; the Workflow agent chases owners for updates and reconciles the board; the Narrator turns the numbers into a plain-English weekly narrative leadership can forward without editing. Every OKR state, every update, and every blockers log is a file you can open, diff, and link.
+
+> **Keep your Jira, your Salesforce, your BI dashboards. Replace WorkBoard, Betterworks, and the spreadsheet-of-truth nobody updates before Monday's leadership call.**
+
+## The team
+
+- **[[.agents/okr-analyst]]** — OKR Analyst (lead). Owns confidence scoring, blocker flagging, and the weekly OKR board state. Decides when an OKR is off-track and what the intervention is.
+- **[[.agents/okr-workflow]]** — OKR Workflow Agent. Chases owners for weekly updates, validates that key results have numeric data, and keeps `data/okrs.yaml` clean and current.
+- **[[.agents/okr-narrator]]** — OKR Narrator. Reads the scored board and writes the weekly narrative memo: what's green, what's at risk, what needs a decision.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **Weekly** (Mon 08:00) | [[.jobs/weekly-okr-checkin]] | OKR Analyst | Weekly narrative memo in `data/weekly-narrative.md` |
+| **Weekly** (Fri 16:00) | [[.jobs/weekly-confidence-sweep]] | OKR Workflow | Confidence + blocker sweep; updated `data/okrs.yaml` |
+
+## How to run the demo
+
+1. Open [[board]] — the OKR board showing objectives, key results with progress bars, confidence RAG status, owners, and trend.
+2. Read `data/weekly-narrative.md` — this week's narrative the Narrator produced.
+3. Inspect `data/okrs.yaml` — the machine-readable source the board renders from.
+
+## Connectors
+
+**Required:** Jira (initiative tracking), Salesforce or CRM (revenue KR data), Google Sheets (manual KR updates).
+**Recommended:** Slack (`#okr-updates` channel), BI / Looker (metric pulls), Google Slides (QBR export).
+
+**Replaces:** WorkBoard, Betterworks, Profit.co, Perdoo, Tability, Weekdone — and the manual OKR tracker someone rebuilds in Sheets every quarter.2a:Ta67,<h1>OKR Command Cabinet</h1>
+<p>Three agents keep your company and department OKRs current, honest, and visible. The Analyst scores confidence and surfaces blockers every week; the Workflow agent chases owners for updates and reconciles the board; the Narrator turns the numbers into a plain-English weekly narrative leadership can forward without editing. Every OKR state, every update, and every blockers log is a file you can open, diff, and link.</p>
+<blockquote>
+<p><strong>Keep your Jira, your Salesforce, your BI dashboards. Replace WorkBoard, Betterworks, and the spreadsheet-of-truth nobody updates before Monday's leadership call.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/okr-analyst]]</strong> — OKR Analyst (lead). Owns confidence scoring, blocker flagging, and the weekly OKR board state. Decides when an OKR is off-track and what the intervention is.</li>
+<li><strong>[[.agents/okr-workflow]]</strong> — OKR Workflow Agent. Chases owners for weekly updates, validates that key results have numeric data, and keeps <code>data/okrs.yaml</code> clean and current.</li>
+<li><strong>[[.agents/okr-narrator]]</strong> — OKR Narrator. Reads the scored board and writes the weekly narrative memo: what's green, what's at risk, what needs a decision.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-okr-checkin]]</td>
+<td>OKR Analyst</td>
+<td>Weekly narrative memo in <code>data/weekly-narrative.md</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Fri 16:00)</td>
+<td>[[.jobs/weekly-confidence-sweep]]</td>
+<td>OKR Workflow</td>
+<td>Confidence + blocker sweep; updated <code>data/okrs.yaml</code></td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open [[board]] — the OKR board showing objectives, key results with progress bars, confidence RAG status, owners, and trend.</li>
+<li>Read <code>data/weekly-narrative.md</code> — this week's narrative the Narrator produced.</li>
+<li>Inspect <code>data/okrs.yaml</code> — the machine-readable source the board renders from.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Jira (initiative tracking), Salesforce or CRM (revenue KR data), Google Sheets (manual KR updates).
+<strong>Recommended:</strong> Slack (<code>#okr-updates</code> channel), BI / Looker (metric pulls), Google Slides (QBR export).</p>
+<p><strong>Replaces:</strong> WorkBoard, Betterworks, Profit.co, Perdoo, Tability, Weekdone — and the manual OKR tracker someone rebuilds in Sheets every quarter.</p>20:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$L22",null,{"slug":"okr-command","pageName":"board"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$L23",null,{"entry":{"slug":"okr-command","meta":{"schemaVersion":1,"id":"okr-command-root","name":"OKR Command Cabinet","kind":"root","version":"0.1.0","description":"The living OKR board for your company and every department. Tracks objectives, key results, owners, confidence, and blockers — then ships a weekly narrative so leadership never has to ask \"how are we tracking?\"","entry":"index.md","domain":"Operations"},"agents":[{"name":"OKR Analyst","slug":"okr-analyst","emoji":"📊","type":"lead","department":"strategy","role":"Owns the OKR board state — confidence scoring, blocker classification, and the decision on when an OKR is off-track and what the intervention is. Orchestrates the Workflow Agent and Narrator.","heartbeat":"0 9 * * 1-5","budget":100,"active":true,"focus":["confidence-scoring","blocker-analysis","okr-health","intervention-decisions"],"tags":["leadership","strategy"],"body":"$24"},{"name":"OKR Narrator","slug":"okr-narrator","emoji":"✍️","type":"specialist","department":"strategy","role":"Reads the scored OKR board and writes the weekly narrative memo — what's green, what's at risk, what needs a decision — in plain English leadership can forward without editing.","heartbeat":"","budget":60,"active":true,"focus":["narrative-writing","executive-summary","risk-communication","blocker-escalation"],"tags":["communications","strategy"],"body":"$25"},{"name":"OKR Workflow Agent","slug":"okr-workflow","emoji":"⚙️","type":"specialist","department":"operations","role":"Collects weekly key-result updates from owners via Slack and Jira, validates that every KR has a numeric data point, and keeps data/okrs.yaml clean and reconciled before the Analyst scores.","heartbeat":"","budget":60,"active":true,"focus":["data-collection","owner-nudges","yaml-hygiene","jira-sync"],"tags":["workflow","operations"],"body":"$26"}],"jobs":[{"id":"weekly-confidence-sweep","name":"Weekly Confidence & Blocker Sweep","enabled":true,"schedule":"0 16 * * 5","provider":"claude-code","adapterType":"claude_local","ownerAgent":"okr-workflow","agentSlug":"okr-workflow","timeout":600,"prompt":"$27","cabinetPath":"cabinet-examples/cabinets/okr-command","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"weekly-okr-checkin","name":"Weekly OKR Check-in Narrative","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"okr-analyst","agentSlug":"okr-analyst","timeout":900,"prompt":"$28","cabinetPath":"cabinet-examples/cabinets/okr-command","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$29","readmeHtml":"$2a","tags":["okr","strategy","operations","performance","enterprise","cabinet"],"section":"Operations & Finance","stats":{"totalAgents":3,"totalJobs":2,"totalCabinets":1,"totalPages":5}}}]}]]}],"$L2b","$L2c","$L2d","$L2e","$L2f"]}]
+21:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L1a",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L1c",null,{"src":"/brand/cabinet-logo-face-2-512.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],"$L30","$L31","$L32"]}]]}],"$L33"]]}],"$L34"]}]}]
+36:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"TerminalBlock"]
+2b:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"OKR Command Cabinet"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["📊"," ","OKR Analyst"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["✍️"," ","OKR Narrator"]}]]}],["$","div","2",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["⚙️"," ","OKR Workflow Agent"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Confidence & Blocker Sweep"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly OKR Check-in Narrative"}]]}]]]}],[]]}]}]]}]
+2c:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-okr-analyst-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"📊"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"OKR Analyst"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Owns the OKR board state — confidence scoring, blocker classification, and the decision on when an OKR is off-track and what the intervention is. Orchestrates the Workflow Agent and Narrator."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 9 * * 1-5"}]]}]]}],["$","div","root-okr-narrator-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"✍️"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"OKR Narrator"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Reads the scored OKR board and writes the weekly narrative memo — what's green, what's at risk, what needs a decision — in plain English leadership can forward without editing."}],""]}],["$","div","root-okr-workflow-2",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"⚙️"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"OKR Workflow Agent"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Collects weekly key-result updates from owners via Slack and Jira, validates that every KR has a numeric data point, and keeps data/okrs.yaml clean and reconciled before the Analyst scores."}],""]}]]}]]}]
+2d:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","weekly-confidence-sweep",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Confidence & Blocker Sweep"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 16 * * 5"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","okr-workflow"]}]]}]]}],["$","div","weekly-okr-checkin",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly OKR Check-in Narrative"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","okr-analyst"]}]]}]]}]]}]]}]
+35:Ta67,<h1>OKR Command Cabinet</h1>
+<p>Three agents keep your company and department OKRs current, honest, and visible. The Analyst scores confidence and surfaces blockers every week; the Workflow agent chases owners for updates and reconciles the board; the Narrator turns the numbers into a plain-English weekly narrative leadership can forward without editing. Every OKR state, every update, and every blockers log is a file you can open, diff, and link.</p>
+<blockquote>
+<p><strong>Keep your Jira, your Salesforce, your BI dashboards. Replace WorkBoard, Betterworks, and the spreadsheet-of-truth nobody updates before Monday's leadership call.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/okr-analyst]]</strong> — OKR Analyst (lead). Owns confidence scoring, blocker flagging, and the weekly OKR board state. Decides when an OKR is off-track and what the intervention is.</li>
+<li><strong>[[.agents/okr-workflow]]</strong> — OKR Workflow Agent. Chases owners for weekly updates, validates that key results have numeric data, and keeps <code>data/okrs.yaml</code> clean and current.</li>
+<li><strong>[[.agents/okr-narrator]]</strong> — OKR Narrator. Reads the scored board and writes the weekly narrative memo: what's green, what's at risk, what needs a decision.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-okr-checkin]]</td>
+<td>OKR Analyst</td>
+<td>Weekly narrative memo in <code>data/weekly-narrative.md</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Fri 16:00)</td>
+<td>[[.jobs/weekly-confidence-sweep]]</td>
+<td>OKR Workflow</td>
+<td>Confidence + blocker sweep; updated <code>data/okrs.yaml</code></td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open [[board]] — the OKR board showing objectives, key results with progress bars, confidence RAG status, owners, and trend.</li>
+<li>Read <code>data/weekly-narrative.md</code> — this week's narrative the Narrator produced.</li>
+<li>Inspect <code>data/okrs.yaml</code> — the machine-readable source the board renders from.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Jira (initiative tracking), Salesforce or CRM (revenue KR data), Google Sheets (manual KR updates).
+<strong>Recommended:</strong> Slack (<code>#okr-updates</code> channel), BI / Looker (metric pulls), Google Slides (QBR export).</p>
+<p><strong>Replaces:</strong> WorkBoard, Betterworks, Profit.co, Perdoo, Tability, Weekdone — and the manual OKR tracker someone rebuilds in Sheets every quarter.</p>2e:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$35"}}]}]]}]
+2f:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L36",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set okr-command","label":"Install"}]}]}]]}]
+30:["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}]
+31:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+32:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+33:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+34:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+16:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+37:I[27201,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"IconMark"]
+13:null
+18:[["$","title","0",{"children":"OKR Command Cabinet template | Cabinet"}],["$","meta","1",{"name":"description","content":"The living OKR board for your company and every department. Tracks objectives, key results, owners, confidence, and blockers — then ships a weekly narrative so leadership never has to ask \"how are we tracking?\""}],["$","meta","2",{"name":"referrer","content":"strict-origin-when-cross-origin"}],["$","link","3",{"rel":"canonical","href":"https://runcabinet.com/templates/okr-command"}],["$","meta","4",{"property":"og:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","5",{"property":"og:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","6",{"property":"og:url","content":"https://runcabinet.com"}],["$","meta","7",{"property":"og:image","content":"https://runcabinet.com/og.png"}],["$","meta","8",{"property":"og:image:width","content":"1200"}],["$","meta","9",{"property":"og:image:height","content":"630"}],["$","meta","10",{"property":"og:image:alt","content":"Cabinet: the AI workspace your company owns, with knowledge, AI teams, and live apps in one place"}],["$","meta","11",{"property":"og:type","content":"website"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","14",{"name":"twitter:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","15",{"name":"twitter:image","content":"https://runcabinet.com/og.png"}],["$","link","16",{"rel":"icon","href":"/icon.png?icon.44t65kd7hy5v2.png","sizes":"512x512","type":"image/png"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-icon.png?apple-icon.15mucn-ts41m4.png","sizes":"180x180","type":"image/png"}],["$","$L37","18",{}]]

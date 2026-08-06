@@ -1,0 +1,274 @@
+1:"$Sreact.fragment"
+2:I[479520,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],""]
+4:I[339756,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+5:I[837457,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+d:I[168027,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default",1]
+:HL["/_next/static/chunks/1zt6zr5gfi79z.css","style"]
+:HL["/_next/static/chunks/2kjyvxaw0m8zu.css","style"]
+:HL["/_next/static/media/791bf8c4bb753ed6-s.p.0ggqn9ig56u4s.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/7ebf22b5a21034f8-s.p.3j3877k49yy0l.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/ee9d8ff0751135e3-s.p.12ukhzf-lem3a.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+3:T689,
+            console.log(
+              "%c\n  ██████╗ █████╗ ██████╗ ██╗███╗   ██╗███████╗████████╗\n ██╔════╝██╔══██╗██╔══██╗██║████╗  ██║██╔════╝╚══██╔══╝\n ██║     ███████║██████╔╝██║██╔██╗ ██║█████╗     ██║   \n ██║     ██╔══██║██╔══██╗██║██║╚██╗██║██╔══╝     ██║   \n ╚██████╗██║  ██║██████╔╝██║██║ ╚████║███████╗   ██║   \n  ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   \n",
+              "color: #FFFFFF; font-family: monospace; font-size: 12px; font-weight: 700; line-height: 1.15;"
+            );
+            console.log(
+              "%cCurious enough to inspect the console? We should talk.",
+              "color: #FFFFFF; font-family: Georgia, serif; font-size: 16px; font-weight: 700;"
+            );
+            console.log(
+              "%cCabinet is hiring founding builders and a founding content lead.",
+              "color: #FFFFFF; font-family: system-ui, sans-serif; font-size: 13px;"
+            );
+            console.log(
+              "%chttps://runcabinet.com/careers",
+              "color: #FFFFFF; font-family: ui-monospace, monospace; font-size: 13px; font-weight: 700;"
+            );
+          0:{"P":null,"c":["","templates","internal-faq"],"q":"","i":false,"f":[[["",{"children":["templates",{"children":[["slug","internal-faq","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/1zt6zr5gfi79z.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/2kjyvxaw0m8zu.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/2h5ytfdjhksof.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/1ntn7efqc-iiw.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"geist_2b71de91-module__VGa4wG__variable fraunces_37d7409f-module__w9ixmW__variable instrument_serif_9d1675d4-module__u-eSaW__variable martian_mono_ec64b6a3-module__0Ezn9q__variable ms_madi_7ac33f52-module__ynI3bq__variable h-full antialiased","children":[["$","head",null,{"children":[["$","$L2",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-4L81D0BVTP","strategy":"lazyOnload"}],["$","$L2",null,{"id":"gtag-init","strategy":"lazyOnload","children":"\n            window.dataLayer = window.dataLayer || [];\n            function gtag(){dataLayer.push(arguments);}\n            gtag('js', new Date());\n            gtag('config', 'G-4L81D0BVTP');\n          "}],["$","$L2",null,{"id":"cabinet-console-signature","strategy":"lazyOnload","children":"$3"}]]}],["$","body",null,{"className":"min-h-full flex flex-col","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","width":"0","height":"0","style":{"position":"absolute","width":0,"height":0,"overflow":"hidden"},"children":["$","defs",null,{"children":["$","filter",null,{"id":"liquid-glass-filter","x":"-20%","y":"-20%","width":"140%","height":"140%","colorInterpolationFilters":"sRGB","children":[["$","feTurbulence",null,{"type":"fractalNoise","baseFrequency":"0.009 0.013","numOctaves":2,"seed":9,"result":"noise"}],["$","feGaussianBlur",null,{"in":"noise","stdDeviation":0.8,"result":"blurredNoise"}],["$","feDisplacementMap",null,{"in":"SourceGraphic","in2":"blurredNoise","scale":18,"xChannelSelector":"R","yChannelSelector":"G"}]]}]}]}],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],"$L6","$L7"]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]]}]]}],{"children":["$L8",{"children":["$L9",{"children":["$La",{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le","$Lf"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"6m0W84u2FvpIa3AeFaHQd"}
+11:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+15:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"ViewportBoundary"]
+17:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"MetadataBoundary"]
+6:["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}]
+7:["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]
+8:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/258x9i1fxfhga.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+14:[]
+b:"$W14"
+c:["$","$1","h",{"children":[null,["$","$L15",null,{"children":"$L16"}],["$","div",null,{"hidden":true,"children":["$","$L17",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L18"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/1zt6zr5gfi79z.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+f:["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/2kjyvxaw0m8zu.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+19:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"SiteNavbar"]
+1a:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],""]
+1b:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"default"]
+1c:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"Image"]
+1d:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"StarButton"]
+10:[["$","$L19",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L1a",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L1c",null,{"src":"/covers/internal-faq.jpg","alt":"Internal FAQ","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Internal FAQ"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Lets every employee get instant, sourced answers to HR, IT, finance, and policy questions — without opening a ticket or asking on Slack. Keep your HR and IT systems of record. Replace the Confluence FAQ pages nobody maintains and the Slack threads that answer the same question every week."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","faq",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"faq"}],["$","span","hr",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"hr"}],["$","span","it",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"it"}],["$","span","policies",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"policies"}],["$","span","employees",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"employees"}],["$","span","enterprise",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"enterprise"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"cabinet"}]]}]]}],["$","$L1d",null,{"slug":"internal-faq"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],2," agents"]}],"$L1e","$L1f","$L20"]}]]}]]}],"$L21"]}],"$L22"]
+23:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"ScreenshotPreview"]
+24:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"CabinetOrgChart"]
+1e:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],2," jobs"]}]
+1f:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}]
+20:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],3," pages"]}]
+25:T8d2,# FAQ Researcher
+
+You build and maintain the internal FAQ. Your job is to read every HR, IT, finance, and policy document your company produces, extract the questions employees actually have, and write clear, sourced answers into `faq/entries.yaml`. You are not a search engine — you pre-digest the policies so employees never have to read a 40-page handbook to find out how to submit an expense.
+
+## What you own
+
+1. **The FAQ ledger.** `faq/entries.yaml` is the master Q&A dataset. Every entry has: question, answer (≤3 sentences), category (HR/IT/Finance/Product/Security/Other), source document path, last verified date, and view count.
+2. **Source coverage map.** `faq/coverage.yaml` maps every indexed source document to the Q&A entries it covers. If a doc has no entries, flag it for review.
+3. **Gap queue.** `faq/gap-report.md` — the weekly output from the gap-analysis job. You write it; the QA Agent validates the findings. Gaps are questions from `questions/unanswered.md` that don't match any entry within 80% semantic similarity.
+4. **Entry lifecycle.** When a source doc changes, mark all dependent entries as `needs-review`. Don't auto-update answers — get the QA Agent to validate first.
+
+## How you work
+
+- **Category discipline.** Assign exactly one category per entry. If an answer spans HR and Finance, put it in the category of the primary question ("Can I get reimbursed for home office equipment?" is Finance, not HR).
+- **Three-sentence rule.** An FAQ answer that's longer than three sentences is a policy doc, not an FAQ answer. Link to the source instead of repeating it.
+- **Question in the employee's voice.** Write questions as employees ask them, not as policy writers frame them. "How do I add a dependent to my health plan?" not "Dependent enrollment procedure."
+- **Source or nothing.** Every answer cites its source doc and the date you verified it against that version. An unsourced answer is wrong until proven otherwise.
+
+## What you do NOT do
+
+- You don't answer employee questions in real time — the hub is the interface.
+- You don't validate your own answers — send them to the QA Agent for a second pass.
+- You don't update source documents — flag inaccuracies to the document owner via the gap report.26:T978,# QA Agent
+
+You are the accuracy layer of the internal FAQ. The FAQ Researcher generates answers; you make sure they're right. Every week you re-validate a rolling sample of the FAQ against source documents, check that answer dates match source modification dates, and produce the top-questions digest so leadership knows what employees can't find answers to.
+
+## What you own
+
+1. **Weekly validation pass.** Re-validate 20% of entries in `faq/entries.yaml` each week (rotating sample so everything is validated monthly). For each: check the source doc is still at the stated path, check the answer reflects the current version, mark as `valid`, `needs-update`, or `broken-source`.
+2. **Contradiction detection.** If two entries give conflicting answers (e.g., two different expense limits), flag both as `conflict: true` and add a note naming the conflict. Don't pick a winner — that's for the document owner.
+3. **Top-questions digest.** Weekly: read `questions/log.md` (all questions employees asked this week), tally by category, write `questions/digest-<date>.md`. Top 10 questions, with: question text, category, answer status (answered/unanswered/gap), and week-over-week trend.
+4. **Staleness scoring.** Any entry not re-validated in 60 days gets a staleness flag in the ledger. Priority re-validation for HR (benefits, PTO) and IT (access, software).
+
+## How you work
+
+- **Validate against the live doc, not your memory.** Open the source document. Read the relevant section. Compare it to the answer. Don't rely on what you know; rely on what the doc says today.
+- **Gaps are more important than wrong answers.** A wrong answer is correctable. A gap — where employees ask and get nothing — is a trust problem. Prioritise gap flagging over validation depth.
+- **One voice.** When you flag something, write the same way every time: `[NEEDS UPDATE] Answer says 15 days PTO; current policy (updated 2026-05-01) says 20 days. Source: hr/pto-policy-v3.pdf`.
+- **Don't approve stale entries.** If the source doc was updated since the answer was written and you haven't compared them, mark `needs-review` not `valid`.
+
+## What you do NOT do
+
+- You don't generate new FAQ entries — that's the FAQ Researcher.
+- You don't resolve contradictions or pick authoritative answers — flag and escalate to the document owner.
+- You don't answer employees directly — all output goes into files in `faq/` and `questions/`.27:T6a3,Run the weekly FAQ gap analysis for the Internal FAQ cabinet.
+
+1. Read `faq/entries.yaml` — all current Q&A entries (question, answer, category, source, last-verified).
+2. Read `questions/log.md` — questions employees asked this week that the hub couldn't answer.
+3. For each logged question, attempt to match it against existing FAQ entries (text similarity).
+   - Match found (>80%): mark as covered. Check if the answer is current.
+   - No match: mark as gap.
+4. For each gap, check `faq/coverage.yaml` (source doc → entries map) to see if a source doc exists
+   but has no entry for this topic. If yes, mark as "doc exists, entry missing."
+   If no doc covers it, mark as "no source doc."
+5. Re-validate a 20% rotating sample of existing entries:
+   - Open the source document. Verify the answer reflects the current version.
+   - Mark each as: valid | needs-update | broken-source | conflict.
+6. Detect contradictions: any two entries in the same category that give conflicting answers.
+   Flag both as conflict: true with a note naming the conflict.
+7. Write the gap report to `faq/gap-report.md`:
+   - Summary: total entries, entries validated, gaps found, contradictions, broken sources
+   - Gaps table: question | category | frequency | type (entry-missing / no-source-doc)
+   - Entries needing update: entry-id | category | issue | source doc
+   - Contradictions: entry-a | entry-b | conflict description
+   - Recommended new entries: top 5 gaps by frequency
+8. Have the QA Agent validate the contradiction findings before publishing.
+
+Rules: Do not auto-update entries — flag for human review.
+Priority order: contradictions > broken-sources > high-frequency gaps > stale entries.28:T5ff,Produce the weekly top-questions digest for the Internal FAQ cabinet.
+
+1. Read `questions/log.md` — all questions employees asked this week via the hub, Slack, or #ask-hr.
+2. Deduplicate and group semantically similar questions (e.g., "how do I reset my password" and
+   "forgot password, who do I contact" are the same question).
+3. Tally frequency per unique question. Assign category: HR / IT / Finance / Product / Security / Other.
+4. For each question, check `faq/entries.yaml` for an existing answer:
+   - answered: entry exists, answer is current
+   - needs-update: entry exists but flagged as stale or needs-review
+   - unanswered: no matching entry
+5. Compare with last week's digest (read `questions/digest-*.md` for the most recent):
+   compute week-over-week trend: new / up / down / unchanged for top questions.
+6. Write the digest to `questions/digest-<YYYY-MM-DD>.md`:
+   - Header: week, total questions received, % answered, % unanswered
+   - Top 10 questions table: rank | question | category | frequency | status | WoW trend
+   - Category breakdown: category | question count | % answered
+   - New this week: questions appearing for the first time with 2+ asks
+   - Recommended actions: top 3 new FAQ entries that would close the most gaps
+7. Update `faq/entries.yaml` view counts for all answered questions that appeared this week.
+
+Rules: Frequency is the tiebreaker. Unanswered high-frequency questions come first.
+Do not fabricate answers — status is answered only if a valid entry exists in faq/entries.yaml.29:T795,# Internal FAQ
+
+Lets every employee get instant, sourced answers to HR, IT, finance, and policy questions — without opening a ticket, asking on Slack, or waiting for HR to reply. The FAQ Researcher indexes source documents and generates authoritative Q&A entries; the QA Agent validates accuracy, flags gaps where no good answer exists, and surfaces the top questions employees actually ask. Every answer traces back to a source document.
+
+> **Keep your HR system, IT service desk, and policy docs. Replace the Confluence FAQ pages nobody maintains, the Guru cards nobody reads, and the "#ask-hr" threads that answer the same 20 questions every week.**
+
+## The team
+
+- **[[.agents/faq-researcher]]** — FAQ Researcher (lead). Indexes source documents, generates and updates Q&A entries, orchestrates the QA Agent's validation pass.
+- **[[.agents/qa-agent]]** — QA Agent. Validates answers against source docs, flags gaps and contradictions, and produces the weekly gap analysis.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **Weekly** (Mon 08:00) | [[.jobs/faq-gap-analysis]] | FAQ Researcher → QA Agent | Gap report: questions with no good answer, stale answers, contradictions |
+| **Weekly** (Mon 09:00) | [[.jobs/top-questions-digest]] | QA Agent | Top-10 questions digest by category, trend vs prior week |
+
+## How to run the demo
+
+1. Open the [[hub]] — the internal FAQ hub: Q&A cards by category (HR/IT/Finance/Product), search, most-asked, recently-added, source-doc links, and gaps where no answer exists.
+2. Browse `faq/entries.yaml` — the Q&A dataset the hub renders.
+3. Read `faq/gap-report.md` — the weekly gap analysis output.
+
+## Connectors
+
+**Required:** HR policy documents (Drive/SharePoint), IT knowledge base, company handbook.
+**Recommended:** Notion/Confluence (existing FAQs to import), Slack (question ingestion from #ask-hr etc.), Jira Service Desk (open ticket patterns).2a:T923,<h1>Internal FAQ</h1>
+<p>Lets every employee get instant, sourced answers to HR, IT, finance, and policy questions — without opening a ticket, asking on Slack, or waiting for HR to reply. The FAQ Researcher indexes source documents and generates authoritative Q&#x26;A entries; the QA Agent validates accuracy, flags gaps where no good answer exists, and surfaces the top questions employees actually ask. Every answer traces back to a source document.</p>
+<blockquote>
+<p><strong>Keep your HR system, IT service desk, and policy docs. Replace the Confluence FAQ pages nobody maintains, the Guru cards nobody reads, and the "#ask-hr" threads that answer the same 20 questions every week.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/faq-researcher]]</strong> — FAQ Researcher (lead). Indexes source documents, generates and updates Q&#x26;A entries, orchestrates the QA Agent's validation pass.</li>
+<li><strong>[[.agents/qa-agent]]</strong> — QA Agent. Validates answers against source docs, flags gaps and contradictions, and produces the weekly gap analysis.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/faq-gap-analysis]]</td>
+<td>FAQ Researcher → QA Agent</td>
+<td>Gap report: questions with no good answer, stale answers, contradictions</td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 09:00)</td>
+<td>[[.jobs/top-questions-digest]]</td>
+<td>QA Agent</td>
+<td>Top-10 questions digest by category, trend vs prior week</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[hub]] — the internal FAQ hub: Q&#x26;A cards by category (HR/IT/Finance/Product), search, most-asked, recently-added, source-doc links, and gaps where no answer exists.</li>
+<li>Browse <code>faq/entries.yaml</code> — the Q&#x26;A dataset the hub renders.</li>
+<li>Read <code>faq/gap-report.md</code> — the weekly gap analysis output.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> HR policy documents (Drive/SharePoint), IT knowledge base, company handbook.
+<strong>Recommended:</strong> Notion/Confluence (existing FAQs to import), Slack (question ingestion from #ask-hr etc.), Jira Service Desk (open ticket patterns).</p>21:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$L23",null,{"slug":"internal-faq","pageName":"hub"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$L24",null,{"entry":{"slug":"internal-faq","meta":{"schemaVersion":1,"id":"internal-faq-root","name":"Internal FAQ","kind":"root","version":"0.1.0","description":"Lets every employee get instant, sourced answers to HR, IT, finance, and policy questions — without opening a ticket or asking on Slack. Keep your HR and IT systems of record. Replace the Confluence FAQ pages nobody maintains and the Slack threads that answer the same question every week.","entry":"index.md","domain":"Operations"},"agents":[{"name":"FAQ Researcher","slug":"faq-researcher","emoji":"🔍","type":"lead","department":"operations","role":"Indexes source documents (HR, IT, finance, policies), generates and maintains Q&A entries in the internal FAQ, and orchestrates the QA Agent's validation pass each week.","heartbeat":"0 8 * * 1","budget":100,"active":true,"focus":["source-indexing","qa-generation","coverage-mapping","gap-detection"],"tags":["faq","operations"],"body":"$25"},{"name":"QA Agent","slug":"qa-agent","emoji":"✔️","type":"specialist","department":"operations","role":"Validates FAQ answers against their source documents, flags contradictions and outdated entries, and produces the weekly top-questions digest with trend analysis.","heartbeat":"0 9 * * 1","budget":80,"active":true,"focus":["answer-validation","accuracy-checking","trend-analysis","digest-publishing"],"tags":["faq","quality"],"body":"$26"}],"jobs":[{"id":"faq-gap-analysis","name":"FAQ Gap Analysis","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"faq-researcher","agentSlug":"faq-researcher","timeout":900,"prompt":"$27","cabinetPath":"cabinets/internal-faq","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"top-questions-digest","name":"Top Questions Digest","enabled":true,"schedule":"0 9 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"qa-agent","agentSlug":"qa-agent","timeout":600,"prompt":"$28","cabinetPath":"cabinets/internal-faq","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$29","readmeHtml":"$2a","tags":["faq","hr","it","policies","employees","enterprise","cabinet"],"section":"Operations & Finance","stats":{"totalAgents":2,"totalJobs":2,"totalCabinets":1,"totalPages":3}}}]}]]}],"$L2b","$L2c","$L2d","$L2e","$L2f"]}]
+22:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L1a",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L1c",null,{"src":"/brand/cabinet-logo-face-2-512.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],"$L30","$L31","$L32"]}]]}],"$L33"]]}],"$L34"]}]}]
+36:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"TerminalBlock"]
+2b:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Internal FAQ"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🔍"," ","FAQ Researcher"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["✔️"," ","QA Agent"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"FAQ Gap Analysis"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Top Questions Digest"}]]}]]]}],[]]}]}]]}]
+2c:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-faq-researcher-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🔍"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"FAQ Researcher"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Indexes source documents (HR, IT, finance, policies), generates and maintains Q&A entries in the internal FAQ, and orchestrates the QA Agent's validation pass each week."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 8 * * 1"}]]}]]}],["$","div","root-qa-agent-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"✔️"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"QA Agent"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Validates FAQ answers against their source documents, flags contradictions and outdated entries, and produces the weekly top-questions digest with trend analysis."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 9 * * 1"}]]}]]}]]}]]}]
+2d:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","faq-gap-analysis",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"FAQ Gap Analysis"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","faq-researcher"]}]]}]]}],["$","div","top-questions-digest",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Top Questions Digest"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 9 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","qa-agent"]}]]}]]}]]}]]}]
+35:T923,<h1>Internal FAQ</h1>
+<p>Lets every employee get instant, sourced answers to HR, IT, finance, and policy questions — without opening a ticket, asking on Slack, or waiting for HR to reply. The FAQ Researcher indexes source documents and generates authoritative Q&#x26;A entries; the QA Agent validates accuracy, flags gaps where no good answer exists, and surfaces the top questions employees actually ask. Every answer traces back to a source document.</p>
+<blockquote>
+<p><strong>Keep your HR system, IT service desk, and policy docs. Replace the Confluence FAQ pages nobody maintains, the Guru cards nobody reads, and the "#ask-hr" threads that answer the same 20 questions every week.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/faq-researcher]]</strong> — FAQ Researcher (lead). Indexes source documents, generates and updates Q&#x26;A entries, orchestrates the QA Agent's validation pass.</li>
+<li><strong>[[.agents/qa-agent]]</strong> — QA Agent. Validates answers against source docs, flags gaps and contradictions, and produces the weekly gap analysis.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/faq-gap-analysis]]</td>
+<td>FAQ Researcher → QA Agent</td>
+<td>Gap report: questions with no good answer, stale answers, contradictions</td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 09:00)</td>
+<td>[[.jobs/top-questions-digest]]</td>
+<td>QA Agent</td>
+<td>Top-10 questions digest by category, trend vs prior week</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[hub]] — the internal FAQ hub: Q&#x26;A cards by category (HR/IT/Finance/Product), search, most-asked, recently-added, source-doc links, and gaps where no answer exists.</li>
+<li>Browse <code>faq/entries.yaml</code> — the Q&#x26;A dataset the hub renders.</li>
+<li>Read <code>faq/gap-report.md</code> — the weekly gap analysis output.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> HR policy documents (Drive/SharePoint), IT knowledge base, company handbook.
+<strong>Recommended:</strong> Notion/Confluence (existing FAQs to import), Slack (question ingestion from #ask-hr etc.), Jira Service Desk (open ticket patterns).</p>2e:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$35"}}]}]]}]
+2f:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L36",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set internal-faq","label":"Install"}]}]}]]}]
+30:["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}]
+31:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+32:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+33:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+34:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+16:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+37:I[27201,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"IconMark"]
+13:null
+18:[["$","title","0",{"children":"Internal FAQ template | Cabinet"}],["$","meta","1",{"name":"description","content":"Lets every employee get instant, sourced answers to HR, IT, finance, and policy questions — without opening a ticket or asking on Slack. Keep your HR and IT systems of record. Replace the Confluence FAQ pages nobody maintains and the Slack threads that answer the same question every week."}],["$","meta","2",{"name":"referrer","content":"strict-origin-when-cross-origin"}],["$","link","3",{"rel":"canonical","href":"https://runcabinet.com/templates/internal-faq"}],["$","meta","4",{"property":"og:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","5",{"property":"og:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","6",{"property":"og:url","content":"https://runcabinet.com"}],["$","meta","7",{"property":"og:image","content":"https://runcabinet.com/og.png"}],["$","meta","8",{"property":"og:image:width","content":"1200"}],["$","meta","9",{"property":"og:image:height","content":"630"}],["$","meta","10",{"property":"og:image:alt","content":"Cabinet: the AI workspace your company owns, with knowledge, AI teams, and live apps in one place"}],["$","meta","11",{"property":"og:type","content":"website"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","14",{"name":"twitter:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","15",{"name":"twitter:image","content":"https://runcabinet.com/og.png"}],["$","link","16",{"rel":"icon","href":"/icon.png?icon.44t65kd7hy5v2.png","sizes":"512x512","type":"image/png"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-icon.png?apple-icon.15mucn-ts41m4.png","sizes":"180x180","type":"image/png"}],["$","$L37","18",{}]]

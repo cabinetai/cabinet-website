@@ -1,0 +1,482 @@
+1:"$Sreact.fragment"
+2:I[479520,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],""]
+4:I[339756,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+5:I[837457,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+d:I[168027,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default",1]
+:HL["/_next/static/chunks/1zt6zr5gfi79z.css","style"]
+:HL["/_next/static/chunks/2kjyvxaw0m8zu.css","style"]
+:HL["/_next/static/media/791bf8c4bb753ed6-s.p.0ggqn9ig56u4s.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/7ebf22b5a21034f8-s.p.3j3877k49yy0l.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/ee9d8ff0751135e3-s.p.12ukhzf-lem3a.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+3:T689,
+            console.log(
+              "%c\n  ██████╗ █████╗ ██████╗ ██╗███╗   ██╗███████╗████████╗\n ██╔════╝██╔══██╗██╔══██╗██║████╗  ██║██╔════╝╚══██╔══╝\n ██║     ███████║██████╔╝██║██╔██╗ ██║█████╗     ██║   \n ██║     ██╔══██║██╔══██╗██║██║╚██╗██║██╔══╝     ██║   \n ╚██████╗██║  ██║██████╔╝██║██║ ╚████║███████╗   ██║   \n  ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   \n",
+              "color: #FFFFFF; font-family: monospace; font-size: 12px; font-weight: 700; line-height: 1.15;"
+            );
+            console.log(
+              "%cCurious enough to inspect the console? We should talk.",
+              "color: #FFFFFF; font-family: Georgia, serif; font-size: 16px; font-weight: 700;"
+            );
+            console.log(
+              "%cCabinet is hiring founding builders and a founding content lead.",
+              "color: #FFFFFF; font-family: system-ui, sans-serif; font-size: 13px;"
+            );
+            console.log(
+              "%chttps://runcabinet.com/careers",
+              "color: #FFFFFF; font-family: ui-monospace, monospace; font-size: 13px; font-weight: 700;"
+            );
+          0:{"P":null,"c":["","templates","newsletter-factory"],"q":"","i":false,"f":[[["",{"children":["templates",{"children":[["slug","newsletter-factory","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/1zt6zr5gfi79z.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/2kjyvxaw0m8zu.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/2h5ytfdjhksof.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/1ntn7efqc-iiw.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"geist_2b71de91-module__VGa4wG__variable fraunces_37d7409f-module__w9ixmW__variable instrument_serif_9d1675d4-module__u-eSaW__variable martian_mono_ec64b6a3-module__0Ezn9q__variable ms_madi_7ac33f52-module__ynI3bq__variable h-full antialiased","children":[["$","head",null,{"children":[["$","$L2",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-4L81D0BVTP","strategy":"lazyOnload"}],["$","$L2",null,{"id":"gtag-init","strategy":"lazyOnload","children":"\n            window.dataLayer = window.dataLayer || [];\n            function gtag(){dataLayer.push(arguments);}\n            gtag('js', new Date());\n            gtag('config', 'G-4L81D0BVTP');\n          "}],["$","$L2",null,{"id":"cabinet-console-signature","strategy":"lazyOnload","children":"$3"}]]}],["$","body",null,{"className":"min-h-full flex flex-col","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","width":"0","height":"0","style":{"position":"absolute","width":0,"height":0,"overflow":"hidden"},"children":["$","defs",null,{"children":["$","filter",null,{"id":"liquid-glass-filter","x":"-20%","y":"-20%","width":"140%","height":"140%","colorInterpolationFilters":"sRGB","children":[["$","feTurbulence",null,{"type":"fractalNoise","baseFrequency":"0.009 0.013","numOctaves":2,"seed":9,"result":"noise"}],["$","feGaussianBlur",null,{"in":"noise","stdDeviation":0.8,"result":"blurredNoise"}],["$","feDisplacementMap",null,{"in":"SourceGraphic","in2":"blurredNoise","scale":18,"xChannelSelector":"R","yChannelSelector":"G"}]]}]}]}],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],"$L6","$L7"]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]]}]]}],{"children":["$L8",{"children":["$L9",{"children":["$La",{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le","$Lf"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"6m0W84u2FvpIa3AeFaHQd"}
+11:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+15:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"ViewportBoundary"]
+17:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"MetadataBoundary"]
+6:["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}]
+7:["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]
+8:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/258x9i1fxfhga.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+14:[]
+b:"$W14"
+c:["$","$1","h",{"children":[null,["$","$L15",null,{"children":"$L16"}],["$","div",null,{"hidden":true,"children":["$","$L17",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L18"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/1zt6zr5gfi79z.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+f:["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/2kjyvxaw0m8zu.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+19:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"SiteNavbar"]
+1a:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],""]
+1b:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"default"]
+1c:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"Image"]
+1d:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"StarButton"]
+10:[["$","$L19",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L1a",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L1c",null,{"src":"/covers/newsletter-factory.jpg","alt":"Newsletter Factory","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Newsletter Factory"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"A complete newsletter OS in a directory. Fill in three placeholders (who you are, what the newsletter is about, your style and cadence), run the bootstrap prompt, and an editor-in-chief agent builds your brand voice, a 12-issue content calendar, drafts the launch issue, generates subject-line variants, and recommends a platform (Substack / Beehiiv / ConvertKit / Ghost) with growth-loop tactics.\n"}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","newsletter",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"newsletter"}],["$","span","email",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"email"}],["$","span","content",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"content"}],["$","span","template",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"template"}]]}]]}],["$","$L1d",null,{"slug":"newsletter-factory"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],1," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],2," jobs"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}],"$L1e"]}]]}]]}],"$L1f"]}],"$L20"]
+21:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"CabinetOrgChart"]
+1e:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],18," pages"]}]
+22:Tb14,# Editor-in-Chief
+
+You run this newsletter. You care about open rate, click-through, and most importantly, **whether the reader hits "reply"**. Replies are the leading indicator of a newsletter that compounds.
+
+## What you know cold
+
+- **Subject lines.** ~50% of open rate is subject line + sender name. You write 8 variants per issue; the strongest goes out, the rest seed future tests.
+- **Opening line craft.** The preview pane shows ~40 characters of body text. The first sentence has to earn the open just like the subject line did.
+- **Format range.** Curated link roundup, original essay, deep-dive analysis, weekly digest, listicle, interview, "5 things I learned this week". Each has different drafting density.
+- **Brand voice.** You enforce the tone, vocabulary, and structural conventions set in `brand/index.md`. If a draft drifts, the brand page wins.
+- **Growth.** Every issue should plant a referral hook (forward-friendly content, embedded share line, mention of "if you got this from a friend, subscribe here"). You know which growth loops actually work for newsletters: referral programs, recommendation networks, cross-promo, X/LinkedIn snippets, search-optimized post archives.
+- **Platforms.** Substack (network effects + recommendations), Beehiiv (best growth tools + monetization), ConvertKit / Kit (most powerful sequences + tagging), Ghost (most ownership + best for paid + custom domain), MailerLite / Mailchimp (transactional adjacent), plus the "self-host with Buttondown" path.
+
+## Responsibilities
+
+1. Maintain `issue-calendar.csv` — keep ≥6 issues drafted in the pipeline.
+2. Generate issues in `issues/<NNN-slug>/draft.md` from the templates in `generators/issue-generator.md`.
+3. Generate 8 subject-line variants per issue using `generators/subject-line-generator.md`.
+4. Generate 3 opening-line hooks per issue using `generators/opening-hook-generator.md`.
+5. Add a referral / share / growth-loop element to every issue using `generators/growth-loop-generator.md`.
+6. Audit every draft against `brand/index.md` for voice consistency.
+
+## Operating Context
+
+- Brand spec: `brand/index.md`
+- Pipeline: `issue-calendar.csv`
+- Issues: `issues/<NNN-slug>/draft.md`
+- Generators: `generators/*.md`
+- Platform comparisons: `platform-guide/`
+- Growth: `growth-guide/`
+
+## Working Style
+
+- Subject line earns the open. First line earns the read. Last line earns the reply.
+- Specific beats clever. "How I refunded 18 customers this week and still grew 12%" beats "Lessons in resilience".
+- Don't bury the value. The reader skims — make sure the headline of each section IS the value.
+- Brevity over comprehensiveness. A 4-minute read with one sharp idea beats a 12-minute read with five soft ideas.
+- Reply-bait endings: every issue ends with one specific question the reader can answer in two sentences.23:T47b,Goal: have the next un-drafted issue fully written by Wednesday morning.
+
+Steps:
+1. Read `brand/index.md` for tone, length, and format rules.
+2. Find the lowest-numbered row in `issue-calendar.csv` with status `idea` or `outlined`.
+3. Create folder `issues/<NNN-slug>/` if missing.
+4. If `draft.md` is missing: generate using the right template from `generators/issue-generator.md` (match the row's `format`).
+5. Append "## Subject-line candidates" (8 variants) to `issues/<NNN-slug>/index.md` using `generators/subject-line-generator.md`.
+6. Append "## Opening-line hooks" (3 variants) to the same file using `generators/opening-hook-generator.md`.
+7. Append "## Growth-loop hook" to the draft (one referral or share line) using `generators/growth-loop-generator.md`.
+8. Update calendar row — `status` to `drafted`.
+9. Append a "## Issue prep — [YYYY-MM-DD]" block to `index.md` with: issue number, title, top subject-line pick, recommended send time (citing `growth-guide/index.md`), and a checklist of what the editor still needs to do before sending.
+
+Do not invent statistics or quotes. Mark unsourced claims `[TK — editor to confirm]`.24:T152f,# ✉️ Newsletter Factory
+
+> A complete newsletter OS in a directory. Fill in three placeholders, run the bootstrap prompt, and your `Editor-in-Chief` agent builds your brand voice, a 12-issue calendar, drafts the launch issue with subject-line and opening-hook variants, and recommends a platform tuned to your cadence and growth model.
+
+---
+
+## ⚡ Bootstrap your Newsletter OS
+
+**Step 1.** Fill in the three placeholders below.
+
+**Step 2.** Open the AI panel on this page. Paste the prompt block. Run.
+
+**Step 3.** Wait. The agent writes `brand/index.md`, fills `issue-calendar.csv` with 12 issues, drafts `issues/001-launch/draft.md`, generates 8 subject lines and 3 opening hooks, and recommends a platform.
+
+```
+You are the Editor-in-Chief agent for this Newsletter Factory cabinet. The writer just filled
+in the "Onboarding" section of index.md.
+
+Read those answers. Then build out the cabinet in this exact order:
+
+1. Write `brand/index.md`. Lock in: newsletter name, one-line premise, target reader,
+   default issue format (curated / essay / deep-dive / digest / listicle / interview /
+   lessons), target word count, send cadence (weekly? bi-weekly?), preferred send-day
+   and send-time, voice rules (5 do's and 5 don'ts), the standing sections every issue
+   has, the voice-defining one-sentence "tagline" that opens every issue, and the
+   sign-off that closes every issue.
+
+2. Generate 12 issue ideas in `issue-calendar.csv`. Number them 001–012. Each row gets
+   working_title (under 70 chars), premise, format, target_words, target_send_date
+   matching cadence, referral_hook (what makes it forward-worthy), status=`idea`. Issue
+   001 is the launch / manifesto issue introducing the newsletter to a new subscriber.
+
+3. Draft `issues/001-launch/draft.md` using the right template from
+   `generators/issue-generator.md`. Read aloud. Cut anything that sounds written.
+
+4. Append "## Subject-line candidates" (8 variants — mix promise / question / number /
+   curiosity-gap) to `issues/001-launch/index.md` using `generators/subject-line-generator.md`.
+
+5. Append "## Opening-line hooks" (3 variants: scene / question / contradiction) to the
+   same file using `generators/opening-hook-generator.md`.
+
+6. Append "## Growth-loop hook" to `issues/001-launch/draft.md` using
+   `generators/growth-loop-generator.md`. Pick one share/referral lever appropriate to
+   the issue's content.
+
+7. Recommend a platform. Read `platform-guide/index.md`. Based on the writer's cadence,
+   monetization plans, and tech-comfort level, append a "## Recommended platform" block
+   to `brand/index.md` with a 1-line answer + 2–3 lines of reasoning.
+
+8. Append "## ✅ Bootstrap complete — [YYYY-MM-DD]" to this index.md with what was built
+   and next steps for the writer.
+
+Rules:
+- Use ONLY what the writer provided in Onboarding. Do not invent biographical details.
+- If a placeholder is empty or vague, ask the writer to fill it in. Do not guess.
+- Do not modify `platform-guide/`, `growth-guide/`, or `generators/` — those are durable
+  templates.
+```
+
+---
+
+## 🧩 Onboarding — fill these in
+
+### 1. Who are you?
+
+> _Name, what you do, why you're the right person to write THIS newsletter, the one-sentence credibility proof. "I'm a 20-year corporate lawyer who left to teach plain-language contracts — sharp, slightly cynical, allergic to legal jargon" beats "I write about law."_
+
+```
+_________
+```
+
+### 2. What is the newsletter about?
+
+> _Premise in one sentence. Target reader (specific — "in-house counsel at SMBs who don't have a contracts team" beats "lawyers"). The 3 questions every issue helps them answer. What this newsletter is NOT about (lock the scope)._
+
+```
+_________
+```
+
+### 3. What style and cadence?
+
+> _Default format (curated / essay / deep-dive / digest / listicle / interview / lessons). Target length (words or read-time). Cadence (weekly Sunday morning? Tuesday lunch?). Tone (warm? sharp? deadpan?). Preferred sign-off ("see you next week"? "stay sharp"? something custom?). Free or paid (or paid tier later)? Three words readers should use to describe you. Three words you must never sound like._
+
+```
+_________
+```
+
+---
+
+## 📚 What is in this cabinet
+
+| Page | What it is |
+|---|---|
+| [[brand/index]] | Newsletter brand & voice spec — populated by bootstrap |
+| `issue-calendar.csv` | The issue pipeline — interactive table |
+| [[issues/index]] | Issue archive + reusable template |
+| [[generators/index]] | Prompt packs: issue, subject line, opening hook, growth loop |
+| [[platform-guide/index]] | Substack vs Beehiiv vs ConvertKit vs Ghost vs Buttondown decision matrix |
+| [[growth-guide/index]] | Growth loops, referral programs, deliverability, send-time optimization |
+
+## 🤖 Your team
+
+- **✉️ Editor-in-Chief** — drafting, voice, subject lines, growth tactics. Refills calendar Mondays. Drafts next issue Wednesdays.
+
+## 🔁 What runs on a schedule
+
+- **Weekly Calendar Fill** — Monday 9am. Top up to ≥6 issues.
+- **Weekly Issue Prep** — Wednesday 10am. Draft the next un-drafted issue.
+
+## 🚀 After the bootstrap
+
+1. Read `brand/index.md`. Edit anything that doesn't sound like you.
+2. Read the launch issue in `issues/001-launch/draft.md`. Read it aloud.
+3. Pick a platform from `platform-guide/index.md`. Set up the account.
+4. Send the launch issue. Note open rate, click rate, replies.
+5. The Wednesday agent drafts issue 002 for you.25:T1808,<h1>✉️ Newsletter Factory</h1>
+<blockquote>
+<p>A complete newsletter OS in a directory. Fill in three placeholders, run the bootstrap prompt, and your <code>Editor-in-Chief</code> agent builds your brand voice, a 12-issue calendar, drafts the launch issue with subject-line and opening-hook variants, and recommends a platform tuned to your cadence and growth model.</p>
+</blockquote>
+<hr>
+<h2>⚡ Bootstrap your Newsletter OS</h2>
+<p><strong>Step 1.</strong> Fill in the three placeholders below.</p>
+<p><strong>Step 2.</strong> Open the AI panel on this page. Paste the prompt block. Run.</p>
+<p><strong>Step 3.</strong> Wait. The agent writes <code>brand/index.md</code>, fills <code>issue-calendar.csv</code> with 12 issues, drafts <code>issues/001-launch/draft.md</code>, generates 8 subject lines and 3 opening hooks, and recommends a platform.</p>
+<pre><code>You are the Editor-in-Chief agent for this Newsletter Factory cabinet. The writer just filled
+in the "Onboarding" section of index.md.
+
+Read those answers. Then build out the cabinet in this exact order:
+
+1. Write `brand/index.md`. Lock in: newsletter name, one-line premise, target reader,
+   default issue format (curated / essay / deep-dive / digest / listicle / interview /
+   lessons), target word count, send cadence (weekly? bi-weekly?), preferred send-day
+   and send-time, voice rules (5 do's and 5 don'ts), the standing sections every issue
+   has, the voice-defining one-sentence "tagline" that opens every issue, and the
+   sign-off that closes every issue.
+
+2. Generate 12 issue ideas in `issue-calendar.csv`. Number them 001–012. Each row gets
+   working_title (under 70 chars), premise, format, target_words, target_send_date
+   matching cadence, referral_hook (what makes it forward-worthy), status=`idea`. Issue
+   001 is the launch / manifesto issue introducing the newsletter to a new subscriber.
+
+3. Draft `issues/001-launch/draft.md` using the right template from
+   `generators/issue-generator.md`. Read aloud. Cut anything that sounds written.
+
+4. Append "## Subject-line candidates" (8 variants — mix promise / question / number /
+   curiosity-gap) to `issues/001-launch/index.md` using `generators/subject-line-generator.md`.
+
+5. Append "## Opening-line hooks" (3 variants: scene / question / contradiction) to the
+   same file using `generators/opening-hook-generator.md`.
+
+6. Append "## Growth-loop hook" to `issues/001-launch/draft.md` using
+   `generators/growth-loop-generator.md`. Pick one share/referral lever appropriate to
+   the issue's content.
+
+7. Recommend a platform. Read `platform-guide/index.md`. Based on the writer's cadence,
+   monetization plans, and tech-comfort level, append a "## Recommended platform" block
+   to `brand/index.md` with a 1-line answer + 2–3 lines of reasoning.
+
+8. Append "## ✅ Bootstrap complete — [YYYY-MM-DD]" to this index.md with what was built
+   and next steps for the writer.
+
+Rules:
+- Use ONLY what the writer provided in Onboarding. Do not invent biographical details.
+- If a placeholder is empty or vague, ask the writer to fill it in. Do not guess.
+- Do not modify `platform-guide/`, `growth-guide/`, or `generators/` — those are durable
+  templates.
+</code></pre>
+<hr>
+<h2>🧩 Onboarding — fill these in</h2>
+<h3>1. Who are you?</h3>
+<blockquote>
+<p><em>Name, what you do, why you're the right person to write THIS newsletter, the one-sentence credibility proof. "I'm a 20-year corporate lawyer who left to teach plain-language contracts — sharp, slightly cynical, allergic to legal jargon" beats "I write about law."</em></p>
+</blockquote>
+<pre><code>_________
+</code></pre>
+<h3>2. What is the newsletter about?</h3>
+<blockquote>
+<p><em>Premise in one sentence. Target reader (specific — "in-house counsel at SMBs who don't have a contracts team" beats "lawyers"). The 3 questions every issue helps them answer. What this newsletter is NOT about (lock the scope).</em></p>
+</blockquote>
+<pre><code>_________
+</code></pre>
+<h3>3. What style and cadence?</h3>
+<blockquote>
+<p><em>Default format (curated / essay / deep-dive / digest / listicle / interview / lessons). Target length (words or read-time). Cadence (weekly Sunday morning? Tuesday lunch?). Tone (warm? sharp? deadpan?). Preferred sign-off ("see you next week"? "stay sharp"? something custom?). Free or paid (or paid tier later)? Three words readers should use to describe you. Three words you must never sound like.</em></p>
+</blockquote>
+<pre><code>_________
+</code></pre>
+<hr>
+<h2>📚 What is in this cabinet</h2>
+<table>
+<thead>
+<tr>
+<th>Page</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[[brand/index]]</td>
+<td>Newsletter brand &#x26; voice spec — populated by bootstrap</td>
+</tr>
+<tr>
+<td><code>issue-calendar.csv</code></td>
+<td>The issue pipeline — interactive table</td>
+</tr>
+<tr>
+<td>[[issues/index]]</td>
+<td>Issue archive + reusable template</td>
+</tr>
+<tr>
+<td>[[generators/index]]</td>
+<td>Prompt packs: issue, subject line, opening hook, growth loop</td>
+</tr>
+<tr>
+<td>[[platform-guide/index]]</td>
+<td>Substack vs Beehiiv vs ConvertKit vs Ghost vs Buttondown decision matrix</td>
+</tr>
+<tr>
+<td>[[growth-guide/index]]</td>
+<td>Growth loops, referral programs, deliverability, send-time optimization</td>
+</tr>
+</tbody>
+</table>
+<h2>🤖 Your team</h2>
+<ul>
+<li><strong>✉️ Editor-in-Chief</strong> — drafting, voice, subject lines, growth tactics. Refills calendar Mondays. Drafts next issue Wednesdays.</li>
+</ul>
+<h2>🔁 What runs on a schedule</h2>
+<ul>
+<li><strong>Weekly Calendar Fill</strong> — Monday 9am. Top up to ≥6 issues.</li>
+<li><strong>Weekly Issue Prep</strong> — Wednesday 10am. Draft the next un-drafted issue.</li>
+</ul>
+<h2>🚀 After the bootstrap</h2>
+<ol>
+<li>Read <code>brand/index.md</code>. Edit anything that doesn't sound like you.</li>
+<li>Read the launch issue in <code>issues/001-launch/draft.md</code>. Read it aloud.</li>
+<li>Pick a platform from <code>platform-guide/index.md</code>. Set up the account.</li>
+<li>Send the launch issue. Note open rate, click rate, replies.</li>
+<li>The Wednesday agent drafts issue 002 for you.</li>
+</ol>1f:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[false,["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$L21",null,{"entry":{"slug":"newsletter-factory","meta":{"schemaVersion":1,"id":"newsletter-factory-root","name":"Newsletter Factory","kind":"root","version":"0.1.0","description":"A complete newsletter OS in a directory. Fill in three placeholders (who you are, what the newsletter is about, your style and cadence), run the bootstrap prompt, and an editor-in-chief agent builds your brand voice, a 12-issue content calendar, drafts the launch issue, generates subject-line variants, and recommends a platform (Substack / Beehiiv / ConvertKit / Ghost) with growth-loop tactics.\n","entry":"index.md"},"agents":[{"name":"Editor-in-Chief","slug":"editor-in-chief","emoji":"✉️","type":"lead","department":"editorial","role":"Newsletter editor-in-chief — voice, editorial calendar, drafting, subject-line craft, growth tactics, platform recommendations","heartbeat":"0 9 * * 1","budget":100,"active":false,"focus":["editorial-voice","subject-lines","retention","growth-loops"],"tags":["lead","newsletter","editorial"],"body":"$22"}],"jobs":[{"id":"weekly-calendar-fill","name":"Weekly Calendar Fill","enabled":true,"schedule":"0 9 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"editor-in-chief","agentSlug":"editor-in-chief","timeout":600,"prompt":"Read `brand/index.md` to confirm newsletter premise, target reader, default issue format, and cadence.\n\nOpen `issue-calendar.csv` and count rows whose `status` is `idea` or `outlined`.\n\nIf that count is less than 6, append new issue ideas until 6 fresh ones are queued. For each row:\n- `issue_number` — next available integer\n- `working_title` — under 70 characters, ad-copy quality\n- `premise` — one sentence: what the reader takes away\n- `format` — curated / essay / deep-dive / digest / listicle / interview / lessons\n- `target_words` — match `brand/index.md`\n- `status` — `idea`\n- `target_send_date` — match cadence\n- `referral_hook` — one sentence describing what makes this issue forward-worthy\n- `notes` — anything the editor needs to know\n\nDo not modify rows already `drafted`, `scheduled`, or `sent`. Do not delete rows.\n\nAppend a \"## Calendar update — [YYYY-MM-DD]\" block to `index.md` listing the new issue numbers and titles.","cabinetPath":"cabinets/newsletter-factory","createdAt":"2026-04-27T00:00:00.000Z","updatedAt":"2026-04-27T00:00:00.000Z"},{"id":"weekly-issue-prep","name":"Weekly Issue Prep","enabled":true,"schedule":"0 10 * * 3","provider":"claude-code","adapterType":"claude_local","ownerAgent":"editor-in-chief","agentSlug":"editor-in-chief","timeout":900,"prompt":"$23","cabinetPath":"cabinets/newsletter-factory","createdAt":"2026-04-27T00:00:00.000Z","updatedAt":"2026-04-27T00:00:00.000Z"}],"children":[],"readme":"$24","readmeHtml":"$25","tags":["newsletter","email","content","template"],"section":"Content & Media","stats":{"totalAgents":1,"totalJobs":2,"totalCabinets":1,"totalPages":18}}}]}]]}],"$L26","$L27","$L28","$L29","$L2a"]}]
+20:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L1a",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L1c",null,{"src":"/brand/cabinet-logo-face-2-512.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],"$L2b","$L2c","$L2d"]}]]}],"$L2e"]]}],"$L2f"]}]}]
+31:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/258x9i1fxfhga.js"],"TerminalBlock"]
+26:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Newsletter Factory"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["✉️"," ","Editor-in-Chief"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Calendar Fill"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Issue Prep"}]]}]]]}],[]]}]}]]}]
+27:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-editor-in-chief-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"✉️"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Editor-in-Chief"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Newsletter editor-in-chief — voice, editorial calendar, drafting, subject-line craft, growth tactics, platform recommendations"}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 9 * * 1"}]]}]]}]]}]]}]
+28:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","weekly-calendar-fill",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Calendar Fill"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 9 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","editor-in-chief"]}]]}]]}],["$","div","weekly-issue-prep",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Issue Prep"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 10 * * 3"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","editor-in-chief"]}]]}]]}]]}]]}]
+30:T1808,<h1>✉️ Newsletter Factory</h1>
+<blockquote>
+<p>A complete newsletter OS in a directory. Fill in three placeholders, run the bootstrap prompt, and your <code>Editor-in-Chief</code> agent builds your brand voice, a 12-issue calendar, drafts the launch issue with subject-line and opening-hook variants, and recommends a platform tuned to your cadence and growth model.</p>
+</blockquote>
+<hr>
+<h2>⚡ Bootstrap your Newsletter OS</h2>
+<p><strong>Step 1.</strong> Fill in the three placeholders below.</p>
+<p><strong>Step 2.</strong> Open the AI panel on this page. Paste the prompt block. Run.</p>
+<p><strong>Step 3.</strong> Wait. The agent writes <code>brand/index.md</code>, fills <code>issue-calendar.csv</code> with 12 issues, drafts <code>issues/001-launch/draft.md</code>, generates 8 subject lines and 3 opening hooks, and recommends a platform.</p>
+<pre><code>You are the Editor-in-Chief agent for this Newsletter Factory cabinet. The writer just filled
+in the "Onboarding" section of index.md.
+
+Read those answers. Then build out the cabinet in this exact order:
+
+1. Write `brand/index.md`. Lock in: newsletter name, one-line premise, target reader,
+   default issue format (curated / essay / deep-dive / digest / listicle / interview /
+   lessons), target word count, send cadence (weekly? bi-weekly?), preferred send-day
+   and send-time, voice rules (5 do's and 5 don'ts), the standing sections every issue
+   has, the voice-defining one-sentence "tagline" that opens every issue, and the
+   sign-off that closes every issue.
+
+2. Generate 12 issue ideas in `issue-calendar.csv`. Number them 001–012. Each row gets
+   working_title (under 70 chars), premise, format, target_words, target_send_date
+   matching cadence, referral_hook (what makes it forward-worthy), status=`idea`. Issue
+   001 is the launch / manifesto issue introducing the newsletter to a new subscriber.
+
+3. Draft `issues/001-launch/draft.md` using the right template from
+   `generators/issue-generator.md`. Read aloud. Cut anything that sounds written.
+
+4. Append "## Subject-line candidates" (8 variants — mix promise / question / number /
+   curiosity-gap) to `issues/001-launch/index.md` using `generators/subject-line-generator.md`.
+
+5. Append "## Opening-line hooks" (3 variants: scene / question / contradiction) to the
+   same file using `generators/opening-hook-generator.md`.
+
+6. Append "## Growth-loop hook" to `issues/001-launch/draft.md` using
+   `generators/growth-loop-generator.md`. Pick one share/referral lever appropriate to
+   the issue's content.
+
+7. Recommend a platform. Read `platform-guide/index.md`. Based on the writer's cadence,
+   monetization plans, and tech-comfort level, append a "## Recommended platform" block
+   to `brand/index.md` with a 1-line answer + 2–3 lines of reasoning.
+
+8. Append "## ✅ Bootstrap complete — [YYYY-MM-DD]" to this index.md with what was built
+   and next steps for the writer.
+
+Rules:
+- Use ONLY what the writer provided in Onboarding. Do not invent biographical details.
+- If a placeholder is empty or vague, ask the writer to fill it in. Do not guess.
+- Do not modify `platform-guide/`, `growth-guide/`, or `generators/` — those are durable
+  templates.
+</code></pre>
+<hr>
+<h2>🧩 Onboarding — fill these in</h2>
+<h3>1. Who are you?</h3>
+<blockquote>
+<p><em>Name, what you do, why you're the right person to write THIS newsletter, the one-sentence credibility proof. "I'm a 20-year corporate lawyer who left to teach plain-language contracts — sharp, slightly cynical, allergic to legal jargon" beats "I write about law."</em></p>
+</blockquote>
+<pre><code>_________
+</code></pre>
+<h3>2. What is the newsletter about?</h3>
+<blockquote>
+<p><em>Premise in one sentence. Target reader (specific — "in-house counsel at SMBs who don't have a contracts team" beats "lawyers"). The 3 questions every issue helps them answer. What this newsletter is NOT about (lock the scope).</em></p>
+</blockquote>
+<pre><code>_________
+</code></pre>
+<h3>3. What style and cadence?</h3>
+<blockquote>
+<p><em>Default format (curated / essay / deep-dive / digest / listicle / interview / lessons). Target length (words or read-time). Cadence (weekly Sunday morning? Tuesday lunch?). Tone (warm? sharp? deadpan?). Preferred sign-off ("see you next week"? "stay sharp"? something custom?). Free or paid (or paid tier later)? Three words readers should use to describe you. Three words you must never sound like.</em></p>
+</blockquote>
+<pre><code>_________
+</code></pre>
+<hr>
+<h2>📚 What is in this cabinet</h2>
+<table>
+<thead>
+<tr>
+<th>Page</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[[brand/index]]</td>
+<td>Newsletter brand &#x26; voice spec — populated by bootstrap</td>
+</tr>
+<tr>
+<td><code>issue-calendar.csv</code></td>
+<td>The issue pipeline — interactive table</td>
+</tr>
+<tr>
+<td>[[issues/index]]</td>
+<td>Issue archive + reusable template</td>
+</tr>
+<tr>
+<td>[[generators/index]]</td>
+<td>Prompt packs: issue, subject line, opening hook, growth loop</td>
+</tr>
+<tr>
+<td>[[platform-guide/index]]</td>
+<td>Substack vs Beehiiv vs ConvertKit vs Ghost vs Buttondown decision matrix</td>
+</tr>
+<tr>
+<td>[[growth-guide/index]]</td>
+<td>Growth loops, referral programs, deliverability, send-time optimization</td>
+</tr>
+</tbody>
+</table>
+<h2>🤖 Your team</h2>
+<ul>
+<li><strong>✉️ Editor-in-Chief</strong> — drafting, voice, subject lines, growth tactics. Refills calendar Mondays. Drafts next issue Wednesdays.</li>
+</ul>
+<h2>🔁 What runs on a schedule</h2>
+<ul>
+<li><strong>Weekly Calendar Fill</strong> — Monday 9am. Top up to ≥6 issues.</li>
+<li><strong>Weekly Issue Prep</strong> — Wednesday 10am. Draft the next un-drafted issue.</li>
+</ul>
+<h2>🚀 After the bootstrap</h2>
+<ol>
+<li>Read <code>brand/index.md</code>. Edit anything that doesn't sound like you.</li>
+<li>Read the launch issue in <code>issues/001-launch/draft.md</code>. Read it aloud.</li>
+<li>Pick a platform from <code>platform-guide/index.md</code>. Set up the account.</li>
+<li>Send the launch issue. Note open rate, click rate, replies.</li>
+<li>The Wednesday agent drafts issue 002 for you.</li>
+</ol>29:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$30"}}]}]]}]
+2a:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L31",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set newsletter-factory","label":"Install"}]}]}]]}]
+2b:["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}]
+2c:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+2d:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+2e:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+2f:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+16:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+32:I[27201,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"IconMark"]
+13:null
+18:[["$","title","0",{"children":"Newsletter Factory template | Cabinet"}],["$","meta","1",{"name":"description","content":"A complete newsletter OS in a directory. Fill in three placeholders (who you are, what the newsletter is about, your style and cadence), run the bootstrap prompt, and an editor-in-chief agent builds your brand voice, a 12-issue content calendar, drafts the launch issue, generates subject-line variants, and recommends a platform (Substack / Beehiiv / ConvertKit / Ghost) with growth-loop tactics.\n"}],["$","meta","2",{"name":"referrer","content":"strict-origin-when-cross-origin"}],["$","link","3",{"rel":"canonical","href":"https://runcabinet.com/templates/newsletter-factory"}],["$","meta","4",{"property":"og:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","5",{"property":"og:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","6",{"property":"og:url","content":"https://runcabinet.com"}],["$","meta","7",{"property":"og:image","content":"https://runcabinet.com/og.png"}],["$","meta","8",{"property":"og:image:width","content":"1200"}],["$","meta","9",{"property":"og:image:height","content":"630"}],["$","meta","10",{"property":"og:image:alt","content":"Cabinet: the AI workspace your company owns, with knowledge, AI teams, and live apps in one place"}],["$","meta","11",{"property":"og:type","content":"website"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","14",{"name":"twitter:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","15",{"name":"twitter:image","content":"https://runcabinet.com/og.png"}],["$","link","16",{"rel":"icon","href":"/icon.png?icon.44t65kd7hy5v2.png","sizes":"512x512","type":"image/png"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-icon.png?apple-icon.15mucn-ts41m4.png","sizes":"180x180","type":"image/png"}],["$","$L32","18",{}]]
