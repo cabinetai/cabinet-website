@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { ArrowRight, Check, Download } from "lucide-react";
+import { Check } from "lucide-react";
 import { SiteNavbar } from "@/components/site-navbar";
 import { CabinetLibrary } from "@/components/marketing/cabinet-library";
 import { HeroProductReveal } from "@/components/marketing/hero-product-reveal";
@@ -21,10 +20,8 @@ import {
 } from "@/components/marketing/legacy-sections";
 import { MarketingFooter } from "@/components/marketing/marketing-footer";
 import { HeroHeadline, MotionReveal } from "@/components/marketing/motion-primitives";
-import { AppleIcon, LinuxIcon, WindowsIcon } from "@/components/marketing/os-icons";
+import { HeroDownloadCta } from "@/components/marketing/os-download";
 import { SectionBadge } from "@/components/marketing/section-badge";
-import { GithubIcon } from "@/components/site-icons";
-import { GITHUB_URL, MACOS_DOWNLOAD_URL, WINDOWS_DOWNLOAD_URL } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "Cabinet: The AI workspace your company owns",
@@ -85,80 +82,7 @@ export default function HomePage() {
             </p>
             </MotionReveal>
 
-            <MotionReveal delay={0.61} amount={0.1}>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-              <Link
-                href="/demo"
-                className="btn-wood inline-flex h-13 items-center justify-center gap-2 whitespace-nowrap rounded-full px-5 text-sm font-semibold sm:px-6 sm:text-base"
-              >
-                Book an executive demo <ArrowRight aria-hidden className="h-4 w-4" />
-              </Link>
-              <a
-                href="#workflows"
-                className="inline-flex h-13 items-center justify-center gap-2 whitespace-nowrap px-3 text-sm font-semibold text-text-primary transition-colors hover:text-accent sm:text-base"
-              >
-                Explore AI teams <ArrowRight aria-hidden className="h-4 w-4" />
-              </a>
-            </div>
-            </MotionReveal>
-
-            <MotionReveal delay={0.66} amount={0.1}>
-              {/* Mobile: a quiet, non-interactive OS availability list */}
-              <div className="mt-5 sm:hidden" aria-label="Desktop app availability">
-                <p className="text-[11px] font-semibold uppercase tracking-[0.1em] text-text-tertiary">
-                  Available on
-                </p>
-                <div className="mt-2.5 flex flex-col gap-2">
-                  {[
-                    { name: "macOS", Icon: AppleIcon },
-                    { name: "Windows", Icon: WindowsIcon },
-                    { name: "Linux", Icon: LinuxIcon },
-                  ].map(({ name, Icon }) => (
-                    <span
-                      key={name}
-                      className="card-skin inline-flex h-10 items-center gap-2.5 rounded-full px-4 text-sm font-semibold text-text-primary"
-                    >
-                      <Icon className="h-3.5 w-3.5 shrink-0 text-accent" />
-                      {name}
-                    </span>
-                  ))}
-                </div>
-              </div>
-
-              {/* Tablet/desktop: functional download links */}
-              <div
-                className="mt-5 hidden flex-wrap items-center gap-2.5 text-xs font-semibold sm:flex"
-                aria-label="Desktop app availability"
-              >
-                <a
-                  href={MACOS_DOWNLOAD_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="card-skin inline-flex h-10 items-center gap-2 rounded-full px-4 text-text-primary transition-transform hover:-translate-y-0.5"
-                >
-                  <Download aria-hidden className="h-3.5 w-3.5 text-accent" />
-                  Download for macOS
-                </a>
-                <a
-                  href={WINDOWS_DOWNLOAD_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="card-skin inline-flex h-10 items-center gap-2 rounded-full px-4 text-text-primary transition-transform hover:-translate-y-0.5"
-                >
-                  <Download aria-hidden className="h-3.5 w-3.5 text-accent" />
-                  Download for Windows
-                </a>
-                <a
-                  href={GITHUB_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="card-skin inline-flex h-10 items-center gap-2 rounded-full px-4 text-text-primary transition-transform hover:-translate-y-0.5"
-                >
-                  <GithubIcon className="h-3.5 w-3.5 text-accent" />
-                  Linux via GitHub
-                </a>
-              </div>
-            </MotionReveal>
+            <HeroDownloadCta />
 
             <MotionReveal delay={0.7} amount={0.1}>
             <div className="mt-7 flex flex-wrap justify-center gap-x-5 gap-y-2 text-xs font-semibold text-text-tertiary sm:justify-start">

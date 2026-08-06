@@ -18,19 +18,14 @@ import { DiscordIcon, GithubIcon } from "@/components/site-icons";
 import { WaitlistCapture } from "@/components/waitlist-capture";
 import { WaitlistCloudBackdrop } from "@/components/waitlist-cloud-backdrop";
 import { WoodIcon } from "@/components/wood-icon";
-import { AppleIcon, LinuxIcon, WindowsIcon } from "@/components/marketing/os-icons";
+import { OsDownloadButtons, TerminalInstall } from "@/components/marketing/os-download";
 import {
   CopyButton,
   TerminalDemo,
   TypingText,
 } from "@/components/marketing/legacy-interactive-primitives";
 import { CABINETS, CABINETS_SITE, cabinetCover, cabinetUrl } from "@/lib/cabinets";
-import {
-  DISCORD_URL,
-  GITHUB_URL,
-  MACOS_DOWNLOAD_URL,
-  WINDOWS_DOWNLOAD_URL,
-} from "@/lib/site-config";
+import { DISCORD_URL, GITHUB_URL } from "@/lib/site-config";
 import { SOLUTIONS, SOLUTION_STORIES } from "@/lib/solutions";
 
 const PROVIDERS = [
@@ -291,42 +286,10 @@ export function LegacyHero() {
     <section className="relative flex items-center justify-center dot-grid overflow-hidden">
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center pt-24 pb-12">
         {/* Install Options */}
-        <div className="hidden max-w-xl mx-auto mb-20 lg:block">
-          <div className="flex flex-col sm:flex-row items-stretch gap-3">
-            <a
-              href={MACOS_DOWNLOAD_URL}
-              className="shrink-0 inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-semibold text-base cursor-pointer btn-wood"
-            >
-              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-              Download for Mac
-            </a>
-            <span className="hidden sm:flex items-center text-text-muted text-sm font-code">or</span>
-            <div className="flex-1 terminal-chrome flex items-center justify-between px-5 py-4 rounded-xl" style={{ overflow: 'visible' }}>
-              <div className="font-code text-sm flex items-center gap-2">
-                <span className="text-green-400 shrink-0">$</span>
-                <span className="text-zinc-200 whitespace-nowrap">npx cabinetai run</span>
-              </div>
-              <CopyButton text="npx cabinetai run" />
-            </div>
-          </div>
-          <p className="mt-4 text-sm font-body-serif text-text-tertiary">
-            <a
-              href={WINDOWS_DOWNLOAD_URL}
-              className="text-accent underline underline-offset-2 hover:text-accent-warm"
-            >
-              Download for Windows
-            </a>
-            .{" "}
-            <a
-              href={GITHUB_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-accent underline underline-offset-2 hover:text-accent-warm"
-            >
-              Linux via GitHub
-            </a>
-            .
-          </p>
+        <div className="hidden max-w-3xl mx-auto mb-20 lg:block">
+          {/* Every OS gets the same size button; the visitor's own build leads. */}
+          <OsDownloadButtons />
+          <TerminalInstall className="mt-3 text-left" />
           <p className="mt-4 text-sm font-body-serif text-text-tertiary">Evaluating <span className="font-brand italic">Cabinet</span>{" "}for your team?{" "}
             <a
               href="/demo"
@@ -1204,71 +1167,13 @@ export function LegacyCta() {
         <p className="text-text-secondary mb-8 max-w-xl mx-auto leading-relaxed font-body-serif">
           <span className="font-brand italic">Cabinet</span>{" "}is a free, open-source project you can run yourself. No subscription, no trial clock, and no vendor lock-in. Start in 2 minutes.
                                 </p>
-        <div className="max-w-xl mx-auto mb-10">
-          {/* Mobile: no npx terminal (nothing to run from a phone), all three
-              OSes listed plainly instead of Windows/Linux being an afterthought */}
-          <div className="flex flex-col gap-3 sm:hidden">
-            <a
-              href={MACOS_DOWNLOAD_URL}
-              className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-semibold text-base cursor-pointer btn-wood"
-            >
-              <AppleIcon className="h-5 w-5" />
-              Download for Mac
-            </a>
-            <a
-              href={WINDOWS_DOWNLOAD_URL}
-              className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-semibold text-base cursor-pointer card-skin text-text-primary"
-            >
-              <WindowsIcon className="h-5 w-5 text-accent" />
-              Download for Windows
-            </a>
-            <a
-              href={GITHUB_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-semibold text-base cursor-pointer card-skin text-text-primary"
-            >
-              <LinuxIcon className="h-5 w-5 text-accent" />
-              Linux via GitHub
-            </a>
-          </div>
+        <div className="max-w-xl sm:max-w-3xl mx-auto mb-10">
+          {/* All three OSes get the same treatment on every screen size; the
+              visitor's own build leads. */}
+          <OsDownloadButtons />
 
-          {/* Tablet/desktop: unchanged */}
-          <div className="hidden sm:flex items-stretch gap-3">
-            <a
-              href={MACOS_DOWNLOAD_URL}
-              className="shrink-0 inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-semibold text-base cursor-pointer btn-wood"
-            >
-              <AppleIcon className="h-5 w-5" />
-              Download for Mac
-            </a>
-            <span className="hidden sm:flex items-center text-text-muted text-sm font-code">or</span>
-            <div className="flex-1 terminal-chrome flex items-center justify-between px-5 py-4 rounded-xl" style={{ overflow: 'visible' }}>
-              <div className="font-code text-sm flex items-center gap-2">
-                <span className="text-green-400 shrink-0">$</span>
-                <span className="text-zinc-200 whitespace-nowrap">npx cabinetai run</span>
-              </div>
-              <CopyButton text="npx cabinetai run" />
-            </div>
-          </div>
-          <p className="mt-4 hidden text-sm font-body-serif text-text-tertiary sm:block">
-            <a
-              href={WINDOWS_DOWNLOAD_URL}
-              className="text-accent underline underline-offset-2 hover:text-accent-warm"
-            >
-              Download for Windows
-            </a>
-            .{" "}
-            <a
-              href={GITHUB_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-accent underline underline-offset-2 hover:text-accent-warm"
-            >
-              Linux via GitHub
-            </a>
-            .
-          </p>
+          {/* No npx terminal on mobile, there is nothing to run from a phone. */}
+          <TerminalInstall className="mt-3 hidden text-left sm:block" />
         </div>
         <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 mt-4">
           <a
