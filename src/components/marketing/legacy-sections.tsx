@@ -18,7 +18,7 @@ import { DiscordIcon, GithubIcon } from "@/components/site-icons";
 import { WaitlistCapture } from "@/components/waitlist-capture";
 import { WaitlistCloudBackdrop } from "@/components/waitlist-cloud-backdrop";
 import { WoodIcon } from "@/components/wood-icon";
-import { OsDownloadButtons, TerminalInstall } from "@/components/marketing/os-download";
+import { DetectedDownloadCta, OsDownloadButtons, TerminalInstall } from "@/components/marketing/os-download";
 import {
   CopyButton,
   TerminalDemo,
@@ -1165,23 +1165,44 @@ export function LegacyCta() {
           Ready to build your AI team?
         </h2>
         <p className="text-text-secondary mb-8 max-w-xl mx-auto leading-relaxed font-body-serif">
-          <span className="font-brand italic">Cabinet</span>{" "}is a free, open-source project you can run yourself. No subscription, no trial clock, and no vendor lock-in. Start in 2 minutes.
-                                </p>
-        <div className="max-w-xl sm:max-w-3xl mx-auto mb-10">
-          {/* All three OSes get the same treatment on every screen size; the
-              visitor's own build leads. */}
-          <OsDownloadButtons />
-
-          {/* No npx terminal on mobile, there is nothing to run from a phone. */}
-          <TerminalInstall className="mt-3 hidden text-left sm:block" />
+          <span className="font-brand italic">Cabinet</span>{" "}is the AI workspace where your knowledge base, AI team, and workflows live in one beautiful home.
+        </p>
+        <div className="max-w-xl mx-auto mb-10">
+          <DetectedDownloadCta />
         </div>
-        <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 mt-4">
-          <a
-            href="/demo"
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full card-skin text-text-primary font-medium shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
-          >
-            Book a demo
-          </a>
+        <div className="mt-16 rounded-3xl bg-gradient-to-br from-[#FBF2E4] to-[#F2E5CF] px-6 py-12 shadow-sm sm:px-12">
+          <Image
+            src="/brand/icons/professional-services.png"
+            alt=""
+            width={64}
+            height={64}
+            className="mx-auto mb-4 object-contain"
+          />
+          <h3 className="text-2xl md:text-3xl font-display text-text-primary mb-3">
+            Bringing Cabinet to your company?
+          </h3>
+          <p className="text-text-secondary mb-8 max-w-xl mx-auto leading-relaxed font-body-serif">
+            Talk to us about rollout, security review, and the workflows your teams run every day.
+          </p>
+          <div className="mt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="/demo"
+              className="btn-wood inline-flex h-13 items-center justify-center gap-2 whitespace-nowrap rounded-full px-8 text-base font-semibold"
+            >
+              Book a demo
+            </a>
+            <a
+              href="/enterprise/security"
+              className="inline-flex h-13 items-center justify-center gap-2 whitespace-nowrap px-3 text-base font-semibold text-text-primary transition-colors hover:text-accent"
+            >
+              Learn more <ArrowRight aria-hidden className="h-4 w-4" />
+            </a>
+          </div>
+          <p className="mt-6 text-sm text-text-tertiary">
+            Questions? <a href="mailto:hi@runcabinet.com" className="text-accent hover:text-accent-warm underline underline-offset-2">hi@runcabinet.com</a>
+          </p>
+        </div>
+        <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 mt-12">
           <a
             href={DISCORD_URL}
             target="_blank"
@@ -1194,9 +1215,6 @@ export function LegacyCta() {
             className="inline-flex h-12 min-w-[11rem] items-center justify-between gap-3 rounded-full card-skin px-4 text-sm font-semibold text-text-primary shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
           />
         </div>
-        <p className="mt-6 text-sm text-text-tertiary">
-          Questions? <a href="mailto:hi@runcabinet.com" className="text-accent hover:text-accent-warm underline underline-offset-2">hi@runcabinet.com</a>
-        </p>
       </div>
     </section>
   );

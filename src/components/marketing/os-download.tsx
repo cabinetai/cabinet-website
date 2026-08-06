@@ -233,6 +233,87 @@ export function TerminalInstall({ className = "" }: { className?: string }) {
 }
 
 /**
+ * One button for the visitor's detected OS, with the remaining platforms and
+ * the terminal install folded behind an "Other platforms" toggle.
+ */
+export function DetectedDownloadCta({ className = "" }: { className?: string }) {
+  const os = useDetectedOs();
+  const { primary, others } = orderedForOs(os);
+  const [open, setOpen] = useState(false);
+  const [terminalOpen, setTerminalOpen] = useState(false);
+  const panelId = useId();
+
+  return (
+    <div className={`flex flex-col items-center gap-4 ${className}`.trim()}>
+      <a
+        href={primary.href}
+        {...linkTarget(primary)}
+        className="btn-wood inline-flex h-14 w-full max-w-[21rem] items-center justify-center gap-2.5 whitespace-nowrap rounded-full px-8 text-base font-semibold"
+      >
+        <primary.Icon className="h-5 w-5" />
+        {primary.label}
+      </a>
+
+      <button
+        type="button"
+        onClick={() => setOpen((wasOpen) => !wasOpen)}
+        aria-expanded={open}
+        aria-controls={panelId}
+        className="inline-flex cursor-pointer items-center gap-1.5 text-sm font-semibold text-text-tertiary transition-colors hover:text-accent"
+      >
+        Other platforms
+        <ChevronDown
+          aria-hidden
+          className={`h-4 w-4 transition-transform duration-300 ease-out motion-reduce:transition-none ${
+            open ? "rotate-180" : ""
+          }`}
+        />
+      </button>
+
+      {open && (
+        <div id={panelId} className="flex w-full max-w-[21rem] flex-col gap-2.5">
+          {others.map((option) => (
+            <a
+              key={option.id}
+              href={option.href}
+              {...linkTarget(option)}
+              className="btn-wood inline-flex h-14 items-center justify-center gap-2.5 whitespace-nowrap rounded-full px-8 text-base font-semibold"
+            >
+              <option.Icon className="h-5 w-5 shrink-0" />
+              {option.label}
+            </a>
+          ))}
+          <button
+            type="button"
+            onClick={() => setTerminalOpen((wasOpen) => !wasOpen)}
+            aria-expanded={terminalOpen}
+            className="btn-wood inline-flex h-14 cursor-pointer items-center justify-center gap-2.5 whitespace-nowrap rounded-full px-8 text-base font-semibold"
+          >
+            <Terminal aria-hidden className="h-5 w-5 shrink-0" />
+            Terminal install
+            <ChevronDown
+              aria-hidden
+              className={`h-4 w-4 transition-transform duration-300 ease-out motion-reduce:transition-none ${
+                terminalOpen ? "rotate-180" : ""
+              }`}
+            />
+          </button>
+          {terminalOpen && (
+            <div className="terminal-chrome flex items-center justify-between gap-3 rounded-full px-5 py-3">
+              <div className="font-code text-sm flex items-center gap-2">
+                <span className="text-green-400 shrink-0">$</span>
+                <span className="text-zinc-200 whitespace-nowrap">{INSTALL_COMMAND}</span>
+              </div>
+              <CopyButton text={INSTALL_COMMAND} />
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
+/**
  * Three equal-weight download buttons, detected OS first. Used where the page
  * has room to give every platform the same treatment instead of pushing
  * Windows and Linux into a footnote.

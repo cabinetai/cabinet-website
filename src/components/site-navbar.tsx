@@ -11,6 +11,7 @@ import {
   LibraryBig,
   Menu,
   ShieldCheck,
+  Star,
   X,
 } from "lucide-react";
 import { GithubIcon } from "@/components/site-icons";
@@ -55,6 +56,27 @@ const RESOURCE_LINKS = [
   },
 ] as const;
 
+const GITHUB_API_URL = GITHUB_URL.replace("github.com/", "api.github.com/repos/");
+
+function useGitHubStars() {
+  const [stars, setStars] = useState<number | null>(null);
+
+  useEffect(() => {
+    // ponytail: unauthenticated GitHub API, 60 req/hr per visitor IP is plenty here
+    fetch(GITHUB_API_URL)
+      .then((res) => (res.ok ? res.json() : null))
+      .then((repo) => {
+        if (typeof repo?.stargazers_count === "number") setStars(repo.stargazers_count);
+      })
+      .catch(() => {});
+  }, []);
+
+  return stars;
+}
+
+const formatStars = (n: number) =>
+  new Intl.NumberFormat("en", { notation: "compact", maximumFractionDigits: 1 }).format(n);
+
 function GlassNavLink({ href, children }: { href: string; children: React.ReactNode }) {
   return (
     <Link
@@ -70,6 +92,7 @@ function GlassNavLink({ href, children }: { href: string; children: React.ReactN
 export function SiteNavbar({ fixed = false }: { fixed?: boolean }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [resourcesOpen, setResourcesOpen] = useState(false);
+  const stars = useGitHubStars();
 
   useEffect(() => {
     if (!mobileOpen) return;
@@ -97,20 +120,6 @@ export function SiteNavbar({ fixed = false }: { fixed?: boolean }) {
       aria-label="Primary navigation"
       className={`site-navbar ${fixed ? "fixed inset-x-0 top-0" : "sticky top-0"} isolate z-50 pointer-events-none`}
     >
-      <span
-        aria-hidden
-        style={{
-          position: "absolute",
-          inset: "0 0 -0.75rem",
-          zIndex: -1,
-          pointerEvents: "none",
-          background:
-            "linear-gradient(180deg, color-mix(in srgb, var(--bg) 94%, transparent) 0%, color-mix(in srgb, var(--bg) 86%, transparent) 72%, transparent 100%)",
-          WebkitBackdropFilter: "blur(14px) saturate(145%)",
-          backdropFilter: "blur(14px) saturate(145%)",
-          opacity: 1,
-        }}
-      />
       <div className="pointer-events-auto mx-auto flex max-w-7xl items-center gap-2.5 px-4 pb-3 pt-3 sm:px-6 lg:gap-3">
         <Link
           href="/"
@@ -216,8 +225,21 @@ export function SiteNavbar({ fixed = false }: { fixed?: boolean }) {
             <span className="relative z-10 inline-flex items-center gap-1.5 whitespace-nowrap">
               <GithubIcon className="h-4 w-4" />
               GitHub
+              {stars !== null && (
+                <span className="ml-0.5 inline-flex items-center gap-1 rounded-full bg-accent-bg px-2 py-0.5 text-xs font-semibold text-accent">
+                  <Star aria-hidden className="h-3 w-3 fill-current" />
+                  {formatStars(stars)}
+                </span>
+              )}
             </span>
           </a>
+
+          <Link
+            href="/demo"
+            className="btn-wood hidden h-11 items-center justify-center whitespace-nowrap rounded-full px-4 text-sm font-semibold sm:px-5 md:inline-flex"
+          >
+            Book a demo
+          </Link>
 
           <Link
             href="/download"
