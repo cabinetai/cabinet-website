@@ -1158,19 +1158,40 @@ export function LegacyOrgBadges() {
 
 export function LegacyCta() {
   return (
-    <section id="get-started" className="py-24 border-t border-border bg-bg-warm">
-      <div className="max-w-3xl mx-auto px-6 text-center">
-        <Image src="/cabinet-icon.png" alt="Cabinet" width={64} height={64} className="mx-auto mb-6 rounded-xl" />
-        <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
-          Ready to build your AI team?
-        </h2>
-        <p className="text-text-secondary mb-8 max-w-xl mx-auto leading-relaxed font-body-serif">
-          <span className="font-brand italic">Cabinet</span>{" "}is the AI workspace where your knowledge base, AI team, and workflows live in one beautiful home.
-        </p>
-        <div className="max-w-xl mx-auto mb-10">
+    <section id="get-started" className="py-24 border-t border-border bg-bg-warm overflow-hidden">
+      {/* Full-bleed pair: text column centered, video bleeding to the viewport's right edge */}
+      <div className="mb-16 grid items-center gap-10 px-6 text-center lg:grid-cols-[2fr_3fr] lg:gap-14 lg:pr-0">
+        <div className="mx-auto w-full max-w-xl">
+          <Image src="/cabinet-icon.png" alt="Cabinet" width={64} height={64} className="mx-auto mb-6 rounded-xl" />
+          <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
+            Download <span className="font-brand italic">Cabinet</span>
+            <br />
+            your <TypingText texts={["knowledge base", "AI team", "workflows", "AI workspace"]} />
+          </h2>
+          <p className="text-text-secondary mb-8 max-w-xl mx-auto leading-relaxed font-body-serif">
+            <span className="font-brand italic">Cabinet</span>{" "}is the AI workspace where your knowledge base, AI team, and workflows live in one beautiful home.
+          </p>
           <DetectedDownloadCta />
         </div>
-        <div className="mt-16 rounded-3xl bg-gradient-to-br from-[#FBF2E4] to-[#F2E5CF] px-6 py-12 shadow-sm sm:px-12">
+        {/* Wrapper clips the 2px border baked into the recording */}
+        <div className="overflow-hidden rounded-2xl shadow-lg lg:rounded-r-none">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="metadata"
+            width={2880}
+            height={1794}
+            className="-m-[2px] w-[calc(100%+4px)] max-w-none"
+          >
+            <source src="/new-cabinet.webm" type="video/webm" />
+            <source src="/new-cabinet.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+      <div className="max-w-6xl mx-auto px-6 text-center">
+        <div className="mx-auto mt-16 max-w-3xl rounded-3xl bg-gradient-to-br from-[#FBF2E4] to-[#F2E5CF] px-6 py-12 shadow-sm sm:px-12">
           <Image
             src="/brand/icons/professional-services.png"
             alt=""
