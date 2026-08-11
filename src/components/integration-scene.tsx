@@ -171,9 +171,11 @@ function FileMark({ name, color, size = 22 }: { name: string; color: string; siz
    cabinet buzzes, then the next drawer springs open as the last one shuts,
    cycling through what Cabinet holds. ─── */
 const DRAWERS = ["Knowledge", "AI team", "Tasks"];
-// Where tiles fly to: the mouth of the open Knowledge drawer, in the scene's
-// centered coordinate space (cabinet is 216 wide, drawer 1 sits near the top).
-const DRAWER_MOUTH_Y = -69;
+// Where tiles fly to, in the scene's centered coordinate space: the middle
+// of the DARK exposed strip of the open Knowledge drawer. The drawer row's
+// center is -69, but the open front slides down 26px, so only the row's top
+// half shows dark — its midpoint is 11px higher (row top -93 + 13).
+const DRAWER_MOUTH_Y = -80;
 const CABINET_WOOD = "linear-gradient(135deg, #EDDCBF 0%, #DCC098 45%, #C9A47A 100%)";
 const CABINET_WOOD_DARK = "linear-gradient(135deg, #C9A47A 0%, #B8905F 60%, #A87F4F 100%)";
 const CABINET_BRASS = "linear-gradient(180deg, #F0DCA8 0%, #D9BC7A 55%, #B89A54 100%)";
@@ -528,7 +530,9 @@ const GROUP_HOLD = 0.008;
 // Phase 2 — enter: once gathered, items dive into the drawer as a group.
 const DIVE_STEP = 0.004;
 const SCATTER_DIVE_STEP = 0.002;
-const DIVE_DUR = 0.022;
+// Long enough for the pull to read like the opening cloud's suck-in — the
+// chip visibly shrinks the whole way to the drawer, not a quick hop.
+const DIVE_DUR = 0.035;
 
 type ColumnRow = {
   item: LaneItem;
@@ -760,16 +764,33 @@ function ColumnItem({ progress, row }: { progress: MotionValue<number>; row: Col
   const drawerMouthY = DRAWER_MOUTH_Y + drawer * DRAWER_GAP_Y;
   const parkX = COLUMN_X + rowX;
 
+  // The wrapper is LEFT-edge anchored (so the parked column lines up), which
+  // means x=0 puts the chip's left edge — not its middle — on the drawer
+  // center; wide chips then shrank to a point right of the drawer. Measure
+  // the chip once and land its center instead.
+  const chipRef = useRef<HTMLDivElement>(null);
+  const [chipW, setChipW] = useState(0);
+  useEffect(() => {
+    if (chipRef.current) setChipW(chipRef.current.offsetWidth);
+  }, []);
+
   // Phase 1: slide in flat at its own row height (label on top, items below
   // — one column, first row first) and wait — the whole category gathers
   // before anyone moves. Phase 2: once gathered, dive into the drawer that
   // actually holds it.
-  const x = useTransform(progress, [enterStart, enterEnd, diveStart, diveEnd], [690, parkX, parkX, 0]);
+  const x = useTransform(
+    progress,
+    [enterStart, enterEnd, diveStart, diveEnd],
+    [690, parkX, parkX, -chipW / 2]
+  );
   const y = useTransform(progress, [enterStart, diveStart, diveEnd], [rowY, rowY, drawerMouthY]);
   const scale = useTransform(progress, [enterStart, diveStart, diveEnd], [1, 1, 0.05]);
+  // Like the opening cloud's tiles: fully opaque for the whole pull,
+  // shrinking continuously, and only winking out right at the drawer
+  // mouth — not dissolving mid-air.
   const opacity = useTransform(
     progress,
-    [enterStart, enterStart + (enterEnd - enterStart) * 0.6, diveStart, diveEnd],
+    [enterStart, enterStart + (enterEnd - enterStart) * 0.6, diveEnd - 0.01, diveEnd],
     [0, 1, 1, 0]
   );
   // In front of the cabinet (z-10) so items visibly drop INTO the open drawer.
@@ -780,7 +801,7 @@ function ColumnItem({ progress, row }: { progress: MotionValue<number>; row: Col
     // — "TASKS" vs. "Nightly backup" — still line up into a neat pile
     // instead of drifting to ragged left edges.
     <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-y-1/2" style={{ zIndex }}>
-      <motion.div style={{ x, y, scale, opacity, rotate: tileRotate, willChange: "transform" }}>
+      <motion.div ref={chipRef} style={{ x, y, scale, opacity, rotate: tileRotate, willChange: "transform" }}>
         <LaneChip item={item} />
       </motion.div>
     </div>
@@ -1022,13 +1043,13 @@ export function IntegrationScene() {
   const titleBlur = useTransform(sceneProgress, [0.13, 0.23], [0, 7]);
   const titleFilter = useMotionTemplate`blur(${titleBlur}px)`;
 
-  const capCapture = useTransform(sceneProgress, [0.29, 0.38, 0.72, 0.8], [0, 1, 1, 0]);
+  const capCapture = useTransform(sceneProgress, [0.29, 0.38, 0.86, 0.92], [0, 1, 1, 0]);
   const captureScale = useTransform(sceneProgress, [0.29, 0.38], [0.9, 1]);
   const captureY = useTransform(sceneProgress, [0.29, 0.38], [20, 0]);
   const captureBlur = useTransform(sceneProgress, [0.29, 0.38], [10, 0]);
   const captureFilter = useMotionTemplate`blur(${captureBlur}px)`;
 
-  const capVideo = useTransform(sceneProgress, [0.8, 0.88, 1], [0, 1, 1]);
+  const capVideo = useTransform(sceneProgress, [0.92, 0.97, 1], [0, 1, 1]);
   const hintOpacity = useTransform(sceneProgress, [0, 0.04], [1, 0]);
 
   // Word-stagger triggers for the later captions. Inside the pinned scene the
@@ -1041,7 +1062,7 @@ export function IntegrationScene() {
 
   useMotionValueEvent(sceneProgress, "change", (v) => {
     setCaptureRevealed(v > 0.33);
-    setVideoCapRevealed(v > 0.84);
+    setVideoCapRevealed(v > 0.94);
   });
 
   useEffect(() => {
