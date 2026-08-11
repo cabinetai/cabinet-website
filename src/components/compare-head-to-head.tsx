@@ -3,7 +3,6 @@ import {
   ArrowRight,
   Check,
   Star,
-  Quote,
   ArrowRightLeft,
   ChevronDown,
 } from "lucide-react";
@@ -13,7 +12,7 @@ import { WoodIcon } from "@/components/wood-icon";
 import { CompareVerdict } from "@/components/compare-verdict";
 import { CompareTable } from "@/components/compare-table";
 import { GITHUB_URL } from "@/lib/site-config";
-import { compareLabel, type Comparison } from "@/lib/compare";
+import { compareLabel, COMPARE_ASOF, type Comparison } from "@/lib/compare";
 
 const CTA_MICRO = "Open source · self-hosted · bring your own AI";
 
@@ -59,12 +58,20 @@ export function CompareHeadToHead({ data }: { data: Comparison }) {
             <span className="mx-2 text-text-muted">/</span>
             <span className="text-text-secondary"><span className="font-brand italic">Cabinet</span>{" "}vs {data.competitor}</span>
           </nav>
-          <h1 className="mt-5 max-w-3xl font-display text-4xl leading-[1.07] tracking-tight text-text-primary sm:text-5xl">
-            {data.h1}
-          </h1>
-          <p className="mt-5 max-w-2xl font-body-serif text-lg leading-relaxed text-text-secondary">
-            {brandify(data.lead)}
-          </p>
+          <div className="mt-5 grid items-start gap-8 md:grid-cols-[1fr_auto]">
+            <div>
+              <h1 className="max-w-3xl font-display text-4xl leading-[1.07] tracking-tight text-text-primary sm:text-5xl">
+                {data.h1}
+              </h1>
+              <p className="mt-5 max-w-2xl font-body-serif text-lg leading-relaxed text-text-secondary">
+                {brandify(data.lead)}
+              </p>
+              <p className="mt-4 font-code text-xs text-text-tertiary">
+                Last reviewed {COMPARE_ASOF} against public pricing and docs.
+              </p>
+            </div>
+            <WoodIcon icon={data.icon} className="hidden h-28 w-28 md:block" />
+          </div>
 
           <div className="mt-9">
             <CompareVerdict competitor={data.competitor} verdict={data.verdict} />
@@ -167,28 +174,6 @@ export function CompareHeadToHead({ data }: { data: Comparison }) {
                 </p>
               </div>
             </div>
-          </div>
-        </section>
-      )}
-      {/* ─── Switcher quote (illustrative) ─── */}
-      {data.switcher && (
-        <section className="border-b border-border bg-bg-warm py-20">
-          <div className="mx-auto max-w-3xl px-6">
-            <div className="flex items-center justify-center gap-2">
-              <p className="section-label">From the field</p>
-              <span className="rounded-full bg-bg-card px-2.5 py-0.5 font-code text-[10px] uppercase tracking-wider text-text-tertiary ring-1 ring-border-light">
-                Illustrative
-              </span>
-            </div>
-            <figure className="mt-8 soft-card p-8 sm:p-10">
-              <WoodIcon icon={Quote} className="h-10 w-10" />
-              <blockquote className="mt-4 font-display text-xl leading-snug tracking-tight text-text-primary md:text-2xl">
-                {data.switcher.quote}
-              </blockquote>
-              <figcaption className="mt-5 font-code text-sm text-text-tertiary">
-                {brandify(data.switcher.attribution)}
-              </figcaption>
-            </figure>
           </div>
         </section>
       )}

@@ -73,7 +73,7 @@ const FAQS = [
   },
   {
     q: "How are AI costs handled?",
-    a: "Bring your own AI is the default on every plan. Connect the OpenAI, Anthropic, Google, xAI, or other provider access your company already manages. Managed AI starts at $10 per month if you prefer one invoice.",
+    a: "Bring your own AI is the default on every plan. Connect the OpenAI, Anthropic, Google, xAI, or other provider access your company already manages. Cabinet AI starts at $10 per month if you prefer one invoice.",
   },
   {
     q: "Is there a free Cabinet Cloud trial?",
@@ -241,33 +241,33 @@ export default function PricingPage() {
 
           <div className="home-product-surface rounded-[30px] bg-bg-card p-6 sm:p-8 lg:p-10">
             <div className="flex items-center justify-between gap-4">
-              <span>
-                <span className="section-label block">Example monthly equation</span>
-                <strong className="mt-2 block font-section text-2xl text-text-primary">
-                  Cabinet Cloud Pro
-                </strong>
-              </span>
+              <span className="section-label">Two ways to run AI</span>
               <WalletCards aria-hidden className="h-7 w-7 text-accent" />
             </div>
 
-            <div className="mt-8 space-y-4 font-code text-xs">
-              <PriceLine label="Cabinet Cloud Pro" value="$20 / month" />
-              <PriceLine label="AI provider usage" value="Billed by your provider" />
-              <PriceLine label="Required model bundle" value="$0" positive />
+            <div className="mt-6 grid gap-4 sm:grid-cols-2">
+              <div className="rounded-2xl bg-bg-warm p-5">
+                <strong className="font-section text-lg text-text-primary">Bring your own AI</strong>
+                <p className="mt-2 text-sm leading-relaxed text-text-secondary">
+                  Connect the OpenAI, Anthropic, Google, or xAI account your company already pays for.
+                </p>
+                <p className="mt-5 font-section text-3xl leading-none text-text-primary">
+                  $0<span className="ml-1 text-sm text-text-tertiary">added by Cabinet</span>
+                </p>
+              </div>
+              <div className="rounded-2xl border border-accent/30 bg-accent-bg-subtle p-5">
+                <strong className="font-section text-lg text-text-primary">Cabinet AI</strong>
+                <p className="mt-2 text-sm leading-relaxed text-text-secondary">
+                  Skip the API key. Model access included on one Cabinet invoice.
+                </p>
+                <p className="mt-5 font-section text-3xl leading-none text-text-primary">
+                  From $10<span className="ml-1 text-sm text-text-tertiary">/ month</span>
+                </p>
+              </div>
             </div>
 
-            <div className="mt-7 flex flex-col gap-2 rounded-2xl bg-accent-bg-subtle p-5 sm:flex-row sm:items-end sm:justify-between">
-              <span>
-                <span className="block text-xs font-semibold uppercase tracking-[0.08em] text-accent">
-                  Platform total
-                </span>
-                <span className="mt-2 block text-sm text-text-secondary">plus your existing provider usage</span>
-              </span>
-              <strong className="font-section text-4xl leading-none text-text-primary">$20</strong>
-            </div>
-
-            <p className="mt-5 text-xs leading-relaxed text-text-tertiary">
-              Prefer one invoice? Managed AI starts at $10 per month on eligible Cabinet Cloud plans.
+            <p className="mt-6 text-xs leading-relaxed text-text-tertiary">
+              Both options are available on every Cabinet Cloud plan. Self-hosted Cabinet works with bring your own AI.
             </p>
           </div>
         </div>
@@ -385,19 +385,3 @@ export default function PricingPage() {
   );
 }
 
-function PriceLine({
-  label,
-  value,
-  positive = false,
-}: {
-  label: string;
-  value: string;
-  positive?: boolean;
-}) {
-  return (
-    <div className="flex items-center justify-between gap-5 border-b border-border pb-4 last:border-0 last:pb-0">
-      <span className="text-text-secondary">{label}</span>
-      <strong className={positive ? "text-green-warm" : "text-text-primary"}>{value}</strong>
-    </div>
-  );
-}

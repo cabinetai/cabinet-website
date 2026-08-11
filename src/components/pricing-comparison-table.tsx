@@ -62,8 +62,8 @@ const ROWS: Row[] = [
   {
     feature: "AI access (BYOAI)",
     selfHosted: "Bring your own AI",
-    pro: "Bring your own · Managed add-on",
-    max: "Bring your own · Managed add-on",
+    pro: "Bring your own · Cabinet AI add-on",
+    max: "Bring your own · Cabinet AI add-on",
     enterprise: "Custom",
   },
   {

@@ -9,6 +9,7 @@ import {
   getRoundup,
   getThreeWay,
   getMigration,
+  COMPARE_MODIFIED_ISO,
   type Faq,
 } from "@/lib/compare";
 import { CompareHeadToHead } from "@/components/compare-head-to-head";
@@ -77,6 +78,19 @@ function faqSchema(faqs: Faq[]) {
   };
 }
 
+// Visible freshness plus machine-readable dateModified: AI answer engines and
+// Google both favor recently reviewed comparison content.
+function webPageSchema(slug: string, name: string, description: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name,
+    description,
+    url: `${SITE}/compare/${slug}`,
+    dateModified: COMPARE_MODIFIED_ISO,
+  };
+}
+
 function breadcrumbSchema(slug: string, name: string) {
   return {
     "@context": "https://schema.org",
@@ -120,6 +134,7 @@ export default async function ComparePage({
     return (
       <>
         <JsonLd data={breadcrumbSchema(slug, `Cabinet vs ${comparison.competitor}`)} />
+        <JsonLd data={webPageSchema(slug, comparison.title, comparison.metaDescription)} />
         <JsonLd data={faqSchema(comparison.faqs)} />
         <JsonLd data={softwareSchema} />
         <CompareHeadToHead data={comparison} />
@@ -132,6 +147,7 @@ export default async function ComparePage({
     return (
       <>
         <JsonLd data={breadcrumbSchema(slug, `${roundup.competitor} alternatives`)} />
+        <JsonLd data={webPageSchema(slug, roundup.title, roundup.metaDescription)} />
         <JsonLd data={faqSchema(roundup.faqs)} />
         <JsonLd data={softwareSchema} />
         <CompareRoundup data={roundup} />
@@ -145,6 +161,7 @@ export default async function ComparePage({
     return (
       <>
         <JsonLd data={breadcrumbSchema(slug, name)} />
+        <JsonLd data={webPageSchema(slug, threeWay.title, threeWay.metaDescription)} />
         <JsonLd data={faqSchema(threeWay.faqs)} />
         <JsonLd data={softwareSchema} />
         <CompareThreeWay data={threeWay} />
@@ -157,6 +174,7 @@ export default async function ComparePage({
     return (
       <>
         <JsonLd data={breadcrumbSchema(slug, `Migrate from ${migration.from}`)} />
+        <JsonLd data={webPageSchema(slug, migration.title, migration.metaDescription)} />
         <JsonLd data={faqSchema(migration.faqs)} />
         <JsonLd data={softwareSchema} />
         <CompareMigration data={migration} />

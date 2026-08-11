@@ -15,15 +15,25 @@ import { PricingCloudModal } from "@/components/pricing-cloud-modal";
 
 type Selection = "self-hosted" | PricingTier;
 
+const CABINET_AI_MONTHLY = 10;
+
 export function PricingInteractive() {
   const [billing, setBilling] = useState<BillingPeriod>("monthly");
+  const [cabinetAi, setCabinetAi] = useState(false);
   const [selected, setSelected] = useState<Selection>("max");
   const [modalOpen, setModalOpen] = useState(false);
   const [modalTier, setModalTier] = useState<PricingTier>("pro");
+  const addOn = cabinetAi ? CABINET_AI_MONTHLY : 0;
 
   useEffect(() => {
     trackEvent("pricing_view");
   }, []);
+
+  const toggleCabinetAi = () => {
+    const next = !cabinetAi;
+    setCabinetAi(next);
+    trackEvent("pricing_cabinet_ai_toggle", { enabled: next });
+  };
 
   const openModal = (tier: PricingTier) => {
     setModalTier(tier);
@@ -43,8 +53,27 @@ export function PricingInteractive() {
 
   return (
     <>
-      <div className="mb-5 flex justify-center">
+      <div className="mb-5 flex flex-col items-center justify-center gap-3 sm:flex-row">
         <PricingBillingToggle value={billing} onChange={handleBillingChange} />
+        <button
+          type="button"
+          onClick={toggleCabinetAi}
+          aria-pressed={cabinetAi}
+          className={`inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium shadow-sm transition-colors ${
+            cabinetAi
+              ? "bg-accent text-white"
+              : "bg-bg-card text-text-secondary hover:text-text-primary"
+          }`}
+        >
+          <span
+            aria-hidden
+            className={`h-2 w-2 rounded-full ${cabinetAi ? "bg-white" : "bg-accent"}`}
+          />
+          Add Cabinet AI
+          <span className={cabinetAi ? "text-white/80" : "text-text-tertiary"}>
+            +${CABINET_AI_MONTHLY}/mo
+          </span>
+        </button>
       </div>
 
       <fieldset className="grid grid-cols-1 items-stretch gap-5 md:grid-cols-2 xl:grid-cols-4">
@@ -101,16 +130,16 @@ export function PricingInteractive() {
           selectionId="tier-pro"
           name="Cabinet Cloud Pro"
           tagline="Managed hosting for one always-on Cabinet."
-          priceMonthly={20}
-          priceAnnualEffective={16}
+          priceMonthly={20 + addOn}
+          priceAnnualEffective={16 + addOn}
           billingPeriod={billing}
-          annualNote="$192 billed annually"
+          annualNote={`$${(16 + addOn) * 12} billed annually`}
           bullets={[
             "Access across phone, laptop, and browser",
             "Agents can keep scheduled work moving",
             "Daily backups with 7-day retention",
             "Automatic updates",
-            "Bring your own AI or add Managed AI",
+            cabinetAi ? "Cabinet AI included" : "Bring your own AI or add Cabinet AI",
           ]}
           cta={{
             kind: "button",
@@ -128,10 +157,10 @@ export function PricingInteractive() {
           tagline="More capacity, hardened backups, and faster support."
           badge="Recommended"
           highlighted
-          priceMonthly={49}
-          priceAnnualEffective={40}
+          priceMonthly={49 + addOn}
+          priceAnnualEffective={40 + addOn}
           billingPeriod={billing}
-          annualNote="$480 billed annually"
+          annualNote={`$${(40 + addOn) * 12} billed annually`}
           inheritsFromLabel="Cloud Pro"
           bullets={[
             "Larger container for longer agent runs",

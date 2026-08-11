@@ -231,7 +231,7 @@ export function PricingCloudModal({ initialTier, onClose }: Props) {
                     className="mt-0.5 h-4 w-4 accent-accent"
                   />
                   <span className="text-sm text-text-primary leading-relaxed">
-                    Add <strong>Managed AI</strong> to skip the API key.{" "}
+                    Add <strong>Cabinet AI</strong> to skip the API key.{" "}
                     <span className="text-text-tertiary">From $10/mo.</span>
                   </span>
                 </label>

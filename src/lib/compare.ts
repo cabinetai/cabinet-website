@@ -15,6 +15,9 @@ import {
   MessageSquare,
   ArrowRightLeft,
   Lock,
+  Calendar,
+  Brain,
+  LayoutDashboard,
   type LucideIcon,
 } from "lucide-react";
 
@@ -26,10 +29,21 @@ import {
  *
  * Copy rules (see AGENTS.md): no em dashes anywhere, no invented stats, fair to
  * competitors. Every head-to-head includes a "when the competitor wins" section
- * on purpose: that honesty is what makes a skeptical executive trust the page.
- * Feature cells reflect publicly available information as of 2026-05; date and
- * source anything ambiguous in `note`.
+ * on purpose: that honesty is what makes a skeptical executive trust the page,
+ * and it is what AI answer engines can lift for both sides of a "vs" query.
+ * Feature cells reflect public information as of COMPARE_ASOF; date and source
+ * anything ambiguous in `note`. Volatile claims (pricing, plans) carry their
+ * own "as of" stamp inline, because visible freshness is a citation signal.
  */
+
+/**
+ * Single freshness stamp for every comparison surface. Bump it whenever the
+ * facts are re-verified; visible dates are a real citation signal for both
+ * Google and AI answer engines.
+ */
+export const COMPARE_ASOF = "August 2026";
+/** ISO date for schema.org dateModified. Keep in sync with COMPARE_ASOF. */
+export const COMPARE_MODIFIED_ISO = "2026-08-12";
 
 export type Cell = true | false | "partial";
 
@@ -77,7 +91,6 @@ export type Comparison = {
   rows: Row[];
   whenThemWins: { heading: string; points: string[] };
   migration?: { heading: string; body: string };
-  switcher?: { quote: string; attribution: string };
   faqs: Faq[];
   /** Sibling slugs to surface as "also compared". */
   related: string[];
@@ -120,6 +133,257 @@ export type Roundup = {
 
 export const COMPARISONS: Comparison[] = [
   {
+    slug: "cabinet-vs-town",
+    kind: "head-to-head",
+    competitor: "Town",
+    competitorSlug: "town",
+    category: "Personal AI assistant",
+    icon: Calendar,
+    oneLiner: "A Townie that clears your inbox, or a brain your company keeps.",
+    title: "Town vs Cabinet: Your Assistant, or Your Company's Brain (2026)",
+    metaDescription:
+      "Town's Townie triages email and calendars from $15/mo, and keeps what it learns in Town's cloud. Cabinet is the knowledge base your company owns: files, AI agents, live dashboards, self-hosted. Compared honestly, August 2026.",
+    h1: "Town vs Cabinet: your assistant, or your company's brain",
+    lead: "Town gives each person a Townie: a personal AI assistant with its own town.com email address that triages your inbox, preps your meetings, and drafts replies across 50+ tools. Cabinet gives the whole company one knowledge base it owns, where AI agents research, write, and keep live dashboards current. Hire Town to clear an inbox. Hire Cabinet to build a brain the company keeps.",
+    verdict: {
+      chooseUs: [
+        "You want company knowledge your team can open, edit, and audit as files it owns.",
+        "You want agent work that lands as durable documents and live dashboards, not actions that scatter across inboxes.",
+        "Self-hosting, open source, and paying providers directly for AI are requirements.",
+      ],
+      chooseThem: [
+        "Your bottleneck is personal busywork: email triage, scheduling, meeting prep.",
+        "You want a polished assistant that lives in Gmail, Outlook, Slack, and WhatsApp with zero setup.",
+      ],
+    },
+    coreDifference: {
+      heading: "Town remembers you. Cabinet is what your company remembers.",
+      paras: [
+        "Town is a genuinely good personal assistant. Your Townie gets its own email address, learns your voice and priorities, triages the inbox, preps meetings, and runs background routines. Its homepage says it plainly: Townies keep a wiki on how you work. Email stays draft-only by design, and autonomy is earned one workflow at a time. That trust model is the right one, and it is close to how Cabinet dispatches agents.",
+        "Here is the catch. That wiki about how you work lives in Town's cloud. You cannot open it as files, edit it, move it, or point your own tools at it, and Town publishes no export for it as of August 2026. The work itself lands as sent drafts and calendar changes inside your SaaS accounts. Helpful today, invisible next quarter. When a person leaves or a subscription lapses, everything the assistant learned goes with it.",
+        "Cabinet inverts that. The knowledge base is the product: files your company holds on its own infrastructure, agents that read and write them on schedules, and live dashboards rendered from what they know. The longer your team works, the more the brain is worth, and it is yours whether or not you renew anything.",
+      ],
+    },
+    differentiators: [
+      {
+        icon: Brain,
+        title: "The memory is yours to open",
+        body: "Town's memory is a wiki about you that Town keeps. Cabinet is the wiki your company keeps: every brief, decision, and customer note is a document you can open, correct, and hand to the next hire.",
+        code: "brain/\n  customers/\n    acme-renewal.md\n  meetings/\n    2026-08-12-board-prep.md",
+      },
+      {
+        icon: LayoutDashboard,
+        title: "Work that lands, and stays",
+        body: "A Townie's output disappears into inboxes and calendars. Cabinet agents leave behind briefs, trackers, and dashboards rendered live from the knowledge base, so Tuesday's research still answers questions in December.",
+      },
+      {
+        icon: Cpu,
+        title: "Your models, at provider prices",
+        body: "Town meters credits: $15 buys about 1,250 a month, $199 buys 40,000, overage on top, as of August 2026. Cabinet routes to the AI accounts you already pay for, so the AI bill is the provider's price and nothing more.",
+      },
+    ],
+    rows: [
+      { feature: "A company knowledge base you own as files", cabinet: true, them: false },
+      { feature: "Assistant memory you can open, edit, and export", cabinet: true, them: false, note: "Town's wiki on how you work lives in Town's cloud; no export is published as of August 2026." },
+      { feature: "Personal inbox and calendar triage", cabinet: false, them: true },
+      { feature: "Assistant on WhatsApp and Telegram", cabinet: false, them: true },
+      { feature: "AI agents with schedules and routines", cabinet: true, them: true },
+      { feature: "You approve before agents act", cabinet: true, them: true, note: "Town offers read-only, approval, and autonomous modes; email stays draft-only." },
+      { feature: "Work persists as documents and dashboards", cabinet: true, them: false },
+      { feature: "Live apps rendered from your knowledge", cabinet: true, them: false },
+      { feature: "Bring your own AI model keys", cabinet: true, them: false, note: "Town publishes no bring-your-own-model option as of August 2026." },
+      { feature: "Self-hosted on your infrastructure", cabinet: true, them: false },
+      { feature: "Open source", cabinet: true, them: false },
+      { feature: "Built for teams", cabinet: true, them: "partial", note: "Town's Team and Business plans pool credits and share routines; each person still runs an individual assistant." },
+      { feature: "A free tier you can actually work in", cabinet: true, them: "partial", note: "Town's free plan is 30 chats per month as of August 2026." },
+    ],
+    whenThemWins: {
+      heading: "When Town is the better choice",
+      points: [
+        "Your problem is personal busywork. For inbox triage, scheduling, and meeting prep across Gmail, Outlook, Slack, and WhatsApp, a Townie is excellent.",
+        "You want an assistant with its own email address that colleagues can CC, working in minutes with nothing to host.",
+        "You are buying for one person, not building a shared knowledge base, and per-seat credits are acceptable.",
+      ],
+    },
+    faqs: [
+      { q: "What is Town AI and what does a Townie do?", a: "Town is a personal AI assistant startup that raised $73M, including a $55M Series A led by a16z in June 2026. Each user gets a Townie: a named assistant with its own town.com email address that triages email, preps meetings, drafts replies in your voice, and runs routines across 50+ integrations. It runs in Town's cloud only." },
+      { q: "How much does Town cost?", a: "As of August 2026, Town's published plans are Free (30 chats per month), Starter at $15, Pro at $49, Power at $99, and Power Plus at $199 per month, each with a monthly credit allowance from about 1,250 up to 40,000, plus Team and Business plans with pooled credits. Cabinet is open source and free to self-host, with AI billed through your own provider keys." },
+      { q: "Is Cabinet a Town alternative?", a: "They solve different problems. Town is a personal assistant for your inbox and calendar. Cabinet is a knowledge workspace your company owns, where teams and AI agents build knowledge that persists as files and live dashboards. Some teams run both: a Townie for personal triage, Cabinet as the company brain." },
+      { q: "Can I self-host Town or bring my own AI model?", a: "No. Town runs only in Town's cloud, is closed source, and publishes no bring-your-own-model option as of August 2026. Cabinet self-hosts on your infrastructure and routes to the AI provider accounts you already pay for." },
+      { q: "Does Town work for teams?", a: "Town sells Team and Business plans with shared workspaces, pooled credits, and shared routines. The model remains one personal assistant per person. Cabinet starts from the other end: one shared knowledge base the whole company and its agents work in together." },
+      { q: "Can I export what Town learns about me?", a: "Town markets a wiki on how you work, but it lives inside Town's product and no export is published as of August 2026. In Cabinet, everything agents learn and produce is a file your company holds and can move anywhere." },
+    ],
+    related: ["cabinet-vs-gumloop", "cabinet-vs-buzz", "town-vs-gumloop-vs-cabinet"],
+  },
+
+  {
+    slug: "cabinet-vs-gumloop",
+    kind: "head-to-head",
+    competitor: "Gumloop",
+    competitorSlug: "gumloop",
+    category: "AI workflow automation",
+    icon: Workflow,
+    oneLiner: "Agent workflows over your tools, or a brain your company owns.",
+    title: "Gumloop vs Cabinet: Agent Workflows, or a Brain You Own (2026)",
+    metaDescription:
+      "Gumloop runs AI agent workflows at $37/mo plus credits; its Brain is a paid search index for agents. Cabinet is the knowledge itself: files your company owns, agents working in them, live dashboards, your own AI keys. Honest comparison, August 2026.",
+    h1: "Gumloop vs Cabinet: the workflow engine, or the brain",
+    lead: "Gumloop wires AI agents into no-code workflows across 100+ apps, and since July 2026 feeds them from Brain, a paid company knowledge index. Cabinet starts where that index points: the knowledge itself. Files your company owns, agents working in them on schedules, and live dashboards rendered from what they know. Pick Gumloop to automate a pipeline. Pick Cabinet to own the brain the pipelines feed on.",
+    verdict: {
+      chooseUs: [
+        "You want knowledge people and agents author, read, and keep, not an index of copies held elsewhere.",
+        "You want agent output that compounds as documents and live dashboards instead of expiring as workflow runs.",
+        "You want AI billed at provider prices through your own keys, with open source and real self-hosting.",
+      ],
+      chooseThem: [
+        "Your job is automation plumbing: moving data between SaaS tools on triggers, at volume.",
+        "Ops and GTM teams want a no-code canvas with managed enterprise controls today.",
+      ],
+    },
+    coreDifference: {
+      heading: "In Gumloop, knowledge is fuel. In Cabinet, knowledge is the product.",
+      paras: [
+        "Gumloop earns its reputation. A drag-and-drop canvas, agents with triggers and approval gates, deep MCP support, and customers like Gusto, Ramp, Instacart, and Shopify, backed by a $50M Series B from Benchmark in March 2026. If the job is wiring AI into repeatable processes across your SaaS stack, it is one of the best tools available.",
+        "Then read how their docs describe Brain, the knowledge layer they added in July 2026: your company knowledge base for agents. That is exactly what it is, and exactly the limit. Brain is a read-only index of copies synced hourly from Notion, Drive, Slack, and GitHub. Editing must happen in the original systems. Nobody writes knowledge in Gumloop, nobody reads it there, and both indexing and every search bill credits on a paid plan.",
+        "Cabinet is the thing Brain points at. Knowledge lives here as files your company owns, people and agents author and correct it in place, and the same knowledge renders as live dashboards and working apps. Automation ends when the run ends. A brain keeps its value.",
+      ],
+    },
+    differentiators: [
+      {
+        icon: Brain,
+        title: "A brain, not an index",
+        body: "Gumloop's Brain stores searchable snippets of documents that live somewhere else. Cabinet holds the documents themselves, in one place your team and its agents write, correct, and build on every day.",
+      },
+      {
+        icon: LayoutDashboard,
+        title: "Results you can open next quarter",
+        body: "A workflow ends as a run in a log. Cabinet agents end their work as briefs, trackers, and dashboards rendered live from the knowledge base, still there and still current when the quarter closes.",
+      },
+      {
+        icon: Cpu,
+        title: "Your AI keys, without the toll",
+        body: "Gumloop's own pricing docs, August 2026: model tokens at cost plus an 8% orchestration fee, 1 credit per tool call, compute at 5 credits a minute, and with your own API keys the fee doubles to 16%. Cabinet routes your keys straight to the provider. The price is the provider's price.",
+        code: "# Gumloop, per its docs (Aug 2026)\ntokens         at cost + 8% fee\ntool call      1 credit\ncompute        5 credits / minute\nyour own keys  fee rises to 16%\n\n# Cabinet\nyour own keys  provider price. done.",
+      },
+    ],
+    rows: [
+      { feature: "A company knowledge base you own as files", cabinet: true, them: false, note: "Brain indexes copies; per Gumloop's docs, editing happens in the original systems." },
+      { feature: "A place people write and read knowledge", cabinet: true, them: false },
+      { feature: "AI agents with schedules and triggers", cabinet: true, them: true },
+      { feature: "Human approval gates", cabinet: true, them: true },
+      { feature: "Drag-and-drop workflow canvas", cabinet: false, them: true },
+      { feature: "Automations across 100+ SaaS apps", cabinet: "partial", them: true },
+      { feature: "Knowledge rendered as live apps and dashboards", cabinet: true, them: "partial", note: "Gumloop agents produce hosted artifacts; there is no rendered view of the knowledge itself." },
+      { feature: "Bring your own AI keys at provider cost", cabinet: true, them: "partial", note: "Supported, but the orchestration fee doubles to 16% and platform actions still bill credits (Gumloop docs, August 2026)." },
+      { feature: "Self-hosted", cabinet: true, them: false, note: "Gumloop Enterprise offers VPC deployment of its managed platform, not self-hosting." },
+      { feature: "Open source", cabinet: true, them: false },
+      { feature: "Free to start", cabinet: true, them: false, note: "Gumloop has no free plan, only a 14-day trial, as of August 2026." },
+      { feature: "Hybrid search over your existing tools", cabinet: "partial", them: true },
+      { feature: "RBAC, SCIM, and audit logs today", cabinet: "partial", them: true },
+    ],
+    whenThemWins: {
+      heading: "When Gumloop is the better choice",
+      points: [
+        "Your need is integration plumbing at volume: enrich leads, sync CRMs, scrape and route data across a hundred SaaS tools.",
+        "Non-technical ops and GTM teams will build the automations themselves and want a polished no-code canvas.",
+        "You want managed enterprise controls, RBAC, SCIM, and VPC deployment from a vendor today.",
+      ],
+    },
+    faqs: [
+      { q: "What is Gumloop Brain?", a: "Brain is Gumloop's company knowledge base for agents, launched July 8, 2026. It indexes text from Notion, Google Drive, Slack, GitHub, Confluence, and uploads so agents can search it with citations. It is read-only, available on paid plans, and both indexing and searching consume credits. Editing still happens in the source tools. Cabinet is the opposite shape: the knowledge itself lives with you, and people and agents write it directly." },
+      { q: "How much does Gumloop cost?", a: "As of August 2026, Gumloop Pro is $37 per month with 20,000 credits and unlimited seats; Enterprise is custom. There is no free plan, only a 14-day trial. Usage bills through credits: model tokens at cost plus an 8% orchestration fee, 1 credit per tool call, and compute at 5 credits per minute. Cabinet is free to self-host, and AI runs on your own provider keys at provider prices." },
+      { q: "Is Cabinet a Gumloop alternative?", a: "For different jobs. Gumloop automates workflows across your SaaS stack; Cabinet is the knowledge workspace your company owns, where the durable work accumulates. Teams that mainly need pipeline automation should use Gumloop. Teams that want company knowledge, agents, and live dashboards in one owned place pick Cabinet." },
+      { q: "Does Gumloop support bring-your-own API keys?", a: "Yes, with a toll. With your own keys, model tokens stop billing credits but Gumloop's orchestration fee doubles from 8% to 16%, per its pricing docs as of August 2026. In Cabinet, your keys are the whole AI bill." },
+      { q: "Can Gumloop replace a knowledge base?", a: "No, and its docs are candid about it: Brain reflects content edited in the original systems. There is no editor, no documents of record, and no place a person reads the knowledge. Cabinet is that place." },
+      { q: "Can I self-host Gumloop?", a: "No. Gumloop Enterprise can deploy into a VPC in your cloud account, but it remains Gumloop's closed, managed platform. Cabinet is open source and runs fully on your own infrastructure." },
+    ],
+    related: ["cabinet-vs-town", "cabinet-vs-dust", "town-vs-gumloop-vs-cabinet"],
+  },
+
+  {
+    slug: "cabinet-vs-buzz",
+    kind: "head-to-head",
+    competitor: "Buzz",
+    competitorSlug: "buzz",
+    category: "Agent team chat",
+    icon: MessageSquare,
+    oneLiner: "Dorsey's chat room for agents, or the brain they work in.",
+    title: "Buzz vs Cabinet: Agent Chat Room, or Company Brain (2026)",
+    metaDescription:
+      "Buzz is Block's free, open-source chat where humans and AI agents share channels. Cabinet shares its ideals, self-hosted with your own AI keys, and adds what Buzz lacks: a knowledge base, files, and live dashboards your company owns. Compared honestly, August 2026.",
+    h1: "Buzz vs Cabinet: the chat room, or the brain",
+    lead: "Buzz is Block's open-source workspace where people and AI agents share channels. Jack Dorsey announced it on July 21, 2026, and it is free while in beta. Cabinet agrees with most of what Buzz stands for: open source, self-hosted, agents as teammates, your own AI keys. The difference is the primitive. Buzz builds on the chat log. Cabinet builds on a knowledge base your company keeps.",
+    verdict: {
+      chooseUs: [
+        "You want shared context that accumulates as documents, files, and dashboards, not a channel scroll.",
+        "You want a workspace your operators and executives can use without Docker or a CLI.",
+        "You want a versioned product your company can run today.",
+      ],
+      chooseThem: [
+        "You are a technical team that wants Slack-style chat where agents are native, on an open protocol.",
+        "Nostr identity portability and git patches over your own relay matter to you.",
+      ],
+    },
+    coreDifference: {
+      heading: "Same beliefs. Different primitive.",
+      paras: [
+        "Credit first. Buzz is a serious attempt at the right idea: humans and AI agents working in one place, on infrastructure you own. Agents hold their own cryptographic identities, every message and git patch is a signed event on a relay you run, it works with Claude Code, Codex, and Goose through MCP, and the code is Apache licensed. It picked up roughly 26,000 GitHub stars in its first three weeks. We are rooting for it.",
+        "Now the difference. In Buzz, the shared context is the conversation itself: an append-only log of messages and patches. There is no knowledge base, no document hierarchy, no dashboards, and no connection to the files your company already has, as of August 2026. What an agent figured out on Tuesday is buried under Friday's scroll, which is the exact problem knowledge tools exist to solve. It is also pre-1.0: no mobile apps yet, approval gates unfinished, and reviewers advise keeping sensitive data out.",
+        "Cabinet starts from the other primitive. The knowledge base is the ground truth: files and documents your team and its agents author, with chat alongside and live dashboards rendered from what the company knows. An executive can read the brain without reading the scroll.",
+      ],
+    },
+    differentiators: [
+      {
+        icon: Brain,
+        title: "Context that outlives the conversation",
+        body: "Buzz gives your agents a room to talk in. Cabinet gives them a brain to work in: what agents research and decide lands as documents that stay findable, correctable, and true long after the thread moves on.",
+        code: "# where shared context lives\nbuzz     #general, 41,208 messages\ncabinet  brain/decisions/2026-q3.md",
+      },
+      {
+        icon: LayoutDashboard,
+        title: "See the state, not the scroll",
+        body: "In a chat workspace, catching up means reading back. Cabinet renders the knowledge base as live dashboards and working apps, so the current state of any project is a view, not an archaeology dig.",
+      },
+      {
+        icon: Users,
+        title: "Built for the whole company",
+        body: "Running Buzz today means Docker, Rust toolchains, and wiring agents in by CLI. Cabinet is a product your operators, analysts, and executives work in on day one, with the same ownership guarantees.",
+      },
+    ],
+    rows: [
+      { feature: "Open source", cabinet: true, them: true },
+      { feature: "Self-hosted on infrastructure you own", cabinet: true, them: true },
+      { feature: "Bring your own AI keys", cabinet: true, them: true },
+      { feature: "Humans and AI agents in one workspace", cabinet: true, them: true },
+      { feature: "A knowledge base with files and documents", cabinet: true, them: false },
+      { feature: "Documents people author and edit", cabinet: true, them: "partial", note: "Buzz canvases exist but are early and lightly documented as of August 2026." },
+      { feature: "Knowledge rendered as live dashboards", cabinet: true, them: false },
+      { feature: "Connects to your existing files and tools", cabinet: true, them: false, note: "Buzz lists no external integrations as of August 2026." },
+      { feature: "Slack-style channels, DMs, and huddles", cabinet: "partial", them: true },
+      { feature: "Git patches native to the workspace", cabinet: "partial", them: true, note: "Cabinet links Git repos; Buzz signs patches into its event log." },
+      { feature: "Usable by non-technical teams", cabinet: true, them: false, note: "Buzz onboarding currently assumes Docker, Rust, and CLI-wired agents." },
+      { feature: "Versioned releases teams run in production", cabinet: true, them: "partial", note: "Buzz is pre-1.0 beta; mobile apps and approval gates are unfinished (August 2026)." },
+    ],
+    whenThemWins: {
+      heading: "When Buzz is the better choice",
+      points: [
+        "You are an engineering team that lives in chat and wants agents native to it, with git patches flowing through the same channels.",
+        "Open-protocol identity matters: you want your team's identities and history portable on Nostr, independent of any vendor including Block.",
+        "It is free, including Block's hosted beta, and you are comfortable adopting a pre-1.0 product.",
+      ],
+    },
+    faqs: [
+      { q: "What is Buzz, Jack Dorsey's new app?", a: "Buzz is a free, open-source collaboration platform from Block, announced by Jack Dorsey on July 21, 2026, where humans and AI agents share channels as teammates. It is built on the Nostr protocol: agents hold their own cryptographic identities, and messages and git patches are signed events on a relay you can self-host. Desktop only so far, and pre-1.0." },
+      { q: "Is Buzz free?", a: "Yes. Buzz is Apache-licensed open source, and Block's hosted beta at buzz.xyz is free as of August 2026. Real costs are your own infrastructure and your own LLM API keys. No paid plan has been announced." },
+      { q: "Is Buzz a Slack replacement?", a: "It wants to be. Dorsey positions Buzz against Slack and GitHub. Today it is pre-1.0: no mobile apps, unfinished approval gates, and coverage advises teams not to migrate yet. It also has no knowledge base, which is where Cabinet starts." },
+      { q: "Buzz vs Cabinet: which should my team use for AI agents?", a: "Both are open source, self-hosted, and let agents work alongside people with your own AI keys. Buzz makes chat the shared context; Cabinet makes an owned knowledge base the shared context, with documents, files, and live dashboards. Developer teams that live in chat may prefer Buzz. Companies building knowledge that compounds pick Cabinet." },
+      { q: "Does Buzz have a knowledge base or documents?", a: "No. Buzz's context is the message and patch log, plus early canvases. There is no document hierarchy, no dashboards, and no integrations to existing files as of August 2026. Cabinet is built around exactly those things." },
+      { q: "Can I self-host both Buzz and Cabinet?", a: "Yes. Buzz self-hosts as a Nostr relay via Docker; Cabinet runs on your own machine or cloud. The difference is what you end up owning: in Buzz, an event log of conversations; in Cabinet, a knowledge base your company can open and build on." },
+    ],
+    related: ["cabinet-vs-town", "cabinet-vs-gumloop", "cabinet-vs-obsidian"],
+  },
+
+  {
     slug: "cabinet-vs-notion",
     kind: "head-to-head",
     competitor: "Notion",
@@ -127,11 +391,11 @@ export const COMPARISONS: Comparison[] = [
     category: "Team wiki and docs",
     icon: FileText,
     oneLiner: "A cloud wiki, or a knowledge base you actually own.",
-    title: "Notion vs Cabinet: The Knowledge Base You Actually Own",
+    title: "Notion vs Cabinet: Which Workspace Do You Own? (2026)",
     metaDescription:
       "Notion keeps your data in their cloud. Cabinet keeps it as Markdown files you own, with AI agents and embedded apps built in. Open source, self-hosted. An honest comparison.",
-    h1: "Notion vs Cabinet: an honest comparison",
-    lead: "Notion is a polished cloud wiki. Cabinet is a knowledge base you own that shows your whole knowledge base and files in one place, renders live apps and dashboards next to your docs, and lets your team and its AI agents work in it together. The difference is who holds your knowledge.",
+    h1: "Notion vs Cabinet: which workspace do you own?",
+    lead: "Notion is a polished cloud workspace, and in 2026 an agent platform too: its homepage now reads \"Where teams and agents think together.\" The pages still live in Notion's cloud, as blocks in Notion's format. Cabinet is the same ambition with the opposite ownership: company knowledge as files on your infrastructure, agents working in them on schedules, and live dashboards rendered from what your team knows.",
     verdict: {
       chooseUs: [
         "You want your knowledge as Markdown files you own, not rows in someone else's database.",
@@ -166,8 +430,8 @@ export const COMPARISONS: Comparison[] = [
       },
       {
         icon: AppWindow,
-        title: "Visualize web apps, not just pages",
-        body: "Build and visualize live web apps and dashboards next to your docs, and drop into a real web terminal when you need one. Cabinet shows your whole workspace, not only a page editor.",
+        title: "Knowledge that renders as software",
+        body: "Build and visualize live web apps and dashboards next to your docs, and drop into a real web terminal when you need one. A page is one view of knowledge. Cabinet renders the working views too.",
       },
     ],
     rows: [
@@ -198,10 +462,6 @@ export const COMPARISONS: Comparison[] = [
       heading: "Moving from Notion is mostly a copy",
       body: "Export your Notion workspace as Markdown and CSV, then drop it into a Cabinet folder. Because it is already Markdown, it stays grep-able and git-tracked from the first day, and your agents can start reading it immediately.",
     },
-    switcher: {
-      quote: "We loved Notion until the workspace held our crown jewels and lived in someone else's cloud. Cabinet gave us the same writing experience on files we own, plus agents that actually do the busywork.",
-      attribution: "Head of Operations, Series B SaaS",
-    },
     faqs: [
       { q: "Is Cabinet a good Notion alternative?", a: "Yes, if you want your knowledge as files you own with AI agents that act on it. Cabinet keeps your whole knowledge base as files on disk you own, runs self-hosted, and lets agents read and write your docs on a schedule. Notion remains the better pick if you want a fully managed cloud product with heavy real-time multiplayer." },
       { q: "Can I import my Notion content into Cabinet?", a: "Yes. Export your Notion pages as Markdown and CSV and drop them into a Cabinet folder. The content stays as plain Markdown you can grep and version with git." },
@@ -220,11 +480,11 @@ export const COMPARISONS: Comparison[] = [
     category: "Markdown notes",
     icon: FileText,
     oneLiner: "A single-player note editor, or a workspace for your whole team.",
-    title: "Obsidian vs Cabinet: Notes, or a Whole AI Workspace?",
+    title: "Obsidian vs Cabinet: Personal Vault, or Company Brain? (2026)",
     metaDescription:
       "Obsidian is a great single-player Markdown editor. Cabinet keeps the same files on disk and adds AI agents, embedded apps, a terminal, and team features. An honest comparison.",
-    h1: "Obsidian vs Cabinet: an honest comparison",
-    lead: "Obsidian and Cabinet both keep your files on disk and yours. The difference is scope: Obsidian is a brilliant editor for one person, and Cabinet is a workspace where your whole team and its AI agents share the same knowledge base, with live apps and dashboards rendered right alongside the notes.",
+    h1: "Obsidian vs Cabinet: your vault, or your company's brain",
+    lead: "Obsidian and Cabinet agree on the foundation: your knowledge should live in files you own. Obsidian is the best version of that idea for one person's notes. Cabinet is what happens when the same files have to run a company: a shared workspace, AI agents on schedules, live dashboards rendered from the knowledge, and a team reading and writing alongside the agents.",
     verdict: {
       chooseUs: [
         "You want a team workspace, not just a personal note vault.",
@@ -259,7 +519,7 @@ export const COMPARISONS: Comparison[] = [
       },
       {
         icon: Users,
-        title: "Made for a team, not just a vault",
+        title: "Made for a team and its agents",
         body: "Internal chat, a mission and task system, and live apps and dashboards turn a personal vault into a place a team can actually work together, on files everyone still owns.",
       },
     ],
@@ -291,17 +551,13 @@ export const COMPARISONS: Comparison[] = [
       heading: "Your vault moves over as-is",
       body: "Both tools use Markdown on disk, so there is no real migration. Point Cabinet at your vault folder and your notes are there, ready for agents and your team.",
     },
-    switcher: {
-      quote: "Obsidian was perfect for me, then the team needed the same notes. Cabinet kept the files exactly as they were and added the agents and shared workspace we were missing.",
-      attribution: "Founder, early-stage startup",
-    },
     faqs: [
       { q: "Is Cabinet an Obsidian alternative for teams?", a: "Yes. Cabinet keeps the same Markdown-on-disk model Obsidian users love and adds a shared team workspace: agents, scheduled routines, chat, tasks, embedded apps, and a terminal." },
       { q: "Can I open my Obsidian vault in Cabinet?", a: "Yes. Both store plain Markdown files, so you point Cabinet at the same folder. There is no export or conversion." },
       { q: "Does Cabinet have a graph view and plugins like Obsidian?", a: "Obsidian's plugin ecosystem and graph view are more mature. Cabinet's wedge is built-in agents, team features, and embedded apps rather than a plugin marketplace." },
       { q: "Is Cabinet free and open source like Obsidian's core?", a: "Cabinet is open source and free to self-host. A hosted Cabinet Cloud is on the way for teams that prefer not to run it themselves." },
     ],
-    related: ["cabinet-vs-notion", "cabinet-vs-dust", "notion-alternatives"],
+    related: ["cabinet-vs-notion", "cabinet-vs-buzz", "obsidian-alternatives"],
   },
 
   {
@@ -312,11 +568,11 @@ export const COMPARISONS: Comparison[] = [
     category: "Enterprise AI search",
     icon: Search,
     oneLiner: "Search across the tools you have, or own the knowledge itself.",
-    title: "Glean vs Cabinet: Search Your Tools, or Own Your Knowledge",
+    title: "Glean vs Cabinet: Search Your Tools, or Own the Knowledge (2026)",
     metaDescription:
       "Glean is enterprise search over your existing apps. Cabinet is where knowledge is authored and owned, as Markdown files on disk, with agents and apps built in. An honest comparison.",
-    h1: "Glean vs Cabinet: an honest comparison",
-    lead: "Glean indexes the tools you already use and answers questions across them. Cabinet is the place knowledge is written and owned: it shows your whole knowledge base and files, renders live apps and dashboards, and lets your team and its agents work in it. One searches your knowledge, the other holds it.",
+    h1: "Glean vs Cabinet: find knowledge, or own it",
+    lead: "Glean searches the tools your company already uses and answers questions across them, and it does that well at enterprise scale. It holds nothing of its own. Cabinet is the other half of the problem: the place knowledge is authored, owned, and put to work, as files on your infrastructure, with agents that write them and live dashboards rendered from them.",
     verdict: {
       chooseUs: [
         "You want a place to author and own knowledge, not only search what is scattered across other tools.",
@@ -377,10 +633,6 @@ export const COMPARISONS: Comparison[] = [
         "You do not need an authoring surface, self-hosting, or to own the underlying files.",
       ],
     },
-    switcher: {
-      quote: "Glean found things across our tools, but the knowledge still lived everywhere and nowhere. Cabinet gave us one place we own, where agents write the playbooks instead of just retrieving them.",
-      attribution: "VP Engineering, enterprise platform",
-    },
     faqs: [
       { q: "Is Cabinet a Glean alternative?", a: "It depends on the problem. Glean is enterprise search over your existing tools. Cabinet is where knowledge is authored and owned, with agents that act on it. Teams that want to own and create knowledge, not only search it, pick Cabinet." },
       { q: "Can Cabinet search across my other tools like Glean?", a: "Glean's federated search across many SaaS connectors is more mature. Cabinet's focus is owning the knowledge itself as files, with agents reading and writing them, plus linked Git repos." },
@@ -398,11 +650,11 @@ export const COMPARISONS: Comparison[] = [
     category: "AI assistants platform",
     icon: Bot,
     oneLiner: "Assistants wired to your tools, or a file-based brain agents own.",
-    title: "Dust vs Cabinet: Connected Assistants vs a Brain You Own",
+    title: "Dust vs Cabinet: Connected Assistants, or a Brain You Own (2026)",
     metaDescription:
       "Dust builds AI assistants on top of your existing tools through connectors. Cabinet gives agents a file-based brain you own, on disk, self-hosted. An honest comparison.",
-    h1: "Dust vs Cabinet: an honest comparison",
-    lead: "Dust builds AI assistants on top of the data in your existing tools. Cabinet gives agents a knowledge base you own: it shows your whole knowledge base and files, renders live apps and dashboards, and lets your team and its agents read and write it directly. Both run agents; the difference is where the knowledge lives.",
+    h1: "Dust vs Cabinet: assistants over your tools, or a brain you own",
+    lead: "Dust builds AI assistants over your existing tools through connectors, and it is one of the strongest platforms doing it. The knowledge itself stays where it always was: scattered across those tools. Cabinet gives agents and people one owned substrate instead: files your company holds, agents that author and maintain them, and live dashboards rendered from the result.",
     verdict: {
       chooseUs: [
         "You want agents working against a knowledge base you own and can grep, not data locked in other tools.",
@@ -464,17 +716,13 @@ export const COMPARISONS: Comparison[] = [
         "You prefer a polished assistant-builder UI over a file-based system you run yourself.",
       ],
     },
-    switcher: {
-      quote: "Dust got us assistants quickly, but our knowledge stayed scattered across the tools it connected to. Cabinet put the knowledge in one place we own, and the agents write to it directly.",
-      attribution: "Head of Product, B2B software",
-    },
     faqs: [
       { q: "Is Cabinet a Dust alternative?", a: "Yes, for teams that want agents working against a knowledge base they own. Dust orchestrates assistants over your existing tools; Cabinet makes the knowledge base itself the product, as files on your disk that agents read and write." },
       { q: "Does Cabinet connect to my existing SaaS tools like Dust?", a: "Dust's connector catalog is broader today. Cabinet's focus is owning the knowledge as files, with agents authoring it, plus linked Git repos. Connectors are on the roadmap." },
       { q: "Can I self-host Cabinet and use my own models?", a: "Yes. Cabinet self-hosts and routes inference through your own model keys, so your knowledge and your usage stay in your control." },
       { q: "Is Cabinet open source?", a: "Yes. You can run, read, and fork the whole thing." },
     ],
-    related: ["cabinet-vs-glean", "cabinet-vs-notion", "cabinet-vs-obsidian"],
+    related: ["cabinet-vs-gumloop", "cabinet-vs-glean", "cabinet-vs-notion"],
   },
 
   {
@@ -485,10 +733,10 @@ export const COMPARISONS: Comparison[] = [
     category: "Agent orchestration",
     icon: Workflow,
     oneLiner: "Orchestrate agents, or give those agents a brain to work in.",
-    title: "Paperclip vs Cabinet: Agents, Plus the Knowledge They Run On",
+    title: "Paperclip vs Cabinet: The Org Chart, or the Office (2026)",
     metaDescription:
       "Paperclip orchestrates AI agents with org charts and budgets. Cabinet gives agents a knowledge base you own to read and write, plus a workspace your team shares. An honest comparison.",
-    h1: "Paperclip vs Cabinet: an honest comparison",
+    h1: "Paperclip vs Cabinet: the org chart, or the office",
     lead: "Paperclip is built to orchestrate AI agents: org charts, budgets, audit trails. Cabinet runs agents too, but gives them a knowledge base you own to read and write, with live apps, a terminal, and a place your team works together. One coordinates agents, the other gives them somewhere to think.",
     verdict: {
       chooseUs: [
@@ -551,17 +799,13 @@ export const COMPARISONS: Comparison[] = [
         "You do not need an authoring surface, apps, or a shared team workspace.",
       ],
     },
-    switcher: {
-      quote: "Paperclip ran our agents well, but their output had nowhere to live. Cabinet gave the agents a knowledge base they write to, so the work compounds instead of scattering.",
-      attribution: "Head of AI, scale-up",
-    },
     faqs: [
       { q: "Is Cabinet a Paperclip alternative?", a: "For teams that want agents working inside a knowledge base they own, yes. Cabinet runs agents and gives them files to read and write, plus a workspace your team shares. Paperclip is the better fit if your only need is granular agent orchestration on top of an existing knowledge system." },
       { q: "Does Cabinet orchestrate agents like Paperclip?", a: "Cabinet runs agents with personas and schedules. Paperclip's org-chart, budget, and audit controls are more granular today. Cabinet's wedge is the knowledge base and workspace the agents act in." },
       { q: "Can I self-host Cabinet?", a: "Yes. Cabinet runs in your own environment with your own model keys, so the agents and the knowledge they build stay in your control." },
       { q: "Is Cabinet open source?", a: "Yes. You can read every line, fork it, or run your own build." },
     ],
-    related: ["cabinet-vs-dust", "cabinet-vs-glean", "cabinet-vs-notion"],
+    related: ["cabinet-vs-gumloop", "cabinet-vs-dust", "cabinet-vs-notion"],
   },
 
   {
@@ -572,11 +816,11 @@ export const COMPARISONS: Comparison[] = [
     category: "AI notes",
     icon: Sparkles,
     oneLiner: "AI notes in the cloud, or a knowledge base you own with agents.",
-    title: "Mem vs Cabinet: AI Notes in the Cloud, or a KB You Own",
+    title: "Mem vs Cabinet: Your Second Brain, or Your Company's (2026)",
     metaDescription:
       "Mem is an AI note-taking app in the cloud. Cabinet keeps your whole knowledge base as files you own, with agents that act on them and a workspace your team shares. An honest comparison.",
-    h1: "Mem vs Cabinet: an honest comparison",
-    lead: "Mem is a fast, AI-first note app that organizes your notes in the cloud. Cabinet keeps your whole knowledge base as files you own, renders live apps alongside them, and runs agents that read and write your work. One captures notes, the other is a workspace you control.",
+    h1: "Mem vs Cabinet: your second brain, or your company's",
+    lead: "Mem organizes one person's notes with AI in Mem's cloud, and after its 2026 rework it does that with real polish. Cabinet answers a different question: where does the company's brain live? Its answer is files you own, on your infrastructure, with AI agents writing alongside your team and live dashboards rendered from what everyone knows.",
     verdict: {
       chooseUs: [
         "You want to own your knowledge as files, not store notes in another company's cloud.",
@@ -635,17 +879,13 @@ export const COMPARISONS: Comparison[] = [
         "You do not need a shared team workspace or self-hosting.",
       ],
     },
-    switcher: {
-      quote: "Mem was great for catching thoughts, but our team's knowledge needed a home we owned. Cabinet kept the capture habit and added files we control plus agents that maintain them.",
-      attribution: "Chief of Staff, startup",
-    },
     faqs: [
       { q: "Is Cabinet a Mem alternative?", a: "Yes, for teams that want to own their knowledge as files and have agents act on it. Mem is the better fit if you want a fast personal note app in the cloud with strong AI recall." },
       { q: "Can I import my Mem notes into Cabinet?", a: "Export your notes as Markdown or text and drop them into a Cabinet folder, where they become files you own and can version with git." },
       { q: "Does Cabinet work on mobile like Mem?", a: "Mem's mobile capture is more mature. Cabinet's focus is an owned, self-hosted workspace with agents and live apps." },
       { q: "Is Cabinet open source?", a: "Yes, and it is free to self-host." },
     ],
-    related: ["cabinet-vs-notion", "cabinet-vs-obsidian", "notion-alternatives"],
+    related: ["cabinet-vs-town", "cabinet-vs-notion", "cabinet-vs-obsidian"],
   },
 
   {
@@ -656,10 +896,10 @@ export const COMPARISONS: Comparison[] = [
     category: "Knowledge management",
     icon: BookOpen,
     oneLiner: "A verified card wiki in the cloud, or a KB you own with agents.",
-    title: "Guru vs Cabinet: A Verified Wiki, or Knowledge You Own",
+    title: "Guru vs Cabinet: Verified Cards, or the Source of Truth (2026)",
     metaDescription:
       "Guru is a cloud knowledge base with verified cards and a browser extension. Cabinet keeps your whole knowledge base as files you own, with agents that maintain it and a workspace your team shares. An honest comparison.",
-    h1: "Guru vs Cabinet: an honest comparison",
+    h1: "Guru vs Cabinet: the cards, or the source of truth",
     lead: "Guru keeps knowledge in verified cards in the cloud, surfaced through a browser extension and AI answers. Cabinet keeps your whole knowledge base as files you own, with agents that keep it current and a workspace your team works in. One delivers answers, the other is where the knowledge is authored and owned.",
     verdict: {
       chooseUs: [
@@ -719,10 +959,6 @@ export const COMPARISONS: Comparison[] = [
         "You want a managed cloud product and do not need self-hosting or agents that author docs.",
       ],
     },
-    switcher: {
-      quote: "Guru kept our answers verified, but the knowledge still lived in their cloud as cards. Cabinet gave us the source files we own, and agents that keep them current for us.",
-      attribution: "Head of Enablement, SaaS company",
-    },
     faqs: [
       { q: "Is Cabinet a Guru alternative?", a: "For teams that want to own and author their knowledge as files with agents maintaining it, yes. Guru is the better fit if your priority is verified answers delivered in a browser extension across your tools." },
       { q: "Does Cabinet deliver answers in other tools like Guru's extension?", a: "Guru's in-browser card delivery is its strength. Cabinet's focus is owning the knowledge base itself, with agents that author and refresh it and a workspace your team works in." },
@@ -740,10 +976,10 @@ export const COMPARISONS: Comparison[] = [
     category: "Docs and tables",
     icon: Table,
     oneLiner: "Cloud docs that act like apps, or a KB you own that runs them.",
-    title: "Coda vs Cabinet: Cloud Docs-as-Apps, or a KB You Own",
+    title: "Coda vs Cabinet: Docs as Apps, or a Brain That Renders Them (2026)",
     metaDescription:
       "Coda turns docs into apps with tables and Packs in the cloud. Cabinet keeps your whole knowledge base as files you own, visualizes live web apps, and runs agents. An honest comparison.",
-    h1: "Coda vs Cabinet: an honest comparison",
+    h1: "Coda vs Cabinet: docs that act like apps, or a brain that runs them",
     lead: "Coda blends documents, tables, and integrations into cloud docs that behave like apps. Cabinet keeps your whole knowledge base as files you own, visualizes live web apps and dashboards alongside your docs, and runs agents that act on them. Both go beyond static pages; the difference is ownership and what your AI can do.",
     verdict: {
       chooseUs: [
@@ -803,10 +1039,6 @@ export const COMPARISONS: Comparison[] = [
         "Self-hosting and bring-your-own-AI are not requirements.",
       ],
     },
-    switcher: {
-      quote: "Coda let us build doc-apps fast, but everything lived in their cloud. Cabinet gave us files we own with live apps rendered over them, and agents doing the upkeep.",
-      attribution: "Operations Lead, growth-stage company",
-    },
     faqs: [
       { q: "Is Cabinet a Coda alternative?", a: "Yes, for teams that want to own their knowledge as files, visualize live apps over it, and have agents act on it. Coda is the better fit if you want a cloud builder for interactive docs and relational tables." },
       { q: "Can Cabinet do tables and interactive views like Coda?", a: "Coda's relational tables and no-code building blocks are more mature. Cabinet renders live web apps and dashboards over files you own, and runs agents on them." },
@@ -824,10 +1056,10 @@ export const COMPARISONS: Comparison[] = [
     category: "Bundled enterprise AI",
     icon: Cpu,
     oneLiner: "AI bundled into Microsoft 365, or AI on a KB you own.",
-    title: "Microsoft Copilot vs Cabinet: Bundled AI, or a KB You Own",
+    title: "Microsoft Copilot vs Cabinet: AI in the Suite, or AI You Own (2026)",
     metaDescription:
       "Microsoft 365 Copilot adds AI across Office in Microsoft's cloud. Cabinet is a knowledge base you own and self-host, with bring-your-own-AI and agents that act on your files. An honest comparison.",
-    h1: "Microsoft Copilot vs Cabinet: an honest comparison",
+    h1: "Microsoft Copilot vs Cabinet: AI inside the suite, or AI you own",
     lead: "Microsoft 365 Copilot puts AI across Word, Excel, Outlook, and Teams, tied to your Microsoft Graph and cloud. Cabinet is a knowledge base you own and self-host, with bring-your-own-AI and agents that read and write your files. One is AI inside Microsoft's stack, the other is AI on infrastructure and knowledge you control.",
     verdict: {
       chooseUs: [
@@ -887,10 +1119,6 @@ export const COMPARISONS: Comparison[] = [
         "Self-hosting, file ownership, and multi-provider AI are not priorities.",
       ],
     },
-    switcher: {
-      quote: "Copilot was great inside Office, but we wanted an AI knowledge base we owned and could self-host. Cabinet gave us that, with our own model keys instead of one bundled provider.",
-      attribution: "IT Director, regulated industry",
-    },
     faqs: [
       { q: "Is Cabinet a Microsoft Copilot alternative?", a: "For teams that want to own and self-host an AI knowledge base with bring-your-own-AI, yes. Copilot is the better fit if your work lives inside Microsoft 365 and you want AI in those apps." },
       { q: "Can Cabinet use models other than the bundled one?", a: "Yes. Cabinet brings your own keys across providers, so you choose the models and pay for inference directly." },
@@ -908,10 +1136,10 @@ export const COMPARISONS: Comparison[] = [
     category: "Enterprise AI assistant",
     icon: MessageSquare,
     oneLiner: "A hosted chat assistant, or a KB you own that agents work in.",
-    title: "ChatGPT Enterprise vs Cabinet: Hosted Chat, or a KB You Own",
+    title: "ChatGPT Enterprise vs Cabinet: Chat, or a Brain You Keep (2026)",
     metaDescription:
       "ChatGPT Enterprise is a hosted assistant on one provider's models. Cabinet is a knowledge base you own and self-host, with bring-your-own-AI and agents that persist work to files. An honest comparison.",
-    h1: "ChatGPT Enterprise vs Cabinet: an honest comparison",
+    h1: "ChatGPT Enterprise vs Cabinet: answers that scroll away, or a brain that stays",
     lead: "ChatGPT Enterprise is a hosted assistant with strong models, admin controls, and your data kept out of training. Cabinet is a knowledge base you own and self-host, with bring-your-own-AI across providers and agents that write work to files you keep. One is a chat product, the other is a workspace you control.",
     verdict: {
       chooseUs: [
@@ -970,10 +1198,6 @@ export const COMPARISONS: Comparison[] = [
         "Chat is the primary interface and you do not need work to persist as files you own.",
         "Self-hosting and multi-provider AI are not requirements.",
       ],
-    },
-    switcher: {
-      quote: "ChatGPT Enterprise answered questions well, but nothing it produced stayed put. Cabinet made the answers into a knowledge base we own, with agents that keep writing to it.",
-      attribution: "VP Operations, mid-market company",
     },
     faqs: [
       { q: "Is Cabinet a ChatGPT Enterprise alternative?", a: "For teams that want an owned, self-hosted knowledge base with bring-your-own-AI and agents that persist work, yes. ChatGPT Enterprise is simpler if you only want managed chat on one provider's models." },
@@ -1179,6 +1403,54 @@ export type ThreeWay = {
 };
 
 export const THREEWAYS: ThreeWay[] = [
+  {
+    slug: "town-vs-gumloop-vs-cabinet",
+    kind: "three-way",
+    icon: Bot,
+    oneLiner: "The assistant, the automation, and the brain.",
+    title: "Town vs Gumloop vs Cabinet: Assistant, Automation, or Brain? (2026)",
+    metaDescription:
+      "Town ($15+/mo) puts an AI assistant in your inbox. Gumloop ($37/mo) runs agent workflows on credits. Cabinet is the company brain: an open-source, self-hosted knowledge base where agents work and dashboards render live. Compared honestly, August 2026.",
+    h1: "Town vs Gumloop vs Cabinet",
+    intro: "Three products, three theories of how AI should do your work. Town gives every person a Townie that clears the inbox. Gumloop turns processes into agent workflows that run on triggers. Cabinet gives the company a brain: an owned knowledge base where agents work and the results render as live dashboards. Here is how they compare, and when each one wins.",
+    contenders: [
+      { name: "Town", tagline: "A personal Townie for your inbox, calendar, and meetings." },
+      { name: "Gumloop", tagline: "No-code agent workflows across your SaaS stack." },
+      { name: "Cabinet", tagline: "The knowledge base your company owns, with agents and live apps." },
+    ],
+    rows: [
+      { feature: "A company knowledge base you own as files", cells: [false, false, true] },
+      { feature: "Personal inbox and calendar assistant", cells: [true, "partial", false] },
+      { feature: "No-code workflow canvas", cells: [false, true, false] },
+      { feature: "AI agents on schedules and triggers", cells: [true, true, true] },
+      { feature: "Human approval before agents act", cells: [true, true, true] },
+      { feature: "Work persists as documents and dashboards", cells: [false, "partial", true] },
+      { feature: "Knowledge rendered as live apps", cells: [false, "partial", true] },
+      { feature: "Bring your own AI keys at provider cost", cells: [false, "partial", true] },
+      { feature: "Self-hosted", cells: [false, "partial", true] },
+      { feature: "Open source", cells: [false, false, true] },
+      { feature: "Free to start", cells: ["partial", false, true] },
+      { feature: "Built for teams", cells: ["partial", true, true] },
+    ],
+    bestFor: [
+      { contender: "Town", who: "One person drowning in email and meetings. A Townie triages, preps, and drafts across the tools you already use, and earns autonomy one workflow at a time." },
+      { contender: "Gumloop", who: "An ops or GTM team automating processes at volume: enrichment, syncs, scraping, and routing on a no-code canvas, with managed enterprise controls." },
+      { contender: "Cabinet", who: "A company that wants its knowledge, its AI agents, and the live dashboards they render in one place it owns: open source, self-hosted, on its own AI keys." },
+    ],
+    verdictParas: [
+      "These three are less rivals than three theories of where AI belongs. Town says AI should sit beside a person. Gumloop says AI should sit inside a process. Cabinet says AI should sit inside the company's knowledge, because knowledge is the asset that outlasts both people and processes.",
+      "The practical test is what is left after a month. With Town: cleared inboxes and an assistant that knows you better, inside Town's cloud. With Gumloop: completed runs and logs, inside Gumloop's platform. With Cabinet: a knowledge base that got a month bigger, in documents, decisions, and live dashboards, on infrastructure you own.",
+      "They also stack. Plenty of teams will keep a Townie for personal triage or a Gumloop flow for pipeline plumbing. The question worth settling first is where the company's brain lives, and of the three, Cabinet is the only one you own.",
+    ],
+    faqs: [
+      { q: "What is the difference between Town, Gumloop, and Cabinet?", a: "Town is a personal AI assistant that triages email and calendars in Town's cloud. Gumloop is a no-code platform that runs AI agent workflows across your SaaS tools on a credit meter. Cabinet is a knowledge workspace your company owns: files on your infrastructure, AI agents working in them on schedules, and live dashboards rendered from the knowledge." },
+      { q: "Which is cheapest for a team?", a: "As of August 2026: Town starts at $15 per person per month with about 1,250 credits. Gumloop Pro is $37 per month with 20,000 credits, unlimited seats, and no free plan. Cabinet is open source and free to self-host, with AI billed at provider prices through your own keys." },
+      { q: "Can I use Town or Gumloop together with Cabinet?", a: "Yes, and some teams should. A Townie can keep clearing your personal inbox and a Gumloop flow can keep syncing your CRM while Cabinet holds the company knowledge base that people and agents build on. They compete only over where the durable knowledge ends up." },
+      { q: "Which should a small team pick first?", a: "Pick by bottleneck. If the founders are buried in email, Town helps today. If ops is drowning in copy-paste between tools, Gumloop. If the company keeps re-answering the same questions because knowledge lives in ten places, start with Cabinet: it is free to run and everything it accumulates stays yours." },
+    ],
+    related: ["cabinet-vs-town", "cabinet-vs-gumloop", "cabinet-vs-buzz"],
+  },
+
   {
     slug: "notion-vs-obsidian-vs-cabinet",
     kind: "three-way",

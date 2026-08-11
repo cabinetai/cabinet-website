@@ -5,55 +5,70 @@ import {
   X,
   Minus,
   ArrowRight,
-  FileText,
-  Cpu,
-  ShieldCheck,
+  ArrowUpRight,
   Star,
+  Brain,
+  LayoutDashboard,
+  Users,
+  Calendar,
+  Workflow,
+  MessageSquare,
+  FileText,
+  Search,
 } from "lucide-react";
 import { SiteNavbar } from "@/components/site-navbar";
 import { brandify } from "@/components/brand-word";
 import { WoodIcon } from "@/components/wood-icon";
 import { GITHUB_URL } from "@/lib/site-config";
-import { COMPARISONS, ROUNDUPS, THREEWAYS, MIGRATIONS, type Cell } from "@/lib/compare";
+import {
+  COMPARISONS,
+  ROUNDUPS,
+  THREEWAYS,
+  MIGRATIONS,
+  COMPARE_ASOF,
+  type Cell,
+} from "@/lib/compare";
 
 const SITE = "https://runcabinet.com";
 
 export const metadata: Metadata = {
-  title: "Compare Cabinet: Honest Head-to-Heads vs Notion, Obsidian, Glean & Dust",
+  title: "Compare Cabinet vs Notion, Glean, Town, Gumloop & Buzz (2026)",
   description:
-    "How Cabinet compares to Notion, Obsidian, Glean, and Dust. The only knowledge base where you own your whole KB and files, visualize live apps and dashboards, and have your team and AI agents work in it. Open source, self-hosted.",
+    "How Cabinet compares with Notion, Glean, Dust, Town, Gumloop, and Jack Dorsey's Buzz in 2026. One is the company brain you own: knowledge as files, AI agents on schedules, live dashboards, open source and self-hosted. Honest head-to-heads, including the rows competitors win.",
   alternates: { canonical: `${SITE}/compare` },
   openGraph: {
-    title: "Compare Cabinet vs Notion, Obsidian, Glean & Dust",
+    title: "Compare Cabinet vs Notion, Glean, Town, Gumloop & Buzz (2026)",
     description:
-      "Honest, side-by-side comparisons. Cabinet is the only one of these you actually own: your whole KB and files, live apps, AI agents, self-hosted.",
+      "Honest, side-by-side comparisons. Assistants, automations, wikis, search, and agent chat each hold a piece of your company's brain. Cabinet is the brain itself, and the only one you own.",
     type: "website",
     url: `${SITE}/compare`,
     images: [{ url: `${SITE}/og.png`, width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Compare Cabinet vs Notion, Obsidian, Glean & Dust",
+    title: "Compare Cabinet vs Notion, Glean, Town, Gumloop & Buzz (2026)",
     description:
-      "Honest, side-by-side comparisons. Cabinet is the only one of these you actually own.",
+      "Honest, side-by-side comparisons. Cabinet is the company brain you own: knowledge as files, agents on schedules, live dashboards.",
     images: [`${SITE}/og.png`],
   },
 };
 
-// Curated cross-competitor view for the "at a glance" matrix. Per-competitor
-// detail (and the rows where a competitor wins) lives on each spoke page.
-const COLUMNS = ["Cabinet", "Notion", "Obsidian", "Glean", "Dust"] as const;
+// Curated cross-competitor view for the "at a glance" matrix: the 2026 field,
+// not just the wiki generation. Per-competitor detail (and more rows where a
+// competitor wins) lives on each spoke page.
+const COLUMNS = ["Cabinet", "Notion", "Glean", "Town", "Gumloop", "Buzz"] as const;
 const MATRIX: { feature: string; cells: Cell[] }[] = [
-  { feature: "Markdown files on disk you own", cells: [true, false, true, false, false] },
-  { feature: "Self-hosted", cells: [true, false, true, "partial", "partial"] },
-  { feature: "AI agents that act on your files", cells: [true, "partial", "partial", true, true] },
-  { feature: "Scheduled agent routines", cells: [true, false, false, "partial", "partial"] },
-  { feature: "Bring your own AI keys", cells: [true, false, "partial", "partial", true] },
-  { feature: "Visualize web apps and dashboards", cells: [true, false, false, false, false] },
-  { feature: "Web terminal", cells: [true, false, false, false, false] },
-  { feature: "Authoring / knowledge editor", cells: [true, true, true, false, false] },
-  { feature: "Open source", cells: [true, false, false, false, "partial"] },
-  { feature: "No vendor lock-in", cells: [true, false, true, false, false] },
+  { feature: "One home for company knowledge and files", cells: [true, true, false, false, "partial", false] },
+  { feature: "A place people write and read knowledge", cells: [true, true, false, false, false, "partial"] },
+  { feature: "Knowledge rendered as live apps and dashboards", cells: [true, "partial", false, false, "partial", false] },
+  { feature: "AI agents that work on schedules", cells: [true, true, true, true, true, "partial"] },
+  { feature: "Agent work persists as files you own", cells: [true, false, false, false, false, "partial"] },
+  { feature: "Self-hosted on your infrastructure", cells: [true, false, "partial", false, "partial", true] },
+  { feature: "Your AI keys at provider cost", cells: [true, false, false, false, "partial", true] },
+  { feature: "Open source", cells: [true, false, false, false, false, true] },
+  { feature: "Personal inbox and calendar assistant", cells: [false, false, false, true, "partial", false] },
+  { feature: "Automation across 100+ SaaS apps", cells: ["partial", "partial", "partial", "partial", true, false] },
+  { feature: "Search across your existing tools", cells: ["partial", "partial", true, "partial", true, false] },
 ];
 
 function MatrixIcon({ value }: { value: Cell }) {
@@ -79,21 +94,61 @@ function MatrixIcon({ value }: { value: Cell }) {
   );
 }
 
-const WEDGE = [
+// The 2026 landscape, mapped honestly. Each card concedes what the category is
+// good at, names its limit, and routes to the head-to-head.
+const FIELD = [
+  {
+    icon: Calendar,
+    category: "Personal AI assistants",
+    who: "Town",
+    body: "A Townie triages your inbox and preps your meetings, well. The work lands in your SaaS accounts, and what it learns stays in Town's cloud.",
+    href: "/compare/cabinet-vs-town",
+  },
+  {
+    icon: Workflow,
+    category: "Workflow automation",
+    who: "Gumloop",
+    body: "Agents run no-code flows across a hundred tools. Knowledge is a paid index that feeds them, edited somewhere else.",
+    href: "/compare/cabinet-vs-gumloop",
+  },
+  {
+    icon: MessageSquare,
+    category: "Agent team chat",
+    who: "Buzz",
+    body: "Jack Dorsey's open-source room where people and agents talk. The shared context is the scroll.",
+    href: "/compare/cabinet-vs-buzz",
+  },
   {
     icon: FileText,
-    title: "Your whole KB lives on disk",
-    body: "Your whole knowledge base lives in a folder you own: files, not locked rows, with live apps and dashboards rendered alongside. Grep it, git it, back it up. No export, no lock-in, no vendor holding your knowledge hostage.",
+    category: "Wikis and docs",
+    who: "Notion, Coda",
+    body: "The pages have a home, and since 2026, agents too. The home is their cloud, in their format.",
+    href: "/compare/cabinet-vs-notion",
   },
   {
-    icon: Cpu,
-    title: "Bring your own AI",
-    body: "Cabinet routes to the model accounts you already pay for. No bundled inference marked up on top, no new AI vendor through procurement.",
+    icon: Search,
+    category: "Enterprise search",
+    who: "Glean, Dust",
+    body: "Finds and answers across everything you already run. Authors and holds nothing of its own.",
+    href: "/compare/cabinet-vs-glean",
+  },
+] as const;
+
+const WEDGE = [
+  {
+    icon: Brain,
+    title: "One brain, owned",
+    body: "Your whole knowledge base and files live in one place, on your infrastructure, as files your IT can back up like anything else. Subscriptions end. The brain stays.",
   },
   {
-    icon: ShieldCheck,
-    title: "Self-hosted by default",
-    body: "Run it on your machine or your cloud. Your data never leaves your infrastructure: sovereignty first, with SSO and audit on the enterprise track.",
+    icon: LayoutDashboard,
+    title: "Knowledge that shows itself as software",
+    body: "Cabinet renders your knowledge as live dashboards and working apps, generated from the files and always current. A generative interface instead of a thousand static pages.",
+  },
+  {
+    icon: Users,
+    title: "People and agents, same rooms",
+    body: "Your team and its AI specialists read and write the same knowledge. Agents run on schedules, you approve what ships, and inference runs on the model accounts you already pay for.",
   },
 ];
 
@@ -112,35 +167,93 @@ export default function CompareHubPage() {
           }}
         />
         <div className="relative z-10 mx-auto max-w-5xl px-6 py-16 md:py-24">
-          <p className="section-label mb-3">Compare</p>
-          <h1 className="max-w-3xl font-display text-4xl leading-[1.07] tracking-tight text-text-primary sm:text-5xl">
-            Not another note-taking app
-          </h1>
-          <p className="mt-5 max-w-2xl font-body-serif text-lg leading-relaxed text-text-secondary">Notion is a cloud wiki. Obsidian is a single-player editor. Glean searches your tools. Dust connects assistants to them. <span className="font-brand italic">Cabinet</span>{" "}is the only one where you own your whole knowledge base and files, visualize live apps and dashboards, and have your team and AI agents work in it. Here is how they stack up, honestly.
-                                  </p>
+          <div className="grid items-center gap-8 md:grid-cols-[1fr_auto]">
+            <div>
+              <p className="section-label mb-3">Compare</p>
+              <h1 className="max-w-3xl font-display text-4xl leading-[1.07] tracking-tight text-text-primary sm:text-5xl">
+                Where should your company&apos;s brain live?
+              </h1>
+              <p className="mt-5 max-w-2xl font-body-serif text-lg leading-relaxed text-text-secondary">
+                Every tool on this page holds a piece of it. Town remembers how you work.
+                Gumloop runs your workflows. Notion keeps the pages, Glean keeps the index,
+                Buzz keeps the conversation. <span className="font-brand italic">Cabinet</span>{" "}
+                is the brain itself: your whole knowledge base and files in one place you own,
+                worked by your team and its AI agents, rendered as live apps and dashboards.
+                The comparisons below are honest, including where the others win.
+              </p>
+              <p className="mt-5 font-code text-xs text-text-tertiary">
+                Every page reviewed {COMPARE_ASOF} against public pricing and docs.
+              </p>
+            </div>
+            <WoodIcon icon={Brain} className="hidden h-40 w-40 md:block" />
+          </div>
+        </div>
+      </section>
+      {/* ─── The field, mapped ─── */}
+      <section className="border-b border-border py-20">
+        <div className="mx-auto max-w-5xl px-6">
+          <p className="section-label mb-3">The map</p>
+          <h2 className="font-display text-3xl tracking-tight text-text-primary md:text-4xl">
+            Every category holds a piece
+          </h2>
+          <p className="mt-4 max-w-2xl font-body-serif leading-relaxed text-text-secondary">
+            Assistants hold your habits. Automations hold your workflows. Wikis hold pages,
+            search holds an index, agent chat holds the scroll. All useful, and none of them
+            leaves your company holding the knowledge. That is the job{" "}
+            <span className="font-brand italic">Cabinet</span> was built for.
+          </p>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {FIELD.map((f) => (
+              <Link key={f.category} href={f.href} className="group flex flex-col soft-card p-6">
+                <div className="flex items-start justify-between gap-3">
+                  <WoodIcon icon={f.icon} className="h-11 w-11" />
+                  <ArrowUpRight className="h-4 w-4 shrink-0 text-text-muted transition-colors group-hover:text-accent" />
+                </div>
+                <h3 className="mt-4 font-display text-lg text-text-primary">{f.category}</h3>
+                <p className="font-code text-[11px] uppercase tracking-wider text-text-tertiary">
+                  {f.who}
+                </p>
+                <p className="mt-2 font-body-serif text-sm leading-relaxed text-text-secondary">
+                  {f.body}
+                </p>
+              </Link>
+            ))}
+            <div className="flex flex-col rounded-2xl border border-accent-bg bg-accent-bg-subtle p-6">
+              <WoodIcon icon={Brain} className="h-11 w-11" />
+              <h3 className="mt-4 font-display text-lg text-accent">The brain itself</h3>
+              <p className="font-code text-[11px] uppercase tracking-wider text-text-tertiary">
+                Cabinet
+              </p>
+              <p className="mt-2 font-body-serif text-sm leading-relaxed text-text-secondary">
+                Knowledge, files, agents, and the live apps they render, in one place your
+                company owns. That is the whole product.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       {/* ─── Master matrix ─── */}
-      <section className="border-b border-border py-20">
+      <section className="border-b border-border bg-bg-warm py-20">
         <div className="mx-auto max-w-5xl px-6">
           <p className="section-label mb-3">At a glance</p>
           <h2 className="font-display text-3xl tracking-tight text-text-primary md:text-4xl">
-            Cabinet{" "}vs the field
-                                  </h2>
+            The 2026 field, side by side
+          </h2>
           <p className="mt-4 max-w-2xl font-body-serif leading-relaxed text-text-secondary">
-            The features that define the category. Open any head-to-head below for the full picture, including where each competitor comes out ahead.
+            The capabilities that decide the choice, with the rows where a competitor is
+            ahead left in on purpose. Open any head-to-head below for the full picture.
           </p>
-          <p className="mt-5 inline-flex items-center gap-2 font-code text-[11px] uppercase tracking-[0.12em] text-text-tertiary md:hidden">
+          <p className="mt-5 inline-flex items-center gap-2 font-code text-[11px] uppercase tracking-[0.12em] text-text-tertiary lg:hidden">
             <span aria-hidden className="text-accent">↔</span>
-            Swipe to compare all competitors
+            Swipe to compare all six
           </p>
           <div className="mt-8 overflow-hidden rounded-2xl bg-bg-card shadow-[0_8px_30px_-14px_rgba(150,108,68,0.32)] ring-1 ring-[rgba(59,47,47,0.05)]">
             <div className="compare-matrix-scroll overflow-x-auto" tabIndex={0} aria-label="Comparison matrix. Swipe horizontally to see all competitors.">
-              <table className="w-full min-w-[44rem] text-sm">
+              <table className="w-full min-w-[52rem] text-sm">
                 <thead>
                   <tr className="border-b border-border-dark">
                     <th className="sticky left-0 bg-bg-card px-5 py-4 text-left font-medium text-text-secondary">
-                      Feature
+                      Capability
                     </th>
                     {COLUMNS.map((col) => (
                       <th
@@ -185,13 +298,13 @@ export default function CompareHubPage() {
               <span className="inline-flex items-center gap-1.5">
                 <X className="h-3.5 w-3.5 text-text-muted" aria-hidden /> Not included
               </span>
-              <span className="ml-auto">Reflects public information as of May 2026.</span>
+              <span className="ml-auto">Reflects public information as of {COMPARE_ASOF}.</span>
             </div>
           </div>
         </div>
       </section>
       {/* ─── Head-to-head spokes ─── */}
-      <section className="border-b border-border bg-bg-warm py-20">
+      <section className="border-b border-border py-20">
         <div className="mx-auto max-w-5xl px-6">
           <p className="section-label mb-3">Head to head</p>
           <h2 className="font-display text-3xl tracking-tight text-text-primary md:text-4xl">
@@ -226,33 +339,6 @@ export default function CompareHubPage() {
           </div>
         </div>
       </section>
-      {/* ─── Round-ups ─── */}
-      <section className="border-b border-border py-20">
-        <div className="mx-auto max-w-5xl px-6">
-          <p className="section-label mb-3">Shortlists</p>
-          <h2 className="font-display text-3xl tracking-tight text-text-primary md:text-4xl">
-            Alternatives, ranked
-          </h2>
-          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {ROUNDUPS.map((r) => (
-              <Link
-                key={r.slug}
-                href={`/compare/${r.slug}`}
-                className="group flex items-center gap-3 soft-card p-5"
-              >
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg">
-                  <WoodIcon icon={r.icon} className="h-9 w-9" />
-                </div>
-                <div className="min-w-0">
-                  <div className="font-display text-text-primary">{r.competitor} alternatives</div>
-                  <div className="font-code text-xs text-text-tertiary">{brandify(r.oneLiner)}</div>
-                </div>
-                <ArrowRight className="ml-auto h-4 w-4 shrink-0 text-text-muted transition-colors group-hover:text-accent" />
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
       {/* ─── Three-way comparisons ─── */}
       <section className="border-b border-border bg-bg-warm py-20">
         <div className="mx-auto max-w-5xl px-6">
@@ -282,15 +368,43 @@ export default function CompareHubPage() {
           </div>
         </div>
       </section>
-      {/* ─── Migration guides ─── */}
+      {/* ─── Round-ups ─── */}
       <section className="border-b border-border py-20">
+        <div className="mx-auto max-w-5xl px-6">
+          <p className="section-label mb-3">Shortlists</p>
+          <h2 className="font-display text-3xl tracking-tight text-text-primary md:text-4xl">
+            Alternatives, ranked
+          </h2>
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {ROUNDUPS.map((r) => (
+              <Link
+                key={r.slug}
+                href={`/compare/${r.slug}`}
+                className="group flex items-center gap-3 soft-card p-5"
+              >
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg">
+                  <WoodIcon icon={r.icon} className="h-9 w-9" />
+                </div>
+                <div className="min-w-0">
+                  <div className="font-display text-text-primary">{r.competitor} alternatives</div>
+                  <div className="font-code text-xs text-text-tertiary">{brandify(r.oneLiner)}</div>
+                </div>
+                <ArrowRight className="ml-auto h-4 w-4 shrink-0 text-text-muted transition-colors group-hover:text-accent" />
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* ─── Migration guides ─── */}
+      <section className="border-b border-border bg-bg-warm py-20">
         <div className="mx-auto max-w-5xl px-6">
           <p className="section-label mb-3">Switching</p>
           <h2 className="font-display text-3xl tracking-tight text-text-primary md:text-4xl">
             Migration guides
           </h2>
           <p className="mt-4 max-w-2xl font-body-serif leading-relaxed text-text-secondary">
-            Moving from another tool? These walk you through it, end to end, so you keep your work and end up owning it.
+            Moving from another tool? These walk you through it, end to end, so you keep your
+            work and end up owning it.
           </p>
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
             {MIGRATIONS.map((m) => (
@@ -313,11 +427,11 @@ export default function CompareHubPage() {
         </div>
       </section>
       {/* ─── The wedge ─── */}
-      <section className="border-b border-border bg-bg-warm py-20">
+      <section className="border-b border-border py-20">
         <div className="mx-auto max-w-5xl px-6">
           <p className="section-label mb-3">Why Cabinet</p>
           <h2 className="max-w-2xl font-display text-3xl tracking-tight text-text-primary md:text-4xl">
-            The only one of these you actually own
+            Built to be the brain, and the only one you own
           </h2>
           <div className="mt-10 grid gap-4 md:grid-cols-3">
             {WEDGE.map((w) => (

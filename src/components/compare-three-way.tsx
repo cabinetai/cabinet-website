@@ -2,8 +2,9 @@ import Link from "next/link";
 import { ArrowRight, Check, X, Minus, Star, ChevronDown } from "lucide-react";
 import { SiteNavbar } from "@/components/site-navbar";
 import { brandify } from "@/components/brand-word";
+import { WoodIcon } from "@/components/wood-icon";
 import { GITHUB_URL } from "@/lib/site-config";
-import { compareLabel, type Cell, type ThreeWay } from "@/lib/compare";
+import { compareLabel, COMPARE_ASOF, type Cell, type ThreeWay } from "@/lib/compare";
 
 function CellIcon({ value }: { value: Cell }) {
   if (value === true)
@@ -54,12 +55,17 @@ export function CompareThreeWay({ data }: { data: ThreeWay }) {
               {brandify(data.contenders.map((c) => c.name).join(" vs "))}
             </span>
           </nav>
-          <h1 className="mt-5 font-display text-4xl leading-[1.07] tracking-tight text-text-primary sm:text-5xl">
-            {data.h1}
-          </h1>
-          <p className="mt-5 max-w-2xl font-body-serif text-lg leading-relaxed text-text-secondary">
-            {brandify(data.intro)}
-          </p>
+          <div className="mt-5 grid items-start gap-8 md:grid-cols-[1fr_auto]">
+            <div>
+              <h1 className="font-display text-4xl leading-[1.07] tracking-tight text-text-primary sm:text-5xl">
+                {data.h1}
+              </h1>
+              <p className="mt-5 max-w-2xl font-body-serif text-lg leading-relaxed text-text-secondary">
+                {brandify(data.intro)}
+              </p>
+            </div>
+            <WoodIcon icon={data.icon} className="hidden h-24 w-24 md:block" />
+          </div>
           <div className="mt-9 grid gap-3 sm:grid-cols-3">
             {data.contenders.map((c, i) => (
               <div
@@ -143,7 +149,7 @@ export function CompareThreeWay({ data }: { data: ThreeWay }) {
               <span className="inline-flex items-center gap-1.5">
                 <X className="h-3.5 w-3.5 text-text-muted" aria-hidden /> Not included
               </span>
-              <span className="ml-auto">Reflects public information as of May 2026.</span>
+              <span className="ml-auto">Reflects public information as of {COMPARE_ASOF}.</span>
             </div>
           </div>
         </div>
