@@ -254,9 +254,11 @@ function CabinetDrawer({ label, open }: { label: string; open: boolean }) {
   );
 }
 
+// holdOpen: a drawer index keeps that drawer open, -1 holds every drawer
+// shut, null lets the drawers cycle on their own.
 function AnimatedCabinet({ holdOpen = null }: { holdOpen?: number | null }) {
   const prefersReduced = useReducedMotion();
-  const [active, setActive] = useState(0);
+  const [active, setActive] = useState(holdOpen ?? 0);
   const body = useAnimationControls();
 
   useEffect(() => {
@@ -1017,9 +1019,15 @@ export function IntegrationScene() {
   // Hold whichever drawer is currently receiving the column open: Knowledge
   // while the tile cloud pours in and through Files/Dashboards, AI team for
   // agents, Tasks for tasks — otherwise the drawers resume cycling.
-  const [drawerHold, setDrawerHold] = useState<number | null>(null);
+  const [drawerHold, setDrawerHold] = useState<number | null>(-1);
   useMotionValueEvent(sceneProgress, "change", (v) => {
-    if (v > 0.06 && v < COLUMN_START - 0.02) {
+    // The cabinet enters with every drawer shut; Knowledge springs open
+    // only once the cloud is visibly being pulled (tiles move from 0.08).
+    if (v < 0.1) {
+      setDrawerHold(-1);
+      return;
+    }
+    if (v < COLUMN_START - 0.02) {
       setDrawerHold(0);
       return;
     }
