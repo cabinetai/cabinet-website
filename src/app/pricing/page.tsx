@@ -273,19 +273,19 @@ export default function PricingPage() {
         </div>
       </section>
 
-      <section id="plans" className="scroll-mt-24 px-5 py-24 sm:px-6 sm:py-28 lg:px-8">
+      <section id="plans" className="px-5 py-8 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-4xl text-center">
             <p className="section-label">Choose how Cabinet runs</p>
-            <h2 className="mt-5 font-section text-[clamp(2.7rem,5vw,4.8rem)] leading-[0.98] text-text-primary">
+            <h2 className="mt-3 font-section text-[clamp(1.7rem,2.4vw,2.2rem)] leading-[1.02] text-text-primary">
               Start with control. Add operations when you need them.
             </h2>
-            <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-text-secondary">
+            <p className="mx-auto mt-2 text-sm leading-relaxed text-text-secondary">
               Every path keeps the complete Cabinet product. The price changes with hosting, backup, support, and organizational requirements.
             </p>
           </div>
 
-          <div className="mt-14">
+          <div className="mt-6">
             <PricingInteractive />
           </div>
         </div>

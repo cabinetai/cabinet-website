@@ -43,11 +43,11 @@ export function PricingInteractive() {
 
   return (
     <>
-      <div className="mb-12 flex justify-center">
+      <div className="mb-5 flex justify-center">
         <PricingBillingToggle value={billing} onChange={handleBillingChange} />
       </div>
 
-      <fieldset className="grid grid-cols-1 items-stretch gap-5 lg:grid-cols-2">
+      <fieldset className="grid grid-cols-1 items-stretch gap-5 md:grid-cols-2 xl:grid-cols-4">
         <legend className="sr-only">Choose a Cabinet plan</legend>
         <PricingTierCard
           selectionId="tier-self-hosted"
@@ -184,35 +184,26 @@ export function PricingInteractive() {
         />
       </fieldset>
 
-      <div className="mx-auto mt-12 max-w-3xl">
-        <div className="home-product-surface rounded-[24px] bg-green-bg-subtle px-6 py-5 md:px-7 md:py-6">
-          <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between md:gap-6">
-            <div className="flex items-start gap-3">
-              <div className="shrink-0 inline-flex h-9 w-9 items-center justify-center rounded-lg">
-                <WoodIcon icon={Users} className="h-8 w-8" />
-              </div>
-              <div>
-                <h3 className="mb-0.5 font-section text-lg text-text-primary">
-                  Working with a team?
-                </h3>
-                <p className="text-sm text-text-secondary leading-relaxed">
-                  Shared workspaces are coming. Join early access and we will
-                  prioritize your team when multi-seat ships.
-                </p>
-              </div>
-            </div>
-            <button
-              type="button"
-              onClick={() => {
-                trackEvent("pricing_team_early_click");
-                openModal("team-early");
-              }}
-              className="ent-btn-secondary shrink-0 justify-center px-4 py-2 text-sm text-green-warm"
-            >
-              Join Team early access
-              <ArrowRight className="h-3.5 w-3.5" />
-            </button>
-          </div>
+      <div className="mx-auto mt-5 max-w-3xl">
+        <div className="home-product-surface flex flex-col items-center gap-3 rounded-full bg-green-bg-subtle px-6 py-2.5 sm:flex-row sm:justify-center">
+          <p className="flex items-center gap-2.5 text-sm text-text-secondary">
+            <WoodIcon icon={Users} className="h-6 w-6 shrink-0" />
+            <span>
+              <span className="font-section text-text-primary">Working with a team?</span>{" "}
+              Shared workspaces are coming.
+            </span>
+          </p>
+          <button
+            type="button"
+            onClick={() => {
+              trackEvent("pricing_team_early_click");
+              openModal("team-early");
+            }}
+            className="ent-btn-secondary shrink-0 justify-center px-4 py-1.5 text-sm text-green-warm"
+          >
+            Join Team early access
+            <ArrowRight className="h-3.5 w-3.5" />
+          </button>
         </div>
       </div>
 
