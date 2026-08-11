@@ -9,15 +9,14 @@ import {
   type RefObject,
 } from "react";
 import {
-  Bot,
+  CalendarClock,
   FileCode,
   FileSpreadsheet,
   FileText,
-  FolderOpen,
-  LayoutDashboard,
-  ListChecks,
+  Inbox,
   PenTool,
   Presentation,
+  Radar,
   type LucideIcon,
 } from "lucide-react";
 import {
@@ -406,7 +405,7 @@ function FloatingTile({
 }
 
 type LaneItem =
-  | { kind: "label"; text: string; icon: LucideIcon }
+  | { kind: "label"; text: string }
   | { kind: "file"; name: string; color: string }
   | {
       kind: "dash";
@@ -420,57 +419,78 @@ type LaneItem =
       offsetX: number;
       offsetY: number;
     }
-  | { kind: "agent"; name: string; logo: string }
-  | { kind: "task"; name: string };
+  | { kind: "agent"; name: string; logo: string; accent: string }
+  | { kind: "task"; name: string; meta: string; icon: LucideIcon; accent: string };
 
 // Each category's label + sample items queue through ONE shared reading spot
 // beside the cabinet — a single column, not four clusters scattered across
 // the screen — then peel off into the drawer that actually holds them:
 // Files and Dashboards both live in Knowledge, AI agents in AI team, Tasks
 // in Tasks.
-const CATEGORIES: { text: string; icon: LucideIcon; drawer: number; items: LaneItem[] }[] = [
+const CATEGORIES: { text: string; drawer: number; scatter?: boolean; items: LaneItem[] }[] = [
   {
     text: "Files",
-    icon: FolderOpen,
     drawer: 0,
+    // Piled like the opening tile cloud, not stacked in a straight line.
+    scatter: true,
     items: [
-      { kind: "file", name: "roadmap.md", color: "#8B5E3C" },
-      { kind: "file", name: "spec.md", color: "#5A7A4F" },
-      { kind: "file", name: "notes.md", color: "#3B6FB0" },
-      { kind: "file", name: "budget.xlsx", color: "#1E8E5A" },
-      { kind: "file", name: "deck.pdf", color: "#C0392B" },
+      // Motif palette — terracotta, amber, gold, leaf, teal, sky.
+      { kind: "file", name: "roadmap.md", color: "#E2725B" },
+      { kind: "file", name: "spec.md", color: "#E08A3C" },
+      { kind: "file", name: "notes.md", color: "#E0B23C" },
+      { kind: "file", name: "budget.xlsx", color: "#6FA45A" },
+      { kind: "file", name: "deck.pdf", color: "#4FA39A" },
+      { kind: "file", name: "brief.docx", color: "#5B8FD6" },
+      { kind: "file", name: "metrics.sql", color: "#E2725B" },
+      { kind: "file", name: "design.fig", color: "#E08A3C" },
+      { kind: "file", name: "pitch.key", color: "#E0B23C" },
+      { kind: "file", name: "okrs.md", color: "#6FA45A" },
     ],
   },
   {
     text: "Dashboards",
-    icon: LayoutDashboard,
     drawer: 0,
     items: [
-      { kind: "dash", title: "Pipeline", value: "$482K", trend: 12, accent: "#3B6FB0", bars: [45, 60, 72, 55, 80, 68], chartStyle: "bars", rotate: -5, offsetX: -10, offsetY: 4 },
-      { kind: "dash", title: "Usage", value: "94%", trend: 6, accent: "#5A7A4F", bars: [60, 85, 45, 92, 65, 78], chartStyle: "line", rotate: 4, offsetX: 12, offsetY: -8 },
-      { kind: "dash", title: "Open tickets", value: "23", trend: -8, accent: "#C0392B", bars: [70, 55, 62, 40, 48, 35], chartStyle: "area", rotate: -3, offsetX: -6, offsetY: 12 },
+      { kind: "dash", title: "Pipeline", value: "$482K", trend: 12, accent: "#5B8FD6", bars: [45, 60, 72, 55, 80, 68], chartStyle: "bars", rotate: -5, offsetX: -10, offsetY: 4 },
+      { kind: "dash", title: "Usage", value: "94%", trend: 6, accent: "#6FA45A", bars: [60, 85, 45, 92, 65, 78], chartStyle: "line", rotate: 4, offsetX: 12, offsetY: -8 },
+      { kind: "dash", title: "Open tickets", value: "23", trend: -8, accent: "#E2725B", bars: [70, 55, 62, 40, 48, 35], chartStyle: "area", rotate: -3, offsetX: -6, offsetY: 12 },
     ],
   },
   {
     text: "AI agents",
-    icon: Bot,
     drawer: 1,
     items: [
-      { kind: "agent", name: "SDR", logo: PROVIDERS[0] },
-      { kind: "agent", name: "Marketing Expert", logo: PROVIDERS[1] },
-      { kind: "agent", name: "Researcher", logo: PROVIDERS[2] },
+      { kind: "agent", name: "SDR", logo: PROVIDERS[0], accent: "#5B8FD6" },
+      { kind: "agent", name: "Marketing Expert", logo: PROVIDERS[1], accent: "#E2725B" },
+      { kind: "agent", name: "Researcher", logo: PROVIDERS[2], accent: "#4FA39A" },
     ],
   },
   {
     text: "Tasks",
-    icon: ListChecks,
     drawer: 2,
     items: [
-      { kind: "task", name: "Weekly report" },
-      { kind: "task", name: "Scout Reddit" },
-      { kind: "task", name: "Nightly backup" },
+      { kind: "task", name: "Board brief", meta: "Ready every Monday, 7:00", icon: CalendarClock, accent: "#E0B23C" },
+      { kind: "task", name: "Competitor watch", meta: "Scans the market daily", icon: Radar, accent: "#E2725B" },
+      { kind: "task", name: "Inbox triage", meta: "Sorted before you wake", icon: Inbox, accent: "#4FA39A" },
     ],
   },
+];
+
+// Hand-placed slots for the scattered Files pile — a loose 4/3/3 grid with
+// jitter and tilt, deterministic so server and client render identically.
+// Spacing is sized to a page + its name (~100×95px), so every file stays
+// readable, and the pile spreads rightward into space that sat empty.
+const FILE_SLOTS = [
+  { x: -60, y: -122, r: -8 },
+  { x: 55, y: -100, r: 6 },
+  { x: 175, y: -125, r: -4 },
+  { x: 295, y: -98, r: 9 },
+  { x: -5, y: 18, r: 7 },
+  { x: 115, y: 38, r: -9 },
+  { x: 240, y: 12, r: 4 },
+  { x: -45, y: 155, r: -6 },
+  { x: 80, y: 172, r: 8 },
+  { x: 205, y: 150, r: -5 },
 ];
 
 // Row spacing, sized to each item kind's actual rendered height (dashboard
@@ -480,7 +500,7 @@ const ROW_HEIGHT_BY_KIND: Partial<Record<LaneItem["kind"], number>> = {
   file: 96,
   dash: 168,
   agent: 78,
-  task: 72,
+  task: 88,
 };
 const LABEL_ROW_HEIGHT = 78;
 // Where the column sits while it's being read, before diving toward x=0.
@@ -488,21 +508,33 @@ const COLUMN_X = 260;
 // Consecutive drawers are 58px apart (drawer height 48 + 5px margin each
 // side) — reused from CabinetDrawer's own layout, see DRAWER_MOUTH_Y above.
 const DRAWER_GAP_Y = 58;
-const CATEGORY_SPAN = 0.12;
-const COLUMN_START = 0.3;
-// Phase 1 — gather: items slide in one after another, staggered by this much.
-const ROW_ENTER_STEP = 0.012;
-const ENTER_DUR = 0.035;
+// Starts once the "Cabinet pulls it all into one place" caption has fully
+// settled in (opaque by 0.38) — the column used to start at 0.28, arriving
+// while that caption was still fading in.
+const COLUMN_START = 0.42;
+// A small gap held open between one category finishing and the next
+// starting — categories now run back-to-back by actual duration, not a
+// fixed slot, since Files has far more items than the others.
+const CATEGORY_GAP = 0.012;
+// Phase 1 — gather: items slide in one after another, staggered by this
+// much. Files (many more items, scattered rather than listed) uses a
+// tighter stagger so a big pile doesn't take forever to arrive.
+const ROW_ENTER_STEP = 0.007;
+const SCATTER_ENTER_STEP = 0.0035;
+const ENTER_DUR = 0.022;
 // A short beat after the LAST item lands, so the full group is visibly
 // assembled before any of them moves — pull them all in, then send them in.
-const GROUP_HOLD = 0.015;
+const GROUP_HOLD = 0.008;
 // Phase 2 — enter: once gathered, items dive into the drawer as a group.
-const DIVE_STEP = 0.008;
-const DIVE_DUR = 0.035;
+const DIVE_STEP = 0.004;
+const SCATTER_DIVE_STEP = 0.002;
+const DIVE_DUR = 0.022;
 
 type ColumnRow = {
   item: LaneItem;
+  rowX: number;
   rowY: number;
+  tileRotate: number;
   drawer: number;
   enterStart: number;
   enterEnd: number;
@@ -512,26 +544,39 @@ type ColumnRow = {
 
 function buildColumnRows(): ColumnRow[] {
   const rows: ColumnRow[] = [];
-  CATEGORIES.forEach((cat, c) => {
-    const catStart = COLUMN_START + c * CATEGORY_SPAN;
-    const items: LaneItem[] = [{ kind: "label", text: cat.text, icon: cat.icon }, ...cat.items];
+  let cursor = COLUMN_START;
+  CATEGORIES.forEach((cat) => {
+    const catStart = cursor;
+    const items: LaneItem[] = [{ kind: "label", text: cat.text }, ...cat.items];
+    const enterStep = cat.scatter ? SCATTER_ENTER_STEP : ROW_ENTER_STEP;
+    const diveStep = cat.scatter ? SCATTER_DIVE_STEP : DIVE_STEP;
     // Every item waits for the LAST one to finish arriving before any of
     // them dives — the category gathers fully, then enters together.
-    const groupHoldEnd = catStart + (items.length - 1) * ROW_ENTER_STEP + ENTER_DUR + GROUP_HOLD;
-    const rowHeight = Math.max(ROW_HEIGHT_BY_KIND[cat.items[0].kind] ?? 90, LABEL_ROW_HEIGHT);
+    const groupHoldEnd = catStart + (items.length - 1) * enterStep + ENTER_DUR + GROUP_HOLD;
+    const rowHeight = cat.scatter
+      ? 0
+      : Math.max(ROW_HEIGHT_BY_KIND[cat.items[0].kind] ?? 90, LABEL_ROW_HEIGHT);
     items.forEach((item, j) => {
-      const enterStart = catStart + j * ROW_ENTER_STEP;
-      const diveStart = groupHoldEnd + j * DIVE_STEP;
+      const enterStart = catStart + j * enterStep;
+      const diveStart = groupHoldEnd + j * diveStep;
+      const diveEnd = diveStart + DIVE_DUR;
+      // The label sits above the pile (nudged right to sit over its middle);
+      // each file gets its own hand-placed slot.
+      const slot = cat.scatter && j > 0 ? FILE_SLOTS[(j - 1) % FILE_SLOTS.length] : null;
       rows.push({
         item,
-        rowY: (j - (items.length - 1) / 2) * rowHeight,
+        rowX: slot ? slot.x : cat.scatter ? 90 : 0,
+        rowY: slot ? slot.y : cat.scatter ? -215 : (j - (items.length - 1) / 2) * rowHeight,
+        tileRotate: slot ? slot.r : 0,
         drawer: cat.drawer,
         enterStart,
         enterEnd: enterStart + ENTER_DUR,
         diveStart,
-        diveEnd: diveStart + DIVE_DUR,
+        diveEnd,
       });
+      cursor = diveEnd; // last item's dive sets when the next category may start
     });
+    cursor += CATEGORY_GAP;
   });
   return rows;
 }
@@ -539,31 +584,66 @@ const COLUMN_ROWS = buildColumnRows();
 
 function LaneChip({ item }: { item: LaneItem }) {
   switch (item.kind) {
-    case "label": {
-      const Icon = item.icon;
+    case "label":
+      // Plain text, not a button or an icon — same serif as the scene's own
+      // opening captions ("Cabinet pulls it all into one place").
       return (
-        <span className="inline-flex items-center gap-3 whitespace-nowrap rounded-2xl bg-accent px-7 py-4 shadow-2xl shadow-accent/30">
-          <Icon size={26} className="shrink-0 text-white/90" strokeWidth={2.25} />
-          <span className="font-sans text-2xl font-bold uppercase tracking-[0.06em] text-white sm:text-3xl">
-            {item.text}
-          </span>
+        <span
+          className="whitespace-nowrap text-4xl leading-none tracking-[-0.02em] text-text-primary [text-shadow:0_1px_14px_rgba(250,246,241,0.85)] sm:text-5xl"
+          style={{ fontFamily: "var(--font-brand)" }}
+        >
+          {item.text}
         </span>
       );
-    }
-    case "file":
-      // Same wood-tile mark as the file cloud earlier in the scene — icon on
-      // top, filename below — so a file reads as the same object throughout.
+    case "file": {
+      // A little paper document — cream page, colored dog-ear fold, the
+      // type's icon and faint text lines — papers drifting mid-air, not
+      // flat colored squares. Bobs gently (float-slow) while parked; a
+      // deterministic negative delay desyncs the pile without Math.random.
+      const ext = item.name.split(".").pop() ?? "";
+      const Icon = FILE_TAB_ICON[ext] ?? FileText;
+      const fold = 16;
       return (
         <div
-          className="wood-tile painted-wood-tile flex flex-col items-center justify-center gap-1 rounded-2xl"
-          style={{ width: TILE, height: TILE }}
+          className="float-slow flex flex-col items-center gap-2"
+          style={{ animationDelay: `${-((item.name.length * 0.7) % 4).toFixed(1)}s` }}
         >
-          <FileMark name={item.name} color={item.color} size={38} />
-          <span className="w-full truncate px-1 text-center font-sans text-[8px] font-bold text-[#3b2f2f]">
+          <div
+            className="relative"
+            style={{ width: 56, height: 68, filter: "drop-shadow(0 10px 14px rgba(84, 52, 26, 0.3))" }}
+          >
+            <div
+              className="absolute inset-0 flex flex-col items-center justify-center gap-2"
+              style={{
+                background: "linear-gradient(165deg, #FFFEF9 0%, #F6EDDB 100%)",
+                borderRadius: 9,
+                clipPath: `polygon(0 0, calc(100% - ${fold}px) 0, 100% ${fold}px, 100% 100%, 0 100%)`,
+              }}
+            >
+              <Icon size={22} style={{ color: item.color }} strokeWidth={2.25} />
+              <span className="flex flex-col items-center gap-1">
+                <span className="h-[3px] w-7 rounded-full" style={{ background: `${item.color}42` }} />
+                <span className="h-[3px] w-5 rounded-full bg-black/10" />
+              </span>
+            </div>
+            {/* folded-back corner */}
+            <div
+              className="absolute right-0 top-0"
+              style={{
+                width: fold,
+                height: fold,
+                background: item.color,
+                clipPath: "polygon(0 0, 100% 100%, 0 100%)",
+                borderRadius: "0 0 0 7px",
+              }}
+            />
+          </div>
+          <span className="whitespace-nowrap font-code text-[11px] font-semibold text-[#4b3a2a] [text-shadow:0_1px_6px_rgba(250,246,241,0.9)]">
             {item.name}
           </span>
         </div>
       );
+    }
     case "dash": {
       const up = item.trend >= 0;
       // Line/area charts share one set of points derived from the same bar
@@ -579,7 +659,7 @@ function LaneChip({ item }: { item: LaneItem }) {
       const last = pts[pts.length - 1];
       return (
         <div
-          className="rounded-xl border border-black/5 bg-white p-3.5 shadow-xl shadow-black/10"
+          className="rounded-xl border border-black/5 bg-[#FFFDF8] p-3.5 shadow-xl shadow-black/10"
           style={{
             width: 190,
             // Scattered, not stacked — pitched and nudged like the file
@@ -591,7 +671,7 @@ function LaneChip({ item }: { item: LaneItem }) {
             <span className="font-sans text-xs font-semibold uppercase tracking-wide text-text-muted">
               {item.title}
             </span>
-            <span className={`font-code text-xs font-bold ${up ? "text-[#1E8E5A]" : "text-[#C0392B]"}`}>
+            <span className={`font-code text-xs font-bold ${up ? "text-[#6FA45A]" : "text-[#E2725B]"}`}>
               {up ? "▲" : "▼"} {Math.abs(item.trend)}%
             </span>
           </div>
@@ -645,33 +725,46 @@ function LaneChip({ item }: { item: LaneItem }) {
     case "agent":
       return (
         <span className="inline-flex items-center gap-3 whitespace-nowrap rounded-full bg-accent-bg-subtle px-6 py-3.5 shadow-xl shadow-accent/10 ring-1 ring-accent/20">
-          <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white shadow-sm">
+          <span className="agent-heartbeat flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white shadow-sm">
             <Image src={item.logo} alt="" width={20} height={20} className="object-contain" />
           </span>
           <span className="font-code text-2xl font-medium text-accent-warm">{item.name}</span>
+          {/* token — each agent's own color touch from the motif palette */}
+          <span className="h-2.5 w-2.5 shrink-0 rounded-full" style={{ background: item.accent }} />
         </span>
       );
-    case "task":
+    case "task": {
+      // A routine card, not a checkbox — what it does and when it runs,
+      // each with its own color touch from the motif palette.
+      const TaskIcon = item.icon;
       return (
-        <span className="inline-flex items-center gap-3 whitespace-nowrap rounded-xl border border-black/5 bg-white px-5 py-3.5 shadow-xl shadow-black/10">
-          <span className="flex h-7 w-7 items-center justify-center rounded-md bg-accent text-base font-bold leading-none text-white">
-            ✓
+        <span className="inline-flex items-center gap-3.5 whitespace-nowrap rounded-2xl border border-black/5 bg-[#FFFDF8] py-3 pl-4 pr-7 shadow-xl shadow-black/10">
+          <span
+            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl"
+            style={{ background: `${item.accent}26` }}
+          >
+            <TaskIcon size={22} style={{ color: item.accent }} strokeWidth={2.25} />
           </span>
-          <span className="font-code text-2xl text-text-secondary">{item.name}</span>
+          <span className="flex flex-col text-left leading-snug">
+            <span className="font-sans text-xl font-semibold text-text-primary">{item.name}</span>
+            <span className="font-code text-sm text-text-muted">{item.meta}</span>
+          </span>
         </span>
       );
+    }
   }
 }
 
 function ColumnItem({ progress, row }: { progress: MotionValue<number>; row: ColumnRow }) {
-  const { item, rowY, drawer, enterStart, enterEnd, diveStart, diveEnd } = row;
+  const { item, rowX, rowY, tileRotate, drawer, enterStart, enterEnd, diveStart, diveEnd } = row;
   const drawerMouthY = DRAWER_MOUTH_Y + drawer * DRAWER_GAP_Y;
+  const parkX = COLUMN_X + rowX;
 
   // Phase 1: slide in flat at its own row height (label on top, items below
   // — one column, first row first) and wait — the whole category gathers
   // before anyone moves. Phase 2: once gathered, dive into the drawer that
   // actually holds it.
-  const x = useTransform(progress, [enterStart, enterEnd, diveStart, diveEnd], [690, COLUMN_X, COLUMN_X, 0]);
+  const x = useTransform(progress, [enterStart, enterEnd, diveStart, diveEnd], [690, parkX, parkX, 0]);
   const y = useTransform(progress, [enterStart, diveStart, diveEnd], [rowY, rowY, drawerMouthY]);
   const scale = useTransform(progress, [enterStart, diveStart, diveEnd], [1, 1, 0.05]);
   const opacity = useTransform(
@@ -687,7 +780,7 @@ function ColumnItem({ progress, row }: { progress: MotionValue<number>; row: Col
     // — "TASKS" vs. "Nightly backup" — still line up into a neat pile
     // instead of drifting to ragged left edges.
     <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-y-1/2" style={{ zIndex }}>
-      <motion.div style={{ x, y, scale, opacity, willChange: "transform" }}>
+      <motion.div style={{ x, y, scale, opacity, rotate: tileRotate, willChange: "transform" }}>
         <LaneChip item={item} />
       </motion.div>
     </div>
