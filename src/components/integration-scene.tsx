@@ -26,6 +26,7 @@ import {
   useMotionValue,
   useMotionValueEvent,
   useSpring,
+  useAnimationControls,
   type MotionValue,
 } from "framer-motion";
 import { ScrollReveal } from "@/components/lightswind/scroll-reveal";
@@ -74,7 +75,6 @@ const FILES: { name: string; color: string }[] = [
 ];
 
 const TILE = 74;
-const CABINET_HUB_IMAGE = "/brand/cabinet-logo-top-open-512.png";
 
 // Cluster the clutter on the LEFT of the canvas (golden-angle spiral
 // around a left-of-center point → dense, even, organic). Radii widened a
@@ -164,6 +164,107 @@ function FileMark({ name, color, size = 22 }: { name: string; color: string; siz
   );
 }
 
+/* ─── The wooden cabinet from the launch video, drawn in CSS. The whole
+   cabinet buzzes, then the next drawer springs open as the last one shuts,
+   cycling through what Cabinet holds. ─── */
+const DRAWERS = ["Knowledge", "AI team", "Tasks"];
+// Where tiles fly to: the mouth of the open Knowledge drawer, in the scene's
+// centered coordinate space (cabinet is 216 wide, drawer 1 sits near the top).
+const DRAWER_MOUTH_Y = -69;
+const CABINET_WOOD = "linear-gradient(135deg, #EDDCBF 0%, #DCC098 45%, #C9A47A 100%)";
+const CABINET_WOOD_DARK = "linear-gradient(135deg, #C9A47A 0%, #B8905F 60%, #A87F4F 100%)";
+const CABINET_BRASS = "linear-gradient(180deg, #F0DCA8 0%, #D9BC7A 55%, #B89A54 100%)";
+
+function CabinetDrawer({ label, open }: { label: string; open: boolean }) {
+  return (
+    <div className="relative" style={{ height: 48, margin: "5px 10px", zIndex: open ? 2 : 1 }}>
+      {/* dark opening revealed behind the front */}
+      <div
+        className="absolute inset-0 rounded-[9px]"
+        style={{
+          background: "linear-gradient(180deg, #211B16 0%, #2C2520 100%)",
+          boxShadow: "inset 0 5px 12px rgba(0, 0, 0, 0.55)",
+        }}
+      />
+      {/* drawer front slides down + out on a springy, wobbly open */}
+      <motion.div
+        className="absolute inset-0 flex flex-col items-center justify-center gap-[3px] rounded-[9px]"
+        animate={{ y: open ? 26 : 0, scale: open ? 1.08 : 1 }}
+        transition={{ type: "spring", stiffness: 420, damping: open ? 12 : 24, mass: 0.8 }}
+        style={{
+          background: CABINET_WOOD,
+          boxShadow: open
+            ? "0 14px 22px -10px rgba(60, 38, 20, 0.6)"
+            : "inset 0 1px 2px rgba(255, 255, 255, 0.28), inset 0 -2px 3px rgba(0, 0, 0, 0.22)",
+        }}
+      >
+        <div
+          style={{
+            width: 52,
+            height: 7,
+            borderRadius: 5,
+            background: CABINET_BRASS,
+            boxShadow: "0 2px 3px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.6)",
+          }}
+        />
+        <span
+          className="whitespace-nowrap rounded px-2 text-[11px] font-semibold tracking-[0.03em]"
+          style={{ color: "#7A4F30", background: "rgba(122, 79, 48, 0.13)" }}
+        >
+          {label}
+        </span>
+      </motion.div>
+    </div>
+  );
+}
+
+function AnimatedCabinet({ holdOpen = null }: { holdOpen?: number | null }) {
+  const prefersReduced = useReducedMotion();
+  const [active, setActive] = useState(0);
+  const body = useAnimationControls();
+
+  useEffect(() => {
+    if (prefersReduced) return;
+    if (holdOpen !== null) {
+      // e.g. while tiles pour into the Knowledge drawer, keep it open
+      setActive(holdOpen);
+      return;
+    }
+    const t = setInterval(() => {
+      body.start({ rotate: [0, -1.1, 1.3, -0.7, 0.4, 0], transition: { duration: 0.4 } });
+      setActive((a) => (a + 1) % DRAWERS.length);
+    }, 2300);
+    return () => clearInterval(t);
+  }, [prefersReduced, body, holdOpen]);
+
+  return (
+    <motion.div animate={body} className="w-[216px]">
+      <div
+        className="rounded-[20px]"
+        style={{
+          background: CABINET_WOOD_DARK,
+          padding: "10px 4px 4px",
+          boxShadow:
+            "0 24px 44px -18px rgba(60, 38, 20, 0.55), inset 0 2px 3px rgba(255, 255, 255, 0.18)",
+        }}
+      >
+        {DRAWERS.map((label, i) => (
+          <CabinetDrawer key={label} label={label} open={!prefersReduced && i === active} />
+        ))}
+      </div>
+      {/* legs */}
+      <div className="flex justify-between px-8">
+        {[0, 1].map((i) => (
+          <div
+            key={i}
+            style={{ width: 20, height: 12, borderRadius: "0 0 6px 6px", background: CABINET_WOOD_DARK }}
+          />
+        ))}
+      </div>
+    </motion.div>
+  );
+}
+
 function FloatingTile({
   progress,
   pointerX,
@@ -186,7 +287,7 @@ function FloatingTile({
   // Hold the opening composition, then draw every tile into Cabinet.
   const clearEnd = 0.24 + s * 0.55;
   const baseX = useTransform(progress, [0, 0.08, clearEnd], [posX, posX, 0]);
-  const baseY = useTransform(progress, [0, 0.08, clearEnd], [posY, posY, 0]);
+  const baseY = useTransform(progress, [0, 0.08, clearEnd], [posY, posY, DRAWER_MOUTH_Y]);
   const baseScale = useTransform(progress, [0, 0.08, clearEnd], [1, 1, 0.05]);
   const opacity = useTransform(progress, [0, 0.08, clearEnd - 0.045, clearEnd], [1, 1, 1, 0]);
 
@@ -248,33 +349,21 @@ function FloatingTile({
             width={40}
             height={40}
             className="object-contain"
-            // Engraved-into-wood: dark groove wall to the top-left, lit wall to
-            // the bottom-right (light source top-left), so the logo reads as
-            // carved into the tile while keeping its brand colour.
+            // Printed-on-wood: one soft shadow under the mark keeps the logo
+            // crisp and readable while still sitting "in" the tile.
             style={{
               width: 40,
               height: 40,
-              filter:
-                "drop-shadow(0.6px 0.6px 0.4px rgba(255,248,232,0.6)) drop-shadow(-0.6px -0.6px 0.4px rgba(84,52,26,0.6))",
+              filter: "drop-shadow(0 1px 1.5px rgba(84, 52, 26, 0.3))",
             }}
           />
         </div>
       ) : (
         <div
-          className="wood-tile painted-wood-tile flex flex-col items-center justify-center gap-1 rounded-2xl px-1"
+          className="wood-tile painted-wood-tile flex items-center justify-center rounded-2xl"
           style={{ width: w, height: h }}
         >
           <FileMark name={item.name} color={item.color} size={40} />
-          <span
-            className="w-full truncate text-center font-sans text-[9px] font-bold leading-none tracking-tight"
-            style={{
-              color: "#3b2f2f",
-              textShadow:
-                "0 1px 2px rgba(255,248,236,0.95), 0 0 3px rgba(255,248,236,0.85)",
-            }}
-          >
-            {item.name}
-          </span>
         </div>
       )}
     </motion.div>
@@ -401,14 +490,15 @@ function SuckItem({
 }) {
   const end = start + 0.14;
   const x = useTransform(progress, [start, end], [690, 0]);
-  const y = useTransform(progress, [start, end], [startY, 0]);
+  const y = useTransform(progress, [start, end], [startY, DRAWER_MOUTH_Y]);
   const scale = useTransform(progress, [start, end - 0.025, end], [1, 1, 0.05]);
   const opacity = useTransform(
     progress,
     [start, start + 0.02, end - 0.02, end],
     [0, 1, 1, 0]
   );
-  const zIndex = item.kind === "label" ? 0 : -1;
+  // In front of the cabinet (z-10) so items visibly drop INTO the open drawer.
+  const zIndex = item.kind === "label" ? 21 : 20;
 
   return (
     <div
@@ -466,23 +556,8 @@ function StaticFallback() {
         </div>
         <div className="relative mx-auto h-[250px] w-[240px]">
           <div className="absolute left-1/2 top-[94%] h-6 w-28 -translate-x-1/2 rounded-full bg-[#59402f]/20 blur-xl" />
-          <Image
-            src={CABINET_HUB_IMAGE}
-            alt="Cabinet"
-            width={216}
-            height={216}
-            priority
-            className="mx-auto h-[216px] w-[216px]"
-          />
-          <div className="mt-2 flex flex-wrap justify-center gap-1.5">
-            {["Files", "Dashboards", "AI agents", "Routines & tasks"].map((label) => (
-              <span
-                key={label}
-                className="rounded-full bg-[#8b5833] px-3 py-1 font-code text-[9px] font-semibold uppercase tracking-[0.1em] text-[#fff8ec]"
-              >
-                {label}
-              </span>
-            ))}
+          <div className="mx-auto w-[216px]">
+            <AnimatedCabinet />
           </div>
         </div>
         <div className="mx-auto max-w-xl text-center lg:ml-auto lg:text-right">
@@ -641,6 +716,13 @@ export function IntegrationScene() {
     [0, 0.28, 0.28, 0]
   );
 
+  // While the tile cloud pours in, hold the Knowledge drawer open so every
+  // tile visibly lands inside it; afterwards the drawers resume cycling.
+  const [holdKnowledge, setHoldKnowledge] = useState(false);
+  useMotionValueEvent(sceneProgress, "change", (v) => {
+    setHoldKnowledge(v > 0.06 && v < 0.4);
+  });
+
   // Absorption glow (stays centered while the suck-in happens).
   const glowScale = useTransform(sceneProgress, [0, 0.3], [0.5, 1.5]);
   const glowOpacity = useTransform(sceneProgress, [0.04, 0.18, 0.28, 0.34], [0, 0.9, 0.9, 0]);
@@ -720,7 +802,7 @@ export function IntegrationScene() {
             open Cabinet, where they shrink behind the cabinet image. Only
             mounted while the scene is on screen — 63 tiles' worth of chained
             spring/repel motion values is real work to skip when scrolled away. */}
-        <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute inset-0 z-20 overflow-hidden">
           {sceneInView &&
             layout.map((slot) => (
               <FloatingTile
@@ -780,45 +862,42 @@ export function IntegrationScene() {
               className="absolute left-1/2 top-[96%] h-5 w-24 -translate-x-1/2 rounded-full bg-[#4b3424] blur-md"
               style={{ opacity: hubGroundOpacity }}
             />
-            <Image
-              src={CABINET_HUB_IMAGE}
-              alt="Cabinet"
-              width={216}
-              height={216}
-              priority
-              className="h-[216px] w-[216px]"
-            />
+            <AnimatedCabinet holdOpen={holdKnowledge ? 0 : null} />
           </div>
         </motion.div>
 
         {/* beat 1 — title beside the cloud (outer div positions; inner h2 is
             free to run its own magic-wand dissolve transform) */}
-        <div className="pointer-events-none absolute right-[7vw] top-1/2 z-20 max-w-xs -translate-y-1/2 text-right sm:max-w-sm md:right-[9vw] md:max-w-lg lg:right-[11vw]">
-          <motion.h2
-            className="text-[clamp(3.4rem,5.7vw,6.25rem)] leading-[0.9] tracking-[-0.045em] text-right text-text-primary"
+        <div className="pointer-events-none absolute right-[9vw] top-1/2 z-30 max-w-xs -translate-y-1/2 text-right sm:max-w-sm md:right-[12vw] md:max-w-lg lg:right-[14vw]">
+          <motion.div
             style={{
               opacity: capTitle,
               scale: titleScale,
               y: titleY,
               filter: titleFilter,
-              fontFamily: "var(--font-brand)",
-              textShadow: "0 1px 18px rgba(250, 246, 241, 0.72)",
             }}
           >
-            Your work
-            <br />
-            lives in
-            <br />
-            <span className="italic text-text-secondary/75">
-              a hundred
+            <ScrollReveal
+              baseRotation={0}
+              revealed
+              staggerDelay={0.08}
+              textClassName="[font-family:var(--font-brand)] [text-shadow:0_1px_18px_rgba(250,246,241,0.72)] text-[clamp(3.4rem,5.7vw,6.25rem)] leading-[0.9] tracking-[-0.045em] text-right text-text-primary"
+            >
+              Your work
               <br />
-              places.
-            </span>
-          </motion.h2>
+              lives in
+              <br />
+              <span className="italic text-text-secondary/75">
+                a hundred
+                <br />
+                places.
+              </span>
+            </ScrollReveal>
+          </motion.div>
         </div>
 
         {/* captions */}
-        <div className="absolute top-1/2 left-[4vw] md:left-[8vw] lg:left-[11vw] -translate-y-1/2 max-w-xs sm:max-w-sm md:max-w-md text-left pointer-events-none">
+        <div className="absolute top-1/2 left-[4vw] md:left-[8vw] lg:left-[11vw] -translate-y-1/2 max-w-xs sm:max-w-sm md:max-w-lg text-left pointer-events-none">
           <motion.div
             style={{
               opacity: capCapture,
@@ -831,7 +910,7 @@ export function IntegrationScene() {
               baseRotation={0}
               revealed={captureRevealed}
               staggerDelay={0.08}
-              textClassName="[font-family:var(--font-brand)] text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[0.95] tracking-[-0.045em] text-left text-text-primary"
+              textClassName="[font-family:var(--font-brand)] text-[clamp(3rem,4.6vw,5rem)] leading-[0.98] tracking-[-0.045em] text-left text-text-primary"
             >
               <span className="font-brand italic">Cabinet</span>
               <br />
