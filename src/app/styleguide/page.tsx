@@ -85,8 +85,8 @@ const FONTS: {
   {
     name: "Mono / Code",
     className: "font-code",
-    token: "Martian Mono · --font-mono · 0em",
-    use: "Terminal, code, and literal commands only. Never eyebrows.",
+    token: "Geist (mono retired) · --font-mono aliases --font-body",
+    use: "Terminal, code, and literal commands render in the body sans. No monospace anywhere on the site.",
   },
   {
     name: "Hand",

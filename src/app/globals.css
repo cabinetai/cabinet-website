@@ -90,7 +90,8 @@
   --font-display: var(--font-heading);
   --font-brand: var(--font-brand);
   --font-hand: var(--font-hand);
-  --font-mono: var(--font-mono);
+  /* Mono is retired site-wide; anything asking for mono gets the body sans. */
+  --font-mono: var(--font-body);
 }
 
 body {

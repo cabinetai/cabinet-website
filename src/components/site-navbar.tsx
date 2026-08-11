@@ -5,12 +5,9 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import {
   ArrowRight,
-  BookOpen,
   ChevronDown,
   Download,
-  LibraryBig,
   Menu,
-  ShieldCheck,
   Star,
   X,
 } from "lucide-react";
@@ -24,21 +21,21 @@ const RESOURCE_LINKS = [
     description: "Inspect and clone working AI teams.",
     href: "/templates",
     external: false,
-    icon: LibraryBig,
+    icon: "/brand/ui/boxes.png",
   },
   {
     label: "Documentation",
     description: "Install, configure, and operate Cabinet.",
     href: "https://docs.runcabinet.com/",
     external: true,
-    icon: BookOpen,
+    icon: "/brand/ui/book.png",
   },
   {
     label: "Compare",
     description: "Evaluate architecture, control, and fit.",
     href: "/compare",
     external: false,
-    icon: ShieldCheck,
+    icon: "/brand/ui/scale.png",
   },
   {
     label: "GitHub",
@@ -52,9 +49,18 @@ const RESOURCE_LINKS = [
     description: "Download the desktop app or run the CLI.",
     href: "/download",
     external: false,
-    icon: Download,
+    icon: "/brand/ui/rocket.png",
   },
 ] as const;
+
+// GitHub keeps its brand mark; everything else uses the wooden icon set.
+function ResourceIcon({ icon, className }: { icon: (typeof RESOURCE_LINKS)[number]["icon"]; className: string }) {
+  if (typeof icon === "string") {
+    return <Image src={icon} alt="" width={30} height={30} className="h-7 w-7 object-contain" />;
+  }
+  const Icon = icon;
+  return <Icon aria-hidden className={className} />;
+}
 
 const GITHUB_API_URL = GITHUB_URL.replace("github.com/", "api.github.com/repos/");
 
@@ -143,8 +149,7 @@ export function SiteNavbar({ fixed = false }: { fixed?: boolean }) {
         </Link>
 
         <div className="hidden min-[1100px]:flex items-center gap-2">
-          <GlassNavLink href="/#product">AI teams</GlassNavLink>
-          <GlassNavLink href="/templates">Templates</GlassNavLink>
+          <GlassNavLink href="/templates">AI teams</GlassNavLink>
           <SolutionsMenu triggerClassName="text-text-secondary" />
           <GlassNavLink href="/enterprise/security">Security</GlassNavLink>
           <GlassNavLink href="/pricing">Pricing</GlassNavLink>
@@ -181,7 +186,6 @@ export function SiteNavbar({ fixed = false }: { fixed?: boolean }) {
               <div className="absolute right-0 top-full z-50 w-[360px] pt-3" role="menu">
                 <div className="liquid-glass-panel rounded-2xl p-2.5">
                   {RESOURCE_LINKS.map((item) => {
-                    const Icon = item.icon;
                     return (
                       <a
                         key={item.label}
@@ -192,7 +196,7 @@ export function SiteNavbar({ fixed = false }: { fixed?: boolean }) {
                         className="group flex items-start gap-3 rounded-xl p-3 transition-colors hover:bg-bg-warm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/40"
                       >
                         <span className="mt-0.5 grid h-9 w-9 shrink-0 place-items-center rounded-xl bg-accent-bg text-accent">
-                          <Icon className="h-4 w-4" aria-hidden />
+                          <ResourceIcon icon={item.icon} className="h-4 w-4" />
                         </span>
                         <span className="min-w-0 flex-1">
                           <strong className="block text-sm text-text-primary">{item.label}</strong>
@@ -273,8 +277,7 @@ export function SiteNavbar({ fixed = false }: { fixed?: boolean }) {
           className="mobile-nav-panel pointer-events-auto fixed inset-x-3 bottom-3 top-[76px] z-40 overflow-y-auto overscroll-contain rounded-[28px] p-3 pb-[calc(1.25rem+env(safe-area-inset-bottom))] backdrop-blur-2xl min-[1100px]:hidden"
         >
           <div className="grid gap-1">
-            <MobileLink href="/#product" label="AI teams" onNavigate={() => setMobileOpen(false)} />
-            <MobileLink href="/templates" label="Templates" onNavigate={() => setMobileOpen(false)} />
+            <MobileLink href="/templates" label="AI teams" onNavigate={() => setMobileOpen(false)} />
             <MobileLink href="/solutions" label="Solutions" onNavigate={() => setMobileOpen(false)} />
             <MobileLink
               href="/enterprise/security"
@@ -290,7 +293,6 @@ export function SiteNavbar({ fixed = false }: { fixed?: boolean }) {
           </p>
           <div className="grid gap-1 sm:grid-cols-2">
             {RESOURCE_LINKS.map((item) => {
-              const Icon = item.icon;
               return (
                 <a
                   key={item.label}
@@ -301,7 +303,7 @@ export function SiteNavbar({ fixed = false }: { fixed?: boolean }) {
                   onClick={() => setMobileOpen(false)}
                 >
                   <span className="grid h-9 w-9 place-items-center rounded-xl bg-accent-bg text-accent">
-                    <Icon aria-hidden className="h-4 w-4" />
+                    <ResourceIcon icon={item.icon} className="h-4 w-4" />
                   </span>
                   {item.label}
                 </a>

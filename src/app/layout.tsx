@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { Geist, Instrument_Serif, Martian_Mono, Fraunces, Ms_Madi } from "next/font/google";
+import { Geist, Instrument_Serif, Fraunces, Ms_Madi } from "next/font/google";
 import { LiquidGlassFilter } from "@/components/liquid-glass-filter";
 import "./globals.css";
 
@@ -23,11 +23,6 @@ const instrumentSerif = Instrument_Serif({
   subsets: ["latin"],
   weight: "400",
   style: ["normal", "italic"],
-});
-
-const martianMono = Martian_Mono({
-  variable: "--font-mono",
-  subsets: ["latin"],
 });
 
 // Handwriting signature font for testimonial names.
@@ -76,7 +71,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geist.variable} ${fraunces.variable} ${instrumentSerif.variable} ${martianMono.variable} ${msMadi.variable} h-full antialiased`}
+      className={`${geist.variable} ${fraunces.variable} ${instrumentSerif.variable} ${msMadi.variable} h-full antialiased`}
     >
       <head>
         <Script
