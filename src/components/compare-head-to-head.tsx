@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -7,10 +8,11 @@ import {
   ChevronDown,
 } from "lucide-react";
 import { SiteNavbar } from "@/components/site-navbar";
-import { brandify } from "@/components/brand-word";
+import { richify } from "@/components/brand-word";
 import { WoodIcon } from "@/components/wood-icon";
 import { CompareVerdict } from "@/components/compare-verdict";
 import { CompareTable } from "@/components/compare-table";
+import { MarketingFooter } from "@/components/marketing/marketing-footer";
 import { GITHUB_URL } from "@/lib/site-config";
 import { compareLabel, COMPARE_ASOF, type Comparison } from "@/lib/compare";
 
@@ -64,13 +66,36 @@ export function CompareHeadToHead({ data }: { data: Comparison }) {
                 {data.h1}
               </h1>
               <p className="mt-5 max-w-2xl font-body-serif text-lg leading-relaxed text-text-secondary">
-                {brandify(data.lead)}
+                {richify(data.lead)}
               </p>
               <p className="mt-4 font-code text-xs text-text-tertiary">
                 Last reviewed {COMPARE_ASOF} against public pricing and docs.
               </p>
             </div>
-            <WoodIcon icon={data.icon} className="hidden h-28 w-28 md:block" />
+            {/* Side-by-side lockup: the competitor's wooden art facing the Cabinet logo */}
+            <div className="hidden items-center gap-4 md:flex">
+              {data.competitorArt ? (
+                <Image
+                  src={data.competitorArt}
+                  alt={`${data.competitor} logo in Cabinet's carved wooden style`}
+                  width={128}
+                  height={128}
+                  className="h-24 w-24 object-contain"
+                />
+              ) : (
+                <WoodIcon icon={data.icon} className="h-24 w-24" />
+              )}
+              <span className="font-code text-[11px] uppercase tracking-[0.2em] text-text-tertiary">
+                vs
+              </span>
+              <Image
+                src="/brand/cabinet-logo-face-2-512.png"
+                alt="Cabinet, the AI workspace your company owns"
+                width={128}
+                height={128}
+                className="h-24 w-24 object-contain"
+              />
+            </div>
           </div>
 
           <div className="mt-9">
@@ -93,7 +118,7 @@ export function CompareHeadToHead({ data }: { data: Comparison }) {
           <div className="mt-6 space-y-4">
             {data.coreDifference.paras.map((p) => (
               <p key={p} className="font-body-serif text-lg leading-relaxed text-text-secondary">
-                {brandify(p)}
+                {richify(p)}
               </p>
             ))}
           </div>
@@ -112,7 +137,7 @@ export function CompareHeadToHead({ data }: { data: Comparison }) {
                 <WoodIcon icon={d.icon} className="h-12 w-12" />
                 <h3 className="mt-4 font-display text-lg text-text-primary">{d.title}</h3>
                 <p className="mt-2 font-body-serif text-sm leading-relaxed text-text-secondary">
-                  {brandify(d.body)}
+                  {richify(d.body)}
                 </p>
                 {d.code && (
                   <pre className="mt-4 overflow-x-auto rounded-lg bg-bg-terminal px-4 py-3 font-code text-[12px] leading-relaxed text-[#E8DDD0]">
@@ -151,7 +176,7 @@ export function CompareHeadToHead({ data }: { data: Comparison }) {
             {data.whenThemWins.points.map((p) => (
               <li key={p} className="flex gap-3 soft-card p-5">
                 <Check className="mt-0.5 h-4 w-4 shrink-0 text-text-tertiary" aria-hidden />
-                <span className="font-body-serif leading-relaxed text-text-secondary">{brandify(p)}</span>
+                <span className="font-body-serif leading-relaxed text-text-secondary">{richify(p)}</span>
               </li>
             ))}
           </ul>
@@ -170,7 +195,7 @@ export function CompareHeadToHead({ data }: { data: Comparison }) {
                   {data.migration.heading}
                 </h2>
                 <p className="mt-2 font-body-serif leading-relaxed text-text-secondary">
-                  {brandify(data.migration.body)}
+                  {richify(data.migration.body)}
                 </p>
               </div>
             </div>
@@ -195,13 +220,43 @@ export function CompareHeadToHead({ data }: { data: Comparison }) {
                   />
                 </summary>
                 <p className="mt-3 font-body-serif leading-relaxed text-text-secondary">
-                  {brandify(f.a)}
+                  {richify(f.a)}
                 </p>
               </details>
             ))}
           </div>
         </div>
       </section>
+      {/* ─── Sources ─── */}
+      {data.sources && data.sources.length > 0 && (
+        <section className="border-b border-border bg-bg-warm py-14">
+          <div className="mx-auto max-w-3xl px-6">
+            <p className="section-label mb-3">Sources</p>
+            <h2 className="font-display text-2xl tracking-tight text-text-primary">
+              Where these facts come from
+            </h2>
+            <p className="mt-3 font-body-serif text-sm leading-relaxed text-text-secondary">
+              Claims on this page are checked against public sources, last reviewed {COMPARE_ASOF}.
+              Spotted something out of date? Tell us at hi@runcabinet.com and we will fix it.
+            </p>
+            <ol className="mt-6 space-y-2.5">
+              {data.sources.map((s, i) => (
+                <li key={s.href} className="flex gap-3 font-code text-sm leading-relaxed">
+                  <span className="shrink-0 text-text-muted">{i + 1}.</span>
+                  <a
+                    href={s.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-text-secondary underline decoration-border-dark underline-offset-2 transition-colors hover:text-accent"
+                  >
+                    {s.label}
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </section>
+      )}
       {/* ─── Final CTA ─── */}
       <section className="border-b border-border py-20">
         <div className="mx-auto max-w-3xl px-6 text-center">
@@ -241,6 +296,7 @@ export function CompareHeadToHead({ data }: { data: Comparison }) {
           </div>
         </div>
       </section>
+      <MarketingFooter />
     </main>
   );
 }

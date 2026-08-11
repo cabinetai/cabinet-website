@@ -16,6 +16,7 @@ import { CompareHeadToHead } from "@/components/compare-head-to-head";
 import { CompareRoundup } from "@/components/compare-roundup";
 import { CompareThreeWay } from "@/components/compare-three-way";
 import { CompareMigration } from "@/components/compare-migration";
+import { stripLinks } from "@/components/brand-word";
 import { serializeJsonLd } from "@/lib/json-ld";
 
 const SITE = "https://runcabinet.com";
@@ -73,7 +74,8 @@ function faqSchema(faqs: Faq[]) {
     mainEntity: faqs.map((f) => ({
       "@type": "Question",
       name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
+      // Copy may carry markdown-style links for the page; schema gets plain text.
+      acceptedAnswer: { "@type": "Answer", text: stripLinks(f.a) },
     })),
   };
 }

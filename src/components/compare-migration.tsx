@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, Check, AlertTriangle, Star, ChevronDown } from "lucide-react";
 import { SiteNavbar } from "@/components/site-navbar";
+import { MarketingFooter } from "@/components/marketing/marketing-footer";
 import { brandify } from "@/components/brand-word";
 import { GITHUB_URL } from "@/lib/site-config";
 import { compareLabel, type Migration } from "@/lib/compare";
@@ -200,6 +201,7 @@ export function CompareMigration({ data }: { data: Migration }) {
           </div>
         </div>
       </section>
+      <MarketingFooter />
     </main>
   );
 }

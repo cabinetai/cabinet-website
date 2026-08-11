@@ -3,6 +3,7 @@ import { ArrowRight, Check, X, Minus, Star, ChevronDown } from "lucide-react";
 import { SiteNavbar } from "@/components/site-navbar";
 import { brandify } from "@/components/brand-word";
 import { WoodIcon } from "@/components/wood-icon";
+import { MarketingFooter } from "@/components/marketing/marketing-footer";
 import { GITHUB_URL } from "@/lib/site-config";
 import { compareLabel, COMPARE_ASOF, type Cell, type ThreeWay } from "@/lib/compare";
 
@@ -99,7 +100,8 @@ export function CompareThreeWay({ data }: { data: ThreeWay }) {
             The features that decide it
           </h2>
           <div className="mt-8 overflow-hidden soft-card">
-            <div className="overflow-x-auto">
+            {/* relative: keeps absolutely-positioned sr-only labels inside the scroller. */}
+            <div className="relative overflow-x-auto">
               <table className="w-full min-w-[40rem] text-sm">
                 <thead>
                   <tr className="border-b border-border-dark">
@@ -264,6 +266,7 @@ export function CompareThreeWay({ data }: { data: ThreeWay }) {
           </div>
         </div>
       </section>
+      <MarketingFooter />
     </main>
   );
 }

@@ -15,8 +15,10 @@ import {
   MessageSquare,
   FileText,
   Search,
+  Coffee,
 } from "lucide-react";
 import { SiteNavbar } from "@/components/site-navbar";
+import { MarketingFooter } from "@/components/marketing/marketing-footer";
 import { brandify } from "@/components/brand-word";
 import { WoodIcon } from "@/components/wood-icon";
 import { GITHUB_URL } from "@/lib/site-config";
@@ -56,19 +58,19 @@ export const metadata: Metadata = {
 // Curated cross-competitor view for the "at a glance" matrix: the 2026 field,
 // not just the wiki generation. Per-competitor detail (and more rows where a
 // competitor wins) lives on each spoke page.
-const COLUMNS = ["Cabinet", "Notion", "Glean", "Town", "Gumloop", "Buzz"] as const;
+const COLUMNS = ["Cabinet", "Notion", "Glean", "Town", "Gumloop", "Cowork", "Buzz"] as const;
 const MATRIX: { feature: string; cells: Cell[] }[] = [
-  { feature: "One home for company knowledge and files", cells: [true, true, false, false, "partial", false] },
-  { feature: "A place people write and read knowledge", cells: [true, true, false, false, false, "partial"] },
-  { feature: "Knowledge rendered as live apps and dashboards", cells: [true, "partial", false, false, "partial", false] },
-  { feature: "AI agents that work on schedules", cells: [true, true, true, true, true, "partial"] },
-  { feature: "Agent work persists as files you own", cells: [true, false, false, false, false, "partial"] },
-  { feature: "Self-hosted on your infrastructure", cells: [true, false, "partial", false, "partial", true] },
-  { feature: "Your AI keys at provider cost", cells: [true, false, false, false, "partial", true] },
-  { feature: "Open source", cells: [true, false, false, false, false, true] },
-  { feature: "Personal inbox and calendar assistant", cells: [false, false, false, true, "partial", false] },
-  { feature: "Automation across 100+ SaaS apps", cells: ["partial", "partial", "partial", "partial", true, false] },
-  { feature: "Search across your existing tools", cells: ["partial", "partial", true, "partial", true, false] },
+  { feature: "One home for company knowledge and files", cells: [true, true, false, false, "partial", false, false] },
+  { feature: "A place people write and read knowledge", cells: [true, true, false, false, false, false, "partial"] },
+  { feature: "Knowledge rendered as live apps and dashboards", cells: [true, "partial", false, false, "partial", "partial", false] },
+  { feature: "AI agents that work on schedules", cells: [true, true, true, true, true, true, "partial"] },
+  { feature: "Agent work persists as files you own", cells: [true, false, false, false, false, "partial", "partial"] },
+  { feature: "Self-hosted on your infrastructure", cells: [true, false, "partial", false, "partial", false, true] },
+  { feature: "Your AI keys at provider cost", cells: [true, false, false, false, "partial", false, true] },
+  { feature: "Open source", cells: [true, false, false, false, false, false, true] },
+  { feature: "Personal inbox and calendar assistant", cells: [false, false, false, true, "partial", "partial", false] },
+  { feature: "Automation across 100+ SaaS apps", cells: ["partial", "partial", "partial", "partial", true, "partial", false] },
+  { feature: "Search across your existing tools", cells: ["partial", "partial", true, "partial", true, "partial", false] },
 ];
 
 function MatrixIcon({ value }: { value: Cell }) {
@@ -117,6 +119,13 @@ const FIELD = [
     who: "Buzz",
     body: "Jack Dorsey's open-source room where people and agents talk. The shared context is the scroll.",
     href: "/compare/cabinet-vs-buzz",
+  },
+  {
+    icon: Coffee,
+    category: "Personal AI coworkers",
+    who: "Claude Cowork",
+    body: "Claude works your folders and ships the deck, brilliantly, for one person. Projects and memory stay with each user's account.",
+    href: "/compare/cabinet-vs-claude-cowork",
   },
   {
     icon: FileText,
@@ -245,11 +254,13 @@ export default function CompareHubPage() {
           </p>
           <p className="mt-5 inline-flex items-center gap-2 font-code text-[11px] uppercase tracking-[0.12em] text-text-tertiary lg:hidden">
             <span aria-hidden className="text-accent">↔</span>
-            Swipe to compare all six
+            Swipe to compare all seven
           </p>
           <div className="mt-8 overflow-hidden rounded-2xl bg-bg-card shadow-[0_8px_30px_-14px_rgba(150,108,68,0.32)] ring-1 ring-[rgba(59,47,47,0.05)]">
-            <div className="compare-matrix-scroll overflow-x-auto" tabIndex={0} aria-label="Comparison matrix. Swipe horizontally to see all competitors.">
-              <table className="w-full min-w-[52rem] text-sm">
+            {/* relative: sr-only cell labels are absolutely positioned and would
+                otherwise escape the scroller's clipping and widen the page. */}
+            <div className="compare-matrix-scroll relative overflow-x-auto" tabIndex={0} aria-label="Comparison matrix. Swipe horizontally to see all competitors.">
+              <table className="w-full min-w-[58rem] text-sm">
                 <thead>
                   <tr className="border-b border-border-dark">
                     <th className="sticky left-0 bg-bg-card px-5 py-4 text-left font-medium text-text-secondary">
@@ -480,6 +491,7 @@ export default function CompareHubPage() {
           </div>
         </div>
       </section>
+      <MarketingFooter />
     </main>
   );
 }

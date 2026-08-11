@@ -41,7 +41,8 @@ export function CompareTable({
 }) {
   return (
     <div className="overflow-hidden rounded-2xl bg-bg-card shadow-[0_8px_30px_-14px_rgba(150,108,68,0.32)] ring-1 ring-[rgba(59,47,47,0.05)]">
-      <div className="overflow-x-auto">
+      {/* relative: keeps absolutely-positioned sr-only labels inside the scroller. */}
+      <div className="relative overflow-x-auto">
         <table className="w-full min-w-[34rem] text-sm">
           <thead>
             <tr className="border-b border-border-dark">
