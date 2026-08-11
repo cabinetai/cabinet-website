@@ -121,8 +121,8 @@ const TESTIMONIALS = [
     context:
       "Cabinet is the missing persistence and memory layer that TOGAF, ISO, and many other framework tools have never had. The framework provides the skeleton; Cabinet provides the living connective tissue.",
     name: "Jean Pierre Traets",
-    role: "Sustainability Solutions Architect, EMEA",
-    location: "Europe",
+    role: "Sustainability Solutions Architect",
+    location: "EMEA",
     image: "/testimonials/jean-pierre-traets.jpg",
     linkedin: "https://www.linkedin.com/in/jean-pierre-traets/",
     initials: "JT",
