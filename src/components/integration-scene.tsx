@@ -9,9 +9,13 @@ import {
   type RefObject,
 } from "react";
 import {
+  Bot,
   FileCode,
   FileSpreadsheet,
   FileText,
+  FolderOpen,
+  LayoutDashboard,
+  ListChecks,
   PenTool,
   Presentation,
   type LucideIcon,
@@ -79,8 +83,8 @@ const TILE = 74;
 // Cluster the clutter on the LEFT of the canvas (golden-angle spiral
 // around a left-of-center point → dense, even, organic). Radii widened a
 // touch to keep breathing room now that there are more pages.
-const LCX = -330;
-const LRX = 300;
+const LCX = -460;
+const LRX = 280;
 const LRY = 300;
 function scatterLeft(i: number, total: number) {
   const golden = Math.PI * (3 - Math.sqrt(5));
@@ -175,6 +179,11 @@ const CABINET_WOOD = "linear-gradient(135deg, #EDDCBF 0%, #DCC098 45%, #C9A47A 1
 const CABINET_WOOD_DARK = "linear-gradient(135deg, #C9A47A 0%, #B8905F 60%, #A87F4F 100%)";
 const CABINET_BRASS = "linear-gradient(180deg, #F0DCA8 0%, #D9BC7A 55%, #B89A54 100%)";
 
+// How far the drawer front slides out when open — shared with its side
+// panels below so they extend exactly as far as the front actually moves.
+const DRAWER_EXTEND = 26;
+const DRAWER_SPRING = { type: "spring" as const, stiffness: 420, mass: 0.8 };
+
 function CabinetDrawer({ label, open }: { label: string; open: boolean }) {
   return (
     <div className="relative" style={{ height: 48, margin: "5px 10px", zIndex: open ? 2 : 1 }}>
@@ -186,11 +195,37 @@ function CabinetDrawer({ label, open }: { label: string; open: boolean }) {
           boxShadow: "inset 0 5px 12px rgba(0, 0, 0, 0.55)",
         }}
       />
+      {/* drawer sides — angled wood panels (narrow at the back of the box,
+          wide at the front) that grow in step with the front's own slide.
+          The taper is what actually reads as depth, not just a rectangle
+          that grows taller. */}
+      {(["left", "right"] as const).map((side) => (
+        <motion.div
+          key={side}
+          aria-hidden
+          className="absolute top-0"
+          style={{
+            [side]: 0,
+            width: 15,
+            background: "linear-gradient(180deg, #6E4F31 0%, #B8905F 100%)",
+            clipPath:
+              side === "left"
+                ? "polygon(55% 0, 100% 0, 100% 100%, 0 100%)"
+                : "polygon(0 0, 45% 0, 100% 100%, 0 100%)",
+            boxShadow:
+              side === "left"
+                ? "inset -3px 0 4px rgba(0, 0, 0, 0.4)"
+                : "inset 3px 0 4px rgba(0, 0, 0, 0.4)",
+          }}
+          animate={{ height: open ? DRAWER_EXTEND + 10 : 0, opacity: open ? 1 : 0 }}
+          transition={{ ...DRAWER_SPRING, damping: open ? 12 : 24 }}
+        />
+      ))}
       {/* drawer front slides down + out on a springy, wobbly open */}
       <motion.div
         className="absolute inset-0 flex flex-col items-center justify-center gap-[3px] rounded-[9px]"
-        animate={{ y: open ? 26 : 0, scale: open ? 1.08 : 1 }}
-        transition={{ type: "spring", stiffness: 420, damping: open ? 12 : 24, mass: 0.8 }}
+        animate={{ y: open ? DRAWER_EXTEND : 0, scale: open ? 1.08 : 1 }}
+        transition={{ ...DRAWER_SPRING, damping: open ? 12 : 24 }}
         style={{
           background: CABINET_WOOD,
           boxShadow: open
@@ -371,48 +406,66 @@ function FloatingTile({
 }
 
 type LaneItem =
-  | { kind: "label"; text: string }
+  | { kind: "label"; text: string; icon: LucideIcon }
   | { kind: "file"; name: string; color: string }
-  | { kind: "dash"; accent: string }
-  | { kind: "agent"; name: string }
+  | {
+      kind: "dash";
+      title: string;
+      value: string;
+      trend: number;
+      accent: string;
+      bars: number[];
+      chartStyle: "bars" | "line" | "area";
+      rotate: number;
+      offsetX: number;
+      offsetY: number;
+    }
+  | { kind: "agent"; name: string; logo: string }
   | { kind: "task"; name: string };
 
-const SUCK_LANES: { y: number; start: number; items: LaneItem[] }[] = [
+// Each category's label + sample items queue through ONE shared reading spot
+// beside the cabinet — a single column, not four clusters scattered across
+// the screen — then peel off into the drawer that actually holds them:
+// Files and Dashboards both live in Knowledge, AI agents in AI team, Tasks
+// in Tasks.
+const CATEGORIES: { text: string; icon: LucideIcon; drawer: number; items: LaneItem[] }[] = [
   {
-    y: -420,
-    start: 0.42,
+    text: "Files",
+    icon: FolderOpen,
+    drawer: 0,
     items: [
-      { kind: "label", text: "Files" },
       { kind: "file", name: "roadmap.md", color: "#8B5E3C" },
       { kind: "file", name: "spec.md", color: "#5A7A4F" },
       { kind: "file", name: "notes.md", color: "#3B6FB0" },
+      { kind: "file", name: "budget.xlsx", color: "#1E8E5A" },
+      { kind: "file", name: "deck.pdf", color: "#C0392B" },
     ],
   },
   {
-    y: -140,
-    start: 0.52,
+    text: "Dashboards",
+    icon: LayoutDashboard,
+    drawer: 0,
     items: [
-      { kind: "label", text: "Dashboards" },
-      { kind: "dash", accent: "#3B6FB0" },
-      { kind: "dash", accent: "#5A7A4F" },
-      { kind: "dash", accent: "#C0392B" },
+      { kind: "dash", title: "Pipeline", value: "$482K", trend: 12, accent: "#3B6FB0", bars: [45, 60, 72, 55, 80, 68], chartStyle: "bars", rotate: -5, offsetX: -10, offsetY: 4 },
+      { kind: "dash", title: "Usage", value: "94%", trend: 6, accent: "#5A7A4F", bars: [60, 85, 45, 92, 65, 78], chartStyle: "line", rotate: 4, offsetX: 12, offsetY: -8 },
+      { kind: "dash", title: "Open tickets", value: "23", trend: -8, accent: "#C0392B", bars: [70, 55, 62, 40, 48, 35], chartStyle: "area", rotate: -3, offsetX: -6, offsetY: 12 },
     ],
   },
   {
-    y: 140,
-    start: 0.62,
+    text: "AI agents",
+    icon: Bot,
+    drawer: 1,
     items: [
-      { kind: "label", text: "AI agents" },
-      { kind: "agent", name: "SDR" },
-      { kind: "agent", name: "Marketing Expert" },
-      { kind: "agent", name: "Researcher" },
+      { kind: "agent", name: "SDR", logo: PROVIDERS[0] },
+      { kind: "agent", name: "Marketing Expert", logo: PROVIDERS[1] },
+      { kind: "agent", name: "Researcher", logo: PROVIDERS[2] },
     ],
   },
   {
-    y: 420,
-    start: 0.72,
+    text: "Tasks",
+    icon: ListChecks,
+    drawer: 2,
     items: [
-      { kind: "label", text: "Routines & tasks" },
       { kind: "task", name: "Weekly report" },
       { kind: "task", name: "Scout Reddit" },
       { kind: "task", name: "Nightly backup" },
@@ -420,47 +473,180 @@ const SUCK_LANES: { y: number; start: number; items: LaneItem[] }[] = [
   },
 ];
 
+// Row spacing, sized to each item kind's actual rendered height (dashboard
+// cards run ~150px tall, file tiles ~74px) — a spacing this size prevents
+// consecutive rows, and the category label, from overlapping one another.
+const ROW_HEIGHT_BY_KIND: Partial<Record<LaneItem["kind"], number>> = {
+  file: 96,
+  dash: 168,
+  agent: 78,
+  task: 72,
+};
+const LABEL_ROW_HEIGHT = 78;
+// Where the column sits while it's being read, before diving toward x=0.
+const COLUMN_X = 260;
+// Consecutive drawers are 58px apart (drawer height 48 + 5px margin each
+// side) — reused from CabinetDrawer's own layout, see DRAWER_MOUTH_Y above.
+const DRAWER_GAP_Y = 58;
+const CATEGORY_SPAN = 0.12;
+const COLUMN_START = 0.3;
+// Phase 1 — gather: items slide in one after another, staggered by this much.
+const ROW_ENTER_STEP = 0.012;
+const ENTER_DUR = 0.035;
+// A short beat after the LAST item lands, so the full group is visibly
+// assembled before any of them moves — pull them all in, then send them in.
+const GROUP_HOLD = 0.015;
+// Phase 2 — enter: once gathered, items dive into the drawer as a group.
+const DIVE_STEP = 0.008;
+const DIVE_DUR = 0.035;
+
+type ColumnRow = {
+  item: LaneItem;
+  rowY: number;
+  drawer: number;
+  enterStart: number;
+  enterEnd: number;
+  diveStart: number;
+  diveEnd: number;
+};
+
+function buildColumnRows(): ColumnRow[] {
+  const rows: ColumnRow[] = [];
+  CATEGORIES.forEach((cat, c) => {
+    const catStart = COLUMN_START + c * CATEGORY_SPAN;
+    const items: LaneItem[] = [{ kind: "label", text: cat.text, icon: cat.icon }, ...cat.items];
+    // Every item waits for the LAST one to finish arriving before any of
+    // them dives — the category gathers fully, then enters together.
+    const groupHoldEnd = catStart + (items.length - 1) * ROW_ENTER_STEP + ENTER_DUR + GROUP_HOLD;
+    const rowHeight = Math.max(ROW_HEIGHT_BY_KIND[cat.items[0].kind] ?? 90, LABEL_ROW_HEIGHT);
+    items.forEach((item, j) => {
+      const enterStart = catStart + j * ROW_ENTER_STEP;
+      const diveStart = groupHoldEnd + j * DIVE_STEP;
+      rows.push({
+        item,
+        rowY: (j - (items.length - 1) / 2) * rowHeight,
+        drawer: cat.drawer,
+        enterStart,
+        enterEnd: enterStart + ENTER_DUR,
+        diveStart,
+        diveEnd: diveStart + DIVE_DUR,
+      });
+    });
+  });
+  return rows;
+}
+const COLUMN_ROWS = buildColumnRows();
+
 function LaneChip({ item }: { item: LaneItem }) {
   switch (item.kind) {
-    case "label":
+    case "label": {
+      const Icon = item.icon;
       return (
-        <span className="inline-flex items-center whitespace-nowrap rounded-full bg-accent px-9 py-4 font-display text-4xl font-bold text-white shadow-2xl shadow-accent/30 sm:text-5xl">
-          {item.text}
+        <span className="inline-flex items-center gap-3 whitespace-nowrap rounded-2xl bg-accent px-7 py-4 shadow-2xl shadow-accent/30">
+          <Icon size={26} className="shrink-0 text-white/90" strokeWidth={2.25} />
+          <span className="font-sans text-2xl font-bold uppercase tracking-[0.06em] text-white sm:text-3xl">
+            {item.text}
+          </span>
         </span>
       );
+    }
     case "file":
+      // Same wood-tile mark as the file cloud earlier in the scene — icon on
+      // top, filename below — so a file reads as the same object throughout.
       return (
-        <span className="inline-flex items-center gap-3 rounded-xl border border-black/5 bg-white px-5 py-3.5 shadow-xl shadow-black/10">
-          <span className="h-9 w-2 shrink-0 rounded-full" style={{ background: item.color }} />
-          <span className="font-code text-2xl text-text-secondary">{item.name}</span>
-        </span>
+        <div
+          className="wood-tile painted-wood-tile flex flex-col items-center justify-center gap-1 rounded-2xl"
+          style={{ width: TILE, height: TILE }}
+        >
+          <FileMark name={item.name} color={item.color} size={38} />
+          <span className="w-full truncate px-1 text-center font-sans text-[8px] font-bold text-[#3b2f2f]">
+            {item.name}
+          </span>
+        </div>
       );
-    case "dash":
+    case "dash": {
+      const up = item.trend >= 0;
+      // Line/area charts share one set of points derived from the same bar
+      // values, so all three chart styles are reading the same "data".
+      const w = 156;
+      const h = 56;
+      const pts = item.bars.map((v, i) => ({
+        x: (i / (item.bars.length - 1)) * w,
+        y: h - (v / 100) * h,
+      }));
+      const linePoints = pts.map((p) => `${p.x},${p.y}`).join(" ");
+      const areaPath = `M0,${h} L${pts.map((p) => `${p.x},${p.y}`).join(" L")} L${w},${h} Z`;
+      const last = pts[pts.length - 1];
       return (
         <div
           className="rounded-xl border border-black/5 bg-white p-3.5 shadow-xl shadow-black/10"
-          style={{ width: 168 }}
+          style={{
+            width: 190,
+            // Scattered, not stacked — pitched and nudged like the file
+            // tiles in the opening cloud, so the pile reads as a pile.
+            transform: `rotate(${item.rotate}deg) translate(${item.offsetX}px, ${item.offsetY}px)`,
+          }}
         >
+          <div className="mb-1.5 flex items-center justify-between gap-2">
+            <span className="font-sans text-xs font-semibold uppercase tracking-wide text-text-muted">
+              {item.title}
+            </span>
+            <span className={`font-code text-xs font-bold ${up ? "text-[#1E8E5A]" : "text-[#C0392B]"}`}>
+              {up ? "▲" : "▼"} {Math.abs(item.trend)}%
+            </span>
+          </div>
           <div className="mb-2 flex items-center gap-2">
-            <span className="h-3 w-3 rounded-full" style={{ background: item.accent }} />
-            <span className="h-2 w-20 rounded bg-black/10" />
+            <span className="h-3 w-3 shrink-0 rounded-full" style={{ background: item.accent }} />
+            <span className="font-code text-xl font-bold text-text-primary">{item.value}</span>
           </div>
-          <div className="flex h-14 items-end gap-1.5">
-            {[60, 85, 45, 92, 65, 78].map((barHeight, index) => (
-              <span
-                key={index}
-                className="flex-1 rounded-sm"
-                style={{ height: `${barHeight}%`, background: `${item.accent}55` }}
+          {item.chartStyle === "bars" && (
+            <div className="flex h-14 items-end gap-1.5">
+              {item.bars.map((barHeight, index) => (
+                <span
+                  key={index}
+                  className="chart-bar-pulse flex-1 rounded-sm"
+                  style={{
+                    height: `${barHeight}%`,
+                    background: `${item.accent}55`,
+                    animationDelay: `${index * 0.12}s`,
+                  }}
+                />
+              ))}
+            </div>
+          )}
+          {item.chartStyle === "line" && (
+            <svg viewBox={`0 0 ${w} ${h}`} className="h-14 w-full" preserveAspectRatio="none">
+              <polyline
+                points={linePoints}
+                fill="none"
+                stroke={item.accent}
+                strokeWidth={2.5}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="chart-line-draw"
               />
-            ))}
-          </div>
+              <circle cx={last.x} cy={last.y} r={3.5} fill={item.accent} className="chart-dot-pulse" />
+            </svg>
+          )}
+          {item.chartStyle === "area" && (
+            <svg viewBox={`0 0 ${w} ${h}`} className="h-14 w-full">
+              <path
+                d={areaPath}
+                fill={`${item.accent}33`}
+                stroke={item.accent}
+                strokeWidth={2}
+                className="chart-area-breathe"
+              />
+            </svg>
+          )}
         </div>
       );
+    }
     case "agent":
       return (
         <span className="inline-flex items-center gap-3 whitespace-nowrap rounded-full bg-accent-bg-subtle px-6 py-3.5 shadow-xl shadow-accent/10 ring-1 ring-accent/20">
-          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-accent text-base font-bold text-white">
-            AI
+          <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white shadow-sm">
+            <Image src={item.logo} alt="" width={20} height={20} className="object-contain" />
           </span>
           <span className="font-code text-2xl font-medium text-accent-warm">{item.name}</span>
         </span>
@@ -477,34 +663,30 @@ function LaneChip({ item }: { item: LaneItem }) {
   }
 }
 
-function SuckItem({
-  progress,
-  start,
-  y: startY,
-  item,
-}: {
-  progress: MotionValue<number>;
-  start: number;
-  y: number;
-  item: LaneItem;
-}) {
-  const end = start + 0.14;
-  const x = useTransform(progress, [start, end], [690, 0]);
-  const y = useTransform(progress, [start, end], [startY, DRAWER_MOUTH_Y]);
-  const scale = useTransform(progress, [start, end - 0.025, end], [1, 1, 0.05]);
+function ColumnItem({ progress, row }: { progress: MotionValue<number>; row: ColumnRow }) {
+  const { item, rowY, drawer, enterStart, enterEnd, diveStart, diveEnd } = row;
+  const drawerMouthY = DRAWER_MOUTH_Y + drawer * DRAWER_GAP_Y;
+
+  // Phase 1: slide in flat at its own row height (label on top, items below
+  // — one column, first row first) and wait — the whole category gathers
+  // before anyone moves. Phase 2: once gathered, dive into the drawer that
+  // actually holds it.
+  const x = useTransform(progress, [enterStart, enterEnd, diveStart, diveEnd], [690, COLUMN_X, COLUMN_X, 0]);
+  const y = useTransform(progress, [enterStart, diveStart, diveEnd], [rowY, rowY, drawerMouthY]);
+  const scale = useTransform(progress, [enterStart, diveStart, diveEnd], [1, 1, 0.05]);
   const opacity = useTransform(
     progress,
-    [start, start + 0.02, end - 0.02, end],
+    [enterStart, enterStart + (enterEnd - enterStart) * 0.6, diveStart, diveEnd],
     [0, 1, 1, 0]
   );
   // In front of the cabinet (z-10) so items visibly drop INTO the open drawer.
   const zIndex = item.kind === "label" ? 21 : 20;
 
   return (
-    <div
-      className="pointer-events-none absolute inset-0 flex items-center justify-center"
-      style={{ zIndex }}
-    >
+    // Anchored at the LEFT edge (not centered) so items of different widths
+    // — "TASKS" vs. "Nightly backup" — still line up into a neat pile
+    // instead of drifting to ragged left edges.
+    <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-y-1/2" style={{ zIndex }}>
       <motion.div style={{ x, y, scale, opacity, willChange: "transform" }}>
         <LaneChip item={item} />
       </motion.div>
@@ -699,28 +881,36 @@ export function IntegrationScene() {
   });
 
   // Cabinet appears before the cloud starts moving so every tile has a clear
-  // destination. It stays through the complete absorption beat.
+  // destination. It stays through the complete absorption beat AND through
+  // the closing "AI team" caption — only clearing in the last sliver, right
+  // as the pin releases into the demo video.
   const hubOpacity = useTransform(
     sceneProgress,
-    [0.035, 0.1, 0.94, 0.985],
+    [0.035, 0.1, 0.99, 1],
     [0, 1, 1, 0]
   );
   const hubScale = useTransform(
     sceneProgress,
-    [0.035, 0.11, 0.94, 0.985],
+    [0.035, 0.11, 0.99, 1],
     [0.72, 1, 1, 0.9]
   );
   const hubGroundOpacity = useTransform(
     sceneProgress,
-    [0.08, 0.14, 0.94, 0.985],
+    [0.08, 0.14, 0.99, 1],
     [0, 0.28, 0.28, 0]
   );
 
-  // While the tile cloud pours in, hold the Knowledge drawer open so every
-  // tile visibly lands inside it; afterwards the drawers resume cycling.
-  const [holdKnowledge, setHoldKnowledge] = useState(false);
+  // Hold whichever drawer is currently receiving the column open: Knowledge
+  // while the tile cloud pours in and through Files/Dashboards, AI team for
+  // agents, Tasks for tasks — otherwise the drawers resume cycling.
+  const [drawerHold, setDrawerHold] = useState<number | null>(null);
   useMotionValueEvent(sceneProgress, "change", (v) => {
-    setHoldKnowledge(v > 0.06 && v < 0.4);
+    if (v > 0.06 && v < COLUMN_START - 0.02) {
+      setDrawerHold(0);
+      return;
+    }
+    const row = COLUMN_ROWS.find((r) => v > r.enterStart - 0.006 && v < r.diveEnd + 0.015);
+    setDrawerHold(row ? row.drawer : null);
   });
 
   // Absorption glow (stays centered while the suck-in happens).
@@ -739,13 +929,13 @@ export function IntegrationScene() {
   const titleBlur = useTransform(sceneProgress, [0.13, 0.23], [0, 7]);
   const titleFilter = useMotionTemplate`blur(${titleBlur}px)`;
 
-  const capCapture = useTransform(sceneProgress, [0.29, 0.38, 0.82, 0.89], [0, 1, 1, 0]);
+  const capCapture = useTransform(sceneProgress, [0.29, 0.38, 0.72, 0.8], [0, 1, 1, 0]);
   const captureScale = useTransform(sceneProgress, [0.29, 0.38], [0.9, 1]);
   const captureY = useTransform(sceneProgress, [0.29, 0.38], [20, 0]);
   const captureBlur = useTransform(sceneProgress, [0.29, 0.38], [10, 0]);
   const captureFilter = useMotionTemplate`blur(${captureBlur}px)`;
 
-  const capVideo = useTransform(sceneProgress, [0.93, 0.985, 1], [0, 1, 1]);
+  const capVideo = useTransform(sceneProgress, [0.8, 0.88, 1], [0, 1, 1]);
   const hintOpacity = useTransform(sceneProgress, [0, 0.04], [1, 0]);
 
   // Word-stagger triggers for the later captions. Inside the pinned scene the
@@ -758,7 +948,7 @@ export function IntegrationScene() {
 
   useMotionValueEvent(sceneProgress, "change", (v) => {
     setCaptureRevealed(v > 0.33);
-    setVideoCapRevealed(v > 0.96);
+    setVideoCapRevealed(v > 0.84);
   });
 
   useEffect(() => {
@@ -782,7 +972,7 @@ export function IntegrationScene() {
 
   return (
     <>
-    <div ref={ref} className="relative h-[360vh] bg-bg">
+    <div ref={ref} className="relative h-[420vh] bg-bg">
       <div
         ref={stickyRef}
         onPointerMove={handlePointerMove}
@@ -819,17 +1009,9 @@ export function IntegrationScene() {
             ))}
         </div>
 
-        {SUCK_LANES.map((lane) =>
-          lane.items.map((item, index) => (
-            <SuckItem
-              key={`${lane.y}-${index}`}
-              progress={sceneProgress}
-              start={lane.start + index * 0.025}
-              y={lane.y}
-              item={item}
-            />
-          ))
-        )}
+        {COLUMN_ROWS.map((row, index) => (
+          <ColumnItem key={index} progress={sceneProgress} row={row} />
+        ))}
 
         {/* absorption glow */}
         <motion.div
@@ -862,7 +1044,7 @@ export function IntegrationScene() {
               className="absolute left-1/2 top-[96%] h-5 w-24 -translate-x-1/2 rounded-full bg-[#4b3424] blur-md"
               style={{ opacity: hubGroundOpacity }}
             />
-            <AnimatedCabinet holdOpen={holdKnowledge ? 0 : null} />
+            <AnimatedCabinet holdOpen={drawerHold} />
           </div>
         </motion.div>
 

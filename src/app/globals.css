@@ -596,6 +596,38 @@ html {
   }
 }
 
+/* Mini dashboard charts (integration scene) — bars breathe, lines draw
+   themselves in a loop, area charts bob gently, so a dashboard card reads
+   as "live" rather than a static screenshot. */
+@keyframes chart-bar-pulse {
+  0%, 100% { transform: scaleY(0.82); }
+  50% { transform: scaleY(1); }
+}
+@keyframes chart-line-draw {
+  0% { stroke-dashoffset: 220; }
+  60%, 100% { stroke-dashoffset: 0; }
+}
+@keyframes chart-dot-pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.6); opacity: 0.6; }
+}
+@keyframes chart-area-breathe {
+  0%, 100% { transform: translateY(0) scaleY(1); }
+  50% { transform: translateY(-2px) scaleY(1.04); }
+}
+.chart-bar-pulse { transform-origin: bottom; animation: chart-bar-pulse 1.8s ease-in-out infinite; }
+.chart-line-draw { stroke-dasharray: 220; animation: chart-line-draw 2.6s ease-in-out infinite; }
+.chart-dot-pulse { transform-origin: center; animation: chart-dot-pulse 1.8s ease-in-out infinite; }
+.chart-area-breathe { transform-origin: bottom; animation: chart-area-breathe 3.2s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .chart-bar-pulse,
+  .chart-line-draw,
+  .chart-dot-pulse,
+  .chart-area-breathe {
+    animation: none;
+  }
+}
+
 /* Agents "heartbeat" — a living lub-dub pulse + synced glow aura */
 @keyframes agent-heartbeat {
   0% { transform: scale(1); }
