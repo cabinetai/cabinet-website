@@ -9,16 +9,18 @@ import {
   type RefObject,
 } from "react";
 import {
-  CalendarClock,
+  Calendar,
   FileCode,
   FileSpreadsheet,
   FileText,
-  Inbox,
+  MessageSquare,
   PenTool,
   Presentation,
-  Radar,
+  Target,
+  TrendingUp,
   type LucideIcon,
 } from "lucide-react";
+import { WoodIcon } from "@/components/wood-icon";
 import {
   AnimatePresence,
   motion,
@@ -170,24 +172,28 @@ function FileMark({ name, color, size = 22 }: { name: string; color: string; siz
 /* ─── The wooden cabinet from the launch video, drawn in CSS. The whole
    cabinet buzzes, then the next drawer springs open as the last one shuts,
    cycling through what Cabinet holds. ─── */
-const DRAWERS = ["Knowledge", "AI team", "Tasks"];
+const DRAWERS = ["Knowledge", "Team", "Tasks"];
+// The cabinet is drawn at a native 216px and blown up as ONE piece — every
+// scene-space constant that points at a drawer must carry the same factor.
+const CABINET_SCALE = 1.35;
 // Where tiles fly to, in the scene's centered coordinate space: the middle
-// of the DARK exposed strip of the open Knowledge drawer. The drawer row's
-// center is -69, but the open front slides down 26px, so only the row's top
-// half shows dark — its midpoint is 11px higher (row top -93 + 13).
-const DRAWER_MOUTH_Y = -80;
+// of the DARK exposed strip of the open Knowledge drawer. In native units
+// the cabinet (242 tall incl. legs) is nudged up 13px to recenter in its
+// 216 box, so drawer row 0's top sits at -106; the open front slides down
+// DRAWER_EXTEND, exposing that many px of dark — midpoint -106 + 17 = -89.
+const DRAWER_MOUTH_Y = -89 * CABINET_SCALE;
 const CABINET_WOOD = "linear-gradient(135deg, #EDDCBF 0%, #DCC098 45%, #C9A47A 100%)";
 const CABINET_WOOD_DARK = "linear-gradient(135deg, #C9A47A 0%, #B8905F 60%, #A87F4F 100%)";
 const CABINET_BRASS = "linear-gradient(180deg, #F0DCA8 0%, #D9BC7A 55%, #B89A54 100%)";
 
 // How far the drawer front slides out when open — shared with its side
 // panels below so they extend exactly as far as the front actually moves.
-const DRAWER_EXTEND = 26;
+const DRAWER_EXTEND = 34;
 const DRAWER_SPRING = { type: "spring" as const, stiffness: 420, mass: 0.8 };
 
 function CabinetDrawer({ label, open }: { label: string; open: boolean }) {
   return (
-    <div className="relative" style={{ height: 48, margin: "5px 10px", zIndex: open ? 2 : 1 }}>
+    <div className="relative" style={{ height: 62, margin: "5px 10px", zIndex: open ? 2 : 1 }}>
       {/* dark opening revealed behind the front */}
       <div
         className="absolute inset-0 rounded-[9px]"
@@ -224,10 +230,11 @@ function CabinetDrawer({ label, open }: { label: string; open: boolean }) {
       ))}
       {/* drawer front slides down + out on a springy, wobbly open */}
       <motion.div
-        className="absolute inset-0 flex flex-col items-center justify-center gap-[3px] rounded-[9px]"
+        className="absolute inset-0 flex flex-col items-center justify-center rounded-[9px]"
         animate={{ y: open ? DRAWER_EXTEND : 0, scale: open ? 1.08 : 1 }}
         transition={{ ...DRAWER_SPRING, damping: open ? 12 : 24 }}
         style={{
+          gap: 6,
           background: CABINET_WOOD,
           boxShadow: open
             ? "0 14px 22px -10px rgba(60, 38, 20, 0.6)"
@@ -243,11 +250,24 @@ function CabinetDrawer({ label, open }: { label: string; open: boolean }) {
             boxShadow: "0 2px 3px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.6)",
           }}
         />
+        {/* card-catalog label holder: brass frame, paper card, typed text */}
         <span
-          className="whitespace-nowrap rounded px-2 text-[11px] font-semibold tracking-[0.03em]"
-          style={{ color: "#7A4F30", background: "rgba(122, 79, 48, 0.13)" }}
+          className="rounded-[5px] p-[2px]"
+          style={{
+            background: CABINET_BRASS,
+            boxShadow: "0 1px 2px rgba(0, 0, 0, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.55)",
+          }}
         >
-          {label}
+          <span
+            className="font-display block whitespace-nowrap rounded-[3px] px-2.5 py-px text-[11.5px] font-bold uppercase tracking-[0.07em]"
+            style={{
+              color: "#6B4226",
+              background: "linear-gradient(180deg, #FCF6E8 0%, #F0E4C8 100%)",
+              boxShadow: "inset 0 1px 2px rgba(96, 64, 32, 0.28)",
+            }}
+          >
+            {label}
+          </span>
         </span>
       </motion.div>
     </div>
@@ -423,7 +443,7 @@ type LaneItem =
       offsetX: number;
       offsetY: number;
     }
-  | { kind: "agent"; name: string; logo: string; accent: string }
+  | { kind: "agent"; name: string; logo: string; accent: string; figure: string }
   | { kind: "task"; name: string; meta: string; icon: LucideIcon; accent: string };
 
 // Each category's label + sample items queue through ONE shared reading spot
@@ -431,12 +451,68 @@ type LaneItem =
 // the screen — then peel off into the drawer that actually holds them:
 // Files and Dashboards both live in Knowledge, AI agents in AI team, Tasks
 // in Tasks.
-const CATEGORIES: { text: string; drawer: number; scatter?: boolean; items: LaneItem[] }[] = [
+type ScatterSlot = { x: number; y: number; r: number };
+
+// Hand-placed slots for the scattered Files pile — a loose 4/3/3 grid with
+// jitter and tilt, deterministic so server and client render identically.
+// Spacing is sized to a page + its name (~100×95px), so every file stays
+// readable, and the pile spreads rightward into space that sat empty.
+const FILE_SLOTS: ScatterSlot[] = [
+  { x: -60, y: -122, r: -8 },
+  { x: 55, y: -100, r: 6 },
+  { x: 175, y: -125, r: -4 },
+  { x: 295, y: -98, r: 9 },
+  { x: -5, y: 18, r: 7 },
+  { x: 115, y: 38, r: -9 },
+  { x: 240, y: 12, r: 4 },
+  { x: -45, y: 155, r: -6 },
+  { x: 80, y: 172, r: 8 },
+  { x: 205, y: 150, r: -5 },
+];
+
+// Three wide agent planks — a gentle zigzag, spaced to their ~330×70 size
+// (plus the mascot standing over each plank's left end).
+const AGENT_SLOTS: ScatterSlot[] = [
+  { x: -30, y: -100, r: -3 },
+  { x: 120, y: 25, r: 2 },
+  { x: -5, y: 150, r: -2 },
+];
+
+// Task papers are wide (~300×85), so they zigzag left/right down the
+// column instead of stacking flush.
+const TASK_SLOTS: ScatterSlot[] = [
+  { x: -50, y: -180, r: -2 },
+  { x: 130, y: -88, r: 2 },
+  { x: -25, y: 6, r: -1.5 },
+  { x: 145, y: 98, r: 2.5 },
+  { x: 15, y: 190, r: -2 },
+];
+
+// Dashboard cards are ~190×150, so their pile is a 2-wide/3-deep grid with
+// jitter, reaching further right for the same reason.
+const DASH_SLOTS: ScatterSlot[] = [
+  { x: -40, y: -150, r: -4 },
+  { x: 205, y: -168, r: 3 },
+  { x: -15, y: 15, r: 3 },
+  { x: 230, y: 0, r: -3 },
+  { x: -45, y: 180, r: 2 },
+  { x: 195, y: 165, r: -2 },
+];
+
+const CATEGORIES: {
+  text: string;
+  drawer: number;
+  // Hand-placed scatter slots (piled like the opening cloud) + where the
+  // label sits above that pile. Categories without slots stack as a list.
+  slots?: ScatterSlot[];
+  labelPos?: { x: number; y: number };
+  items: LaneItem[];
+}[] = [
   {
     text: "Files",
     drawer: 0,
-    // Piled like the opening tile cloud, not stacked in a straight line.
-    scatter: true,
+    slots: FILE_SLOTS,
+    labelPos: { x: 90, y: -215 },
     items: [
       // Motif palette — terracotta, amber, gold, leaf, teal, sky.
       { kind: "file", name: "roadmap.md", color: "#E2725B" },
@@ -454,47 +530,44 @@ const CATEGORIES: { text: string; drawer: number; scatter?: boolean; items: Lane
   {
     text: "Dashboards",
     drawer: 0,
+    slots: DASH_SLOTS,
+    labelPos: { x: 110, y: -265 },
     items: [
       { kind: "dash", title: "Pipeline", value: "$482K", trend: 12, accent: "#5B8FD6", bars: [45, 60, 72, 55, 80, 68], chartStyle: "bars", rotate: -5, offsetX: -10, offsetY: 4 },
       { kind: "dash", title: "Usage", value: "94%", trend: 6, accent: "#6FA45A", bars: [60, 85, 45, 92, 65, 78], chartStyle: "line", rotate: 4, offsetX: 12, offsetY: -8 },
       { kind: "dash", title: "Open tickets", value: "23", trend: -8, accent: "#E2725B", bars: [70, 55, 62, 40, 48, 35], chartStyle: "area", rotate: -3, offsetX: -6, offsetY: 12 },
+      { kind: "dash", title: "Revenue", value: "$1.2M", trend: 18, accent: "#E0B23C", bars: [30, 45, 55, 60, 72, 88], chartStyle: "bars", rotate: 3, offsetX: 8, offsetY: -6 },
+      { kind: "dash", title: "NPS", value: "62", trend: 4, accent: "#4FA39A", bars: [48, 52, 58, 55, 63, 70], chartStyle: "line", rotate: -4, offsetX: -8, offsetY: 8 },
+      { kind: "dash", title: "Signups", value: "1,840", trend: 9, accent: "#E08A3C", bars: [35, 50, 42, 65, 58, 80], chartStyle: "area", rotate: 4, offsetX: 10, offsetY: -4 },
     ],
   },
   {
     text: "AI agents",
     drawer: 1,
+    slots: AGENT_SLOTS,
+    labelPos: { x: 70, y: -205 },
     items: [
-      { kind: "agent", name: "SDR", logo: PROVIDERS[0], accent: "#5B8FD6" },
-      { kind: "agent", name: "Marketing Expert", logo: PROVIDERS[1], accent: "#E2725B" },
-      { kind: "agent", name: "Researcher", logo: PROVIDERS[2], accent: "#4FA39A" },
+      // Wooden mascots from the /agents exploration: the one who picks up
+      // the phone, the typewriter, and the scout owl.
+      { kind: "agent", name: "SDR", logo: PROVIDERS[0], accent: "#5B8FD6", figure: "/brand/agents-office/ring.png" },
+      { kind: "agent", name: "Marketing Expert", logo: PROVIDERS[1], accent: "#E2725B", figure: "/brand/agents-office/type.png" },
+      { kind: "agent", name: "Researcher", logo: PROVIDERS[2], accent: "#4FA39A", figure: "/brand/agents/owl.png" },
     ],
   },
   {
     text: "Tasks",
     drawer: 2,
+    slots: TASK_SLOTS,
+    // Centered over the zigzag pile, not hanging off its left edge.
+    labelPos: { x: 130, y: -265 },
     items: [
-      { kind: "task", name: "Board brief", meta: "Ready every Monday, 7:00", icon: CalendarClock, accent: "#E0B23C" },
-      { kind: "task", name: "Competitor watch", meta: "Scans the market daily", icon: Radar, accent: "#E2725B" },
-      { kind: "task", name: "Inbox triage", meta: "Sorted before you wake", icon: Inbox, accent: "#4FA39A" },
+      { kind: "task", name: "Board brief", meta: "Ready every Monday, 7:00", icon: Calendar, accent: "#E0B23C" },
+      { kind: "task", name: "Competitor watch", meta: "Scans the market daily", icon: Target, accent: "#E2725B" },
+      { kind: "task", name: "Inbox triage", meta: "Sorted before you wake", icon: MessageSquare, accent: "#4FA39A" },
+      { kind: "task", name: "Pipeline digest", meta: "Every morning at 8", icon: TrendingUp, accent: "#6FA45A" },
+      { kind: "task", name: "Meeting notes", meta: "Filed right after the call", icon: FileText, accent: "#E08A3C" },
     ],
   },
-];
-
-// Hand-placed slots for the scattered Files pile — a loose 4/3/3 grid with
-// jitter and tilt, deterministic so server and client render identically.
-// Spacing is sized to a page + its name (~100×95px), so every file stays
-// readable, and the pile spreads rightward into space that sat empty.
-const FILE_SLOTS = [
-  { x: -60, y: -122, r: -8 },
-  { x: 55, y: -100, r: 6 },
-  { x: 175, y: -125, r: -4 },
-  { x: 295, y: -98, r: 9 },
-  { x: -5, y: 18, r: 7 },
-  { x: 115, y: 38, r: -9 },
-  { x: 240, y: 12, r: 4 },
-  { x: -45, y: 155, r: -6 },
-  { x: 80, y: 172, r: 8 },
-  { x: 205, y: 150, r: -5 },
 ];
 
 // Row spacing, sized to each item kind's actual rendered height (dashboard
@@ -509,20 +582,23 @@ const ROW_HEIGHT_BY_KIND: Partial<Record<LaneItem["kind"], number>> = {
 const LABEL_ROW_HEIGHT = 78;
 // Where the column sits while it's being read, before diving toward x=0.
 const COLUMN_X = 260;
-// Consecutive drawers are 58px apart (drawer height 48 + 5px margin each
-// side) — reused from CabinetDrawer's own layout, see DRAWER_MOUTH_Y above.
-const DRAWER_GAP_Y = 58;
-// Starts once the "Cabinet pulls it all into one place" caption has fully
-// settled in (opaque by 0.38) — the column used to start at 0.28, arriving
-// while that caption was still fading in.
+// Consecutive drawers are 72px apart native (drawer height 62 + 5px margin
+// each side) — reused from CabinetDrawer's own layout, see DRAWER_MOUTH_Y.
+const DRAWER_GAP_Y = 72 * CABINET_SCALE;
+// The column always plays inside this fixed progress window: it starts once
+// the "Cabinet pulls it all into one place" caption has settled (opaque by
+// 0.38) and is guaranteed to finish by the end value — buildColumnRows
+// normalizes the whole timeline into it, so adding or removing items can
+// never push the last dive past the closing captions again.
 const COLUMN_START = 0.42;
-// A small gap held open between one category finishing and the next
-// starting — categories now run back-to-back by actual duration, not a
-// fixed slot, since Files has far more items than the others.
+const COLUMN_END_TARGET = 0.88;
+// The constants below are RELATIVE weights (rescaled by the normalization),
+// so only their proportions matter.
+// A small gap held open between one category finishing and the next.
 const CATEGORY_GAP = 0.012;
 // Phase 1 — gather: items slide in one after another, staggered by this
-// much. Files (many more items, scattered rather than listed) uses a
-// tighter stagger so a big pile doesn't take forever to arrive.
+// much. Scattered piles (many more items) use a tighter stagger so a big
+// pile doesn't take forever to arrive.
 const ROW_ENTER_STEP = 0.007;
 const SCATTER_ENTER_STEP = 0.0035;
 const ENTER_DUR = 0.022;
@@ -550,16 +626,16 @@ type ColumnRow = {
 
 function buildColumnRows(): ColumnRow[] {
   const rows: ColumnRow[] = [];
-  let cursor = COLUMN_START;
+  let cursor = 0;
   CATEGORIES.forEach((cat) => {
     const catStart = cursor;
     const items: LaneItem[] = [{ kind: "label", text: cat.text }, ...cat.items];
-    const enterStep = cat.scatter ? SCATTER_ENTER_STEP : ROW_ENTER_STEP;
-    const diveStep = cat.scatter ? SCATTER_DIVE_STEP : DIVE_STEP;
+    const enterStep = cat.slots ? SCATTER_ENTER_STEP : ROW_ENTER_STEP;
+    const diveStep = cat.slots ? SCATTER_DIVE_STEP : DIVE_STEP;
     // Every item waits for the LAST one to finish arriving before any of
     // them dives — the category gathers fully, then enters together.
     const groupHoldEnd = catStart + (items.length - 1) * enterStep + ENTER_DUR + GROUP_HOLD;
-    const rowHeight = cat.scatter
+    const rowHeight = cat.slots
       ? 0
       : Math.max(ROW_HEIGHT_BY_KIND[cat.items[0].kind] ?? 90, LABEL_ROW_HEIGHT);
     items.forEach((item, j) => {
@@ -567,12 +643,12 @@ function buildColumnRows(): ColumnRow[] {
       const diveStart = groupHoldEnd + j * diveStep;
       const diveEnd = diveStart + DIVE_DUR;
       // The label sits above the pile (nudged right to sit over its middle);
-      // each file gets its own hand-placed slot.
-      const slot = cat.scatter && j > 0 ? FILE_SLOTS[(j - 1) % FILE_SLOTS.length] : null;
+      // each scattered item gets its own hand-placed slot.
+      const slot = cat.slots && j > 0 ? cat.slots[(j - 1) % cat.slots.length] : null;
       rows.push({
         item,
-        rowX: slot ? slot.x : cat.scatter ? 90 : 0,
-        rowY: slot ? slot.y : cat.scatter ? -215 : (j - (items.length - 1) / 2) * rowHeight,
+        rowX: slot ? slot.x : cat.labelPos ? cat.labelPos.x : 0,
+        rowY: slot ? slot.y : cat.labelPos ? cat.labelPos.y : (j - (items.length - 1) / 2) * rowHeight,
         tileRotate: slot ? slot.r : 0,
         drawer: cat.drawer,
         enterStart,
@@ -584,21 +660,50 @@ function buildColumnRows(): ColumnRow[] {
     });
     cursor += CATEGORY_GAP;
   });
-  return rows;
+  // Normalize the raw 0..cursor timeline into the fixed window, so the
+  // column always ends exactly at COLUMN_END_TARGET no matter how many
+  // items the categories hold.
+  const scale = (COLUMN_END_TARGET - COLUMN_START) / cursor;
+  const fit = (t: number) => COLUMN_START + t * scale;
+  return rows.map((row) => ({
+    ...row,
+    enterStart: fit(row.enterStart),
+    enterEnd: fit(row.enterEnd),
+    diveStart: fit(row.diveStart),
+    diveEnd: fit(row.diveEnd),
+  }));
 }
 const COLUMN_ROWS = buildColumnRows();
+// When the last item has dived, the show is over — the cabinet closes up
+// for the "…your AI team takes it from here" beat.
+const COLUMN_END = COLUMN_ROWS[COLUMN_ROWS.length - 1].diveEnd;
 
 function LaneChip({ item }: { item: LaneItem }) {
   switch (item.kind) {
     case "label":
-      // Plain text, not a button or an icon — same serif as the scene's own
-      // opening captions ("Cabinet pulls it all into one place").
+      // Same card-catalog hardware as the drawer labels — brass frame,
+      // recessed paper card, Fraunces caps — scaled up for a section title.
       return (
         <span
-          className="whitespace-nowrap text-4xl leading-none tracking-[-0.02em] text-text-primary [text-shadow:0_1px_14px_rgba(250,246,241,0.85)] sm:text-5xl"
-          style={{ fontFamily: "var(--font-brand)" }}
+          className="inline-block rounded-[7px]"
+          style={{
+            padding: 3,
+            background: CABINET_BRASS,
+            boxShadow: "0 2px 4px rgba(0, 0, 0, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.55)",
+          }}
         >
-          {item.text}
+          <span
+            className="font-display block whitespace-nowrap rounded-[4px] font-bold uppercase tracking-[0.07em]"
+            style={{
+              padding: "6px 18px",
+              fontSize: 26,
+              color: "#6B4226",
+              background: "linear-gradient(180deg, #FCF6E8 0%, #F0E4C8 100%)",
+              boxShadow: "inset 0 1px 3px rgba(96, 64, 32, 0.28)",
+            }}
+          >
+            {item.text}
+          </span>
         </span>
       );
     case "file": {
@@ -729,31 +834,113 @@ function LaneChip({ item }: { item: LaneItem }) {
       );
     }
     case "agent":
+      // A long wooden plank — same material as the opening cloud's tiles.
+      // The wooden mascot from the /agents exploration stands over the
+      // plank's left end; the provider mark sits in a little circle with a
+      // beaming heartbeat aura in the agent's own color, and the name reads
+      // as carved into the wood (dark ink, light catch below, shadow above).
       return (
-        <span className="inline-flex items-center gap-3 whitespace-nowrap rounded-full bg-accent-bg-subtle px-6 py-3.5 shadow-xl shadow-accent/10 ring-1 ring-accent/20">
-          <span className="agent-heartbeat flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white shadow-sm">
-            <Image src={item.logo} alt="" width={20} height={20} className="object-contain" />
+        <span className="relative inline-flex items-end">
+          <Image
+            src={item.figure}
+            alt=""
+            width={78}
+            height={78}
+            className="relative z-10 -mr-6 -translate-y-2 object-contain"
+            style={{
+              width: 78,
+              height: 78,
+              filter: "drop-shadow(0 6px 8px rgba(84, 52, 26, 0.35))",
+            }}
+          />
+          <span
+            className="wood-tile painted-wood-tile inline-flex items-center gap-3.5 whitespace-nowrap rounded-2xl"
+            style={{
+              padding: "12px 24px 12px 34px",
+              // The shared tile classes skip grain on purpose (dozens animate
+              // in the cloud); only 3 planks exist, so give them real streaks:
+              // two near-horizontal banding layers over the maple base.
+              background:
+                "repeating-linear-gradient(178deg, rgba(122, 82, 44, 0.10) 0 1.5px, transparent 1.5px 7px), repeating-linear-gradient(2deg, rgba(146, 100, 55, 0.07) 0 2px, transparent 2px 11px), linear-gradient(150deg, #F2DFB9 0%, #E2C58F 58%, #D5AD73 100%)",
+            }}
+          >
+            <span className="relative flex h-11 w-11 shrink-0 items-center justify-center">
+              <span
+                aria-hidden
+                className="agent-aura absolute left-1/2 top-1/2 h-12 w-12 rounded-full"
+                style={{ background: `radial-gradient(circle, ${item.accent}66 0%, transparent 70%)` }}
+              />
+              <span className="agent-heartbeat relative flex h-9 w-9 items-center justify-center rounded-full bg-[#FFF8EC] shadow-sm">
+                <Image
+                  src={item.logo}
+                  alt=""
+                  width={20}
+                  height={20}
+                  className="object-contain"
+                  style={{ width: 20, height: 20 }}
+                />
+              </span>
+            </span>
+            <span
+              className="font-display text-xl font-semibold"
+              style={{
+                color: "#5B432C",
+                textShadow: "0 1px 0 rgba(255, 244, 222, 0.65), 0 -1px 1px rgba(60, 36, 16, 0.45)",
+              }}
+            >
+              {item.name}
+            </span>
           </span>
-          <span className="font-code text-2xl font-medium text-accent-warm">{item.name}</span>
-          {/* token — each agent's own color touch from the motif palette */}
-          <span className="h-2.5 w-2.5 shrink-0 rounded-full" style={{ background: item.accent }} />
         </span>
       );
     case "task": {
-      // A routine card, not a checkbox — what it does and when it runs,
-      // each with its own color touch from the motif palette.
-      const TaskIcon = item.icon;
+      // A piece of white paper in motion: faint fiber texture, a slight 3D
+      // bow (alternating direction so the stack doesn't look stamped), a
+      // gentle drift, and a dog-eared corner. Padding is inline so a stale
+      // Tailwind cache can never strip it and clip the text.
+      const fold = 14;
+      const bow = item.name.length % 2 ? -7 : 7;
       return (
-        <span className="inline-flex items-center gap-3.5 whitespace-nowrap rounded-2xl border border-black/5 bg-[#FFFDF8] py-3 pl-4 pr-7 shadow-xl shadow-black/10">
+        <span
+          className="float-slow inline-block"
+          style={{
+            filter: "drop-shadow(0 12px 14px rgba(84, 52, 26, 0.28))",
+            animationDelay: `${-((item.name.length * 0.9) % 4).toFixed(1)}s`,
+          }}
+        >
           <span
-            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl"
-            style={{ background: `${item.accent}26` }}
+            className="relative inline-flex items-center gap-3.5 whitespace-nowrap"
+            style={{
+              padding: "14px 40px 14px 16px",
+              background:
+                "repeating-linear-gradient(0deg, rgba(120, 96, 60, 0.03) 0 1px, transparent 1px 3px), repeating-linear-gradient(90deg, rgba(120, 96, 60, 0.02) 0 2px, transparent 2px 5px), linear-gradient(170deg, #FFFFFF 0%, #F6F1E4 100%)",
+              borderRadius: 7,
+              clipPath: `polygon(0 0, calc(100% - ${fold}px) 0, 100% ${fold}px, 100% 100%, 0 100%)`,
+              transform: `perspective(700px) rotateY(${bow}deg) rotateX(2.5deg)`,
+            }}
           >
-            <TaskIcon size={22} style={{ color: item.accent }} strokeWidth={2.25} />
-          </span>
-          <span className="flex flex-col text-left leading-snug">
-            <span className="font-sans text-xl font-semibold text-text-primary">{item.name}</span>
-            <span className="font-code text-sm text-text-muted">{item.meta}</span>
+            <span
+              className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl"
+              style={{ background: `${item.accent}22` }}
+            >
+              <WoodIcon icon={item.icon} className="h-8 w-8" />
+            </span>
+            <span className="flex flex-col text-left leading-snug">
+              <span className="font-sans text-xl font-semibold text-text-primary">{item.name}</span>
+              <span className="font-code text-sm text-text-secondary">{item.meta}</span>
+            </span>
+            {/* folded-back corner */}
+            <span
+              aria-hidden
+              className="absolute right-0 top-0"
+              style={{
+                width: fold,
+                height: fold,
+                background: "#E6DEC9",
+                clipPath: "polygon(0 0, 100% 100%, 0 100%)",
+                borderRadius: "0 0 0 5px",
+              }}
+            />
           </span>
         </span>
       );
@@ -1032,7 +1219,13 @@ export function IntegrationScene() {
       return;
     }
     const row = COLUMN_ROWS.find((r) => v > r.enterStart - 0.006 && v < r.diveEnd + 0.015);
-    setDrawerHold(row ? row.drawer : null);
+    if (row) {
+      setDrawerHold(row.drawer);
+      return;
+    }
+    // Finale: every drawer shut while "…your AI team takes it from here"
+    // plays over the closed cabinet.
+    setDrawerHold(v > COLUMN_END ? -1 : null);
   });
 
   // Absorption glow (stays centered while the suck-in happens).
@@ -1051,13 +1244,13 @@ export function IntegrationScene() {
   const titleBlur = useTransform(sceneProgress, [0.13, 0.23], [0, 7]);
   const titleFilter = useMotionTemplate`blur(${titleBlur}px)`;
 
-  const capCapture = useTransform(sceneProgress, [0.29, 0.38, 0.86, 0.92], [0, 1, 1, 0]);
+  const capCapture = useTransform(sceneProgress, [0.29, 0.38, 0.88, 0.93], [0, 1, 1, 0]);
   const captureScale = useTransform(sceneProgress, [0.29, 0.38], [0.9, 1]);
   const captureY = useTransform(sceneProgress, [0.29, 0.38], [20, 0]);
   const captureBlur = useTransform(sceneProgress, [0.29, 0.38], [10, 0]);
   const captureFilter = useMotionTemplate`blur(${captureBlur}px)`;
 
-  const capVideo = useTransform(sceneProgress, [0.92, 0.97, 1], [0, 1, 1]);
+  const capVideo = useTransform(sceneProgress, [0.92, 0.96, 1], [0, 1, 1]);
   const hintOpacity = useTransform(sceneProgress, [0, 0.04], [1, 0]);
 
   // Word-stagger triggers for the later captions. Inside the pinned scene the
@@ -1070,7 +1263,7 @@ export function IntegrationScene() {
 
   useMotionValueEvent(sceneProgress, "change", (v) => {
     setCaptureRevealed(v > 0.33);
-    setVideoCapRevealed(v > 0.94);
+    setVideoCapRevealed(v > 0.93);
   });
 
   useEffect(() => {
@@ -1094,7 +1287,7 @@ export function IntegrationScene() {
 
   return (
     <>
-    <div ref={ref} className="relative h-[420vh] bg-bg">
+    <div ref={ref} className="relative h-[620vh] bg-bg">
       <div
         ref={stickyRef}
         onPointerMove={handlePointerMove}
@@ -1161,12 +1354,21 @@ export function IntegrationScene() {
           }}
         >
           <div className="relative h-[216px] w-[216px] origin-bottom max-sm:-translate-y-[15vh] max-sm:scale-[0.52]">
-            <motion.div
-              aria-hidden
-              className="absolute left-1/2 top-[96%] h-5 w-24 -translate-x-1/2 rounded-full bg-[#4b3424] blur-md"
-              style={{ opacity: hubGroundOpacity }}
-            />
-            <AnimatedCabinet holdOpen={drawerHold} />
+            {/* native 216 box blown up as one piece; the drawer-mouth
+                constants carry the same CABINET_SCALE factor */}
+            {/* the taller cabinet runs 242px native in this 216 box, so it
+                is nudged up 13px (inside the scale) to stay centered */}
+            <div
+              className="absolute inset-0"
+              style={{ transform: `scale(${CABINET_SCALE}) translateY(-13px)` }}
+            >
+              <motion.div
+                aria-hidden
+                className="absolute left-1/2 top-[114%] h-5 w-24 -translate-x-1/2 rounded-full bg-[#4b3424] blur-md"
+                style={{ opacity: hubGroundOpacity }}
+              />
+              <AnimatedCabinet holdOpen={drawerHold} />
+            </div>
           </div>
         </motion.div>
 
