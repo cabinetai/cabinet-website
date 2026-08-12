@@ -6,6 +6,7 @@ import { HeroProductReveal } from "@/components/marketing/hero-product-reveal";
 import { KnowledgeNetwork } from "@/components/marketing/knowledge-network";
 import {
   LegacyByoai,
+  LegacyCloudWaitlist,
   LegacyCta,
   LegacyFeaturesGrid,
   LegacyHero,
@@ -51,6 +52,10 @@ export default function HomePage() {
 
       <SectionBadge n="27" title="Integration scene" origin="main">
         <LegacyIntegrationScene />
+      </SectionBadge>
+
+      <SectionBadge n="28" title="Cloud waitlist" origin="main">
+        <LegacyCloudWaitlist />
       </SectionBadge>
 
       <SectionBadge n="31" title="Testimonials: 10x work" origin="main">

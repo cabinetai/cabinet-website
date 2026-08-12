@@ -3,11 +3,14 @@ import {
   ArrowRight,
   Bot,
   Check,
+  Cloud,
   Code2,
   FileText,
   GitBranch,
+  Server,
   Shield,
   Star,
+  Terminal,
   Users,
   X,
 } from "lucide-react";
@@ -15,8 +18,7 @@ import { Suspense } from "react";
 import { IntegrationScene } from "@/components/integration-scene";
 import { PrinciplesShowcase } from "@/components/principles-showcase";
 import { DiscordIcon, GithubIcon } from "@/components/site-icons";
-import { WaitlistCapture } from "@/components/waitlist-capture";
-import { WaitlistCloudBackdrop } from "@/components/waitlist-cloud-backdrop";
+import { CloudHeroWaitlist } from "@/components/cloud-hero-waitlist";
 import { WoodIcon } from "@/components/wood-icon";
 import { DetectedDownloadCta, OsDownloadButtons, TerminalInstall } from "@/components/marketing/os-download";
 import {
@@ -24,8 +26,9 @@ import {
   TerminalDemo,
   TypingText,
 } from "@/components/marketing/legacy-interactive-primitives";
+import { MotionReveal } from "@/components/marketing/motion-primitives";
 import { CABINETS, CABINETS_SITE, cabinetCover, cabinetUrl } from "@/lib/cabinets";
-import { DISCORD_URL, GITHUB_URL } from "@/lib/site-config";
+import { DISCORD_URL, GITHUB_URL, WAITLIST_COPY } from "@/lib/site-config";
 import { SOLUTIONS, SOLUTION_STORIES } from "@/lib/solutions";
 
 const PROVIDERS = [
@@ -685,22 +688,75 @@ export function LegacySocialProofBar() {
 
 export function LegacyCloudWaitlist() {
   return (
-    <section className="relative overflow-hidden py-20 md:py-24 bg-bg">
-      <WaitlistCloudBackdrop />
+    <section className="relative flex min-h-[100svh] items-center overflow-hidden bg-bg py-20">
+      <div aria-hidden className="pointer-events-none absolute inset-0 hidden lg:block">
+        <span className="float-slow absolute left-[9%] top-[20%] block" style={{ animationDelay: "-1s" }}>
+          <WoodIcon icon={Cloud} className="h-24 w-24 -rotate-6 opacity-90" />
+        </span>
+        <span className="float-slow absolute right-[11%] top-[16%] block" style={{ animationDelay: "-3.5s" }}>
+          <WoodIcon icon={Terminal} className="h-20 w-20 rotate-6 opacity-90" />
+        </span>
+        <span className="float-slow absolute left-[15%] bottom-[18%] block" style={{ animationDelay: "-2.2s" }}>
+          <WoodIcon icon={Server} className="h-16 w-16 rotate-3 opacity-90" />
+        </span>
+      </div>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6">
-        <Suspense
-          fallback={
-            <div className="mx-auto min-h-[320px] max-w-5xl rounded-[28px] card-skin/70" />
-          }
-        >
-          <WaitlistCapture
-            source="homepage-section"
-            originPage="/"
-            trackView
-            className="max-w-5xl mx-auto"
-          />
-        </Suspense>
+      <div className="relative mx-auto max-w-3xl px-6 text-center">
+        <MotionReveal amount={0.3}>
+          <p className="mb-6 text-[11px] font-code uppercase tracking-[0.28em] text-accent">
+            <span className="font-brand italic normal-case text-sm tracking-normal">Cabinet</span> Cloud
+          </p>
+        </MotionReveal>
+
+        <MotionReveal delay={0.08} amount={0.3}>
+          <h2 className="font-display text-4xl leading-tight text-text-primary md:text-5xl">
+            Your laptop needs sleep.
+            <br />
+            Your AI team shouldn&apos;t.
+          </h2>
+        </MotionReveal>
+
+        <MotionReveal delay={0.16} amount={0.3}>
+          <p className="mx-auto mt-5 max-w-xl font-body-serif text-lg leading-relaxed text-text-secondary">
+            <span className="font-brand italic">Cabinet</span>{" "}Cloud runs your workspace around the
+            clock, on hardware that belongs to you alone. No shared tenants, no shortcuts on security.
+          </p>
+        </MotionReveal>
+
+        <MotionReveal delay={0.24} amount={0.2}>
+          <div className="mt-10 grid gap-4 text-left sm:grid-cols-3">
+            <div className="soft-card p-6">
+              <WoodIcon icon={Server} className="mb-4 h-20 w-20" />
+              <h3 className="font-display text-xl text-text-primary">Your own machine</h3>
+              <p className="mt-2 text-base leading-relaxed text-text-secondary">
+                A dedicated container, not a shared slice of someone else&apos;s server.
+              </p>
+            </div>
+            <div className="soft-card p-6">
+              <WoodIcon icon={Shield} className="mb-4 h-20 w-20" />
+              <h3 className="font-display text-xl text-text-primary">Locked down, all yours</h3>
+              <p className="mt-2 text-base leading-relaxed text-text-secondary">
+                Encrypted, isolated, and walled off from every other Cabinet.
+              </p>
+            </div>
+            <div className="soft-card p-6">
+              <WoodIcon icon={Users} className="mb-4 h-20 w-20" />
+              <h3 className="font-display text-xl text-text-primary">AI teams, ready to go</h3>
+              <p className="mt-2 text-base leading-relaxed text-text-secondary">
+                Pick a pre-built team and start working on day one.
+              </p>
+            </div>
+          </div>
+        </MotionReveal>
+
+        <MotionReveal delay={0.32} amount={0.2}>
+          <p className="mt-9 text-sm font-semibold text-accent">
+            We are building it now. {WAITLIST_COPY.scarcity}
+          </p>
+          <Suspense fallback={<div className="mx-auto mt-4 h-16 max-w-xl rounded-full card-skin/70" />}>
+            <CloudHeroWaitlist source="homepage-section" originPage="/" className="mx-auto mt-4 max-w-xl" />
+          </Suspense>
+        </MotionReveal>
       </div>
     </section>
   );

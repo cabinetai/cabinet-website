@@ -7,6 +7,7 @@ export type WaitlistSource =
   | "cloud-page"
   | "waitlist-link"
   | "wishlist-link"
+  | "pricing-hero"
   | "pricing-pro"
   | "pricing-max"
   | "pricing-team-early"
