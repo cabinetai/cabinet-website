@@ -14,6 +14,17 @@ Cabinet is not only markdown files on disk. Copy and positioning must reflect th
 
 The local-first, own-your-data story stays true. Just do not let it shrink Cabinet into "a folder of markdown." Cabinet is the place that surfaces your whole KB and files, visualizes web apps, and lets a team share and work together.
 
+# Deploying
+
+Push to `main` and the site deploys itself. `.github/workflows/deploy.yml` builds the static export and pushes `out/` to the `gh-pages` branch. Do not deploy by hand unless Actions is down.
+
+Two things about this setup are easy to get wrong:
+
+- GitHub Pages is in **legacy mode** and serves the `gh-pages` branch. It does not serve Actions artifacts. A workflow built on `actions/deploy-pages` will run green and publish nothing.
+- `gh-pages` is a build artifact. The workflow force-pushes a fresh history to it every run. Never commit anything there by hand, it will be overwritten.
+
+Manual fallback: `npm run build`, then copy `out/` onto a `gh-pages` worktree and push. `public/CNAME` and `public/.nojekyll` ship with the build, so both paths produce the same tree.
+
 # Writing style
 
 This is a marketing site for C-level executives, VPs, and decision-makers in organizations. Every word of copy must read as if a credible human professional wrote it, not an AI.
