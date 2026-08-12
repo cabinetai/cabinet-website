@@ -686,6 +686,72 @@ export function LegacySocialProofBar() {
   );
 }
 
+// A pillar of the Cloud story drawn as one drawer of the Cabinet itself:
+// wood front, brass handle, brass-framed paper label (the hero cabinet's
+// own construction), with the wooden object resting on top.
+function CloudDrawer({
+  icon,
+  title,
+  children,
+}: {
+  icon: React.ElementType;
+  title: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="text-center">
+      <WoodIcon
+        icon={icon}
+        className="relative z-10 mx-auto -mb-4 h-24 w-24 drop-shadow-[0_10px_10px_rgba(84,52,26,0.3)]"
+      />
+      <div
+        className="relative flex flex-col items-center justify-center gap-2 rounded-2xl"
+        style={{
+          height: 104,
+          background: "linear-gradient(135deg, #EDDCBF 0%, #DCC098 45%, #C9A47A 100%)",
+          boxShadow:
+            "inset 0 1.5px 0 rgba(255, 250, 238, 0.9), inset 0 0 0 1px rgba(90, 58, 30, 0.22), 0 18px 28px -14px rgba(74, 48, 24, 0.45)",
+        }}
+      >
+        <div
+          aria-hidden
+          style={{
+            width: 64,
+            height: 9,
+            borderRadius: 6,
+            background: "linear-gradient(180deg, #F0DCA8 0%, #D9BC7A 55%, #B89A54 100%)",
+            boxShadow: "0 2px 3px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.6)",
+          }}
+        />
+        <span
+          className="rounded-[6px]"
+          style={{
+            padding: 2.5,
+            background: "linear-gradient(180deg, #F0DCA8 0%, #D9BC7A 55%, #B89A54 100%)",
+            boxShadow: "0 1px 2px rgba(0, 0, 0, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.55)",
+          }}
+        >
+          <span
+            className="font-display block whitespace-nowrap rounded-[4px] font-bold uppercase tracking-[0.07em]"
+            style={{
+              padding: "3px 14px",
+              fontSize: 15,
+              color: "#6B4226",
+              background: "linear-gradient(180deg, #FCF6E8 0%, #F0E4C8 100%)",
+              boxShadow: "inset 0 1px 2px rgba(96, 64, 32, 0.28)",
+            }}
+          >
+            {title}
+          </span>
+        </span>
+      </div>
+      <p className="mx-auto mt-5 max-w-xs text-base leading-relaxed text-text-secondary">
+        {children}
+      </p>
+    </div>
+  );
+}
+
 export function LegacyCloudWaitlist() {
   return (
     <section className="relative flex min-h-[100svh] items-center overflow-hidden bg-bg py-20">
@@ -724,28 +790,18 @@ export function LegacyCloudWaitlist() {
         </MotionReveal>
 
         <MotionReveal delay={0.24} amount={0.2}>
-          <div className="mt-10 grid gap-4 text-left sm:grid-cols-3">
-            <div className="soft-card p-6">
-              <WoodIcon icon={Server} className="mb-4 h-20 w-20" />
-              <h3 className="font-display text-xl text-text-primary">Your own machine</h3>
-              <p className="mt-2 text-base leading-relaxed text-text-secondary">
-                A dedicated container, not a shared slice of someone else&apos;s server.
-              </p>
-            </div>
-            <div className="soft-card p-6">
-              <WoodIcon icon={Shield} className="mb-4 h-20 w-20" />
-              <h3 className="font-display text-xl text-text-primary">Locked down, all yours</h3>
-              <p className="mt-2 text-base leading-relaxed text-text-secondary">
-                Encrypted, isolated, and walled off from every other Cabinet.
-              </p>
-            </div>
-            <div className="soft-card p-6">
-              <WoodIcon icon={Users} className="mb-4 h-20 w-20" />
-              <h3 className="font-display text-xl text-text-primary">AI teams, ready to go</h3>
-              <p className="mt-2 text-base leading-relaxed text-text-secondary">
-                Pick a pre-built team and start working on day one.
-              </p>
-            </div>
+          {/* Not cards: three drawers of the Cabinet itself, each with its
+              wooden object resting on top and a brass-framed label. */}
+          <div className="mt-14 grid gap-x-6 gap-y-12 sm:grid-cols-3">
+            <CloudDrawer icon={Server} title="Your own machine">
+              A dedicated container, not a shared slice of someone else&apos;s server.
+            </CloudDrawer>
+            <CloudDrawer icon={Shield} title="Locked down">
+              Encrypted, isolated, and walled off from every other Cabinet.
+            </CloudDrawer>
+            <CloudDrawer icon={Users} title="Teams, ready to go">
+              Pick a pre-built AI team and start working on day one.
+            </CloudDrawer>
           </div>
         </MotionReveal>
 
