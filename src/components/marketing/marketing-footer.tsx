@@ -52,7 +52,7 @@ export function MarketingFooter() {
           <div className="max-w-sm">
             <Link href="/" className="inline-flex items-center gap-3" aria-label="Cabinet home">
               <Image
-                src="/brand/cabinet-logo-face-2-512.png"
+                src="/brand/cabinet-drawers-logo.png"
                 alt=""
                 width={36}
                 height={38}

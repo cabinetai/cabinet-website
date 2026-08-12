@@ -30,7 +30,7 @@ export default function CloudPage() {
                                         </div>
 
             <Image
-              src="/brand/cabinet-logo-face-2-512.png"
+              src="/brand/cabinet-drawers-logo.png"
               alt="Cabinet"
               width={104}
               height={104}

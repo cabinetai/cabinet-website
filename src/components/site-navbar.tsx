@@ -130,21 +130,18 @@ export function SiteNavbar({ fixed = false }: { fixed?: boolean }) {
         <Link
           href="/"
           aria-label="Cabinet home"
-          className="glass-pill group inline-flex h-11 shrink-0 items-center gap-2.5 pl-2.5 pr-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/50"
+          className="group inline-flex h-11 shrink-0 items-center gap-2 rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/50"
         >
-          <span className="liquid-glass__refract" aria-hidden />
-          <span className="relative z-10 inline-flex items-center gap-2.5">
-            <Image
-              src="/brand/cabinet-logo-face-2-512.png"
-              alt=""
-              width={38}
-              height={40}
-              className="h-9 w-auto object-contain"
-              priority
-            />
-            <span className="whitespace-nowrap text-xl font-brand italic tracking-tight text-text-primary">
-              Cabinet
-            </span>
+          <Image
+            src="/brand/cabinet-drawers-logo.png"
+            alt=""
+            width={20}
+            height={28}
+            className="h-7 w-auto object-contain"
+            priority
+          />
+          <span className="whitespace-nowrap text-xl font-brand italic tracking-tight text-text-primary">
+            Cabinet
           </span>
         </Link>
 

@@ -89,7 +89,7 @@ export function CompareHeadToHead({ data }: { data: Comparison }) {
                 vs
               </span>
               <Image
-                src="/brand/cabinet-logo-face-2-512.png"
+                src="/brand/cabinet-drawers-logo.png"
                 alt="Cabinet, the AI workspace your company owns"
                 width={128}
                 height={128}

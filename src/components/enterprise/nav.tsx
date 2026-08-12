@@ -31,7 +31,7 @@ export function EnterpriseNav() {
         {/* Logo */}
         <a href="/enterprise" className="flex shrink-0 items-center gap-3 group">
           <Image
-            src="/brand/cabinet-logo-face-2-512.png"
+            src="/brand/cabinet-drawers-logo.png"
             alt="Cabinet"
             width={34}
             height={36}
