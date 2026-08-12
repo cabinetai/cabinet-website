@@ -119,6 +119,24 @@ const ROUND_THREE: { family: string; note: string; figures: Figure[] }[] = [
   },
 ];
 
+/* ─── Round four: "the Cabinet" — the other meaning of the word. Posh
+   minister/advisor figures in suits: top hats, monocles, mustaches, a
+   powdered wig. Every design is an original invented caricature, never a
+   real or identifiable politician or public figure — the wink is in the
+   pun and the costuming, not anyone's actual likeness. ─── */
+const ROUND_FOUR: Figure[] = [
+  { id: "chair", name: "The Chair", role: "Dashboards: the one seat with a view of everything at once." },
+  { id: "whip", name: "The Whip", role: "Automation & workflows: keeps the whole room moving on schedule." },
+  { id: "chancellor", name: "The Chancellor", role: "Billing & usage: keeps count of exactly what everything costs." },
+  { id: "speaker", name: "The Speaker", role: "Ask Cabinet: recognizes the question and calls the answer." },
+  { id: "clerk", name: "The Clerk", role: "Audit log: the official record of who did what, and when." },
+  { id: "attache", name: "The Attaché", role: "Onboarding: walks the new hire through everything on day one." },
+  { id: "dame", name: "The Dame", role: "Guest access: decides exactly who from outside gets let into the room." },
+  { id: "marshal", name: "The Field Marshal", role: "Compliance: sets the rules the whole estate runs by." },
+  { id: "statesman", name: "The Statesman", role: "Search: has read every file in the building and can find any of them on request." },
+  { id: "envoy", name: "The Envoy", role: "Integrations: delivers the message to exactly the right department, sealed and signed." },
+];
+
 function FigureCard({ id, name, role, dir }: Figure & { dir: string }) {
   return (
     <div className="card-skin card-hover rounded-2xl p-6">
@@ -218,6 +236,23 @@ export default function AgentFiguresPage() {
                 ))}
               </div>
             </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-5xl px-6 pb-24">
+        <p className="section-label mb-2">Round four · the Cabinet</p>
+        <h2 className="font-display text-2xl tracking-tight text-text-primary">
+          The other meaning of the word
+        </h2>
+        <p className="mt-3 max-w-2xl font-body-serif text-base leading-relaxed text-text-secondary">
+          A cabinet is also a room full of advisors. Ten posh figures in suits, each with
+          their own portfolio: a top hat, a monocle, a powdered wig, a bowler and a bell.
+          Invented characters throughout, never a real politician or public figure.
+        </p>
+        <div className="mt-8 grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-5">
+          {ROUND_FOUR.map((f) => (
+            <FigureCard key={f.id} dir="agents-cabinet" {...f} />
           ))}
         </div>
       </section>

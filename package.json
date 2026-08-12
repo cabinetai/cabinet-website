@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "predev": "node scripts/sync-templates.mjs && node scripts/link-explorations.mjs",
+    "dev": "NODE_OPTIONS=--max-old-space-size=3072 next dev",
+    "predev": "node scripts/guard-single-dev.mjs && node scripts/sync-templates.mjs && node scripts/link-explorations.mjs",
     "build": "next build",
     "prebuild": "node scripts/sync-templates.mjs && node scripts/link-explorations.mjs --unlink",
     "start": "next start",
