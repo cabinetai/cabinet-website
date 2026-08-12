@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { Suspense } from "react";
 import {
   ArrowRight,
   Bot,
@@ -12,6 +13,7 @@ import {
   ShieldCheck,
   WalletCards,
 } from "lucide-react";
+import { CloudHeroWaitlist } from "@/components/cloud-hero-waitlist";
 import { MarketingFooter } from "@/components/marketing/marketing-footer";
 import { PricingComparisonTable } from "@/components/pricing-comparison-table";
 import { PricingInteractive } from "@/components/pricing-interactive";
@@ -35,17 +37,17 @@ const OWNERSHIP_ROWS = [
   {
     icon: Server,
     label: "Cabinet platform",
-    value: "Self-host for $0 or choose Cloud from $20 per month",
+    value: "Free if you host it. $20/mo if you would rather not lift a finger",
   },
   {
     icon: Bot,
     label: "AI accounts",
-    value: "Use the providers and company accounts you already trust",
+    value: "Whatever AI your company already pays for. We are not precious about it",
   },
   {
     icon: FolderGit2,
     label: "Company work",
-    value: "Keep the full Cabinet directory and move it when you choose",
+    value: "It is your data. Grab the whole directory and walk out anytime",
   },
 ];
 
@@ -111,7 +113,7 @@ export default function PricingPage() {
     <main className="min-h-screen overflow-clip bg-bg text-text-primary">
       <SiteNavbar fixed />
 
-      <section className="relative isolate flex min-h-[92svh] items-center overflow-hidden px-5 pb-20 pt-28 sm:px-6 sm:pb-24 sm:pt-32 lg:px-8 lg:pt-36">
+      <section className="relative isolate flex min-h-[100svh] items-center overflow-hidden px-5 pb-20 pt-28 sm:px-6 sm:pb-24 sm:pt-32 lg:px-8 lg:pt-36">
         <div aria-hidden className="home-hero-wash pointer-events-none absolute inset-0 -z-20" />
         <div
           aria-hidden
@@ -120,12 +122,12 @@ export default function PricingPage() {
 
         <div className="mx-auto grid w-full max-w-7xl items-center gap-14 lg:grid-cols-[0.84fr_1.16fr] lg:gap-18">
           <div className="max-w-2xl">
-            <p className="section-label">Simple pricing · clear ownership</p>
+            <p className="section-label">Free to run. No fine print.</p>
             <h1 className="mt-5 max-w-[13ch] font-section text-[clamp(3rem,5.8vw,5.8rem)] leading-[0.96] text-text-primary">
-              Run Cabinet free. Pay when it should stay on.
+              Free to run. Pay us to never sleep.
             </h1>
             <p className="mt-7 max-w-xl text-lg leading-relaxed text-text-secondary sm:text-xl">
-              Self-host the complete product for $0. Choose Cabinet Cloud when you want managed hosting, updates, and backups. Keep AI provider choice separate on every plan.
+              Self-host it for $0, no trial clock, no asterisk. Want us to run it, patch it, and back it up while you sleep instead? That is Cabinet Cloud. Your AI provider stays your business, on every plan.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -133,26 +135,37 @@ export default function PricingPage() {
                 href="#plans"
                 className="btn-wood inline-flex h-13 items-center justify-center gap-2 rounded-full px-6 text-sm font-semibold sm:text-base"
               >
-                Compare plans <ArrowRight aria-hidden className="h-4 w-4" />
+                See what it costs <ArrowRight aria-hidden className="h-4 w-4" />
               </a>
               <Link
                 href="/demo?source=pricing-hero"
                 className="ent-btn-secondary h-13 justify-center px-6 text-sm sm:text-base"
               >
-                Book a technical review
+                Talk to an actual human
               </Link>
             </div>
 
             <div className="mt-7 flex flex-wrap gap-x-5 gap-y-2 text-xs font-semibold text-text-tertiary">
               <span className="inline-flex items-center gap-1.5">
-                <Check aria-hidden className="h-3.5 w-3.5 text-green" /> Open source
+                <Check aria-hidden className="h-3.5 w-3.5 text-green" /> Actually open source
               </span>
               <span className="inline-flex items-center gap-1.5">
-                <Check aria-hidden className="h-3.5 w-3.5 text-green" /> Whole-Cabinet export
+                <Check aria-hidden className="h-3.5 w-3.5 text-green" /> Take your data and go
               </span>
               <span className="inline-flex items-center gap-1.5">
-                <Check aria-hidden className="h-3.5 w-3.5 text-green" /> Bring your own AI
+                <Check aria-hidden className="h-3.5 w-3.5 text-green" /> Bring your own AI, no markup
               </span>
+            </div>
+
+            <div className="mt-8 max-w-md">
+              <p className="mb-3 text-xs font-semibold uppercase tracking-[0.08em] text-text-tertiary">
+                Rather not babysit a server? Join the Cabinet Cloud waitlist.
+              </p>
+              <Suspense
+                fallback={<div className="h-[60px] rounded-full bg-bg-card/60" />}
+              >
+                <CloudHeroWaitlist source="pricing-hero" originPage="/pricing" />
+              </Suspense>
             </div>
           </div>
 
@@ -168,13 +181,13 @@ export default function PricingPage() {
 
             <div className="relative z-10 flex items-start justify-between gap-6">
               <div>
-                <p className="section-label">Your operating model</p>
+                <p className="section-label">How it actually works</p>
                 <h2 className="mt-3 max-w-lg font-section text-3xl leading-[1.02] text-text-primary sm:text-4xl">
-                  One Cabinet. Three decisions you keep separate.
+                  One Cabinet. Three decisions. All yours.
                 </h2>
               </div>
               <span className="hidden rounded-full bg-green-bg px-3 py-1.5 text-[10px] font-semibold text-green-warm sm:inline-flex">
-                You choose
+                Your call
               </span>
             </div>
 
@@ -201,7 +214,7 @@ export default function PricingPage() {
             <div className="relative z-10 mt-4 flex items-start gap-3 rounded-2xl bg-green-bg-subtle p-4 sm:p-5">
               <ShieldCheck aria-hidden className="mt-0.5 h-5 w-5 shrink-0 text-green" />
               <p className="text-sm leading-relaxed text-text-secondary">
-                <strong className="text-text-primary">No model bundle is required.</strong> Change the hosting plan without changing the providers, files, or workflows the company owns.
+                <strong className="text-text-primary">No model bundle. No hostage situation.</strong> Change the hosting plan without touching the providers, files, or workflows you already own.
               </p>
             </div>
           </div>
