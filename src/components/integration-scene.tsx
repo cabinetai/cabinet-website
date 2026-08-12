@@ -1187,21 +1187,11 @@ export function IntegrationScene() {
   // destination. It stays through the complete absorption beat AND through
   // the closing "AI team" caption — only clearing in the last sliver, right
   // as the pin releases into the demo video.
-  const hubOpacity = useTransform(
-    sceneProgress,
-    [0.035, 0.1, 0.99, 1],
-    [0, 1, 1, 0]
-  );
-  const hubScale = useTransform(
-    sceneProgress,
-    [0.035, 0.11, 0.99, 1],
-    [0.72, 1, 1, 0.9]
-  );
-  const hubGroundOpacity = useTransform(
-    sceneProgress,
-    [0.08, 0.14, 0.99, 1],
-    [0, 0.28, 0.28, 0]
-  );
+  // The cabinet never leaves: it stays fully visible through the closing
+  // "…your AI team takes it from here" beat, right up to the pin release.
+  const hubOpacity = useTransform(sceneProgress, [0.035, 0.1], [0, 1]);
+  const hubScale = useTransform(sceneProgress, [0.035, 0.11], [0.72, 1]);
+  const hubGroundOpacity = useTransform(sceneProgress, [0.08, 0.14], [0, 0.28]);
 
   // Hold whichever drawer is currently receiving the column open: Knowledge
   // while the tile cloud pours in and through Files/Dashboards, AI team for
@@ -1244,13 +1234,15 @@ export function IntegrationScene() {
   const titleBlur = useTransform(sceneProgress, [0.13, 0.23], [0, 7]);
   const titleFilter = useMotionTemplate`blur(${titleBlur}px)`;
 
-  const capCapture = useTransform(sceneProgress, [0.29, 0.38, 0.88, 0.93], [0, 1, 1, 0]);
+  const capCapture = useTransform(sceneProgress, [0.29, 0.38, 0.85, 0.9], [0, 1, 1, 0]);
   const captureScale = useTransform(sceneProgress, [0.29, 0.38], [0.9, 1]);
   const captureY = useTransform(sceneProgress, [0.29, 0.38], [20, 0]);
   const captureBlur = useTransform(sceneProgress, [0.29, 0.38], [10, 0]);
   const captureFilter = useMotionTemplate`blur(${captureBlur}px)`;
 
-  const capVideo = useTransform(sceneProgress, [0.92, 0.96, 1], [0, 1, 1]);
+  // Fully in by 0.925, then the pin holds to 1.0 — a long locked beat
+  // on the closed cabinet before the page releases.
+  const capVideo = useTransform(sceneProgress, [0.89, 0.925, 1], [0, 1, 1]);
   const hintOpacity = useTransform(sceneProgress, [0, 0.04], [1, 0]);
 
   // Word-stagger triggers for the later captions. Inside the pinned scene the
@@ -1263,7 +1255,7 @@ export function IntegrationScene() {
 
   useMotionValueEvent(sceneProgress, "change", (v) => {
     setCaptureRevealed(v > 0.33);
-    setVideoCapRevealed(v > 0.93);
+    setVideoCapRevealed(v > 0.9);
   });
 
   useEffect(() => {
@@ -1287,7 +1279,7 @@ export function IntegrationScene() {
 
   return (
     <>
-    <div ref={ref} className="relative h-[620vh] bg-bg">
+    <div ref={ref} className="relative h-[700vh] bg-bg">
       <div
         ref={stickyRef}
         onPointerMove={handlePointerMove}
