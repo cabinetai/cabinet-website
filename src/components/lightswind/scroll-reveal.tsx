@@ -72,7 +72,9 @@ const variantClasses = {
 
 type Piece =
   | { kind: "word" | "space"; value: string; className?: string; key: number }
-  | { kind: "break"; key: number };
+  // A <br/> keeps its own className, so callers can drop a line break at one
+  // breakpoint (`className="max-md:hidden"`) without forking the copy.
+  | { kind: "break"; className?: string; key: number };
 
 export function ScrollReveal({
   children,
@@ -130,7 +132,11 @@ export function ScrollReveal({
           }
         } else if (React.isValidElement(child)) {
           if (child.type === "br") {
-            out.push({ kind: "break", key: key++ });
+            out.push({
+              kind: "break",
+              className: (child.props as { className?: string }).className,
+              key: key++,
+            });
           } else {
             const props = child.props as {
               className?: string;
@@ -195,7 +201,7 @@ export function ScrollReveal({
       >
         {pieces.map((item) =>
           item.kind === "break" ? (
-            <br key={item.key} />
+            <br key={item.key} className={item.className} />
           ) : item.kind === "space" ? (
             <span key={item.key}>{item.value}</span>
           ) : (

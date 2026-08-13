@@ -23,6 +23,7 @@ import {
 import { WoodIcon } from "@/components/wood-icon";
 import {
   AnimatePresence,
+  animate,
   motion,
   useScroll,
   useTransform,
@@ -95,6 +96,39 @@ function scatterLeft(i: number, total: number) {
   return { x: LCX + Math.cos(a) * r * LRX, y: Math.sin(a) * r * LRY };
 }
 
+/* ── Mobile staging ──────────────────────────────────────────────
+   The desktop scene is blocked across ~1600px: clutter on the left, the
+   cabinet at centre, a reading pile on the right. None of that fits a
+   phone, so mobile re-blocks the same beats into a single column —
+   cabinet up top, everything else centred underneath — and plays the
+   timeline on a timer instead of on scroll.
+   ─────────────────────────────────────────────────────────────── */
+// How long the whole story takes to play itself. Long enough to read each
+// beat, short enough that a thumb doesn't leave before the end.
+const AUTOPLAY_SECONDS = 15;
+// Blocked to fit the shortest phone this staging runs on (640px tall), so
+// the pile never falls off the bottom; taller phones just get more air.
+const MOBILE_CABINET_SCALE = 0.6;
+const MOBILE_CABINET_DY = -135;
+const MOBILE_PILE_SCALE = 0.55;
+const MOBILE_PILE_DY = 172;
+// A point inside the cabinet's own coordinate space, mapped to where it
+// actually lands once the cabinet is scaled and lifted for mobile.
+const mobileCabinetY = (y: number) => y * MOBILE_CABINET_SCALE + MOBILE_CABINET_DY;
+
+// Phones get the clutter wrapped all the way around the cabinet instead of
+// piled off to one side — same golden-angle spiral, taller than it is wide,
+// so the "hundred places" read fills the screen a thumb is holding.
+const MRX = 178;
+const MRY = 352;
+function scatterAround(i: number, total: number) {
+  const golden = Math.PI * (3 - Math.sqrt(5));
+  const t = (i + 0.5) / total;
+  const r = 0.3 + 0.7 * Math.sqrt(t);
+  const a = i * golden;
+  return { x: Math.cos(a) * r * MRX, y: Math.sin(a) * r * MRY };
+}
+
 // Bring-your-own-AI providers — the agents that operate the Cabinet,
 // mixed into the same cloud as the tools and pages they work on.
 const PROVIDERS = [
@@ -117,18 +151,19 @@ type Slot = { item: Floating; x: number; y: number; rot: number; s: number };
 // Build a randomised cloud: Fisher–Yates shuffle the items (so each lands
 // on a different spiral slot), then jitter position and rotation per tile.
 // Called once on mount → a fresh layout every page load.
-function buildLayout(): Slot[] {
+function buildLayout(mobile: boolean): Slot[] {
   const order = [...FLOATING];
   for (let i = order.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [order[i], order[j]] = [order[j], order[i]];
   }
+  const jitter = mobile ? 26 : 50;
   return order.map((item, i) => {
-    const base = scatterLeft(i, order.length);
+    const base = mobile ? scatterAround(i, order.length) : scatterLeft(i, order.length);
     return {
       item,
-      x: base.x + (Math.random() - 0.5) * 50,
-      y: base.y + (Math.random() - 0.5) * 50,
+      x: base.x + (Math.random() - 0.5) * jitter,
+      y: base.y + (Math.random() - 0.5) * jitter,
       rot: (Math.random() - 0.5) * 18,
       s: ((i % 8) / 8) * 0.14, // staggered stream
     };
@@ -332,6 +367,7 @@ function FloatingTile({
   posY,
   rot,
   s,
+  mobile,
 }: {
   progress: MotionValue<number>;
   pointerX: MotionValue<number>;
@@ -341,11 +377,13 @@ function FloatingTile({
   posY: number;
   rot: number;
   s: number;
+  mobile: boolean;
 }) {
   // Hold the opening composition, then draw every tile into Cabinet.
   const clearEnd = 0.24 + s * 0.55;
+  const mouthY = mobile ? mobileCabinetY(DRAWER_MOUTH_Y) : DRAWER_MOUTH_Y;
   const baseX = useTransform(progress, [0, 0.08, clearEnd], [posX, posX, 0]);
-  const baseY = useTransform(progress, [0, 0.08, clearEnd], [posY, posY, DRAWER_MOUTH_Y]);
+  const baseY = useTransform(progress, [0, 0.08, clearEnd], [posY, posY, mouthY]);
   const baseScale = useTransform(progress, [0, 0.08, clearEnd], [1, 1, 0.05]);
   const opacity = useTransform(progress, [0, 0.08, clearEnd - 0.045, clearEnd], [1, 1, 1, 0]);
 
@@ -622,6 +660,9 @@ type ColumnRow = {
   enterEnd: number;
   diveStart: number;
   diveEnd: number;
+  // Same pile, re-centred for the phone's single column (see mobile staging).
+  mobileX: number;
+  mobileY: number;
 };
 
 function buildColumnRows(): ColumnRow[] {
@@ -630,6 +671,11 @@ function buildColumnRows(): ColumnRow[] {
   CATEGORIES.forEach((cat) => {
     const catStart = cursor;
     const items: LaneItem[] = [{ kind: "label", text: cat.text }, ...cat.items];
+    // The desktop pile hangs off to the right of the cabinet; on mobile the
+    // whole category slides back so its own middle sits on the screen's.
+    const midX = cat.slots
+      ? cat.slots.reduce((sum, slot) => sum + slot.x, 0) / cat.slots.length
+      : 0;
     const enterStep = cat.slots ? SCATTER_ENTER_STEP : ROW_ENTER_STEP;
     const diveStep = cat.slots ? SCATTER_DIVE_STEP : DIVE_STEP;
     // Every item waits for the LAST one to finish arriving before any of
@@ -645,10 +691,14 @@ function buildColumnRows(): ColumnRow[] {
       // The label sits above the pile (nudged right to sit over its middle);
       // each scattered item gets its own hand-placed slot.
       const slot = cat.slots && j > 0 ? cat.slots[(j - 1) % cat.slots.length] : null;
+      const rowX = slot ? slot.x : cat.labelPos ? cat.labelPos.x : 0;
+      const rowY = slot ? slot.y : cat.labelPos ? cat.labelPos.y : (j - (items.length - 1) / 2) * rowHeight;
       rows.push({
         item,
-        rowX: slot ? slot.x : cat.labelPos ? cat.labelPos.x : 0,
-        rowY: slot ? slot.y : cat.labelPos ? cat.labelPos.y : (j - (items.length - 1) / 2) * rowHeight,
+        rowX,
+        rowY,
+        mobileX: (rowX - midX) * MOBILE_PILE_SCALE,
+        mobileY: rowY * MOBILE_PILE_SCALE + MOBILE_PILE_DY,
         tileRotate: slot ? slot.r : 0,
         drawer: cat.drawer,
         enterStart,
@@ -948,10 +998,22 @@ function LaneChip({ item }: { item: LaneItem }) {
   }
 }
 
-function ColumnItem({ progress, row }: { progress: MotionValue<number>; row: ColumnRow }) {
-  const { item, rowX, rowY, tileRotate, drawer, enterStart, enterEnd, diveStart, diveEnd } = row;
-  const drawerMouthY = DRAWER_MOUTH_Y + drawer * DRAWER_GAP_Y;
-  const parkX = COLUMN_X + rowX;
+function ColumnItem({
+  progress,
+  row,
+  mobile,
+}: {
+  progress: MotionValue<number>;
+  row: ColumnRow;
+  mobile: boolean;
+}) {
+  const { item, rowX, rowY, mobileX, mobileY, tileRotate, drawer, enterStart, enterEnd, diveStart, diveEnd } = row;
+  const rawMouthY = DRAWER_MOUTH_Y + drawer * DRAWER_GAP_Y;
+  const drawerMouthY = mobile ? mobileCabinetY(rawMouthY) : rawMouthY;
+  const parkY = mobile ? mobileY : rowY;
+  // Off the right edge on a phone, not off a 1500px canvas.
+  const offstageX = mobile ? 320 : 690;
+  const parkScale = mobile ? MOBILE_PILE_SCALE : 1;
 
   // The wrapper is LEFT-edge anchored (so the parked column lines up), which
   // means x=0 puts the chip's left edge — not its middle — on the drawer
@@ -967,13 +1029,21 @@ function ColumnItem({ progress, row }: { progress: MotionValue<number>; row: Col
   // — one column, first row first) and wait — the whole category gathers
   // before anyone moves. Phase 2: once gathered, dive into the drawer that
   // actually holds it.
+  // Desktop parks by left edge so ragged-width chips line up as a column.
+  // Mobile centres each chip instead — scaling happens about the centre, so
+  // centring on a target is the same maths at any scale.
+  const parkLeft = mobile ? mobileX - chipW / 2 : COLUMN_X + rowX;
   const x = useTransform(
     progress,
     [enterStart, enterEnd, diveStart, diveEnd],
-    [690, parkX, parkX, -chipW / 2]
+    [offstageX, parkLeft, parkLeft, -chipW / 2]
   );
-  const y = useTransform(progress, [enterStart, diveStart, diveEnd], [rowY, rowY, drawerMouthY]);
-  const scale = useTransform(progress, [enterStart, diveStart, diveEnd], [1, 1, 0.05]);
+  const y = useTransform(progress, [enterStart, diveStart, diveEnd], [parkY, parkY, drawerMouthY]);
+  const scale = useTransform(
+    progress,
+    [enterStart, diveStart, diveEnd],
+    [parkScale, parkScale, 0.05]
+  );
   // Like the opening cloud's tiles: fully opaque for the whole pull,
   // shrinking continuously, and only winking out right at the drawer
   // mouth — not dissolving mid-air.
@@ -989,7 +1059,9 @@ function ColumnItem({ progress, row }: { progress: MotionValue<number>; row: Col
     // Anchored at the LEFT edge (not centered) so items of different widths
     // — "TASKS" vs. "Nightly backup" — still line up into a neat pile
     // instead of drifting to ragged left edges.
-    <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-y-1/2" style={{ zIndex }}>
+    // w-max because an absolute box anchored at left:50% otherwise shrinks to
+    // the half-screen that remains — which clips the wide planks on a phone.
+    <div className="pointer-events-none absolute left-1/2 top-1/2 w-max -translate-y-1/2" style={{ zIndex }}>
       <motion.div ref={chipRef} style={{ x, y, scale, opacity, rotate: tileRotate, willChange: "transform" }}>
         <LaneChip item={item} />
       </motion.div>
@@ -1145,6 +1217,9 @@ export function IntegrationScene() {
   // need to run while the scene is actually on screen — gated the same way
   // the demo video below already gates its own load.
   const [sceneInView, setSceneInView] = useState(false);
+  // Phones don't get the 700vh pin: nobody thumb-scrolls seven screens to
+  // watch a story. They get the mobile staging and the timeline plays itself.
+  const [mobile, setMobile] = useState(false);
 
   useEffect(() => {
     const el = ref.current;
@@ -1154,10 +1229,12 @@ export function IntegrationScene() {
       const dist = Math.max(1, el.offsetHeight - window.innerHeight);
       setRange([top, top + dist]);
       stickyRectRef.current = null;
+      // The mobile staging assumes a tall, narrow screen. A phone held
+      // sideways is neither, so it keeps the scrolled scene.
+      setMobile(window.matchMedia("(max-width: 767px) and (min-height: 640px)").matches);
     };
     const animationFrame = requestAnimationFrame(() => {
       setMounted(true);
-      setLayout(buildLayout());
       measure();
     });
     window.addEventListener("resize", measure);
@@ -1175,13 +1252,34 @@ export function IntegrationScene() {
     };
   }, []);
 
+  // The two stagings scatter the cloud differently, so it is rebuilt if the
+  // breakpoint flips (rotating a phone, resizing a desktop window).
+  useEffect(() => {
+    if (!mounted) return;
+    const frame = requestAnimationFrame(() => setLayout(buildLayout(mobile)));
+    return () => cancelAnimationFrame(frame);
+  }, [mounted, mobile]);
+
   const scrollYProgress = useTransform(scrollY, range, [0, 1], { clamp: true });
-  const sceneProgress = useSpring(scrollYProgress, {
+  // One driver for both modes, so every derived transform below keeps a
+  // stable source: scroll writes into it on desktop, a timer on mobile.
+  const raw = useMotionValue(0);
+  useMotionValueEvent(scrollYProgress, "change", (v) => {
+    if (!mobile) raw.set(v);
+  });
+  const sceneProgress = useSpring(raw, {
     stiffness: 120,
     damping: 24,
     mass: 0.6,
     restDelta: 0.0005,
   });
+
+  useEffect(() => {
+    if (!mobile || !sceneInView || prefersReduced) return;
+    raw.set(0);
+    const playback = animate(raw, 1, { duration: AUTOPLAY_SECONDS, ease: "linear" });
+    return () => playback.stop();
+  }, [mobile, sceneInView, prefersReduced, raw]);
 
   // Cabinet appears before the cloud starts moving so every tile has a clear
   // destination. It stays through the complete absorption beat AND through
@@ -1234,7 +1332,14 @@ export function IntegrationScene() {
   const titleBlur = useTransform(sceneProgress, [0.13, 0.23], [0, 7]);
   const titleFilter = useMotionTemplate`blur(${titleBlur}px)`;
 
-  const capCapture = useTransform(sceneProgress, [0.29, 0.38, 0.85, 0.9], [0, 1, 1, 0]);
+  // On a phone the pile lands in the band right under this caption, so the
+  // line clears the stage before the first category arrives instead of
+  // holding all the way through it.
+  const capCapture = useTransform(
+    sceneProgress,
+    mobile ? [0.29, 0.38, 0.44, 0.5] : [0.29, 0.38, 0.85, 0.9],
+    [0, 1, 1, 0],
+  );
   const captureScale = useTransform(sceneProgress, [0.29, 0.38], [0.9, 1]);
   const captureY = useTransform(sceneProgress, [0.29, 0.38], [20, 0]);
   const captureBlur = useTransform(sceneProgress, [0.29, 0.38], [10, 0]);
@@ -1279,7 +1384,7 @@ export function IntegrationScene() {
 
   return (
     <>
-    <div ref={ref} className="relative h-[700vh] bg-bg">
+    <div ref={ref} className={`relative bg-bg ${mobile ? "h-[100svh]" : "h-[700vh]"}`}>
       <div
         ref={stickyRef}
         onPointerMove={handlePointerMove}
@@ -1312,12 +1417,13 @@ export function IntegrationScene() {
                 posY={slot.y}
                 rot={slot.rot}
                 s={slot.s}
+                mobile={mobile}
               />
             ))}
         </div>
 
         {COLUMN_ROWS.map((row, index) => (
-          <ColumnItem key={index} progress={sceneProgress} row={row} />
+          <ColumnItem key={index} progress={sceneProgress} row={row} mobile={mobile} />
         ))}
 
         {/* absorption glow */}
@@ -1345,7 +1451,20 @@ export function IntegrationScene() {
             marginTop: -108,
           }}
         >
-          <div className="relative h-[216px] w-[216px] origin-bottom max-sm:-translate-y-[15vh] max-sm:scale-[0.52]">
+          {/* Mobile lifts and shrinks the cabinet about its centre — every
+              flight path into a drawer is mapped through the same numbers,
+              see mobileCabinetY. */}
+          <div
+            className="relative h-[216px] w-[216px] origin-bottom"
+            style={
+              mobile
+                ? {
+                    transformOrigin: "center",
+                    transform: `translateY(${MOBILE_CABINET_DY}px) scale(${MOBILE_CABINET_SCALE})`,
+                  }
+                : undefined
+            }
+          >
             {/* native 216 box blown up as one piece; the drawer-mouth
                 constants carry the same CABINET_SCALE factor */}
             {/* the taller cabinet runs 242px native in this 216 box, so it
@@ -1364,22 +1483,35 @@ export function IntegrationScene() {
           </div>
         </motion.div>
 
-        {/* beat 1 — title beside the cloud (outer div positions; inner h2 is
-            free to run its own magic-wand dissolve transform) */}
-        <div className="pointer-events-none absolute right-[9vw] top-1/2 z-30 max-w-xs -translate-y-1/2 text-right sm:max-w-sm md:right-[12vw] md:max-w-lg lg:right-[14vw]">
+        {/* beat 1 — title beside the cloud on a desktop, straight through the
+            middle of it on a phone (outer div positions; inner h2 is free to
+            run its own magic-wand dissolve transform) */}
+        <div
+          className={
+            mobile
+              ? "pointer-events-none absolute inset-x-4 top-1/2 z-30 -translate-y-1/2 text-center"
+              : "pointer-events-none absolute right-[9vw] top-1/2 z-30 max-w-xs -translate-y-1/2 text-right sm:max-w-sm md:right-[12vw] md:max-w-lg lg:right-[14vw]"
+          }
+        >
           <motion.div
+            className={mobile ? "px-4 py-8" : undefined}
             style={{
               opacity: capTitle,
               scale: titleScale,
               y: titleY,
               filter: titleFilter,
+              // The phone reads this type over a full screen of clutter, so it
+              // gets a soft cream haze to lift off.
+              background: mobile
+                ? "radial-gradient(farthest-side, rgba(242,236,228,0.95), rgba(242,236,228,0.9) 55%, rgba(242,236,228,0) 100%)"
+                : undefined,
             }}
           >
             <ScrollReveal
               baseRotation={0}
               revealed
               staggerDelay={0.08}
-              textClassName="[font-family:var(--font-brand)] [text-shadow:0_1px_18px_rgba(250,246,241,0.72)] text-[clamp(3.4rem,5.7vw,6.25rem)] leading-[0.9] tracking-[-0.045em] text-right text-text-primary"
+              textClassName={`[font-family:var(--font-brand)] [text-shadow:0_1px_18px_rgba(250,246,241,0.72)] text-[clamp(3.4rem,5.7vw,6.25rem)] leading-[0.9] tracking-[-0.045em] text-text-primary ${mobile ? "text-center" : "text-right"}`}
             >
               Your work
               <br />
@@ -1394,8 +1526,16 @@ export function IntegrationScene() {
           </motion.div>
         </div>
 
-        {/* captions */}
-        <div className="absolute top-1/2 left-[4vw] md:left-[8vw] lg:left-[11vw] -translate-y-1/2 max-w-xs sm:max-w-sm md:max-w-lg text-left pointer-events-none">
+        {/* captions — beside the cabinet on a desktop; on a phone this sits in
+            the band between the cabinet above and the arriving pile below, so
+            it runs two lines instead of four */}
+        <div
+          className={
+            mobile
+              ? "pointer-events-none absolute inset-x-4 top-1/2 -translate-y-1/2 text-center"
+              : "absolute top-1/2 left-[4vw] md:left-[8vw] lg:left-[11vw] -translate-y-1/2 max-w-xs sm:max-w-sm md:max-w-lg text-left pointer-events-none"
+          }
+        >
           <motion.div
             style={{
               opacity: capCapture,
@@ -1408,20 +1548,29 @@ export function IntegrationScene() {
               baseRotation={0}
               revealed={captureRevealed}
               staggerDelay={0.08}
-              textClassName="[font-family:var(--font-brand)] text-[clamp(3rem,4.6vw,5rem)] leading-[0.98] tracking-[-0.045em] text-left text-text-primary"
+              textClassName={`[font-family:var(--font-brand)] leading-[0.98] tracking-[-0.045em] text-text-primary ${
+                mobile
+                  ? "text-[2.35rem] text-center"
+                  : "text-[clamp(3rem,4.6vw,5rem)] text-left"
+              }`}
             >
-              <span className="font-brand italic">Cabinet</span>
-              <br />
+              {/* the spaces keep the words apart on phones, where the two
+                  outer breaks collapse and the lines run together */}
+              <span className="font-brand italic">Cabinet</span>{" "}
+              <br className="max-md:hidden" />
               pulls it all
               <br />
-              into one
-              <br />
+              into one{" "}
+              <br className="max-md:hidden" />
               place.
             </ScrollReveal>
           </motion.div>
         </div>
         <motion.div
-          className="absolute left-1/2 -translate-x-1/2 bottom-24 w-full max-w-4xl px-6"
+          className={`absolute left-1/2 w-full max-w-4xl -translate-x-1/2 px-6 ${
+            // sits under the closed cabinet on a phone, not way down the screen
+            mobile ? "bottom-[32%]" : "bottom-24"
+          }`}
           style={{ opacity: capVideo }}
         >
           <ScrollReveal
@@ -1434,13 +1583,15 @@ export function IntegrationScene() {
           </ScrollReveal>
         </motion.div>
 
-        {/* scroll hint */}
-        <motion.div
-          className="absolute left-1/2 -translate-x-1/2 bottom-8 text-xs font-code text-text-muted uppercase tracking-widest"
-          style={{ opacity: hintOpacity }}
-        >
-          scroll
-        </motion.div>
+        {/* scroll hint — the mobile scene plays itself, so it has nothing to ask for */}
+        {!mobile && (
+          <motion.div
+            className="absolute left-1/2 -translate-x-1/2 bottom-8 text-xs font-code text-text-muted uppercase tracking-widest"
+            style={{ opacity: hintOpacity }}
+          >
+            scroll
+          </motion.div>
+        )}
       </div>
     </div>
 
