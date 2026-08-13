@@ -106,12 +106,14 @@ function scatterLeft(i: number, total: number) {
 // How long the whole story takes to play itself. Long enough to read each
 // beat, short enough that a thumb doesn't leave before the end.
 const AUTOPLAY_SECONDS = 15;
-// Blocked to fit the shortest phone this staging runs on (640px tall), so
-// the pile never falls off the bottom; taller phones just get more air.
+// Blocked for a ~700px tall stage. Shorter phones (an SE, or any browser
+// whose chrome eats half the screen) scale the whole staging down to fit
+// rather than dropping out of it, see MOBILE_FIT_HEIGHT.
 const MOBILE_CABINET_SCALE = 0.6;
 const MOBILE_CABINET_DY = -135;
 const MOBILE_PILE_SCALE = 0.55;
 const MOBILE_PILE_DY = 172;
+const MOBILE_FIT_HEIGHT = 700;
 // A point inside the cabinet's own coordinate space, mapped to where it
 // actually lands once the cabinet is scaled and lifted for mobile.
 const mobileCabinetY = (y: number) => y * MOBILE_CABINET_SCALE + MOBILE_CABINET_DY;
@@ -1220,6 +1222,7 @@ export function IntegrationScene() {
   // Phones don't get the 700vh pin: nobody thumb-scrolls seven screens to
   // watch a story. They get the mobile staging and the timeline plays itself.
   const [mobile, setMobile] = useState(false);
+  const [stageHeight, setStageHeight] = useState(MOBILE_FIT_HEIGHT);
 
   useEffect(() => {
     const el = ref.current;
@@ -1230,8 +1233,11 @@ export function IntegrationScene() {
       setRange([top, top + dist]);
       stickyRectRef.current = null;
       // The mobile staging assumes a tall, narrow screen. A phone held
-      // sideways is neither, so it keeps the scrolled scene.
-      setMobile(window.matchMedia("(max-width: 767px) and (min-height: 640px)").matches);
+      // sideways is neither, so it keeps the scrolled scene. Deliberately NOT
+      // a min-height test: iOS reports a viewport shrunk by its own chrome,
+      // which quietly dropped small phones back onto the desktop scene.
+      setMobile(window.matchMedia("(max-width: 767px) and (orientation: portrait)").matches);
+      setStageHeight(stickyRef.current?.offsetHeight ?? window.innerHeight);
     };
     const animationFrame = requestAnimationFrame(() => {
       setMounted(true);
@@ -1350,6 +1356,10 @@ export function IntegrationScene() {
   const capVideo = useTransform(sceneProgress, [0.89, 0.925, 1], [0, 1, 1]);
   const hintOpacity = useTransform(sceneProgress, [0, 0.04], [1, 0]);
 
+  // Shrink the whole staged composition on a stage shorter than it was
+  // blocked for, so the bottom of the pile never falls off the screen.
+  const stageFit = Math.min(1, stageHeight / MOBILE_FIT_HEIGHT);
+
   // Word-stagger triggers for the later captions. Inside the pinned scene the
   // caption elements sit in the viewport the whole time, so in-view detection
   // would fire the reveal at scene entry; gate it on the caption's own beat.
@@ -1400,6 +1410,14 @@ export function IntegrationScene() {
           }}
         />
 
+        {/* Every staged layer (cloud, pile, glow, cabinet) is positioned from
+            the scene's centre, so one scale here fits the whole composition
+            to a short phone. `contents` keeps the box out of the tree
+            entirely on desktop, where nothing needs fitting. */}
+        <div
+          className={mobile ? "absolute inset-0" : "contents"}
+          style={mobile ? { transform: `scale(${stageFit})` } : undefined}
+        >
         {/* Brown app and file tiles stay fully legible until they reach the
             open Cabinet, where they shrink behind the cabinet image. Only
             mounted while the scene is on screen — 63 tiles' worth of chained
@@ -1482,6 +1500,7 @@ export function IntegrationScene() {
             </div>
           </div>
         </motion.div>
+        </div>
 
         {/* beat 1 — title beside the cloud on a desktop, straight through the
             middle of it on a phone (outer div positions; inner h2 is free to
