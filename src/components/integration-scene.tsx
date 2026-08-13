@@ -103,9 +103,12 @@ function scatterLeft(i: number, total: number) {
    cabinet up top, everything else centred underneath — and plays the
    timeline on a timer instead of on scroll.
    ─────────────────────────────────────────────────────────────── */
-// How long the whole story takes to play itself. Long enough to read each
-// beat, short enough that a thumb doesn't leave before the end.
-const AUTOPLAY_SECONDS = 15;
+// How long the whole story takes to play itself, and how that time is shared
+// out. It is not spread evenly: the opening cloud reads at a glance, while
+// Files / Dashboards / AI agents / Tasks each need a beat to actually be
+// read, so the middle of the timeline runs slower than the ends.
+const AUTOPLAY_SECONDS = 18;
+const AUTOPLAY_TIMES = [0, 0.33, 0.89, 1];
 // Blocked for a ~700px tall stage. Shorter phones (an SE, or any browser
 // whose chrome eats half the screen) scale the whole staging down to fit
 // rather than dropping out of it, see MOBILE_FIT_HEIGHT.
@@ -1283,7 +1286,13 @@ export function IntegrationScene() {
   useEffect(() => {
     if (!mobile || !sceneInView || prefersReduced) return;
     raw.set(0);
-    const playback = animate(raw, 1, { duration: AUTOPLAY_SECONDS, ease: "linear" });
+    // Keyed to the column's own window, so the four categories get the slow
+    // stretch and the cloud and the closing line keep their pace.
+    const playback = animate(raw, [0, COLUMN_START, COLUMN_END_TARGET, 1], {
+      duration: AUTOPLAY_SECONDS,
+      times: AUTOPLAY_TIMES,
+      ease: "linear",
+    });
     return () => playback.stop();
   }, [mobile, sceneInView, prefersReduced, raw]);
 
@@ -1513,16 +1522,19 @@ export function IntegrationScene() {
           }
         >
           <motion.div
-            className={mobile ? "px-4 py-8" : undefined}
+            // Deep bottom padding: the haze has to keep fading well past the
+            // last line, which is the lightest type over the busiest tiles.
+            className={mobile ? "px-5 pb-16 pt-10" : undefined}
             style={{
               opacity: capTitle,
               scale: titleScale,
               y: titleY,
               filter: titleFilter,
               // The phone reads this type over a full screen of clutter, so it
-              // gets a soft cream haze to lift off.
+              // gets a cream haze to lift off: near-solid across the whole
+              // block, fading only at the very edges.
               background: mobile
-                ? "radial-gradient(farthest-side, rgba(242,236,228,0.95), rgba(242,236,228,0.9) 55%, rgba(242,236,228,0) 100%)"
+                ? "radial-gradient(farthest-side, rgba(242,236,228,0.98), rgba(242,236,228,0.97) 58%, rgba(242,236,228,0.82) 80%, rgba(242,236,228,0) 100%)"
                 : undefined,
             }}
           >
