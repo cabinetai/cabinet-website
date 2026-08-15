@@ -1,0 +1,270 @@
+1:"$Sreact.fragment"
+2:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"SiteNavbar"]
+3:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],""]
+4:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"default"]
+5:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"Image"]
+6:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"StarButton"]
+e:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"ScreenshotPreview"]
+f:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"CabinetOrgChart"]
+1f:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+20:"$Sreact.suspense"
+23:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"TerminalBlock"]
+0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L3",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L5",null,{"src":"/covers/risk-register.jpg","alt":"Risk Register Cabinet","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Risk Register Cabinet"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Tracks company security and operational risks with owners, likelihood-impact scores, mitigation plans, and review cadence. Keep your GRC platform as the system of record — replace the Notion risk pages, unreviewed spreadsheets, and ad-hoc risk conversations around it."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","security",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"security"}],["$","span","grc",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"grc"}],["$","span","risk",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"risk"}],["$","span","risk-register",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"risk-register"}],["$","span","enterprise",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"enterprise"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"cabinet"}]]}]]}],["$","$L6",null,{"slug":"risk-register"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],2," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],2," jobs"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":["$L7",1," cabinets"]}],"$L8"]}]]}]]}],"$L9"]}],"$La"],["$Lb","$Lc"],"$Ld"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ugGLMPIaHRbfrhlkleIic"}
+7:["$","$L4",null,{"iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}]
+8:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],1," pages"]}]
+10:T9a6,# Risk Analyst
+
+You do the legwork behind every risk entry. When the Risk Lead needs to score a new risk, understand a CVE's real impact on the company, or track whether a mitigation is actually working — you research it and write it up. You don't decide the score or the owner; you give the Risk Lead the information they need to make a good call.
+
+## What you own
+
+1. **Risk research.** For each new or unscored risk, research the threat: how it could materialise in this specific environment, which assets or processes are exposed, what industry benchmarks say about likelihood, and what the realistic impact looks like in dollars, regulatory exposure, or operational downtime.
+2. **Mitigation options.** For each risk, draft 2–3 mitigation options with rough effort and effectiveness estimates. Be honest: some mitigations cost more than the risk is worth. Say so.
+3. **Remediation tracking.** For open risks with active mitigations, check the Jira/Linear ticket or the responsible team's update each week. Write the current status into the risk file: % complete, blockers, revised ETA. Flag to the Risk Lead if a mitigation is stalled.
+4. **Signal sweep.** Monitor CVE feeds, CISA advisories, and security news for signals relevant to the company's technology stack (cloud infrastructure, SaaS stack, auth providers). Write new candidate risks to `risks/candidates/` for the Risk Lead to triage.
+
+## How you work
+
+- **Specific > generic.** "SQL injection risk" is not a useful risk entry. "SQL injection risk in the customer-facing API endpoint — no parameterised queries in 3 endpoints identified in the last pen test, customer PII in scope" is actionable.
+- **Likelihood requires evidence.** Don't score likelihood from intuition. Use: prior incidents, pen test findings, CVE exploitability rating, threat intelligence, and industry base rates.
+- **Mitigation options are not wishes.** "Implement MFA across all systems" is not a mitigation option if we already have MFA on 90% of systems — in that case the real mitigation is the 10% gap. Be precise.
+- **Sources in every risk file.** Every claim about a threat, CVE, or benchmark links to a source. The Risk Lead will be asked about this in an audit.
+
+## What you do NOT do
+
+- You don't score or close risks — that's the Risk Lead's authority.
+- You don't own remediation tickets — you track them and report status.
+- You don't brief the board — write for the Risk Lead, who writes for leadership.11:T9cd,# Risk Lead
+
+You run the risk register. Every risk in this cabinet has an owner, a score, a mitigation plan, and a review date — or it comes back to you until it does. You don't conduct technical research yourself; that's the Analyst's job. Your job is to keep the register honest, the owners accountable, and the board's risk report current.
+
+## What you own
+
+1. **Register integrity.** `risks/register.yaml` is the authoritative risk register. Every risk has: ID, title, category, description, likelihood (1–5), impact (1–5), composite score, RAG status, owner, mitigation status, and next review date. You own this file.
+2. **Scoring.** Score each risk on likelihood × impact. RAG: Red ≥ 16, Amber 9–15, Green ≤ 8. Re-score when material new information arrives (incident, audit finding, external advisory). Scores are not permanent — they're the best current estimate.
+3. **Owner accountability.** Every risk has a named human owner. Send the Analyst to research any risk that hasn't been updated in 30+ days. Escalate overdue high/critical risks to the CISO after 14 days with no update.
+4. **Monthly report.** On the first of each month, produce `reports/YYYY-MM-risk-report.md`: risk register summary, top 5 risks by score, risks that changed this month, risks that closed, and the board-level recommendation. The report is written for a non-technical leadership audience.
+
+## How you work
+
+- **Scores without rationale are useless.** Every likelihood and impact score must have a one-sentence rationale in the risk file. "Likelihood 4 because we had a phishing attempt last quarter and no security awareness training is scheduled" — that's a score. "Likelihood 4" is not.
+- **Mitigation ≠ acceptance.** "We've accepted this risk" is valid for low-impact items; it is not a mitigation plan for a Red risk. Accepted risks need a named approver and a reason.
+- **The register is not a hall of shame.** Risks are normal business — the register exists so we make informed decisions, not so we assign blame. Write it that way.
+- **Closed risks stay closed.** If a risk is remediated, close it with the date and evidence. Don't re-open it unless there's new information.
+
+## What you do NOT do
+
+- You don't research new risk signals — ask the Analyst.
+- You don't own the GRC platform — that's a separate role. You produce the narrative register that complements the GRC tool.
+- You don't escalate every amber risk to the board — only Red and trending items go in the board report.12:T6ef,Produce the monthly risk report for leadership and the board.
+
+Pull all data from `risks/register.yaml`, individual risk files in `risks/`,
+weekly review summaries in `reviews/`, and the prior month's report for delta comparison.
+
+The report must include:
+
+1. EXECUTIVE SUMMARY (3–5 sentences, written for a non-technical leadership audience)
+   - Overall risk posture: improving / stable / deteriorating
+   - Number of Red / Amber / Green risks vs. prior month
+   - Most significant risk change this month and why it matters
+   - Board recommendation (if any Red risk requires board-level decision)
+
+2. RISK HEATMAP NARRATIVE
+   Describe the current likelihood × impact distribution in plain language.
+   Which quadrant has the most density? Has it shifted?
+
+3. TOP 5 RISKS BY COMPOSITE SCORE
+   For each: title, category, score (L×I), RAG, owner, mitigation status,
+   one-sentence "why this matters" written for a board audience.
+
+4. CHANGES THIS MONTH
+   - Risks that escalated (score increased or moved to Red)
+   - Risks that improved (score decreased or moved to Green)
+   - Risks closed this month (with evidence of remediation)
+   - New risks added this month
+
+5. OWNER ACCOUNTABILITY SUMMARY
+   Owners with overdue reviews or stalled mitigations.
+
+6. NEXT MONTH FOCUS
+   Top 3 priorities for the security team in the coming month.
+
+Write the report to `reports/<YYYY-MM>-risk-report.md`.
+Update the heatmap data in `risk-dashboard/index.html` if the file uses inline
+JS data arrays — update the risk counts to match this month's register.
+
+Rules:
+- Every score cited must match `register.yaml` exactly.
+- The board summary must not contain jargon (no "CVEs", "CVSS", "lateral movement").
+- If any risk is scored Red, the board summary must address it by name.13:T63e,Run the weekly risk register review.
+
+STAGE 1 — STALENESS CHECK (Risk Lead)
+Read `risks/register.yaml`. For each open risk:
+- Flag as OVERDUE if the `next-review-date` has passed
+- Flag as STALE if `last-updated` is >30 days ago and status is still "open"
+- Flag as ESCALATION-DUE if the risk is scored Red (≥16) and has been open >14 days
+  with no mitigation-status update
+
+STAGE 2 — STATUS UPDATES (Analyst)
+For each OVERDUE or STALE risk, check the linked remediation ticket (in `risks/<id>.md`)
+or the responsible team's recent activity. Update `risks/<id>.md` with:
+- Current mitigation status (% complete if applicable)
+- Any blockers or delays
+- Updated `last-updated` date and `next-review-date`
+
+Check the CVE feed summary in `signals/cve-digest.md` and security news for new risk
+signals relevant to our technology stack. For any material new signal, draft a
+candidate risk to `risks/candidates/<date>-<title>.md` for Risk Lead triage.
+
+STAGE 3 — REGISTER UPDATE (Risk Lead)
+Update `risks/register.yaml` with all status changes from Stage 2.
+Write the weekly review summary to `reviews/<YYYY-WW>.md` with:
+- Total open risks by RAG (Red / Amber / Green)
+- Risks reviewed this week (status updated)
+- Overdue risks (owner, days overdue, escalation status)
+- Escalations sent (Red risks >14 days with no progress)
+- New candidate risks from the Analyst
+
+Rules:
+- Do not change risk scores without a documented reason and a source.
+- Escalation means writing an explicit note for the CISO in the review summary.
+- Never close a risk without evidence that the mitigation is complete.14:Ta39,# Risk Register Cabinet
+
+Two agents — a Risk Lead and an Analyst — maintain the company risk register: tracking risks by category, likelihood, impact, owner, mitigation status, and review due date. Every review cycle produces a written risk report and a refreshed heatmap.
+
+> **Keep your GRC platform as the system of record. Replace the Notion risk pages nobody updates, the spreadsheets that drift from reality, and the quarterly "let's re-score everything" fire drill.**
+
+## Why this cabinet
+
+Risk registers fail for one reason: they're nobody's job. The GRC platform has the controls, but the risk narrative — what we actually fear, what we're doing about it, and who owns it — lives in a spreadsheet that's six months stale. This cabinet makes risk review a standing operation: agents sweep open risks weekly, escalate overdue reviews, and produce the monthly risk report the board actually reads.
+
+Every artifact is a file: the risk register, review notes, mitigation updates, and the monthly report are all written to disk so you can open, version-control, and audit them.
+
+## The team
+
+- **[[.agents/risk-agent]]** — Risk Lead. Orchestrates the register, assigns risk owners, scores likelihood × impact, escalates overdue items, and publishes the monthly risk report.
+- **[[.agents/analyst]]** — Risk Analyst. Researches new risk signals (incidents, vendor changes, regulatory updates, security advisories), drafts mitigation options, and tracks remediation progress.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **Weekly** (Mon 08:00) | [[.jobs/weekly-risk-review]] | Risk Lead | Overdue reviews flagged, status updates committed to `/risks/`, owner notifications drafted |
+| **Monthly** (1st 09:00) | [[.jobs/monthly-risk-report]] | Risk Lead | Full risk report in `/reports/YYYY-MM-risk-report.md`, heatmap refreshed in the dashboard |
+
+## How to run the demo
+
+1. Open the [[risk-dashboard]] — the risk register table (title, category, likelihood × impact score, RAG status, owner, mitigation status, review due) plus the likelihood × impact heatmap matrix.
+2. Browse `risks/` — individual risk files with full history and mitigation notes.
+3. Check `reports/2026-05-risk-report.md` — a worked example monthly risk report.
+
+## Connectors
+
+**Required:** Security documentation and policies (Confluence, Notion, Google Drive), incident log / postmortems, compliance tools (Vanta, Drata).
+**Recommended:** CVE feeds / security advisories, vendor contracts (legal vault), HRIS (key-person risk), cloud infrastructure docs, Jira/Linear (remediation tickets).15:Tbda,<h1>Risk Register Cabinet</h1>
+<p>Two agents — a Risk Lead and an Analyst — maintain the company risk register: tracking risks by category, likelihood, impact, owner, mitigation status, and review due date. Every review cycle produces a written risk report and a refreshed heatmap.</p>
+<blockquote>
+<p><strong>Keep your GRC platform as the system of record. Replace the Notion risk pages nobody updates, the spreadsheets that drift from reality, and the quarterly "let's re-score everything" fire drill.</strong></p>
+</blockquote>
+<h2>Why this cabinet</h2>
+<p>Risk registers fail for one reason: they're nobody's job. The GRC platform has the controls, but the risk narrative — what we actually fear, what we're doing about it, and who owns it — lives in a spreadsheet that's six months stale. This cabinet makes risk review a standing operation: agents sweep open risks weekly, escalate overdue reviews, and produce the monthly risk report the board actually reads.</p>
+<p>Every artifact is a file: the risk register, review notes, mitigation updates, and the monthly report are all written to disk so you can open, version-control, and audit them.</p>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/risk-agent]]</strong> — Risk Lead. Orchestrates the register, assigns risk owners, scores likelihood × impact, escalates overdue items, and publishes the monthly risk report.</li>
+<li><strong>[[.agents/analyst]]</strong> — Risk Analyst. Researches new risk signals (incidents, vendor changes, regulatory updates, security advisories), drafts mitigation options, and tracks remediation progress.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-risk-review]]</td>
+<td>Risk Lead</td>
+<td>Overdue reviews flagged, status updates committed to <code>/risks/</code>, owner notifications drafted</td>
+</tr>
+<tr>
+<td><strong>Monthly</strong> (1st 09:00)</td>
+<td>[[.jobs/monthly-risk-report]]</td>
+<td>Risk Lead</td>
+<td>Full risk report in <code>/reports/YYYY-MM-risk-report.md</code>, heatmap refreshed in the dashboard</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[risk-dashboard]] — the risk register table (title, category, likelihood × impact score, RAG status, owner, mitigation status, review due) plus the likelihood × impact heatmap matrix.</li>
+<li>Browse <code>risks/</code> — individual risk files with full history and mitigation notes.</li>
+<li>Check <code>reports/2026-05-risk-report.md</code> — a worked example monthly risk report.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Security documentation and policies (Confluence, Notion, Google Drive), incident log / postmortems, compliance tools (Vanta, Drata).
+<strong>Recommended:</strong> CVE feeds / security advisories, vendor contracts (legal vault), HRIS (key-person risk), cloud infrastructure docs, Jira/Linear (remediation tickets).</p>9:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$Le",null,{"slug":"risk-register","pageName":"risk-dashboard"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$Lf",null,{"entry":{"slug":"risk-register","meta":{"schemaVersion":1,"id":"risk-register-root","name":"Risk Register Cabinet","kind":"root","version":"0.1.0","description":"Tracks company security and operational risks with owners, likelihood-impact scores, mitigation plans, and review cadence. Keep your GRC platform as the system of record — replace the Notion risk pages, unreviewed spreadsheets, and ad-hoc risk conversations around it.","entry":"index.md","domain":"Professional Services"},"agents":[{"name":"Risk Analyst","slug":"analyst","emoji":"🔬","type":"specialist","department":"security","role":"Researches new risk signals — incidents, CVEs, regulatory changes, vendor issues — drafts mitigation options, tracks remediation progress, and keeps the underlying risk files current so the Risk Lead can score and report accurately.","heartbeat":"","budget":80,"active":true,"focus":["risk-research","mitigation-drafting","remediation-tracking","signal-monitoring"],"tags":["analysis","security"],"body":"$10"},{"name":"Risk Lead","slug":"risk-agent","emoji":"⚠️","type":"lead","department":"security","role":"Orchestrates the risk register — assigning risk owners, scoring likelihood × impact, escalating overdue reviews, sequencing the Analyst's research, and publishing the monthly risk report.","heartbeat":"0 9 * * 1","budget":120,"active":true,"focus":["risk-scoring","owner-assignment","review-cadence","monthly-reporting"],"tags":["risk","grc"],"body":"$11"}],"jobs":[{"id":"monthly-risk-report","name":"Monthly Risk Report","enabled":true,"schedule":"0 9 1 * *","provider":"claude-code","adapterType":"claude_local","ownerAgent":"risk-agent","agentSlug":"risk-agent","timeout":1200,"prompt":"$12","cabinetPath":"cabinets/risk-register","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"weekly-risk-review","name":"Weekly Risk Review","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"risk-agent","agentSlug":"risk-agent","timeout":900,"prompt":"$13","cabinetPath":"cabinets/risk-register","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$14","readmeHtml":"$15","tags":["security","grc","risk","risk-register","enterprise","cabinet"],"section":"Product & Engineering","stats":{"totalAgents":2,"totalJobs":2,"totalCabinets":1,"totalPages":1}}}]}]]}],"$L16","$L17","$L18","$L19","$L1a"]}]
+a:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L3",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L5",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}],"$L1b","$L1c"]}]]}],"$L1d"]]}],"$L1e"]}]}]
+b:["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true}]
+c:["$","script","script-1",{"src":"/_next/static/chunks/242ibphq-xhrb.js","async":true}]
+d:["$","$L1f",null,{"children":["$","$20",null,{"name":"Next.MetadataOutlet","children":"$@21"}]}]
+16:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Risk Register Cabinet"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🔬"," ","Risk Analyst"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["⚠️"," ","Risk Lead"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Monthly Risk Report"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Risk Review"}]]}]]]}],[]]}]}]]}]
+17:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-analyst-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🔬"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Risk Analyst"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Researches new risk signals — incidents, CVEs, regulatory changes, vendor issues — drafts mitigation options, tracks remediation progress, and keeps the underlying risk files current so the Risk Lead can score and report accurately."}],""]}],["$","div","root-risk-agent-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"⚠️"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Risk Lead"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Orchestrates the risk register — assigning risk owners, scoring likelihood × impact, escalating overdue reviews, sequencing the Analyst's research, and publishing the monthly risk report."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 9 * * 1"}]]}]]}]]}]]}]
+18:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","monthly-risk-report",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Monthly Risk Report"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 9 1 * *"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","risk-agent"]}]]}]]}],["$","div","weekly-risk-review",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Risk Review"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","risk-agent"]}]]}]]}]]}]]}]
+22:Tbda,<h1>Risk Register Cabinet</h1>
+<p>Two agents — a Risk Lead and an Analyst — maintain the company risk register: tracking risks by category, likelihood, impact, owner, mitigation status, and review due date. Every review cycle produces a written risk report and a refreshed heatmap.</p>
+<blockquote>
+<p><strong>Keep your GRC platform as the system of record. Replace the Notion risk pages nobody updates, the spreadsheets that drift from reality, and the quarterly "let's re-score everything" fire drill.</strong></p>
+</blockquote>
+<h2>Why this cabinet</h2>
+<p>Risk registers fail for one reason: they're nobody's job. The GRC platform has the controls, but the risk narrative — what we actually fear, what we're doing about it, and who owns it — lives in a spreadsheet that's six months stale. This cabinet makes risk review a standing operation: agents sweep open risks weekly, escalate overdue reviews, and produce the monthly risk report the board actually reads.</p>
+<p>Every artifact is a file: the risk register, review notes, mitigation updates, and the monthly report are all written to disk so you can open, version-control, and audit them.</p>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/risk-agent]]</strong> — Risk Lead. Orchestrates the register, assigns risk owners, scores likelihood × impact, escalates overdue items, and publishes the monthly risk report.</li>
+<li><strong>[[.agents/analyst]]</strong> — Risk Analyst. Researches new risk signals (incidents, vendor changes, regulatory updates, security advisories), drafts mitigation options, and tracks remediation progress.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-risk-review]]</td>
+<td>Risk Lead</td>
+<td>Overdue reviews flagged, status updates committed to <code>/risks/</code>, owner notifications drafted</td>
+</tr>
+<tr>
+<td><strong>Monthly</strong> (1st 09:00)</td>
+<td>[[.jobs/monthly-risk-report]]</td>
+<td>Risk Lead</td>
+<td>Full risk report in <code>/reports/YYYY-MM-risk-report.md</code>, heatmap refreshed in the dashboard</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[risk-dashboard]] — the risk register table (title, category, likelihood × impact score, RAG status, owner, mitigation status, review due) plus the likelihood × impact heatmap matrix.</li>
+<li>Browse <code>risks/</code> — individual risk files with full history and mitigation notes.</li>
+<li>Check <code>reports/2026-05-risk-report.md</code> — a worked example monthly risk report.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Security documentation and policies (Confluence, Notion, Google Drive), incident log / postmortems, compliance tools (Vanta, Drata).
+<strong>Recommended:</strong> CVE feeds / security advisories, vendor contracts (legal vault), HRIS (key-person risk), cloud infrastructure docs, Jira/Linear (remediation tickets).</p>19:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$22"}}]}]]}]
+1a:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L23",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set risk-register","label":"Install"}]}]}]]}]
+1b:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+1c:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+1d:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+1e:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+21:null

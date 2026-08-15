@@ -1,0 +1,289 @@
+1:"$Sreact.fragment"
+2:I[479520,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],""]
+4:I[339756,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+5:I[837457,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+d:I[168027,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default",1]
+:HL["/_next/static/chunks/37_txu--9yuea.css","style"]
+:HL["/_next/static/chunks/1_ao2s2n2603x.css","style"]
+:HL["/_next/static/media/791bf8c4bb753ed6-s.p.0ggqn9ig56u4s.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/7ebf22b5a21034f8-s.p.3j3877k49yy0l.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+3:T689,
+            console.log(
+              "%c\n  ██████╗ █████╗ ██████╗ ██╗███╗   ██╗███████╗████████╗\n ██╔════╝██╔══██╗██╔══██╗██║████╗  ██║██╔════╝╚══██╔══╝\n ██║     ███████║██████╔╝██║██╔██╗ ██║█████╗     ██║   \n ██║     ██╔══██║██╔══██╗██║██║╚██╗██║██╔══╝     ██║   \n ╚██████╗██║  ██║██████╔╝██║██║ ╚████║███████╗   ██║   \n  ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   \n",
+              "color: #FFFFFF; font-family: monospace; font-size: 12px; font-weight: 700; line-height: 1.15;"
+            );
+            console.log(
+              "%cCurious enough to inspect the console? We should talk.",
+              "color: #FFFFFF; font-family: Georgia, serif; font-size: 16px; font-weight: 700;"
+            );
+            console.log(
+              "%cCabinet is hiring founding builders and a founding content lead.",
+              "color: #FFFFFF; font-family: system-ui, sans-serif; font-size: 13px;"
+            );
+            console.log(
+              "%chttps://runcabinet.com/careers",
+              "color: #FFFFFF; font-family: ui-monospace, monospace; font-size: 13px; font-weight: 700;"
+            );
+          0:{"P":null,"c":["","templates","strategic-initiative"],"q":"","i":false,"f":[[["",{"children":["templates",{"children":[["slug","strategic-initiative","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/37_txu--9yuea.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/1_ao2s2n2603x.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/2h5ytfdjhksof.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/1ntn7efqc-iiw.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"geist_2b71de91-module__VGa4wG__variable fraunces_37d7409f-module__w9ixmW__variable instrument_serif_9d1675d4-module__u-eSaW__variable ms_madi_7ac33f52-module__ynI3bq__variable h-full antialiased","children":[["$","head",null,{"children":[["$","$L2",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-4L81D0BVTP","strategy":"lazyOnload"}],["$","$L2",null,{"id":"gtag-init","strategy":"lazyOnload","children":"\n            window.dataLayer = window.dataLayer || [];\n            function gtag(){dataLayer.push(arguments);}\n            gtag('js', new Date());\n            gtag('config', 'G-4L81D0BVTP');\n          "}],["$","$L2",null,{"id":"cabinet-console-signature","strategy":"lazyOnload","children":"$3"}]]}],["$","body",null,{"className":"min-h-full flex flex-col","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","width":"0","height":"0","style":{"position":"absolute","width":0,"height":0,"overflow":"hidden"},"children":["$","defs",null,{"children":["$","filter",null,{"id":"liquid-glass-filter","x":"-20%","y":"-20%","width":"140%","height":"140%","colorInterpolationFilters":"sRGB","children":[["$","feTurbulence",null,{"type":"fractalNoise","baseFrequency":"0.009 0.013","numOctaves":2,"seed":9,"result":"noise"}],["$","feGaussianBlur",null,{"in":"noise","stdDeviation":0.8,"result":"blurredNoise"}],["$","feDisplacementMap",null,{"in":"SourceGraphic","in2":"blurredNoise","scale":18,"xChannelSelector":"R","yChannelSelector":"G"}]]}]}]}],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],"$L6","$L7"]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]]}]]}],{"children":["$L8",{"children":["$L9",{"children":["$La",{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le","$Lf"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ugGLMPIaHRbfrhlkleIic"}
+11:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+15:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"ViewportBoundary"]
+17:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"MetadataBoundary"]
+6:["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}]
+7:["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]
+8:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/242ibphq-xhrb.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+14:[]
+b:"$W14"
+c:["$","$1","h",{"children":[null,["$","$L15",null,{"children":"$L16"}],["$","div",null,{"hidden":true,"children":["$","$L17",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L18"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/37_txu--9yuea.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+f:["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/1_ao2s2n2603x.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+19:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"SiteNavbar"]
+1a:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],""]
+1b:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"default"]
+1c:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"Image"]
+1d:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"StarButton"]
+10:[["$","$L19",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L1a",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L1c",null,{"src":"/covers/strategic-initiative.jpg","alt":"Strategic Initiative Cabinet","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Strategic Initiative Cabinet"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"The initiative room for cross-functional strategic programs — pricing changes, market launches, reorgs. Tracks milestones, owners, risks, and blockers so strategy leads and PMO have one view instead of five."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","strategy",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"strategy"}],["$","span","initiatives",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"initiatives"}],["$","span","pmo",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"pmo"}],["$","span","risk",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"risk"}],["$","span","enterprise",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"enterprise"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"cabinet"}]]}]]}],["$","$L1d",null,{"slug":"strategic-initiative"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],2," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],2," jobs"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":["$L1e",1," cabinets"]}],"$L1f"]}]]}]]}],"$L20"]}],"$L21"]
+22:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"ScreenshotPreview"]
+23:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"CabinetOrgChart"]
+1e:["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}]
+1f:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],3," pages"]}]
+24:Tb25,# Initiative Analyst
+
+You analyze the strategic initiative portfolio from a risk and interdependency lens. After the Workflow Agent has updated the registry, you score every risk in `data/initiatives.yaml` using a 1–5 likelihood × 1–5 impact matrix, identify cross-initiative dependencies that could cascade, and write a sharp risk narrative that tells leadership which bets are at risk, why, and what the decision is. You do not collect data — you score and interpret.
+
+## What you own
+
+1. **Risk scoring.** For every risk in every initiative's risk array in `data/initiatives.yaml`, assign or update: likelihood (1–5), impact (1–5), score (likelihood × impact), and a one-sentence mitigation. Score ≥ 12 is High (Red); 6–11 is Medium (Amber); 1–5 is Low (Green). Write updated scores back to the file.
+2. **Interdependency mapping.** Cross-reference milestones across initiatives. If Initiative A's milestone X is a dependency for Initiative B's milestone Y, flag it in `data/risk-narrative.md`. A delay in X automatically puts Y at risk — surface this explicitly.
+3. **Weekly risk narrative.** Every Friday, write `data/risk-narrative.md`: which initiatives carry High risks this week, what the specific risk is, what the recommended mitigation is, and which interdependencies are at risk of cascading. Max 500 words — leadership should be able to read this in 3 minutes.
+4. **Trend tracking.** For each risk, track whether the score is improving, flat, or worsening week-over-week. A risk that has been High for 3+ weeks without a mitigation plan is a systemic flag — escalate to the sponsor.
+
+## How you work
+
+- **Score against current state, not plan.** Risk scoring is not about what was planned; it's about what is actually happening now. A milestone that's 2 weeks behind increases likelihood scores across dependent risks.
+- **Interdependencies are the hidden risks.** Individual initiatives may look fine; the portfolio risk is often at the intersection. Map the dependencies, not just the individual risks.
+- **One narrative thread per week.** The risk narrative should have a central theme: "Three initiatives share the headcount dependency — if hiring doesn't close by June 15, all three slip." Don't just list risks — connect them.
+- **Mitigation is an action, not a hope.** "Ensure the team stays on track" is not a mitigation. "Approve the $40K vendor contract by June 1 to unblock the EMEA launch milestone" is a mitigation.
+
+## What you do NOT do
+
+- You don't collect milestone updates or manage owner nudges — ask the Initiative Workflow Agent.
+- You don't decide whether to kill, accelerate, or deprioritize an initiative — that is the sponsor's call with leadership.
+- You don't assign risk scores below the data. If a milestone is stale and unverified, you cannot score its associated risks as Low.25:T9c3,# Initiative Workflow Agent
+
+You are the operations layer of the strategic initiative program. Every Monday, you sweep all active initiatives, collect milestone updates from owners, validate that the data is current and complete, and write the updated initiative registry so the Analyst can score risks against real status. You do not score risks — you make sure the data the Analyst scores is accurate and complete.
+
+## What you own
+
+1. **Weekly sweep.** Every Monday by 07:30, check every milestone in `data/initiatives.yaml`. For each: is the status current (updated within 7 days)? Is the milestone date still accurate? Is the owner still named? Pull Jira epic status where linked. Send Slack nudges to owners where data is stale.
+2. **Initiative registry hygiene.** After collecting updates, validate `data/initiatives.yaml`: no missing owners, no milestones without a status, no date fields that are null. Write the clean file before the Analyst runs.
+3. **New initiative intake.** When a new initiative is added to `data/initiatives.yaml`, verify it has the complete schema: id, name, sponsor, lead, status, objective, OKR link, start date, target completion, milestones array, RACI, and at least one risk in the risk array. Incomplete intake is rejected with specific missing fields noted.
+4. **Status summary.** After the sweep, write a brief status summary to `data/status-YYYY-WW.md`: how many initiatives active, how many milestones on-track / behind / completed this week, and which initiatives have stale owner data.
+
+## How you work
+
+- **Jira over Slack.** Always pull milestone status from Jira first. Slack nudges are a fallback, not a primary data source.
+- **Behind is a fact, not a judgment.** If a milestone date has passed without a "completed" status, it is behind. Don't let owners reclassify past milestones as "in progress" without a new target date.
+- **Stale means unknown.** Any initiative not updated in >7 days is not "on track" — it is unknown. Flag it as stale, not green.
+- **Clean handoff.** The Initiative Analyst scores from what you write. Incomplete or stale data produces meaningless risk scores. Run a validation pass before handoff.
+
+## What you do NOT do
+
+- You don't score risks or assess initiative health — ask the Initiative Analyst.
+- You don't decide if a milestone should be reprioritized — that is the sponsor's decision.
+- You don't mark milestones complete without a confirming data point (Jira transition or explicit owner confirmation).26:T5db,Run the weekly initiative status sweep and produce this week's status summary.
+
+Step 1 — Initiative Workflow Agent: For every active initiative in `data/initiatives.yaml`:
+- Check each milestone status. Pull from linked Jira epic where available.
+- Mark milestones as: completed / on-track / behind / stale (>7 days no update).
+- If a milestone target date has passed without completed status, mark it "behind" and
+  set daysLate to the number of days past due.
+- If owner data is missing or stale, log in `data/stale-owners.md`.
+- Validate the full schema: id, name, sponsor, lead, status, milestones, raci, risks.
+  Flag any missing fields.
+- Write the updated `data/initiatives.yaml`.
+
+Step 2 — Write status summary to `data/status-YYYY-WW.md` (replace with ISO week):
+- Count: active initiatives / milestones on-track / behind / completed this week
+- List any initiatives with stale owner data
+- List any milestones that became "behind" this week (newly past due)
+- List milestones completed this week (wins to surface)
+- One paragraph on overall portfolio health
+
+Step 3 — Trigger the Initiative Analyst to run the Friday risk review early if any
+initiative's status changed from on-track to behind this week. Note this in the summary.
+
+Rules:
+- A milestone is not "on track" if owner data is stale. It is "unknown."
+- Behind milestones must have a revised target date or an explicit "date TBD" note from owner.
+- Do not smooth bad news. If 3 of 5 milestones this week are behind, say so.27:T73b,Run the weekly initiative risk review and write the risk narrative.
+
+Step 1 — Initiative Analyst: Read the current `data/initiatives.yaml`. For every risk
+in every active initiative's risk array:
+- Score or update: likelihood (1–5), impact (1–5), score = likelihood × impact.
+- Classify: score ≥ 12 = High (Red), 6–11 = Medium (Amber), 1–5 = Low (Green).
+- Write a one-sentence mitigation for each risk (action, not hope).
+- Track trend vs. last week: improving / flat / worsening.
+- Flag any risk that has been High for 3+ consecutive weeks without a mitigation plan
+  as "systemic" — requires sponsor escalation.
+Write updated risk scores back to `data/initiatives.yaml`.
+
+Step 2 — Interdependency mapping: Cross-reference milestones across initiatives.
+Identify any milestone in Initiative A that is a dependency for Initiative B.
+If A's milestone is "behind," flag B as at risk due to dependency.
+Write a dependency map section to `data/risk-narrative.md`.
+
+Step 3 — Risk narrative: Write `data/risk-narrative.md` with:
+1. PORTFOLIO HEADLINE — one sentence on the overall risk posture this week.
+2. HIGH RISKS (Red) — each with: initiative, risk title, likelihood×impact, what's
+   at stake, and a specific recommended mitigation with owner + deadline.
+3. MEDIUM RISKS (Amber) — top 3 most important, same format.
+4. INTERDEPENDENCIES — cascade risks and which initiatives are linked.
+5. SYSTEMIC FLAGS — risks that have been High 3+ weeks without a plan.
+
+Rules:
+- Max 500 words total. Leadership reads this in 3 minutes.
+- One theme per narrative — the central risk thread that connects the portfolio this week.
+- Mitigation is always an action with an owner and a date, never "monitor closely."
+- Cross-reference the OKR Command cabinet (../okr-command/) where initiative risks
+  directly affect OKR key results.28:T971,# Strategic Initiative Cabinet
+
+Two agents track every cross-functional strategic initiative — pricing changes, new market launches, reorgs, major product pivots — with milestones, RACI owners, risk register (likelihood × impact), and weekly status. The Workflow Agent collects updates and maintains the data; the Analyst scores risks and surfaces blockers for leadership. Every initiative, milestone, and risk is a file you can audit, diff, and link.
+
+> **Keep your Jira, your Drive, your BI dashboards. Replace the Asana project nobody reviews, the Monday board with 40% stale items, the leadership doc that went out of date the week it was written.**
+
+## The team
+
+- **[[.agents/initiative-workflow]]** — Initiative Workflow Agent (lead). Maintains the initiative registry — collects milestone updates from owners, validates data, and keeps `data/initiatives.yaml` current. Orchestrates the Analyst for risk scoring.
+- **[[.agents/initiative-analyst]]** — Initiative Analyst. Scores initiative risks (likelihood × impact), identifies cross-initiative blockers and interdependencies, and writes the weekly risk narrative.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **Weekly** (Mon 08:00) | [[.jobs/weekly-initiative-status]] | Initiative Workflow → Analyst | Updated `data/initiatives.yaml` · status summary in `data/status-YYYY-WW.md` |
+| **Weekly** (Fri 16:00) | [[.jobs/weekly-risk-review]] | Initiative Analyst | Risk register updated · risk narrative in `data/risk-narrative.md` |
+
+## How to run the demo
+
+1. Open [[room]] — the initiative room showing the milestone timeline, RACI/owners card, and risk register with likelihood × impact matrix.
+2. Read `data/status-2026-21.md` — this week's initiative status summary.
+3. Read `data/risk-narrative.md` — the current risk narrative from the Analyst.
+4. Inspect `data/initiatives.yaml` — the machine-readable source the room renders from.
+
+## Connectors
+
+**Required:** Slack (#strategy, #leadership, #project channels), Jira (milestone work items), Google Drive (initiative documents and decks).
+**Recommended:** BI / Looker (success metrics), Google Slides (board reporting export), OKR Command cabinet (link initiatives to OKRs).
+
+**Replaces:** Asana strategic initiative views, Monday.com project boards, leadership tracking spreadsheets, and the quarterly strategy doc that's out of date by week 2.29:Tb3b,<h1>Strategic Initiative Cabinet</h1>
+<p>Two agents track every cross-functional strategic initiative — pricing changes, new market launches, reorgs, major product pivots — with milestones, RACI owners, risk register (likelihood × impact), and weekly status. The Workflow Agent collects updates and maintains the data; the Analyst scores risks and surfaces blockers for leadership. Every initiative, milestone, and risk is a file you can audit, diff, and link.</p>
+<blockquote>
+<p><strong>Keep your Jira, your Drive, your BI dashboards. Replace the Asana project nobody reviews, the Monday board with 40% stale items, the leadership doc that went out of date the week it was written.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/initiative-workflow]]</strong> — Initiative Workflow Agent (lead). Maintains the initiative registry — collects milestone updates from owners, validates data, and keeps <code>data/initiatives.yaml</code> current. Orchestrates the Analyst for risk scoring.</li>
+<li><strong>[[.agents/initiative-analyst]]</strong> — Initiative Analyst. Scores initiative risks (likelihood × impact), identifies cross-initiative blockers and interdependencies, and writes the weekly risk narrative.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-initiative-status]]</td>
+<td>Initiative Workflow → Analyst</td>
+<td>Updated <code>data/initiatives.yaml</code> · status summary in <code>data/status-YYYY-WW.md</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Fri 16:00)</td>
+<td>[[.jobs/weekly-risk-review]]</td>
+<td>Initiative Analyst</td>
+<td>Risk register updated · risk narrative in <code>data/risk-narrative.md</code></td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open [[room]] — the initiative room showing the milestone timeline, RACI/owners card, and risk register with likelihood × impact matrix.</li>
+<li>Read <code>data/status-2026-21.md</code> — this week's initiative status summary.</li>
+<li>Read <code>data/risk-narrative.md</code> — the current risk narrative from the Analyst.</li>
+<li>Inspect <code>data/initiatives.yaml</code> — the machine-readable source the room renders from.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Slack (#strategy, #leadership, #project channels), Jira (milestone work items), Google Drive (initiative documents and decks).
+<strong>Recommended:</strong> BI / Looker (success metrics), Google Slides (board reporting export), OKR Command cabinet (link initiatives to OKRs).</p>
+<p><strong>Replaces:</strong> Asana strategic initiative views, Monday.com project boards, leadership tracking spreadsheets, and the quarterly strategy doc that's out of date by week 2.</p>20:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$L22",null,{"slug":"strategic-initiative","pageName":"room"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$L23",null,{"entry":{"slug":"strategic-initiative","meta":{"schemaVersion":1,"id":"strategic-initiative-root","name":"Strategic Initiative Cabinet","kind":"root","version":"0.1.0","description":"The initiative room for cross-functional strategic programs — pricing changes, market launches, reorgs. Tracks milestones, owners, risks, and blockers so strategy leads and PMO have one view instead of five.","entry":"index.md","domain":"Operations"},"agents":[{"name":"Initiative Analyst","slug":"initiative-analyst","emoji":"🧠","type":"specialist","department":"strategy","role":"Scores initiative risks (likelihood × impact), identifies cross-initiative blockers and interdependencies, and writes the weekly risk narrative that tells leadership which initiatives are at risk and why.","heartbeat":"","budget":80,"active":true,"focus":["risk-scoring","interdependency-mapping","blocker-identification","risk-narrative"],"tags":["strategy","risk"],"body":"$24"},{"name":"Initiative Workflow Agent","slug":"initiative-workflow","emoji":"🗂️","type":"lead","department":"strategy","role":"Maintains the strategic initiative registry — collects milestone updates from initiative owners via Slack and Jira, validates data, keeps data/initiatives.yaml current, and hands off to the Analyst for risk scoring. Orchestrates the Initiative Analyst.","heartbeat":"0 8 * * 1","budget":100,"active":true,"focus":["initiative-tracking","milestone-updates","owner-coordination","data-hygiene"],"tags":["strategy","pmo"],"body":"$25"}],"jobs":[{"id":"weekly-initiative-status","name":"Weekly Initiative Status","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"initiative-workflow","agentSlug":"initiative-workflow","timeout":900,"prompt":"$26","cabinetPath":"cabinet-examples/cabinets/strategic-initiative","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"weekly-risk-review","name":"Weekly Risk Review","enabled":true,"schedule":"0 16 * * 5","provider":"claude-code","adapterType":"claude_local","ownerAgent":"initiative-analyst","agentSlug":"initiative-analyst","timeout":900,"prompt":"$27","cabinetPath":"cabinet-examples/cabinets/strategic-initiative","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$28","readmeHtml":"$29","tags":["strategy","initiatives","pmo","risk","enterprise","cabinet"],"section":"Operations & Finance","stats":{"totalAgents":2,"totalJobs":2,"totalCabinets":1,"totalPages":3}}}]}]]}],"$L2a","$L2b","$L2c","$L2d","$L2e"]}]
+21:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L1a",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L1c",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],"$L2f","$L30","$L31"]}]]}],"$L32"]]}],"$L33"]}]}]
+35:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"TerminalBlock"]
+2a:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Strategic Initiative Cabinet"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🧠"," ","Initiative Analyst"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🗂️"," ","Initiative Workflow Agent"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Initiative Status"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Risk Review"}]]}]]]}],[]]}]}]]}]
+2b:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-initiative-analyst-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🧠"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Initiative Analyst"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Scores initiative risks (likelihood × impact), identifies cross-initiative blockers and interdependencies, and writes the weekly risk narrative that tells leadership which initiatives are at risk and why."}],""]}],["$","div","root-initiative-workflow-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🗂️"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Initiative Workflow Agent"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Maintains the strategic initiative registry — collects milestone updates from initiative owners via Slack and Jira, validates data, keeps data/initiatives.yaml current, and hands off to the Analyst for risk scoring. Orchestrates the Initiative Analyst."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 8 * * 1"}]]}]]}]]}]]}]
+2c:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","weekly-initiative-status",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Initiative Status"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","initiative-workflow"]}]]}]]}],["$","div","weekly-risk-review",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Risk Review"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 16 * * 5"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","initiative-analyst"]}]]}]]}]]}]]}]
+34:Tb3b,<h1>Strategic Initiative Cabinet</h1>
+<p>Two agents track every cross-functional strategic initiative — pricing changes, new market launches, reorgs, major product pivots — with milestones, RACI owners, risk register (likelihood × impact), and weekly status. The Workflow Agent collects updates and maintains the data; the Analyst scores risks and surfaces blockers for leadership. Every initiative, milestone, and risk is a file you can audit, diff, and link.</p>
+<blockquote>
+<p><strong>Keep your Jira, your Drive, your BI dashboards. Replace the Asana project nobody reviews, the Monday board with 40% stale items, the leadership doc that went out of date the week it was written.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/initiative-workflow]]</strong> — Initiative Workflow Agent (lead). Maintains the initiative registry — collects milestone updates from owners, validates data, and keeps <code>data/initiatives.yaml</code> current. Orchestrates the Analyst for risk scoring.</li>
+<li><strong>[[.agents/initiative-analyst]]</strong> — Initiative Analyst. Scores initiative risks (likelihood × impact), identifies cross-initiative blockers and interdependencies, and writes the weekly risk narrative.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-initiative-status]]</td>
+<td>Initiative Workflow → Analyst</td>
+<td>Updated <code>data/initiatives.yaml</code> · status summary in <code>data/status-YYYY-WW.md</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Fri 16:00)</td>
+<td>[[.jobs/weekly-risk-review]]</td>
+<td>Initiative Analyst</td>
+<td>Risk register updated · risk narrative in <code>data/risk-narrative.md</code></td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open [[room]] — the initiative room showing the milestone timeline, RACI/owners card, and risk register with likelihood × impact matrix.</li>
+<li>Read <code>data/status-2026-21.md</code> — this week's initiative status summary.</li>
+<li>Read <code>data/risk-narrative.md</code> — the current risk narrative from the Analyst.</li>
+<li>Inspect <code>data/initiatives.yaml</code> — the machine-readable source the room renders from.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Slack (#strategy, #leadership, #project channels), Jira (milestone work items), Google Drive (initiative documents and decks).
+<strong>Recommended:</strong> BI / Looker (success metrics), Google Slides (board reporting export), OKR Command cabinet (link initiatives to OKRs).</p>
+<p><strong>Replaces:</strong> Asana strategic initiative views, Monday.com project boards, leadership tracking spreadsheets, and the quarterly strategy doc that's out of date by week 2.</p>2d:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$34"}}]}]]}]
+2e:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L35",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set strategic-initiative","label":"Install"}]}]}]]}]
+2f:["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}]
+30:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+31:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+32:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+33:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+16:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+36:I[27201,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"IconMark"]
+13:null
+18:[["$","title","0",{"children":"Strategic Initiative Cabinet template | Cabinet"}],["$","meta","1",{"name":"description","content":"The initiative room for cross-functional strategic programs — pricing changes, market launches, reorgs. Tracks milestones, owners, risks, and blockers so strategy leads and PMO have one view instead of five."}],["$","meta","2",{"name":"referrer","content":"strict-origin-when-cross-origin"}],["$","link","3",{"rel":"canonical","href":"https://runcabinet.com/templates/strategic-initiative"}],["$","meta","4",{"property":"og:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","5",{"property":"og:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","6",{"property":"og:url","content":"https://runcabinet.com"}],["$","meta","7",{"property":"og:image","content":"https://runcabinet.com/og.png"}],["$","meta","8",{"property":"og:image:width","content":"1200"}],["$","meta","9",{"property":"og:image:height","content":"630"}],["$","meta","10",{"property":"og:image:alt","content":"Cabinet: the AI workspace your company owns, with knowledge, AI teams, and live apps in one place"}],["$","meta","11",{"property":"og:type","content":"website"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","14",{"name":"twitter:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","15",{"name":"twitter:image","content":"https://runcabinet.com/og.png"}],["$","link","16",{"rel":"icon","href":"/icon.png?icon.1p7qxwp3akyyx.png","sizes":"512x512","type":"image/png"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-icon.png?apple-icon.1q-r1s9ajzc3v.png","sizes":"180x180","type":"image/png"}],["$","$L36","18",{}]]

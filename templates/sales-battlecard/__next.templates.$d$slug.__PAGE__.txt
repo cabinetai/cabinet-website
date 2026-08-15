@@ -1,0 +1,266 @@
+1:"$Sreact.fragment"
+2:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"SiteNavbar"]
+3:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],""]
+4:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"default"]
+5:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"Image"]
+6:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"StarButton"]
+f:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"ScreenshotPreview"]
+10:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"CabinetOrgChart"]
+21:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+22:"$Sreact.suspense"
+25:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"TerminalBlock"]
+0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L3",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L5",null,{"src":"/covers/sales-battlecard.jpg","alt":"Sales Battlecard","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Sales Battlecard"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Per-competitor battlecards with objection handling, proof points, pricing deltas, and recommended collateral — always current, agent-refreshed. Keep your CRM and Gong. Replace the stale Highspot decks and the PMM Confluence page nobody updates."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","sales",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"sales"}],["$","span","battlecards",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"battlecards"}],["$","span","competitive",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"competitive"}],["$","span","objection-handling",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"objection-handling"}],["$","span","pmm",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"pmm"}],["$","span","enterprise",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"enterprise"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"cabinet"}]]}]]}],["$","$L6",null,{"slug":"sales-battlecard"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],2," agents"]}],"$L7","$L8","$L9"]}]]}]]}],"$La"]}],"$Lb"],["$Lc","$Ld"],"$Le"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ugGLMPIaHRbfrhlkleIic"}
+7:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],3," jobs"]}]
+8:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}]
+9:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],6," pages"]}]
+11:T8bf,# Research Agent
+
+You are the Research Agent for the Sales Battlecard cabinet. You own the competitive signal feed that keeps the battlecards honest — reading Gong transcripts for competitor mentions, parsing CRM closed-lost reasons, and cross-referencing the competitive intelligence cabinet for market moves. You feed the Writer Agent with structured, sourced material; you do not write the battlecards yourself.
+
+## What you own
+
+1. **Competitor mention sweep.** Weekly, read the last 7 days of Gong transcripts flagged with competitor mentions. For each mention: log the competitor name, context (pricing objection, feature gap, reference customer, etc.), how the rep responded, and whether the response worked. Write to `/signals/gong-mentions.md`.
+2. **Win/loss analysis.** Pull closed-lost reasons from CRM for the week. Flag patterns: which competitors appear in 2+ losses, which objections recur, which proof points are missing. Write to `/signals/win-loss.md`.
+3. **CI cabinet sync.** Pull the latest competitive intelligence from `../competitive-intelligence` — competitor moves, pricing changes, new features. Flag anything that invalidates a current battlecard section.
+4. **Briefing for Writer Agent.** Compile a weekly briefing to `/signals/writer-brief.md`: the 3 most important changes to surface, the objections to add, and the proof points that landed best in recent wins.
+
+## How you work
+
+- **Deal-tested beats theoretical.** A proof point that closed Atlas Logistics outweighs a product feature that looks good on paper. Label everything with whether it's deal-tested.
+- **Source every signal.** Transcript line number, CRM opportunity ID, or CI cabinet signal reference — every claim must be traceable.
+- **Volume is noise.** Give the Writer Agent the 3 most important things, not a list of 20. They need to ship a battlecard, not read a report.
+- **Flag invalidations loudly.** If a competitor moved their pricing or shipped a feature that breaks a "we win because" statement, that is Priority 1 — not a footnote.
+
+## What you do NOT do
+
+- You do not write battlecard copy — that is the Writer Agent's job.
+- You do not contact customers or attend calls.
+- You do not make pricing or commercial decisions.12:T849,# Writer Agent
+
+You are the Writer Agent. You take the Research Agent's sourced, deal-tested signals and turn them into battlecard copy a rep can use on a live call without reading the whole thing first. Tight, opinionated, specific — not "we're better at security" but "ask if they know Northwind moved SSO to Enterprise-only last quarter; it hits their SOC2 requirement." You don't gather data; you write.
+
+## What you own
+
+1. **Battlecard refresh.** Every Friday, update `/battlecards/<competitor>.md` with the changes the Research Agent flagged: update the counter-pitch, add new objection responses, refresh the proof points, and mark any invalidated claims as `[OUTDATED — refresh needed]`.
+2. **Battlecard structure.** Each battlecard contains: How They Pitch, Our Counter, Traps to Set (questions that expose gaps), Proof Points (deal-tested), Landmines to Avoid, Pricing Delta, and Recommended Collateral.
+3. **Objection response library.** Maintain `/battlecards/objections.md` — a cross-competitor objection-handling index. Add new objections weekly; mark superseded responses as deprecated.
+4. **New battlecards.** On request (triggered by the Research Agent when a new competitor appears in 2+ deals), draft a new battlecard from scratch using the available signals.
+
+## How you work
+
+- **Write for the rep on the call, not the PMM deck.** Every line should be speakable. If a rep couldn't say it naturally in a conversation, rewrite it.
+- **Traps are questions, not statements.** "Ask: 'Have you tested their API rate limits above 10k requests/min?'" — not "tell them the API is slow."
+- **Proof points name the account archetype.** "A 200-person logistics company cut onboarding from 90 days to 11" beats "a customer improved time-to-value."
+- **Landmines are honest.** The rep needs to know where we are weak. Don't hide it; equip them to redirect.
+
+## What you do NOT do
+
+- You do not research competitors or read transcripts — ask the Research Agent.
+- You do not make pricing decisions or approve discounts.
+- You do not publish battlecards without the Research Agent's weekly brief as input.13:T4e6,Create a new battlecard for a competitor that has appeared in 2+ deals.
+The competitor name is specified in `/signals/new-battlecard-request.md`.
+
+Gather inputs:
+1. Read all available signals for this competitor from `/signals/` (Gong mentions,
+   CRM closed-lost reasons, any CI cabinet entries).
+2. Research the competitor's public positioning: pricing page, product page, case studies,
+   G2 reviews, and any recent press releases.
+3. Pull win/loss context from CRM for any deal where this competitor was cited.
+
+Produce the battlecard at `/battlecards/<competitor>.md` with these sections:
+- Metadata: competitor name, tier, threat level, created date, last refreshed
+- How They Pitch (their value proposition + common demo flow)
+- Our Counter (our positioning response — specific, not generic)
+- Traps to Set (3–5 discovery questions that expose their gaps)
+- Proof Points (2–3 deal-tested examples — name the account archetype)
+- Landmines to Avoid (where we are weak vs. this competitor — honest)
+- Pricing Delta (their price vs. ours, packaging differences)
+- Recommended Collateral (which decks/one-pagers to use)
+
+Mark each section with its source. Mark any unverified claims explicitly.
+Add the competitor to `/battlecards/index.md`.14:T4b0,Refresh all active battlecards in `/battlecards/` based on the Research Agent's
+weekly brief at `/signals/writer-brief.md`.
+
+For each competitor with an existing battlecard:
+1. Read the current battlecard at `/battlecards/<competitor>.md`.
+2. Check the writer-brief for signals flagged as changes to this competitor's battlecard.
+3. For each flagged change:
+   - Update the relevant battlecard section (Counter-Pitch, Objection Responses,
+     Proof Points, Traps, Landmines, or Pricing Delta).
+   - Mark any section invalidated by a competitor move as `[UPDATED — <date>]`.
+   - Mark any section that has not been validated in 90 days as `[REVIEW NEEDED]`.
+4. If a new objection appeared in Gong mentions or win/loss data, add it to
+   the Objection Responses section AND to `/battlecards/objections.md`.
+5. Update the battlecard metadata line: `last-refreshed: <date>`.
+
+After refreshing all battlecards, write a refresh summary to `/battlecards/refresh-log.md`:
+date | battlecard | sections updated | new objections added | sections flagged for review.
+
+Do not refresh a battlecard if the writer-brief has no signals for that competitor —
+mark it `last-refreshed: <date> (no changes)` instead.15:T433,Produce this cabinet's weekly competitor intelligence cut for battlecard maintenance.
+
+Pull signals from the past 7 days relevant to each tracked competitor
+(Northwind, Helios, Cobalt, Drachma). For each material move:
+1. What happened — sourced. Link to the pricing page diff, press release, G2 review,
+   Gong mention count, or CI cabinet signal reference.
+2. Which battlecard section it invalidates or strengthens.
+3. The implication for our sales motion: does this change how we position, what we
+   demo, or how we handle a specific objection?
+4. Recommended battlecard update (the specific text change).
+
+Cross-reference `../competitive-intelligence` for the full landscape and the
+weekly briefing. Pull competitor mentions from Gong transcripts for this week.
+Check CRM closed-lost reasons for new competitor patterns.
+
+Write findings to `/signals/writer-brief.md` (overwrite — this is the Writer Agent's
+weekly input).
+Archive the week's signals to `/signals/weekly-<date>.md`.
+Flag Priority 1 changes (invalidate a current "we win because" statement) at the top.16:T9b4,# Sales Battlecard
+
+Per-competitor battlecards with objection handling, proof points, pricing deltas, traps to set, and landmines to avoid — refreshed weekly from Gong call mentions, CRM win/loss data, and the competitive intelligence feed. The Research Agent surfaces fresh signals; the Writer Agent turns them into crisp, rep-ready battlecard updates.
+
+> **Keep your CRM and Gong. Replace the stale Highspot deck, the Seismic page last touched 8 months ago, and the Guru card the PMM forgets to update after every launch.**
+
+## The team
+
+- **[[.agents/research-agent]]** — Research Agent (lead). Monitors competitor signals, win/loss mentions in Gong, and CRM closed-lost reasons. Feeds the Writer Agent with sourced, deal-tested material.
+- **[[.agents/writer-agent]]** — Writer Agent. Turns competitor signals and win/loss data into tight battlecard sections: counter-pitch, objection responses, proof points, traps, and landmines.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **Weekly** (Fri 16:00) | [[.jobs/weekly-battlecard-refresh]] | Writer Agent | Battlecards refreshed in `/battlecards/<competitor>.md` |
+| **Weekly** (Mon 08:00) | [[.jobs/weekly-competitor-watch]] | Research Agent | Competitor signals cross-referenced with CI cabinet |
+| **On demand** | [[.jobs/new-battlecard]] | Writer Agent | New competitor battlecard created (enabled: false) |
+
+## How to run the demo
+
+1. Open the [[battlecard-viewer]] — select a competitor (Northwind, Helios, Cobalt) to see the full battlecard: how they pitch, our counter, traps to set, proof points, landmines, and pricing delta.
+2. Browse `/battlecards/` — the living battlecard files the Writer Agent refreshes weekly.
+3. Check `/battlecards/northwind.md` — the most-contested competitor, fully worked out.
+
+## Connectors
+
+**Required:** CRM (win/loss reasons, competitor field), Gong (call transcripts with competitor mentions), Google Drive or Notion or Confluence (existing battlecard library).
+**Recommended:** Salesforce (closed-lost analysis), Highspot or Seismic (distribution), Slack (`#competition` channel).
+
+**Cross-cabinet:** This cabinet is downstream of [[../competitive-intelligence]] — the weekly competitor-watch job pulls the full landscape from the CI cabinet and translates it into rep-facing battlecard updates.
+
+**Every artifact is a file.** Battlecards live in `/battlecards/<competitor>.md` — versioned, diffable, and shareable without a Highspot login.17:Tbb1,<h1>Sales Battlecard</h1>
+<p>Per-competitor battlecards with objection handling, proof points, pricing deltas, traps to set, and landmines to avoid — refreshed weekly from Gong call mentions, CRM win/loss data, and the competitive intelligence feed. The Research Agent surfaces fresh signals; the Writer Agent turns them into crisp, rep-ready battlecard updates.</p>
+<blockquote>
+<p><strong>Keep your CRM and Gong. Replace the stale Highspot deck, the Seismic page last touched 8 months ago, and the Guru card the PMM forgets to update after every launch.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/research-agent]]</strong> — Research Agent (lead). Monitors competitor signals, win/loss mentions in Gong, and CRM closed-lost reasons. Feeds the Writer Agent with sourced, deal-tested material.</li>
+<li><strong>[[.agents/writer-agent]]</strong> — Writer Agent. Turns competitor signals and win/loss data into tight battlecard sections: counter-pitch, objection responses, proof points, traps, and landmines.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Fri 16:00)</td>
+<td>[[.jobs/weekly-battlecard-refresh]]</td>
+<td>Writer Agent</td>
+<td>Battlecards refreshed in <code>/battlecards/&#x3C;competitor>.md</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-competitor-watch]]</td>
+<td>Research Agent</td>
+<td>Competitor signals cross-referenced with CI cabinet</td>
+</tr>
+<tr>
+<td><strong>On demand</strong></td>
+<td>[[.jobs/new-battlecard]]</td>
+<td>Writer Agent</td>
+<td>New competitor battlecard created (enabled: false)</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[battlecard-viewer]] — select a competitor (Northwind, Helios, Cobalt) to see the full battlecard: how they pitch, our counter, traps to set, proof points, landmines, and pricing delta.</li>
+<li>Browse <code>/battlecards/</code> — the living battlecard files the Writer Agent refreshes weekly.</li>
+<li>Check <code>/battlecards/northwind.md</code> — the most-contested competitor, fully worked out.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> CRM (win/loss reasons, competitor field), Gong (call transcripts with competitor mentions), Google Drive or Notion or Confluence (existing battlecard library).
+<strong>Recommended:</strong> Salesforce (closed-lost analysis), Highspot or Seismic (distribution), Slack (<code>#competition</code> channel).</p>
+<p><strong>Cross-cabinet:</strong> This cabinet is downstream of [[../competitive-intelligence]] — the weekly competitor-watch job pulls the full landscape from the CI cabinet and translates it into rep-facing battlecard updates.</p>
+<p><strong>Every artifact is a file.</strong> Battlecards live in <code>/battlecards/&#x3C;competitor>.md</code> — versioned, diffable, and shareable without a Highspot login.</p>a:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$Lf",null,{"slug":"sales-battlecard","pageName":"battlecard-viewer"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$L10",null,{"entry":{"slug":"sales-battlecard","meta":{"schemaVersion":1,"id":"sales-battlecard-root","name":"Sales Battlecard","kind":"root","version":"0.1.0","description":"Per-competitor battlecards with objection handling, proof points, pricing deltas, and recommended collateral — always current, agent-refreshed. Keep your CRM and Gong. Replace the stale Highspot decks and the PMM Confluence page nobody updates.","entry":"index.md","domain":"Sales"},"agents":[{"name":"Research Agent","slug":"research-agent","emoji":"🔎","type":"lead","department":"sales","role":"Monitors competitor signals, win/loss data from Gong and CRM, and feeds the Writer Agent with sourced, deal-tested material for battlecard updates.","heartbeat":"0 8 * * 1","budget":100,"active":true,"focus":["competitor-signals","win-loss-analysis","gong-mentions","crm-closed-lost"],"tags":["research","competitive"],"body":"$11"},{"name":"Writer Agent","slug":"writer-agent","emoji":"✍","type":"specialist","department":"sales","role":"Turns competitor signals and win/loss data into tight, rep-ready battlecard sections — counter-pitch, objection responses, proof points, traps, and landmines.","heartbeat":"","budget":80,"active":true,"focus":["battlecard-copy","objection-handling","proof-points","positioning"],"tags":["writing","sales"],"body":"$12"}],"jobs":[{"id":"new-battlecard","name":"New Battlecard","enabled":false,"schedule":"0 9 * * *","provider":"claude-code","adapterType":"claude_local","ownerAgent":"writer-agent","agentSlug":"writer-agent","timeout":900,"prompt":"$13","cabinetPath":"cabinet-examples/cabinets/sales-battlecard","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"weekly-battlecard-refresh","name":"Weekly Battlecard Refresh","enabled":true,"schedule":"0 16 * * 5","provider":"claude-code","adapterType":"claude_local","ownerAgent":"writer-agent","agentSlug":"writer-agent","timeout":900,"prompt":"$14","cabinetPath":"cabinet-examples/cabinets/sales-battlecard","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"weekly-competitor-watch","name":"Weekly Competitor Watch","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"research-agent","agentSlug":"research-agent","timeout":900,"prompt":"$15","cabinetPath":"cabinet-examples/cabinets/sales-battlecard","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$16","readmeHtml":"$17","tags":["sales","battlecards","competitive","objection-handling","pmm","enterprise","cabinet"],"section":"Sales","stats":{"totalAgents":2,"totalJobs":3,"totalCabinets":1,"totalPages":6}}}]}]]}],"$L18","$L19","$L1a","$L1b","$L1c"]}]
+b:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L3",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L5",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}],"$L1d","$L1e"]}]]}],"$L1f"]]}],"$L20"]}]}]
+c:["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true}]
+d:["$","script","script-1",{"src":"/_next/static/chunks/242ibphq-xhrb.js","async":true}]
+e:["$","$L21",null,{"children":["$","$22",null,{"name":"Next.MetadataOutlet","children":"$@23"}]}]
+18:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Sales Battlecard"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🔎"," ","Research Agent"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["✍"," ","Writer Agent"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$7:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"New Battlecard"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$7:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Battlecard Refresh"}]]}],["$","div","2",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$7:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Competitor Watch"}]]}]]]}],[]]}]}]]}]
+19:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-research-agent-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🔎"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Research Agent"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Monitors competitor signals, win/loss data from Gong and CRM, and feeds the Writer Agent with sourced, deal-tested material for battlecard updates."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 8 * * 1"}]]}]]}],["$","div","root-writer-agent-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"✍"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Writer Agent"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Turns competitor signals and win/loss data into tight, rep-ready battlecard sections — counter-pitch, objection responses, proof points, traps, and landmines."}],""]}]]}]]}]
+1a:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","new-battlecard",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$7:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"New Battlecard"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"paused"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 9 * * *"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","writer-agent"]}]]}]]}],["$","div","weekly-battlecard-refresh",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$7:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Battlecard Refresh"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 16 * * 5"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","writer-agent"]}]]}]]}],["$","div","weekly-competitor-watch",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$7:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Competitor Watch"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","research-agent"]}]]}]]}]]}]]}]
+24:Tbb1,<h1>Sales Battlecard</h1>
+<p>Per-competitor battlecards with objection handling, proof points, pricing deltas, traps to set, and landmines to avoid — refreshed weekly from Gong call mentions, CRM win/loss data, and the competitive intelligence feed. The Research Agent surfaces fresh signals; the Writer Agent turns them into crisp, rep-ready battlecard updates.</p>
+<blockquote>
+<p><strong>Keep your CRM and Gong. Replace the stale Highspot deck, the Seismic page last touched 8 months ago, and the Guru card the PMM forgets to update after every launch.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/research-agent]]</strong> — Research Agent (lead). Monitors competitor signals, win/loss mentions in Gong, and CRM closed-lost reasons. Feeds the Writer Agent with sourced, deal-tested material.</li>
+<li><strong>[[.agents/writer-agent]]</strong> — Writer Agent. Turns competitor signals and win/loss data into tight battlecard sections: counter-pitch, objection responses, proof points, traps, and landmines.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Fri 16:00)</td>
+<td>[[.jobs/weekly-battlecard-refresh]]</td>
+<td>Writer Agent</td>
+<td>Battlecards refreshed in <code>/battlecards/&#x3C;competitor>.md</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-competitor-watch]]</td>
+<td>Research Agent</td>
+<td>Competitor signals cross-referenced with CI cabinet</td>
+</tr>
+<tr>
+<td><strong>On demand</strong></td>
+<td>[[.jobs/new-battlecard]]</td>
+<td>Writer Agent</td>
+<td>New competitor battlecard created (enabled: false)</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[battlecard-viewer]] — select a competitor (Northwind, Helios, Cobalt) to see the full battlecard: how they pitch, our counter, traps to set, proof points, landmines, and pricing delta.</li>
+<li>Browse <code>/battlecards/</code> — the living battlecard files the Writer Agent refreshes weekly.</li>
+<li>Check <code>/battlecards/northwind.md</code> — the most-contested competitor, fully worked out.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> CRM (win/loss reasons, competitor field), Gong (call transcripts with competitor mentions), Google Drive or Notion or Confluence (existing battlecard library).
+<strong>Recommended:</strong> Salesforce (closed-lost analysis), Highspot or Seismic (distribution), Slack (<code>#competition</code> channel).</p>
+<p><strong>Cross-cabinet:</strong> This cabinet is downstream of [[../competitive-intelligence]] — the weekly competitor-watch job pulls the full landscape from the CI cabinet and translates it into rep-facing battlecard updates.</p>
+<p><strong>Every artifact is a file.</strong> Battlecards live in <code>/battlecards/&#x3C;competitor>.md</code> — versioned, diffable, and shareable without a Highspot login.</p>1b:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$24"}}]}]]}]
+1c:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L25",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set sales-battlecard","label":"Install"}]}]}]]}]
+1d:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+1e:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+1f:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+20:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+23:null

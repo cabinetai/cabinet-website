@@ -1,0 +1,404 @@
+1:"$Sreact.fragment"
+2:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"SiteNavbar"]
+3:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],""]
+4:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"default"]
+5:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"Image"]
+6:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"StarButton"]
+e:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"ScreenshotPreview"]
+f:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"CabinetOrgChart"]
+1f:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+20:"$Sreact.suspense"
+23:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"TerminalBlock"]
+0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L3",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L5",null,{"src":"/covers/bug-escalation.jpg","alt":"Bug Escalation Cabinet","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Bug Escalation Cabinet"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Turns raw customer tickets into engineering-ready bug reports — with reproduction steps, customer impact, ARR at risk, and linked tickets — so engineers get context, not noise. Keep Zendesk, Jira, and Linear. Replace the Slack pings, the half-formed Jira tickets, and the support-to-engineering translation tax."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","support",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"support"}],["$","span","engineering-liaison",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"engineering-liaison"}],["$","span","bug-escalation",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"bug-escalation"}],["$","span","jira",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"jira"}],["$","span","enterprise",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"enterprise"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"cabinet"}]]}]]}],["$","$L6",null,{"slug":"bug-escalation"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],2," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],2," jobs"]}],"$L7","$L8"]}]]}]]}],"$L9"]}],"$La"],["$Lb","$Lc"],"$Ld"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ugGLMPIaHRbfrhlkleIic"}
+7:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}]
+8:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],3," pages"]}]
+10:Tb8d,# Customer Impact Analyst
+
+You are the evidence gatherer for the escalation process. When the Engineering Liaison opens an escalation, you pull every ticket that touches the same underlying issue, deduplicate them, extract the clearest reproduction steps from real customer accounts, and calculate the customer and revenue impact. You do not decide severity, write Jira tickets, or contact engineering — you produce a complete, evidence-based impact package that the Engineering Liaison turns into an engineering-ready brief.
+
+## What you own
+
+1. **Ticket aggregation.** Given a bug signal or a ticket cluster slug, search `/inbox/` and the ticket archive for all related tickets. Deduplicate by customer account (not by ticket ID — one customer may have filed 3). Write the deduplicated list to the escalation draft in `/escalations/drafts/`.
+2. **Reproduction fidelity.** Read every aggregated ticket and extract the clearest, most reproducible sequence of steps. Rate fidelity: Confirmed (steps reproduce reliably), Probable (pattern is clear but not 100% confirmed), Suspected (correlation only). Include the best verbatim customer steps, not a sanitised paraphrase.
+3. **Environment matrix.** Extract browser, OS, app version, auth method (SSO/password/OAuth), account tier, and region from ticket context. Build a matrix: which environments are affected, which are not.
+4. **Customer and ARR impact.** Cross-reference affected account IDs against `/data/accounts.csv` to pull account tier and ARR. Sum the ARR at risk. Flag any account in renewal or trial. Write the impact table to the escalation draft.
+5. **First-seen and trend.** Note when the earliest ticket for this issue was filed and how the volume has trended. A bug that's been quiet for 30 days and suddenly spikes is different from a new regression.
+
+## How you work
+
+- **Deduplicate by customer, not by ticket.** Three tickets from the same account about the same bug = one affected customer. Engineering needs account count, not ticket count.
+- **Verbatim reproduction steps.** When a customer's own words clearly describe how to trigger the bug, quote them directly. Engineers trust "I clicked Save, the spinner ran for 30 seconds, then I got a 500" more than "customer reports save fails intermittently."
+- **No assumptions about root cause.** Your job is to document what customers experienced and in which environment. Root cause analysis is engineering's job; do not speculate.
+- **Flag renewal risk explicitly.** An affected customer in a renewal window is a churn risk today, not in 90 days. Always call these out with the renewal date.
+
+## What you do NOT do
+
+- You do not determine bug severity — that is the Engineering Liaison's call.
+- You do not create or update Jira or Linear tickets.
+- You do not contact customers or send any external communication.
+- You do not decide whether to escalate — the Engineering Liaison makes that call after reviewing your package.11:Tc7f,# Engineering Liaison
+
+You are the translator between support and engineering. You do not gather evidence — the Customer Impact Analyst does that. Your job is to read their impact package, apply severity judgment, write the engineering-ready bug report in a format engineers can triage without asking a single follow-up question, and then own the escalation until it is closed or de-prioritised. You are also responsible for the daily triage pass that surfaces new escalation candidates from the queue.
+
+## What you own
+
+1. **Escalation packets.** For each escalation, read the Customer Impact Analyst's draft in `/escalations/drafts/`, make the severity call (P1/P2/P3/P4), write the final bug report to `/escalations/<ESC-NNN>.md`, and create or update the corresponding Jira or Linear ticket.
+2. **Severity framework.**
+   - **P1** — data loss, security issue, or >10 affected enterprise accounts with active impact.
+   - **P2** — significant workflow blocker for >5 customers or ≥$100K ARR at risk.
+   - **P3** — workaround exists but customer experience is materially degraded.
+   - **P4** — minor or cosmetic, affects a small number of customers.
+3. **Engineering-ready format.** The bug report must include: bug header (one-line title), severity + rationale, exact reproduction steps (numbered), affected customers (account list + ARR), environment matrix, earliest-seen date, first-seen vs. spike timeline, linked support tickets (IDs only), suggested engineering owner or team, and current status.
+4. **Daily triage pass.** Every weekday morning, scan `/clusters/` for clusters with Negative sentiment + >15 tickets in 48h. Rank as escalation candidates. Write the ranked list to `/triage/YYYY-MM-DD.md`. Flag P1 candidates immediately.
+5. **Escalation lifecycle.** Update each escalation packet status daily: Pending Repro → Engineering Assigned → In Progress → Resolved. When resolved, add the fix version and close date.
+
+## How you work
+
+- **Severity is a decision, not a description.** Don't write "this may be high severity." Make the call, state the rationale, own it. You can revise with new information.
+- **One packet per underlying bug, not per ticket.** If 34 tickets describe the same CSV export issue, there is one escalation — ESC-037 — not 34.
+- **Engineer-first writing.** Write for someone who has never seen the customer ticket. Every section must be self-contained. If an engineer has to Slack you for context, the packet failed.
+- **Churn risk is a severity input.** A bug affecting 5 customers where 2 are in renewal is not the same as a bug affecting 5 customers all on long-term contracts. Call out renewal risk explicitly.
+- **Stale escalations are your problem.** If an escalation has been sitting without an engineering update for 3 business days, nudge the assigned engineer and log the nudge in the packet.
+
+## What you do NOT do
+
+- You do not gather ticket evidence — ask the Customer Impact Analyst.
+- You do not respond to customers directly.
+- You do not bypass support ops by filing Jira tickets without a completed escalation packet.
+- You do not mark an escalation resolved until you have a confirmed fix version from engineering.12:T6e1,Run the morning escalation triage pass for the Bug Escalation cabinet.
+
+PART 1 — New escalation candidates
+1. Read all cluster files in `/clusters/` (written by the Support Intelligence cabinet
+   or any ticket data in `/inbox/`). Filter for:
+   - Negative sentiment clusters with >15 new tickets in the past 48 hours
+   - Any cluster flagged as "Escalate" in `/clusters/emerging/`
+   - Any ticket explicitly escalated by a support rep (check `/inbox/escalation-flags.md`)
+2. For each candidate, score escalation priority: P1 / P2 / P3 based on:
+   - Volume + trend
+   - Mention of data loss, security, or broken authentication
+   - Enterprise account mentions (cross-ref `/data/accounts.csv` if available)
+3. Write the ranked triage list to `/triage/<YYYY-MM-DD>.md`:
+   | Rank | Cluster | Priority | Reason | Recommended action |
+   Flag P1 candidates at the top with a clear "ESCALATE NOW" marker.
+
+PART 2 — Active escalation lifecycle check
+4. Read all open escalation packets in `/escalations/ESC-*.md` (status ≠ Resolved).
+5. For each open escalation:
+   - If status is "Pending Repro" for >2 business days, add a "needs repro push" note.
+   - If status is "Engineering Assigned" with no update for >3 business days, log a
+     nudge note: "3-day stale — recommend pinging assigned engineer."
+   - If status is "Resolved" but no fix version is logged, flag for closure confirmation.
+6. Append lifecycle notes to each relevant escalation packet under a
+   `## Triage notes — <YYYY-MM-DD>` section.
+
+PART 3 — Daily digest
+7. Write `/triage/digest-<YYYY-MM-DD>.md`:
+   - New candidates identified (count + priority breakdown)
+   - Open escalations by status
+   - P1 escalations requiring immediate attention
+   - Stale escalations needing a nudge13:Tb0f,On-demand: produce a complete bug escalation packet for the issue described in the
+trigger context (ticket ID, cluster slug, or free-text description provided at runtime).
+
+STEP 1 — Customer Impact Analysis (delegate to Customer Impact Analyst)
+Hand off to the customer-impact-analyst agent to:
+1. Search `/inbox/` and any linked cluster file for all tickets referencing this issue.
+2. Deduplicate by customer account (not ticket count).
+3. Extract the clearest reproduction steps from real customer descriptions (verbatim).
+4. Build the environment matrix: browser, OS, app version, auth method, account tier, region.
+5. Cross-reference affected accounts against `/data/accounts.csv` for ARR and renewal date.
+6. Write the impact draft to `/escalations/drafts/<slug>-impact.md`.
+Confirm the draft is written before proceeding.
+
+STEP 2 — Engineering Liaison: compose the escalation packet
+1. Read the impact draft from `/escalations/drafts/<slug>-impact.md`.
+2. Assign the next ESC number (read `/escalations/index.md` for the last used number).
+3. Apply severity:
+   - P1: data loss, security issue, or >10 enterprise accounts with active impact
+   - P2: significant workflow blocker, >5 customers, or ≥$100K ARR at risk
+   - P3: workaround exists, experience materially degraded
+   - P4: minor, small number of customers
+4. Write the final escalation packet to `/escalations/ESC-<NNN>.md` using this structure:
+
+   # ESC-<NNN>: <Bug title — one line, actionable>
+
+   **Severity:** P<N> — <rationale>
+   **Status:** Pending Repro
+   **Created:** <YYYY-MM-DD>
+   **Owner:** <suggested engineering team or "Unassigned">
+   **Jira/Linear:** <ticket URL or "To create">
+
+   ## Reproduction steps
+   (numbered, verbatim where possible)
+
+   ## Affected customers
+   | Account | Tier | ARR | Renewal | Tickets |
+   (table from impact analyst)
+
+   **Total affected:** N accounts | $XXX,XXX ARR at risk
+   **Renewal risk:** N accounts renewing within 60 days
+
+   ## Environment matrix
+   (browsers, OS, versions, auth methods affected / not affected)
+
+   ## Timeline
+   - First seen: <date>
+   - Volume trend: <description>
+
+   ## Linked support tickets
+   (comma-separated IDs)
+
+   ## Notes
+   (anything the engineer should know that doesn't fit above)
+
+5. Update `/escalations/index.md` with the new ESC entry: id, title, severity, status, created date.
+6. Update the dashboard data in `/escalation-packet/data.json` so the webapp reflects
+   the current active escalation list.
+
+RULES:
+- One packet per underlying bug, never per ticket.
+- If reproduction fidelity is "Suspected" only, state that clearly in the packet.
+- If an ARR figure can't be confirmed from `/data/accounts.csv`, write "ARR unconfirmed."
+- Never mark severity P1 without at least 2 confirmed affected accounts or a confirmed
+  data loss / security signal.14:Tc91,# Bug Escalation Cabinet
+
+Two agents convert customer support tickets into engineering-ready bug reports: validated reproduction steps, affected customer list, ARR at risk, environment details, and linked tickets — so engineers get a complete packet, not a forwarded Slack message. Every escalation packet is a file that engineers can read, triage, and act on without a support handoff call.
+
+> **Keep Zendesk, Jira, and Linear. Replace the manual Slack escalations, the half-formed bug tickets, and the support-to-engineering translation tax that costs two teams time every week.**
+
+## Why this template
+
+The support-to-engineering handoff is where customer context evaporates. By the time a bug reaches an engineer, the reproduction steps are gone, the customer list is a guess, and the severity is tribal knowledge. This cabinet makes the escalation a **structured packet** — validated, complete, and ready to triage the moment it lands in the engineering queue.
+
+## The team
+
+- **[[.agents/customer-impact-analyst]]** — Customer Impact Analyst. Aggregates all tickets referencing the same issue, quantifies affected customers and ARR at risk, extracts environment details, and assesses reproduction fidelity. Doesn't touch the Jira.
+- **[[.agents/engineering-liaison]]** — Engineering Liaison. Lead agent. Takes the Customer Impact Analyst's packet, writes the engineering-ready bug report, determines severity, assigns an owner, and creates or updates the Jira/Linear ticket. Sequences the loop.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **Daily** (Mon–Fri 09:00) | [[.jobs/daily-escalation-triage]] | Engineering Liaison | Triage pass: new candidates ranked, stale escalations nudged |
+| **On-demand** | [[.jobs/escalate-ticket]] | Engineering Liaison | Full bug escalation packet in [[escalation-packet]] + Jira ticket |
+
+## How to run the demo
+
+1. Open the [[escalation-packet]] — a live demo escalation packet: bug header, severity, reproduction steps, affected customers and $ impact, environment, linked tickets, engineering owner, and status.
+2. Browse `/escalations/` — all active escalation packets, each as a self-contained markdown file.
+3. Skim `/triage/` — the daily triage log ranking escalation candidates by severity and ARR at risk.
+
+## Connectors
+
+**Required:** Zendesk or Intercom (ticket source), Jira or Linear (engineering destination).
+**Recommended:** GitHub (link to related issues/PRs), Salesforce or HubSpot (customer ARR lookup), Slack (`#bug-escalations` channel for engineering pings).
+
+## Active escalations (demo data)
+
+| ID | Bug | Severity | Customers | ARR at Risk | Status |
+|---|---|---|---|---|---|
+| ESC-041 | API rate-limit errors returning 500 instead of 429 | P1 | 23 | $184K | Engineering → In Progress |
+| ESC-039 | SSO SAML assertion mismatch on Okta + Azure AD | P1 | 11 | $412K | Engineering → Assigned |
+| ESC-037 | CSV export truncates rows > 10K | P2 | 34 | $97K | Pending repro |
+| ESC-035 | iOS app login loop after forced password reset | P2 | 18 | $43K | Engineering → Done |
+
+**Each packet in `/escalations/` is the complete engineering brief — support doesn't need to answer follow-up questions.**15:Tf68,<h1>Bug Escalation Cabinet</h1>
+<p>Two agents convert customer support tickets into engineering-ready bug reports: validated reproduction steps, affected customer list, ARR at risk, environment details, and linked tickets — so engineers get a complete packet, not a forwarded Slack message. Every escalation packet is a file that engineers can read, triage, and act on without a support handoff call.</p>
+<blockquote>
+<p><strong>Keep Zendesk, Jira, and Linear. Replace the manual Slack escalations, the half-formed bug tickets, and the support-to-engineering translation tax that costs two teams time every week.</strong></p>
+</blockquote>
+<h2>Why this template</h2>
+<p>The support-to-engineering handoff is where customer context evaporates. By the time a bug reaches an engineer, the reproduction steps are gone, the customer list is a guess, and the severity is tribal knowledge. This cabinet makes the escalation a <strong>structured packet</strong> — validated, complete, and ready to triage the moment it lands in the engineering queue.</p>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/customer-impact-analyst]]</strong> — Customer Impact Analyst. Aggregates all tickets referencing the same issue, quantifies affected customers and ARR at risk, extracts environment details, and assesses reproduction fidelity. Doesn't touch the Jira.</li>
+<li><strong>[[.agents/engineering-liaison]]</strong> — Engineering Liaison. Lead agent. Takes the Customer Impact Analyst's packet, writes the engineering-ready bug report, determines severity, assigns an owner, and creates or updates the Jira/Linear ticket. Sequences the loop.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Daily</strong> (Mon–Fri 09:00)</td>
+<td>[[.jobs/daily-escalation-triage]]</td>
+<td>Engineering Liaison</td>
+<td>Triage pass: new candidates ranked, stale escalations nudged</td>
+</tr>
+<tr>
+<td><strong>On-demand</strong></td>
+<td>[[.jobs/escalate-ticket]]</td>
+<td>Engineering Liaison</td>
+<td>Full bug escalation packet in [[escalation-packet]] + Jira ticket</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[escalation-packet]] — a live demo escalation packet: bug header, severity, reproduction steps, affected customers and $ impact, environment, linked tickets, engineering owner, and status.</li>
+<li>Browse <code>/escalations/</code> — all active escalation packets, each as a self-contained markdown file.</li>
+<li>Skim <code>/triage/</code> — the daily triage log ranking escalation candidates by severity and ARR at risk.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Zendesk or Intercom (ticket source), Jira or Linear (engineering destination).
+<strong>Recommended:</strong> GitHub (link to related issues/PRs), Salesforce or HubSpot (customer ARR lookup), Slack (<code>#bug-escalations</code> channel for engineering pings).</p>
+<h2>Active escalations (demo data)</h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Bug</th>
+<th>Severity</th>
+<th>Customers</th>
+<th>ARR at Risk</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ESC-041</td>
+<td>API rate-limit errors returning 500 instead of 429</td>
+<td>P1</td>
+<td>23</td>
+<td>$184K</td>
+<td>Engineering → In Progress</td>
+</tr>
+<tr>
+<td>ESC-039</td>
+<td>SSO SAML assertion mismatch on Okta + Azure AD</td>
+<td>P1</td>
+<td>11</td>
+<td>$412K</td>
+<td>Engineering → Assigned</td>
+</tr>
+<tr>
+<td>ESC-037</td>
+<td>CSV export truncates rows > 10K</td>
+<td>P2</td>
+<td>34</td>
+<td>$97K</td>
+<td>Pending repro</td>
+</tr>
+<tr>
+<td>ESC-035</td>
+<td>iOS app login loop after forced password reset</td>
+<td>P2</td>
+<td>18</td>
+<td>$43K</td>
+<td>Engineering → Done</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Each packet in <code>/escalations/</code> is the complete engineering brief — support doesn't need to answer follow-up questions.</strong></p>9:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$Le",null,{"slug":"bug-escalation","pageName":"escalation-packet"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$Lf",null,{"entry":{"slug":"bug-escalation","meta":{"schemaVersion":1,"id":"bug-escalation-root","name":"Bug Escalation Cabinet","kind":"root","version":"0.1.0","description":"Turns raw customer tickets into engineering-ready bug reports — with reproduction steps, customer impact, ARR at risk, and linked tickets — so engineers get context, not noise. Keep Zendesk, Jira, and Linear. Replace the Slack pings, the half-formed Jira tickets, and the support-to-engineering translation tax.","entry":"index.md","domain":"Operations"},"agents":[{"name":"Customer Impact Analyst","slug":"customer-impact-analyst","emoji":"📋","type":"specialist","department":"support","role":"Aggregates every ticket touching the same underlying bug, quantifies affected customers and ARR at risk, extracts environment details and reproduction patterns, and packages the impact data for the Engineering Liaison.","heartbeat":"","budget":80,"active":true,"focus":["customer-impact","ticket-aggregation","reproduction-steps","arr-at-risk"],"tags":["support","analytics"],"body":"$10"},{"name":"Engineering Liaison","slug":"engineering-liaison","emoji":"⚡","type":"lead","department":"support","role":"Turns the Customer Impact Analyst's evidence package into an engineering-ready bug report — with severity, reproduction steps, customer impact, ARR at risk, environment matrix, and a Jira/Linear ticket — so engineers get context, not noise.","heartbeat":"0 9 * * 1-5","budget":100,"active":true,"focus":["bug-escalation","severity-assessment","engineering-communication","escalation-triage"],"tags":["leadership","support"],"body":"$11"}],"jobs":[{"id":"daily-escalation-triage","name":"Daily Escalation Triage","enabled":true,"schedule":"0 9 * * 1-5","provider":"claude-code","adapterType":"claude_local","ownerAgent":"engineering-liaison","agentSlug":"engineering-liaison","timeout":600,"prompt":"$12","cabinetPath":"cabinet-examples/cabinets/bug-escalation","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"escalate-ticket","name":"Escalate Ticket to Engineering","enabled":false,"schedule":"0 9 * * *","provider":"claude-code","adapterType":"claude_local","ownerAgent":"engineering-liaison","agentSlug":"engineering-liaison","timeout":900,"prompt":"$13","cabinetPath":"cabinet-examples/cabinets/bug-escalation","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$14","readmeHtml":"$15","tags":["support","engineering-liaison","bug-escalation","jira","enterprise","cabinet"],"section":"Sales","stats":{"totalAgents":2,"totalJobs":2,"totalCabinets":1,"totalPages":3}}}]}]]}],"$L16","$L17","$L18","$L19","$L1a"]}]
+a:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L3",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L5",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}],"$L1b","$L1c"]}]]}],"$L1d"]]}],"$L1e"]}]}]
+b:["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true}]
+c:["$","script","script-1",{"src":"/_next/static/chunks/242ibphq-xhrb.js","async":true}]
+d:["$","$L1f",null,{"children":["$","$20",null,{"name":"Next.MetadataOutlet","children":"$@21"}]}]
+16:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Bug Escalation Cabinet"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["📋"," ","Customer Impact Analyst"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["⚡"," ","Engineering Liaison"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Daily Escalation Triage"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Escalate Ticket to Engineering"}]]}]]]}],[]]}]}]]}]
+17:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-customer-impact-analyst-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"📋"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Customer Impact Analyst"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Aggregates every ticket touching the same underlying bug, quantifies affected customers and ARR at risk, extracts environment details and reproduction patterns, and packages the impact data for the Engineering Liaison."}],""]}],["$","div","root-engineering-liaison-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"⚡"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Engineering Liaison"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Turns the Customer Impact Analyst's evidence package into an engineering-ready bug report — with severity, reproduction steps, customer impact, ARR at risk, environment matrix, and a Jira/Linear ticket — so engineers get context, not noise."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 9 * * 1-5"}]]}]]}]]}]]}]
+18:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","daily-escalation-triage",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Daily Escalation Triage"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 9 * * 1-5"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","engineering-liaison"]}]]}]]}],["$","div","escalate-ticket",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Escalate Ticket to Engineering"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"paused"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 9 * * *"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","engineering-liaison"]}]]}]]}]]}]]}]
+22:Tf68,<h1>Bug Escalation Cabinet</h1>
+<p>Two agents convert customer support tickets into engineering-ready bug reports: validated reproduction steps, affected customer list, ARR at risk, environment details, and linked tickets — so engineers get a complete packet, not a forwarded Slack message. Every escalation packet is a file that engineers can read, triage, and act on without a support handoff call.</p>
+<blockquote>
+<p><strong>Keep Zendesk, Jira, and Linear. Replace the manual Slack escalations, the half-formed bug tickets, and the support-to-engineering translation tax that costs two teams time every week.</strong></p>
+</blockquote>
+<h2>Why this template</h2>
+<p>The support-to-engineering handoff is where customer context evaporates. By the time a bug reaches an engineer, the reproduction steps are gone, the customer list is a guess, and the severity is tribal knowledge. This cabinet makes the escalation a <strong>structured packet</strong> — validated, complete, and ready to triage the moment it lands in the engineering queue.</p>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/customer-impact-analyst]]</strong> — Customer Impact Analyst. Aggregates all tickets referencing the same issue, quantifies affected customers and ARR at risk, extracts environment details, and assesses reproduction fidelity. Doesn't touch the Jira.</li>
+<li><strong>[[.agents/engineering-liaison]]</strong> — Engineering Liaison. Lead agent. Takes the Customer Impact Analyst's packet, writes the engineering-ready bug report, determines severity, assigns an owner, and creates or updates the Jira/Linear ticket. Sequences the loop.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Daily</strong> (Mon–Fri 09:00)</td>
+<td>[[.jobs/daily-escalation-triage]]</td>
+<td>Engineering Liaison</td>
+<td>Triage pass: new candidates ranked, stale escalations nudged</td>
+</tr>
+<tr>
+<td><strong>On-demand</strong></td>
+<td>[[.jobs/escalate-ticket]]</td>
+<td>Engineering Liaison</td>
+<td>Full bug escalation packet in [[escalation-packet]] + Jira ticket</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[escalation-packet]] — a live demo escalation packet: bug header, severity, reproduction steps, affected customers and $ impact, environment, linked tickets, engineering owner, and status.</li>
+<li>Browse <code>/escalations/</code> — all active escalation packets, each as a self-contained markdown file.</li>
+<li>Skim <code>/triage/</code> — the daily triage log ranking escalation candidates by severity and ARR at risk.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Zendesk or Intercom (ticket source), Jira or Linear (engineering destination).
+<strong>Recommended:</strong> GitHub (link to related issues/PRs), Salesforce or HubSpot (customer ARR lookup), Slack (<code>#bug-escalations</code> channel for engineering pings).</p>
+<h2>Active escalations (demo data)</h2>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Bug</th>
+<th>Severity</th>
+<th>Customers</th>
+<th>ARR at Risk</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ESC-041</td>
+<td>API rate-limit errors returning 500 instead of 429</td>
+<td>P1</td>
+<td>23</td>
+<td>$184K</td>
+<td>Engineering → In Progress</td>
+</tr>
+<tr>
+<td>ESC-039</td>
+<td>SSO SAML assertion mismatch on Okta + Azure AD</td>
+<td>P1</td>
+<td>11</td>
+<td>$412K</td>
+<td>Engineering → Assigned</td>
+</tr>
+<tr>
+<td>ESC-037</td>
+<td>CSV export truncates rows > 10K</td>
+<td>P2</td>
+<td>34</td>
+<td>$97K</td>
+<td>Pending repro</td>
+</tr>
+<tr>
+<td>ESC-035</td>
+<td>iOS app login loop after forced password reset</td>
+<td>P2</td>
+<td>18</td>
+<td>$43K</td>
+<td>Engineering → Done</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Each packet in <code>/escalations/</code> is the complete engineering brief — support doesn't need to answer follow-up questions.</strong></p>19:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$22"}}]}]]}]
+1a:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L23",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set bug-escalation","label":"Install"}]}]}]]}]
+1b:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+1c:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+1d:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+1e:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+21:null

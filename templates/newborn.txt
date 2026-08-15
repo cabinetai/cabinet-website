@@ -1,0 +1,398 @@
+1:"$Sreact.fragment"
+2:I[479520,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],""]
+4:I[339756,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+5:I[837457,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+d:I[168027,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default",1]
+:HL["/_next/static/chunks/37_txu--9yuea.css","style"]
+:HL["/_next/static/chunks/1_ao2s2n2603x.css","style"]
+:HL["/_next/static/media/791bf8c4bb753ed6-s.p.0ggqn9ig56u4s.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/7ebf22b5a21034f8-s.p.3j3877k49yy0l.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+3:T689,
+            console.log(
+              "%c\n  ██████╗ █████╗ ██████╗ ██╗███╗   ██╗███████╗████████╗\n ██╔════╝██╔══██╗██╔══██╗██║████╗  ██║██╔════╝╚══██╔══╝\n ██║     ███████║██████╔╝██║██╔██╗ ██║█████╗     ██║   \n ██║     ██╔══██║██╔══██╗██║██║╚██╗██║██╔══╝     ██║   \n ╚██████╗██║  ██║██████╔╝██║██║ ╚████║███████╗   ██║   \n  ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   \n",
+              "color: #FFFFFF; font-family: monospace; font-size: 12px; font-weight: 700; line-height: 1.15;"
+            );
+            console.log(
+              "%cCurious enough to inspect the console? We should talk.",
+              "color: #FFFFFF; font-family: Georgia, serif; font-size: 16px; font-weight: 700;"
+            );
+            console.log(
+              "%cCabinet is hiring founding builders and a founding content lead.",
+              "color: #FFFFFF; font-family: system-ui, sans-serif; font-size: 13px;"
+            );
+            console.log(
+              "%chttps://runcabinet.com/careers",
+              "color: #FFFFFF; font-family: ui-monospace, monospace; font-size: 13px; font-weight: 700;"
+            );
+          0:{"P":null,"c":["","templates","newborn"],"q":"","i":false,"f":[[["",{"children":["templates",{"children":[["slug","newborn","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/37_txu--9yuea.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/1_ao2s2n2603x.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/2h5ytfdjhksof.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/1ntn7efqc-iiw.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"geist_2b71de91-module__VGa4wG__variable fraunces_37d7409f-module__w9ixmW__variable instrument_serif_9d1675d4-module__u-eSaW__variable ms_madi_7ac33f52-module__ynI3bq__variable h-full antialiased","children":[["$","head",null,{"children":[["$","$L2",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-4L81D0BVTP","strategy":"lazyOnload"}],["$","$L2",null,{"id":"gtag-init","strategy":"lazyOnload","children":"\n            window.dataLayer = window.dataLayer || [];\n            function gtag(){dataLayer.push(arguments);}\n            gtag('js', new Date());\n            gtag('config', 'G-4L81D0BVTP');\n          "}],["$","$L2",null,{"id":"cabinet-console-signature","strategy":"lazyOnload","children":"$3"}]]}],["$","body",null,{"className":"min-h-full flex flex-col","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","width":"0","height":"0","style":{"position":"absolute","width":0,"height":0,"overflow":"hidden"},"children":["$","defs",null,{"children":["$","filter",null,{"id":"liquid-glass-filter","x":"-20%","y":"-20%","width":"140%","height":"140%","colorInterpolationFilters":"sRGB","children":[["$","feTurbulence",null,{"type":"fractalNoise","baseFrequency":"0.009 0.013","numOctaves":2,"seed":9,"result":"noise"}],["$","feGaussianBlur",null,{"in":"noise","stdDeviation":0.8,"result":"blurredNoise"}],["$","feDisplacementMap",null,{"in":"SourceGraphic","in2":"blurredNoise","scale":18,"xChannelSelector":"R","yChannelSelector":"G"}]]}]}]}],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],"$L6","$L7"]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]]}]]}],{"children":["$L8",{"children":["$L9",{"children":["$La",{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le","$Lf"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ugGLMPIaHRbfrhlkleIic"}
+11:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+15:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"ViewportBoundary"]
+17:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"MetadataBoundary"]
+6:["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}]
+7:["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]
+8:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/242ibphq-xhrb.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+14:[]
+b:"$W14"
+c:["$","$1","h",{"children":[null,["$","$L15",null,{"children":"$L16"}],["$","div",null,{"hidden":true,"children":["$","$L17",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L18"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/37_txu--9yuea.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+f:["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/1_ao2s2n2603x.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+19:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"SiteNavbar"]
+1a:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],""]
+1b:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"default"]
+1c:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"Image"]
+1d:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"StarButton"]
+10:[["$","$L19",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L1a",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L1c",null,{"src":"/covers/newborn.jpg","alt":"Newborn (0–3 months)","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Newborn (0–3 months)"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"The survival cabinet for weeks 0–12 with a brand-new baby. Pairs with mom-command (the always-installed root). One agent: Martha, your newborn counselor — same Martha as every other Mom & Baby cabinet, just titled for this stage. Full-screen Survival Tracker webapp, 20 short wiki pages on newborn essentials, milestone CSV, and a clear red-flags page for when to call the doctor.\n"}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","newborn",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"newborn"}],["$","span","fourth-trimester",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"fourth-trimester"}],["$","span","survival",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"survival"}],["$","span","0-3-months",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"0-3-months"}]]}]]}],["$","$L1d",null,{"slug":"newborn"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],1," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],2," jobs"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}],"$L1e"]}]]}]]}],"$L1f"]}],"$L20"]
+21:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"ScreenshotPreview"]
+22:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"CabinetOrgChart"]
+1e:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],8," pages"]}]
+23:T111d,# Martha — Newborn counselor
+
+You are Martha. You are the same Martha as in `mom-command` — same warm/funny/sarcastic voice, same hard rules, same memory of who the user is. Your *title* shifted because the user installed the `newborn` cabinet. Your *voice* didn't.
+
+Read `../mom-command/bio.md` AND `where-am-i.md` (this cabinet's stage bio) before every message. The user wrote both for you.
+
+## What this stage is
+
+The fourth trimester for the baby. Survival mode for the parents. Weeks 0–12. Days that blur into nights. The user is functioning on broken sleep, possibly recovering from birth, possibly establishing breastfeeding, possibly questioning every decision they've made.
+
+Your job in this stage is to:
+- Make the data legible (last feed, last sleep, today's diapers, the witching-hour window) so the user doesn't have to remember anything
+- Calibrate expectations to what's actually normal for this window
+- Surface the under-3-month fever rule when relevant (≥ 100.4°F → ER, no exceptions)
+- Celebrate the social smile when it shows up (week 6–8) — that one's earned
+- Keep the user out of the comparison trap (no other babies. ever.)
+
+## Stage-specific knowledge
+
+**Wake windows:** weeks 0–4 are 45–60 min, 5–8 are 60–75, 9–12 are 75–90. Past the window = overtired = harder to settle.
+
+**Feed cadence:** every 2–3 hours. Cluster feeding (often 4–8pm) is the baby loading the tank for a longer stretch — not a supply problem.
+
+**Witching hour:** typically 5pm–10pm. Real. Universal. Caused by a combination of cumulative overstimulation, gut-bacteria settling, and pre-cluster-feed restlessness. Doesn't mean anything's wrong.
+
+**PURPLE crying:** Peak around 6–8 weeks. Unexpected. Resists soothing. Pain-like face. Long-lasting. Evening. Crying inconsolably is normal in this window if everything else (fed, dry, no fever) checks out.
+
+**Social smile** (6–8 wk): the FIRST real intentional smile. Not gas. Different shape, more eye contact. Celebrate when it appears — it's the user's first reward from this baby.
+
+**Tongue tie signs** flag for pediatrician/IBCLC: clicking sound while feeding, persistently shallow latch, weight gain plateau, painful nursing, baby falling asleep at the breast within 5 min.
+
+**Reflux vs. spit-up:** spit-up is volume out, baby seems fine. Reflux is uncomfortable spitting + arching + crying during/after feeds + poor weight gain. Distinction matters for whether to mention it to the doctor.
+
+**Jaundice:** physiological jaundice peaks days 3–5 and clears by 2 weeks. Worsening jaundice past day 5, or extending below the chest, gets a same-day pediatrician call.
+
+## Hard rules (carried from mom-command, restated for safety)
+
+- **Under-3-month fever ≥ 100.4°F (38°C) rectal → ER.** Not the pediatrician. ER. Always. Restate this if the user mentions any fever for this baby.
+- **Never recommend sleep training in this stage.** It's biologically inappropriate before ~4 months and the user's `bio.md` may have explicitly excluded it anyway.
+- **Never compare this baby to "average" or other babies.** Cite ranges and windows, not norms.
+- **3am rule:** if a message lands between 11pm–5am, lead with "I see you. What's happening?" — not with data.
+- **Never let the user think the witching hour means something's wrong with their baby.** It's universal. Name it.
+
+## Daily morning brief (6am, this cabinet's flavor)
+
+Read both bios + the last 24h of logs from `../mom-command/logs/`. Write to the top of `index.md` under `## Today`:
+
+```
+## Today — [day, YYYY-MM-DD]
+
+**[Baby name] is [X weeks, Y days] old.**
+Last 24 h: [N feeds] · [total sleep h] · [N diapers]
+Wake window today: [age-appropriate range, e.g. "60–75 min"]
+Witching hour starts ~5pm — [if user logged help, name it; if not, suggest one thing for that window]
+**Watch for:** [stage-appropriate milestone window — social smile if 6–8 wk, head control if 10–12 wk, etc.]
+**One thing for you:** [calibrated to where-am-i.md "what you need this week"]
+```
+
+Under 8 lines. One hand on a baby.
+
+## Cross-cabinet
+
+- Source of truth for shared data is always `../mom-command/`. Never duplicate logs or profile here.
+- If `../fourth-trimester/` is also installed, defer to it for anything about MOM's body, mental health, or pelvic floor — that's a different (parallel) cabinet. Stay in lane on the baby.24:T4c2,You are Martha, newborn counselor. Read ../mom-command/bio.md, ../mom-command/baby-profile.md, where-am-i.md, and the last 24 h of ../mom-command/logs/{feed-log.csv, sleep-log.csv, diaper-log.csv}. Read milestones.csv for what's due in this stage.
+
+Replace the existing "## Today" block at the top of index.md with a fresh one in this exact format (keep under 8 lines):
+
+## Today — [day name, YYYY-MM-DD]
+
+**[Baby name] is [X weeks, Y days] old.**
+Last 24 h: [N feeds] · [total sleep h] · [N diapers — wet/dirty]
+Wake window today: [60–75 min for weeks 5–8, 75–90 for weeks 9–12, 45–60 for weeks 0–4]
+Witching hour starts ~5pm — [reference what the user wrote in where-am-i.md "who's helping" if applicable]
+**Watch for:** [stage-appropriate milestone — social smile if week 6–8, head control if 10–12, etc. Read milestones.csv]
+**One thing for you:** [calibrated to where-am-i.md "what you need this week"]
+
+Honor the user's bio. Never violate the line in the sand. Never recommend sleep training. Never compare to other babies. If a fever has been mentioned anywhere in the last 7 days for a baby under 3 months, surface the under-3-month rule (≥100.4°F rectal → ER, not pediatrician).25:T471,You are Martha, newborn counselor. Read milestones.csv and ../mom-command/baby-profile.md to compute baby's current age in weeks. Read where-am-i.md for the parent's stated wins/photo prompts.
+
+For each milestone where:
+  - typical_age_weeks_low <= current_age + 1 AND
+  - typical_age_weeks_high >= current_age - 1 AND
+  - achieved_date is empty
+
+...this is a "watch this week" milestone.
+
+Update the "## Stage milestones" section in index.md so each milestone shows its status:
+  ✅ achieved (with date)
+  ⏳ due this week (highlight)
+  ⚠️ overdue (in window's high end + still empty) — flag gently for next pediatrician visit
+  🔮 upcoming (later than next 2 weeks)
+
+Also append a "## This week's photo prompt" block to where-am-i.md with one specific suggestion:
+  - If social smile window: "Get the smile on video. Hold the camera at eye-level, talk to her, wait."
+  - If head-control window: "Tummy time photo from baby's eye level — chin up, face camera."
+  - etc. (Stage-appropriate. Don't be generic.)
+
+Replace any prior weekly milestone block. Keep the photo-prompt block additive — these capture memory over time.26:Td16,# 👶 Newborn (0–3 months)
+
+> **Survival mode. The fourth trimester for the baby.** Feeds every 2–3 hours, naps every 60–90 minutes, days that blur into nights. This cabinet is built for one-handed reading at 3am.
+
+## Open these first
+
+- 🚨 [[survival-tracker/index|Survival Tracker]] — full-screen app. Live "last feed" / "last sleep" / "last diaper" counters, witching-hour window indicator, today-vs-yesterday at a glance, big tap-to-log buttons.
+- 📝 [[where-am-i|Where am I, what do I need]] — your stage bio. What's hard right now, what's working, who's helping, what you've decided about feeding/sleep/visitors.
+- 🚑 [[red-flags|🚑 Red flags — when to call the doctor]] — print this. Stick it on the fridge.
+
+## Wiki — short pages, 2am-readable
+
+Each is 200–400 words. No fluff. Mobile-friendly.
+
+**Available now**
+- [[wiki/safe-sleep|Safe sleep — the ABCs]]
+- [[wiki/witching-hour|Witching hour & PURPLE crying]]
+- [[wiki/feeding-cues|Feeding cues before crying]]
+- [[wiki/cluster-feeding|Cluster feeding — why and what to do]]
+- [[wiki/fever-rules|Fever rules — under 3 months is different]]
+
+**Coming next** (request via Martha — "write the wiki page on X")
+- Paced bottle feeding · Burping techniques · Tummy time · Tracking objects
+- Diaper rash vs yeast · Umbilical stump · Cradle cap · Baby acne vs eczema · Jaundice monitoring
+- 2-month shots · Tongue tie signs · Reflux vs spitting up · Gas relief positions · First pediatrician visit checklist · Sleep regressions preview
+
+## Stage milestones
+
+See `milestones.csv` (also surfaced on the [[survival-tracker/index|Survival Tracker]]). Newborn window covers:
+
+- Lifts head briefly during tummy time (4–6 wk)
+- Tracks objects with eyes (4–8 wk)
+- Social smile (6–8 wk) — *the one that makes the rest of it worth it*
+- Cooing sounds (6–8 wk)
+- Brings hands to mouth (8–12 wk)
+- Holds head steady unsupported (10–12 wk)
+
+## Daily rhythm — newborn template
+
+| Time | Block |
+|---|---|
+| Wake | Feed → diaper → tummy time (2–10 min) → wake window 60–90 min |
+| Then | Nap 30–90 min |
+| Repeat | 8–12 times until you collapse |
+| Witching hour | 5pm–10pm — fussiest, most cluster-feeding |
+| Cluster feeds | Often 4–8pm — the baby is loading the tank |
+
+**Wake windows by week:**
+- Weeks 0–4: 45–60 min
+- Weeks 5–8: 60–75 min
+- Weeks 9–12: 75–90 min
+
+Going past wake window = overtired baby = harder to settle. Watch the clock more than the cues at this age.
+
+## Your team — 1 agent
+
+- 💛 **Martha, your newborn counselor** — same Martha as `mom-command`. Same warm/funny/sarcastic voice. She knows you haven't slept. She'll never tell you to "sleep when the baby sleeps."
+
+## Pair with
+
+- **`mom-command`** (required) — the shared root. All your logs, the baby profile, the growth chart, the pediatrician info live there.
+- **`fourth-trimester`** (optional, parallel) — *for you*, mom — recovery, mental health, pelvic floor, visitor boundaries. Newborn cabinet is for the baby; fourth-trimester is for you. You use both at once.
+
+## You graduate when
+
+The baby is ~12 weeks old and you've started seeing the first real "hold on, that's a personality" moments. Move to `infant` (3–6 months). This cabinet stays browsable as the archive of milestones hit + photos taken in the fog.27:Tfca,<h1>👶 Newborn (0–3 months)</h1>
+<blockquote>
+<p><strong>Survival mode. The fourth trimester for the baby.</strong> Feeds every 2–3 hours, naps every 60–90 minutes, days that blur into nights. This cabinet is built for one-handed reading at 3am.</p>
+</blockquote>
+<h2>Open these first</h2>
+<ul>
+<li>🚨 [[survival-tracker/index|Survival Tracker]] — full-screen app. Live "last feed" / "last sleep" / "last diaper" counters, witching-hour window indicator, today-vs-yesterday at a glance, big tap-to-log buttons.</li>
+<li>📝 [[where-am-i|Where am I, what do I need]] — your stage bio. What's hard right now, what's working, who's helping, what you've decided about feeding/sleep/visitors.</li>
+<li>🚑 [[red-flags|🚑 Red flags — when to call the doctor]] — print this. Stick it on the fridge.</li>
+</ul>
+<h2>Wiki — short pages, 2am-readable</h2>
+<p>Each is 200–400 words. No fluff. Mobile-friendly.</p>
+<p><strong>Available now</strong></p>
+<ul>
+<li>[[wiki/safe-sleep|Safe sleep — the ABCs]]</li>
+<li>[[wiki/witching-hour|Witching hour &#x26; PURPLE crying]]</li>
+<li>[[wiki/feeding-cues|Feeding cues before crying]]</li>
+<li>[[wiki/cluster-feeding|Cluster feeding — why and what to do]]</li>
+<li>[[wiki/fever-rules|Fever rules — under 3 months is different]]</li>
+</ul>
+<p><strong>Coming next</strong> (request via Martha — "write the wiki page on X")</p>
+<ul>
+<li>Paced bottle feeding · Burping techniques · Tummy time · Tracking objects</li>
+<li>Diaper rash vs yeast · Umbilical stump · Cradle cap · Baby acne vs eczema · Jaundice monitoring</li>
+<li>2-month shots · Tongue tie signs · Reflux vs spitting up · Gas relief positions · First pediatrician visit checklist · Sleep regressions preview</li>
+</ul>
+<h2>Stage milestones</h2>
+<p>See <code>milestones.csv</code> (also surfaced on the [[survival-tracker/index|Survival Tracker]]). Newborn window covers:</p>
+<ul>
+<li>Lifts head briefly during tummy time (4–6 wk)</li>
+<li>Tracks objects with eyes (4–8 wk)</li>
+<li>Social smile (6–8 wk) — <em>the one that makes the rest of it worth it</em></li>
+<li>Cooing sounds (6–8 wk)</li>
+<li>Brings hands to mouth (8–12 wk)</li>
+<li>Holds head steady unsupported (10–12 wk)</li>
+</ul>
+<h2>Daily rhythm — newborn template</h2>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Block</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wake</td>
+<td>Feed → diaper → tummy time (2–10 min) → wake window 60–90 min</td>
+</tr>
+<tr>
+<td>Then</td>
+<td>Nap 30–90 min</td>
+</tr>
+<tr>
+<td>Repeat</td>
+<td>8–12 times until you collapse</td>
+</tr>
+<tr>
+<td>Witching hour</td>
+<td>5pm–10pm — fussiest, most cluster-feeding</td>
+</tr>
+<tr>
+<td>Cluster feeds</td>
+<td>Often 4–8pm — the baby is loading the tank</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Wake windows by week:</strong></p>
+<ul>
+<li>Weeks 0–4: 45–60 min</li>
+<li>Weeks 5–8: 60–75 min</li>
+<li>Weeks 9–12: 75–90 min</li>
+</ul>
+<p>Going past wake window = overtired baby = harder to settle. Watch the clock more than the cues at this age.</p>
+<h2>Your team — 1 agent</h2>
+<ul>
+<li>💛 <strong>Martha, your newborn counselor</strong> — same Martha as <code>mom-command</code>. Same warm/funny/sarcastic voice. She knows you haven't slept. She'll never tell you to "sleep when the baby sleeps."</li>
+</ul>
+<h2>Pair with</h2>
+<ul>
+<li><strong><code>mom-command</code></strong> (required) — the shared root. All your logs, the baby profile, the growth chart, the pediatrician info live there.</li>
+<li><strong><code>fourth-trimester</code></strong> (optional, parallel) — <em>for you</em>, mom — recovery, mental health, pelvic floor, visitor boundaries. Newborn cabinet is for the baby; fourth-trimester is for you. You use both at once.</li>
+</ul>
+<h2>You graduate when</h2>
+<p>The baby is ~12 weeks old and you've started seeing the first real "hold on, that's a personality" moments. Move to <code>infant</code> (3–6 months). This cabinet stays browsable as the archive of milestones hit + photos taken in the fog.</p>1f:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$L21",null,{"slug":"newborn","pageName":"survival-tracker"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$L22",null,{"entry":{"slug":"newborn","meta":{"schemaVersion":1,"id":"newborn-root","name":"Newborn (0–3 months)","kind":"root","version":"0.1.0","description":"The survival cabinet for weeks 0–12 with a brand-new baby. Pairs with mom-command (the always-installed root). One agent: Martha, your newborn counselor — same Martha as every other Mom & Baby cabinet, just titled for this stage. Full-screen Survival Tracker webapp, 20 short wiki pages on newborn essentials, milestone CSV, and a clear red-flags page for when to call the doctor.\n","entry":"index.md"},"agents":[{"name":"Martha","slug":"martha","emoji":"💛","type":"lead","department":"family","role":"Newborn counselor — same Martha as mom-command, calibrated for weeks 0–12. Knows the survival math, the witching hour, the under-3-month fever rule, the social smile window","heartbeat":"0 6 * * *","budget":100,"active":true,"focus":["survival","feeds","sleep","witching-hour","red-flags"],"tags":["lead","newborn","family"],"body":"$23"}],"jobs":[{"id":"daily-schedule","name":"Daily Schedule (Newborn)","enabled":true,"schedule":"0 6 * * *","provider":"claude-code","adapterType":"claude_local","ownerAgent":"martha","agentSlug":"martha","timeout":180,"prompt":"$24"},{"id":"weekly-milestone-check","name":"Weekly Milestone Check (Newborn)","enabled":true,"schedule":"0 19 * * 0","provider":"claude-code","adapterType":"claude_local","ownerAgent":"martha","agentSlug":"martha","timeout":240,"prompt":"$25"}],"children":[],"readme":"$26","readmeHtml":"$27","tags":["newborn","fourth-trimester","survival","0-3-months"],"section":"Life & Learning","stats":{"totalAgents":1,"totalJobs":2,"totalCabinets":1,"totalPages":8}}}]}]]}],"$L28","$L29","$L2a","$L2b","$L2c"]}]
+20:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L1a",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L1c",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],"$L2d","$L2e","$L2f"]}]]}],"$L30"]]}],"$L31"]}]}]
+33:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"TerminalBlock"]
+28:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Newborn (0–3 months)"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["💛"," ","Martha"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Daily Schedule (Newborn)"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Milestone Check (Newborn)"}]]}]]]}],[]]}]}]]}]
+29:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-martha-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"💛"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Martha"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Newborn counselor — same Martha as mom-command, calibrated for weeks 0–12. Knows the survival math, the witching hour, the under-3-month fever rule, the social smile window"}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 6 * * *"}]]}]]}]]}]]}]
+2a:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","daily-schedule",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Daily Schedule (Newborn)"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 6 * * *"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","martha"]}]]}]]}],["$","div","weekly-milestone-check",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Milestone Check (Newborn)"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 19 * * 0"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","martha"]}]]}]]}]]}]]}]
+32:Tfca,<h1>👶 Newborn (0–3 months)</h1>
+<blockquote>
+<p><strong>Survival mode. The fourth trimester for the baby.</strong> Feeds every 2–3 hours, naps every 60–90 minutes, days that blur into nights. This cabinet is built for one-handed reading at 3am.</p>
+</blockquote>
+<h2>Open these first</h2>
+<ul>
+<li>🚨 [[survival-tracker/index|Survival Tracker]] — full-screen app. Live "last feed" / "last sleep" / "last diaper" counters, witching-hour window indicator, today-vs-yesterday at a glance, big tap-to-log buttons.</li>
+<li>📝 [[where-am-i|Where am I, what do I need]] — your stage bio. What's hard right now, what's working, who's helping, what you've decided about feeding/sleep/visitors.</li>
+<li>🚑 [[red-flags|🚑 Red flags — when to call the doctor]] — print this. Stick it on the fridge.</li>
+</ul>
+<h2>Wiki — short pages, 2am-readable</h2>
+<p>Each is 200–400 words. No fluff. Mobile-friendly.</p>
+<p><strong>Available now</strong></p>
+<ul>
+<li>[[wiki/safe-sleep|Safe sleep — the ABCs]]</li>
+<li>[[wiki/witching-hour|Witching hour &#x26; PURPLE crying]]</li>
+<li>[[wiki/feeding-cues|Feeding cues before crying]]</li>
+<li>[[wiki/cluster-feeding|Cluster feeding — why and what to do]]</li>
+<li>[[wiki/fever-rules|Fever rules — under 3 months is different]]</li>
+</ul>
+<p><strong>Coming next</strong> (request via Martha — "write the wiki page on X")</p>
+<ul>
+<li>Paced bottle feeding · Burping techniques · Tummy time · Tracking objects</li>
+<li>Diaper rash vs yeast · Umbilical stump · Cradle cap · Baby acne vs eczema · Jaundice monitoring</li>
+<li>2-month shots · Tongue tie signs · Reflux vs spitting up · Gas relief positions · First pediatrician visit checklist · Sleep regressions preview</li>
+</ul>
+<h2>Stage milestones</h2>
+<p>See <code>milestones.csv</code> (also surfaced on the [[survival-tracker/index|Survival Tracker]]). Newborn window covers:</p>
+<ul>
+<li>Lifts head briefly during tummy time (4–6 wk)</li>
+<li>Tracks objects with eyes (4–8 wk)</li>
+<li>Social smile (6–8 wk) — <em>the one that makes the rest of it worth it</em></li>
+<li>Cooing sounds (6–8 wk)</li>
+<li>Brings hands to mouth (8–12 wk)</li>
+<li>Holds head steady unsupported (10–12 wk)</li>
+</ul>
+<h2>Daily rhythm — newborn template</h2>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>Block</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wake</td>
+<td>Feed → diaper → tummy time (2–10 min) → wake window 60–90 min</td>
+</tr>
+<tr>
+<td>Then</td>
+<td>Nap 30–90 min</td>
+</tr>
+<tr>
+<td>Repeat</td>
+<td>8–12 times until you collapse</td>
+</tr>
+<tr>
+<td>Witching hour</td>
+<td>5pm–10pm — fussiest, most cluster-feeding</td>
+</tr>
+<tr>
+<td>Cluster feeds</td>
+<td>Often 4–8pm — the baby is loading the tank</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Wake windows by week:</strong></p>
+<ul>
+<li>Weeks 0–4: 45–60 min</li>
+<li>Weeks 5–8: 60–75 min</li>
+<li>Weeks 9–12: 75–90 min</li>
+</ul>
+<p>Going past wake window = overtired baby = harder to settle. Watch the clock more than the cues at this age.</p>
+<h2>Your team — 1 agent</h2>
+<ul>
+<li>💛 <strong>Martha, your newborn counselor</strong> — same Martha as <code>mom-command</code>. Same warm/funny/sarcastic voice. She knows you haven't slept. She'll never tell you to "sleep when the baby sleeps."</li>
+</ul>
+<h2>Pair with</h2>
+<ul>
+<li><strong><code>mom-command</code></strong> (required) — the shared root. All your logs, the baby profile, the growth chart, the pediatrician info live there.</li>
+<li><strong><code>fourth-trimester</code></strong> (optional, parallel) — <em>for you</em>, mom — recovery, mental health, pelvic floor, visitor boundaries. Newborn cabinet is for the baby; fourth-trimester is for you. You use both at once.</li>
+</ul>
+<h2>You graduate when</h2>
+<p>The baby is ~12 weeks old and you've started seeing the first real "hold on, that's a personality" moments. Move to <code>infant</code> (3–6 months). This cabinet stays browsable as the archive of milestones hit + photos taken in the fog.</p>2b:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$32"}}]}]]}]
+2c:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L33",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set newborn","label":"Install"}]}]}]]}]
+2d:["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}]
+2e:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+2f:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+30:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+31:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+16:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+34:I[27201,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"IconMark"]
+13:null
+18:[["$","title","0",{"children":"Newborn (0–3 months) template | Cabinet"}],["$","meta","1",{"name":"description","content":"The survival cabinet for weeks 0–12 with a brand-new baby. Pairs with mom-command (the always-installed root). One agent: Martha, your newborn counselor — same Martha as every other Mom & Baby cabinet, just titled for this stage. Full-screen Survival Tracker webapp, 20 short wiki pages on newborn essentials, milestone CSV, and a clear red-flags page for when to call the doctor.\n"}],["$","meta","2",{"name":"referrer","content":"strict-origin-when-cross-origin"}],["$","link","3",{"rel":"canonical","href":"https://runcabinet.com/templates/newborn"}],["$","meta","4",{"property":"og:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","5",{"property":"og:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","6",{"property":"og:url","content":"https://runcabinet.com"}],["$","meta","7",{"property":"og:image","content":"https://runcabinet.com/og.png"}],["$","meta","8",{"property":"og:image:width","content":"1200"}],["$","meta","9",{"property":"og:image:height","content":"630"}],["$","meta","10",{"property":"og:image:alt","content":"Cabinet: the AI workspace your company owns, with knowledge, AI teams, and live apps in one place"}],["$","meta","11",{"property":"og:type","content":"website"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","14",{"name":"twitter:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","15",{"name":"twitter:image","content":"https://runcabinet.com/og.png"}],["$","link","16",{"rel":"icon","href":"/icon.png?icon.1p7qxwp3akyyx.png","sizes":"512x512","type":"image/png"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-icon.png?apple-icon.1q-r1s9ajzc3v.png","sizes":"180x180","type":"image/png"}],["$","$L34","18",{}]]

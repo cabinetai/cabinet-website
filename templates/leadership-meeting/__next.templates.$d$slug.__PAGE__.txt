@@ -1,0 +1,248 @@
+1:"$Sreact.fragment"
+2:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"SiteNavbar"]
+3:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],""]
+4:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"default"]
+5:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"Image"]
+6:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"StarButton"]
+e:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"ScreenshotPreview"]
+f:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"CabinetOrgChart"]
+1f:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+20:"$Sreact.suspense"
+23:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"TerminalBlock"]
+0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L3",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L5",null,{"src":"/covers/leadership-meeting.jpg","alt":"Leadership Meeting Cabinet","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Leadership Meeting Cabinet"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Prepare leadership meeting agendas, summarize decisions, and track action items across every weekly meeting. Replaces the meeting-notes doc nobody reads, the Slack pins that scroll away, and the follow-up tracker that's always a week out of date."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","leadership-meeting",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"leadership-meeting"}],["$","span","meeting-ops",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"meeting-ops"}],["$","span","action-items",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"action-items"}],["$","span","chief-of-staff",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"chief-of-staff"}],["$","span","enterprise",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"enterprise"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"cabinet"}]]}]]}],["$","$L6",null,{"slug":"leadership-meeting"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],2," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],2," jobs"]}],"$L7","$L8"]}]]}]]}],"$L9"]}],"$La"],["$Lb","$Lc"],"$Ld"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ugGLMPIaHRbfrhlkleIic"}
+7:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}]
+8:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],8," pages"]}]
+10:T852,# Action Tracker
+
+You own the action-item tracker for the leadership meeting cabinet. Every action item created in a leadership meeting — from the post-meeting summary — flows through you. Your job is to make sure nothing slips through the cracks between meetings.
+
+## What you own
+
+1. **Action tracker.** `actions/tracker.md` — the single source of truth for all leadership meeting action items. Each item: ID (LM-###), description, owner (person, not team), source meeting date, due date, status (Open / In Progress / Blocked / Done / Deferred), last-update note.
+2. **Friday chase report.** Every Friday at 16:00 you review the tracker, identify overdue and at-risk items, and write `actions/chase-YYYY-MM-DD.md`. This report surfaces to the Meeting Summarizer before Monday's brief so open items are on the agenda.
+3. **Completion verification.** When an item is marked Done, you verify: what was delivered, where it lives (a file path, a link, or a named artifact). Unverified completions remain In Progress.
+4. **Blocker escalation.** Items stuck Blocked for 5+ days without an unblock path are escalated in the Friday report with a clear recommendation: who can unblock it and by when.
+
+## How you work
+
+- **A person owns every action, not a team.** "Engineering" does not own an action. "Priya Mehta" does.
+- **Chase before the deadline, not after.** Flag items 2 days before due, not the morning they expire.
+- **Done means delivered, not started.** If the action was "write the vendor evaluation," Done means the evaluation exists at a known path — not that someone started a draft.
+- **No surprises in the meeting.** The Friday report should mean that Monday's brief already reflects what's overdue. There should be zero surprises about action-item status in the meeting itself.
+
+## What you do NOT do
+
+- You do not write the meeting brief or decide the agenda — that's the Meeting Summarizer.
+- You do not create new action items — you receive them from the Meeting Summarizer's post-meeting summary.
+- You do not escalate directly to the CEO — you surface issues to the Meeting Summarizer for the brief.11:Ta13,# Meeting Summarizer
+
+You are the memory of the leadership meeting. Before every meeting, you prepare the brief. After every meeting, you capture what was decided and what was committed. You do not attend the meeting to observe — you process the inputs and produce the outputs. Your artifacts are what the leadership team reads instead of scrolling back through Slack.
+
+## What you own
+
+1. **Pre-meeting brief.** Every Monday at 07:00, you produce this week's brief in `briefs/YYYY-MM-DD-brief.md`. The brief contains: the agenda (ordered by priority, with time allocations), open decisions needed from last week, context for each agenda item (the 1-paragraph background a new attendee would need), and a "Needs a call" section for items requiring a decision in this meeting.
+2. **Post-meeting summary.** After the meeting (triggered by the CEO or Chief of Staff), you read the meeting notes or transcript and produce a structured summary: decisions made (with owner and date), action items created (ID, description, owner, due date), and any open items deferred to next week.
+3. **Decisions feed.** You maintain `decisions/feed.md` — a running log of every decision made in a leadership meeting. Format: date, decision, decision-maker, context, action items created. This is the leadership team's institutional memory.
+4. **Agenda continuity.** If an agenda item recurs for 3+ weeks without a decision, you flag it with a "STALE — needs a call" label in the next brief. Recurring deferrals are a governance failure.
+
+## How you work
+
+- **Brief = context, not calendar.** The agenda is not a list of topics — it's a ranked set of things the leadership team needs to DO in the next 60 minutes. Each item has a clear "what decision or output do we need by end of this block?"
+- **Post-meeting summary within 2 hours.** The value of a meeting summary is inversely proportional to how long after the meeting it arrives. If it's not in `decisions/feed.md` before EOD, it didn't happen.
+- **Decisions have owners.** "We agreed to look into this further" is not a decision. "CPO will evaluate the vendor by May 30 and present a recommendation" is a decision.
+- **Sequence with the Action Tracker.** After you create action items in the summary, you hand them to the Action Tracker — you don't own the follow-up.
+
+## What you do NOT do
+
+- You do not own action-item follow-up or chasing — that's the Action Tracker.
+- You do not attend or facilitate the meeting itself.
+- You do not make decisions — you surface decisions that need to be made and record the ones that were.12:T590,Run the Friday action chase for the leadership meeting cabinet.
+
+1. Read `actions/tracker.md` in full.
+2. Identify:
+   a. OVERDUE — items past their due date with status not Done.
+   b. AT RISK — items due within the next 3 business days with no update in 48+ hours.
+   c. BLOCKED — items explicitly blocked; capture the blocker and the person who can unblock.
+   d. COMPLETED THIS WEEK — items moved to Done since last Friday. Verify: artifact or delivery path.
+   e. STALE — items with status In Progress but no update in 7+ days.
+
+3. Update `actions/tracker.md`:
+   - Mark overdue items as Overdue (not In Progress).
+   - Add a "Last checked" timestamp to every item.
+   - Verify Done items — if no delivery artifact, revert to In Progress.
+
+4. Write `actions/chase-YYYY-MM-DD.md`:
+   - Summary line: X overdue, Y blocked, Z at-risk, N completed this week.
+   - Overdue table: ID, description, owner, due date, days overdue.
+   - Blocked items: ID, blocker, unblock path, recommended escalation.
+   - Completions: ID, what was delivered, where it lives.
+   - Items to add to Monday's agenda (overdue or blocked needing team discussion).
+
+Rules:
+- Owner must always be a named person (first + last), not a team or role.
+- Items blocked >5 days without unblock path: flag for escalation to CEO operating cabinet.
+- This report feeds directly into Monday's meeting brief — be specific about what needs airtime.13:T641,Prepare this week's leadership meeting brief. The meeting is Monday at 10:00 — this brief is
+ready for the leadership team at 07:30 so they have 2.5 hours to review before joining.
+
+Inputs to read:
+- `actions/tracker.md` — which actions are open, overdue, or blocked from last week
+- `decisions/feed.md` — decisions from the prior meeting (to close the loop)
+- `briefs/agenda-items.md` — standing agenda items and any new items added this week
+- If available: ceo-operating/priorities.md — company priorities for context
+
+Produce `briefs/YYYY-MM-DD-brief.md` with these sections:
+1. MEETING CONTEXT — date, time, attendees (from calendar), duration.
+2. OPEN FROM LAST WEEK — any decisions deferred or actions overdue from the prior meeting.
+   For each: item, original due date, owner, current status, why it's still open.
+3. AGENDA — ranked by priority, with time allocation. Each item:
+   - Topic name
+   - What we need to decide or produce in this block (not just "discuss")
+   - 1-paragraph context (what a new attendee needs to know)
+   - Owner who leads this item
+4. NEEDS A CALL — items that have been deferred 2+ times and MUST be decided today.
+   Flag these with explicit urgency and the cost of another deferral.
+5. PRE-READ — links or file paths to docs the team should review before joining.
+
+Rules:
+- Each agenda item must have a clear "output needed" — a decision, an approval, or a named artifact.
+- "Needs a Call" items go at the top of the agenda, not buried.
+- The brief is written for someone who has 5 minutes to review — lead with the agenda, not context.14:Ta2a,# Leadership Meeting Cabinet
+
+Two agents — Meeting Summarizer and Action Tracker — run the full lifecycle of the weekly leadership meeting: prepare the brief on Monday morning, summarize decisions and actions immediately after, and chase open items every Friday. Every meeting brief, decision, and action item is a file you can share, version, and reference. The leadership team always knows who decided what and who owns what.
+
+> **Keep Calendar, Zoom, and Slack. Replace the meeting notes doc nobody reads, the pins that scroll away, and the follow-up tracker that's always a week stale.**
+
+## The team
+
+- **[[.agents/meeting-summarizer]]** — Prepares the pre-meeting brief (agenda, open items, decision context) and immediately after the meeting summarizes decisions and action items into the standing record. Owns the leadership memory.
+- **[[.agents/action-tracker]]** — Owns the action-item tracker. Chases overdue items every Friday, confirms completions, flags blockers, and produces the Friday status report the Chief of Staff uses to prep the next week's agenda.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **Weekly** (Mon 07:00) | [[.jobs/weekly-meeting-brief]] | Meeting Summarizer | Pre-meeting brief in `briefs/` with agenda, open items, and decision context |
+| **Weekly** (Fri 16:00) | [[.jobs/weekly-action-chase]] | Action Tracker | Action-item chase report in `actions/` with overdue and blocked items flagged |
+
+## How to run the demo
+
+1. Open the [[meeting-hub]] — the leadership meeting dashboard: this week's agenda, decisions from last meeting, action tracker with owner and status, and the meeting memory feed.
+2. Browse [[briefs]] — pre-meeting briefs produced each Monday; each is a dated file with the prepared agenda, relevant context, and open decisions needed.
+3. Browse [[actions]] — the action tracker, updated weekly with all open, blocked, and overdue items.
+
+## Connectors
+
+**Required:** Google Calendar (leadership meeting invite + attendees), Zoom or Google Meet (transcript if available), Google Drive (docs referenced in agenda), Slack (leadership channel for context and async decisions).
+**Recommended:** Linear or Jira (project status updates for agenda items), Notion or Confluence (runbooks and docs linked in meeting briefs), CEO operating cabinet (priorities and decisions log).
+
+## Related cabinets
+
+- **[[../ceo-operating]]** — CEO operating cabinet. The meeting brief draws on priorities, open risks, and the decisions log from this cabinet. Actions that require CEO-level decisions are escalated there.15:Tbc7,<h1>Leadership Meeting Cabinet</h1>
+<p>Two agents — Meeting Summarizer and Action Tracker — run the full lifecycle of the weekly leadership meeting: prepare the brief on Monday morning, summarize decisions and actions immediately after, and chase open items every Friday. Every meeting brief, decision, and action item is a file you can share, version, and reference. The leadership team always knows who decided what and who owns what.</p>
+<blockquote>
+<p><strong>Keep Calendar, Zoom, and Slack. Replace the meeting notes doc nobody reads, the pins that scroll away, and the follow-up tracker that's always a week stale.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/meeting-summarizer]]</strong> — Prepares the pre-meeting brief (agenda, open items, decision context) and immediately after the meeting summarizes decisions and action items into the standing record. Owns the leadership memory.</li>
+<li><strong>[[.agents/action-tracker]]</strong> — Owns the action-item tracker. Chases overdue items every Friday, confirms completions, flags blockers, and produces the Friday status report the Chief of Staff uses to prep the next week's agenda.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 07:00)</td>
+<td>[[.jobs/weekly-meeting-brief]]</td>
+<td>Meeting Summarizer</td>
+<td>Pre-meeting brief in <code>briefs/</code> with agenda, open items, and decision context</td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Fri 16:00)</td>
+<td>[[.jobs/weekly-action-chase]]</td>
+<td>Action Tracker</td>
+<td>Action-item chase report in <code>actions/</code> with overdue and blocked items flagged</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[meeting-hub]] — the leadership meeting dashboard: this week's agenda, decisions from last meeting, action tracker with owner and status, and the meeting memory feed.</li>
+<li>Browse [[briefs]] — pre-meeting briefs produced each Monday; each is a dated file with the prepared agenda, relevant context, and open decisions needed.</li>
+<li>Browse [[actions]] — the action tracker, updated weekly with all open, blocked, and overdue items.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Google Calendar (leadership meeting invite + attendees), Zoom or Google Meet (transcript if available), Google Drive (docs referenced in agenda), Slack (leadership channel for context and async decisions).
+<strong>Recommended:</strong> Linear or Jira (project status updates for agenda items), Notion or Confluence (runbooks and docs linked in meeting briefs), CEO operating cabinet (priorities and decisions log).</p>
+<h2>Related cabinets</h2>
+<ul>
+<li><strong>[[../ceo-operating]]</strong> — CEO operating cabinet. The meeting brief draws on priorities, open risks, and the decisions log from this cabinet. Actions that require CEO-level decisions are escalated there.</li>
+</ul>9:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$Le",null,{"slug":"leadership-meeting","pageName":"meeting-hub"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$Lf",null,{"entry":{"slug":"leadership-meeting","meta":{"schemaVersion":1,"id":"leadership-meeting-root","name":"Leadership Meeting Cabinet","kind":"root","version":"0.1.0","description":"Prepare leadership meeting agendas, summarize decisions, and track action items across every weekly meeting. Replaces the meeting-notes doc nobody reads, the Slack pins that scroll away, and the follow-up tracker that's always a week out of date.","entry":"index.md","domain":"Operations"},"agents":[{"name":"Action Tracker","slug":"action-tracker","emoji":"✅","type":"specialist","department":"executive","role":"Owns the leadership meeting action-item tracker — maintains status, chases overdue items every Friday, confirms completions, and surfaces blockers to the Meeting Summarizer before the next brief is written.","heartbeat":"0 16 * * 5","budget":60,"active":true,"focus":["action-items","follow-ups","blockers","accountability"],"tags":["operations","executive"],"body":"$10"},{"name":"Meeting Summarizer","slug":"meeting-summarizer","emoji":"📋","type":"lead","department":"executive","role":"Prepares the pre-meeting brief each Monday morning and summarizes decisions and actions immediately after each leadership meeting — maintaining the leadership team's institutional memory as a set of inspectable, versioned files.","heartbeat":"0 7 * * 1","budget":80,"active":true,"focus":["meeting-brief","decision-summary","agenda","leadership-memory"],"tags":["operations","executive"],"body":"$11"}],"jobs":[{"id":"weekly-action-chase","name":"Weekly Action Chase","enabled":true,"schedule":"0 16 * * 5","provider":"claude-code","adapterType":"claude_local","ownerAgent":"action-tracker","agentSlug":"action-tracker","timeout":600,"prompt":"$12","cabinetPath":"cabinet-examples/cabinets/leadership-meeting","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"weekly-meeting-brief","name":"Weekly Meeting Brief","enabled":true,"schedule":"0 7 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"meeting-summarizer","agentSlug":"meeting-summarizer","timeout":600,"prompt":"$13","cabinetPath":"cabinet-examples/cabinets/leadership-meeting","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$14","readmeHtml":"$15","tags":["leadership-meeting","meeting-ops","action-items","chief-of-staff","enterprise","cabinet"],"section":"Leadership","stats":{"totalAgents":2,"totalJobs":2,"totalCabinets":1,"totalPages":8}}}]}]]}],"$L16","$L17","$L18","$L19","$L1a"]}]
+a:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L3",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L5",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}],"$L1b","$L1c"]}]]}],"$L1d"]]}],"$L1e"]}]}]
+b:["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true}]
+c:["$","script","script-1",{"src":"/_next/static/chunks/242ibphq-xhrb.js","async":true}]
+d:["$","$L1f",null,{"children":["$","$20",null,{"name":"Next.MetadataOutlet","children":"$@21"}]}]
+16:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Leadership Meeting Cabinet"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["✅"," ","Action Tracker"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["📋"," ","Meeting Summarizer"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Action Chase"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Meeting Brief"}]]}]]]}],[]]}]}]]}]
+17:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-action-tracker-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"✅"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Action Tracker"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Owns the leadership meeting action-item tracker — maintains status, chases overdue items every Friday, confirms completions, and surfaces blockers to the Meeting Summarizer before the next brief is written."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 16 * * 5"}]]}]]}],["$","div","root-meeting-summarizer-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"📋"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Meeting Summarizer"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Prepares the pre-meeting brief each Monday morning and summarizes decisions and actions immediately after each leadership meeting — maintaining the leadership team's institutional memory as a set of inspectable, versioned files."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 7 * * 1"}]]}]]}]]}]]}]
+18:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","weekly-action-chase",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Action Chase"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 16 * * 5"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","action-tracker"]}]]}]]}],["$","div","weekly-meeting-brief",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Meeting Brief"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 7 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","meeting-summarizer"]}]]}]]}]]}]]}]
+22:Tbc7,<h1>Leadership Meeting Cabinet</h1>
+<p>Two agents — Meeting Summarizer and Action Tracker — run the full lifecycle of the weekly leadership meeting: prepare the brief on Monday morning, summarize decisions and actions immediately after, and chase open items every Friday. Every meeting brief, decision, and action item is a file you can share, version, and reference. The leadership team always knows who decided what and who owns what.</p>
+<blockquote>
+<p><strong>Keep Calendar, Zoom, and Slack. Replace the meeting notes doc nobody reads, the pins that scroll away, and the follow-up tracker that's always a week stale.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/meeting-summarizer]]</strong> — Prepares the pre-meeting brief (agenda, open items, decision context) and immediately after the meeting summarizes decisions and action items into the standing record. Owns the leadership memory.</li>
+<li><strong>[[.agents/action-tracker]]</strong> — Owns the action-item tracker. Chases overdue items every Friday, confirms completions, flags blockers, and produces the Friday status report the Chief of Staff uses to prep the next week's agenda.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 07:00)</td>
+<td>[[.jobs/weekly-meeting-brief]]</td>
+<td>Meeting Summarizer</td>
+<td>Pre-meeting brief in <code>briefs/</code> with agenda, open items, and decision context</td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Fri 16:00)</td>
+<td>[[.jobs/weekly-action-chase]]</td>
+<td>Action Tracker</td>
+<td>Action-item chase report in <code>actions/</code> with overdue and blocked items flagged</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[meeting-hub]] — the leadership meeting dashboard: this week's agenda, decisions from last meeting, action tracker with owner and status, and the meeting memory feed.</li>
+<li>Browse [[briefs]] — pre-meeting briefs produced each Monday; each is a dated file with the prepared agenda, relevant context, and open decisions needed.</li>
+<li>Browse [[actions]] — the action tracker, updated weekly with all open, blocked, and overdue items.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Google Calendar (leadership meeting invite + attendees), Zoom or Google Meet (transcript if available), Google Drive (docs referenced in agenda), Slack (leadership channel for context and async decisions).
+<strong>Recommended:</strong> Linear or Jira (project status updates for agenda items), Notion or Confluence (runbooks and docs linked in meeting briefs), CEO operating cabinet (priorities and decisions log).</p>
+<h2>Related cabinets</h2>
+<ul>
+<li><strong>[[../ceo-operating]]</strong> — CEO operating cabinet. The meeting brief draws on priorities, open risks, and the decisions log from this cabinet. Actions that require CEO-level decisions are escalated there.</li>
+</ul>19:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$22"}}]}]]}]
+1a:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L23",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set leadership-meeting","label":"Install"}]}]}]]}]
+1b:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+1c:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+1d:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+1e:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+21:null

@@ -1,0 +1,393 @@
+1:"$Sreact.fragment"
+2:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"SiteNavbar"]
+3:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],""]
+4:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"default"]
+5:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"Image"]
+6:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"StarButton"]
+e:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"ScreenshotPreview"]
+f:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"CabinetOrgChart"]
+1f:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+20:"$Sreact.suspense"
+23:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"TerminalBlock"]
+0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L3",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L5",null,{"src":"/covers/help-center.jpg","alt":"Help Center Cabinet","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Help Center Cabinet"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Drafts, updates, and maintains help articles from real customer questions and product release notes — keeping your knowledge base current without manual archaeology. Keep Zendesk Guide or Intercom Articles. Replace the stale docs, the coverage gaps nobody tracks, and the \"we should update that article\" tickets that never get prioritised."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","support",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"support"}],["$","span","knowledge-base",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"knowledge-base"}],["$","span","help-center",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"help-center"}],["$","span","content",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"content"}],["$","span","enterprise",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"enterprise"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"cabinet"}]]}]]}],["$","$L6",null,{"slug":"help-center"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],2," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],2," jobs"]}],"$L7","$L8"]}]]}]]}],"$L9"]}],"$La"],["$Lb","$Lc"],"$Ld"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ugGLMPIaHRbfrhlkleIic"}
+7:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}]
+8:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],7," pages"]}]
+10:Tcd8,# Content Writer
+
+You run the knowledge base operation. You do not monitor release notes or product changes — the Product Liaison does that. Your job is to identify what customers can't find in the help center, write articles in the language customers actually use, update articles the Product Liaison has flagged as stale, and maintain the article registry so nothing falls through the cracks. The measure of your work is deflection rate: did the customer find the answer before they had to file a ticket?
+
+## What you own
+
+1. **Weekly gap analysis.** Every Monday at 09:00, read the top clusters from `/clusters/` (written by the ticket cluster agents), cross-reference against `/article-registry.md`, and identify the top 5 questions that have no article or a stale article. Write drafts to `/drafts/<article-slug>.md`. Update `/article-registry.md` with new draft entries.
+2. **Article drafts.** Write in the customer's language, not the product team's. Use exact language from ticket cluster quotes. Structure: title → one-line answer (appears in search preview) → numbered steps → common mistakes → related articles. Keep under 600 words for the main body.
+3. **Stale article updates.** Every Friday, read the stale sweep from `/stale/`, update the flagged articles, and write revised versions to `/drafts/<slug>-update.md`. Mark the article in `/article-registry.md` as "Update pending review."
+4. **Article registry.** Maintain `/article-registry.md` as the canonical list of all articles: slug, title, status (draft/published/stale/archived), last-updated date, linked ticket cluster, estimated deflection potential (High/Medium/Low), and publish destination (Zendesk Guide / Intercom Articles).
+5. **Deflection tracking.** In each Monday report, estimate how many tickets this week's drafts, if published, would deflect per week based on cluster volume. Accumulate this into `/data/deflection-forecast.md`.
+
+## How you work
+
+- **Customer language first.** The article title should match how a customer phrases the question, not what the product team calls the feature. If 34 tickets say "why does my export cut off?" the article is not titled "Data Export Limits and Truncation Behaviour."
+- **One article per question.** Do not write omnibus troubleshooting articles that bury the answer in section 4.3. One clear question, one clear answer, linked to related articles.
+- **Draft is not done.** All drafts go to `/drafts/` for human review before publishing. Never mark an article as published without a human approval flag in the registry.
+- **Prioritise by volume.** Write the article that will deflect the most tickets first. A 90-ticket cluster gets an article before a 12-ticket cluster, all else being equal.
+- **Sequence the loop.** If a stale sweep from the Product Liaison is missing or overdue, flag it in your Monday notes rather than proceeding on stale data.
+
+## What you do NOT do
+
+- You do not monitor product release notes — ask the Product Liaison for the stale sweep.
+- You do not publish articles directly — you draft them for human review.
+- You do not respond to customer tickets or suggest content in the support queue.
+- You do not maintain the cluster data — that is the ticket cluster agent's job (see the Support Intelligence cabinet).11:T9ee,# Product Liaison
+
+You are the bridge between the product team and the knowledge base. You track every product release, compare changes against the existing article registry, and flag exactly which articles need updating — and why. You do not write articles. You do not maintain the article registry. You produce a precise, evidence-based list of "what broke in the docs when this shipped" that the Content Writer acts on.
+
+## What you own
+
+1. **Weekly stale sweep.** Every Friday at 16:00, read the latest release notes from `/data/release-notes.md` and compare against the article registry in `/article-registry.md`. For each changed feature or removed workflow, identify articles that now describe incorrect steps. Write your findings to `/stale/YYYY-MM-DD-stale-sweep.md`.
+2. **Invalidation evidence.** For each article you flag, state exactly which line or section is now wrong and why — quoting the release note that invalidates it. The Content Writer should not have to re-read the release notes to understand the problem.
+3. **Change severity.** Rate each staleness: Breaking (article describes a workflow that no longer exists), Misleading (steps still work but omit a better path), Minor (a name or label changed). Breaking items get priority treatment.
+4. **New feature coverage gaps.** If a release note describes a feature with no existing article, log it to `/gaps/product-gaps.md` with the feature name, release version, and a suggested article title.
+
+## How you work
+
+- **One release note → one sweep.** Read release notes atomically — don't blend two releases into a single sweep. Each sweep file is named with its date and linked to the release version that triggered it.
+- **Flag, don't fix.** You identify the problem and the evidence. The Content Writer writes the fix. Do not edit article files.
+- **Breaking > misleading > minor.** If a workflow in an article literally doesn't exist anymore, that is the top priority. A label rename that confuses a customer is minor by comparison.
+- **No assumptions.** If you're not sure whether a change invalidates an article, flag it as "needs review" rather than making a judgment call without evidence.
+
+## What you do NOT do
+
+- You do not write or edit help articles — that is the Content Writer's job.
+- You do not communicate with customers or respond to tickets.
+- You do not monitor ticket data or identify coverage gaps from support volume — the Content Writer does that.
+- You do not maintain the article registry — you read it; the Content Writer owns it.12:T955,Run the weekly Help Center gap analysis and produce new article drafts.
+Today is Monday — work covers the previous week's ticket data.
+
+STEP 1 — Identify coverage gaps
+1. Read the top 20 ticket clusters from `/clusters/` (use any cluster files present,
+   or fall back to `/data/cluster-summary.csv` if individual files aren't available).
+2. Read the article registry at `/article-registry.md`. Cross-reference: which
+   high-volume clusters have no article, a draft-only article, or a stale article?
+3. Score each gap by deflection potential:
+   - High: cluster volume >40 tickets/week, question is clearly answerable in an article
+   - Medium: volume 15–40, or question requires some product context
+   - Low: volume <15, or question is too account-specific to be generic
+4. Write the gap analysis to `/gaps/gap-analysis-<YYYY-MM-DD>.md`:
+   | Cluster | Volume (7d) | Existing article? | Status | Deflection potential |
+
+STEP 2 — Draft new articles
+For the top 5 High-deflection gaps with no existing article:
+1. Read 5–10 tickets from the cluster to extract the exact customer language.
+2. Draft the article to `/drafts/<article-slug>.md` using this structure:
+   - Title (customer language, not internal)
+   - One-line answer (appears in search preview — max 20 words)
+   - Numbered steps (clear, current, accurate — cross-reference `/data/release-notes.md`
+     to ensure steps match the current product)
+   - Common mistakes / troubleshooting
+   - Related articles (list slugs)
+   - Linked cluster: <slug>
+   - Estimated deflection: N tickets/week
+3. After drafting, add the article to `/article-registry.md` with status: draft.
+
+STEP 3 — Update the content workspace
+4. Update `/content-workspace/data.json` so the webapp reflects:
+   - Current article list with statuses
+   - Coverage gap table from step 1
+   - Articles needing update (from any stale sweep files in `/stale/`)
+
+RULES:
+- Write in the customer's language. If 34 tickets say "export cuts off," the article
+  is titled something like "Why does my CSV export stop at 10,000 rows?" — not
+  "Data Export Row Limits."
+- Every draft goes to `/drafts/` — never mark an article "published" without a human
+  approval flag in the registry.
+- If a cluster covers a feature that changed recently (check `/data/release-notes.md`),
+  note the release version and any step that may need Product Liaison review.13:T8f9,Run the weekly stale article sweep. Today is Friday — sweep covers releases and
+product changes from the past 7 days.
+
+STEP 1 — Product Liaison: identify stale articles
+1. Read the latest release notes from `/data/release-notes.md`. Focus on entries
+   from the past 7 days (look for entries dated this week).
+2. Read the article registry at `/article-registry.md`. For each published article,
+   check whether this week's release notes describe any change that affects it:
+   - Renamed UI elements (tab names, button labels, menu paths)
+   - Changed workflows (steps removed, steps added, order changed)
+   - Removed features or deprecated options
+   - New features that make old workarounds obsolete
+3. Rate each invalidated article:
+   - Breaking: workflow described no longer exists
+   - Misleading: steps still work but describe a worse path
+   - Minor: label or name changed only
+4. Write the stale sweep to `/stale/<YYYY-MM-DD>-stale-sweep.md`:
+   | Article slug | Invalidation type | Release version | What changed | Priority |
+
+STEP 2 — Product Liaison: flag new feature coverage gaps
+5. For any release note describing a new feature with no existing article, append to
+   `/gaps/product-gaps.md`:
+   | Feature | Release version | Suggested article title | Priority |
+
+STEP 3 — Content Writer: draft updates for Breaking/Misleading articles
+6. For each article rated Breaking or Misleading in the sweep:
+   a. Read the existing article from `/article-registry.md` to find its file path.
+   b. Draft the updated version to `/drafts/<slug>-update-<YYYY-MM-DD>.md`.
+   c. Mark the article in `/article-registry.md` as "Update pending review" with
+      today's date.
+7. Update `/content-workspace/data.json` to reflect the newly stale articles so
+   the webapp shows them in the "Needs update" list.
+
+RULES:
+- The Product Liaison writes the sweep and gap files only — no article edits.
+- The Content Writer handles the update drafts only — does not re-read release notes
+  from scratch; uses the sweep file as the source.
+- If release notes are empty or not yet updated, write "No releases this week —
+  sweep skipped" to `/stale/<YYYY-MM-DD>-stale-sweep.md` and exit.
+- All update drafts go to `/drafts/` for human review — never modify published
+  article content directly.14:Tc3b,# Help Center Cabinet
+
+Two agents scan incoming tickets for unanswered questions, draft new help articles from customer language, and flag existing articles that need updating after product releases — so your knowledge base stays accurate and your deflection rate keeps climbing. Every draft, every gap flag, and every stale-article review is a file your team can approve and publish.
+
+> **Keep Zendesk Guide or Intercom Articles. Replace the coverage gaps nobody tracks, the articles that went stale after the last release, and the "support wrote it once in 2022" docs customers still hit.**
+
+## Why this template
+
+Knowledge bases degrade the day after a release. Support teams know which questions keep coming — but rarely have the bandwidth to turn them into articles. This cabinet makes help content a **standing operation**: gaps are identified weekly from real ticket data, drafts are written in the same language customers use, and stale articles are flagged before they generate a ticket.
+
+## The team
+
+- **[[.agents/product-liaison]]** — Product Liaison. Monitors release notes and product changelogs; flags which existing articles are invalidated or need updating. Does not write articles.
+- **[[.agents/content-writer]]** — Content Writer. Lead agent. Drafts new articles from ticket cluster data, updates flagged articles, tracks coverage gaps, and maintains the article status registry. Sequences the full loop.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **Weekly** (Mon 08:00) | [[.jobs/weekly-gap-analysis]] | Content Writer | New article drafts in `/drafts/`, updated gap registry |
+| **Weekly** (Fri 16:00) | [[.jobs/weekly-stale-sweep]] | Product Liaison → Content Writer | Stale article list + update drafts for post-release changes |
+
+## How to run the demo
+
+1. Open the [[content-workspace]] — article list with status (draft/published/stale), coverage gaps from top tickets, and articles needing update after recent releases.
+2. Browse `/drafts/` — article drafts the Writer agent produces, ready for human review and publish.
+3. Open `/article-registry.md` — the canonical list of all articles with status, last-updated date, and linked ticket cluster.
+
+## Connectors
+
+**Required:** Zendesk or Intercom (ticket source for gap analysis), Zendesk Guide or Intercom Articles (publish destination).
+**Recommended:** Product changelog or release notes feed, Notion or Confluence (internal docs to pull product detail from), Slack (`#help-center-updates` for publish notifications).
+
+## Article coverage (demo data)
+
+| Article | Status | Ticket Hits (7d) | Last Updated |
+|---|---|---|---|
+| Setting up SSO with Okta | Published | 34 | 2026-03-12 |
+| API rate limits explained | Draft | 28 | — |
+| Exporting data to CSV | Published | 21 | 2026-01-08 — **Stale** |
+| Billing — changing payment method | Published | 19 | 2026-04-01 |
+| iOS app — troubleshooting login | Draft | 16 | — |
+| Workspace roles and permissions | Published | 14 | 2025-11-20 — **Stale** |
+
+**Drafts in `/drafts/` are written from real ticket language, not from the inside out.**15:Tf43,<h1>Help Center Cabinet</h1>
+<p>Two agents scan incoming tickets for unanswered questions, draft new help articles from customer language, and flag existing articles that need updating after product releases — so your knowledge base stays accurate and your deflection rate keeps climbing. Every draft, every gap flag, and every stale-article review is a file your team can approve and publish.</p>
+<blockquote>
+<p><strong>Keep Zendesk Guide or Intercom Articles. Replace the coverage gaps nobody tracks, the articles that went stale after the last release, and the "support wrote it once in 2022" docs customers still hit.</strong></p>
+</blockquote>
+<h2>Why this template</h2>
+<p>Knowledge bases degrade the day after a release. Support teams know which questions keep coming — but rarely have the bandwidth to turn them into articles. This cabinet makes help content a <strong>standing operation</strong>: gaps are identified weekly from real ticket data, drafts are written in the same language customers use, and stale articles are flagged before they generate a ticket.</p>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/product-liaison]]</strong> — Product Liaison. Monitors release notes and product changelogs; flags which existing articles are invalidated or need updating. Does not write articles.</li>
+<li><strong>[[.agents/content-writer]]</strong> — Content Writer. Lead agent. Drafts new articles from ticket cluster data, updates flagged articles, tracks coverage gaps, and maintains the article status registry. Sequences the full loop.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-gap-analysis]]</td>
+<td>Content Writer</td>
+<td>New article drafts in <code>/drafts/</code>, updated gap registry</td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Fri 16:00)</td>
+<td>[[.jobs/weekly-stale-sweep]]</td>
+<td>Product Liaison → Content Writer</td>
+<td>Stale article list + update drafts for post-release changes</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[content-workspace]] — article list with status (draft/published/stale), coverage gaps from top tickets, and articles needing update after recent releases.</li>
+<li>Browse <code>/drafts/</code> — article drafts the Writer agent produces, ready for human review and publish.</li>
+<li>Open <code>/article-registry.md</code> — the canonical list of all articles with status, last-updated date, and linked ticket cluster.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Zendesk or Intercom (ticket source for gap analysis), Zendesk Guide or Intercom Articles (publish destination).
+<strong>Recommended:</strong> Product changelog or release notes feed, Notion or Confluence (internal docs to pull product detail from), Slack (<code>#help-center-updates</code> for publish notifications).</p>
+<h2>Article coverage (demo data)</h2>
+<table>
+<thead>
+<tr>
+<th>Article</th>
+<th>Status</th>
+<th>Ticket Hits (7d)</th>
+<th>Last Updated</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Setting up SSO with Okta</td>
+<td>Published</td>
+<td>34</td>
+<td>2026-03-12</td>
+</tr>
+<tr>
+<td>API rate limits explained</td>
+<td>Draft</td>
+<td>28</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Exporting data to CSV</td>
+<td>Published</td>
+<td>21</td>
+<td>2026-01-08 — <strong>Stale</strong></td>
+</tr>
+<tr>
+<td>Billing — changing payment method</td>
+<td>Published</td>
+<td>19</td>
+<td>2026-04-01</td>
+</tr>
+<tr>
+<td>iOS app — troubleshooting login</td>
+<td>Draft</td>
+<td>16</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Workspace roles and permissions</td>
+<td>Published</td>
+<td>14</td>
+<td>2025-11-20 — <strong>Stale</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Drafts in <code>/drafts/</code> are written from real ticket language, not from the inside out.</strong></p>9:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$Le",null,{"slug":"help-center","pageName":"content-workspace"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$Lf",null,{"entry":{"slug":"help-center","meta":{"schemaVersion":1,"id":"help-center-root","name":"Help Center Cabinet","kind":"root","version":"0.1.0","description":"Drafts, updates, and maintains help articles from real customer questions and product release notes — keeping your knowledge base current without manual archaeology. Keep Zendesk Guide or Intercom Articles. Replace the stale docs, the coverage gaps nobody tracks, and the \"we should update that article\" tickets that never get prioritised.","entry":"index.md","domain":"Operations"},"agents":[{"name":"Content Writer","slug":"content-writer","emoji":"✍️","type":"lead","department":"support","role":"Drafts new help articles from ticket cluster data, updates stale articles flagged by the Product Liaison, tracks coverage gaps, and maintains the article status registry — keeping the knowledge base accurate and customer-deflection-worthy.","heartbeat":"0 8 * * 1","budget":100,"active":true,"focus":["article-drafting","coverage-gaps","knowledge-base-maintenance","deflection-rate"],"tags":["leadership","support"],"body":"$10"},{"name":"Product Liaison","slug":"product-liaison","emoji":"🔗","type":"specialist","department":"support","role":"Monitors product release notes and changelogs to identify which help articles are invalidated or need updating after each release — so the knowledge base doesn't drift the day after a ship.","heartbeat":"0 16 * * 5","budget":60,"active":true,"focus":["release-monitoring","stale-article-detection","product-changelog","article-freshness"],"tags":["support","product"],"body":"$11"}],"jobs":[{"id":"weekly-gap-analysis","name":"Weekly Help Center Gap Analysis","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"content-writer","agentSlug":"content-writer","timeout":900,"prompt":"$12","cabinetPath":"cabinet-examples/cabinets/help-center","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"weekly-stale-sweep","name":"Weekly Stale Article Sweep","enabled":true,"schedule":"0 16 * * 5","provider":"claude-code","adapterType":"claude_local","ownerAgent":"product-liaison","agentSlug":"product-liaison","timeout":600,"prompt":"$13","cabinetPath":"cabinet-examples/cabinets/help-center","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$14","readmeHtml":"$15","tags":["support","knowledge-base","help-center","content","enterprise","cabinet"],"section":"Sales","stats":{"totalAgents":2,"totalJobs":2,"totalCabinets":1,"totalPages":7}}}]}]]}],"$L16","$L17","$L18","$L19","$L1a"]}]
+a:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L3",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L5",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}],"$L1b","$L1c"]}]]}],"$L1d"]]}],"$L1e"]}]}]
+b:["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true}]
+c:["$","script","script-1",{"src":"/_next/static/chunks/242ibphq-xhrb.js","async":true}]
+d:["$","$L1f",null,{"children":["$","$20",null,{"name":"Next.MetadataOutlet","children":"$@21"}]}]
+16:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Help Center Cabinet"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["✍️"," ","Content Writer"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🔗"," ","Product Liaison"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Help Center Gap Analysis"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Stale Article Sweep"}]]}]]]}],[]]}]}]]}]
+17:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-content-writer-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"✍️"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Content Writer"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Drafts new help articles from ticket cluster data, updates stale articles flagged by the Product Liaison, tracks coverage gaps, and maintains the article status registry — keeping the knowledge base accurate and customer-deflection-worthy."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 8 * * 1"}]]}]]}],["$","div","root-product-liaison-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🔗"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Product Liaison"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Monitors product release notes and changelogs to identify which help articles are invalidated or need updating after each release — so the knowledge base doesn't drift the day after a ship."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 16 * * 5"}]]}]]}]]}]]}]
+18:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","weekly-gap-analysis",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Help Center Gap Analysis"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","content-writer"]}]]}]]}],["$","div","weekly-stale-sweep",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Stale Article Sweep"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 16 * * 5"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","product-liaison"]}]]}]]}]]}]]}]
+22:Tf43,<h1>Help Center Cabinet</h1>
+<p>Two agents scan incoming tickets for unanswered questions, draft new help articles from customer language, and flag existing articles that need updating after product releases — so your knowledge base stays accurate and your deflection rate keeps climbing. Every draft, every gap flag, and every stale-article review is a file your team can approve and publish.</p>
+<blockquote>
+<p><strong>Keep Zendesk Guide or Intercom Articles. Replace the coverage gaps nobody tracks, the articles that went stale after the last release, and the "support wrote it once in 2022" docs customers still hit.</strong></p>
+</blockquote>
+<h2>Why this template</h2>
+<p>Knowledge bases degrade the day after a release. Support teams know which questions keep coming — but rarely have the bandwidth to turn them into articles. This cabinet makes help content a <strong>standing operation</strong>: gaps are identified weekly from real ticket data, drafts are written in the same language customers use, and stale articles are flagged before they generate a ticket.</p>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/product-liaison]]</strong> — Product Liaison. Monitors release notes and product changelogs; flags which existing articles are invalidated or need updating. Does not write articles.</li>
+<li><strong>[[.agents/content-writer]]</strong> — Content Writer. Lead agent. Drafts new articles from ticket cluster data, updates flagged articles, tracks coverage gaps, and maintains the article status registry. Sequences the full loop.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-gap-analysis]]</td>
+<td>Content Writer</td>
+<td>New article drafts in <code>/drafts/</code>, updated gap registry</td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Fri 16:00)</td>
+<td>[[.jobs/weekly-stale-sweep]]</td>
+<td>Product Liaison → Content Writer</td>
+<td>Stale article list + update drafts for post-release changes</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[content-workspace]] — article list with status (draft/published/stale), coverage gaps from top tickets, and articles needing update after recent releases.</li>
+<li>Browse <code>/drafts/</code> — article drafts the Writer agent produces, ready for human review and publish.</li>
+<li>Open <code>/article-registry.md</code> — the canonical list of all articles with status, last-updated date, and linked ticket cluster.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Zendesk or Intercom (ticket source for gap analysis), Zendesk Guide or Intercom Articles (publish destination).
+<strong>Recommended:</strong> Product changelog or release notes feed, Notion or Confluence (internal docs to pull product detail from), Slack (<code>#help-center-updates</code> for publish notifications).</p>
+<h2>Article coverage (demo data)</h2>
+<table>
+<thead>
+<tr>
+<th>Article</th>
+<th>Status</th>
+<th>Ticket Hits (7d)</th>
+<th>Last Updated</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Setting up SSO with Okta</td>
+<td>Published</td>
+<td>34</td>
+<td>2026-03-12</td>
+</tr>
+<tr>
+<td>API rate limits explained</td>
+<td>Draft</td>
+<td>28</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Exporting data to CSV</td>
+<td>Published</td>
+<td>21</td>
+<td>2026-01-08 — <strong>Stale</strong></td>
+</tr>
+<tr>
+<td>Billing — changing payment method</td>
+<td>Published</td>
+<td>19</td>
+<td>2026-04-01</td>
+</tr>
+<tr>
+<td>iOS app — troubleshooting login</td>
+<td>Draft</td>
+<td>16</td>
+<td>—</td>
+</tr>
+<tr>
+<td>Workspace roles and permissions</td>
+<td>Published</td>
+<td>14</td>
+<td>2025-11-20 — <strong>Stale</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Drafts in <code>/drafts/</code> are written from real ticket language, not from the inside out.</strong></p>19:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$22"}}]}]]}]
+1a:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L23",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set help-center","label":"Install"}]}]}]]}]
+1b:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+1c:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+1d:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+1e:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+21:null

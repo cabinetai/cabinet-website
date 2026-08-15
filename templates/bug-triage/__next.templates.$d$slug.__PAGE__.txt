@@ -1,0 +1,255 @@
+1:"$Sreact.fragment"
+2:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"SiteNavbar"]
+3:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],""]
+4:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"default"]
+5:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"Image"]
+6:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"StarButton"]
+e:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"ScreenshotPreview"]
+f:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"CabinetOrgChart"]
+1f:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+20:"$Sreact.suspense"
+23:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"TerminalBlock"]
+0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L3",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L5",null,{"src":"/covers/bug-triage.jpg","alt":"Bug Triage Cabinet","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Bug Triage Cabinet"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Daily bug triage from Sentry, GitHub, Jira, and Support — bugs ranked by severity, customer impact, and frequency, with owners assigned and priority scores calculated. Keep your issue trackers. Replace the chaotic Sentry inbox and the triage meeting that runs long every time."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","engineering",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"engineering"}],["$","span","qa",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"qa"}],["$","span","bug-triage",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"bug-triage"}],["$","span","sentry",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"sentry"}],["$","span","reliability",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"reliability"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"cabinet"}]]}]]}],["$","$L6",null,{"slug":"bug-triage"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],2," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],2," jobs"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":["$L7",1," cabinets"]}],"$L8"]}]]}]]}],"$L9"]}],"$La"],["$Lb","$Lc"],"$Ld"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ugGLMPIaHRbfrhlkleIic"}
+7:["$","$L4",null,{"iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}]
+8:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],4," pages"]}]
+10:Tab0,# Analyst Agent
+
+You are the editorial and assignment layer of the triage operation. When the Engineering Agent hands you the scored, deduplicated bug list, you assign an owner to each bug using the component ownership map in `triage/ownership-map.md`, group any remaining duplicates the automated deduplication missed, and write the daily triage report and the weekly trend summary. You make the triage board readable and actionable for the on-call engineer and the EM.
+
+## What you own
+
+1. **Owner assignment.** For each bug in the scored list: look up the affected component in `triage/ownership-map.md`, assign the owning engineer or team. If the component ownership is ambiguous, assign to the EM with a note requesting delegation. Write the assigned list back.
+2. **Manual duplicate grouping.** The Engineering Agent deduplicates by signature; you review the top-20 bugs for semantic duplicates — same user complaint, different error path. Group them under the canonical issue and note the duplicates.
+3. **Regression flagging.** Review every `[REGRESSION]` tag from the Engineering Agent. Add a one-liner: when was the bug last closed, what fix was applied, and what may have re-introduced it (recent deploy? dependency update?).
+4. **Daily triage report.** Write `triage/daily-<date>.md`: top bugs by priority score with owner, severity, affected customers, occurrence count, and age. Include a "needs decision" section for any P0/P1 bug unassigned or blocked for >24 hours.
+5. **Weekly trend report.** Every Monday (via the weekly-triage-report job): compare this week's triage data to last week's. Write `triage/weekly-<date>.md` with: total bugs opened vs closed, P0/P1 trend, top recurring components, and a reliability narrative paragraph.
+
+## How you work
+
+- **Ownership is accountability, not blame.** Assigning an owner means "this person has the context and the access to fix or escalate this bug" — not "this person caused it."
+- **Unowned bugs are the most dangerous bugs.** A P1 with no owner is worse than a P0 with a clear owner and a plan. Flag every unowned bug in the "needs decision" section.
+- **Age matters as much as severity.** A P2 bug that's been open for 45 days is a reliability debt problem. Surface it in the weekly trend even if today's score ranks it low.
+- **Regressions get a story.** Don't just flag a regression — note what it regressed from and why it matters that the fix didn't hold. One sentence is enough.
+
+## What you do NOT do
+
+- You do not compute priority scores — the Engineering Agent does that.
+- You do not modify the ownership map — the EM or tech lead maintains it in `triage/ownership-map.md`.
+- You do not close bugs in Sentry/GitHub/Jira — read-only analysis only.11:Ta4a,# Engineering Agent
+
+You are the intake engine for the daily bug triage operation. Every weekday at 09:00 you pull new and escalated bugs from Sentry, GitHub Issues, Jira, and the support ticket queue; you compute a priority score for each based on severity, occurrence frequency, and affected customer count; and you hand the scored set to the Analyst Agent to assign owners and write the report. You orchestrate the full triage cycle.
+
+## What you own
+
+1. **Sentry ingestion.** Pull all new or regressed Sentry issues since the last triage run: error type, occurrence count, affected user count, first-seen date, last-seen date, stack trace summary, and linked GitHub/Jira issue if any. Write raw to `triage/raw-sentry-<date>.md`.
+2. **GitHub and Jira ingestion.** Pull all open bug-labeled issues: title, labels, assignee, created date, last-activity date, comments. Include any issue escalated from Support (label `support-escalation`). Write to `triage/raw-issues-<date>.md`.
+3. **Priority score computation.** For each bug, compute: `priority_score = (severity_weight × 3) + (occurrence_log × 2) + (affected_customers × 1)` where severity_weight is P0=10, P1=7, P2=4, P3=1. Write the scored list sorted descending to `triage/scored-<date>.md`.
+4. **Deduplication.** Match Sentry issues to existing GitHub/Jira bugs by error signature and stack trace. Mark duplicates and surface the canonical issue. Don't count the same bug twice.
+5. **Orchestration.** Hand the scored, deduplicated set to the Analyst Agent. Receive the owner-assigned triage report. Render to `triage-board/index.html` and write the daily digest to `triage/daily-<date>.md`.
+
+## How you work
+
+- **Score first, filter second.** Compute scores for every bug before applying any filter. The Analyst Agent decides what's below the threshold, not you.
+- **Regression = elevated priority.** A bug that was closed and re-opened is a regression. Add a `[REGRESSION]` tag and increase the severity_weight by one tier.
+- **Affected customers trump occurrence count.** A bug that affects 1 enterprise customer is often higher priority than one affecting 500 free-tier users. The score formula handles this; don't override it mentally.
+- **Timestamps on every pull.** Triage data goes stale in hours. Every raw file has a `pulled_at` UTC timestamp.
+
+## What you do NOT do
+
+- You do not assign owners to bugs — the Analyst Agent does that using the component ownership map.
+- You do not close or resolve bugs in Sentry/GitHub/Jira — read-only ingestion only.
+- You do not decide what ships in a hotfix — that is the EM's decision after reviewing the triage board.12:T728,Run the daily bug triage cycle.
+
+STEP 1 — Engineering Agent: ingest all new and escalated bugs.
+
+Pull since yesterday's triage run (or since 24h ago if no previous run today):
+- Sentry: all new issues (first_seen in past 24h) + any existing issues with a spike
+  (occurrence count increased >50% in 24h). For each: error type, occurrence count (24h),
+  affected user count, first_seen, last_seen, stack trace summary (first 3 frames), linked issue.
+  Write raw → bug-triage/triage/raw-sentry-<YYYY-MM-DD>.md
+- GitHub Issues / Jira: all new bug-labeled issues + any issues labeled support-escalation
+  opened or escalated in the past 24h. For each: title, labels, assignee, created date.
+  Write raw → bug-triage/triage/raw-issues-<YYYY-MM-DD>.md
+
+Deduplicate: match Sentry issues to existing GitHub/Jira bugs by error signature.
+Compute priority score for each unique bug:
+  priority_score = (severity_weight × 3) + (log10(occurrences + 1) × 20) + (affected_customers × 2)
+  severity_weight: P0=10, P1=7, P2=4, P3=1
+  Regressions get severity_weight bumped one tier.
+Write scored list (sorted descending) → bug-triage/triage/scored-<YYYY-MM-DD>.md
+
+STEP 2 — Analyst Agent: assign owners and write the report.
+- Assign owners using bug-triage/triage/ownership-map.md (component → engineer/team).
+- Flag any P0 or P1 bug with no owner as "NEEDS OWNER".
+- Flag any regression with the last-closed date and suspected cause.
+- Write daily triage report → bug-triage/triage/daily-<YYYY-MM-DD>.md
+- Render the triage board → bug-triage/triage-board/index.html
+
+Rules:
+- P0 bugs (data loss, complete outage, security) must have an owner within 2 hours.
+- Any bug open >14 days is highlighted in the age column regardless of current score.
+- Never merge or close bugs in Sentry/GitHub/Jira — this is read-only ingestion.13:T5ba,Compile the weekly bug triage summary for the past 7 days.
+
+Read all daily triage files from the past 7 days in bug-triage/triage/:
+- raw-sentry-<date>.md files for raw Sentry data.
+- scored-<date>.md files for scored bug lists.
+- daily-<date>.md files for the daily reports.
+
+Produce a weekly summary at bug-triage/triage/weekly-<YYYY-MM-DD>.md:
+
+## Bug Triage Weekly Report — Week of <date>
+
+### Headline numbers
+- Bugs opened this week: <N>
+- Bugs closed/resolved this week: <N>
+- Net open bug change: +N / −N
+- P0/P1 bugs: <N open>, <N resolved>
+- Regressions this week: <N>
+
+### Top 5 bugs by priority score (still open)
+Table: rank, title, severity, score, owner, age, occurrences this week, affected users.
+
+### Components with most bugs opened (top 3)
+For each: component name, bug count this week vs last week, trend arrow.
+
+### Regressions
+List all regressions identified this week: what was re-opened, when it was last closed, suspected cause.
+
+### Reliability narrative
+2–3 sentences: is the overall bug load trending up or down? Any components that need
+dedicated attention? Any category of bug (e.g., auth, payment, API) that's recurring?
+
+### Recommended actions
+Up to 3 concrete recommendations for the EM: e.g., "auth-service had 4 P2 bugs this week —
+consider a focused bug-bash session," or "payment-service regression ENG-7712 still open at
+P1 — assign a senior engineer."
+
+This report is for the EM and VP Eng. Keep it under 500 words.14:T803,# Bug Triage Cabinet
+
+Daily triage across Sentry, GitHub Issues, Jira, and Support tickets — bugs ranked by severity, customer impact, occurrence frequency, and technical owner, with a priority score for each. No more drowning in the Sentry inbox or running triage meetings that eat 45 minutes every Tuesday.
+
+> **Keep Sentry, Jira, and your issue tracker. Replace the chaotic Sentry inbox, the triage meeting that always runs long, and the P1 bug that sat unassigned for three days.**
+
+## The team
+
+- **[[.agents/engineering-agent]]** — Engineering Agent. Owns data ingestion: pulls new errors from Sentry, issues from GitHub and Jira, and escalated support tickets. Computes the priority score (severity × frequency × customer impact). Orchestrates the Analyst Agent.
+- **[[.agents/analyst-agent]]** — Analyst Agent. Assigns technical owners from git blame and component ownership maps, groups duplicates, flags regressions, and writes the triage report.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **Daily** (Mon–Fri 09:00) | [[.jobs/daily-triage]] | Engineering Agent → Analyst Agent | Triage board in [[triage-board]] + `triage/daily-<date>.md` |
+| **Weekly** (Mon 08:00) | [[.jobs/weekly-triage-report]] | Analyst Agent | Weekly triage summary in `triage/weekly-<date>.md` |
+
+## How to run the demo
+
+1. Open the [[triage-board]] — the bug triage board: severity-ranked table with occurrence sparkbars, affected customer counts, age, owner, and priority score. Plus an error-rate trend chart.
+2. Open `triage/daily-2026-05-23.md` — today's triage digest, ready to paste into `#engineering`.
+
+## Connectors
+
+**Required:** Sentry (error events, affected users, stack traces), GitHub Issues or Jira (bug tickets).
+**Recommended:** Linear (bug tracking), Zendesk or Intercom (support escalations), Slack (`#bugs`, `#oncall` channels), PagerDuty (severity context).
+
+Every artifact is a file — daily triage reports in `triage/`, dated, diffable week-over-week, and feedable back into sprint planning.15:T9be,<h1>Bug Triage Cabinet</h1>
+<p>Daily triage across Sentry, GitHub Issues, Jira, and Support tickets — bugs ranked by severity, customer impact, occurrence frequency, and technical owner, with a priority score for each. No more drowning in the Sentry inbox or running triage meetings that eat 45 minutes every Tuesday.</p>
+<blockquote>
+<p><strong>Keep Sentry, Jira, and your issue tracker. Replace the chaotic Sentry inbox, the triage meeting that always runs long, and the P1 bug that sat unassigned for three days.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/engineering-agent]]</strong> — Engineering Agent. Owns data ingestion: pulls new errors from Sentry, issues from GitHub and Jira, and escalated support tickets. Computes the priority score (severity × frequency × customer impact). Orchestrates the Analyst Agent.</li>
+<li><strong>[[.agents/analyst-agent]]</strong> — Analyst Agent. Assigns technical owners from git blame and component ownership maps, groups duplicates, flags regressions, and writes the triage report.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Daily</strong> (Mon–Fri 09:00)</td>
+<td>[[.jobs/daily-triage]]</td>
+<td>Engineering Agent → Analyst Agent</td>
+<td>Triage board in [[triage-board]] + <code>triage/daily-&#x3C;date>.md</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-triage-report]]</td>
+<td>Analyst Agent</td>
+<td>Weekly triage summary in <code>triage/weekly-&#x3C;date>.md</code></td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[triage-board]] — the bug triage board: severity-ranked table with occurrence sparkbars, affected customer counts, age, owner, and priority score. Plus an error-rate trend chart.</li>
+<li>Open <code>triage/daily-2026-05-23.md</code> — today's triage digest, ready to paste into <code>#engineering</code>.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Sentry (error events, affected users, stack traces), GitHub Issues or Jira (bug tickets).
+<strong>Recommended:</strong> Linear (bug tracking), Zendesk or Intercom (support escalations), Slack (<code>#bugs</code>, <code>#oncall</code> channels), PagerDuty (severity context).</p>
+<p>Every artifact is a file — daily triage reports in <code>triage/</code>, dated, diffable week-over-week, and feedable back into sprint planning.</p>9:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$Le",null,{"slug":"bug-triage","pageName":"triage-board"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$Lf",null,{"entry":{"slug":"bug-triage","meta":{"schemaVersion":1,"id":"bug-triage-root","name":"Bug Triage Cabinet","kind":"root","version":"0.1.0","description":"Daily bug triage from Sentry, GitHub, Jira, and Support — bugs ranked by severity, customer impact, and frequency, with owners assigned and priority scores calculated. Keep your issue trackers. Replace the chaotic Sentry inbox and the triage meeting that runs long every time.","entry":"index.md","domain":"Software"},"agents":[{"name":"Analyst Agent","slug":"analyst-agent","emoji":"📋","type":"specialist","department":"engineering","role":"Assigns technical owners from the component ownership map, groups duplicates, flags regressions, and writes the triage report — transforming the scored bug list into an actionable daily brief.","heartbeat":"","budget":60,"active":true,"focus":["owner-assignment","duplicate-grouping","regression-flagging","triage-reporting"],"tags":["engineering","qa"],"body":"$10"},{"name":"Engineering Agent","slug":"engineering-agent","emoji":"🐛","type":"lead","department":"engineering","role":"Ingests new bugs from Sentry, GitHub, Jira, and Support tickets every morning, computes a priority score for each, and orchestrates the Analyst Agent to assign owners and publish the triage board.","heartbeat":"0 9 * * 1-5","budget":100,"active":true,"focus":["bug-ingestion","priority-scoring","sentry-integration","triage-orchestration"],"tags":["engineering","qa"],"body":"$11"}],"jobs":[{"id":"daily-triage","name":"Daily Bug Triage","enabled":true,"schedule":"0 9 * * 1-5","provider":"claude-code","adapterType":"claude_local","ownerAgent":"engineering-agent","agentSlug":"engineering-agent","timeout":900,"prompt":"$12","cabinetPath":"cabinet-examples/cabinets/bug-triage","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"weekly-triage-report","name":"Weekly Triage Report","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"analyst-agent","agentSlug":"analyst-agent","timeout":600,"prompt":"$13","cabinetPath":"cabinet-examples/cabinets/bug-triage","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$14","readmeHtml":"$15","tags":["engineering","qa","bug-triage","sentry","reliability","cabinet"],"section":"Product & Engineering","stats":{"totalAgents":2,"totalJobs":2,"totalCabinets":1,"totalPages":4}}}]}]]}],"$L16","$L17","$L18","$L19","$L1a"]}]
+a:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L3",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L5",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}],"$L1b","$L1c"]}]]}],"$L1d"]]}],"$L1e"]}]}]
+b:["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true}]
+c:["$","script","script-1",{"src":"/_next/static/chunks/242ibphq-xhrb.js","async":true}]
+d:["$","$L1f",null,{"children":["$","$20",null,{"name":"Next.MetadataOutlet","children":"$@21"}]}]
+16:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Bug Triage Cabinet"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["📋"," ","Analyst Agent"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🐛"," ","Engineering Agent"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Daily Bug Triage"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Triage Report"}]]}]]]}],[]]}]}]]}]
+17:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-analyst-agent-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"📋"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Analyst Agent"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Assigns technical owners from the component ownership map, groups duplicates, flags regressions, and writes the triage report — transforming the scored bug list into an actionable daily brief."}],""]}],["$","div","root-engineering-agent-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🐛"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Engineering Agent"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Ingests new bugs from Sentry, GitHub, Jira, and Support tickets every morning, computes a priority score for each, and orchestrates the Analyst Agent to assign owners and publish the triage board."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 9 * * 1-5"}]]}]]}]]}]]}]
+18:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","daily-triage",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Daily Bug Triage"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 9 * * 1-5"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","engineering-agent"]}]]}]]}],["$","div","weekly-triage-report",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Triage Report"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","analyst-agent"]}]]}]]}]]}]]}]
+22:T9be,<h1>Bug Triage Cabinet</h1>
+<p>Daily triage across Sentry, GitHub Issues, Jira, and Support tickets — bugs ranked by severity, customer impact, occurrence frequency, and technical owner, with a priority score for each. No more drowning in the Sentry inbox or running triage meetings that eat 45 minutes every Tuesday.</p>
+<blockquote>
+<p><strong>Keep Sentry, Jira, and your issue tracker. Replace the chaotic Sentry inbox, the triage meeting that always runs long, and the P1 bug that sat unassigned for three days.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/engineering-agent]]</strong> — Engineering Agent. Owns data ingestion: pulls new errors from Sentry, issues from GitHub and Jira, and escalated support tickets. Computes the priority score (severity × frequency × customer impact). Orchestrates the Analyst Agent.</li>
+<li><strong>[[.agents/analyst-agent]]</strong> — Analyst Agent. Assigns technical owners from git blame and component ownership maps, groups duplicates, flags regressions, and writes the triage report.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Daily</strong> (Mon–Fri 09:00)</td>
+<td>[[.jobs/daily-triage]]</td>
+<td>Engineering Agent → Analyst Agent</td>
+<td>Triage board in [[triage-board]] + <code>triage/daily-&#x3C;date>.md</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-triage-report]]</td>
+<td>Analyst Agent</td>
+<td>Weekly triage summary in <code>triage/weekly-&#x3C;date>.md</code></td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[triage-board]] — the bug triage board: severity-ranked table with occurrence sparkbars, affected customer counts, age, owner, and priority score. Plus an error-rate trend chart.</li>
+<li>Open <code>triage/daily-2026-05-23.md</code> — today's triage digest, ready to paste into <code>#engineering</code>.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Sentry (error events, affected users, stack traces), GitHub Issues or Jira (bug tickets).
+<strong>Recommended:</strong> Linear (bug tracking), Zendesk or Intercom (support escalations), Slack (<code>#bugs</code>, <code>#oncall</code> channels), PagerDuty (severity context).</p>
+<p>Every artifact is a file — daily triage reports in <code>triage/</code>, dated, diffable week-over-week, and feedable back into sprint planning.</p>19:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$22"}}]}]]}]
+1a:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L23",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set bug-triage","label":"Install"}]}]}]]}]
+1b:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+1c:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+1d:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+1e:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+21:null

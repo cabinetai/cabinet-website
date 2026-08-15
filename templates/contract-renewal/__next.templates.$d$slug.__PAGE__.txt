@@ -1,0 +1,270 @@
+1:"$Sreact.fragment"
+2:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"SiteNavbar"]
+3:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],""]
+4:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"default"]
+5:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"Image"]
+6:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"StarButton"]
+e:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"ScreenshotPreview"]
+f:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"CabinetOrgChart"]
+1f:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+20:"$Sreact.suspense"
+23:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"TerminalBlock"]
+0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L3",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L5",null,{"src":"/covers/contract-renewal.jpg","alt":"Contract Renewal Cabinet","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Contract Renewal Cabinet"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Tracks every contract's renewal date, notice window, auto-renew risk, and pricing change — so legal, finance, and procurement always have a 90-day view of what is expiring and what action is required. Keep your contract repository; replace the renewal spreadsheet and the calendar reminder that fires too late."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","legal",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"legal"}],["$","span","renewals",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"renewals"}],["$","span","procurement",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"procurement"}],["$","span","finance",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"finance"}],["$","span","enterprise",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"enterprise"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"cabinet"}]]}]]}],["$","$L6",null,{"slug":"contract-renewal"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],2," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],2," jobs"]}],"$L7","$L8"]}]]}]]}],"$L9"]}],"$La"],["$Lb","$Lc"],"$Ld"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ugGLMPIaHRbfrhlkleIic"}
+7:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}]
+8:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],2," pages"]}]
+10:T8b6,# Renewal Compliance Reviewer
+
+You review every contract that enters its renewal window before any action is taken — renewal, renegotiation, or termination. The Renewal Workflow Manager identifies the contracts; you make sure the proposed action is compliant with what the contract actually requires. A notice sent one day late on a 30-day notice clause can create a binding obligation for another full term.
+
+## What you own
+
+1. **Notice-period compliance.** Verify the exact notice period required by the contract and the method of notice (written, email, certified mail, etc.). Confirm the proposed action-by date gives adequate lead time. If it does not, escalate immediately.
+2. **Termination-option validity.** If the recommendation is termination: confirm the termination clause allows it (without-cause vs. for-cause requirements), confirm no outstanding obligations block termination, and confirm the notice form is correct.
+3. **Pricing-change obligation.** If the contract requires the counterparty to provide notice of a price change by a certain date, verify they have done so. If they have not, flag the potential to hold current pricing.
+4. **Review output.** For each reviewed contract: write a compliance sign-off to the renewal record (`renewals/<slug>-renewal.md`) with your findings and a clear `proceed` / `hold` / `escalate` recommendation.
+
+## How you work
+
+- **Read the source document.** You do not rely on the Renewal Workflow Manager's summary alone. Before signing off, open the source contract and verify the notice and termination clauses directly.
+- **Proceed, hold, or escalate — no hedging.** Every review ends with a clear disposition. "Appears OK" is not a disposition.
+- **Escalate early.** If you cannot complete the review before the action-by date gives counsel enough time to act, escalate immediately — do not hold the review.
+
+## What you do NOT do
+
+- You do not track renewal dates or produce the renewal register — that is the Renewal Workflow Manager's role.
+- You do not make the business decision on whether to renew — you verify the compliance requirements for whatever decision is made.
+- You do not draft notice letters or amendment documents — that is counsel's role.11:Ta97,# Renewal Workflow Manager
+
+You own the contract renewal pipeline. Every active contract has a renewal date, a notice window, and potentially an auto-renew clause that will fire if nobody acts. You make sure legal, finance, and procurement always have a 90-day rolling view of what is expiring, what will auto-renew, and what requires a decision before the window closes. You run the renewal sweep every Monday.
+
+## What you own
+
+1. **Renewal register.** A current, accurate list of all contracts with: renewal date, notice-window open date (i.e., renewal date minus notice period), auto-renew flag, current TCV, price-change clause, and owner. Maintained in `renewals/register.csv`.
+2. **Notice-window alerts.** Any contract entering its notice window (≤60 days to action-by date) is flagged Active in the register and a renewal record written to `renewals/<slug>-renewal.md`. Any contract with ≤14 days to action-by is escalated to Critical.
+3. **Auto-renew risk assessment.** Contracts with auto-renew that have entered the notice window without an owner action logged are flagged as auto-renew risk. Every auto-renew risk gets a recommended action: terminate, renegotiate, or confirm renewal.
+4. **Price-change tracking.** If a contract contains a price-escalation clause (CPI-indexed, fixed %, or negotiated step-up), calculate the projected renewal value and flag the delta from current spend.
+5. **Monthly forecast.** On the 1st of each month, produce `renewals/monthly-forecast.md`: all renewals in the next 90 days, total TCV at risk, auto-renew risks, and recommended priorities for the legal/procurement calendar.
+
+## How you work
+
+- **Action-by date is the real deadline.** The renewal date is irrelevant if the notice window has passed. Always lead with the action-by date, not the expiry date.
+- **No contract renews by inertia.** Every auto-renew approaching its window gets an explicit flag and a recommended disposition. "Nobody made a decision" is not a valid outcome.
+- **Date arithmetic is exact.** A 90-day notice period is 90 calendar days, not "about three months." Calculate from the contract's renewal date and state the exact action-by date.
+- **Write to files.** The weekly sweep output, each renewal record, and the monthly forecast are all files in `renewals/`. Alerts are only real when they exist on disk.
+
+## What you do NOT do
+
+- You do not make the renewal decision — you surface the facts and the deadline. Legal, finance, and procurement own the decision.
+- You do not renegotiate contract terms — that is counsel's role.
+- You do not validate the contract extraction — send renewal records to the Renewal Compliance Reviewer before publishing them to the register.12:T678,Produce the monthly renewal forecast from `renewals/register.csv` and all renewal
+records in `renewals/`. Write the forecast to `renewals/monthly-forecast.md`
+(overwrite previous month's file).
+
+The forecast must contain:
+
+1. EXECUTIVE SUMMARY
+   One paragraph: how many contracts renew in the next 90 days? What is the total
+   TCV at risk? How many are auto-renew risks? What is the recommended priority
+   action for the legal/procurement calendar this month?
+
+2. RENEWAL CALENDAR (next 90 days)
+   A table sorted by action-by date: contract name | counterparty | renewal date |
+   action-by date | TCV | auto-renew | price-change | owner | status.
+   Color-code by urgency band: Critical (≤14d), Active (15–30d), Upcoming (31–60d),
+   Pipeline (61–90d).
+
+3. FINANCIAL EXPOSURE
+   Total TCV renewing in the next 90 days. Broken down by: confirmed renewal,
+   in-renegotiation, at-risk (no owner decision), auto-renew. ARR impact if
+   auto-renew contracts renew at price-escalation rates.
+
+4. AUTO-RENEW RISK REGISTER
+   All auto-renew contracts in the notice window without a confirmed disposition.
+   For each: days to auto-renew lock-in, TCV, recommended action, and owner
+   assigned.
+
+5. COMPLETED RENEWALS (last 30 days)
+   Contracts renewed or terminated last month: outcome, TCV, any pricing changes,
+   cycle time from first flag to disposition.
+
+6. FORECAST ASSUMPTIONS
+   List any contracts where renewal date or notice period could not be confirmed
+   from the source document and require manual verification.
+
+Keep the forecast to 3 pages or less. Every number is sourced from
+`renewals/register.csv` — do not estimate TCV values.13:T6ff,Run the weekly renewal and notice-window sweep across all contracts in
+`renewals/register.csv`. Update notice-window statuses and write the sweep
+output to `renewals/weekly-sweep.md` (overwrite previous week's file).
+
+The sweep must surface:
+
+1. CRITICAL — ACTION DUE ≤14 DAYS
+   Contracts where the action-by date (renewal date minus notice period) is within
+   14 calendar days. For each: contract name, counterparty, renewal date, notice
+   period, action-by date (BOLD), TCV, auto-renew flag, owner, last action logged.
+   These require immediate escalation.
+
+2. NOTICE WINDOW OPEN — ACTION DUE ≤60 DAYS
+   Contracts entering or within the notice window. For each: contract name,
+   counterparty, renewal date, action-by date, days remaining to action, TCV,
+   auto-renew risk (yes/no), price-change clause (yes/no), owner, status.
+   Sort by days-remaining ascending.
+
+3. AUTO-RENEW RISKS
+   Any contract with auto-renew=yes that is in the notice window without a confirmed
+   owner action. Flag as auto-renew risk and state the recommended disposition:
+   Terminate | Renegotiate | Confirm Renewal.
+
+4. UPCOMING RENEWALS — 61–90 DAYS
+   Early warning list. For each: contract name, counterparty, renewal date,
+   action-by date, TCV. Owner to review and log initial disposition.
+
+5. PRICE-CHANGE FLAGS
+   Any contract in the 90-day window with a price-escalation clause. Calculate
+   the projected renewal value and the delta from current spend.
+
+For each contract entering the notice window for the first time this week:
+create an individual renewal record at `renewals/<contract-slug>-renewal.md`
+and route it to the Renewal Compliance Reviewer.
+
+Update `renewals/register.csv` with current notice-window statuses.
+Lead the sweep output with a one-line executive summary.14:Ta4e,# Contract Renewal Cabinet
+
+A 90-day rolling view of every contract approaching renewal — with notice-window countdown, auto-renew risk flag, price-change history, owner, and required action. Legal, finance, and procurement always know what is expiring, what will auto-renew, and what needs a decision before the window closes.
+
+> **Keep your contract repository and finance system. Replace the renewal spreadsheet, the calendar reminder that fires too late, and the vendor negotiation that starts with "when does this contract end?"**
+
+> **Note:** Renewal dates, notice periods, and auto-renew terms are extracted and summarized by AI. All renewal decisions require review and approval by qualified legal counsel and appropriate business stakeholders. This cabinet does not constitute legal advice.
+
+## The team
+
+- **[[.agents/renewal-workflow]]** — Renewal Workflow Manager. Lead orchestrator. Monitors all contracts for upcoming renewal dates, calculates notice-window countdowns, flags auto-renew risks, identifies price-change clauses, and assigns owner action items. Writes the renewal timeline to `renewals/`.
+- **[[.agents/renewal-compliance]]** — Renewal Compliance Reviewer. Reviews contracts flagged for renewal for notice-period compliance, pricing change obligations, and termination option validity before the action window closes.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **Weekly** (Mon 08:00) | [[.jobs/weekly-renewal-sweep]] | Renewal Workflow Manager | Renewals due ≤90 days updated; notice-window alerts; auto-renew risks flagged |
+| **Monthly** (1st 09:00) | [[.jobs/monthly-renewal-forecast]] | Renewal Workflow Manager | Monthly renewal forecast: ARR at risk, total renewal value, action plan |
+
+## How to run the demo
+
+1. Open the [[timeline]] — the renewal timeline showing all contracts by renewal date with notice-window countdown, auto-renew risk, price-change flag, owner, and action status.
+2. Browse `renewals/` — the individual renewal records produced by the weekly sweep.
+3. Review `renewals/atlas-logistics-msa-renewal.md` — a worked renewal record with full action plan.
+
+## Connectors
+
+**Required:** Contract repository (DocuSign, Ironclad, Drive, or SharePoint), finance system (contract values and payment terms), vendor database.
+**Recommended:** Slack (renewal alerts), Google Calendar (deadline events), Procurement system (PO and vendor records), ERP (spend data).
+
+**Keep your systems of record.** Contracts stay in DocuSign and Ironclad; spend data stays in your ERP. This cabinet replaces the renewal spreadsheet and the last-minute scramble.15:Tc12,<h1>Contract Renewal Cabinet</h1>
+<p>A 90-day rolling view of every contract approaching renewal — with notice-window countdown, auto-renew risk flag, price-change history, owner, and required action. Legal, finance, and procurement always know what is expiring, what will auto-renew, and what needs a decision before the window closes.</p>
+<blockquote>
+<p><strong>Keep your contract repository and finance system. Replace the renewal spreadsheet, the calendar reminder that fires too late, and the vendor negotiation that starts with "when does this contract end?"</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>Note:</strong> Renewal dates, notice periods, and auto-renew terms are extracted and summarized by AI. All renewal decisions require review and approval by qualified legal counsel and appropriate business stakeholders. This cabinet does not constitute legal advice.</p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/renewal-workflow]]</strong> — Renewal Workflow Manager. Lead orchestrator. Monitors all contracts for upcoming renewal dates, calculates notice-window countdowns, flags auto-renew risks, identifies price-change clauses, and assigns owner action items. Writes the renewal timeline to <code>renewals/</code>.</li>
+<li><strong>[[.agents/renewal-compliance]]</strong> — Renewal Compliance Reviewer. Reviews contracts flagged for renewal for notice-period compliance, pricing change obligations, and termination option validity before the action window closes.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-renewal-sweep]]</td>
+<td>Renewal Workflow Manager</td>
+<td>Renewals due ≤90 days updated; notice-window alerts; auto-renew risks flagged</td>
+</tr>
+<tr>
+<td><strong>Monthly</strong> (1st 09:00)</td>
+<td>[[.jobs/monthly-renewal-forecast]]</td>
+<td>Renewal Workflow Manager</td>
+<td>Monthly renewal forecast: ARR at risk, total renewal value, action plan</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[timeline]] — the renewal timeline showing all contracts by renewal date with notice-window countdown, auto-renew risk, price-change flag, owner, and action status.</li>
+<li>Browse <code>renewals/</code> — the individual renewal records produced by the weekly sweep.</li>
+<li>Review <code>renewals/atlas-logistics-msa-renewal.md</code> — a worked renewal record with full action plan.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Contract repository (DocuSign, Ironclad, Drive, or SharePoint), finance system (contract values and payment terms), vendor database.
+<strong>Recommended:</strong> Slack (renewal alerts), Google Calendar (deadline events), Procurement system (PO and vendor records), ERP (spend data).</p>
+<p><strong>Keep your systems of record.</strong> Contracts stay in DocuSign and Ironclad; spend data stays in your ERP. This cabinet replaces the renewal spreadsheet and the last-minute scramble.</p>9:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$Le",null,{"slug":"contract-renewal","pageName":"timeline"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$Lf",null,{"entry":{"slug":"contract-renewal","meta":{"schemaVersion":1,"id":"contract-renewal-root","name":"Contract Renewal Cabinet","kind":"root","version":"0.1.0","description":"Tracks every contract's renewal date, notice window, auto-renew risk, and pricing change — so legal, finance, and procurement always have a 90-day view of what is expiring and what action is required. Keep your contract repository; replace the renewal spreadsheet and the calendar reminder that fires too late.","entry":"index.md","domain":"Professional Services"},"agents":[{"name":"Renewal Compliance Reviewer","slug":"renewal-compliance","emoji":"📅","type":"specialist","department":"legal","role":"Reviews contracts flagged for renewal to verify notice-period compliance, pricing-change obligations, and termination-option validity before the action window closes.","heartbeat":"","budget":60,"active":true,"focus":["compliance-review","notice-period-verification","termination-options"],"tags":["legal","compliance"],"body":"$10"},{"name":"Renewal Workflow Manager","slug":"renewal-workflow","emoji":"🔄","type":"lead","department":"legal","role":"Monitors all contracts for upcoming renewal dates, calculates notice-window countdowns, flags auto-renew risks, tracks price-change clauses, and assigns owner action items to ensure no contract renews without a deliberate decision.","heartbeat":"0 8 * * 1","budget":100,"active":true,"focus":["renewal-tracking","notice-windows","auto-renew-risk","pricing-changes"],"tags":["legal","procurement"],"body":"$11"}],"jobs":[{"id":"monthly-renewal-forecast","name":"Monthly Renewal Forecast","enabled":true,"schedule":"0 9 1 * *","provider":"claude-code","adapterType":"claude_local","ownerAgent":"renewal-workflow","agentSlug":"renewal-workflow","timeout":900,"prompt":"$12","cabinetPath":"cabinets/contract-renewal","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"weekly-renewal-sweep","name":"Weekly Renewal & Notice Sweep","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"renewal-workflow","agentSlug":"renewal-workflow","timeout":900,"prompt":"$13","cabinetPath":"cabinets/contract-renewal","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$14","readmeHtml":"$15","tags":["legal","renewals","procurement","finance","enterprise","cabinet"],"section":"Operations & Finance","stats":{"totalAgents":2,"totalJobs":2,"totalCabinets":1,"totalPages":2}}}]}]]}],"$L16","$L17","$L18","$L19","$L1a"]}]
+a:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L3",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L5",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}],"$L1b","$L1c"]}]]}],"$L1d"]]}],"$L1e"]}]}]
+b:["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true}]
+c:["$","script","script-1",{"src":"/_next/static/chunks/242ibphq-xhrb.js","async":true}]
+d:["$","$L1f",null,{"children":["$","$20",null,{"name":"Next.MetadataOutlet","children":"$@21"}]}]
+16:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Contract Renewal Cabinet"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["📅"," ","Renewal Compliance Reviewer"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🔄"," ","Renewal Workflow Manager"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Monthly Renewal Forecast"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Renewal & Notice Sweep"}]]}]]]}],[]]}]}]]}]
+17:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-renewal-compliance-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"📅"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Renewal Compliance Reviewer"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Reviews contracts flagged for renewal to verify notice-period compliance, pricing-change obligations, and termination-option validity before the action window closes."}],""]}],["$","div","root-renewal-workflow-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🔄"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Renewal Workflow Manager"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Monitors all contracts for upcoming renewal dates, calculates notice-window countdowns, flags auto-renew risks, tracks price-change clauses, and assigns owner action items to ensure no contract renews without a deliberate decision."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 8 * * 1"}]]}]]}]]}]]}]
+18:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","monthly-renewal-forecast",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Monthly Renewal Forecast"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 9 1 * *"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","renewal-workflow"]}]]}]]}],["$","div","weekly-renewal-sweep",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Renewal & Notice Sweep"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","renewal-workflow"]}]]}]]}]]}]]}]
+22:Tc12,<h1>Contract Renewal Cabinet</h1>
+<p>A 90-day rolling view of every contract approaching renewal — with notice-window countdown, auto-renew risk flag, price-change history, owner, and required action. Legal, finance, and procurement always know what is expiring, what will auto-renew, and what needs a decision before the window closes.</p>
+<blockquote>
+<p><strong>Keep your contract repository and finance system. Replace the renewal spreadsheet, the calendar reminder that fires too late, and the vendor negotiation that starts with "when does this contract end?"</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>Note:</strong> Renewal dates, notice periods, and auto-renew terms are extracted and summarized by AI. All renewal decisions require review and approval by qualified legal counsel and appropriate business stakeholders. This cabinet does not constitute legal advice.</p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/renewal-workflow]]</strong> — Renewal Workflow Manager. Lead orchestrator. Monitors all contracts for upcoming renewal dates, calculates notice-window countdowns, flags auto-renew risks, identifies price-change clauses, and assigns owner action items. Writes the renewal timeline to <code>renewals/</code>.</li>
+<li><strong>[[.agents/renewal-compliance]]</strong> — Renewal Compliance Reviewer. Reviews contracts flagged for renewal for notice-period compliance, pricing change obligations, and termination option validity before the action window closes.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-renewal-sweep]]</td>
+<td>Renewal Workflow Manager</td>
+<td>Renewals due ≤90 days updated; notice-window alerts; auto-renew risks flagged</td>
+</tr>
+<tr>
+<td><strong>Monthly</strong> (1st 09:00)</td>
+<td>[[.jobs/monthly-renewal-forecast]]</td>
+<td>Renewal Workflow Manager</td>
+<td>Monthly renewal forecast: ARR at risk, total renewal value, action plan</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[timeline]] — the renewal timeline showing all contracts by renewal date with notice-window countdown, auto-renew risk, price-change flag, owner, and action status.</li>
+<li>Browse <code>renewals/</code> — the individual renewal records produced by the weekly sweep.</li>
+<li>Review <code>renewals/atlas-logistics-msa-renewal.md</code> — a worked renewal record with full action plan.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Contract repository (DocuSign, Ironclad, Drive, or SharePoint), finance system (contract values and payment terms), vendor database.
+<strong>Recommended:</strong> Slack (renewal alerts), Google Calendar (deadline events), Procurement system (PO and vendor records), ERP (spend data).</p>
+<p><strong>Keep your systems of record.</strong> Contracts stay in DocuSign and Ironclad; spend data stays in your ERP. This cabinet replaces the renewal spreadsheet and the last-minute scramble.</p>19:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$22"}}]}]]}]
+1a:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L23",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set contract-renewal","label":"Install"}]}]}]]}]
+1b:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+1c:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+1d:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+1e:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+21:null

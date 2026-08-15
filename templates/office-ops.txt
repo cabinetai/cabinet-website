@@ -1,0 +1,283 @@
+1:"$Sreact.fragment"
+2:I[479520,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],""]
+4:I[339756,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+5:I[837457,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+d:I[168027,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default",1]
+:HL["/_next/static/chunks/37_txu--9yuea.css","style"]
+:HL["/_next/static/chunks/1_ao2s2n2603x.css","style"]
+:HL["/_next/static/media/791bf8c4bb753ed6-s.p.0ggqn9ig56u4s.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/7ebf22b5a21034f8-s.p.3j3877k49yy0l.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+3:T689,
+            console.log(
+              "%c\n  ██████╗ █████╗ ██████╗ ██╗███╗   ██╗███████╗████████╗\n ██╔════╝██╔══██╗██╔══██╗██║████╗  ██║██╔════╝╚══██╔══╝\n ██║     ███████║██████╔╝██║██╔██╗ ██║█████╗     ██║   \n ██║     ██╔══██║██╔══██╗██║██║╚██╗██║██╔══╝     ██║   \n ╚██████╗██║  ██║██████╔╝██║██║ ╚████║███████╗   ██║   \n  ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   \n",
+              "color: #FFFFFF; font-family: monospace; font-size: 12px; font-weight: 700; line-height: 1.15;"
+            );
+            console.log(
+              "%cCurious enough to inspect the console? We should talk.",
+              "color: #FFFFFF; font-family: Georgia, serif; font-size: 16px; font-weight: 700;"
+            );
+            console.log(
+              "%cCabinet is hiring founding builders and a founding content lead.",
+              "color: #FFFFFF; font-family: system-ui, sans-serif; font-size: 13px;"
+            );
+            console.log(
+              "%chttps://runcabinet.com/careers",
+              "color: #FFFFFF; font-family: ui-monospace, monospace; font-size: 13px; font-weight: 700;"
+            );
+          0:{"P":null,"c":["","templates","office-ops"],"q":"","i":false,"f":[[["",{"children":["templates",{"children":[["slug","office-ops","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/37_txu--9yuea.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/1_ao2s2n2603x.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/2h5ytfdjhksof.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/1ntn7efqc-iiw.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"geist_2b71de91-module__VGa4wG__variable fraunces_37d7409f-module__w9ixmW__variable instrument_serif_9d1675d4-module__u-eSaW__variable ms_madi_7ac33f52-module__ynI3bq__variable h-full antialiased","children":[["$","head",null,{"children":[["$","$L2",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-4L81D0BVTP","strategy":"lazyOnload"}],["$","$L2",null,{"id":"gtag-init","strategy":"lazyOnload","children":"\n            window.dataLayer = window.dataLayer || [];\n            function gtag(){dataLayer.push(arguments);}\n            gtag('js', new Date());\n            gtag('config', 'G-4L81D0BVTP');\n          "}],["$","$L2",null,{"id":"cabinet-console-signature","strategy":"lazyOnload","children":"$3"}]]}],["$","body",null,{"className":"min-h-full flex flex-col","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","width":"0","height":"0","style":{"position":"absolute","width":0,"height":0,"overflow":"hidden"},"children":["$","defs",null,{"children":["$","filter",null,{"id":"liquid-glass-filter","x":"-20%","y":"-20%","width":"140%","height":"140%","colorInterpolationFilters":"sRGB","children":[["$","feTurbulence",null,{"type":"fractalNoise","baseFrequency":"0.009 0.013","numOctaves":2,"seed":9,"result":"noise"}],["$","feGaussianBlur",null,{"in":"noise","stdDeviation":0.8,"result":"blurredNoise"}],["$","feDisplacementMap",null,{"in":"SourceGraphic","in2":"blurredNoise","scale":18,"xChannelSelector":"R","yChannelSelector":"G"}]]}]}]}],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],"$L6","$L7"]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]]}]]}],{"children":["$L8",{"children":["$L9",{"children":["$La",{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le","$Lf"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ugGLMPIaHRbfrhlkleIic"}
+11:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+15:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"ViewportBoundary"]
+17:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"MetadataBoundary"]
+6:["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}]
+7:["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]
+8:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/242ibphq-xhrb.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+14:[]
+b:"$W14"
+c:["$","$1","h",{"children":[null,["$","$L15",null,{"children":"$L16"}],["$","div",null,{"hidden":true,"children":["$","$L17",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L18"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/37_txu--9yuea.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+f:["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/1_ao2s2n2603x.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+19:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"SiteNavbar"]
+1a:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],""]
+1b:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"default"]
+1c:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"Image"]
+1d:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"StarButton"]
+10:[["$","$L19",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L1a",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L1c",null,{"src":"/covers/office-ops.jpg","alt":"Office Ops Cabinet","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Office Ops Cabinet"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Keeps the physical office running — visitor management, supply levels and reorders, facilities tickets, recurring maintenance tasks, and office request triage — all in one place. Keep your calendar and Slack. Replace the Envoy-lite spreadsheet, the Robin-lite room tracker tab, and the facilities requests that vanish into the ether."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","office-management",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"office-management"}],["$","span","facilities",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"facilities"}],["$","span","supplies",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"supplies"}],["$","span","visitors",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"visitors"}],["$","span","operations",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"operations"}],["$","span","enterprise",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"enterprise"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"cabinet"}]]}]]}],["$","$L1d",null,{"slug":"office-ops"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],1," agents"]}],"$L1e","$L1f","$L20"]}]]}]]}],"$L21"]}],"$L22"]
+23:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"ScreenshotPreview"]
+24:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"CabinetOrgChart"]
+1e:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],2," jobs"]}]
+1f:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}]
+20:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],1," pages"]}]
+25:Tcd0,# Office Ops Workflow Agent
+
+You are the single agent responsible for keeping the physical office operations organised and current. Every morning you run the daily triage: check open facilities tickets, confirm today's visitor schedule, surface any supply levels that need action, and remind the team of recurring tasks due today. Every Monday you run the deeper supplies check. You do not make purchasing decisions (those go through the Procurement Intake cabinet for orders above the reorder threshold), but you do flag what needs to be ordered.
+
+## What you own
+
+1. **Facilities tickets.** Every ticket in `tickets/open-tickets.yaml` has a status, a priority, and an assigned owner. Your job is to make sure nothing stalls. Flag any ticket open >3 business days without a status change. For P1 (safety/building access) tickets: escalate immediately to the office manager if not resolved within 4 hours.
+2. **Supply monitoring.** `supplies/inventory.yaml` tracks current levels and reorder thresholds. During the weekly check, flag any item at or below its reorder threshold. Generate a reorder list with supplier, SKU, quantity, and estimated cost. For items marked `auto_reorder: true`, log a reorder action directly. For items above $200 per order, create a request to the Procurement Intake cabinet.
+3. **Visitor schedule.** `visitors/schedule.yaml` holds pre-registered visitor records. Every morning, surface today's visitors, their host, arrival time, and any special requirements (NDA to sign, badge needed, parking). Send the host a reminder 30 minutes before arrival.
+4. **Recurring tasks.** `tasks/recurring-tasks.yaml` defines maintenance tasks with cadences (weekly, monthly, quarterly). Each morning, surface any tasks due today or overdue. Mark them as reminded; mark as complete when the office manager confirms.
+5. **Daily triage report.** Write each morning's output to `reports/triage-<YYYY-MM-DD>.md`. The weekly supplies check goes to `reports/supplies-<YYYY-MM-DD>.md`.
+
+## How you work
+
+- **Priority order:** Safety tickets first, then visitor prep, then supply reorders, then recurring tasks, then report generation.
+- **No ticket without an owner.** Every open ticket must have a named owner. If a new ticket arrives without one, assign the office manager by default and note it.
+- **Stale tickets get escalated.** A ticket with no update in 3 business days is a problem. Flag it explicitly — not in a list at the bottom of the report, but as a highlighted item at the top.
+- **Supply reorders are early, not late.** Flag at the reorder threshold, not when you're out. Running out of coffee or printer paper is an avoidable failure.
+- **Visitor prep is proactive.** The host should know their visitor is arriving before they land in the lobby, not after.
+
+## What you do NOT do
+
+- You do not approve purchasing for items over $200 — those go to the Procurement Intake cabinet as a request.
+- You do not manage room bookings or calendar events directly — you report what the calendar shows and surface conflicts.
+- You do not negotiate with vendors or suppliers — you generate the reorder list for the office manager to action.
+- You do not handle HR-sensitive issues (employee complaints about facilities) — refer those to People Ops directly.26:T5e4,Run the daily office operations triage. Produce a clear, actionable morning
+brief for the office manager.
+
+STEP 1 — FACILITIES TICKETS
+Read `tickets/open-tickets.yaml`. For each open ticket:
+- P1 (Safety/Building Access): if open >4h without status update, escalate
+  immediately — surface at top of report with "ESCALATE NOW" tag.
+- P2-P3: flag any ticket with no status change in >3 business days.
+- List all open tickets: priority, title, owner, age (days open), last update.
+- List tickets resolved/closed since yesterday.
+
+STEP 2 — TODAY'S VISITORS
+Read `visitors/schedule.yaml`. Find all visitors with arrival_date = today.
+For each: name, company, host, arrival time, requirements (NDA/badge/parking).
+Draft a host reminder message for Slack (send 30 min before arrival).
+If no visitors today, note that.
+
+STEP 3 — RECURRING TASKS DUE TODAY
+Read `tasks/recurring-tasks.yaml`. Surface any task where next_due <= today.
+List: task name, owner, cadence, last completed. Mark as "reminded" with
+today's date.
+
+STEP 4 — SUPPLY ALERTS
+Read `supplies/inventory.yaml`. Surface any item where
+current_level <= reorder_threshold. List: item, current level, threshold,
+supplier. (Full reorder analysis runs Monday — today just alerts.)
+
+STEP 5 — WRITE REPORT
+Write to `reports/triage-<YYYY-MM-DD>.md` with structure:
+  ## Escalations (if any)
+  ## Open Tickets
+  ## Today's Visitors
+  ## Tasks Due Today
+  ## Supply Alerts
+  ## Closed Yesterday
+Post a summary to the #office-requests Slack channel.27:T574,Run the weekly supplies audit and generate the reorder list for the office
+manager.
+
+Read `supplies/inventory.yaml`.
+
+STEP 1 — FULL INVENTORY AUDIT
+For each supply item, report:
+- Current level vs. reorder threshold vs. max capacity
+- Status: OK / Low (at threshold) / Critical (below threshold) / Out
+- Days of supply remaining (estimate from weekly consumption rate if known)
+- Last restocked date
+
+STEP 2 — REORDER LIST
+For all items at or below reorder threshold:
+- Item name, SKU, supplier, unit cost, recommended reorder quantity, total cost
+- If auto_reorder = true: log as "reorder queued" and update last_reorder_date
+- If item cost > $200 or requires vendor approval: flag for Procurement Intake
+  (create a request entry in the Procurement Intake cabinet's intake form)
+
+STEP 3 — USAGE TRENDS
+Note any items that have been restocked more than 2× in the past 4 weeks
+(possible underthreshold or usage spike — consider increasing par level).
+Note any items that haven't been touched in 4 weeks (overstock — consider
+reducing par level or pausing reorders).
+
+STEP 4 — NEXT WEEK PREP
+Confirm supplies are adequate for any high-attendance events or all-hands
+in `visitors/schedule.yaml` in the next 7 days.
+
+STEP 5 — WRITE REPORT
+Write to `reports/supplies-<YYYY-MM-DD>.md` with a reorder table and
+usage notes. Update `supplies/inventory.yaml` with any auto-reorders logged.28:T970,# Office Ops Cabinet
+
+Keeps the physical office running: visitor scheduling, supply levels and reorders, open facilities tickets, recurring maintenance tasks, and office request triage — all tracked by one agent in a structured loop. Every ticket, reorder, and visitor record is a file; nothing lives only in someone's head or a Slack thread.
+
+> **Keep your calendar and Slack. Replace the Envoy spreadsheet, the room-booking tab that's always wrong, and the facilities request that got lost after the third Slack message.**
+
+## The team
+
+- **[[.agents/ops-workflow]]** — Office Ops Workflow Agent. Owns the full office ops loop: triaging facilities tickets, tracking supply levels and triggering reorders, managing the visitor schedule, running recurring maintenance tasks, and producing the daily triage and weekly supplies report. A single well-designed agent handles the complete cycle for this straightforward tracker.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **Daily** (Mon–Fri 09:00) | [[.jobs/daily-office-triage]] | Office Ops Workflow | Daily triage report — open tickets, visitor prep, task reminders |
+| **Weekly** (Mon 08:00) | [[.jobs/weekly-supplies-check]] | Office Ops Workflow | Supplies audit + reorder list, low-stock alerts |
+
+## How to run the demo
+
+1. Open the [[tracker]] — the office ops tracker: open facilities tickets by status, supply levels with reorder indicators, today's visitor schedule, and upcoming recurring tasks.
+2. Browse `tickets/open-tickets.yaml` — the facilities ticket log the agent manages.
+3. Browse `supplies/inventory.yaml` — the supply inventory the agent reconciles weekly.
+4. Open `visitors/schedule.yaml` — the visitor intake schedule.
+
+## Connectors
+
+**Required:** Calendar (visitor scheduling, meeting room bookings), Slack (`#office-requests` channel for ticket intake + announcements).
+**Recommended:** Envoy or similar (visitor badge printing, NDA signing), Robin or similar (desk/room booking integration), Procurement Intake cabinet (supply reorder requests), forms tool (visitor pre-registration).
+
+## Every artifact is a file
+
+Facilities tickets are YAML at `tickets/open-tickets.yaml`. Supply inventory lives at `supplies/inventory.yaml`. The visitor schedule is at `visitors/schedule.yaml`. Recurring maintenance tasks are defined at `tasks/recurring-tasks.yaml`. Nothing lives only in a chat thread.29:Tb29,<h1>Office Ops Cabinet</h1>
+<p>Keeps the physical office running: visitor scheduling, supply levels and reorders, open facilities tickets, recurring maintenance tasks, and office request triage — all tracked by one agent in a structured loop. Every ticket, reorder, and visitor record is a file; nothing lives only in someone's head or a Slack thread.</p>
+<blockquote>
+<p><strong>Keep your calendar and Slack. Replace the Envoy spreadsheet, the room-booking tab that's always wrong, and the facilities request that got lost after the third Slack message.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/ops-workflow]]</strong> — Office Ops Workflow Agent. Owns the full office ops loop: triaging facilities tickets, tracking supply levels and triggering reorders, managing the visitor schedule, running recurring maintenance tasks, and producing the daily triage and weekly supplies report. A single well-designed agent handles the complete cycle for this straightforward tracker.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Daily</strong> (Mon–Fri 09:00)</td>
+<td>[[.jobs/daily-office-triage]]</td>
+<td>Office Ops Workflow</td>
+<td>Daily triage report — open tickets, visitor prep, task reminders</td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-supplies-check]]</td>
+<td>Office Ops Workflow</td>
+<td>Supplies audit + reorder list, low-stock alerts</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[tracker]] — the office ops tracker: open facilities tickets by status, supply levels with reorder indicators, today's visitor schedule, and upcoming recurring tasks.</li>
+<li>Browse <code>tickets/open-tickets.yaml</code> — the facilities ticket log the agent manages.</li>
+<li>Browse <code>supplies/inventory.yaml</code> — the supply inventory the agent reconciles weekly.</li>
+<li>Open <code>visitors/schedule.yaml</code> — the visitor intake schedule.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Calendar (visitor scheduling, meeting room bookings), Slack (<code>#office-requests</code> channel for ticket intake + announcements).
+<strong>Recommended:</strong> Envoy or similar (visitor badge printing, NDA signing), Robin or similar (desk/room booking integration), Procurement Intake cabinet (supply reorder requests), forms tool (visitor pre-registration).</p>
+<h2>Every artifact is a file</h2>
+<p>Facilities tickets are YAML at <code>tickets/open-tickets.yaml</code>. Supply inventory lives at <code>supplies/inventory.yaml</code>. The visitor schedule is at <code>visitors/schedule.yaml</code>. Recurring maintenance tasks are defined at <code>tasks/recurring-tasks.yaml</code>. Nothing lives only in a chat thread.</p>21:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$L23",null,{"slug":"office-ops","pageName":"tracker"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$L24",null,{"entry":{"slug":"office-ops","meta":{"schemaVersion":1,"id":"office-ops-root","name":"Office Ops Cabinet","kind":"root","version":"0.1.0","description":"Keeps the physical office running — visitor management, supply levels and reorders, facilities tickets, recurring maintenance tasks, and office request triage — all in one place. Keep your calendar and Slack. Replace the Envoy-lite spreadsheet, the Robin-lite room tracker tab, and the facilities requests that vanish into the ether.","entry":"index.md","domain":"Operations"},"agents":[{"name":"Office Ops Workflow Agent","slug":"ops-workflow","emoji":"🏢","type":"lead","department":"operations","role":"Runs the complete office operations loop — facilities ticket triage, supply level monitoring and reorder triggers, visitor schedule management, recurring maintenance task tracking, and daily/weekly reporting — so the office manager always has a current view of what needs attention.","heartbeat":"0 9 * * 1-5","budget":80,"active":true,"focus":["facilities-tickets","supply-management","visitor-management","recurring-tasks"],"tags":["operations","office-management"],"body":"$25"}],"jobs":[{"id":"daily-office-triage","name":"Daily Office Ops Triage","enabled":true,"schedule":"0 9 * * 1-5","provider":"claude-code","adapterType":"claude_local","ownerAgent":"ops-workflow","agentSlug":"ops-workflow","timeout":600,"prompt":"$26","cabinetPath":"cabinet-examples/cabinets/office-ops","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"weekly-supplies-check","name":"Weekly Supplies & Reorder Check","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"ops-workflow","agentSlug":"ops-workflow","timeout":600,"prompt":"$27","cabinetPath":"cabinet-examples/cabinets/office-ops","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$28","readmeHtml":"$29","tags":["office-management","facilities","supplies","visitors","operations","enterprise","cabinet"],"section":"Operations & Finance","stats":{"totalAgents":1,"totalJobs":2,"totalCabinets":1,"totalPages":1}}}]}]]}],"$L2a","$L2b","$L2c","$L2d","$L2e"]}]
+22:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L1a",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L1c",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],"$L2f","$L30","$L31"]}]]}],"$L32"]]}],"$L33"]}]}]
+35:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"TerminalBlock"]
+2a:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Office Ops Cabinet"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🏢"," ","Office Ops Workflow Agent"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Daily Office Ops Triage"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Supplies & Reorder Check"}]]}]]]}],[]]}]}]]}]
+2b:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-ops-workflow-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🏢"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Office Ops Workflow Agent"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Runs the complete office operations loop — facilities ticket triage, supply level monitoring and reorder triggers, visitor schedule management, recurring maintenance task tracking, and daily/weekly reporting — so the office manager always has a current view of what needs attention."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 9 * * 1-5"}]]}]]}]]}]]}]
+2c:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","daily-office-triage",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Daily Office Ops Triage"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 9 * * 1-5"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","ops-workflow"]}]]}]]}],["$","div","weekly-supplies-check",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Supplies & Reorder Check"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","ops-workflow"]}]]}]]}]]}]]}]
+34:Tb29,<h1>Office Ops Cabinet</h1>
+<p>Keeps the physical office running: visitor scheduling, supply levels and reorders, open facilities tickets, recurring maintenance tasks, and office request triage — all tracked by one agent in a structured loop. Every ticket, reorder, and visitor record is a file; nothing lives only in someone's head or a Slack thread.</p>
+<blockquote>
+<p><strong>Keep your calendar and Slack. Replace the Envoy spreadsheet, the room-booking tab that's always wrong, and the facilities request that got lost after the third Slack message.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/ops-workflow]]</strong> — Office Ops Workflow Agent. Owns the full office ops loop: triaging facilities tickets, tracking supply levels and triggering reorders, managing the visitor schedule, running recurring maintenance tasks, and producing the daily triage and weekly supplies report. A single well-designed agent handles the complete cycle for this straightforward tracker.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Daily</strong> (Mon–Fri 09:00)</td>
+<td>[[.jobs/daily-office-triage]]</td>
+<td>Office Ops Workflow</td>
+<td>Daily triage report — open tickets, visitor prep, task reminders</td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-supplies-check]]</td>
+<td>Office Ops Workflow</td>
+<td>Supplies audit + reorder list, low-stock alerts</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[tracker]] — the office ops tracker: open facilities tickets by status, supply levels with reorder indicators, today's visitor schedule, and upcoming recurring tasks.</li>
+<li>Browse <code>tickets/open-tickets.yaml</code> — the facilities ticket log the agent manages.</li>
+<li>Browse <code>supplies/inventory.yaml</code> — the supply inventory the agent reconciles weekly.</li>
+<li>Open <code>visitors/schedule.yaml</code> — the visitor intake schedule.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Calendar (visitor scheduling, meeting room bookings), Slack (<code>#office-requests</code> channel for ticket intake + announcements).
+<strong>Recommended:</strong> Envoy or similar (visitor badge printing, NDA signing), Robin or similar (desk/room booking integration), Procurement Intake cabinet (supply reorder requests), forms tool (visitor pre-registration).</p>
+<h2>Every artifact is a file</h2>
+<p>Facilities tickets are YAML at <code>tickets/open-tickets.yaml</code>. Supply inventory lives at <code>supplies/inventory.yaml</code>. The visitor schedule is at <code>visitors/schedule.yaml</code>. Recurring maintenance tasks are defined at <code>tasks/recurring-tasks.yaml</code>. Nothing lives only in a chat thread.</p>2d:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$34"}}]}]]}]
+2e:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L35",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set office-ops","label":"Install"}]}]}]]}]
+2f:["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}]
+30:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+31:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+32:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+33:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+16:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+36:I[27201,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"IconMark"]
+13:null
+18:[["$","title","0",{"children":"Office Ops Cabinet template | Cabinet"}],["$","meta","1",{"name":"description","content":"Keeps the physical office running — visitor management, supply levels and reorders, facilities tickets, recurring maintenance tasks, and office request triage — all in one place. Keep your calendar and Slack. Replace the Envoy-lite spreadsheet, the Robin-lite room tracker tab, and the facilities requests that vanish into the ether."}],["$","meta","2",{"name":"referrer","content":"strict-origin-when-cross-origin"}],["$","link","3",{"rel":"canonical","href":"https://runcabinet.com/templates/office-ops"}],["$","meta","4",{"property":"og:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","5",{"property":"og:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","6",{"property":"og:url","content":"https://runcabinet.com"}],["$","meta","7",{"property":"og:image","content":"https://runcabinet.com/og.png"}],["$","meta","8",{"property":"og:image:width","content":"1200"}],["$","meta","9",{"property":"og:image:height","content":"630"}],["$","meta","10",{"property":"og:image:alt","content":"Cabinet: the AI workspace your company owns, with knowledge, AI teams, and live apps in one place"}],["$","meta","11",{"property":"og:type","content":"website"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","14",{"name":"twitter:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","15",{"name":"twitter:image","content":"https://runcabinet.com/og.png"}],["$","link","16",{"rel":"icon","href":"/icon.png?icon.1p7qxwp3akyyx.png","sizes":"512x512","type":"image/png"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-icon.png?apple-icon.1q-r1s9ajzc3v.png","sizes":"180x180","type":"image/png"}],["$","$L36","18",{}]]

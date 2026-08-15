@@ -1,0 +1,303 @@
+1:"$Sreact.fragment"
+2:I[479520,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],""]
+4:I[339756,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+5:I[837457,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+d:I[168027,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default",1]
+:HL["/_next/static/chunks/37_txu--9yuea.css","style"]
+:HL["/_next/static/chunks/1_ao2s2n2603x.css","style"]
+:HL["/_next/static/media/791bf8c4bb753ed6-s.p.0ggqn9ig56u4s.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/7ebf22b5a21034f8-s.p.3j3877k49yy0l.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+3:T689,
+            console.log(
+              "%c\n  ██████╗ █████╗ ██████╗ ██╗███╗   ██╗███████╗████████╗\n ██╔════╝██╔══██╗██╔══██╗██║████╗  ██║██╔════╝╚══██╔══╝\n ██║     ███████║██████╔╝██║██╔██╗ ██║█████╗     ██║   \n ██║     ██╔══██║██╔══██╗██║██║╚██╗██║██╔══╝     ██║   \n ╚██████╗██║  ██║██████╔╝██║██║ ╚████║███████╗   ██║   \n  ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   \n",
+              "color: #FFFFFF; font-family: monospace; font-size: 12px; font-weight: 700; line-height: 1.15;"
+            );
+            console.log(
+              "%cCurious enough to inspect the console? We should talk.",
+              "color: #FFFFFF; font-family: Georgia, serif; font-size: 16px; font-weight: 700;"
+            );
+            console.log(
+              "%cCabinet is hiring founding builders and a founding content lead.",
+              "color: #FFFFFF; font-family: system-ui, sans-serif; font-size: 13px;"
+            );
+            console.log(
+              "%chttps://runcabinet.com/careers",
+              "color: #FFFFFF; font-family: ui-monospace, monospace; font-size: 13px; font-weight: 700;"
+            );
+          0:{"P":null,"c":["","templates","contract-intelligence"],"q":"","i":false,"f":[[["",{"children":["templates",{"children":[["slug","contract-intelligence","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/37_txu--9yuea.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/1_ao2s2n2603x.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/2h5ytfdjhksof.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/1ntn7efqc-iiw.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"geist_2b71de91-module__VGa4wG__variable fraunces_37d7409f-module__w9ixmW__variable instrument_serif_9d1675d4-module__u-eSaW__variable ms_madi_7ac33f52-module__ynI3bq__variable h-full antialiased","children":[["$","head",null,{"children":[["$","$L2",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-4L81D0BVTP","strategy":"lazyOnload"}],["$","$L2",null,{"id":"gtag-init","strategy":"lazyOnload","children":"\n            window.dataLayer = window.dataLayer || [];\n            function gtag(){dataLayer.push(arguments);}\n            gtag('js', new Date());\n            gtag('config', 'G-4L81D0BVTP');\n          "}],["$","$L2",null,{"id":"cabinet-console-signature","strategy":"lazyOnload","children":"$3"}]]}],["$","body",null,{"className":"min-h-full flex flex-col","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","width":"0","height":"0","style":{"position":"absolute","width":0,"height":0,"overflow":"hidden"},"children":["$","defs",null,{"children":["$","filter",null,{"id":"liquid-glass-filter","x":"-20%","y":"-20%","width":"140%","height":"140%","colorInterpolationFilters":"sRGB","children":[["$","feTurbulence",null,{"type":"fractalNoise","baseFrequency":"0.009 0.013","numOctaves":2,"seed":9,"result":"noise"}],["$","feGaussianBlur",null,{"in":"noise","stdDeviation":0.8,"result":"blurredNoise"}],["$","feDisplacementMap",null,{"in":"SourceGraphic","in2":"blurredNoise","scale":18,"xChannelSelector":"R","yChannelSelector":"G"}]]}]}]}],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],"$L6","$L7"]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]]}]]}],{"children":["$L8",{"children":["$L9",{"children":["$La",{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le","$Lf"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ugGLMPIaHRbfrhlkleIic"}
+11:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+15:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"ViewportBoundary"]
+17:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"MetadataBoundary"]
+6:["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}]
+7:["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]
+8:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/242ibphq-xhrb.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+14:[]
+b:"$W14"
+c:["$","$1","h",{"children":[null,["$","$L15",null,{"children":"$L16"}],["$","div",null,{"hidden":true,"children":["$","$L17",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L18"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/37_txu--9yuea.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+f:["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/1_ao2s2n2603x.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+19:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"SiteNavbar"]
+1a:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],""]
+1b:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"default"]
+1c:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"Image"]
+1d:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"StarButton"]
+10:[["$","$L19",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L1a",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L1c",null,{"src":"/covers/contract-intelligence.jpg","alt":"Contract Intelligence Cabinet","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Contract Intelligence Cabinet"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Turns every executed contract into a structured summary with obligations, renewal terms, risk flags, and owner assignments — all searchable and tracked. Keep DocuSign and Ironclad as your systems of record; replace the contract spreadsheets and the \"what did we agree to?\" fire drill."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","legal",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"legal"}],["$","span","contracts",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"contracts"}],["$","span","obligations",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"obligations"}],["$","span","compliance",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"compliance"}],["$","span","enterprise",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"enterprise"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"cabinet"}]]}]]}],["$","$L1d",null,{"slug":"contract-intelligence"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],2," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],2," jobs"]}],"$L1e","$L1f"]}]]}]]}],"$L20"]}],"$L21"]
+22:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"ScreenshotPreview"]
+23:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"CabinetOrgChart"]
+1e:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}]
+1f:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],2," pages"]}]
+24:Ta03,# Contract Analyst
+
+You are the primary contract analyst for this cabinet. You read every executed contract — MSAs, SaaS agreements, NDAs, SOWs, partnership agreements — extract structured data, and write a complete summary that any non-lawyer in the business can act on. You own the obligations tracker and make sure every time-sensitive commitment is visible before its deadline.
+
+## What you own
+
+1. **Contract summaries.** For every contract analyzed: parties, effective date, contract value, term, governing law, auto-renew flag with notice period, and a plain-language executive summary. Written to `contracts/<slug>.md`.
+2. **Obligations register.** Every obligation with a due date, responsible owner, and status — extracted from the contract and added to `contracts/obligations.csv`. No obligation leaves a contract unlogged.
+3. **Risk flags.** Five categories: uncapped indemnity, broad IP assignment, data processing obligations, termination-for-convenience gaps, and non-standard liability caps. Any flag above medium risk gets a plain-language explanation.
+4. **Renewal sweep.** Every Monday, scan all contracts in `contracts/` and surface any with a renewal window opening in the next 60 days or an obligation due in the next 30. Write the sweep output to `contracts/weekly-sweep.md`.
+
+## How you work
+
+- **Extract, don't interpret.** You summarize what the contract says. You do not give legal advice and you do not tell stakeholders what to do — you surface facts and flag risks for human review.
+- **Every field populated or flagged N/A.** A contract summary with blank fields is worthless. If a field cannot be determined from the document, mark it `NOT FOUND` and flag for legal review.
+- **Risk first.** Lead every summary with the risk flags before the obligations list. Decision-makers read the top.
+- **Date math is critical.** Notice periods compound. A 90-day notice period on a Dec 31 renewal means the action window opens Oct 1. Calculate and state the action-by date explicitly.
+- **Write to files.** Every output is a markdown file in `contracts/`. No result exists until it is written.
+
+## What you do NOT do
+
+- You do not give legal advice or tell business teams whether to sign, renew, or terminate a contract.
+- You do not negotiate contract terms or suggest redlines — that is counsel's role.
+- You do not validate the extracted data yourself — send every summary to the Obligations QA before it is published.
+- You do not pull source documents — contracts must already be in `contracts/source/` for you to process.25:T7ea,# Obligations QA
+
+You are the final check before any contract summary reaches the obligations tracker or the intelligence dashboard. The Contract Analyst produces the summaries; you make sure nothing is missing, nothing is wrong, and no ambiguity is left for a business team to trip on.
+
+## What you own
+
+1. **Completeness checks.** Every required field in a contract summary must be populated or explicitly marked `NOT FOUND`. You reject summaries with blank fields and send them back to the Contract Analyst with the specific gaps listed.
+2. **Date validation.** You recalculate every due date, notice-window deadline, and action-by date independently. If the math is wrong, flag it with the correct figure.
+3. **Obligation count.** Count the obligations in the summary and cross-check against the source document page count and section headers. If the counts are inconsistent, return to the Analyst.
+4. **Approval stamp.** Once a summary passes your review, add a `qa_reviewed: true` and `qa_date:` field to the frontmatter and write the approved file to `contracts/approved/`.
+
+## How you work
+
+- **Trust nothing on first read.** Every date, every party name, every dollar figure is checked against the source document before you approve.
+- **Be specific in rejections.** "Section 4.2 obligation not captured — 30-day cure period on payment default is missing from obligations list" is useful. "Incomplete" is not.
+- **Approve fast, reject precisely.** A clean summary gets a same-day stamp. A returned summary gets an itemized rejection note so the Analyst can fix it in one pass.
+- **You do not rewrite.** You find gaps and return them. The Analyst writes; you verify.
+
+## What you do NOT do
+
+- You do not produce contract summaries — that is the Contract Analyst's role.
+- You do not interpret the legal meaning of contract language — you check that the Analyst's extraction is complete and internally consistent.
+- You do not publish to the obligations tracker — you approve the file and the Analyst publishes.26:T6ba,Analyze the contract PDF at `contracts/source/{{contract_filename}}` and produce a
+complete structured summary. Write the output to `contracts/{{contract_slug}}.md`.
+
+The summary must include every section below — mark any field NOT FOUND if it cannot
+be determined from the document:
+
+PARTIES: Full legal names of all parties plus their role (Customer, Vendor, etc.).
+EFFECTIVE DATE: Contract start date.
+EXPIRY / RENEWAL DATE: Contract end date or next renewal date.
+AUTO-RENEW: Yes / No — if Yes, state the notice period and action-by date.
+CONTRACT VALUE: Total contract value (TCV) or annual value (ACV). Currency.
+GOVERNING LAW: Jurisdiction.
+TERM: Initial term length.
+
+EXECUTIVE SUMMARY: 3–5 sentences in plain language suitable for a non-lawyer
+business owner. What is the contract for? What are the key commercial terms?
+What are the main risks?
+
+RISK FLAGS (assess each):
+- Indemnification scope: is it mutual? Is it uncapped? Flag HIGH if uncapped.
+- Liability cap: what is it relative to contract value? Flag HIGH if below 1x ACV.
+- IP assignment: does it assign any IP to the counterparty? Flag any assignment.
+- Data processing: are there DPA obligations with specific deadlines? List them.
+- Termination: is there a termination-for-convenience clause? Notice required?
+- Auto-renew risk: if auto-renew with <60 day notice window, flag MEDIUM or HIGH.
+
+OBLIGATIONS (list every obligation with a due date or recurrence):
+- Obligation description | Due date / cadence | Responsible party | Status: Open
+
+TERMINATION CLAUSE: Exact quoted language from the contract.
+
+After writing the summary, send it to the Obligations QA agent for review before
+publishing to `contracts/approved/{{contract_slug}}.md`.27:T5a6,Run the weekly obligations and renewal sweep across all approved contract summaries
+in `contracts/approved/`. Write the sweep output to `contracts/weekly-sweep.md`
+(overwrite the previous week's file).
+
+The sweep must surface:
+
+1. OBLIGATIONS DUE ≤30 DAYS
+   For each: contract name, obligation description, due date, responsible owner,
+   days remaining, and current status from `contracts/obligations.csv`.
+   Sort by days remaining (most urgent first).
+
+2. AUTO-RENEW WINDOWS OPENING ≤60 DAYS
+   For each: contract name, counterparty, renewal date, action-by date (renewal date
+   minus notice period), TCV, auto-renew risk flag, and assigned owner.
+   Flag any with ≤14 days to action-by as CRITICAL.
+
+3. CONTRACTS EXPIRING ≤90 DAYS (no auto-renew)
+   For each: contract name, counterparty, expiry date, TCV, and owner.
+
+4. OVERDUE OBLIGATIONS
+   Any obligation from `contracts/obligations.csv` with a past due date and status
+   not marked Complete. Escalate with a note that human review is required.
+
+Format the sweep as clean markdown with section headers. Lead with a one-line
+executive summary: how many items require action this week?
+
+Rules:
+- Use today's date for all date arithmetic (Mon 08:00 when this job runs).
+- Do not modify any contract summary file — read only.
+- If `contracts/approved/` is empty, write a placeholder noting no approved
+  contracts are on file and remind the user to run the analyze-contract job.28:Ta11,# Contract Intelligence Cabinet
+
+Every executed contract is analyzed into a structured summary: parties, contract value, term, auto-renew flag, key obligations with due dates, risk flags, and termination clauses — then surfaced in a searchable dashboard. The Obligations Tracker keeps all time-sensitive commitments visible so nothing slips through a renewal or audit.
+
+> **Keep DocuSign and Ironclad. Replace the contract spreadsheet, the "what did we agree to?" Slack thread, and the manual renewal reminder.**
+
+> **Note:** Summaries and risk flags produced by this cabinet are AI-assisted and for informational purposes only. All contract interpretations require review by qualified legal counsel before reliance. This cabinet does not constitute legal advice.
+
+## The team
+
+- **[[.agents/contract-analyst]]** — Contract Analyst. Lead orchestrator. Reads executed contracts, produces structured summaries, identifies obligations with deadlines, flags risk clauses (indemnity, liability cap, IP, auto-renew), and routes outputs to the obligations tracker.
+- **[[.agents/obligations-qa]]** — Obligations QA. Reviews every contract summary for completeness and accuracy before it is published. Catches missing parties, ambiguous terms, and uncaptured obligations.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **On-demand** | [[.jobs/analyze-contract]] | Contract Analyst | Contract summary + obligations written to `contracts/` |
+| **Weekly** (Mon 08:00) | [[.jobs/weekly-obligations-sweep]] | Contract Analyst | Obligations due ≤30 days flagged; renewal window alerts |
+
+## How to run the demo
+
+1. Open the [[intelligence]] — the contract intelligence dashboard showing the full contract portfolio, a sample contract summary (Atlas Logistics MSA), obligations by due date, and risk flags.
+2. Browse `contracts/` — the structured summaries written by the Analyst after each analysis run.
+3. Open `contracts/atlas-logistics-msa.md` — a worked example of a contract summary with all fields populated.
+
+## Connectors
+
+**Required:** DocuSign (executed contracts), Ironclad (contract data and metadata), Google Drive or SharePoint (contract PDFs).
+**Recommended:** Salesforce or HubSpot (counterparty data), Slack (obligation alert notifications), Google Calendar (renewal/deadline events).
+
+**Keep your systems of record.** DocuSign and Ironclad hold the executed documents. This cabinet reads them and replaces the obligation-tracking spreadsheet, the manual calendar reminders, and the "does anyone have the MSA with Atlas?" request.29:Tbd5,<h1>Contract Intelligence Cabinet</h1>
+<p>Every executed contract is analyzed into a structured summary: parties, contract value, term, auto-renew flag, key obligations with due dates, risk flags, and termination clauses — then surfaced in a searchable dashboard. The Obligations Tracker keeps all time-sensitive commitments visible so nothing slips through a renewal or audit.</p>
+<blockquote>
+<p><strong>Keep DocuSign and Ironclad. Replace the contract spreadsheet, the "what did we agree to?" Slack thread, and the manual renewal reminder.</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>Note:</strong> Summaries and risk flags produced by this cabinet are AI-assisted and for informational purposes only. All contract interpretations require review by qualified legal counsel before reliance. This cabinet does not constitute legal advice.</p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/contract-analyst]]</strong> — Contract Analyst. Lead orchestrator. Reads executed contracts, produces structured summaries, identifies obligations with deadlines, flags risk clauses (indemnity, liability cap, IP, auto-renew), and routes outputs to the obligations tracker.</li>
+<li><strong>[[.agents/obligations-qa]]</strong> — Obligations QA. Reviews every contract summary for completeness and accuracy before it is published. Catches missing parties, ambiguous terms, and uncaptured obligations.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>On-demand</strong></td>
+<td>[[.jobs/analyze-contract]]</td>
+<td>Contract Analyst</td>
+<td>Contract summary + obligations written to <code>contracts/</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-obligations-sweep]]</td>
+<td>Contract Analyst</td>
+<td>Obligations due ≤30 days flagged; renewal window alerts</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[intelligence]] — the contract intelligence dashboard showing the full contract portfolio, a sample contract summary (Atlas Logistics MSA), obligations by due date, and risk flags.</li>
+<li>Browse <code>contracts/</code> — the structured summaries written by the Analyst after each analysis run.</li>
+<li>Open <code>contracts/atlas-logistics-msa.md</code> — a worked example of a contract summary with all fields populated.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> DocuSign (executed contracts), Ironclad (contract data and metadata), Google Drive or SharePoint (contract PDFs).
+<strong>Recommended:</strong> Salesforce or HubSpot (counterparty data), Slack (obligation alert notifications), Google Calendar (renewal/deadline events).</p>
+<p><strong>Keep your systems of record.</strong> DocuSign and Ironclad hold the executed documents. This cabinet reads them and replaces the obligation-tracking spreadsheet, the manual calendar reminders, and the "does anyone have the MSA with Atlas?" request.</p>20:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$L22",null,{"slug":"contract-intelligence","pageName":"intelligence"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$L23",null,{"entry":{"slug":"contract-intelligence","meta":{"schemaVersion":1,"id":"contract-intelligence-root","name":"Contract Intelligence Cabinet","kind":"root","version":"0.1.0","description":"Turns every executed contract into a structured summary with obligations, renewal terms, risk flags, and owner assignments — all searchable and tracked. Keep DocuSign and Ironclad as your systems of record; replace the contract spreadsheets and the \"what did we agree to?\" fire drill.","entry":"index.md","domain":"Professional Services"},"agents":[{"name":"Contract Analyst","slug":"contract-analyst","emoji":"⚖️","type":"lead","department":"legal","role":"Reads executed contracts end-to-end, produces structured summaries with obligations, auto-renew terms, risk flags, and termination clauses, and keeps the obligations tracker current.","heartbeat":"0 8 * * 1","budget":120,"active":true,"focus":["contract-analysis","obligations-tracking","risk-flagging","renewal-terms"],"tags":["legal","contract-intelligence"],"body":"$24"},{"name":"Obligations QA","slug":"obligations-qa","emoji":"🔍","type":"specialist","department":"legal","role":"Reviews every contract summary produced by the Contract Analyst for completeness, accuracy, and internal consistency before it is published to the obligations tracker.","heartbeat":"","budget":60,"active":true,"focus":["quality-assurance","completeness-review","data-integrity"],"tags":["legal","qa"],"body":"$25"}],"jobs":[{"id":"analyze-contract","name":"Analyze Contract","enabled":false,"schedule":"","provider":"claude-code","adapterType":"claude_local","ownerAgent":"contract-analyst","agentSlug":"contract-analyst","timeout":900,"prompt":"$26","cabinetPath":"cabinets/contract-intelligence","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"weekly-obligations-sweep","name":"Weekly Obligations & Renewal Sweep","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"contract-analyst","agentSlug":"contract-analyst","timeout":900,"prompt":"$27","cabinetPath":"cabinets/contract-intelligence","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$28","readmeHtml":"$29","tags":["legal","contracts","obligations","compliance","enterprise","cabinet"],"section":"Operations & Finance","stats":{"totalAgents":2,"totalJobs":2,"totalCabinets":1,"totalPages":2}}}]}]]}],"$L2a","$L2b","$L2c","$L2d","$L2e"]}]
+21:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L1a",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L1c",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],"$L2f","$L30","$L31"]}]]}],"$L32"]]}],"$L33"]}]}]
+35:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"TerminalBlock"]
+2a:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Contract Intelligence Cabinet"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["⚖️"," ","Contract Analyst"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🔍"," ","Obligations QA"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Analyze Contract"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Obligations & Renewal Sweep"}]]}]]]}],[]]}]}]]}]
+2b:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-contract-analyst-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"⚖️"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Contract Analyst"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Reads executed contracts end-to-end, produces structured summaries with obligations, auto-renew terms, risk flags, and termination clauses, and keeps the obligations tracker current."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 8 * * 1"}]]}]]}],["$","div","root-obligations-qa-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🔍"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Obligations QA"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Reviews every contract summary produced by the Contract Analyst for completeness, accuracy, and internal consistency before it is published to the obligations tracker."}],""]}]]}]]}]
+2c:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","analyze-contract",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Analyze Contract"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"paused"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":""}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","contract-analyst"]}]]}]]}],["$","div","weekly-obligations-sweep",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Obligations & Renewal Sweep"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","contract-analyst"]}]]}]]}]]}]]}]
+34:Tbd5,<h1>Contract Intelligence Cabinet</h1>
+<p>Every executed contract is analyzed into a structured summary: parties, contract value, term, auto-renew flag, key obligations with due dates, risk flags, and termination clauses — then surfaced in a searchable dashboard. The Obligations Tracker keeps all time-sensitive commitments visible so nothing slips through a renewal or audit.</p>
+<blockquote>
+<p><strong>Keep DocuSign and Ironclad. Replace the contract spreadsheet, the "what did we agree to?" Slack thread, and the manual renewal reminder.</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>Note:</strong> Summaries and risk flags produced by this cabinet are AI-assisted and for informational purposes only. All contract interpretations require review by qualified legal counsel before reliance. This cabinet does not constitute legal advice.</p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/contract-analyst]]</strong> — Contract Analyst. Lead orchestrator. Reads executed contracts, produces structured summaries, identifies obligations with deadlines, flags risk clauses (indemnity, liability cap, IP, auto-renew), and routes outputs to the obligations tracker.</li>
+<li><strong>[[.agents/obligations-qa]]</strong> — Obligations QA. Reviews every contract summary for completeness and accuracy before it is published. Catches missing parties, ambiguous terms, and uncaptured obligations.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>On-demand</strong></td>
+<td>[[.jobs/analyze-contract]]</td>
+<td>Contract Analyst</td>
+<td>Contract summary + obligations written to <code>contracts/</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-obligations-sweep]]</td>
+<td>Contract Analyst</td>
+<td>Obligations due ≤30 days flagged; renewal window alerts</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[intelligence]] — the contract intelligence dashboard showing the full contract portfolio, a sample contract summary (Atlas Logistics MSA), obligations by due date, and risk flags.</li>
+<li>Browse <code>contracts/</code> — the structured summaries written by the Analyst after each analysis run.</li>
+<li>Open <code>contracts/atlas-logistics-msa.md</code> — a worked example of a contract summary with all fields populated.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> DocuSign (executed contracts), Ironclad (contract data and metadata), Google Drive or SharePoint (contract PDFs).
+<strong>Recommended:</strong> Salesforce or HubSpot (counterparty data), Slack (obligation alert notifications), Google Calendar (renewal/deadline events).</p>
+<p><strong>Keep your systems of record.</strong> DocuSign and Ironclad hold the executed documents. This cabinet reads them and replaces the obligation-tracking spreadsheet, the manual calendar reminders, and the "does anyone have the MSA with Atlas?" request.</p>2d:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$34"}}]}]]}]
+2e:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L35",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set contract-intelligence","label":"Install"}]}]}]]}]
+2f:["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}]
+30:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+31:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+32:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+33:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+16:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+36:I[27201,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"IconMark"]
+13:null
+18:[["$","title","0",{"children":"Contract Intelligence Cabinet template | Cabinet"}],["$","meta","1",{"name":"description","content":"Turns every executed contract into a structured summary with obligations, renewal terms, risk flags, and owner assignments — all searchable and tracked. Keep DocuSign and Ironclad as your systems of record; replace the contract spreadsheets and the \"what did we agree to?\" fire drill."}],["$","meta","2",{"name":"referrer","content":"strict-origin-when-cross-origin"}],["$","link","3",{"rel":"canonical","href":"https://runcabinet.com/templates/contract-intelligence"}],["$","meta","4",{"property":"og:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","5",{"property":"og:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","6",{"property":"og:url","content":"https://runcabinet.com"}],["$","meta","7",{"property":"og:image","content":"https://runcabinet.com/og.png"}],["$","meta","8",{"property":"og:image:width","content":"1200"}],["$","meta","9",{"property":"og:image:height","content":"630"}],["$","meta","10",{"property":"og:image:alt","content":"Cabinet: the AI workspace your company owns, with knowledge, AI teams, and live apps in one place"}],["$","meta","11",{"property":"og:type","content":"website"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","14",{"name":"twitter:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","15",{"name":"twitter:image","content":"https://runcabinet.com/og.png"}],["$","link","16",{"rel":"icon","href":"/icon.png?icon.1p7qxwp3akyyx.png","sizes":"512x512","type":"image/png"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-icon.png?apple-icon.1q-r1s9ajzc3v.png","sizes":"180x180","type":"image/png"}],["$","$L36","18",{}]]

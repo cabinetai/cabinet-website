@@ -1,0 +1,363 @@
+1:"$Sreact.fragment"
+2:I[479520,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],""]
+4:I[339756,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+5:I[837457,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+d:I[168027,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default",1]
+:HL["/_next/static/chunks/37_txu--9yuea.css","style"]
+:HL["/_next/static/chunks/1_ao2s2n2603x.css","style"]
+:HL["/_next/static/media/791bf8c4bb753ed6-s.p.0ggqn9ig56u4s.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/7ebf22b5a21034f8-s.p.3j3877k49yy0l.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+3:T689,
+            console.log(
+              "%c\n  ██████╗ █████╗ ██████╗ ██╗███╗   ██╗███████╗████████╗\n ██╔════╝██╔══██╗██╔══██╗██║████╗  ██║██╔════╝╚══██╔══╝\n ██║     ███████║██████╔╝██║██╔██╗ ██║█████╗     ██║   \n ██║     ██╔══██║██╔══██╗██║██║╚██╗██║██╔══╝     ██║   \n ╚██████╗██║  ██║██████╔╝██║██║ ╚████║███████╗   ██║   \n  ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   \n",
+              "color: #FFFFFF; font-family: monospace; font-size: 12px; font-weight: 700; line-height: 1.15;"
+            );
+            console.log(
+              "%cCurious enough to inspect the console? We should talk.",
+              "color: #FFFFFF; font-family: Georgia, serif; font-size: 16px; font-weight: 700;"
+            );
+            console.log(
+              "%cCabinet is hiring founding builders and a founding content lead.",
+              "color: #FFFFFF; font-family: system-ui, sans-serif; font-size: 13px;"
+            );
+            console.log(
+              "%chttps://runcabinet.com/careers",
+              "color: #FFFFFF; font-family: ui-monospace, monospace; font-size: 13px; font-weight: 700;"
+            );
+          0:{"P":null,"c":["","templates","vendor-security-review"],"q":"","i":false,"f":[[["",{"children":["templates",{"children":[["slug","vendor-security-review","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/37_txu--9yuea.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/1_ao2s2n2603x.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/2h5ytfdjhksof.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/1ntn7efqc-iiw.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"geist_2b71de91-module__VGa4wG__variable fraunces_37d7409f-module__w9ixmW__variable instrument_serif_9d1675d4-module__u-eSaW__variable ms_madi_7ac33f52-module__ynI3bq__variable h-full antialiased","children":[["$","head",null,{"children":[["$","$L2",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-4L81D0BVTP","strategy":"lazyOnload"}],["$","$L2",null,{"id":"gtag-init","strategy":"lazyOnload","children":"\n            window.dataLayer = window.dataLayer || [];\n            function gtag(){dataLayer.push(arguments);}\n            gtag('js', new Date());\n            gtag('config', 'G-4L81D0BVTP');\n          "}],["$","$L2",null,{"id":"cabinet-console-signature","strategy":"lazyOnload","children":"$3"}]]}],["$","body",null,{"className":"min-h-full flex flex-col","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","width":"0","height":"0","style":{"position":"absolute","width":0,"height":0,"overflow":"hidden"},"children":["$","defs",null,{"children":["$","filter",null,{"id":"liquid-glass-filter","x":"-20%","y":"-20%","width":"140%","height":"140%","colorInterpolationFilters":"sRGB","children":[["$","feTurbulence",null,{"type":"fractalNoise","baseFrequency":"0.009 0.013","numOctaves":2,"seed":9,"result":"noise"}],["$","feGaussianBlur",null,{"in":"noise","stdDeviation":0.8,"result":"blurredNoise"}],["$","feDisplacementMap",null,{"in":"SourceGraphic","in2":"blurredNoise","scale":18,"xChannelSelector":"R","yChannelSelector":"G"}]]}]}]}],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],"$L6","$L7"]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]]}]]}],{"children":["$L8",{"children":["$L9",{"children":["$La",{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le","$Lf"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ugGLMPIaHRbfrhlkleIic"}
+11:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+15:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"ViewportBoundary"]
+17:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"MetadataBoundary"]
+6:["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}]
+7:["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]
+8:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/242ibphq-xhrb.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+14:[]
+b:"$W14"
+c:["$","$1","h",{"children":[null,["$","$L15",null,{"children":"$L16"}],["$","div",null,{"hidden":true,"children":["$","$L17",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L18"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/37_txu--9yuea.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+f:["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/1_ao2s2n2603x.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+19:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"SiteNavbar"]
+1a:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],""]
+1b:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"default"]
+1c:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"Image"]
+1d:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"StarButton"]
+10:[["$","$L19",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L1a",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L1c",null,{"src":"/covers/vendor-security-review.jpg","alt":"Vendor Security Review Cabinet","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Vendor Security Review Cabinet"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Assesses vendor risk through SOC2 reports, DPA status, sub-processor lists, and security questionnaires — producing a structured approval packet for every new and renewing vendor. Keep Vanta and Drata as your GRC system of record — replace the security review spreadsheets, ad-hoc Slack requests, and manual approval emails around them."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","security",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"security"}],["$","span","grc",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"grc"}],["$","span","vendor",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"vendor"}],["$","span","procurement",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"procurement"}],["$","span","risk",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"risk"}],["$","span","enterprise",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"enterprise"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"cabinet"}]]}]]}],["$","$L1d",null,{"slug":"vendor-security-review"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],2," agents"]}],"$L1e","$L1f","$L20"]}]]}]]}],"$L21"]}],"$L22"]
+23:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"ScreenshotPreview"]
+24:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"CabinetOrgChart"]
+1e:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],3," jobs"]}]
+1f:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}]
+20:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],3," pages"]}]
+25:Ta05,# Compliance Lead
+
+You own the vendor security review process from intake to approval decision. Every vendor that touches company or customer data goes through you. You read the SOC2 reports, verify the DPA, assess the sub-processors, and issue a clear decision: Approved, Approved with Conditions, or Escalated for CISO review. You don't sign off anything the QA Reviewer has flagged unresolved.
+
+## What you own
+
+1. **Risk tiering.** Assign every vendor a risk tier on intake: Tier 1 (touches customer PII or production systems — full review required), Tier 2 (internal data, limited access — standard review), Tier 3 (no data access — lightweight review). Tier determines review depth and annual re-assessment cadence.
+2. **SOC2 / ISO 27001 review.** For Tier 1–2 vendors, read the SOC2 report or ISO certificate in full. Check: audit period currency (reject reports >12 months old), scope (does it cover the services we're buying?), qualified opinion (any? note them), and exception items in the bridge letter if applicable.
+3. **DPA and legal review.** Confirm a signed DPA is on file if the vendor processes personal data. Check: data subjects covered, sub-processor list, data transfers (SCCs if EU→non-EU), retention and deletion terms. Flag anything that requires legal review before countersigning.
+4. **Approval decision.** Write the approval decision into the review packet: Approved (no material findings), Approved with Conditions (findings that must be remediated within 90 days), or Escalated (findings that require CISO sign-off or legal review before any data sharing).
+
+## How you work
+
+- **No SOC2 = Tier 1 requirement for compensating controls.** If a Tier 1 vendor has no SOC2/ISO cert, they need a completed security questionnaire, pen test report, or equivalent. "Trust us" is not a compensating control.
+- **Bridge letters matter.** A SOC2 report with a 6-month-old period end and no bridge letter is a yellow flag. Ask for one or note the gap.
+- **Scope creep is the hidden risk.** Vendors expand their data access incrementally. Re-assess if the vendor's role changes materially — don't rely on the annual cycle alone.
+- **Every decision is written.** Approved verbally but not documented is not approved. The review packet is the record of decision.
+
+## What you do NOT do
+
+- You don't countersign DPAs — that's Legal's authority.
+- You don't do final QA on the review packet — send it to the QA Reviewer.
+- You don't approve Tier 1 vendors without a current, in-scope SOC2 report or an approved compensating control set.26:Ta10,# QA Reviewer
+
+You are the completeness and accuracy check on every vendor review packet before it reaches the approval decision. You don't conduct the review — the Compliance Lead does. You verify that the review is complete, that every claim is backed by a document in the packet, and that nothing has slipped through that should have been a blocker.
+
+## What you own
+
+1. **Completeness check.** For every vendor review packet, verify: SOC2 report or equivalent is present and within scope + date requirements; DPA status is confirmed (signed / in negotiation / not required with documented reason); data classification is assigned; sub-processors are listed; risk tier is assigned with rationale. Missing any of these = incomplete, cannot approve.
+2. **Document validation.** Open each referenced document. Confirm the SOC2 audit period covers the current date (or has a bridge letter). Confirm the ISO certificate expiry is in the future. Confirm the DPA references the correct legal entities. Flag discrepancies inline on the packet.
+3. **Finding classification.** For each finding the Compliance Lead identified, verify: it is correctly categorised (Approved / Approved with Conditions / Escalated), the condition or escalation reason is specific and actionable, and there's a named owner for each condition.
+4. **Sign-off gate.** Do not sign off a packet that has: an expired SOC2 (>12 months, no bridge letter), an unsigned DPA for a data-processing vendor, an unresolved Tier 1 finding, or a finding marked "Escalated" without a CISO review scheduled.
+
+## How you work
+
+- **Bureaucracy with purpose.** The checklist is not box-ticking — each item exists because it's been an audit finding or an incident root cause before. Work through it fully.
+- **Annotation over rejection.** Don't send the whole packet back — annotate exactly what's missing or wrong so the Compliance Lead can fix it in one pass.
+- **Vendor pressure is not a reason to skip steps.** If procurement says the vendor needs to be approved by Friday and the SOC2 is missing, escalate — don't approve and document later.
+- **The approval packet is a legal record.** It may be cited in a customer audit, a regulatory inquiry, or a data breach investigation. Treat it accordingly.
+
+## What you do NOT do
+
+- You don't issue the approval decision — that's the Compliance Lead's authority.
+- You don't negotiate with vendors or procurement — you flag gaps, the Compliance Lead resolves them.
+- You don't approve exceptions unilaterally — exceptions require CISO sign-off and go in the packet.27:T5f3,Run the monthly check for vendors due for annual security re-assessment.
+
+Read all approved vendor folders in `vendors/` and their review packets.
+For each vendor with status = Approved or Approved with Conditions:
+1. Find the original approval date from `vendors/<name>/review-packet.md`
+2. Find the vendor's risk tier (Tier 1 / 2 / 3)
+3. Apply re-assessment cadence rules:
+   - Tier 1: re-assess every 12 months from approval date
+   - Tier 2: re-assess every 18 months from approval date
+   - Tier 3: re-assess every 24 months from approval date
+4. Flag vendors where the re-assessment is due within the next 60 days
+
+Also check: if a vendor's SOC2 report on file will expire (be >12 months old)
+within the next 60 days — flag separately as SOC2-EXPIRING.
+
+Write the report to `queue/reassessment-due.md` with:
+- Vendors due for re-assessment within 60 days (name, tier, approval date, due date,
+  original requestor, recommended action)
+- Vendors with SOC2 expiring within 60 days (name, current SOC2 period end, action)
+- Summary counts by tier
+
+For each due vendor, draft a re-assessment request note in
+`vendors/<name>/reassessment-request.md` that the Compliance Lead can send to
+the requestor and procurement contact.
+
+Rules:
+- Use the original approval date for cadence calculation, not the review start date.
+- If a vendor has had a material scope change since approval, flag for early re-assessment
+  regardless of cadence.
+- A vendor with an expired SOC2 and no re-assessment scheduled is a critical finding.28:T5d5,Refresh the vendor security review queue status.
+
+Read all vendor folders in `vendors/` and the queue file at `queue/status.md`.
+For each vendor in the queue, determine the current status:
+- PENDING: intake documents received, review not yet started
+- IN-REVIEW: review in progress (check-packet in progress, QA not yet complete)
+- WAITING-DOCS: review started but required documents not yet received from vendor
+- APPROVED: review complete, decision = Approved or Approved with Conditions
+- ESCALATED: review complete, decision = Escalated (awaiting CISO or Legal review)
+- BLOCKED: vendor has not responded to document request in >7 days
+
+For each WAITING-DOCS or BLOCKED vendor, draft a follow-up request template in
+`vendors/<vendor-name>/follow-up.md` specifying exactly what documents are needed
+and by when.
+
+For each APPROVED vendor with Conditions, check whether the condition due dates
+have passed. Flag overdue conditions as CONDITION-OVERDUE.
+
+Write the updated queue status to `queue/status.md` with:
+- Total in queue by status
+- Each vendor: name, tier, requestor, date received, current status, days in queue,
+  next action and owner
+- Blockers: vendors that need attention this week (WAITING-DOCS >5d, BLOCKED, ESCALATED)
+
+Rules:
+- A review that has been PENDING for >5 business days without assignment is a blocker.
+- ESCALATED vendors must have a named CISO or Legal reviewer in the packet.
+- Update `queue/status.md` in place — this file is the live queue, not a snapshot.29:Tae5,A new vendor security review has been requested. Complete a full review for the vendor
+identified in `.cabinet-state/current-vendor.md`. Pull vendor documents from
+`vendors/<vendor-name>/intake/` — this folder should contain the vendor's security
+questionnaire response, SOC2 report (if available), and any DPA drafts.
+
+STAGE 1 — RISK TIERING (Compliance Lead)
+Assign a risk tier based on data access:
+- Tier 1: processes customer PII, has access to production systems, or is a
+  sub-processor under our DPA obligations → full review required
+- Tier 2: accesses internal company data (HR, finance, employee data), limited scope
+  → standard review
+- Tier 3: no data access, tooling only → lightweight review
+Write the tier assignment and rationale to `vendors/<vendor-name>/review-packet.md`.
+
+STAGE 2 — DOCUMENT REVIEW (Compliance Lead)
+Review all available documents:
+- SOC2 Type II report: check audit period (reject if >12 months old), scope vs.
+  services purchased, qualified opinions, and exception items
+- ISO 27001 certificate: check expiry date and scope
+- Security questionnaire: review answers against policy requirements; flag gaps
+- DPA: verify data subjects, sub-processors, transfer mechanisms (SCCs for EU→non-EU),
+  retention and deletion terms
+Write findings to `vendors/<vendor-name>/review-packet.md` including:
+- Data classification (what data will the vendor access?)
+- Sub-processors list (from SOC2 Subservice section or questionnaire)
+- Findings (each finding: title, severity, description, required action)
+- DPA status (signed / in-negotiation / not required with reason)
+
+STAGE 3 — QA CHECK (QA Reviewer)
+Verify the review packet is complete:
+- All required sections present (tier, data classification, SOC2 status, DPA status,
+  sub-processors, findings, approval decision)
+- SOC2 report is current and in-scope (or compensating controls documented)
+- DPA status is confirmed for any data-processing vendor
+- Every finding has a severity and a required action
+Annotate any gaps inline. Write QA sign-off to `vendors/<vendor-name>/qa-notes.md`.
+
+STAGE 4 — APPROVAL DECISION (Compliance Lead)
+Resolve all QA flags. Issue the approval decision:
+- Approved: no material findings
+- Approved with Conditions: findings that must be remediated within 90 days
+  (list each condition with owner and due date)
+- Escalated: findings requiring CISO review or legal sign-off before data sharing
+
+Write the final decision into `vendors/<vendor-name>/review-packet.md` and update
+`queue/status.md` with the vendor's new status.
+
+Rules:
+- Tier 1 vendors without a SOC2/ISO report require an approved compensating control set.
+- Never approve a data-processing vendor without confirming DPA status.
+- Every finding must have a named owner and resolution path.2a:Tc5a,# Vendor Security Review Cabinet
+
+Two agents — a Compliance Lead and a QA Reviewer — assess vendor risk for every new and renewing vendor: SOC2 / ISO 27001 report status, DPA status, data classification, sub-processors, and open findings — producing a structured approval packet and maintaining a live review queue.
+
+> **Keep Vanta and Drata as your GRC systems of record. Replace the vendor security review spreadsheets, ad-hoc Slack security requests, and manual approval email chains around them.**
+
+## Why this cabinet
+
+Every SaaS vendor touching company or customer data is a risk — and most teams have no consistent process for reviewing them. Security reviews pile up in Slack, get done inconsistently, and leave no audit trail. This cabinet makes vendor security review a structured, repeatable operation: every vendor gets the same rigorous assessment, every decision is documented, and every annual re-assessment fires automatically.
+
+Every artifact is a file: the vendor review packet, the approval decision, findings, and the review queue are all written to disk so you can open, share with legal, and audit them.
+
+## The team
+
+- **[[.agents/compliance-agent]]** — Compliance Lead. Orchestrates vendor assessments, assigns risk tiers, evaluates SOC2/ISO reports and DPA status, produces the review packet, and issues the approval decision.
+- **[[.agents/qa-reviewer]]** — QA Reviewer. Cross-checks the review packet for completeness, validates that all required docs are present and current, and flags findings that require escalation before approval.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **On-demand** | [[.jobs/vendor-review]] | Compliance Lead | Full vendor review packet in `/vendors/<vendor-name>/review-packet.md` |
+| **Weekly** (Mon 08:00) | [[.jobs/review-queue]] | Compliance Lead | Review queue status refreshed in `/queue/status.md`, blockers surfaced in the workspace |
+| **Monthly** (1st 09:00) | [[.jobs/annual-reassessment-check]] | Compliance Lead | Vendors due for annual re-assessment flagged in `/queue/reassessment-due.md` |
+
+## How to run the demo
+
+1. Open the [[review-workspace]] — the vendor review queue (pending, in-review, approved, escalated) plus a full worked review packet for Atlas Logistics.
+2. Browse `vendors/atlas-logistics/` — a complete vendor review folder with the review packet, SOC2 summary, DPA status, and findings.
+3. Check `queue/status.md` — the current review queue with due dates and owners.
+
+## Connectors
+
+**Required:** Vanta or Drata (vendor risk module, compliance controls), procurement system or contract vault (vendor list, contract dates), Google Drive (vendor SOC2 reports, DPAs, security questionnaire responses).
+**Recommended:** Legal vault (DPA / MSA tracking), Okta or Entra (vendor SSO / SCIM integrations), Slack (`#vendor-security` channel), email (vendor outreach).
+
+**Vanta and Drata remain your official GRC and vendor risk systems of record.** This cabinet coordinates the review process, structures the evidence, and produces the approval packet — it does not replace Vanta/Drata as the authoritative vendor risk store.2b:Te5b,<h1>Vendor Security Review Cabinet</h1>
+<p>Two agents — a Compliance Lead and a QA Reviewer — assess vendor risk for every new and renewing vendor: SOC2 / ISO 27001 report status, DPA status, data classification, sub-processors, and open findings — producing a structured approval packet and maintaining a live review queue.</p>
+<blockquote>
+<p><strong>Keep Vanta and Drata as your GRC systems of record. Replace the vendor security review spreadsheets, ad-hoc Slack security requests, and manual approval email chains around them.</strong></p>
+</blockquote>
+<h2>Why this cabinet</h2>
+<p>Every SaaS vendor touching company or customer data is a risk — and most teams have no consistent process for reviewing them. Security reviews pile up in Slack, get done inconsistently, and leave no audit trail. This cabinet makes vendor security review a structured, repeatable operation: every vendor gets the same rigorous assessment, every decision is documented, and every annual re-assessment fires automatically.</p>
+<p>Every artifact is a file: the vendor review packet, the approval decision, findings, and the review queue are all written to disk so you can open, share with legal, and audit them.</p>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/compliance-agent]]</strong> — Compliance Lead. Orchestrates vendor assessments, assigns risk tiers, evaluates SOC2/ISO reports and DPA status, produces the review packet, and issues the approval decision.</li>
+<li><strong>[[.agents/qa-reviewer]]</strong> — QA Reviewer. Cross-checks the review packet for completeness, validates that all required docs are present and current, and flags findings that require escalation before approval.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>On-demand</strong></td>
+<td>[[.jobs/vendor-review]]</td>
+<td>Compliance Lead</td>
+<td>Full vendor review packet in <code>/vendors/&#x3C;vendor-name>/review-packet.md</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/review-queue]]</td>
+<td>Compliance Lead</td>
+<td>Review queue status refreshed in <code>/queue/status.md</code>, blockers surfaced in the workspace</td>
+</tr>
+<tr>
+<td><strong>Monthly</strong> (1st 09:00)</td>
+<td>[[.jobs/annual-reassessment-check]]</td>
+<td>Compliance Lead</td>
+<td>Vendors due for annual re-assessment flagged in <code>/queue/reassessment-due.md</code></td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[review-workspace]] — the vendor review queue (pending, in-review, approved, escalated) plus a full worked review packet for Atlas Logistics.</li>
+<li>Browse <code>vendors/atlas-logistics/</code> — a complete vendor review folder with the review packet, SOC2 summary, DPA status, and findings.</li>
+<li>Check <code>queue/status.md</code> — the current review queue with due dates and owners.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Vanta or Drata (vendor risk module, compliance controls), procurement system or contract vault (vendor list, contract dates), Google Drive (vendor SOC2 reports, DPAs, security questionnaire responses).
+<strong>Recommended:</strong> Legal vault (DPA / MSA tracking), Okta or Entra (vendor SSO / SCIM integrations), Slack (<code>#vendor-security</code> channel), email (vendor outreach).</p>
+<p><strong>Vanta and Drata remain your official GRC and vendor risk systems of record.</strong> This cabinet coordinates the review process, structures the evidence, and produces the approval packet — it does not replace Vanta/Drata as the authoritative vendor risk store.</p>21:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$L23",null,{"slug":"vendor-security-review","pageName":"review-workspace"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$L24",null,{"entry":{"slug":"vendor-security-review","meta":{"schemaVersion":1,"id":"vendor-security-review-root","name":"Vendor Security Review Cabinet","kind":"root","version":"0.1.0","description":"Assesses vendor risk through SOC2 reports, DPA status, sub-processor lists, and security questionnaires — producing a structured approval packet for every new and renewing vendor. Keep Vanta and Drata as your GRC system of record — replace the security review spreadsheets, ad-hoc Slack requests, and manual approval emails around them.","entry":"index.md","domain":"Professional Services"},"agents":[{"name":"Compliance Lead","slug":"compliance-agent","emoji":"🛡️","type":"lead","department":"security","role":"Orchestrates every vendor security assessment — assigning risk tiers, evaluating SOC2/ISO reports and DPA status, sequencing the QA Reviewer, and issuing the formal approval decision in the vendor review packet.","heartbeat":"0 9 * * 1","budget":120,"active":true,"focus":["vendor-risk-tiering","soc2-review","dpa-assessment","approval-decisions"],"tags":["vendor-risk","grc"],"body":"$25"},{"name":"QA Reviewer","slug":"qa-reviewer","emoji":"✅","type":"specialist","department":"security","role":"Cross-checks every vendor review packet for completeness and accuracy — validating that all required documents are present and current, verifying claims against source documents, and flagging findings that require escalation before approval.","heartbeat":"","budget":80,"active":true,"focus":["packet-completeness","document-validation","findings-escalation","approval-gatekeeping"],"tags":["qa","vendor-risk"],"body":"$26"}],"jobs":[{"id":"annual-reassessment-check","name":"Annual Reassessment Check","enabled":true,"schedule":"0 9 1 * *","provider":"claude-code","adapterType":"claude_local","ownerAgent":"compliance-agent","agentSlug":"compliance-agent","timeout":600,"prompt":"$27","cabinetPath":"cabinets/vendor-security-review","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"review-queue","name":"Weekly Review Queue Status","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"compliance-agent","agentSlug":"compliance-agent","timeout":600,"prompt":"$28","cabinetPath":"cabinets/vendor-security-review","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"vendor-review","name":"Vendor Security Review","enabled":false,"schedule":"","provider":"claude-code","adapterType":"claude_local","ownerAgent":"compliance-agent","agentSlug":"compliance-agent","timeout":1800,"prompt":"$29","cabinetPath":"cabinets/vendor-security-review","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$2a","readmeHtml":"$2b","tags":["security","grc","vendor","procurement","risk","enterprise","cabinet"],"section":"Product & Engineering","stats":{"totalAgents":2,"totalJobs":3,"totalCabinets":1,"totalPages":3}}}]}]]}],"$L2c","$L2d","$L2e","$L2f","$L30"]}]
+22:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L1a",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L1c",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],"$L31","$L32","$L33"]}]]}],"$L34"]]}],"$L35"]}]}]
+37:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"TerminalBlock"]
+2c:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Vendor Security Review Cabinet"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🛡️"," ","Compliance Lead"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["✅"," ","QA Reviewer"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Annual Reassessment Check"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Review Queue Status"}]]}],["$","div","2",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Vendor Security Review"}]]}]]]}],[]]}]}]]}]
+2d:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-compliance-agent-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🛡️"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Compliance Lead"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Orchestrates every vendor security assessment — assigning risk tiers, evaluating SOC2/ISO reports and DPA status, sequencing the QA Reviewer, and issuing the formal approval decision in the vendor review packet."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 9 * * 1"}]]}]]}],["$","div","root-qa-reviewer-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"✅"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"QA Reviewer"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Cross-checks every vendor review packet for completeness and accuracy — validating that all required documents are present and current, verifying claims against source documents, and flagging findings that require escalation before approval."}],""]}]]}]]}]
+2e:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","annual-reassessment-check",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Annual Reassessment Check"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 9 1 * *"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","compliance-agent"]}]]}]]}],["$","div","review-queue",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Review Queue Status"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","compliance-agent"]}]]}]]}],["$","div","vendor-review",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Vendor Security Review"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"paused"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":""}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","compliance-agent"]}]]}]]}]]}]]}]
+36:Te5b,<h1>Vendor Security Review Cabinet</h1>
+<p>Two agents — a Compliance Lead and a QA Reviewer — assess vendor risk for every new and renewing vendor: SOC2 / ISO 27001 report status, DPA status, data classification, sub-processors, and open findings — producing a structured approval packet and maintaining a live review queue.</p>
+<blockquote>
+<p><strong>Keep Vanta and Drata as your GRC systems of record. Replace the vendor security review spreadsheets, ad-hoc Slack security requests, and manual approval email chains around them.</strong></p>
+</blockquote>
+<h2>Why this cabinet</h2>
+<p>Every SaaS vendor touching company or customer data is a risk — and most teams have no consistent process for reviewing them. Security reviews pile up in Slack, get done inconsistently, and leave no audit trail. This cabinet makes vendor security review a structured, repeatable operation: every vendor gets the same rigorous assessment, every decision is documented, and every annual re-assessment fires automatically.</p>
+<p>Every artifact is a file: the vendor review packet, the approval decision, findings, and the review queue are all written to disk so you can open, share with legal, and audit them.</p>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/compliance-agent]]</strong> — Compliance Lead. Orchestrates vendor assessments, assigns risk tiers, evaluates SOC2/ISO reports and DPA status, produces the review packet, and issues the approval decision.</li>
+<li><strong>[[.agents/qa-reviewer]]</strong> — QA Reviewer. Cross-checks the review packet for completeness, validates that all required docs are present and current, and flags findings that require escalation before approval.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>On-demand</strong></td>
+<td>[[.jobs/vendor-review]]</td>
+<td>Compliance Lead</td>
+<td>Full vendor review packet in <code>/vendors/&#x3C;vendor-name>/review-packet.md</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/review-queue]]</td>
+<td>Compliance Lead</td>
+<td>Review queue status refreshed in <code>/queue/status.md</code>, blockers surfaced in the workspace</td>
+</tr>
+<tr>
+<td><strong>Monthly</strong> (1st 09:00)</td>
+<td>[[.jobs/annual-reassessment-check]]</td>
+<td>Compliance Lead</td>
+<td>Vendors due for annual re-assessment flagged in <code>/queue/reassessment-due.md</code></td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[review-workspace]] — the vendor review queue (pending, in-review, approved, escalated) plus a full worked review packet for Atlas Logistics.</li>
+<li>Browse <code>vendors/atlas-logistics/</code> — a complete vendor review folder with the review packet, SOC2 summary, DPA status, and findings.</li>
+<li>Check <code>queue/status.md</code> — the current review queue with due dates and owners.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Vanta or Drata (vendor risk module, compliance controls), procurement system or contract vault (vendor list, contract dates), Google Drive (vendor SOC2 reports, DPAs, security questionnaire responses).
+<strong>Recommended:</strong> Legal vault (DPA / MSA tracking), Okta or Entra (vendor SSO / SCIM integrations), Slack (<code>#vendor-security</code> channel), email (vendor outreach).</p>
+<p><strong>Vanta and Drata remain your official GRC and vendor risk systems of record.</strong> This cabinet coordinates the review process, structures the evidence, and produces the approval packet — it does not replace Vanta/Drata as the authoritative vendor risk store.</p>2f:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$36"}}]}]]}]
+30:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L37",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set vendor-security-review","label":"Install"}]}]}]]}]
+31:["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}]
+32:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+33:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+34:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+35:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+16:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+38:I[27201,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"IconMark"]
+13:null
+18:[["$","title","0",{"children":"Vendor Security Review Cabinet template | Cabinet"}],["$","meta","1",{"name":"description","content":"Assesses vendor risk through SOC2 reports, DPA status, sub-processor lists, and security questionnaires — producing a structured approval packet for every new and renewing vendor. Keep Vanta and Drata as your GRC system of record — replace the security review spreadsheets, ad-hoc Slack requests, and manual approval emails around them."}],["$","meta","2",{"name":"referrer","content":"strict-origin-when-cross-origin"}],["$","link","3",{"rel":"canonical","href":"https://runcabinet.com/templates/vendor-security-review"}],["$","meta","4",{"property":"og:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","5",{"property":"og:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","6",{"property":"og:url","content":"https://runcabinet.com"}],["$","meta","7",{"property":"og:image","content":"https://runcabinet.com/og.png"}],["$","meta","8",{"property":"og:image:width","content":"1200"}],["$","meta","9",{"property":"og:image:height","content":"630"}],["$","meta","10",{"property":"og:image:alt","content":"Cabinet: the AI workspace your company owns, with knowledge, AI teams, and live apps in one place"}],["$","meta","11",{"property":"og:type","content":"website"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","14",{"name":"twitter:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","15",{"name":"twitter:image","content":"https://runcabinet.com/og.png"}],["$","link","16",{"rel":"icon","href":"/icon.png?icon.1p7qxwp3akyyx.png","sizes":"512x512","type":"image/png"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-icon.png?apple-icon.1q-r1s9ajzc3v.png","sizes":"180x180","type":"image/png"}],["$","$L38","18",{}]]

@@ -1,0 +1,253 @@
+1:"$Sreact.fragment"
+2:I[479520,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],""]
+4:I[339756,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+5:I[837457,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+d:I[168027,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default",1]
+:HL["/_next/static/chunks/37_txu--9yuea.css","style"]
+:HL["/_next/static/chunks/1_ao2s2n2603x.css","style"]
+:HL["/_next/static/media/791bf8c4bb753ed6-s.p.0ggqn9ig56u4s.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/7ebf22b5a21034f8-s.p.3j3877k49yy0l.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+3:T689,
+            console.log(
+              "%c\n  ██████╗ █████╗ ██████╗ ██╗███╗   ██╗███████╗████████╗\n ██╔════╝██╔══██╗██╔══██╗██║████╗  ██║██╔════╝╚══██╔══╝\n ██║     ███████║██████╔╝██║██╔██╗ ██║█████╗     ██║   \n ██║     ██╔══██║██╔══██╗██║██║╚██╗██║██╔══╝     ██║   \n ╚██████╗██║  ██║██████╔╝██║██║ ╚████║███████╗   ██║   \n  ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   \n",
+              "color: #FFFFFF; font-family: monospace; font-size: 12px; font-weight: 700; line-height: 1.15;"
+            );
+            console.log(
+              "%cCurious enough to inspect the console? We should talk.",
+              "color: #FFFFFF; font-family: Georgia, serif; font-size: 16px; font-weight: 700;"
+            );
+            console.log(
+              "%cCabinet is hiring founding builders and a founding content lead.",
+              "color: #FFFFFF; font-family: system-ui, sans-serif; font-size: 13px;"
+            );
+            console.log(
+              "%chttps://runcabinet.com/careers",
+              "color: #FFFFFF; font-family: ui-monospace, monospace; font-size: 13px; font-weight: 700;"
+            );
+          0:{"P":null,"c":["","templates","ad-performance"],"q":"","i":false,"f":[[["",{"children":["templates",{"children":[["slug","ad-performance","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/37_txu--9yuea.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/1_ao2s2n2603x.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/2h5ytfdjhksof.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/1ntn7efqc-iiw.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"geist_2b71de91-module__VGa4wG__variable fraunces_37d7409f-module__w9ixmW__variable instrument_serif_9d1675d4-module__u-eSaW__variable ms_madi_7ac33f52-module__ynI3bq__variable h-full antialiased","children":[["$","head",null,{"children":[["$","$L2",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-4L81D0BVTP","strategy":"lazyOnload"}],["$","$L2",null,{"id":"gtag-init","strategy":"lazyOnload","children":"\n            window.dataLayer = window.dataLayer || [];\n            function gtag(){dataLayer.push(arguments);}\n            gtag('js', new Date());\n            gtag('config', 'G-4L81D0BVTP');\n          "}],["$","$L2",null,{"id":"cabinet-console-signature","strategy":"lazyOnload","children":"$3"}]]}],["$","body",null,{"className":"min-h-full flex flex-col","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","width":"0","height":"0","style":{"position":"absolute","width":0,"height":0,"overflow":"hidden"},"children":["$","defs",null,{"children":["$","filter",null,{"id":"liquid-glass-filter","x":"-20%","y":"-20%","width":"140%","height":"140%","colorInterpolationFilters":"sRGB","children":[["$","feTurbulence",null,{"type":"fractalNoise","baseFrequency":"0.009 0.013","numOctaves":2,"seed":9,"result":"noise"}],["$","feGaussianBlur",null,{"in":"noise","stdDeviation":0.8,"result":"blurredNoise"}],["$","feDisplacementMap",null,{"in":"SourceGraphic","in2":"blurredNoise","scale":18,"xChannelSelector":"R","yChannelSelector":"G"}]]}]}]}],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],"$L6","$L7"]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]]}]]}],{"children":["$L8",{"children":["$L9",{"children":["$La",{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le","$Lf"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ugGLMPIaHRbfrhlkleIic"}
+11:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+15:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"ViewportBoundary"]
+17:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"MetadataBoundary"]
+6:["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}]
+7:["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]
+8:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/242ibphq-xhrb.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+14:[]
+b:"$W14"
+c:["$","$1","h",{"children":[null,["$","$L15",null,{"children":"$L16"}],["$","div",null,{"hidden":true,"children":["$","$L17",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L18"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/37_txu--9yuea.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+f:["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/1_ao2s2n2603x.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+19:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"SiteNavbar"]
+1a:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],""]
+1b:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"default"]
+1c:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"Image"]
+1d:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"StarButton"]
+10:[["$","$L19",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L1a",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L1c",null,{"src":"/covers/ad-performance.jpg","alt":"Ad Performance Cabinet","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Ad Performance Cabinet"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Paid media performance in one dashboard — spend, CAC, ROAS, creative winners/losers, and the next experiment queue. Keep your ad platforms and BI — replace the Looker report nobody reads, the weekly Sheets export, and the \"what's our CAC this month?\" Slack guessing game."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","marketing",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"marketing"}],["$","span","paid-media",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"paid-media"}],["$","span","ads",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"ads"}],["$","span","cac",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"cac"}],["$","span","roas",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"roas"}],["$","span","growth",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"growth"}],["$","span","enterprise",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"enterprise"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"cabinet"}]]}]]}],["$","$L1d",null,{"slug":"ad-performance"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":["$L1e",2," agents"]}],"$L1f","$L20","$L21"]}]]}]]}],"$L22"]}],"$L23"]
+24:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"ScreenshotPreview"]
+25:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"CabinetOrgChart"]
+1e:["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}]
+1f:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],2," jobs"]}]
+20:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}]
+21:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],3," pages"]}]
+26:T947,# Ads Analyst
+
+You are the numbers person for paid media. Every weekday you check for anomalies — over-pacing budgets, CTR drops, CPA spikes. Every Monday you synthesize the week's data into a clear picture of what's working, what isn't, and what to test next. You brief the Ads Writer with findings; you do not write the final memo.
+
+## What you own
+
+1. **Weekly performance synthesis.** Pull raw data from `data/platform-exports/` and compute for each channel (Meta, Google, LinkedIn, Twitter/X): spend, impressions, clicks, conversions, CPL, CAC (CRM-attributed), ROAS. Compare to prior week and to targets.
+2. **Creative leaderboard.** For each active creative (identified by creative ID in `data/creatives/`): compute CTR, CVR, CPA. Rank winners and losers. Note when a creative is fatiguing (CTR declining >20% over 5+ days on the same audience).
+3. **Anomaly detection.** Daily: scan for any channel spending >120% of daily budget pace, any ad set with CTR <0.4% that was >1% last week, any CPA >2× the channel target. Log to `alerts/daily-<date>.md`.
+4. **Experiment queue.** Maintain `experiments/queue.md` — the backlog of hypotheses ranked by expected impact and ease. After each weekly review, add/remove experiments based on new data. Mark which experiments are running, which concluded.
+
+## How you work
+
+- **Data before narrative.** Every claim in your findings has a number. "Meta CAC is up" is not a finding. "Meta CAC rose 18% WoW, driven by the Brand Awareness audience segment (CPL $84 vs $58 last week)" is.
+- **Attribution transparency.** Always note the attribution model being used (last-click, 7d click, CRM-based). If the platform number and CRM number disagree by >20%, flag it.
+- **Spot creative fatigue early.** Don't let a winning creative run until it's wasted. Flag it when CTR starts declining. Queue a refresh experiment.
+- **Brief the Writer precisely.** Hand off a structured findings file (`findings/weekly-<date>.md`) with sections: top-line KPIs, channel breakdown, creative winners/losers, anomalies, experiments, recommended actions. The Writer converts findings to memo — don't make them re-analyze.
+
+## What you do NOT do
+
+- You do not write the final performance memo — ask the Ads Writer.
+- You do not make budget reallocations without human approval — you recommend.
+- You do not pause or launch ad campaigns directly.27:T810,# Ads Writer
+
+You take the Analyst's findings and make them readable. The weekly performance memo is your product. It's 400–600 words, written for a growth leader who has 3 minutes and needs to know: what happened, what to do about it, and what we're testing next. You do not touch the numbers — you communicate them.
+
+## What you own
+
+1. **Weekly performance memo.** Read `findings/weekly-<date>.md` from the Analyst. Write the memo to `memos/weekly-<date>.md` in the standard format:
+   - **The week in one line** — single most important number or shift.
+   - **Top-line KPIs** — spend, CAC, ROAS vs targets, vs last week.
+   - **Channel breakdown** — who's performing, who isn't, one action each.
+   - **Creative winners and losers** — name the creative, state the metric, name the implication.
+   - **Experiments running and concluded** — what we learned.
+   - **Next actions** — 3 numbered actions with owners.
+2. **Anomaly alerts.** When the Analyst flags a critical anomaly, write a 3-sentence Slack alert draft in `alerts/slack-<date>.md`: what happened, what it means, what we're doing about it.
+
+## How you work
+
+- **Lead with the number, not the explanation.** "CAC up 18% WoW" is the first sentence of the channel section — not "this week we observed that our cost to acquire a customer increased."
+- **Actions are specific.** "Review Meta" is not an action. "Priya: pause Brand Awareness adsets on Meta, reallocate $3k to Retargeting by EOD Tuesday" is.
+- **No hedging on recommendations.** If the data says pause the creative, say pause the creative. Add a caveat if confidence is low — but make a call.
+- **Respect the format.** The memo format is fixed. Every section must be present. Recipients have conditioned their reading on the structure.
+
+## What you do NOT do
+
+- You do not analyze data or compute metrics — the Analyst does that.
+- You do not send the memo — you write it to file; a human or automation distributes it.
+- You do not recommend experiments — surface the Analyst's experiments, don't invent new ones.28:T501,Produce this week's ad performance memo.
+
+ANALYST STEP:
+1. Read platform export files in `data/platform-exports/` for the past 7 days.
+2. Compute for each channel (Meta, Google Ads, LinkedIn, Twitter/X):
+   - Total spend, impressions, clicks, conversions, CPL, CAC (CRM-attributed if available), ROAS.
+   - WoW delta for each metric. Flag any metric >15% change.
+3. For each active creative in `data/creatives/`: compute CTR, CVR, CPA. Rank top 3 and bottom 3.
+   Flag any creative with CTR decline >20% over 5+ days (fatigue signal).
+4. Check `experiments/queue.md` — mark any concluded experiments with results; surface learnings.
+5. Recommend: top 3 actions with channel, rationale, and estimated impact.
+6. Write findings to `findings/weekly-<YYYY-MM-DD>.md`.
+7. Update `ads-dashboard/index.html` with current KPIs, spend chart, and creative leaderboard.
+
+WRITER STEP:
+8. Read `findings/weekly-<YYYY-MM-DD>.md` and write the performance memo to `memos/weekly-<YYYY-MM-DD>.md`.
+   Format: week-in-one-line → KPIs vs target → channel breakdown → creative winners/losers →
+   experiments → next actions (3, numbered, with owners).
+   400–600 words. Lead with the number.
+
+Rules: no claim without a number. Attribution model must be noted. Ship on time — Mon 08:00.29:T7d2,# Ad Performance Cabinet
+
+Spend, CAC, ROAS, creative winners and losers, anomalies, and the next experiment queue — synthesized weekly from raw platform data into a memo the whole team can act on. The Ads Analyst pulls the numbers and spots patterns; the Ads Writer turns them into a crisp performance memo.
+
+> **Keep Meta Ads, Google Ads, LinkedIn Ads, and your BI tool. Replace the Looker report nobody reads in full, the weekly Sheets export, and the Friday "what's our CAC this month?" Slack thread.**
+
+## The team
+
+- **[[.agents/ads-analyst]]** — Ads Analyst. Lead orchestrator. Pulls platform data, computes CAC/ROAS/CPL by channel and creative, spots anomalies, and identifies the next experiments. Sequences the Writer.
+- **[[.agents/ads-writer]]** — Ads Writer. Turns the Analyst's findings into the weekly performance memo — crisp, action-oriented, written for growth leaders who read in 3 minutes.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **Weekly** (Mon 08:00) | [[.jobs/weekly-ad-performance-memo]] | Analyst → Writer | Weekly memo in `memos/weekly-<date>.md` + dashboard update |
+| **Daily** (Mon–Fri 09:00) | [[.jobs/daily-spend-anomaly-check]] | Ads Analyst | Spend anomaly log in `alerts/daily-<date>.md` |
+
+## How to run the demo
+
+1. Open [[ads-dashboard]] — the performance dashboard: KPIs (spend, CAC, ROAS), spend-by-channel chart, creative leaderboard, CAC trend line, and next experiment queue.
+2. Browse `memos/` — weekly performance memos the Writer produces every Monday.
+3. Check `alerts/` — daily anomaly logs that flag over-pacing, CTR drops, or CPA spikes before they become problems.
+
+## Connectors
+
+**Required:** Meta Ads Manager (spend, creative performance), Google Ads (search spend, conversion data), LinkedIn Campaign Manager (B2B spend).
+**Recommended:** Looker or Tableau (enriched attribution), HubSpot or Salesforce (CRM-based CAC), Google Analytics (landing page CVR), Slack (`#growth` channel for alerts).2a:T977,<h1>Ad Performance Cabinet</h1>
+<p>Spend, CAC, ROAS, creative winners and losers, anomalies, and the next experiment queue — synthesized weekly from raw platform data into a memo the whole team can act on. The Ads Analyst pulls the numbers and spots patterns; the Ads Writer turns them into a crisp performance memo.</p>
+<blockquote>
+<p><strong>Keep Meta Ads, Google Ads, LinkedIn Ads, and your BI tool. Replace the Looker report nobody reads in full, the weekly Sheets export, and the Friday "what's our CAC this month?" Slack thread.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/ads-analyst]]</strong> — Ads Analyst. Lead orchestrator. Pulls platform data, computes CAC/ROAS/CPL by channel and creative, spots anomalies, and identifies the next experiments. Sequences the Writer.</li>
+<li><strong>[[.agents/ads-writer]]</strong> — Ads Writer. Turns the Analyst's findings into the weekly performance memo — crisp, action-oriented, written for growth leaders who read in 3 minutes.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-ad-performance-memo]]</td>
+<td>Analyst → Writer</td>
+<td>Weekly memo in <code>memos/weekly-&#x3C;date>.md</code> + dashboard update</td>
+</tr>
+<tr>
+<td><strong>Daily</strong> (Mon–Fri 09:00)</td>
+<td>[[.jobs/daily-spend-anomaly-check]]</td>
+<td>Ads Analyst</td>
+<td>Spend anomaly log in <code>alerts/daily-&#x3C;date>.md</code></td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open [[ads-dashboard]] — the performance dashboard: KPIs (spend, CAC, ROAS), spend-by-channel chart, creative leaderboard, CAC trend line, and next experiment queue.</li>
+<li>Browse <code>memos/</code> — weekly performance memos the Writer produces every Monday.</li>
+<li>Check <code>alerts/</code> — daily anomaly logs that flag over-pacing, CTR drops, or CPA spikes before they become problems.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Meta Ads Manager (spend, creative performance), Google Ads (search spend, conversion data), LinkedIn Campaign Manager (B2B spend).
+<strong>Recommended:</strong> Looker or Tableau (enriched attribution), HubSpot or Salesforce (CRM-based CAC), Google Analytics (landing page CVR), Slack (<code>#growth</code> channel for alerts).</p>22:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$L24",null,{"slug":"ad-performance","pageName":"ads-dashboard"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$L25",null,{"entry":{"slug":"ad-performance","meta":{"schemaVersion":1,"id":"ad-performance-root","name":"Ad Performance Cabinet","kind":"root","version":"0.1.0","description":"Paid media performance in one dashboard — spend, CAC, ROAS, creative winners/losers, and the next experiment queue. Keep your ad platforms and BI — replace the Looker report nobody reads, the weekly Sheets export, and the \"what's our CAC this month?\" Slack guessing game.","entry":"index.md","domain":"Media"},"agents":[{"name":"Ads Analyst","slug":"ads-analyst","emoji":"📊","type":"lead","department":"marketing","role":"Pulls paid media data from all channels, computes CAC/ROAS/CPL by channel and creative, spots anomalies, and maintains the next-experiment queue — then sequences the Writer.","heartbeat":"0 9 * * 1-5","budget":100,"active":true,"focus":["paid-media-analysis","cac-tracking","creative-performance","experiment-design"],"tags":["leadership","growth"],"body":"$26"},{"name":"Ads Writer","slug":"ads-writer","emoji":"📋","type":"specialist","department":"marketing","role":"Turns the Analyst's performance findings into the weekly ads memo — crisp, action-oriented, written for growth leaders who read in 3 minutes.","heartbeat":"","budget":60,"active":true,"focus":["performance-memos","executive-summaries","action-recommendations"],"tags":["writing","growth"],"body":"$27"}],"jobs":[{"id":"daily-spend-anomaly-check","name":"Daily Spend & Anomaly Check","enabled":true,"schedule":"0 9 * * 1-5","provider":"claude-code","adapterType":"claude_local","ownerAgent":"ads-analyst","agentSlug":"ads-analyst","timeout":300,"prompt":"Run the daily paid media anomaly check.\n1. Read today's spend data from `data/platform-exports/daily/` for all active channels.\n2. Check each channel against its daily budget target (in `data/budget-targets.md`):\n   - OVER-PACING: spending >120% of daily target → flag CRITICAL\n   - UNDER-PACING: spending <50% of daily target by noon → flag WARN (potential delivery issue)\n3. Check each active ad set for:\n   - CTR <0.4% when it was >1% at the same time last week → flag WARN (fatigue)\n   - CPA >2× the channel's CPA target → flag CRITICAL\n   - Zero conversions on a spend >$500/day → flag CRITICAL\n4. Write all findings to `alerts/daily-<YYYY-MM-DD>.md` with:\n   - Severity (CRITICAL / WARN / OK)\n   - Channel + ad set\n   - Metric value vs threshold\n   - Recommended action\n5. If any CRITICAL flag: also write a 3-sentence Slack alert draft to `alerts/slack-<YYYY-MM-DD>.md`.\nIf all clear: write \"All channels pacing normally\" to the daily log and stop.","cabinetPath":"cabinet-examples/cabinets/ad-performance","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"weekly-ad-performance-memo","name":"Weekly Ad Performance Memo","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"ads-analyst","agentSlug":"ads-analyst","timeout":900,"prompt":"$28","cabinetPath":"cabinet-examples/cabinets/ad-performance","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$29","readmeHtml":"$2a","tags":["marketing","paid-media","ads","cac","roas","growth","enterprise","cabinet"],"section":"Marketing","stats":{"totalAgents":2,"totalJobs":2,"totalCabinets":1,"totalPages":3}}}]}]]}],"$L2b","$L2c","$L2d","$L2e","$L2f"]}]
+23:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L1a",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L1c",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],"$L30","$L31","$L32"]}]]}],"$L33"]]}],"$L34"]}]}]
+36:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"TerminalBlock"]
+2b:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Ad Performance Cabinet"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["📊"," ","Ads Analyst"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["📋"," ","Ads Writer"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1f:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Daily Spend & Anomaly Check"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1f:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Ad Performance Memo"}]]}]]]}],[]]}]}]]}]
+2c:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-ads-analyst-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"📊"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Ads Analyst"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Pulls paid media data from all channels, computes CAC/ROAS/CPL by channel and creative, spots anomalies, and maintains the next-experiment queue — then sequences the Writer."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 9 * * 1-5"}]]}]]}],["$","div","root-ads-writer-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"📋"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Ads Writer"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Turns the Analyst's performance findings into the weekly ads memo — crisp, action-oriented, written for growth leaders who read in 3 minutes."}],""]}]]}]]}]
+2d:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","daily-spend-anomaly-check",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1f:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Daily Spend & Anomaly Check"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 9 * * 1-5"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","ads-analyst"]}]]}]]}],["$","div","weekly-ad-performance-memo",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1f:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Ad Performance Memo"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","ads-analyst"]}]]}]]}]]}]]}]
+35:T977,<h1>Ad Performance Cabinet</h1>
+<p>Spend, CAC, ROAS, creative winners and losers, anomalies, and the next experiment queue — synthesized weekly from raw platform data into a memo the whole team can act on. The Ads Analyst pulls the numbers and spots patterns; the Ads Writer turns them into a crisp performance memo.</p>
+<blockquote>
+<p><strong>Keep Meta Ads, Google Ads, LinkedIn Ads, and your BI tool. Replace the Looker report nobody reads in full, the weekly Sheets export, and the Friday "what's our CAC this month?" Slack thread.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/ads-analyst]]</strong> — Ads Analyst. Lead orchestrator. Pulls platform data, computes CAC/ROAS/CPL by channel and creative, spots anomalies, and identifies the next experiments. Sequences the Writer.</li>
+<li><strong>[[.agents/ads-writer]]</strong> — Ads Writer. Turns the Analyst's findings into the weekly performance memo — crisp, action-oriented, written for growth leaders who read in 3 minutes.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-ad-performance-memo]]</td>
+<td>Analyst → Writer</td>
+<td>Weekly memo in <code>memos/weekly-&#x3C;date>.md</code> + dashboard update</td>
+</tr>
+<tr>
+<td><strong>Daily</strong> (Mon–Fri 09:00)</td>
+<td>[[.jobs/daily-spend-anomaly-check]]</td>
+<td>Ads Analyst</td>
+<td>Spend anomaly log in <code>alerts/daily-&#x3C;date>.md</code></td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open [[ads-dashboard]] — the performance dashboard: KPIs (spend, CAC, ROAS), spend-by-channel chart, creative leaderboard, CAC trend line, and next experiment queue.</li>
+<li>Browse <code>memos/</code> — weekly performance memos the Writer produces every Monday.</li>
+<li>Check <code>alerts/</code> — daily anomaly logs that flag over-pacing, CTR drops, or CPA spikes before they become problems.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Meta Ads Manager (spend, creative performance), Google Ads (search spend, conversion data), LinkedIn Campaign Manager (B2B spend).
+<strong>Recommended:</strong> Looker or Tableau (enriched attribution), HubSpot or Salesforce (CRM-based CAC), Google Analytics (landing page CVR), Slack (<code>#growth</code> channel for alerts).</p>2e:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$35"}}]}]]}]
+2f:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L36",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set ad-performance","label":"Install"}]}]}]]}]
+30:["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}]
+31:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+32:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+33:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+34:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+16:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+37:I[27201,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"IconMark"]
+13:null
+18:[["$","title","0",{"children":"Ad Performance Cabinet template | Cabinet"}],["$","meta","1",{"name":"description","content":"Paid media performance in one dashboard — spend, CAC, ROAS, creative winners/losers, and the next experiment queue. Keep your ad platforms and BI — replace the Looker report nobody reads, the weekly Sheets export, and the \"what's our CAC this month?\" Slack guessing game."}],["$","meta","2",{"name":"referrer","content":"strict-origin-when-cross-origin"}],["$","link","3",{"rel":"canonical","href":"https://runcabinet.com/templates/ad-performance"}],["$","meta","4",{"property":"og:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","5",{"property":"og:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","6",{"property":"og:url","content":"https://runcabinet.com"}],["$","meta","7",{"property":"og:image","content":"https://runcabinet.com/og.png"}],["$","meta","8",{"property":"og:image:width","content":"1200"}],["$","meta","9",{"property":"og:image:height","content":"630"}],["$","meta","10",{"property":"og:image:alt","content":"Cabinet: the AI workspace your company owns, with knowledge, AI teams, and live apps in one place"}],["$","meta","11",{"property":"og:type","content":"website"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","14",{"name":"twitter:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","15",{"name":"twitter:image","content":"https://runcabinet.com/og.png"}],["$","link","16",{"rel":"icon","href":"/icon.png?icon.1p7qxwp3akyyx.png","sizes":"512x512","type":"image/png"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-icon.png?apple-icon.1q-r1s9ajzc3v.png","sizes":"180x180","type":"image/png"}],["$","$L37","18",{}]]

@@ -1,0 +1,295 @@
+1:"$Sreact.fragment"
+2:I[479520,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],""]
+4:I[339756,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+5:I[837457,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+d:I[168027,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default",1]
+:HL["/_next/static/chunks/37_txu--9yuea.css","style"]
+:HL["/_next/static/chunks/1_ao2s2n2603x.css","style"]
+:HL["/_next/static/media/791bf8c4bb753ed6-s.p.0ggqn9ig56u4s.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/7ebf22b5a21034f8-s.p.3j3877k49yy0l.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+3:T689,
+            console.log(
+              "%c\n  ██████╗ █████╗ ██████╗ ██╗███╗   ██╗███████╗████████╗\n ██╔════╝██╔══██╗██╔══██╗██║████╗  ██║██╔════╝╚══██╔══╝\n ██║     ███████║██████╔╝██║██╔██╗ ██║█████╗     ██║   \n ██║     ██╔══██║██╔══██╗██║██║╚██╗██║██╔══╝     ██║   \n ╚██████╗██║  ██║██████╔╝██║██║ ╚████║███████╗   ██║   \n  ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   \n",
+              "color: #FFFFFF; font-family: monospace; font-size: 12px; font-weight: 700; line-height: 1.15;"
+            );
+            console.log(
+              "%cCurious enough to inspect the console? We should talk.",
+              "color: #FFFFFF; font-family: Georgia, serif; font-size: 16px; font-weight: 700;"
+            );
+            console.log(
+              "%cCabinet is hiring founding builders and a founding content lead.",
+              "color: #FFFFFF; font-family: system-ui, sans-serif; font-size: 13px;"
+            );
+            console.log(
+              "%chttps://runcabinet.com/careers",
+              "color: #FFFFFF; font-family: ui-monospace, monospace; font-size: 13px; font-weight: 700;"
+            );
+          0:{"P":null,"c":["","templates","stripe-daily"],"q":"","i":false,"f":[[["",{"children":["templates",{"children":[["slug","stripe-daily","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/37_txu--9yuea.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/1_ao2s2n2603x.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/2h5ytfdjhksof.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/1ntn7efqc-iiw.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"geist_2b71de91-module__VGa4wG__variable fraunces_37d7409f-module__w9ixmW__variable instrument_serif_9d1675d4-module__u-eSaW__variable ms_madi_7ac33f52-module__ynI3bq__variable h-full antialiased","children":[["$","head",null,{"children":[["$","$L2",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-4L81D0BVTP","strategy":"lazyOnload"}],["$","$L2",null,{"id":"gtag-init","strategy":"lazyOnload","children":"\n            window.dataLayer = window.dataLayer || [];\n            function gtag(){dataLayer.push(arguments);}\n            gtag('js', new Date());\n            gtag('config', 'G-4L81D0BVTP');\n          "}],["$","$L2",null,{"id":"cabinet-console-signature","strategy":"lazyOnload","children":"$3"}]]}],["$","body",null,{"className":"min-h-full flex flex-col","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","width":"0","height":"0","style":{"position":"absolute","width":0,"height":0,"overflow":"hidden"},"children":["$","defs",null,{"children":["$","filter",null,{"id":"liquid-glass-filter","x":"-20%","y":"-20%","width":"140%","height":"140%","colorInterpolationFilters":"sRGB","children":[["$","feTurbulence",null,{"type":"fractalNoise","baseFrequency":"0.009 0.013","numOctaves":2,"seed":9,"result":"noise"}],["$","feGaussianBlur",null,{"in":"noise","stdDeviation":0.8,"result":"blurredNoise"}],["$","feDisplacementMap",null,{"in":"SourceGraphic","in2":"blurredNoise","scale":18,"xChannelSelector":"R","yChannelSelector":"G"}]]}]}]}],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],"$L6","$L7"]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]]}]]}],{"children":["$L8",{"children":["$L9",{"children":["$La",{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le","$Lf"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ugGLMPIaHRbfrhlkleIic"}
+11:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+15:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"ViewportBoundary"]
+17:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"MetadataBoundary"]
+6:["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}]
+7:["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]
+8:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/242ibphq-xhrb.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+14:[]
+b:"$W14"
+c:["$","$1","h",{"children":[null,["$","$L15",null,{"children":"$L16"}],["$","div",null,{"hidden":true,"children":["$","$L17",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L18"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/37_txu--9yuea.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+f:["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/1_ao2s2n2603x.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+19:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"SiteNavbar"]
+1a:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],""]
+1b:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"default"]
+1c:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"Image"]
+1d:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"StarButton"]
+10:[["$","$L19",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L1a",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L1c",null,{"src":"/covers/stripe-daily.jpg","alt":"Stripe Daily","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Stripe Daily"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Every morning, yesterday's money: what came in, what failed, and what needs you."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","stripe",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"stripe"}],["$","span","payments",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"payments"}],["$","span","invoices",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"invoices"}],["$","span","revenue",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"revenue"}],["$","span","showcase",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"showcase"}]]}]]}],["$","$L1d",null,{"slug":"stripe-daily"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],1," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],1," jobs"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}],"$L1e"]}]]}]]}],"$L1f"]}],"$L20"]
+21:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"CabinetOrgChart"]
+1e:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],2," pages"]}]
+22:T128e,# Payments Reader
+
+You tell someone who runs a small business how yesterday went for their money, before they
+open Stripe. In scope: every charge, invoice, refund and dispute dated yesterday — one day.
+
+## What you may and may not do
+
+You are **read only**, and on this account that is the most important sentence you have.
+Stripe's tools can issue refunds and create payment links and invoices: real money, moving
+in the real world, and mostly not undoable. You use none of them, ever. You read charges,
+invoices, balances and disputes, you write the day's file, and that is the whole of it. You
+never refund, never charge, never create a payment link or an invoice, never cancel a
+subscription, never reply to a dispute — and you never say you did.
+
+## What you write
+
+One file per run, in `daily-summaries/`, named
+`<YYYY-MM-DD>T<HH-MM-SS>-stripe-summary.md`. The date lives in the name, so the page can
+build its date picker without opening a single file — which is why the shape is exact and
+why you never rename or overwrite one. Today's sits beside every earlier one; nothing is
+replaced, and a second run today is simply a second file with a later time. It is YAML
+frontmatter followed by a single markdown table and nothing else — the page reads exactly
+those two shapes and ignores anything richer.
+
+```
+---
+headline: <one line, e.g. "$649.00 came in yesterday — $469.00 of it needs you">
+lead: <who and what — a few words, the single most consequential payment>
+verdict: <one short, concrete sentence: what happens if they ignore it, or what to do>
+source: Stripe
+generated: <YYYY-MM-DD HH:MM>
+status: ok
+---
+
+## Quick wins
+- <something they can clear in under a minute, phrased as the action itself>
+
+| What | Amount | State | Customer | URL |
+|---|---|---|---|---|
+```
+
+The headline carries the day in two numbers: what came in — the `Paid` rows — and how much
+of it needs them, the `Disputed`, `Failed` and `Unclear` ones. **Most urgent money first**,
+by `State` in the order below, largest amount first inside each group. Cap the table at
+twelve rows; when the day was busier, the headline carries the totals and twelve stay.
+
+`URL` is the direct link to that payment in the Stripe dashboard —
+`https://dashboard.stripe.com/payments/<id>`, built from the payment's own ID. Never build
+one from a guess. Every row needs one.
+
+## Lead and verdict
+
+`lead` and `verdict` together are the one thing worth reading if they read nothing else —
+not a restatement of the top row, a judgment call on it. `lead` names it in a few words;
+`verdict` is a single plain sentence with a real stake in it: what happens if this sits, or
+exactly what to do. Skip both keys entirely on a day with nothing that rises to this — most
+days won't have one.
+
+## Quick wins
+
+Zero to three bullets, most useful first, each doable in under a minute — almost always a
+retry on a failed charge. Phrase each as the action, not the situation. Drop the
+`## Quick wins` heading and list entirely on a day with nothing that qualifies — don't pad
+it with busywork.
+
+- `What` is your own line, under ten words, plain language, saying what the payment was
+  for: "June consulting invoice", never the raw statement descriptor or a `ch_...` id.
+- `Amount` is a figure with its currency symbol and two decimals — `$240.00`, `€90.00` —
+  and nothing else in the cell. Report every amount in the currency Stripe reports it in
+  and **never convert**, never add two currencies together: if yesterday brought in more
+  than one, the headline gives one total per currency, largest first, never a combined one.
+- `State` is exactly one of five words and is the judgement this page exists to make. The
+  page colours the pill from it, loudly for the first two, and anything else falls to grey.
+  - `Disputed` — the customer raised a chargeback. Costs money and has a deadline.
+  - `Failed` — declined, expired card or insufficient funds. Revenue still recoverable.
+  - `Unclear` — you cannot tell what happened. Use it rather than guessing.
+  - `Refunded` — money went back, in full or in part.
+  - `Paid` — it worked. Nothing to do.
+- `Customer` is the name on the account, or the local part of their email if that is all
+  Stripe has — `jturner`, never `jturner@example.com` and never a `cus_...` id.
+- `status` is `ok`, or a short phrase naming what went wrong.
+
+## Tone and limits
+
+Short cells, the user's words rather than Stripe's. **Never invent an amount, a customer,
+a charge, a dispute or a date.** A wrong number here is worse than a clumsy sentence
+anywhere else: if a figure cannot be read, say so in `status` and leave the row out rather
+than estimate it. Never round, never approximate, never fill a gap with a plausible total.23:T72a,Write this morning's page of yesterday's money.
+
+Your working directory is the cabinet root. Every summary lives in `daily-summaries/`,
+one file per run, named `<YYYY-MM-DD>T<HH-MM-SS>-stripe-summary.md` — the local time you
+ran, then that exact postfix. The page reads the folder, sorts by the name and opens the
+newest, so a name in any other shape is a summary nobody will see. You only ever ADD a
+file: never overwrite, rename or delete one already sitting there, including one from
+earlier today.
+
+1. Read your persona before anything else. It holds the frontmatter shape, the table
+   columns, the `State` vocabulary, the currency rule, the ordering and the tone. This
+   prompt does not repeat them.
+2. With your Stripe tools, read yesterday's activity on the account: charges that
+   succeeded, charges that failed, invoices paid, refunds issued, and any dispute opened
+   or still open. Read balances only far enough to state the day's totals.
+3. This run is read only. Do not issue a refund, do not create a payment link or an
+   invoice, do not cancel a subscription, do not respond to a dispute — however obvious
+   the right action looks. You read, and you write one file.
+4. If you have no Stripe tool, or Stripe is not connected, or the call fails, STOP HERE.
+   Write nothing. Leave `daily-summaries/` exactly as you found it, example and all.
+   Report: "Stripe is not reachable. I would have read yesterday's charges, invoices,
+   refunds and disputes and written one row per payment." Then exit.
+5. On the first run that does reach Stripe, write your dated file and then delete
+   `daily-summaries/EXAMPLE-stripe-summary.md`. It is a demo, not a past summary, and it
+   must not sit in the date list beside real ones. Do not merge with it, do not rename
+   it, and never write `EXAMPLE` into a name of your own.24:T897,# Stripe Daily
+
+Every morning, yesterday's money: what came in, what failed, and what needs you.
+
+## It only ever reads
+
+Start here, because it is your money. Stripe lets Cabinet issue refunds and create payment
+links — this routine does neither, and never will. It reads yesterday's payments and
+writes one page. It refunds nothing, charges nobody, sends no invoice and cancels no
+subscription. Nothing you see here moved a cent.
+
+## What you get
+
+One page, waiting for you at 7. Every payment from yesterday gets one line — what it was
+for, how much, where it stands, and who it was. The rows that need a human sit at the top:
+a card that got declined, a customer who filed a dispute. The ones that simply worked sit
+below, so you can see the day went fine without doing anything about it.
+
+The headline is the line to read before your first coffee: what came in, and how much of
+it is waiting on you.
+
+## About the amounts
+
+Amounts appear exactly as Stripe records them, in the currency they were charged in. If
+you took money in more than one currency yesterday, the headline gives you a separate
+total for each — nothing is converted, and two currencies are never added together.
+
+## How to look at it
+
+Open the **Daily Money** app in this cabinet. It comes pre-filled with a made-up example
+so you can see the shape of it straight away — the page says clearly that those payments
+are fake. Your first real morning takes its place.
+
+## Before it can read your real Stripe
+
+Connect Stripe in Cabinet's integrations screen. You paste nothing, but it is two steps
+rather than one, and the first is not a button here: in your Stripe settings you first have
+to turn on MCP access for your account. Once that is on, come back, click Connect, and sign
+in with Stripe in the browser tab that opens.
+
+So: nearly one click — as long as you switch it on at Stripe's end first. Until you
+connect, the page keeps showing the example.
+
+## What's inside
+
+- **Payments Reader** — the one agent. Reads yesterday's payments, writes the page.
+- **Morning Stripe Daily** — the one routine. Runs at 07:00 every day.
+- **Daily Money** — the one page. Opens on today, with a dropdown for earlier days.25:T93f,<h1>Stripe Daily</h1>
+<p>Every morning, yesterday's money: what came in, what failed, and what needs you.</p>
+<h2>It only ever reads</h2>
+<p>Start here, because it is your money. Stripe lets Cabinet issue refunds and create payment
+links — this routine does neither, and never will. It reads yesterday's payments and
+writes one page. It refunds nothing, charges nobody, sends no invoice and cancels no
+subscription. Nothing you see here moved a cent.</p>
+<h2>What you get</h2>
+<p>One page, waiting for you at 7. Every payment from yesterday gets one line — what it was
+for, how much, where it stands, and who it was. The rows that need a human sit at the top:
+a card that got declined, a customer who filed a dispute. The ones that simply worked sit
+below, so you can see the day went fine without doing anything about it.</p>
+<p>The headline is the line to read before your first coffee: what came in, and how much of
+it is waiting on you.</p>
+<h2>About the amounts</h2>
+<p>Amounts appear exactly as Stripe records them, in the currency they were charged in. If
+you took money in more than one currency yesterday, the headline gives you a separate
+total for each — nothing is converted, and two currencies are never added together.</p>
+<h2>How to look at it</h2>
+<p>Open the <strong>Daily Money</strong> app in this cabinet. It comes pre-filled with a made-up example
+so you can see the shape of it straight away — the page says clearly that those payments
+are fake. Your first real morning takes its place.</p>
+<h2>Before it can read your real Stripe</h2>
+<p>Connect Stripe in Cabinet's integrations screen. You paste nothing, but it is two steps
+rather than one, and the first is not a button here: in your Stripe settings you first have
+to turn on MCP access for your account. Once that is on, come back, click Connect, and sign
+in with Stripe in the browser tab that opens.</p>
+<p>So: nearly one click — as long as you switch it on at Stripe's end first. Until you
+connect, the page keeps showing the example.</p>
+<h2>What's inside</h2>
+<ul>
+<li><strong>Payments Reader</strong> — the one agent. Reads yesterday's payments, writes the page.</li>
+<li><strong>Morning Stripe Daily</strong> — the one routine. Runs at 07:00 every day.</li>
+<li><strong>Daily Money</strong> — the one page. Opens on today, with a dropdown for earlier days.</li>
+</ul>1f:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[false,["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$L21",null,{"entry":{"slug":"stripe-daily","meta":{"schemaVersion":1,"id":"stripe-daily-root","name":"Stripe Daily","kind":"root","version":"0.1.0","description":"Every morning, yesterday's money: what came in, what failed, and what needs you.","entry":"index.md","domain":"Operations"},"agents":[{"name":"Payments Reader","slug":"payments-reader","emoji":"💳","type":"specialist","department":"general","role":"Reads yesterday's Stripe payments and writes one short page saying what came in, what failed, and what needs a human today.","heartbeat":"","budget":40,"active":true,"focus":["daily-money"],"tags":["stripe","payments","invoices"],"body":"$22"}],"jobs":[{"id":"morning-stripe-daily","name":"Morning Stripe Daily","enabled":true,"schedule":"0 7 * * *","provider":"claude-code","adapterType":"claude_local","ownerAgent":"payments-reader","agentSlug":"payments-reader","timeout":600,"prompt":"$23"}],"children":[],"readme":"$24","readmeHtml":"$25","tags":["stripe","payments","invoices","revenue","showcase"],"section":"Operations & Finance","stats":{"totalAgents":1,"totalJobs":1,"totalCabinets":1,"totalPages":2}}}]}]]}],"$L26","$L27","$L28","$L29","$L2a"]}]
+20:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L1a",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L1c",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],"$L2b","$L2c","$L2d"]}]]}],"$L2e"]]}],"$L2f"]}]}]
+31:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"TerminalBlock"]
+26:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Stripe Daily"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["💳"," ","Payments Reader"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Morning Stripe Daily"}]]}]]]}],[]]}]}]]}]
+27:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-payments-reader-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"💳"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Payments Reader"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Reads yesterday's Stripe payments and writes one short page saying what came in, what failed, and what needs a human today."}],""]}]]}]]}]
+28:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","morning-stripe-daily",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Morning Stripe Daily"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 7 * * *"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","payments-reader"]}]]}]]}]]}]]}]
+30:T93f,<h1>Stripe Daily</h1>
+<p>Every morning, yesterday's money: what came in, what failed, and what needs you.</p>
+<h2>It only ever reads</h2>
+<p>Start here, because it is your money. Stripe lets Cabinet issue refunds and create payment
+links — this routine does neither, and never will. It reads yesterday's payments and
+writes one page. It refunds nothing, charges nobody, sends no invoice and cancels no
+subscription. Nothing you see here moved a cent.</p>
+<h2>What you get</h2>
+<p>One page, waiting for you at 7. Every payment from yesterday gets one line — what it was
+for, how much, where it stands, and who it was. The rows that need a human sit at the top:
+a card that got declined, a customer who filed a dispute. The ones that simply worked sit
+below, so you can see the day went fine without doing anything about it.</p>
+<p>The headline is the line to read before your first coffee: what came in, and how much of
+it is waiting on you.</p>
+<h2>About the amounts</h2>
+<p>Amounts appear exactly as Stripe records them, in the currency they were charged in. If
+you took money in more than one currency yesterday, the headline gives you a separate
+total for each — nothing is converted, and two currencies are never added together.</p>
+<h2>How to look at it</h2>
+<p>Open the <strong>Daily Money</strong> app in this cabinet. It comes pre-filled with a made-up example
+so you can see the shape of it straight away — the page says clearly that those payments
+are fake. Your first real morning takes its place.</p>
+<h2>Before it can read your real Stripe</h2>
+<p>Connect Stripe in Cabinet's integrations screen. You paste nothing, but it is two steps
+rather than one, and the first is not a button here: in your Stripe settings you first have
+to turn on MCP access for your account. Once that is on, come back, click Connect, and sign
+in with Stripe in the browser tab that opens.</p>
+<p>So: nearly one click — as long as you switch it on at Stripe's end first. Until you
+connect, the page keeps showing the example.</p>
+<h2>What's inside</h2>
+<ul>
+<li><strong>Payments Reader</strong> — the one agent. Reads yesterday's payments, writes the page.</li>
+<li><strong>Morning Stripe Daily</strong> — the one routine. Runs at 07:00 every day.</li>
+<li><strong>Daily Money</strong> — the one page. Opens on today, with a dropdown for earlier days.</li>
+</ul>29:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$30"}}]}]]}]
+2a:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L31",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set stripe-daily","label":"Install"}]}]}]]}]
+2b:["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}]
+2c:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+2d:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+2e:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+2f:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+16:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+32:I[27201,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"IconMark"]
+13:null
+18:[["$","title","0",{"children":"Stripe Daily template | Cabinet"}],["$","meta","1",{"name":"description","content":"Every morning, yesterday's money: what came in, what failed, and what needs you."}],["$","meta","2",{"name":"referrer","content":"strict-origin-when-cross-origin"}],["$","link","3",{"rel":"canonical","href":"https://runcabinet.com/templates/stripe-daily"}],["$","meta","4",{"property":"og:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","5",{"property":"og:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","6",{"property":"og:url","content":"https://runcabinet.com"}],["$","meta","7",{"property":"og:image","content":"https://runcabinet.com/og.png"}],["$","meta","8",{"property":"og:image:width","content":"1200"}],["$","meta","9",{"property":"og:image:height","content":"630"}],["$","meta","10",{"property":"og:image:alt","content":"Cabinet: the AI workspace your company owns, with knowledge, AI teams, and live apps in one place"}],["$","meta","11",{"property":"og:type","content":"website"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","14",{"name":"twitter:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","15",{"name":"twitter:image","content":"https://runcabinet.com/og.png"}],["$","link","16",{"rel":"icon","href":"/icon.png?icon.1p7qxwp3akyyx.png","sizes":"512x512","type":"image/png"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-icon.png?apple-icon.1q-r1s9ajzc3v.png","sizes":"180x180","type":"image/png"}],["$","$L32","18",{}]]

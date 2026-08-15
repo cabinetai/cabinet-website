@@ -1,0 +1,364 @@
+1:"$Sreact.fragment"
+2:I[479520,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],""]
+4:I[339756,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+5:I[837457,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+d:I[168027,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default",1]
+:HL["/_next/static/chunks/37_txu--9yuea.css","style"]
+:HL["/_next/static/chunks/1_ao2s2n2603x.css","style"]
+:HL["/_next/static/media/791bf8c4bb753ed6-s.p.0ggqn9ig56u4s.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/7ebf22b5a21034f8-s.p.3j3877k49yy0l.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+3:T689,
+            console.log(
+              "%c\n  ██████╗ █████╗ ██████╗ ██╗███╗   ██╗███████╗████████╗\n ██╔════╝██╔══██╗██╔══██╗██║████╗  ██║██╔════╝╚══██╔══╝\n ██║     ███████║██████╔╝██║██╔██╗ ██║█████╗     ██║   \n ██║     ██╔══██║██╔══██╗██║██║╚██╗██║██╔══╝     ██║   \n ╚██████╗██║  ██║██████╔╝██║██║ ╚████║███████╗   ██║   \n  ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   \n",
+              "color: #FFFFFF; font-family: monospace; font-size: 12px; font-weight: 700; line-height: 1.15;"
+            );
+            console.log(
+              "%cCurious enough to inspect the console? We should talk.",
+              "color: #FFFFFF; font-family: Georgia, serif; font-size: 16px; font-weight: 700;"
+            );
+            console.log(
+              "%cCabinet is hiring founding builders and a founding content lead.",
+              "color: #FFFFFF; font-family: system-ui, sans-serif; font-size: 13px;"
+            );
+            console.log(
+              "%chttps://runcabinet.com/careers",
+              "color: #FFFFFF; font-family: ui-monospace, monospace; font-size: 13px; font-weight: 700;"
+            );
+          0:{"P":null,"c":["","templates","customer-health"],"q":"","i":false,"f":[[["",{"children":["templates",{"children":[["slug","customer-health","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/37_txu--9yuea.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/1_ao2s2n2603x.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/2h5ytfdjhksof.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/1ntn7efqc-iiw.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"geist_2b71de91-module__VGa4wG__variable fraunces_37d7409f-module__w9ixmW__variable instrument_serif_9d1675d4-module__u-eSaW__variable ms_madi_7ac33f52-module__ynI3bq__variable h-full antialiased","children":[["$","head",null,{"children":[["$","$L2",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-4L81D0BVTP","strategy":"lazyOnload"}],["$","$L2",null,{"id":"gtag-init","strategy":"lazyOnload","children":"\n            window.dataLayer = window.dataLayer || [];\n            function gtag(){dataLayer.push(arguments);}\n            gtag('js', new Date());\n            gtag('config', 'G-4L81D0BVTP');\n          "}],["$","$L2",null,{"id":"cabinet-console-signature","strategy":"lazyOnload","children":"$3"}]]}],["$","body",null,{"className":"min-h-full flex flex-col","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","width":"0","height":"0","style":{"position":"absolute","width":0,"height":0,"overflow":"hidden"},"children":["$","defs",null,{"children":["$","filter",null,{"id":"liquid-glass-filter","x":"-20%","y":"-20%","width":"140%","height":"140%","colorInterpolationFilters":"sRGB","children":[["$","feTurbulence",null,{"type":"fractalNoise","baseFrequency":"0.009 0.013","numOctaves":2,"seed":9,"result":"noise"}],["$","feGaussianBlur",null,{"in":"noise","stdDeviation":0.8,"result":"blurredNoise"}],["$","feDisplacementMap",null,{"in":"SourceGraphic","in2":"blurredNoise","scale":18,"xChannelSelector":"R","yChannelSelector":"G"}]]}]}]}],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],"$L6","$L7"]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]]}]]}],{"children":["$L8",{"children":["$L9",{"children":["$La",{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le","$Lf"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ugGLMPIaHRbfrhlkleIic"}
+11:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+15:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"ViewportBoundary"]
+17:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"MetadataBoundary"]
+6:["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}]
+7:["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]
+8:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/242ibphq-xhrb.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+14:[]
+b:"$W14"
+c:["$","$1","h",{"children":[null,["$","$L15",null,{"children":"$L16"}],["$","div",null,{"hidden":true,"children":["$","$L17",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L18"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/37_txu--9yuea.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+f:["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/1_ao2s2n2603x.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+19:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"SiteNavbar"]
+1a:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],""]
+1b:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"default"]
+1c:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"Image"]
+1d:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"StarButton"]
+10:[["$","$L19",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L1a",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L1c",null,{"src":"/covers/customer-health.jpg","alt":"Customer Health Cabinet","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Customer Health Cabinet"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Always-on customer health command center. A CSM Lead and Health Analyst track account health scores, usage trends, support tickets, renewal risk, and relationship strength — publishing weekly health refreshes, at-risk alerts, and a live portfolio dashboard. Replaces Gainsight-lite dashboards, Vitally trackers, ChurnZero alerts, and the spreadsheets around them."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","customer-success",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"customer-success"}],["$","span","health-scoring",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"health-scoring"}],["$","span","churn-prevention",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"churn-prevention"}],["$","span","renewal-risk",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"renewal-risk"}],["$","span","enterprise",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"enterprise"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"cabinet"}]]}]]}],["$","$L1d",null,{"slug":"customer-health"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],2," agents"]}],"$L1e","$L1f","$L20"]}]]}]]}],"$L21"]}],"$L22"]
+23:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"ScreenshotPreview"]
+24:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"CabinetOrgChart"]
+1e:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],4," jobs"]}]
+1f:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}]
+20:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],44," pages"]}]
+25:T9bb,# CSM Lead
+
+You run the customer health operation for the CS team. You do not pull raw data or compute sub-scores yourself — the Health Analyst does that. Your job is to own the portfolio view, decide which accounts are at-risk, set the next actions, and publish the weekly health summary so the VP CS always has a current, sourced picture without opening Gainsight.
+
+## What you own
+
+1. **Portfolio health scores.** Once the Analyst delivers sub-scores (usage, tickets, engagement, adoption), you reconcile them into a single health score (0–100) and assign the risk tier: Healthy (≥ 70), Watch (45–69), At-Risk (≤ 44). Document your reasoning in `accounts/<account>/health.md`.
+2. **At-risk escalation.** When an account drops into At-Risk or loses > 25% of weekly active users, you flag it in `alerts/<date>-at-risk.md` with the root-cause read, renewal date, $ ARR, and the three actions the CSM must take in the next 7 days.
+3. **Weekly health refresh.** Every Monday: review the Analyst's data run, update the health scores, regenerate `accounts/index.md`, and update the dashboard at `dashboard/index.html` with fresh portfolio data.
+4. **Renewal risk brief.** On the same Monday run, produce `accounts/renewal-risk.md` — a ranked list of 90/60/30-day renewals with risk level, blocking issues, and action owner.
+5. **Competitor watch.** Run the weekly competitor-mention sweep across account notes and tickets; write the switching-risk narrative to `competitor-watch/latest.md`.
+
+## How you work
+
+- **Score on evidence, not gut.** Every health score change is traceable to a data point (usage, ticket count, last call date, NPS). If the Analyst hasn't delivered data, hold the score and flag the gap.
+- **Three actions, not advice.** At-risk flags must name three specific actions with an owner and a due date — not "engage the account." Vague escalations get ignored.
+- **Renewal proximity weights everything.** An account at 60-day renewal is 3x more urgent than the same score at 180 days. Apply the multiplier in your risk ranking.
+- **Talk to the Analyst before overriding a score.** If your read differs from the Analyst's sub-scores, ask them to recheck the source data first.
+
+## What you do NOT do
+
+- You don't pull raw data from Mixpanel, Amplitude, or Zendesk — ask the Health Analyst.
+- You don't run engineering escalations for product bugs — route to the escalation cabinet.
+- You don't make pricing or contract decisions — that's Sales and Finance.26:T97d,# Health Analyst
+
+You are the data engine behind the CS Lead's health scores. You own the four health sub-scores — Usage, Support, Engagement, and Adoption — and you flag anomalies across the portfolio before the CSM Lead starts their Monday review. You don't make decisions about account risk or next actions; you produce the numbers that make those decisions defensible.
+
+## What you own
+
+1. **Usage sub-score (0–100).** Pull weekly active users, feature adoption depth, and session frequency from Mixpanel / Amplitude. Compare to the account's contract seat count. Score: 100 if at or above expected, scaling down proportionally. Log to `accounts/<account>/usage.md`.
+2. **Support sub-score (0–100).** Pull open tickets from Zendesk / Intercom: count, age, severity, and unresolved SLAs. High ticket count or a P1 open > 48 h = score < 50. Log to `accounts/<account>/support.md`.
+3. **Engagement sub-score (0–100).** Last executive sponsor call date, last QBR date, CSM touchpoint frequency, NPS / CSAT if available. Score degrades with recency. Log to `accounts/<account>/engagement.md`.
+4. **Adoption sub-score (0–100).** Core feature activation rate vs. onboarding checklist, integrations live, users trained. Log to `accounts/<account>/adoption.md`.
+5. **Anomaly alerts.** Run a daily delta check: any account with WAU drop > 20% vs prior week, or ticket count spike > 3x 30-day average, gets flagged to `alerts/anomaly-<date>.md` for the CSM Lead.
+
+## How you work
+
+- **Source first, score second.** Write the source data point before the derived score. Every number has a provenance line: `source: Mixpanel · pulled 2026-05-23`.
+- **Flag data gaps, don't hide them.** If Mixpanel data is stale or a Zendesk API call fails, write `DATA_GAP: <reason>` and score as N/A — don't carry forward an old number and pretend.
+- **Statistical context, not absolute thresholds.** A ticket count of 8 is a crisis for a 5-person team; it's noise for a 500-seat enterprise. Always report relative to contract size and historical baseline.
+- **Deliver before 08:00 Monday.** The CSM Lead's weekly refresh depends on your sub-scores being ready first.
+
+## What you do NOT do
+
+- You don't assign final health scores or risk tiers — that's the CSM Lead's call.
+- You don't write customer-facing content or next-action plans.
+- You don't access CRM contract terms or deal values directly — use what the CSM Lead provides.27:T457,Run the daily at-risk alerting sweep across the account portfolio.
+
+Check `accounts/index.md` for any account meeting any of these trigger conditions:
+- Composite health score ≤ 44 (At-Risk tier)
+- Weekly active users dropped > 25% vs prior week (per latest Analyst usage data)
+- Open P1 or P2 Zendesk ticket unresolved > 48 hours
+- Renewal date within 30 days AND risk tier is Watch or worse
+- Executive sponsor has not been touched in > 45 days AND renewal within 60 days
+
+For each triggered account, write an alert entry to `alerts/<YYYY-MM-DD>-at-risk.md`:
+- Account name, ARR, renewal date, CSM owner
+- Trigger condition(s) fired
+- Root-cause hypothesis (1–2 sentences, based on sub-score data)
+- Three specific actions with owner and due date
+
+If no accounts trigger: write `alerts/<YYYY-MM-DD>-clear.md` confirming the sweep ran clean.
+
+Rules:
+- Alerts are NOT a report — every item must have an action, an owner, and a date.
+- Renewal proximity doubles urgency: a 30-day renewal at Watch = treat as At-Risk.
+- Do not re-alert accounts already in the open alert log unless their condition worsened.28:T44b,Produce this cabinet's weekly competitor cut focused on switching risk inside the
+existing customer base.
+
+Scan the following sources for competitor mentions in the last 7 days:
+- Account notes in `accounts/*/health.md` (look for competitor name drops)
+- Support ticket themes in `accounts/*/support.md` (feature parity complaints)
+- Renewal objection history in `accounts/renewal-risk.md`
+
+For each competitor mention: account name, competitor named, context (pricing, feature gap,
+switching intent), renewal urgency, and recommended CSM action.
+
+Also pull the top 3 competitor moves from the company Competitive Intelligence cabinet
+at `../competitive-intelligence/` and assess their impact on renewal conversations:
+which accounts are most exposed, and what the counter-narrative should be.
+
+Write the full analysis to `competitor-watch/latest.md`.
+Surface the top 3 switching-risk accounts in the summary section.
+Lead with "so what for retention" — not what competitors did, but what it means for
+our at-risk renewals.
+
+Cross-reference: [[../competitive-intelligence]] for the full landscape.29:T469,Produce the weekly renewal risk brief for the VP CS and CS team.
+
+Pull the current account portfolio from `accounts/index.md` and filter to accounts
+renewing within 90 days. Rank by urgency (days to renewal × risk tier weight).
+
+For each account in the 90-day window:
+- Account name, ARR, renewal date, days remaining
+- Risk tier (Healthy / Watch / At-Risk) with health score
+- Top 1–2 blocking issues (sourced from sub-score files)
+- Expansion potential (upsell flags from account notes)
+- Action owner and next step
+
+Group into three sections: 30-day (critical), 60-day (action required), 90-day (plan now).
+
+Write the brief to `accounts/renewal-risk.md`, overwriting the prior week.
+
+Include a summary header: total ARR at risk (Watch + At-Risk accounts in 90 days),
+number of accounts, and the single highest-urgency account with recommended escalation.
+
+Rules:
+- At-Risk accounts within 30 days must have an escalation plan, not just "CSM to engage."
+- Every blocking issue references its source file (e.g., `accounts/atlas-logistics/support.md`).
+- If a Healthy account has < 60 days to renewal, include it as "monitor."2a:T567,Run the weekly customer health refresh across the full portfolio.
+
+Step 1 — Analyst data pull (delegate):
+Ask the Health Analyst to update all four sub-scores (Usage, Support, Engagement,
+Adoption) for every account in `accounts/index.md`. Sub-scores must be written
+to `accounts/<account>/` before step 2.
+
+Step 2 — Score reconciliation:
+Compute the composite health score for each account (weighted: Usage 35%,
+Support 25%, Engagement 25%, Adoption 15%). Assign risk tier:
+- Healthy: ≥ 70
+- Watch: 45–69
+- At-Risk: ≤ 44
+
+Step 3 — Update portfolio index:
+Overwrite `accounts/index.md` with the current portfolio table:
+account name, ARR, health score, risk tier, usage trend (↑/→/↓),
+open tickets, renewal date, CSM owner, last touch.
+
+Step 4 — Refresh dashboard:
+Update the ACCOUNTS array in `dashboard/index.html` to match the latest
+portfolio data. Update the four KPI values (portfolio health avg, at-risk count,
+at-risk ARR $, accounts renewed YTD).
+
+Step 5 — Renewal risk brief:
+Write `accounts/renewal-risk.md` — ranked list of accounts renewing in
+90/60/30 days with risk level, top blocking issue, and action owner.
+
+Rules:
+- Every score change must reference its source sub-score.
+- Do not override an Analyst sub-score without flagging the disagreement in the account file.
+- If an account's Analyst data is missing, score it N/A and note the gap.2b:Tb3c,# Customer Health Cabinet
+
+A live command center for your CS team: two agents — a CSM Lead and a Health Analyst — continuously monitor every account's health score, product usage, support tickets, renewal date, and relationship strength. Every Monday a full health refresh runs; at-risk accounts trigger alerts the same day they cross the risk threshold. Every signal is a file on disk, inspectable and forwardable without logging into Gainsight.
+
+> **Keep your CRM, Zendesk, Mixpanel, and Amplitude. Replace the manual health-score spreadsheets, the stale Gainsight dashboards, and the "which accounts are at risk this quarter?" fire drill.**
+
+## The team
+
+- **[[.agents/csm-lead]]** — CSM Lead. Owns the account health cadence, scores the portfolio, and signs off on risk escalations and next actions.
+- **[[.agents/health-analyst]]** — Health Analyst. Pulls usage, ticket, and engagement data, computes sub-scores, and surfaces statistical anomalies across the portfolio.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **Weekly** (Mon 08:00) | [[.jobs/weekly-health-refresh]] | CSM Lead → Analyst | Health scores refreshed for all accounts; dashboard updated |
+| **Daily** (Mon–Fri 07:00) | [[.jobs/at-risk-alerting]] | CSM Lead | At-risk accounts (score ≤ 45 or usage drop > 25%) flagged to `alerts/` |
+| **Weekly** (Mon 08:00) | [[.jobs/competitor-watch-cs]] | CSM Lead | Competitor-mention scan across account notes; switching risk narrative |
+| **Weekly** (Mon 08:00) | [[.jobs/renewal-risk-brief]] | CSM Lead | 90/60/30-day renewal risk summary written to `accounts/renewal-risk.md` |
+
+## How to run the demo
+
+1. Open the [[dashboard]] — the full portfolio table: account name, health score, usage trend, open tickets, renewal date, and risk badge. Click the health-score columns to see the breakdown card per account.
+2. Browse [[accounts/index]] — the living account data the agents read and update.
+3. Check `alerts/` — the at-risk account feed the daily job writes.
+4. Check `competitor-watch/` — competitor mention and switching-risk output.
+
+## Connectors
+
+**Required:** CRM (Salesforce / HubSpot), Zendesk or Intercom (support tickets), Mixpanel or Amplitude (product usage events), Slack (alert delivery).
+**Recommended:** Gong (call sentiment), LinkedIn (relationship tracking), ChurnZero or Gainsight (if migrating — read-only feed).
+
+**Cross-cabinet link:** The competitor-watch job in this cabinet cross-references [[../competitive-intelligence]] for the full competitor landscape and switching-risk context.
+
+## Every artifact is a file
+
+Agents write health summaries, risk narratives, and next-action plans to `accounts/`, `alerts/`, and `competitor-watch/`. Every output is a markdown file you can open, diff, forward to a CSM, or paste into a customer Slack channel — no dashboard login required.2c:Td75,<h1>Customer Health Cabinet</h1>
+<p>A live command center for your CS team: two agents — a CSM Lead and a Health Analyst — continuously monitor every account's health score, product usage, support tickets, renewal date, and relationship strength. Every Monday a full health refresh runs; at-risk accounts trigger alerts the same day they cross the risk threshold. Every signal is a file on disk, inspectable and forwardable without logging into Gainsight.</p>
+<blockquote>
+<p><strong>Keep your CRM, Zendesk, Mixpanel, and Amplitude. Replace the manual health-score spreadsheets, the stale Gainsight dashboards, and the "which accounts are at risk this quarter?" fire drill.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/csm-lead]]</strong> — CSM Lead. Owns the account health cadence, scores the portfolio, and signs off on risk escalations and next actions.</li>
+<li><strong>[[.agents/health-analyst]]</strong> — Health Analyst. Pulls usage, ticket, and engagement data, computes sub-scores, and surfaces statistical anomalies across the portfolio.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-health-refresh]]</td>
+<td>CSM Lead → Analyst</td>
+<td>Health scores refreshed for all accounts; dashboard updated</td>
+</tr>
+<tr>
+<td><strong>Daily</strong> (Mon–Fri 07:00)</td>
+<td>[[.jobs/at-risk-alerting]]</td>
+<td>CSM Lead</td>
+<td>At-risk accounts (score ≤ 45 or usage drop > 25%) flagged to <code>alerts/</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/competitor-watch-cs]]</td>
+<td>CSM Lead</td>
+<td>Competitor-mention scan across account notes; switching risk narrative</td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/renewal-risk-brief]]</td>
+<td>CSM Lead</td>
+<td>90/60/30-day renewal risk summary written to <code>accounts/renewal-risk.md</code></td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[dashboard]] — the full portfolio table: account name, health score, usage trend, open tickets, renewal date, and risk badge. Click the health-score columns to see the breakdown card per account.</li>
+<li>Browse [[accounts/index]] — the living account data the agents read and update.</li>
+<li>Check <code>alerts/</code> — the at-risk account feed the daily job writes.</li>
+<li>Check <code>competitor-watch/</code> — competitor mention and switching-risk output.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> CRM (Salesforce / HubSpot), Zendesk or Intercom (support tickets), Mixpanel or Amplitude (product usage events), Slack (alert delivery).
+<strong>Recommended:</strong> Gong (call sentiment), LinkedIn (relationship tracking), ChurnZero or Gainsight (if migrating — read-only feed).</p>
+<p><strong>Cross-cabinet link:</strong> The competitor-watch job in this cabinet cross-references [[../competitive-intelligence]] for the full competitor landscape and switching-risk context.</p>
+<h2>Every artifact is a file</h2>
+<p>Agents write health summaries, risk narratives, and next-action plans to <code>accounts/</code>, <code>alerts/</code>, and <code>competitor-watch/</code>. Every output is a markdown file you can open, diff, forward to a CSM, or paste into a customer Slack channel — no dashboard login required.</p>21:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$L23",null,{"slug":"customer-health","pageName":"dashboard"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$L24",null,{"entry":{"slug":"customer-health","meta":{"schemaVersion":1,"id":"customer-health-root","name":"Customer Health Cabinet","kind":"root","version":"0.1.0","description":"Always-on customer health command center. A CSM Lead and Health Analyst track account health scores, usage trends, support tickets, renewal risk, and relationship strength — publishing weekly health refreshes, at-risk alerts, and a live portfolio dashboard. Replaces Gainsight-lite dashboards, Vitally trackers, ChurnZero alerts, and the spreadsheets around them.","entry":"index.md","domain":"Sales"},"agents":[{"name":"CSM Lead","slug":"csm-lead","emoji":"🎯","type":"lead","department":"sales","role":"Owns the customer health cadence — scores the portfolio, signs off on at-risk escalations, sequences the Health Analyst, and writes the weekly health summary and renewal risk brief.","heartbeat":"0 8 * * 1","budget":100,"active":true,"focus":["health-scoring","renewal-risk","escalation","next-actions"],"tags":["leadership","customer-success"],"body":"$25"},{"name":"Health Analyst","slug":"health-analyst","emoji":"📊","type":"specialist","department":"sales","role":"Pulls usage, ticket, engagement, and adoption signals from connected systems, computes health sub-scores for every account, and surfaces statistical anomalies — so the CSM Lead has numbers to act on, not vibes.","heartbeat":"0 7 * * 1-5","budget":80,"active":true,"focus":["usage-analytics","ticket-analysis","health-sub-scores","anomaly-detection"],"tags":["analyst","data"],"body":"$26"}],"jobs":[{"id":"at-risk-alerting","name":"At-Risk Account Alerting","enabled":true,"schedule":"0 7 * * 1-5","provider":"claude-code","adapterType":"claude_local","ownerAgent":"csm-lead","agentSlug":"csm-lead","timeout":600,"prompt":"$27","cabinetPath":"cabinet-examples/cabinets/customer-health","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"competitor-watch-cs","name":"CS Competitor Watch — Switching Risk","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"csm-lead","agentSlug":"csm-lead","timeout":900,"prompt":"$28","cabinetPath":"cabinet-examples/cabinets/customer-health","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"renewal-risk-brief","name":"Renewal Risk Brief","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"csm-lead","agentSlug":"csm-lead","timeout":600,"prompt":"$29","cabinetPath":"cabinet-examples/cabinets/customer-health","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"weekly-health-refresh","name":"Weekly Health Refresh","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"csm-lead","agentSlug":"csm-lead","timeout":900,"prompt":"$2a","cabinetPath":"cabinet-examples/cabinets/customer-health","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$2b","readmeHtml":"$2c","tags":["customer-success","health-scoring","churn-prevention","renewal-risk","enterprise","cabinet"],"section":"Sales","stats":{"totalAgents":2,"totalJobs":4,"totalCabinets":1,"totalPages":44}}}]}]]}],"$L2d","$L2e","$L2f","$L30","$L31"]}]
+22:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L1a",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L1c",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],"$L32","$L33","$L34"]}]]}],"$L35"]]}],"$L36"]}]}]
+38:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"TerminalBlock"]
+2d:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Customer Health Cabinet"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🎯"," ","CSM Lead"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["📊"," ","Health Analyst"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"At-Risk Account Alerting"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"CS Competitor Watch — Switching Risk"}]]}],["$","div","2",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Renewal Risk Brief"}]]}],["$","div","3",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Health Refresh"}]]}]]]}],[]]}]}]]}]
+2e:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-csm-lead-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🎯"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"CSM Lead"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Owns the customer health cadence — scores the portfolio, signs off on at-risk escalations, sequences the Health Analyst, and writes the weekly health summary and renewal risk brief."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 8 * * 1"}]]}]]}],["$","div","root-health-analyst-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"📊"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Health Analyst"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Pulls usage, ticket, engagement, and adoption signals from connected systems, computes health sub-scores for every account, and surfaces statistical anomalies — so the CSM Lead has numbers to act on, not vibes."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 7 * * 1-5"}]]}]]}]]}]]}]
+2f:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","at-risk-alerting",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"At-Risk Account Alerting"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 7 * * 1-5"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","csm-lead"]}]]}]]}],["$","div","competitor-watch-cs",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"CS Competitor Watch — Switching Risk"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","csm-lead"]}]]}]]}],["$","div","renewal-risk-brief",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Renewal Risk Brief"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","csm-lead"]}]]}]]}],["$","div","weekly-health-refresh",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Health Refresh"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","csm-lead"]}]]}]]}]]}]]}]
+37:Td75,<h1>Customer Health Cabinet</h1>
+<p>A live command center for your CS team: two agents — a CSM Lead and a Health Analyst — continuously monitor every account's health score, product usage, support tickets, renewal date, and relationship strength. Every Monday a full health refresh runs; at-risk accounts trigger alerts the same day they cross the risk threshold. Every signal is a file on disk, inspectable and forwardable without logging into Gainsight.</p>
+<blockquote>
+<p><strong>Keep your CRM, Zendesk, Mixpanel, and Amplitude. Replace the manual health-score spreadsheets, the stale Gainsight dashboards, and the "which accounts are at risk this quarter?" fire drill.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/csm-lead]]</strong> — CSM Lead. Owns the account health cadence, scores the portfolio, and signs off on risk escalations and next actions.</li>
+<li><strong>[[.agents/health-analyst]]</strong> — Health Analyst. Pulls usage, ticket, and engagement data, computes sub-scores, and surfaces statistical anomalies across the portfolio.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-health-refresh]]</td>
+<td>CSM Lead → Analyst</td>
+<td>Health scores refreshed for all accounts; dashboard updated</td>
+</tr>
+<tr>
+<td><strong>Daily</strong> (Mon–Fri 07:00)</td>
+<td>[[.jobs/at-risk-alerting]]</td>
+<td>CSM Lead</td>
+<td>At-risk accounts (score ≤ 45 or usage drop > 25%) flagged to <code>alerts/</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/competitor-watch-cs]]</td>
+<td>CSM Lead</td>
+<td>Competitor-mention scan across account notes; switching risk narrative</td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/renewal-risk-brief]]</td>
+<td>CSM Lead</td>
+<td>90/60/30-day renewal risk summary written to <code>accounts/renewal-risk.md</code></td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[dashboard]] — the full portfolio table: account name, health score, usage trend, open tickets, renewal date, and risk badge. Click the health-score columns to see the breakdown card per account.</li>
+<li>Browse [[accounts/index]] — the living account data the agents read and update.</li>
+<li>Check <code>alerts/</code> — the at-risk account feed the daily job writes.</li>
+<li>Check <code>competitor-watch/</code> — competitor mention and switching-risk output.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> CRM (Salesforce / HubSpot), Zendesk or Intercom (support tickets), Mixpanel or Amplitude (product usage events), Slack (alert delivery).
+<strong>Recommended:</strong> Gong (call sentiment), LinkedIn (relationship tracking), ChurnZero or Gainsight (if migrating — read-only feed).</p>
+<p><strong>Cross-cabinet link:</strong> The competitor-watch job in this cabinet cross-references [[../competitive-intelligence]] for the full competitor landscape and switching-risk context.</p>
+<h2>Every artifact is a file</h2>
+<p>Agents write health summaries, risk narratives, and next-action plans to <code>accounts/</code>, <code>alerts/</code>, and <code>competitor-watch/</code>. Every output is a markdown file you can open, diff, forward to a CSM, or paste into a customer Slack channel — no dashboard login required.</p>30:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$37"}}]}]]}]
+31:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L38",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set customer-health","label":"Install"}]}]}]]}]
+32:["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}]
+33:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+34:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+35:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+36:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+16:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+39:I[27201,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"IconMark"]
+13:null
+18:[["$","title","0",{"children":"Customer Health Cabinet template | Cabinet"}],["$","meta","1",{"name":"description","content":"Always-on customer health command center. A CSM Lead and Health Analyst track account health scores, usage trends, support tickets, renewal risk, and relationship strength — publishing weekly health refreshes, at-risk alerts, and a live portfolio dashboard. Replaces Gainsight-lite dashboards, Vitally trackers, ChurnZero alerts, and the spreadsheets around them."}],["$","meta","2",{"name":"referrer","content":"strict-origin-when-cross-origin"}],["$","link","3",{"rel":"canonical","href":"https://runcabinet.com/templates/customer-health"}],["$","meta","4",{"property":"og:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","5",{"property":"og:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","6",{"property":"og:url","content":"https://runcabinet.com"}],["$","meta","7",{"property":"og:image","content":"https://runcabinet.com/og.png"}],["$","meta","8",{"property":"og:image:width","content":"1200"}],["$","meta","9",{"property":"og:image:height","content":"630"}],["$","meta","10",{"property":"og:image:alt","content":"Cabinet: the AI workspace your company owns, with knowledge, AI teams, and live apps in one place"}],["$","meta","11",{"property":"og:type","content":"website"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","14",{"name":"twitter:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","15",{"name":"twitter:image","content":"https://runcabinet.com/og.png"}],["$","link","16",{"rel":"icon","href":"/icon.png?icon.1p7qxwp3akyyx.png","sizes":"512x512","type":"image/png"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-icon.png?apple-icon.1q-r1s9ajzc3v.png","sizes":"180x180","type":"image/png"}],["$","$L39","18",{}]]

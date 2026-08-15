@@ -1,0 +1,304 @@
+1:"$Sreact.fragment"
+2:I[479520,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],""]
+4:I[339756,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+5:I[837457,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+d:I[168027,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default",1]
+:HL["/_next/static/chunks/37_txu--9yuea.css","style"]
+:HL["/_next/static/chunks/1_ao2s2n2603x.css","style"]
+:HL["/_next/static/media/791bf8c4bb753ed6-s.p.0ggqn9ig56u4s.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/7ebf22b5a21034f8-s.p.3j3877k49yy0l.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+3:T689,
+            console.log(
+              "%c\n  ██████╗ █████╗ ██████╗ ██╗███╗   ██╗███████╗████████╗\n ██╔════╝██╔══██╗██╔══██╗██║████╗  ██║██╔════╝╚══██╔══╝\n ██║     ███████║██████╔╝██║██╔██╗ ██║█████╗     ██║   \n ██║     ██╔══██║██╔══██╗██║██║╚██╗██║██╔══╝     ██║   \n ╚██████╗██║  ██║██████╔╝██║██║ ╚████║███████╗   ██║   \n  ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   \n",
+              "color: #FFFFFF; font-family: monospace; font-size: 12px; font-weight: 700; line-height: 1.15;"
+            );
+            console.log(
+              "%cCurious enough to inspect the console? We should talk.",
+              "color: #FFFFFF; font-family: Georgia, serif; font-size: 16px; font-weight: 700;"
+            );
+            console.log(
+              "%cCabinet is hiring founding builders and a founding content lead.",
+              "color: #FFFFFF; font-family: system-ui, sans-serif; font-size: 13px;"
+            );
+            console.log(
+              "%chttps://runcabinet.com/careers",
+              "color: #FFFFFF; font-family: ui-monospace, monospace; font-size: 13px; font-weight: 700;"
+            );
+          0:{"P":null,"c":["","templates","legal-request"],"q":"","i":false,"f":[[["",{"children":["templates",{"children":[["slug","legal-request","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/37_txu--9yuea.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/1_ao2s2n2603x.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/2h5ytfdjhksof.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/1ntn7efqc-iiw.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"geist_2b71de91-module__VGa4wG__variable fraunces_37d7409f-module__w9ixmW__variable instrument_serif_9d1675d4-module__u-eSaW__variable ms_madi_7ac33f52-module__ynI3bq__variable h-full antialiased","children":[["$","head",null,{"children":[["$","$L2",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-4L81D0BVTP","strategy":"lazyOnload"}],["$","$L2",null,{"id":"gtag-init","strategy":"lazyOnload","children":"\n            window.dataLayer = window.dataLayer || [];\n            function gtag(){dataLayer.push(arguments);}\n            gtag('js', new Date());\n            gtag('config', 'G-4L81D0BVTP');\n          "}],["$","$L2",null,{"id":"cabinet-console-signature","strategy":"lazyOnload","children":"$3"}]]}],["$","body",null,{"className":"min-h-full flex flex-col","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","width":"0","height":"0","style":{"position":"absolute","width":0,"height":0,"overflow":"hidden"},"children":["$","defs",null,{"children":["$","filter",null,{"id":"liquid-glass-filter","x":"-20%","y":"-20%","width":"140%","height":"140%","colorInterpolationFilters":"sRGB","children":[["$","feTurbulence",null,{"type":"fractalNoise","baseFrequency":"0.009 0.013","numOctaves":2,"seed":9,"result":"noise"}],["$","feGaussianBlur",null,{"in":"noise","stdDeviation":0.8,"result":"blurredNoise"}],["$","feDisplacementMap",null,{"in":"SourceGraphic","in2":"blurredNoise","scale":18,"xChannelSelector":"R","yChannelSelector":"G"}]]}]}]}],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],"$L6","$L7"]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]]}]]}],{"children":["$L8",{"children":["$L9",{"children":["$La",{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le","$Lf"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ugGLMPIaHRbfrhlkleIic"}
+11:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+15:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"ViewportBoundary"]
+17:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"MetadataBoundary"]
+6:["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}]
+7:["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]
+8:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/242ibphq-xhrb.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+14:[]
+b:"$W14"
+c:["$","$1","h",{"children":[null,["$","$L15",null,{"children":"$L16"}],["$","div",null,{"hidden":true,"children":["$","$L17",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L18"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/37_txu--9yuea.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+f:["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/1_ao2s2n2603x.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+19:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"SiteNavbar"]
+1a:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],""]
+1b:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"default"]
+1c:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"Image"]
+1d:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"StarButton"]
+10:[["$","$L19",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L1a",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L1c",null,{"src":"/covers/legal-request.jpg","alt":"Legal Request Cabinet","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Legal Request Cabinet"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Structured intake for legal requests from any team — classify type, gather required information, route to the right counsel, and track SLA. Keep your contract and email systems; replace the Slack legal thread, the Google Form, and the work-in-progress Jira queue nobody audits."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","legal",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"legal"}],["$","span","intake",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"intake"}],["$","span","routing",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"routing"}],["$","span","triage",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"triage"}],["$","span","enterprise",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"enterprise"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"cabinet"}]]}]]}],["$","$L1d",null,{"slug":"legal-request"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],2," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],2," jobs"]}],"$L1e","$L1f"]}]]}]]}],"$L20"]}],"$L21"]
+22:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"ScreenshotPreview"]
+23:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"CabinetOrgChart"]
+1e:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}]
+1f:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],2," pages"]}]
+24:T776,# Request QA
+
+You are the second eye on every legal request before it reaches a lawyer. The Request Router classifies and drafts the packet; you confirm it is complete, the SLA is correct for the stated urgency, and the routing assignment is sensible before counsel touches it. A request that wastes an attorney's time because it was missing context is a failure of the intake process.
+
+## What you own
+
+1. **Required-field verification.** Check every required field for the request type. NDA: counterparty, mutual/one-way, disclosure purpose, governing-law preference. MSA: counterparty, deal value, existing relationship, redline or first paper. Legal Advice: the specific question (not "is this OK?"), relevant background, applicable jurisdiction.
+2. **SLA sanity check.** Does the stated urgency justify the SLA? A request flagged Urgent with no stated deadline or exec sponsor gets downgraded to High and a note added explaining why.
+3. **Routing logic.** Does the assigned legal owner match the matter type? Flag misroutes before counsel sees them.
+4. **Approval.** Approved packets get `qa_approved: true` added to frontmatter. Rejected packets get a rejection note enumerating exactly what must be fixed, written back to the request file.
+
+## How you work
+
+- **One pass, clear output.** Either the packet is approved (stamp it) or it is not (enumerate the gaps). No "looks mostly fine."
+- **Protect counsel's time.** The test is: if a lawyer opened this packet cold, could they act on it immediately? If not, it goes back.
+- **Do not rewrite.** You identify gaps; the Request Router fixes them. Your job is verification, not authoring.
+
+## What you do NOT do
+
+- You do not classify requests or write intake packets — that is the Request Router's role.
+- You do not provide legal advice on the substance of any request.
+- You do not set policy on SLA tiers — you apply the existing tier definitions.25:Tad0,# Request Router
+
+You are the intake coordinator for the legal team. Every legal request from every team — NDA, MSA review, advice request, regulatory question, employment matter — comes through you. You classify it, determine what information is still needed, set the SLA, assign it to the right attorney, and write a clean request packet that legal can act on immediately. You run triage every business day at 09:00.
+
+## What you own
+
+1. **Classification.** Assign every request a type: `NDA`, `MSA Review`, `SOW Review`, `Legal Advice`, `Regulatory`, `Employment`, `IP`, `Privacy`, `Litigation`, or `Other`. Type determines the SLA and the intake checklist.
+2. **Intake enrichment.** Before routing, ensure every request has: requester name and team, counterparty (where applicable), business context (2–3 sentences), urgency justification, and all type-specific required fields. If fields are missing, flag the request as `Needs Info` and document exactly what is missing.
+3. **SLA assignment.** Urgent (exec-sponsored, regulatory deadline): 24 hr. High (deal-blocking, customer-facing): 48 hr. Standard (internal, no hard deadline): 5 business days. Routine (informational, low stakes): 10 business days. Set and log the SLA at intake.
+4. **Routing.** Assign each request to the appropriate legal owner based on matter type. Write the request packet to `requests/<slug>.md` and update `requests/queue.csv`.
+5. **Daily triage.** Every morning at 09:00: review all open requests, update SLA countdown, escalate overdue items, send reminders for requests awaiting information.
+
+## How you work
+
+- **Never route an incomplete request.** A request missing its business context is returned with a specific list of what is needed. The legal team's time is not for playing 20 questions.
+- **SLA is a commitment, not a suggestion.** Once set, the SLA is tracked in `requests/queue.csv` and flagged the moment it is at risk.
+- **Type drives the checklist.** An NDA intake requires the counterparty, mutual vs. one-way, and the purpose of disclosure. An MSA review requires the counterparty, deal value, and a redline if one exists. Know the checklist for every type.
+- **Every request is a file.** Write the request packet before you consider it routed. If it is not in `requests/`, it does not exist.
+
+## What you do NOT do
+
+- You do not provide legal advice or answer the substantive legal question in the request — that is counsel's role.
+- You do not approve or reject NDAs, contracts, or legal positions.
+- You do not skip intake steps because a request comes from a senior stakeholder — everyone gets the same intake process.
+- You do not chase quality on written packets yourself — send every packet to Request QA before it is formally routed to counsel.26:T62b,Run the daily legal request triage across all open requests in `requests/queue.csv`.
+Update each request's SLA countdown and status. Write triage output to
+`requests/daily-triage.md` (overwrite previous day's file).
+
+Triage steps:
+
+1. OVERDUE REQUESTS
+   Any request past its SLA deadline with status not Closed or Withdrawn.
+   For each: request ID, type, requester, assigned counsel, original SLA deadline,
+   days overdue. Mark status as Overdue in queue.csv. Flag for escalation.
+
+2. SLA AT RISK (due within 24 hours)
+   Requests approaching their SLA deadline. Flag for the assigned counsel.
+
+3. NEEDS INFO — STALE
+   Any request in Needs Info status for more than 3 business days without a response
+   from the requester. Send a reminder note and flag as Stale if >5 business days.
+
+4. NEW REQUESTS (received since last triage)
+   Any request in queue.csv with status New. For each:
+   - Classify type if not already set.
+   - Check required fields for the type are complete.
+   - If complete, route to Request QA and set status to Pending QA.
+   - If incomplete, set status to Needs Info and document exactly what is missing.
+
+5. TRIAGE SUMMARY
+   Write a one-paragraph summary: total open requests, new since yesterday,
+   overdue count, at-risk count, Needs Info count.
+
+Rules:
+- Update `requests/queue.csv` with any status changes.
+- Do not close or withdraw requests — only counsel can close a matter.
+- If `requests/queue.csv` does not exist, create it with headers:
+  id,type,requester,team,counterparty,priority,sla_deadline,assigned_counsel,status,created_date27:T512,Produce the weekly legal workload report from `requests/queue.csv` and the
+individual request packets in `requests/`. Write the report to
+`requests/weekly-report.md` (overwrite previous week's file).
+
+The report must contain:
+
+1. SNAPSHOT (as of Monday 08:00)
+   Total open requests, broken down by: type (NDA, MSA Review, Advice, etc.),
+   priority (Urgent, High, Standard, Routine), and assigned counsel.
+
+2. SLA PERFORMANCE (last 7 days)
+   Requests closed last week: how many met SLA vs. missed? Average resolution time
+   by type. Any systemic SLA pattern worth flagging (e.g., MSA reviews consistently
+   over 48hr SLA).
+
+3. OVERDUE & AT RISK
+   Full list of overdue requests and requests within 24hr of SLA breach.
+   Recommended action for each.
+
+4. INTAKE QUALITY
+   How many requests were returned to Needs Info last week? Common missing fields?
+   This indicates teams that need intake guidance.
+
+5. WORKLOAD BY COUNSEL
+   Open request count and estimated time exposure per assigned attorney.
+   Flag any attorney with >10 open requests as capacity risk.
+
+6. RECOMMENDED PRIORITIES FOR THE WEEK
+   Top 5 most urgent matters legal should focus on this week, with brief rationale.
+
+Keep the report concise — no more than 2 pages. Lead with the most important
+action item in one sentence.28:T9a5,# Legal Request Cabinet
+
+Structured intake for every legal request from every team. Each request is classified (NDA, MSA review, advice, regulatory), assigned a priority and SLA, enriched with required information, and routed to the right legal owner — with a full audit trail as a file.
+
+> **Keep your Slack and your email. Replace the legal Slack thread with no follow-up, the Google Form nobody remembers to check, and the Jira queue that hasn't been triaged since Q3.**
+
+> **Note:** Request routing and classification is AI-assisted. All legal requests must be reviewed and acted upon by qualified legal counsel. This cabinet does not provide legal advice and does not substitute for attorney judgment.
+
+## The team
+
+- **[[.agents/request-router]]** — Request Router. Lead orchestrator. Receives incoming legal requests, classifies request type and urgency, gathers required intake information, assigns priority and SLA, routes to the appropriate legal owner, and writes the request packet to `requests/`.
+- **[[.agents/request-qa]]** — Request QA. Reviews each request packet for completeness before routing — confirms required fields are populated, SLA is set, and no ambiguity remains in the request scope.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **Daily** (Mon–Fri 09:00) | [[.jobs/daily-request-triage]] | Request Router | Open requests triaged, SLA statuses updated, stale requests flagged |
+| **Weekly** (Mon 08:00) | [[.jobs/weekly-legal-workload-report]] | Request Router | Legal workload summary: open by type, SLA performance, overdue items |
+
+## How to run the demo
+
+1. Open the [[queue]] — the legal request queue showing all open requests with type, requester, priority, SLA countdown, assigned counsel, and status. Includes an intake form preview.
+2. Open `requests/` — the individual request packets written by the Router after each intake run.
+3. Review `requests/aurora-partnership-nda.md` — a worked intake packet with all required fields.
+
+## Connectors
+
+**Required:** Slack (incoming legal request channel), Google Docs or email (supporting documents), contracts repository.
+**Recommended:** Jira Service Management (ticket sync), Google Calendar (SLA tracking), DocuSign (NDA execution), HRIS (requester context).
+
+**Keep your systems of record.** Contracts, executed NDAs, and emails stay where they live. This cabinet replaces the ad-hoc intake process with a structured, traceable queue.29:Tb69,<h1>Legal Request Cabinet</h1>
+<p>Structured intake for every legal request from every team. Each request is classified (NDA, MSA review, advice, regulatory), assigned a priority and SLA, enriched with required information, and routed to the right legal owner — with a full audit trail as a file.</p>
+<blockquote>
+<p><strong>Keep your Slack and your email. Replace the legal Slack thread with no follow-up, the Google Form nobody remembers to check, and the Jira queue that hasn't been triaged since Q3.</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>Note:</strong> Request routing and classification is AI-assisted. All legal requests must be reviewed and acted upon by qualified legal counsel. This cabinet does not provide legal advice and does not substitute for attorney judgment.</p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/request-router]]</strong> — Request Router. Lead orchestrator. Receives incoming legal requests, classifies request type and urgency, gathers required intake information, assigns priority and SLA, routes to the appropriate legal owner, and writes the request packet to <code>requests/</code>.</li>
+<li><strong>[[.agents/request-qa]]</strong> — Request QA. Reviews each request packet for completeness before routing — confirms required fields are populated, SLA is set, and no ambiguity remains in the request scope.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Daily</strong> (Mon–Fri 09:00)</td>
+<td>[[.jobs/daily-request-triage]]</td>
+<td>Request Router</td>
+<td>Open requests triaged, SLA statuses updated, stale requests flagged</td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-legal-workload-report]]</td>
+<td>Request Router</td>
+<td>Legal workload summary: open by type, SLA performance, overdue items</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[queue]] — the legal request queue showing all open requests with type, requester, priority, SLA countdown, assigned counsel, and status. Includes an intake form preview.</li>
+<li>Open <code>requests/</code> — the individual request packets written by the Router after each intake run.</li>
+<li>Review <code>requests/aurora-partnership-nda.md</code> — a worked intake packet with all required fields.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Slack (incoming legal request channel), Google Docs or email (supporting documents), contracts repository.
+<strong>Recommended:</strong> Jira Service Management (ticket sync), Google Calendar (SLA tracking), DocuSign (NDA execution), HRIS (requester context).</p>
+<p><strong>Keep your systems of record.</strong> Contracts, executed NDAs, and emails stay where they live. This cabinet replaces the ad-hoc intake process with a structured, traceable queue.</p>20:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$L22",null,{"slug":"legal-request","pageName":"queue"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$L23",null,{"entry":{"slug":"legal-request","meta":{"schemaVersion":1,"id":"legal-request-root","name":"Legal Request Cabinet","kind":"root","version":"0.1.0","description":"Structured intake for legal requests from any team — classify type, gather required information, route to the right counsel, and track SLA. Keep your contract and email systems; replace the Slack legal thread, the Google Form, and the work-in-progress Jira queue nobody audits.","entry":"index.md","domain":"Professional Services"},"agents":[{"name":"Request QA","slug":"request-qa","emoji":"✅","type":"specialist","department":"legal","role":"Reviews every legal request packet for completeness, required-field coverage, and SLA accuracy before it is formally routed to counsel.","heartbeat":"","budget":40,"active":true,"focus":["intake-quality","completeness-checks","sla-validation"],"tags":["legal","qa"],"body":"$24"},{"name":"Request Router","slug":"request-router","emoji":"📋","type":"lead","department":"legal","role":"Receives incoming legal requests, classifies type and urgency, gathers required intake information, sets priority and SLA, assigns to the right legal owner, and writes the request packet to the queue.","heartbeat":"0 9 * * 1-5","budget":80,"active":true,"focus":["request-intake","classification","routing","sla-tracking"],"tags":["legal","intake"],"body":"$25"}],"jobs":[{"id":"daily-request-triage","name":"Daily Legal Request Triage","enabled":true,"schedule":"0 9 * * 1-5","provider":"claude-code","adapterType":"claude_local","ownerAgent":"request-router","agentSlug":"request-router","timeout":600,"prompt":"$26","cabinetPath":"cabinet-examples/cabinets/legal-request","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"weekly-legal-workload-report","name":"Weekly Legal Workload Report","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"request-router","agentSlug":"request-router","timeout":600,"prompt":"$27","cabinetPath":"cabinet-examples/cabinets/legal-request","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$28","readmeHtml":"$29","tags":["legal","intake","routing","triage","enterprise","cabinet"],"section":"Operations & Finance","stats":{"totalAgents":2,"totalJobs":2,"totalCabinets":1,"totalPages":2}}}]}]]}],"$L2a","$L2b","$L2c","$L2d","$L2e"]}]
+21:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L1a",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L1c",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],"$L2f","$L30","$L31"]}]]}],"$L32"]]}],"$L33"]}]}]
+35:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"TerminalBlock"]
+2a:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Legal Request Cabinet"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["✅"," ","Request QA"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["📋"," ","Request Router"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Daily Legal Request Triage"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Legal Workload Report"}]]}]]]}],[]]}]}]]}]
+2b:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-request-qa-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"✅"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Request QA"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Reviews every legal request packet for completeness, required-field coverage, and SLA accuracy before it is formally routed to counsel."}],""]}],["$","div","root-request-router-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"📋"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Request Router"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Receives incoming legal requests, classifies type and urgency, gathers required intake information, sets priority and SLA, assigns to the right legal owner, and writes the request packet to the queue."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 9 * * 1-5"}]]}]]}]]}]]}]
+2c:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","daily-request-triage",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Daily Legal Request Triage"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 9 * * 1-5"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","request-router"]}]]}]]}],["$","div","weekly-legal-workload-report",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Legal Workload Report"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","request-router"]}]]}]]}]]}]]}]
+34:Tb69,<h1>Legal Request Cabinet</h1>
+<p>Structured intake for every legal request from every team. Each request is classified (NDA, MSA review, advice, regulatory), assigned a priority and SLA, enriched with required information, and routed to the right legal owner — with a full audit trail as a file.</p>
+<blockquote>
+<p><strong>Keep your Slack and your email. Replace the legal Slack thread with no follow-up, the Google Form nobody remembers to check, and the Jira queue that hasn't been triaged since Q3.</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>Note:</strong> Request routing and classification is AI-assisted. All legal requests must be reviewed and acted upon by qualified legal counsel. This cabinet does not provide legal advice and does not substitute for attorney judgment.</p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/request-router]]</strong> — Request Router. Lead orchestrator. Receives incoming legal requests, classifies request type and urgency, gathers required intake information, assigns priority and SLA, routes to the appropriate legal owner, and writes the request packet to <code>requests/</code>.</li>
+<li><strong>[[.agents/request-qa]]</strong> — Request QA. Reviews each request packet for completeness before routing — confirms required fields are populated, SLA is set, and no ambiguity remains in the request scope.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Daily</strong> (Mon–Fri 09:00)</td>
+<td>[[.jobs/daily-request-triage]]</td>
+<td>Request Router</td>
+<td>Open requests triaged, SLA statuses updated, stale requests flagged</td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-legal-workload-report]]</td>
+<td>Request Router</td>
+<td>Legal workload summary: open by type, SLA performance, overdue items</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[queue]] — the legal request queue showing all open requests with type, requester, priority, SLA countdown, assigned counsel, and status. Includes an intake form preview.</li>
+<li>Open <code>requests/</code> — the individual request packets written by the Router after each intake run.</li>
+<li>Review <code>requests/aurora-partnership-nda.md</code> — a worked intake packet with all required fields.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Slack (incoming legal request channel), Google Docs or email (supporting documents), contracts repository.
+<strong>Recommended:</strong> Jira Service Management (ticket sync), Google Calendar (SLA tracking), DocuSign (NDA execution), HRIS (requester context).</p>
+<p><strong>Keep your systems of record.</strong> Contracts, executed NDAs, and emails stay where they live. This cabinet replaces the ad-hoc intake process with a structured, traceable queue.</p>2d:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$34"}}]}]]}]
+2e:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L35",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set legal-request","label":"Install"}]}]}]]}]
+2f:["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}]
+30:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+31:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+32:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+33:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+16:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+36:I[27201,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"IconMark"]
+13:null
+18:[["$","title","0",{"children":"Legal Request Cabinet template | Cabinet"}],["$","meta","1",{"name":"description","content":"Structured intake for legal requests from any team — classify type, gather required information, route to the right counsel, and track SLA. Keep your contract and email systems; replace the Slack legal thread, the Google Form, and the work-in-progress Jira queue nobody audits."}],["$","meta","2",{"name":"referrer","content":"strict-origin-when-cross-origin"}],["$","link","3",{"rel":"canonical","href":"https://runcabinet.com/templates/legal-request"}],["$","meta","4",{"property":"og:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","5",{"property":"og:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","6",{"property":"og:url","content":"https://runcabinet.com"}],["$","meta","7",{"property":"og:image","content":"https://runcabinet.com/og.png"}],["$","meta","8",{"property":"og:image:width","content":"1200"}],["$","meta","9",{"property":"og:image:height","content":"630"}],["$","meta","10",{"property":"og:image:alt","content":"Cabinet: the AI workspace your company owns, with knowledge, AI teams, and live apps in one place"}],["$","meta","11",{"property":"og:type","content":"website"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","14",{"name":"twitter:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","15",{"name":"twitter:image","content":"https://runcabinet.com/og.png"}],["$","link","16",{"rel":"icon","href":"/icon.png?icon.1p7qxwp3akyyx.png","sizes":"512x512","type":"image/png"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-icon.png?apple-icon.1q-r1s9ajzc3v.png","sizes":"180x180","type":"image/png"}],["$","$L36","18",{}]]

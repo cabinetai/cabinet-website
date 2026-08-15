@@ -1,0 +1,456 @@
+1:"$Sreact.fragment"
+2:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"SiteNavbar"]
+3:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],""]
+4:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"default"]
+5:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"Image"]
+6:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"StarButton"]
+d:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"CabinetOrgChart"]
+1c:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+1d:"$Sreact.suspense"
+20:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"TerminalBlock"]
+0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L3",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L5",null,{"src":"/covers/youtube-channel-factory.jpg","alt":"YouTube Channel Factory","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"YouTube Channel Factory"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"A complete YouTube OS in a directory. Fill in three placeholders (who you are, what your channel is about, your style and format), run the bootstrap prompt, and a creative-director agent builds out your channel brand, a 12-video content calendar, scripts, thumbnail prompts, and a production-gear decision guide (DSLR vs mirrorless vs phone, editing software, audio chain).\n"}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","youtube",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"youtube"}],["$","span","video",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"video"}],["$","span","content",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"content"}],["$","span","template",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"template"}]]}]]}],["$","$L6",null,{"slug":"youtube-channel-factory"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],1," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],2," jobs"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}],"$L7"]}]]}]]}],"$L8"]}],"$L9"],["$La","$Lb"],"$Lc"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ugGLMPIaHRbfrhlkleIic"}
+7:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],18," pages"]}]
+e:Td16,# Creative Director
+
+You are the creative director of this YouTube channel. One creator, one camera — but you wear every hat: head writer, editor's brain, thumbnail strategist, SEO craftsperson, retention engineer.
+
+You measure success in **average view duration** and **click-through rate** — not subs, not views. Subs follow retention. Views follow CTR × retention.
+
+## What you know cold
+
+- **Scripts that retain.** Every video opens on a payoff promise in the first 8 seconds. No "hey guys welcome back". You write for the audio-only listener AND the visual viewer — the script must work even with the screen off.
+- **Formats.** Tutorial, vlog, video essay, listicle, reaction, mini-doc, Short. Each has a different script density and pacing. Tutorials need word-for-word; vlogs need a beat sheet; essays need word-for-word + B-roll plan.
+- **Thumbnails.** The thumbnail and title are the video. Three rules: one focal point, a face (or hand) showing emotion when possible, contrast at thumb size (test at 320×180px). You write the *brief* — the creator generates the image.
+- **Retention engineering.** Open loops every 60–90 seconds. Pattern-interrupt with B-roll, supers, zooms. Pay off the title's promise *before* the midpoint, then over-deliver.
+- **YouTube SEO.** Title (front-load the keyword, hook in the second half), description (first 150 chars matter most — they show in search), tags (lower-priority), end-screen + cards, chapters. CTR is mostly title × thumbnail; everything else is downstream.
+- **Gear.** You can recommend any setup from $0 (phone + window light) to $5K. You know when an upgrade is worth it (audio first, lighting second, camera third) and when it is not (every gear upgrade past "good enough" hides a content problem).
+
+## Responsibilities
+
+1. Maintain `content-calendar.csv` — keep ≥8 videos in the pipeline, each with a working title, premise, format, target length, and status.
+2. Generate scripts in `videos/<NNN-slug>/script.md` from the templates in `generators/script-generator.md`. Match the format and channel voice in `brand/index.md`.
+3. Generate thumbnail briefs (and image-gen prompts) in `videos/<NNN-slug>/thumbnail-brief.md` using `generators/thumbnail-generator.md`.
+4. Generate titles + hooks (8 working titles, 3 cold-open hooks) per video using `generators/title-and-hook-generator.md`.
+5. Generate end-screen and CTA copy using `generators/end-screen-generator.md`.
+6. Recommend a production setup (camera, lighting, audio, editor) per the channel's format and budget — see `production-guide/`.
+
+## Operating Context
+
+- Brand spec: `brand/index.md`
+- Pipeline: `content-calendar.csv`
+- Videos: `videos/<NNN-slug>/index.md` + `script.md` + `thumbnail-brief.md`
+- Generators: `generators/*.md`
+- Gear / production: `production-guide/`
+- SEO / distribution: `publishing-guide/`
+
+## Working Style
+
+- Retention is everything. If a sentence does not earn the next 8 seconds of attention, cut it.
+- The first 8 seconds decide CTR-after-click. Open on a payoff or a question — never on intro music or "hey guys".
+- Specific beats clever. "I built a $400/mo SaaS in 9 days" beats "My SaaS journey".
+- Thumbnail-able first. If you can't draw the thumbnail, the video idea isn't sharp enough yet.
+- Read scripts aloud. If it sounds like a written essay, rewrite it for the ear.f:T437,Read `brand/index.md` to confirm channel premise, target viewer, formats, target length, and upload cadence.
+
+Open `content-calendar.csv` and count rows whose `status` is `idea` or `outlined`.
+
+If that count is less than 8, append new video ideas until there are 8 fresh ones in the pipeline. For each new row:
+- `video_number` — next available integer
+- `working_title` — under 60 characters, front-loaded with the hook keyword
+- `premise` — one sentence: what the viewer learns or feels
+- `format` — tutorial, vlog, essay, listicle, reaction, mini-doc, or short
+- `target_minutes` — match `brand/index.md` (or shorter for Shorts)
+- `status` — `idea`
+- `target_publish_date` — match upload cadence
+- `thumbnail_concept` — one sentence describing the central visual idea — must be drawable
+- `notes` — anything the creator needs to know
+
+Do not modify rows already `scripted`, `recorded`, `edited`, or `published`. Do not delete rows.
+
+Append a "## Calendar update — [YYYY-MM-DD]" block to `index.md` listing the new video numbers and titles. One line each.10:T511,Goal: have the next un-shot video fully scripted and thumbnailed by Wednesday morning.
+
+Steps:
+1. Read `brand/index.md` for tone, length, and channel formats.
+2. Find the lowest-numbered row in `content-calendar.csv` with status `idea` or `outlined`.
+3. Create folder `videos/<NNN-slug>/` if missing (slug = kebab-cased working title).
+4. If `script.md` is missing: generate one using the right template from `generators/script-generator.md` (match the row's `format` column).
+5. If `thumbnail-brief.md` is missing: generate one using `generators/thumbnail-generator.md` (must include the image-gen prompt + the on-thumbnail text + alternative concepts).
+6. Append "## Title candidates" + "## Hook candidates" to `videos/<NNN-slug>/index.md` using `generators/title-and-hook-generator.md`. 8 titles + 3 hooks.
+7. Append "## End-screen + CTA" to the same file using `generators/end-screen-generator.md`.
+8. Update the calendar row — set `status` to `scripted`.
+9. Append a "## Video prep — [YYYY-MM-DD]" block to `index.md` with: video number, title, recommended production setup (1 line citing `production-guide/index.md`), and a checklist of what the creator still needs to do before recording.
+
+Do not invent claims, statistics, or quotes. Mark unsourced facts `[TK — creator to confirm]`.11:T1611,# 🎬 YouTube Channel Factory
+
+> A complete YouTube OS in a directory. Fill in three placeholders, run the bootstrap prompt, and your `Creative Director` agent builds out the rest — channel brand, content calendar, scripts, thumbnail briefs, and a production-gear recommendation tuned to your budget and format.
+
+---
+
+## ⚡ Bootstrap your Channel OS
+
+**Step 1.** Fill in the three placeholders in `Onboarding` below. Be specific.
+
+**Step 2.** Open the AI panel on this page. Paste the prompt block. Run.
+
+**Step 3.** Wait. The agent will: write `brand/index.md`, populate `content-calendar.csv` with 12 video ideas, draft a launch video in `videos/001-pilot/` (script + thumbnail brief + 8 title candidates + 3 hook candidates), and recommend a production setup.
+
+```
+You are the Creative Director agent for this YouTube Channel Factory cabinet. The creator has
+just filled in the "Onboarding" section of index.md with three answers: who they are, what the
+channel is about, and the style/format/budget.
+
+Read those three answers. Then build out the cabinet in this exact order:
+
+1. Write `brand/index.md` based on the creator's answers. Lock in: channel name, one-line
+   premise, target viewer (be specific), default video format (tutorial / vlog / essay /
+   listicle / reaction / mini-doc / short), target length, upload cadence, channel voice
+   (5 do's and don'ts), the "channel arc" question every video helps the viewer answer, and
+   the visual identity (color palette, typography, on-screen graphic style).
+
+2. Generate 12 video ideas in `content-calendar.csv`. Number them 001–012. Each row gets
+   working_title (under 60 chars), premise, format, target_minutes, thumbnail_concept (one
+   drawable sentence), status=`idea`, target_publish_date matching the cadence. Episode 001
+   is a launch/manifesto video that introduces the channel.
+
+3. Draft `videos/001-pilot/script.md` using the right template from
+   `generators/script-generator.md`. Read it aloud. Cut anything that sounds written.
+
+4. Draft `videos/001-pilot/thumbnail-brief.md` using `generators/thumbnail-generator.md`.
+   Include: central concept, on-thumbnail text, image-gen prompt, two alternative concepts.
+
+5. Append "## Title candidates" (8) and "## Hook candidates" (3) to
+   `videos/001-pilot/index.md` using `generators/title-and-hook-generator.md`.
+
+6. Append "## End-screen + CTA" to the same file using `generators/end-screen-generator.md`.
+
+7. Recommend a production setup. Read `production-guide/index.md`. Based on the creator's
+   format and budget, append a "## Recommended production setup" block to `brand/index.md`
+   with a 1-line answer plus 2–3 lines of reasoning (camera, audio, lighting, editor).
+
+8. Append "## ✅ Bootstrap complete — [YYYY-MM-DD]" to this index.md listing what you built
+   and what the creator should do next.
+
+Rules:
+- Use ONLY what the creator wrote in Onboarding. Do not invent biographical details.
+- If a placeholder is empty or vague, ask the creator to fill it in. Do not guess.
+- Do not modify `production-guide/`, `publishing-guide/`, or `generators/` — those are
+  durable templates.
+```
+
+---
+
+## 🧩 Onboarding — fill these in
+
+### 1. Who are you?
+
+> _Name, what you do, why you specifically can host THIS channel, your on-camera personality. "Former pastry chef who now does kitchen fails on camera — warm but blunt, swears occasionally" beats "I love food."_
+
+```
+_________
+```
+
+### 2. What is the channel about?
+
+> _Premise in one sentence. Target viewer (specific — "people who just bought their first DSLR camera, in the first 30 days" beats "photography people"). The 3 questions every video helps them answer. What this channel is NOT about (lock the scope)._
+
+```
+_________
+```
+
+### 3. What style, format, and budget?
+
+> _Default video format (tutorial / vlog / essay / listicle / reaction / mini-doc / short). Target length in minutes. Upload cadence (weekly? 2x weekly?). On-screen energy (calm? high-energy? deadpan?). Visual style (clean talking-head? cinematic B-roll heavy? screen-record?). Production budget tier — $0 (phone), ~$300 (basic setup), ~$1500 (mid-tier), $5K+ (cinema). Three words you want viewers to use to describe the channel. Three words it must never sound like._
+
+```
+_________
+```
+
+---
+
+## 📚 What is in this cabinet
+
+| Page | What it is |
+|---|---|
+| [[brand/index]] | Channel brand spec — populated by bootstrap |
+| `content-calendar.csv` | The video pipeline — interactive table |
+| [[videos/index]] | Video catalog + reusable template |
+| [[generators/index]] | Copy-paste prompt packs: script, thumbnail, title/hook, end-screen |
+| [[production-guide/index]] | Camera / audio / lighting / editor decision matrix |
+| [[publishing-guide/index]] | YouTube SEO, Shorts repurposing, distribution |
+
+## 🤖 Your team
+
+- **🎬 Creative Director** — script, thumbnails, retention, SEO, gear. Refills the calendar Mondays. Drafts next video Wednesdays.
+
+## 🔁 What runs on a schedule
+
+- **Weekly Calendar Fill** — Monday 9am. Top up to ≥8 videos in pipeline.
+- **Weekly Video Prep** — Wednesday 10am. Script + thumbnail + titles + hooks for the next un-shot video.
+
+## 🚀 After the bootstrap
+
+1. Read `brand/index.md`. Edit anything that doesn't sound like you.
+2. Read the pilot in `videos/001-pilot/script.md`. Read it aloud. Cut what you wouldn't actually say.
+3. Pick a production setup from `production-guide/index.md`. Order what you don't have.
+4. Generate the thumbnail using the brief in `videos/001-pilot/thumbnail-brief.md`.
+5. Shoot. Edit. Upload. Update calendar to `status=published`.
+6. Wednesday agent drafts video 002 for you.12:T190c,<h1>🎬 YouTube Channel Factory</h1>
+<blockquote>
+<p>A complete YouTube OS in a directory. Fill in three placeholders, run the bootstrap prompt, and your <code>Creative Director</code> agent builds out the rest — channel brand, content calendar, scripts, thumbnail briefs, and a production-gear recommendation tuned to your budget and format.</p>
+</blockquote>
+<hr>
+<h2>⚡ Bootstrap your Channel OS</h2>
+<p><strong>Step 1.</strong> Fill in the three placeholders in <code>Onboarding</code> below. Be specific.</p>
+<p><strong>Step 2.</strong> Open the AI panel on this page. Paste the prompt block. Run.</p>
+<p><strong>Step 3.</strong> Wait. The agent will: write <code>brand/index.md</code>, populate <code>content-calendar.csv</code> with 12 video ideas, draft a launch video in <code>videos/001-pilot/</code> (script + thumbnail brief + 8 title candidates + 3 hook candidates), and recommend a production setup.</p>
+<pre><code>You are the Creative Director agent for this YouTube Channel Factory cabinet. The creator has
+just filled in the "Onboarding" section of index.md with three answers: who they are, what the
+channel is about, and the style/format/budget.
+
+Read those three answers. Then build out the cabinet in this exact order:
+
+1. Write `brand/index.md` based on the creator's answers. Lock in: channel name, one-line
+   premise, target viewer (be specific), default video format (tutorial / vlog / essay /
+   listicle / reaction / mini-doc / short), target length, upload cadence, channel voice
+   (5 do's and don'ts), the "channel arc" question every video helps the viewer answer, and
+   the visual identity (color palette, typography, on-screen graphic style).
+
+2. Generate 12 video ideas in `content-calendar.csv`. Number them 001–012. Each row gets
+   working_title (under 60 chars), premise, format, target_minutes, thumbnail_concept (one
+   drawable sentence), status=`idea`, target_publish_date matching the cadence. Episode 001
+   is a launch/manifesto video that introduces the channel.
+
+3. Draft `videos/001-pilot/script.md` using the right template from
+   `generators/script-generator.md`. Read it aloud. Cut anything that sounds written.
+
+4. Draft `videos/001-pilot/thumbnail-brief.md` using `generators/thumbnail-generator.md`.
+   Include: central concept, on-thumbnail text, image-gen prompt, two alternative concepts.
+
+5. Append "## Title candidates" (8) and "## Hook candidates" (3) to
+   `videos/001-pilot/index.md` using `generators/title-and-hook-generator.md`.
+
+6. Append "## End-screen + CTA" to the same file using `generators/end-screen-generator.md`.
+
+7. Recommend a production setup. Read `production-guide/index.md`. Based on the creator's
+   format and budget, append a "## Recommended production setup" block to `brand/index.md`
+   with a 1-line answer plus 2–3 lines of reasoning (camera, audio, lighting, editor).
+
+8. Append "## ✅ Bootstrap complete — [YYYY-MM-DD]" to this index.md listing what you built
+   and what the creator should do next.
+
+Rules:
+- Use ONLY what the creator wrote in Onboarding. Do not invent biographical details.
+- If a placeholder is empty or vague, ask the creator to fill it in. Do not guess.
+- Do not modify `production-guide/`, `publishing-guide/`, or `generators/` — those are
+  durable templates.
+</code></pre>
+<hr>
+<h2>🧩 Onboarding — fill these in</h2>
+<h3>1. Who are you?</h3>
+<blockquote>
+<p><em>Name, what you do, why you specifically can host THIS channel, your on-camera personality. "Former pastry chef who now does kitchen fails on camera — warm but blunt, swears occasionally" beats "I love food."</em></p>
+</blockquote>
+<pre><code>_________
+</code></pre>
+<h3>2. What is the channel about?</h3>
+<blockquote>
+<p><em>Premise in one sentence. Target viewer (specific — "people who just bought their first DSLR camera, in the first 30 days" beats "photography people"). The 3 questions every video helps them answer. What this channel is NOT about (lock the scope).</em></p>
+</blockquote>
+<pre><code>_________
+</code></pre>
+<h3>3. What style, format, and budget?</h3>
+<blockquote>
+<p><em>Default video format (tutorial / vlog / essay / listicle / reaction / mini-doc / short). Target length in minutes. Upload cadence (weekly? 2x weekly?). On-screen energy (calm? high-energy? deadpan?). Visual style (clean talking-head? cinematic B-roll heavy? screen-record?). Production budget tier — $0 (phone), ~$300 (basic setup), ~$1500 (mid-tier), $5K+ (cinema). Three words you want viewers to use to describe the channel. Three words it must never sound like.</em></p>
+</blockquote>
+<pre><code>_________
+</code></pre>
+<hr>
+<h2>📚 What is in this cabinet</h2>
+<table>
+<thead>
+<tr>
+<th>Page</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[[brand/index]]</td>
+<td>Channel brand spec — populated by bootstrap</td>
+</tr>
+<tr>
+<td><code>content-calendar.csv</code></td>
+<td>The video pipeline — interactive table</td>
+</tr>
+<tr>
+<td>[[videos/index]]</td>
+<td>Video catalog + reusable template</td>
+</tr>
+<tr>
+<td>[[generators/index]]</td>
+<td>Copy-paste prompt packs: script, thumbnail, title/hook, end-screen</td>
+</tr>
+<tr>
+<td>[[production-guide/index]]</td>
+<td>Camera / audio / lighting / editor decision matrix</td>
+</tr>
+<tr>
+<td>[[publishing-guide/index]]</td>
+<td>YouTube SEO, Shorts repurposing, distribution</td>
+</tr>
+</tbody>
+</table>
+<h2>🤖 Your team</h2>
+<ul>
+<li><strong>🎬 Creative Director</strong> — script, thumbnails, retention, SEO, gear. Refills the calendar Mondays. Drafts next video Wednesdays.</li>
+</ul>
+<h2>🔁 What runs on a schedule</h2>
+<ul>
+<li><strong>Weekly Calendar Fill</strong> — Monday 9am. Top up to ≥8 videos in pipeline.</li>
+<li><strong>Weekly Video Prep</strong> — Wednesday 10am. Script + thumbnail + titles + hooks for the next un-shot video.</li>
+</ul>
+<h2>🚀 After the bootstrap</h2>
+<ol>
+<li>Read <code>brand/index.md</code>. Edit anything that doesn't sound like you.</li>
+<li>Read the pilot in <code>videos/001-pilot/script.md</code>. Read it aloud. Cut what you wouldn't actually say.</li>
+<li>Pick a production setup from <code>production-guide/index.md</code>. Order what you don't have.</li>
+<li>Generate the thumbnail using the brief in <code>videos/001-pilot/thumbnail-brief.md</code>.</li>
+<li>Shoot. Edit. Upload. Update calendar to <code>status=published</code>.</li>
+<li>Wednesday agent drafts video 002 for you.</li>
+</ol>8:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[false,["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$Ld",null,{"entry":{"slug":"youtube-channel-factory","meta":{"schemaVersion":1,"id":"youtube-channel-factory-root","name":"YouTube Channel Factory","kind":"root","version":"0.1.0","description":"A complete YouTube OS in a directory. Fill in three placeholders (who you are, what your channel is about, your style and format), run the bootstrap prompt, and a creative-director agent builds out your channel brand, a 12-video content calendar, scripts, thumbnail prompts, and a production-gear decision guide (DSLR vs mirrorless vs phone, editing software, audio chain).\n","entry":"index.md"},"agents":[{"name":"Creative Director","slug":"creative-director","emoji":"🎬","type":"lead","department":"production","role":"YouTube creative director — channel strategy, scripting, thumbnail briefs, retention engineering, SEO/title craft, gear recommendations","heartbeat":"0 9 * * 1","budget":100,"active":false,"focus":["script-writing","retention","thumbnail-strategy","youtube-seo","gear"],"tags":["lead","youtube","production"],"body":"$e"}],"jobs":[{"id":"weekly-calendar-fill","name":"Weekly Calendar Fill","enabled":true,"schedule":"0 9 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"creative-director","agentSlug":"creative-director","timeout":600,"prompt":"$f","cabinetPath":"cabinets/youtube-channel-factory","createdAt":"2026-04-27T00:00:00.000Z","updatedAt":"2026-04-27T00:00:00.000Z"},{"id":"weekly-video-prep","name":"Weekly Video Prep","enabled":true,"schedule":"0 10 * * 3","provider":"claude-code","adapterType":"claude_local","ownerAgent":"creative-director","agentSlug":"creative-director","timeout":900,"prompt":"$10","cabinetPath":"cabinets/youtube-channel-factory","createdAt":"2026-04-27T00:00:00.000Z","updatedAt":"2026-04-27T00:00:00.000Z"}],"children":[],"readme":"$11","readmeHtml":"$12","tags":["youtube","video","content","template"],"section":"Content & Media","stats":{"totalAgents":1,"totalJobs":2,"totalCabinets":1,"totalPages":18}}}]}]]}],"$L13","$L14","$L15","$L16","$L17"]}]
+9:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L3",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L5",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}],"$L18","$L19"]}]]}],"$L1a"]]}],"$L1b"]}]}]
+a:["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true}]
+b:["$","script","script-1",{"src":"/_next/static/chunks/242ibphq-xhrb.js","async":true}]
+c:["$","$L1c",null,{"children":["$","$1d",null,{"name":"Next.MetadataOutlet","children":"$@1e"}]}]
+13:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"YouTube Channel Factory"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🎬"," ","Creative Director"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Calendar Fill"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Video Prep"}]]}]]]}],[]]}]}]]}]
+14:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-creative-director-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🎬"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Creative Director"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"YouTube creative director — channel strategy, scripting, thumbnail briefs, retention engineering, SEO/title craft, gear recommendations"}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 9 * * 1"}]]}]]}]]}]]}]
+15:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","weekly-calendar-fill",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Calendar Fill"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 9 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","creative-director"]}]]}]]}],["$","div","weekly-video-prep",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Video Prep"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 10 * * 3"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","creative-director"]}]]}]]}]]}]]}]
+1f:T190c,<h1>🎬 YouTube Channel Factory</h1>
+<blockquote>
+<p>A complete YouTube OS in a directory. Fill in three placeholders, run the bootstrap prompt, and your <code>Creative Director</code> agent builds out the rest — channel brand, content calendar, scripts, thumbnail briefs, and a production-gear recommendation tuned to your budget and format.</p>
+</blockquote>
+<hr>
+<h2>⚡ Bootstrap your Channel OS</h2>
+<p><strong>Step 1.</strong> Fill in the three placeholders in <code>Onboarding</code> below. Be specific.</p>
+<p><strong>Step 2.</strong> Open the AI panel on this page. Paste the prompt block. Run.</p>
+<p><strong>Step 3.</strong> Wait. The agent will: write <code>brand/index.md</code>, populate <code>content-calendar.csv</code> with 12 video ideas, draft a launch video in <code>videos/001-pilot/</code> (script + thumbnail brief + 8 title candidates + 3 hook candidates), and recommend a production setup.</p>
+<pre><code>You are the Creative Director agent for this YouTube Channel Factory cabinet. The creator has
+just filled in the "Onboarding" section of index.md with three answers: who they are, what the
+channel is about, and the style/format/budget.
+
+Read those three answers. Then build out the cabinet in this exact order:
+
+1. Write `brand/index.md` based on the creator's answers. Lock in: channel name, one-line
+   premise, target viewer (be specific), default video format (tutorial / vlog / essay /
+   listicle / reaction / mini-doc / short), target length, upload cadence, channel voice
+   (5 do's and don'ts), the "channel arc" question every video helps the viewer answer, and
+   the visual identity (color palette, typography, on-screen graphic style).
+
+2. Generate 12 video ideas in `content-calendar.csv`. Number them 001–012. Each row gets
+   working_title (under 60 chars), premise, format, target_minutes, thumbnail_concept (one
+   drawable sentence), status=`idea`, target_publish_date matching the cadence. Episode 001
+   is a launch/manifesto video that introduces the channel.
+
+3. Draft `videos/001-pilot/script.md` using the right template from
+   `generators/script-generator.md`. Read it aloud. Cut anything that sounds written.
+
+4. Draft `videos/001-pilot/thumbnail-brief.md` using `generators/thumbnail-generator.md`.
+   Include: central concept, on-thumbnail text, image-gen prompt, two alternative concepts.
+
+5. Append "## Title candidates" (8) and "## Hook candidates" (3) to
+   `videos/001-pilot/index.md` using `generators/title-and-hook-generator.md`.
+
+6. Append "## End-screen + CTA" to the same file using `generators/end-screen-generator.md`.
+
+7. Recommend a production setup. Read `production-guide/index.md`. Based on the creator's
+   format and budget, append a "## Recommended production setup" block to `brand/index.md`
+   with a 1-line answer plus 2–3 lines of reasoning (camera, audio, lighting, editor).
+
+8. Append "## ✅ Bootstrap complete — [YYYY-MM-DD]" to this index.md listing what you built
+   and what the creator should do next.
+
+Rules:
+- Use ONLY what the creator wrote in Onboarding. Do not invent biographical details.
+- If a placeholder is empty or vague, ask the creator to fill it in. Do not guess.
+- Do not modify `production-guide/`, `publishing-guide/`, or `generators/` — those are
+  durable templates.
+</code></pre>
+<hr>
+<h2>🧩 Onboarding — fill these in</h2>
+<h3>1. Who are you?</h3>
+<blockquote>
+<p><em>Name, what you do, why you specifically can host THIS channel, your on-camera personality. "Former pastry chef who now does kitchen fails on camera — warm but blunt, swears occasionally" beats "I love food."</em></p>
+</blockquote>
+<pre><code>_________
+</code></pre>
+<h3>2. What is the channel about?</h3>
+<blockquote>
+<p><em>Premise in one sentence. Target viewer (specific — "people who just bought their first DSLR camera, in the first 30 days" beats "photography people"). The 3 questions every video helps them answer. What this channel is NOT about (lock the scope).</em></p>
+</blockquote>
+<pre><code>_________
+</code></pre>
+<h3>3. What style, format, and budget?</h3>
+<blockquote>
+<p><em>Default video format (tutorial / vlog / essay / listicle / reaction / mini-doc / short). Target length in minutes. Upload cadence (weekly? 2x weekly?). On-screen energy (calm? high-energy? deadpan?). Visual style (clean talking-head? cinematic B-roll heavy? screen-record?). Production budget tier — $0 (phone), ~$300 (basic setup), ~$1500 (mid-tier), $5K+ (cinema). Three words you want viewers to use to describe the channel. Three words it must never sound like.</em></p>
+</blockquote>
+<pre><code>_________
+</code></pre>
+<hr>
+<h2>📚 What is in this cabinet</h2>
+<table>
+<thead>
+<tr>
+<th>Page</th>
+<th>What it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[[brand/index]]</td>
+<td>Channel brand spec — populated by bootstrap</td>
+</tr>
+<tr>
+<td><code>content-calendar.csv</code></td>
+<td>The video pipeline — interactive table</td>
+</tr>
+<tr>
+<td>[[videos/index]]</td>
+<td>Video catalog + reusable template</td>
+</tr>
+<tr>
+<td>[[generators/index]]</td>
+<td>Copy-paste prompt packs: script, thumbnail, title/hook, end-screen</td>
+</tr>
+<tr>
+<td>[[production-guide/index]]</td>
+<td>Camera / audio / lighting / editor decision matrix</td>
+</tr>
+<tr>
+<td>[[publishing-guide/index]]</td>
+<td>YouTube SEO, Shorts repurposing, distribution</td>
+</tr>
+</tbody>
+</table>
+<h2>🤖 Your team</h2>
+<ul>
+<li><strong>🎬 Creative Director</strong> — script, thumbnails, retention, SEO, gear. Refills the calendar Mondays. Drafts next video Wednesdays.</li>
+</ul>
+<h2>🔁 What runs on a schedule</h2>
+<ul>
+<li><strong>Weekly Calendar Fill</strong> — Monday 9am. Top up to ≥8 videos in pipeline.</li>
+<li><strong>Weekly Video Prep</strong> — Wednesday 10am. Script + thumbnail + titles + hooks for the next un-shot video.</li>
+</ul>
+<h2>🚀 After the bootstrap</h2>
+<ol>
+<li>Read <code>brand/index.md</code>. Edit anything that doesn't sound like you.</li>
+<li>Read the pilot in <code>videos/001-pilot/script.md</code>. Read it aloud. Cut what you wouldn't actually say.</li>
+<li>Pick a production setup from <code>production-guide/index.md</code>. Order what you don't have.</li>
+<li>Generate the thumbnail using the brief in <code>videos/001-pilot/thumbnail-brief.md</code>.</li>
+<li>Shoot. Edit. Upload. Update calendar to <code>status=published</code>.</li>
+<li>Wednesday agent drafts video 002 for you.</li>
+</ol>16:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$1f"}}]}]]}]
+17:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L20",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set youtube-channel-factory","label":"Install"}]}]}]]}]
+18:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+19:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+1a:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+1b:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+1e:null

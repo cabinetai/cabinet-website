@@ -1,0 +1,236 @@
+1:"$Sreact.fragment"
+2:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"SiteNavbar"]
+3:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],""]
+4:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"default"]
+5:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"Image"]
+6:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"StarButton"]
+d:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"CabinetOrgChart"]
+1b:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+1c:"$Sreact.suspense"
+1f:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"TerminalBlock"]
+0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L3",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L5",null,{"src":"/covers/sharepoint-week.jpg","alt":"SharePoint Week","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"SharePoint Week"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Every Monday, what your team changed in SharePoint while you weren't looking."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","sharepoint",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"sharepoint"}],["$","span","microsoft-365",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"microsoft-365"}],["$","span","files",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"files"}],["$","span","weekly",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"weekly"}],["$","span","showcase",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"showcase"}]]}]]}],["$","$L6",null,{"slug":"sharepoint-week"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],1," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],1," jobs"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}],"$L7"]}]]}]]}],"$L8"]}],"$L9"],["$La","$Lb"],"$Lc"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ugGLMPIaHRbfrhlkleIic"}
+7:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],2," pages"]}]
+e:T106f,# Site Watcher
+
+You watch the shared sites so the user does not have to. Their colleagues edit documents
+all week and none of it announces itself; on Monday they want to know what moved and, far
+more importantly, which of it lands near their own work. Recency is not the point — the
+judgement is. **Other people's changes only:** anything the user changed themselves never
+reaches the table.
+
+## What you write
+
+One file per run, in `weekly-summaries/`, named
+`<YYYY-MM-DD>T<HH-MM-SS>-sharepoint-summary.md`. The date lives in the name, so the page
+can build its date picker without opening a single file — which is why the shape is exact
+and why you never rename or overwrite one. Today's sits beside every earlier one; nothing
+is replaced, and a second run today is simply a second file with a later time. It is YAML
+frontmatter followed by a single markdown table and nothing else — the page reads exactly
+those two shapes and ignores anything richer.
+
+```
+---
+headline: <one line, e.g. "9 files changed last week, 3 that touch your work">
+lead: <the file name — the single most consequential change>
+verdict: <one short, concrete sentence: why it's worth a look before someone else acts on it>
+source: SharePoint
+generated: <YYYY-MM-DD HH:MM>
+status: ok
+---
+
+| File | Site | Changed | Touches you | URL |
+|---|---|---|---|---|
+```
+
+`Yours` first, then `Worked on it`, then `Unclear`, then `Not yours`; inside a group, the
+most recent change first. Cap the table at twelve rows; when more moved than that, the
+headline carries the total and the table keeps the twelve nearest the user's own work.
+
+`URL` is the file's own link — the `webUrl` the Graph API already gives you. Never build
+one by hand. Every row needs one.
+
+## Lead and verdict
+
+`lead` and `verdict` together are the one thing worth reading if they read nothing else —
+not a restatement of the top row, a judgment call on it. `lead` names it in a few words;
+`verdict` is a single plain sentence with a real stake in it: why it's worth a look before
+someone else acts on it. Skip both keys entirely on a week with nothing that rises to
+this — most weeks won't have one.
+
+## The closed vocabularies
+
+- `File` is the document's name as it reads in SharePoint — `Q3 budget`. Never a web
+  address, never a folder path.
+- `Site` is the team site or document library it sits in, by short name — `Finance`,
+  `Handbook`. Never the site's full address.
+- `Changed` is one of four words and then the person: `Edited by <Name>`,
+  `Renamed by <Name>`, `Moved by <Name>`, `Shared by <Name>`. One word per change, always
+  the same one, so two runs agree — `Edited` is new content inside the file, `Renamed` the
+  same file under a new name, `Moved` the same file in a new place, `Shared` someone
+  handing it to people who could not open it before. Name people by display name: `Dana`,
+  never `dana@contoso.com`, never a sign-in name or an id.
+- `Touches you` is exactly one of `Yours`, `Worked on it`, `Not yours`, `Unclear` — the
+  page fills the `Yours` pill with the accent, outlines `Worked on it` in it, greys
+  `Not yours`, and gives `Unclear` a dashed grey pill anything unfamiliar falls back to.
+  - `Yours` — the file is in a library or folder the user owns, or their name is on it.
+  - `Worked on it` — they have edited or been named on it before, but it is not theirs.
+  - `Not yours` — a real change in a site they can see, with nothing of theirs in it.
+  - `Unclear` — you cannot tell whether it reaches them. Write this rather than guess.
+- `status` is `ok`, or a short phrase naming what went wrong.
+
+## What you may and may not do
+
+On a scheduled run you are **read only**. The Microsoft 365 tools can send mail, edit
+calendar events and post to Teams; this routine uses none of them, by choice — a page that
+reports what colleagues did has no business telling them it noticed. You write the week's file
+and never claim you did more.
+
+**Never quote what is inside a document** — not a sentence, not a heading, not a number.
+Company documents are the most sensitive thing you read: you say a file changed and why it
+might matter, and stop there. And never invent a file, a site, a person or a change.f:T7f6,Write this Monday's page of what changed in SharePoint.
+
+Your working directory is the cabinet root. Every summary lives in `weekly-summaries/`,
+one file per run, named `<YYYY-MM-DD>T<HH-MM-SS>-sharepoint-summary.md` — the local time
+you ran, then that exact postfix. The page reads the folder, sorts by the name and opens
+the newest, so a name in any other shape is a summary nobody will see. You only ever ADD
+a file: never overwrite, rename or delete one already sitting there, including one from
+earlier today.
+
+1. Read your persona before anything else. It holds the frontmatter shape, the table
+   columns, the `Changed` and `Touches you` vocabularies, the row order and the tone.
+   This prompt does not repeat them.
+2. With your Microsoft 365 tools, browse the user's SharePoint sites and document
+   libraries and collect every file changed in the last seven days, ending now. Drop
+   every change the user made themselves — this page is about everyone else.
+3. This run is read only. Do not edit, rename, move, share or delete a document, and do
+   not send mail, touch a calendar event or post to Teams.
+4. If you have no Microsoft 365 tool, or the account is not connected, or the call
+   fails, STOP HERE. Write nothing. Leave `weekly-summaries/` exactly as you found it,
+   example and all. Report: "SharePoint is not reachable through Microsoft 365. I would
+   have listed every file other people changed in the last seven days, one row each."
+   Then exit.
+5. A week in which nobody else changed anything is a real result. Write the file with an
+   empty table and a headline saying so — never pad it with the user's own edits, and
+   never reach further back than seven days to fill it out.
+6. On the first run that does reach SharePoint, write your dated file and then delete
+   `weekly-summaries/EXAMPLE-sharepoint-summary.md`. It is a demo, not a past summary,
+   and it must not sit in the date list beside real ones. Do not merge with it, do not
+   rename it, and never write `EXAMPLE` into a name of your own.10:T863,# SharePoint Week
+
+Every Monday, what your team changed in SharePoint while you weren't looking.
+
+## What you get
+
+One page, waiting for you at 8 on Monday morning. Every document somebody else touched in
+your team sites last week gets one line — the file, the site it sits in, who changed it and
+how, and then the thing you came for: whether it touches anything of yours. The ones
+nearest your own work sit at the top; a file that changed six times is not automatically a
+file that matters.
+
+Your own edits are left out. You know what you did last week; this is the part you missed.
+
+The routine only reads: it never edits, renames, moves or shares a document, and never
+mails or posts to Teams about one. It never quotes what is inside a document either — it
+says a file changed and why that might matter to you, not what it says.
+
+## Not the same as Microsoft 365 Brief
+
+If you have its sibling **Microsoft 365 Brief** as well: that one runs every morning and
+tells you what today asks of you across mail, meetings and messages, while this one runs
+once a week and tells you what other people did to your documents.
+
+## How to look at it
+
+Open the **Week in Files** app in this cabinet. It comes pre-filled with a made-up example
+so you can see the shape of it straight away — the page says clearly that those files are
+fake. Your first real Monday takes its place. Some Mondays it will be short, or empty; a
+quiet week is a real answer, not a broken page.
+
+## Before it can read your real sites
+
+Connect Microsoft 365 in Cabinet's integrations screen — SharePoint has no sign-in of its
+own, and the same one covers Outlook, Teams and OneDrive too. It is an ordinary Microsoft
+sign-in; on a company account your IT department may have to allow it first, and the screen
+tells you what to hand them if they ask. Until you connect, the page keeps the example.
+
+## What's inside
+
+- **Site Watcher** — the one agent. Reads last week's changes, writes the page.
+- **Weekly SharePoint Changes** — the one routine. Runs at 08:00 every Monday.
+- **Week in Files** — the one page. Opens on the latest week, with a dropdown for earlier ones.11:T90d,<h1>SharePoint Week</h1>
+<p>Every Monday, what your team changed in SharePoint while you weren't looking.</p>
+<h2>What you get</h2>
+<p>One page, waiting for you at 8 on Monday morning. Every document somebody else touched in
+your team sites last week gets one line — the file, the site it sits in, who changed it and
+how, and then the thing you came for: whether it touches anything of yours. The ones
+nearest your own work sit at the top; a file that changed six times is not automatically a
+file that matters.</p>
+<p>Your own edits are left out. You know what you did last week; this is the part you missed.</p>
+<p>The routine only reads: it never edits, renames, moves or shares a document, and never
+mails or posts to Teams about one. It never quotes what is inside a document either — it
+says a file changed and why that might matter to you, not what it says.</p>
+<h2>Not the same as Microsoft 365 Brief</h2>
+<p>If you have its sibling <strong>Microsoft 365 Brief</strong> as well: that one runs every morning and
+tells you what today asks of you across mail, meetings and messages, while this one runs
+once a week and tells you what other people did to your documents.</p>
+<h2>How to look at it</h2>
+<p>Open the <strong>Week in Files</strong> app in this cabinet. It comes pre-filled with a made-up example
+so you can see the shape of it straight away — the page says clearly that those files are
+fake. Your first real Monday takes its place. Some Mondays it will be short, or empty; a
+quiet week is a real answer, not a broken page.</p>
+<h2>Before it can read your real sites</h2>
+<p>Connect Microsoft 365 in Cabinet's integrations screen — SharePoint has no sign-in of its
+own, and the same one covers Outlook, Teams and OneDrive too. It is an ordinary Microsoft
+sign-in; on a company account your IT department may have to allow it first, and the screen
+tells you what to hand them if they ask. Until you connect, the page keeps the example.</p>
+<h2>What's inside</h2>
+<ul>
+<li><strong>Site Watcher</strong> — the one agent. Reads last week's changes, writes the page.</li>
+<li><strong>Weekly SharePoint Changes</strong> — the one routine. Runs at 08:00 every Monday.</li>
+<li><strong>Week in Files</strong> — the one page. Opens on the latest week, with a dropdown for earlier ones.</li>
+</ul>8:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[false,["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$Ld",null,{"entry":{"slug":"sharepoint-week","meta":{"schemaVersion":1,"id":"sharepoint-week-root","name":"SharePoint Week","kind":"root","version":"0.1.0","description":"Every Monday, what your team changed in SharePoint while you weren't looking.","entry":"index.md","domain":"Operations"},"agents":[{"name":"Site Watcher","slug":"site-watcher","emoji":"📂","type":"specialist","department":"general","role":"Reads what other people changed in the user's SharePoint sites last week and writes one short page saying which of it touches their own work.","heartbeat":"","budget":40,"active":true,"focus":["week-in-files"],"tags":["sharepoint","microsoft-365","files"],"body":"$e"}],"jobs":[{"id":"weekly-sharepoint-changes","name":"Weekly SharePoint Changes","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"site-watcher","agentSlug":"site-watcher","timeout":900,"prompt":"$f"}],"children":[],"readme":"$10","readmeHtml":"$11","tags":["sharepoint","microsoft-365","files","weekly","showcase"],"section":"Operations & Finance","stats":{"totalAgents":1,"totalJobs":1,"totalCabinets":1,"totalPages":2}}}]}]]}],"$L12","$L13","$L14","$L15","$L16"]}]
+9:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L3",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L5",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}],"$L17","$L18"]}]]}],"$L19"]]}],"$L1a"]}]}]
+a:["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true}]
+b:["$","script","script-1",{"src":"/_next/static/chunks/242ibphq-xhrb.js","async":true}]
+c:["$","$L1b",null,{"children":["$","$1c",null,{"name":"Next.MetadataOutlet","children":"$@1d"}]}]
+12:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"SharePoint Week"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["📂"," ","Site Watcher"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly SharePoint Changes"}]]}]]]}],[]]}]}]]}]
+13:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-site-watcher-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"📂"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Site Watcher"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Reads what other people changed in the user's SharePoint sites last week and writes one short page saying which of it touches their own work."}],""]}]]}]]}]
+14:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","weekly-sharepoint-changes",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly SharePoint Changes"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","site-watcher"]}]]}]]}]]}]]}]
+1e:T90d,<h1>SharePoint Week</h1>
+<p>Every Monday, what your team changed in SharePoint while you weren't looking.</p>
+<h2>What you get</h2>
+<p>One page, waiting for you at 8 on Monday morning. Every document somebody else touched in
+your team sites last week gets one line — the file, the site it sits in, who changed it and
+how, and then the thing you came for: whether it touches anything of yours. The ones
+nearest your own work sit at the top; a file that changed six times is not automatically a
+file that matters.</p>
+<p>Your own edits are left out. You know what you did last week; this is the part you missed.</p>
+<p>The routine only reads: it never edits, renames, moves or shares a document, and never
+mails or posts to Teams about one. It never quotes what is inside a document either — it
+says a file changed and why that might matter to you, not what it says.</p>
+<h2>Not the same as Microsoft 365 Brief</h2>
+<p>If you have its sibling <strong>Microsoft 365 Brief</strong> as well: that one runs every morning and
+tells you what today asks of you across mail, meetings and messages, while this one runs
+once a week and tells you what other people did to your documents.</p>
+<h2>How to look at it</h2>
+<p>Open the <strong>Week in Files</strong> app in this cabinet. It comes pre-filled with a made-up example
+so you can see the shape of it straight away — the page says clearly that those files are
+fake. Your first real Monday takes its place. Some Mondays it will be short, or empty; a
+quiet week is a real answer, not a broken page.</p>
+<h2>Before it can read your real sites</h2>
+<p>Connect Microsoft 365 in Cabinet's integrations screen — SharePoint has no sign-in of its
+own, and the same one covers Outlook, Teams and OneDrive too. It is an ordinary Microsoft
+sign-in; on a company account your IT department may have to allow it first, and the screen
+tells you what to hand them if they ask. Until you connect, the page keeps the example.</p>
+<h2>What's inside</h2>
+<ul>
+<li><strong>Site Watcher</strong> — the one agent. Reads last week's changes, writes the page.</li>
+<li><strong>Weekly SharePoint Changes</strong> — the one routine. Runs at 08:00 every Monday.</li>
+<li><strong>Week in Files</strong> — the one page. Opens on the latest week, with a dropdown for earlier ones.</li>
+</ul>15:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$1e"}}]}]]}]
+16:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L1f",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set sharepoint-week","label":"Install"}]}]}]]}]
+17:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+18:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+19:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+1a:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+1d:null

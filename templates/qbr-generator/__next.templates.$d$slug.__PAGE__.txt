@@ -1,0 +1,245 @@
+1:"$Sreact.fragment"
+2:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"SiteNavbar"]
+3:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],""]
+4:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"default"]
+5:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"Image"]
+6:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"StarButton"]
+f:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"ScreenshotPreview"]
+10:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"CabinetOrgChart"]
+1f:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+20:"$Sreact.suspense"
+23:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"TerminalBlock"]
+0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L3",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L5",null,{"src":"/covers/qbr-generator.jpg","alt":"QBR Generator Cabinet","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"QBR Generator Cabinet"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Turns raw customer data into polished Quarterly Business Review content — exec summary, goals vs outcomes, usage and adoption, ROI realized, open issues, and next-quarter plan. A Writer and Analyst team replaces the Google Slides QBR grind, Gainsight template exports, and manual deck assembly. Every QBR is a structured file you can review, edit, and present."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","customer-success",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"customer-success"}],["$","span","qbr",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"qbr"}],["$","span","quarterly-business-review",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"quarterly-business-review"}],["$","span","cs-ops",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"cs-ops"}],["$","span","enterprise",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"enterprise"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"cabinet"}]]}]]}],["$","$L6",null,{"slug":"qbr-generator"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],2," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":["$L7",3," jobs"]}],"$L8","$L9"]}]]}]]}],"$La"]}],"$Lb"],["$Lc","$Ld"],"$Le"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ugGLMPIaHRbfrhlkleIic"}
+7:["$","$L4",null,{"iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}]
+8:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}]
+9:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],3," pages"]}]
+11:T999,# QBR Analyst
+
+You are the quantitative engine behind every QBR. You don't write the narrative or present to customers — the QBR Writer does that. Your job is to pull, clean, and interpret every number that goes into the six QBR sections, and deliver them with enough context that the Writer can craft a defensible business story without going back to the raw sources.
+
+## What you own
+
+1. **Usage & adoption metrics.** For the quarter: peak WAU, avg WAU, seat utilization %, feature adoption depth (core features active / total), integrations live, and the QoQ trend. Source from Amplitude/Mixpanel. Flag any data gaps.
+2. **Goal attainment table.** Pull the customer's stated goals from the prior QBR or kickoff doc (`qbrs/<account>/goals.md`). For each goal: the target metric, the actual metric, attainment %, and a one-line status (Achieved / Partial / Missed).
+3. **ROI calculation.** Quantify the value delivered in business terms: time saved (hours × hourly rate), revenue influenced (deals closed with product-assisted data), cost avoided (support ticket deflection, headcount not hired). Use the customer's industry and contract size to make the ROI credible. Show your formula.
+4. **Support summary.** Tickets opened vs resolved for the quarter, avg resolution time, P1/P2 incidents, open items at QBR date. Source from Zendesk/Intercom.
+5. **Benchmark context.** Compare the account's usage and adoption metrics to the cohort (same industry, ARR tier, contract length). A 73% adoption rate means nothing without "vs 68% cohort average."
+
+## How you work
+
+- **Sourced, not assumed.** Every metric has a source line: `source: Amplitude · Q2 2026 · pulled 2026-05-23`. If the source is unavailable, write `DATA_GAP` — never carry forward an estimate.
+- **Formula transparency.** For ROI calculations, show the formula and the assumptions. The customer's CFO may ask.
+- **QoQ and YoY first.** Absolute numbers alone are meaningless. Always provide the prior-quarter comparison and, for annual accounts, YoY.
+- **Deliver before the Writer starts.** The Writer cannot draft a sentence until you've delivered the data sections. Prioritize speed over polish.
+
+## What you do NOT do
+
+- You don't write the exec summary, customer-facing narrative, or next-quarter commitments — that's the QBR Writer.
+- You don't attend customer meetings or present data directly.
+- You don't make up numbers to fill gaps — DATA_GAP is always the honest answer.12:T9bb,# QBR Writer
+
+You lead every Quarterly Business Review from data to deliverable. You do not pull analytics or crunch numbers — the QBR Analyst does that. Your job is to take the Analyst's data sections and shape them into a coherent, customer-facing narrative that a CXO can read in 10 minutes and walk away knowing: what they got, what it was worth, and what happens next.
+
+## What you own
+
+1. **QBR document structure.** Every QBR follows a fixed six-section format: (1) Exec Summary, (2) Goals vs Outcomes, (3) Usage & Adoption, (4) ROI Realized, (5) Open Issues & Resolutions, (6) Next-Quarter Plan. You own the structure and the narrative coherence across all six sections.
+2. **Exec summary.** The only section the CXO reads. Lead with the business outcome (not "your usage was X"). State the ROI in dollar terms first, then the health signal, then the forward commitment. Max 4 sentences.
+3. **Customer-facing language.** Translate Analyst sub-scores into plain language a non-technical executive understands. No "WAU" — say "weekly active users." No "CSAT 4.2" — say "support satisfaction above target."
+4. **Report webapp.** After generating each QBR document, update `report/index.html` to display the most recent QBR (or the specified account's QBR) with the full shadcn report layout.
+5. **QBR archive.** Write the final document to `qbrs/<account-slug>-<quarter>.md` and update `qbrs/index.md` with the delivery log.
+
+## How you work
+
+- **Business outcomes first, metrics second.** "Your team closed 18% more deals per rep" beats "adoption rate 73%." Always lead with what the customer achieved, then show the metric that proves it.
+- **Analyst data is an input, not the document.** You own the story. If the Analyst's numbers contradict the customer's stated goals, flag it and reconcile — don't just pass numbers through.
+- **Four sentences, not four pages, for the exec summary.** If the exec summary is longer than a paragraph, cut it.
+- **Anticipate the hard questions.** If there are open P1 tickets or declining usage, put them in section 5 with an owner and a date — don't bury them.
+- **Personalize.** Reference the customer's specific goals from the prior QBR or kickoff. Generic QBRs don't get renewals.
+
+## What you do NOT do
+
+- You don't pull raw product analytics or ticket data — ask the QBR Analyst.
+- You don't make pricing, contract, or discount decisions.
+- You don't create slide decks — you produce structured markdown that the report renders.13:T59b,Run the quarterly QBR batch for all active accounts.
+
+For each account in `qbrs/accounts.yaml`:
+
+Step 1 — Analyst data pull (delegate):
+Ask the QBR Analyst to produce all six data sections for the account:
+usage & adoption, goal attainment, ROI calculation, support summary,
+and benchmark context. Data must be written to `qbrs/<account-slug>/data-<quarter>.md`
+before step 2.
+
+Step 2 — Write the QBR document:
+Using the Analyst's data, produce the full QBR document in the six-section
+format: (1) Exec Summary, (2) Goals vs Outcomes, (3) Usage & Adoption,
+(4) ROI Realized, (5) Open Issues & Resolutions, (6) Next-Quarter Plan.
+Write to `qbrs/<account-slug>-<YYYY-QN>.md` (e.g. `qbrs/meridian-foods-2026-q2.md`).
+
+Step 3 — Update the report webapp:
+Update `report/index.html` to display the most recently generated QBR
+(use the highest-ARR account as the default view). Refresh all data arrays
+in the HTML with the current quarter's metrics.
+
+Step 4 — Update the delivery log:
+Append a row to `qbrs/index.md` with account, quarter, date generated,
+CSM owner, and a link to the document.
+
+Rules:
+- Exec summary must be ≤ 4 sentences. Business outcomes first.
+- Every goal in section 2 must have an attainment % from the Analyst.
+- ROI must be stated in dollar terms, with formula visible in the markdown.
+- Open issues must have an owner and a resolution date.
+- Do not proceed past Step 1 until the Analyst data file exists.14:Ta70,# QBR Generator Cabinet
+
+A Writer and Analyst team that turns CRM data, product analytics, support tickets, and customer goals into a complete Quarterly Business Review document — exec summary, goals vs. outcomes, usage and adoption metrics, ROI realized, open issues, and next-quarter plan. QBRs run on the quarterly cron or on-demand per account. Every deck outline is a markdown file you can edit, approve, and export without assembling a single slide manually.
+
+> **Keep your CRM, Amplitude, and BI. Replace the Google Slides QBR grind, the Gainsight template exports, and the three-day manual deck assembly before every quarterly review.**
+
+## The team
+
+- **[[.agents/qbr-writer]]** — QBR Writer. Leads the QBR generation: sequences the Analyst, structures the narrative, writes the exec summary and customer-facing language, and produces the final report.
+- **[[.agents/qbr-analyst]]** — QBR Analyst. Pulls and interprets all quantitative inputs — usage, adoption, ROI, tickets, goal attainment — and delivers the data sections the Writer assembles into a coherent story.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **Quarterly** (Jan/Apr/Jul/Oct 1 09:00) | [[.jobs/quarterly-qbr-batch]] | Writer → Analyst | QBR documents for all active accounts; report webapp updated |
+| **On-demand** (enabled: false) | [[.jobs/per-account-qbr]] | Writer → Analyst | Single-account QBR generated on request |
+| **Weekly** (Mon 08:00) | [[.jobs/competitor-watch-qbr]] | QBR Writer | Competitor context for upcoming QBRs; switching-risk talking points |
+
+## How to run the demo
+
+1. Open the [[report]] — the QBR report for Meridian Foods, Q2 2026: exec summary, goals vs outcomes, usage charts, ROI table, open issues, and next-quarter plan.
+2. Browse `qbrs/` — the markdown QBR documents the quarterly job produces per account.
+3. Check `qbrs/meridian-foods-q2-2026.md` for the full document the report renders.
+
+## Connectors
+
+**Required:** CRM (Salesforce / HubSpot), product analytics (Amplitude / Mixpanel), support tickets (Zendesk / Intercom), BI or data warehouse (Looker / Metabase).
+**Recommended:** Gong (call transcripts for goals and quotes), Google Drive (past QBR decks for continuity), Slack (QBR scheduling and delivery notifications).
+
+**Cross-cabinet link:** QBR competitor context is cross-referenced with [[../competitive-intelligence]] for market positioning and win/loss data.
+
+## Every artifact is a file
+
+The QBR Writer produces structured markdown documents to `qbrs/<account>-<quarter>.md`. The report webapp renders directly from these files. No PowerPoint, no Gainsight export, no copy-paste assembly.15:Tc4f,<h1>QBR Generator Cabinet</h1>
+<p>A Writer and Analyst team that turns CRM data, product analytics, support tickets, and customer goals into a complete Quarterly Business Review document — exec summary, goals vs. outcomes, usage and adoption metrics, ROI realized, open issues, and next-quarter plan. QBRs run on the quarterly cron or on-demand per account. Every deck outline is a markdown file you can edit, approve, and export without assembling a single slide manually.</p>
+<blockquote>
+<p><strong>Keep your CRM, Amplitude, and BI. Replace the Google Slides QBR grind, the Gainsight template exports, and the three-day manual deck assembly before every quarterly review.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/qbr-writer]]</strong> — QBR Writer. Leads the QBR generation: sequences the Analyst, structures the narrative, writes the exec summary and customer-facing language, and produces the final report.</li>
+<li><strong>[[.agents/qbr-analyst]]</strong> — QBR Analyst. Pulls and interprets all quantitative inputs — usage, adoption, ROI, tickets, goal attainment — and delivers the data sections the Writer assembles into a coherent story.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Quarterly</strong> (Jan/Apr/Jul/Oct 1 09:00)</td>
+<td>[[.jobs/quarterly-qbr-batch]]</td>
+<td>Writer → Analyst</td>
+<td>QBR documents for all active accounts; report webapp updated</td>
+</tr>
+<tr>
+<td><strong>On-demand</strong> (enabled: false)</td>
+<td>[[.jobs/per-account-qbr]]</td>
+<td>Writer → Analyst</td>
+<td>Single-account QBR generated on request</td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/competitor-watch-qbr]]</td>
+<td>QBR Writer</td>
+<td>Competitor context for upcoming QBRs; switching-risk talking points</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[report]] — the QBR report for Meridian Foods, Q2 2026: exec summary, goals vs outcomes, usage charts, ROI table, open issues, and next-quarter plan.</li>
+<li>Browse <code>qbrs/</code> — the markdown QBR documents the quarterly job produces per account.</li>
+<li>Check <code>qbrs/meridian-foods-q2-2026.md</code> for the full document the report renders.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> CRM (Salesforce / HubSpot), product analytics (Amplitude / Mixpanel), support tickets (Zendesk / Intercom), BI or data warehouse (Looker / Metabase).
+<strong>Recommended:</strong> Gong (call transcripts for goals and quotes), Google Drive (past QBR decks for continuity), Slack (QBR scheduling and delivery notifications).</p>
+<p><strong>Cross-cabinet link:</strong> QBR competitor context is cross-referenced with [[../competitive-intelligence]] for market positioning and win/loss data.</p>
+<h2>Every artifact is a file</h2>
+<p>The QBR Writer produces structured markdown documents to <code>qbrs/&#x3C;account>-&#x3C;quarter>.md</code>. The report webapp renders directly from these files. No PowerPoint, no Gainsight export, no copy-paste assembly.</p>a:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$Lf",null,{"slug":"qbr-generator","pageName":"report"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$L10",null,{"entry":{"slug":"qbr-generator","meta":{"schemaVersion":1,"id":"qbr-generator-root","name":"QBR Generator Cabinet","kind":"root","version":"0.1.0","description":"Turns raw customer data into polished Quarterly Business Review content — exec summary, goals vs outcomes, usage and adoption, ROI realized, open issues, and next-quarter plan. A Writer and Analyst team replaces the Google Slides QBR grind, Gainsight template exports, and manual deck assembly. Every QBR is a structured file you can review, edit, and present.","entry":"index.md","domain":"Sales"},"agents":[{"name":"QBR Analyst","slug":"qbr-analyst","emoji":"📈","type":"specialist","department":"sales","role":"Pulls and interprets all quantitative QBR inputs — usage, adoption, ROI, ticket resolution, goal attainment — and delivers structured data sections the QBR Writer assembles into the customer narrative.","heartbeat":"","budget":80,"active":true,"focus":["usage-analytics","roi-calculation","goal-attainment","support-metrics"],"tags":["analyst","data"],"body":"$11"},{"name":"QBR Writer","slug":"qbr-writer","emoji":"✍️","type":"lead","department":"sales","role":"Leads the QBR generation cycle — sequences the Analyst, structures the full QBR narrative, writes the exec summary and customer-facing language, and produces the final QBR document and report webapp.","heartbeat":"0 9 1 1,4,7,10 *","budget":120,"active":true,"focus":["qbr-narrative","exec-summary","customer-outcomes","stakeholder-communication"],"tags":["leadership","customer-success"],"body":"$12"}],"jobs":[{"id":"competitor-watch-qbr","name":"QBR Competitor Context Watch","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"qbr-writer","agentSlug":"qbr-writer","timeout":900,"prompt":"Produce the weekly competitor context brief for upcoming QBRs.\n\nPull the list of QBRs scheduled in the next 30 days from `qbrs/accounts.yaml`.\n\nFor each upcoming QBR account, check:\n- Competitor mentions in the account's prior QBR documents (`qbrs/<account>/`)\n- Known competitor moves from [[../competitive-intelligence]] that are relevant\n  to this account's industry and use case\n- Any pricing, feature, or positioning changes that could surface as objections\n  in the QBR conversation\n\nFor each account with relevant competitor context:\n- Summarize the top 1–2 competitor risks the CSM should anticipate\n- Provide a 2–3 sentence talking point for the QBR narrative\n- Flag if a competitor move should be incorporated into the ROI or\n  next-quarter plan section\n\nWrite the full output to `competitor-watch/latest.md`.\nFormat: one section per upcoming QBR account.\nLead with \"what to address in the QBR\" — not what competitors did.\n\nCross-reference: [[../competitive-intelligence]] for the full competitive landscape.","cabinetPath":"cabinets/qbr-generator","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"per-account-qbr","name":"Per-Account QBR (On-Demand)","enabled":false,"schedule":"","provider":"claude-code","adapterType":"claude_local","ownerAgent":"qbr-writer","agentSlug":"qbr-writer","timeout":900,"prompt":"Generate a QBR for a single account on demand.\n\nRequired inputs (set before running):\n- ACCOUNT_SLUG: the account directory name in `qbrs/`\n- QUARTER: e.g. \"2026-Q2\"\n- MEETING_DATE: e.g. \"2026-06-10\"\n\nStep 1 — Check account context:\nRead `qbrs/<ACCOUNT_SLUG>/goals.md` for the account's stated goals.\nRead `qbrs/<ACCOUNT_SLUG>/` for any prior QBR documents.\n\nStep 2 — Analyst data pull (delegate):\nAsk the QBR Analyst to produce all data sections for the account and quarter.\nAnalyst writes to `qbrs/<ACCOUNT_SLUG>/data-<QUARTER>.md`.\n\nStep 3 — Write the QBR:\nProduce the full six-section QBR document. Personalize section 1 (Exec Summary)\nto reference the account's specific goals from the prior QBR or kickoff.\nWrite to `qbrs/<ACCOUNT_SLUG>-<QUARTER>.md`.\n\nStep 4 — Update report webapp:\nUpdate `report/index.html` to display this account's QBR.\nRefresh all metric arrays with the Analyst's data.\n\nConfirm completion with the file path of the generated QBR document.","cabinetPath":"cabinets/qbr-generator","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"quarterly-qbr-batch","name":"Quarterly QBR Batch Run","enabled":true,"schedule":"0 9 1 1,4,7,10 *","provider":"claude-code","adapterType":"claude_local","ownerAgent":"qbr-writer","agentSlug":"qbr-writer","timeout":1800,"prompt":"$13","cabinetPath":"cabinets/qbr-generator","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$14","readmeHtml":"$15","tags":["customer-success","qbr","quarterly-business-review","cs-ops","enterprise","cabinet"],"section":"Sales","stats":{"totalAgents":2,"totalJobs":3,"totalCabinets":1,"totalPages":3}}}]}]]}],"$L16","$L17","$L18","$L19","$L1a"]}]
+b:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L3",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L5",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}],"$L1b","$L1c"]}]]}],"$L1d"]]}],"$L1e"]}]}]
+c:["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true}]
+d:["$","script","script-1",{"src":"/_next/static/chunks/242ibphq-xhrb.js","async":true}]
+e:["$","$L1f",null,{"children":["$","$20",null,{"name":"Next.MetadataOutlet","children":"$@21"}]}]
+16:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"QBR Generator Cabinet"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["📈"," ","QBR Analyst"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["✍️"," ","QBR Writer"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$7:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"QBR Competitor Context Watch"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$7:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Per-Account QBR (On-Demand)"}]]}],["$","div","2",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$7:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Quarterly QBR Batch Run"}]]}]]]}],[]]}]}]]}]
+17:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-qbr-analyst-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"📈"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"QBR Analyst"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Pulls and interprets all quantitative QBR inputs — usage, adoption, ROI, ticket resolution, goal attainment — and delivers structured data sections the QBR Writer assembles into the customer narrative."}],""]}],["$","div","root-qbr-writer-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"✍️"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"QBR Writer"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Leads the QBR generation cycle — sequences the Analyst, structures the full QBR narrative, writes the exec summary and customer-facing language, and produces the final QBR document and report webapp."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 9 1 1,4,7,10 *"}]]}]]}]]}]]}]
+18:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","competitor-watch-qbr",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$7:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"QBR Competitor Context Watch"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","qbr-writer"]}]]}]]}],["$","div","per-account-qbr",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$7:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Per-Account QBR (On-Demand)"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"paused"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":""}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","qbr-writer"]}]]}]]}],["$","div","quarterly-qbr-batch",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$7:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Quarterly QBR Batch Run"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 9 1 1,4,7,10 *"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","qbr-writer"]}]]}]]}]]}]]}]
+22:Tc4f,<h1>QBR Generator Cabinet</h1>
+<p>A Writer and Analyst team that turns CRM data, product analytics, support tickets, and customer goals into a complete Quarterly Business Review document — exec summary, goals vs. outcomes, usage and adoption metrics, ROI realized, open issues, and next-quarter plan. QBRs run on the quarterly cron or on-demand per account. Every deck outline is a markdown file you can edit, approve, and export without assembling a single slide manually.</p>
+<blockquote>
+<p><strong>Keep your CRM, Amplitude, and BI. Replace the Google Slides QBR grind, the Gainsight template exports, and the three-day manual deck assembly before every quarterly review.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/qbr-writer]]</strong> — QBR Writer. Leads the QBR generation: sequences the Analyst, structures the narrative, writes the exec summary and customer-facing language, and produces the final report.</li>
+<li><strong>[[.agents/qbr-analyst]]</strong> — QBR Analyst. Pulls and interprets all quantitative inputs — usage, adoption, ROI, tickets, goal attainment — and delivers the data sections the Writer assembles into a coherent story.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Quarterly</strong> (Jan/Apr/Jul/Oct 1 09:00)</td>
+<td>[[.jobs/quarterly-qbr-batch]]</td>
+<td>Writer → Analyst</td>
+<td>QBR documents for all active accounts; report webapp updated</td>
+</tr>
+<tr>
+<td><strong>On-demand</strong> (enabled: false)</td>
+<td>[[.jobs/per-account-qbr]]</td>
+<td>Writer → Analyst</td>
+<td>Single-account QBR generated on request</td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/competitor-watch-qbr]]</td>
+<td>QBR Writer</td>
+<td>Competitor context for upcoming QBRs; switching-risk talking points</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[report]] — the QBR report for Meridian Foods, Q2 2026: exec summary, goals vs outcomes, usage charts, ROI table, open issues, and next-quarter plan.</li>
+<li>Browse <code>qbrs/</code> — the markdown QBR documents the quarterly job produces per account.</li>
+<li>Check <code>qbrs/meridian-foods-q2-2026.md</code> for the full document the report renders.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> CRM (Salesforce / HubSpot), product analytics (Amplitude / Mixpanel), support tickets (Zendesk / Intercom), BI or data warehouse (Looker / Metabase).
+<strong>Recommended:</strong> Gong (call transcripts for goals and quotes), Google Drive (past QBR decks for continuity), Slack (QBR scheduling and delivery notifications).</p>
+<p><strong>Cross-cabinet link:</strong> QBR competitor context is cross-referenced with [[../competitive-intelligence]] for market positioning and win/loss data.</p>
+<h2>Every artifact is a file</h2>
+<p>The QBR Writer produces structured markdown documents to <code>qbrs/&#x3C;account>-&#x3C;quarter>.md</code>. The report webapp renders directly from these files. No PowerPoint, no Gainsight export, no copy-paste assembly.</p>19:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$22"}}]}]]}]
+1a:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L23",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set qbr-generator","label":"Install"}]}]}]]}]
+1b:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+1c:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+1d:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+1e:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+21:null

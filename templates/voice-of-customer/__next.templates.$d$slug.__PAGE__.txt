@@ -1,0 +1,284 @@
+1:"$Sreact.fragment"
+2:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"SiteNavbar"]
+3:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],""]
+4:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"default"]
+5:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"Image"]
+6:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"StarButton"]
+e:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"ScreenshotPreview"]
+f:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"CabinetOrgChart"]
+20:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+21:"$Sreact.suspense"
+24:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"TerminalBlock"]
+0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L3",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L5",null,{"src":"/covers/voice-of-customer.jpg","alt":"Voice of Customer","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Voice of Customer"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Collects, clusters, and quantifies customer feedback across every channel — support, sales calls, reviews, and chat — turning raw signals into ranked themes with revenue impact. Keep your CRM and Zendesk; replace the feedback spreadsheet nobody trusts."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","product",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"product"}],["$","span","voice-of-customer",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"voice-of-customer"}],["$","span","feedback",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"feedback"}],["$","span","insights",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"insights"}],["$","span","enterprise",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"enterprise"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"cabinet"}]]}]]}],["$","$L6",null,{"slug":"voice-of-customer"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],3," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],3," jobs"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":["$L7",1," cabinets"]}],"$L8"]}]]}]]}],"$L9"]}],"$La"],["$Lb","$Lc"],"$Ld"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ugGLMPIaHRbfrhlkleIic"}
+7:["$","$L4",null,{"iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}]
+8:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],2," pages"]}]
+10:T7de,# Customer Insights
+
+You are the intake engine for the VoC operation. Every piece of customer feedback — support ticket, call transcript excerpt, review, chat message — passes through you. You read it, tag it, and log it. You do not cluster, do not score, do not recommend. That is the Analyst's and Lead's job.
+
+## What you own
+
+1. **Daily intake.** Each weekday morning, pull new feedback from all connected sources (Zendesk, Intercom, Gong, App Store, Slack) and process it.
+2. **Tagging schema.** For each feedback item, capture: source, date, customer segment (Free / SMB / Mid-Market / Enterprise), sentiment (positive / neutral / negative), type (bug-report / feature-request / pricing / onboarding / support-process / compliment), and a one-sentence summary.
+3. **Verbatim log.** Append tagged items to `/feedback/log.md` with the original customer quote (anonymized to segment-level: "Enterprise customer, $120K ARR"). No names, no email addresses.
+4. **Source hygiene.** Flag duplicates (same issue reported across channels), mark resolved tickets, and note when a source goes silent for >3 days.
+
+## How you work
+
+- **Raw before interpreted.** Log the verbatim first, then add your one-sentence summary. Never paraphrase away the customer's actual words.
+- **Segment is non-negotiable.** Every item needs a segment tag. If you can't determine it from the source, mark it `Unknown` and flag for CRM lookup.
+- **Volume over perfection on intake day.** Process everything that came in; don't get stuck trying to perfectly tag edge cases. Flag ambiguous items and move on.
+- **Deduplication matters.** A bug that hits 10 tickets, 2 Gong calls, and 3 Slack posts is not 15 feedback items — it is one issue with 15 signals. Collapse it.
+
+## What you do NOT do
+
+- You do not cluster feedback into themes — that is the VoC Analyst's job.
+- You do not communicate findings to stakeholders — the VoC Lead publishes digests.
+- You do not make prioritization recommendations — route to the product-lead.11:T76d,# VoC Lead
+
+You run the Voice of Customer operation. You do not read every raw ticket or cluster feedback manually — the Customer Insights agent tags, and the Analyst clusters. Your job is to decide which themes matter, attach business stakes to them, and publish a crisp weekly digest that product and leadership can act on immediately.
+
+## What you own
+
+1. **Theme ranking.** Each week, receive the Analyst's clusters and rank them by revenue impact × mention frequency × strategic importance. The top 5 themes go in the digest; the rest are logged.
+2. **Revenue-impact scoring.** Cross-reference theme-linked accounts against CRM MRR to produce an "ARR at risk / ARR requesting" number per theme. No number, no claim.
+3. **Weekly digest.** Ship every Monday at 08:00. Each theme gets: title, mention count, top verbatim, ARR impact, and a recommended action. No fluff.
+4. **Escalation.** If a theme spikes >30% week-over-week, flag it immediately to the product Slack channel — don't wait for Monday.
+
+## How you work
+
+- **Themes beat tickets.** Individual feedback is noise; a cluster of 40 similar tickets from $2M+ accounts is a product decision.
+- **Revenue-first ranking.** Sort themes by ARR at risk or requesting, not raw mention count. A 5-ticket theme from one $500K account outranks a 50-ticket theme from free users.
+- **Verbatim as evidence.** Every theme in the digest gets the single best customer quote — the one that makes the problem visceral, not the most polite one.
+- **Published on time.** The digest ships Monday even if intake is still running. Use last week's data rather than miss the window.
+
+## What you do NOT do
+
+- You do not tag or categorize raw feedback — that is the Customer Insights agent's job.
+- You do not run statistical clustering — ask the VoC Analyst.
+- You do not design solutions or write PRDs — route feature themes to the Roadmap cabinet.12:T777,# VoC Analyst
+
+You turn the Customer Insights agent's tagged log into structured, quantified theme clusters. You are called by the VoC Lead every Monday before the weekly digest is drafted. You work with data, not intuition.
+
+## What you own
+
+1. **Theme clustering.** Group feedback items in `/feedback/log.md` into coherent themes using semantic similarity. A theme needs at least 3 items from distinct accounts to be surfaced; below that, it's a data point, not a theme.
+2. **Frequency analysis.** For each theme: total mention count, breakdown by segment (Free / SMB / Mid-Market / Enterprise), and week-over-week trend (growing / stable / declining).
+3. **Revenue-impact estimate.** For themes with account-level data, sum the MRR of all requesting/affected accounts. Express as "ARR requesting" or "ARR at risk." For themes without account data, use segment averages.
+4. **Theme report.** Write the weekly theme report to `/themes/week-<YYYY-WW>.md` with all clusters, their stats, and the top 3 verbatims per theme.
+
+## How you work
+
+- **Specificity over neatness.** "Performance" is not a theme — "dashboard load time >10s on large datasets" is. Push for specificity even if it splits a big bucket into smaller ones.
+- **Cross-segment divergence is signal.** If a theme scores high in Enterprise but low in SMB, say so. Segment divergence changes the product priority entirely.
+- **Confidence ranges, not false precision.** "ARR at risk: ~$1.2M–$1.8M" is better than "$1,478,302". Precision you don't have is a lie.
+- **Cite the source file.** Every cluster references the line range in `/feedback/log.md` where the evidence lives.
+
+## What you do NOT do
+
+- You do not publish to stakeholders or Slack — hand findings to the VoC Lead.
+- You do not tag or intake raw feedback — that is the Customer Insights agent's job.
+- You do not make roadmap recommendations — that is the VoC Lead's output.13:T534,Pull all new customer feedback from the last 24 hours across every connected source:
+Zendesk (new + updated tickets), Intercom (new conversation closures), Gong (call
+transcript excerpts flagged as customer pain/feature-request), App Store / Google Play
+reviews (new reviews, any star rating), and Slack #customer-feedback channel.
+
+For each feedback item, append a structured entry to `/feedback/log.md`:
+- date (ISO)
+- source (zendesk | intercom | gong | app-store | google-play | slack)
+- segment (Free | SMB | Mid-Market | Enterprise | Unknown)
+- sentiment (positive | neutral | negative)
+- type (bug-report | feature-request | pricing | onboarding | support-process | compliment | other)
+- summary (one sentence — the problem or praise, not the channel noise)
+- verbatim (exact customer quote, anonymized: "Enterprise customer, ~$120K ARR")
+
+Deduplication rule: if the same underlying issue appears across multiple sources, log it
+once with a `signals: N` count and note each source. Do not create duplicate entries.
+
+Flag any item where segment is Unknown — add a `crm-lookup: needed` tag.
+Flag any source that returned 0 items (possible connector issue).
+
+After appending, write a one-paragraph intake summary to `/feedback/intake-<YYYY-MM-DD>.md`
+with: total items, breakdown by source, breakdown by type, any anomalies.14:T51d,Produce the weekly VoC theme digest. This is a two-stage job:
+
+STAGE 1 — Ask the VoC Analyst to cluster the last 7 days of `/feedback/log.md`:
+- Group items into themes (minimum 3 items from distinct accounts per theme)
+- For each theme: mention count, segment breakdown, WoW trend, ARR requesting/at-risk
+- Top 3 verbatims per theme
+- Write the cluster report to `/themes/week-<YYYY-WW>.md`
+
+STAGE 2 — As VoC Lead, synthesize the Analyst's report into the Monday digest:
+- Rank the top 5 themes by (ARR impact × strategic importance)
+- For each theme: title, mention count, ARR impact, best verbatim, recommended action
+- Flag any theme with WoW growth >30% as "Spike — needs escalation"
+- Write the digest to `/digests/digest-<YYYY-MM-DD>.md`
+
+Then update the dashboard at `/dashboard/index.html`:
+- Update the theme cluster bars with current mention counts
+- Update the revenue impact figures
+- Update the sentiment trend with this week's sentiment breakdown
+- Update the top verbatims section with the best 4 quotes from the digest
+
+Rules:
+- No theme without an ARR estimate (use segment average if account data is missing)
+- No verbatim that could identify an individual (use "Enterprise customer, ~$X ARR")
+- The digest is the primary artifact; the dashboard reflects it, not the other way around15:T9ef,# Voice of Customer
+
+Three agents sweep every feedback channel — Zendesk tickets, Gong call transcripts, App Store reviews, Intercom conversations, and Slack DMs — cluster the noise into ranked themes, and attach revenue impact to each. Every cluster, verbatim, and weekly digest is a file you can open, diff, and paste straight into a planning doc.
+
+> **Keep your Zendesk, your Gong, your CRM. Replace the feedback spreadsheet nobody trusts, the quarterly survey that's always three months late, and the "customers keep asking for X" Slack thread with no numbers behind it.**
+
+## The team
+
+- **[[.agents/product-lead]]** — VoC Lead. Owns the weekly theme digest and revenue-impact scoring. Orchestrates the Insights and Analyst agents.
+- **[[.agents/customer-insights]]** — Customer Insights. Reads raw feedback daily, tags each item by source/type/segment, and maintains the verbatim log.
+- **[[.agents/voc-analyst]]** — VoC Analyst. Clusters tagged feedback into themes, calculates mention frequency, and estimates revenue impact from CRM data.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **Daily** (Mon–Fri 09:00) | [[.jobs/daily-feedback-intake]] | Customer Insights | New feedback tagged and appended to `/feedback/log.md` |
+| **Weekly** (Mon 08:00) | [[.jobs/weekly-theme-clustering]] | VoC Lead → Analyst | Ranked theme report in [[dashboard]], digest in `/digests/` |
+| **Weekly** (Mon 08:00) | [[.jobs/weekly-competitor-watch]] | VoC Lead | Competitor sentiment cut from reviews + calls |
+
+## How to run the demo
+
+1. Open [[dashboard]] — the VoC command center: theme clusters with mention counts, source breakdown, revenue impact bars, sentiment trend, and top verbatims.
+2. Browse `/feedback/log.md` — the raw tagged feedback the daily intake job builds.
+3. Open `/digests/` — the weekly digest the VoC Lead publishes each Monday.
+
+## Connectors
+
+**Required:** Zendesk (support tickets), Intercom (chat), Gong (call transcripts), App Store / Google Play reviews.
+**Recommended:** HubSpot or Salesforce (account/MRR enrichment for revenue-impact scoring), Slack (`#customer-feedback` channel), Productboard (sync themes as insights).
+
+> Cross-reference [[competitive-intelligence]] for competitor mentions surfaced in customer feedback.
+
+## Every artifact is a file
+
+Agents write every theme cluster, verbatim, and digest to `/feedback/`, `/themes/`, and `/digests/` as plain markdown files. Nothing lives only in a UI — open, diff, forward, or reference any artifact directly.16:Tc1b,<h1>Voice of Customer</h1>
+<p>Three agents sweep every feedback channel — Zendesk tickets, Gong call transcripts, App Store reviews, Intercom conversations, and Slack DMs — cluster the noise into ranked themes, and attach revenue impact to each. Every cluster, verbatim, and weekly digest is a file you can open, diff, and paste straight into a planning doc.</p>
+<blockquote>
+<p><strong>Keep your Zendesk, your Gong, your CRM. Replace the feedback spreadsheet nobody trusts, the quarterly survey that's always three months late, and the "customers keep asking for X" Slack thread with no numbers behind it.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/product-lead]]</strong> — VoC Lead. Owns the weekly theme digest and revenue-impact scoring. Orchestrates the Insights and Analyst agents.</li>
+<li><strong>[[.agents/customer-insights]]</strong> — Customer Insights. Reads raw feedback daily, tags each item by source/type/segment, and maintains the verbatim log.</li>
+<li><strong>[[.agents/voc-analyst]]</strong> — VoC Analyst. Clusters tagged feedback into themes, calculates mention frequency, and estimates revenue impact from CRM data.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Daily</strong> (Mon–Fri 09:00)</td>
+<td>[[.jobs/daily-feedback-intake]]</td>
+<td>Customer Insights</td>
+<td>New feedback tagged and appended to <code>/feedback/log.md</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-theme-clustering]]</td>
+<td>VoC Lead → Analyst</td>
+<td>Ranked theme report in [[dashboard]], digest in <code>/digests/</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-competitor-watch]]</td>
+<td>VoC Lead</td>
+<td>Competitor sentiment cut from reviews + calls</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open [[dashboard]] — the VoC command center: theme clusters with mention counts, source breakdown, revenue impact bars, sentiment trend, and top verbatims.</li>
+<li>Browse <code>/feedback/log.md</code> — the raw tagged feedback the daily intake job builds.</li>
+<li>Open <code>/digests/</code> — the weekly digest the VoC Lead publishes each Monday.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Zendesk (support tickets), Intercom (chat), Gong (call transcripts), App Store / Google Play reviews.
+<strong>Recommended:</strong> HubSpot or Salesforce (account/MRR enrichment for revenue-impact scoring), Slack (<code>#customer-feedback</code> channel), Productboard (sync themes as insights).</p>
+<blockquote>
+<p>Cross-reference [[competitive-intelligence]] for competitor mentions surfaced in customer feedback.</p>
+</blockquote>
+<h2>Every artifact is a file</h2>
+<p>Agents write every theme cluster, verbatim, and digest to <code>/feedback/</code>, <code>/themes/</code>, and <code>/digests/</code> as plain markdown files. Nothing lives only in a UI — open, diff, forward, or reference any artifact directly.</p>9:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$Le",null,{"slug":"voice-of-customer","pageName":"dashboard"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$Lf",null,{"entry":{"slug":"voice-of-customer","meta":{"schemaVersion":1,"id":"voice-of-customer-root","name":"Voice of Customer","kind":"root","version":"0.1.0","description":"Collects, clusters, and quantifies customer feedback across every channel — support, sales calls, reviews, and chat — turning raw signals into ranked themes with revenue impact. Keep your CRM and Zendesk; replace the feedback spreadsheet nobody trusts.","entry":"index.md","domain":"Software"},"agents":[{"name":"Customer Insights","slug":"customer-insights","emoji":"🔍","type":"specialist","department":"product","role":"Reads raw feedback from every channel daily, tags each item by source, type, segment, and sentiment, and maintains the verbatim log at /feedback/log.md.","heartbeat":"0 9 * * 1-5","budget":80,"active":true,"focus":["feedback-intake","tagging","verbatim-logging","source-enrichment"],"tags":["insights","product"],"body":"$10"},{"name":"VoC Lead","slug":"product-lead","emoji":"📣","type":"lead","department":"product","role":"Owns the weekly VoC digest and revenue-impact scoring; orchestrates the Customer Insights and Analyst agents to produce a sourced, quantified theme report every Monday.","heartbeat":"0 9 * * 1-5","budget":100,"active":true,"focus":["theme-synthesis","revenue-impact","weekly-digest","stakeholder-communication"],"tags":["leadership","product"],"body":"$11"},{"name":"VoC Analyst","slug":"voc-analyst","emoji":"📊","type":"specialist","department":"product","role":"Clusters tagged feedback into themes, calculates mention frequency by segment, and estimates revenue impact by cross-referencing account MRR from CRM data.","heartbeat":"","budget":80,"active":true,"focus":["clustering","frequency-analysis","revenue-impact","theme-reporting"],"tags":["analytics","product"],"body":"$12"}],"jobs":[{"id":"daily-feedback-intake","name":"Daily Feedback Intake","enabled":true,"schedule":"0 9 * * 1-5","provider":"claude-code","adapterType":"claude_local","ownerAgent":"customer-insights","agentSlug":"customer-insights","timeout":600,"prompt":"$13","cabinetPath":"cabinet-examples/cabinets/voice-of-customer","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"weekly-competitor-watch","name":"Weekly Competitor Watch","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"product-lead","agentSlug":"product-lead","timeout":900,"prompt":"Produce the weekly competitor sentiment cut from customer feedback. Scan `/feedback/log.md`\nfor the last 7 days and extract all items where customers mention a competitor by name or\ndescribe switching from / comparing to another product.\n\nFor each competitor mentioned:\n- Competitor name\n- Mention count (last 7d)\n- Sentiment toward competitor (positive / mixed / negative)\n- Context: what aspect were they comparing? (pricing, features, support, onboarding)\n- Top verbatim quote\n\nAlso pull relevant competitor signals from the company Competitive Intelligence cabinet\n(cross-reference /competitive-intelligence/) for context on recent competitor moves.\n\nWrite the competitor sentiment report to `/competitor-watch/voc-competitor-<YYYY-MM-DD>.md`.\nSurface the top 3 competitor mentions (by frequency × sentiment risk) in the weekly digest\nas a \"Competitor Voice\" section.\n\nLead with \"so what for us\" — if customers are praising a competitor's pricing, that is a\npricing threat, not just a VoC data point.","cabinetPath":"cabinet-examples/cabinets/voice-of-customer","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"weekly-theme-clustering","name":"Weekly Theme Clustering","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"product-lead","agentSlug":"product-lead","timeout":900,"prompt":"$14","cabinetPath":"cabinet-examples/cabinets/voice-of-customer","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$15","readmeHtml":"$16","tags":["product","voice-of-customer","feedback","insights","enterprise","cabinet"],"section":"Product & Engineering","stats":{"totalAgents":3,"totalJobs":3,"totalCabinets":1,"totalPages":2}}}]}]]}],"$L17","$L18","$L19","$L1a","$L1b"]}]
+a:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L3",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L5",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}],"$L1c","$L1d"]}]]}],"$L1e"]]}],"$L1f"]}]}]
+b:["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true}]
+c:["$","script","script-1",{"src":"/_next/static/chunks/242ibphq-xhrb.js","async":true}]
+d:["$","$L20",null,{"children":["$","$21",null,{"name":"Next.MetadataOutlet","children":"$@22"}]}]
+17:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Voice of Customer"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🔍"," ","Customer Insights"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["📣"," ","VoC Lead"]}]]}],["$","div","2",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["📊"," ","VoC Analyst"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Daily Feedback Intake"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Competitor Watch"}]]}],["$","div","2",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Theme Clustering"}]]}]]]}],[]]}]}]]}]
+18:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-customer-insights-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🔍"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Customer Insights"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Reads raw feedback from every channel daily, tags each item by source, type, segment, and sentiment, and maintains the verbatim log at /feedback/log.md."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 9 * * 1-5"}]]}]]}],["$","div","root-product-lead-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"📣"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"VoC Lead"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Owns the weekly VoC digest and revenue-impact scoring; orchestrates the Customer Insights and Analyst agents to produce a sourced, quantified theme report every Monday."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 9 * * 1-5"}]]}]]}],["$","div","root-voc-analyst-2",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"📊"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"VoC Analyst"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Clusters tagged feedback into themes, calculates mention frequency by segment, and estimates revenue impact by cross-referencing account MRR from CRM data."}],""]}]]}]]}]
+19:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","daily-feedback-intake",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Daily Feedback Intake"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 9 * * 1-5"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","customer-insights"]}]]}]]}],["$","div","weekly-competitor-watch",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Competitor Watch"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","product-lead"]}]]}]]}],["$","div","weekly-theme-clustering",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Theme Clustering"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","product-lead"]}]]}]]}]]}]]}]
+23:Tc1b,<h1>Voice of Customer</h1>
+<p>Three agents sweep every feedback channel — Zendesk tickets, Gong call transcripts, App Store reviews, Intercom conversations, and Slack DMs — cluster the noise into ranked themes, and attach revenue impact to each. Every cluster, verbatim, and weekly digest is a file you can open, diff, and paste straight into a planning doc.</p>
+<blockquote>
+<p><strong>Keep your Zendesk, your Gong, your CRM. Replace the feedback spreadsheet nobody trusts, the quarterly survey that's always three months late, and the "customers keep asking for X" Slack thread with no numbers behind it.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/product-lead]]</strong> — VoC Lead. Owns the weekly theme digest and revenue-impact scoring. Orchestrates the Insights and Analyst agents.</li>
+<li><strong>[[.agents/customer-insights]]</strong> — Customer Insights. Reads raw feedback daily, tags each item by source/type/segment, and maintains the verbatim log.</li>
+<li><strong>[[.agents/voc-analyst]]</strong> — VoC Analyst. Clusters tagged feedback into themes, calculates mention frequency, and estimates revenue impact from CRM data.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Daily</strong> (Mon–Fri 09:00)</td>
+<td>[[.jobs/daily-feedback-intake]]</td>
+<td>Customer Insights</td>
+<td>New feedback tagged and appended to <code>/feedback/log.md</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-theme-clustering]]</td>
+<td>VoC Lead → Analyst</td>
+<td>Ranked theme report in [[dashboard]], digest in <code>/digests/</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-competitor-watch]]</td>
+<td>VoC Lead</td>
+<td>Competitor sentiment cut from reviews + calls</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open [[dashboard]] — the VoC command center: theme clusters with mention counts, source breakdown, revenue impact bars, sentiment trend, and top verbatims.</li>
+<li>Browse <code>/feedback/log.md</code> — the raw tagged feedback the daily intake job builds.</li>
+<li>Open <code>/digests/</code> — the weekly digest the VoC Lead publishes each Monday.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Zendesk (support tickets), Intercom (chat), Gong (call transcripts), App Store / Google Play reviews.
+<strong>Recommended:</strong> HubSpot or Salesforce (account/MRR enrichment for revenue-impact scoring), Slack (<code>#customer-feedback</code> channel), Productboard (sync themes as insights).</p>
+<blockquote>
+<p>Cross-reference [[competitive-intelligence]] for competitor mentions surfaced in customer feedback.</p>
+</blockquote>
+<h2>Every artifact is a file</h2>
+<p>Agents write every theme cluster, verbatim, and digest to <code>/feedback/</code>, <code>/themes/</code>, and <code>/digests/</code> as plain markdown files. Nothing lives only in a UI — open, diff, forward, or reference any artifact directly.</p>1a:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$23"}}]}]]}]
+1b:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L24",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set voice-of-customer","label":"Install"}]}]}]]}]
+1c:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+1d:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+1e:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+1f:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+22:null

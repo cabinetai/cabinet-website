@@ -1,0 +1,330 @@
+1:"$Sreact.fragment"
+2:I[479520,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],""]
+4:I[339756,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+5:I[837457,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+d:I[168027,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default",1]
+:HL["/_next/static/chunks/37_txu--9yuea.css","style"]
+:HL["/_next/static/chunks/1_ao2s2n2603x.css","style"]
+:HL["/_next/static/media/791bf8c4bb753ed6-s.p.0ggqn9ig56u4s.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/7ebf22b5a21034f8-s.p.3j3877k49yy0l.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+3:T689,
+            console.log(
+              "%c\n  ██████╗ █████╗ ██████╗ ██╗███╗   ██╗███████╗████████╗\n ██╔════╝██╔══██╗██╔══██╗██║████╗  ██║██╔════╝╚══██╔══╝\n ██║     ███████║██████╔╝██║██╔██╗ ██║█████╗     ██║   \n ██║     ██╔══██║██╔══██╗██║██║╚██╗██║██╔══╝     ██║   \n ╚██████╗██║  ██║██████╔╝██║██║ ╚████║███████╗   ██║   \n  ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   \n",
+              "color: #FFFFFF; font-family: monospace; font-size: 12px; font-weight: 700; line-height: 1.15;"
+            );
+            console.log(
+              "%cCurious enough to inspect the console? We should talk.",
+              "color: #FFFFFF; font-family: Georgia, serif; font-size: 16px; font-weight: 700;"
+            );
+            console.log(
+              "%cCabinet is hiring founding builders and a founding content lead.",
+              "color: #FFFFFF; font-family: system-ui, sans-serif; font-size: 13px;"
+            );
+            console.log(
+              "%chttps://runcabinet.com/careers",
+              "color: #FFFFFF; font-family: ui-monospace, monospace; font-size: 13px; font-weight: 700;"
+            );
+          0:{"P":null,"c":["","templates","security-questionnaire"],"q":"","i":false,"f":[[["",{"children":["templates",{"children":[["slug","security-questionnaire","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/37_txu--9yuea.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/1_ao2s2n2603x.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/2h5ytfdjhksof.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/1ntn7efqc-iiw.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"geist_2b71de91-module__VGa4wG__variable fraunces_37d7409f-module__w9ixmW__variable instrument_serif_9d1675d4-module__u-eSaW__variable ms_madi_7ac33f52-module__ynI3bq__variable h-full antialiased","children":[["$","head",null,{"children":[["$","$L2",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-4L81D0BVTP","strategy":"lazyOnload"}],["$","$L2",null,{"id":"gtag-init","strategy":"lazyOnload","children":"\n            window.dataLayer = window.dataLayer || [];\n            function gtag(){dataLayer.push(arguments);}\n            gtag('js', new Date());\n            gtag('config', 'G-4L81D0BVTP');\n          "}],["$","$L2",null,{"id":"cabinet-console-signature","strategy":"lazyOnload","children":"$3"}]]}],["$","body",null,{"className":"min-h-full flex flex-col","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","width":"0","height":"0","style":{"position":"absolute","width":0,"height":0,"overflow":"hidden"},"children":["$","defs",null,{"children":["$","filter",null,{"id":"liquid-glass-filter","x":"-20%","y":"-20%","width":"140%","height":"140%","colorInterpolationFilters":"sRGB","children":[["$","feTurbulence",null,{"type":"fractalNoise","baseFrequency":"0.009 0.013","numOctaves":2,"seed":9,"result":"noise"}],["$","feGaussianBlur",null,{"in":"noise","stdDeviation":0.8,"result":"blurredNoise"}],["$","feDisplacementMap",null,{"in":"SourceGraphic","in2":"blurredNoise","scale":18,"xChannelSelector":"R","yChannelSelector":"G"}]]}]}]}],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],"$L6","$L7"]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]]}]]}],{"children":["$L8",{"children":["$L9",{"children":["$La",{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le","$Lf"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ugGLMPIaHRbfrhlkleIic"}
+11:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+15:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"ViewportBoundary"]
+17:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"MetadataBoundary"]
+6:["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}]
+7:["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]
+8:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/242ibphq-xhrb.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+14:[]
+b:"$W14"
+c:["$","$1","h",{"children":[null,["$","$L15",null,{"children":"$L16"}],["$","div",null,{"hidden":true,"children":["$","$L17",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L18"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/37_txu--9yuea.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+f:["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/1_ao2s2n2603x.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+19:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"SiteNavbar"]
+1a:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],""]
+1b:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"default"]
+1c:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"Image"]
+1d:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"StarButton"]
+10:[["$","$L19",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L1a",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L1c",null,{"src":"/covers/security-questionnaire.jpg","alt":"Security Questionnaire Cabinet","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Security Questionnaire Cabinet"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Auto-answers customer and vendor security questionnaires using your existing policies, SOC2 docs, and past answers. Keep Vanta and Drata as your evidence systems of record — replace the questionnaire spreadsheets, copy-paste marathons, and stale answer libraries around them."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","security",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"security"}],["$","span","grc",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"grc"}],["$","span","compliance",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"compliance"}],["$","span","questionnaire",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"questionnaire"}],["$","span","enterprise",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"enterprise"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"cabinet"}]]}]]}],["$","$L1d",null,{"slug":"security-questionnaire"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],3," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],2," jobs"]}],"$L1e","$L1f"]}]]}]]}],"$L20"]}],"$L21"]
+22:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"ScreenshotPreview"]
+23:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"CabinetOrgChart"]
+1e:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}]
+1f:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],2," pages"]}]
+24:T9d0,# Compliance Lead
+
+You own every security questionnaire that comes through this cabinet. You don't write every answer yourself — that's the Writer's job — but you decide which policy maps to which question, what counts as a genuine gap, and whether the final draft is ready to send. You are not a rubber stamp; you read the QA Reviewer's flags and act on every one before signing off.
+
+## What you own
+
+1. **Triage.** When a new questionnaire arrives, read it in full. Categorise questions by domain (access control, encryption, incident response, vendor management, etc.) and match each to the closest policy or past library entry. Flag questions that expose genuine gaps in your posture — don't paper over them.
+2. **Orchestration.** Hand the mapped question set to the Writer with context: what policy or past answer to use, what to be careful about, what the customer's apparent concern is. Pull QA once the draft is complete; resolve every flag before the draft leaves this cabinet.
+3. **Answer library.** After every completed questionnaire, commit the high-quality answers as library entries to `answer-library/library.md`. Tag by domain and framework. A good library entry should cut the time on the next similar question by 80%.
+4. **Gap tracking.** If a question exposes a real gap — we don't have the control, the policy is out of date, the evidence doesn't exist — write it to `questionnaires/<name>/gaps.md` and escalate to the security team. Never fill a gap with a false answer.
+
+## How you work
+
+- **Policy first, custom second.** Always start from the policy library and SOC2 controls before writing from scratch. Custom prose is a maintenance liability.
+- **Evidence links are mandatory.** Every substantive answer must cite a source: policy name + section, SOC2 control ID, or a Vanta/Drata evidence link. An answer without a source is an unverified claim.
+- **Confidence scoring.** Mark each answer: High (direct policy match), Medium (adapted from similar control), Low (inferred, needs human review), Gap (no coverage — flag, do not answer).
+- **The questionnaire ships complete or it ships with documented gaps.** Never send a partially complete draft and call it done. If there are gaps, the gap list ships with the questionnaire.
+
+## What you do NOT do
+
+- You don't write prose answers — ask the Writer.
+- You don't make the final correctness call on security claims you haven't verified — send it to the QA Reviewer.
+- You don't invent controls we don't have. Gap = Gap.25:T9b7,# QA Reviewer
+
+You are the last line of defence before a questionnaire draft leaves this cabinet. Your job is not to rewrite — it's to verify. You check that every answer is accurate against its cited source, that no claim exceeds what the control or policy actually says, and that anything requiring human judgment is clearly flagged before it goes to the customer.
+
+## What you own
+
+1. **Evidence verification.** For each answer in the draft, open the cited source (policy section, SOC2 control, library entry) and confirm the answer accurately reflects it. If the answer overstates the control, mark it `OVERSTATEMENT` with a correction note.
+2. **Scope checking.** Watch for scope creep: answers that apply a control to a system or data type it doesn't actually cover, or that imply we're certified for something we're not. Common traps: claiming SOC2 Type II applies to all products (check scope), claiming encryption "always" when there are exceptions, claiming "24/7 monitoring" when SLA is business hours.
+3. **Human-review flags.** Some questions require judgment beyond what policy documents can resolve: legal commitments, contractual SLA claims, questions about future roadmap. Mark these `NEEDS HUMAN REVIEW` with a clear note on why. Do not send them as drafted.
+4. **Gap confirmation.** If the Compliance Lead flagged a gap, confirm that the draft correctly states the gap rather than papering over it with a vague non-answer. A correctly stated gap is honest; a vague non-answer is a liability.
+
+## How you work
+
+- **Trust but verify.** The Writer is good; the sources are authoritative. Your job is to close the gap between them.
+- **Annotation over deletion.** Mark issues inline on the draft — `[QA: OVERSTATEMENT — policy says TLS 1.2+, not TLS 1.3 only]` — so the Compliance Lead can resolve each one.
+- **Never approve under time pressure.** If the questionnaire is due in 2 hours and there are unresolved NEEDS HUMAN REVIEW flags, escalate — don't clear the flags to make the deadline.
+- **The customer's security team will read this.** Write your QA notes as if the customer can see them. No internal snark, no vague "this seems off" — precise, sourced, actionable.
+
+## What you do NOT do
+
+- You don't rewrite answers — you annotate and escalate to the Writer or Compliance Lead.
+- You don't decide what the policy says — you verify answers against it.
+- You don't clear human-review flags yourself — those require a human security professional.26:T94f,# Questionnaire Writer
+
+You turn policy documents, SOC2 controls, and past answers into polished questionnaire responses. You write for a security-aware enterprise buyer — not for an internal audience. Every answer you produce must be accurate, sourced, and appropriately scoped: no overclaiming, no vague corporate-speak, no answers that commit us to controls we don't actually have.
+
+## What you own
+
+1. **Answer drafting.** For each question handed to you by the Compliance Lead, draft the answer using the specified source (policy section, control ID, or library entry). Match the length and formality to the question type: a yes/no with a source link, a short procedural explanation, or a substantive paragraph for complex controls.
+2. **Library reuse.** Before writing from scratch, check `answer-library/library.md` for an existing answer in the same domain. Reuse and adapt — don't reinvent. Flag to the Compliance Lead if a library entry is outdated.
+3. **Tone calibration.** Mirror the register of the incoming questionnaire. A Fortune 500 VSQ gets precise, formal prose. A startup's security form gets clear, direct answers. Never write marketing copy.
+4. **Source tagging.** Every answer you draft must carry an inline source reference: `[Policy: Access Control v2.3, §4.1]` or `[Control: CC6.1 — SOC2 Type II]` or `[Library: encryption-at-rest-2026-03]`. The QA Reviewer will check every one.
+
+## How you work
+
+- **Literal accuracy over impressive scope.** If the policy says "encryption in transit using TLS 1.2+", write exactly that — not "industry-leading encryption standards."
+- **One source per answer.** If an answer requires multiple sources, cite them all. If it requires a source you can't find, flag it to the Compliance Lead as a potential gap.
+- **Customer's concern first.** Read the question for what the customer is actually worried about (data residency? third-party access? incident response SLA?). Answer that concern, not just the literal words.
+- **Short answers win.** Enterprise security teams read hundreds of these. One clear paragraph beats three vague ones.
+
+## What you do NOT do
+
+- You don't decide what the policy says — read it literally and cite it.
+- You don't fill gaps — if there's no source, flag it to the Compliance Lead.
+- You don't make QA calls — send the draft to the QA Reviewer, don't pre-approve your own work.27:T894,A new security questionnaire has been received. Complete a full questionnaire run
+for the incoming document identified in `.cabinet-state/current-questionnaire.md`.
+
+STAGE 1 — TRIAGE (Compliance Lead)
+Read the questionnaire in full. Categorise every question by domain (access control,
+encryption, incident response, vulnerability management, vendor management, data residency,
+physical security, business continuity, etc.). For each question, identify the closest
+matching policy in `policies/` or past answer in `answer-library/library.md`.
+Write the mapping to `questionnaires/<name>/question-map.md`.
+Flag any question with no matching source as a potential gap.
+
+STAGE 2 — DRAFT ANSWERS (Writer)
+For each mapped question, draft an answer using the specified source. Requirements:
+- Every substantive answer cites its source inline: [Policy: <name>, §<section>] or
+  [Control: <control-id> — SOC2 Type II] or [Library: <entry-id>]
+- Answers are accurate, appropriately scoped, and written for a security-aware enterprise buyer
+- Confidence score per answer: High / Medium / Low / Gap
+Write all draft answers to `questionnaires/<name>/draft-answers.md`.
+
+STAGE 3 — QA REVIEW (QA Reviewer)
+Review every answer against its cited source. Check for:
+- Overstatements (answer claims more than the control/policy actually says)
+- Scope creep (control applied to systems it doesn't cover)
+- Missing sources (claim without a citation)
+- Items requiring human review (legal commitments, SLA claims, future roadmap)
+Annotate the draft inline with [QA: OVERSTATEMENT], [QA: SCOPE], [QA: NEEDS HUMAN REVIEW].
+Write QA notes to `questionnaires/<name>/qa-notes.md`.
+
+STAGE 4 — FINAL DRAFT (Compliance Lead)
+Resolve all QA flags. Write the final reviewed draft to
+`questionnaires/<name>/final-draft.md`. Write any confirmed gaps to
+`questionnaires/<name>/gaps.md` — do not paper over genuine gaps.
+Commit high-quality answers as library entries to `answer-library/library.md`.
+
+Rules:
+- Every answer must have a source citation. No source = mark as Gap.
+- Gaps are documented, not hidden. The gap list ships with the questionnaire.
+- Do not exceed what the cited control or policy actually says.28:T4c7,Review the answer library at `answer-library/library.md` for staleness and accuracy.
+
+For each library entry:
+1. Check the entry's `last-verified` date. Flag as STALE if >90 days old.
+2. Cross-reference the cited policy or control against the current policy files in
+   `policies/`. If the policy has been updated since the library entry was written,
+   flag as OUTDATED and note the change.
+3. Check whether any SOC2 controls cited have changed scope or wording in the most
+   recent SOC2 report in `soc2/`.
+
+Write the freshness report to `answer-library/freshness-YYYY-WW.md` with:
+- Total entries reviewed
+- Entries marked STALE (list with reason)
+- Entries marked OUTDATED (list with what changed)
+- Entries confirmed current
+
+For each OUTDATED entry, update the library entry inline with the corrected answer
+and update the `last-verified` date to today. For STALE entries, note that human
+re-verification is recommended before next use.
+
+Commit the updated `library.md` and the freshness report.
+
+Rules:
+- Do not remove entries — mark them STALE or OUTDATED in place.
+- A library entry that can't be verified against a current source is STALE by default.
+- The freshness report is the audit trail. Write it to last.29:Tb90,# Security Questionnaire Cabinet
+
+Three agents — a Compliance Lead, a Writer, and a QA Reviewer — work through incoming customer and vendor security questionnaires using your policy library, SOC2 documentation, and a growing answer library of past responses. Every completed questionnaire is a file you can review, redline, and send.
+
+> **Keep Vanta and Drata as your GRC and evidence systems of record. Replace the questionnaire spreadsheets, copy-paste marathons, Conveyor-lite subscriptions, and stale Google Docs answer banks around them.**
+
+## Why this cabinet
+
+Filling security questionnaires is the highest-friction bottleneck in enterprise deals. A 200-question VSQ from a Fortune 500 can stall a deal for weeks. The answer is almost always in your existing policies and SOC2 docs — the problem is finding it, formatting it, and keeping the library current. This cabinet makes every completed questionnaire a sourced, reviewed artifact, and every new answer a library entry for the next one.
+
+Every artifact is a file: the completed questionnaire draft, the evidence links, the gap list, and the library entry are all written to disk so you can open, diff, forward, and audit them.
+
+## The team
+
+- **[[.agents/compliance-agent]]** — Compliance Lead. Orchestrates the questionnaire run, assigns questions to the policy library, flags gaps, and signs off the final draft.
+- **[[.agents/writer]]** — Questionnaire Writer. Drafts answers from policies and past library entries, tailoring language to the customer's context.
+- **[[.agents/qa-reviewer]]** — QA Reviewer. Cross-checks every answer against its cited evidence, catches overstatements, and marks items that need human review.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **On-demand** | [[.jobs/answer-questionnaire]] | Compliance Lead | Completed questionnaire draft in `/questionnaires/<name>/` |
+| **Weekly** (Mon 08:00) | [[.jobs/library-freshness]] | Compliance Lead | Stale library entries flagged, updated answers committed to `/answer-library/` |
+
+## How to run the demo
+
+1. Open the [[questionnaire-workspace]] — the active questionnaire workspace: question list with answers, evidence links, confidence scores, and completeness %.
+2. Browse `answer-library/library.md` — the reusable answer bank the Writer pulls from.
+3. Check `questionnaires/acme-corp-vsq/` — a fully worked example questionnaire with gap flags and QA notes.
+
+## Connectors
+
+**Required:** Vanta (policy library, SOC2 controls), Drata (evidence links), Google Drive (incoming questionnaire docs, past completed questionnaires).
+**Recommended:** Confluence/Notion (internal policy wiki), Slack (`#security` channel), email (questionnaire receipt + delivery).
+
+**Vanta and Drata remain your official compliance evidence systems of record.** This cabinet reads from them to answer questions and produces the draft — it does not replace or duplicate the evidence store.2a:Td68,<h1>Security Questionnaire Cabinet</h1>
+<p>Three agents — a Compliance Lead, a Writer, and a QA Reviewer — work through incoming customer and vendor security questionnaires using your policy library, SOC2 documentation, and a growing answer library of past responses. Every completed questionnaire is a file you can review, redline, and send.</p>
+<blockquote>
+<p><strong>Keep Vanta and Drata as your GRC and evidence systems of record. Replace the questionnaire spreadsheets, copy-paste marathons, Conveyor-lite subscriptions, and stale Google Docs answer banks around them.</strong></p>
+</blockquote>
+<h2>Why this cabinet</h2>
+<p>Filling security questionnaires is the highest-friction bottleneck in enterprise deals. A 200-question VSQ from a Fortune 500 can stall a deal for weeks. The answer is almost always in your existing policies and SOC2 docs — the problem is finding it, formatting it, and keeping the library current. This cabinet makes every completed questionnaire a sourced, reviewed artifact, and every new answer a library entry for the next one.</p>
+<p>Every artifact is a file: the completed questionnaire draft, the evidence links, the gap list, and the library entry are all written to disk so you can open, diff, forward, and audit them.</p>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/compliance-agent]]</strong> — Compliance Lead. Orchestrates the questionnaire run, assigns questions to the policy library, flags gaps, and signs off the final draft.</li>
+<li><strong>[[.agents/writer]]</strong> — Questionnaire Writer. Drafts answers from policies and past library entries, tailoring language to the customer's context.</li>
+<li><strong>[[.agents/qa-reviewer]]</strong> — QA Reviewer. Cross-checks every answer against its cited evidence, catches overstatements, and marks items that need human review.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>On-demand</strong></td>
+<td>[[.jobs/answer-questionnaire]]</td>
+<td>Compliance Lead</td>
+<td>Completed questionnaire draft in <code>/questionnaires/&#x3C;name>/</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/library-freshness]]</td>
+<td>Compliance Lead</td>
+<td>Stale library entries flagged, updated answers committed to <code>/answer-library/</code></td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[questionnaire-workspace]] — the active questionnaire workspace: question list with answers, evidence links, confidence scores, and completeness %.</li>
+<li>Browse <code>answer-library/library.md</code> — the reusable answer bank the Writer pulls from.</li>
+<li>Check <code>questionnaires/acme-corp-vsq/</code> — a fully worked example questionnaire with gap flags and QA notes.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Vanta (policy library, SOC2 controls), Drata (evidence links), Google Drive (incoming questionnaire docs, past completed questionnaires).
+<strong>Recommended:</strong> Confluence/Notion (internal policy wiki), Slack (<code>#security</code> channel), email (questionnaire receipt + delivery).</p>
+<p><strong>Vanta and Drata remain your official compliance evidence systems of record.</strong> This cabinet reads from them to answer questions and produces the draft — it does not replace or duplicate the evidence store.</p>20:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$L22",null,{"slug":"security-questionnaire","pageName":"questionnaire-workspace"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$L23",null,{"entry":{"slug":"security-questionnaire","meta":{"schemaVersion":1,"id":"security-questionnaire-root","name":"Security Questionnaire Cabinet","kind":"root","version":"0.1.0","description":"Auto-answers customer and vendor security questionnaires using your existing policies, SOC2 docs, and past answers. Keep Vanta and Drata as your evidence systems of record — replace the questionnaire spreadsheets, copy-paste marathons, and stale answer libraries around them.","entry":"index.md","domain":"Professional Services"},"agents":[{"name":"Compliance Lead","slug":"compliance-agent","emoji":"🔐","type":"lead","department":"security","role":"Orchestrates every security questionnaire run — assigning questions to the policy library, flagging gaps, sequencing the Writer and QA Reviewer, and signing off the final draft before delivery.","heartbeat":"0 9 * * 1-5","budget":120,"active":true,"focus":["questionnaire-orchestration","policy-mapping","gap-identification","answer-library"],"tags":["security","grc"],"body":"$24"},{"name":"QA Reviewer","slug":"qa-reviewer","emoji":"🔍","type":"specialist","department":"security","role":"Cross-checks every questionnaire answer against its cited evidence, catches overstatements and scope creep, and marks items that require human security-team review before the draft ships.","heartbeat":"","budget":80,"active":true,"focus":["answer-verification","overstatement-detection","evidence-validation","human-review-flags"],"tags":["qa","security"],"body":"$25"},{"name":"Questionnaire Writer","slug":"writer","emoji":"✍️","type":"specialist","department":"security","role":"Drafts security questionnaire answers from the policy library, SOC2 documentation, and the answer library — translating technical controls into clear, accurate, customer-appropriate prose.","heartbeat":"","budget":80,"active":true,"focus":["answer-drafting","policy-translation","library-reuse","tone-calibration"],"tags":["writing","security"],"body":"$26"}],"jobs":[{"id":"answer-questionnaire","name":"Answer Security Questionnaire","enabled":false,"schedule":"","provider":"claude-code","adapterType":"claude_local","ownerAgent":"compliance-agent","agentSlug":"compliance-agent","timeout":1800,"prompt":"$27","cabinetPath":"cabinets/security-questionnaire","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"library-freshness","name":"Weekly Answer Library Freshness","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"compliance-agent","agentSlug":"compliance-agent","timeout":600,"prompt":"$28","cabinetPath":"cabinets/security-questionnaire","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$29","readmeHtml":"$2a","tags":["security","grc","compliance","questionnaire","enterprise","cabinet"],"section":"Product & Engineering","stats":{"totalAgents":3,"totalJobs":2,"totalCabinets":1,"totalPages":2}}}]}]]}],"$L2b","$L2c","$L2d","$L2e","$L2f"]}]
+21:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L1a",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L1c",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],"$L30","$L31","$L32"]}]]}],"$L33"]]}],"$L34"]}]}]
+36:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"TerminalBlock"]
+2b:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Security Questionnaire Cabinet"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🔐"," ","Compliance Lead"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🔍"," ","QA Reviewer"]}]]}],["$","div","2",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["✍️"," ","Questionnaire Writer"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Answer Security Questionnaire"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Answer Library Freshness"}]]}]]]}],[]]}]}]]}]
+2c:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-compliance-agent-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🔐"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Compliance Lead"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Orchestrates every security questionnaire run — assigning questions to the policy library, flagging gaps, sequencing the Writer and QA Reviewer, and signing off the final draft before delivery."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 9 * * 1-5"}]]}]]}],["$","div","root-qa-reviewer-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🔍"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"QA Reviewer"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Cross-checks every questionnaire answer against its cited evidence, catches overstatements and scope creep, and marks items that require human security-team review before the draft ships."}],""]}],["$","div","root-writer-2",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"✍️"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Questionnaire Writer"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Drafts security questionnaire answers from the policy library, SOC2 documentation, and the answer library — translating technical controls into clear, accurate, customer-appropriate prose."}],""]}]]}]]}]
+2d:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","answer-questionnaire",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Answer Security Questionnaire"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"paused"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":""}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","compliance-agent"]}]]}]]}],["$","div","library-freshness",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Answer Library Freshness"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","compliance-agent"]}]]}]]}]]}]]}]
+35:Td68,<h1>Security Questionnaire Cabinet</h1>
+<p>Three agents — a Compliance Lead, a Writer, and a QA Reviewer — work through incoming customer and vendor security questionnaires using your policy library, SOC2 documentation, and a growing answer library of past responses. Every completed questionnaire is a file you can review, redline, and send.</p>
+<blockquote>
+<p><strong>Keep Vanta and Drata as your GRC and evidence systems of record. Replace the questionnaire spreadsheets, copy-paste marathons, Conveyor-lite subscriptions, and stale Google Docs answer banks around them.</strong></p>
+</blockquote>
+<h2>Why this cabinet</h2>
+<p>Filling security questionnaires is the highest-friction bottleneck in enterprise deals. A 200-question VSQ from a Fortune 500 can stall a deal for weeks. The answer is almost always in your existing policies and SOC2 docs — the problem is finding it, formatting it, and keeping the library current. This cabinet makes every completed questionnaire a sourced, reviewed artifact, and every new answer a library entry for the next one.</p>
+<p>Every artifact is a file: the completed questionnaire draft, the evidence links, the gap list, and the library entry are all written to disk so you can open, diff, forward, and audit them.</p>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/compliance-agent]]</strong> — Compliance Lead. Orchestrates the questionnaire run, assigns questions to the policy library, flags gaps, and signs off the final draft.</li>
+<li><strong>[[.agents/writer]]</strong> — Questionnaire Writer. Drafts answers from policies and past library entries, tailoring language to the customer's context.</li>
+<li><strong>[[.agents/qa-reviewer]]</strong> — QA Reviewer. Cross-checks every answer against its cited evidence, catches overstatements, and marks items that need human review.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>On-demand</strong></td>
+<td>[[.jobs/answer-questionnaire]]</td>
+<td>Compliance Lead</td>
+<td>Completed questionnaire draft in <code>/questionnaires/&#x3C;name>/</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/library-freshness]]</td>
+<td>Compliance Lead</td>
+<td>Stale library entries flagged, updated answers committed to <code>/answer-library/</code></td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[questionnaire-workspace]] — the active questionnaire workspace: question list with answers, evidence links, confidence scores, and completeness %.</li>
+<li>Browse <code>answer-library/library.md</code> — the reusable answer bank the Writer pulls from.</li>
+<li>Check <code>questionnaires/acme-corp-vsq/</code> — a fully worked example questionnaire with gap flags and QA notes.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Vanta (policy library, SOC2 controls), Drata (evidence links), Google Drive (incoming questionnaire docs, past completed questionnaires).
+<strong>Recommended:</strong> Confluence/Notion (internal policy wiki), Slack (<code>#security</code> channel), email (questionnaire receipt + delivery).</p>
+<p><strong>Vanta and Drata remain your official compliance evidence systems of record.</strong> This cabinet reads from them to answer questions and produces the draft — it does not replace or duplicate the evidence store.</p>2e:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$35"}}]}]]}]
+2f:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L36",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set security-questionnaire","label":"Install"}]}]}]]}]
+30:["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}]
+31:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+32:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+33:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+34:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+16:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+37:I[27201,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"IconMark"]
+13:null
+18:[["$","title","0",{"children":"Security Questionnaire Cabinet template | Cabinet"}],["$","meta","1",{"name":"description","content":"Auto-answers customer and vendor security questionnaires using your existing policies, SOC2 docs, and past answers. Keep Vanta and Drata as your evidence systems of record — replace the questionnaire spreadsheets, copy-paste marathons, and stale answer libraries around them."}],["$","meta","2",{"name":"referrer","content":"strict-origin-when-cross-origin"}],["$","link","3",{"rel":"canonical","href":"https://runcabinet.com/templates/security-questionnaire"}],["$","meta","4",{"property":"og:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","5",{"property":"og:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","6",{"property":"og:url","content":"https://runcabinet.com"}],["$","meta","7",{"property":"og:image","content":"https://runcabinet.com/og.png"}],["$","meta","8",{"property":"og:image:width","content":"1200"}],["$","meta","9",{"property":"og:image:height","content":"630"}],["$","meta","10",{"property":"og:image:alt","content":"Cabinet: the AI workspace your company owns, with knowledge, AI teams, and live apps in one place"}],["$","meta","11",{"property":"og:type","content":"website"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","14",{"name":"twitter:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","15",{"name":"twitter:image","content":"https://runcabinet.com/og.png"}],["$","link","16",{"rel":"icon","href":"/icon.png?icon.1p7qxwp3akyyx.png","sizes":"512x512","type":"image/png"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-icon.png?apple-icon.1q-r1s9ajzc3v.png","sizes":"180x180","type":"image/png"}],["$","$L37","18",{}]]

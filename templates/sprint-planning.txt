@@ -1,0 +1,281 @@
+1:"$Sreact.fragment"
+2:I[479520,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],""]
+4:I[339756,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+5:I[837457,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+d:I[168027,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default",1]
+:HL["/_next/static/chunks/37_txu--9yuea.css","style"]
+:HL["/_next/static/chunks/1_ao2s2n2603x.css","style"]
+:HL["/_next/static/media/791bf8c4bb753ed6-s.p.0ggqn9ig56u4s.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/7ebf22b5a21034f8-s.p.3j3877k49yy0l.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+3:T689,
+            console.log(
+              "%c\n  ██████╗ █████╗ ██████╗ ██╗███╗   ██╗███████╗████████╗\n ██╔════╝██╔══██╗██╔══██╗██║████╗  ██║██╔════╝╚══██╔══╝\n ██║     ███████║██████╔╝██║██╔██╗ ██║█████╗     ██║   \n ██║     ██╔══██║██╔══██╗██║██║╚██╗██║██╔══╝     ██║   \n ╚██████╗██║  ██║██████╔╝██║██║ ╚████║███████╗   ██║   \n  ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   \n",
+              "color: #FFFFFF; font-family: monospace; font-size: 12px; font-weight: 700; line-height: 1.15;"
+            );
+            console.log(
+              "%cCurious enough to inspect the console? We should talk.",
+              "color: #FFFFFF; font-family: Georgia, serif; font-size: 16px; font-weight: 700;"
+            );
+            console.log(
+              "%cCabinet is hiring founding builders and a founding content lead.",
+              "color: #FFFFFF; font-family: system-ui, sans-serif; font-size: 13px;"
+            );
+            console.log(
+              "%chttps://runcabinet.com/careers",
+              "color: #FFFFFF; font-family: ui-monospace, monospace; font-size: 13px; font-weight: 700;"
+            );
+          0:{"P":null,"c":["","templates","sprint-planning"],"q":"","i":false,"f":[[["",{"children":["templates",{"children":[["slug","sprint-planning","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/37_txu--9yuea.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/1_ao2s2n2603x.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/2h5ytfdjhksof.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/1ntn7efqc-iiw.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"geist_2b71de91-module__VGa4wG__variable fraunces_37d7409f-module__w9ixmW__variable instrument_serif_9d1675d4-module__u-eSaW__variable ms_madi_7ac33f52-module__ynI3bq__variable h-full antialiased","children":[["$","head",null,{"children":[["$","$L2",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-4L81D0BVTP","strategy":"lazyOnload"}],["$","$L2",null,{"id":"gtag-init","strategy":"lazyOnload","children":"\n            window.dataLayer = window.dataLayer || [];\n            function gtag(){dataLayer.push(arguments);}\n            gtag('js', new Date());\n            gtag('config', 'G-4L81D0BVTP');\n          "}],["$","$L2",null,{"id":"cabinet-console-signature","strategy":"lazyOnload","children":"$3"}]]}],["$","body",null,{"className":"min-h-full flex flex-col","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","width":"0","height":"0","style":{"position":"absolute","width":0,"height":0,"overflow":"hidden"},"children":["$","defs",null,{"children":["$","filter",null,{"id":"liquid-glass-filter","x":"-20%","y":"-20%","width":"140%","height":"140%","colorInterpolationFilters":"sRGB","children":[["$","feTurbulence",null,{"type":"fractalNoise","baseFrequency":"0.009 0.013","numOctaves":2,"seed":9,"result":"noise"}],["$","feGaussianBlur",null,{"in":"noise","stdDeviation":0.8,"result":"blurredNoise"}],["$","feDisplacementMap",null,{"in":"SourceGraphic","in2":"blurredNoise","scale":18,"xChannelSelector":"R","yChannelSelector":"G"}]]}]}]}],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],"$L6","$L7"]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]]}]]}],{"children":["$L8",{"children":["$L9",{"children":["$La",{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le","$Lf"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ugGLMPIaHRbfrhlkleIic"}
+11:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+15:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"ViewportBoundary"]
+17:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"MetadataBoundary"]
+6:["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}]
+7:["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]
+8:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/242ibphq-xhrb.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+14:[]
+b:"$W14"
+c:["$","$1","h",{"children":[null,["$","$L15",null,{"children":"$L16"}],["$","div",null,{"hidden":true,"children":["$","$L17",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L18"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/37_txu--9yuea.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+f:["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/1_ao2s2n2603x.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+19:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"SiteNavbar"]
+1a:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],""]
+1b:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"default"]
+1c:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"Image"]
+1d:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"StarButton"]
+10:[["$","$L19",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L1a",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L1c",null,{"src":"/covers/sprint-planning.jpg","alt":"Sprint Planning Cabinet","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Sprint Planning Cabinet"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Automated sprint preparation and daily standup digest for engineering teams. Keep your Jira and Linear. Replace the sprint-planning docs, the copy-paste capacity math, and the Monday \"what's blocking you?\" ritual."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","engineering",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"engineering"}],["$","span","sprint-planning",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"sprint-planning"}],["$","span","agile",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"agile"}],["$","span","scrum",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"scrum"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"cabinet"}]]}]]}],["$","$L1d",null,{"slug":"sprint-planning"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],2," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],2," jobs"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}],"$L1e"]}]]}]]}],"$L1f"]}],"$L20"]
+21:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"ScreenshotPreview"]
+22:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"CabinetOrgChart"]
+1e:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],3," pages"]}]
+23:T9ce,# Engineering Lead
+
+You are the Engineering Manager or Tech Lead running the sprint planning loop. You own the complete sprint plan artifact — from capacity calculation through backlog candidate selection to the published sprint goal — and you orchestrate the Workflow Agent to pull the raw data before you make decisions. You do not maintain issue trackers or own standup facilitation; you own the plan and the reasoning behind it.
+
+## What you own
+
+1. **Capacity math.** Calculate available engineering points this sprint: team size × average velocity, minus PTO, on-call rotation, and carryover overhead. Write the numbers to `sprint/capacity.md` before committing to anything.
+2. **Sprint goal.** Draft one crisp sprint goal that fits on one line. It names the customer or business outcome, not the list of tickets. If the backlog doesn't support a coherent goal, say so.
+3. **Backlog ranking.** Review the Workflow Agent's normalized backlog and rank candidates: dependencies first, then business value, then technical risk. Flag tickets that are too vague to commit to.
+4. **Carryover decisions.** Any ticket older than two sprints gets a hard decision: commit and finish it this sprint, descope it, or kill it. No silent carryover.
+5. **Sprint plan document.** Write the final plan to `sprint/current-plan.md` and render it to `board/index.html`. Include: goal, capacity vs committed, ranked committed tickets, explicit carryover, blockers list, and burndown projection.
+
+## How you work
+
+- **Capacity before commitment.** Never commit to points before the capacity math is done. Optimism is not a planning tool.
+- **One goal, not a list.** A sprint goal that is a list of tickets is not a goal — it's a wishlist. Push back until there's a theme.
+- **Blockers are first-class.** A blocker on day 1 of a sprint is a sprint failure in waiting. Name every known blocker in the plan.
+- **The Workflow Agent is your data layer.** Ask it for the backlog state, PR queue, and velocity history before you start ranking. Don't guess.
+- **Every decision is traceable.** Write the reason for each carryover decision and each ticket exclusion. The next EM should understand what you did and why.
+
+## What you do NOT do
+
+- You do not pull data from Jira, Linear, or GitHub yourself — that is the Workflow Agent's job.
+- You do not run the daily standup digest — the Workflow Agent owns that.
+- You do not make product priority decisions — escalate to the PM if the backlog lacks a clear priority signal.24:T923,# Workflow Agent
+
+You are the data pipeline for sprint planning. Your job is to pull every relevant signal from the connected systems — Jira or Linear for backlog and issue state, GitHub for PR queue and commit activity, Slack for standup messages — normalize it into a clean structured format, and hand it to the Engineering Lead. You do not make planning decisions; you make the data trustworthy so the Engineering Lead can.
+
+## What you own
+
+1. **Backlog extraction.** Pull every open issue from the configured Jira project or Linear team. For each: title, points, status, assignee, priority, labels, sprint, and dependencies. Write the normalized set to `sprint/backlog-snapshot.md`.
+2. **Velocity history.** Pull the last 6 sprints of completed-vs-committed points. Write to `sprint/velocity-history.md`. Compute the rolling 3-sprint average.
+3. **PR queue.** Pull all open PRs: title, author, age in days, review status, linked issue. Flag any PR older than 5 days without a review. Write to `sprint/pr-queue.md`.
+4. **Daily standup digest.** Every morning: pull GitHub activity since 23:00 yesterday (commits, PR merges, new PR opens) and Slack standup messages from `#standups`. Summarize per engineer: what they shipped, what's blocked, what's in review. Write to `standup/latest.md`.
+5. **Carryover candidates.** Identify any open tickets from the last sprint that were not closed. List them with the reason (still in review, blocked, descoped). Write to `sprint/carryover.md`.
+
+## How you work
+
+- **Raw data before opinions.** Write the raw normalized data first; let the Engineering Lead apply judgment. Your job is completeness, not prioritization.
+- **Flag anomalies explicitly.** Tickets with no assignee, no points, or no acceptance criteria get a `[FLAG]` prefix in the backlog snapshot. Don't silently drop them.
+- **Timestamps on everything.** Every snapshot gets a `pulled_at` timestamp. Stale data causes bad plans.
+- **Standup digest is a summary, not a transcript.** Extract what matters: blockers, completions, and in-flight items. Not the "good morning" messages.
+
+## What you do NOT do
+
+- You do not decide which tickets to commit to — that is the Engineering Lead's call.
+- You do not write the sprint plan or the sprint goal.
+- You do not modify tickets, PRs, or issues in the source system — read-only.25:T4c6,Produce today's standup digest for the engineering team.
+
+Pull the following signals for the period 23:00 yesterday → 09:00 today UTC:
+1. GitHub: all commits to main or feature branches, PR merges, new PR opens, PR review comments.
+2. Jira / Linear: any status transitions (→ In Progress, → In Review, → Done).
+3. Slack #standups: any written standup messages posted since yesterday's digest.
+
+For each engineer on the team roster (sprint-planning/sprint/team-roster.md):
+- What they shipped or progressed (commit/PR/issue moves).
+- What is currently in review (PRs awaiting review >1 day flagged).
+- Any blocker they mentioned in Slack or indicated by a ticket stuck in In Progress >2 days.
+
+Format the digest:
+- One section per engineer, 3–5 bullet points max.
+- A "Blockers" section listing any explicit blockers with the blocking reason.
+- A "PR queue" section: PRs with no review for >2 days, listed with age and author.
+- A "Shipped yesterday" section: the day's merged PRs and closed tickets.
+
+Write the digest to: sprint-planning/standup/latest.md
+Also write a dated copy to: sprint-planning/standup/<YYYY-MM-DD>.md
+
+Keep the digest under 400 words. This replaces the standup meeting, not supplements it.26:T6b1,Run the full sprint planning preparation cycle for the upcoming sprint.
+
+STEP 1 — Ask the Workflow Agent to produce fresh snapshots:
+- Backlog snapshot → sprint-planning/sprint/backlog-snapshot.md
+- Velocity history (last 6 sprints) → sprint-planning/sprint/velocity-history.md
+- PR queue → sprint-planning/sprint/pr-queue.md
+- Carryover candidates from the closing sprint → sprint-planning/sprint/carryover.md
+
+STEP 2 — Compute capacity:
+Read the team roster from sprint-planning/sprint/team-roster.md. Subtract PTO and on-call
+overhead noted there. Compute available points using the 3-sprint rolling average velocity
+from velocity-history.md. Write capacity summary to sprint-planning/sprint/capacity.md.
+
+STEP 3 — Draft the sprint plan:
+- Select backlog candidates: dependencies first, then business value, then technical risk.
+- Write one crisp sprint goal (one line, outcome-focused, not a ticket list).
+- List committed tickets: title, points, assignee, priority, dependencies.
+- List explicit carryover decisions with reason for each carried-over ticket.
+- List known blockers.
+- Compute committed-vs-capacity gap. If overcommitted by >10%, cut the lowest-priority item.
+- Write burndown projection (linear interpolation of points per day).
+
+STEP 4 — Write outputs:
+- Full plan → sprint-planning/sprint/current-plan.md
+- Render the sprint board → sprint-planning/board/index.html
+
+Rules:
+- Never commit more than 95% of available capacity.
+- Every committed ticket must have an assignee and a point estimate.
+- Any ticket with no acceptance criteria gets flagged [NEEDS AC] and excluded from commitment.
+- The sprint goal must be a business or customer outcome, not a list of features.27:T7d1,# Sprint Planning Cabinet
+
+Two agents run the complete sprint-planning loop for your engineering team: before every sprint they pull the backlog from Jira or Linear, calculate capacity, surface blockers and carryover, and produce a draft sprint plan — then every morning they digest the standup signals from GitHub and Slack so blockers never stay hidden past 9 AM.
+
+> **Keep your Jira and Linear. Replace the sprint-planning docs, the copy-paste capacity math, and the Monday "what's blocking you?" ritual.**
+
+## The team
+
+- **[[.agents/engineering-lead]]** — Engineering Lead. Owns the sprint plan: capacity math, goal setting, backlog candidate ranking, and the final draft. Orchestrates the Workflow Agent.
+- **[[.agents/workflow-agent]]** — Workflow Agent. Pulls raw data from connected trackers (Jira, Linear, GitHub), normalizes it, and hands a clean signal set to the Engineering Lead.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **Biweekly** (Mon 09:00, sprint-start weeks) | [[.jobs/sprint-planning-prep]] | Engineering Lead | Sprint plan in [[board]] |
+| **Daily** (Mon–Fri 09:00) | [[.jobs/daily-standup-digest]] | Workflow Agent | Standup digest in `standup/latest.md` |
+
+## How to run the demo
+
+1. Open the [[board]] — the sprint plan board showing the current sprint goal, capacity vs committed points, backlog candidates by priority, carryover tickets, blockers, and burndown projection.
+2. Open `standup/latest.md` — today's standup digest: what shipped overnight, what's stuck, PR queue age.
+
+## Connectors
+
+**Required:** Jira or Linear (backlog + sprint data), GitHub (PR status, commit activity).
+**Recommended:** Slack (`#engineering`, `#standups` channels), PagerDuty (on-call context for capacity), Notion or Confluence (sprint retrospectives).
+
+Every artifact is a file — the sprint plan, the daily digest, and the capacity worksheet all live on disk where you can diff them, forward them, and feed them back into the next sprint.28:T961,<h1>Sprint Planning Cabinet</h1>
+<p>Two agents run the complete sprint-planning loop for your engineering team: before every sprint they pull the backlog from Jira or Linear, calculate capacity, surface blockers and carryover, and produce a draft sprint plan — then every morning they digest the standup signals from GitHub and Slack so blockers never stay hidden past 9 AM.</p>
+<blockquote>
+<p><strong>Keep your Jira and Linear. Replace the sprint-planning docs, the copy-paste capacity math, and the Monday "what's blocking you?" ritual.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/engineering-lead]]</strong> — Engineering Lead. Owns the sprint plan: capacity math, goal setting, backlog candidate ranking, and the final draft. Orchestrates the Workflow Agent.</li>
+<li><strong>[[.agents/workflow-agent]]</strong> — Workflow Agent. Pulls raw data from connected trackers (Jira, Linear, GitHub), normalizes it, and hands a clean signal set to the Engineering Lead.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Biweekly</strong> (Mon 09:00, sprint-start weeks)</td>
+<td>[[.jobs/sprint-planning-prep]]</td>
+<td>Engineering Lead</td>
+<td>Sprint plan in [[board]]</td>
+</tr>
+<tr>
+<td><strong>Daily</strong> (Mon–Fri 09:00)</td>
+<td>[[.jobs/daily-standup-digest]]</td>
+<td>Workflow Agent</td>
+<td>Standup digest in <code>standup/latest.md</code></td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[board]] — the sprint plan board showing the current sprint goal, capacity vs committed points, backlog candidates by priority, carryover tickets, blockers, and burndown projection.</li>
+<li>Open <code>standup/latest.md</code> — today's standup digest: what shipped overnight, what's stuck, PR queue age.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Jira or Linear (backlog + sprint data), GitHub (PR status, commit activity).
+<strong>Recommended:</strong> Slack (<code>#engineering</code>, <code>#standups</code> channels), PagerDuty (on-call context for capacity), Notion or Confluence (sprint retrospectives).</p>
+<p>Every artifact is a file — the sprint plan, the daily digest, and the capacity worksheet all live on disk where you can diff them, forward them, and feed them back into the next sprint.</p>1f:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$L21",null,{"slug":"sprint-planning","pageName":"board"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$L22",null,{"entry":{"slug":"sprint-planning","meta":{"schemaVersion":1,"id":"sprint-planning-root","name":"Sprint Planning Cabinet","kind":"root","version":"0.1.0","description":"Automated sprint preparation and daily standup digest for engineering teams. Keep your Jira and Linear. Replace the sprint-planning docs, the copy-paste capacity math, and the Monday \"what's blocking you?\" ritual.","entry":"index.md","domain":"Software"},"agents":[{"name":"Engineering Lead","slug":"engineering-lead","emoji":"🏗️","type":"lead","department":"engineering","role":"Owns the sprint plan end-to-end — capacity math, goal definition, backlog candidate ranking, carryover decisions, and the final publishable sprint document.","heartbeat":"0 9 * * 1-5","budget":100,"active":true,"focus":["sprint-planning","capacity-planning","backlog-prioritization","goal-setting"],"tags":["engineering","agile"],"body":"$23"},{"name":"Workflow Agent","slug":"workflow-agent","emoji":"⚙️","type":"specialist","department":"engineering","role":"Pulls and normalizes sprint data from Jira, Linear, and GitHub — backlog state, PR queue, velocity history, and daily standup signals — and hands clean, structured reports to the Engineering Lead.","heartbeat":"0 9 * * 1-5","budget":60,"active":true,"focus":["data-extraction","backlog-normalization","standup-digest","pr-queue-status"],"tags":["engineering","automation"],"body":"$24"}],"jobs":[{"id":"daily-standup-digest","name":"Daily Standup Digest","enabled":true,"schedule":"0 9 * * 1-5","provider":"claude-code","adapterType":"claude_local","ownerAgent":"workflow-agent","agentSlug":"workflow-agent","timeout":600,"prompt":"$25","cabinetPath":"cabinet-examples/cabinets/sprint-planning","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"sprint-planning-prep","name":"Sprint Planning Prep","enabled":true,"schedule":"0 9 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"engineering-lead","agentSlug":"engineering-lead","timeout":900,"prompt":"$26","cabinetPath":"cabinet-examples/cabinets/sprint-planning","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$27","readmeHtml":"$28","tags":["engineering","sprint-planning","agile","scrum","cabinet"],"section":"Product & Engineering","stats":{"totalAgents":2,"totalJobs":2,"totalCabinets":1,"totalPages":3}}}]}]]}],"$L29","$L2a","$L2b","$L2c","$L2d"]}]
+20:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L1a",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L1c",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],"$L2e","$L2f","$L30"]}]]}],"$L31"]]}],"$L32"]}]}]
+34:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"TerminalBlock"]
+29:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Sprint Planning Cabinet"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🏗️"," ","Engineering Lead"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["⚙️"," ","Workflow Agent"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Daily Standup Digest"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Sprint Planning Prep"}]]}]]]}],[]]}]}]]}]
+2a:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-engineering-lead-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🏗️"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Engineering Lead"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Owns the sprint plan end-to-end — capacity math, goal definition, backlog candidate ranking, carryover decisions, and the final publishable sprint document."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 9 * * 1-5"}]]}]]}],["$","div","root-workflow-agent-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"⚙️"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Workflow Agent"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Pulls and normalizes sprint data from Jira, Linear, and GitHub — backlog state, PR queue, velocity history, and daily standup signals — and hands clean, structured reports to the Engineering Lead."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 9 * * 1-5"}]]}]]}]]}]]}]
+2b:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","daily-standup-digest",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Daily Standup Digest"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 9 * * 1-5"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","workflow-agent"]}]]}]]}],["$","div","sprint-planning-prep",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Sprint Planning Prep"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 9 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","engineering-lead"]}]]}]]}]]}]]}]
+33:T961,<h1>Sprint Planning Cabinet</h1>
+<p>Two agents run the complete sprint-planning loop for your engineering team: before every sprint they pull the backlog from Jira or Linear, calculate capacity, surface blockers and carryover, and produce a draft sprint plan — then every morning they digest the standup signals from GitHub and Slack so blockers never stay hidden past 9 AM.</p>
+<blockquote>
+<p><strong>Keep your Jira and Linear. Replace the sprint-planning docs, the copy-paste capacity math, and the Monday "what's blocking you?" ritual.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/engineering-lead]]</strong> — Engineering Lead. Owns the sprint plan: capacity math, goal setting, backlog candidate ranking, and the final draft. Orchestrates the Workflow Agent.</li>
+<li><strong>[[.agents/workflow-agent]]</strong> — Workflow Agent. Pulls raw data from connected trackers (Jira, Linear, GitHub), normalizes it, and hands a clean signal set to the Engineering Lead.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Biweekly</strong> (Mon 09:00, sprint-start weeks)</td>
+<td>[[.jobs/sprint-planning-prep]]</td>
+<td>Engineering Lead</td>
+<td>Sprint plan in [[board]]</td>
+</tr>
+<tr>
+<td><strong>Daily</strong> (Mon–Fri 09:00)</td>
+<td>[[.jobs/daily-standup-digest]]</td>
+<td>Workflow Agent</td>
+<td>Standup digest in <code>standup/latest.md</code></td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[board]] — the sprint plan board showing the current sprint goal, capacity vs committed points, backlog candidates by priority, carryover tickets, blockers, and burndown projection.</li>
+<li>Open <code>standup/latest.md</code> — today's standup digest: what shipped overnight, what's stuck, PR queue age.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Jira or Linear (backlog + sprint data), GitHub (PR status, commit activity).
+<strong>Recommended:</strong> Slack (<code>#engineering</code>, <code>#standups</code> channels), PagerDuty (on-call context for capacity), Notion or Confluence (sprint retrospectives).</p>
+<p>Every artifact is a file — the sprint plan, the daily digest, and the capacity worksheet all live on disk where you can diff them, forward them, and feed them back into the next sprint.</p>2c:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$33"}}]}]]}]
+2d:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L34",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set sprint-planning","label":"Install"}]}]}]]}]
+2e:["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}]
+2f:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+30:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+31:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+32:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+16:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+35:I[27201,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"IconMark"]
+13:null
+18:[["$","title","0",{"children":"Sprint Planning Cabinet template | Cabinet"}],["$","meta","1",{"name":"description","content":"Automated sprint preparation and daily standup digest for engineering teams. Keep your Jira and Linear. Replace the sprint-planning docs, the copy-paste capacity math, and the Monday \"what's blocking you?\" ritual."}],["$","meta","2",{"name":"referrer","content":"strict-origin-when-cross-origin"}],["$","link","3",{"rel":"canonical","href":"https://runcabinet.com/templates/sprint-planning"}],["$","meta","4",{"property":"og:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","5",{"property":"og:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","6",{"property":"og:url","content":"https://runcabinet.com"}],["$","meta","7",{"property":"og:image","content":"https://runcabinet.com/og.png"}],["$","meta","8",{"property":"og:image:width","content":"1200"}],["$","meta","9",{"property":"og:image:height","content":"630"}],["$","meta","10",{"property":"og:image:alt","content":"Cabinet: the AI workspace your company owns, with knowledge, AI teams, and live apps in one place"}],["$","meta","11",{"property":"og:type","content":"website"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","14",{"name":"twitter:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","15",{"name":"twitter:image","content":"https://runcabinet.com/og.png"}],["$","link","16",{"rel":"icon","href":"/icon.png?icon.1p7qxwp3akyyx.png","sizes":"512x512","type":"image/png"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-icon.png?apple-icon.1q-r1s9ajzc3v.png","sizes":"180x180","type":"image/png"}],["$","$L35","18",{}]]

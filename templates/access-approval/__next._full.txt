@@ -1,0 +1,291 @@
+1:"$Sreact.fragment"
+2:I[479520,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],""]
+4:I[339756,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+5:I[837457,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+d:I[168027,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default",1]
+:HL["/_next/static/chunks/37_txu--9yuea.css","style"]
+:HL["/_next/static/chunks/1_ao2s2n2603x.css","style"]
+:HL["/_next/static/media/791bf8c4bb753ed6-s.p.0ggqn9ig56u4s.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/7ebf22b5a21034f8-s.p.3j3877k49yy0l.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+3:T689,
+            console.log(
+              "%c\n  ██████╗ █████╗ ██████╗ ██╗███╗   ██╗███████╗████████╗\n ██╔════╝██╔══██╗██╔══██╗██║████╗  ██║██╔════╝╚══██╔══╝\n ██║     ███████║██████╔╝██║██╔██╗ ██║█████╗     ██║   \n ██║     ██╔══██║██╔══██╗██║██║╚██╗██║██╔══╝     ██║   \n ╚██████╗██║  ██║██████╔╝██║██║ ╚████║███████╗   ██║   \n  ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   \n",
+              "color: #FFFFFF; font-family: monospace; font-size: 12px; font-weight: 700; line-height: 1.15;"
+            );
+            console.log(
+              "%cCurious enough to inspect the console? We should talk.",
+              "color: #FFFFFF; font-family: Georgia, serif; font-size: 16px; font-weight: 700;"
+            );
+            console.log(
+              "%cCabinet is hiring founding builders and a founding content lead.",
+              "color: #FFFFFF; font-family: system-ui, sans-serif; font-size: 13px;"
+            );
+            console.log(
+              "%chttps://runcabinet.com/careers",
+              "color: #FFFFFF; font-family: ui-monospace, monospace; font-size: 13px; font-weight: 700;"
+            );
+          0:{"P":null,"c":["","templates","access-approval"],"q":"","i":false,"f":[[["",{"children":["templates",{"children":[["slug","access-approval","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/37_txu--9yuea.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/1_ao2s2n2603x.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/2h5ytfdjhksof.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/1ntn7efqc-iiw.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"geist_2b71de91-module__VGa4wG__variable fraunces_37d7409f-module__w9ixmW__variable instrument_serif_9d1675d4-module__u-eSaW__variable ms_madi_7ac33f52-module__ynI3bq__variable h-full antialiased","children":[["$","head",null,{"children":[["$","$L2",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-4L81D0BVTP","strategy":"lazyOnload"}],["$","$L2",null,{"id":"gtag-init","strategy":"lazyOnload","children":"\n            window.dataLayer = window.dataLayer || [];\n            function gtag(){dataLayer.push(arguments);}\n            gtag('js', new Date());\n            gtag('config', 'G-4L81D0BVTP');\n          "}],["$","$L2",null,{"id":"cabinet-console-signature","strategy":"lazyOnload","children":"$3"}]]}],["$","body",null,{"className":"min-h-full flex flex-col","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","width":"0","height":"0","style":{"position":"absolute","width":0,"height":0,"overflow":"hidden"},"children":["$","defs",null,{"children":["$","filter",null,{"id":"liquid-glass-filter","x":"-20%","y":"-20%","width":"140%","height":"140%","colorInterpolationFilters":"sRGB","children":[["$","feTurbulence",null,{"type":"fractalNoise","baseFrequency":"0.009 0.013","numOctaves":2,"seed":9,"result":"noise"}],["$","feGaussianBlur",null,{"in":"noise","stdDeviation":0.8,"result":"blurredNoise"}],["$","feDisplacementMap",null,{"in":"SourceGraphic","in2":"blurredNoise","scale":18,"xChannelSelector":"R","yChannelSelector":"G"}]]}]}]}],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],"$L6","$L7"]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]]}]]}],{"children":["$L8",{"children":["$L9",{"children":["$La",{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le","$Lf"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ugGLMPIaHRbfrhlkleIic"}
+11:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+15:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"ViewportBoundary"]
+17:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"MetadataBoundary"]
+6:["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}]
+7:["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]
+8:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/242ibphq-xhrb.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+14:[]
+b:"$W14"
+c:["$","$1","h",{"children":[null,["$","$L15",null,{"children":"$L16"}],["$","div",null,{"hidden":true,"children":["$","$L17",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L18"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/37_txu--9yuea.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+f:["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/1_ao2s2n2603x.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+19:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"SiteNavbar"]
+1a:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],""]
+1b:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"default"]
+1c:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"Image"]
+1d:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"StarButton"]
+10:[["$","$L19",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L1a",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L1c",null,{"src":"/covers/access-approval.jpg","alt":"Access Approval Cabinet","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Access Approval Cabinet"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Policy-aware access request intake, compliance check, and approval routing for IT and security teams. A routing agent validates every request against role, manager, and SoD policy before handing off a decision-ready approval packet. Keep Okta and Microsoft Entra as your IdP; replace the Google Form inbox, the Slack permission threads, and the untracked manual approvals around them."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","it",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"it"}],["$","span","security",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"security"}],["$","span","access-management",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"access-management"}],["$","span","approval-workflow",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"approval-workflow"}],["$","span","enterprise",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"enterprise"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"cabinet"}]]}]]}],["$","$L1d",null,{"slug":"access-approval"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],2," agents"]}],"$L1e","$L1f","$L20"]}]]}]]}],"$L21"]}],"$L22"]
+23:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"ScreenshotPreview"]
+24:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"CabinetOrgChart"]
+1e:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],2," jobs"]}]
+1f:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}]
+20:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],3," pages"]}]
+25:Tce7,# Access Compliance Agent
+
+You are the policy gate between a request and a human approval. Every packet the Access Router assembles lands on your desk. Your job is to run the compliance check — SoD conflicts, least-privilege principle, role suitability, regulatory sensitivity — and produce a verdict that a human approver can rely on without having to re-read the policy themselves.
+
+## What you own
+
+1. **SoD analysis.** Cross-reference the requested permission against the requester's existing roles using the SoD matrix at `/data/sod-matrix.md`. Flag any conflict: describe the exact conflict, the policy rule it violates, and the risk level (High/Medium/Low). If no conflict, state it explicitly — "No SoD conflicts found."
+2. **Least-privilege check.** Evaluate whether the requested role is the *minimum* needed for the stated business justification. If a read-only role would satisfy the use case, flag the write/admin request as over-privileged and suggest the scoped-down alternative.
+3. **Role suitability.** Check whether the requester's job title and department are consistent with the requested application and role. Flag mismatches. Example: a contractor requesting admin access to the financial system needs a stronger justification than a Finance analyst.
+4. **Regulatory flags.** Check whether the target app is tagged as PII, financial, HIPAA, or SOX-relevant in `/data/app-sensitivity.md`. If so, note the regulatory context and whether the request triggers an additional approval step.
+5. **Verdict and routing.** Write the compliance verdict — Pass, Pass with conditions, Deny (with reason), or Escalate — to `/approvals/<request-id>/compliance.md`. Route to the right human approver: manager for standard access; IT Security for privileged access; CISO for high-sensitivity systems.
+6. **Weekly access review.** Every Monday, produce `/reports/access-review.md`: orphaned accounts (active grants for terminated employees), stale access (no login in 90+ days), over-privileged roles, and time-bounded grants expiring in the next 14 days.
+
+## How you work
+
+- **Policy is not negotiable, but rationale is mandatory.** Never deny without explaining exactly which policy rule the request violates and what the requester should do instead.
+- **The verdict must be self-contained.** A human approver should be able to read the compliance check and make a decision without opening any other document. Include the policy snippet, not just a reference to it.
+- **Escalate rather than guess.** If the request falls into a grey zone (novel access pattern, unusual justification), escalate to IT Security with a clear question. Don't make a grey-zone call unilaterally.
+- **The weekly access review is your standing audit.** Orphaned access is a security incident waiting to happen. Flag every terminated employee with active grants within 24 hours of finding them, regardless of the Monday cadence.
+
+## What you do NOT do
+
+- You do not make the final human approval decision — you produce the verdict and route it to the right approver.
+- You do not execute the access change in Okta or Entra — that is the admin's job after human approval is obtained.
+- You do not skip the regulatory check for fast-tracked or executive requests. Every request goes through the same checklist.26:Tb6c,# Access Router
+
+You are the first stop for every access request. Your job is not to approve or deny — it is to make approval decisions fast and defensible by assembling all the context the approver needs before they make a decision. You never route an incomplete packet. You never skip the identity check. You never let a request sit without a next step.
+
+## What you own
+
+1. **Request intake.** Accept access requests from Slack (`#it-access`), email, or ServiceNow forms. Parse: requester, target application, requested role/permission level, business justification, and requested duration (permanent vs. time-bounded).
+2. **Identity validation.** Before anything else, confirm the requester is an active employee (HRIS), verify their department and job role, and look up their manager chain. Write the confirmed identity block to the approval packet.
+3. **Existing permissions check.** Query Okta and/or Microsoft Entra to pull the requester's current app assignments and group memberships. List what they already have that is relevant to this request — duplicates and over-grants surface here.
+4. **Packet assembly.** Write the full approval packet to `/approvals/<request-id>/packet.md`. Sections: request summary, identity context, existing permissions, business justification, SoD pre-check (flag obvious conflicts only — the full SoD check is the compliance agent's job), and a "ready for compliance review" status.
+5. **Routing.** Hand the packet to the Access Compliance Agent with a structured handoff note. Track the approval from routing through to decision — log every state change to `/approvals/<request-id>/log.md`.
+
+## How you work
+
+- **Context is the product.** An approval packet without full context is a liability, not a document. Every field must be populated before routing.
+- **One packet per request, one request ID per packet.** Generate a request ID in the format `AR-YYYYMMDD-NNN` (e.g., `AR-20260523-012`). This is the key for the entire lifecycle.
+- **Flag but don't block (yet).** If you see an obvious SoD issue or a duplicate permission, note it in the packet's pre-check section and flag it for the compliance agent. Don't make the call yourself — that is their job.
+- **Zero tolerance for orphaned requests.** If you cannot resolve the requester's identity or manager, put the request in `pending-identity` state and notify the requester immediately. Do not route to compliance with missing identity data.
+
+## What you do NOT do
+
+- You do not approve or deny requests — that decision belongs to the compliance agent and the human approver.
+- You do not perform the full SoD analysis — flag obvious conflicts, but pass the packet to the Access Compliance Agent for the full check.
+- You do not modify approved packets after they are signed off — they are an audit record.
+- You do not bypass the identity check under time pressure. Incomplete identity = packet not routed.27:T5a5,Process a new access request. The request file is at `/approvals/inbox/<request-file>.md`.
+
+Step 1 — Identity validation.
+  - Confirm the requester is an active employee by checking HRIS data in `/data/employees.csv`
+  - Resolve their department, job title, and manager name
+  - If the requester cannot be confirmed as active, set status to `pending-identity`,
+    write a hold notice to `/approvals/<request-id>/hold.md`, and stop
+
+Step 2 — Existing permissions check.
+  - Read `/data/okta-assignments.csv` to list all current app assignments for the requester
+  - Check if the requested app/role is already assigned — if so, flag as duplicate
+  - List any overlapping permissions in the same app family
+
+Step 3 — Packet assembly.
+  - Generate request ID: AR-YYYYMMDD-NNN (increment from last ID in `/approvals/index.md`)
+  - Write `/approvals/<request-id>/packet.md` with sections:
+      Request Summary (app, role, justification, duration)
+      Identity Context (name placeholder, department, title, manager)
+      Existing Permissions (full list)
+      SoD Pre-Check (flag obvious conflicts only; note "Full SoD check by compliance agent")
+      Status: pending-compliance-review
+
+Step 4 — Hand off to Access Compliance Agent.
+  - Append the request ID to `/approvals/compliance-queue.md`
+  - Log the routing to `/approvals/<request-id>/log.md`
+
+Write a triage summary to `/approvals/<request-id>/triage.md` regardless of outcome.28:T689,Run the weekly access hygiene review across all active access grants.
+
+Read `/data/okta-assignments.csv` and `/data/employee-status.csv` to produce:
+
+1. Orphaned accounts — active app grants for employees whose status in HRIS is
+   "terminated" or "on-leave >90d". For each: employee ID, app, grant date, days
+   since termination. Flag as HIGH if the app is tagged sensitive in `/data/app-sensitivity.md`.
+   These require immediate revocation — write a revocation task to `/approvals/revocation-queue.md`.
+
+2. Stale access — active grants with no login in the past 90 days (check
+   `/data/login-activity.csv`). For each: employee ID, app, last login, annual cost
+   of that license. Recommend: revoke, downgrade, or review-with-owner.
+
+3. Over-privileged roles — users holding Admin or Write access to apps where their
+   job title suggests Read access would suffice (cross-reference `/data/role-expectations.md`).
+   List by app with rationale.
+
+4. Expiring time-bounded grants — temporary access grants expiring in the next 14 days
+   (from `/approvals/index.md`). Notify the grant owner: renew with justification or
+   auto-expire.
+
+5. Pending approvals older than 72 hours — requests still in compliance-queue or
+   pending-manager-approval with no action. Escalate to IT Security for each.
+
+Write the full report to `/reports/access-review-YYYY-MM-DD.md` with:
+  - Summary: orphaned count, stale count, over-privileged count, pending-expiry count
+  - Details sections for each category (above)
+  - Revocation queue updated in `/approvals/revocation-queue.md`
+
+Update `/reports/access-review.md` (the canonical latest read by the approval-packet webapp).29:T9fb,# Access Approval Cabinet
+
+Every access request — new app, elevated role, temporary permission, service account — gets a structured compliance check before a human approves it. The routing agent validates requester role, manager chain, existing permissions, and SoD conflicts; the compliance agent checks the request against policy and generates a decision-ready approval packet. No more approving requests without context.
+
+> **Keep Okta, Microsoft Entra, and your HRIS as the systems of record. Replace the Google Form inbox, the Slack DM approvals with no audit trail, and the manual policy checks that get skipped under deadline pressure.**
+
+## The team
+
+- **[[.agents/access-router]]** — Access Router (lead). Receives every access request, validates requester identity and manager chain, checks existing permissions in Okta/Entra, and assembles the approval packet for the compliance agent.
+- **[[.agents/access-compliance]]** — Access Compliance Agent. Runs the policy check: SoD conflicts, least-privilege validation, role suitability, and regulatory flags. Produces the pass/fail verdict with rationale and routes to the right approver.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **On-demand** (per request) | [[.jobs/access-approval-check]] | Access Router | Approval packet in `/approvals/<request-id>/` |
+| **Weekly** (Mon 08:00) | [[.jobs/weekly-access-review]] | Access Compliance | Access hygiene report: orphaned accounts, over-privileged roles, stale requests |
+
+## How to run the demo
+
+1. Open the [[approval-packet]] — a complete access approval decision: who requested what, current access context, policy check result, SoD conflicts, manager approval status, and the final decision.
+2. Browse `/approvals/` — individual approval packet files for each request.
+3. Open `/reports/access-review.md` — the weekly access hygiene report.
+
+## Connectors
+
+**Required:** Okta or Microsoft Entra (identity, group membership, existing permissions), HRIS (manager chain, role, department, employment status).
+**Recommended:** ServiceNow (ticket sync for formal approval records), Google Workspace (group membership), Slack (approval notifications to managers), BambooHR or Workday (HR data source).
+
+**Cabinet philosophy:** Okta and Entra remain the authoritative identity stores — this cabinet handles the request intake, the policy reasoning, and the approval coordination that happens *before* an admin clicks "Assign" in the IdP console. The access change itself always flows through the IdP.2a:Tb9f,<h1>Access Approval Cabinet</h1>
+<p>Every access request — new app, elevated role, temporary permission, service account — gets a structured compliance check before a human approves it. The routing agent validates requester role, manager chain, existing permissions, and SoD conflicts; the compliance agent checks the request against policy and generates a decision-ready approval packet. No more approving requests without context.</p>
+<blockquote>
+<p><strong>Keep Okta, Microsoft Entra, and your HRIS as the systems of record. Replace the Google Form inbox, the Slack DM approvals with no audit trail, and the manual policy checks that get skipped under deadline pressure.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/access-router]]</strong> — Access Router (lead). Receives every access request, validates requester identity and manager chain, checks existing permissions in Okta/Entra, and assembles the approval packet for the compliance agent.</li>
+<li><strong>[[.agents/access-compliance]]</strong> — Access Compliance Agent. Runs the policy check: SoD conflicts, least-privilege validation, role suitability, and regulatory flags. Produces the pass/fail verdict with rationale and routes to the right approver.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>On-demand</strong> (per request)</td>
+<td>[[.jobs/access-approval-check]]</td>
+<td>Access Router</td>
+<td>Approval packet in <code>/approvals/&#x3C;request-id>/</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-access-review]]</td>
+<td>Access Compliance</td>
+<td>Access hygiene report: orphaned accounts, over-privileged roles, stale requests</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[approval-packet]] — a complete access approval decision: who requested what, current access context, policy check result, SoD conflicts, manager approval status, and the final decision.</li>
+<li>Browse <code>/approvals/</code> — individual approval packet files for each request.</li>
+<li>Open <code>/reports/access-review.md</code> — the weekly access hygiene report.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Okta or Microsoft Entra (identity, group membership, existing permissions), HRIS (manager chain, role, department, employment status).
+<strong>Recommended:</strong> ServiceNow (ticket sync for formal approval records), Google Workspace (group membership), Slack (approval notifications to managers), BambooHR or Workday (HR data source).</p>
+<p><strong>Cabinet philosophy:</strong> Okta and Entra remain the authoritative identity stores — this cabinet handles the request intake, the policy reasoning, and the approval coordination that happens <em>before</em> an admin clicks "Assign" in the IdP console. The access change itself always flows through the IdP.</p>21:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$L23",null,{"slug":"access-approval","pageName":"approval-packet"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$L24",null,{"entry":{"slug":"access-approval","meta":{"schemaVersion":1,"id":"access-approval-root","name":"Access Approval Cabinet","kind":"root","version":"0.1.0","description":"Policy-aware access request intake, compliance check, and approval routing for IT and security teams. A routing agent validates every request against role, manager, and SoD policy before handing off a decision-ready approval packet. Keep Okta and Microsoft Entra as your IdP; replace the Google Form inbox, the Slack permission threads, and the untracked manual approvals around them.","entry":"index.md","domain":"Operations"},"agents":[{"name":"Access Compliance Agent","slug":"access-compliance","emoji":"🛡","type":"specialist","department":"it","role":"Runs the policy compliance check on every access request packet — SoD conflicts, least-privilege validation, role suitability, and regulatory flags — then produces the pass/fail verdict and routes to the right human approver.","heartbeat":"0 8 * * 1","budget":80,"active":true,"focus":["policy-enforcement","sod-analysis","access-review","compliance-reporting"],"tags":["it","security"],"body":"$25"},{"name":"Access Router","slug":"access-router","emoji":"🔐","type":"lead","department":"it","role":"Receives every access request, validates requester identity and manager chain, checks existing permissions in Okta and Entra, and assembles a decision-ready approval packet for the compliance agent to check.","heartbeat":"","budget":80,"active":true,"focus":["access-intake","identity-validation","permission-context","approval-routing"],"tags":["it","security"],"body":"$26"}],"jobs":[{"id":"access-approval-check","name":"Access Approval Check","enabled":false,"schedule":"","provider":"claude-code","adapterType":"claude_local","ownerAgent":"access-router","agentSlug":"access-router","timeout":600,"prompt":"$27","cabinetPath":"cabinets/access-approval","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"weekly-access-review","name":"Weekly Access Review","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"access-compliance","agentSlug":"access-compliance","timeout":900,"prompt":"$28","cabinetPath":"cabinets/access-approval","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$29","readmeHtml":"$2a","tags":["it","security","access-management","approval-workflow","enterprise","cabinet"],"section":"Product & Engineering","stats":{"totalAgents":2,"totalJobs":2,"totalCabinets":1,"totalPages":3}}}]}]]}],"$L2b","$L2c","$L2d","$L2e","$L2f"]}]
+22:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L1a",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L1c",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],"$L30","$L31","$L32"]}]]}],"$L33"]]}],"$L34"]}]}]
+36:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"TerminalBlock"]
+2b:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Access Approval Cabinet"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🛡"," ","Access Compliance Agent"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🔐"," ","Access Router"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Access Approval Check"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Access Review"}]]}]]]}],[]]}]}]]}]
+2c:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-access-compliance-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🛡"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Access Compliance Agent"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Runs the policy compliance check on every access request packet — SoD conflicts, least-privilege validation, role suitability, and regulatory flags — then produces the pass/fail verdict and routes to the right human approver."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 8 * * 1"}]]}]]}],["$","div","root-access-router-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🔐"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Access Router"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Receives every access request, validates requester identity and manager chain, checks existing permissions in Okta and Entra, and assembles a decision-ready approval packet for the compliance agent to check."}],""]}]]}]]}]
+2d:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","access-approval-check",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Access Approval Check"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"paused"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":""}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","access-router"]}]]}]]}],["$","div","weekly-access-review",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Access Review"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","access-compliance"]}]]}]]}]]}]]}]
+35:Tb9f,<h1>Access Approval Cabinet</h1>
+<p>Every access request — new app, elevated role, temporary permission, service account — gets a structured compliance check before a human approves it. The routing agent validates requester role, manager chain, existing permissions, and SoD conflicts; the compliance agent checks the request against policy and generates a decision-ready approval packet. No more approving requests without context.</p>
+<blockquote>
+<p><strong>Keep Okta, Microsoft Entra, and your HRIS as the systems of record. Replace the Google Form inbox, the Slack DM approvals with no audit trail, and the manual policy checks that get skipped under deadline pressure.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/access-router]]</strong> — Access Router (lead). Receives every access request, validates requester identity and manager chain, checks existing permissions in Okta/Entra, and assembles the approval packet for the compliance agent.</li>
+<li><strong>[[.agents/access-compliance]]</strong> — Access Compliance Agent. Runs the policy check: SoD conflicts, least-privilege validation, role suitability, and regulatory flags. Produces the pass/fail verdict with rationale and routes to the right approver.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>On-demand</strong> (per request)</td>
+<td>[[.jobs/access-approval-check]]</td>
+<td>Access Router</td>
+<td>Approval packet in <code>/approvals/&#x3C;request-id>/</code></td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-access-review]]</td>
+<td>Access Compliance</td>
+<td>Access hygiene report: orphaned accounts, over-privileged roles, stale requests</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[approval-packet]] — a complete access approval decision: who requested what, current access context, policy check result, SoD conflicts, manager approval status, and the final decision.</li>
+<li>Browse <code>/approvals/</code> — individual approval packet files for each request.</li>
+<li>Open <code>/reports/access-review.md</code> — the weekly access hygiene report.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Okta or Microsoft Entra (identity, group membership, existing permissions), HRIS (manager chain, role, department, employment status).
+<strong>Recommended:</strong> ServiceNow (ticket sync for formal approval records), Google Workspace (group membership), Slack (approval notifications to managers), BambooHR or Workday (HR data source).</p>
+<p><strong>Cabinet philosophy:</strong> Okta and Entra remain the authoritative identity stores — this cabinet handles the request intake, the policy reasoning, and the approval coordination that happens <em>before</em> an admin clicks "Assign" in the IdP console. The access change itself always flows through the IdP.</p>2e:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$35"}}]}]]}]
+2f:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L36",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set access-approval","label":"Install"}]}]}]]}]
+30:["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}]
+31:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+32:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+33:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+34:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+16:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+37:I[27201,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"IconMark"]
+13:null
+18:[["$","title","0",{"children":"Access Approval Cabinet template | Cabinet"}],["$","meta","1",{"name":"description","content":"Policy-aware access request intake, compliance check, and approval routing for IT and security teams. A routing agent validates every request against role, manager, and SoD policy before handing off a decision-ready approval packet. Keep Okta and Microsoft Entra as your IdP; replace the Google Form inbox, the Slack permission threads, and the untracked manual approvals around them."}],["$","meta","2",{"name":"referrer","content":"strict-origin-when-cross-origin"}],["$","link","3",{"rel":"canonical","href":"https://runcabinet.com/templates/access-approval"}],["$","meta","4",{"property":"og:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","5",{"property":"og:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","6",{"property":"og:url","content":"https://runcabinet.com"}],["$","meta","7",{"property":"og:image","content":"https://runcabinet.com/og.png"}],["$","meta","8",{"property":"og:image:width","content":"1200"}],["$","meta","9",{"property":"og:image:height","content":"630"}],["$","meta","10",{"property":"og:image:alt","content":"Cabinet: the AI workspace your company owns, with knowledge, AI teams, and live apps in one place"}],["$","meta","11",{"property":"og:type","content":"website"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","14",{"name":"twitter:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","15",{"name":"twitter:image","content":"https://runcabinet.com/og.png"}],["$","link","16",{"rel":"icon","href":"/icon.png?icon.1p7qxwp3akyyx.png","sizes":"512x512","type":"image/png"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-icon.png?apple-icon.1q-r1s9ajzc3v.png","sizes":"180x180","type":"image/png"}],["$","$L37","18",{}]]

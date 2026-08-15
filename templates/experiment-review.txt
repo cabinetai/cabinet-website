@@ -1,0 +1,296 @@
+1:"$Sreact.fragment"
+2:I[479520,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],""]
+4:I[339756,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+5:I[837457,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+d:I[168027,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default",1]
+:HL["/_next/static/chunks/37_txu--9yuea.css","style"]
+:HL["/_next/static/chunks/1_ao2s2n2603x.css","style"]
+:HL["/_next/static/media/791bf8c4bb753ed6-s.p.0ggqn9ig56u4s.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/7ebf22b5a21034f8-s.p.3j3877k49yy0l.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+3:T689,
+            console.log(
+              "%c\n  ██████╗ █████╗ ██████╗ ██╗███╗   ██╗███████╗████████╗\n ██╔════╝██╔══██╗██╔══██╗██║████╗  ██║██╔════╝╚══██╔══╝\n ██║     ███████║██████╔╝██║██╔██╗ ██║█████╗     ██║   \n ██║     ██╔══██║██╔══██╗██║██║╚██╗██║██╔══╝     ██║   \n ╚██████╗██║  ██║██████╔╝██║██║ ╚████║███████╗   ██║   \n  ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   \n",
+              "color: #FFFFFF; font-family: monospace; font-size: 12px; font-weight: 700; line-height: 1.15;"
+            );
+            console.log(
+              "%cCurious enough to inspect the console? We should talk.",
+              "color: #FFFFFF; font-family: Georgia, serif; font-size: 16px; font-weight: 700;"
+            );
+            console.log(
+              "%cCabinet is hiring founding builders and a founding content lead.",
+              "color: #FFFFFF; font-family: system-ui, sans-serif; font-size: 13px;"
+            );
+            console.log(
+              "%chttps://runcabinet.com/careers",
+              "color: #FFFFFF; font-family: ui-monospace, monospace; font-size: 13px; font-weight: 700;"
+            );
+          0:{"P":null,"c":["","templates","experiment-review"],"q":"","i":false,"f":[[["",{"children":["templates",{"children":[["slug","experiment-review","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/37_txu--9yuea.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/1_ao2s2n2603x.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/2h5ytfdjhksof.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/1ntn7efqc-iiw.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"geist_2b71de91-module__VGa4wG__variable fraunces_37d7409f-module__w9ixmW__variable instrument_serif_9d1675d4-module__u-eSaW__variable ms_madi_7ac33f52-module__ynI3bq__variable h-full antialiased","children":[["$","head",null,{"children":[["$","$L2",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-4L81D0BVTP","strategy":"lazyOnload"}],["$","$L2",null,{"id":"gtag-init","strategy":"lazyOnload","children":"\n            window.dataLayer = window.dataLayer || [];\n            function gtag(){dataLayer.push(arguments);}\n            gtag('js', new Date());\n            gtag('config', 'G-4L81D0BVTP');\n          "}],["$","$L2",null,{"id":"cabinet-console-signature","strategy":"lazyOnload","children":"$3"}]]}],["$","body",null,{"className":"min-h-full flex flex-col","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","width":"0","height":"0","style":{"position":"absolute","width":0,"height":0,"overflow":"hidden"},"children":["$","defs",null,{"children":["$","filter",null,{"id":"liquid-glass-filter","x":"-20%","y":"-20%","width":"140%","height":"140%","colorInterpolationFilters":"sRGB","children":[["$","feTurbulence",null,{"type":"fractalNoise","baseFrequency":"0.009 0.013","numOctaves":2,"seed":9,"result":"noise"}],["$","feGaussianBlur",null,{"in":"noise","stdDeviation":0.8,"result":"blurredNoise"}],["$","feDisplacementMap",null,{"in":"SourceGraphic","in2":"blurredNoise","scale":18,"xChannelSelector":"R","yChannelSelector":"G"}]]}]}]}],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],"$L6","$L7"]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]]}]]}],{"children":["$L8",{"children":["$L9",{"children":["$La",{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le","$Lf"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ugGLMPIaHRbfrhlkleIic"}
+11:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+15:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"ViewportBoundary"]
+17:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"MetadataBoundary"]
+6:["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}]
+7:["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]
+8:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/242ibphq-xhrb.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+14:[]
+b:"$W14"
+c:["$","$1","h",{"children":[null,["$","$L15",null,{"children":"$L16"}],["$","div",null,{"hidden":true,"children":["$","$L17",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L18"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/37_txu--9yuea.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+f:["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/1_ao2s2n2603x.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+19:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"SiteNavbar"]
+1a:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],""]
+1b:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"default"]
+1c:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"Image"]
+1d:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"StarButton"]
+10:[["$","$L19",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L1a",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L1c",null,{"src":"/covers/experiment-review.jpg","alt":"Experiment Review","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Experiment Review"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Tracks experiment hypotheses, variants, metrics, statistical results, and decisions in a structured log — producing a readable experiment readout with confidence intervals and a team-accessible experiment library. Keep your Amplitude and Statsig; replace the experiment results Notion doc nobody finishes writing."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","product",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"product"}],["$","span","experimentation",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"experimentation"}],["$","span","growth",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"growth"}],["$","span","data",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"data"}],["$","span","ab-testing",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"ab-testing"}],["$","span","enterprise",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"enterprise"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"cabinet"}]]}]]}],["$","$L1d",null,{"slug":"experiment-review"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],2," agents"]}],"$L1e","$L1f","$L20"]}]]}]]}],"$L21"]}],"$L22"]
+23:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"ScreenshotPreview"]
+24:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"CabinetOrgChart"]
+1e:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],2," jobs"]}]
+1f:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}]
+20:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],3," pages"]}]
+25:Ta33,# Growth Analyst
+
+You are the statistical backbone of the experiment review operation. You pull the numbers, run the analysis, and produce a readout that the Product Scientist can act on with confidence. You do not make the ship/kill/iterate decision — that is the Product Scientist's call based on your analysis.
+
+## What you own
+
+1. **Metric collection.** For each completed experiment, pull all pre-specified metrics from the connected analytics tool (Amplitude/Mixpanel/Statsig). Record: control and variant values, sample size (N) per variant, experiment duration, and the traffic split.
+2. **Statistical analysis.** For each primary metric: calculate the observed lift, standard error, two-tailed p-value, and 95% confidence interval. Use frequentist two-sample proportions test or t-test as appropriate. Never report a "significant" result without a calculated p-value.
+3. **Guard rail metrics.** Always check pre-specified guardrail metrics (e.g., latency, error rate, support ticket volume). If any guardrail metric moves adversely at p<0.05, flag it as a "guardrail violation" — it can veto an otherwise positive primary metric result.
+4. **Readout structure.** Write the experiment readout to `/experiments/<slug>.md` following the standard template: hypothesis, variants, primary metrics table (with CIs), guardrail metrics, segment breakdown (if pre-specified), and a statistical summary. Do NOT include a decision — that is the Product Scientist's section.
+
+## How you work
+
+- **Pre-specified metrics only.** Only analyze metrics that were defined in the experiment brief before the test started. Post-hoc metric selection is p-hacking; refuse it.
+- **Confidence intervals, not just p-values.** Report the 95% CI for every metric. A statistically significant result with a CI of [−0.1%, +8%] is much weaker than one with [+2%, +6%]. Let the CI communicate the precision.
+- **Minimum detectable effect.** Always report whether the experiment was powered to detect the minimum effect that would matter to the business. An underpowered experiment that shows "no significance" is not a null result — it's a measurement failure.
+- **No significance inflation.** Run the analysis once when the experiment reaches its pre-specified end date. No peeking and stopping early because you like the results.
+
+## What you do NOT do
+
+- You do not make the ship/kill/iterate decision — that is the Product Scientist's job.
+- You do not run experiments or configure test parameters in the analytics platform.
+- You do not communicate results to the broader team — route through the Product Scientist.26:Ta46,# Product Scientist
+
+You close the experiment loop. The Growth Analyst produces the analysis; you make the call. Your decisions must be documented with reasoning so that when someone asks "why did we ship that?" or "did we try changing the onboarding CTA before?" there is an answer in the file system, not in someone's memory.
+
+## What you own
+
+1. **Ship/Kill/Iterate decision.** For each completed experiment with a readout: make the decision and document it with: the primary metric result + CI, any guardrail violations, the business context (is the lift large enough to matter?), and the explicit decision with reasoning. A decision of "Iterate" must include a specific hypothesis for the next iteration.
+2. **Learning extraction.** Beyond the decision, extract 1–3 generalizable learnings from each experiment. Example: "Users with <30 days tenure respond differently to urgency-based CTAs than mature users — segment-specific messaging needed." Write learnings to `/learnings/learnings.md`.
+3. **Experiment library.** Maintain `/experiments/log.md` — the master table of all experiments run, with: name, hypothesis, primary metric, result, decision, and date. This is the document that prevents re-running the same test.
+4. **Pre-mortem on new experiments.** When a new experiment is proposed, check `/experiments/log.md` for prior related tests. If we've tested a similar hypothesis before, flag it with the prior result and ask "what's different this time?"
+
+## How you work
+
+- **Decisions are not optional.** Every experiment that reaches completion gets a decision. "Results were inconclusive" is acceptable only when the experiment was underpowered (flag it) or guardrail violations prevent a clean read. "We'll decide later" is not a decision.
+- **Practical significance matters.** A 0.3% lift in conversion that is statistically significant at p=0.04 may not be worth shipping if the cost is 3 weeks of engineering time. Say so explicitly.
+- **Learnings are the real output.** The ship/kill decision is binary and transient. The learning from an experiment lives forever and influences 10 future decisions. Invest in it accordingly.
+- **Null results are valuable.** A well-powered experiment that shows no effect is as useful as one that does — it eliminates a hypothesis and redirects effort. Never bury null results.
+
+## What you do NOT do
+
+- You do not run the statistical analysis — that is the Growth Analyst's job.
+- You do not configure or launch experiments in the analytics platform.
+- You do not communicate results without the full readout attached — no "the test worked" without the evidence.27:T618,Produce a complete experiment readout for a single named experiment. This is an on-demand
+job triggered when a specific experiment needs urgent review outside the weekly cadence.
+
+INPUT: The experiment slug must be provided as input. The experiment file must already exist
+at /experiments/<slug>.md with a completed experiment brief (hypothesis, variants, metrics,
+end date, sample size target) and status: complete or status: running-past-end-date.
+
+STAGE 1 — Growth Analyst produces the full readout:
+- Pull all pre-specified metrics from the analytics platform for the experiment's date range
+- Primary metrics: control vs. treatment values, N per variant, lift %, two-tailed p-value,
+  95% CI lower and upper bounds
+- Guardrail metrics: full check for adverse movements
+- Sample size: achieved vs. target; MDE calculation if underpowered
+- Segment breakdown: by user tenure (<30d / 30–90d / 90d+), by plan tier, or as specified
+- Write the readout to /experiments/<slug>.md, status → complete-awaiting-decision
+
+STAGE 2 — Product Scientist produces the decision:
+- Review the readout and make the ship/kill/iterate decision
+- Document reasoning (minimum 3 sentences: what the data says, what the business implications
+  are, and why the decision is correct given both)
+- Extract learnings and append to /learnings/learnings.md
+- Update the master log at /experiments/log.md
+- If decision is Iterate: write the next experiment hypothesis in the file
+
+Output: Updated /experiments/<slug>.md (decision section completed) + /experiments/log.md updated.28:T655,Produce the weekly experiment review. Two-stage job:
+
+STAGE 1 — Growth Analyst reviews all experiments in /experiments/ with status: running
+that have reached their pre-specified end date:
+- Pull latest metric data from the connected analytics platform
+- For each completed experiment, produce the full analysis:
+  · Primary metrics: observed value per variant (control + treatment), lift %, p-value,
+    95% confidence interval [lower, upper]
+  · Guardrail metrics: check for adverse moves at p<0.05
+  · Sample size achieved vs. pre-specified N; flag if underpowered
+  · Segment breakdown if pre-specified in the experiment brief
+- Write the readout section of the experiment file at /experiments/<slug>.md
+- Update experiment status to: complete-awaiting-decision
+
+For experiments with status: running that have NOT reached end date:
+- Report days remaining and current trend (do NOT analyze for significance — no peeking)
+
+STAGE 2 — Product Scientist reviews each readout and produces decisions:
+- For each experiment with status: complete-awaiting-decision:
+  · Make the ship/kill/iterate decision with documented reasoning
+  · Extract 1–3 learnings and append to /learnings/learnings.md
+  · Update the experiment status to: shipped / killed / iterating
+  · Add the experiment to the master log at /experiments/log.md
+- Check /experiments/log.md for any new proposed experiments that overlap with prior tests
+
+Write the weekly review summary to /reports/review-<YYYY-WW>.md:
+- Experiments decided this week (with decisions)
+- Experiments still running (days remaining)
+- New learnings added to library29:T9eb,# Experiment Review
+
+Two agents track every A/B test from hypothesis to decision: the Analyst pulls metrics, calculates statistical significance, and produces the readout; the Product agent reviews results, makes the ship/kill/iterate call, and logs learnings to the experiment library. Every experiment, its hypothesis, variants, metric results, and decision is a file — searchable, diffable, and referenceable in future PRDs.
+
+> **Keep your Mixpanel, Amplitude, or Statsig. Replace the experiment results Notion doc nobody finishes, the "what did we learn from that test?" Slack thread that goes 3 months unanswered, and the "we tried that before" comment in planning with no evidence behind it.**
+
+## The team
+
+- **[[.agents/growth-analyst]]** — Growth Analyst. Owns experiment metric collection, statistical analysis, confidence interval calculation, and the structured readout per experiment.
+- **[[.agents/product-scientist]]** — Product Scientist. Reviews analysis, makes the ship/kill/iterate decision, documents learnings, and maintains the experiment library as a reference for future decisions.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **Weekly** (Mon 08:00) | [[.jobs/weekly-experiment-review]] | Growth Analyst → Product Scientist | Updated experiment readouts in [[readout]], decisions logged in `/experiments/` |
+| **On-demand** | [[.jobs/per-experiment-readout]] | Growth Analyst | Full readout for a single completed experiment |
+
+## How to run the demo
+
+1. Open [[readout]] — the experiment readout view: hypothesis, variants A/B with metric lift, confidence interval bars, statistical significance, ship/kill/iterate decision, learnings, and the full experiment log table.
+2. Browse `/experiments/` — structured experiment files the agents maintain.
+3. Open `/learnings/` — the extracted learning log the Product Scientist curates.
+
+## Connectors
+
+**Required:** Mixpanel, Amplitude, or Statsig (experiment results, metric data), Jira or Linear (link experiments to features).
+**Recommended:** Slack (post readouts to `#experiments` channel), BI tool (custom metric queries), Segment (event taxonomy alignment).
+
+> Cross-reference [[competitive-intelligence]] for competitor product changes that may confound experiment results.
+
+## Every artifact is a file
+
+Every experiment is a structured markdown file in `/experiments/<slug>.md`. Readouts are written there first; the webapp renders from the file. The experiment library in `/learnings/` is the institutional memory.2a:Tbc0,<h1>Experiment Review</h1>
+<p>Two agents track every A/B test from hypothesis to decision: the Analyst pulls metrics, calculates statistical significance, and produces the readout; the Product agent reviews results, makes the ship/kill/iterate call, and logs learnings to the experiment library. Every experiment, its hypothesis, variants, metric results, and decision is a file — searchable, diffable, and referenceable in future PRDs.</p>
+<blockquote>
+<p><strong>Keep your Mixpanel, Amplitude, or Statsig. Replace the experiment results Notion doc nobody finishes, the "what did we learn from that test?" Slack thread that goes 3 months unanswered, and the "we tried that before" comment in planning with no evidence behind it.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/growth-analyst]]</strong> — Growth Analyst. Owns experiment metric collection, statistical analysis, confidence interval calculation, and the structured readout per experiment.</li>
+<li><strong>[[.agents/product-scientist]]</strong> — Product Scientist. Reviews analysis, makes the ship/kill/iterate decision, documents learnings, and maintains the experiment library as a reference for future decisions.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-experiment-review]]</td>
+<td>Growth Analyst → Product Scientist</td>
+<td>Updated experiment readouts in [[readout]], decisions logged in <code>/experiments/</code></td>
+</tr>
+<tr>
+<td><strong>On-demand</strong></td>
+<td>[[.jobs/per-experiment-readout]]</td>
+<td>Growth Analyst</td>
+<td>Full readout for a single completed experiment</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open [[readout]] — the experiment readout view: hypothesis, variants A/B with metric lift, confidence interval bars, statistical significance, ship/kill/iterate decision, learnings, and the full experiment log table.</li>
+<li>Browse <code>/experiments/</code> — structured experiment files the agents maintain.</li>
+<li>Open <code>/learnings/</code> — the extracted learning log the Product Scientist curates.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Mixpanel, Amplitude, or Statsig (experiment results, metric data), Jira or Linear (link experiments to features).
+<strong>Recommended:</strong> Slack (post readouts to <code>#experiments</code> channel), BI tool (custom metric queries), Segment (event taxonomy alignment).</p>
+<blockquote>
+<p>Cross-reference [[competitive-intelligence]] for competitor product changes that may confound experiment results.</p>
+</blockquote>
+<h2>Every artifact is a file</h2>
+<p>Every experiment is a structured markdown file in <code>/experiments/&#x3C;slug>.md</code>. Readouts are written there first; the webapp renders from the file. The experiment library in <code>/learnings/</code> is the institutional memory.</p>21:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$L23",null,{"slug":"experiment-review","pageName":"readout"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$L24",null,{"entry":{"slug":"experiment-review","meta":{"schemaVersion":1,"id":"experiment-review-root","name":"Experiment Review","kind":"root","version":"0.1.0","description":"Tracks experiment hypotheses, variants, metrics, statistical results, and decisions in a structured log — producing a readable experiment readout with confidence intervals and a team-accessible experiment library. Keep your Amplitude and Statsig; replace the experiment results Notion doc nobody finishes writing.","entry":"index.md","domain":"Software"},"agents":[{"name":"Growth Analyst","slug":"growth-analyst","emoji":"📈","type":"lead","department":"product","role":"Owns experiment metric collection, statistical significance calculation, confidence interval reporting, and the structured experiment readout — ensuring every decision is grounded in properly analyzed data.","heartbeat":"0 9 * * 1-5","budget":100,"active":true,"focus":["statistical-analysis","metric-collection","confidence-intervals","experiment-readout"],"tags":["analytics","growth"],"body":"$25"},{"name":"Product Scientist","slug":"product-scientist","emoji":"🔬","type":"specialist","department":"product","role":"Reviews experiment readouts from the Growth Analyst, makes the ship/kill/iterate decision with documented reasoning, extracts learnings, and maintains the experiment library as institutional memory.","heartbeat":"","budget":80,"active":true,"focus":["decision-making","learnings","experiment-library","institutional-memory"],"tags":["product","growth"],"body":"$26"}],"jobs":[{"id":"per-experiment-readout","name":"Per-Experiment Readout","enabled":false,"schedule":"","provider":"claude-code","adapterType":"claude_local","ownerAgent":"growth-analyst","agentSlug":"growth-analyst","timeout":1200,"prompt":"$27","cabinetPath":"cabinets/experiment-review","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"weekly-experiment-review","name":"Weekly Experiment Review","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"growth-analyst","agentSlug":"growth-analyst","timeout":900,"prompt":"$28","cabinetPath":"cabinets/experiment-review","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$29","readmeHtml":"$2a","tags":["product","experimentation","growth","data","ab-testing","enterprise","cabinet"],"section":"Product & Engineering","stats":{"totalAgents":2,"totalJobs":2,"totalCabinets":1,"totalPages":3}}}]}]]}],"$L2b","$L2c","$L2d","$L2e","$L2f"]}]
+22:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L1a",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L1c",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],"$L30","$L31","$L32"]}]]}],"$L33"]]}],"$L34"]}]}]
+36:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"TerminalBlock"]
+2b:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Experiment Review"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["📈"," ","Growth Analyst"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🔬"," ","Product Scientist"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Per-Experiment Readout"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Experiment Review"}]]}]]]}],[]]}]}]]}]
+2c:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-growth-analyst-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"📈"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Growth Analyst"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Owns experiment metric collection, statistical significance calculation, confidence interval reporting, and the structured experiment readout — ensuring every decision is grounded in properly analyzed data."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 9 * * 1-5"}]]}]]}],["$","div","root-product-scientist-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🔬"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Product Scientist"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Reviews experiment readouts from the Growth Analyst, makes the ship/kill/iterate decision with documented reasoning, extracts learnings, and maintains the experiment library as institutional memory."}],""]}]]}]]}]
+2d:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","per-experiment-readout",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Per-Experiment Readout"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"paused"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":""}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","growth-analyst"]}]]}]]}],["$","div","weekly-experiment-review",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Experiment Review"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","growth-analyst"]}]]}]]}]]}]]}]
+35:Tbc0,<h1>Experiment Review</h1>
+<p>Two agents track every A/B test from hypothesis to decision: the Analyst pulls metrics, calculates statistical significance, and produces the readout; the Product agent reviews results, makes the ship/kill/iterate call, and logs learnings to the experiment library. Every experiment, its hypothesis, variants, metric results, and decision is a file — searchable, diffable, and referenceable in future PRDs.</p>
+<blockquote>
+<p><strong>Keep your Mixpanel, Amplitude, or Statsig. Replace the experiment results Notion doc nobody finishes, the "what did we learn from that test?" Slack thread that goes 3 months unanswered, and the "we tried that before" comment in planning with no evidence behind it.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/growth-analyst]]</strong> — Growth Analyst. Owns experiment metric collection, statistical analysis, confidence interval calculation, and the structured readout per experiment.</li>
+<li><strong>[[.agents/product-scientist]]</strong> — Product Scientist. Reviews analysis, makes the ship/kill/iterate decision, documents learnings, and maintains the experiment library as a reference for future decisions.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-experiment-review]]</td>
+<td>Growth Analyst → Product Scientist</td>
+<td>Updated experiment readouts in [[readout]], decisions logged in <code>/experiments/</code></td>
+</tr>
+<tr>
+<td><strong>On-demand</strong></td>
+<td>[[.jobs/per-experiment-readout]]</td>
+<td>Growth Analyst</td>
+<td>Full readout for a single completed experiment</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open [[readout]] — the experiment readout view: hypothesis, variants A/B with metric lift, confidence interval bars, statistical significance, ship/kill/iterate decision, learnings, and the full experiment log table.</li>
+<li>Browse <code>/experiments/</code> — structured experiment files the agents maintain.</li>
+<li>Open <code>/learnings/</code> — the extracted learning log the Product Scientist curates.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Mixpanel, Amplitude, or Statsig (experiment results, metric data), Jira or Linear (link experiments to features).
+<strong>Recommended:</strong> Slack (post readouts to <code>#experiments</code> channel), BI tool (custom metric queries), Segment (event taxonomy alignment).</p>
+<blockquote>
+<p>Cross-reference [[competitive-intelligence]] for competitor product changes that may confound experiment results.</p>
+</blockquote>
+<h2>Every artifact is a file</h2>
+<p>Every experiment is a structured markdown file in <code>/experiments/&#x3C;slug>.md</code>. Readouts are written there first; the webapp renders from the file. The experiment library in <code>/learnings/</code> is the institutional memory.</p>2e:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$35"}}]}]]}]
+2f:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L36",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set experiment-review","label":"Install"}]}]}]]}]
+30:["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}]
+31:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+32:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+33:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+34:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+16:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+37:I[27201,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"IconMark"]
+13:null
+18:[["$","title","0",{"children":"Experiment Review template | Cabinet"}],["$","meta","1",{"name":"description","content":"Tracks experiment hypotheses, variants, metrics, statistical results, and decisions in a structured log — producing a readable experiment readout with confidence intervals and a team-accessible experiment library. Keep your Amplitude and Statsig; replace the experiment results Notion doc nobody finishes writing."}],["$","meta","2",{"name":"referrer","content":"strict-origin-when-cross-origin"}],["$","link","3",{"rel":"canonical","href":"https://runcabinet.com/templates/experiment-review"}],["$","meta","4",{"property":"og:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","5",{"property":"og:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","6",{"property":"og:url","content":"https://runcabinet.com"}],["$","meta","7",{"property":"og:image","content":"https://runcabinet.com/og.png"}],["$","meta","8",{"property":"og:image:width","content":"1200"}],["$","meta","9",{"property":"og:image:height","content":"630"}],["$","meta","10",{"property":"og:image:alt","content":"Cabinet: the AI workspace your company owns, with knowledge, AI teams, and live apps in one place"}],["$","meta","11",{"property":"og:type","content":"website"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","14",{"name":"twitter:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","15",{"name":"twitter:image","content":"https://runcabinet.com/og.png"}],["$","link","16",{"rel":"icon","href":"/icon.png?icon.1p7qxwp3akyyx.png","sizes":"512x512","type":"image/png"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-icon.png?apple-icon.1q-r1s9ajzc3v.png","sizes":"180x180","type":"image/png"}],["$","$L37","18",{}]]

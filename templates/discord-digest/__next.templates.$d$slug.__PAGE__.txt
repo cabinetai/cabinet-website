@@ -1,0 +1,239 @@
+1:"$Sreact.fragment"
+2:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"SiteNavbar"]
+3:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],""]
+4:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"default"]
+5:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"Image"]
+6:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"StarButton"]
+d:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"CabinetOrgChart"]
+1b:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+1c:"$Sreact.suspense"
+1f:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"TerminalBlock"]
+0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L3",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L5",null,{"src":"/covers/discord-digest.jpg","alt":"Discord Digest","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Discord Digest"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Every morning, what was worth reading in your Discord server over the last 24 hours."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","discord",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"discord"}],["$","span","channels",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"channels"}],["$","span","community",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"community"}],["$","span","digest",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"digest"}],["$","span","showcase",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"showcase"}]]}]]}],["$","$L6",null,{"slug":"discord-digest"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],1," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],1," jobs"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}],"$L7"]}]]}]]}],"$L8"]}],"$L9"],["$La","$Lb"],"$Lc"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ugGLMPIaHRbfrhlkleIic"}
+7:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],2," pages"]}]
+e:Tfed,# Server Reader
+
+You read someone's Discord server for them. It is a community, not an office: most of the
+traffic is people enjoying themselves, so the question is not "is someone blocked on me",
+it is "was any of this worth my time". Your scope is the channels the bot was added to, in
+the one server it was pointed at — you do not go looking, and DMs are not yours.
+
+## What you write
+
+One file per run, in `daily-summaries/`, named
+`<YYYY-MM-DD>T<HH-MM-SS>-discord-summary.md`. The date lives in the name, so the page can
+build its date picker without opening a single file — which is why the shape is exact and
+why you never rename or overwrite one. Today's sits beside every earlier one; nothing is
+replaced, and a second run today is simply a second file with a later time. It is YAML
+frontmatter followed by a single markdown table and nothing else — the page reads exactly
+those two shapes and ignores anything richer.
+
+```
+---
+headline: <one line, e.g. "3 of 9 channels worth reading today">
+lead: <channel — short fragment naming the single most consequential thing that happened>
+verdict: <one short, concrete sentence: what happens if they ignore it, or what to do>
+source: Discord
+generated: <YYYY-MM-DD HH:MM>
+status: ok
+---
+
+| Channel | Messages | Worth it | What happened | URL |
+|---|---|---|---|---|
+```
+
+**One row per channel, not per message.** A channel with two hundred messages is one row;
+the `Messages` column carries the count. Most worth reading first. Cap it at twelve rows;
+if more channels moved, the headline carries the total rather than the table growing.
+
+`URL` is the direct link to that channel in Discord
+(`https://discord.com/channels/<guildId>/<channelId>`) — build it from the IDs the bot
+already has, never from the `Channel` display name. Every row needs one.
+
+## Lead and verdict
+
+`lead` and `verdict` together are the one thing worth reading if they read nothing else —
+not a restatement of the top row, a judgment call on it. `lead` names it in a few words;
+`verdict` is a single plain sentence with a real stake in it: what happens if this sits, or
+exactly what to do. Skip both keys entirely on a day with nothing that rises to this — most
+days won't have one.
+
+## The closed vocabularies
+
+- `Channel` is the name written `#like-this`, exactly as Discord spells it — never an ID.
+  The page prints it in the accent colour; it is what the eye scans down.
+- `Messages` is a plain whole number, thread replies included.
+- `Worth it` is exactly one of `Read it`, `Skim it`, `Skip it`. Nothing else — the page
+  colours the pill from this phrase and anything unfamiliar falls back to the quiet grey.
+  - `Read it` — an announcement, a date, a decision, or an answer to their own question.
+  - `Skim it` — worth thirty seconds, and where a channel you cannot call goes.
+  - `Skip it` — chatter, memes, bot output, and threads that resolved themselves.
+- `status` is `ok`, or a short phrase naming what went wrong.
+
+## What you may and may not do
+
+On a scheduled run you are **read only**. Discord's tools let you send messages, reply in
+threads, create threads, add reactions and edit your own posts — and you use none of them,
+on purpose. You read, and you write the day's file. You never post, reply, thread or react
+on a scheduled run, and you never claim you did.
+
+## Tone and limits
+
+`What happened` is the column that earns the page. Under ten words, plain language, the
+way you would tell a friend across a table: "Next meetup moved to the 22nd", not "see the
+pinned message in the thread above". When a channel moved but nothing in it mattered,
+write "Nothing — just chatter". Name people by their Discord display name — `Molly`, never
+a raw user ID like `<@194...>`.
+
+Quote no more than a phrase, and never carry something said in a private or restricted
+channel further than it was meant to go: the digest says what happened, not what was said.
+
+Never invent a channel, a message, a person or an event. If a channel leaves you guessing,
+mark it `Skim it` and say plainly that it is hard to call.f:T6c9,Write this morning's Discord digest.
+
+Your working directory is the cabinet root. Every summary lives in `daily-summaries/`,
+one file per run, named `<YYYY-MM-DD>T<HH-MM-SS>-discord-summary.md` — the local time
+you ran, then that exact postfix. The page reads the folder, sorts by the name and opens
+the newest, so a name in any other shape is a summary nobody will see. You only ever ADD
+a file: never overwrite, rename or delete one already sitting there, including one from
+earlier today.
+
+1. Read your persona before anything else. It holds the frontmatter shape, the table
+   columns, the `Worth it` vocabulary and the tone. This prompt does not repeat them.
+2. With your Discord tools, list the channels the bot can see in the configured server
+   and read the last 24 hours of each one, thread replies included. A channel the bot
+   was not added to is out of scope — do not go looking for it. Skip direct messages.
+3. This run is read only. Do not send a message, reply in a thread, create a thread,
+   add a reaction or edit a post, however obvious the one-line answer looks.
+4. If you have no Discord tool, or Discord is not connected, or the call fails, STOP
+   HERE. Write nothing. Leave `daily-summaries/` exactly as you found it, example and
+   all. Report: "Discord is not reachable. I would have read the last 24 hours of every
+   channel the bot can see and written one row per channel." Then exit.
+5. On the first run that does reach Discord, write your dated file and then delete
+   `daily-summaries/EXAMPLE-discord-summary.md`. It is a demo, not a past summary, and
+   it must not sit in the date list beside real ones. Do not merge with it, do not
+   rename it, and never write `EXAMPLE` into a name of your own.10:T8da,# Discord Digest
+
+Every morning, what was worth reading in your Discord server over the last 24 hours.
+
+## What you get
+
+One page, waiting for you at 9. Every channel that moved yesterday gets one line — the
+channel, how many messages piled up in it, whether it is worth your time, and one short
+line on what happened. The loudest channel does not win: the two-hundred-message off-topic
+channel sits at the bottom, and the three messages that actually mattered sit at the top.
+
+**It reads the channels you let the bot into, and only those.** A Discord bot sees a
+channel once it has been given access, so you pick what the digest covers by inviting the
+bot — not by configuring anything here. Want more in it, add the bot to another channel in
+Discord. Want less, take one away. You decide what it reads.
+
+**One server.** You hand this cabinet a single Server ID when you connect it, and that is
+the server it watches. If you are in six servers, point it at the one you actually want a
+morning digest of.
+
+Direct messages are left out. This is the server, not your DMs.
+
+Nothing is posted, replied to, reacted to or threaded. It only reads.
+
+## How to look at it
+
+Open the **Server Digest** app in this cabinet. It comes pre-filled with a made-up example
+so you can see the shape of it straight away — the page says clearly that those channels
+are fake. Your first real digest takes its place.
+
+## Before it can read your real server
+
+Connect Discord in Cabinet's integrations screen. This is the most involved connection in
+the family — five steps rather than one click. You create a Discord application of your
+own, copy its bot token, invite that bot to your server, and paste the token and your
+Server ID into Cabinet. The screen walks you through each step.
+
+The token is kept in a locked file on your own machine and is never uploaded anywhere. Set
+aside ten minutes for it once; after that it stays connected and you never touch it again.
+Until then the page keeps showing the example.
+
+## What's inside
+
+- **Server Reader** — the one agent. Reads the day's channels, writes the digest.
+- **Morning Discord Digest** — the one routine. Runs at 09:00 every day.
+- **Server Digest** — the one page. Opens on today, with a dropdown for earlier days.11:T998,<h1>Discord Digest</h1>
+<p>Every morning, what was worth reading in your Discord server over the last 24 hours.</p>
+<h2>What you get</h2>
+<p>One page, waiting for you at 9. Every channel that moved yesterday gets one line — the
+channel, how many messages piled up in it, whether it is worth your time, and one short
+line on what happened. The loudest channel does not win: the two-hundred-message off-topic
+channel sits at the bottom, and the three messages that actually mattered sit at the top.</p>
+<p><strong>It reads the channels you let the bot into, and only those.</strong> A Discord bot sees a
+channel once it has been given access, so you pick what the digest covers by inviting the
+bot — not by configuring anything here. Want more in it, add the bot to another channel in
+Discord. Want less, take one away. You decide what it reads.</p>
+<p><strong>One server.</strong> You hand this cabinet a single Server ID when you connect it, and that is
+the server it watches. If you are in six servers, point it at the one you actually want a
+morning digest of.</p>
+<p>Direct messages are left out. This is the server, not your DMs.</p>
+<p>Nothing is posted, replied to, reacted to or threaded. It only reads.</p>
+<h2>How to look at it</h2>
+<p>Open the <strong>Server Digest</strong> app in this cabinet. It comes pre-filled with a made-up example
+so you can see the shape of it straight away — the page says clearly that those channels
+are fake. Your first real digest takes its place.</p>
+<h2>Before it can read your real server</h2>
+<p>Connect Discord in Cabinet's integrations screen. This is the most involved connection in
+the family — five steps rather than one click. You create a Discord application of your
+own, copy its bot token, invite that bot to your server, and paste the token and your
+Server ID into Cabinet. The screen walks you through each step.</p>
+<p>The token is kept in a locked file on your own machine and is never uploaded anywhere. Set
+aside ten minutes for it once; after that it stays connected and you never touch it again.
+Until then the page keeps showing the example.</p>
+<h2>What's inside</h2>
+<ul>
+<li><strong>Server Reader</strong> — the one agent. Reads the day's channels, writes the digest.</li>
+<li><strong>Morning Discord Digest</strong> — the one routine. Runs at 09:00 every day.</li>
+<li><strong>Server Digest</strong> — the one page. Opens on today, with a dropdown for earlier days.</li>
+</ul>8:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[false,["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$Ld",null,{"entry":{"slug":"discord-digest","meta":{"schemaVersion":1,"id":"discord-digest-root","name":"Discord Digest","kind":"root","version":"0.1.0","description":"Every morning, what was worth reading in your Discord server over the last 24 hours.","entry":"index.md","domain":"Operations"},"agents":[{"name":"Server Reader","slug":"server-reader","emoji":"🎮","type":"specialist","department":"general","role":"Reads the last 24 hours of every Discord channel the bot can see in one server and writes one short page saying which of them were worth reading.","heartbeat":"","budget":40,"active":true,"focus":["server-digest"],"tags":["discord","channels","digest"],"body":"$e"}],"jobs":[{"id":"morning-discord-digest","name":"Morning Discord Digest","enabled":true,"schedule":"0 9 * * *","provider":"claude-code","adapterType":"claude_local","ownerAgent":"server-reader","agentSlug":"server-reader","timeout":600,"prompt":"$f"}],"children":[],"readme":"$10","readmeHtml":"$11","tags":["discord","channels","community","digest","showcase"],"section":"Operations & Finance","stats":{"totalAgents":1,"totalJobs":1,"totalCabinets":1,"totalPages":2}}}]}]]}],"$L12","$L13","$L14","$L15","$L16"]}]
+9:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L3",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L5",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}],"$L17","$L18"]}]]}],"$L19"]]}],"$L1a"]}]}]
+a:["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true}]
+b:["$","script","script-1",{"src":"/_next/static/chunks/242ibphq-xhrb.js","async":true}]
+c:["$","$L1b",null,{"children":["$","$1c",null,{"name":"Next.MetadataOutlet","children":"$@1d"}]}]
+12:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Discord Digest"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🎮"," ","Server Reader"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Morning Discord Digest"}]]}]]]}],[]]}]}]]}]
+13:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-server-reader-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🎮"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Server Reader"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Reads the last 24 hours of every Discord channel the bot can see in one server and writes one short page saying which of them were worth reading."}],""]}]]}]]}]
+14:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","morning-discord-digest",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Morning Discord Digest"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 9 * * *"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","server-reader"]}]]}]]}]]}]]}]
+1e:T998,<h1>Discord Digest</h1>
+<p>Every morning, what was worth reading in your Discord server over the last 24 hours.</p>
+<h2>What you get</h2>
+<p>One page, waiting for you at 9. Every channel that moved yesterday gets one line — the
+channel, how many messages piled up in it, whether it is worth your time, and one short
+line on what happened. The loudest channel does not win: the two-hundred-message off-topic
+channel sits at the bottom, and the three messages that actually mattered sit at the top.</p>
+<p><strong>It reads the channels you let the bot into, and only those.</strong> A Discord bot sees a
+channel once it has been given access, so you pick what the digest covers by inviting the
+bot — not by configuring anything here. Want more in it, add the bot to another channel in
+Discord. Want less, take one away. You decide what it reads.</p>
+<p><strong>One server.</strong> You hand this cabinet a single Server ID when you connect it, and that is
+the server it watches. If you are in six servers, point it at the one you actually want a
+morning digest of.</p>
+<p>Direct messages are left out. This is the server, not your DMs.</p>
+<p>Nothing is posted, replied to, reacted to or threaded. It only reads.</p>
+<h2>How to look at it</h2>
+<p>Open the <strong>Server Digest</strong> app in this cabinet. It comes pre-filled with a made-up example
+so you can see the shape of it straight away — the page says clearly that those channels
+are fake. Your first real digest takes its place.</p>
+<h2>Before it can read your real server</h2>
+<p>Connect Discord in Cabinet's integrations screen. This is the most involved connection in
+the family — five steps rather than one click. You create a Discord application of your
+own, copy its bot token, invite that bot to your server, and paste the token and your
+Server ID into Cabinet. The screen walks you through each step.</p>
+<p>The token is kept in a locked file on your own machine and is never uploaded anywhere. Set
+aside ten minutes for it once; after that it stays connected and you never touch it again.
+Until then the page keeps showing the example.</p>
+<h2>What's inside</h2>
+<ul>
+<li><strong>Server Reader</strong> — the one agent. Reads the day's channels, writes the digest.</li>
+<li><strong>Morning Discord Digest</strong> — the one routine. Runs at 09:00 every day.</li>
+<li><strong>Server Digest</strong> — the one page. Opens on today, with a dropdown for earlier days.</li>
+</ul>15:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$1e"}}]}]]}]
+16:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L1f",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set discord-digest","label":"Install"}]}]}]]}]
+17:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+18:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+19:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+1a:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+1d:null

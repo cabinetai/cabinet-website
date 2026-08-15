@@ -1,0 +1,256 @@
+1:"$Sreact.fragment"
+2:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"SiteNavbar"]
+3:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],""]
+4:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"default"]
+5:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"Image"]
+6:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"StarButton"]
+d:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"CabinetOrgChart"]
+1b:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+1c:"$Sreact.suspense"
+1f:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"TerminalBlock"]
+0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L3",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L5",null,{"src":"/covers/gitlab-dev-brief.jpg","alt":"GitLab Dev Brief","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"GitLab Dev Brief"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Every morning, what you shipped and what's waiting on you across GitLab in the last 24 hours."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","gitlab",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"gitlab"}],["$","span","commits",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"commits"}],["$","span","merge-requests",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"merge-requests"}],["$","span","issues",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"issues"}],["$","span","showcase",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"showcase"}]]}]]}],["$","$L6",null,{"slug":"gitlab-dev-brief"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],1," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],1," jobs"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}],"$L7"]}]]}]]}],"$L8"]}],"$L9"],["$La","$Lb"],"$Lc"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ugGLMPIaHRbfrhlkleIic"}
+7:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],2," pages"]}]
+e:T12a7,# GitLab Briefer
+
+You tell someone where their own work stands before they open GitLab. It is spread across
+several projects and three kinds of thing — commits, merge requests, issues — and by 9am
+they want one answer: what did I get done, and what is still on me. Their own activity only.
+
+## What you write
+
+One file per run, in `daily-summaries/`, named
+`<YYYY-MM-DD>T<HH-MM-SS>-gitlab-summary.md`. The date lives in the name, so the page can
+build its date picker without opening a single file — which is why the shape is exact and
+why you never rename or overwrite one. Today's sits beside every earlier one; nothing is
+replaced, and a second run today is simply a second file with a later time. It is YAML
+frontmatter followed by a single markdown table and nothing else — the page reads exactly
+those two shapes and ignores anything richer.
+
+```
+---
+headline: <one line, e.g. "3 of 6 things are waiting on you">
+lead: <project · kind — short fragment, the single most consequential item>
+verdict: <one short, concrete sentence: what happens if it sits, or exactly what to do>
+source: GitLab
+generated: <YYYY-MM-DD HH:MM>
+status: ok
+---
+
+## Quick wins
+- <something they can clear in under a minute, phrased as the action itself>
+
+| Project | Kind | What | State | URL |
+|---|---|---|---|---|
+```
+
+**One row per item.** **Most actionable first:** a broken pipeline, then everything waiting
+on the user, then everything waiting on someone else, then everything already finished. Cap
+the table at twelve rows; if more moved, the headline carries the total.
+
+`URL` is the item's own GitLab link — the `web_url` the API already gives you for an MR,
+issue or commit. Never build one by hand. Every row needs one.
+
+## Lead and verdict
+
+`lead` and `verdict` together are the one thing worth reading if they read nothing else —
+not a restatement of the top row, a judgment call on it. `lead` names it in a few words;
+`verdict` is a single plain sentence with a real stake in it: what happens if this sits, or
+exactly what to do. Skip both keys entirely on a day with nothing that rises to this — most
+days won't have one.
+
+## Quick wins
+
+Zero to three bullets, most useful first, each doable in under a minute: an approve, a
+re-run, a one-line nudge. Phrase each as the action, not the situation. Drop the `## Quick
+wins` heading and list entirely on a day with nothing that qualifies — don't pad it with
+busywork.
+
+## The closed vocabularies
+
+- `Project` is the short project name — `checkout`, not `acme-inc/platform/checkout` and
+  never a URL, and the full path only when two projects in the table share a short name.
+  The page prints this column in the accent colour; it is what the eye scans down.
+- `Kind` is exactly one of `Commit`, `MR`, `Issue`. Never `PR` — GitLab's word is merge
+  request, and you use GitLab's words.
+- `What` is your own line, under ten words, plain language, saying what the change does, or
+  for an issue what it is about. Never the commit message pasted back, never a SHA: "Fixed
+  the login redirect", not "fix: LOGIN-241 redirect handling (!442)".
+- `State` answers "is this on me?" and is one of `Pipeline failed` (their merge request or
+  commit went red in CI), `Needs review` (a merge request waits on the user's review),
+  `Open` (an issue assigned to them, or opened by them and still theirs), `Waiting on them`
+  (their merge request or issue is with someone else now), `Merged`, and `Done` (a commit
+  landed, or an issue closed). Nothing else — the page pills this column red for the broken
+  build, amber for the two on the user, grey for everything else including the unfamiliar.
+- `status` is `ok` or a short phrase naming what went wrong; `pending` appears only on the
+  shipped example, never in a brief of your own.
+
+## Read only, and what to do when GitLab is not there
+
+On a scheduled run you are **read only** — a choice, not a limit. GitLab's tools let you
+comment on and review issues and merge requests; you use none of them. You read, you write
+the day's file, and you never comment, open, close, merge, approve or assign, or say you did.
+
+If you have no GitLab tool, or GitLab is not connected, or a call fails, **write nothing at
+all**: name GitLab, say you would have read the last 24 hours of their own commits, merge
+requests and issues, leave `daily-summaries/` exactly as found — example and all — and exit.
+The first run that does reach GitLab writes its own dated file and deletes the example.
+
+## Tone and limits
+
+Short sentences, in the user's words. Keep every cell readable at a glance, name people by
+their GitLab display name and never an email address, and never invent a project, a merge
+request, an issue, a reviewer or a commit. When in doubt about a state, use `Open`.f:T5c3,Write this morning's GitLab brief.
+
+Your working directory is the cabinet root. Every summary lives in `daily-summaries/`,
+one file per run, named `<YYYY-MM-DD>T<HH-MM-SS>-gitlab-summary.md` — the local time you
+ran, then that exact postfix. The page reads the folder, sorts by the name and opens the
+newest, so a name in any other shape is a summary nobody will see. You only ever ADD a
+file: never overwrite, rename or delete one already sitting there, including one from
+earlier today.
+
+1. Read your persona before anything else. It holds the frontmatter shape, the table
+   columns, the `Kind` and `State` vocabularies, the ordering, the read-only rule, the
+   stop rule for when GitLab is not there, and the tone. This prompt repeats none of them.
+2. With your GitLab tools, find the user's own activity in the last 24 hours across every
+   project they touch: their commits, the merge requests they opened or updated, the
+   merge requests waiting on their review, and the issues they opened or are assigned.
+   Not a feed of everything that happened in a project.
+3. Check the pipeline on anything of theirs still in flight, so a red build turns up as a
+   state this morning rather than as a surprise this afternoon.
+4. Open each one only far enough to say in one short line what it does. Read file
+   contents and project metadata when a title is too thin to be useful, no further.
+5. If GitLab is not reachable, follow the stop rule in your persona to the letter.10:T998,# GitLab Dev Brief
+
+Every morning, what you shipped and what's waiting on you across GitLab in the last 24 hours.
+
+## What you get
+
+One page, waiting for you at 9. Everything with your name on it from yesterday gets one
+line — the project, whether it is a commit, a merge request or an issue, what it actually
+does in plain words, and where it stands. The things sitting on you sit at the top: a build
+that went red overnight, a review someone is waiting for, an issue nobody else will pick
+up. What already merged is further down, so you can see you got something done.
+
+**Your work, not the whole project.** Not a firehose of every push: your commits, your merge
+requests, the ones waiting on your review, and the issues you opened or were assigned —
+across every project you touch, so a quiet side project turns up on the morning it needs you.
+
+Nothing is commented on, opened, closed, approved or merged. It only reads.
+
+## How to look at it
+
+Open the **GitLab Brief** app in this cabinet. It comes pre-filled with a made-up example
+so you can see the shape of it straight away, and says clearly that those projects are fake.
+
+## An honest warning about GitLab specifically
+
+**This template does not work end to end yet, and that is deliberate.**
+
+The GitLab connector itself is finished and works. What hasn't happened is the switch being
+flipped: GitLab's card is still greyed out in Cabinet's integrations screen, so there is
+nothing for you to connect to yet. This cabinet is written as though there were, and waits.
+
+So what actually happens when you install it:
+
+- It installs cleanly. Nothing errors, nothing breaks.
+- The 9am routine runs, finds there is no GitLab to read, says so, writes nothing at all,
+  and leaves the example alone rather than wiping it.
+- The example brief stays on screen until the card is switched on.
+
+When it is switched on, connecting is bring-your-own: you point Cabinet at your own GitLab —
+your company's server, or gitlab.com — and this page starts filling in by itself.
+
+If you want this exact brief reading live data today, install **GitHub Dev Brief** instead.
+It is the same page for the other forge, and GitHub can be connected right now.
+
+## What's inside
+
+- **GitLab Briefer** — the one agent. Reads yesterday's work, writes the brief.
+- **Morning GitLab Brief** — the one routine. Runs at 09:00 every day.
+- **GitLab Brief** — the one page. Opens on today, with a dropdown for earlier days.11:Ta86,<h1>GitLab Dev Brief</h1>
+<p>Every morning, what you shipped and what's waiting on you across GitLab in the last 24 hours.</p>
+<h2>What you get</h2>
+<p>One page, waiting for you at 9. Everything with your name on it from yesterday gets one
+line — the project, whether it is a commit, a merge request or an issue, what it actually
+does in plain words, and where it stands. The things sitting on you sit at the top: a build
+that went red overnight, a review someone is waiting for, an issue nobody else will pick
+up. What already merged is further down, so you can see you got something done.</p>
+<p><strong>Your work, not the whole project.</strong> Not a firehose of every push: your commits, your merge
+requests, the ones waiting on your review, and the issues you opened or were assigned —
+across every project you touch, so a quiet side project turns up on the morning it needs you.</p>
+<p>Nothing is commented on, opened, closed, approved or merged. It only reads.</p>
+<h2>How to look at it</h2>
+<p>Open the <strong>GitLab Brief</strong> app in this cabinet. It comes pre-filled with a made-up example
+so you can see the shape of it straight away, and says clearly that those projects are fake.</p>
+<h2>An honest warning about GitLab specifically</h2>
+<p><strong>This template does not work end to end yet, and that is deliberate.</strong></p>
+<p>The GitLab connector itself is finished and works. What hasn't happened is the switch being
+flipped: GitLab's card is still greyed out in Cabinet's integrations screen, so there is
+nothing for you to connect to yet. This cabinet is written as though there were, and waits.</p>
+<p>So what actually happens when you install it:</p>
+<ul>
+<li>It installs cleanly. Nothing errors, nothing breaks.</li>
+<li>The 9am routine runs, finds there is no GitLab to read, says so, writes nothing at all,
+and leaves the example alone rather than wiping it.</li>
+<li>The example brief stays on screen until the card is switched on.</li>
+</ul>
+<p>When it is switched on, connecting is bring-your-own: you point Cabinet at your own GitLab —
+your company's server, or gitlab.com — and this page starts filling in by itself.</p>
+<p>If you want this exact brief reading live data today, install <strong>GitHub Dev Brief</strong> instead.
+It is the same page for the other forge, and GitHub can be connected right now.</p>
+<h2>What's inside</h2>
+<ul>
+<li><strong>GitLab Briefer</strong> — the one agent. Reads yesterday's work, writes the brief.</li>
+<li><strong>Morning GitLab Brief</strong> — the one routine. Runs at 09:00 every day.</li>
+<li><strong>GitLab Brief</strong> — the one page. Opens on today, with a dropdown for earlier days.</li>
+</ul>8:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[false,["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$Ld",null,{"entry":{"slug":"gitlab-dev-brief","meta":{"schemaVersion":1,"id":"gitlab-dev-brief-root","name":"GitLab Dev Brief","kind":"root","version":"0.1.0","description":"Every morning, what you shipped and what's waiting on you across GitLab in the last 24 hours.","entry":"index.md","domain":"Operations"},"agents":[{"name":"GitLab Briefer","slug":"gitlab-briefer","emoji":"🦊","type":"specialist","department":"general","role":"Reads the last 24 hours of the user's own GitLab work and writes one short page saying what they shipped and what is still sitting on them.","heartbeat":"","budget":40,"active":true,"focus":["gitlab-brief"],"tags":["gitlab","merge-requests","issues"],"body":"$e"}],"jobs":[{"id":"morning-gitlab-brief","name":"Morning GitLab Brief","enabled":true,"schedule":"0 9 * * *","provider":"claude-code","adapterType":"claude_local","ownerAgent":"gitlab-briefer","agentSlug":"gitlab-briefer","timeout":600,"prompt":"$f"}],"children":[],"readme":"$10","readmeHtml":"$11","tags":["gitlab","commits","merge-requests","issues","showcase"],"section":"Operations & Finance","stats":{"totalAgents":1,"totalJobs":1,"totalCabinets":1,"totalPages":2}}}]}]]}],"$L12","$L13","$L14","$L15","$L16"]}]
+9:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L3",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L5",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}],"$L17","$L18"]}]]}],"$L19"]]}],"$L1a"]}]}]
+a:["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true}]
+b:["$","script","script-1",{"src":"/_next/static/chunks/242ibphq-xhrb.js","async":true}]
+c:["$","$L1b",null,{"children":["$","$1c",null,{"name":"Next.MetadataOutlet","children":"$@1d"}]}]
+12:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"GitLab Dev Brief"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🦊"," ","GitLab Briefer"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Morning GitLab Brief"}]]}]]]}],[]]}]}]]}]
+13:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-gitlab-briefer-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🦊"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"GitLab Briefer"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Reads the last 24 hours of the user's own GitLab work and writes one short page saying what they shipped and what is still sitting on them."}],""]}]]}]]}]
+14:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","morning-gitlab-brief",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Morning GitLab Brief"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 9 * * *"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","gitlab-briefer"]}]]}]]}]]}]]}]
+1e:Ta86,<h1>GitLab Dev Brief</h1>
+<p>Every morning, what you shipped and what's waiting on you across GitLab in the last 24 hours.</p>
+<h2>What you get</h2>
+<p>One page, waiting for you at 9. Everything with your name on it from yesterday gets one
+line — the project, whether it is a commit, a merge request or an issue, what it actually
+does in plain words, and where it stands. The things sitting on you sit at the top: a build
+that went red overnight, a review someone is waiting for, an issue nobody else will pick
+up. What already merged is further down, so you can see you got something done.</p>
+<p><strong>Your work, not the whole project.</strong> Not a firehose of every push: your commits, your merge
+requests, the ones waiting on your review, and the issues you opened or were assigned —
+across every project you touch, so a quiet side project turns up on the morning it needs you.</p>
+<p>Nothing is commented on, opened, closed, approved or merged. It only reads.</p>
+<h2>How to look at it</h2>
+<p>Open the <strong>GitLab Brief</strong> app in this cabinet. It comes pre-filled with a made-up example
+so you can see the shape of it straight away, and says clearly that those projects are fake.</p>
+<h2>An honest warning about GitLab specifically</h2>
+<p><strong>This template does not work end to end yet, and that is deliberate.</strong></p>
+<p>The GitLab connector itself is finished and works. What hasn't happened is the switch being
+flipped: GitLab's card is still greyed out in Cabinet's integrations screen, so there is
+nothing for you to connect to yet. This cabinet is written as though there were, and waits.</p>
+<p>So what actually happens when you install it:</p>
+<ul>
+<li>It installs cleanly. Nothing errors, nothing breaks.</li>
+<li>The 9am routine runs, finds there is no GitLab to read, says so, writes nothing at all,
+and leaves the example alone rather than wiping it.</li>
+<li>The example brief stays on screen until the card is switched on.</li>
+</ul>
+<p>When it is switched on, connecting is bring-your-own: you point Cabinet at your own GitLab —
+your company's server, or gitlab.com — and this page starts filling in by itself.</p>
+<p>If you want this exact brief reading live data today, install <strong>GitHub Dev Brief</strong> instead.
+It is the same page for the other forge, and GitHub can be connected right now.</p>
+<h2>What's inside</h2>
+<ul>
+<li><strong>GitLab Briefer</strong> — the one agent. Reads yesterday's work, writes the brief.</li>
+<li><strong>Morning GitLab Brief</strong> — the one routine. Runs at 09:00 every day.</li>
+<li><strong>GitLab Brief</strong> — the one page. Opens on today, with a dropdown for earlier days.</li>
+</ul>15:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$1e"}}]}]]}]
+16:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L1f",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set gitlab-dev-brief","label":"Install"}]}]}]]}]
+17:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+18:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+19:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+1a:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+1d:null

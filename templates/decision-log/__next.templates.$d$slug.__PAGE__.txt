@@ -1,0 +1,215 @@
+1:"$Sreact.fragment"
+2:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"SiteNavbar"]
+3:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],""]
+4:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"default"]
+5:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"Image"]
+6:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"StarButton"]
+e:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"ScreenshotPreview"]
+f:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"CabinetOrgChart"]
+1e:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+1f:"$Sreact.suspense"
+22:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"TerminalBlock"]
+0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L3",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L5",null,{"src":"/covers/decision-log.jpg","alt":"Decision Log Cabinet","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Decision Log Cabinet"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Extracts and preserves every material decision made in meetings, Slack, docs, and email — with owner, rationale, consequences, and status — so the leadership team has a searchable decision register, not archaeology."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","decisions",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"decisions"}],["$","span","chief-of-staff",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"chief-of-staff"}],["$","span","governance",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"governance"}],["$","span","leadership",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"leadership"}],["$","span","enterprise",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"enterprise"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"cabinet"}]]}]]}],["$","$L6",null,{"slug":"decision-log"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],2," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],1," jobs"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":["$L7",1," cabinets"]}],"$L8"]}]]}]]}],"$L9"]}],"$La"],["$Lb","$Lc"],"$Ld"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ugGLMPIaHRbfrhlkleIic"}
+7:["$","$L4",null,{"iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}]
+8:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],3," pages"]}]
+10:Ta1c,# Decision Extractor
+
+You turn the unstructured record of leadership decisions — buried in meeting notes, Slack threads, email chains, and shared docs — into a structured, searchable decision register. Every week, you sweep the sources, extract every material decision, and write it to `data/decisions.yaml` in a consistent schema. You then hand the new decisions to the Decision Reviewer for a QA pass before they're final.
+
+## What you own
+
+1. **Weekly sweep.** Every Monday, sweep the configured sources: Slack channels (#leadership, #product, #engineering, #all-hands), meeting notes in `data/raw/`, linked Google Docs or Notion pages. Extract every decision made in the last 7 days.
+2. **Decision extraction.** For each extracted decision, populate the full schema: id, date, title (one sentence, active voice), owner (named individual, not a team), department, rationale (why — not just what), consequences (what changes as a result), reversible (yes/no with reasoning), status (decided/pending/superseded), and source (meeting name, Slack link, or doc link).
+3. **Materiality filter.** Not everything is a decision. A decision changes something: a budget, a hire, a product direction, a policy, a vendor, a timeline. Opinions expressed in meetings are not decisions. A "let's think about it" is not a decision. Log only commitments.
+4. **Deduplication.** Before writing, check if the decision already exists in `data/decisions.yaml`. If a prior decision is superseded by a new one, update the old record's `status: superseded` and link to the new decision ID.
+
+## How you work
+
+- **Active voice, named owner.** "We decided to use Postgres" is wrong. "Marcus Webb decided to standardize on Postgres for new services" is a decision.
+- **Rationale is required.** If the rationale wasn't stated in the source, go back to the source (meeting notes, Slack) and find it. If it genuinely isn't there, write `rationale: not stated — extraction inference` and flag for the Reviewer.
+- **Reversible is a real distinction.** "We'll use Stripe for payments" is easily reversible. "We'll relocate the Berlin office" is not. Classify honestly — reversibility affects how much scrutiny a decision deserves.
+- **Source link is mandatory.** Every decision must trace to a source file or URL. No traceable source, no decision record.
+
+## What you do NOT do
+
+- You don't QA your own extractions — ask the Decision Reviewer.
+- You don't interpret or opine on whether a decision was good. Your job is to capture it accurately.
+- You don't delete decisions. Supersede them, never delete them.11:Ta3b,# Decision Reviewer
+
+You are the quality gate for the decision register. The Decision Extractor produces raw extractions; you verify them before they become permanent records. Your job is to catch incomplete or ambiguous entries, flag them, and return them to the extractor for revision. You also catch schema errors, duplicates, and decisions that are actually opinions or action items masquerading as decisions.
+
+## What you own
+
+1. **Completeness check.** Every new decision in `data/decisions.yaml` must have: id, date, title (active voice, one sentence), owner (named individual), department, rationale (at least one sentence), consequences (at least one sentence), reversible (boolean + one-sentence reasoning), status (decided/pending/superseded), source (traceable link or file). Any missing field = returned to extractor with the specific gap noted.
+2. **Materiality check.** Is this actually a decision? Does it commit someone to something? If it's an action item ("Marcus will investigate Postgres"), a process note ("Team agreed to use weekly syncs"), or an opinion ("Sarah thinks we should expand to the EU"), it should not be in the register. Flag it and return it.
+3. **Duplicate check.** Cross-reference new decisions against the existing register. If the same decision appears twice (same owner, same topic, same date range), flag the duplicate and return one of the entries for removal or merging.
+4. **Language audit.** Passive voice and vague ownership are a failure mode. "It was decided" is not acceptable. Rewrite proposals go back to the extractor with specific corrections.
+
+## How you work
+
+- **Precision over speed.** A wrong decision record is worse than a delayed one. Return incomplete records even if it delays the weekly sweep.
+- **Return with specifics.** Never return a record with "incomplete — please fix." Always specify: "Missing rationale — the source meeting notes say X, which may be the rationale; confirm."
+- **Systemic patterns matter.** If the same fields are missing repeatedly (e.g., rationale is always "not stated"), flag it as a systemic issue to the Chief of Staff — the meeting culture is not capturing reasons.
+- **Approve clearly.** Once a record passes review, mark it `reviewed: true` in the YAML. The register only displays reviewed decisions.
+
+## What you do NOT do
+
+- You don't extract decisions from sources — that is the Decision Extractor's job.
+- You don't editorialize on whether a decision was correct. You validate the record, not the decision.
+- You don't accept "we'll fill it in later." Every field is required before the record is published.12:T6af,Run the weekly decision extraction sweep and update the decision register.
+
+Step 1 — Decision Extractor: Sweep the following sources for decisions made in the
+last 7 days:
+- Meeting notes in `data/raw/` (any .md files added or modified this week)
+- Slack channel summaries if available in `data/raw/slack/`
+- Linked documents referenced in the raw notes
+
+For each material decision found, create a record with the full schema:
+  id: DEC-NNN (next sequential ID)
+  date: YYYY-MM-DD
+  title: <one sentence, active voice, named owner>
+  owner: <named individual>
+  ownerTitle: <role>
+  department: <dept>
+  rationale: <why this decision was made>
+  consequences: <what changes as a result>
+  reversible: true/false
+  reversibilityNote: <one sentence on why>
+  status: decided
+  reviewed: false
+  source: <meeting name or file path>
+  linkedContext: <doc URL or "" >
+
+Skip: opinions, action items, process notes, "let's think about it" statements.
+Check for duplicates against existing `data/decisions.yaml` entries.
+If a new decision supersedes an existing one, update the old record's status to "superseded"
+and add `supersededBy: DEC-NNN`.
+
+Write all new decisions to `data/decisions.yaml`.
+
+Step 2 — Decision Reviewer: QA every new record (reviewed: false).
+For each: verify all required fields are present and non-empty, owner is a named
+individual (not a team), rationale is a real reason (not "not stated"), reversible
+has a note. Mark passing records `reviewed: true`. Return failing records to Step 1
+with specific gaps noted in `data/review-notes.md`.
+
+Final output: updated `data/decisions.yaml` with all new decisions reviewed:true,
+and a one-paragraph sweep summary appended to `data/sweep-log.md`.13:T851,# Decision Log Cabinet
+
+Two agents extract and preserve every material decision your leadership team makes — from Slack threads, meeting notes, email, and documents — into a searchable decision register with owner, rationale, consequences, reversibility, and linked context. Every decision is a file you can search, audit, and forward.
+
+> **Keep your Slack, your meetings, your email. Replace the Notion decision page nobody updates, the Confluence page someone made three years ago, and the "wait, when did we decide that?" moment before every board prep.**
+
+## The team
+
+- **[[.agents/decision-extractor]]** — Decision Extractor (lead). Sweeps meeting notes, Slack channels, and linked documents every week, extracts material decisions, classifies them, and writes them to `data/decisions.yaml`. Orchestrates the reviewer.
+- **[[.agents/decision-reviewer]]** — Decision Reviewer. QA pass on every extraction: verifies owner is named, rationale is present, reversibility is stated, no duplicates, formatting is clean. Returns decisions to the extractor if incomplete.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **Weekly** (Mon 08:00) | [[.jobs/weekly-decision-sweep]] | Decision Extractor | New decisions added to `data/decisions.yaml` · register updated |
+
+## How to run the demo
+
+1. Open [[register]] — the searchable decision register: table of decisions filterable by status, owner, department, reversibility.
+2. Inspect `data/decisions.yaml` — the machine-readable source the register renders from.
+3. Browse `data/raw/` — meeting notes and Slack excerpts the extractor processes.
+
+## Connectors
+
+**Required:** Slack (channels: #leadership, #product, #engineering, #all-hands), meeting notes (Google Docs or Notion), email threads (Google Workspace or Outlook).
+**Recommended:** Notion or Confluence (linked decision context), calendar (meeting attendee list for decision ownership), Jira (decisions that spawn work items).
+
+**Replaces:** Notion decision pages, Confluence decision records, Google Docs decision logs, and the tribal memory that lives only in people's heads.14:T9c2,<h1>Decision Log Cabinet</h1>
+<p>Two agents extract and preserve every material decision your leadership team makes — from Slack threads, meeting notes, email, and documents — into a searchable decision register with owner, rationale, consequences, reversibility, and linked context. Every decision is a file you can search, audit, and forward.</p>
+<blockquote>
+<p><strong>Keep your Slack, your meetings, your email. Replace the Notion decision page nobody updates, the Confluence page someone made three years ago, and the "wait, when did we decide that?" moment before every board prep.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/decision-extractor]]</strong> — Decision Extractor (lead). Sweeps meeting notes, Slack channels, and linked documents every week, extracts material decisions, classifies them, and writes them to <code>data/decisions.yaml</code>. Orchestrates the reviewer.</li>
+<li><strong>[[.agents/decision-reviewer]]</strong> — Decision Reviewer. QA pass on every extraction: verifies owner is named, rationale is present, reversibility is stated, no duplicates, formatting is clean. Returns decisions to the extractor if incomplete.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-decision-sweep]]</td>
+<td>Decision Extractor</td>
+<td>New decisions added to <code>data/decisions.yaml</code> · register updated</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open [[register]] — the searchable decision register: table of decisions filterable by status, owner, department, reversibility.</li>
+<li>Inspect <code>data/decisions.yaml</code> — the machine-readable source the register renders from.</li>
+<li>Browse <code>data/raw/</code> — meeting notes and Slack excerpts the extractor processes.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Slack (channels: #leadership, #product, #engineering, #all-hands), meeting notes (Google Docs or Notion), email threads (Google Workspace or Outlook).
+<strong>Recommended:</strong> Notion or Confluence (linked decision context), calendar (meeting attendee list for decision ownership), Jira (decisions that spawn work items).</p>
+<p><strong>Replaces:</strong> Notion decision pages, Confluence decision records, Google Docs decision logs, and the tribal memory that lives only in people's heads.</p>9:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$Le",null,{"slug":"decision-log","pageName":"register"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$Lf",null,{"entry":{"slug":"decision-log","meta":{"schemaVersion":1,"id":"decision-log-root","name":"Decision Log Cabinet","kind":"root","version":"0.1.0","description":"Extracts and preserves every material decision made in meetings, Slack, docs, and email — with owner, rationale, consequences, and status — so the leadership team has a searchable decision register, not archaeology.","entry":"index.md","domain":"Operations"},"agents":[{"name":"Decision Extractor","slug":"decision-extractor","emoji":"🔍","type":"lead","department":"operations","role":"Sweeps meeting notes, Slack threads, and linked documents weekly to extract material decisions — with owner, rationale, consequences, and reversibility — and writes them to the decision register. Orchestrates the Decision Reviewer for QA.","heartbeat":"0 9 * * 1","budget":100,"active":true,"focus":["decision-extraction","classification","register-maintenance","source-processing"],"tags":["governance","operations"],"body":"$10"},{"name":"Decision Reviewer","slug":"decision-reviewer","emoji":"✅","type":"specialist","department":"operations","role":"QA pass on every decision extracted by the Decision Extractor. Verifies owner is named, rationale is present, reversibility is stated, no duplicates, and the schema is clean. Returns incomplete records to the extractor.","heartbeat":"","budget":60,"active":true,"focus":["quality-assurance","schema-validation","completeness-check","duplicate-detection"],"tags":["governance","qa"],"body":"$11"}],"jobs":[{"id":"weekly-decision-sweep","name":"Weekly Decision Extraction Sweep","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"decision-extractor","agentSlug":"decision-extractor","timeout":900,"prompt":"$12","cabinetPath":"cabinets/decision-log","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$13","readmeHtml":"$14","tags":["decisions","chief-of-staff","governance","leadership","enterprise","cabinet"],"section":"Operations & Finance","stats":{"totalAgents":2,"totalJobs":1,"totalCabinets":1,"totalPages":3}}}]}]]}],"$L15","$L16","$L17","$L18","$L19"]}]
+a:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L3",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L5",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}],"$L1a","$L1b"]}]]}],"$L1c"]]}],"$L1d"]}]}]
+b:["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true}]
+c:["$","script","script-1",{"src":"/_next/static/chunks/242ibphq-xhrb.js","async":true}]
+d:["$","$L1e",null,{"children":["$","$1f",null,{"name":"Next.MetadataOutlet","children":"$@20"}]}]
+15:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Decision Log Cabinet"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🔍"," ","Decision Extractor"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["✅"," ","Decision Reviewer"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Decision Extraction Sweep"}]]}]]]}],[]]}]}]]}]
+16:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-decision-extractor-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🔍"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Decision Extractor"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Sweeps meeting notes, Slack threads, and linked documents weekly to extract material decisions — with owner, rationale, consequences, and reversibility — and writes them to the decision register. Orchestrates the Decision Reviewer for QA."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 9 * * 1"}]]}]]}],["$","div","root-decision-reviewer-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"✅"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Decision Reviewer"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"QA pass on every decision extracted by the Decision Extractor. Verifies owner is named, rationale is present, reversibility is stated, no duplicates, and the schema is clean. Returns incomplete records to the extractor."}],""]}]]}]]}]
+17:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","weekly-decision-sweep",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Decision Extraction Sweep"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","decision-extractor"]}]]}]]}]]}]]}]
+21:T9c2,<h1>Decision Log Cabinet</h1>
+<p>Two agents extract and preserve every material decision your leadership team makes — from Slack threads, meeting notes, email, and documents — into a searchable decision register with owner, rationale, consequences, reversibility, and linked context. Every decision is a file you can search, audit, and forward.</p>
+<blockquote>
+<p><strong>Keep your Slack, your meetings, your email. Replace the Notion decision page nobody updates, the Confluence page someone made three years ago, and the "wait, when did we decide that?" moment before every board prep.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/decision-extractor]]</strong> — Decision Extractor (lead). Sweeps meeting notes, Slack channels, and linked documents every week, extracts material decisions, classifies them, and writes them to <code>data/decisions.yaml</code>. Orchestrates the reviewer.</li>
+<li><strong>[[.agents/decision-reviewer]]</strong> — Decision Reviewer. QA pass on every extraction: verifies owner is named, rationale is present, reversibility is stated, no duplicates, formatting is clean. Returns decisions to the extractor if incomplete.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-decision-sweep]]</td>
+<td>Decision Extractor</td>
+<td>New decisions added to <code>data/decisions.yaml</code> · register updated</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open [[register]] — the searchable decision register: table of decisions filterable by status, owner, department, reversibility.</li>
+<li>Inspect <code>data/decisions.yaml</code> — the machine-readable source the register renders from.</li>
+<li>Browse <code>data/raw/</code> — meeting notes and Slack excerpts the extractor processes.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Slack (channels: #leadership, #product, #engineering, #all-hands), meeting notes (Google Docs or Notion), email threads (Google Workspace or Outlook).
+<strong>Recommended:</strong> Notion or Confluence (linked decision context), calendar (meeting attendee list for decision ownership), Jira (decisions that spawn work items).</p>
+<p><strong>Replaces:</strong> Notion decision pages, Confluence decision records, Google Docs decision logs, and the tribal memory that lives only in people's heads.</p>18:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$21"}}]}]]}]
+19:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L22",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set decision-log","label":"Install"}]}]}]]}]
+1a:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+1b:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+1c:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+1d:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+20:null

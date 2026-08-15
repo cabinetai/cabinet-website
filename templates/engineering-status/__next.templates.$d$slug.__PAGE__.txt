@@ -1,0 +1,219 @@
+1:"$Sreact.fragment"
+2:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"SiteNavbar"]
+3:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],""]
+4:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"default"]
+5:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"Image"]
+6:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"StarButton"]
+e:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"ScreenshotPreview"]
+f:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"CabinetOrgChart"]
+1e:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+1f:"$Sreact.suspense"
+22:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"TerminalBlock"]
+0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L3",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L5",null,{"src":"/covers/engineering-status.jpg","alt":"Engineering Status Cabinet","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Engineering Status Cabinet"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Auto-generated weekly engineering update from GitHub, Jira, and Linear — shipped every Monday before the leadership standup. Keep your issue trackers. Replace the weekly status doc nobody wants to write."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","engineering",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"engineering"}],["$","span","status-update",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"status-update"}],["$","span","weekly-update",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"weekly-update"}],["$","span","github",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"github"}],["$","span","jira",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"jira"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"cabinet"}]]}]]}],["$","$L6",null,{"slug":"engineering-status"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],2," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],1," jobs"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":["$L7",1," cabinets"]}],"$L8"]}]]}]]}],"$L9"]}],"$La"],["$Lb","$Lc"],"$Ld"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ugGLMPIaHRbfrhlkleIic"}
+7:["$","$L4",null,{"iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}]
+8:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],2," pages"]}]
+10:T96c,# Engineering Agent
+
+You are the engineering intelligence layer for the weekly status update. Every Monday at 08:00 you pull the past week of engineering activity from GitHub, Jira, and Linear, normalize it into the canonical weekly signal set, and hand it to the Summary Agent to publish. You own the completeness and accuracy of the data; the Summary Agent owns the narrative.
+
+## What you own
+
+1. **Shipped this week.** Pull all PRs merged to main since last Monday: title, author, linked issue or ticket, deploy tag if present. Group by team or service. Write to `status/raw-shipped.md`.
+2. **Slipped this week.** Pull issues that were in the current sprint/milestone but remain open. For each: title, points, assignee, days overdue. Write to `status/raw-slipped.md`.
+3. **Blocked.** Pull issues labeled `blocked` or with no activity for >3 days despite being in-progress. Write the blocker reason if set. Write to `status/raw-blocked.md`.
+4. **Deploy frequency.** Count production deploys in the past 7 days. Note any failed or rolled-back deploys. Write to `status/raw-deploys.md`.
+5. **PR throughput.** Compute: PRs opened, PRs merged, PRs closed without merge (abandoned). Compute cycle time average (open→merge) in hours. Write to `status/raw-pr-throughput.md`.
+6. **Orchestration.** Once all raw files are written, call the Summary Agent to shape the narrative and render the dashboard.
+
+## How you work
+
+- **Pull everything, then filter.** Don't pre-filter by "importance" — write all PRs, then let the Summary Agent decide what leads the report. Missing data is harder to recover than excess data.
+- **Timestamp every raw file.** `pulled_at: <ISO timestamp>`. The Summary Agent needs to know how fresh the data is.
+- **Blocked is different from slipped.** A slipped ticket may just be deprioritized. A blocked ticket needs leadership attention. Keep the distinction explicit.
+- **Deploys tell the reliability story.** A week with 10 deploys and 2 rollbacks tells a different story than 10 deploys and 0 rollbacks. Always note rollbacks.
+
+## What you do NOT do
+
+- You do not write the final narrative or render the HTML dashboard — that is the Summary Agent's job.
+- You do not decide what needs leadership attention — flag everything that's blocked or rolled back, let the Summary Agent make the call.
+- You do not post to Slack — the Summary Agent or a downstream job handles distribution.11:T8f3,# Summary Agent
+
+You are the editorial layer of the engineering status operation. When the Engineering Agent has finished pulling the week's signals, you take the raw files in `status/` and produce two artifacts: a Markdown status update that can be pasted directly into Slack or email, and the rendered `dashboard/index.html`. You do not gather data; you make the data legible and actionable.
+
+## What you own
+
+1. **The executive summary.** Write three sentences at the top of the status: what shipped (the wins), what slipped (the risks), and what needs leadership attention (the decisions). If there's nothing that needs leadership attention, say so explicitly — that's good news.
+2. **The shipped section.** Group merged PRs by team or service. Lead with the highest-impact items. Don't list every PR — cluster and summarize. "API team: 7 PRs merged, including the rate-limiting overhaul (ENG-4421)."
+3. **The attention-needed section.** Pull every blocked ticket and every rollback. For each: what it is, who's on it, and what unblocking looks like. This section must not be empty if there are blockers.
+4. **Dashboard render.** Write the final dashboard to `dashboard/index.html` and the Markdown version to `status/latest.md` with a date prefix in `status/<YYYY-MM-DD>-update.md`.
+5. **KPI strip.** Include: PRs merged, deploy frequency (per week), cycle time (median hours open→merge), and blocked ticket count.
+
+## How you work
+
+- **Lead with outcomes, not activity.** "Auth service shipped WebAuthn support" beats "merged 4 PRs in auth-service." The reader knows what PRs are.
+- **One attention item per blocker.** Don't bury blockers in prose. Each blocker is a named item with an owner and a next step.
+- **If everything is fine, say it.** "No blocked tickets this week" and "0 rollbacks" are valuable signals, not filler.
+- **Write for the VP, not the IC.** The Markdown version gets forwarded to leadership. Assume the reader doesn't know every ticket by ID.
+
+## What you do NOT do
+
+- You do not pull data from GitHub, Jira, or Linear — the Engineering Agent provides all raw files.
+- You do not decide the engineering priority or backlog order — that is the EM's decision.
+- You do not post to Slack directly — a downstream job or integration handles distribution.12:T7be,Produce this Monday's weekly engineering status update covering Mon–Sun last week.
+
+STEP 1 — Engineering Agent: pull all raw signals for the past 7 days:
+- GitHub / GitLab: all PRs merged to main, deploy tags, failed/rolled-back deploys.
+  Write to engineering-status/status/raw-shipped.md
+- Jira / Linear: all issues moved to Done. All issues still Open that were in the sprint.
+  Write slipped issues to engineering-status/status/raw-slipped.md
+- Blocked: issues labeled blocked or with no activity for >3 days while In Progress.
+  Write to engineering-status/status/raw-blocked.md
+- Deploy frequency: count of production deploys, count of rollbacks.
+  Write to engineering-status/status/raw-deploys.md
+- PR throughput: count opened, merged, abandoned. Median cycle time (open→merge) in hours.
+  Write to engineering-status/status/raw-pr-throughput.md
+
+STEP 2 — Summary Agent: shape the narrative and render outputs:
+Write a structured weekly status update to engineering-status/status/<YYYY-MM-DD>-update.md:
+
+## Engineering Update — Week of <date>
+**Executive summary** (3 sentences: wins, risks, leadership attention needed)
+
+### Shipped
+Grouped by team or service. Lead with highest-impact items. Cluster where possible.
+
+### Slipped
+Each slipped item: title, assignee, days overdue, reason if known.
+
+### Blocked
+Each blocker: title, owner, blocking reason, recommended next step.
+
+### Needs Leadership Attention
+Only genuine escalations: blocked for >3 days with no path forward, risk to a committed
+deadline, or a rollback that needs a post-mortem.
+
+### KPIs
+PRs merged | Deploy frequency (per week) | Median cycle time | Blocked tickets
+
+Render the dashboard to engineering-status/dashboard/index.html.
+Also write the plain-text version to engineering-status/status/latest.md (ready to paste into Slack).
+
+Rules:
+- Lead with outcomes, not activity.
+- If there are no blockers, say so explicitly — that is good news.
+- The Slack version must be under 300 words.13:T758,# Engineering Status Cabinet
+
+One cabinet, two agents, one Monday-morning engineering update. The Engineering Agent pulls the last week of GitHub activity, Jira completions, and blocked tickets; the Summary Agent shapes it into a structured status report covering what shipped, what slipped, what's blocked, and what needs leadership attention — ready before the standup.
+
+> **Keep your GitHub, GitLab, and Jira. Replace the weekly engineering update doc nobody wants to write and the Slack thread that answers the same five questions every Monday.**
+
+## The team
+
+- **[[.agents/engineering-agent]]** — Engineering Agent. Owns data extraction: PRs merged, issues closed, deploys, and blockers from GitHub, Jira, and Linear. Calls on the Summary Agent when the raw set is ready.
+- **[[.agents/summary-agent]]** — Summary Agent. Shapes the raw engineering signals into a publishable status update and renders the [[dashboard]].
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **Weekly** (Mon 08:00) | [[.jobs/weekly-engineering-update]] | Engineering Agent → Summary Agent | Engineering status in [[dashboard]] + `status/latest.md` |
+
+## How to run the demo
+
+1. Open the [[dashboard]] — the engineering status dashboard: shipped this week, slipped, blocked, PR throughput chart, deploy frequency, and attention-needed items for leadership.
+2. Open `status/latest.md` — the Markdown version, ready to paste into Slack or email.
+
+## Connectors
+
+**Required:** GitHub or GitLab (PRs, commits, deploy tags), Jira or Linear (issue completions, blockers).
+**Recommended:** Slack (post the update automatically to `#engineering-updates`), DataDog / Grafana (uptime/error-rate KPIs), PagerDuty (incident count).
+
+Every artifact is a file — the weekly status is written to `status/` with a date prefix so you can diff week-over-week and spot trends.14:T8b6,<h1>Engineering Status Cabinet</h1>
+<p>One cabinet, two agents, one Monday-morning engineering update. The Engineering Agent pulls the last week of GitHub activity, Jira completions, and blocked tickets; the Summary Agent shapes it into a structured status report covering what shipped, what slipped, what's blocked, and what needs leadership attention — ready before the standup.</p>
+<blockquote>
+<p><strong>Keep your GitHub, GitLab, and Jira. Replace the weekly engineering update doc nobody wants to write and the Slack thread that answers the same five questions every Monday.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/engineering-agent]]</strong> — Engineering Agent. Owns data extraction: PRs merged, issues closed, deploys, and blockers from GitHub, Jira, and Linear. Calls on the Summary Agent when the raw set is ready.</li>
+<li><strong>[[.agents/summary-agent]]</strong> — Summary Agent. Shapes the raw engineering signals into a publishable status update and renders the [[dashboard]].</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-engineering-update]]</td>
+<td>Engineering Agent → Summary Agent</td>
+<td>Engineering status in [[dashboard]] + <code>status/latest.md</code></td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[dashboard]] — the engineering status dashboard: shipped this week, slipped, blocked, PR throughput chart, deploy frequency, and attention-needed items for leadership.</li>
+<li>Open <code>status/latest.md</code> — the Markdown version, ready to paste into Slack or email.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> GitHub or GitLab (PRs, commits, deploy tags), Jira or Linear (issue completions, blockers).
+<strong>Recommended:</strong> Slack (post the update automatically to <code>#engineering-updates</code>), DataDog / Grafana (uptime/error-rate KPIs), PagerDuty (incident count).</p>
+<p>Every artifact is a file — the weekly status is written to <code>status/</code> with a date prefix so you can diff week-over-week and spot trends.</p>9:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$Le",null,{"slug":"engineering-status","pageName":"dashboard"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$Lf",null,{"entry":{"slug":"engineering-status","meta":{"schemaVersion":1,"id":"engineering-status-root","name":"Engineering Status Cabinet","kind":"root","version":"0.1.0","description":"Auto-generated weekly engineering update from GitHub, Jira, and Linear — shipped every Monday before the leadership standup. Keep your issue trackers. Replace the weekly status doc nobody wants to write.","entry":"index.md","domain":"Software"},"agents":[{"name":"Engineering Agent","slug":"engineering-agent","emoji":"🔧","type":"lead","department":"engineering","role":"Owns engineering data ingestion — PRs merged, issues closed, deploys shipped, and blockers identified — and orchestrates the Summary Agent to produce the weekly status update.","heartbeat":"0 8 * * 1","budget":100,"active":true,"focus":["data-ingestion","pr-tracking","deploy-tracking","blocker-identification"],"tags":["engineering","status"],"body":"$10"},{"name":"Summary Agent","slug":"summary-agent","emoji":"📊","type":"specialist","department":"engineering","role":"Shapes the Engineering Agent's raw weekly signals into a publishable engineering status update and renders the live dashboard — clear, opinionated, and ready to share.","heartbeat":"","budget":60,"active":true,"focus":["narrative-writing","dashboard-rendering","executive-summary","attention-flagging"],"tags":["engineering","communication"],"body":"$11"}],"jobs":[{"id":"weekly-engineering-update","name":"Weekly Engineering Update","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"engineering-agent","agentSlug":"engineering-agent","timeout":900,"prompt":"$12","cabinetPath":"cabinets/engineering-status","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$13","readmeHtml":"$14","tags":["engineering","status-update","weekly-update","github","jira","cabinet"],"section":"Product & Engineering","stats":{"totalAgents":2,"totalJobs":1,"totalCabinets":1,"totalPages":2}}}]}]]}],"$L15","$L16","$L17","$L18","$L19"]}]
+a:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L3",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L5",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}],"$L1a","$L1b"]}]]}],"$L1c"]]}],"$L1d"]}]}]
+b:["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true}]
+c:["$","script","script-1",{"src":"/_next/static/chunks/242ibphq-xhrb.js","async":true}]
+d:["$","$L1e",null,{"children":["$","$1f",null,{"name":"Next.MetadataOutlet","children":"$@20"}]}]
+15:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Engineering Status Cabinet"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🔧"," ","Engineering Agent"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["📊"," ","Summary Agent"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Engineering Update"}]]}]]]}],[]]}]}]]}]
+16:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-engineering-agent-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🔧"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Engineering Agent"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Owns engineering data ingestion — PRs merged, issues closed, deploys shipped, and blockers identified — and orchestrates the Summary Agent to produce the weekly status update."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 8 * * 1"}]]}]]}],["$","div","root-summary-agent-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"📊"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Summary Agent"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Shapes the Engineering Agent's raw weekly signals into a publishable engineering status update and renders the live dashboard — clear, opinionated, and ready to share."}],""]}]]}]]}]
+17:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","weekly-engineering-update",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Engineering Update"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","engineering-agent"]}]]}]]}]]}]]}]
+21:T8b6,<h1>Engineering Status Cabinet</h1>
+<p>One cabinet, two agents, one Monday-morning engineering update. The Engineering Agent pulls the last week of GitHub activity, Jira completions, and blocked tickets; the Summary Agent shapes it into a structured status report covering what shipped, what slipped, what's blocked, and what needs leadership attention — ready before the standup.</p>
+<blockquote>
+<p><strong>Keep your GitHub, GitLab, and Jira. Replace the weekly engineering update doc nobody wants to write and the Slack thread that answers the same five questions every Monday.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/engineering-agent]]</strong> — Engineering Agent. Owns data extraction: PRs merged, issues closed, deploys, and blockers from GitHub, Jira, and Linear. Calls on the Summary Agent when the raw set is ready.</li>
+<li><strong>[[.agents/summary-agent]]</strong> — Summary Agent. Shapes the raw engineering signals into a publishable status update and renders the [[dashboard]].</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/weekly-engineering-update]]</td>
+<td>Engineering Agent → Summary Agent</td>
+<td>Engineering status in [[dashboard]] + <code>status/latest.md</code></td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[dashboard]] — the engineering status dashboard: shipped this week, slipped, blocked, PR throughput chart, deploy frequency, and attention-needed items for leadership.</li>
+<li>Open <code>status/latest.md</code> — the Markdown version, ready to paste into Slack or email.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> GitHub or GitLab (PRs, commits, deploy tags), Jira or Linear (issue completions, blockers).
+<strong>Recommended:</strong> Slack (post the update automatically to <code>#engineering-updates</code>), DataDog / Grafana (uptime/error-rate KPIs), PagerDuty (incident count).</p>
+<p>Every artifact is a file — the weekly status is written to <code>status/</code> with a date prefix so you can diff week-over-week and spot trends.</p>18:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$21"}}]}]]}]
+19:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L22",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set engineering-status","label":"Install"}]}]}]]}]
+1a:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+1b:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+1c:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+1d:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+20:null

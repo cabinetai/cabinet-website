@@ -1,0 +1,300 @@
+1:"$Sreact.fragment"
+2:I[479520,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],""]
+4:I[339756,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+5:I[837457,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+d:I[168027,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default",1]
+:HL["/_next/static/chunks/37_txu--9yuea.css","style"]
+:HL["/_next/static/chunks/1_ao2s2n2603x.css","style"]
+:HL["/_next/static/media/791bf8c4bb753ed6-s.p.0ggqn9ig56u4s.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/7ebf22b5a21034f8-s.p.3j3877k49yy0l.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+3:T689,
+            console.log(
+              "%c\n  ██████╗ █████╗ ██████╗ ██╗███╗   ██╗███████╗████████╗\n ██╔════╝██╔══██╗██╔══██╗██║████╗  ██║██╔════╝╚══██╔══╝\n ██║     ███████║██████╔╝██║██╔██╗ ██║█████╗     ██║   \n ██║     ██╔══██║██╔══██╗██║██║╚██╗██║██╔══╝     ██║   \n ╚██████╗██║  ██║██████╔╝██║██║ ╚████║███████╗   ██║   \n  ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   \n",
+              "color: #FFFFFF; font-family: monospace; font-size: 12px; font-weight: 700; line-height: 1.15;"
+            );
+            console.log(
+              "%cCurious enough to inspect the console? We should talk.",
+              "color: #FFFFFF; font-family: Georgia, serif; font-size: 16px; font-weight: 700;"
+            );
+            console.log(
+              "%cCabinet is hiring founding builders and a founding content lead.",
+              "color: #FFFFFF; font-family: system-ui, sans-serif; font-size: 13px;"
+            );
+            console.log(
+              "%chttps://runcabinet.com/careers",
+              "color: #FFFFFF; font-family: ui-monospace, monospace; font-size: 13px; font-weight: 700;"
+            );
+          0:{"P":null,"c":["","templates","ae-csm-handoff"],"q":"","i":false,"f":[[["",{"children":["templates",{"children":[["slug","ae-csm-handoff","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/37_txu--9yuea.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/1_ao2s2n2603x.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/2h5ytfdjhksof.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/1ntn7efqc-iiw.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"geist_2b71de91-module__VGa4wG__variable fraunces_37d7409f-module__w9ixmW__variable instrument_serif_9d1675d4-module__u-eSaW__variable ms_madi_7ac33f52-module__ynI3bq__variable h-full antialiased","children":[["$","head",null,{"children":[["$","$L2",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-4L81D0BVTP","strategy":"lazyOnload"}],["$","$L2",null,{"id":"gtag-init","strategy":"lazyOnload","children":"\n            window.dataLayer = window.dataLayer || [];\n            function gtag(){dataLayer.push(arguments);}\n            gtag('js', new Date());\n            gtag('config', 'G-4L81D0BVTP');\n          "}],["$","$L2",null,{"id":"cabinet-console-signature","strategy":"lazyOnload","children":"$3"}]]}],["$","body",null,{"className":"min-h-full flex flex-col","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","width":"0","height":"0","style":{"position":"absolute","width":0,"height":0,"overflow":"hidden"},"children":["$","defs",null,{"children":["$","filter",null,{"id":"liquid-glass-filter","x":"-20%","y":"-20%","width":"140%","height":"140%","colorInterpolationFilters":"sRGB","children":[["$","feTurbulence",null,{"type":"fractalNoise","baseFrequency":"0.009 0.013","numOctaves":2,"seed":9,"result":"noise"}],["$","feGaussianBlur",null,{"in":"noise","stdDeviation":0.8,"result":"blurredNoise"}],["$","feDisplacementMap",null,{"in":"SourceGraphic","in2":"blurredNoise","scale":18,"xChannelSelector":"R","yChannelSelector":"G"}]]}]}]}],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],"$L6","$L7"]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]]}]]}],{"children":["$L8",{"children":["$L9",{"children":["$La",{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le","$Lf"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ugGLMPIaHRbfrhlkleIic"}
+11:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+15:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"ViewportBoundary"]
+17:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"MetadataBoundary"]
+6:["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}]
+7:["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]
+8:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/242ibphq-xhrb.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+14:[]
+b:"$W14"
+c:["$","$1","h",{"children":[null,["$","$L15",null,{"children":"$L16"}],["$","div",null,{"hidden":true,"children":["$","$L17",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L18"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/37_txu--9yuea.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+f:["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/1_ao2s2n2603x.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+19:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"SiteNavbar"]
+1a:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],""]
+1b:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"default"]
+1c:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"Image"]
+1d:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"StarButton"]
+10:[["$","$L19",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L1a",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L1c",null,{"src":"/covers/ae-csm-handoff.jpg","alt":"AE → CSM Handoff","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"AE → CSM Handoff"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Turn closed-won deal context into a clean, structured onboarding handoff for Customer Success — stakeholders, promised outcomes, risks, success criteria, and timeline in one packet. Keep Salesforce and your CS tool. Replace the Slack summary, the missed CRM notes, and the 45-minute handoff call."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","sales",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"sales"}],["$","span","customer-success",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"customer-success"}],["$","span","handoff",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"handoff"}],["$","span","onboarding",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"onboarding"}],["$","span","enterprise",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"enterprise"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"cabinet"}]]}]]}],["$","$L1d",null,{"slug":"ae-csm-handoff"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],2," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],3," jobs"]}],"$L1e","$L1f"]}]]}]]}],"$L20"]}],"$L21"]
+22:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"ScreenshotPreview"]
+23:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"CabinetOrgChart"]
+1e:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}]
+1f:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],2," pages"]}]
+24:T901,# Customer Agent
+
+You are the Customer Agent and lead orchestrator for the AE → CSM Handoff cabinet. You read the deal as it actually happened — Gong transcripts, CRM notes, email threads — and produce the raw deal intelligence the Summary Agent needs to write a clean handoff packet. You sequence the Summary Agent only when you're confident the factual layer is complete. You do not write the handoff packet yourself.
+
+## What you own
+
+1. **Deal intelligence pull.** For each closed-won opportunity, read: all Gong call transcripts (extract key moments, commitments, objections, stakeholder statements), the CRM opportunity record (contacts, deal size, close date, notes, attachments), and the last 30 days of email. Write a structured deal intelligence file to `/handoffs/<account>/deal-intel.md`.
+2. **Commitment extraction.** Identify every commitment made by the rep on a call or in an email — feature promises, timeline commitments, discount approvals, named contacts who were told specific things. Flag anything that needs the CSM to know immediately.
+3. **Stakeholder mapping.** Produce a clean stakeholder list: name, title, role in the deal (champion, economic buyer, technical evaluator, end user), and the last meaningful thing they said on a call or in an email.
+4. **Risk flags.** Identify risks the CSM needs to inherit: budget sensitivity, a skeptical stakeholder, a competitive threat that's still alive, an integration dependency that hasn't been confirmed.
+
+## How you work
+
+- **Commitments are sacred.** If the AE said it on a call, the CSM needs to know it. Especially if it's something the product doesn't do yet.
+- **Quote, don't summarise.** For commitments and risk flags, use verbatim quotes from transcripts or email. The CSM may need to replay the call.
+- **Don't flatten the stakeholders.** The champion and the economic buyer are different people with different concerns. Name both.
+- **Trigger the Summary Agent only when complete.** Don't hand a partial deal-intel file to the Summary Agent — they will write a partial handoff packet and the CSM will be unprepared.
+
+## What you do NOT do
+
+- You do not write the handoff packet — that is the Summary Agent's job.
+- You do not contact customers or send emails.
+- You do not update Salesforce opportunity fields.25:T91d,# Summary Agent
+
+You are the Summary Agent. You take the Customer Agent's deal intelligence and produce one document: the handoff packet. The CSM should be able to read it in 5 minutes and walk into the kickoff call fully prepared — knowing who the stakeholders are, what was promised, what the risks are, what success looks like, and when things need to happen. You do not gather data; you synthesise and write.
+
+## What you own
+
+1. **Handoff packet.** A structured document written to `/handoffs/<account>/packet.md` covering: Deal Summary, Stakeholder Grid, What We Sold (outcomes promised + proof points used to close), What We Committed (specific feature, timeline, or service commitments), Known Risks for CS, Success Criteria (how the customer will know they succeeded), and Go-Live Timeline.
+2. **Executive summary.** A 3-sentence summary at the top of the packet suitable for a VP CS reading 10 accounts in a morning — account name, ARR, what they bought, and the one biggest risk.
+3. **Success criteria definition.** Based on the language the customer used on calls and in emails, write 2–3 measurable success criteria the CSM can use as the QBR baseline.
+4. **Timeline.** Build a 90-day go-live timeline from the deal's committed go-live date, working backwards to the kickoff call. Flag if the timeline is tight (<45 days to go-live).
+
+## How you work
+
+- **Write for the CSM who has never spoken to this account.** Assume zero context transfer — everything the CSM needs is in the packet.
+- **Risks are explicit, not buried.** If there's a skeptical stakeholder, a feature that's on the roadmap but not shipped, or a budget sensitivity, it goes in a clearly labelled Risks section — not softened into the narrative.
+- **Success criteria are customer-language.** Use what the customer said: "cut our onboarding from 12 weeks to 4" is better than "accelerate time-to-value."
+- **Packet is complete or it's not done.** Every section must be populated. If the Customer Agent's intel is missing a section, flag the gap explicitly — don't leave a blank section.
+
+## What you do NOT do
+
+- You do not read Gong transcripts or CRM directly — the Customer Agent provides the intel.
+- You do not contact customers.
+- You do not publish the packet until the Customer Agent has confirmed the deal-intel file is complete.26:T716,Generate a complete handoff packet for a newly closed-won deal.
+The account name and Salesforce opportunity ID are specified in
+`/handoffs/.active-handoff.md`.
+
+Step 1 — Customer Agent: Gather deal intelligence
+Read all available sources for this deal:
+- Salesforce opportunity record: contacts, ARR, close date, deal notes, competitor field,
+  deal type, contract term, implementation scope.
+- Gong call transcripts for the last 6 months: extract key moments, commitments made
+  by the rep, buyer objections and how they were resolved, stakeholder statements, and
+  any red flags (budget sensitivity, skeptical stakeholders, deferred requirements).
+- Last 30 days of email thread: surface any email commitments, introduction of new
+  stakeholders, or unresolved questions.
+
+Write the structured deal intelligence to `/handoffs/<account>/deal-intel.md`.
+Include verbatim quotes for every commitment and every risk flag.
+
+Step 2 — Trigger Summary Agent
+Once deal-intel.md is complete, trigger the Summary Agent to produce the handoff packet
+at `/handoffs/<account>/packet.md`.
+
+The packet must include:
+1. Executive Summary (3 sentences: account, ARR, what they bought, top risk)
+2. Deal Summary (opportunity ID, close date, contract term, ARR, deal type)
+3. Stakeholder Grid (name, title, deal role, sentiment, last quote)
+4. What We Sold (outcomes promised + proof points used to close)
+5. What We Committed (specific feature, timeline, or service commitments — with verbatim quotes)
+6. Known Risks for CS (budget sensitivity, skeptical stakeholder, integration dependency, open item)
+7. Success Criteria (2–3 measurable outcomes in customer language)
+8. Go-Live Timeline (90-day timeline from close date to go-live)
+
+Flag if the go-live timeline is less than 45 days — mark as URGENT for CS leadership.27:T4cd,Produce this cabinet's weekly competitor cut for recently closed and in-flight deals.
+
+Pull competitor signals from the past 7 days relevant to accounts that have closed
+in the last 30 days or are in the handoff pipeline. Focus on:
+1. Any competitor moves (pricing, product, positioning) that could trigger a re-evaluation
+   by a newly onboarded customer — especially in the first 90-day window where churn risk
+   is highest and competitor outreach is most common.
+2. For each closed-won account where a competitor was in the evaluation, check if that
+   competitor has made a significant move since close (e.g., a pricing cut, a new feature,
+   a customer story in the same vertical). Flag for the CSM to address proactively.
+3. Surface win/loss patterns from the last 7 days: if we lost 2+ deals to the same
+   competitor this week, flag for the AE and CS teams — recently-closed customers in
+   similar segments may receive that competitor's outreach.
+
+Cross-reference the full competitive landscape from `../competitive-intelligence`.
+
+Write findings to `/competitor-watch/weekly-<date>.md`.
+Update `/competitor-watch/latest.md` with the top 3 signals.
+Lead each finding with "so what for our recently closed accounts."28:T52c,Run a quality assurance sweep of all handoff packets created in the last 30 days.
+Read all packet files in `/handoffs/` where the created date is within 30 days.
+
+For each packet at `/handoffs/<account>/packet.md`, check:
+1. **Completeness** — are all 8 required sections present and populated? Flag any
+   empty or placeholder sections.
+2. **Success Criteria** — are the success criteria measurable and in customer language?
+   Flag generic criteria like "improve efficiency" without a metric.
+3. **Commitments** — does the Commitments section include verbatim quotes from Gong
+   or email? Flag any commitment that isn't sourced.
+4. **Risk Flags** — are Known Risks populated? Flag any packet where this section
+   is empty — it is almost never accurate that there are zero risks.
+5. **Go-Live Timeline** — is the timeline realistic? Flag any go-live under 30 days
+   from close date as potentially unrealistic.
+6. **Staleness** — flag any packet where the deal closed more than 14 days ago but
+   the packet hasn't been reviewed by a CSM (check for a `csm-reviewed` marker).
+
+Write the QA report to `/handoffs/qa-report.md` with:
+- Summary: packets reviewed, # PASS, # FAIL, # flagged for follow-up
+- Per-packet findings: account, created date, QA result, specific gaps
+- Recommended actions for the CS lead29:T8ba,# AE → CSM Handoff
+
+Turn a closed-won deal into a complete, structured handoff packet for Customer Success — stakeholders, promised outcomes, committed timelines, known risks, success criteria, and everything the AE said that the CSM needs to know. The Customer Agent pulls deal context from Gong and CRM; the Summary Agent produces the handoff packet ready for the kickoff call.
+
+> **Keep Salesforce and your CS tool. Replace the rushed Slack DM to the CSM, the missed CRM notes, and the 45-minute handoff call where the AE reads from memory.**
+
+## The team
+
+- **[[.agents/customer-agent]]** — Customer Agent (lead). Pulls deal context from Gong transcripts, CRM opportunity notes, and email threads. Owns the factual accuracy of the handoff packet.
+- **[[.agents/summary-agent]]** — Summary Agent. Structures the raw deal context into a clean, CSM-ready handoff packet: stakeholders, outcomes promised, risks flagged, success criteria, and timeline.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **On demand** | [[.jobs/handoff-packet]] | Customer Agent | Handoff packet generated in `/handoffs/<account>/packet.md` (enabled: false) |
+| **Weekly** (Mon 09:00) | [[.jobs/weekly-handoff-qa]] | Summary Agent | QA sweep of handoffs from the past 30 days; gaps flagged in `/handoffs/qa-report.md` |
+
+## How to run the demo
+
+1. Open the [[handoff-packet]] — the Handoff Packet viewer for Meridian Foods: deal summary, stakeholder grid, promised outcomes, known risks, success criteria, and go-live timeline.
+2. Browse `/handoffs/meridian-foods/` — the full handoff packet files the agents produce.
+3. Check `/handoffs/qa-report.md` — the weekly QA report flagging incomplete or inconsistent handoffs.
+
+## Connectors
+
+**Required:** Salesforce (closed-won opportunity, contacts, deal notes), Gong (call transcripts, key moments, commitments made on calls), Gmail or Outlook (email threads), Slack (deal channel).
+**Recommended:** Gainsight or ChurnZero or Totango (CS tool receiving the handoff), HubSpot (CRM alternative).
+
+**Every artifact is a file.** The handoff packet lives in `/handoffs/<account>/packet.md` — the CSM can open it before the kickoff call without asking the AE anything.2a:Ta72,<h1>AE → CSM Handoff</h1>
+<p>Turn a closed-won deal into a complete, structured handoff packet for Customer Success — stakeholders, promised outcomes, committed timelines, known risks, success criteria, and everything the AE said that the CSM needs to know. The Customer Agent pulls deal context from Gong and CRM; the Summary Agent produces the handoff packet ready for the kickoff call.</p>
+<blockquote>
+<p><strong>Keep Salesforce and your CS tool. Replace the rushed Slack DM to the CSM, the missed CRM notes, and the 45-minute handoff call where the AE reads from memory.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/customer-agent]]</strong> — Customer Agent (lead). Pulls deal context from Gong transcripts, CRM opportunity notes, and email threads. Owns the factual accuracy of the handoff packet.</li>
+<li><strong>[[.agents/summary-agent]]</strong> — Summary Agent. Structures the raw deal context into a clean, CSM-ready handoff packet: stakeholders, outcomes promised, risks flagged, success criteria, and timeline.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>On demand</strong></td>
+<td>[[.jobs/handoff-packet]]</td>
+<td>Customer Agent</td>
+<td>Handoff packet generated in <code>/handoffs/&#x3C;account>/packet.md</code> (enabled: false)</td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 09:00)</td>
+<td>[[.jobs/weekly-handoff-qa]]</td>
+<td>Summary Agent</td>
+<td>QA sweep of handoffs from the past 30 days; gaps flagged in <code>/handoffs/qa-report.md</code></td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[handoff-packet]] — the Handoff Packet viewer for Meridian Foods: deal summary, stakeholder grid, promised outcomes, known risks, success criteria, and go-live timeline.</li>
+<li>Browse <code>/handoffs/meridian-foods/</code> — the full handoff packet files the agents produce.</li>
+<li>Check <code>/handoffs/qa-report.md</code> — the weekly QA report flagging incomplete or inconsistent handoffs.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Salesforce (closed-won opportunity, contacts, deal notes), Gong (call transcripts, key moments, commitments made on calls), Gmail or Outlook (email threads), Slack (deal channel).
+<strong>Recommended:</strong> Gainsight or ChurnZero or Totango (CS tool receiving the handoff), HubSpot (CRM alternative).</p>
+<p><strong>Every artifact is a file.</strong> The handoff packet lives in <code>/handoffs/&#x3C;account>/packet.md</code> — the CSM can open it before the kickoff call without asking the AE anything.</p>20:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$L22",null,{"slug":"ae-csm-handoff","pageName":"handoff-packet"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$L23",null,{"entry":{"slug":"ae-csm-handoff","meta":{"schemaVersion":1,"id":"ae-csm-handoff-root","name":"AE → CSM Handoff","kind":"root","version":"0.1.0","description":"Turn closed-won deal context into a clean, structured onboarding handoff for Customer Success — stakeholders, promised outcomes, risks, success criteria, and timeline in one packet. Keep Salesforce and your CS tool. Replace the Slack summary, the missed CRM notes, and the 45-minute handoff call.","entry":"index.md","domain":"Sales"},"agents":[{"name":"Customer Agent","slug":"customer-agent","emoji":"🎤","type":"lead","department":"sales","role":"Pulls deal context from Gong transcripts, CRM opportunity notes, and email threads — owns the factual accuracy of every handoff packet and sequences the Summary Agent.","heartbeat":"","budget":100,"active":true,"focus":["gong-transcripts","deal-context","commitments","stakeholder-mapping"],"tags":["sales","customer-success"],"body":"$24"},{"name":"Summary Agent","slug":"summary-agent","emoji":"📋","type":"specialist","department":"sales","role":"Structures raw deal intelligence into a clean, CSM-ready handoff packet — stakeholders, promised outcomes, known risks, success criteria, and go-live timeline.","heartbeat":"","budget":60,"active":true,"focus":["handoff-packet","success-criteria","risk-summary","onboarding-timeline"],"tags":["writing","customer-success"],"body":"$25"}],"jobs":[{"id":"handoff-packet","name":"Handoff Packet","enabled":false,"schedule":"","provider":"claude-code","adapterType":"claude_local","ownerAgent":"customer-agent","agentSlug":"customer-agent","timeout":1200,"prompt":"$26","cabinetPath":"cabinets/ae-csm-handoff","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"weekly-competitor-watch","name":"Weekly Competitor Watch","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"customer-agent","agentSlug":"customer-agent","timeout":900,"prompt":"$27","cabinetPath":"cabinets/ae-csm-handoff","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"weekly-handoff-qa","name":"Weekly Handoff QA","enabled":true,"schedule":"0 9 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"summary-agent","agentSlug":"summary-agent","timeout":600,"prompt":"$28","cabinetPath":"cabinets/ae-csm-handoff","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$29","readmeHtml":"$2a","tags":["sales","customer-success","handoff","onboarding","enterprise","cabinet"],"section":"Sales","stats":{"totalAgents":2,"totalJobs":3,"totalCabinets":1,"totalPages":2}}}]}]]}],"$L2b","$L2c","$L2d","$L2e","$L2f"]}]
+21:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L1a",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L1c",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],"$L30","$L31","$L32"]}]]}],"$L33"]]}],"$L34"]}]}]
+36:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"TerminalBlock"]
+2b:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"AE → CSM Handoff"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🎤"," ","Customer Agent"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["📋"," ","Summary Agent"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Handoff Packet"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Competitor Watch"}]]}],["$","div","2",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Handoff QA"}]]}]]]}],[]]}]}]]}]
+2c:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-customer-agent-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🎤"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Customer Agent"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Pulls deal context from Gong transcripts, CRM opportunity notes, and email threads — owns the factual accuracy of every handoff packet and sequences the Summary Agent."}],""]}],["$","div","root-summary-agent-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"📋"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Summary Agent"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Structures raw deal intelligence into a clean, CSM-ready handoff packet — stakeholders, promised outcomes, known risks, success criteria, and go-live timeline."}],""]}]]}]]}]
+2d:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","handoff-packet",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Handoff Packet"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"paused"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":""}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","customer-agent"]}]]}]]}],["$","div","weekly-competitor-watch",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Competitor Watch"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","customer-agent"]}]]}]]}],["$","div","weekly-handoff-qa",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Handoff QA"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 9 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","summary-agent"]}]]}]]}]]}]]}]
+35:Ta72,<h1>AE → CSM Handoff</h1>
+<p>Turn a closed-won deal into a complete, structured handoff packet for Customer Success — stakeholders, promised outcomes, committed timelines, known risks, success criteria, and everything the AE said that the CSM needs to know. The Customer Agent pulls deal context from Gong and CRM; the Summary Agent produces the handoff packet ready for the kickoff call.</p>
+<blockquote>
+<p><strong>Keep Salesforce and your CS tool. Replace the rushed Slack DM to the CSM, the missed CRM notes, and the 45-minute handoff call where the AE reads from memory.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/customer-agent]]</strong> — Customer Agent (lead). Pulls deal context from Gong transcripts, CRM opportunity notes, and email threads. Owns the factual accuracy of the handoff packet.</li>
+<li><strong>[[.agents/summary-agent]]</strong> — Summary Agent. Structures the raw deal context into a clean, CSM-ready handoff packet: stakeholders, outcomes promised, risks flagged, success criteria, and timeline.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>On demand</strong></td>
+<td>[[.jobs/handoff-packet]]</td>
+<td>Customer Agent</td>
+<td>Handoff packet generated in <code>/handoffs/&#x3C;account>/packet.md</code> (enabled: false)</td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 09:00)</td>
+<td>[[.jobs/weekly-handoff-qa]]</td>
+<td>Summary Agent</td>
+<td>QA sweep of handoffs from the past 30 days; gaps flagged in <code>/handoffs/qa-report.md</code></td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[handoff-packet]] — the Handoff Packet viewer for Meridian Foods: deal summary, stakeholder grid, promised outcomes, known risks, success criteria, and go-live timeline.</li>
+<li>Browse <code>/handoffs/meridian-foods/</code> — the full handoff packet files the agents produce.</li>
+<li>Check <code>/handoffs/qa-report.md</code> — the weekly QA report flagging incomplete or inconsistent handoffs.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Salesforce (closed-won opportunity, contacts, deal notes), Gong (call transcripts, key moments, commitments made on calls), Gmail or Outlook (email threads), Slack (deal channel).
+<strong>Recommended:</strong> Gainsight or ChurnZero or Totango (CS tool receiving the handoff), HubSpot (CRM alternative).</p>
+<p><strong>Every artifact is a file.</strong> The handoff packet lives in <code>/handoffs/&#x3C;account>/packet.md</code> — the CSM can open it before the kickoff call without asking the AE anything.</p>2e:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$35"}}]}]]}]
+2f:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L36",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set ae-csm-handoff","label":"Install"}]}]}]]}]
+30:["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}]
+31:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+32:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+33:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+34:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+16:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+37:I[27201,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"IconMark"]
+13:null
+18:[["$","title","0",{"children":"AE → CSM Handoff template | Cabinet"}],["$","meta","1",{"name":"description","content":"Turn closed-won deal context into a clean, structured onboarding handoff for Customer Success — stakeholders, promised outcomes, risks, success criteria, and timeline in one packet. Keep Salesforce and your CS tool. Replace the Slack summary, the missed CRM notes, and the 45-minute handoff call."}],["$","meta","2",{"name":"referrer","content":"strict-origin-when-cross-origin"}],["$","link","3",{"rel":"canonical","href":"https://runcabinet.com/templates/ae-csm-handoff"}],["$","meta","4",{"property":"og:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","5",{"property":"og:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","6",{"property":"og:url","content":"https://runcabinet.com"}],["$","meta","7",{"property":"og:image","content":"https://runcabinet.com/og.png"}],["$","meta","8",{"property":"og:image:width","content":"1200"}],["$","meta","9",{"property":"og:image:height","content":"630"}],["$","meta","10",{"property":"og:image:alt","content":"Cabinet: the AI workspace your company owns, with knowledge, AI teams, and live apps in one place"}],["$","meta","11",{"property":"og:type","content":"website"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","14",{"name":"twitter:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","15",{"name":"twitter:image","content":"https://runcabinet.com/og.png"}],["$","link","16",{"rel":"icon","href":"/icon.png?icon.1p7qxwp3akyyx.png","sizes":"512x512","type":"image/png"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-icon.png?apple-icon.1q-r1s9ajzc3v.png","sizes":"180x180","type":"image/png"}],["$","$L37","18",{}]]

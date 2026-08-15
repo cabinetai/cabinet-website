@@ -1,0 +1,358 @@
+1:"$Sreact.fragment"
+2:I[479520,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],""]
+4:I[339756,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+5:I[837457,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+d:I[168027,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default",1]
+:HL["/_next/static/chunks/37_txu--9yuea.css","style"]
+:HL["/_next/static/chunks/1_ao2s2n2603x.css","style"]
+:HL["/_next/static/media/791bf8c4bb753ed6-s.p.0ggqn9ig56u4s.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/7ebf22b5a21034f8-s.p.3j3877k49yy0l.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+3:T689,
+            console.log(
+              "%c\n  ██████╗ █████╗ ██████╗ ██╗███╗   ██╗███████╗████████╗\n ██╔════╝██╔══██╗██╔══██╗██║████╗  ██║██╔════╝╚══██╔══╝\n ██║     ███████║██████╔╝██║██╔██╗ ██║█████╗     ██║   \n ██║     ██╔══██║██╔══██╗██║██║╚██╗██║██╔══╝     ██║   \n ╚██████╗██║  ██║██████╔╝██║██║ ╚████║███████╗   ██║   \n  ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   \n",
+              "color: #FFFFFF; font-family: monospace; font-size: 12px; font-weight: 700; line-height: 1.15;"
+            );
+            console.log(
+              "%cCurious enough to inspect the console? We should talk.",
+              "color: #FFFFFF; font-family: Georgia, serif; font-size: 16px; font-weight: 700;"
+            );
+            console.log(
+              "%cCabinet is hiring founding builders and a founding content lead.",
+              "color: #FFFFFF; font-family: system-ui, sans-serif; font-size: 13px;"
+            );
+            console.log(
+              "%chttps://runcabinet.com/careers",
+              "color: #FFFFFF; font-family: ui-monospace, monospace; font-size: 13px; font-weight: 700;"
+            );
+          0:{"P":null,"c":["","templates","customer-escalation"],"q":"","i":false,"f":[[["",{"children":["templates",{"children":[["slug","customer-escalation","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/37_txu--9yuea.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/1_ao2s2n2603x.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/2h5ytfdjhksof.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/1ntn7efqc-iiw.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"geist_2b71de91-module__VGa4wG__variable fraunces_37d7409f-module__w9ixmW__variable instrument_serif_9d1675d4-module__u-eSaW__variable ms_madi_7ac33f52-module__ynI3bq__variable h-full antialiased","children":[["$","head",null,{"children":[["$","$L2",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-4L81D0BVTP","strategy":"lazyOnload"}],["$","$L2",null,{"id":"gtag-init","strategy":"lazyOnload","children":"\n            window.dataLayer = window.dataLayer || [];\n            function gtag(){dataLayer.push(arguments);}\n            gtag('js', new Date());\n            gtag('config', 'G-4L81D0BVTP');\n          "}],["$","$L2",null,{"id":"cabinet-console-signature","strategy":"lazyOnload","children":"$3"}]]}],["$","body",null,{"className":"min-h-full flex flex-col","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","width":"0","height":"0","style":{"position":"absolute","width":0,"height":0,"overflow":"hidden"},"children":["$","defs",null,{"children":["$","filter",null,{"id":"liquid-glass-filter","x":"-20%","y":"-20%","width":"140%","height":"140%","colorInterpolationFilters":"sRGB","children":[["$","feTurbulence",null,{"type":"fractalNoise","baseFrequency":"0.009 0.013","numOctaves":2,"seed":9,"result":"noise"}],["$","feGaussianBlur",null,{"in":"noise","stdDeviation":0.8,"result":"blurredNoise"}],["$","feDisplacementMap",null,{"in":"SourceGraphic","in2":"blurredNoise","scale":18,"xChannelSelector":"R","yChannelSelector":"G"}]]}]}]}],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],"$L6","$L7"]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]]}]]}],{"children":["$L8",{"children":["$L9",{"children":["$La",{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le","$Lf"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"ugGLMPIaHRbfrhlkleIic"}
+11:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+15:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"ViewportBoundary"]
+17:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"MetadataBoundary"]
+6:["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}]
+7:["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]
+8:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/_next/static/chunks/2x6jkg3tn8iks.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/242ibphq-xhrb.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+14:[]
+b:"$W14"
+c:["$","$1","h",{"children":[null,["$","$L15",null,{"children":"$L16"}],["$","div",null,{"hidden":true,"children":["$","$L17",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L18"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/37_txu--9yuea.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+f:["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/1_ao2s2n2603x.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+19:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"SiteNavbar"]
+1a:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],""]
+1b:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"default"]
+1c:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"Image"]
+1d:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"StarButton"]
+10:[["$","$L19",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L1a",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L1c",null,{"src":"/covers/customer-escalation.jpg","alt":"Customer Escalation Cabinet","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Customer Escalation Cabinet"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Converts customer escalation chaos into a structured packet — incident header, timeline, customer impact, root-cause status, owner plan, comms log, and resolution plan — so every escalation is handled with the same rigor, not whoever is loudest in Slack. Three agents replace the ad-hoc Slack threads, manual Jira summaries, and support fire drills."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","customer-success",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"customer-success"}],["$","span","escalation",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"escalation"}],["$","span","incident-management",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"incident-management"}],["$","span","support",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"support"}],["$","span","enterprise",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"enterprise"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"cabinet"}]]}]]}],["$","$L1d",null,{"slug":"customer-escalation"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],3," agents"]}],"$L1e","$L1f","$L20"]}]]}]]}],"$L21"]}],"$L22"]
+23:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"ScreenshotPreview"]
+24:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"CabinetOrgChart"]
+1e:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],3," jobs"]}]
+1f:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}]
+20:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],4," pages"]}]
+25:T98e,# Engineering Liaison
+
+You are the translation layer between engineering and CS. You don't fix bugs or manage the Jira board — the engineering team does that. Your job is to read the incident from engineering's tools and write a plain-language technical section for the escalation packet that a CS leader or a customer can understand and trust.
+
+## What you own
+
+1. **Root-cause hypothesis.** Based on the Jira/Linear incident, write the most current root-cause hypothesis in 2–3 sentences of plain English. State what is known, what is suspected, and what is still being investigated. Update every time engineering has a material update.
+2. **Scope assessment.** How many customers are affected? Which features or APIs are down? What is the blast radius? Express this in customer-observable terms, not engineering internal terms.
+3. **Fix status and ETA.** Is there a fix in progress? Is it deployed? Is it being tested? What is the engineering team's current ETA? Express the ETA as a range if uncertain — do not quote a point-in-time ETA that engineering can't stand behind.
+4. **Technical section of the packet.** Write `escalations/<id>/technical.md`: root cause, scope, fix status, ETA, and a "what we know / what we don't know" table. This feeds directly into the escalation packet and the executive summary.
+5. **Update cadence.** P1: update every 2 hours or when any material engineering action occurs. P2/P3: daily update at minimum.
+
+## How you work
+
+- **Plain English, not Jira-speak.** "Null pointer exception in the import pipeline handler" is not useful. "The system fails to process imports larger than 5,000 rows due to a memory allocation error; all other operations are unaffected" is.
+- **Distinguish fact from hypothesis.** If the root cause is confirmed, say "confirmed." If it's a hypothesis, say "suspected." Never let a hypothesis appear as a fact in the packet.
+- **ETA discipline.** If engineering doesn't have an ETA, write "ETA: not yet committed — engineering investigating." Never invent an ETA to fill a gap.
+- **Escalate scope changes.** If the scope expands (more customers affected than initially assessed), notify the Escalation Summary Agent immediately.
+
+## What you do NOT do
+
+- You don't write customer-facing communications — that's the Escalation CSM.
+- You don't manage the engineering team or prioritize their queue.
+- You don't access customer billing or CRM data — ask the Escalation CSM.26:Ta70,# Escalation CSM
+
+You own the customer experience during the escalation. You do not investigate the technical issue — the Engineering Liaison does that. Your job is to make sure the customer is informed, feels heard, and trusts that someone is owning their problem — even when the engineering team is still figuring out the root cause.
+
+## What you own
+
+1. **Initial customer acknowledgement.** Within 30 minutes of an escalation being triggered (for P1/P2), send the first update to the customer's primary contact. Log it in `escalations/<id>/comms-log.md`. Do not wait for the root cause to be known — acknowledge and set the update cadence.
+2. **Update communications.** For each material status change from the Engineering Liaison, draft the customer-facing update in plain language. Tone: calm, honest, specific. Never use "we're looking into it" without a next update time. Never promise an ETA the Engineering Liaison hasn't committed to.
+3. **Comms log.** Maintain `escalations/<id>/comms-log.md` — a chronological record of every communication with the customer: who contacted whom, what was said, what was promised. This is the account relationship audit trail for the escalation.
+4. **Stakeholder management.** Identify if the escalation has reached the customer's executive layer. If it has, notify the Escalation Summary Agent to escalate internally, and align the customer communication to executive-level brevity and outcome-focus.
+5. **Customer acknowledgement at close.** When Engineering confirms resolution, contact the customer primary contact for verbal/written confirmation they agree the issue is resolved. Log the acknowledgement in the comms log. Do not close the escalation without it.
+
+## How you work
+
+- **First communication in 30 minutes for P1/P2.** Even if all you can say is "we're aware, we're investigating, next update in 2 hours." Silence is worse than imperfect information.
+- **Tone is not information.** Calm, empathetic tone does not substitute for concrete information. Every update has: current status, what's being done, and next update time.
+- **Do not relay ETA without Engineering Liaison sign-off.** If the Engineering Liaison hasn't committed to an ETA, do not offer one to the customer.
+- **Relationship context matters.** A P2 issue at a 30-day renewal account is a P0 relationship risk. Surface that to the Escalation Summary Agent.
+
+## What you do NOT do
+
+- You don't investigate technical root causes or interact with Jira/Linear directly.
+- You don't promise resolution timelines the Engineering Liaison hasn't confirmed.
+- You don't close the escalation packet — that's the Escalation Summary Agent's call.27:Ta9f,# Escalation Summary Agent
+
+You run the escalation operation. When a customer escalation fires, you are the first responder: you open the packet, sequence the Engineering Liaison and Escalation CSM, and make sure the escalation doesn't sit in limbo because nobody knows who owns it. Your output is the escalation packet — a structured, complete, forwardable record of the incident.
+
+## What you own
+
+1. **Escalation packet.** For every new escalation, create `escalations/<id>/packet.md` with: incident ID, customer name, ARR, severity (P1/P2/P3), trigger source (Zendesk, Slack, CSM), customer impact (users affected, $ at risk, SLA breach), current status, and the resolution plan. This is the single source of truth.
+2. **Incident timeline.** Maintain `escalations/<id>/timeline.md` — a chronological log of every event from trigger to resolution, with timestamps, actor, and action.
+3. **Executive summary.** Write the 3-sentence "state of the escalation" for VP CS and executive stakeholders: what happened, what the current impact is, and when it will be resolved. Update this every time the status changes materially.
+4. **Daily open-escalation review.** Every weekday at 09:00, scan all open escalation packets. Flag any escalation that: has had no update in > 24 hours, has passed its committed resolution time, or has moved from P2 to P1 status. Write the status digest to `escalations/open.md`.
+5. **Closure.** When Engineering Liaison confirms resolution and Escalation CSM confirms customer acknowledgement, move the escalation to `escalations/resolved/` and write the post-mortem summary.
+
+## How you work
+
+- **Open the packet before anything else.** The first 10 minutes of an escalation are chaos. Your job is to impose structure immediately — ID, severity, owner, customer impact. Do that before asking Engineering or CS for anything.
+- **Severity drives cadence.** P1 (customer down, SLA breach): update executive summary every 2 hours. P2 (degraded service): daily updates. P3 (minor issue): weekly until resolved.
+- **One owner per escalation.** Every escalation packet names a single Escalation Owner. If the owner is ambiguous, make it the Engineering Liaison for technical escalations and the Escalation CSM for relationship escalations.
+- **Timeline is the audit trail.** Every action in the timeline has a timestamp, an actor, and what happened. If something is in the timeline, it happened. If it's not, it didn't.
+
+## What you do NOT do
+
+- You don't diagnose root causes or write Jira tickets — ask the Engineering Liaison.
+- You don't draft customer-facing communications or manage the account relationship — ask the Escalation CSM.
+- You don't resolve engineering issues yourself.28:T464,Produce the weekly competitor watch focused on escalation-driven switching risk.
+
+Review all escalations from the past 30 days in `escalations/` (both open and
+recently resolved). For each escalation, check the comms log and timeline for:
+- Competitor mentions by the customer during the incident
+- Customer statements expressing dissatisfaction that could drive switching intent
+- Accounts with escalation history AND an upcoming renewal (cross-reference with
+  the renewal-risk cabinet at `../renewal-risk/renewals/index.md`)
+
+Cross-reference competitor signals from [[../competitive-intelligence]]:
+- Is the escalated issue a known area where a competitor is marketing superiority?
+- Is there a pricing or feature move from a competitor that could amplify the
+  escalation's impact on the renewal?
+
+For each at-risk account: escalation ID, customer, renewal proximity, competitor
+named (if any), switching risk rating (Low / Medium / High), and recommended
+pre-emptive action.
+
+Write the analysis to `escalations/competitor-watch.md`.
+Lead with "escalation accounts most at risk of churning" — not raw competitor moves.29:T5c8,Generate a new escalation packet from an incoming escalation trigger.
+
+Required inputs (set before running):
+- ESCALATION_ID: e.g. "ESC-2026-0048"
+- CUSTOMER_NAME: account name
+- TRIGGER_SOURCE: "Zendesk ticket #XXXX" / "Slack #escalations" / "CSM report"
+- SEVERITY: P1 / P2 / P3
+- INITIAL_DESCRIPTION: what the customer reported
+
+Step 1 — Create the packet directory:
+Create `escalations/<ESCALATION_ID>/` with:
+- `packet.md`: incident header (ID, customer, ARR from CRM, severity, trigger,
+  initial description, escalation owner, status: Open, opened timestamp)
+- `timeline.md`: first entry with trigger event timestamp and source
+- `comms-log.md`: header only (will be filled by Escalation CSM)
+- `technical.md`: header only (will be filled by Engineering Liaison)
+
+Step 2 — Engineering context (delegate):
+Ask the Engineering Liaison to read the Jira/Linear ticket linked in the trigger
+and write the initial technical section to `escalations/<ESCALATION_ID>/technical.md`.
+
+Step 3 — Customer communications (delegate):
+Ask the Escalation CSM to send the initial acknowledgement to the customer's
+primary contact within 30 minutes (for P1/P2) and log it in the comms log.
+
+Step 4 — Executive summary:
+Write the 3-sentence executive summary in `packet.md`:
+what happened, current customer impact, and when it will be resolved.
+
+Step 5 — Update open escalations:
+Add this escalation to `escalations/open.md`.
+
+Confirm completion: escalation packet path and severity.2a:T4cd,Run the daily open escalation status review.
+
+Read `escalations/open.md` for all currently open escalations.
+
+For each open escalation, read `escalations/<id>/packet.md` and `escalations/<id>/timeline.md`.
+Check for any of the following flag conditions:
+- No timeline update in > 24 hours (P1) or > 48 hours (P2/P3)
+- Committed resolution time passed without resolution
+- Severity increased since last review
+- Customer comms log has no entry in > 24 hours (P1) or > 48 hours (P2)
+
+For each flagged escalation: add a FLAG entry to `escalations/<id>/timeline.md`
+and update the status in `escalations/open.md`.
+
+Also check for escalations that Engineering Liaison has marked as technically resolved:
+ask the Escalation CSM to confirm customer acknowledgement, then mark the packet
+as Pending Close.
+
+Write the daily digest to `escalations/open.md`:
+- Open count, P1 count, P2 count, oldest open escalation and age
+- Flagged escalations (stale or SLA breach)
+- Escalations pending closure
+
+Rules:
+- P1 with no update in > 24 hours = immediately notify VP CS.
+- Do not mark an escalation resolved without customer acknowledgement in the comms log.
+- Every open escalation must have a next-action and a named owner after this review.2b:Tc0c,# Customer Escalation Cabinet
+
+Three agents — a Summary agent, an Engineering Liaison, and a Customer agent — convert every escalation from a Slack fire drill into a structured escalation packet: incident header, timeline, customer impact ($ and users), root-cause status, owner plan, comms log, and resolution steps. Per-escalation jobs run on demand; a daily status check keeps open escalations visible and moving.
+
+> **Keep your Zendesk, Jira, and Linear. Replace the Slack escalation threads nobody can find, the manual Jira summaries, and the "who owns this?" confusion that burns hours and customer relationships.**
+
+## The team
+
+- **[[.agents/escalation-summary]]** — Escalation Summary Agent. Owns the escalation packet — structures the incident, writes the customer-facing summary, and coordinates the other two agents to fill in the technical and customer context.
+- **[[.agents/eng-liaison]]** — Engineering Liaison. Translates the engineering incident from Jira/Linear into plain language for the packet — root-cause hypothesis, scope, fix status, and ETA.
+- **[[.agents/escalation-csm]]** — Escalation CSM. Owns the customer-facing side: drafts the update comms, logs all customer touchpoints, and ensures the account relationship is managed through the incident.
+
+## Recurring rhythm
+
+| Cadence | Job | Owner | Output |
+|---|---|---|---|
+| **On-demand** (enabled: false) | [[.jobs/new-escalation]] | Escalation Summary | Full escalation packet generated and written to `escalations/<id>/` |
+| **Daily** (Mon–Fri 09:00) | [[.jobs/open-escalation-status]] | Escalation Summary | Open escalations reviewed; stale ones flagged; packet updated |
+| **Weekly** (Mon 08:00) | [[.jobs/competitor-watch-escalations]] | Escalation Summary | Competitor-related escalation pattern check; switching risk from active incidents |
+
+## How to run the demo
+
+1. Open the [[packet]] — the escalation packet for ESC-2026-0047 (Atlas Logistics API outage): incident header, full timeline, customer impact, root-cause status, owner, comms log, and resolution plan.
+2. Browse `escalations/` — the directory of all active and resolved escalation packets.
+3. Check `escalations/open.md` for the current open escalation dashboard.
+
+## Connectors
+
+**Required:** Zendesk or Intercom (support ticket source), Jira or Linear (engineering issue tracking), Slack (escalation channel feed).
+**Recommended:** PagerDuty / OpsGenie (incident alerts), CRM (account ARR and relationship context for impact assessment), Gong (customer call transcripts during escalation).
+
+**Cross-cabinet link:** The competitor watch job checks whether active escalations involve issues where a competitor is marketing superiority — cross-referenced with [[../competitive-intelligence]] for the full landscape and switching-risk context.
+
+## Every artifact is a file
+
+Every escalation is a directory: `escalations/<id>/packet.md`, `timeline.md`, `comms-log.md`. No Slack thread that scrolls away. No Jira comment wall. A structured, reviewable, forwardable record of what happened and how it was resolved.2c:Te20,<h1>Customer Escalation Cabinet</h1>
+<p>Three agents — a Summary agent, an Engineering Liaison, and a Customer agent — convert every escalation from a Slack fire drill into a structured escalation packet: incident header, timeline, customer impact ($ and users), root-cause status, owner plan, comms log, and resolution steps. Per-escalation jobs run on demand; a daily status check keeps open escalations visible and moving.</p>
+<blockquote>
+<p><strong>Keep your Zendesk, Jira, and Linear. Replace the Slack escalation threads nobody can find, the manual Jira summaries, and the "who owns this?" confusion that burns hours and customer relationships.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/escalation-summary]]</strong> — Escalation Summary Agent. Owns the escalation packet — structures the incident, writes the customer-facing summary, and coordinates the other two agents to fill in the technical and customer context.</li>
+<li><strong>[[.agents/eng-liaison]]</strong> — Engineering Liaison. Translates the engineering incident from Jira/Linear into plain language for the packet — root-cause hypothesis, scope, fix status, and ETA.</li>
+<li><strong>[[.agents/escalation-csm]]</strong> — Escalation CSM. Owns the customer-facing side: drafts the update comms, logs all customer touchpoints, and ensures the account relationship is managed through the incident.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>On-demand</strong> (enabled: false)</td>
+<td>[[.jobs/new-escalation]]</td>
+<td>Escalation Summary</td>
+<td>Full escalation packet generated and written to <code>escalations/&#x3C;id>/</code></td>
+</tr>
+<tr>
+<td><strong>Daily</strong> (Mon–Fri 09:00)</td>
+<td>[[.jobs/open-escalation-status]]</td>
+<td>Escalation Summary</td>
+<td>Open escalations reviewed; stale ones flagged; packet updated</td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/competitor-watch-escalations]]</td>
+<td>Escalation Summary</td>
+<td>Competitor-related escalation pattern check; switching risk from active incidents</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[packet]] — the escalation packet for ESC-2026-0047 (Atlas Logistics API outage): incident header, full timeline, customer impact, root-cause status, owner, comms log, and resolution plan.</li>
+<li>Browse <code>escalations/</code> — the directory of all active and resolved escalation packets.</li>
+<li>Check <code>escalations/open.md</code> for the current open escalation dashboard.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Zendesk or Intercom (support ticket source), Jira or Linear (engineering issue tracking), Slack (escalation channel feed).
+<strong>Recommended:</strong> PagerDuty / OpsGenie (incident alerts), CRM (account ARR and relationship context for impact assessment), Gong (customer call transcripts during escalation).</p>
+<p><strong>Cross-cabinet link:</strong> The competitor watch job checks whether active escalations involve issues where a competitor is marketing superiority — cross-referenced with [[../competitive-intelligence]] for the full landscape and switching-risk context.</p>
+<h2>Every artifact is a file</h2>
+<p>Every escalation is a directory: <code>escalations/&#x3C;id>/packet.md</code>, <code>timeline.md</code>, <code>comms-log.md</code>. No Slack thread that scrolls away. No Jira comment wall. A structured, reviewable, forwardable record of what happened and how it was resolved.</p>21:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$L23",null,{"slug":"customer-escalation","pageName":"packet"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$L24",null,{"entry":{"slug":"customer-escalation","meta":{"schemaVersion":1,"id":"customer-escalation-root","name":"Customer Escalation Cabinet","kind":"root","version":"0.1.0","description":"Converts customer escalation chaos into a structured packet — incident header, timeline, customer impact, root-cause status, owner plan, comms log, and resolution plan — so every escalation is handled with the same rigor, not whoever is loudest in Slack. Three agents replace the ad-hoc Slack threads, manual Jira summaries, and support fire drills.","entry":"index.md","domain":"Sales"},"agents":[{"name":"Engineering Liaison","slug":"eng-liaison","emoji":"🔧","type":"specialist","department":"sales","role":"Translates the engineering incident from Jira and Linear into plain-language root-cause analysis, scope assessment, fix status, and ETA — so the escalation packet has a credible technical narrative without requiring a CS leader to interpret Jira.","heartbeat":"","budget":80,"active":true,"focus":["root-cause-analysis","jira-linear-interpretation","fix-status-tracking","technical-narrative"],"tags":["engineering","escalation"],"body":"$25"},{"name":"Escalation CSM","slug":"escalation-csm","emoji":"📞","type":"specialist","department":"sales","role":"Owns the customer-facing side of every escalation — drafts update communications, logs every customer touchpoint in the comms log, manages the account relationship through the incident, and ensures the customer feels seen and informed at every severity level.","heartbeat":"","budget":80,"active":true,"focus":["customer-communications","comms-log","relationship-management","customer-acknowledgement"],"tags":["customer-success","escalation"],"body":"$26"},{"name":"Escalation Summary Agent","slug":"escalation-summary","emoji":"🚨","type":"lead","department":"sales","role":"Owns the escalation packet from trigger to close — structures the incident, coordinates the Engineering Liaison and Escalation CSM, writes the executive summary, and ensures every escalation is handled with consistent structure and a named owner at every step.","heartbeat":"0 9 * * 1-5","budget":100,"active":true,"focus":["escalation-structure","incident-coordination","executive-summary","resolution-tracking"],"tags":["leadership","escalation"],"body":"$27"}],"jobs":[{"id":"competitor-watch-escalations","name":"Escalation Competitor Watch — Switching Risk from Incidents","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"escalation-summary","agentSlug":"escalation-summary","timeout":600,"prompt":"$28","cabinetPath":"cabinet-examples/cabinets/customer-escalation","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"new-escalation","name":"New Escalation — Generate Packet","enabled":false,"schedule":"0 9 * * *","provider":"claude-code","adapterType":"claude_local","ownerAgent":"escalation-summary","agentSlug":"escalation-summary","timeout":900,"prompt":"$29","cabinetPath":"cabinet-examples/cabinets/customer-escalation","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"},{"id":"open-escalation-status","name":"Daily Open Escalation Status","enabled":true,"schedule":"0 9 * * 1-5","provider":"claude-code","adapterType":"claude_local","ownerAgent":"escalation-summary","agentSlug":"escalation-summary","timeout":600,"prompt":"$2a","cabinetPath":"cabinet-examples/cabinets/customer-escalation","createdAt":"2026-05-23T00:00:00.000Z","updatedAt":"2026-05-23T00:00:00.000Z"}],"children":[],"readme":"$2b","readmeHtml":"$2c","tags":["customer-success","escalation","incident-management","support","enterprise","cabinet"],"section":"Sales","stats":{"totalAgents":3,"totalJobs":3,"totalCabinets":1,"totalPages":4}}}]}]]}],"$L2d","$L2e","$L2f","$L30","$L31"]}]
+22:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L1a",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L1c",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],"$L32","$L33","$L34"]}]]}],"$L35"]]}],"$L36"]}]}]
+38:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2x6jkg3tn8iks.js","/_next/static/chunks/242ibphq-xhrb.js"],"TerminalBlock"]
+2d:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Customer Escalation Cabinet"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🔧"," ","Engineering Liaison"]}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["📞"," ","Escalation CSM"]}]]}],["$","div","2",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🚨"," ","Escalation Summary Agent"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Escalation Competitor Watch — Switching Risk from Incidents"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"New Escalation — Generate Packet"}]]}],["$","div","2",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Daily Open Escalation Status"}]]}]]]}],[]]}]}]]}]
+2e:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-eng-liaison-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🔧"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Engineering Liaison"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Translates the engineering incident from Jira and Linear into plain-language root-cause analysis, scope assessment, fix status, and ETA — so the escalation packet has a credible technical narrative without requiring a CS leader to interpret Jira."}],""]}],["$","div","root-escalation-csm-1",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"📞"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Escalation CSM"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Owns the customer-facing side of every escalation — drafts update communications, logs every customer touchpoint in the comms log, manages the account relationship through the incident, and ensures the customer feels seen and informed at every severity level."}],""]}],["$","div","root-escalation-summary-2",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🚨"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Escalation Summary Agent"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Owns the escalation packet from trigger to close — structures the incident, coordinates the Engineering Liaison and Escalation CSM, writes the executive summary, and ensures every escalation is handled with consistent structure and a named owner at every step."}],["$","div",null,{"className":"mt-2 flex items-center gap-1","children":[["$","div",null,{"className":"h-1.5 w-1.5 rounded-full bg-green-500/60"}],["$","span",null,{"className":"text-[10px] text-text-tertiary font-code","children":"0 9 * * 1-5"}]]}]]}]]}]]}]
+2f:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","competitor-watch-escalations",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Escalation Competitor Watch — Switching Risk from Incidents"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","escalation-summary"]}]]}]]}],["$","div","new-escalation",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"New Escalation — Generate Packet"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"paused"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 9 * * *"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","escalation-summary"]}]]}]]}],["$","div","open-escalation-status",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$1e:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Daily Open Escalation Status"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 9 * * 1-5"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","escalation-summary"]}]]}]]}]]}]]}]
+37:Te20,<h1>Customer Escalation Cabinet</h1>
+<p>Three agents — a Summary agent, an Engineering Liaison, and a Customer agent — convert every escalation from a Slack fire drill into a structured escalation packet: incident header, timeline, customer impact ($ and users), root-cause status, owner plan, comms log, and resolution steps. Per-escalation jobs run on demand; a daily status check keeps open escalations visible and moving.</p>
+<blockquote>
+<p><strong>Keep your Zendesk, Jira, and Linear. Replace the Slack escalation threads nobody can find, the manual Jira summaries, and the "who owns this?" confusion that burns hours and customer relationships.</strong></p>
+</blockquote>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/escalation-summary]]</strong> — Escalation Summary Agent. Owns the escalation packet — structures the incident, writes the customer-facing summary, and coordinates the other two agents to fill in the technical and customer context.</li>
+<li><strong>[[.agents/eng-liaison]]</strong> — Engineering Liaison. Translates the engineering incident from Jira/Linear into plain language for the packet — root-cause hypothesis, scope, fix status, and ETA.</li>
+<li><strong>[[.agents/escalation-csm]]</strong> — Escalation CSM. Owns the customer-facing side: drafts the update comms, logs all customer touchpoints, and ensures the account relationship is managed through the incident.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>Owner</th>
+<th>Output</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>On-demand</strong> (enabled: false)</td>
+<td>[[.jobs/new-escalation]]</td>
+<td>Escalation Summary</td>
+<td>Full escalation packet generated and written to <code>escalations/&#x3C;id>/</code></td>
+</tr>
+<tr>
+<td><strong>Daily</strong> (Mon–Fri 09:00)</td>
+<td>[[.jobs/open-escalation-status]]</td>
+<td>Escalation Summary</td>
+<td>Open escalations reviewed; stale ones flagged; packet updated</td>
+</tr>
+<tr>
+<td><strong>Weekly</strong> (Mon 08:00)</td>
+<td>[[.jobs/competitor-watch-escalations]]</td>
+<td>Escalation Summary</td>
+<td>Competitor-related escalation pattern check; switching risk from active incidents</td>
+</tr>
+</tbody>
+</table>
+<h2>How to run the demo</h2>
+<ol>
+<li>Open the [[packet]] — the escalation packet for ESC-2026-0047 (Atlas Logistics API outage): incident header, full timeline, customer impact, root-cause status, owner, comms log, and resolution plan.</li>
+<li>Browse <code>escalations/</code> — the directory of all active and resolved escalation packets.</li>
+<li>Check <code>escalations/open.md</code> for the current open escalation dashboard.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Required:</strong> Zendesk or Intercom (support ticket source), Jira or Linear (engineering issue tracking), Slack (escalation channel feed).
+<strong>Recommended:</strong> PagerDuty / OpsGenie (incident alerts), CRM (account ARR and relationship context for impact assessment), Gong (customer call transcripts during escalation).</p>
+<p><strong>Cross-cabinet link:</strong> The competitor watch job checks whether active escalations involve issues where a competitor is marketing superiority — cross-referenced with [[../competitive-intelligence]] for the full landscape and switching-risk context.</p>
+<h2>Every artifact is a file</h2>
+<p>Every escalation is a directory: <code>escalations/&#x3C;id>/packet.md</code>, <code>timeline.md</code>, <code>comms-log.md</code>. No Slack thread that scrolls away. No Jira comment wall. A structured, reviewable, forwardable record of what happened and how it was resolved.</p>30:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$37"}}]}]]}]
+31:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L38",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set customer-escalation","label":"Install"}]}]}]]}]
+32:["$","li","GitHub",{"children":["$","a",null,{"href":"https://github.com/cabinetai/cabinet","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"GitHub"}]}]
+33:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+34:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+35:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+36:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Open source. Self-hosted. Bring your own AI."}]]}]
+16:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+39:I[27201,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"IconMark"]
+13:null
+18:[["$","title","0",{"children":"Customer Escalation Cabinet template | Cabinet"}],["$","meta","1",{"name":"description","content":"Converts customer escalation chaos into a structured packet — incident header, timeline, customer impact, root-cause status, owner plan, comms log, and resolution plan — so every escalation is handled with the same rigor, not whoever is loudest in Slack. Three agents replace the ad-hoc Slack threads, manual Jira summaries, and support fire drills."}],["$","meta","2",{"name":"referrer","content":"strict-origin-when-cross-origin"}],["$","link","3",{"rel":"canonical","href":"https://runcabinet.com/templates/customer-escalation"}],["$","meta","4",{"property":"og:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","5",{"property":"og:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","6",{"property":"og:url","content":"https://runcabinet.com"}],["$","meta","7",{"property":"og:image","content":"https://runcabinet.com/og.png"}],["$","meta","8",{"property":"og:image:width","content":"1200"}],["$","meta","9",{"property":"og:image:height","content":"630"}],["$","meta","10",{"property":"og:image:alt","content":"Cabinet: the AI workspace your company owns, with knowledge, AI teams, and live apps in one place"}],["$","meta","11",{"property":"og:type","content":"website"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","14",{"name":"twitter:description","content":"Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI."}],["$","meta","15",{"name":"twitter:image","content":"https://runcabinet.com/og.png"}],["$","link","16",{"rel":"icon","href":"/icon.png?icon.1p7qxwp3akyyx.png","sizes":"512x512","type":"image/png"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-icon.png?apple-icon.1q-r1s9ajzc3v.png","sizes":"180x180","type":"image/png"}],["$","$L39","18",{}]]
