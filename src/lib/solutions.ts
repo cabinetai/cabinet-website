@@ -40,9 +40,9 @@ export type Solution = {
   outcomes: Outcome[];
   /** Tools this function already lives in — Cabinet pulls them together. */
   stack: string[];
-  /** A starter cabinet template (cabinets.sh registry). */
+  /** A starter cabinet template (this site's /templates registry). */
   template: string;
-  /** Example cabinets from the cabinets.sh registry, by slug. */
+  /** Example cabinets from the /templates registry, by slug. */
   exampleCabinets: string[];
   /** Optional transparent, single-motif hero illustration (public/generated). */
   heroMotif?: string;

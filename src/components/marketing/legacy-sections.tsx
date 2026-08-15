@@ -1113,8 +1113,6 @@ export function LegacyCabinetTemplates() {
             <a
               key={c.slug}
               href={cabinetUrl(c.slug)}
-              target="_blank"
-              rel="noopener noreferrer"
               className="group flex flex-col overflow-hidden rounded-2xl card-skin card-hover"
             >
               <div
@@ -1155,8 +1153,6 @@ export function LegacyCabinetTemplates() {
         <div className="mt-10 text-center">
           <a
             href={CABINETS_SITE}
-            target="_blank"
-            rel="noopener noreferrer"
             className="inline-flex h-11 items-center justify-center gap-2 rounded-full px-6 text-sm font-semibold btn-wood"
           >
             Browse all cabinets

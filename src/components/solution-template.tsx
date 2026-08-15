@@ -113,7 +113,7 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
           </div>
         </div>
       </section>
-      {/* ─── Example cabinets (cabinets.sh registry) ─── */}
+      {/* ─── Example cabinets (/templates registry) ─── */}
       {solution.exampleCabinets.length > 0 && (
         <section className="border-b border-border py-20">
           <div className="mx-auto max-w-5xl px-6">
@@ -135,8 +135,6 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
                   <a
                     key={slug}
                     href={cabinetUrl(slug)}
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="group flex flex-col overflow-hidden rounded-2xl card-skin card-hover"
                   >
                     <div
@@ -160,7 +158,7 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
                         {brandify(c.description)}
                       </p>
                       <span className="mt-3 inline-flex items-center gap-1.5 font-code text-sm text-accent transition-colors group-hover:text-accent-warm">
-                        View on cabinets.sh <ArrowRight className="h-4 w-4" />
+                        View template <ArrowRight className="h-4 w-4" />
                       </span>
                     </div>
                   </a>
@@ -170,8 +168,6 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
             <div className="mt-8 text-center">
               <a
                 href={CABINETS_SITE}
-                target="_blank"
-                rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 font-code text-sm text-accent transition-colors hover:text-accent-warm"
               >
                 Browse all cabinets <ArrowRight className="h-4 w-4" />

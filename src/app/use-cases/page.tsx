@@ -102,8 +102,6 @@ export default function UseCasesPage() {
                 <a
                   key={c.slug}
                   href={cabinetUrl(c.slug)}
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="group flex flex-col overflow-hidden rounded-2xl card-skin card-hover"
                 >
                   <div

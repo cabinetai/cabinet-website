@@ -225,14 +225,12 @@ export function WorkflowExplorer() {
         </div>
         <a
           href={cabinetUrl(cabinet.slug)}
-          target="_blank"
-          rel="noopener noreferrer"
           className="mt-5 inline-flex items-center justify-center gap-2 rounded-full bg-text-primary px-5 py-3 text-sm font-semibold text-bg-card transition-transform hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/40"
         >
           Inspect and clone <ArrowRight aria-hidden className="h-4 w-4" />
         </a>
         <p className="mt-3 text-center text-[10px] leading-relaxed text-text-tertiary">
-          Opens the real cabinet on cabinets.sh.
+          Opens the full template page.
         </p>
       </aside>
     </div>

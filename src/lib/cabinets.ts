@@ -1,10 +1,12 @@
 /**
- * Featured cabinets from the public registry at cabinets.sh
+ * Featured cabinets from the public registry
  * (source: https://github.com/cabinetai/cabinets). Each cabinet is a complete
  * AI team (agents, jobs, and knowledge) that you clone and run.
  *
- * This is a curated snapshot for the marketing site; the full, always-current
- * list lives on cabinets.sh. Covers are served from cabinets.sh/covers/<slug>.jpg.
+ * The registry is hosted on THIS site at /templates (cabinets.sh now
+ * redirects to runcabinet.com, so external cabinets.sh links are dead).
+ * This is a curated snapshot; the full list lives at /templates, and covers
+ * are served from this site's /covers/<slug>.jpg.
  */
 export type Cabinet = {
   slug: string;
@@ -13,9 +15,9 @@ export type Cabinet = {
   tags: string[];
 };
 
-export const CABINETS_SITE = "https://cabinets.sh";
-export const cabinetUrl = (slug: string) => `${CABINETS_SITE}/cabinet/${slug}`;
-export const cabinetCover = (slug: string) => `${CABINETS_SITE}/covers/${slug}.jpg`;
+export const CABINETS_SITE = "/templates";
+export const cabinetUrl = (slug: string) => `/templates/${slug}`;
+export const cabinetCover = (slug: string) => `/covers/${slug}.jpg`;
 
 export const CABINETS: Cabinet[] = [
   {
