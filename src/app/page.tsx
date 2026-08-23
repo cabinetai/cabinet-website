@@ -22,6 +22,7 @@ import {
 import { MarketingFooter } from "@/components/marketing/marketing-footer";
 import { HeroHeadline, MotionReveal } from "@/components/marketing/motion-primitives";
 import { SectionBadge } from "@/components/marketing/section-badge";
+import { DownloadButtons } from "@/components/marketing/download-buttons";
 
 export const metadata: Metadata = {
   title: "Cabinet: The AI workspace your company owns",
@@ -86,7 +87,11 @@ export default function HomePage() {
             </p>
             </MotionReveal>
 
-            {/* TODO(reimplement): download CTA removed with Sam's os-download component */}
+            <MotionReveal delay={0.6} amount={0.1}>
+              <div className="mt-8">
+                <DownloadButtons align="left" />
+              </div>
+            </MotionReveal>
 
             <MotionReveal delay={0.7} amount={0.1}>
             <div className="mt-7 flex flex-wrap justify-center gap-x-5 gap-y-2 text-xs font-semibold text-text-tertiary sm:justify-start">

@@ -24,6 +24,7 @@ import {
 import { MotionReveal } from "@/components/marketing/motion-primitives";
 import { CABINETS, CABINETS_SITE, cabinetCover, cabinetUrl } from "@/lib/cabinets";
 import { DISCORD_URL, GITHUB_URL } from "@/lib/site-config";
+import { DownloadButtons } from "@/components/marketing/download-buttons";
 import { SOLUTIONS, SOLUTION_STORIES } from "@/lib/solutions";
 
 const PROVIDERS = [
@@ -285,8 +286,7 @@ export function LegacyHero() {
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center pt-24 pb-12">
         {/* Install Options */}
         <div className="hidden max-w-3xl mx-auto mb-20 lg:block">
-          {/* Every OS gets the same size button; the visitor's own build leads. */}
-          {/* TODO(reimplement): OS download buttons + terminal install (Sam-authored, removed) */}
+          <DownloadButtons />
           <p className="mt-4 text-sm font-body-serif text-text-tertiary">Evaluating <span className="font-brand italic">Cabinet</span>{" "}for your team?{" "}
             <a
               href="/demo"
@@ -1156,7 +1156,7 @@ export function LegacyCta() {
           <p className="text-text-secondary mb-8 max-w-xl mx-auto leading-relaxed font-body-serif">
             <span className="font-brand italic">Cabinet</span>{" "}is the AI workspace where your knowledge base, AI team, and workflows live in one beautiful home.
           </p>
-          {/* TODO(reimplement): detected-OS download CTA (Sam-authored, removed) */}
+          <DownloadButtons />
         </div>
         {/* Wrapper clips the 2px border baked into the recording */}
         <div className="overflow-hidden rounded-2xl shadow-lg lg:rounded-r-none">
