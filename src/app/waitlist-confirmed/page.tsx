@@ -25,7 +25,7 @@ export default function WaitlistConfirmedPage() {
       </Suspense>
       <div className="max-w-2xl w-full text-center dict-card px-8 py-10 md:px-12 md:py-12">
         <Image
-          src="/brand/cabinet-logo-face-2-512.png"
+          src="/brand/cabinet-drawers-logo.png"
           alt="Cabinet"
           width={104}
           height={104}

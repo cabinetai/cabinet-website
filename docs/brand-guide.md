@@ -42,7 +42,7 @@ Cabinet is an AI-first knowledge base and operating system for a company's work.
 
 ### Founder and company
 
-Built by Hila Shmuel (ex-Apple, AI & Data Infrastructure). Legal entity: HOLY BIBLE APPS LTD. Open source, MIT licensed.
+Built by Hila Shmuel (ex-Apple, AI & Data Infrastructure). Legal entity: HOLY BIBLE APPS LTD. Open source.
 
 ---
 
@@ -67,7 +67,7 @@ The standard: every word reads as if a credible human professional wrote it, not
 2. **No AI-tell filler.** Ban "in today's fast-paced world," "unlock / unleash / elevate / supercharge," and "it's not just X, it's Y." No hedging throat-clearing.
 3. **Be concrete.** "Markdown files in a folder you can `grep` and `git`" beats "powerful, flexible knowledge management." Specificity beats adjectives.
 4. **Short, plain sentences** over clever ones.
-5. **No invented numbers.** No "10,000+ teams," no fake review scores, no made-up time savings. Use only real proof: live GitHub stars, MIT / open source, self-hosted, and press we actually have. Tag anything illustrative as "Illustrative."
+5. **No invented numbers.** No "10,000+ teams," no fake review scores, no made-up time savings. Use only real proof: live GitHub stars, open source, self-hosted, and press we actually have. Tag anything illustrative as "Illustrative."
 6. **Be fair to competitors.** Credit their strengths and include honest "when they are the better choice" framing. Fairness is what makes the rest believable.
 
 ### Capitalization and naming (standardize)
@@ -325,8 +325,8 @@ Comparison tables pin and tint the Cabinet column, use icon + label (not color a
 - **Public copyright line:** both footers read "© <year> Cabinet, Inc." (decided 2026-07-18). Do not put the legal entity name in footers.
 - **Legal entity:** Holy Bible Apps Ltd (Israeli company) remains the named entity inside legal documents only (/terms, /privacy: data controller, liability, jurisdiction clauses).
 - **Public contact:** `hi@runcabinet.com`. This is the only contact to publish.
-- **No physical address.** Do not publish a street address. Review the enterprise footer "Made with care in Tel Aviv" line against this policy and confirm whether a city reference is acceptable; if in doubt, remove it.
-- **License:** open source, MIT. Keep the MIT note and the agent-capability disclaimer (autonomous agents can access the file system, shell, and network) in the footer.
+- **No physical address.** Do not publish a street address or city reference.
+- **License:** open source. Keep the agent-capability disclaimer (autonomous agents can access the file system, shell, and network) in the footer.
 - **Comparisons:** when comparing competitors, add the quiet line "Comparisons reflect publicly available information as of `<date>`; corrections welcome at hi@runcabinet.com."
 
 ---

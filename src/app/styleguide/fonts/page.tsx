@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { FontPicker } from "./picker";
 
 export const metadata: Metadata = {
@@ -8,5 +9,10 @@ export const metadata: Metadata = {
 };
 
 export default function FontPickerPage() {
+  // Dev-only, same as the styleguide it hangs off.
+  if (process.env.NODE_ENV === "production") {
+    notFound();
+  }
+
   return <FontPicker />;
 }

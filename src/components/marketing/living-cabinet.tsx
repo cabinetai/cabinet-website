@@ -148,10 +148,13 @@ export function LivingCabinet() {
     return () => mq.removeEventListener("change", apply);
   }, []);
 
-  // A hint belongs to the scene it was raised in; drop it when the scene changes.
-  useEffect(() => setHint(null), [active]);
+  const selectScene = (next: SceneId) => {
+    setActive(next);
+    // A hint belongs to the scene it was raised in.
+    setHint(null);
+  };
 
-  const advance = () => setActive(SCENES[(activeIndex + 1) % SCENES.length].id);
+  const advance = () => selectScene(SCENES[(activeIndex + 1) % SCENES.length].id);
 
   return (
     <div
@@ -175,7 +178,7 @@ export function LivingCabinet() {
                 aria-selected={selected}
                 aria-controls={`cabinet-panel-${item.id}`}
                 className={`${styles.tab} ${selected ? styles.tabActive : ""}`}
-                onClick={() => setActive(item.id)}
+                onClick={() => selectScene(item.id)}
               >
                 <Icon aria-hidden className="h-3.5 w-3.5" />
                 {item.label}

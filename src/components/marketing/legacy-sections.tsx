@@ -1,44 +1,34 @@
-"use client";
-
 import Image from "next/image";
 import {
-  AppWindow,
   ArrowRight,
   Bot,
   Check,
   Code2,
-  Copy,
   FileText,
-  FileType,
-  Folder,
   GitBranch,
-  Globe,
-  Search,
   Shield,
   Star,
-  Table,
   Users,
   X,
 } from "lucide-react";
-import { Suspense, useCallback, useEffect, useRef, useState } from "react";
 import { IntegrationScene } from "@/components/integration-scene";
+import { CloudCabinet } from "@/components/marketing/cloud-cabinet";
 import { PrinciplesShowcase } from "@/components/principles-showcase";
 import { DiscordIcon, GithubIcon } from "@/components/site-icons";
-import { WaitlistCapture } from "@/components/waitlist-capture";
-import { WaitlistCloudBackdrop } from "@/components/waitlist-cloud-backdrop";
 import { WoodIcon } from "@/components/wood-icon";
-import { CABINETS, CABINETS_SITE, cabinetCover, cabinetUrl } from "@/lib/cabinets";
 import {
-  DISCORD_URL,
-  GITHUB_URL,
-  MACOS_DOWNLOAD_URL,
-  WINDOWS_DOWNLOAD_URL,
-} from "@/lib/site-config";
+  CopyButton,
+  TerminalDemo,
+  TypingText,
+} from "@/components/marketing/legacy-interactive-primitives";
+import { MotionReveal } from "@/components/marketing/motion-primitives";
+import { CABINETS, CABINETS_SITE, cabinetCover, cabinetUrl } from "@/lib/cabinets";
+import { DISCORD_URL, GITHUB_URL } from "@/lib/site-config";
 import { SOLUTIONS, SOLUTION_STORIES } from "@/lib/solutions";
 
 const PROVIDERS = [
   { src: "/providers/claude.svg", name: "Claude" },
-  { src: "/providers/openai.png", name: "OpenAI" },
+  { src: "/providers/openai.svg", name: "OpenAI" },
   { src: "/providers/gemini.svg", name: "Gemini" },
   { src: "/providers/grok.svg", name: "Grok Code" },
   { src: "/providers/copilot.svg", name: "Copilot" },
@@ -48,14 +38,9 @@ const PROVIDERS = [
 ];
 
 // Tools your company runs on - rendered as a scrolling, multi-row logo wall.
-export const INTEGRATION_LOGOS: string[] = [
-  ..."slack microsoft-teams notion github hubspot confluence google-drive gmail stripe zendesk figma workday intercom servicenow airtable bamboohr brex docusign looker mixpanel quickbooks tableau greenhouse google-calendar google-meet onedrive sharepoint bigquery gong"
-    .split(" ")
-    .map((n) => `/logos/${n}.svg`),
-  ..."salesforce jira zoom snowflake asana calendly clickup dropbox box gitlab databricks datadog amplitude linear"
-    .split(" ")
-    .map((n) => `/logos/${n}.webp`),
-];
+export const INTEGRATION_LOGOS: string[] = "slack microsoft-teams notion github hubspot confluence google-drive gmail stripe zendesk figma workday intercom servicenow airtable bamboohr brex docusign looker mixpanel quickbooks tableau greenhouse google-calendar google-meet onedrive sharepoint bigquery gong salesforce jira zoom snowflake asana calendly clickup dropbox box gitlab databricks datadog amplitude linear"
+  .split(" ")
+  .map((n) => `/logos/${n}.svg`);
 
 // Three interleaved rows so each band mixes brands evenly.
 const INTEGRATION_ROWS = [0, 1, 2].map((r) =>
@@ -80,7 +65,7 @@ const TRUST_BADGES = [
   {
     img: "/brand/trust/open-source.png",
     label: "Open source",
-    desc: "MIT licensed. Read every line, fork it, or run your own build.",
+    desc: "Read every line, fork it, or run your own build.",
   },
   {
     img: "/brand/trust/self-hosted.png",
@@ -134,8 +119,8 @@ const TESTIMONIALS = [
     context:
       "Cabinet is the missing persistence and memory layer that TOGAF, ISO, and many other framework tools have never had. The framework provides the skeleton; Cabinet provides the living connective tissue.",
     name: "Jean Pierre Traets",
-    role: "Sustainability Solutions Architect, EMEA",
-    location: "Europe",
+    role: "Sustainability Solutions Architect",
+    location: "EMEA",
     image: "/testimonials/jean-pierre-traets.jpg",
     linkedin: "https://www.linkedin.com/in/jean-pierre-traets/",
     initials: "JT",
@@ -154,68 +139,10 @@ const TESTIMONIALS = [
   },
 ];
 
-type GitHubRepoResponse = {
-  stargazers_count?: number;
-};
-
-function formatStarCount(stars: number | null) {
-  if (stars === null) return "Star on GitHub";
-
-  return new Intl.NumberFormat("en", {
-    notation: stars >= 1000 ? "compact" : "standard",
-    maximumFractionDigits: stars >= 1000 ? 1 : 0,
-  }).format(stars);
-}
-
-function getGitHubRepoPath(url: string) {
-  const match = url.match(/github\.com\/([^/]+\/[^/?#]+)/i);
-  return match?.[1] ?? null;
-}
-
-function useGitHubStars() {
-  const [stars, setStars] = useState<number | null>(null);
-
-  useEffect(() => {
-    const repoPath = getGitHubRepoPath(GITHUB_URL);
-    if (!repoPath) return;
-
-    const controller = new AbortController();
-
-    async function loadStars() {
-      try {
-        const response = await fetch(`https://api.github.com/repos/${repoPath}`, {
-          signal: controller.signal,
-          headers: {
-            Accept: "application/vnd.github+json",
-          },
-        });
-
-        if (!response.ok) return;
-
-        const data = (await response.json()) as GitHubRepoResponse;
-        if (typeof data.stargazers_count === "number") {
-          setStars(data.stargazers_count);
-        }
-      } catch (error) {
-        if (!(error instanceof DOMException && error.name === "AbortError")) {
-          console.error("Unable to load GitHub stars", error);
-        }
-      }
-    }
-
-    loadStars();
-    return () => controller.abort();
-  }, []);
-
-  return stars;
-}
-
 function GitHubStarsButton({
-  stars,
   className,
   compact = false,
 }: {
-  stars: number | null;
   className: string;
   compact?: boolean;
 }) {
@@ -232,138 +159,9 @@ function GitHubStarsButton({
       </span>
       <span className="inline-flex items-center gap-1 rounded-full bg-accent-bg px-2.5 py-1 text-[0.72rem] font-semibold text-accent shadow-sm ring-1 ring-border-light">
         <Star className="w-3.5 h-3.5 fill-current" />
-        {formatStarCount(stars)}
+        GitHub
       </span>
     </a>
-  );
-}
-
-/* Typing Animation */
-function TypingText({ texts }: { texts: string[] }) {
-  const [textIndex, setTextIndex] = useState(0);
-  const [charIndex, setCharIndex] = useState(0);
-  const [deleting, setDeleting] = useState(false);
-
-  useEffect(() => {
-    const current = texts[textIndex];
-    const timeout = deleting ? 30 : 60;
-
-    if (!deleting && charIndex === current.length) {
-      const timer = setTimeout(() => setDeleting(true), 2000);
-      return () => clearTimeout(timer);
-    }
-    if (deleting && charIndex === 0) {
-      const timer = setTimeout(() => {
-        setDeleting(false);
-        setTextIndex((i) => (i + 1) % texts.length);
-      }, timeout);
-      return () => clearTimeout(timer);
-    }
-
-    const timer = setTimeout(() => {
-      setCharIndex((c) => c + (deleting ? -1 : 1));
-    }, timeout);
-
-    return () => clearTimeout(timer);
-  }, [charIndex, deleting, textIndex, texts]);
-
-  return (
-    <span className="text-accent">
-      {texts[textIndex].slice(0, charIndex)}
-      <span className="cursor-blink text-accent-light">|</span>
-    </span>
-  );
-}
-
-/* Copy Button */
-function CopyButton({ text }: { text: string }) {
-  const [copied, setCopied] = useState(false);
-  const handleCopy = useCallback(() => {
-    navigator.clipboard.writeText(text);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  }, [text]);
-  return (
-    <button
-      onClick={handleCopy}
-      className="shrink-0 p-1 rounded text-zinc-500 hover:text-zinc-200 hover:bg-white/10 transition-colors"
-      title="Copy to clipboard"
-    >
-      {copied ? <Check className="w-3.5 h-3.5 text-green-400" /> : <Copy className="w-3.5 h-3.5" />}
-    </button>
-  );
-}
-
-/* Terminal Demo */
-function TerminalDemo() {
-  const lines = [
-    { prompt: true, text: "npx cabinetai run" },
-    { prompt: false, text: "Creating knowledge base..." },
-    { prompt: false, text: "Setting up AI agents..." },
-    { prompt: false, text: "" },
-    { prompt: false, text: "  CEO Agent        ready    strategic planning" },
-    { prompt: false, text: "  Content Writer   ready    blog, social, SEO" },
-    { prompt: false, text: "  Editor           ready    KB maintenance" },
-    { prompt: false, text: "" },
-    { prompt: false, text: "Cabinet is running at http://localhost:3000" },
-    { prompt: false, text: "Your AI team is ready." },
-  ];
-
-  const [visibleLines, setVisibleLines] = useState(0);
-  const containerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          let i = 0;
-          const interval = setInterval(() => {
-            i++;
-            setVisibleLines(i);
-            if (i >= lines.length) clearInterval(interval);
-          }, 300);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.3 }
-    );
-    if (containerRef.current) observer.observe(containerRef.current);
-    return () => observer.disconnect();
-  }, [lines.length]);
-
-  return (
-    <div ref={containerRef} className="terminal-chrome relative scanline">
-      <div className="flex items-center gap-2 px-4 py-3 border-b border-white/8">
-        <div className="w-3 h-3 rounded-full bg-red-500/70" />
-        <div className="w-3 h-3 rounded-full bg-yellow-500/70" />
-        <div className="w-3 h-3 rounded-full bg-green-500/70" />
-        <span className="ml-3 text-xs text-zinc-500 font-code">cabinet ~ zsh</span>
-      </div>
-      <div className="p-5 font-code text-sm leading-relaxed min-h-[280px]">
-        {lines.slice(0, visibleLines).map((line, i) => (
-          <div key={i} className="flex">
-            {line.prompt ? (
-              <>
-                <span className="text-green-400 mr-2">$</span>
-                <span className="text-zinc-200">{line.text}</span>
-              </>
-            ) : (
-              <span
-                className={
-                  line.text.startsWith("  ") && !line.text.startsWith("  Cabinet")
-                    ? "text-amber-300"
-                    : line.text.startsWith("Cabinet") || line.text.startsWith("Your")
-                      ? "text-green-400 font-semibold"
-                      : "text-zinc-500"
-                }
-              >
-                {line.text}
-              </span>
-            )}
-          </div>
-        ))}
-      </div>
-    </div>
   );
 }
 
@@ -384,7 +182,7 @@ function FeatureCard({
   return (
     <div
       className={`group relative overflow-hidden rounded-2xl p-6 card-hover ${
-        featured ? "bg-gradient-to-br from-[#FBF2E4] to-[#F2E5CF]" : "bg-bg-card"
+        featured ? "bg-gradient-to-br from-[#FBF2E4] to-[#F2E5CF] max-lg:text-center" : "bg-bg-card"
       } ${className}`}
     >
       {featured && (
@@ -398,8 +196,10 @@ function FeatureCard({
       <img
         src={img}
         alt=""
+        loading="lazy"
+        decoding="async"
         className={`relative z-10 mb-4 object-contain transition-transform duration-200 group-hover:scale-105 group-hover:-rotate-2 ${
-          featured ? "h-[88px] w-[88px]" : "h-16 w-16"
+          featured ? "h-16 w-16 max-lg:mx-auto lg:h-[88px] lg:w-[88px]" : "h-16 w-16"
         }`}
       />
       <h3 className="relative z-10 mb-2 font-display text-lg text-text-primary">{title}</h3>
@@ -447,658 +247,6 @@ function AgentShowcase() {
   );
 }
 
-/* Use Cases Carousel */
-const USE_CASES = [
-  {
-    tag: "B2C App",
-    persona: "Indie App Founder",
-    emoji: "📱",
-    headline: "My app runs itself while I sleep",
-    quote:
-      "I use it to run my B2C app. The App Store listing is a markdown page I can update any time. I have an hourly Reddit scout that surfaces user complaints, and a weekly competitor job that crawls the market and dumps everything into /market/competitors/. I wake up to a briefing.",
-    agents: [
-      { emoji: "🔍", name: "Reddit Scout", status: "running", job: "every hour", pulse: true },
-      { emoji: "📊", name: "Competitor Analyst", status: "idle", job: "every Monday" },
-      { emoji: "📝", name: "Content Writer", status: "idle", job: "every day 9am" },
-    ],
-    kb: {
-      projectName: "my-b2c-app",
-      tree: [
-        { name: "product/", type: "folder", depth: 0 },
-        { name: "app-store-listing.md", type: "md", depth: 1, active: true },
-        { name: "roadmap.md", type: "md", depth: 1 },
-        { name: "pricing.md", type: "md", depth: 1 },
-        { name: "market/", type: "folder", depth: 0 },
-        { name: "competitors/", type: "folder", depth: 1 },
-        { name: "week-14.md", type: "md", depth: 2, badge: "new" },
-        { name: "week-13.md", type: "md", depth: 2 },
-        { name: "positioning.md", type: "md", depth: 1 },
-        { name: "data/", type: "folder", depth: 0 },
-        { name: "analytics.csv", type: "csv", depth: 1 },
-        { name: "reviews.csv", type: "csv", depth: 1 },
-      ],
-      preview: {
-        title: "product/app-store-listing",
-        lines: [
-          { t: "h1", v: "App Store Listing" },
-          { t: "meta", v: "Updated by Content Writer · 2 hours ago" },
-          { t: "h2", v: "Short Description" },
-          { t: "p", w: 95 },
-          { t: "p", w: 72 },
-          { t: "h2", v: "Keywords" },
-          { t: "tags", v: ["b2c", "productivity", "ios", "mobile", "startup"] },
-          { t: "h2", v: "What's New in v4.2" },
-          { t: "p", w: 88 },
-          { t: "p", w: 60 },
-        ],
-      },
-    },
-  },
-  {
-    tag: "B2B Sales",
-    persona: "Small Business Owner",
-    emoji: "💼",
-    headline: "2,000 leads. One army of agents.",
-    quote:
-      "I have a CSV of leads. My agents read it, research each company, and draft personalised outreach. The pipeline CSV updates in real time. I watch it fill up from my dashboard. It's like having a sales team that never sleeps and never asks for a raise.",
-    agents: [
-      { emoji: "🕵️", name: "Lead Researcher", status: "running", job: "continuous", pulse: true },
-      { emoji: "✉️", name: "Outreach Writer", status: "running", job: "continuous", pulse: true },
-      { emoji: "📈", name: "Pipeline Tracker", status: "idle", job: "every 30 min" },
-    ],
-    kb: {
-      projectName: "acme-sales",
-      tree: [
-        { name: "leads/", type: "folder", depth: 0 },
-        { name: "pipeline.csv", type: "csv", depth: 1, active: true },
-        { name: "leads-raw.csv", type: "csv", depth: 1 },
-        { name: "intel/", type: "folder", depth: 0 },
-        { name: "companies/", type: "folder", depth: 1 },
-        { name: "techcorp.md", type: "md", depth: 2, badge: "new" },
-        { name: "globex.md", type: "md", depth: 2 },
-        { name: "outreach/", type: "folder", depth: 0 },
-        { name: "templates/", type: "folder", depth: 1 },
-        { name: "cold-email.md", type: "md", depth: 2 },
-        { name: "follow-up.md", type: "md", depth: 2 },
-        { name: "tools/", type: "folder", depth: 0 },
-        { name: "pipeline-dashboard/", type: "html", depth: 1 },
-      ],
-      preview: {
-        title: "leads/pipeline.csv",
-        lines: [
-          { t: "h1", v: "pipeline.csv" },
-          { t: "meta", v: "87 rows · Updated by Lead Researcher · just now" },
-          { t: "table",
-            cols: ["Company", "Contact", "Status", "Score"],
-            rows: [
-              ["TechCorp Inc", "Alice Chen", "✅ Researched", "87"],
-              ["StartupXYZ", "Bob Lee", "📝 Drafted", "72"],
-              ["GlobalDev", "Carol Kim", "📤 Sent", "91"],
-              ["NewCo Ltd", "Dan Park", "🔍 Researching…", "…"],
-            ],
-          },
-        ],
-      },
-    },
-  },
-  {
-    tag: "Newsletter",
-    persona: "Solo Creator",
-    emoji: "✍️",
-    headline: "Monday morning. Newsletter writes itself.",
-    quote:
-      "Every Monday my Trend Scout scans HN and Reddit, picks the top signals, and my Draft Writer assembles the issue. I open Cabinet, read the draft, make a few edits, and hit send. What used to take 3 hours now takes 10 minutes.",
-    agents: [
-      { emoji: "📡", name: "Trend Scout", status: "running", job: "daily 6am", pulse: true },
-      { emoji: "🖊️", name: "Draft Writer", status: "idle", job: "every Monday" },
-      { emoji: "🔎", name: "SEO Reviewer", status: "idle", job: "on publish" },
-    ],
-    kb: {
-      projectName: "my-newsletter",
-      tree: [
-        { name: "newsletter/", type: "folder", depth: 0 },
-        { name: "issues/", type: "folder", depth: 1 },
-        { name: "2026-w14.md", type: "md", depth: 2, active: true, badge: "new" },
-        { name: "2026-w13.md", type: "md", depth: 2 },
-        { name: "2026-w12.md", type: "md", depth: 2 },
-        { name: "brand/", type: "folder", depth: 0 },
-        { name: "voice-guide.md", type: "md", depth: 1 },
-        { name: "tone-examples.md", type: "md", depth: 1 },
-        { name: "research/", type: "folder", depth: 0 },
-        { name: "sources.md", type: "md", depth: 1 },
-        { name: "hn-picks.md", type: "md", depth: 1, badge: "updated" },
-        { name: "archive/", type: "folder", depth: 0 },
-      ],
-      preview: {
-        title: "newsletter/issues/2026-w14",
-        lines: [
-          { t: "h1", v: "Week 14: The AI Stack Shift" },
-          { t: "meta", v: "Drafted by Draft Writer · Monday 8:14am · ready for review" },
-          { t: "h2", v: "This week's signal" },
-          { t: "p", w: 100 },
-          { t: "p", w: 82 },
-          { t: "p", w: 91 },
-          { t: "h2", v: "Top picks" },
-          { t: "p", w: 95 },
-          { t: "p", w: 70 },
-          { t: "tags", v: ["AI", "tooling", "indie hackers", "dev tools"] },
-        ],
-      },
-    },
-  },
-  {
-    tag: "Consulting",
-    persona: "Freelance Consultant",
-    emoji: "🏢",
-    headline: "Every client. One brain.",
-    quote:
-      "Each client gets their own folder. Meeting notes, proposals, deliverables: all markdown. When I switch clients, I just ask the AI about the folder. It has full context: the history, the decisions, the open questions. No re-reading, no catch-up.",
-    agents: [
-      { emoji: "🗒️", name: "Meeting Summariser", status: "idle", job: "after each call" },
-      { emoji: "📄", name: "Proposal Writer", status: "running", job: "on demand", pulse: true },
-      { emoji: "🔗", name: "Research Assistant", status: "idle", job: "on demand" },
-    ],
-    kb: {
-      projectName: "consulting-kb",
-      tree: [
-        { name: "clients/", type: "folder", depth: 0 },
-        { name: "acme/", type: "folder", depth: 1 },
-        { name: "strategy.md", type: "md", depth: 2, active: true },
-        { name: "proposal-v2.md", type: "md", depth: 2 },
-        { name: "meeting-notes/", type: "folder", depth: 2 },
-        { name: "2026-03-28.md", type: "md", depth: 3 },
-        { name: "2026-03-14.md", type: "md", depth: 3 },
-        { name: "globex/", type: "folder", depth: 1 },
-        { name: "proposal-v3.md", type: "md", depth: 2, badge: "updated" },
-        { name: "brief.md", type: "md", depth: 2 },
-        { name: "templates/", type: "folder", depth: 0 },
-        { name: "proposal.md", type: "md", depth: 1 },
-        { name: "discovery.md", type: "md", depth: 1 },
-      ],
-      preview: {
-        title: "clients/acme/strategy",
-        lines: [
-          { t: "h1", v: "Acme: Q2 Strategy" },
-          { t: "meta", v: "Updated after kickoff call · 3 days ago" },
-          { t: "h2", v: "Current Focus" },
-          { t: "p", w: 100 },
-          { t: "p", w: 75 },
-          { t: "h2", v: "Open Questions" },
-          { t: "p", w: 90 },
-          { t: "p", w: 65 },
-          { t: "h2", v: "Next Steps" },
-          { t: "p", w: 82 },
-          { t: "p", w: 55 },
-        ],
-      },
-    },
-  },
-  {
-    tag: "Open Source",
-    persona: "OSS Maintainer",
-    emoji: "⚙️",
-    headline: "Merge PR. Changelog writes itself.",
-    quote:
-      "I linked my GitHub repo with .repo.yaml. When I merge a PR, an agent reads the diff, updates CHANGELOG.md, drafts release notes, and queues a Discord announcement. Maintenance overhead dropped to almost zero.",
-    agents: [
-      { emoji: "📋", name: "Release Writer", status: "idle", job: "on PR merge" },
-      { emoji: "📖", name: "Docs Updater", status: "running", job: "continuous", pulse: true },
-      { emoji: "📣", name: "Announcer", status: "idle", job: "on release tag" },
-    ],
-    kb: {
-      projectName: "my-oss-lib",
-      tree: [
-        { name: "docs/", type: "folder", depth: 0 },
-        { name: "getting-started.md", type: "md", depth: 1 },
-        { name: "api-reference.md", type: "md", depth: 1 },
-        { name: "contributing.md", type: "md", depth: 1 },
-        { name: "changelog.md", type: "md", depth: 0, active: true, badge: "updated" },
-        { name: "releases/", type: "folder", depth: 0 },
-        { name: "v2.1.0.md", type: "md", depth: 1, badge: "new" },
-        { name: "v2.0.0.md", type: "md", depth: 1 },
-        { name: ".repo.yaml", type: "yaml", depth: 0 },
-      ],
-      preview: {
-        title: "changelog",
-        lines: [
-          { t: "h1", v: "Changelog" },
-          { t: "meta", v: "Written by Release Writer · just now · linked to github/my-lib" },
-          { t: "h2", v: "v2.1.0, 2026-04-02" },
-          { t: "p", w: 98 },
-          { t: "p", w: 80 },
-          { t: "p", w: 68 },
-          { t: "h2", v: "v2.0.0, 2026-03-15" },
-          { t: "p", w: 85 },
-          { t: "p", w: 72 },
-        ],
-      },
-    },
-  },
-  {
-    tag: "Startup OS",
-    persona: "Solo Founder",
-    emoji: "🚀",
-    headline: "Strategy, roadmap, market: one place.",
-    quote:
-      "I run my entire startup from here. Strategy in /strategy/, roadmap in /product/roadmap.md, ICP in /market/icp.md. My CEO agent attends every planning session. I open a page, describe the week, and it challenges my assumptions and updates the mission board.",
-    agents: [
-      { emoji: "🎯", name: "CEO Agent", status: "running", job: "daily standup", pulse: true },
-      { emoji: "📊", name: "Market Scout", status: "idle", job: "every Monday" },
-      { emoji: "✅", name: "OKR Tracker", status: "idle", job: "every Friday" },
-    ],
-    kb: {
-      projectName: "my-startup",
-      tree: [
-        { name: "strategy/", type: "folder", depth: 0 },
-        { name: "q2-plan.md", type: "md", depth: 1, active: true },
-        { name: "vision.md", type: "md", depth: 1 },
-        { name: "product/", type: "folder", depth: 0 },
-        { name: "roadmap.md", type: "md", depth: 1 },
-        { name: "specs/", type: "folder", depth: 1 },
-        { name: "market/", type: "folder", depth: 0 },
-        { name: "icp.md", type: "md", depth: 1 },
-        { name: "competitors.md", type: "md", depth: 1, badge: "updated" },
-        { name: "tools/", type: "folder", depth: 0 },
-        { name: "okr-tracker/", type: "app", depth: 1 },
-      ],
-      preview: {
-        title: "strategy/q2-plan",
-        lines: [
-          { t: "h1", v: "Q2 Plan, 2026" },
-          { t: "meta", v: "Reviewed by CEO Agent · today · 3 open questions flagged" },
-          { t: "h2", v: "North Star" },
-          { t: "p", w: 93 },
-          { t: "p", w: 70 },
-          { t: "h2", v: "OKRs" },
-          { t: "p", w: 88 },
-          { t: "p", w: 75 },
-          { t: "tags", v: ["growth", "retention", "Q2-2026", "fundraising"] },
-        ],
-      },
-    },
-  },
-];
-
-function getNodeIcon(type: string, isActive: boolean) {
-  const base = "w-3.5 h-3.5 shrink-0";
-  if (type === "folder")  return <Folder     className={`${base} text-text-tertiary`} />;
-  if (type === "csv")     return <Table      className={`${base} text-green-500`} />;
-  if (type === "html")    return <Globe      className={`${base} text-blue-500`} />;
-  if (type === "app")     return <AppWindow  className={`${base} text-green-500`} />;
-  if (type === "yaml")    return <GitBranch  className={`${base} text-orange-400`} />;
-  if (type === "pdf")     return <FileType   className={`${base} text-red-400`} />;
-  return <FileText className={`${base} ${isActive ? "text-accent" : "text-text-tertiary"}`} />;
-}
-
-function displayNodeName(name: string, type: string) {
-  if (type === "md" && name.endsWith(".md")) return name.slice(0, -3);
-  return name;
-}
-
-function CabinetMockup({ kb, caseEmoji, agents }: { kb: (typeof USE_CASES)[0]["kb"]; caseEmoji: string; agents: (typeof USE_CASES)[0]["agents"] }) {
-  return (
-    <div className="rounded-xl overflow-hidden card-skin text-left">
-      {/* Browser chrome - warm parchment */}
-      <div className="flex items-center gap-2 px-4 py-2 border-b border-border bg-bg-warm">
-        <div className="w-2.5 h-2.5 rounded-full bg-red-400/90" />
-        <div className="w-2.5 h-2.5 rounded-full bg-yellow-400/90" />
-        <div className="w-2.5 h-2.5 rounded-full bg-green-400/90" />
-        <div className="flex-1 mx-3 flex items-center justify-center gap-1.5">
-          <span className="text-[11px] font-brand italic text-text-primary">Cabinet</span>
-          <span className="text-text-muted text-[10px]">/</span>
-          <span className="text-[10px] font-code text-text-tertiary truncate">{kb.projectName}</span>
-        </div>
-        <Search className="w-3 h-3 text-text-muted" />
-      </div>
-
-      {/* App body */}
-      <div className="flex" style={{ height: "264px" }}>
-
-        {/* Sidebar - #FAF6F1 */}
-        <div className="flex-shrink-0 border-r border-border flex flex-col bg-bg" style={{ width: "176px" }}>
-          {/* Project header */}
-          <div className="flex items-center gap-1.5 px-3 py-2.5 border-b border-border">
-            <span className="text-sm leading-none">{caseEmoji}</span>
-            <span className="text-[11px] font-code text-text-primary font-semibold truncate">{kb.projectName}</span>
-          </div>
-          {/* Agents */}
-          <div className="border-b border-border px-3 py-2">
-            <p className="text-[9px] font-code text-text-muted uppercase tracking-widest mb-1.5">Agents</p>
-            <div className="space-y-1">
-              {agents.map((agent) => (
-                <div key={agent.name} className="flex items-center gap-1.5">
-                  <span className="text-xs leading-none">{agent.emoji}</span>
-                  <span className="text-[10px] font-code text-text-secondary truncate flex-1">{agent.name}</span>
-                  {agent.pulse ? (
-                    <span className="relative flex h-1.5 w-1.5 shrink-0">
-                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
-                      <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-green-500" />
-                    </span>
-                  ) : (
-                    <span className="h-1.5 w-1.5 rounded-full bg-border shrink-0" />
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Files */}
-          <div className="flex-1 overflow-y-auto py-1">
-            <p className="text-[9px] font-code text-text-muted uppercase tracking-widest px-3 pt-1.5 pb-1">Files</p>
-            {kb.tree.map((node, i) => {
-              const isActive = !!(node as { active?: boolean }).active;
-              const badge = (node as { badge?: string }).badge;
-              const label = displayNodeName(node.name, node.type);
-              return (
-                <div
-                  key={i}
-                  className={`flex items-center gap-1.5 py-[3px] text-[11px] font-code cursor-default select-none transition-colors
-                    ${isActive
-                      ? "bg-accent-bg border-l-2 border-accent text-accent"
-                      : "text-text-secondary hover:bg-bg-warm border-l-2 border-transparent"}`}
-                  style={{ paddingLeft: `${6 + (node.depth || 0) * 11}px`, paddingRight: "6px" }}
-                >
-                  {getNodeIcon(node.type, isActive)}
-                  <span className={`truncate flex-1 ${isActive ? "text-accent font-medium" : ""}`}>{label}</span>
-                  {badge && (
-                    <span className="shrink-0 text-[8px] font-code bg-green-50 text-green-600 border border-green-200 px-1 rounded leading-none py-px">
-                      {badge}
-                    </span>
-                  )}
-                </div>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* Content pane - white card */}
-        <div className="flex-1 overflow-y-auto p-5 bg-bg-card">
-          {kb.preview.lines.map((line, i) => {
-            if (line.t === "h1") return (
-              <div key={i} className="text-sm font-bold text-text-primary mb-0.5 leading-tight font-display">
-                {(line as { t: string; v: string }).v}
-              </div>
-            );
-            if (line.t === "h2") return (
-              <div key={i} className="text-[10px] font-semibold text-text-primary mt-3 mb-1.5 uppercase tracking-wide">
-                {(line as { t: string; v: string }).v}
-              </div>
-            );
-            if (line.t === "meta") return (
-              <div key={i} className="text-[10px] font-code text-text-tertiary mb-2.5 pb-2 border-b border-border leading-tight">
-                {(line as { t: string; v: string }).v}
-              </div>
-            );
-            if (line.t === "p") return (
-              <div
-                key={i}
-                className="h-1.5 rounded-full bg-border mb-1.5"
-                style={{ width: `${(line as { t: string; w: number }).w}%` }}
-              />
-            );
-            if (line.t === "tags") return (
-              <div key={i} className="flex flex-wrap gap-1 mt-1">
-                {((line as { t: string; v: string[] }).v).map((tag) => (
-                  <span key={tag} className="text-[9px] font-code text-accent bg-accent-bg border border-accent/20 px-1.5 py-0.5 rounded">
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            );
-            if (line.t === "table") {
-              const l = line as { t: string; cols: string[]; rows: string[][] };
-              return (
-                <div key={i} className="mt-0.5 overflow-hidden rounded border border-border text-[9px] font-code">
-                  <div className="flex bg-bg-warm border-b border-border">
-                    {l.cols.map((col) => (
-                      <div key={col} className="flex-1 px-2 py-1.5 text-text-tertiary font-semibold truncate">{col}</div>
-                    ))}
-                  </div>
-                  {l.rows.map((row, ri) => (
-                    <div key={ri} className={`flex border-b border-border/60 last:border-0 ${ri % 2 === 1 ? "bg-bg" : "bg-bg-card"}`}>
-                      {row.map((cell, ci) => (
-                        <div key={ci} className={`flex-1 px-2 py-1.5 truncate ${
-                          cell.includes("Researching") ? "text-amber-600" :
-                          cell.includes("Sent")        ? "text-green-600" :
-                          cell.includes("Researched")  ? "text-blue-600" :
-                          cell.includes("Drafted")     ? "text-violet-600" :
-                          ci === 3                     ? "text-text-primary font-medium" :
-                                                         "text-text-secondary"
-                        }`}>{cell}</div>
-                      ))}
-                    </div>
-                  ))}
-                </div>
-              );
-            }
-            return null;
-          })}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-export function LegacyUseCases() {
-  const total = USE_CASES.length;
-  // We render [last, ...all, first] so we can seamlessly loop
-  const trackRef = useRef<HTMLDivElement>(null);
-  const [idx, setIdx] = useState(1); // 1-based because slot 0 is the clone of last
-  const [isTransitioning, setIsTransitioning] = useState(true);
-  const autoPlayRef = useRef<ReturnType<typeof setInterval> | null>(null);
-  const touchStartX = useRef(0);
-  const touchDeltaX = useRef(0);
-  const isSwiping = useRef(false);
-
-  // Real index into USE_CASES (0-based)
-  const realIndex = ((idx - 1) % total + total) % total;
-
-  // Slides: [clone-last, 0, 1, 2, ..., n-1, clone-first]
-  const slides = [USE_CASES[total - 1], ...USE_CASES, USE_CASES[0]];
-
-  const resetAutoPlay = useCallback(() => {
-    if (autoPlayRef.current) clearInterval(autoPlayRef.current);
-    autoPlayRef.current = setInterval(() => {
-      setIsTransitioning(true);
-      setIdx((i) => i + 1);
-    }, 5000);
-  }, []);
-
-  // Start auto-play on mount
-  useEffect(() => {
-    resetAutoPlay();
-    return () => { if (autoPlayRef.current) clearInterval(autoPlayRef.current); };
-  }, [resetAutoPlay]);
-
-  // When transition ends, if we're on a clone slide, jump instantly to the real one
-  const handleTransitionEnd = useCallback(() => {
-    if (idx === 0) {
-      setIsTransitioning(false);
-      setIdx(total);
-    } else if (idx === total + 1) {
-      setIsTransitioning(false);
-      setIdx(1);
-    }
-  }, [idx, total]);
-
-  const goTo = useCallback((i: number) => {
-    setIsTransitioning(true);
-    setIdx(i + 1); // +1 because slot 0 is clone
-    resetAutoPlay();
-  }, [resetAutoPlay]);
-
-  const prev = useCallback(() => {
-    setIsTransitioning(true);
-    setIdx((i) => i - 1);
-    resetAutoPlay();
-  }, [resetAutoPlay]);
-
-  const next = useCallback(() => {
-    setIsTransitioning(true);
-    setIdx((i) => i + 1);
-    resetAutoPlay();
-  }, [resetAutoPlay]);
-
-  // Touch / swipe handlers
-  const onTouchStart = useCallback((e: React.TouchEvent) => {
-    touchStartX.current = e.touches[0].clientX;
-    touchDeltaX.current = 0;
-    isSwiping.current = true;
-  }, []);
-
-  const onTouchMove = useCallback((e: React.TouchEvent) => {
-    if (!isSwiping.current) return;
-    touchDeltaX.current = e.touches[0].clientX - touchStartX.current;
-  }, []);
-
-  const onTouchEnd = useCallback(() => {
-    if (!isSwiping.current) return;
-    isSwiping.current = false;
-    const threshold = 50;
-    if (touchDeltaX.current < -threshold) {
-      next();
-    } else if (touchDeltaX.current > threshold) {
-      prev();
-    }
-  }, [next, prev]);
-
-  return (
-    <section className="py-24 border-t border-border bg-bg-warm overflow-hidden">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-12">
-          <p className="section-label mb-3">Real Use Cases</p>
-          <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-3">How people actually use <span className="font-brand italic">Cabinet</span>
-          </h2>
-          <p className="text-text-secondary font-body-serif max-w-xl mx-auto">
-            Knowledge base + agents + files. One OS for wildly different workflows.
-          </p>
-        </div>
-
-        {/* Sliding track */}
-        <div
-          className="relative"
-          onTouchStart={onTouchStart}
-          onTouchMove={onTouchMove}
-          onTouchEnd={onTouchEnd}
-        >
-          <div className="overflow-hidden rounded-2xl card-skin">
-            <div
-              ref={trackRef}
-              className="flex"
-              style={{
-                transform: `translateX(-${idx * 100}%)`,
-                transition: isTransitioning ? "transform 500ms ease-in-out" : "none",
-              }}
-              onTransitionEnd={handleTransitionEnd}
-            >
-              {slides.map((s, i) => (
-                <div key={i} className="w-full flex-shrink-0">
-                  <div className="bg-bg-card">
-                    <div className="grid md:grid-cols-2 gap-0">
-                      {/* Left - quote + activity */}
-                      <div className="p-8 md:p-10 flex flex-col justify-between border-b md:border-b-0 md:border-r border-border">
-                        <div>
-                          <div className="flex items-center gap-3 mb-5">
-                            <span className="text-3xl">{s.emoji}</span>
-                            <div>
-                              <span className="text-[10px] font-code text-accent bg-accent-bg px-2 py-0.5 rounded uppercase tracking-wider">
-                                {s.tag}
-                              </span>
-                              <p className="text-xs text-text-tertiary font-code mt-1">{s.persona}</p>
-                            </div>
-                          </div>
-                          <h3 className="font-display text-xl md:text-2xl text-text-primary mb-4 leading-snug">
-                            {s.headline}
-                          </h3>
-                          <p className="text-text-secondary text-sm leading-relaxed font-body-serif italic">
-                            &ldquo;{s.quote}&rdquo;
-                          </p>
-                        </div>
-
-                        {/* Activity bar */}
-                        <div className="mt-8 pt-6 border-t border-border">
-                          <p className="text-[10px] font-code text-text-tertiary uppercase tracking-widest mb-2">
-                            Activity, last 24h
-                          </p>
-                          <div className="flex gap-0.5 items-end h-7">
-                            {Array.from({ length: 24 }, (_, j) => {
-                              const heights = [2, 4, 3, 6, 4, 8, 5, 3, 7, 4, 9, 6, 4, 7, 5, 8, 3, 6, 4, 7, 5, 3, 6, 4];
-                              const h = heights[(j + i * 7) % heights.length];
-                              return (
-                                <div
-                                  key={j}
-                                  className={`flex-1 rounded-sm ${h > 5 ? "bg-accent" : "bg-border"}`}
-                                  style={{ height: `${(h / 9) * 100}%` }}
-                                />
-                              );
-                            })}
-                          </div>
-                        </div>
-                      </div>
-
-                      {/* Right - Cabinet KB mockup */}
-                      <div className="p-6 md:p-8 bg-bg">
-                        <CabinetMockup kb={s.kb} caseEmoji={s.emoji} agents={s.agents} />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Prev / Next */}
-          <button
-            onClick={prev}
-            className="absolute left-0 top-1/3 -translate-y-1/2 -translate-x-4 md:-translate-x-6 w-10 h-10 rounded-full card-skin shadow-md flex items-center justify-center text-text-secondary hover:text-text-primary hover:border-border-dark transition-all"
-            aria-label="Previous"
-          >
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8l4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
-          </button>
-          <button
-            onClick={next}
-            className="absolute right-0 top-1/3 -translate-y-1/2 translate-x-4 md:translate-x-6 w-10 h-10 rounded-full card-skin shadow-md flex items-center justify-center text-text-secondary hover:text-text-primary hover:border-border-dark transition-all"
-            aria-label="Next"
-          >
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
-          </button>
-        </div>
-
-        {/* Dots */}
-        <div className="flex items-center justify-center gap-2 mt-8">
-          {USE_CASES.map((uc, i) => (
-            <button
-              key={i}
-              onClick={() => goTo(i)}
-              className={`transition-all rounded-full ${
-                i === realIndex ? "w-6 h-2 bg-accent" : "w-2 h-2 bg-border hover:bg-border-dark"
-              }`}
-              aria-label={uc.tag}
-            />
-          ))}
-        </div>
-
-        {/* Tags row */}
-        <div className="flex flex-wrap items-center justify-center gap-2 mt-6">
-          {USE_CASES.map((uc, i) => (
-            <button
-              key={i}
-              onClick={() => goTo(i)}
-              className={`text-xs font-code px-3 py-1 rounded-full border transition-all ${
-                i === realIndex
-                  ? "border-accent text-accent bg-accent-bg"
-                  : "border-border text-text-tertiary hover:border-border-dark hover:text-text-secondary"
-              }`}
-            >
-              {uc.tag}
-            </button>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
 export function LegacyInstallTerminal() {
   return (
     <section className="py-24 border-t border-border bg-bg">
@@ -1136,33 +284,9 @@ export function LegacyHero() {
     <section className="relative flex items-center justify-center dot-grid overflow-hidden">
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center pt-24 pb-12">
         {/* Install Options */}
-        <div className="max-w-xl mx-auto mb-20">
-          <div className="flex flex-col sm:flex-row items-stretch gap-3">
-            <a
-              href={MACOS_DOWNLOAD_URL}
-              className="shrink-0 inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-semibold text-base cursor-pointer btn-wood"
-            >
-              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-              Download for Mac
-            </a>
-            <span className="hidden sm:flex items-center text-text-muted text-sm font-code">or</span>
-            <div className="flex-1 terminal-chrome flex items-center justify-between px-5 py-4 rounded-xl" style={{ overflow: 'visible' }}>
-              <div className="font-code text-sm flex items-center gap-2">
-                <span className="text-green-400 shrink-0">$</span>
-                <span className="text-zinc-200 whitespace-nowrap">npx cabinetai run</span>
-              </div>
-              <CopyButton text="npx cabinetai run" />
-            </div>
-          </div>
-          <p className="mt-4 text-sm font-body-serif text-text-tertiary">
-            On Windows?{" "}
-            <a
-              href={WINDOWS_DOWNLOAD_URL}
-              className="text-accent underline underline-offset-2 hover:text-accent-warm"
-            >
-              Download the installer
-            </a>
-          </p>
+        <div className="hidden max-w-3xl mx-auto mb-20 lg:block">
+          {/* Every OS gets the same size button; the visitor's own build leads. */}
+          {/* TODO(reimplement): OS download buttons + terminal install (Sam-authored, removed) */}
           <p className="mt-4 text-sm font-body-serif text-text-tertiary">Evaluating <span className="font-brand italic">Cabinet</span>{" "}for your team?{" "}
             <a
               href="/demo"
@@ -1182,12 +306,11 @@ export function LegacyHero() {
         {/* Hero Illustration */}
         <div className="mx-auto mb-8 w-60 sm:w-72 md:w-80">
           <Image
-            src="/brand/cabinet-logo-flip.png"
+            src="/brand/cabinet-logo-flip.webp"
             alt="Cabinet: your files and knowledge in one drawer, a team of AI agents in the other"
             width={812}
             height={835}
             className="h-auto w-full drop-shadow-2xl"
-            priority
           />
         </div>
 
@@ -1199,16 +322,23 @@ export function LegacyHero() {
           No subscription. No trial. No paywall. Clone it, run it, and make it your own.
         </p>
 
-        <p className="text-base font-code text-text-tertiary max-w-xl mx-auto mb-10">
-          <TypingText
-            texts={[
-              "Onboard an AI team in 5 questions",
-              "Ship HTML apps inside your KB",
-              "Cron-scheduled AI agents that work 24/7",
-              "Git-backed version history on every page",
-              "PDF, CSV, markdown: all first-class content",
-            ]}
-          />
+        {/* relative + invisible sizer reserves height for the longest phrase
+            so the typing/deleting animation never reflows the border below */}
+        <p className="relative text-base font-code text-text-tertiary max-w-xl mx-auto mb-10">
+          <span aria-hidden className="invisible">
+            PDF, CSV, markdown: all first-class content
+          </span>
+          <span className="absolute inset-0">
+            <TypingText
+              texts={[
+                "Onboard an AI team in 5 questions",
+                "Ship HTML apps inside your KB",
+                "Cron-scheduled AI agents that work 24/7",
+                "Git-backed version history on every page",
+                "PDF, CSV, markdown: all first-class content",
+              ]}
+            />
+          </span>
         </p>
       </div>
     </section>
@@ -1234,7 +364,7 @@ export function LegacyWhyTriad() {
             <div className="relative flex h-52 items-center justify-center">
               <div aria-hidden className="pointer-events-none absolute left-1/2 top-1/2 h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full" style={{ background: "radial-gradient(circle, rgba(224,178,60,0.18), transparent 70%)" }} />
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/brand/icons/files.png" alt="" className="relative h-36 w-36 object-contain float-slow" />
+              <img src="/brand/icons/files.webp" alt="" loading="lazy" decoding="async" className="relative h-36 w-36 object-contain float-slow" />
             </div>
             <span className="section-label">Your work lives on disk</span>
             <h3 className="mt-2 mb-2 font-display text-xl text-text-primary">Own your data</h3>
@@ -1252,12 +382,12 @@ export function LegacyWhyTriad() {
                 ].map((p) => (
                   <span key={p.v} className="orbit__item absolute" style={{ left: p.l, top: p.t }}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={`/brand/vendors/${p.v}.png`} alt="" className="h-11 w-11 object-contain" />
+                    <img src={`/brand/vendors/${p.v}.png`} alt="" loading="lazy" decoding="async" className="h-11 w-11 object-contain" />
                   </span>
                 ))}
               </div>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/brand/cabinet-logo-512.png" alt="" className="absolute left-1/2 top-1/2 h-16 w-16 -translate-x-1/2 -translate-y-1/2 object-contain drop-shadow-lg" />
+              <img src="/brand/cabinet-logo-512.png" alt="" loading="lazy" decoding="async" className="absolute left-1/2 top-1/2 h-16 w-16 -translate-x-1/2 -translate-y-1/2 object-contain drop-shadow-lg" />
             </div>
             <span className="section-label">Bring your own AI</span>
             <h3 className="mt-2 mb-2 font-display text-xl text-text-primary">No AI tax</h3>
@@ -1269,7 +399,7 @@ export function LegacyWhyTriad() {
             <div className="relative flex h-52 items-center justify-center">
               <div aria-hidden className="agent-aura pointer-events-none absolute left-1/2 top-1/2 h-44 w-44 -translate-x-1/2 -translate-y-1/2 rounded-full" style={{ background: "radial-gradient(circle, rgba(111,164,90,0.16), transparent 70%)" }} />
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/brand/agents-shapes.png" alt="" className="relative h-44 w-44 object-contain agent-heartbeat" />
+              <img src="/brand/agents-shapes.webp" alt="" loading="lazy" decoding="async" className="relative h-44 w-44 object-contain agent-heartbeat" />
             </div>
             <span className="section-label">Agents that do the work</span>
             <h3 className="mt-2 mb-2 font-display text-xl text-text-primary">Always on</h3>
@@ -1499,19 +629,29 @@ export function LegacyIntegrationsMarquee() {
               aria-hidden
               className="pointer-events-none absolute inset-y-0 right-0 z-10 w-12 bg-gradient-to-l from-bg-warm to-transparent sm:w-24"
             />
-            <div className={`flex w-max ${r % 2 === 1 ? "logo-marquee-reverse" : "logo-marquee"}`}>
-              {[...row, ...row].map((src, i) => (
+            <div
+              className={`logo-marquee-track ${r % 2 === 1 ? "logo-marquee-track-reverse" : ""}`}
+            >
+              {[0, 1].map((copy) => (
                 <div
-                  key={`${src}-${i}`}
-                  className="mr-3 flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl card-skin shadow-sm sm:h-20 sm:w-20"
+                  key={copy}
+                  aria-hidden={copy === 1 ? true : undefined}
+                  className="flex shrink-0 gap-3 pr-3"
                 >
-                  <Image
-                    src={src}
-                    alt={integrationName(src)}
-                    width={40}
-                    height={40}
-                    className="h-8 w-8 object-contain sm:h-10 sm:w-10"
-                  />
+                  {row.map((src) => (
+                    <div
+                      key={src}
+                      className="card-skin flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl shadow-sm sm:h-20 sm:w-20"
+                    >
+                      <Image
+                        src={src}
+                        alt={integrationName(src)}
+                        width={40}
+                        height={40}
+                        className="h-8 w-8 object-contain sm:h-10 sm:w-10"
+                      />
+                    </div>
+                  ))}
                 </div>
               ))}
             </div>
@@ -1542,22 +682,14 @@ export function LegacySocialProofBar() {
 
 export function LegacyCloudWaitlist() {
   return (
-    <section className="relative overflow-hidden py-20 md:py-24 bg-bg">
-      <WaitlistCloudBackdrop />
-
-      <div className="relative z-10 max-w-6xl mx-auto px-6">
-        <Suspense
-          fallback={
-            <div className="mx-auto min-h-[320px] max-w-5xl rounded-[28px] card-skin/70" />
-          }
-        >
-          <WaitlistCapture
-            source="homepage-section"
-            originPage="/"
-            trackView
-            className="max-w-5xl mx-auto"
-          />
-        </Suspense>
+    <section className="relative flex min-h-[100svh] items-end overflow-clip bg-bg py-10">
+      <div className="relative mx-auto w-full max-w-6xl px-6 text-center">
+        <MotionReveal amount={0.2}>
+          {/* The Cloud pillars as the Cabinet itself: drawers open and slide
+              each page out onto the desk, the hero animation in reverse.
+              The section heading lives inside the scene, on its sky. */}
+          <CloudCabinet />
+        </MotionReveal>
       </div>
     </section>
   );
@@ -1646,7 +778,7 @@ export function LegacyEmbeddedApps() {
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-4 h-4 text-accent mt-0.5 shrink-0" />
-                <span><strong className="text-text-primary">AI-generated apps:</strong> ask Claude to build a dashboard, it writes the HTML directly into your KB</span>
+                <span><strong className="text-text-primary">AI-generated apps:</strong> ask Claude to build a dashboard, and it writes the HTML directly into your KB</span>
               </li>
               <li className="flex items-start gap-3">
                 <Check className="w-4 h-4 text-accent mt-0.5 shrink-0" />
@@ -1703,7 +835,7 @@ export function LegacyFeaturesGrid() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-6 gap-4 max-w-6xl mx-auto auto-rows-fr">
+        <div className="grid grid-cols-2 lg:grid-cols-6 gap-4 max-w-6xl mx-auto max-lg:grid-flow-dense lg:auto-rows-fr">
           {[
             { img: "/brand/feat/agents.png", span: "col-span-2 lg:col-span-3", featured: true, title: "AI Agents", description: "Onboard a CEO, Editor, Marketer. Each has goals, skills, scheduled jobs. Watch them work like a real team." },
             { img: "/brand/feat/files.png", span: "col-span-2 lg:col-span-3", featured: true, title: "File-Based Everything", description: "No database. Markdown on disk. Drag-and-drop tree sidebar. Your data is always yours, always portable." },
@@ -1810,13 +942,15 @@ export function LegacySolutions() {
             <a
               key={s.slug}
               href={`/solutions/${s.slug}`}
-              className="group flex flex-col rounded-2xl card-skin p-6 card-hover"
+              className="group flex flex-col rounded-2xl card-skin p-6 card-hover max-lg:text-center"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={`/brand/solutions/${s.slug}.png`}
                 alt=""
-                className="mb-4 h-20 w-20 object-contain transition-transform duration-200 group-hover:scale-105 group-hover:-rotate-2"
+                loading="lazy"
+                decoding="async"
+                className="mb-4 h-20 w-20 object-contain transition-transform duration-200 group-hover:scale-105 group-hover:-rotate-2 max-lg:mx-auto"
               />
               <h3 className="mb-2 font-display text-lg text-text-primary">
                 Cabinet{" "}for {s.label}
@@ -1856,8 +990,6 @@ export function LegacyCabinetTemplates() {
             <a
               key={c.slug}
               href={cabinetUrl(c.slug)}
-              target="_blank"
-              rel="noopener noreferrer"
               className="group flex flex-col overflow-hidden rounded-2xl card-skin card-hover"
             >
               <div
@@ -1869,6 +1001,7 @@ export function LegacyCabinetTemplates() {
                   src={cabinetCover(c.slug)}
                   alt=""
                   loading="lazy"
+                  decoding="async"
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-200 group-hover:scale-105"
                 />
               </div>
@@ -1897,8 +1030,6 @@ export function LegacyCabinetTemplates() {
         <div className="mt-10 text-center">
           <a
             href={CABINETS_SITE}
-            target="_blank"
-            rel="noopener noreferrer"
             className="inline-flex h-11 items-center justify-center gap-2 rounded-full px-6 text-sm font-semibold btn-wood"
           >
             Browse all cabinets
@@ -1975,6 +1106,8 @@ export function LegacyOrgBadges() {
                 <img
                   src={b.img}
                   alt=""
+                  loading="lazy"
+                  decoding="async"
                   className="h-16 w-16 object-contain transition-transform duration-200 group-hover:scale-105 group-hover:-rotate-2"
                 />
                 {b.status && (
@@ -2009,53 +1142,73 @@ export function LegacyOrgBadges() {
 }
 
 export function LegacyCta() {
-  const stars = useGitHubStars();
-
   return (
-    <section id="get-started" className="py-24 border-t border-border bg-bg-warm">
-      <div className="max-w-3xl mx-auto px-6 text-center">
-        <Image src="/cabinet-icon.png" alt="Cabinet" width={64} height={64} className="mx-auto mb-6 rounded-xl" />
-        <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
-          Ready to build your AI team?
-        </h2>
-        <p className="text-text-secondary mb-8 max-w-xl mx-auto leading-relaxed font-body-serif">
-          <span className="font-brand italic">Cabinet</span>{" "}is a free, open-source project you can run yourself. No subscription, no trial clock, and no vendor lock-in. Start in 2 minutes.
-                                </p>
-        <div className="max-w-xl mx-auto mb-10">
-          <div className="flex flex-col sm:flex-row items-stretch gap-3">
+    <section id="get-started" className="py-24 border-t border-border bg-bg-warm overflow-hidden">
+      {/* Full-bleed pair: text column centered, video bleeding to the viewport's right edge */}
+      <div className="mb-16 grid items-center gap-10 px-6 text-center lg:grid-cols-[2fr_3fr] lg:gap-14 lg:pr-0">
+        <div className="mx-auto w-full max-w-xl">
+          <Image src="/cabinet-icon.png" alt="Cabinet" width={64} height={64} className="mx-auto mb-6 rounded-xl" />
+          <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
+            Download <span className="font-brand italic">Cabinet</span>
+            <br />
+            your <TypingText texts={["knowledge base", "AI team", "workflows", "AI workspace"]} />
+          </h2>
+          <p className="text-text-secondary mb-8 max-w-xl mx-auto leading-relaxed font-body-serif">
+            <span className="font-brand italic">Cabinet</span>{" "}is the AI workspace where your knowledge base, AI team, and workflows live in one beautiful home.
+          </p>
+          {/* TODO(reimplement): detected-OS download CTA (Sam-authored, removed) */}
+        </div>
+        {/* Wrapper clips the 2px border baked into the recording */}
+        <div className="overflow-hidden rounded-2xl shadow-lg lg:rounded-r-none">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="metadata"
+            width={2880}
+            height={1794}
+            className="-m-[2px] w-[calc(100%+4px)] max-w-none"
+          >
+            <source src="/new-cabinet.webm" type="video/webm" />
+            <source src="/new-cabinet.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+      <div className="max-w-6xl mx-auto px-6 text-center">
+        <div className="mx-auto mt-16 max-w-3xl rounded-3xl bg-gradient-to-br from-[#FBF2E4] to-[#F2E5CF] px-6 py-12 shadow-sm sm:px-12">
+          <Image
+            src="/brand/icons/professional-services.png"
+            alt=""
+            width={64}
+            height={64}
+            className="mx-auto mb-4 object-contain"
+          />
+          <h3 className="text-2xl md:text-3xl font-display text-text-primary mb-3">
+            Bringing Cabinet to your company?
+          </h3>
+          <p className="text-text-secondary mb-8 max-w-xl mx-auto leading-relaxed font-body-serif">
+            Talk to us about rollout, security review, and the workflows your teams run every day.
+          </p>
+          <div className="mt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href={MACOS_DOWNLOAD_URL}
-              className="shrink-0 inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl font-semibold text-base cursor-pointer btn-wood"
+              href="/demo"
+              className="btn-wood inline-flex h-13 items-center justify-center gap-2 whitespace-nowrap rounded-full px-8 text-base font-semibold"
             >
-              <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-              Download for Mac
+              Book a demo
             </a>
-            <span className="hidden sm:flex items-center text-text-muted text-sm font-code">or</span>
-            <div className="flex-1 terminal-chrome flex items-center justify-between px-5 py-4 rounded-xl" style={{ overflow: 'visible' }}>
-              <div className="font-code text-sm flex items-center gap-2">
-                <span className="text-green-400 shrink-0">$</span>
-                <span className="text-zinc-200 whitespace-nowrap">npx cabinetai run</span>
-              </div>
-              <CopyButton text="npx cabinetai run" />
-            </div>
+            <a
+              href="/enterprise/security"
+              className="inline-flex h-13 items-center justify-center gap-2 whitespace-nowrap px-3 text-base font-semibold text-text-primary transition-colors hover:text-accent"
+            >
+              Learn more <ArrowRight aria-hidden className="h-4 w-4" />
+            </a>
           </div>
-          <p className="mt-4 text-sm font-body-serif text-text-tertiary">
-            On Windows?{" "}
-            <a
-              href={WINDOWS_DOWNLOAD_URL}
-              className="text-accent underline underline-offset-2 hover:text-accent-warm"
-            >
-              Download the installer
-            </a>
+          <p className="mt-6 text-sm text-text-tertiary">
+            Questions? <a href="mailto:hi@runcabinet.com" className="text-accent hover:text-accent-warm underline underline-offset-2">hi@runcabinet.com</a>
           </p>
         </div>
-        <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 mt-4">
-          <a
-            href="/demo"
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full card-skin text-text-primary font-medium shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
-          >
-            Book a demo
-          </a>
+        <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 mt-12">
           <a
             href={DISCORD_URL}
             target="_blank"
@@ -2065,13 +1218,9 @@ export function LegacyCta() {
             <DiscordIcon className="w-4 h-4" /> Join Discord
           </a>
           <GitHubStarsButton
-            stars={stars}
             className="inline-flex h-12 min-w-[11rem] items-center justify-between gap-3 rounded-full card-skin px-4 text-sm font-semibold text-text-primary shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
           />
         </div>
-        <p className="mt-6 text-sm text-text-tertiary">
-          Questions? <a href="mailto:hi@runcabinet.com" className="text-accent hover:text-accent-warm underline underline-offset-2">hi@runcabinet.com</a>
-        </p>
       </div>
     </section>
   );

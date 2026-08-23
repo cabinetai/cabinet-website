@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowRight, Check, AlertTriangle, Star, ChevronDown } from "lucide-react";
 import { SiteNavbar } from "@/components/site-navbar";
+import { MarketingFooter } from "@/components/marketing/marketing-footer";
 import { brandify } from "@/components/brand-word";
 import { GITHUB_URL } from "@/lib/site-config";
 import { compareLabel, type Migration } from "@/lib/compare";
@@ -44,7 +45,7 @@ export function CompareMigration({ data }: { data: Migration }) {
               href={`/compare/cabinet-vs-${data.fromSlug}`}
               className="inline-flex items-center gap-2 rounded-full card-skin px-7 py-3.5 text-base font-semibold text-text-primary shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
             >
-              {data.from}vs <span className="font-brand italic">Cabinet</span>
+              {data.from}{" "}vs <span className="font-brand italic">Cabinet</span>
             </Link>
           </div>
         </div>
@@ -200,6 +201,7 @@ export function CompareMigration({ data }: { data: Migration }) {
           </div>
         </div>
       </section>
+      <MarketingFooter />
     </main>
   );
 }

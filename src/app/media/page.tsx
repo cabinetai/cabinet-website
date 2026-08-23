@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DiscordIcon } from "@/components/site-icons";
 import { SiteNavbar } from "@/components/site-navbar";
+import { serializeJsonLd } from "@/lib/json-ld";
 import { DISCORD_URL } from "@/lib/site-config";
 
 type VideoItem = {
@@ -122,7 +123,7 @@ export default function MediaPage() {
               key={item.id}
               type="application/ld+json"
               dangerouslySetInnerHTML={{
-                __html: JSON.stringify({
+                __html: serializeJsonLd({
                   "@context": "https://schema.org",
                   "@type": "VideoObject",
                   name: item.title,
@@ -146,7 +147,7 @@ export default function MediaPage() {
             key={item.url}
             type="application/ld+json"
             dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
+              __html: serializeJsonLd({
                 "@context": "https://schema.org",
                 "@type": "NewsArticle",
                 headline: item.title,

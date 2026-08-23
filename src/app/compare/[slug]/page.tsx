@@ -9,12 +9,15 @@ import {
   getRoundup,
   getThreeWay,
   getMigration,
+  COMPARE_MODIFIED_ISO,
   type Faq,
 } from "@/lib/compare";
 import { CompareHeadToHead } from "@/components/compare-head-to-head";
 import { CompareRoundup } from "@/components/compare-roundup";
 import { CompareThreeWay } from "@/components/compare-three-way";
 import { CompareMigration } from "@/components/compare-migration";
+import { stripLinks } from "@/components/brand-word";
+import { serializeJsonLd } from "@/lib/json-ld";
 
 const SITE = "https://runcabinet.com";
 
@@ -71,8 +74,22 @@ function faqSchema(faqs: Faq[]) {
     mainEntity: faqs.map((f) => ({
       "@type": "Question",
       name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
+      // Copy may carry markdown-style links for the page; schema gets plain text.
+      acceptedAnswer: { "@type": "Answer", text: stripLinks(f.a) },
     })),
+  };
+}
+
+// Visible freshness plus machine-readable dateModified: AI answer engines and
+// Google both favor recently reviewed comparison content.
+function webPageSchema(slug: string, name: string, description: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name,
+    description,
+    url: `${SITE}/compare/${slug}`,
+    dateModified: COMPARE_MODIFIED_ISO,
   };
 }
 
@@ -95,14 +112,14 @@ const softwareSchema = {
   applicationCategory: "BusinessApplication",
   operatingSystem: "macOS, Linux, Windows",
   offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-  sameAs: ["https://github.com/hilash/cabinet"],
+  sameAs: ["https://github.com/cabinetai/cabinet"],
 };
 
 function JsonLd({ data }: { data: object }) {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      dangerouslySetInnerHTML={{ __html: serializeJsonLd(data) }}
     />
   );
 }
@@ -119,6 +136,7 @@ export default async function ComparePage({
     return (
       <>
         <JsonLd data={breadcrumbSchema(slug, `Cabinet vs ${comparison.competitor}`)} />
+        <JsonLd data={webPageSchema(slug, comparison.title, comparison.metaDescription)} />
         <JsonLd data={faqSchema(comparison.faqs)} />
         <JsonLd data={softwareSchema} />
         <CompareHeadToHead data={comparison} />
@@ -131,6 +149,7 @@ export default async function ComparePage({
     return (
       <>
         <JsonLd data={breadcrumbSchema(slug, `${roundup.competitor} alternatives`)} />
+        <JsonLd data={webPageSchema(slug, roundup.title, roundup.metaDescription)} />
         <JsonLd data={faqSchema(roundup.faqs)} />
         <JsonLd data={softwareSchema} />
         <CompareRoundup data={roundup} />
@@ -144,6 +163,7 @@ export default async function ComparePage({
     return (
       <>
         <JsonLd data={breadcrumbSchema(slug, name)} />
+        <JsonLd data={webPageSchema(slug, threeWay.title, threeWay.metaDescription)} />
         <JsonLd data={faqSchema(threeWay.faqs)} />
         <JsonLd data={softwareSchema} />
         <CompareThreeWay data={threeWay} />
@@ -156,6 +176,7 @@ export default async function ComparePage({
     return (
       <>
         <JsonLd data={breadcrumbSchema(slug, `Migrate from ${migration.from}`)} />
+        <JsonLd data={webPageSchema(slug, migration.title, migration.metaDescription)} />
         <JsonLd data={faqSchema(migration.faqs)} />
         <JsonLd data={softwareSchema} />
         <CompareMigration data={migration} />

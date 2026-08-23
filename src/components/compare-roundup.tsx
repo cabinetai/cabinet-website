@@ -7,6 +7,7 @@ import {
   Trophy,
 } from "lucide-react";
 import { SiteNavbar } from "@/components/site-navbar";
+import { MarketingFooter } from "@/components/marketing/marketing-footer";
 import { brandify } from "@/components/brand-word";
 import { WoodIcon } from "@/components/wood-icon";
 import { GITHUB_URL } from "@/lib/site-config";
@@ -225,6 +226,7 @@ export function CompareRoundup({ data }: { data: Roundup }) {
           </div>
         </div>
       </section>
+      <MarketingFooter />
     </main>
   );
 }

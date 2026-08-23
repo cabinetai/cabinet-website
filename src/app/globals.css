@@ -90,7 +90,8 @@
   --font-display: var(--font-heading);
   --font-brand: var(--font-brand);
   --font-hand: var(--font-hand);
-  --font-mono: var(--font-mono);
+  /* Mono is retired site-wide; anything asking for mono gets the body sans. */
+  --font-mono: var(--font-body);
 }
 
 body {
@@ -108,6 +109,13 @@ html:has(.home-scroll-snap) {
   scroll-margin-top: 0;
   scroll-snap-align: start;
   scroll-snap-stop: normal;
+}
+
+/* Keep the long marketing page in the DOM for search and navigation while
+   skipping layout and paint work for sections well below the viewport. */
+.home-scroll-snap > section {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 1000px;
 }
 
 /* Homepage rhythm: primary product stories occupy one deliberate visual beat.
@@ -190,6 +198,29 @@ html:has(.home-scroll-snap) {
 
 .home-product-surface {
   box-shadow: 0 30px 70px -48px color-mix(in srgb, var(--text-primary) 42%, transparent);
+}
+
+.compare-matrix-scroll {
+  scrollbar-color: color-mix(in srgb, var(--accent) 48%, transparent) transparent;
+  scrollbar-width: thin;
+}
+
+.compare-matrix-scroll:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--accent) 55%, transparent);
+  outline-offset: -2px;
+}
+
+.compare-matrix-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.compare-matrix-scroll::-webkit-scrollbar-track {
+  background: var(--bg-warm);
+}
+
+.compare-matrix-scroll::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 48%, transparent);
 }
 
 @media (min-width: 1024px) {
@@ -413,6 +444,61 @@ html:has(.home-scroll-snap) {
   font-family: var(--font-hand), "Segoe Script", cursive;
 }
 
+/* Pangolin handwriting for the Cloud waitlist board and the drawer notes. */
+.font-chalk {
+  font-family: var(--font-chalk), "Comic Sans MS", cursive;
+}
+
+/* The board keeps only what matters: hide the shared form's fine print. */
+.chalk-board form .font-code {
+  display: none;
+}
+
+/* The email field on the chalkboard writes in chalk too. */
+.chalk-board input {
+  /* the board's form centers its column, so the input must size itself:
+     without this it falls back to the browser's size="20" width and
+     overflows the narrow board */
+  width: 100%;
+  font-family: var(--font-chalk), "Comic Sans MS", cursive;
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* The waitlist submit on the chalkboard: a rectangle painted freehand.
+   Uneven per-corner radii + a slight tilt + a faint offset second stroke
+   read as chalk lines; hover tints the inside like a chalk fill. */
+.chalk-board button[type="submit"] {
+  color: #fff;
+  background: transparent;
+  border: 2.5px solid rgba(255, 255, 255, 0.9);
+  border-radius: 255px 25px 225px 25px / 25px 225px 25px 255px;
+  font-family: var(--font-chalk), "Comic Sans MS", cursive;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.1;
+  padding-top: 0.55rem;
+  padding-bottom: 0.55rem;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.25);
+  box-shadow: 2px 3px 0 -1px rgba(255, 255, 255, 0.3);
+  transform: rotate(-0.7deg);
+  transition: background-color 0.15s ease;
+}
+.chalk-board button[type="submit"] svg {
+  display: none;
+}
+.chalk-board button[type="submit"]:hover {
+  background-color: rgba(255, 255, 255, 0.16);
+  transform: rotate(-0.7deg);
+  filter: none;
+  box-shadow: 2px 3px 0 -1px rgba(255, 255, 255, 0.3);
+}
+.chalk-board button[type="submit"]:active {
+  background-color: rgba(255, 255, 255, 0.26);
+  transform: rotate(-0.7deg) scale(0.99);
+}
+
 /* Smooth scroll */
 html {
   scroll-behavior: smooth;
@@ -561,6 +647,38 @@ html {
   .orbit,
   .orbit__item img,
   .float-slow {
+    animation: none;
+  }
+}
+
+/* Mini dashboard charts (integration scene) — bars breathe, lines draw
+   themselves in a loop, area charts bob gently, so a dashboard card reads
+   as "live" rather than a static screenshot. */
+@keyframes chart-bar-pulse {
+  0%, 100% { transform: scaleY(0.82); }
+  50% { transform: scaleY(1); }
+}
+@keyframes chart-line-draw {
+  0% { stroke-dashoffset: 220; }
+  60%, 100% { stroke-dashoffset: 0; }
+}
+@keyframes chart-dot-pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.6); opacity: 0.6; }
+}
+@keyframes chart-area-breathe {
+  0%, 100% { transform: translateY(0) scaleY(1); }
+  50% { transform: translateY(-2px) scaleY(1.04); }
+}
+.chart-bar-pulse { transform-origin: bottom; animation: chart-bar-pulse 1.8s ease-in-out infinite; }
+.chart-line-draw { stroke-dasharray: 220; animation: chart-line-draw 2.6s ease-in-out infinite; }
+.chart-dot-pulse { transform-origin: center; animation: chart-dot-pulse 1.8s ease-in-out infinite; }
+.chart-area-breathe { transform-origin: bottom; animation: chart-area-breathe 3.2s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .chart-bar-pulse,
+  .chart-line-draw,
+  .chart-dot-pulse,
+  .chart-area-breathe {
     animation: none;
   }
 }
@@ -790,9 +908,9 @@ html {
 .wood-tile--ai.painted-wood-tile {
   background: linear-gradient(150deg, #f2dfb9 0%, #e2c58f 58%, #d5ad73 100%);
   box-shadow:
-    inset 0 0 0 1px rgba(105, 72, 42, 0.2),
-    inset 0 1px 0 rgba(255, 251, 240, 0.8),
-    0 6px 12px -6px rgba(82, 54, 30, 0.35);
+    inset 0 0 0 1px rgba(105, 72, 42, 0.07),
+    inset 0 1px 0 rgba(255, 251, 240, 0.6),
+    0 6px 14px -6px rgba(82, 54, 30, 0.28);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -968,24 +1086,20 @@ html {
   animation-play-state: paused;
 }
 
-/* Integrations logo wall — multi-row auto-scroll, alternating direction */
+/* Integrations logo wall: two identical groups create a seamless loop. */
 @keyframes entMarqueeReverse {
   from { transform: translateX(-50%); }
   to { transform: translateX(0); }
 }
-.logo-marquee {
+.logo-marquee-track {
+  display: flex;
+  width: max-content;
   animation: entMarquee 55s linear infinite;
   will-change: transform;
+  transform: translate3d(0, 0, 0);
 }
-.logo-marquee-reverse {
+.logo-marquee-track-reverse {
   animation: entMarqueeReverse 55s linear infinite;
-  will-change: transform;
-}
-.logo-marquee-viewport:hover .logo-marquee,
-.logo-marquee-viewport:focus-within .logo-marquee,
-.logo-marquee-viewport:hover .logo-marquee-reverse,
-.logo-marquee-viewport:focus-within .logo-marquee-reverse {
-  animation-play-state: paused;
 }
 
 /* Subtle dot ornament */
@@ -1134,8 +1248,7 @@ html {
   .ent-fade,
   .ent-marquee,
   .testimonial-marquee,
-  .logo-marquee,
-  .logo-marquee-reverse {
+  .logo-marquee-track {
     animation: none;
   }
   /* Let users scroll the tickers manually when motion is reduced */

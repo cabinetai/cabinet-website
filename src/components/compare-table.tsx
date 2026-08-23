@@ -1,5 +1,5 @@
 import { Check, X, Minus } from "lucide-react";
-import type { Cell, Row } from "@/lib/compare";
+import { COMPARE_ASOF, type Cell, type Row } from "@/lib/compare";
 import { brandify } from "@/components/brand-word";
 
 function CellIcon({ value }: { value: Cell }) {
@@ -39,10 +39,10 @@ export function CompareTable({
   competitor: string;
   rows: Row[];
 }) {
-  const hasNotes = rows.some((r) => r.note);
   return (
     <div className="overflow-hidden rounded-2xl bg-bg-card shadow-[0_8px_30px_-14px_rgba(150,108,68,0.32)] ring-1 ring-[rgba(59,47,47,0.05)]">
-      <div className="overflow-x-auto">
+      {/* relative: keeps absolutely-positioned sr-only labels inside the scroller. */}
+      <div className="relative overflow-x-auto">
         <table className="w-full min-w-[34rem] text-sm">
           <thead>
             <tr className="border-b border-border-dark">
@@ -98,9 +98,7 @@ export function CompareTable({
         <span className="inline-flex items-center gap-1.5">
           <X className="h-3.5 w-3.5 text-text-muted" aria-hidden /> Not included
         </span>
-        {hasNotes && (
-          <span className="ml-auto">Reflects public information as of May 2026.</span>
-        )}
+        <span className="ml-auto">Reflects public information as of {COMPARE_ASOF}.</span>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 "use client";
 
-// Vendored from Lightswind UI (lightswind.com, MIT) with two local changes:
+// Vendored from Lightswind UI (lightswind.com) with two local changes:
 // children may contain styled <span>s and <br/>s (the stock version only
 // splits plain strings), and there is no clsx/tailwind-merge dependency.
 
@@ -41,6 +41,10 @@ export interface ScrollRevealProps {
   /** Overrides the built-in in-view detection. Useful inside pinned scenes
       where the element is always in the viewport but hidden until its beat. */
   revealed?: boolean;
+  /** Extra seconds before the first word moves, for staging sibling blocks */
+  delay?: number;
+  /** Rendered text element; headings keep their semantics */
+  as?: "p" | "h2";
   /** Text size variant */
   size?: "sm" | "md" | "lg" | "xl" | "2xl";
   /** Text alignment */
@@ -71,8 +75,16 @@ const variantClasses = {
 };
 
 type Piece =
-  | { kind: "word" | "space"; value: string; className?: string; key: number }
-  | { kind: "break"; key: number };
+  | {
+      kind: "word" | "space";
+      value: string;
+      className?: string;
+      style?: React.CSSProperties;
+      key: number;
+    }
+  // A <br/> keeps its own className, so callers can drop a line break at one
+  // breakpoint (`className="max-md:hidden"`) without forking the copy.
+  | { kind: "break"; className?: string; key: number };
 
 export function ScrollReveal({
   children,
@@ -91,6 +103,8 @@ export function ScrollReveal({
     mass: 1,
   },
   revealed,
+  delay = 0,
+  as = "p",
   size = "lg",
   align = "left",
   variant = "default",
@@ -116,7 +130,11 @@ export function ScrollReveal({
   const pieces = useMemo(() => {
     const out: Piece[] = [];
     let key = 0;
-    const walk = (node: React.ReactNode, className?: string) => {
+    const walk = (
+      node: React.ReactNode,
+      className?: string,
+      style?: React.CSSProperties,
+    ) => {
       React.Children.forEach(node, (child) => {
         if (typeof child === "string" || typeof child === "number") {
           for (const part of String(child).split(/(\s+)/)) {
@@ -125,18 +143,27 @@ export function ScrollReveal({
               kind: /^\s+$/.test(part) ? "space" : "word",
               value: part,
               className,
+              style,
               key: key++,
             });
           }
         } else if (React.isValidElement(child)) {
           if (child.type === "br") {
-            out.push({ kind: "break", key: key++ });
+            out.push({
+              kind: "break",
+              className: (child.props as { className?: string }).className,
+              key: key++,
+            });
           } else {
             const props = child.props as {
               className?: string;
+              style?: React.CSSProperties;
               children?: React.ReactNode;
             };
-            walk(props.children, cn(className, props.className));
+            walk(props.children, cn(className, props.className), {
+              ...style,
+              ...props.style,
+            });
           }
         }
       });
@@ -151,7 +178,7 @@ export function ScrollReveal({
       opacity: 1,
       transition: {
         staggerChildren: staggerDelay,
-        delayChildren: 0.1,
+        delayChildren: 0.1 + delay,
       },
     },
   };
@@ -173,13 +200,15 @@ export function ScrollReveal({
     },
   };
 
+  const Text = as === "h2" ? motion.h2 : motion.p;
+
   return (
     <motion.div
       ref={containerRef}
       style={{ rotate: rotation }}
       className={cn("transform-gpu", containerClassName)}
     >
-      <motion.p
+      <Text
         className={
           textClassName ??
           cn(
@@ -195,20 +224,21 @@ export function ScrollReveal({
       >
         {pieces.map((item) =>
           item.kind === "break" ? (
-            <br key={item.key} />
+            <br key={item.key} className={item.className} />
           ) : item.kind === "space" ? (
             <span key={item.key}>{item.value}</span>
           ) : (
             <motion.span
               key={item.key}
               className={cn("inline-block", item.className)}
+              style={item.style}
               variants={wordVariants}
             >
               {item.value}
             </motion.span>
           ),
         )}
-      </motion.p>
+      </Text>
     </motion.div>
   );
 }

@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import { Geist, Instrument_Serif, Martian_Mono, Fraunces, Ms_Madi } from "next/font/google";
+import {
+  Geist,
+  Instrument_Serif,
+  Fraunces,
+  Ms_Madi,
+  Pangolin,
+} from "next/font/google";
 import { LiquidGlassFilter } from "@/components/liquid-glass-filter";
 import "./globals.css";
 
@@ -25,20 +31,26 @@ const instrumentSerif = Instrument_Serif({
   style: ["normal", "italic"],
 });
 
-const martianMono = Martian_Mono({
-  variable: "--font-mono",
-  subsets: ["latin"],
-});
-
 // Handwriting signature font for testimonial names.
 const msMadi = Ms_Madi({
   variable: "--font-hand",
   subsets: ["latin"],
   weight: "400",
+  preload: false,
 });
+
+// Pangolin handwriting for the Cloud waitlist board and the drawer notes.
+const pangolin = Pangolin({
+  variable: "--font-chalk",
+  subsets: ["latin"],
+  weight: "400",
+  preload: false,
+});
+
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://runcabinet.com"),
+  referrer: "strict-origin-when-cross-origin",
   title: "Cabinet: The AI workspace your company owns",
   description:
     "Cabinet shows your entire knowledge base and files, puts AI teams to work on it, and renders results as live apps and dashboards. Open source, self-hosted, bring your own AI.",
@@ -74,19 +86,39 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geist.variable} ${fraunces.variable} ${instrumentSerif.variable} ${martianMono.variable} ${msMadi.variable} h-full antialiased`}
+      className={`${geist.variable} ${fraunces.variable} ${instrumentSerif.variable} ${msMadi.variable} ${pangolin.variable} h-full antialiased`}
     >
       <head>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-4L81D0BVTP"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
-        <Script id="gtag-init" strategy="afterInteractive">
+        <Script id="gtag-init" strategy="lazyOnload">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-4L81D0BVTP');
+          `}
+        </Script>
+        <Script id="cabinet-console-signature" strategy="lazyOnload">
+          {`
+            console.log(
+              "%c\\n  ██████╗ █████╗ ██████╗ ██╗███╗   ██╗███████╗████████╗\\n ██╔════╝██╔══██╗██╔══██╗██║████╗  ██║██╔════╝╚══██╔══╝\\n ██║     ███████║██████╔╝██║██╔██╗ ██║█████╗     ██║   \\n ██║     ██╔══██║██╔══██╗██║██║╚██╗██║██╔══╝     ██║   \\n ╚██████╗██║  ██║██████╔╝██║██║ ╚████║███████╗   ██║   \\n  ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   \\n",
+              "color: #FFFFFF; font-family: monospace; font-size: 12px; font-weight: 700; line-height: 1.15;"
+            );
+            console.log(
+              "%cCurious enough to inspect the console? We should talk.",
+              "color: #FFFFFF; font-family: Georgia, serif; font-size: 16px; font-weight: 700;"
+            );
+            console.log(
+              "%cCabinet is hiring founding builders and a founding content lead.",
+              "color: #FFFFFF; font-family: system-ui, sans-serif; font-size: 13px;"
+            );
+            console.log(
+              "%chttps://runcabinet.com/careers",
+              "color: #FFFFFF; font-family: ui-monospace, monospace; font-size: 13px; font-weight: 700;"
+            );
           `}
         </Script>
       </head>

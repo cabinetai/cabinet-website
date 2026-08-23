@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { readdirSync } from "node:fs";
 import { join } from "node:path";
 import { SiteNavbar } from "@/components/site-navbar";
@@ -45,7 +46,7 @@ const ASSET_SECTIONS: { title: string; desc: string; items: { src: string; label
   { title: "UI concept icons", desc: "General wooden icons that replace flat glyphs across the site.", items: listAssets("brand/ui") },
   {
     title: "Explorations archive",
-    desc: "Every generated exploration (public/generated/_explore). Each file name is its id; re-run one with its generator, for example: node scripts/generate-images.mjs <id>, node scripts/explore-styles.mjs <subject>, or node scripts/brand-states.mjs.",
+    desc: "Every generated exploration. Each file name is its id; re-run one with its generator, for example: node scripts/generate-images.mjs <id>, node scripts/explore-styles.mjs <subject>, or node scripts/brand-states.mjs. These live in brand-explorations/ at the repo root and are symlinked into public/ for dev by scripts/link-explorations.mjs — they are deliberately not part of the production export.",
     items: listAssets("generated/_explore"),
   },
 ];
@@ -84,8 +85,8 @@ const FONTS: {
   {
     name: "Mono / Code",
     className: "font-code",
-    token: "Martian Mono · --font-mono · 0em",
-    use: "Terminal, code, and literal commands only. Never eyebrows.",
+    token: "Geist (mono retired) · --font-mono aliases --font-body",
+    use: "Terminal, code, and literal commands render in the body sans. No monospace anywhere on the site.",
   },
   {
     name: "Hand",
@@ -145,6 +146,25 @@ const COLOR_GROUPS: {
       { cls: "bg-border", label: "border", hex: "#E8DDD0" },
       { cls: "bg-border-light", label: "border-light", hex: "#F0E8DD" },
       { cls: "bg-border-dark", label: "border-dark", hex: "#D4C4B0" },
+    ],
+  },
+  {
+    group: "Motif wood",
+    swatches: [
+      { cls: "bg-[#C9A47A]", label: "wood-tan", hex: "#C9A47A" },
+      { cls: "bg-[#E8D6B6]", label: "light-wood", hex: "#E8D6B6" },
+    ],
+  },
+  {
+    // ponytail: doc-only palette, promote to CSS tokens if these ever ship in components
+    group: "Color touches (file cards & agent tokens)",
+    swatches: [
+      { cls: "bg-[#E2725B]", label: "terracotta", hex: "#E2725B", light: true },
+      { cls: "bg-[#E08A3C]", label: "amber", hex: "#E08A3C", light: true },
+      { cls: "bg-[#E0B23C]", label: "gold", hex: "#E0B23C", light: true },
+      { cls: "bg-[#6FA45A]", label: "leaf", hex: "#6FA45A", light: true },
+      { cls: "bg-[#4FA39A]", label: "teal", hex: "#4FA39A", light: true },
+      { cls: "bg-[#5B8FD6]", label: "sky", hex: "#5B8FD6", light: true },
     ],
   },
 ];
@@ -211,6 +231,14 @@ function AssetGrid({ items }: { items: { src: string; label: string }[] }) {
 }
 
 export default function StyleGuidePage() {
+  // Dev-only. This is an internal brand reference — it was `noindex` but still
+  // publicly reachable, and the explorations archive it lists is 16 MB of
+  // rejected studies we don't want on the CDN. Excluding the route from the
+  // production export is what lets the archive stay in the page at all.
+  if (process.env.NODE_ENV === "production") {
+    notFound();
+  }
+
   const LOGO_NEW = listAssets("brand/logo-variations");
   const LOGO_CANDIDATES = listAssets("brand/logo-candidates");
   return (
@@ -228,6 +256,12 @@ export default function StyleGuidePage() {
             The single design page: illustrations, typefaces, color tokens, components, and
             the liquid-glass chrome. The written spec lives in docs/brand-guide.md; this page
             is the living proof. Not indexed, not linked in the nav.
+          </p>
+          <p className="mt-4 max-w-2xl font-body-serif text-lg leading-relaxed text-text-secondary">
+            Theme: warm, owned, human. A parchment-and-brown world that feels like a calm,
+            well-made workspace, not a cold SaaS dashboard. Confident and plain-spoken,
+            specificity over adjectives, one primary action per view. Sage green means
+            good or included. Audience: C-level and the technical leaders who vet the tool.
           </p>
         </div>
       </section>

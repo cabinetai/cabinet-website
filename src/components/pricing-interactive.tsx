@@ -15,15 +15,25 @@ import { PricingCloudModal } from "@/components/pricing-cloud-modal";
 
 type Selection = "self-hosted" | PricingTier;
 
+const CABINET_AI_MONTHLY = 10;
+
 export function PricingInteractive() {
   const [billing, setBilling] = useState<BillingPeriod>("monthly");
+  const [cabinetAi, setCabinetAi] = useState(false);
   const [selected, setSelected] = useState<Selection>("max");
   const [modalOpen, setModalOpen] = useState(false);
   const [modalTier, setModalTier] = useState<PricingTier>("pro");
+  const addOn = cabinetAi ? CABINET_AI_MONTHLY : 0;
 
   useEffect(() => {
     trackEvent("pricing_view");
   }, []);
+
+  const toggleCabinetAi = () => {
+    const next = !cabinetAi;
+    setCabinetAi(next);
+    trackEvent("pricing_cabinet_ai_toggle", { enabled: next });
+  };
 
   const openModal = (tier: PricingTier) => {
     setModalTier(tier);
@@ -43,11 +53,30 @@ export function PricingInteractive() {
 
   return (
     <>
-      <div className="mb-12 flex justify-center">
+      <div className="mb-5 flex flex-col items-center justify-center gap-3 sm:flex-row">
         <PricingBillingToggle value={billing} onChange={handleBillingChange} />
+        <button
+          type="button"
+          onClick={toggleCabinetAi}
+          aria-pressed={cabinetAi}
+          className={`inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium shadow-sm transition-colors ${
+            cabinetAi
+              ? "bg-accent text-white"
+              : "bg-bg-card text-text-secondary hover:text-text-primary"
+          }`}
+        >
+          <span
+            aria-hidden
+            className={`h-2 w-2 rounded-full ${cabinetAi ? "bg-white" : "bg-accent"}`}
+          />
+          Add Cabinet AI
+          <span className={cabinetAi ? "text-white/80" : "text-text-tertiary"}>
+            +${CABINET_AI_MONTHLY}/mo
+          </span>
+        </button>
       </div>
 
-      <fieldset className="grid grid-cols-1 items-stretch gap-5 lg:grid-cols-2">
+      <fieldset className="grid grid-cols-1 items-stretch gap-5 md:grid-cols-2 xl:grid-cols-4">
         <legend className="sr-only">Choose a Cabinet plan</legend>
         <PricingTierCard
           selectionId="tier-self-hosted"
@@ -58,7 +87,7 @@ export function PricingInteractive() {
           priceOverrideLabel="Free"
           billingPeriod={billing}
           bullets={[
-            "MIT licensed and free to run",
+            "Open source and free to run",
             "Bring your own AI accounts",
             "The complete Cabinet product",
             "Community support on Discord",
@@ -92,6 +121,7 @@ export function PricingInteractive() {
               >
                 Windows installer
               </a>
+              {" · Linux coming soon"}
             </span>
           }
         />
@@ -100,16 +130,16 @@ export function PricingInteractive() {
           selectionId="tier-pro"
           name="Cabinet Cloud Pro"
           tagline="Managed hosting for one always-on Cabinet."
-          priceMonthly={20}
-          priceAnnualEffective={16}
+          priceMonthly={20 + addOn}
+          priceAnnualEffective={16 + addOn}
           billingPeriod={billing}
-          annualNote="$192 billed annually"
+          annualNote={`$${(16 + addOn) * 12} billed annually`}
           bullets={[
             "Access across phone, laptop, and browser",
             "Agents can keep scheduled work moving",
             "Daily backups with 7-day retention",
             "Automatic updates",
-            "Bring your own AI or add Managed AI",
+            cabinetAi ? "Cabinet AI included" : "Bring your own AI or add Cabinet AI",
           ]}
           cta={{
             kind: "button",
@@ -127,10 +157,10 @@ export function PricingInteractive() {
           tagline="More capacity, hardened backups, and faster support."
           badge="Recommended"
           highlighted
-          priceMonthly={49}
-          priceAnnualEffective={40}
+          priceMonthly={49 + addOn}
+          priceAnnualEffective={40 + addOn}
           billingPeriod={billing}
-          annualNote="$480 billed annually"
+          annualNote={`$${(40 + addOn) * 12} billed annually`}
           inheritsFromLabel="Cloud Pro"
           bullets={[
             "Larger container for longer agent runs",
@@ -183,35 +213,26 @@ export function PricingInteractive() {
         />
       </fieldset>
 
-      <div className="mx-auto mt-12 max-w-3xl">
-        <div className="home-product-surface rounded-[24px] bg-green-bg-subtle px-6 py-5 md:px-7 md:py-6">
-          <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between md:gap-6">
-            <div className="flex items-start gap-3">
-              <div className="shrink-0 inline-flex h-9 w-9 items-center justify-center rounded-lg">
-                <WoodIcon icon={Users} className="h-8 w-8" />
-              </div>
-              <div>
-                <h3 className="mb-0.5 font-section text-lg text-text-primary">
-                  Working with a team?
-                </h3>
-                <p className="text-sm text-text-secondary leading-relaxed">
-                  Shared workspaces are coming. Join early access and we will
-                  prioritize your team when multi-seat ships.
-                </p>
-              </div>
-            </div>
-            <button
-              type="button"
-              onClick={() => {
-                trackEvent("pricing_team_early_click");
-                openModal("team-early");
-              }}
-              className="ent-btn-secondary shrink-0 justify-center px-4 py-2 text-sm text-green-warm"
-            >
-              Join Team early access
-              <ArrowRight className="h-3.5 w-3.5" />
-            </button>
-          </div>
+      <div className="mx-auto mt-5 max-w-3xl">
+        <div className="home-product-surface flex flex-col items-center gap-3 rounded-full bg-green-bg-subtle px-6 py-2.5 sm:flex-row sm:justify-center">
+          <p className="flex items-center gap-2.5 text-sm text-text-secondary">
+            <WoodIcon icon={Users} className="h-6 w-6 shrink-0" />
+            <span>
+              <span className="font-section text-text-primary">Working with a team?</span>{" "}
+              Shared workspaces are coming.
+            </span>
+          </p>
+          <button
+            type="button"
+            onClick={() => {
+              trackEvent("pricing_team_early_click");
+              openModal("team-early");
+            }}
+            className="ent-btn-secondary shrink-0 justify-center px-4 py-1.5 text-sm text-green-warm"
+          >
+            Join Team early access
+            <ArrowRight className="h-3.5 w-3.5" />
+          </button>
         </div>
       </div>
 

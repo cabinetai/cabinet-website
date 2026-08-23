@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { ArrowRight, Check, Clock3, PlugZap, Sparkles } from "lucide-react";
+import Link from "next/link";
+import { ArrowRight, Sparkles } from "lucide-react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { useState } from "react";
-import { cabinetUrl, CABINETS_SITE } from "@/lib/cabinets";
 
 type OutcomeId =
   | "tiktok"
@@ -104,7 +104,7 @@ const OUTCOMES = [
     status: "Planned",
     connectors: [
       { name: "HubSpot", src: "/logos/hubspot.svg" },
-      { name: "Salesforce", src: "/logos/salesforce.webp" },
+      { name: "Salesforce", src: "/logos/salesforce.svg" },
       { name: "Intercom", src: "/logos/intercom.svg" },
       { name: "Gmail", src: "/logos/gmail.svg" },
     ],
@@ -145,7 +145,7 @@ const OUTCOMES = [
     connectors: [
       { name: "Google Calendar", src: "/logos/google-calendar.svg" },
       { name: "Gmail", src: "/logos/gmail.svg" },
-      { name: "Zoom", src: "/logos/zoom.webp" },
+      { name: "Zoom", src: "/logos/zoom.svg" },
     ],
   },
   {
@@ -163,9 +163,9 @@ const OUTCOMES = [
     status: "Available",
     connectors: [
       { name: "Google Meet", src: "/logos/google-meet.svg" },
-      { name: "Zoom", src: "/logos/zoom.webp" },
+      { name: "Zoom", src: "/logos/zoom.svg" },
       { name: "Gmail", src: "/logos/gmail.svg" },
-      { name: "Salesforce", src: "/logos/salesforce.webp" },
+      { name: "Salesforce", src: "/logos/salesforce.svg" },
     ],
   },
   {
@@ -224,7 +224,7 @@ const OUTCOMES = [
       { name: "Slack", src: "/logos/slack.svg" },
       { name: "Google Drive", src: "/logos/google-drive.svg" },
       { name: "Microsoft 365", src: "/logos/microsoft-365.svg" },
-      { name: "Salesforce", src: "/logos/salesforce.webp" },
+      { name: "Salesforce", src: "/logos/salesforce.svg" },
     ],
   },
   {
@@ -243,8 +243,8 @@ const OUTCOMES = [
     connectors: [
       { name: "Slack", src: "/logos/slack.svg" },
       { name: "Microsoft Teams", src: "/logos/microsoft-teams.svg" },
-      { name: "Jira", src: "/logos/jira.webp" },
-      { name: "Salesforce", src: "/logos/salesforce.webp" },
+      { name: "Jira", src: "/logos/jira.svg" },
+      { name: "Salesforce", src: "/logos/salesforce.svg" },
     ],
   },
   {
@@ -281,7 +281,7 @@ const OUTCOMES = [
     status: "Available",
     connectors: [
       { name: "GitHub", src: "/logos/github.svg" },
-      { name: "Jira", src: "/logos/jira.webp" },
+      { name: "Jira", src: "/logos/jira.svg" },
       { name: "Zendesk", src: "/logos/zendesk.svg" },
       { name: "Slack", src: "/logos/slack.svg" },
     ],
@@ -302,7 +302,7 @@ const OUTCOMES = [
     connectors: [
       { name: "TikTok", src: "/logos/tiktok.svg" },
       { name: "Looker", src: "/logos/looker.svg" },
-      { name: "Salesforce", src: "/logos/salesforce.webp" },
+      { name: "Salesforce", src: "/logos/salesforce.svg" },
       { name: "Slack", src: "/logos/slack.svg" },
     ],
   },
@@ -320,7 +320,7 @@ const OUTCOMES = [
     slug: "qbr-generator",
     status: "Available",
     connectors: [
-      { name: "Salesforce", src: "/logos/salesforce.webp" },
+      { name: "Salesforce", src: "/logos/salesforce.svg" },
       { name: "Gong", src: "/logos/gong.svg" },
       { name: "Zendesk", src: "/logos/zendesk.svg" },
       { name: "Microsoft 365", src: "/logos/microsoft-365.svg" },
@@ -361,7 +361,7 @@ const OUTCOMES = [
     status: "Available",
     connectors: [
       { name: "Google Meet", src: "/logos/google-meet.svg" },
-      { name: "Zoom", src: "/logos/zoom.webp" },
+      { name: "Zoom", src: "/logos/zoom.svg" },
       { name: "Microsoft Teams", src: "/logos/microsoft-teams.svg" },
       { name: "Notion", src: "/logos/notion.svg" },
     ],
@@ -421,7 +421,7 @@ const OUTCOMES = [
     slug: "sales-call-prep",
     status: "Available",
     connectors: [
-      { name: "Salesforce", src: "/logos/salesforce.webp" },
+      { name: "Salesforce", src: "/logos/salesforce.svg" },
       { name: "Gong", src: "/logos/gong.svg" },
       { name: "Gmail", src: "/logos/gmail.svg" },
       { name: "Google Calendar", src: "/logos/google-calendar.svg" },
@@ -441,7 +441,7 @@ const OUTCOMES = [
     slug: null,
     status: "Planned",
     connectors: [
-      { name: "Salesforce", src: "/logos/salesforce.webp" },
+      { name: "Salesforce", src: "/logos/salesforce.svg" },
       { name: "Intercom", src: "/logos/intercom.svg" },
       { name: "Zendesk", src: "/logos/zendesk.svg" },
       { name: "Slack", src: "/logos/slack.svg" },
@@ -483,7 +483,7 @@ const OUTCOMES = [
     connectors: [
       { name: "Figma", src: "/logos/figma.svg" },
       { name: "GitHub", src: "/logos/github.svg" },
-      { name: "Linear", src: "/logos/linear.webp" },
+      { name: "Linear", src: "/logos/linear.svg" },
       { name: "Slack", src: "/logos/slack.svg" },
     ],
   },
@@ -522,7 +522,57 @@ const OUTCOMES = [
   connectors: Array<{ name: string; src: string }>;
 }>;
 
+export function CabinetTemplatesIntro({ headingLevel = "h2" }: { headingLevel?: "h1" | "h2" }) {
+  const reduceMotion = useReducedMotion();
+  const Heading = headingLevel;
+
+  return (
+    <motion.div
+      initial={reduceMotion ? false : { opacity: 0, y: 24, filter: "blur(8px)" }}
+      whileInView={reduceMotion ? undefined : { opacity: 1, y: 0, filter: "blur(0px)" }}
+      viewport={{ once: true, amount: 0.5 }}
+      transition={{ duration: 0.62, ease: [0.22, 1, 0.36, 1] }}
+      className="grid items-end gap-6 lg:grid-cols-[1.08fr_0.92fr] lg:gap-12"
+    >
+      <div>
+        <p className="section-label">Cabinet templates</p>
+        <Heading className="mt-3 max-w-[15ch] font-section text-[clamp(2.15rem,3.35vw,3.4rem)] leading-[1.01] text-text-primary">
+          Plug-and-play AI teams for real results.
+        </Heading>
+        <p className="mt-3 text-lg leading-relaxed text-text-secondary">
+          Each cabinet runs as an always-on team on its own dedicated
+          machine, self-hosted or in <span className="font-brand italic">Cabinet</span>{" "}Cloud.
+          Real software doing real work while you sleep.
+        </p>
+      </div>
+      <div className="lg:pb-1">
+        <p className="max-w-xl text-base leading-relaxed text-text-secondary">
+          Each cabinet is a complete AI team: agents, jobs, and knowledge. Clone a
+          directory. Run a company.
+        </p>
+        <Link
+          href="/templates#browse"
+          className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-accent hover:text-accent-warm"
+        >
+          Browse the full template library <ArrowRight aria-hidden className="h-4 w-4" />
+        </Link>
+      </div>
+    </motion.div>
+  );
+}
+
 export function CabinetLibrary() {
+  return (
+    <section id="workflows" className="home-snap-section home-viewport-section home-workflows-section scroll-mt-20 bg-bg-warm px-5 sm:px-6 lg:px-8">
+      <div className="mx-auto w-full max-w-7xl">
+        <CabinetTemplatesIntro />
+        <CabinetOutcomes />
+      </div>
+    </section>
+  );
+}
+
+export function CabinetOutcomes() {
   const [activeId, setActiveId] = useState<OutcomeId>("email");
   const reduceMotion = useReducedMotion();
   const activeIndex = OUTCOMES.findIndex((outcome) => outcome.id === activeId);
@@ -537,47 +587,29 @@ export function CabinetLibrary() {
   }
 
   return (
-    <section id="workflows" className="home-snap-section home-viewport-section home-workflows-section scroll-mt-20 bg-bg-warm px-5 sm:px-6 lg:px-8">
-      <div className="mx-auto w-full max-w-7xl">
-        <motion.div
-          initial={reduceMotion ? false : { opacity: 0, y: 24, filter: "blur(8px)" }}
-          whileInView={reduceMotion ? undefined : { opacity: 1, y: 0, filter: "blur(0px)" }}
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.62, ease: [0.22, 1, 0.36, 1] }}
-          className="grid items-end gap-6 lg:grid-cols-[1.08fr_0.92fr] lg:gap-12"
-        >
-          <div>
-            <p className="section-label">Cabinet templates</p>
-            <h2 className="mt-3 max-w-[15ch] font-section text-[clamp(2.15rem,3.35vw,3.4rem)] leading-[1.01] text-text-primary">
-              Plug-and-play AI teams for real results.
-            </h2>
-            <p className="mt-3 text-lg leading-relaxed text-text-secondary">
-              Each cabinet runs as an always-on team on its own dedicated
-              machine, self-hosted or in <span className="font-brand italic">Cabinet</span>{" "}Cloud.
-              Real software doing real work while you sleep.
-            </p>
-          </div>
-          <div className="lg:pb-1">
-            <p className="max-w-xl text-base leading-relaxed text-text-secondary">
-              Each cabinet is a complete AI team: agents, jobs, and knowledge. Clone a
-              directory. Run a company.
-            </p>
-            <a
-              href={CABINETS_SITE}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-accent hover:text-accent-warm"
-            >
-              Browse the full cabinet library <ArrowRight aria-hidden className="h-4 w-4" />
-            </a>
-          </div>
-        </motion.div>
-
         <div className="home-product-surface mt-[clamp(1.25rem,2.4svh,2rem)] overflow-hidden rounded-[28px] bg-bg-card lg:grid lg:h-[clamp(450px,61svh,620px)] lg:grid-cols-[300px_minmax(0,1fr)]">
+          <div className="p-3 lg:hidden">
+            <label htmlFor="outcome-select" className="sr-only">
+              Business outcome
+            </label>
+            <select
+              id="outcome-select"
+              value={activeId}
+              onChange={(event) => setActiveId(event.target.value as OutcomeId)}
+              className="w-full rounded-xl border border-border bg-bg-warm px-4 py-3 text-sm font-semibold text-text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/35"
+            >
+              {OUTCOMES.map((outcome) => (
+                <option key={outcome.id} value={outcome.id}>
+                  {outcome.label}
+                  {outcome.status !== "Available" ? ` — ${outcome.status}` : ""}
+                </option>
+              ))}
+            </select>
+          </div>
           <div
             role="tablist"
             aria-label="Business outcomes"
-            className="outcome-tablist flex gap-2 overflow-x-auto bg-bg-card p-3 lg:h-full lg:flex-col lg:gap-1 lg:overflow-x-hidden lg:overflow-y-auto lg:overscroll-contain lg:border-r lg:border-border lg:bg-bg-card lg:p-3"
+            className="outcome-tablist hidden gap-2 bg-bg-card p-3 lg:flex lg:h-full lg:flex-col lg:gap-1 lg:overflow-x-hidden lg:overflow-y-auto lg:overscroll-contain lg:border-r lg:border-border lg:bg-bg-card lg:p-3"
           >
             {OUTCOMES.map((outcome, index) => {
               const selected = outcome.id === activeId;
@@ -677,10 +709,10 @@ export function CabinetLibrary() {
                 What comes ready
               </p>
               <div className="mt-4 space-y-2">
-                <ReceiptRow icon={Check} label="AI team" value={active.team} />
-                <ReceiptRow icon={Clock3} label="Operating cadence" value={active.cadence} />
+                <ReceiptRow icon="/brand/ui/team.png" label="AI team" value={active.team} />
+                <ReceiptRow icon="/brand/ui/calendar.png" label="Operating cadence" value={active.cadence} />
                 <ReceiptRow
-                  icon={PlugZap}
+                  icon="/brand/ui/network.png"
                   label="Connectors"
                   value={`${active.connectors.length} systems connected for this workflow`}
                 />
@@ -713,14 +745,12 @@ export function CabinetLibrary() {
 
               <div className="mt-auto pt-5">
                 {active.slug ? (
-                  <a
-                    href={cabinetUrl(active.slug)}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    href={`/templates/${active.slug}`}
                     className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-text-primary px-5 py-3.5 text-sm font-semibold text-bg-card transition-transform hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/35"
                   >
                     Inspect this AI team <ArrowRight aria-hidden className="h-4 w-4" />
-                  </a>
+                  </Link>
                 ) : (
                   <span className="inline-flex w-full items-center justify-center rounded-full bg-white/70 px-5 py-3.5 text-sm font-semibold text-text-secondary">
                     {active.status === "Planned" ? "Template planned" : "Platform capability in progress"}
@@ -731,24 +761,22 @@ export function CabinetLibrary() {
           </motion.article>
           </AnimatePresence>
         </div>
-      </div>
-    </section>
   );
 }
 
 function ReceiptRow({
-  icon: Icon,
+  icon,
   label,
   value,
 }: {
-  icon: typeof Check;
+  icon: string;
   label: string;
   value: string;
 }) {
   return (
     <div className="flex gap-3 rounded-xl bg-white/72 p-3.5">
-      <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-accent-bg text-accent">
-        <Icon aria-hidden className="h-3.5 w-3.5" />
+      <span className="grid h-8 w-8 shrink-0 place-items-center">
+        <Image src={icon} alt="" width={30} height={30} className="h-7 w-7 object-contain" />
       </span>
       <span>
         <strong className="block text-xs text-text-primary">{label}</strong>

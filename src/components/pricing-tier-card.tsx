@@ -75,7 +75,7 @@ export function PricingTierCard({
         selected ? "shadow-[0_24px_58px_-18px_rgba(90,122,79,0.38)]" : ""
       } transition-shadow duration-300`}
     >
-      <div className="flex flex-1 flex-col p-7 md:p-8">
+      <div className="flex flex-1 flex-col p-5">
         {onSelect && selectionId ? (
           <label htmlFor={selectionId} className="mb-3 flex cursor-pointer items-start justify-between gap-4">
             <span className="flex min-w-0 flex-wrap items-center gap-2">
@@ -116,12 +116,12 @@ export function PricingTierCard({
           </div>
         )}
 
-        <p className="text-sm text-text-secondary leading-relaxed mb-7 min-h-[2.75rem]">
+        <p className="text-[13px] text-text-secondary leading-snug mb-2.5 min-h-[2.25rem]">
           {tagline}
         </p>
 
-        <div className="flex items-baseline gap-1 min-h-[2.5rem]">
-          <span className="font-section text-4xl text-text-primary leading-none">
+        <div className="flex items-baseline gap-1 min-h-[2rem]">
+          <span className="font-section text-3xl text-text-primary leading-none">
             {displayPrice}
           </span>
           {showNumeric && (
@@ -129,7 +129,7 @@ export function PricingTierCard({
           )}
         </div>
 
-        <p className="mt-1.5 mb-7 text-xs font-code min-h-[1rem]">
+        <p className="mt-1 mb-2 text-xs font-code min-h-[1rem]">
           {showNumeric && annualNote && billingPeriod === "annual" ? (
             <span className="text-green-warm">{annualNote}</span>
           ) : showNumeric ? (
@@ -139,9 +139,9 @@ export function PricingTierCard({
           )}
         </p>
 
-        <div className="mb-3 min-h-[1.5rem]">
+        <div className="mb-2 min-h-[1.25rem]">
           {inheritsFromLabel ? (
-            <p className="text-sm font-medium">
+            <p className="text-[13px] font-medium">
               <span className="text-text-tertiary">Everything in</span>{" "}
               <span className="text-green-warm">{inheritsFromLabel}</span>
               <span className="text-text-tertiary">, and</span>
@@ -149,7 +149,7 @@ export function PricingTierCard({
           ) : null}
         </div>
 
-        <ul className="mb-7 space-y-2.5 text-sm text-text-primary leading-relaxed flex-1">
+        <ul className="mb-4 space-y-1.5 text-[13px] text-text-primary leading-snug flex-1">
           {bullets.map((bullet) => (
             <li key={bullet} className="flex items-start gap-2">
               <Check
@@ -170,7 +170,7 @@ export function PricingTierCard({
                 ? { target: "_blank", rel: "noopener noreferrer" }
                 : {})}
               onClick={cta.onClick}
-              className={`inline-flex w-full items-center justify-center rounded-full px-5 py-3 text-sm font-semibold transition-all ${ctaClass}`}
+              className={`inline-flex w-full items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold transition-all ${ctaClass}`}
             >
               {cta.label}
             </a>
@@ -178,17 +178,16 @@ export function PricingTierCard({
             <button
               type="button"
               onClick={cta.onClick}
-              className={`inline-flex w-full items-center justify-center rounded-full px-5 py-3 text-sm font-semibold transition-all ${ctaClass}`}
+              className={`inline-flex w-full items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold transition-all ${ctaClass}`}
             >
               {cta.label}
             </button>
           )}
           {footnote && (
-            <p className="mt-2.5 text-center text-xs text-text-tertiary min-h-[1.1rem]">
+            <p className="mt-2 text-center text-xs text-text-tertiary">
               {footnote}
             </p>
           )}
-          {!footnote && <div className="mt-2.5 min-h-[1.1rem]" aria-hidden />}
         </div>
       </div>
     </article>

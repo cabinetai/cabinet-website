@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { ArrowRight, Check } from "lucide-react";
+import { Check } from "lucide-react";
 import { SiteNavbar } from "@/components/site-navbar";
 import { CabinetLibrary } from "@/components/marketing/cabinet-library";
 import { HeroProductReveal } from "@/components/marketing/hero-product-reveal";
 import { KnowledgeNetwork } from "@/components/marketing/knowledge-network";
 import {
   LegacyByoai,
+  LegacyCloudWaitlist,
   LegacyCta,
   LegacyFeaturesGrid,
   LegacyHero,
@@ -53,6 +53,10 @@ export default function HomePage() {
         <LegacyIntegrationScene />
       </SectionBadge>
 
+      <SectionBadge n="28" title="Cloud waitlist" origin="main">
+        <LegacyCloudWaitlist />
+      </SectionBadge>
+
       <SectionBadge n="31" title="Testimonials: 10x work" origin="main">
         <LegacyTestimonials />
       </SectionBadge>
@@ -82,25 +86,10 @@ export default function HomePage() {
             </p>
             </MotionReveal>
 
-            <MotionReveal delay={0.61} amount={0.1}>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-              <Link
-                href="/demo"
-                className="btn-wood inline-flex h-13 items-center justify-center gap-2 whitespace-nowrap rounded-full px-5 text-sm font-semibold sm:px-6 sm:text-base"
-              >
-                Book an executive demo <ArrowRight aria-hidden className="h-4 w-4" />
-              </Link>
-              <a
-                href="#workflows"
-                className="inline-flex h-13 items-center justify-center gap-2 whitespace-nowrap px-3 text-sm font-semibold text-text-primary transition-colors hover:text-accent sm:text-base"
-              >
-                Explore AI teams <ArrowRight aria-hidden className="h-4 w-4" />
-              </a>
-            </div>
-            </MotionReveal>
+            {/* TODO(reimplement): download CTA removed with Sam's os-download component */}
 
             <MotionReveal delay={0.7} amount={0.1}>
-            <div className="mt-7 flex flex-wrap gap-x-5 gap-y-2 text-xs font-semibold text-text-tertiary">
+            <div className="mt-7 flex flex-wrap justify-center gap-x-5 gap-y-2 text-xs font-semibold text-text-tertiary sm:justify-start">
               <span className="inline-flex items-center gap-1.5">
                 <Check aria-hidden className="h-3.5 w-3.5 text-green" /> Open source
               </span>

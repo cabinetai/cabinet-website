@@ -7,6 +7,7 @@ const FOOTER_COLUMNS = [
     title: "Product",
     links: [
       { label: "AI teams", href: "/#product" },
+      { label: "Templates", href: "/templates" },
       { label: "Connect knowledge", href: "/#knowledge" },
       { label: "Bring your own AI", href: "/#providers" },
       { label: "Security", href: "/enterprise/security" },
@@ -51,7 +52,7 @@ export function MarketingFooter() {
           <div className="max-w-sm">
             <Link href="/" className="inline-flex items-center gap-3" aria-label="Cabinet home">
               <Image
-                src="/brand/cabinet-logo-face-2-512.png"
+                src="/brand/cabinet-drawers-logo.png"
                 alt=""
                 width={36}
                 height={38}
@@ -97,7 +98,7 @@ export function MarketingFooter() {
         </div>
 
         <div className="mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} Cabinet, Inc. MIT licensed.</p>
+          <p>© {new Date().getFullYear()} Cabinet, Inc.</p>
           <p>Open source. Self-hosted. Bring your own AI.</p>
         </div>
       </div>

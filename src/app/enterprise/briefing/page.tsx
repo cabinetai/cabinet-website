@@ -66,7 +66,7 @@ function HeroForm() {
             <div className="mt-8 space-y-3">
               <Bullet icon={Video} t="Live working session" s="Not a sales pitch. We build alongside you." />
               <Bullet icon={Users} t="Founders in the room" s="Hila + an engineer on the call. No SDR layer." />
-              <Bullet icon={FileCheck} t="NDA-friendly" s="Send yours over ahead of time, we'll sign." />
+              <Bullet icon={FileCheck} t="NDA-friendly" s="Send yours over ahead of time. We'll sign." />
               <Bullet icon={Coffee} t="No slides" s="A live Cabinet room on your top three OKRs." />
             </div>
           </div>
@@ -288,7 +288,7 @@ function Agenda() {
     {
       n: "1:10",
       t: "Security, sovereignty, and what's next",
-      d: "Your CIO or CISO joins the last 20 minutes. We walk the architecture, answer questions, and outline a 30-day rollout path.",
+      d: "Your CIO or CISO joins for the last 20 minutes. We walk the architecture, answer questions, and outline a 30-day rollout path.",
     },
     {
       n: "1:30",

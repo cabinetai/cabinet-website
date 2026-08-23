@@ -275,7 +275,7 @@ function Preview({
       {/* Hero */}
       <div className="rounded-3xl card-skin p-8">
         <p className="text-[11px] font-medium uppercase text-accent" style={labelStyle}>
-          Free and open source · Self-hosted · MIT
+          Free and open source · Self-hosted
         </p>
         <h1 className="mt-3 text-4xl leading-[1.08] text-text-primary md:text-5xl" style={displayStyle}>
           Your company&apos;s brain. A team of AI agents inside.
