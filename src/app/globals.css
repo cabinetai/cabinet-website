@@ -90,8 +90,39 @@
   --font-display: var(--font-heading);
   --font-brand: var(--font-brand);
   --font-hand: var(--font-hand);
-  /* Mono is retired site-wide; anything asking for mono gets the body sans. */
+  /* Geist Mono remains available for code utilities. */
   --font-mono: var(--font-body);
+}
+
+/* The templates registry uses the site's Geist sans face consistently. */
+.templates-page {
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+.templates-page .font-display,
+.templates-page .font-body-serif,
+.templates-page .font-sans,
+.templates-page .font-section {
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+.templates-page .font-display,
+.templates-page .font-section {
+  font-style: normal !important;
+  font-weight: 620;
+  letter-spacing: -0.045em;
+}
+
+.templates-page .font-display em {
+  font-style: normal;
+}
+
+.templates-page .font-body-serif {
+  font-style: normal;
+}
+
+.templates-page .section-label {
+  font-family: var(--font-body), system-ui, sans-serif;
 }
 
 body {
@@ -579,6 +610,45 @@ html {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 25px 60px -12px rgba(59, 47, 47, 0.15);
+}
+
+/* Wooden plank card for integration cabinets. */
+.wood-card {
+  background-color: #E7CFA3;
+  background-image:
+    radial-gradient(120% 80% at 28% 0%, rgba(255, 247, 226, 0.55), rgba(255, 247, 226, 0) 62%),
+    linear-gradient(97deg,
+      rgba(163, 120, 70, 0.14) 0%, rgba(255, 238, 204, 0.15) 26%,
+      rgba(148, 106, 60, 0.16) 52%, rgba(255, 241, 210, 0.12) 76%,
+      rgba(156, 112, 64, 0.14) 100%),
+    repeating-linear-gradient(97deg,
+      rgba(118, 80, 42, 0.09) 0px, rgba(118, 80, 42, 0.09) 1px,
+      transparent 1px, transparent 6px,
+      rgba(139, 94, 60, 0.06) 6px, rgba(139, 94, 60, 0.06) 8px,
+      transparent 8px, transparent 15px);
+  box-shadow:
+    inset 0 2px 0 rgba(255, 249, 232, 0.65),
+    inset 2px 0 5px rgba(255, 244, 218, 0.3),
+    inset -2px 0 6px rgba(96, 64, 32, 0.14),
+    inset 0 -4px 8px rgba(96, 64, 32, 0.24),
+    0 1px 2px rgba(60, 45, 30, 0.12),
+    0 14px 30px -12px rgba(60, 45, 30, 0.4);
+}
+
+.engraved {
+  filter: brightness(0.94) saturate(0.85)
+    drop-shadow(0 1.5px 0 rgba(255, 248, 230, 0.75))
+    drop-shadow(0 -1.5px 1.5px rgba(80, 52, 24, 0.45));
+}
+
+.wood-card:hover {
+  box-shadow:
+    inset 0 2px 0 rgba(255, 249, 232, 0.65),
+    inset 2px 0 5px rgba(255, 244, 218, 0.3),
+    inset -2px 0 6px rgba(96, 64, 32, 0.14),
+    inset 0 -4px 8px rgba(96, 64, 32, 0.24),
+    0 2px 4px rgba(60, 45, 30, 0.14),
+    0 26px 48px -16px rgba(60, 45, 30, 0.5);
 }
 
 /* Scanline overlay for terminal */

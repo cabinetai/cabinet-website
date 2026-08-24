@@ -13,8 +13,10 @@ import type {
 
 const REGISTRY_DIR = path.join(/* turbopackIgnore: true */ process.cwd(), ".template-registry");
 
-// Order sections appear in on the homepage.
+// Order sections appear in on the templates page.
+export const INTEGRATIONS_SECTION = "Integrations";
 export const SECTION_ORDER = [
+  INTEGRATIONS_SECTION,
   "Sales",
   "Marketing",
   "Product & Engineering",
@@ -23,6 +25,34 @@ export const SECTION_ORDER = [
   "Leadership",
   "Life & Learning",
 ];
+
+// Cabinets whose identity is one external service. Keep these together so
+// visitors can browse by the account they use instead of an agent department.
+export const INTEGRATION_SLUGS = new Set([
+  "asana-tasks",
+  "chrome-site-check",
+  "discord-digest",
+  "figma-week",
+  "github-dev-brief",
+  "gitlab-dev-brief",
+  "gmail-inbox",
+  "google-calendar-week",
+  "higgsfield-studio",
+  "jira-tasks",
+  "linear-cycle",
+  "mailchimp-delivery",
+  "microsoft-365-brief",
+  "monday-tasks",
+  "notion-library",
+  "notion-project-status",
+  "sharepoint-week",
+  "slack-digest",
+  "stripe-daily",
+  "teams-digest",
+  "tiktok-queue",
+  "whatsapp-digest",
+  "x-mentions",
+]);
 
 // Map an agent department to a browse section. Unknown/new departments fall
 // through to "Life & Learning" so freshly-added cabinets still show up.
@@ -245,7 +275,9 @@ export async function getEntry(slug: string): Promise<RegistryEntry | null> {
   const totalPages = countMdFiles(dir);
 
   const allAgents = [...root.agents, ...children.flatMap((c) => c.agents)];
-  const section = sectionForAgents(allAgents);
+  const section = INTEGRATION_SLUGS.has(slug)
+    ? INTEGRATIONS_SECTION
+    : sectionForAgents(allAgents);
 
   return {
     slug,
