@@ -3,6 +3,7 @@ import { join } from "node:path";
 import Image from "next/image";
 import Link from "next/link";
 import { INTEGRATION_LOGOS } from "@/lib/showcase";
+import { KnowledgeConnectVisual } from "@/components/templates/knowledge-connect-visual";
 import { SectionLabel } from "@/components/templates/section-label";
 import type { RegistryEntry } from "@/lib/template-types";
 
@@ -118,14 +119,8 @@ export function IntegrationsBand({ entries }: { entries: RegistryEntry[] }) {
               ))}
             </div>
           </div>
-          <div className="overflow-hidden rounded-3xl shadow-lg">
-            <Image
-              src="/generated/integrations-hero.webp"
-              alt="Carved wooden tiles with colorful app glyphs"
-              width={1200}
-              height={675}
-              className="w-full object-cover"
-            />
+          <div className="flex min-h-[360px] items-center justify-center rounded-3xl bg-bg-card/45 px-4 py-6">
+            <KnowledgeConnectVisual />
           </div>
         </div>
 
