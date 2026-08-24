@@ -1640,12 +1640,21 @@ function DemoVideoSection({
   demoRef: RefObject<HTMLElement | null>;
   demoVideoReady: boolean;
 }) {
+  const [videoLoaded, setVideoLoaded] = useState(false);
+
   return (
     <section
       ref={demoRef}
       className="dot-grid flex min-h-[100svh] flex-col bg-[#f2ece4] px-6 pb-8 pt-[clamp(5rem,9vh,7rem)]"
     >
-      <div className="mx-auto w-fit max-w-full overflow-hidden rounded-2xl border border-border shadow-2xl shadow-black/25">
+      <div
+        className="relative mx-auto aspect-[2880/1794] w-[min(100%,118.7svh)] overflow-hidden rounded-2xl border border-border bg-[#d9d0c4] shadow-2xl shadow-black/25"
+        aria-busy={!videoLoaded}
+      >
+        <div
+          aria-hidden
+          className={`absolute inset-0 bg-[radial-gradient(circle_at_35%_30%,#f7f0e5,transparent_42%),linear-gradient(135deg,#c7b9a8,#e8dfd2_52%,#b9aa99)] transition-opacity duration-700 ${videoLoaded ? "opacity-0" : "opacity-100"}`}
+        />
         <video
           key={demoVideoReady ? "ready" : "idle"}
           autoPlay
@@ -1655,7 +1664,8 @@ function DemoVideoSection({
           preload="none"
           width={2880}
           height={1794}
-          className="mx-auto max-h-[74vh] w-auto max-w-full scale-[1.01]"
+          onLoadedData={() => setVideoLoaded(true)}
+          className={`absolute inset-0 h-full w-full object-cover transition-[filter,opacity,transform] duration-700 ease-out ${videoLoaded ? "scale-100 opacity-100 blur-0" : "scale-[1.02] opacity-0 blur-xl"}`}
         >
           {demoVideoReady && (
             <>
