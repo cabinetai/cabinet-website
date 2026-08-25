@@ -131,6 +131,22 @@ body {
   font-family: var(--font-sans), system-ui, sans-serif;
 }
 
+/* Scroll track for the pinned integration scene. The breakpoint is also read
+   in JS (integration-scene.tsx) to pick the staging, but the height has to be
+   right in the very first paint: driven from React state it would render seven
+   empty screens tall on a phone until hydration landed, which read as a page
+   that had failed to load. Keep this selector in sync with the matchMedia
+   query there. */
+.integration-scene-track {
+  height: 700vh;
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+  .integration-scene-track {
+    height: 100svh;
+  }
+}
+
 html:has(.home-scroll-snap) {
   scroll-padding-top: 5.5rem;
   scroll-snap-type: y proximity;

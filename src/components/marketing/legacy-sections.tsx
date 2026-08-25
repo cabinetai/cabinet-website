@@ -12,6 +12,7 @@ import {
   X,
 } from "lucide-react";
 import { IntegrationScene } from "@/components/integration-scene";
+import { LazyVideo } from "@/components/lazy-video";
 import { CloudCabinet } from "@/components/marketing/cloud-cabinet";
 import { PrinciplesShowcase } from "@/components/principles-showcase";
 import { DiscordIcon, GithubIcon } from "@/components/site-icons";
@@ -1160,19 +1161,16 @@ export function LegacyCta() {
         </div>
         {/* Wrapper clips the 2px border baked into the recording */}
         <div className="overflow-hidden rounded-2xl shadow-lg lg:rounded-r-none">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            preload="metadata"
+          <LazyVideo
             width={2880}
             height={1794}
             className="-m-[2px] w-[calc(100%+4px)] max-w-none"
-          >
-            <source src="/new-cabinet.webm" type="video/webm" />
-            <source src="/new-cabinet.mp4" type="video/mp4" />
-          </video>
+            sources={[
+              { src: "/new-cabinet.mp4", type: "video/mp4" },
+              { src: "/new-cabinet.webm", type: "video/webm" },
+            ]}
+            mobileSources={[{ src: "/new-cabinet-mobile.mp4", type: "video/mp4" }]}
+          />
         </div>
       </div>
       <div className="max-w-6xl mx-auto px-6 text-center">

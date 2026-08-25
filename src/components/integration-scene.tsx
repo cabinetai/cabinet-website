@@ -19,6 +19,7 @@ import {
   TrendingUp,
   type LucideIcon,
 } from "lucide-react";
+import { LazyVideo } from "@/components/lazy-video";
 import { WoodIcon } from "@/components/wood-icon";
 import {
   AnimatePresence,
@@ -1387,7 +1388,7 @@ export function IntegrationScene() {
       <DemoVideoSection />
     </div>
 
-    <div ref={ref} className={`order-1 relative bg-bg lg:order-2 ${mobile ? "h-[100svh]" : "h-[700vh]"}`}>
+    <div ref={ref} className="integration-scene-track order-1 relative bg-bg lg:order-2">
       <div
         ref={stickyRef}
         onPointerMove={handlePointerMove}
@@ -1630,21 +1631,22 @@ function DemoVideoSection() {
           aria-hidden
           className={`absolute inset-0 bg-[radial-gradient(circle_at_35%_30%,#f7f0e5,transparent_42%),linear-gradient(135deg,#c7b9a8,#e8dfd2_52%,#b9aa99)] transition-opacity duration-700 ${videoLoaded ? "opacity-0" : "opacity-100"}`}
         />
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          preload="metadata"
-          poster="/og.png"
+        {/* Gated rather than eager. On desktop this section is the opener, so
+            the observer fires on the first frame after hydration and the clip
+            still starts straight away. On a phone it sits below the scene, so
+            the clip waits instead of competing with the bundle. */}
+        <LazyVideo
           width={2880}
           height={1794}
-          onLoadedData={() => setVideoLoaded(true)}
+          onReady={() => setVideoLoaded(true)}
           className={`absolute inset-0 h-full w-full object-cover transition-[filter,opacity,transform] duration-700 ease-out ${videoLoaded ? "scale-100 opacity-100 blur-0" : "scale-[1.02] opacity-0 blur-xl"}`}
-        >
-          <source src="/new-cabinet.webm" type="video/webm" />
-          <source src="/new-cabinet.mp4" type="video/mp4" />
-        </video>
+          sources={[
+            // mp4 first: it is the smaller of the two encodes and every browser plays it
+            { src: "/new-cabinet.mp4", type: "video/mp4" },
+            { src: "/new-cabinet.webm", type: "video/webm" },
+          ]}
+          mobileSources={[{ src: "/new-cabinet-mobile.mp4", type: "video/mp4" }]}
+        />
       </div>
       {/* the text centers itself in whatever height the video leaves over */}
       <div className="mx-auto flex max-w-5xl flex-1 items-center py-6 text-center">
