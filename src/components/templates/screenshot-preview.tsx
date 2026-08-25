@@ -7,13 +7,13 @@ import { useState } from "react";
 interface ScreenshotPreviewProps {
   slug: string;
   pageName: string; // the subpath shown in the address bar, e.g. "approval-packet"
+  src?: string;
 }
 
-export function ScreenshotPreview({ slug, pageName }: ScreenshotPreviewProps) {
+export function ScreenshotPreview({ slug, pageName, src: screenshotSrc }: ScreenshotPreviewProps) {
   const [loaded, setLoaded] = useState(false);
 
-  // Try .jpg first; .jpeg is used by the two MCP-captured shots
-  const src = `/screenshots/${slug}.jpg`;
+  const src = screenshotSrc ?? `/screenshots/${slug}.jpg`;
 
   return (
     <div

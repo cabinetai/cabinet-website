@@ -147,9 +147,24 @@ export default async function CabinetDetailPage({ params }: PageProps) {
 
   if (!entry) notFound();
 
-  // Check if an app screenshot exists for this cabinet
-  const screenshotPath = path.join(process.cwd(), "public", "screenshots", `${slug}.jpg`);
-  const hasScreenshot = fs.existsSync(screenshotPath);
+  // The showcase uses freshly captured app shots under screenshots/apps. Keep
+  // the older root-level JPGs as a fallback for the rest of the registry.
+  const screenshotCandidates = [
+    {
+      file: path.join(process.cwd(), "public", "screenshots", "apps", `${slug}.webp`),
+      src: `/screenshots/apps/${slug}.webp`,
+    },
+    {
+      file: path.join(process.cwd(), "public", "screenshots", `${slug}.jpg`),
+      src: `/screenshots/${slug}.jpg`,
+    },
+    {
+      file: path.join(process.cwd(), "public", "screenshots", `${slug}.jpeg`),
+      src: `/screenshots/${slug}.jpeg`,
+    },
+  ];
+  const screenshot = screenshotCandidates.find((candidate) => fs.existsSync(candidate.file));
+  const hasScreenshot = Boolean(screenshot);
   const screenshotPage = SCREENSHOT_PAGE[slug] ?? slug;
 
   // Collect all agents across root + children, with source path for unique keys
@@ -246,7 +261,7 @@ export default async function CabinetDetailPage({ params }: PageProps) {
             <section>
               <SectionLabel>App Preview</SectionLabel>
               <div className="mt-4">
-                <ScreenshotPreview slug={slug} pageName={screenshotPage} />
+                <ScreenshotPreview slug={slug} pageName={screenshotPage} src={screenshot?.src} />
               </div>
             </section>
           )}
