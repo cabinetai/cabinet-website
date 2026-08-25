@@ -95,7 +95,7 @@ export function IntegrationsBand({ entries }: { entries: RegistryEntry[] }) {
     <section id="connect" className="mt-24 bg-bg-warm scroll-mt-16">
       <div className="mx-auto max-w-6xl px-6 py-20">
         <div className="grid items-center gap-10 lg:grid-cols-2">
-          <div>
+          <div className="order-2 lg:order-1">
             <SectionLabel>Integrations</SectionLabel>
             <h2 className="mt-2 font-display text-4xl sm:text-5xl text-text-primary leading-[1.08]">
               Plugged into the accounts you already live in.
@@ -119,7 +119,7 @@ export function IntegrationsBand({ entries }: { entries: RegistryEntry[] }) {
               ))}
             </div>
           </div>
-          <div className="flex min-h-[360px] items-center justify-center rounded-3xl px-4 py-6">
+          <div className="order-1 flex min-h-[360px] items-center justify-center rounded-3xl px-4 py-6 lg:order-2">
             <KnowledgeConnectVisual />
           </div>
         </div>
