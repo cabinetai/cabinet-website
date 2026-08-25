@@ -128,7 +128,7 @@ export function IntegrationsBand({ entries }: { entries: RegistryEntry[] }) {
           <>
             <div className="mt-14 flex items-baseline justify-between gap-4">
               <h3 className="font-display text-3xl sm:text-4xl text-text-primary">
-                One cabinet per service.
+                Start small with one cabinet per service.
               </h3>
               <span className="font-code text-xs text-text-muted">
                 {entries.length} integration cabinets
