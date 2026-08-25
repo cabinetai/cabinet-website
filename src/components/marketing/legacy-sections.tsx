@@ -3,11 +3,9 @@ import {
   ArrowRight,
   Bot,
   Check,
-  Code2,
   FileText,
   GitBranch,
   Shield,
-  Star,
   Users,
   X,
 } from "lucide-react";
@@ -15,7 +13,7 @@ import { IntegrationScene } from "@/components/integration-scene";
 import { LazyVideo } from "@/components/lazy-video";
 import { CloudCabinet } from "@/components/marketing/cloud-cabinet";
 import { PrinciplesShowcase } from "@/components/principles-showcase";
-import { DiscordIcon, GithubIcon } from "@/components/site-icons";
+import { DiscordIcon } from "@/components/site-icons";
 import { WoodIcon } from "@/components/wood-icon";
 import {
   CopyButton,
@@ -24,7 +22,7 @@ import {
 } from "@/components/marketing/legacy-interactive-primitives";
 import { MotionReveal } from "@/components/marketing/motion-primitives";
 import { CABINETS, CABINETS_SITE, cabinetCover, cabinetUrl } from "@/lib/cabinets";
-import { DISCORD_URL, GITHUB_URL } from "@/lib/site-config";
+import { DISCORD_URL } from "@/lib/site-config";
 import { DownloadButtons } from "@/components/marketing/download-buttons";
 import { SOLUTIONS, SOLUTION_STORIES } from "@/lib/solutions";
 
@@ -63,11 +61,6 @@ const TRUST_BADGES = [
     label: "SOC 2 Type II",
     status: "In progress",
     desc: "We're working toward it, and we'll show you the report, not just a badge.",
-  },
-  {
-    img: "/brand/trust/open-source.png",
-    label: "Open source",
-    desc: "Read every line, fork it, or run your own build.",
   },
   {
     img: "/brand/trust/self-hosted.png",
@@ -140,32 +133,6 @@ const TESTIMONIALS = [
     initials: "AH",
   },
 ];
-
-function GitHubStarsButton({
-  className,
-  compact = false,
-}: {
-  className: string;
-  compact?: boolean;
-}) {
-  return (
-    <a
-      href={GITHUB_URL}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={className}
-    >
-      <span className="inline-flex items-center gap-2">
-        <GithubIcon className="w-4 h-4" />
-        <span>{compact ? "Star Cabinet" : "Star Cabinet on GitHub"}</span>
-      </span>
-      <span className="inline-flex items-center gap-1 rounded-full bg-accent-bg px-2.5 py-1 text-[0.72rem] font-semibold text-accent shadow-sm ring-1 ring-border-light">
-        <Star className="w-3.5 h-3.5 fill-current" />
-        GitHub
-      </span>
-    </a>
-  );
-}
 
 /* Feature Card */
 function FeatureCard({
@@ -316,7 +283,7 @@ export function LegacyHero() {
         </div>
 
         <p className="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto mb-4 leading-relaxed font-body-serif">
-          A free and open-source AI-first startup OS where everything lives as markdown files on disk. No database. No vendor lock-in.
+          A free AI-first startup OS where everything lives as files on disk. No database. No vendor lock-in.
         </p>
 
         <p className="text-sm md:text-base text-text-tertiary max-w-2xl mx-auto mb-6 font-code">
@@ -675,7 +642,6 @@ export function LegacySocialProofBar() {
         <div className="flex items-center gap-2"><WoodIcon icon={Shield} className="w-6 h-6" /><span>Self-hosted</span></div>
         <div className="flex items-center gap-2"><WoodIcon icon={GitBranch} className="w-6 h-6" /><span>Git-backed</span></div>
         <div className="flex items-center gap-2"><WoodIcon icon={Bot} className="w-6 h-6" /><span>AI-native</span></div>
-        <div className="flex items-center gap-2"><WoodIcon icon={Code2} className="w-6 h-6" /><span>Open source</span></div>
       </div>
     </section>
   );
@@ -1215,9 +1181,6 @@ export function LegacyCta() {
           >
             <DiscordIcon className="w-4 h-4" /> Join Discord
           </a>
-          <GitHubStarsButton
-            className="inline-flex h-12 min-w-[11rem] items-center justify-between gap-3 rounded-full card-skin px-4 text-sm font-semibold text-text-primary shadow-sm transition-all hover:border-border-dark hover:bg-bg-card-hover"
-          />
         </div>
       </div>
     </section>

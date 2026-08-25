@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { DISCORD_URL, GITHUB_URL } from "@/lib/site-config";
+import { DISCORD_URL } from "@/lib/site-config";
 
 const COLUMNS: { title: string; links: { label: string; href: string; ext?: boolean }[] }[] = [
   {
@@ -16,7 +16,6 @@ const COLUMNS: { title: string; links: { label: string; href: string; ext?: bool
     title: "Resources",
     links: [
       { label: "Documentation", href: "https://docs.runcabinet.com/", ext: true },
-      { label: "GitHub", href: GITHUB_URL, ext: true },
       { label: "Discord", href: DISCORD_URL, ext: true },
       { label: "In the wild", href: "/media" },
     ],
@@ -55,7 +54,7 @@ export function EnterpriseFooter() {
               <span className="font-brand italic text-xl text-text-primary">Cabinet</span>
             </a>
             <p className="mt-4 text-[15px] text-text-secondary leading-relaxed font-body-serif">
-              The substrate for strategy execution. Open source. File-based.
+              The substrate for strategy execution. File-based.
               Built for the office of the CEO, and every manager beneath.
             </p>
             <p className="mt-5 text-xs text-text-tertiary">
@@ -90,7 +89,7 @@ export function EnterpriseFooter() {
         <div className="mt-14 pt-6 border-t border-border flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 justify-between">
           <p className="text-xs text-text-tertiary">© {new Date().getFullYear()} Cabinet, Inc.</p>
           <p className="text-xs text-text-tertiary">
-            Open source
+            Self-hosted
           </p>
         </div>
       </div>

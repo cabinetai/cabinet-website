@@ -53,11 +53,11 @@ export const metadata: Metadata = {
   referrer: "strict-origin-when-cross-origin",
   title: "Cabinet: The AI workspace your company owns",
   description:
-    "Cabinet shows your entire knowledge base and files, puts AI teams to work on it, and renders results as live apps and dashboards. Open source, self-hosted, bring your own AI.",
+    "Cabinet shows your entire knowledge base and files, puts AI teams to work on it, and renders results as live apps and dashboards. Self-hosted, bring your own AI.",
   openGraph: {
     title: "Cabinet: The AI workspace your company owns",
     description:
-      "Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI.",
+      "Company knowledge, working AI teams, and live apps in one self-hosted workspace. Bring your own AI.",
     type: "website",
     url: "https://runcabinet.com",
     images: [
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Cabinet: The AI workspace your company owns",
     description:
-      "Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI.",
+      "Company knowledge, working AI teams, and live apps in one self-hosted workspace. Bring your own AI.",
     images: ["https://runcabinet.com/og.png"],
   },
 };

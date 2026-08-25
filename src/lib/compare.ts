@@ -157,7 +157,7 @@ export const COMPARISONS: Comparison[] = [
       chooseUs: [
         "You want company knowledge your team can open, edit, and audit as files it owns.",
         "You want agent work that lands as durable documents and live dashboards, not actions that scatter across inboxes.",
-        "Self-hosting, open source, and paying providers directly for AI are requirements.",
+        "Self-hosting and paying providers directly for AI are requirements.",
       ],
       chooseThem: [
         "Your bottleneck is personal busywork: email triage, scheduling, meeting prep.",
@@ -201,7 +201,6 @@ export const COMPARISONS: Comparison[] = [
       { feature: "Live apps rendered from your knowledge", cabinet: true, them: false },
       { feature: "Bring your own AI model keys", cabinet: true, them: false, note: "Town publishes no bring-your-own-model option as of August 2026." },
       { feature: "Self-hosted on your infrastructure", cabinet: true, them: false },
-      { feature: "Open source", cabinet: true, them: false },
       { feature: "Built for teams", cabinet: true, them: "partial", note: "Town's Team and Business plans pool credits and share routines; each person still runs an individual assistant." },
       { feature: "A free tier you can actually work in", cabinet: true, them: "partial", note: "Town's free plan is 30 chats per month as of August 2026." },
     ],
@@ -215,7 +214,7 @@ export const COMPARISONS: Comparison[] = [
     },
     faqs: [
       { q: "What is Town AI and what does a Townie do?", a: "Town is a personal AI assistant startup that raised $73M, including a [$55M Series A](https://www.globenewswire.com/news-release/2026/06/03/3306172/0/en/town-raises-55m-series-a-from-a16z-and-forerunner-to-build-the-ai-assistant-that-learns-how-you-work.html) led by a16z in June 2026. Each user gets a Townie: a named assistant with its own town.com email address that triages email, preps meetings, drafts replies in your voice, and runs routines across 50+ integrations. It runs in Town's cloud only." },
-      { q: "How much does Town cost?", a: "As of August 2026, [Town's published plans](https://www.town.com/pricing) are Free (30 chats per month), Starter at $15, Pro at $49, Power at $99, and Power Plus at $199 per month, each with a monthly credit allowance from about 1,250 up to 40,000, plus Team and Business plans with pooled credits. Cabinet is open source and [free to self-host](/pricing), with AI billed through your own provider keys." },
+      { q: "How much does Town cost?", a: "As of August 2026, [Town's published plans](https://www.town.com/pricing) are Free (30 chats per month), Starter at $15, Pro at $49, Power at $99, and Power Plus at $199 per month, each with a monthly credit allowance from about 1,250 up to 40,000, plus Team and Business plans with pooled credits. Cabinet is [free to self-host](/pricing), with AI billed through your own provider keys." },
       { q: "Is Cabinet a Town alternative?", a: "They solve different problems. Town is a personal assistant for your inbox and calendar. Cabinet is a knowledge workspace your company owns, where teams and AI agents build knowledge that persists as files and live dashboards. Some teams run both: a Townie for personal triage, Cabinet as the company brain." },
       { q: "Can I self-host Town or bring my own AI model?", a: "No. Town runs only in Town's cloud, is closed source, and publishes no bring-your-own-model option as of August 2026. Cabinet self-hosts on your infrastructure and routes to the AI provider accounts you already pay for." },
       { q: "Does Town work for teams?", a: "Town sells Team and Business plans with shared workspaces, pooled credits, and shared routines. The model remains one personal assistant per person. Cabinet starts from the other end: one shared knowledge base the whole company and its agents work in together." },
@@ -248,7 +247,7 @@ export const COMPARISONS: Comparison[] = [
       chooseUs: [
         "You want knowledge people and agents author, read, and keep, not an index of copies held elsewhere.",
         "You want agent output that compounds as documents and live dashboards instead of expiring as workflow runs.",
-        "You want AI billed at provider prices through your own keys, with open source and real self-hosting.",
+        "You want AI billed at provider prices through your own keys, with real self-hosting.",
       ],
       chooseThem: [
         "Your job is automation plumbing: moving data between SaaS tools on triggers, at volume.",
@@ -291,7 +290,6 @@ export const COMPARISONS: Comparison[] = [
       { feature: "Knowledge rendered as live apps and dashboards", cabinet: true, them: "partial", note: "Gumloop agents produce hosted artifacts; there is no rendered view of the knowledge itself." },
       { feature: "Bring your own AI keys at provider cost", cabinet: true, them: "partial", note: "Supported, but the orchestration fee doubles to 16% and platform actions still bill credits (Gumloop docs, August 2026)." },
       { feature: "Self-hosted", cabinet: true, them: false, note: "Gumloop Enterprise offers VPC deployment of its managed platform, not self-hosting." },
-      { feature: "Open source", cabinet: true, them: false },
       { feature: "Free to start", cabinet: true, them: false, note: "Gumloop has no free plan, only a 14-day trial, as of August 2026." },
       { feature: "Hybrid search over your existing tools", cabinet: "partial", them: true },
       { feature: "RBAC, SCIM, and audit logs today", cabinet: "partial", them: true },
@@ -310,7 +308,7 @@ export const COMPARISONS: Comparison[] = [
       { q: "Is Cabinet a Gumloop alternative?", a: "For different jobs. Gumloop automates workflows across your SaaS stack; Cabinet is the knowledge workspace your company owns, where the durable work accumulates. Teams that mainly need pipeline automation should use Gumloop. Teams that want company knowledge, agents, and live dashboards in one owned place pick Cabinet." },
       { q: "Does Gumloop support bring-your-own API keys?", a: "Yes, with a toll. With your own keys, model tokens stop billing credits but Gumloop's orchestration fee doubles from 8% to 16%, per its pricing docs as of August 2026. In Cabinet, your keys are the whole AI bill." },
       { q: "Can Gumloop replace a knowledge base?", a: "No, and its docs are candid about it: Brain reflects content edited in the original systems. There is no editor, no documents of record, and no place a person reads the knowledge. Cabinet is that place." },
-      { q: "Can I self-host Gumloop?", a: "No. Gumloop Enterprise can deploy into a VPC in your cloud account, but it remains Gumloop's closed, managed platform. Cabinet is open source and runs fully on your own infrastructure." },
+      { q: "Can I self-host Gumloop?", a: "No. Gumloop Enterprise can deploy into a VPC in your cloud account, but it remains Gumloop's closed, managed platform. Cabinet runs fully on your own infrastructure." },
     ],
     sources: [
       { label: "Gumloop: official site", href: "https://www.gumloop.com/" },
@@ -333,9 +331,9 @@ export const COMPARISONS: Comparison[] = [
     oneLiner: "Dorsey's chat room for agents, or the brain they work in.",
     title: "Buzz vs Cabinet: Agent Chat Room, or Company Brain (2026)",
     metaDescription:
-      "Buzz is Block's free, open-source chat where humans and AI agents share channels. Cabinet shares its ideals, self-hosted with your own AI keys, and adds what Buzz lacks: a knowledge base, files, and live dashboards your company owns. Compared honestly, August 2026.",
+      "Buzz is Block's free, open-source chat where humans and AI agents share channels. Cabinet shares much of what it stands for, self-hosted with your own AI keys, and adds what Buzz lacks: a knowledge base, files, and live dashboards your company owns. Compared honestly, August 2026.",
     h1: "Buzz vs Cabinet: the chat room, or the brain",
-    lead: "Buzz is Block's open-source workspace where people and AI agents share channels. Jack Dorsey announced it on July 21, 2026, and it is free while in beta. Cabinet agrees with most of what Buzz stands for: open source, self-hosted, agents as teammates, your own AI keys. The difference is the primitive. Buzz builds on the chat log. Cabinet builds on a knowledge base your company keeps.",
+    lead: "Buzz is Block's open-source workspace where people and AI agents share channels. Jack Dorsey announced it on July 21, 2026, and it is free while in beta. Cabinet agrees with most of what Buzz stands for: self-hosted, agents as teammates, your own AI keys. The difference is the primitive. Buzz builds on the chat log. Cabinet builds on a knowledge base your company keeps.",
     verdict: {
       chooseUs: [
         "You want shared context that accumulates as documents, files, and dashboards, not a channel scroll.",
@@ -374,7 +372,6 @@ export const COMPARISONS: Comparison[] = [
       },
     ],
     rows: [
-      { feature: "Open source", cabinet: true, them: true },
       { feature: "Self-hosted on infrastructure you own", cabinet: true, them: true },
       { feature: "Bring your own AI keys", cabinet: true, them: true },
       { feature: "Humans and AI agents in one workspace", cabinet: true, them: true },
@@ -399,7 +396,7 @@ export const COMPARISONS: Comparison[] = [
       { q: "What is Buzz, Jack Dorsey's new app?", a: "Buzz is a free, open-source collaboration platform from Block, announced by Jack Dorsey on July 21, 2026, where humans and AI agents share channels as teammates. It is built on the Nostr protocol: agents hold their own cryptographic identities, and messages and git patches are signed events on a relay you can self-host. Desktop only so far, and pre-1.0." },
       { q: "Is Buzz free?", a: "Yes. Buzz is Apache-licensed open source, and Block's hosted beta at buzz.xyz is free as of August 2026. Real costs are your own infrastructure and your own LLM API keys. No paid plan has been announced." },
       { q: "Is Buzz a Slack replacement?", a: "It wants to be. Dorsey positions Buzz against Slack and GitHub. Today it is pre-1.0: no mobile apps, unfinished approval gates, and [coverage advises](https://techcrunch.com/2026/07/21/jack-dorsey-is-taking-on-slack-with-buzz-a-group-chat-platform-for-teams-and-their-ai-agents/) teams not to migrate yet. It also has no knowledge base, which is where Cabinet starts." },
-      { q: "Buzz vs Cabinet: which should my team use for AI agents?", a: "Both are open source, self-hosted, and let agents work alongside people with your own AI keys. Buzz makes chat the shared context; Cabinet makes an owned knowledge base the shared context, with documents, files, and live dashboards. Developer teams that live in chat may prefer Buzz. Companies building knowledge that compounds pick Cabinet." },
+      { q: "Buzz vs Cabinet: which should my team use for AI agents?", a: "Both are self-hosted, and let agents work alongside people with your own AI keys. Buzz makes chat the shared context; Cabinet makes an owned knowledge base the shared context, with documents, files, and live dashboards. Developer teams that live in chat may prefer Buzz. Companies building knowledge that compounds pick Cabinet." },
       { q: "Does Buzz have a knowledge base or documents?", a: "No. Buzz's context is the message and patch log, plus early canvases. There is no document hierarchy, no dashboards, and no integrations to existing files as of August 2026. Cabinet is built around exactly those things." },
       { q: "Can I self-host both Buzz and Cabinet?", a: "Yes. Buzz self-hosts as a Nostr relay via Docker; Cabinet [runs on your own machine or cloud](/enterprise/security). The difference is what you end up owning: in Buzz, an event log of conversations; in Cabinet, a knowledge base your company can open and build on." },
     ],
@@ -424,14 +421,14 @@ export const COMPARISONS: Comparison[] = [
     oneLiner: "Claude at your desk, or Claude inside your company's brain.",
     title: "Claude Cowork vs Cabinet: Coworker, or Company Brain? (2026)",
     metaDescription:
-      "Claude Cowork puts an AI coworker on your files from $17/mo, one person at a time, on Claude only. Cabinet is the knowledge base your company owns: agents on your own model keys, live dashboards, self-hosted, open source. Compared honestly, August 2026.",
+      "Claude Cowork puts an AI coworker on your files from $17/mo, one person at a time, on Claude only. Cabinet is the knowledge base your company owns: agents on your own model keys, live dashboards, self-hosted. Compared honestly, August 2026.",
     h1: "Claude Cowork vs Cabinet: your coworker, or your company's brain",
     lead: "Claude Cowork gives one person a tireless coworker: point Claude at your folders and connectors, hand it a goal, and come back to finished spreadsheets and decks. Cabinet is built on the same conviction, and runs Claude through your own key. The difference is where the work lands. Cowork's work lands in one person's folders and account. Cabinet's lands in a knowledge base the whole company owns.",
     verdict: {
       chooseUs: [
         "You want one knowledge base your whole team and its agents read and write together, owned as files.",
         "You want AI billed at provider prices through your own keys, on Claude, GPT, or Gemini, instead of subscription caps.",
-        "Self-hosting, open source, and knowledge rendered as live dashboards are requirements.",
+        "Self-hosting and knowledge rendered as live dashboards are requirements.",
       ],
       chooseThem: [
         "You want a personal AI coworker with zero setup, working in your own files today.",
@@ -476,7 +473,6 @@ export const COMPARISONS: Comparison[] = [
       { feature: "Choice of AI provider", cabinet: true, them: false, note: "Cowork runs Claude models only." },
       { feature: "AI billed at provider prices, uncapped", cabinet: true, them: false, note: "Cowork consumes plan allocation faster than chat and has its own rolling limit (Anthropic docs, August 2026)." },
       { feature: "Self-hosted on your infrastructure", cabinet: true, them: false, note: "Even local Cowork sessions process conversations on Anthropic's servers." },
-      { feature: "Open source", cabinet: true, them: false },
       { feature: "Included with a consumer AI subscription", cabinet: false, them: true, note: "Cowork ships with Claude Pro from $17/mo as of August 2026." },
     ],
     whenThemWins: {
@@ -489,7 +485,7 @@ export const COMPARISONS: Comparison[] = [
     },
     faqs: [
       { q: "What is Claude Cowork?", a: "Claude Cowork is Anthropic's agentic workspace, pitched at launch as Claude Code for the rest of your work. It launched as a research preview in January 2026, went GA on Mac and Windows in April, and reached web and mobile in beta in July. You give Claude a goal and it works across your files and connectors, with approval modes, parallel subtasks, and scheduled cloud sessions. Anthropic reports that over 90% of Cowork usage is non-coding work." },
-      { q: "Which Claude plans include Cowork and what does it cost?", a: "As of August 2026, Cowork is included with Claude Pro ($17/mo billed annually, $20 monthly), Max (from $100/mo), Team ($20/seat annually), and Enterprise. Cowork consumes plan allocation faster than regular chat and carries its own rolling usage limit. Cabinet is open source and [free to self-host](/pricing), with AI billed at provider prices through your own keys." },
+      { q: "Which Claude plans include Cowork and what does it cost?", a: "As of August 2026, Cowork is included with Claude Pro ($17/mo billed annually, $20 monthly), Max (from $100/mo), Team ($20/seat annually), and Enterprise. Cowork consumes plan allocation faster than regular chat and carries its own rolling usage limit. Cabinet is [free to self-host](/pricing), with AI billed at provider prices through your own keys." },
       { q: "Is Cabinet a Claude Cowork alternative?", a: "For different jobs. Cowork is a personal AI coworker that finishes tasks in your own files. Cabinet is the knowledge workspace a whole company owns, where teams and agents build knowledge that persists as files and live dashboards, and it can run Claude through your own Anthropic key. Some people will use both: Cowork for personal deliverables, Cabinet as the company brain." },
       { q: "Does Claude Cowork work for teams?", a: "Team and Enterprise plans add governance: admin toggles, role gating, and compliance capture of cloud sessions. The working model stays individual, though; Anthropic's docs describe projects and sessions as belonging to each user, with no shared workspace as of August 2026. Cabinet starts from the shared workspace: one knowledge base for everyone." },
       { q: "Is Claude Cowork safe for sensitive documents?", a: "Cowork ships real safeguards: Manual and Auto approval modes, sandboxed execution, and enterprise controls. Early 2026 also brought publicized incidents, including prompt-injection exfiltration research and a sandbox escape patched in July, after which Anthropic made cloud execution the default. Either way, conversations are processed on Anthropic's servers. Cabinet's answer for sensitive material is structural: [self-hosted on your infrastructure](/enterprise/security), your own keys, and approval before agents act." },
@@ -516,7 +512,7 @@ export const COMPARISONS: Comparison[] = [
     oneLiner: "A cloud wiki, or a knowledge base you actually own.",
     title: "Notion vs Cabinet: Which Workspace Do You Own? (2026)",
     metaDescription:
-      "Notion keeps your data in their cloud. Cabinet keeps it as Markdown files you own, with AI agents and embedded apps built in. Open source, self-hosted. An honest comparison.",
+      "Notion keeps your data in their cloud. Cabinet keeps it as Markdown files you own, with AI agents and embedded apps built in. Self-hosted. An honest comparison.",
     h1: "Notion vs Cabinet: which workspace do you own?",
     lead: "Notion is a polished cloud workspace, and in 2026 an agent platform too: its homepage now reads \"Where teams and agents think together.\" The pages still live in Notion's cloud, as blocks in Notion's format. Cabinet is the same ambition with the opposite ownership: company knowledge as files on your infrastructure, agents working in them on schedules, and live dashboards rendered from what your team knows.",
     verdict: {
@@ -568,7 +564,6 @@ export const COMPARISONS: Comparison[] = [
       { feature: "Web terminal", cabinet: true, them: false },
       { feature: "WYSIWYG editor", cabinet: true, them: true },
       { feature: "Git-backed version history", cabinet: true, them: "partial", note: "Notion keeps page history in its own format." },
-      { feature: "Open source", cabinet: true, them: false },
       { feature: "No vendor lock-in", cabinet: true, them: false },
       { feature: "Real-time multiplayer editing", cabinet: "partial", them: true },
       { feature: "Mature mobile apps", cabinet: "partial", them: true },
@@ -590,7 +585,7 @@ export const COMPARISONS: Comparison[] = [
       { q: "Can I import my Notion content into Cabinet?", a: "Yes. Export your Notion pages as Markdown and CSV and drop them into a Cabinet folder. The content stays as plain Markdown you can grep and version with git." },
       { q: "Is Cabinet really self-hosted?", a: "Yes. Cabinet runs on your machine or your own cloud. Your knowledge never has to leave your infrastructure, and inference runs through model keys you control." },
       { q: "Does Cabinet have AI like Notion AI?", a: "Cabinet goes further. Instead of an in-editor assistant, you get agents with goals and schedules that read and write your files, using the model accounts you already pay for." },
-      { q: "Is Cabinet free?", a: "Cabinet is open source, so you can run it for free. A hosted Cabinet Cloud is on the way for teams that prefer not to self-host." },
+      { q: "Is Cabinet free?", a: "Cabinet is free to self-host. A hosted Cabinet Cloud is on the way for teams that prefer not to run it themselves." },
     ],
     sources: [
       { label: "Notion: official site", href: "https://www.notion.com/" },
@@ -683,7 +678,7 @@ export const COMPARISONS: Comparison[] = [
       { q: "Is Cabinet an Obsidian alternative for teams?", a: "Yes. Cabinet keeps the same Markdown-on-disk model Obsidian users love and adds a shared team workspace: agents, scheduled routines, chat, tasks, embedded apps, and a terminal." },
       { q: "Can I open my Obsidian vault in Cabinet?", a: "Yes. Both store plain Markdown files, so you point Cabinet at the same folder. There is no export or conversion." },
       { q: "Does Cabinet have a graph view and plugins like Obsidian?", a: "Obsidian's plugin ecosystem and graph view are more mature. Cabinet's wedge is built-in agents, team features, and embedded apps rather than a plugin marketplace." },
-      { q: "Is Cabinet free and open source like Obsidian's core?", a: "Cabinet is open source and free to self-host. A hosted Cabinet Cloud is on the way for teams that prefer not to run it themselves." },
+      { q: "Is Cabinet free like Obsidian's core?", a: "Cabinet is free to self-host. A hosted Cabinet Cloud is on the way for teams that prefer not to run it themselves." },
     ],
     sources: [
       { label: "Obsidian: official site", href: "https://obsidian.md/" },
@@ -751,7 +746,6 @@ export const COMPARISONS: Comparison[] = [
       { feature: "Authoring / editor surface", cabinet: true, them: false },
       { feature: "Visualize web apps and dashboards", cabinet: true, them: false },
       { feature: "Web terminal", cabinet: true, them: false },
-      { feature: "Open source", cabinet: true, them: false },
       { feature: "Deploys without a large rollout", cabinet: true, them: "partial" },
       { feature: "Federated search across existing SaaS tools", cabinet: "partial", them: true },
       { feature: "Permission-aware search mirroring existing ACLs", cabinet: "partial", them: true },
@@ -770,7 +764,6 @@ export const COMPARISONS: Comparison[] = [
       { q: "Is Cabinet a Glean alternative?", a: "It depends on the problem. Glean is enterprise search over your existing tools. Cabinet is where knowledge is authored and owned, with agents that act on it. Teams that want to own and create knowledge, not only search it, pick Cabinet." },
       { q: "Can Cabinet search across my other tools like Glean?", a: "Glean's federated search across many SaaS connectors is more mature. Cabinet's focus is owning the knowledge itself as files, with agents reading and writing them, plus linked Git repos." },
       { q: "Can I self-host Cabinet instead of using a managed cloud?", a: "Yes. Cabinet runs in your own environment with your own model keys, so sensitive knowledge stays inside your infrastructure." },
-      { q: "Is Cabinet open source?", a: "Yes. You can read every line, fork it, or run your own build." },
     ],
     sources: [
       { label: "Glean: official site", href: "https://www.glean.com/" },
@@ -840,7 +833,6 @@ export const COMPARISONS: Comparison[] = [
       { feature: "Web terminal", cabinet: true, them: false },
       { feature: "Scheduled routines and heartbeats", cabinet: true, them: "partial" },
       { feature: "Git-backed version history", cabinet: true, them: false },
-      { feature: "Open source", cabinet: true, them: "partial", note: "Dust open-sources parts of its stack." },
       { feature: "Connectors to many SaaS tools", cabinet: "partial", them: true },
       { feature: "Polished assistant-builder UI", cabinet: "partial", them: true },
       { feature: "Audit log", cabinet: "partial", them: "partial" },
@@ -857,7 +849,6 @@ export const COMPARISONS: Comparison[] = [
       { q: "Is Cabinet a Dust alternative?", a: "Yes, for teams that want agents working against a knowledge base they own. Dust orchestrates assistants over your existing tools; Cabinet makes the knowledge base itself the product, as files on your disk that agents read and write." },
       { q: "Does Cabinet connect to my existing SaaS tools like Dust?", a: "Dust's connector catalog is broader today. Cabinet's focus is owning the knowledge as files, with agents authoring it, plus linked Git repos. Connectors are on the roadmap." },
       { q: "Can I self-host Cabinet and use my own models?", a: "Yes. Cabinet self-hosts and routes inference through your own model keys, so your knowledge and your usage stay in your control." },
-      { q: "Is Cabinet open source?", a: "Yes. You can run, read, and fork the whole thing." },
     ],
     sources: [
       { label: "Dust: official site", href: "https://dust.tt/" },
@@ -930,7 +921,6 @@ export const COMPARISONS: Comparison[] = [
       { feature: "Team collaboration workspace", cabinet: true, them: "partial" },
       { feature: "Self-hosted", cabinet: true, them: "partial" },
       { feature: "Bring your own AI model keys", cabinet: true, them: "partial" },
-      { feature: "Open source", cabinet: true, them: false },
     ],
     whenThemWins: {
       heading: "When Paperclip is the better choice",
@@ -944,7 +934,6 @@ export const COMPARISONS: Comparison[] = [
       { q: "Is Cabinet a Paperclip alternative?", a: "For teams that want agents working inside a knowledge base they own, yes. Cabinet runs agents and gives them files to read and write, plus a workspace your team shares. Paperclip is the better fit if your only need is granular agent orchestration on top of an existing knowledge system." },
       { q: "Does Cabinet orchestrate agents like Paperclip?", a: "Cabinet runs agents with personas and schedules. Paperclip's org-chart, budget, and audit controls are more granular today. Cabinet's wedge is the knowledge base and workspace the agents act in." },
       { q: "Can I self-host Cabinet?", a: "Yes. Cabinet runs in your own environment with your own model keys, so the agents and the knowledge they build stay in your control." },
-      { q: "Is Cabinet open source?", a: "Yes. You can read every line, fork it, or run your own build." },
     ],
     sources: [
       { label: "Paperclip: official site", href: "https://paperclip.ing/" },
@@ -1014,7 +1003,6 @@ export const COMPARISONS: Comparison[] = [
       { feature: "Team collaboration workspace", cabinet: true, them: "partial" },
       { feature: "Fast personal capture", cabinet: "partial", them: true },
       { feature: "Mature mobile apps", cabinet: "partial", them: true },
-      { feature: "Open source", cabinet: true, them: false },
     ],
     whenThemWins: {
       heading: "When Mem is the better choice",
@@ -1028,7 +1016,6 @@ export const COMPARISONS: Comparison[] = [
       { q: "Is Cabinet a Mem alternative?", a: "Yes, for teams that want to own their knowledge as files and have agents act on it. Mem is the better fit if you want a fast personal note app in the cloud with strong AI recall." },
       { q: "Can I import my Mem notes into Cabinet?", a: "Export your notes as Markdown or text and drop them into a Cabinet folder, where they become files you own and can version with git." },
       { q: "Does Cabinet work on mobile like Mem?", a: "Mem's mobile capture is more mature. Cabinet's focus is an owned, self-hosted workspace with agents and live apps." },
-      { q: "Is Cabinet open source?", a: "Yes, and it is free to self-host." },
     ],
     sources: [
       { label: "Mem: official site", href: "https://mem.ai/" },
@@ -1098,7 +1085,6 @@ export const COMPARISONS: Comparison[] = [
       { feature: "Visualize web apps and dashboards", cabinet: true, them: false },
       { feature: "Web terminal", cabinet: true, them: false },
       { feature: "Markdown files on disk", cabinet: true, them: false },
-      { feature: "Open source", cabinet: true, them: false },
     ],
     whenThemWins: {
       heading: "When Guru is the better choice",
@@ -1112,7 +1098,6 @@ export const COMPARISONS: Comparison[] = [
       { q: "Is Cabinet a Guru alternative?", a: "For teams that want to own and author their knowledge as files with agents maintaining it, yes. Guru is the better fit if your priority is verified answers delivered in a browser extension across your tools." },
       { q: "Does Cabinet deliver answers in other tools like Guru's extension?", a: "Guru's in-browser card delivery is its strength. Cabinet's focus is owning the knowledge base itself, with agents that author and refresh it and a workspace your team works in." },
       { q: "Can I self-host Cabinet?", a: "Yes, in your own environment with your own model keys, so sensitive knowledge stays inside your walls." },
-      { q: "Is Cabinet open source?", a: "Yes." },
     ],
     sources: [
       { label: "Guru: official site", href: "https://www.getguru.com/" },
@@ -1182,7 +1167,6 @@ export const COMPARISONS: Comparison[] = [
       { feature: "Bring your own AI model keys", cabinet: true, them: false },
       { feature: "Web terminal", cabinet: true, them: false },
       { feature: "Markdown files on disk", cabinet: true, them: false },
-      { feature: "Open source", cabinet: true, them: false },
     ],
     whenThemWins: {
       heading: "When Coda is the better choice",
@@ -1196,7 +1180,6 @@ export const COMPARISONS: Comparison[] = [
       { q: "Is Cabinet a Coda alternative?", a: "Yes, for teams that want to own their knowledge as files, visualize live apps over it, and have agents act on it. Coda is the better fit if you want a cloud builder for interactive docs and relational tables." },
       { q: "Can Cabinet do tables and interactive views like Coda?", a: "Coda's relational tables and no-code building blocks are more mature. Cabinet renders live web apps and dashboards over files you own, and runs agents on them." },
       { q: "Can I self-host Cabinet and use my own AI?", a: "Yes. Cabinet self-hosts and brings your own model keys across providers." },
-      { q: "Is Cabinet open source?", a: "Yes." },
     ],
     sources: [
       { label: "Coda: official site", href: "https://coda.io/" },
@@ -1267,7 +1250,6 @@ export const COMPARISONS: Comparison[] = [
       { feature: "Web terminal", cabinet: true, them: false },
       { feature: "Markdown files on disk you own", cabinet: true, them: false },
       { feature: "Data not used to train models", cabinet: true, them: true },
-      { feature: "Open source", cabinet: true, them: false },
     ],
     whenThemWins: {
       heading: "When Microsoft Copilot is the better choice",
@@ -1352,7 +1334,6 @@ export const COMPARISONS: Comparison[] = [
       { feature: "Zero-setup managed service", cabinet: "partial", them: true },
       { feature: "Data not used for training", cabinet: true, them: true },
       { feature: "Markdown files on disk", cabinet: true, them: false },
-      { feature: "Open source", cabinet: true, them: false },
     ],
     whenThemWins: {
       heading: "When ChatGPT Enterprise is the better choice",
@@ -1366,7 +1347,6 @@ export const COMPARISONS: Comparison[] = [
       { q: "Is Cabinet a ChatGPT Enterprise alternative?", a: "For teams that want an owned, self-hosted knowledge base with bring-your-own-AI and agents that persist work, yes. ChatGPT Enterprise is simpler if you only want managed chat on one provider's models." },
       { q: "Can Cabinet use OpenAI models?", a: "Yes, plus other providers, with your own keys. You are not locked to a single model vendor." },
       { q: "Does Cabinet keep my data private?", a: "Yes. Cabinet is self-hosted with your own keys, and your content is never used to train a model." },
-      { q: "Is Cabinet open source?", a: "Yes." },
     ],
     sources: [
       { label: "OpenAI: ChatGPT Enterprise", href: "https://openai.com/chatgpt/enterprise/" },
@@ -1390,7 +1370,7 @@ export const ROUNDUPS: Roundup[] = [
     oneLiner: "The shortlist for teams that want to own their knowledge.",
     title: "5 Best Notion Alternatives in 2026 (Own Your Data)",
     metaDescription:
-      "The best Notion alternatives for teams that want to own their data: self-hosted and open-source options compared honestly, with Cabinet, Obsidian, Anytype, AppFlowy, and Confluence.",
+      "The best Notion alternatives for teams that want to own their data: self-hosted options compared honestly, with Cabinet, Obsidian, Anytype, AppFlowy, and Confluence.",
     h1: "The best Notion alternatives, compared honestly",
     intro: "Most people leave Notion for one of a few reasons: they want to own their data, they need real self-hosting, or they want AI that does the work rather than just sitting in the editor. Here is an honest shortlist, with the catch for each, and where Cabinet fits.",
     whyLeave: {
@@ -1408,7 +1388,7 @@ export const ROUNDUPS: Roundup[] = [
       reasons: [
         "Your whole knowledge base is files on disk: see it, grep it, git it, back it up, no lock-in.",
         "Agents act on your files on a schedule, with the model accounts you already pay for.",
-        "Self-hosted and open source, with live apps, dashboards, team collaboration, and a terminal built in.",
+        "Self-hosted, with live apps, dashboards, team collaboration, and a terminal built in.",
       ],
     },
     alternatives: [
@@ -1426,8 +1406,7 @@ export const ROUNDUPS: Roundup[] = [
       { need: "Knowledge you own with AI agents that act on it", pick: "Cabinet" },
     ],
     faqs: [
-      { q: "What is the best self-hosted Notion alternative?", a: "If you want true self-hosting and to own your files, Cabinet stores your whole knowledge base as files on disk you own and runs in your own environment. AppFlowy and Anytype are also self-hostable open-source options." },
-      { q: "Is there an open-source Notion alternative?", a: "Yes. Cabinet, AppFlowy, and Anytype are all open source. Cabinet adds AI agents that read and write your files." },
+      { q: "What is the best self-hosted Notion alternative?", a: "If you want true self-hosting and to own your files, Cabinet stores your whole knowledge base as files on disk you own and runs in your own environment. AppFlowy and Anytype are also self-hostable options." },
       { q: "What is the best Notion alternative with AI?", a: "Cabinet's AI goes beyond an in-editor assistant: agents have goals and schedules and act on your files directly, using your own model keys." },
       { q: "Are Notion alternatives free?", a: "Several are. Cabinet, Obsidian's core, AppFlowy, and Anytype can be run for free. Cabinet is free to self-host." },
     ],
@@ -1480,8 +1459,7 @@ export const ROUNDUPS: Roundup[] = [
     ],
     faqs: [
       { q: "What is the best self-hosted Glean alternative?", a: "Cabinet, if you want to own and author the knowledge and self-host it. If you only need a search layer, self-hosted search such as OpenSearch or Elastic is an option." },
-      { q: "Is there an open-source Glean alternative?", a: "Cabinet is open source for owning and authoring knowledge. OpenSearch and Elastic cover the search layer." },
-      { q: "What is the most affordable Glean alternative?", a: "Cabinet is free to self-host, with inference billed directly through your own model keys." },
+            { q: "What is the most affordable Glean alternative?", a: "Cabinet is free to self-host, with inference billed directly through your own model keys." },
       { q: "How does Glean compare to Cabinet directly?", a: "Glean searches the tools you already have; Cabinet is where knowledge is authored and owned, with agents acting on it. See the full Glean vs Cabinet comparison." },
     ],
     related: ["cabinet-vs-glean", "cabinet-vs-dust", "cabinet-vs-microsoft-copilot"],
@@ -1533,7 +1511,7 @@ export const ROUNDUPS: Roundup[] = [
     ],
     faqs: [
       { q: "What is the best Obsidian alternative for teams?", a: "Cabinet keeps your Markdown on disk like Obsidian and adds team collaboration, agents, and live apps, so a team shares the same knowledge without giving up files they own." },
-      { q: "Is there an open-source Obsidian alternative?", a: "Logseq, Anytype, AppFlowy, and Cabinet are all open source. Cabinet adds agents and a team workspace." },
+      { q: "Is there a self-hostable Obsidian alternative for teams?", a: "Cabinet, AppFlowy, and Anytype all run on your own infrastructure. Cabinet adds agents and a team workspace." },
       { q: "Can I keep my Markdown files?", a: "Yes. Cabinet uses Markdown on disk like Obsidian, so your notes move over with no conversion." },
       { q: "How does Obsidian compare to Cabinet directly?", a: "Both store Markdown you own; Cabinet adds a team, agents, and live apps. See the full Obsidian vs Cabinet comparison." },
     ],
@@ -1577,7 +1555,7 @@ export const THREEWAYS: ThreeWay[] = [
     oneLiner: "The assistant, the automation, and the brain.",
     title: "Town vs Gumloop vs Cabinet: Assistant, Automation, or Brain? (2026)",
     metaDescription:
-      "Town ($15+/mo) puts an AI assistant in your inbox. Gumloop ($37/mo) runs agent workflows on credits. Cabinet is the company brain: an open-source, self-hosted knowledge base where agents work and dashboards render live. Compared honestly, August 2026.",
+      "Town ($15+/mo) puts an AI assistant in your inbox. Gumloop ($37/mo) runs agent workflows on credits. Cabinet is the company brain: a self-hosted knowledge base where agents work and dashboards render live. Compared honestly, August 2026.",
     h1: "Town vs Gumloop vs Cabinet",
     intro: "Three products, three theories of how AI should do your work. Town gives every person a Townie that clears the inbox. Gumloop turns processes into agent workflows that run on triggers. Cabinet gives the company a brain: an owned knowledge base where agents work and the results render as live dashboards. Here is how they compare, and when each one wins.",
     contenders: [
@@ -1595,14 +1573,13 @@ export const THREEWAYS: ThreeWay[] = [
       { feature: "Knowledge rendered as live apps", cells: [false, "partial", true] },
       { feature: "Bring your own AI keys at provider cost", cells: [false, "partial", true] },
       { feature: "Self-hosted", cells: [false, "partial", true] },
-      { feature: "Open source", cells: [false, false, true] },
       { feature: "Free to start", cells: ["partial", false, true] },
       { feature: "Built for teams", cells: ["partial", true, true] },
     ],
     bestFor: [
       { contender: "Town", who: "One person drowning in email and meetings. A Townie triages, preps, and drafts across the tools you already use, and earns autonomy one workflow at a time." },
       { contender: "Gumloop", who: "An ops or GTM team automating processes at volume: enrichment, syncs, scraping, and routing on a no-code canvas, with managed enterprise controls." },
-      { contender: "Cabinet", who: "A company that wants its knowledge, its AI agents, and the live dashboards they render in one place it owns: open source, self-hosted, on its own AI keys." },
+      { contender: "Cabinet", who: "A company that wants its knowledge, its AI agents, and the live dashboards they render in one place it owns: self-hosted, on its own AI keys." },
     ],
     verdictParas: [
       "These three are less rivals than three theories of where AI belongs. Town says AI should sit beside a person. Gumloop says AI should sit inside a process. Cabinet says AI should sit inside the company's knowledge, because knowledge is the asset that outlasts both people and processes.",
@@ -1611,7 +1588,7 @@ export const THREEWAYS: ThreeWay[] = [
     ],
     faqs: [
       { q: "What is the difference between Town, Gumloop, and Cabinet?", a: "Town is a personal AI assistant that triages email and calendars in Town's cloud. Gumloop is a no-code platform that runs AI agent workflows across your SaaS tools on a credit meter. Cabinet is a knowledge workspace your company owns: files on your infrastructure, AI agents working in them on schedules, and live dashboards rendered from the knowledge." },
-      { q: "Which is cheapest for a team?", a: "As of August 2026: Town starts at $15 per person per month with about 1,250 credits. Gumloop Pro is $37 per month with 20,000 credits, unlimited seats, and no free plan. Cabinet is open source and free to self-host, with AI billed at provider prices through your own keys." },
+      { q: "Which is cheapest for a team?", a: "As of August 2026: Town starts at $15 per person per month with about 1,250 credits. Gumloop Pro is $37 per month with 20,000 credits, unlimited seats, and no free plan. Cabinet is free to self-host, with AI billed at provider prices through your own keys." },
       { q: "Can I use Town or Gumloop together with Cabinet?", a: "Yes, and some teams should. A Townie can keep clearing your personal inbox and a Gumloop flow can keep syncing your CRM while Cabinet holds the company knowledge base that people and agents build on. They compete only over where the durable knowledge ends up." },
       { q: "Which should a small team pick first?", a: "Pick by bottleneck. If the founders are buried in email, Town helps today. If ops is drowning in copy-paste between tools, Gumloop. If the company keeps re-answering the same questions because knowledge lives in ten places, start with Cabinet: it is free to run and everything it accumulates stays yours." },
     ],
@@ -1643,7 +1620,6 @@ export const THREEWAYS: ThreeWay[] = [
       { feature: "Visualize web apps and dashboards", cells: [false, false, true] },
       { feature: "Real-time multiplayer editing", cells: [true, "partial", "partial"] },
       { feature: "Plugin ecosystem", cells: ["partial", true, "partial"] },
-      { feature: "Open source", cells: [false, false, true] },
       { feature: "No vendor lock-in", cells: [false, true, true] },
       { feature: "Managed, zero-setup", cells: [true, "partial", "partial"] },
     ],
@@ -1660,7 +1636,6 @@ export const THREEWAYS: ThreeWay[] = [
     faqs: [
       { q: "Notion vs Obsidian vs Cabinet, which should I choose?", a: "Pick Notion for a managed cloud workspace with multiplayer, Obsidian for a personal local vault, and Cabinet if you want to own your knowledge as files with a team and AI agents working in it." },
       { q: "Which is best for teams?", a: "Notion and Cabinet are both built for teams. Choose Cabinet if owning your files and having agents act on them matters; choose Notion for the most polished managed multiplayer." },
-      { q: "Which is open source?", a: "Cabinet is open source. Obsidian's core app is free but not open source, and Notion is closed source." },
       { q: "Which lets me own my files?", a: "Obsidian and Cabinet both store Markdown on disk you own. Notion keeps your pages in its cloud and proprietary format." },
     ],
     related: ["cabinet-vs-notion", "cabinet-vs-obsidian", "notion-alternatives"],

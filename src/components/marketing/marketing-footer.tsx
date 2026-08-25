@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { DISCORD_URL, GITHUB_URL } from "@/lib/site-config";
+import { DISCORD_URL } from "@/lib/site-config";
 
 const FOOTER_COLUMNS = [
   {
@@ -28,7 +28,6 @@ const FOOTER_COLUMNS = [
     title: "Resources",
     links: [
       { label: "Documentation", href: "https://docs.runcabinet.com/", external: true },
-      { label: "GitHub", href: GITHUB_URL, external: true },
       { label: "Discord", href: DISCORD_URL, external: true },
       { label: "Compare", href: "/compare" },
     ],
@@ -99,7 +98,7 @@ export function MarketingFooter() {
 
         <div className="mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} Cabinet, Inc.</p>
-          <p>Open source. Self-hosted. Bring your own AI.</p>
+          <p>Self-hosted. Bring your own AI.</p>
         </div>
       </div>
     </footer>

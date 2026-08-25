@@ -6,7 +6,6 @@ import {
   Minus,
   ArrowRight,
   ArrowUpRight,
-  Star,
   Brain,
   LayoutDashboard,
   Users,
@@ -21,7 +20,6 @@ import { SiteNavbar } from "@/components/site-navbar";
 import { MarketingFooter } from "@/components/marketing/marketing-footer";
 import { brandify } from "@/components/brand-word";
 import { WoodIcon } from "@/components/wood-icon";
-import { GITHUB_URL } from "@/lib/site-config";
 import {
   COMPARISONS,
   ROUNDUPS,
@@ -36,7 +34,7 @@ const SITE = "https://runcabinet.com";
 export const metadata: Metadata = {
   title: "Compare Cabinet vs Notion, Glean, Town, Gumloop & Buzz (2026)",
   description:
-    "How Cabinet compares with Notion, Glean, Dust, Town, Gumloop, and Jack Dorsey's Buzz in 2026. One is the company brain you own: knowledge as files, AI agents on schedules, live dashboards, open source and self-hosted. Honest head-to-heads, including the rows competitors win.",
+    "How Cabinet compares with Notion, Glean, Dust, Town, Gumloop, and Jack Dorsey's Buzz in 2026. One is the company brain you own: knowledge as files, AI agents on schedules, live dashboards, self-hosted. Honest head-to-heads, including the rows competitors win.",
   alternates: { canonical: `${SITE}/compare` },
   openGraph: {
     title: "Compare Cabinet vs Notion, Glean, Town, Gumloop & Buzz (2026)",
@@ -67,7 +65,6 @@ const MATRIX: { feature: string; cells: Cell[] }[] = [
   { feature: "Agent work persists as files you own", cells: [true, false, false, false, false, "partial", "partial"] },
   { feature: "Self-hosted on your infrastructure", cells: [true, false, "partial", false, "partial", false, true] },
   { feature: "Your AI keys at provider cost", cells: [true, false, false, false, "partial", false, true] },
-  { feature: "Open source", cells: [true, false, false, false, false, false, true] },
   { feature: "Personal inbox and calendar assistant", cells: [false, false, false, true, "partial", "partial", false] },
   { feature: "Automation across 100+ SaaS apps", cells: ["partial", "partial", "partial", "partial", true, "partial", false] },
   { feature: "Search across your existing tools", cells: ["partial", "partial", true, "partial", true, "partial", false] },
@@ -480,14 +477,6 @@ export default function CompareHubPage() {
                 Book a demo
               </Link>
             </div>
-            <a
-              href={GITHUB_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 font-code text-sm text-text-tertiary transition-colors hover:text-text-primary"
-            >
-              <Star className="h-4 w-4" />Star <span className="font-brand italic">Cabinet</span>{" "}on GitHub
-                                        </a>
           </div>
         </div>
       </section>

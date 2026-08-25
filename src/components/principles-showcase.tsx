@@ -57,7 +57,7 @@ const PRINCIPLES: Principle[] = [
     icon: Server,
     name: "Self-hosted",
     tagline: "Runs in infrastructure you control",
-    body: "Cabinet is open source and self-hosted by default, so plans, research, and operating memory live where your existing policies already apply. The only data that leaves is the cloud-model call you explicitly invoke.",
+    body: "Cabinet is self-hosted by default, so plans, research, and operating memory live where your existing policies already apply. The only data that leaves is the cloud-model call you explicitly invoke.",
     takeaway: "your context stays inside your own environment.",
   },
 ];

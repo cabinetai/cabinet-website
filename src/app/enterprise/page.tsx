@@ -821,7 +821,6 @@ function PanelRisk() {
 function Versus() {
   const rows: { feature: string; cabinet: string | true; wb: string | true | false; viva: string | false; manual: string | true | false }[] = [
     { feature: "Your data stays in a folder you own", cabinet: true, wb: false, viva: false, manual: true },
-    { feature: "Open source: you can read the code", cabinet: true, wb: false, viva: false, manual: false },
     { feature: "Run on your servers (or fully offline)", cabinet: true, wb: false, viva: false, manual: false },
     { feature: "Uses your own AI keys", cabinet: true, wb: "Limited", viva: false, manual: false },
     { feature: "Time to first AI-drafted document", cabinet: "10 min", wb: "3–6 months", viva: false, manual: false },
@@ -1025,7 +1024,7 @@ function Outcomes() {
         <StatCard stat="100%" label="Of decisions captured in writing" detail="Every meeting writes a decision file the AI reads the following week." icon={FileText} />
         <StatCard stat="$240k" label="Saved per year, vs. a Workboard contract" detail="Average enterprise replacing a six-figure SaaS contract." icon={Database} />
       </div>
-      <p className="mt-7 text-center text-xs text-text-tertiary">Targets based on Workboard’s published customer benchmarks applied to <span className="font-brand italic">Cabinet’s</span>{" "}open-source approach. Validated with pilot customers in Q2 2026.
+      <p className="mt-7 text-center text-xs text-text-tertiary">Targets based on Workboard’s published customer benchmarks applied to <span className="font-brand italic">Cabinet’s</span>{" "}file-based approach. Validated with pilot customers in Q2 2026.
                       </p>
     </Section>
   );
@@ -1039,7 +1038,7 @@ function SolutionsPreview() {
     { title: "Chief Executive", sub: "Operating model and board view", icon: Briefcase, items: ["A 06:00 morning brief grounded in every team's OKR", "The next monthly review brief is drafted 5 days ahead", "Re-plan continuously. The annual cycle is over"] },
     { title: "Chief of Staff", sub: "Schedule, drafts, decisions", icon: Users, items: ["Every meeting writes a decision file", "Friday 16:00: weekly status drafts itself", "Replace Slack threads with an auditable record"] },
     { title: "CHRO / People", sub: "Performance and manager support", icon: Building2, items: ["A coach in every manager's pocket", "Kudos drafted from real contributions, not LinkedIn fluff", "Feedback prep before the hard conversation"] },
-    { title: "CIO / CISO", sub: "Data ownership and audit trail", icon: Shield, items: ["Open source: your team can read the code before signing", "Run on your servers, with your AI keys, fully offline if needed", "Export your data with one shell command. No 90-day queue"] },
+    { title: "CIO / CISO", sub: "Data ownership and audit trail", icon: Shield, items: ["Your knowledge stays a folder you own, versioned in git", "Run on your servers, with your AI keys, fully offline if needed", "Export your data with one shell command. No 90-day queue"] },
   ];
 
   return (

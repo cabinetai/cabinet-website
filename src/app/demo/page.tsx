@@ -47,7 +47,7 @@ const AGENDA = [
 const CONTROL_POINTS = [
   { icon: Server, text: "Self-hosted deployment options" },
   { icon: ShieldCheck, text: "Human approvals for sensitive actions" },
-  { icon: GitBranch, text: "Open source architecture and change history" },
+  { icon: GitBranch, text: "Git-backed change history on every file" },
 ];
 
 export default function DemoPage() {

@@ -1,10 +1,9 @@
 import Link from "next/link";
-import { ArrowRight, Check, X, Minus, Star, ChevronDown } from "lucide-react";
+import { ArrowRight, Check, X, Minus, ChevronDown } from "lucide-react";
 import { SiteNavbar } from "@/components/site-navbar";
 import { brandify } from "@/components/brand-word";
 import { WoodIcon } from "@/components/wood-icon";
 import { MarketingFooter } from "@/components/marketing/marketing-footer";
-import { GITHUB_URL } from "@/lib/site-config";
 import { compareLabel, COMPARE_ASOF, type Cell, type ThreeWay } from "@/lib/compare";
 
 function CellIcon({ value }: { value: Cell }) {
@@ -237,14 +236,6 @@ export function CompareThreeWay({ data }: { data: ThreeWay }) {
                 Book a demo
               </Link>
             </div>
-            <a
-              href={GITHUB_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 font-code text-sm text-text-tertiary transition-colors hover:text-text-primary"
-            >
-              <Star className="h-4 w-4" />Star <span className="font-brand italic">Cabinet</span>{" "}on GitHub
-                                        </a>
           </div>
         </div>
       </section>

@@ -41,7 +41,7 @@ const MEDIA: MediaItem[] = [
     channelUrl: CHANNEL_URL,
     publishedAt: "2026-04-21",
     blurb:
-      "Tom Granot walks through the problem every AI-native developer hits: context evaporates between sessions, prompts, and tools. Cabinet is the open-source fix: a persistent, file-based knowledge base your agents can actually read from and write to.",
+      "Tom Granot walks through the problem every AI-native developer hits: context evaporates between sessions, prompts, and tools. Cabinet is the fix: a persistent, file-based knowledge base your agents can actually read from and write to.",
   },
   {
     kind: "article",
@@ -94,9 +94,9 @@ function formatDate(iso: string): string {
 export const metadata: Metadata = {
   title: "Media | Cabinet | Stop Losing Context in AI Conversations",
   description:
-    "Real demos, community builds, and coverage of Cabinet from around the web. Watch Tom Granot (SyntaxGTM) explain why Cabinet is the open-source fix for context loss in AI-native development.",
+    "Real demos, community builds, and coverage of Cabinet from around the web. Watch Tom Granot (SyntaxGTM) explain why Cabinet is the fix for context loss in AI-native development.",
   openGraph: {
-    title: "Stop Losing Context in AI Conversations: Meet Cabinet, the Open Source Fix",
+    title: "Stop Losing Context in AI Conversations: Meet Cabinet",
     description:
       "Tom Granot (SyntaxGTM) walks through why context evaporates in AI workflows, and how Cabinet's persistent, file-based knowledge base fixes it.",
     images: [{ url: FEATURED_THUMBNAIL, width: 480, height: 360, alt: FEATURED.title }],
@@ -105,9 +105,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Stop Losing Context in AI Conversations: Meet Cabinet, the Open Source Fix",
+    title: "Stop Losing Context in AI Conversations: Meet Cabinet",
     description:
-      "Tom Granot (SyntaxGTM) on why Cabinet is the open-source fix for context loss in AI-native development.",
+      "Tom Granot (SyntaxGTM) on why Cabinet is the fix for context loss in AI-native development.",
     images: [FEATURED_THUMBNAIL],
   },
 };
