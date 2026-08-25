@@ -37,7 +37,7 @@ export default function PrivacyPage() {
             </p>
             <p className="text-text-secondary font-body-serif leading-relaxed">
               <span className="font-brand italic">Cabinet</span>{" "}is an{" "}
-              <strong className="text-text-primary">open-source tool that runs locally</strong>on
+              <strong className="text-text-primary">application that runs locally</strong>{" "}on
                                           your machine. The Software does{" "}
               <strong className="text-text-primary">not</strong>transmit your files, knowledge
                                           base, prompts, or source code to us. This website{" "}
@@ -54,15 +54,15 @@ export default function PrivacyPage() {
                 1. Who We Are; Data Controller
               </h2>
               <p className="mb-4">This Privacy Policy describes how{" "}
-                <strong className="text-text-primary">HOLY BIBLE APPS LTD</strong>, a company
-                                                organized under the laws of the State of Israel and registered in Tirat Carmel,
-                                                Israel, that owns and operates the <span className="font-brand italic">Cabinet</span>{" "}project (“<span className="font-brand italic">Cabinet</span>,”
+                <strong className="text-text-primary">Cabinet Inc</strong>, a C corporation
+                                                incorporated under the laws of the State of Delaware, United States, that owns
+                                                and operates the <span className="font-brand italic">Cabinet</span>{" "}product (“<span className="font-brand italic">Cabinet</span>,”
                                                 “we,” “us,” or “our”), collects, uses, and
                                                 shares information in connection with the website at{" "}
                 <a href="https://runcabinet.com" className="text-accent hover:underline">
                   runcabinet.com
                 </a>{" "}(the “Site”) and the <span className="font-brand italic">Cabinet</span>{" "}software (the “Software”).
-                                                HOLY BIBLE APPS LTD is the data controller for personal information processed
+                                                Cabinet Inc is the data controller for personal information processed
                                                 through the Site. All privacy inquiries and requests should be directed to{" "}
                 <a href="mailto:hi@runcabinet.com" className="text-accent hover:underline">
                   hi@runcabinet.com
@@ -129,7 +129,7 @@ export default function PrivacyPage() {
                 </li>
                 <li>
                   <strong className="text-text-primary">Embedded content.</strong> Some pages embed
-                  third-party content (for example, YouTube videos and GitHub star counts). Those
+                  third-party content (for example, YouTube videos and embedded forms). Those
                   providers may set their own cookies and collect information about your
                   interaction with their content when loaded.
                 </li>
@@ -239,10 +239,10 @@ export default function PrivacyPage() {
                 8. International Data Transfers
               </h2>
               <p>
-                Our service providers may process information in the United States and other
-                countries whose data-protection laws may differ from those in your country. Where
-                required, we rely on appropriate transfer mechanisms (such as the European
-                Commission&rsquo;s Standard Contractual Clauses).
+                We are based in the United States, and we and our service providers may process
+                information in the United States and other countries whose data-protection laws may
+                differ from those in your country. Where required, we rely on appropriate transfer
+                mechanisms (such as the European Commission&rsquo;s Standard Contractual Clauses).
               </p>
             </section>
 
@@ -270,10 +270,7 @@ export default function PrivacyPage() {
                 a supervisory authority. California residents have rights under the CCPA/CPRA,
                 including the right to know, to delete, to correct, and to limit the use of
                 sensitive personal information. Virginia, Colorado, Connecticut, Utah, and other
-                U.S. state residents may have analogous rights. Residents of Israel have rights
-                under the Israeli Privacy Protection Law, 5741-1981, including the right to
-                review personal information held about them and to request correction or
-                deletion.
+                U.S. state residents may have analogous rights.
               </p>
               <p>
                 To exercise any of these rights, email{" "}

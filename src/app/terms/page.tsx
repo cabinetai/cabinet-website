@@ -5,7 +5,7 @@ import { SiteNavbar } from "@/components/site-navbar";
 export const metadata: Metadata = {
   title: "Terms of Service: Cabinet",
   description:
-    "Terms of Service for Cabinet (runcabinet.com) and the Cabinet open-source software. Use is at your own risk. No warranties. Limitations of liability apply.",
+    "Terms of Service for Cabinet (runcabinet.com) and the Cabinet software. Use is at your own risk. No warranties. Limitations of liability apply.",
   alternates: { canonical: "https://runcabinet.com/terms" },
   robots: { index: true, follow: true },
 };
@@ -36,7 +36,7 @@ export default function TermsPage() {
               Please read carefully
             </p>
             <p className="text-text-secondary font-body-serif leading-relaxed">
-              <span className="font-brand italic">Cabinet</span>{" "}is a free, open-source project provided on an{" "}
+              <span className="font-brand italic">Cabinet</span>{" "}is provided on an{" "}
               <strong className="text-text-primary">&ldquo;AS IS&rdquo; and &ldquo;AS AVAILABLE&rdquo;</strong>{" "}basis. <span className="font-brand italic">Cabinet</span>{" "}is designed to work with autonomous AI agents that may read, write,
                                           execute, and delete files, run shell commands, call external APIs, and take other
                                           actions on your computer and networks. You install, configure, and run <span className="font-brand italic">Cabinet</span>{" "}and any
@@ -52,11 +52,10 @@ export default function TermsPage() {
               <p className="mb-4">These Terms of Service (the “Terms”) constitute a binding legal
                                                 agreement between you (“you,” “your,” or
                                                 “User”) and{" "}
-                <strong className="text-text-primary">HOLY BIBLE APPS LTD</strong>, a company
-                                                organized under the laws of the State of Israel and registered in Tirat Carmel,
-                                                Israel, that owns and operates the <span className="font-brand italic">Cabinet</span>{" "}project, together with its affiliates,
-                                                successors, assigns, officers, directors, employees, contractors, and the
-                                                open-source maintainers and contributors acting under its direction (collectively,
+                <strong className="text-text-primary">Cabinet Inc</strong>, a C corporation
+                                                incorporated under the laws of the State of Delaware, United States, that owns
+                                                and operates the <span className="font-brand italic">Cabinet</span>{" "}product, together with its affiliates,
+                                                successors, assigns, officers, directors, employees, and contractors (collectively,
                                                 “<span className="font-brand italic">Cabinet</span>,” “we,” “us,” or “our”). All notices, legal inquiries, and contact
                                                 with us shall be directed to{" "}
                 <a href="mailto:hi@runcabinet.com" className="text-accent hover:underline">
@@ -64,8 +63,8 @@ export default function TermsPage() {
                 </a>. These Terms govern your access to and use of (a) the website located at{" "}
                 <a href="https://runcabinet.com" className="text-accent hover:underline">
                   runcabinet.com
-                </a>{" "}and any subdomains (the “Site”), and (b) the <span className="font-brand italic">Cabinet</span>{" "}open-source
-                                                software, command-line interface, and related tools (collectively, the
+                </a>{" "}and any subdomains (the “Site”), and (b) the <span className="font-brand italic">Cabinet</span>{" "}desktop
+                                                application, command-line interface, and related tools (collectively, the
                                                 “Software”). The Site and the Software are referred to together as the
                                                 “Services.”
                                               </p>
@@ -83,25 +82,27 @@ export default function TermsPage() {
 
             <section>
               <h2 className="text-2xl font-display text-text-primary mb-4">
-                2. Open-Source License and Relationship to These Terms
+                2. License to Use the Software
               </h2>
               <p className="mb-4">
-                The Software is made available by HOLY BIBLE APPS LTD under the applicable
-                open-source license, the text of which is available in the Software&rsquo;s
-                source repository. The License governs your rights to copy, modify, and
-                redistribute the Software. These Terms govern your use of the Site and supplement
-                the License with additional terms regarding your access to the Site, your
-                relationship with us, and your use of the Services as a whole.
+                Subject to your compliance with these Terms, Cabinet Inc grants you a limited,
+                revocable, non-exclusive, non-transferable, non-sublicensable license to download,
+                install, and run the Software on systems you control, for your own internal
+                business or personal purposes. The Software is licensed, not sold, and we and our
+                licensors retain all right, title, and interest in and to it.
               </p>
-              <p>Nothing in these Terms limits or waives the disclaimers of warranty or limitations
-                                                of liability contained in the License; those disclaimers and limitations apply in
-                                                full and are{" "}
+              <p>
+                Except to the extent this restriction is prohibited by applicable law, you may not
+                copy, modify, translate, or create derivative works of the Software; reverse
+                engineer, decompile, or disassemble it or attempt to derive its source code; rent,
+                lease, lend, sell, sublicense, or otherwise distribute it to any third party; or
+                remove or obscure any proprietary notice it contains. Any third-party components
+                distributed with the Software remain governed by their own licenses, which control
+                over these Terms{" "}
                 <strong className="text-text-primary">
-                  incorporated into these Terms by reference
-                </strong>. Where these Terms and the License overlap, the provision most protective of the
-                                                {" "}<span className="font-brand italic">Cabinet</span>{" "}maintainers and contributors shall control to the maximum extent permitted
-                                                by applicable law.
-                                              </p>
+                  as to those components only
+                </strong>.
+              </p>
             </section>
 
             <section>
@@ -113,8 +114,8 @@ export default function TermsPage() {
                 jurisdiction, whichever is higher) to use the Services. If you are between 13 and
                 the age of majority, you represent that your parent or legal guardian has reviewed
                 and agreed to these Terms on your behalf. You further represent that you are not
-                barred from using the Services under applicable law, including Israeli, U.S., EU,
-                UK, and UN export control and sanctions laws.
+                barred from using the Services under applicable law, including U.S., EU, UK, and UN
+                export control and sanctions laws.
               </p>
             </section>
 
@@ -204,7 +205,7 @@ export default function TermsPage() {
                 <li>generate or distribute content that is unlawful, defamatory, harassing, or sexually exploitative of minors;</li>
                 <li>evade security features, rate limits, or access controls of the Services or any third-party service;</li>
                 <li>use the Services in high-risk environments (e.g., life-safety systems, aviation, nuclear facilities, medical devices) where failure of the Software could foreseeably cause death, personal injury, or severe environmental or property damage; or</li>
-                <li>re-export, transfer, or make the Software available to any person or destination prohibited by applicable export control or sanctions laws, including those administered by the State of Israel, the U.S. Office of Foreign Assets Control (OFAC), the European Union, the United Kingdom, or the United Nations.</li>
+                <li>re-export, transfer, or make the Software available to any person or destination prohibited by applicable export control or sanctions laws, including those administered by the U.S. Office of Foreign Assets Control (OFAC), the U.S. Department of Commerce, the European Union, the United Kingdom, or the United Nations.</li>
               </ul>
             </section>
 
@@ -216,10 +217,9 @@ export default function TermsPage() {
                 THE SERVICES ARE PROVIDED &ldquo;AS IS&rdquo; AND &ldquo;AS AVAILABLE,&rdquo; WITH ALL FAULTS, AND WITHOUT WARRANTY OF ANY KIND.
               </p>
               <p className="mb-4">
-                TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, HOLY BIBLE APPS LTD, ITS
-                OWNER(S) (INCLUDING HILA SHMUEL), OFFICERS, DIRECTORS, EMPLOYEES, CONTRACTORS,
-                AFFILIATES, SUCCESSORS, ASSIGNS, LICENSORS, AND THE OPEN-SOURCE MAINTAINERS AND
-                CONTRIBUTORS TO THE SOFTWARE (COLLECTIVELY, THE &ldquo;CABINET PARTIES&rdquo;)
+                TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, CABINET INC, ITS OFFICERS,
+                DIRECTORS, SHAREHOLDERS, EMPLOYEES, CONTRACTORS, AFFILIATES, SUCCESSORS, ASSIGNS,
+                AND LICENSORS (COLLECTIVELY, THE &ldquo;CABINET PARTIES&rdquo;)
                 EXPRESSLY DISCLAIM ALL WARRANTIES, WHETHER EXPRESS, IMPLIED, STATUTORY, OR
                 OTHERWISE, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OF MERCHANTABILITY,
                 FITNESS FOR A PARTICULAR PURPOSE, TITLE, NON-INFRINGEMENT, QUIET ENJOYMENT,
@@ -324,7 +324,7 @@ export default function TermsPage() {
               <h2 className="text-2xl font-display text-text-primary mb-4">
                 11. Intellectual Property; Trademarks
               </h2>
-              <p>Except as expressly licensed under the applicable open-source license, all rights in and to the
+              <p>Except as expressly licensed in Section 2, all rights in and to the
                                                 Services, including the <span className="font-brand italic">Cabinet</span>{" "}name, logo, and trade dress, are reserved. Nothing
                                                 in these Terms grants you any right or license to use our trademarks, service
                                                 marks, or trade names without our prior written consent.
@@ -342,9 +342,9 @@ export default function TermsPage() {
                   hi@runcabinet.com
                 </a>{" "}
                 identifying the work, the allegedly infringing material, your contact details, and
-                a good-faith statement of infringement. We will address claims under the Israeli
-                Copyright Law, 5768-2007 and, where applicable to content hosted on third-party
-                platforms, the U.S. Digital Millennium Copyright Act (17 U.S.C. § 512). We reserve
+                a good-faith statement of infringement. We will address claims under the U.S.
+                Digital Millennium Copyright Act (17 U.S.C. § 512) and any other applicable
+                copyright law. We reserve
                 the right to remove allegedly infringing material and to terminate the access of
                 repeat infringers.
               </p>
@@ -359,7 +359,7 @@ export default function TermsPage() {
                 with or without notice. We may terminate or suspend your access to the Site at our
                 discretion, including for violation of these Terms. You may stop using the
                 Services at any time. Sections that by their nature should survive termination
-                (including Sections 4, 5, 7, 8, 9, 11, 14, 15, and 16) shall survive.
+                (including Sections 2, 4, 5, 7, 8, 9, 11, 14, 15, and 16) shall survive.
               </p>
             </section>
 
@@ -371,17 +371,18 @@ export default function TermsPage() {
                 These Terms and any dispute, claim, or controversy arising out of or relating to
                 them, to the Services, or to the relationship between you and us (a
                 &ldquo;Dispute&rdquo;) shall be governed by and construed in accordance with the
-                laws of the <strong className="text-text-primary">State of Israel</strong>,
-                without regard to its conflict-of-laws principles and excluding the United
-                Nations Convention on Contracts for the International Sale of Goods.
+                laws of the <strong className="text-text-primary">State of Delaware</strong>,
+                United States, without regard to its conflict-of-laws principles and excluding the
+                United Nations Convention on Contracts for the International Sale of Goods.
               </p>
               <p>
-                The competent courts sitting in{" "}
-                <strong className="text-text-primary">Haifa, Israel</strong> (namely the Haifa
-                Magistrate Court and the Haifa District Court, as appropriate to the matter) shall
-                have exclusive jurisdiction and venue over any Dispute, these being the courts
-                with territorial jurisdiction over the seat of HOLY BIBLE APPS LTD in Tirat
-                Carmel. Each party irrevocably consents to personal jurisdiction and venue in
+                The state and federal courts located in{" "}
+                <strong className="text-text-primary">New Castle County, Delaware</strong> (namely
+                the Delaware Court of Chancery, the Superior Court of the State of Delaware, and
+                the U.S. District Court for the District of Delaware, as appropriate to the matter)
+                shall have exclusive jurisdiction and venue over any Dispute, these being the
+                courts with jurisdiction over the state of incorporation of Cabinet Inc. Each
+                party irrevocably consents to personal jurisdiction and venue in
                 those courts and waives any objection based on inconvenient forum or lack of
                 personal jurisdiction. The foregoing does not prevent us from seeking injunctive
                 or equitable relief in any court of competent jurisdiction to protect our
@@ -402,8 +403,9 @@ export default function TermsPage() {
                 <strong className="text-text-primary">individual basis</strong> and{" "}
                 <strong className="text-text-primary">not</strong> as a plaintiff, claimant, or
                 class member in any purported class, collective, consolidated, or representative
-                proceeding, including any class action under the Israeli Class Actions Law,
-                5766-2006, or any analogous law of any other jurisdiction. If this class-action
+                proceeding, including any class or collective action under Rule 23 of the U.S.
+                Federal Rules of Civil Procedure or any analogous law or rule of any other
+                jurisdiction. If this class-action
                 waiver is held unenforceable as to any particular claim, that claim shall be
                 severed and may proceed in court on a class basis, while all other claims shall
                 continue to be subject to this Section on an individual basis.
@@ -416,7 +418,7 @@ export default function TermsPage() {
               </h2>
               <p className="mb-3">
                 <strong className="text-text-primary">Entire Agreement.</strong> These Terms,
-                together with the Privacy Policy and the applicable open-source license, constitute the entire
+                together with the Privacy Policy, constitute the entire
                 agreement between you and us regarding the Services and supersede all prior
                 agreements and understandings.
               </p>
