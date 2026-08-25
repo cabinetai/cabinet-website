@@ -119,7 +119,7 @@ export function IntegrationsBand({ entries }: { entries: RegistryEntry[] }) {
               ))}
             </div>
           </div>
-          <div className="flex min-h-[360px] items-center justify-center rounded-3xl bg-bg-card/45 px-4 py-6">
+          <div className="flex min-h-[360px] items-center justify-center rounded-3xl px-4 py-6">
             <KnowledgeConnectVisual />
           </div>
         </div>
