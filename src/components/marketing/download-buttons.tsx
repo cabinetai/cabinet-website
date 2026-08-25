@@ -1,10 +1,10 @@
 import { MACOS_DOWNLOAD_URL, WINDOWS_DOWNLOAD_URL } from "@/lib/site-config";
 
 // Cabinet's installers ship as GitHub release artifacts on
-// github.com/cabinetai/cabinet (see MACOS_DOWNLOAD_URL / WINDOWS_DOWNLOAD_URL in
-// site-config, currently the v0.5.0 .dmg and .Setup.exe). Mac leads with the
-// .dmg; Windows gets the installer link. Plain static links, no OS-detection and
-// no build-time script.
+// github.com/cabinetai/cabinet-releases (see MACOS_DOWNLOAD_URL /
+// WINDOWS_DOWNLOAD_URL in site-config, currently the v0.6.0 .dmg and
+// Setup.exe). Mac leads with the .dmg; Windows gets the installer link. Plain
+// static links, no OS-detection and no build-time script.
 export function DownloadButtons({ align = "center" }: { align?: "center" | "left" }) {
   const centered = align === "center";
   return (
