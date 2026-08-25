@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import {
   ArrowRight,
-  Check,
   Clock,
   Bot,
   FileText,
@@ -12,7 +11,6 @@ import {
 import { SiteNavbar } from "@/components/site-navbar";
 import { brandify } from "@/components/brand-word";
 import { WoodIcon } from "@/components/wood-icon";
-import { GITHUB_URL } from "@/lib/site-config";
 import { SOLUTIONS, SOLUTION_STORIES, type Solution } from "@/lib/solutions";
 import {
   CABINETS_SITE,
@@ -92,7 +90,7 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
                 </Link>
               </div>
               <p className="mt-4 font-code text-xs text-text-tertiary">
-                Open source · self-hosted · bring your own AI
+                Self-hosted · your data stays yours · bring your own AI
               </p>
             </div>
             <div className="relative flex items-center justify-center">
@@ -359,14 +357,6 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
             >
               Book a demo
             </Link>
-            <a
-              href={GITHUB_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 font-code text-sm text-text-tertiary transition-colors hover:text-text-primary"
-            >
-              <Check className="h-4 w-4" /> Star on GitHub
-            </a>
           </div>
         </div>
       </section>

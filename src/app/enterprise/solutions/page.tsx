@@ -477,13 +477,13 @@ function CioSection() {
       eyebrow="CIO · CISO · Platform"
       title={
         <>
-          The first AI platform you can{" "}
-          <em className="text-accent">read line by line before you sign</em>.
+          The first AI platform that runs{" "}
+          <em className="text-accent">entirely inside your perimeter</em>.
         </>
       }
-      jtbd="Most enterprise AI vendors hand you a glossy security PDF and a closed binary. Cabinet hands you a GitHub repo. Your team pen-tests the code, your security architect reviews the agent permission model, your platform team chooses where it runs. Inference stays on your keys; data stays a folder you can `tar` and move."
+      jtbd="Most enterprise AI vendors hand you a glossy security PDF and a black box in their cloud. Cabinet runs where you put it. Your security architect reviews the agent permission model, your platform team chooses the host, and nothing phones home. Inference stays on your keys; data stays a folder you can `tar` and move."
       outcomes={[
-        { stat: "OSS", label: "Open-source code · audit before signing" },
+        { stat: "0", label: "Telemetry calls out of your network" },
         { stat: "BYOK", label: "Your inference keys · your provider" },
         { stat: "`cp -r`", label: "Export your data in 1 command" },
       ]}

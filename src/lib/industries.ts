@@ -141,7 +141,7 @@ export const INDUSTRIES: Industry[] = [
     eyebrow: "Cabinet for Startups & Scale-ups",
     headline: "Run like a company 5× your size, before you hire for it.",
     subhead:
-      "Onboard an AI team across go-to-market, product, and ops on day one. Open-source and self-hosted, so there's no per-seat AI tax and no vendor lock-in as you scale.",
+      "Onboard an AI team across go-to-market, product, and ops on day one. Self-hosted, so there's no per-seat AI tax and no vendor lock-in as you scale.",
     stakes: {
       heading: "Too much to do, too few people, too little budget",
       points: [
@@ -157,7 +157,7 @@ export const INDUSTRIES: Industry[] = [
       "One knowledge base instead of ten subscriptions",
     ],
     complianceNote:
-      "Open source and self-hosted: own your stack from day one, with no lock-in to unwind later.",
+      "Self-hosted: own your stack from day one, with no lock-in to unwind later.",
   },
 ];
 

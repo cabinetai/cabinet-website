@@ -99,7 +99,7 @@ export default async function Image({
         </div>
 
         <div style={{ display: "flex", fontSize: 24, color: "#8B5E3C" }}>
-          Open source · self-hosted · bring your own AI
+          Self-hosted · your data stays yours · bring your own AI
         </div>
       </div>
     ),

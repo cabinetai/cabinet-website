@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 
 const FAQS = [
   {
-    q: "Cabinet is open source. Why would I pay?",
+    q: "Cabinet is free to self-host. Why would I pay?",
     a: "You don't have to. Running it yourself is free forever. Paying gets us to run it for you instead, so you don't have to manage a server, updates, or backups.",
   },
   {

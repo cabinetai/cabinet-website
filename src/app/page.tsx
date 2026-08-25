@@ -27,11 +27,11 @@ import { DownloadButtons } from "@/components/marketing/download-buttons";
 export const metadata: Metadata = {
   title: "Cabinet: The AI workspace your company owns",
   description:
-    "Cabinet shows your entire knowledge base and files, puts a team of AI specialists to work on it, and renders results as live apps and dashboards. Open source, self-hosted, and connected to the AI providers you already trust.",
+    "Cabinet shows your entire knowledge base and files, puts a team of AI specialists to work on it, and renders results as live apps and dashboards. Self-hosted, and connected to the AI providers you already trust.",
   openGraph: {
     title: "Cabinet: The AI workspace your company owns",
     description:
-      "Company knowledge, working AI teams, and live apps in one open-source, self-hosted workspace. Bring your own AI.",
+      "Company knowledge, working AI teams, and live apps in one self-hosted workspace. Bring your own AI.",
     url: "https://runcabinet.com",
     images: [
       {
@@ -82,8 +82,8 @@ export default function HomePage() {
             <MotionReveal delay={0.5} amount={0.1}>
             <p className="mt-7 max-w-xl text-lg leading-relaxed text-text-secondary sm:text-xl">
               Cabinet shows your entire knowledge base and files, puts a team of AI specialists
-              to work on it, and renders results as live apps and dashboards. Open source,
-              self-hosted, and connected to the AI providers you already trust.
+              to work on it, and renders results as live apps and dashboards. Self-hosted,
+              and connected to the AI providers you already trust.
             </p>
             </MotionReveal>
 
@@ -95,9 +95,6 @@ export default function HomePage() {
 
             <MotionReveal delay={0.7} amount={0.1}>
             <div className="mt-7 flex flex-wrap justify-center gap-x-5 gap-y-2 text-xs font-semibold text-text-tertiary sm:justify-start">
-              <span className="inline-flex items-center gap-1.5">
-                <Check aria-hidden className="h-3.5 w-3.5 text-green" /> Open source
-              </span>
               <span className="inline-flex items-center gap-1.5">
                 <Check aria-hidden className="h-3.5 w-3.5 text-green" /> Self-hosted
               </span>

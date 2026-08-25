@@ -119,7 +119,7 @@ export function IndustryTemplate({ industry }: { industry: Industry }) {
             {brandify(industry.complianceNote)}
           </p>
           <p className="mt-3 font-code text-xs text-text-tertiary">
-            Open source · self-hosted · bring your own keys · git-backed audit trail
+            Self-hosted · bring your own keys · git-backed audit trail
           </p>
         </div>
       </section>

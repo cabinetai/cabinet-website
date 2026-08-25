@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { Suspense } from "react";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
-import { DiscordIcon, GithubIcon } from "@/components/site-icons";
+import { DiscordIcon } from "@/components/site-icons";
 import { WaitlistConfirmationTracker } from "@/components/waitlist-confirmation-tracker";
-import { DISCORD_URL, GITHUB_URL } from "@/lib/site-config";
+import { DISCORD_URL } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "Cabinet Cloud Waitlist Confirmed",
@@ -58,15 +58,6 @@ export default function WaitlistConfirmedPage() {
           >
             <DiscordIcon className="w-4 h-4" />
             Join Discord
-          </a>
-          <a
-            href={GITHUB_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border border-border hover:border-border-dark text-text-secondary hover:text-text-primary font-medium transition-all"
-          >
-            <GithubIcon className="w-4 h-4" />
-            Star on GitHub
           </a>
           <Link
             href="/#get-cabinet"

@@ -2,7 +2,6 @@ import Link from "next/link";
 import {
   ArrowRight,
   Check,
-  Star,
   ChevronDown,
   Trophy,
 } from "lucide-react";
@@ -10,7 +9,6 @@ import { SiteNavbar } from "@/components/site-navbar";
 import { MarketingFooter } from "@/components/marketing/marketing-footer";
 import { brandify } from "@/components/brand-word";
 import { WoodIcon } from "@/components/wood-icon";
-import { GITHUB_URL } from "@/lib/site-config";
 import { compareLabel, type Roundup } from "@/lib/compare";
 
 export function CompareRoundup({ data }: { data: Roundup }) {
@@ -197,14 +195,6 @@ export function CompareRoundup({ data }: { data: Roundup }) {
                 Book a demo
               </Link>
             </div>
-            <a
-              href={GITHUB_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 font-code text-sm text-text-tertiary transition-colors hover:text-text-primary"
-            >
-              <Star className="h-4 w-4" />Star <span className="font-brand italic">Cabinet</span>{" "}on GitHub
-                                        </a>
           </div>
         </div>
       </section>

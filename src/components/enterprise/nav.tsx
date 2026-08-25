@@ -4,8 +4,6 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { ArrowRight, Menu, X } from "lucide-react";
-import { GithubIcon } from "@/components/site-icons";
-import { GITHUB_URL } from "@/lib/site-config";
 import { useScrolled } from "@/lib/use-scrolled";
 
 const PRIMARY_NAV = [
@@ -65,15 +63,6 @@ export function EnterpriseNav() {
 
         {/* CTAs */}
         <div className="ml-auto flex items-center gap-2.5">
-          <a
-            href={GITHUB_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden md:inline-flex items-center gap-2 h-10 px-3.5 rounded-full border border-border hover:border-border-dark hover:bg-bg-warm transition-all text-text-primary"
-          >
-            <GithubIcon className="w-4 h-4" />
-            <span className="text-[13px] font-medium">Star</span>
-          </a>
           <a
             href="/enterprise/briefing"
             className="hidden sm:inline-flex items-center gap-2 h-10 px-5 rounded-full text-[13px] font-semibold btn-wood"

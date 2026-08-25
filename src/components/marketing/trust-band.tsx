@@ -5,7 +5,6 @@ import {
   History,
   KeyRound,
   LockKeyhole,
-  ScrollText,
   Server,
   ShieldCheck,
   UserCheck,
@@ -13,11 +12,6 @@ import {
 import { MotionReveal } from "./motion-primitives";
 
 const ASSURANCES = [
-  {
-    icon: ScrollText,
-    title: "Open source",
-    body: "Every line is readable. No black box.",
-  },
   {
     icon: Server,
     title: "Self-hosted",

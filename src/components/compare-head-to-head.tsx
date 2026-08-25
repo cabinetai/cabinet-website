@@ -3,7 +3,6 @@ import Link from "next/link";
 import {
   ArrowRight,
   Check,
-  Star,
   ArrowRightLeft,
   ChevronDown,
 } from "lucide-react";
@@ -13,10 +12,9 @@ import { WoodIcon } from "@/components/wood-icon";
 import { CompareVerdict } from "@/components/compare-verdict";
 import { CompareTable } from "@/components/compare-table";
 import { MarketingFooter } from "@/components/marketing/marketing-footer";
-import { GITHUB_URL } from "@/lib/site-config";
 import { compareLabel, COMPARE_ASOF, type Comparison } from "@/lib/compare";
 
-const CTA_MICRO = "Open source · self-hosted · bring your own AI";
+const CTA_MICRO = "Self-hosted · your data stays yours · bring your own AI";
 
 function PrimaryActions({ size = "lg" }: { size?: "lg" | "md" }) {
   const pad = size === "lg" ? "px-7 py-3.5 text-base" : "px-6 py-3 text-sm";
@@ -267,14 +265,6 @@ export function CompareHeadToHead({ data }: { data: Comparison }) {
                                   </p>
           <div className="mt-8 flex flex-col items-center gap-3">
             <PrimaryActions />
-            <a
-              href={GITHUB_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 font-code text-sm text-text-tertiary transition-colors hover:text-text-primary"
-            >
-              <Star className="h-4 w-4" />Star <span className="font-brand italic">Cabinet</span>{" "}on GitHub
-                                        </a>
           </div>
         </div>
       </section>

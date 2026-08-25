@@ -112,7 +112,7 @@ const softwareSchema = {
   applicationCategory: "BusinessApplication",
   operatingSystem: "macOS, Linux, Windows",
   offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-  sameAs: ["https://github.com/cabinetai/cabinet"],
+  sameAs: ["https://runcabinet.com"],
 };
 
 function JsonLd({ data }: { data: object }) {
