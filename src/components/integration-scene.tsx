@@ -6,7 +6,6 @@ import {
   useRef,
   useState,
   type PointerEvent as ReactPointerEvent,
-  type RefObject,
 } from "react";
 import {
   Calendar,
@@ -1374,36 +1373,17 @@ export function IntegrationScene() {
   // would fire the reveal at scene entry; gate it on the caption's own beat.
   const [captureRevealed, setCaptureRevealed] = useState(false);
   const [videoCapRevealed, setVideoCapRevealed] = useState(false);
-  const [demoVideoReady, setDemoVideoReady] = useState(false);
-  const demoRef = useRef<HTMLElement>(null);
 
   useMotionValueEvent(sceneProgress, "change", (v) => {
     setCaptureRevealed(v > 0.33);
     setVideoCapRevealed(v > 0.9);
   });
 
-  useEffect(() => {
-    const demo = demoRef.current;
-    if (!demo) return;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (!entry.isIntersecting) return;
-        setDemoVideoReady(true);
-        observer.disconnect();
-      },
-      { rootMargin: "600px 0px" },
-    );
-
-    observer.observe(demo);
-    return () => observer.disconnect();
-  }, []);
-
   if (prefersReduced && mounted) return <StaticFallback />;
 
   return (
     <>
-    <DemoVideoSection demoRef={demoRef} demoVideoReady={demoVideoReady} />
+    <DemoVideoSection />
 
     <div ref={ref} className={`relative bg-bg ${mobile ? "h-[100svh]" : "h-[700vh]"}`}>
       <div
@@ -1633,18 +1613,11 @@ export function IntegrationScene() {
 
 // The site opener: demo video plus the rotating benefit line, rendered ahead
 // of the pinned scroll scene. Top padding clears the fixed navbar.
-function DemoVideoSection({
-  demoRef,
-  demoVideoReady,
-}: {
-  demoRef: RefObject<HTMLElement | null>;
-  demoVideoReady: boolean;
-}) {
+function DemoVideoSection() {
   const [videoLoaded, setVideoLoaded] = useState(false);
 
   return (
     <section
-      ref={demoRef}
       className="dot-grid flex min-h-[100svh] flex-col bg-[#f2ece4] px-6 pb-8 pt-[clamp(5rem,9vh,7rem)]"
     >
       <div
@@ -1656,23 +1629,19 @@ function DemoVideoSection({
           className={`absolute inset-0 bg-[radial-gradient(circle_at_35%_30%,#f7f0e5,transparent_42%),linear-gradient(135deg,#c7b9a8,#e8dfd2_52%,#b9aa99)] transition-opacity duration-700 ${videoLoaded ? "opacity-0" : "opacity-100"}`}
         />
         <video
-          key={demoVideoReady ? "ready" : "idle"}
           autoPlay
           loop
           muted
           playsInline
-          preload="none"
+          preload="metadata"
+          poster="/og.png"
           width={2880}
           height={1794}
           onLoadedData={() => setVideoLoaded(true)}
           className={`absolute inset-0 h-full w-full object-cover transition-[filter,opacity,transform] duration-700 ease-out ${videoLoaded ? "scale-100 opacity-100 blur-0" : "scale-[1.02] opacity-0 blur-xl"}`}
         >
-          {demoVideoReady && (
-            <>
-              <source src="/new-cabinet.webm" type="video/webm" />
-              <source src="/new-cabinet.mp4" type="video/mp4" />
-            </>
-          )}
+          <source src="/new-cabinet.webm" type="video/webm" />
+          <source src="/new-cabinet.mp4" type="video/mp4" />
         </video>
       </div>
       {/* the text centers itself in whatever height the video leaves over */}
