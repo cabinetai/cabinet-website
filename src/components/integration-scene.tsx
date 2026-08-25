@@ -1382,10 +1382,12 @@ export function IntegrationScene() {
   if (prefersReduced && mounted) return <StaticFallback />;
 
   return (
-    <>
-    <DemoVideoSection />
+    <div className="flex flex-col">
+    <div className="order-2 lg:order-1">
+      <DemoVideoSection />
+    </div>
 
-    <div ref={ref} className={`relative bg-bg ${mobile ? "h-[100svh]" : "h-[700vh]"}`}>
+    <div ref={ref} className={`order-1 relative bg-bg lg:order-2 ${mobile ? "h-[100svh]" : "h-[700vh]"}`}>
       <div
         ref={stickyRef}
         onPointerMove={handlePointerMove}
@@ -1607,7 +1609,7 @@ export function IntegrationScene() {
         )}
       </div>
     </div>
-    </>
+    </div>
   );
 }
 
