@@ -1,8 +1,7 @@
-import { existsSync } from "node:fs";
-import { join } from "node:path";
 import Image from "next/image";
 import Link from "next/link";
 import { INTEGRATION_LOGOS } from "@/lib/showcase";
+import { getTemplateScreenshot } from "@/lib/template-screenshot";
 import { KnowledgeConnectVisual } from "@/components/templates/knowledge-connect-visual";
 import { SectionLabel } from "@/components/templates/section-label";
 import type { RegistryEntry } from "@/lib/template-types";
@@ -35,14 +34,6 @@ const SLUG_LOGOS: Record<string, string> = {
   "tiktok-queue": "tiktok",
   "whatsapp-digest": "whatsapp",
 };
-
-/** Same hover-glimpse as the showcase shelves: cards whose cabinet has a
- *  captured app screenshot reveal it on hover. Checked on disk at build time
- *  so a newly captured shot lights up its card with no code change. */
-function appShot(slug: string): string | undefined {
-  const rel = `/screenshots/apps/${slug}.webp`;
-  return existsSync(join(process.cwd(), "public", rel)) ? rel : undefined;
-}
 
 function IntegrationCard({ entry, shot }: { entry: RegistryEntry; shot?: string }) {
   const logo = SLUG_LOGOS[entry.slug];
@@ -136,7 +127,7 @@ export function IntegrationsBand({ entries }: { entries: RegistryEntry[] }) {
             </div>
             <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {entries.map((e) => (
-                <IntegrationCard key={e.slug} entry={e} shot={appShot(e.slug)} />
+                <IntegrationCard key={e.slug} entry={e} shot={getTemplateScreenshot(e.slug)} />
               ))}
             </div>
           </>

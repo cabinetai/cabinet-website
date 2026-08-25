@@ -2,8 +2,6 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import fs from "fs";
-import path from "path";
 import { ArrowLeft, Bot, Clock, FolderTree, FileText } from "lucide-react";
 import { getAllSlugs, getEntry } from "@/lib/registry";
 import { SiteNavbar } from "@/components/site-navbar";
@@ -18,6 +16,7 @@ import { InstallCommand } from "@/components/templates/install-command";
 import { CabinetReadme } from "@/components/templates/cabinet-readme";
 import { CabinetOrgChart } from "@/components/templates/cabinet-org-chart";
 import { ScreenshotPreview } from "@/components/templates/screenshot-preview";
+import { getTemplateScreenshot } from "@/lib/template-screenshot";
 
 // Map slug → best visual subpath (the page shown in the address bar)
 const SCREENSHOT_PAGE: Record<string, string> = {
@@ -147,23 +146,7 @@ export default async function CabinetDetailPage({ params }: PageProps) {
 
   if (!entry) notFound();
 
-  // The showcase uses freshly captured app shots under screenshots/apps. Keep
-  // the older root-level JPGs as a fallback for the rest of the registry.
-  const screenshotCandidates = [
-    {
-      file: path.join(process.cwd(), "public", "screenshots", "apps", `${slug}.webp`),
-      src: `/screenshots/apps/${slug}.webp`,
-    },
-    {
-      file: path.join(process.cwd(), "public", "screenshots", `${slug}.jpg`),
-      src: `/screenshots/${slug}.jpg`,
-    },
-    {
-      file: path.join(process.cwd(), "public", "screenshots", `${slug}.jpeg`),
-      src: `/screenshots/${slug}.jpeg`,
-    },
-  ];
-  const screenshot = screenshotCandidates.find((candidate) => fs.existsSync(candidate.file));
+  const screenshot = getTemplateScreenshot(slug);
   const hasScreenshot = Boolean(screenshot);
   const screenshotPage = SCREENSHOT_PAGE[slug] ?? slug;
 
@@ -261,7 +244,7 @@ export default async function CabinetDetailPage({ params }: PageProps) {
             <section>
               <SectionLabel>App Preview</SectionLabel>
               <div className="mt-4">
-                <ScreenshotPreview slug={slug} pageName={screenshotPage} src={screenshot?.src} />
+                <ScreenshotPreview slug={slug} pageName={screenshotPage} src={screenshot} />
               </div>
             </section>
           )}
