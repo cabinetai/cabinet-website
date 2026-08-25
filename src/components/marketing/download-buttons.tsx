@@ -1,11 +1,10 @@
-import { CopyButton } from "@/components/marketing/legacy-interactive-primitives";
 import { MACOS_DOWNLOAD_URL, WINDOWS_DOWNLOAD_URL } from "@/lib/site-config";
 
 // Cabinet's installers ship as GitHub release artifacts on
 // github.com/cabinetai/cabinet (see MACOS_DOWNLOAD_URL / WINDOWS_DOWNLOAD_URL in
 // site-config, currently the v0.5.0 .dmg and .Setup.exe). Mac leads with the
-// .dmg; `npx cabinetai run` starts it without installing; Windows gets the
-// installer link. Plain static links, no OS-detection and no build-time script.
+// .dmg; Windows gets the installer link. Plain static links, no OS-detection and
+// no build-time script.
 export function DownloadButtons({ align = "center" }: { align?: "center" | "left" }) {
   const centered = align === "center";
   return (
@@ -23,17 +22,6 @@ export function DownloadButtons({ align = "center" }: { align?: "center" | "left
           </svg>
           Download for Mac
         </a>
-        <span className="hidden items-center font-code text-sm text-text-muted sm:flex">or</span>
-        <div
-          className="terminal-chrome flex flex-1 items-center justify-between rounded-xl px-5 py-4"
-          style={{ overflow: "visible" }}
-        >
-          <div className="flex items-center gap-2 font-code text-sm">
-            <span className="shrink-0 text-green-400">$</span>
-            <span className="whitespace-nowrap text-zinc-200">npx cabinetai run</span>
-          </div>
-          <CopyButton text="npx cabinetai run" />
-        </div>
       </div>
       <p
         className={`mt-4 font-body-serif text-sm text-text-tertiary ${centered ? "text-center" : ""}`}
