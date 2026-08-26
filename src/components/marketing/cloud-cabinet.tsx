@@ -1,14 +1,12 @@
 "use client";
 
 import {
-  AnimatePresence,
   animate,
   circIn,
   cubicBezier,
   motion,
   useInView,
   useMotionValue,
-  usePresence,
   useReducedMotion,
   useTransform,
 } from "framer-motion";
@@ -79,7 +77,7 @@ const MOUTH_DEPTH = 48; // how far into the drawer's dark gap it sinks
 const CURVES = [0, 0.4]; // progress window of the bending sub-animation
 const SLIDE = [0.3, 1]; // progress window of the sliding sub-animation
 const PAGE_ENTER_S = 0.85; // page pours out of the drawer onto the desk
-const PAGE_EXIT_S = 0.7; // page is sucked back into the drawer
+const PAGE_EXIT_S = 0.55; // page is sucked back into the drawer
 const PAGE_ENTER_REDUCED = 0.2;
 const PAGE_EXIT_REDUCED = 0.15;
 // The drawer front has to be moving before its contents can follow it out.
@@ -387,31 +385,24 @@ function Slice({
   );
 }
 
-// Drives one page's Genie in and out. Presence keeps the element mounted
-// until the suck-back-in has finished, so switching drawers shows the old
-// page returning to its drawer while the new one pours out of its own.
+// Drives one drawer's sheet in and out. onDesk is the only input: true and it
+// pours out, false and the drawer takes it back. It is never unmounted, so an
+// interrupted flight just retargets instead of leaving the sheet behind.
 function GeniePage({
   page,
   mouth,
   tilt,
+  onDesk,
 }: {
   page: (typeof DRAWERS)[number];
   mouth: { x: number; y: number };
   tilt: number;
+  onDesk: boolean;
 }) {
   const reduce = useReducedMotion();
-  const [isPresent, safeToRemove] = usePresence();
-  // Framer hands back a fresh safeToRemove on some re-renders. Read through a
-  // ref so it stays out of the flight effect's deps: one direction change has
-  // to start exactly one flight. Restarting it mid-air cancelled the animation
-  // that owned the removal, and the sheet was left hanging over its own drawer.
-  const remove = useRef(safeToRemove);
-  useEffect(() => {
-    remove.current = safeToRemove;
-  }, [safeToRemove]);
+  const isPresent = onDesk;
   const p = useMotionValue(0);
   useEffect(() => {
-    const done = () => remove.current?.();
     const ctrl = animate(
       p,
       isPresent ? 1 : 0,
@@ -427,18 +418,9 @@ function GeniePage({
         : {
             duration: reduce ? PAGE_EXIT_REDUCED : PAGE_EXIT_S,
             ease: reduce ? "linear" : EASE_SUCK,
-            onComplete: done,
           },
     );
-    if (isPresent) return () => ctrl.stop();
-    // Backstop. Past the exit duration the sheet is inside the drawer whatever
-    // happened to the animation, so the element goes even if onComplete never
-    // fires. Nothing may outlive its drawer being open.
-    const gone = setTimeout(done, (reduce ? PAGE_EXIT_REDUCED : PAGE_EXIT_S) * 1000 + 90);
-    return () => {
-      ctrl.stop();
-      clearTimeout(gone);
-    };
+    return () => ctrl.stop();
   }, [isPresent, p, reduce]);
 
   // The tilt is animated rather than fixed: the sheet swings into its resting
@@ -450,11 +432,14 @@ function GeniePage({
       rot.set(tilt);
       return;
     }
+    // A sheet that starts from inside its drawer gets its counter-rotation
+    // back. One caught still in the air just springs from wherever it is.
+    if (isPresent && p.get() === 0) rot.set(tilt * ENTER_TILT_SPIN);
     const ctrl = isPresent
       ? animate(rot, tilt, { ...TILT_SPRING, delay: PAGE_ENTER_DELAY })
       : animate(rot, 0, { duration: PAGE_EXIT_S * 0.75, ease: EASE_SUCK });
     return () => ctrl.stop();
-  }, [isPresent, reduce, rot, tilt]);
+  }, [isPresent, p, reduce, rot, tilt]);
   const transform = useTransform(rot, (r) => `rotate(${r}deg)`);
   // Fade tied to the tail, not the body: the sheet stays visible all the way
   // down the funnel and only fades in the final stretch, as its base actually
@@ -478,7 +463,8 @@ function GeniePage({
         filter: "drop-shadow(0 14px 16px rgba(84, 52, 26, 0.28))",
       }}
     >
-      <p className="sr-only">{page.body}</p>
+      {/* every sheet is mounted; only the one on the desk is announced */}
+      {onDesk && <p className="sr-only">{page.body}</p>}
       {Array.from({ length: SLICES }, (_, i) => (
         <Slice key={i} i={i} p={p} mouth={m} warp={!reduce}>
           <Sheet page={page} />
@@ -653,7 +639,6 @@ export function CloudCabinet() {
   const drawerW = (width - 2 * PAD_X - 2 * DRAWER_GAP) / 3;
   const mouthX = (i: number) => (i - 1) * (drawerW + DRAWER_GAP);
 
-  const page = active === null ? null : DRAWERS[active];
   // A band of wall above the frame, then glass all the way down to the feet.
   const winTop = Math.max(16, headTop - 30);
 
@@ -999,24 +984,32 @@ export function CloudCabinet() {
 
       {/* the desk: where the pulled-out page floats, above the cabinet. z-10
           lifts it over the drawer slots (z 1-2) so the page sinks into the
-          open drawer's gap instead of disappearing behind the front. */}
+          open drawer's gap instead of disappearing behind the front.
+
+          One sheet per drawer, all three mounted for the life of the scene and
+          stacked on the same spot. A click only ever retargets each sheet's own
+          playhead, so the drawer answers immediately and whatever was out has
+          time to fly home. Nothing mounts or unmounts mid-flight, which is what
+          used to leave a sheet stranded over a shut drawer. */}
       <div
         id="cloud-cabinet-page"
         aria-live="polite"
-        className="order-2 relative z-10 flex items-center justify-center"
+        className="order-2 relative z-10"
         style={{ height: DESK_H }}
       >
-        <AnimatePresence mode="popLayout">
-          {page && active !== null && (
-            <motion.div key={active}>
-              <GeniePage
-                page={page}
-                mouth={{ x: mouthX(active), y: MOUTH_Y }}
-                tilt={TILTS[active % TILTS.length]}
-              />
-            </motion.div>
-          )}
-        </AnimatePresence>
+        {DRAWERS.map((d, i) => (
+          <div
+            key={d.title}
+            className="pointer-events-none absolute inset-0 flex items-center justify-center"
+          >
+            <GeniePage
+              page={d}
+              mouth={{ x: mouthX(i), y: MOUTH_Y }}
+              tilt={TILTS[i % TILTS.length]}
+              onDesk={i === active}
+            />
+          </div>
+        ))}
       </div>
             </div>
             {/* the waitlist as a chalkboard hung high on the wall: on xl its
