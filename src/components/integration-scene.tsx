@@ -24,6 +24,8 @@ import { WoodIcon } from "@/components/wood-icon";
 import {
   AnimatePresence,
   animate,
+  circIn,
+  cubicBezier,
   motion,
   useScroll,
   useTransform,
@@ -141,6 +143,40 @@ const PROVIDERS = [
   "copilot.svg", "cursor.svg", "opencode.svg", "pi.svg",
 ].map((f) => `/providers/${f}`);
 
+/* ── Motion curves ───────────────────────────────────────────────
+   Nothing in this scene responds to a click, so the curves describe forces
+   rather than UI feedback: what the cabinet pulls accelerates into it, what
+   arrives from offstage decelerates and settles. Straight lines at constant
+   speed are what made the phone playback read as a slideshow.
+   ─────────────────────────────────────────────────────────────── */
+const LINEAR = (t: number) => t;
+// Strong ease-out — anything landing, settling, or coming to rest.
+const EASE_SETTLE = cubicBezier(0.23, 1, 0.32, 1);
+// Strong ease-in-out — something crossing the screen under its own steam.
+const EASE_DRIFT = cubicBezier(0.77, 0, 0.175, 1);
+// The cabinet's suction: barely moving, then gone. Also doubles as the
+// perspective curve, since a receding object holds its size then collapses.
+const EASE_SWALLOW = circIn;
+
+// The pull is a wave, not a starting gun: it catches the tiles nearest the
+// cabinet first and spreads outward over PULL_SPREAD, and each tile is in
+// the air for PULL_TRAVEL. The last one lands at 0.31, where the old
+// staging also ended, so the glow and the captions keep their beats.
+const PULL_START = 0.115;
+const PULL_SPREAD = 0.095;
+const PULL_TRAVEL = 0.1;
+// Anticipation: the tile leans away from the cabinet for a beat, and the
+// release of that lean is what throws it. Without it the tile just slides.
+const RECOIL_PX = 10;
+const RECOIL_LEAD = 0.028;
+
+// Quadratic Bezier along one axis, used to bend every flight path into a
+// curve instead of a straight line.
+const quadratic = (t: number, a: number, b: number, c: number) => {
+  const m = 1 - t;
+  return m * m * a + 2 * m * t * b + t * t * c;
+};
+
 type Floating =
   | { kind: "logo"; src: string; ai?: boolean }
   | { kind: "file"; name: string; color: string };
@@ -151,7 +187,22 @@ const FLOATING: Floating[] = [
   ...FILES.map((f) => ({ kind: "file" as const, name: f.name, color: f.color })),
 ];
 
-type Slot = { item: Floating; x: number; y: number; rot: number; s: number };
+type Slot = {
+  item: Floating;
+  x: number;
+  y: number;
+  rot: number;
+  // Where in the pull wave this tile is caught, as an offset into PULL_SPREAD.
+  s: number;
+  // Control point of its curved flight path, plus the unit vector aimed at
+  // the drawer mouth (the recoil leans back along it), and the tumble it
+  // picks up on the way in.
+  cx: number;
+  cy: number;
+  dirX: number;
+  dirY: number;
+  spin: number;
+};
 
 // Build a randomised cloud: Fisher–Yates shuffle the items (so each lands
 // on a different spiral slot), then jitter position and rotation per tile.
@@ -163,14 +214,42 @@ function buildLayout(mobile: boolean): Slot[] {
     [order[i], order[j]] = [order[j], order[i]];
   }
   const jitter = mobile ? 26 : 50;
-  return order.map((item, i) => {
+  const placed = order.map((item, i) => {
     const base = mobile ? scatterAround(i, order.length) : scatterLeft(i, order.length);
     return {
       item,
       x: base.x + (Math.random() - 0.5) * jitter,
       y: base.y + (Math.random() - 0.5) * jitter,
       rot: (Math.random() - 0.5) * 18,
-      s: ((i % 8) / 8) * 0.14, // staggered stream
+    };
+  });
+
+  // Each tile's flight is planned here rather than in the component, because
+  // the plan depends entirely on where the tile happened to land.
+  const mouthY = mobile ? mobileCabinetY(DRAWER_MOUTH_Y) : DRAWER_MOUTH_Y;
+  const dists = placed.map((p) => Math.max(1, Math.hypot(p.x, p.y - mouthY)));
+  const nearest = Math.min(...dists);
+  const span = Math.max(1, Math.max(...dists) - nearest);
+  return placed.map((p, i) => {
+    const dist = dists[i];
+    const dx = -p.x;
+    const dy = mouthY - p.y;
+    // Every path bows the same way round the mouth, so sixty-odd curves read
+    // as one vortex. Randomising the direction per tile reads as noise.
+    const bow = Math.min(dist * 0.34, mobile ? 130 : 210);
+    const nx = -dy / dist;
+    const ny = dx / dist;
+    return {
+      ...p,
+      // Nearest first, with enough noise that the wavefront is not a clean ring.
+      s: (0.8 * ((dist - nearest) / span) + 0.2 * Math.random()) * PULL_SPREAD,
+      // A quadratic only travels half way to its control point, so push the
+      // control out twice as far as the bow the path should actually reach.
+      cx: p.x + dx / 2 + nx * bow * 2,
+      cy: p.y + dy / 2 + ny * bow * 2,
+      dirX: dx / dist,
+      dirY: dy / dist,
+      spin: 12 + Math.random() * 26,
     };
   });
 }
@@ -335,6 +414,21 @@ function AnimatedCabinet({ holdOpen = null }: { holdOpen?: number | null }) {
     return () => clearInterval(t);
   }, [prefersReduced, body, holdOpen]);
 
+  // A drawer changing hands means weight moved. Without a reaction the
+  // cabinet is a backdrop that things vanish into; one short settle and it
+  // reads as a physical object taking the load.
+  const lastHold = useRef(holdOpen);
+  useEffect(() => {
+    const previous = lastHold.current;
+    lastHold.current = holdOpen;
+    if (prefersReduced || holdOpen === null || holdOpen < 0 || previous === holdOpen) return;
+    body.start({
+      y: [0, 2.4, 0],
+      rotate: [0, -0.55, 0.3, 0],
+      transition: { duration: 0.52, ease: EASE_SETTLE },
+    });
+  }, [holdOpen, prefersReduced, body]);
+
   return (
     <motion.div animate={body} className="w-[216px]">
       <div
@@ -367,30 +461,45 @@ function FloatingTile({
   progress,
   pointerX,
   pointerY,
-  item,
-  posX,
-  posY,
-  rot,
-  s,
+  slot,
   mobile,
 }: {
   progress: MotionValue<number>;
   pointerX: MotionValue<number>;
   pointerY: MotionValue<number>;
-  item: Floating;
-  posX: number;
-  posY: number;
-  rot: number;
-  s: number;
+  slot: Slot;
   mobile: boolean;
 }) {
-  // Hold the opening composition, then draw every tile into Cabinet.
-  const clearEnd = 0.24 + s * 0.55;
+  const { item, x: posX, y: posY, rot, s, cx, cy, dirX, dirY, spin } = slot;
   const mouthY = mobile ? mobileCabinetY(DRAWER_MOUTH_Y) : DRAWER_MOUTH_Y;
-  const baseX = useTransform(progress, [0, 0.08, clearEnd], [posX, posX, 0]);
-  const baseY = useTransform(progress, [0, 0.08, clearEnd], [posY, posY, mouthY]);
-  const baseScale = useTransform(progress, [0, 0.08, clearEnd], [1, 1, 0.05]);
-  const opacity = useTransform(progress, [0, 0.08, clearEnd - 0.045, clearEnd], [1, 1, 1, 0]);
+
+  // Hold the opening composition, then let the cabinet take the tile. One
+  // linear playhead for the flight, so path, scale, spin and opacity can each
+  // be shaped off it independently instead of all moving in lockstep.
+  const departStart = PULL_START + s;
+  const flight = useTransform(progress, [departStart, departStart + PULL_TRAVEL], [0, 1]);
+  // Position runs on the accelerating curve: the tile resists, then it is gone.
+  const travel = useTransform(flight, EASE_SWALLOW);
+  // The lean-back, and its release feeding straight into the launch.
+  const recoil = useTransform(
+    progress,
+    [departStart - RECOIL_LEAD, departStart, departStart + PULL_TRAVEL * 0.3],
+    [0, 1, 0],
+    { ease: [EASE_SETTLE, EASE_SWALLOW] },
+  );
+
+  const baseX = useTransform(
+    () => quadratic(travel.get(), posX, cx, 0) - dirX * RECOIL_PX * recoil.get(),
+  );
+  const baseY = useTransform(
+    () => quadratic(travel.get(), posY, cy, mouthY) - dirY * RECOIL_PX * recoil.get(),
+  );
+  // Perspective rather than a shrink: it holds most of its size until it is
+  // nearly at the mouth, then collapses into it.
+  const baseScale = useTransform(flight, (t) => 1 - 0.92 * EASE_SWALLOW(t));
+  // Opaque the whole way in; it winks out at the mouth, not mid-air.
+  const opacity = useTransform(flight, (t) => (t < 0.88 ? 1 : (1 - t) / 0.12));
+  const rotate = useTransform(travel, (t) => rot + spin * t);
 
   // Magnetic repel — push away from the cursor with a quadratic falloff,
   // gated by opacity so tiles stop reacting once they're absorbed.
@@ -433,7 +542,7 @@ function FloatingTile({
   return (
     <motion.div
       className="absolute left-1/2 top-1/2"
-      style={{ x, y, rotate: rot, scale, opacity, marginLeft: -w / 2, marginTop: -h / 2, willChange: "transform" }}
+      style={{ x, y, rotate, scale, opacity, marginLeft: -w / 2, marginTop: -h / 2, willChange: "transform" }}
     >
       {item.kind === "logo" ? (
         <div
@@ -660,6 +769,10 @@ type ColumnRow = {
   rowX: number;
   rowY: number;
   tileRotate: number;
+  // Degrees of tilt it flies in with (shaken off as it lands) and the tumble
+  // it takes on as the drawer pulls it in. Deterministic so SSR matches.
+  entryTilt: number;
+  diveTilt: number;
   drawer: number;
   enterStart: number;
   enterEnd: number;
@@ -705,6 +818,8 @@ function buildColumnRows(): ColumnRow[] {
         mobileX: (rowX - midX) * MOBILE_PILE_SCALE,
         mobileY: rowY * MOBILE_PILE_SCALE + MOBILE_PILE_DY,
         tileRotate: slot ? slot.r : 0,
+        entryTilt: (j % 2 === 0 ? 1 : -1) * (4 + (j % 3) * 2),
+        diveTilt: (j % 2 === 0 ? -1 : 1) * (7 + (j % 4) * 3),
         drawer: cat.drawer,
         enterStart,
         enterEnd: enterStart + ENTER_DUR,
@@ -1012,7 +1127,7 @@ function ColumnItem({
   row: ColumnRow;
   mobile: boolean;
 }) {
-  const { item, rowX, rowY, mobileX, mobileY, tileRotate, drawer, enterStart, enterEnd, diveStart, diveEnd } = row;
+  const { item, rowX, rowY, mobileX, mobileY, tileRotate, entryTilt, diveTilt, drawer, enterStart, enterEnd, diveStart, diveEnd } = row;
   const rawMouthY = DRAWER_MOUTH_Y + drawer * DRAWER_GAP_Y;
   const drawerMouthY = mobile ? mobileCabinetY(rawMouthY) : rawMouthY;
   const parkY = mobile ? mobileY : rowY;
@@ -1038,16 +1153,37 @@ function ColumnItem({
   // Mobile centres each chip instead — scaling happens about the centre, so
   // centring on a target is the same maths at any scale.
   const parkLeft = mobile ? mobileX - chipW / 2 : COLUMN_X + rowX;
+  // Three beats, three curves. It flies in and decelerates into the pile
+  // (ease-out), sits perfectly still, then the drawer takes it: the vertical
+  // accelerates on the suction curve while the horizontal runs ease-in-out,
+  // and the mismatch is what bends the dive into an arc rather than a ramp.
   const x = useTransform(
     progress,
     [enterStart, enterEnd, diveStart, diveEnd],
-    [offstageX, parkLeft, parkLeft, -chipW / 2]
+    [offstageX, parkLeft, parkLeft, -chipW / 2],
+    { ease: [EASE_SETTLE, LINEAR, EASE_DRIFT] },
   );
-  const y = useTransform(progress, [enterStart, diveStart, diveEnd], [parkY, parkY, drawerMouthY]);
+  const y = useTransform(
+    progress,
+    [enterStart, diveStart, diveEnd],
+    [parkY, parkY, drawerMouthY],
+    { ease: [LINEAR, EASE_SWALLOW] },
+  );
+  // Perspective, matching the opening cloud: it holds its size down the
+  // length of the pull and only collapses at the mouth.
   const scale = useTransform(
     progress,
     [enterStart, diveStart, diveEnd],
-    [parkScale, parkScale, 0.05]
+    [parkScale, parkScale, 0.06],
+    { ease: [LINEAR, EASE_SWALLOW] },
+  );
+  // Paper does not arrive square: it lands off-axis, settles, then tumbles
+  // as it is pulled in.
+  const rotate = useTransform(
+    progress,
+    [enterStart, enterEnd, diveStart, diveEnd],
+    [tileRotate + entryTilt, tileRotate, tileRotate, tileRotate + diveTilt],
+    { ease: [EASE_SETTLE, LINEAR, EASE_SWALLOW] },
   );
   // Like the opening cloud's tiles: fully opaque for the whole pull,
   // shrinking continuously, and only winking out right at the drawer
@@ -1055,7 +1191,8 @@ function ColumnItem({
   const opacity = useTransform(
     progress,
     [enterStart, enterStart + (enterEnd - enterStart) * 0.6, diveEnd - 0.01, diveEnd],
-    [0, 1, 1, 0]
+    [0, 1, 1, 0],
+    { ease: [EASE_SETTLE, LINEAR, LINEAR] },
   );
   // In front of the cabinet (z-10) so items visibly drop INTO the open drawer.
   const zIndex = item.kind === "label" ? 21 : 20;
@@ -1067,7 +1204,7 @@ function ColumnItem({
     // w-max because an absolute box anchored at left:50% otherwise shrinks to
     // the half-screen that remains — which clips the wide planks on a phone.
     <div className="pointer-events-none absolute left-1/2 top-1/2 w-max -translate-y-1/2" style={{ zIndex }}>
-      <motion.div ref={chipRef} style={{ x, y, scale, opacity, rotate: tileRotate, willChange: "transform" }}>
+      <motion.div ref={chipRef} style={{ x, y, scale, opacity, rotate, willChange: "transform" }}>
         <LaneChip item={item} />
       </motion.div>
     </div>
@@ -1424,11 +1561,7 @@ export function IntegrationScene() {
                 progress={sceneProgress}
                 pointerX={pointerX}
                 pointerY={pointerY}
-                item={slot.item}
-                posX={slot.x}
-                posY={slot.y}
-                rot={slot.rot}
-                s={slot.s}
+                slot={slot}
                 mobile={mobile}
               />
             ))}
