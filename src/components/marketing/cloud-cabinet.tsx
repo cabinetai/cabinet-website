@@ -1,12 +1,12 @@
 "use client";
 
 import {
-  AnimatePresence,
   animate,
+  circIn,
+  cubicBezier,
   motion,
   useInView,
   useMotionValue,
-  usePresence,
   useReducedMotion,
   useTransform,
 } from "framer-motion";
@@ -16,6 +16,7 @@ import {
   useLayoutEffect,
   useRef,
   useState,
+  type CSSProperties,
   type ReactNode,
 } from "react";
 import { CloudHeroWaitlist } from "@/components/cloud-hero-waitlist";
@@ -76,9 +77,20 @@ const MOUTH_DEPTH = 48; // how far into the drawer's dark gap it sinks
 const CURVES = [0, 0.4]; // progress window of the bending sub-animation
 const SLIDE = [0.3, 1]; // progress window of the sliding sub-animation
 const PAGE_ENTER_S = 0.85; // page pours out of the drawer onto the desk
-const PAGE_EXIT_S = 0.7; // page is sucked back into the drawer
+const PAGE_EXIT_S = 0.55; // page is sucked back into the drawer
 const PAGE_ENTER_REDUCED = 0.2;
 const PAGE_EXIT_REDUCED = 0.15;
+// The drawer front has to be moving before its contents can follow it out.
+const PAGE_ENTER_DELAY = 0.12;
+// Strong ease-out: the sheet pours out and settles on the desk.
+const EASE_OUT = cubicBezier(0.23, 1, 0.32, 1);
+// The drawer taking it back: barely moves, then it is gone. Same suction curve
+// as the hero cabinet, so both scenes pull with the same hand.
+const EASE_SUCK = circIn;
+// Paper does not leave a drawer already square with the desk. It comes out
+// counter-rotated by this multiple of its resting tilt and swings into place.
+const ENTER_TILT_SPIN = -1.8;
+const TILT_SPRING = { type: "spring" as const, duration: 0.6, bounce: 0.22 };
 
 const smooth = (t: number) => t * t * (3 - 2 * t);
 const within = (lo: number, hi: number, t: number) => Math.min(1, Math.max(0, (t - lo) / (hi - lo)));
@@ -121,7 +133,10 @@ function quadTransform(W: number, H: number, q: number[]) {
 // of the drawer's dark gap in the sheet's coordinates.
 function sliceQuad(k: number, t: number, mouth: { x: number; y: number }) {
   const bend = smooth(within(CURVES[0], CURVES[1], t));
-  const slide = smooth(within(SLIDE[0], SLIDE[1], t));
+  // Linear inside its own window: how fast the sheet runs down the funnel is
+  // the master curve's job now. Easing it twice mushed the two together and is
+  // what made the pull read as a mechanism rather than a hand.
+  const slide = within(SLIDE[0], SLIDE[1], t);
   const left = (mouth.x - MOUTH_W / 2) * bend; // far end of the left curve: 0 -> mouth
   const right = PAGE_W + (mouth.x + MOUTH_W / 2 - PAGE_W) * bend;
   const start = mouth.y * slide; // the sheet's top edge: desk -> mouth
@@ -240,6 +255,7 @@ function Drawer({
         onClick={onClick}
         aria-expanded={open}
         aria-controls="cloud-cabinet-page"
+        whileTap={reduce ? undefined : { scale: 0.975 }}
         className="absolute inset-0 flex cursor-pointer flex-col items-center justify-center rounded-[10px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
         animate={
           open
@@ -369,41 +385,69 @@ function Slice({
   );
 }
 
-// Drives one page's Genie in and out. Presence keeps the element mounted
-// until the suck-back-in has finished, so switching drawers shows the old
-// page returning to its drawer while the new one pours out of its own.
+// Drives one drawer's sheet in and out. onDesk is the only input: true and it
+// pours out, false and the drawer takes it back. It is never unmounted, so an
+// interrupted flight just retargets instead of leaving the sheet behind.
 function GeniePage({
   page,
   mouth,
   tilt,
+  onDesk,
 }: {
   page: (typeof DRAWERS)[number];
   mouth: { x: number; y: number };
   tilt: number;
+  onDesk: boolean;
 }) {
   const reduce = useReducedMotion();
-  const [isPresent, safeToRemove] = usePresence();
+  const isPresent = onDesk;
   const p = useMotionValue(0);
   useEffect(() => {
     const ctrl = animate(
       p,
       isPresent ? 1 : 0,
-      // linear overall: the curves and slide sub-animations carry their own easing
+      // The two directions are not one motion played backwards. Coming out, the
+      // drawer has let go and the sheet decelerates onto the desk. Going back,
+      // the drawer is pulling, so it resists and then accelerates away.
       isPresent
-        ? { duration: reduce ? PAGE_ENTER_REDUCED : PAGE_ENTER_S, ease: "linear" }
+        ? {
+            duration: reduce ? PAGE_ENTER_REDUCED : PAGE_ENTER_S,
+            delay: reduce ? 0 : PAGE_ENTER_DELAY,
+            ease: reduce ? "linear" : EASE_OUT,
+          }
         : {
             duration: reduce ? PAGE_EXIT_REDUCED : PAGE_EXIT_S,
-            ease: "linear",
-            onComplete: safeToRemove,
+            ease: reduce ? "linear" : EASE_SUCK,
           },
     );
     return () => ctrl.stop();
-  }, [isPresent, p, reduce, safeToRemove]);
+  }, [isPresent, p, reduce]);
+
+  // The tilt is animated rather than fixed: the sheet swings into its resting
+  // angle with a little overshoot, and straightens up on the way back because
+  // it has to go into the mouth square.
+  const rot = useMotionValue(reduce ? tilt : tilt * ENTER_TILT_SPIN);
+  useEffect(() => {
+    if (reduce) {
+      rot.set(tilt);
+      return;
+    }
+    // A sheet that starts from inside its drawer gets its counter-rotation
+    // back. One caught still in the air just springs from wherever it is.
+    if (isPresent && p.get() === 0) rot.set(tilt * ENTER_TILT_SPIN);
+    const ctrl = isPresent
+      ? animate(rot, tilt, { ...TILT_SPRING, delay: PAGE_ENTER_DELAY })
+      : animate(rot, 0, { duration: PAGE_EXIT_S * 0.75, ease: EASE_SUCK });
+    return () => ctrl.stop();
+  }, [isPresent, p, reduce, rot, tilt]);
+  const transform = useTransform(rot, (r) => `rotate(${r}deg)`);
   // Fade tied to the tail, not the body: the sheet stays visible all the way
   // down the funnel and only fades in the final stretch, as its base actually
   // sinks into the drawer's mouth (exit) or lifts back out of it (enter).
   // p: 0 = fully in the drawer, 1 = resting on the desk.
-  const opacity = useTransform(p, [0.05, 0.36], [0, 1]);
+  // Ease-out so it is solid almost as soon as it clears the mouth, instead of
+  // spending the first third of its trip translucent.
+  const opacity = useTransform(p, (v) => EASE_OUT(within(0.04, 0.34, v)));
   // top-center of the open drawer's dark gap in the sheet's own box (the sheet
   // is centered on the desk; mouth.y is the gap's center, DRAWER_EXTEND tall)
   const m = { x: PAGE_W / 2 + mouth.x, y: PAGE_H / 2 + mouth.y - DRAWER_EXTEND / 2 + 6 };
@@ -414,12 +458,13 @@ function GeniePage({
         width: PAGE_W,
         maxWidth: "100%",
         height: PAGE_H,
-        rotate: tilt,
+        transform,
         opacity,
         filter: "drop-shadow(0 14px 16px rgba(84, 52, 26, 0.28))",
       }}
     >
-      <p className="sr-only">{page.body}</p>
+      {/* every sheet is mounted; only the one on the desk is announced */}
+      {onDesk && <p className="sr-only">{page.body}</p>}
       {Array.from({ length: SLICES }, (_, i) => (
         <Slice key={i} i={i} p={p} mouth={m} warp={!reduce}>
           <Sheet page={page} />
@@ -568,6 +613,10 @@ export function CloudCabinet() {
   // the sky/floor split tracks the cabinet's feet (the column can share its
   // row with the chalkboard, or stack above it on phones).
   const [floorTop, setFloorTop] = useState(430);
+  // Below xl the heading sits in normal flow above the desk, so the window has
+  // to be measured to it instead of to a fixed slice of the viewport. On xl the
+  // heading is absolutely positioned onto the glass and this goes unused.
+  const [headTop, setHeadTop] = useState(56);
   useEffect(() => {
     const el = cabRef.current;
     const root = ref.current;
@@ -575,17 +624,23 @@ export function CloudCabinet() {
     const measure = () => {
       setWidth(el.offsetWidth);
       setFloorTop(el.offsetTop + el.offsetHeight);
+      const head = headRef.current;
+      // Same offsetParent as the cabinet column (the positioned room wrapper),
+      // so this shares a coordinate space with floorTop.
+      if (head) setHeadTop(head.offsetTop);
     };
     const ro = new ResizeObserver(measure);
     ro.observe(el);
     ro.observe(root);
+    if (headRef.current) ro.observe(headRef.current);
     return () => ro.disconnect();
   }, []);
 
   const drawerW = (width - 2 * PAD_X - 2 * DRAWER_GAP) / 3;
   const mouthX = (i: number) => (i - 1) * (drawerW + DRAWER_GAP);
 
-  const page = active === null ? null : DRAWERS[active];
+  // A band of wall above the frame, then glass all the way down to the feet.
+  const winTop = Math.max(16, headTop - 30);
 
   return (
     <div ref={ref} className="mx-auto w-full">
@@ -606,17 +661,18 @@ export function CloudCabinet() {
             around it), muted dusk sky behind the glass */}
         <div
           aria-hidden
-          className="absolute w-[calc(100vw-100px)] xl:w-[calc(75vw-100px)]"
+          className="absolute left-[calc((100%-100vw)/2+20px)] top-[var(--win-top)] h-[var(--win-h)] w-[calc(100vw-40px)] xl:left-[calc((100%-100vw)/2+50px)] xl:top-[var(--win-xl-top)] xl:h-[var(--win-xl-h)] xl:w-[calc(75vw-100px)]"
           style={{
-            left: "calc((100% - 100vw) / 2 + 50px)",
-            top: `calc(${floorTop - 28}px - (100svh - 170px))`,
-            height: "calc(100svh - 170px)",
+            "--win-top": `${winTop}px`,
+            "--win-h": `${Math.max(240, floorTop - 28 - winTop)}px`,
+            "--win-xl-top": `calc(${floorTop - 28}px - (100svh - 170px))`,
+            "--win-xl-h": "calc(100svh - 170px)",
             padding: 14,
             borderRadius: 30,
             background: WOOD_DARK,
             boxShadow:
               "0 24px 48px -20px rgba(60, 38, 20, 0.45), inset 0 1px 2px rgba(255, 255, 255, 0.35)",
-          }}
+          } as CSSProperties}
         >
           <div
             className="relative h-full w-full overflow-hidden"
@@ -701,7 +757,10 @@ export function CloudCabinet() {
             boxShadow: "0 6px 12px rgba(74, 48, 24, 0.35), inset 0 1.5px 1px rgba(255, 250, 238, 0.5)",
           }}
         />
-        <div className="relative" style={{ padding: `10px ${ROOM_PAD_X}px 16px` }}>
+        <div
+          className="relative pt-14 xl:pt-[10px]"
+          style={{ paddingLeft: ROOM_PAD_X, paddingRight: ROOM_PAD_X, paddingBottom: 16 }}
+        >
           <div className="flex flex-col gap-10">
             <div
               ref={cabRef}
@@ -925,24 +984,32 @@ export function CloudCabinet() {
 
       {/* the desk: where the pulled-out page floats, above the cabinet. z-10
           lifts it over the drawer slots (z 1-2) so the page sinks into the
-          open drawer's gap instead of disappearing behind the front. */}
+          open drawer's gap instead of disappearing behind the front.
+
+          One sheet per drawer, all three mounted for the life of the scene and
+          stacked on the same spot. A click only ever retargets each sheet's own
+          playhead, so the drawer answers immediately and whatever was out has
+          time to fly home. Nothing mounts or unmounts mid-flight, which is what
+          used to leave a sheet stranded over a shut drawer. */}
       <div
         id="cloud-cabinet-page"
         aria-live="polite"
-        className="order-2 relative z-10 flex items-center justify-center"
+        className="order-2 relative z-10"
         style={{ height: DESK_H }}
       >
-        <AnimatePresence mode="popLayout">
-          {page && active !== null && (
-            <motion.div key={active}>
-              <GeniePage
-                page={page}
-                mouth={{ x: mouthX(active), y: MOUTH_Y }}
-                tilt={TILTS[active % TILTS.length]}
-              />
-            </motion.div>
-          )}
-        </AnimatePresence>
+        {DRAWERS.map((d, i) => (
+          <div
+            key={d.title}
+            className="pointer-events-none absolute inset-0 flex items-center justify-center"
+          >
+            <GeniePage
+              page={d}
+              mouth={{ x: mouthX(i), y: MOUTH_Y }}
+              tilt={TILTS[i % TILTS.length]}
+              onDesk={i === active}
+            />
+          </div>
+        ))}
       </div>
             </div>
             {/* the waitlist as a chalkboard hung high on the wall: on xl its
