@@ -18,6 +18,8 @@ type LazyVideoProps = {
   rootMargin?: string;
   /** Fires once the first frame is decodable (or the fetch failed outright). */
   onReady?: () => void;
+  /** 1 is natural speed; 0.5 plays at half speed. */
+  playbackRate?: number;
 };
 
 // Matches the phone staging used elsewhere on the homepage.
@@ -43,6 +45,7 @@ export function LazyVideo({
   height,
   rootMargin = "600px 0px",
   onReady,
+  playbackRate = 1,
 }: LazyVideoProps) {
   // Null until the element is near the viewport. Doubles as the "in view" flag
   // and as the chosen encode, so both are decided in one state update.
@@ -84,8 +87,11 @@ export function LazyVideo({
     const video = videoRef.current;
     if (!video) return;
     video.load();
+    // load() resets the rate on some browsers, so it is set after, not before
+    video.defaultPlaybackRate = playbackRate;
+    video.playbackRate = playbackRate;
     void video.play().catch(() => {});
-  }, [active]);
+  }, [active, playbackRate]);
 
   // `loadeddata` can fire before this effect attaches on a warm cache, so the
   // readyState is checked up front. `error` reports too, otherwise a failed

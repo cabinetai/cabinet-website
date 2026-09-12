@@ -1,4 +1,6 @@
 export const DISCORD_URL = "https://discord.gg/hJa5TRTbTH";
+// Every installer for the current version, for platforms without a direct button.
+export const RELEASES_URL = "https://github.com/cabinetai/cabinet-releases/releases/latest";
 export const MACOS_DOWNLOAD_URL =
   "https://github.com/cabinetai/cabinet-releases/releases/download/v0.6.0/Cabinet-0.6.0-arm64.dmg";
 export const WINDOWS_DOWNLOAD_URL =

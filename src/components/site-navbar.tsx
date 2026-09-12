@@ -11,6 +11,7 @@ import {
   X,
 } from "lucide-react";
 import { SolutionsMenu } from "@/components/solutions-menu";
+import { usePlatformDownloadHref } from "@/lib/platform-download";
 
 const RESOURCE_LINKS = [
   {
@@ -61,6 +62,7 @@ function GlassNavLink({ href, children }: { href: string; children: React.ReactN
 export function SiteNavbar({ fixed = false }: { fixed?: boolean }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [resourcesOpen, setResourcesOpen] = useState(false);
+  const downloadHref = usePlatformDownloadHref();
 
   useEffect(() => {
     if (!mobileOpen) return;
@@ -184,13 +186,13 @@ export function SiteNavbar({ fixed = false }: { fixed?: boolean }) {
             Book a demo
           </Link>
 
-          <Link
-            href="/download"
+          <a
+            href={downloadHref}
             className="btn-wood inline-flex h-11 items-center justify-center gap-2 whitespace-nowrap rounded-full px-4 text-sm font-semibold sm:px-5"
           >
             <Download aria-hidden className="h-4 w-4" />
             Download
-          </Link>
+          </a>
 
           <button
             type="button"

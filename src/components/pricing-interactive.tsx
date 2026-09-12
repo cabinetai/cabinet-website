@@ -108,11 +108,6 @@ export function PricingInteractive() {
           onSelect={() => select("self-hosted")}
           footnote={
             <span>
-              or{" "}
-              <code className="font-code text-text-secondary">
-                npx cabinetai run
-              </code>
-              {" · "}
               <a
                 href={WINDOWS_DOWNLOAD_URL}
                 target="_blank"

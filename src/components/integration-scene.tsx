@@ -19,7 +19,7 @@ import {
   TrendingUp,
   type LucideIcon,
 } from "lucide-react";
-import { LazyVideo } from "@/components/lazy-video";
+import { DownloadShowcase } from "@/components/marketing/download-showcase";
 import { WoodIcon } from "@/components/wood-icon";
 import {
   AnimatePresence,
@@ -1283,44 +1283,7 @@ function StaticFallback() {
 }
 
 // Above the demo video: "Cabinet" plus a rotating benefit line.
-const BENEFITS = [
-  "holds your entire knowledge base.",
-  "works the way you already do.",
-  "is built for your whole team.",
-  "puts ready-made AI teams to work.",
-];
 
-function RotatingBenefits() {
-  const [i, setI] = useState(0);
-  useEffect(() => {
-    const t = setInterval(() => setI((v) => (v + 1) % BENEFITS.length), 2600);
-    return () => clearInterval(t);
-  }, []);
-  return (
-    <h2 className="[font-family:var(--font-brand)] text-[clamp(1.05rem,4.4vw,1.875rem)] leading-tight tracking-[-0.045em] text-text-primary sm:text-3xl md:text-5xl">
-      <span className="inline-flex items-baseline gap-3 text-left">
-        <span className="font-brand italic">Cabinet</span>
-        {/* invisible sizer reserves the widest phrase's width so Cabinet
-            stays anchored and the block doesn't recenter as text rotates */}
-        <span className="relative inline-block whitespace-nowrap">
-          <span aria-hidden className="invisible">holds your entire knowledge base.</span>
-          <AnimatePresence mode="wait">
-            <motion.span
-              key={i}
-              initial={{ opacity: 0, y: 14 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -14 }}
-              transition={{ duration: 0.35 }}
-              className="absolute left-0 top-0 inline-block"
-            >
-              {BENEFITS[i]}
-            </motion.span>
-          </AnimatePresence>
-        </span>
-      </span>
-    </h2>
-  );
-}
 
 export function IntegrationScene() {
   const ref = useRef<HTMLDivElement>(null);
@@ -1750,41 +1713,9 @@ export function IntegrationScene() {
 // The site opener: demo video plus the rotating benefit line, rendered ahead
 // of the pinned scroll scene. Top padding clears the fixed navbar.
 function DemoVideoSection() {
-  const [videoLoaded, setVideoLoaded] = useState(false);
-
   return (
-    <section
-      className="dot-grid flex min-h-[100svh] flex-col bg-[#f2ece4] px-6 pb-8 pt-[clamp(5rem,9vh,7rem)]"
-    >
-      <div
-        className="relative mx-auto aspect-[2880/1794] w-[min(100%,118.7svh)] overflow-hidden rounded-2xl border border-border bg-[#d9d0c4] shadow-2xl shadow-black/25"
-        aria-busy={!videoLoaded}
-      >
-        <div
-          aria-hidden
-          className={`absolute inset-0 bg-[radial-gradient(circle_at_35%_30%,#f7f0e5,transparent_42%),linear-gradient(135deg,#c7b9a8,#e8dfd2_52%,#b9aa99)] transition-opacity duration-700 ${videoLoaded ? "opacity-0" : "opacity-100"}`}
-        />
-        {/* Gated rather than eager. On desktop this section is the opener, so
-            the observer fires on the first frame after hydration and the clip
-            still starts straight away. On a phone it sits below the scene, so
-            the clip waits instead of competing with the bundle. */}
-        <LazyVideo
-          width={2880}
-          height={1794}
-          onReady={() => setVideoLoaded(true)}
-          className={`absolute inset-0 h-full w-full object-cover transition-[filter,opacity,transform] duration-700 ease-out ${videoLoaded ? "scale-100 opacity-100 blur-0" : "scale-[1.02] opacity-0 blur-xl"}`}
-          sources={[
-            // mp4 first: it is the smaller of the two encodes and every browser plays it
-            { src: "/new-cabinet.mp4", type: "video/mp4" },
-            { src: "/new-cabinet.webm", type: "video/webm" },
-          ]}
-          mobileSources={[{ src: "/new-cabinet-mobile.mp4", type: "video/mp4" }]}
-        />
-      </div>
-      {/* the text centers itself in whatever height the video leaves over */}
-      <div className="mx-auto flex max-w-5xl flex-1 items-center py-6 text-center">
-        <RotatingBenefits />
-      </div>
+    <section>
+      <DownloadShowcase hero />
     </section>
   );
 }

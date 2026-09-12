@@ -10,7 +10,6 @@ import {
   X,
 } from "lucide-react";
 import { IntegrationScene } from "@/components/integration-scene";
-import { LazyVideo } from "@/components/lazy-video";
 import { CloudCabinet } from "@/components/marketing/cloud-cabinet";
 import { PrinciplesShowcase } from "@/components/principles-showcase";
 import { DiscordIcon } from "@/components/site-icons";
@@ -24,6 +23,7 @@ import { MotionReveal } from "@/components/marketing/motion-primitives";
 import { CABINETS, CABINETS_SITE, cabinetCover, cabinetUrl } from "@/lib/cabinets";
 import { DISCORD_URL } from "@/lib/site-config";
 import { DownloadButtons } from "@/components/marketing/download-buttons";
+import { DownloadShowcase } from "@/components/marketing/download-showcase";
 import { SOLUTIONS, SOLUTION_STORIES } from "@/lib/solutions";
 
 const PROVIDERS = [
@@ -859,7 +859,7 @@ export function LegacyHowItWorks() {
 
         <div className="space-y-0">
           {[
-            { step: "01", title: "Install & Run", desc: "One command. Next.js + daemon start. Your knowledge base is a /data directory on disk.", code: "npx cabinetai run" },
+            { step: "01", title: "Download & Open", desc: "Install the desktop app. Your knowledge base is a folder on disk.", code: null },
             { step: "02", title: "Answer 5 Questions", desc: "What's your company? What do you do? What are your goals? Cabinet builds your custom AI team.", code: null },
             { step: "03", title: "Watch Your Team Work", desc: "Agents create missions, write content, scout Reddit, review quality, all on schedule.", code: null },
             { step: "04", title: "Knowledge Compounds", desc: "Every agent run, every edit, every research session adds to the KB. Your system gets smarter every day.", code: null },
@@ -1111,34 +1111,7 @@ export function LegacyOrgBadges() {
 export function LegacyCta() {
   return (
     <section id="get-started" className="py-24 border-t border-border bg-bg-warm overflow-hidden">
-      {/* Full-bleed pair: text column centered, video bleeding to the viewport's right edge */}
-      <div className="mb-16 grid items-center gap-10 px-6 text-center lg:grid-cols-[2fr_3fr] lg:gap-14 lg:pr-0">
-        <div className="mx-auto w-full max-w-xl">
-          <Image src="/cabinet-icon.png" alt="Cabinet" width={64} height={64} className="mx-auto mb-6 rounded-xl" />
-          <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
-            Download <span className="font-brand italic">Cabinet</span>
-            <br />
-            your <TypingText texts={["knowledge base", "AI team", "workflows", "AI workspace"]} />
-          </h2>
-          <p className="text-text-secondary mb-8 max-w-xl mx-auto leading-relaxed font-body-serif">
-            <span className="font-brand italic">Cabinet</span>{" "}is the AI workspace where your knowledge base, AI team, and workflows live in one beautiful home.
-          </p>
-          <DownloadButtons />
-        </div>
-        {/* Wrapper clips the 2px border baked into the recording */}
-        <div className="overflow-hidden rounded-2xl shadow-lg lg:rounded-r-none">
-          <LazyVideo
-            width={2880}
-            height={1794}
-            className="-m-[2px] w-[calc(100%+4px)] max-w-none"
-            sources={[
-              { src: "/new-cabinet.mp4", type: "video/mp4" },
-              { src: "/new-cabinet.webm", type: "video/webm" },
-            ]}
-            mobileSources={[{ src: "/new-cabinet-mobile.mp4", type: "video/mp4" }]}
-          />
-        </div>
-      </div>
+      <DownloadShowcase />
       <div className="max-w-6xl mx-auto px-6 text-center">
         <div className="mx-auto mt-16 max-w-3xl rounded-3xl bg-gradient-to-br from-[#FBF2E4] to-[#F2E5CF] px-6 py-12 shadow-sm sm:px-12">
           <Image

@@ -315,7 +315,7 @@ function Preview({
           <p className="text-[#A89888]"># clone a cabinet and start the agents</p>
           <p className="mt-1 text-[#E8D6B6]">$ npx cabinetai clone meeting-memory</p>
           <p className="text-[#7A9A6F]">✓ 2 agents · 1 job · knowledge tree ready</p>
-          <p className="mt-1 text-[#E8D6B6]">$ npx cabinetai run</p>
+          <p className="mt-1 text-[#E8D6B6]">$ open -a Cabinet</p>
           <p className="text-[#A89888]">agents online: notetaker, archivist_01</p>
           <p className="mt-3 text-[#A89888]">{"{ \"model\": \"claude-fable-5\", \"jobs\": 4 }"}</p>
         </div>

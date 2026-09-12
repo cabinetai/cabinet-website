@@ -1,39 +1,38 @@
-import { MACOS_DOWNLOAD_URL, WINDOWS_DOWNLOAD_URL } from "@/lib/site-config";
+import { CloudWaitlistInline } from "@/components/marketing/cloud-waitlist-inline";
+import { MACOS_DOWNLOAD_URL, RELEASES_URL } from "@/lib/site-config";
 
 // Cabinet's installers ship as GitHub release artifacts on
-// github.com/cabinetai/cabinet-releases (see MACOS_DOWNLOAD_URL /
-// WINDOWS_DOWNLOAD_URL in site-config, currently the v0.6.0 .dmg and
-// Setup.exe). Mac leads with the .dmg; Windows gets the installer link. Plain
-// static links, no OS-detection and no build-time script.
+// github.com/cabinetai/cabinet-releases (see MACOS_DOWNLOAD_URL / RELEASES_URL
+// in site-config). Mac leads with the .dmg; "Other platforms" points at the
+// latest release, which lists every installer. Under it, an inline email form
+// collects signups for the hosted version (Cabinet Cloud). Plain static links,
+// no OS-detection and no build-time script.
 export function DownloadButtons({ align = "center" }: { align?: "center" | "left" }) {
   const centered = align === "center";
   return (
     <div className={centered ? "mx-auto max-w-xl" : ""}>
-      {/* Install Options */}
-      <div
-        className={`flex flex-col sm:flex-row items-stretch gap-3 ${centered ? "justify-center" : ""}`}
-      >
+      <div className={`flex flex-col ${centered ? "items-center" : "items-start"}`}>
         <a
           href={MACOS_DOWNLOAD_URL}
-          className="btn-wood inline-flex shrink-0 cursor-pointer items-center justify-center gap-2.5 rounded-xl px-8 py-4 text-base font-semibold"
+          className="btn-wood inline-flex cursor-pointer items-center justify-center gap-2.5 rounded-xl px-8 py-4 text-base font-semibold"
         >
           <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
             <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
           </svg>
           Download for Mac
         </a>
-      </div>
-      <p
-        className={`mt-4 font-body-serif text-sm text-text-tertiary ${centered ? "text-center" : ""}`}
-      >
-        On Windows?{" "}
         <a
-          href={WINDOWS_DOWNLOAD_URL}
-          className="text-accent underline underline-offset-2 hover:text-accent-warm"
+          href={RELEASES_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 text-xs text-text-muted transition-colors hover:text-text-secondary"
         >
-          Download the installer
+          Other platforms
         </a>
-      </p>
+      </div>
+      <div className={`mt-10 border-t border-border pt-8 ${centered ? "" : "max-w-md"}`}>
+        <CloudWaitlistInline align={align} />
+      </div>
     </div>
   );
 }

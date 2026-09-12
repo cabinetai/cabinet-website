@@ -64,7 +64,7 @@ export function CopyButton({ text }: { text: string }) {
 }
 
 const TERMINAL_LINES = [
-  { prompt: true, text: "npx cabinetai run" },
+  { prompt: true, text: "open -a Cabinet" },
   { prompt: false, text: "Creating knowledge base..." },
   { prompt: false, text: "Setting up AI agents..." },
   { prompt: false, text: "" },
