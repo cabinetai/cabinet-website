@@ -25,6 +25,7 @@ import { SectionBadge } from "@/components/marketing/section-badge";
 import { DownloadButtons } from "@/components/marketing/download-buttons";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://runcabinet.com/" },
   title: "Cabinet: The AI workspace your company owns",
   description:
     "Cabinet shows your entire knowledge base and files, puts a team of AI specialists to work on it, and renders results as live apps and dashboards. Self-hosted, and connected to the AI providers you already trust.",

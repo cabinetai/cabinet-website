@@ -4,6 +4,7 @@ import { LegacyCta } from "@/components/marketing/legacy-sections";
 import { MarketingFooter } from "@/components/marketing/marketing-footer";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://runcabinet.com/download" },
   title: "Download Cabinet",
   description:
     "Download Cabinet, the AI workspace where your knowledge base, AI team, workflows, and live apps work together.",

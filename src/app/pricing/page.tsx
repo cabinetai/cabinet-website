@@ -9,6 +9,7 @@ import { SiteNavbar } from "@/components/site-navbar";
 import { MACOS_DOWNLOAD_URL } from "@/lib/site-config";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://runcabinet.com/pricing" },
   title: "Pricing | Cabinet",
   description:
     "Cabinet puts a team of AI to work on your files, 24/7. Ready-made AI teams for the job you need done, or build your own.",

@@ -24,6 +24,9 @@ export async function generateMetadata({
   return {
     title,
     description,
+    alternates: {
+      canonical: `https://runcabinet.com/industries/${found.slug}`,
+    },
     openGraph: {
       title,
       description,
