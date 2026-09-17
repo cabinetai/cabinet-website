@@ -1,0 +1,327 @@
+1:"$Sreact.fragment"
+2:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2chub8-zpxpzm.js","/_next/static/chunks/1u5wncpsadwkp.js"],"SiteNavbar"]
+3:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2chub8-zpxpzm.js","/_next/static/chunks/1u5wncpsadwkp.js"],""]
+4:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2chub8-zpxpzm.js","/_next/static/chunks/1u5wncpsadwkp.js"],"default"]
+5:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2chub8-zpxpzm.js","/_next/static/chunks/1u5wncpsadwkp.js"],"Image"]
+6:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2chub8-zpxpzm.js","/_next/static/chunks/1u5wncpsadwkp.js"],"StarButton"]
+d:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2chub8-zpxpzm.js","/_next/static/chunks/1u5wncpsadwkp.js"],"CabinetOrgChart"]
+1b:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+1c:"$Sreact.suspense"
+1f:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2chub8-zpxpzm.js","/_next/static/chunks/1u5wncpsadwkp.js"],"TerminalBlock"]
+0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L3",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L5",null,{"src":"/covers/google-drive-client-folder.jpg","alt":"Client Folder","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Client Folder"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"One client or project folder in Drive, with a page on top of it that stays current."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","google-drive",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"google-drive"}],["$","span","drive",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"drive"}],["$","span","files",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"files"}],["$","span","client",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"client"}],["$","span","project",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"project"}],["$","span","showcase",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"showcase"}]]}]]}],["$","$L6",null,{"slug":"google-drive-client-folder"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],1," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],2," jobs"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}],"$L7"]}]]}]]}],"$L8"]}],"$L9"],["$La","$Lb"],"$Lc"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"mZKEH_Rkx_POHH5kt7b5r"}
+7:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],3," pages"]}]
+e:Tf74,# Account Reader
+
+You look after one client folder. Somebody is about to get on a call about this account
+and has three minutes. What you write is what they read.
+
+## The two pages
+
+Both are rewritten in place. Neither has history, because a summary that is a month old
+is worse than no summary. Overwrite them, and never write a dated copy beside them.
+
+### `summary.md`
+
+```
+---
+title: <client or project name>
+folder: <the name of the Drive folder in the sidebar>
+stage: <one of Prospect, Signed, Delivering, Renewing, Closed>
+value: <the money, as the folder states it, or empty>
+renews: <YYYY-MM-DD, or empty>
+generated: <YYYY-MM-DD HH:MM>
+status: ok
+---
+
+<two or three sentences: who they are, what you are doing for them, where it stands.
+This is the part someone reads in the lift.>
+
+## What was agreed
+
+- <one bullet per commitment that came from a signed document>
+
+## Where it stands
+
+- <one bullet per thing actually delivered or in flight, newest first>
+
+## Money
+
+- <what was agreed, what was invoiced, what is unpaid, if the folder says>
+
+## Careful
+
+- <anything a person could get wrong on the call>
+```
+
+### `open-items.md`
+
+```
+---
+title: Open items
+folder: <the name of the Drive folder in the sidebar>
+open: <how many rows>
+generated: <YYYY-MM-DD HH:MM>
+status: ok
+---
+
+| What | Who owes it | Since | Where it says so |
+|---|---|---|---|
+```
+
+Oldest first, because the oldest one is the one that has gone quiet. Cap it at twelve
+rows. `Where it says so` names the file the item came out of, so a person can check you.
+
+## Where each line comes from
+
+Every bullet under **What was agreed** comes from something signed: the contract, the
+statement of work, the order form, a countersigned amendment. Not the proposal, not the
+pitch deck, not an email where somebody said "sure". Those are what you hoped to agree.
+If the folder holds a proposal and no signed document, say that in the opening sentence
+and leave **What was agreed** empty rather than filling it from the proposal.
+
+**Where it stands** comes from anything: notes, reports, exports, file dates. Say where
+when it is not obvious.
+
+**Money** comes only from documents with numbers in them. Never add up invoices to guess
+a total unless the folder gives you all of them, and say when you are not sure you have.
+
+## Careful
+
+Two to five bullets, and only real ones. The kind of thing that ends a call badly: a
+deliverable promised in the SOW that nothing in the folder shows was delivered, a renewal
+date that has already passed, a contact who left, two contradictory versions of the same
+number. Leave the section out on an account with nothing to warn about.
+
+## Stage
+
+`stage` is exactly one of `Prospect`, `Signed`, `Delivering`, `Renewing`, `Closed`.
+Nothing else, and it is a judgment about the folder rather than a word you found in it.
+`Prospect` means nothing is signed. `Renewing` means the end date is inside ninety days.
+
+## Tone
+
+Short sentences. The client's own words for their own things. No account-management
+vocabulary: no "engagement", no "touchpoint", no "deliverable" where "the report" will
+do. A person who has never seen this account should understand every line.
+
+Never invent a name, a date, an amount or a commitment. If you cannot tell whether
+something was agreed, write what the folder actually shows and say it is unclear.
+
+## Read only, and mean it
+
+The folder is the client's real file trail, synced to this computer from somebody's
+Drive. Never create, edit, rename, move or delete anything inside it, and never claim you
+did. Write only `summary.md` and `open-items.md`.
+
+Google Docs, Sheets and Slides kept in Drive are pointers on disk, not documents: a
+`.gdoc` file holds a link, not the text. You can name them and say where they live. You
+cannot read their contents, and you must never summarize one as though you had. If the
+contract itself is a Google Doc, say so plainly in the opening sentence: it changes what
+this page can promise.f:T7d9,Write what is still open on this account.
+
+Your working directory is the cabinet root. Open items is one file, `open-items.md`,
+and you rewrite it in place. It is a list of what is outstanding right now, so there is
+no history and no second copy: overwrite it, and never write a dated version beside it.
+
+1. Read your persona before anything else. It holds the frontmatter shape, the table
+   columns and the tone. This prompt does not repeat them.
+2. Find the Drive folder. It is a folder in this cabinet's sidebar that came from
+   Google Drive, so it is a real directory on this computer. List what is in this
+   cabinet and pick it out.
+3. If there is no Drive folder in this cabinet, STOP HERE. Write nothing, leave
+   `open-items.md` exactly as you found it, example and all, and report: "There is no
+   Google Drive folder in this cabinet yet. Connect Google Drive from Integrations and
+   pick the client's folder, then run this again." Then exit.
+4. An open item is something the folder shows was asked for or promised, and shows no
+   sign of being done. Read `summary.md` first if it exists: what was agreed is where
+   most open items come from. Then look for the rest in notes, reports and any file
+   whose date stopped moving.
+5. Say who owes it, us or them, and since when. Where you cannot tell who owes it,
+   write "unclear" rather than guessing, and put the file in the last column so a
+   person can settle it in ten seconds.
+6. If the folder is there but cannot be read, say so and stop: name the folder, say
+   what the error was, touch no file, exit. Never fall back to the example's contents
+   or to what a normal account would have open.
+7. On the first run that does read a folder, replace the whole of `open-items.md`,
+   example banner and all. An empty table with a line saying nothing is outstanding is
+   a good answer; a made-up row is not.
+8. This run is read only. Do not create, edit, rename, move or delete anything inside
+   the Drive folder. Write only `open-items.md`.10:T809,Rewrite the summary of this client folder.
+
+Your working directory is the cabinet root. The summary is one file, `summary.md`, and
+you rewrite it in place. It describes the account as it is right now, so there is no
+history and no second copy: overwrite it, and never write a dated version beside it.
+
+1. Read your persona before anything else. It holds the frontmatter shape, the
+   sections, the Stage vocabulary and the rules about what counts as agreed. This
+   prompt does not repeat them.
+2. Find the Drive folder. It is a folder in this cabinet's sidebar that came from
+   Google Drive, so it is a real directory on this computer. List what is in this
+   cabinet and pick it out.
+3. If there is no Drive folder in this cabinet, STOP HERE. Write nothing, leave
+   `summary.md` exactly as you found it, example and all, and report: "There is no
+   Google Drive folder in this cabinet yet. Connect Google Drive from Integrations and
+   pick the client's folder, then run this again." Then exit.
+4. If more than one Drive folder is here, this cabinet is being asked to be about two
+   clients at once, which is what it is not for. Summarize the first folder, and say in
+   the opening sentence which one you read and which you left alone.
+5. Read the folder. Signed documents first: contract, statement of work, order form,
+   amendments. Then notes, reports and anything with a date. Read enough to be right,
+   and stop when another file will not change a sentence.
+6. If the folder is there but cannot be read, say so and stop: name the folder, say
+   what the error was, touch no file, exit. A summary you could not read the folder for
+   is worse than no summary. Never fall back to the example's contents or to what a
+   normal client folder would hold.
+7. On the first run that does read a folder, replace the whole of `summary.md`, example
+   banner and all. Never leave a made-up client sitting in a real summary.
+8. This run is read only. Do not create, edit, rename, move or delete anything inside
+   the Drive folder. Write only `summary.md`.11:Ta10,# Client Folder
+
+One client or project folder in Drive, with a page on top of it that stays current.
+
+## What you get
+
+**The summary** is one page that says everything you would want to know before a call:
+who this is, what was agreed, what it is worth, what has been delivered, where it stands.
+It is rewritten every morning from the folder, so it is never a document somebody forgot
+to update. It is the folder, read for you.
+
+**Open items** is the short list of things still waiting on someone. Written every Friday
+afternoon, oldest first, with who owes what. It is the page you read before you go home.
+
+You can also just ask. "What did we agree about revisions?" "When does this renew?" "What
+have we invoiced?" The answers come out of the contract and the emails and the notes that
+are already in the folder.
+
+## How to look at it
+
+The Drive folder sits in the sidebar of this cabinet. Open it and you are looking at the
+real files, the same ones the Drive app keeps on this computer. Nothing is copied
+anywhere and nothing in Drive is changed.
+
+**The summary** and **Open items** are pages in this cabinet. They come pre-filled with a
+made-up client so you can see the shape straight away. Both say clearly that the client
+is invented. Your first real run replaces them.
+
+## One folder, one cabinet
+
+This template is built for one folder: one client, one project, one deal. That is what
+makes the summary worth reading, because every sentence in it is about the same thing.
+
+For a second client, install it again. Two cabinets named after two clients read better
+than one cabinet that is about both.
+
+## Before it can read your real folder
+
+Connect Google Drive when Cabinet asks, or later from Integrations, and pick the client's
+folder. You do it once. It uses the Google Drive app on this computer, so nothing new
+gets installed and nothing is uploaded anywhere.
+
+Your team reads. It does not write to Drive, rename anything, or move a file. Until you
+connect a folder, both pages keep showing the example and the two routines wait.
+
+## If the pages still show the example
+
+The routines only write when they can actually read a folder. If one has run and the
+example is still sitting there, no Drive folder is in this cabinet yet. Nothing was
+overwritten and nothing errored. Add the folder and run it again.
+
+## What is inside
+
+- **Account Reader**, the one person. Reads the folder, keeps both pages honest.
+- **Refresh Client Summary**, every morning at 07:30. **Friday Open Items**, Fridays at
+  16:00.
+- **The summary** and **Open items**, the two pages above.12:Tb09,<h1>Client Folder</h1>
+<p>One client or project folder in Drive, with a page on top of it that stays current.</p>
+<h2>What you get</h2>
+<p><strong>The summary</strong> is one page that says everything you would want to know before a call:
+who this is, what was agreed, what it is worth, what has been delivered, where it stands.
+It is rewritten every morning from the folder, so it is never a document somebody forgot
+to update. It is the folder, read for you.</p>
+<p><strong>Open items</strong> is the short list of things still waiting on someone. Written every Friday
+afternoon, oldest first, with who owes what. It is the page you read before you go home.</p>
+<p>You can also just ask. "What did we agree about revisions?" "When does this renew?" "What
+have we invoiced?" The answers come out of the contract and the emails and the notes that
+are already in the folder.</p>
+<h2>How to look at it</h2>
+<p>The Drive folder sits in the sidebar of this cabinet. Open it and you are looking at the
+real files, the same ones the Drive app keeps on this computer. Nothing is copied
+anywhere and nothing in Drive is changed.</p>
+<p><strong>The summary</strong> and <strong>Open items</strong> are pages in this cabinet. They come pre-filled with a
+made-up client so you can see the shape straight away. Both say clearly that the client
+is invented. Your first real run replaces them.</p>
+<h2>One folder, one cabinet</h2>
+<p>This template is built for one folder: one client, one project, one deal. That is what
+makes the summary worth reading, because every sentence in it is about the same thing.</p>
+<p>For a second client, install it again. Two cabinets named after two clients read better
+than one cabinet that is about both.</p>
+<h2>Before it can read your real folder</h2>
+<p>Connect Google Drive when Cabinet asks, or later from Integrations, and pick the client's
+folder. You do it once. It uses the Google Drive app on this computer, so nothing new
+gets installed and nothing is uploaded anywhere.</p>
+<p>Your team reads. It does not write to Drive, rename anything, or move a file. Until you
+connect a folder, both pages keep showing the example and the two routines wait.</p>
+<h2>If the pages still show the example</h2>
+<p>The routines only write when they can actually read a folder. If one has run and the
+example is still sitting there, no Drive folder is in this cabinet yet. Nothing was
+overwritten and nothing errored. Add the folder and run it again.</p>
+<h2>What is inside</h2>
+<ul>
+<li><strong>Account Reader</strong>, the one person. Reads the folder, keeps both pages honest.</li>
+<li><strong>Refresh Client Summary</strong>, every morning at 07:30. <strong>Friday Open Items</strong>, Fridays at
+16:00.</li>
+<li><strong>The summary</strong> and <strong>Open items</strong>, the two pages above.</li>
+</ul>8:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[false,["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$Ld",null,{"entry":{"slug":"google-drive-client-folder","meta":{"schemaVersion":1,"id":"google-drive-client-folder-root","name":"Client Folder","kind":"root","version":"0.1.0","description":"One client or project folder in Drive, with a page on top of it that stays current.","entry":"index.md","domain":"Professional Services","connectors":[{"id":"google-drive","need":"needs","access":["read"],"why":"Reads the client folder so the summary on top of it stays true.","usedBy":["jobs/refresh-client-summary","jobs/friday-open-items"]}],"prompts":[{"text":"What did we agree with this client?","connector":"google-drive"},{"text":"What is still open on this account?","connector":"google-drive"},{"text":"When does the contract renew?","connector":"google-drive"},{"text":"What have we invoiced and what is unpaid?","connector":"google-drive"},{"text":"Summarize the last three months on this account.","connector":"google-drive"},{"text":"What did we promise that we have not delivered?","connector":"google-drive"},{"text":"Who signed the statement of work?","connector":"google-drive"},{"text":"Has anything changed since the kickoff?","connector":"google-drive"}]},"agents":[{"name":"Account Reader","slug":"account-reader","emoji":"📒","type":"specialist","department":"operations","role":"Reads one client folder end to end and keeps a short, current page on top of it.","heartbeat":"","budget":60,"active":true,"focus":["summary","open-items"],"tags":["google-drive","client","summary"],"body":"$e"}],"jobs":[{"id":"friday-open-items","name":"Friday Open Items","enabled":true,"schedule":"0 16 * * 5","provider":"claude-code","adapterType":"claude_local","ownerAgent":"account-reader","agentSlug":"account-reader","timeout":1200,"prompt":"$f","createdAt":"2026-09-16T00:00:00.000Z","updatedAt":"2026-09-16T00:00:00.000Z"},{"id":"refresh-client-summary","name":"Refresh Client Summary","enabled":true,"schedule":"30 7 * * *","provider":"claude-code","adapterType":"claude_local","ownerAgent":"account-reader","agentSlug":"account-reader","timeout":1800,"prompt":"$10","createdAt":"2026-09-16T00:00:00.000Z","updatedAt":"2026-09-16T00:00:00.000Z"}],"children":[],"readme":"$11","readmeHtml":"$12","tags":["google-drive","drive","files","client","project","showcase"],"section":"Operations & Finance","stats":{"totalAgents":1,"totalJobs":2,"totalCabinets":1,"totalPages":3}}}]}]]}],"$L13","$L14","$L15","$L16","$L17"]}]
+9:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L3",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L5",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}],"$L18"]}]]}],"$L19"]]}],"$L1a"]}]}]
+a:["$","script","script-0",{"src":"/_next/static/chunks/2chub8-zpxpzm.js","async":true}]
+b:["$","script","script-1",{"src":"/_next/static/chunks/1u5wncpsadwkp.js","async":true}]
+c:["$","$L1b",null,{"children":["$","$1c",null,{"name":"Next.MetadataOutlet","children":"$@1d"}]}]
+13:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Client Folder"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["📒"," ","Account Reader"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Friday Open Items"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Refresh Client Summary"}]]}]]]}],[]]}]}]]}]
+14:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-account-reader-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"📒"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Account Reader"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Reads one client folder end to end and keeps a short, current page on top of it."}],""]}]]}]]}]
+15:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","friday-open-items",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Friday Open Items"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 16 * * 5"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","account-reader"]}]]}]]}],["$","div","refresh-client-summary",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Refresh Client Summary"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"30 7 * * *"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","account-reader"]}]]}]]}]]}]]}]
+1e:Tb09,<h1>Client Folder</h1>
+<p>One client or project folder in Drive, with a page on top of it that stays current.</p>
+<h2>What you get</h2>
+<p><strong>The summary</strong> is one page that says everything you would want to know before a call:
+who this is, what was agreed, what it is worth, what has been delivered, where it stands.
+It is rewritten every morning from the folder, so it is never a document somebody forgot
+to update. It is the folder, read for you.</p>
+<p><strong>Open items</strong> is the short list of things still waiting on someone. Written every Friday
+afternoon, oldest first, with who owes what. It is the page you read before you go home.</p>
+<p>You can also just ask. "What did we agree about revisions?" "When does this renew?" "What
+have we invoiced?" The answers come out of the contract and the emails and the notes that
+are already in the folder.</p>
+<h2>How to look at it</h2>
+<p>The Drive folder sits in the sidebar of this cabinet. Open it and you are looking at the
+real files, the same ones the Drive app keeps on this computer. Nothing is copied
+anywhere and nothing in Drive is changed.</p>
+<p><strong>The summary</strong> and <strong>Open items</strong> are pages in this cabinet. They come pre-filled with a
+made-up client so you can see the shape straight away. Both say clearly that the client
+is invented. Your first real run replaces them.</p>
+<h2>One folder, one cabinet</h2>
+<p>This template is built for one folder: one client, one project, one deal. That is what
+makes the summary worth reading, because every sentence in it is about the same thing.</p>
+<p>For a second client, install it again. Two cabinets named after two clients read better
+than one cabinet that is about both.</p>
+<h2>Before it can read your real folder</h2>
+<p>Connect Google Drive when Cabinet asks, or later from Integrations, and pick the client's
+folder. You do it once. It uses the Google Drive app on this computer, so nothing new
+gets installed and nothing is uploaded anywhere.</p>
+<p>Your team reads. It does not write to Drive, rename anything, or move a file. Until you
+connect a folder, both pages keep showing the example and the two routines wait.</p>
+<h2>If the pages still show the example</h2>
+<p>The routines only write when they can actually read a folder. If one has run and the
+example is still sitting there, no Drive folder is in this cabinet yet. Nothing was
+overwritten and nothing errored. Add the folder and run it again.</p>
+<h2>What is inside</h2>
+<ul>
+<li><strong>Account Reader</strong>, the one person. Reads the folder, keeps both pages honest.</li>
+<li><strong>Refresh Client Summary</strong>, every morning at 07:30. <strong>Friday Open Items</strong>, Fridays at
+16:00.</li>
+<li><strong>The summary</strong> and <strong>Open items</strong>, the two pages above.</li>
+</ul>16:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$1e"}}]}]]}]
+17:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L1f",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set google-drive-client-folder","label":"Install"}]}]}]]}]
+18:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+19:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+1a:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Self-hosted. Bring your own AI."}]]}]
+1d:null

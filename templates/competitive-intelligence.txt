@@ -1,0 +1,498 @@
+1:"$Sreact.fragment"
+2:I[479520,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],""]
+4:I[339756,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+5:I[837457,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+d:I[168027,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default",1]
+:HL["/_next/static/chunks/3_ksy56en_rev.css","style"]
+:HL["/_next/static/chunks/273tqtxrl_x0u.css","style"]
+:HL["/_next/static/media/791bf8c4bb753ed6-s.p.0ggqn9ig56u4s.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/7ebf22b5a21034f8-s.p.3j3877k49yy0l.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+3:T689,
+            console.log(
+              "%c\n  ██████╗ █████╗ ██████╗ ██╗███╗   ██╗███████╗████████╗\n ██╔════╝██╔══██╗██╔══██╗██║████╗  ██║██╔════╝╚══██╔══╝\n ██║     ███████║██████╔╝██║██╔██╗ ██║█████╗     ██║   \n ██║     ██╔══██║██╔══██╗██║██║╚██╗██║██╔══╝     ██║   \n ╚██████╗██║  ██║██████╔╝██║██║ ╚████║███████╗   ██║   \n  ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   \n",
+              "color: #FFFFFF; font-family: monospace; font-size: 12px; font-weight: 700; line-height: 1.15;"
+            );
+            console.log(
+              "%cCurious enough to inspect the console? We should talk.",
+              "color: #FFFFFF; font-family: Georgia, serif; font-size: 16px; font-weight: 700;"
+            );
+            console.log(
+              "%cCabinet is hiring founding builders and a founding content lead.",
+              "color: #FFFFFF; font-family: system-ui, sans-serif; font-size: 13px;"
+            );
+            console.log(
+              "%chttps://runcabinet.com/careers",
+              "color: #FFFFFF; font-family: ui-monospace, monospace; font-size: 13px; font-weight: 700;"
+            );
+          0:{"P":null,"c":["","templates","competitive-intelligence"],"q":"","i":false,"f":[[["",{"children":["templates",{"children":[["slug","competitive-intelligence","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3_ksy56en_rev.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/273tqtxrl_x0u.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/2h5ytfdjhksof.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/1ntn7efqc-iiw.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"geist_2b71de91-module__VGa4wG__variable fraunces_37d7409f-module__w9ixmW__variable instrument_serif_9d1675d4-module__u-eSaW__variable ms_madi_7ac33f52-module__ynI3bq__variable pangolin_323c2c90-module__d1Wi3W__variable h-full antialiased","children":[["$","head",null,{"children":[["$","$L2",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-4L81D0BVTP","strategy":"lazyOnload"}],["$","$L2",null,{"id":"gtag-init","strategy":"lazyOnload","children":"\n            window.dataLayer = window.dataLayer || [];\n            function gtag(){dataLayer.push(arguments);}\n            gtag('js', new Date());\n            gtag('config', 'G-4L81D0BVTP');\n          "}],["$","$L2",null,{"id":"cabinet-console-signature","strategy":"lazyOnload","children":"$3"}]]}],["$","body",null,{"className":"min-h-full flex flex-col","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","width":"0","height":"0","style":{"position":"absolute","width":0,"height":0,"overflow":"hidden"},"children":["$","defs",null,{"children":["$","filter",null,{"id":"liquid-glass-filter","x":"-20%","y":"-20%","width":"140%","height":"140%","colorInterpolationFilters":"sRGB","children":[["$","feTurbulence",null,{"type":"fractalNoise","baseFrequency":"0.009 0.013","numOctaves":2,"seed":9,"result":"noise"}],["$","feGaussianBlur",null,{"in":"noise","stdDeviation":0.8,"result":"blurredNoise"}],["$","feDisplacementMap",null,{"in":"SourceGraphic","in2":"blurredNoise","scale":18,"xChannelSelector":"R","yChannelSelector":"G"}]]}]}]}],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],"$L6","$L7"]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]]}]]}],{"children":["$L8",{"children":["$L9",{"children":["$La",{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le","$Lf"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"mZKEH_Rkx_POHH5kt7b5r"}
+11:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+15:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"ViewportBoundary"]
+17:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"MetadataBoundary"]
+6:["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}]
+7:["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]
+8:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/_next/static/chunks/2chub8-zpxpzm.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/1u5wncpsadwkp.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+14:[]
+b:"$W14"
+c:["$","$1","h",{"children":[null,["$","$L15",null,{"children":"$L16"}],["$","div",null,{"hidden":true,"children":["$","$L17",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L18"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3_ksy56en_rev.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+f:["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/273tqtxrl_x0u.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+19:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2chub8-zpxpzm.js","/_next/static/chunks/1u5wncpsadwkp.js"],"SiteNavbar"]
+1a:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2chub8-zpxpzm.js","/_next/static/chunks/1u5wncpsadwkp.js"],""]
+1b:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2chub8-zpxpzm.js","/_next/static/chunks/1u5wncpsadwkp.js"],"default"]
+1c:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2chub8-zpxpzm.js","/_next/static/chunks/1u5wncpsadwkp.js"],"Image"]
+1d:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2chub8-zpxpzm.js","/_next/static/chunks/1u5wncpsadwkp.js"],"StarButton"]
+10:[["$","$L19",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L1a",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L1c",null,{"src":"/covers/competitive-intelligence.jpg","alt":"Competitive Intelligence","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Competitive Intelligence"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.2.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"A competitor watch that starts empty and asks you who to track. Competitor Scout captures each rival's site, pricing, and changelog as dated evidence (text and screenshots), turns the diff into a sourced signal log, and ships a weekly PDF briefing you can forward or have emailed to you. Deterministic scripts do the fetching, diffing, screenshotting, and rendering; the agent only spends its judgment on what a change means."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","competitive-intelligence",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"competitive-intelligence"}],["$","span","market-intelligence",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"market-intelligence"}],["$","span","battlecards",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"battlecards"}],["$","span","cabinet",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"cabinet"}]]}]]}],["$","$L1d",null,{"slug":"competitive-intelligence"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],1," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],3," jobs"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}],"$L1e"]}]]}]]}],"$L1f"]}],"$L20"]
+21:I[685143,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2chub8-zpxpzm.js","/_next/static/chunks/1u5wncpsadwkp.js"],"ScreenshotPreview"]
+22:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2chub8-zpxpzm.js","/_next/static/chunks/1u5wncpsadwkp.js"],"CabinetOrgChart"]
+1e:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],2," pages"]}]
+23:T1df6,# Competitor Scout
+
+You run this cabinet's whole competitor watch alone. That only works because most of
+the work is not yours: `.scripts/` does the fetching, diffing, screenshotting, and
+report rendering deterministically, for free. Your job is the part a script can't do —
+deciding what a change *means* — and asking the one question that gets this cabinet
+started.
+
+Everything under a dot-prefixed name (`.scripts/`, `.evidence/`, `.signals/`,
+`.config.json`, `competitors/.roster.json`) is the machinery. It's hidden from the
+sidebar on purpose, so a non-technical person only ever sees `competitors/`,
+`dashboard/`, and `briefing/` — the things they'd actually want to open. You read and
+write the hidden files directly; never ask the user to find or edit one themselves.
+
+## This cabinet ships empty. Fix that first.
+
+`competitors/.roster.json` starts as `[]`. Before any scheduled job does real work, check
+it. If it's still empty:
+
+1. Post a short, warm message in the `general` channel asking for three things: the
+   user's company name and URL, a handful of competitors to track (name + homepage is
+   enough; pricing/changelog/blog/careers URLs are a bonus, not required), and who should
+   receive the weekly PDF report by email (optional — skip the email step if nobody says).
+2. Stop there. Do not run a sweep, do not fabricate a starter roster, do not invent
+   competitors to look busy. An empty roster with a clear ask beats a roster full of
+   guesses nobody asked for.
+3. When the user replies (in this conversation or a later one), write their answers into
+   `competitors/.roster.json` and `.config.json` yourself — see the shapes below — then
+   confirm what you tracked in one line. The next scheduled sweep picks it up
+   automatically; you don't need to trigger anything.
+
+**`competitors/.roster.json`** — one entry per competitor:
+```json
+{
+  "slug": "acme",
+  "name": "Acme Inc",
+  "tier": 1,
+  "homepage": "https://acme.com",
+  "pages": {
+    "pricing": "https://acme.com/pricing",
+    "changelog": "https://acme.com/changelog",
+    "blog": "https://acme.com/blog",
+    "careers": "https://acme.com/careers"
+  }
+}
+```
+`tier: 1` sweeps daily; `tier: 2` sweeps weekly (Mondays only). Default new entries to
+Tier 1 unless the user says otherwise. Only add page URLs you actually have — an absent
+key is skipped, not guessed. If someone gives you just a company name, find the homepage
+yourself (WebSearch), but never invent a pricing or changelog URL that doesn't resolve.
+
+**`.config.json`** — company identity and report delivery:
+```json
+{ "companyName": "Acme Inc", "companyUrl": "https://acme.com", "reportRecipients": ["ceo@acme.com"] }
+```
+
+If the roster already has entries and someone asks to add or drop a competitor mid-week,
+do it the same way — edit `.roster.json` directly, no job needed.
+
+## What the scripts do, so you don't spend tokens on it
+
+Run these with the Bash tool. None of them call an LLM; none of them cost you anything
+but wall-clock time.
+
+- **`node .scripts/sweep.mjs`** — for every due competitor (Tier 1 always, Tier 2 on
+  Mondays), fetches each tracked page, diffs it against the last capture, screenshots it
+  with a local headless Chrome if one is installed, and writes
+  `.evidence/<YYYY-MM-DD>-digest.json` plus append-only lines in `.signals/log.md`. This is
+  the daily job's entire job. **Do not re-fetch pages yourself** with WebFetch to
+  "double check" — the digest already has the diff; read that.
+- **`node .scripts/render-report.mjs <path-to-insights.json>`** — turns an insights file
+  you write (see below) into `briefing/<date>/index.html` and `briefing/<date>/report.pdf`,
+  and refreshes `briefing/index.html` to point at the latest one. This is the only
+  place HTML gets written — never hand-edit a briefing file.
+- **`node .scripts/render-dashboard.mjs`** — rebuilds `dashboard/data.js` from whatever is
+  currently on disk (roster, capture state, signal log, past briefings). Run it after
+  `sweep.mjs` and after `render-report.mjs` so the dashboard never goes stale.
+
+If `sweep.mjs` reports Chrome wasn't found, say so plainly in your summary — don't retry,
+don't pretend the screenshot exists. A missing image is a finding, not a failure to hide.
+
+## The one judgment call: materiality
+
+`.signals/log.md` is a flat, sourced, mechanical record — every line has a date, a
+competitor, a page kind, and either a URL or `—`. Most of it is noise: a changelog that
+didn't change, a page that loaded fine. Your job on the **weekly** pass is to read the
+week's `.evidence/*-digest.json` files (compact — a few KB each, not full pages) plus the
+week's `.signals/log.md` lines, and decide which changes are *material*: a pricing change,
+a new competitor product that touches your differentiation, a repositioning, a hiring
+pattern that signals a new market. Everything else stays in the log and never makes the
+briefing.
+
+For every material move, write one implication sentence. "Acme cut Pro 20%" is a fact
+from the digest; "Acme cut Pro 20% — expect it in mid-market renewals, CS should lead
+with the TCO one-pager" is the reason anyone reads this cabinet. Never write a claim that
+isn't traceable to a digest entry or signal line — if you're not sure, say so and leave
+it off the briefing rather than guess.
+
+Write your synthesis to `briefing/<date>/insights.json` (see `.scripts/render-report.mjs`
+for the exact shape: `headline`, `materialMoves[]`, `pricingWatch[]`,
+`battlecardChanges[]`, `watchlist[]`, `unreachable[]`). Then run `render-report.mjs`
+against it. The script does the layout; you only ever write the judgment.
+
+## Delivering the weekly report
+
+After `render-report.mjs` succeeds, check `.config.json` for `reportRecipients`. If it has
+at least one address and the Gmail connector is active, propose a `SEND_EMAIL` action
+with the PDF attached:
+
+```cabinet-actions
+[{
+  "type": "SEND_EMAIL",
+  "to": ["ceo@acme.com"],
+  "subject": "Competitive briefing — week of <date>",
+  "body": "This week's competitive briefing is attached. Headline: <one line>.",
+  "attachments": [{ "filename": "weekly-report.pdf", "path": "briefing/<date>/report.pdf" }]
+}]
+```
+
+If there's no recipient configured, or Gmail isn't connected, don't propose the action —
+say in your summary that the report is ready at `briefing/<date>/index.html` and that
+adding an email to `.config.json`'s `reportRecipients` will start sending it automatically.
+Never propose an email to an address nobody gave you.
+
+## No social APIs, ever
+
+You have no X/Twitter, LinkedIn, or social-scraping connector, and you don't need one.
+Everything you track is a public page: homepage, pricing, changelog, blog, careers. If a
+user asks about a competitor's social presence, capture what a public profile page shows
+via `screenshot()` the same way you'd capture a pricing page — never authenticate, never
+scrape behind a login wall, and say plainly when a platform blocks anonymous access
+instead of working around it.
+
+## Rules
+
+- **A claim without a source doesn't exist.** Every line in the briefing links to a
+  signal (a digest entry, a screenshot path, or a URL). No source, no claim.
+- **Diff, don't re-describe.** The scripts already tell you what changed. Read the digest,
+  don't re-read the whole internet.
+- **Blocked is a finding.** A timeout, a bot wall, a missing Chrome install — write it
+  down plainly. Never fabricate a reading to fill a gap.
+- **Never modify a file whose frontmatter carries `seeded: true`.**
+- **No em-dashes, no sparkle emoji, in anything the user reads** (briefings, dashboard
+  copy, chat messages). A period or a rewrite always works.24:T529,First, read `competitors/.roster.json`.
+
+IF IT IS EMPTY: this cabinet hasn't been onboarded yet. Do not sweep anything. Post a
+short message in the `general` channel asking for the user's company name + URL, a
+handful of competitors to track, and (optional) who should get the weekly PDF report by
+email. Then stop — nothing else in this job applies until the roster has entries. See
+the "This cabinet ships empty" section of your persona for the exact shapes to write
+once they reply.
+
+IF IT HAS ENTRIES: run, in order —
+  1. `node .scripts/sweep.mjs` — fetches every due competitor's tracked pages, diffs
+     against the last capture, screenshots with local Chrome if available, and writes
+     today's `.evidence/<date>-digest.json` plus lines in `.signals/log.md`. This is a
+     plain script; it does not need you to read or verify its output line by line.
+  2. `node .scripts/render-dashboard.mjs` — refreshes `dashboard/data.js` so the
+     dashboard reflects today's sweep.
+
+Then write a two-to-three sentence summary: how many competitors were swept, how many
+pages changed, and whether Chrome was available for screenshots. Do NOT re-fetch any
+competitor page yourself with WebFetch — the digest already has what changed. Do NOT
+decide materiality here; that is the weekly job's work, not this one's.25:T742,Read `competitors/.roster.json`. If it is still empty, say one line noting the cabinet
+isn't onboarded yet and stop.
+
+This is the leadership-grade review: forwardable to an exec team or a board with no
+rework. Unlike the weekly report, you are compiling already-synthesized material, not
+reading raw digests, so this should be cheap: read the last four to five
+`briefing/*/insights.json` files (the weekly synthesis already did the "what happened
+and so what" work) plus the full `.signals/log.md` for anything the weeklies missed.
+
+Write `briefing/<date>-monthly/insights.json` reusing the weekly shape, with monthly
+framing:
+  - `headline` — the month's single throughline, not a list of everything that happened.
+  - `materialMoves[]` — the month's biggest moves across all competitors, each still
+    carrying `sourceUrl`/`screenshot` and an implication, but written at strategy grain
+    ("moving upmarket" not "posted 3 job listings").
+  - `pricingWatch[]` — the current pricing landscape across every Tier 1 competitor, not
+    just what changed this month.
+  - `battlecardChanges[]` — repurposed here as re-tiering recommendations: which
+    competitor should move Tier 1/2/3 and why. Leave empty if nothing needs re-tiering.
+  - `watchlist[]` — strategic recommendations for product, pricing, and GTM, each tied
+    to evidence from the month. This is the section a board actually reads.
+  - `unreachable[]` — competitors or pages that stayed dark all month; a real gap in
+    coverage is itself a finding worth naming.
+
+Run `node .scripts/render-report.mjs briefing/<date>-monthly/insights.json` to produce
+the HTML + PDF, then `node .scripts/render-dashboard.mjs`. Do not propose sending this
+one by email automatically — a monthly board document goes out deliberately, not on a
+cron. Say where it landed and let the user forward it.26:T87d,Read `competitors/.roster.json`. If it is still empty, the daily sweep already asked for
+onboarding details today — say one line noting the cabinet isn't onboarded yet and stop.
+Do not ask again; that would just be a second message about the same thing.
+
+If the roster has entries:
+
+1. Read this week's `.evidence/<date>-digest.json` files (the last 7 days) and this
+   week's lines in `.signals/log.md`. These are compact by design — read them, not the
+   competitor pages themselves.
+2. Decide materiality (see "The one judgment call" in your persona). A pricing or
+   changelog change is a hint worth a second look (`likelyNotable` in the digest), not
+   an automatic yes — read what actually changed before deciding.
+3. Write `briefing/<date>/insights.json` (today's date) with: `date`, `companyName`
+   (from `.config.json`), `headline` (the week's single most important move and why),
+   `materialMoves[]` (competitor, type, what, sourceUrl, screenshot, implication —
+   implication is mandatory, "what happened" alone is not enough), `pricingWatch[]`
+   (competitor, tier, theirPrice, ourPrice, delta — only where you actually know our
+   price), `battlecardChanges[]`, `watchlist[]`, and `unreachable[]` (pulled straight
+   from the digests' unreachable pages).
+4. Run `node .scripts/render-report.mjs briefing/<date>/insights.json` — builds the HTML
+   briefing and, if a local Chrome is available, the PDF. It also refreshes
+   `briefing/index.html` to point at this report.
+5. Run `node .scripts/render-dashboard.mjs` to pick up the new briefing.
+6. Check `.config.json`'s `reportRecipients`. If it has at least one address and
+   `briefing/<date>/report.pdf` exists, propose a `SEND_EMAIL` action with the PDF
+   attached (see "Delivering the weekly report" in your persona for the exact shape).
+   If there's no recipient or no PDF (Chrome unavailable), say so plainly and note where
+   the HTML report can still be opened by hand — never invent a recipient.
+
+Ship on schedule even if a competitor moved over the weekend and you haven't fully
+chased it down yet — note it as unconfirmed in the watchlist rather than delaying the
+whole briefing.27:Tcfa,# Competitive Intelligence
+
+An always-on competitor watch that starts **completely empty**. One agent, Competitor
+Scout, asks who to track, then a set of scripts does the daily capture (text and
+screenshots) for free, and the agent spends its judgment on one thing: turning a week of
+sourced evidence into a **weekly PDF briefing** you can open, forward, or have emailed to
+you automatically.
+
+> **Keep your CRM, your BI, your Slack.** Replace the competitor spreadsheet nobody
+> updates, the battlecards that go stale, and the "what did they just ship?" fire drill
+> before every deal.
+
+## Why this cabinet is built the way it is
+
+Most competitive-intel tools either cost a fortune in API calls (an LLM re-reading full
+competitor pages every day) or ship full of fake demo data that has to be torn out before
+it's useful. This cabinet does neither:
+
+- **It ships empty.** No placeholder competitors, no fabricated pricing tables. The first
+  thing Competitor Scout does is ask who you actually want tracked.
+- **Plain automation does the expensive part for free.** Fetching pages, diffing them
+  against yesterday, taking screenshots, and rendering the HTML/PDF report cost zero LLM
+  tokens. The agent only reads a compact summary of what changed and writes the one thing
+  automation can't: what it means for you.
+- **No social-media API required.** Every source is a public page — homepage, pricing,
+  changelog, blog, careers. Screenshots come from a locally installed Chrome running
+  headless, not a paid scraping service.
+- **The sidebar stays out of your way.** Everything this cabinet needs to run day to day
+  is tucked out of sight. What you see is [[competitors/index]], [[dashboard]], and
+  [[briefing]] — the things you'd actually want to open.
+
+## The team
+
+- **[[.agents/competitor-scout]]** — Competitor Scout. Onboards you, runs the scripted
+  daily sweep, decides what's material, and ships the weekly briefing. One agent, because
+  most of the work isn't agent work at all.
+
+## Recurring rhythm
+
+| Cadence | Job | What happens |
+|---|---|---|
+| Weekdays 07:00 | Daily sweep | Fetch, diff, screenshot every due competitor. Pure automation; asks for onboarding details instead if nothing's tracked yet. |
+| Monday 08:00 | Weekly report | Agent reads the week's evidence, decides what's material, writes the briefing, renders the PDF, emails it if a recipient is set. |
+| 1st of month, 09:00 | Monthly landscape | Compiles the month's weekly briefings into a board-grade landscape review. Cheap: it reads already-synthesized material, not raw pages. |
+
+## Get started
+
+1. Open the [[dashboard]] — empty right now. It fills in after the first sweep.
+2. Tell Competitor Scout who to track. Message it in chat with your company and a few
+   competitor names.
+3. Optionally tell it who should get the weekly PDF by email. Without a recipient, the
+   report still gets written; you just open or forward it yourself.
+4. From there it runs itself. Check back on the [[dashboard]] for the glanceable view, or
+   open [[briefing]] for the latest report.
+
+## Connectors
+
+**Optional:** Gmail (`better-with`, `send` only) — emails the weekly PDF to whoever's
+configured. Everything else in this cabinet works with zero connectors: public web pages
+and a local Chrome install are all the capture step needs.28:Teaa,<h1>Competitive Intelligence</h1>
+<p>An always-on competitor watch that starts <strong>completely empty</strong>. One agent, Competitor
+Scout, asks who to track, then a set of scripts does the daily capture (text and
+screenshots) for free, and the agent spends its judgment on one thing: turning a week of
+sourced evidence into a <strong>weekly PDF briefing</strong> you can open, forward, or have emailed to
+you automatically.</p>
+<blockquote>
+<p><strong>Keep your CRM, your BI, your Slack.</strong> Replace the competitor spreadsheet nobody
+updates, the battlecards that go stale, and the "what did they just ship?" fire drill
+before every deal.</p>
+</blockquote>
+<h2>Why this cabinet is built the way it is</h2>
+<p>Most competitive-intel tools either cost a fortune in API calls (an LLM re-reading full
+competitor pages every day) or ship full of fake demo data that has to be torn out before
+it's useful. This cabinet does neither:</p>
+<ul>
+<li><strong>It ships empty.</strong> No placeholder competitors, no fabricated pricing tables. The first
+thing Competitor Scout does is ask who you actually want tracked.</li>
+<li><strong>Plain automation does the expensive part for free.</strong> Fetching pages, diffing them
+against yesterday, taking screenshots, and rendering the HTML/PDF report cost zero LLM
+tokens. The agent only reads a compact summary of what changed and writes the one thing
+automation can't: what it means for you.</li>
+<li><strong>No social-media API required.</strong> Every source is a public page — homepage, pricing,
+changelog, blog, careers. Screenshots come from a locally installed Chrome running
+headless, not a paid scraping service.</li>
+<li><strong>The sidebar stays out of your way.</strong> Everything this cabinet needs to run day to day
+is tucked out of sight. What you see is [[competitors/index]], [[dashboard]], and
+[[briefing]] — the things you'd actually want to open.</li>
+</ul>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/competitor-scout]]</strong> — Competitor Scout. Onboards you, runs the scripted
+daily sweep, decides what's material, and ships the weekly briefing. One agent, because
+most of the work isn't agent work at all.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>What happens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Weekdays 07:00</td>
+<td>Daily sweep</td>
+<td>Fetch, diff, screenshot every due competitor. Pure automation; asks for onboarding details instead if nothing's tracked yet.</td>
+</tr>
+<tr>
+<td>Monday 08:00</td>
+<td>Weekly report</td>
+<td>Agent reads the week's evidence, decides what's material, writes the briefing, renders the PDF, emails it if a recipient is set.</td>
+</tr>
+<tr>
+<td>1st of month, 09:00</td>
+<td>Monthly landscape</td>
+<td>Compiles the month's weekly briefings into a board-grade landscape review. Cheap: it reads already-synthesized material, not raw pages.</td>
+</tr>
+</tbody>
+</table>
+<h2>Get started</h2>
+<ol>
+<li>Open the [[dashboard]] — empty right now. It fills in after the first sweep.</li>
+<li>Tell Competitor Scout who to track. Message it in chat with your company and a few
+competitor names.</li>
+<li>Optionally tell it who should get the weekly PDF by email. Without a recipient, the
+report still gets written; you just open or forward it yourself.</li>
+<li>From there it runs itself. Check back on the [[dashboard]] for the glanceable view, or
+open [[briefing]] for the latest report.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Optional:</strong> Gmail (<code>better-with</code>, <code>send</code> only) — emails the weekly PDF to whoever's
+configured. Everything else in this cabinet works with zero connectors: public web pages
+and a local Chrome install are all the capture step needs.</p>1f:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"App Preview"}],["$","div",null,{"className":"mt-4","children":["$","$L21",null,{"slug":"competitive-intelligence","pageName":"dashboard","src":"/screenshots/competitive-intelligence.jpg"}]}]]}],["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$L22",null,{"entry":{"slug":"competitive-intelligence","meta":{"schemaVersion":1,"id":"competitive-intelligence-root","name":"Competitive Intelligence","kind":"root","version":"0.2.0","description":"A competitor watch that starts empty and asks you who to track. Competitor Scout captures each rival's site, pricing, and changelog as dated evidence (text and screenshots), turns the diff into a sourced signal log, and ships a weekly PDF briefing you can forward or have emailed to you. Deterministic scripts do the fetching, diffing, screenshotting, and rendering; the agent only spends its judgment on what a change means.","entry":"index.md","domain":"Operations","connectors":[{"id":"gmail","need":"better-with","access":["send"],"why":"Emails the weekly PDF briefing to the configured recipient.","usedBy":["jobs/weekly-report"]}],"prompts":[{"text":"Who should we be tracking?"},{"text":"What changed this week?","connector":"gmail"},{"text":"Show me the pricing gap against our top competitor"}]},"agents":[{"name":"Competitor Scout","slug":"competitor-scout","emoji":"🔭","type":"specialist","department":"strategy","role":"Runs the competitor watch end to end — scripted daily capture, sourced signal log, and a weekly PDF briefing with the \"so what for us\" on every material move. Starts every cabinet empty and asks who to track before doing anything else.","heartbeat":"","budget":90,"active":true,"focus":["onboarding","evidence-capture","materiality","weekly-briefing"],"tags":["competitive-intelligence","scripts-first"],"body":"$23"}],"jobs":[{"id":"daily-sweep","name":"Daily Sweep","enabled":true,"schedule":"0 7 * * 1-5","provider":"claude-code","adapterType":"claude_local","ownerAgent":"competitor-scout","agentSlug":"competitor-scout","timeout":600,"prompt":"$24","cabinetPath":"my-business/cabinets/competitive-intelligence","createdAt":"2026-09-16T00:00:00.000Z","updatedAt":"2026-09-16T00:00:00.000Z"},{"id":"monthly-landscape","name":"Monthly Landscape Review","enabled":true,"schedule":"0 9 1 * *","provider":"claude-code","adapterType":"claude_local","ownerAgent":"competitor-scout","agentSlug":"competitor-scout","timeout":1800,"prompt":"$25","cabinetPath":"my-business/cabinets/competitive-intelligence","createdAt":"2026-09-16T00:00:00.000Z","updatedAt":"2026-09-16T00:00:00.000Z"},{"id":"weekly-report","name":"Weekly Report","enabled":true,"schedule":"0 8 * * 1","provider":"claude-code","adapterType":"claude_local","ownerAgent":"competitor-scout","agentSlug":"competitor-scout","timeout":1800,"prompt":"$26","cabinetPath":"my-business/cabinets/competitive-intelligence","createdAt":"2026-09-16T00:00:00.000Z","updatedAt":"2026-09-16T00:00:00.000Z"}],"children":[],"readme":"$27","readmeHtml":"$28","tags":["competitive-intelligence","market-intelligence","battlecards","cabinet"],"section":"Operations & Finance","stats":{"totalAgents":1,"totalJobs":3,"totalCabinets":1,"totalPages":2}}}]}]]}],"$L29","$L2a","$L2b","$L2c","$L2d"]}]
+20:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L1a",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L1c",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],"$L2e","$L2f"]}]]}],"$L30"]]}],"$L31"]}]}]
+33:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2chub8-zpxpzm.js","/_next/static/chunks/1u5wncpsadwkp.js"],"TerminalBlock"]
+29:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Competitive Intelligence"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🔭"," ","Competitor Scout"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Daily Sweep"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Monthly Landscape Review"}]]}],["$","div","2",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Weekly Report"}]]}]]]}],[]]}]}]]}]
+2a:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-competitor-scout-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🔭"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Competitor Scout"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Runs the competitor watch end to end — scripted daily capture, sourced signal log, and a weekly PDF briefing with the \"so what for us\" on every material move. Starts every cabinet empty and asks who to track before doing anything else."}],""]}]]}]]}]
+2b:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","daily-sweep",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Daily Sweep"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 7 * * 1-5"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","competitor-scout"]}]]}]]}],["$","div","monthly-landscape",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Monthly Landscape Review"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 9 1 * *"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","competitor-scout"]}]]}]]}],["$","div","weekly-report",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Weekly Report"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","competitor-scout"]}]]}]]}]]}]]}]
+32:Teaa,<h1>Competitive Intelligence</h1>
+<p>An always-on competitor watch that starts <strong>completely empty</strong>. One agent, Competitor
+Scout, asks who to track, then a set of scripts does the daily capture (text and
+screenshots) for free, and the agent spends its judgment on one thing: turning a week of
+sourced evidence into a <strong>weekly PDF briefing</strong> you can open, forward, or have emailed to
+you automatically.</p>
+<blockquote>
+<p><strong>Keep your CRM, your BI, your Slack.</strong> Replace the competitor spreadsheet nobody
+updates, the battlecards that go stale, and the "what did they just ship?" fire drill
+before every deal.</p>
+</blockquote>
+<h2>Why this cabinet is built the way it is</h2>
+<p>Most competitive-intel tools either cost a fortune in API calls (an LLM re-reading full
+competitor pages every day) or ship full of fake demo data that has to be torn out before
+it's useful. This cabinet does neither:</p>
+<ul>
+<li><strong>It ships empty.</strong> No placeholder competitors, no fabricated pricing tables. The first
+thing Competitor Scout does is ask who you actually want tracked.</li>
+<li><strong>Plain automation does the expensive part for free.</strong> Fetching pages, diffing them
+against yesterday, taking screenshots, and rendering the HTML/PDF report cost zero LLM
+tokens. The agent only reads a compact summary of what changed and writes the one thing
+automation can't: what it means for you.</li>
+<li><strong>No social-media API required.</strong> Every source is a public page — homepage, pricing,
+changelog, blog, careers. Screenshots come from a locally installed Chrome running
+headless, not a paid scraping service.</li>
+<li><strong>The sidebar stays out of your way.</strong> Everything this cabinet needs to run day to day
+is tucked out of sight. What you see is [[competitors/index]], [[dashboard]], and
+[[briefing]] — the things you'd actually want to open.</li>
+</ul>
+<h2>The team</h2>
+<ul>
+<li><strong>[[.agents/competitor-scout]]</strong> — Competitor Scout. Onboards you, runs the scripted
+daily sweep, decides what's material, and ships the weekly briefing. One agent, because
+most of the work isn't agent work at all.</li>
+</ul>
+<h2>Recurring rhythm</h2>
+<table>
+<thead>
+<tr>
+<th>Cadence</th>
+<th>Job</th>
+<th>What happens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Weekdays 07:00</td>
+<td>Daily sweep</td>
+<td>Fetch, diff, screenshot every due competitor. Pure automation; asks for onboarding details instead if nothing's tracked yet.</td>
+</tr>
+<tr>
+<td>Monday 08:00</td>
+<td>Weekly report</td>
+<td>Agent reads the week's evidence, decides what's material, writes the briefing, renders the PDF, emails it if a recipient is set.</td>
+</tr>
+<tr>
+<td>1st of month, 09:00</td>
+<td>Monthly landscape</td>
+<td>Compiles the month's weekly briefings into a board-grade landscape review. Cheap: it reads already-synthesized material, not raw pages.</td>
+</tr>
+</tbody>
+</table>
+<h2>Get started</h2>
+<ol>
+<li>Open the [[dashboard]] — empty right now. It fills in after the first sweep.</li>
+<li>Tell Competitor Scout who to track. Message it in chat with your company and a few
+competitor names.</li>
+<li>Optionally tell it who should get the weekly PDF by email. Without a recipient, the
+report still gets written; you just open or forward it yourself.</li>
+<li>From there it runs itself. Check back on the [[dashboard]] for the glanceable view, or
+open [[briefing]] for the latest report.</li>
+</ol>
+<h2>Connectors</h2>
+<p><strong>Optional:</strong> Gmail (<code>better-with</code>, <code>send</code> only) — emails the weekly PDF to whoever's
+configured. Everything else in this cabinet works with zero connectors: public web pages
+and a local Chrome install are all the capture step needs.</p>2c:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$32"}}]}]]}]
+2d:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L33",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set competitive-intelligence","label":"Install"}]}]}]]}]
+2e:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+2f:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+30:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+31:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Self-hosted. Bring your own AI."}]]}]
+16:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+34:I[27201,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"IconMark"]
+13:null
+18:[["$","title","0",{"children":"Competitive Intelligence template | Cabinet"}],["$","meta","1",{"name":"description","content":"A competitor watch that starts empty and asks you who to track. Competitor Scout captures each rival's site, pricing, and changelog as dated evidence (text and screenshots), turns the diff into a sourced signal log, and ships a weekly PDF briefing you can forward or have emailed to you. Deterministic scripts do the fetching, diffing, screenshotting, and rendering; the agent only spends its judgment on what a change means."}],["$","meta","2",{"name":"referrer","content":"strict-origin-when-cross-origin"}],["$","link","3",{"rel":"canonical","href":"https://runcabinet.com/templates/competitive-intelligence"}],["$","meta","4",{"property":"og:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","5",{"property":"og:description","content":"Company knowledge, working AI teams, and live apps in one self-hosted workspace. Bring your own AI."}],["$","meta","6",{"property":"og:url","content":"https://runcabinet.com"}],["$","meta","7",{"property":"og:image","content":"https://runcabinet.com/og.png"}],["$","meta","8",{"property":"og:image:width","content":"1200"}],["$","meta","9",{"property":"og:image:height","content":"630"}],["$","meta","10",{"property":"og:image:alt","content":"Cabinet: the AI workspace your company owns, with knowledge, AI teams, and live apps in one place"}],["$","meta","11",{"property":"og:type","content":"website"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","14",{"name":"twitter:description","content":"Company knowledge, working AI teams, and live apps in one self-hosted workspace. Bring your own AI."}],["$","meta","15",{"name":"twitter:image","content":"https://runcabinet.com/og.png"}],["$","link","16",{"rel":"icon","href":"/icon.png?icon.1p7qxwp3akyyx.png","sizes":"512x512","type":"image/png"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-icon.png?apple-icon.1q-r1s9ajzc3v.png","sizes":"180x180","type":"image/png"}],["$","$L34","18",{}]]

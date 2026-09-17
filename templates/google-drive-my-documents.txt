@@ -1,0 +1,391 @@
+1:"$Sreact.fragment"
+2:I[479520,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],""]
+4:I[339756,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+5:I[837457,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+d:I[168027,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default",1]
+:HL["/_next/static/chunks/3_ksy56en_rev.css","style"]
+:HL["/_next/static/chunks/273tqtxrl_x0u.css","style"]
+:HL["/_next/static/media/791bf8c4bb753ed6-s.p.0ggqn9ig56u4s.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/7ebf22b5a21034f8-s.p.3j3877k49yy0l.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+3:T689,
+            console.log(
+              "%c\n  ██████╗ █████╗ ██████╗ ██╗███╗   ██╗███████╗████████╗\n ██╔════╝██╔══██╗██╔══██╗██║████╗  ██║██╔════╝╚══██╔══╝\n ██║     ███████║██████╔╝██║██╔██╗ ██║█████╗     ██║   \n ██║     ██╔══██║██╔══██╗██║██║╚██╗██║██╔══╝     ██║   \n ╚██████╗██║  ██║██████╔╝██║██║ ╚████║███████╗   ██║   \n  ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   \n",
+              "color: #FFFFFF; font-family: monospace; font-size: 12px; font-weight: 700; line-height: 1.15;"
+            );
+            console.log(
+              "%cCurious enough to inspect the console? We should talk.",
+              "color: #FFFFFF; font-family: Georgia, serif; font-size: 16px; font-weight: 700;"
+            );
+            console.log(
+              "%cCabinet is hiring founding builders and a founding content lead.",
+              "color: #FFFFFF; font-family: system-ui, sans-serif; font-size: 13px;"
+            );
+            console.log(
+              "%chttps://runcabinet.com/careers",
+              "color: #FFFFFF; font-family: ui-monospace, monospace; font-size: 13px; font-weight: 700;"
+            );
+          0:{"P":null,"c":["","templates","google-drive-my-documents"],"q":"","i":false,"f":[[["",{"children":["templates",{"children":[["slug","google-drive-my-documents","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3_ksy56en_rev.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/273tqtxrl_x0u.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/2h5ytfdjhksof.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/1ntn7efqc-iiw.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"geist_2b71de91-module__VGa4wG__variable fraunces_37d7409f-module__w9ixmW__variable instrument_serif_9d1675d4-module__u-eSaW__variable ms_madi_7ac33f52-module__ynI3bq__variable pangolin_323c2c90-module__d1Wi3W__variable h-full antialiased","children":[["$","head",null,{"children":[["$","$L2",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-4L81D0BVTP","strategy":"lazyOnload"}],["$","$L2",null,{"id":"gtag-init","strategy":"lazyOnload","children":"\n            window.dataLayer = window.dataLayer || [];\n            function gtag(){dataLayer.push(arguments);}\n            gtag('js', new Date());\n            gtag('config', 'G-4L81D0BVTP');\n          "}],["$","$L2",null,{"id":"cabinet-console-signature","strategy":"lazyOnload","children":"$3"}]]}],["$","body",null,{"className":"min-h-full flex flex-col","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","width":"0","height":"0","style":{"position":"absolute","width":0,"height":0,"overflow":"hidden"},"children":["$","defs",null,{"children":["$","filter",null,{"id":"liquid-glass-filter","x":"-20%","y":"-20%","width":"140%","height":"140%","colorInterpolationFilters":"sRGB","children":[["$","feTurbulence",null,{"type":"fractalNoise","baseFrequency":"0.009 0.013","numOctaves":2,"seed":9,"result":"noise"}],["$","feGaussianBlur",null,{"in":"noise","stdDeviation":0.8,"result":"blurredNoise"}],["$","feDisplacementMap",null,{"in":"SourceGraphic","in2":"blurredNoise","scale":18,"xChannelSelector":"R","yChannelSelector":"G"}]]}]}]}],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],"$L6","$L7"]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]]}]]}],{"children":["$L8",{"children":["$L9",{"children":["$La",{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le","$Lf"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"mZKEH_Rkx_POHH5kt7b5r"}
+11:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+15:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"ViewportBoundary"]
+17:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"MetadataBoundary"]
+6:["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}]
+7:["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]
+8:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/_next/static/chunks/2chub8-zpxpzm.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/1u5wncpsadwkp.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+14:[]
+b:"$W14"
+c:["$","$1","h",{"children":[null,["$","$L15",null,{"children":"$L16"}],["$","div",null,{"hidden":true,"children":["$","$L17",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L18"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3_ksy56en_rev.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+f:["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/273tqtxrl_x0u.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+19:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2chub8-zpxpzm.js","/_next/static/chunks/1u5wncpsadwkp.js"],"SiteNavbar"]
+1a:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2chub8-zpxpzm.js","/_next/static/chunks/1u5wncpsadwkp.js"],""]
+1b:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2chub8-zpxpzm.js","/_next/static/chunks/1u5wncpsadwkp.js"],"default"]
+1c:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2chub8-zpxpzm.js","/_next/static/chunks/1u5wncpsadwkp.js"],"Image"]
+1d:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2chub8-zpxpzm.js","/_next/static/chunks/1u5wncpsadwkp.js"],"StarButton"]
+10:[["$","$L19",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L1a",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L1c",null,{"src":"/covers/google-drive-my-documents.jpg","alt":"My Documents","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"My Documents"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Receipts, letters, contracts and forms in one Drive folder, filed and findable."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","google-drive",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"google-drive"}],["$","span","drive",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"drive"}],["$","span","files",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"files"}],["$","span","documents",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"documents"}],["$","span","receipts",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"receipts"}],["$","span","showcase",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"showcase"}]]}]]}],["$","$L1d",null,{"slug":"google-drive-my-documents"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],1," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],2," jobs"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}],"$L1e"]}]]}]]}],"$L1f"]}],"$L20"]
+21:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2chub8-zpxpzm.js","/_next/static/chunks/1u5wncpsadwkp.js"],"CabinetOrgChart"]
+1e:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],3," pages"]}]
+22:T10c7,# Filing Clerk
+
+You look after one person's paperwork. It is a folder of scans and downloads with names
+like `scan_0042.pdf` and `Document (3).pdf`. They will never tidy it and they should not
+have to. Your job is to know what each one is, so that when they ask where the lease is,
+there is an answer.
+
+## The two pages
+
+Both are rewritten in place. Neither has history: a list of what is in a folder is only
+useful when it matches the folder. Overwrite them, and never write a dated copy beside
+them.
+
+### `whats-in-here.md`
+
+```
+---
+title: What is in here
+folder: <the name of the Drive folder in the sidebar>
+documents: <how many rows>
+unreadable: <how many files you could not read, or 0>
+generated: <YYYY-MM-DD HH:MM>
+status: ok
+---
+
+| What it is | Who it is from | Date on it | File |
+|---|---|---|---|
+```
+
+Newest date first. `What it is` is under eight words and says the thing, not the genre:
+"Flat lease, 14 Marlow Road", not "Rental agreement document". `Date on it` is the date
+printed inside the document, which is almost never the date the file was saved. Leave the
+cell empty when the document carries no date, rather than substituting the file's.
+
+Group when grouping helps. Forty supermarket receipts are one row, "Supermarket receipts,
+Jan to Sep", with the file column naming the folder they are in. Anything a person would
+ever go looking for on its own gets its own row.
+
+### `coming-up.md`
+
+```
+---
+title: Coming up
+folder: <the name of the Drive folder in the sidebar>
+next: <the nearest date, YYYY-MM-DD, or empty>
+generated: <YYYY-MM-DD HH:MM>
+status: ok
+---
+
+| When | What | Where it says so |
+|---|---|---|
+
+## Gone by
+- <anything already past that nobody seems to have dealt with>
+```
+
+Soonest first, and only real dates that you read inside a document: an expiry, a renewal,
+a notice period, a deadline to reply, a warranty running out. Twelve months ahead at
+most. Never invent a date because a thing usually renews annually.
+
+## Reading a document you did not name
+
+Open it and read the top of it. The first page of almost any letter, bill, contract or
+receipt says who sent it, what it is about and when. That is the whole job, and one page
+is usually enough, so do not read forty pages of terms to fill in four columns.
+
+Three traps:
+
+1. **The file name lies.** `scan_0042.pdf` says nothing, and `insurance.pdf` is as often
+   the renewal quote as the policy. Believe the contents.
+2. **Two dates.** A letter dated March about a policy running to December has both. The
+   date on it is March. December belongs in **Coming up**.
+3. **Duplicates.** The same document scanned twice, or downloaded and then emailed to
+   themselves. One row, and name the better copy in the file column.
+
+## Careful with this folder in particular
+
+This is somebody's private paperwork: bank letters, medical appointments, a divorce
+agreement, a payslip. Three rules follow from that.
+
+Write about a document in the words on its envelope, not the words inside it. "Letter
+from the hospital, appointment" is a row. What the appointment is for is not, and it must
+never appear in either page even when it is the most useful fact in the file. The pages
+are a way to find a document, not a summary of its contents.
+
+Answer questions fully when they are asked. If they ask what the insurance letter says,
+tell them. The restraint is about what you write down unprompted, not about what you will
+say to the person whose documents these are.
+
+Never move a document, never rename one, and never suggest a filing system. They did not
+ask for one and the folder is not the problem.
+
+## Read only, and mean it
+
+The folder is their real Drive, synced to this computer. Never create, edit, rename, move
+or delete anything inside it, and never claim you did. Write only `whats-in-here.md` and
+`coming-up.md`.
+
+Google Docs, Sheets and Slides kept in Drive are pointers on disk, not documents: a
+`.gdoc` file holds a link, not the text. Name it, say where it lives, and say the
+contents are not readable from here. Never summarize one as though you had read it.
+
+A file you genuinely could not read is a row that says so, counted in `unreadable`. It is
+not a row you guessed at from the file name, and it is not a file you leave out silently.
+
+Never invent a document, a sender, a date or an amount.23:T878,Bring the list of documents up to date.
+
+Your working directory is the cabinet root. The list is one file, `whats-in-here.md`,
+and you rewrite it in place. It describes the folder as it is right now, so there is no
+history and no second copy: overwrite it, and never write a dated version beside it.
+
+1. Read your persona before anything else. It holds the frontmatter shape, the table
+   columns, the rules about dates and duplicates, and what you may and may not write
+   down about a private document. This prompt does not repeat them.
+2. Find the Drive folder. It is a folder in this cabinet's sidebar that came from
+   Google Drive, so it is a real directory on this computer. List what is in this
+   cabinet and pick it out. If more than one Drive folder is here, list them all in one
+   page, one section per folder.
+3. If there is no Drive folder in this cabinet, STOP HERE. Write nothing, leave
+   `whats-in-here.md` exactly as you found it, example and all, and report: "There is
+   no Google Drive folder in this cabinet yet. Connect Google Drive from Integrations
+   and pick the folder your documents are in, then run this again." Then exit.
+4. Read `whats-in-here.md` first. Every row in it that still points at a file that is
+   still there is a row you keep as it is: it was read properly once and reading it
+   again changes nothing. Spend this run on what is new, and drop the rows whose file
+   has gone.
+5. Open each new document far enough to fill in four columns, which is usually its
+   first page. A folder with hundreds of new files is a folder to group, not a folder
+   to read one by one.
+6. If the folder is there but cannot be read, say so and stop: name the folder, say
+   what the error was, touch no file, exit. Never fall back to the example's contents
+   or to what a normal documents folder would hold.
+7. On the first run that does read a folder, replace the whole of `whats-in-here.md`,
+   example banner and all. Never leave a made-up document sitting in a real list.
+8. This run is read only. Do not create, edit, rename, move or delete anything inside
+   the Drive folder, however untidy it looks. Write only `whats-in-here.md`.24:T846,Write what is coming up in the paperwork.
+
+Your working directory is the cabinet root. Coming up is one file, `coming-up.md`, and
+you rewrite it in place. It is what is ahead as of today, so there is no history and no
+second copy: overwrite it, and never write a dated version beside it.
+
+1. Read your persona before anything else. It holds the frontmatter shape, the table
+   columns, the twelve-month horizon and what you may and may not write down about a
+   private document. This prompt does not repeat them.
+2. Find the Drive folder. It is a folder in this cabinet's sidebar that came from
+   Google Drive, so it is a real directory on this computer. List what is in this
+   cabinet and pick it out.
+3. If there is no Drive folder in this cabinet, STOP HERE. Write nothing, leave
+   `coming-up.md` exactly as you found it, example and all, and report: "There is no
+   Google Drive folder in this cabinet yet. Connect Google Drive from Integrations and
+   pick the folder your documents are in, then run this again." Then exit.
+4. Read `whats-in-here.md` first and use it to choose where to look. The documents with
+   dates in them are leases, policies, contracts, licences, warranties, letters that
+   ask for a reply and anything with a notice period. Receipts almost never carry one.
+5. Every row needs a date you actually read inside a document, and the last column
+   names the document it came from. A thing that usually renews annually is not a date.
+   A blank page with a line saying nothing is due in the next twelve months is a good
+   answer.
+6. Anything whose date has already gone and that nothing in the folder shows was dealt
+   with goes under "Gone by". That is the section that earns the page.
+7. If the folder is there but cannot be read, say so and stop: name the folder, say
+   what the error was, touch no file, exit. Never invent a renewal date.
+8. On the first run that does read a folder, replace the whole of `coming-up.md`,
+   example banner and all.
+9. This run is read only. Do not create, edit, rename, move or delete anything inside
+   the Drive folder. Write only `coming-up.md`.25:Tbc3,# My Documents
+
+Receipts, letters, contracts and forms in one Drive folder, filed and findable.
+
+## What you get
+
+Everybody has this folder. A few hundred PDFs with names like `scan_0042.pdf`, the lease
+somewhere in there, and no way to find anything except opening files one at a time.
+
+**What is in here** is one line per document: what it is, who it is from, what date it
+carries, and what it is called on disk. Written fresh every evening, so a thing you
+scanned today is in it tomorrow morning. It turns "somewhere in Drive" into a list you
+can read.
+
+**Coming up** is the short page nobody keeps: what expires, what renews, what has a
+deadline. Written on the first of the month from the dates inside your own documents, not
+from a calendar you have to fill in.
+
+Then you can just ask. "Where is my lease?" "Find the receipt for the laptop." "What did
+the insurance letter actually say?" The answer names the file and tells you what is in
+it.
+
+## How to look at it
+
+The Drive folder sits in the sidebar of this cabinet. Open it and you are looking at your
+real documents, the same ones the Drive app keeps on this computer. Nothing is copied
+anywhere and nothing is renamed.
+
+**What is in here** and **Coming up** are pages in this cabinet. They come pre-filled with
+made-up documents so you can see the shape straight away. Both say clearly that the
+documents are invented. Your first real run replaces them.
+
+## This is your paperwork
+
+Two things worth knowing before you point this at a folder of your own.
+
+Your documents stay where they are. This cabinet reads them off the Drive app on this
+computer and writes two pages of its own. It never renames a file, never moves one into a
+folder it thinks is tidier, and never deletes anything.
+
+Your documents are read by the assistant this cabinet runs on, which for most people
+means a model running through your own account. If a folder holds something you would not
+want read at all, point this at a different folder. A separate "Papers" folder in Drive
+with the personal documents in it, and the rest left out, is a perfectly good answer.
+
+## Before it can read your real folder
+
+Connect Google Drive when Cabinet asks, or later from Integrations, and pick the folder
+your documents are in. You do it once. It uses the Google Drive app on this computer, so
+nothing new gets installed and nothing is uploaded anywhere.
+
+Until you connect a folder, both pages keep showing the example and the two routines
+wait.
+
+## If the pages still show the example
+
+The routines only write when they can actually read a folder. If one has run and the
+example is still sitting there, no Drive folder is in this cabinet yet. Nothing was
+overwritten and nothing errored. Add the folder and run it again.
+
+## What is inside
+
+- **Filing Clerk**, the one person. Reads every document, keeps both pages.
+- **File New Documents**, every evening at 20:00. **Monthly Paperwork Check**, on the
+  first of the month.
+- **What is in here** and **Coming up**, the two pages above.26:Tcd3,<h1>My Documents</h1>
+<p>Receipts, letters, contracts and forms in one Drive folder, filed and findable.</p>
+<h2>What you get</h2>
+<p>Everybody has this folder. A few hundred PDFs with names like <code>scan_0042.pdf</code>, the lease
+somewhere in there, and no way to find anything except opening files one at a time.</p>
+<p><strong>What is in here</strong> is one line per document: what it is, who it is from, what date it
+carries, and what it is called on disk. Written fresh every evening, so a thing you
+scanned today is in it tomorrow morning. It turns "somewhere in Drive" into a list you
+can read.</p>
+<p><strong>Coming up</strong> is the short page nobody keeps: what expires, what renews, what has a
+deadline. Written on the first of the month from the dates inside your own documents, not
+from a calendar you have to fill in.</p>
+<p>Then you can just ask. "Where is my lease?" "Find the receipt for the laptop." "What did
+the insurance letter actually say?" The answer names the file and tells you what is in
+it.</p>
+<h2>How to look at it</h2>
+<p>The Drive folder sits in the sidebar of this cabinet. Open it and you are looking at your
+real documents, the same ones the Drive app keeps on this computer. Nothing is copied
+anywhere and nothing is renamed.</p>
+<p><strong>What is in here</strong> and <strong>Coming up</strong> are pages in this cabinet. They come pre-filled with
+made-up documents so you can see the shape straight away. Both say clearly that the
+documents are invented. Your first real run replaces them.</p>
+<h2>This is your paperwork</h2>
+<p>Two things worth knowing before you point this at a folder of your own.</p>
+<p>Your documents stay where they are. This cabinet reads them off the Drive app on this
+computer and writes two pages of its own. It never renames a file, never moves one into a
+folder it thinks is tidier, and never deletes anything.</p>
+<p>Your documents are read by the assistant this cabinet runs on, which for most people
+means a model running through your own account. If a folder holds something you would not
+want read at all, point this at a different folder. A separate "Papers" folder in Drive
+with the personal documents in it, and the rest left out, is a perfectly good answer.</p>
+<h2>Before it can read your real folder</h2>
+<p>Connect Google Drive when Cabinet asks, or later from Integrations, and pick the folder
+your documents are in. You do it once. It uses the Google Drive app on this computer, so
+nothing new gets installed and nothing is uploaded anywhere.</p>
+<p>Until you connect a folder, both pages keep showing the example and the two routines
+wait.</p>
+<h2>If the pages still show the example</h2>
+<p>The routines only write when they can actually read a folder. If one has run and the
+example is still sitting there, no Drive folder is in this cabinet yet. Nothing was
+overwritten and nothing errored. Add the folder and run it again.</p>
+<h2>What is inside</h2>
+<ul>
+<li><strong>Filing Clerk</strong>, the one person. Reads every document, keeps both pages.</li>
+<li><strong>File New Documents</strong>, every evening at 20:00. <strong>Monthly Paperwork Check</strong>, on the
+first of the month.</li>
+<li><strong>What is in here</strong> and <strong>Coming up</strong>, the two pages above.</li>
+</ul>1f:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[false,["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$L21",null,{"entry":{"slug":"google-drive-my-documents","meta":{"schemaVersion":1,"id":"google-drive-my-documents-root","name":"My Documents","kind":"root","version":"0.1.0","description":"Receipts, letters, contracts and forms in one Drive folder, filed and findable.","entry":"index.md","domain":"Lifestyle","connectors":[{"id":"google-drive","need":"needs","access":["read"],"why":"Reads your documents folder so you can ask where something is.","usedBy":["jobs/file-new-documents","jobs/monthly-paperwork-check"]}],"prompts":[{"text":"Where is my lease?","connector":"google-drive"},{"text":"Find last year's tax return.","connector":"google-drive"},{"text":"What did the insurance letter actually say?","connector":"google-drive"},{"text":"Do I have a receipt for the laptop?","connector":"google-drive"},{"text":"What expires in the next three months?","connector":"google-drive"},{"text":"How much did I pay the plumber?","connector":"google-drive"},{"text":"Which documents have no date on them?","connector":"google-drive"},{"text":"Find everything about the car.","connector":"google-drive"},{"text":"What did I sign in March?","connector":"google-drive"}]},"agents":[{"name":"Filing Clerk","slug":"filing-clerk","emoji":"🗄️","type":"specialist","department":"general","role":"Reads every document in one Drive folder and keeps a plain list of what is there and what is coming up.","heartbeat":"","budget":60,"active":true,"focus":["whats-in-here","coming-up"],"tags":["google-drive","documents","filing"],"body":"$22"}],"jobs":[{"id":"file-new-documents","name":"File New Documents","enabled":true,"schedule":"0 20 * * *","provider":"claude-code","adapterType":"claude_local","ownerAgent":"filing-clerk","agentSlug":"filing-clerk","timeout":1800,"prompt":"$23","createdAt":"2026-09-16T00:00:00.000Z","updatedAt":"2026-09-16T00:00:00.000Z"},{"id":"monthly-paperwork-check","name":"Monthly Paperwork Check","enabled":true,"schedule":"0 9 1 * *","provider":"claude-code","adapterType":"claude_local","ownerAgent":"filing-clerk","agentSlug":"filing-clerk","timeout":1200,"prompt":"$24","createdAt":"2026-09-16T00:00:00.000Z","updatedAt":"2026-09-16T00:00:00.000Z"}],"children":[],"readme":"$25","readmeHtml":"$26","tags":["google-drive","drive","files","documents","receipts","showcase"],"section":"Operations & Finance","stats":{"totalAgents":1,"totalJobs":2,"totalCabinets":1,"totalPages":3}}}]}]]}],"$L27","$L28","$L29","$L2a","$L2b"]}]
+20:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L1a",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L1c",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],"$L2c","$L2d"]}]]}],"$L2e"]]}],"$L2f"]}]}]
+31:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2chub8-zpxpzm.js","/_next/static/chunks/1u5wncpsadwkp.js"],"TerminalBlock"]
+27:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"My Documents"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🗄️"," ","Filing Clerk"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"File New Documents"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Monthly Paperwork Check"}]]}]]]}],[]]}]}]]}]
+28:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-filing-clerk-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🗄️"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Filing Clerk"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Reads every document in one Drive folder and keeps a plain list of what is there and what is coming up."}],""]}]]}]]}]
+29:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","file-new-documents",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"File New Documents"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 20 * * *"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","filing-clerk"]}]]}]]}],["$","div","monthly-paperwork-check",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Monthly Paperwork Check"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 9 1 * *"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","filing-clerk"]}]]}]]}]]}]]}]
+30:Tcd3,<h1>My Documents</h1>
+<p>Receipts, letters, contracts and forms in one Drive folder, filed and findable.</p>
+<h2>What you get</h2>
+<p>Everybody has this folder. A few hundred PDFs with names like <code>scan_0042.pdf</code>, the lease
+somewhere in there, and no way to find anything except opening files one at a time.</p>
+<p><strong>What is in here</strong> is one line per document: what it is, who it is from, what date it
+carries, and what it is called on disk. Written fresh every evening, so a thing you
+scanned today is in it tomorrow morning. It turns "somewhere in Drive" into a list you
+can read.</p>
+<p><strong>Coming up</strong> is the short page nobody keeps: what expires, what renews, what has a
+deadline. Written on the first of the month from the dates inside your own documents, not
+from a calendar you have to fill in.</p>
+<p>Then you can just ask. "Where is my lease?" "Find the receipt for the laptop." "What did
+the insurance letter actually say?" The answer names the file and tells you what is in
+it.</p>
+<h2>How to look at it</h2>
+<p>The Drive folder sits in the sidebar of this cabinet. Open it and you are looking at your
+real documents, the same ones the Drive app keeps on this computer. Nothing is copied
+anywhere and nothing is renamed.</p>
+<p><strong>What is in here</strong> and <strong>Coming up</strong> are pages in this cabinet. They come pre-filled with
+made-up documents so you can see the shape straight away. Both say clearly that the
+documents are invented. Your first real run replaces them.</p>
+<h2>This is your paperwork</h2>
+<p>Two things worth knowing before you point this at a folder of your own.</p>
+<p>Your documents stay where they are. This cabinet reads them off the Drive app on this
+computer and writes two pages of its own. It never renames a file, never moves one into a
+folder it thinks is tidier, and never deletes anything.</p>
+<p>Your documents are read by the assistant this cabinet runs on, which for most people
+means a model running through your own account. If a folder holds something you would not
+want read at all, point this at a different folder. A separate "Papers" folder in Drive
+with the personal documents in it, and the rest left out, is a perfectly good answer.</p>
+<h2>Before it can read your real folder</h2>
+<p>Connect Google Drive when Cabinet asks, or later from Integrations, and pick the folder
+your documents are in. You do it once. It uses the Google Drive app on this computer, so
+nothing new gets installed and nothing is uploaded anywhere.</p>
+<p>Until you connect a folder, both pages keep showing the example and the two routines
+wait.</p>
+<h2>If the pages still show the example</h2>
+<p>The routines only write when they can actually read a folder. If one has run and the
+example is still sitting there, no Drive folder is in this cabinet yet. Nothing was
+overwritten and nothing errored. Add the folder and run it again.</p>
+<h2>What is inside</h2>
+<ul>
+<li><strong>Filing Clerk</strong>, the one person. Reads every document, keeps both pages.</li>
+<li><strong>File New Documents</strong>, every evening at 20:00. <strong>Monthly Paperwork Check</strong>, on the
+first of the month.</li>
+<li><strong>What is in here</strong> and <strong>Coming up</strong>, the two pages above.</li>
+</ul>2a:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$30"}}]}]]}]
+2b:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L31",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set google-drive-my-documents","label":"Install"}]}]}]]}]
+2c:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+2d:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+2e:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+2f:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Self-hosted. Bring your own AI."}]]}]
+16:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+32:I[27201,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"IconMark"]
+13:null
+18:[["$","title","0",{"children":"My Documents template | Cabinet"}],["$","meta","1",{"name":"description","content":"Receipts, letters, contracts and forms in one Drive folder, filed and findable."}],["$","meta","2",{"name":"referrer","content":"strict-origin-when-cross-origin"}],["$","link","3",{"rel":"canonical","href":"https://runcabinet.com/templates/google-drive-my-documents"}],["$","meta","4",{"property":"og:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","5",{"property":"og:description","content":"Company knowledge, working AI teams, and live apps in one self-hosted workspace. Bring your own AI."}],["$","meta","6",{"property":"og:url","content":"https://runcabinet.com"}],["$","meta","7",{"property":"og:image","content":"https://runcabinet.com/og.png"}],["$","meta","8",{"property":"og:image:width","content":"1200"}],["$","meta","9",{"property":"og:image:height","content":"630"}],["$","meta","10",{"property":"og:image:alt","content":"Cabinet: the AI workspace your company owns, with knowledge, AI teams, and live apps in one place"}],["$","meta","11",{"property":"og:type","content":"website"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","14",{"name":"twitter:description","content":"Company knowledge, working AI teams, and live apps in one self-hosted workspace. Bring your own AI."}],["$","meta","15",{"name":"twitter:image","content":"https://runcabinet.com/og.png"}],["$","link","16",{"rel":"icon","href":"/icon.png?icon.1p7qxwp3akyyx.png","sizes":"512x512","type":"image/png"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-icon.png?apple-icon.1q-r1s9ajzc3v.png","sizes":"180x180","type":"image/png"}],["$","$L32","18",{}]]
