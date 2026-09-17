@@ -248,6 +248,18 @@ export function SolutionTemplate({ solution }: { solution: Solution }) {
               </div>
             ))}
           </div>
+          {solution.workflowLinks && (
+            <div className="mt-6 max-w-2xl space-y-3 font-body-serif leading-relaxed text-text-secondary">
+              {solution.workflowLinks.map((link) => (
+                <p key={link.href}>
+                  {link.lead}{" "}
+                  <Link href={link.href} className="text-accent underline underline-offset-4 hover:text-accent-warm">
+                    {link.label}
+                  </Link>.
+                </p>
+              ))}
+            </div>
+          )}
         </div>
       </section>
       {/* ─── Outcomes ─── */}

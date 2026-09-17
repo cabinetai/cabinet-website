@@ -36,6 +36,8 @@ export type Solution = {
   team: Agent[];
   /** Scheduled work that runs without anyone asking. */
   routines: Routine[];
+  /** Public workflow examples related to the scheduled work. */
+  workflowLinks?: { lead: string; label: string; href: string }[];
   /** Illustrative outcome stats (placeholders). */
   outcomes: Outcome[];
   /** Tools this function already lives in — Cabinet pulls them together. */
@@ -114,6 +116,10 @@ export const SOLUTIONS: Solution[] = [
       { when: "Every Monday, 8am", what: "Draft the week's content calendar from the quarter's goals." },
       { when: "Every 6 hours", what: "Scan competitor sites and Reddit; file anything noteworthy." },
       { when: "Every Friday, 5pm", what: "Compile a performance recap with next-week recommendations." },
+    ],
+    workflowLinks: [
+      { lead: "Organize briefs, drafts, and weekly reviews with the", label: "AI content calendar template", href: "/templates/content-calendar" },
+      { lead: "Keep a sourced record of market changes with the", label: "competitive intelligence template", href: "/templates/competitive-intelligence" },
     ],
     outcomes: [
       { stat: "4×", label: "more publish-ready drafts per week" },
@@ -226,6 +232,9 @@ export const SOLUTIONS: Solution[] = [
       { when: "Month-end", what: "Assemble the board-prep packet from the latest exports." },
       { when: "30 days before renewal", what: "Open a vendor review with usage and cost context." },
     ],
+    workflowLinks: [
+      { lead: "Explain metric changes in a weekly report with the", label: "KPI narrative template", href: "/templates/kpi-narrative" },
+    ],
     outcomes: [
       { stat: "Hours → minutes", label: "on recurring packets" },
       { stat: "Documented", label: "process that outlives any one person" },
@@ -262,6 +271,9 @@ export const SOLUTIONS: Solution[] = [
       { when: "Every morning", what: "Brief you on what moved overnight across the business." },
       { when: "Monthly", what: "Draft the investor update and board packet for your edit." },
       { when: "Before each decision", what: "Assemble the options memo with the trade-offs spelled out." },
+    ],
+    workflowLinks: [
+      { lead: "Turn company metrics and founder notes into a monthly draft with the", label: "investor update template", href: "/templates/investor-update" },
     ],
     outcomes: [
       { stat: "Self-hosted", label: "your data never leaves your control" },

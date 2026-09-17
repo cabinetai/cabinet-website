@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
   ArrowRight,
   Bot,
@@ -337,6 +338,12 @@ export function LegacyWhyTriad() {
             <span className="section-label">Your work lives on disk</span>
             <h3 className="mt-2 mb-2 font-display text-xl text-text-primary">Own your data</h3>
             <p className="text-sm font-body-serif leading-relaxed text-text-secondary">Everything is Markdown in a folder you own. Grep it, git it, back it up. No export, no lock-in.</p>
+            <p className="mt-3 text-sm font-body-serif leading-relaxed text-text-secondary">
+              Compare{" "}
+              <Link href="/compare/notion-alternatives" className="text-accent underline underline-offset-4 hover:text-accent-warm">
+                Notion alternatives for teams that want to own their data
+              </Link>.
+            </p>
           </div>
 
           {/* Bring your own AI - rotating vendor ring */}
