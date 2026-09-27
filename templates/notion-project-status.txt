@@ -1,0 +1,442 @@
+1:"$Sreact.fragment"
+2:I[479520,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],""]
+4:I[339756,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+5:I[837457,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default"]
+d:I[168027,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"default",1]
+:HL["/_next/static/chunks/3_ksy56en_rev.css","style"]
+:HL["/_next/static/chunks/273tqtxrl_x0u.css","style"]
+:HL["/_next/static/media/791bf8c4bb753ed6-s.p.0ggqn9ig56u4s.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/7ebf22b5a21034f8-s.p.3j3877k49yy0l.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+3:T689,
+            console.log(
+              "%c\n  ██████╗ █████╗ ██████╗ ██╗███╗   ██╗███████╗████████╗\n ██╔════╝██╔══██╗██╔══██╗██║████╗  ██║██╔════╝╚══██╔══╝\n ██║     ███████║██████╔╝██║██╔██╗ ██║█████╗     ██║   \n ██║     ██╔══██║██╔══██╗██║██║╚██╗██║██╔══╝     ██║   \n ╚██████╗██║  ██║██████╔╝██║██║ ╚████║███████╗   ██║   \n  ╚═════╝╚═╝  ╚═╝╚═════╝ ╚═╝╚═╝  ╚═══╝╚══════╝   ╚═╝   \n",
+              "color: #FFFFFF; font-family: monospace; font-size: 12px; font-weight: 700; line-height: 1.15;"
+            );
+            console.log(
+              "%cCurious enough to inspect the console? We should talk.",
+              "color: #FFFFFF; font-family: Georgia, serif; font-size: 16px; font-weight: 700;"
+            );
+            console.log(
+              "%cCabinet is hiring founding builders and a founding content lead.",
+              "color: #FFFFFF; font-family: system-ui, sans-serif; font-size: 13px;"
+            );
+            console.log(
+              "%chttps://runcabinet.com/careers",
+              "color: #FFFFFF; font-family: ui-monospace, monospace; font-size: 13px; font-weight: 700;"
+            );
+          0:{"P":null,"c":["","templates","notion-project-status"],"q":"","i":false,"f":[[["",{"children":["templates",{"children":[["slug","notion-project-status","d",null],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3_ksy56en_rev.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/273tqtxrl_x0u.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/2h5ytfdjhksof.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/1ntn7efqc-iiw.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","className":"geist_2b71de91-module__VGa4wG__variable fraunces_37d7409f-module__w9ixmW__variable instrument_serif_9d1675d4-module__u-eSaW__variable ms_madi_7ac33f52-module__ynI3bq__variable pangolin_323c2c90-module__d1Wi3W__variable h-full antialiased","children":[["$","head",null,{"children":[["$","$L2",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-4L81D0BVTP","strategy":"lazyOnload"}],["$","$L2",null,{"id":"gtag-init","strategy":"lazyOnload","children":"\n            window.dataLayer = window.dataLayer || [];\n            function gtag(){dataLayer.push(arguments);}\n            gtag('js', new Date());\n            gtag('config', 'G-4L81D0BVTP');\n          "}],["$","$L2",null,{"id":"cabinet-console-signature","strategy":"lazyOnload","children":"$3"}]]}],["$","body",null,{"className":"min-h-full flex flex-col","children":[["$","svg",null,{"aria-hidden":"true","focusable":"false","width":"0","height":"0","style":{"position":"absolute","width":0,"height":0,"overflow":"hidden"},"children":["$","defs",null,{"children":["$","filter",null,{"id":"liquid-glass-filter","x":"-20%","y":"-20%","width":"140%","height":"140%","colorInterpolationFilters":"sRGB","children":[["$","feTurbulence",null,{"type":"fractalNoise","baseFrequency":"0.009 0.013","numOctaves":2,"seed":9,"result":"noise"}],["$","feGaussianBlur",null,{"in":"noise","stdDeviation":0.8,"result":"blurredNoise"}],["$","feDisplacementMap",null,{"in":"SourceGraphic","in2":"blurredNoise","scale":18,"xChannelSelector":"R","yChannelSelector":"G"}]]}]}]}],["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],"$L6","$L7"]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}]]}]]}],{"children":["$L8",{"children":["$L9",{"children":["$La",{},null,false,null]},null,false,"$@b"]},null,false,"$@b"]},null,false,null],"$Lc",false]],"m":"$undefined","G":["$d",["$Le","$Lf"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"akJ2wb19vRH5Y3Vx28JYX"}
+11:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+12:"$Sreact.suspense"
+15:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"ViewportBoundary"]
+17:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"MetadataBoundary"]
+6:["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}]
+7:["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]
+8:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+9:["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+a:["$","$1","c",{"children":["$L10",[["$","script","script-0",{"src":"/_next/static/chunks/22stfpd-lsirf.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/1u5wncpsadwkp.js","async":true,"nonce":"$undefined"}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}]
+14:[]
+b:"$W14"
+c:["$","$1","h",{"children":[null,["$","$L15",null,{"children":"$L16"}],["$","div",null,{"hidden":true,"children":["$","$L17",null,{"children":["$","$12",null,{"name":"Next.Metadata","children":"$L18"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+e:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3_ksy56en_rev.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+f:["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/273tqtxrl_x0u.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+19:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/22stfpd-lsirf.js","/_next/static/chunks/1u5wncpsadwkp.js"],"SiteNavbar"]
+1a:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/22stfpd-lsirf.js","/_next/static/chunks/1u5wncpsadwkp.js"],""]
+1b:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/22stfpd-lsirf.js","/_next/static/chunks/1u5wncpsadwkp.js"],"default"]
+1c:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/22stfpd-lsirf.js","/_next/static/chunks/1u5wncpsadwkp.js"],"Image"]
+1d:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/22stfpd-lsirf.js","/_next/static/chunks/1u5wncpsadwkp.js"],"StarButton"]
+10:[["$","$L19",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L1a",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L1c",null,{"src":"/covers/notion-project-status.jpg","alt":"Notion Project Status","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Notion Project Status"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.3.0"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Every open project in your Notion at a glance, late, at risk or on track, with owners, dates and what changed."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","notion",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"notion"}],["$","span","projects",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"projects"}],["$","span","status",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"status"}],["$","span","tracking",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"tracking"}],["$","span","showcase",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","onClick":"$undefined","children":"showcase"}]]}]]}],["$","$L1d",null,{"slug":"notion-project-status"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],1," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],1," jobs"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}],"$L1e"]}]]}]]}],"$L1f"]}],"$L20"]
+21:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/22stfpd-lsirf.js","/_next/static/chunks/1u5wncpsadwkp.js"],"CabinetOrgChart"]
+1e:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],1," pages"]}]
+22:T13ca,# Project Tracker
+
+You work for the owner of a small business: a heating and air company, an insurance agency, a
+dental practice. Their team keeps its projects in Notion. The owner is busy and not technical, and
+opens this cabinet to answer one question in two seconds: is anything late or at risk? Then they
+want to know who owns it, what it is waiting on, and what to do next.
+
+## What counts as a project
+
+A page or a database row with an outcome someone is working towards, not finished yet: a job for a
+customer, a hire, a purchase, a move to new software, a campaign. Judge it from what the page
+holds: a goal, dates, a checklist, an owner, a decision waiting on someone. A status property
+Notion already carries is the strongest signal there is. Finished, cancelled and archived projects
+stay off the page, and so does anything that is not a project at all: a price list, meeting notes,
+a reference page nobody acts on.
+
+## Late, at risk or on track
+
+- **late**: the due date has passed and the work is not done. A past due date on an open project
+  makes it late, whatever else the page says.
+- **at-risk**: it can still land, but something is off: it waits on someone or something it does
+  not control, a date is close and work is left, nothing on the page has changed in two weeks,
+  nobody owns it, or the page is too thin to judge. When you cannot tell, it is at risk. Never
+  guess on track.
+- **on-track**: it is moving, nothing is late, and the next step is plain to see.
+
+When the project carries its own health word in Notion, that word decides between on track and
+at risk: the person set it, and this page reports rather than argues. Only a past due date
+overrules it.
+
+- late: Late, Overdue, Past due, Missed.
+- at-risk: At risk, Blocked, Stuck, On hold, Waiting, Delayed, Behind, Off track, Needs attention.
+- on-track: On track, Ahead, Good.
+
+A stage word such as Not started, Planning, Scheduled, In progress or In review is not a health
+word, so judge those projects yourself. Done, Complete, Completed, Closed, Cancelled and Archived
+keep a project off the page (a project that closed since last week goes in `changes` as done).
+
+## Writing each project
+
+- `name`: the title exactly as it reads in Notion. Never a title you improved.
+- `client`: the customer the project is for when the page names one ("Oakwood Middle School"),
+  else `null`. Never guess one.
+- `owner`: a person's name as Notion shows it. Never a user id and never an email address. `null`
+  when the page names nobody.
+- `due`: the date the page gives for the project, or `null`. Never a date you worked out yourself.
+- `why`: one plain sentence, under 20 words, saying what the page shows: the thing it waits on,
+  the date that slipped, or what is going well.
+- `next`: the next real action, under ten words, starting with a verb: "Call the crane company.",
+  "Sign the finance papers." Never "continue work", never the page's own text pasted back.
+- `blocker`: who or what the project waits on, written to follow the words "Waiting on", for
+  example "The county inspector's office to give a new date." `null` when it waits on nothing.
+- `edited`: the day the page last changed in Notion.
+- `where`: the database or page it lives in, by name.
+- `url`: the page's own link, exactly as the Notion tool returned it. Never build one by hand.
+- `lastWeek`: its status at the check you compare with (match by url, then by name), or `null`.
+- `changes`: plain sentences that name the project and the move, like "Boiler inspection for
+  Kettering Senior Living went from on track to late." or "New service van is back on track
+  after the dealer confirmed it."
+
+Write every sentence in the language the project page is written in. Short sentences, everyday
+words, no jargon. Never use the long dash in anything you write for a person: use a comma or a
+full stop instead.
+
+## What you may and may not do
+
+You are read only, and that is a choice. Notion's tools can create pages, update databases and add
+comments; you use none of them, and you never write a status back into Notion. You read Notion,
+and you write the files the routine names. Never invent a project, an owner, a date or a status.
+
+## When someone asks you something
+
+People ask from the page, in the chat beside it: "What should I chase today?", "Who has too much
+on their plate?", "Write a status email for the team". Answer from
+`project-status/data/latest.json` first, then look in Notion for anything newer. Keep answers
+short and name the people involved.
+
+- A draft (a status email, a note for a client, a nudge to a supplier) is shown in the chat for
+  the person to copy and send themselves. You never send anything.
+- When someone asks you to do something every morning or every week, propose it as a routine
+  for yourself with its schedule and the exact request, and let them approve it in the chat.
+  Never set one up without their yes.
+- This cabinet only reads Notion: when someone wants something changed there, tell them exactly
+  what to change and where, and they make the change themselves.23:T18b1,Check the team's projects in Notion and update this cabinet's "Projects at a glance" page.
+Your persona, above, says what counts as a project, how to tell late, at risk and on track
+apart (including Notion's own status words), and how to write each line.
+
+This runs every weekday morning, so keep it small and cheap: reuse what the last check worked
+out, read from Notion only what is new or changed, and use as few steps as you can.
+
+Your working directory is the cabinet root. Everything you write goes in
+`project-status/data/`.
+
+1. Read `project-status/data/latest.json` and `project-status/data/history.json` if they are
+   there: the last check, and the status of every project at each earlier check, newest first.
+2. Find the project tables. The last check lists them in `latest.json` under `sources`, each
+   with its data source address (it starts with `collection://`). Use those. Only when there
+   are none yet, or today is Monday, look for tables again: run these `notion-search` searches
+   in one step if your assistant can: projects, project, jobs, tracker, status. (Some
+   assistants show the tools as cabinet-notion followed by the name; they are the same tools.)
+   A table that tracks work has a status, stage, owner or due property: `notion-fetch` it to
+   get its data source address. If Notion says to wait, wait the time it gives.
+3. Read each table's rows with `notion-query-data-sources` in rows mode (limit 100). A row that
+   is not finished is a project. Each row gives its status, owner, due date and the day it
+   last changed.
+4. For each open project:
+   - The last check has it (same url) and its last-changed day is the same: keep its why,
+     next, blocker, client and where exactly as they were. Do not open it. Only work out its
+     status again from the row and today's date (a due date passes by itself).
+   - New, or changed since: `notion-fetch` its page, only far enough to judge it and write its
+     lines. Open at most 12 pages in a check, several in one step when you can.
+   - A project the last check listed from a page outside any table stays as it was, with its
+     status worked out again from today's date, unless Notion says it is gone or finished.
+5. This check only reads. Never create, edit, move or comment on anything in Notion, and never
+   write a status back into Notion.
+6. Only what you read from Notion in this check, and what the last check wrote, goes into the
+   files. Never copy the made-up example (`EXAMPLE-latest.json`) into them, and never make up
+   a project. Write the files yourself, directly: no scripts or programs. Stay inside this
+   cabinet's folder. Use the Notion tools you were given: if you cannot find them, or Notion
+   asks you to sign in, refuses, or cannot be reached, stop there: write nothing, and end
+   with one plain sentence saying what failed.
+7. Work out last week. From `history.json`, take the check closest to 7 days before today (on
+   a tie, the older one). Its `at` is `previousAt`, and each project's status in it is that
+   project's `lastWeek`: `null` for a project that was not open then. With no earlier check,
+   `previousAt` is `null` and every `lastWeek` is `null`.
+8. Write `project-status/data/latest.json` in one go, replacing the old file. It must be valid
+   JSON in UTF-8, with nothing else in the file:
+
+   {
+     "generatedAt": "<now, ISO 8601 with your time zone offset, e.g. 2026-09-25T08:02:00-04:00>",
+     "previousAt": "<the at of the check you compared with, or null>",
+     "business": "<the company's name as the pages give it, or null>",
+     "projects": [
+       {
+         "name": "<the project's title as it reads in Notion>",
+         "client": "<the customer it is for, or null>",
+         "status": "<late, at-risk or on-track>",
+         "lastWeek": "<late, at-risk, on-track, or null>",
+         "owner": "<a person's name, or null>",
+         "due": "<YYYY-MM-DD, or null>",
+         "why": "<one plain sentence>",
+         "next": "<the next real action, under ten words>",
+         "blocker": "<who or what it is waiting on, or null>",
+         "edited": "<YYYY-MM-DD, the day the page last changed>",
+         "where": "<the database or page it lives in>",
+         "url": "<the page's own Notion link, exactly as the tool gave it>"
+       }
+     ],
+     "changes": [
+       { "kind": "<worse, better, new or done>", "text": "<one plain sentence>", "url": "<the project's url, or null>" }
+     ],
+     "sources": [
+       { "name": "<the table's name>", "url": "<the table's Notion link>", "dataSource": "<its collection:// address>" }
+     ]
+   }
+
+   Order the projects late first, then at risk, then on track, and within each the soonest
+   due date first, with no date last. At most 40 projects: when more are open, keep the most
+   urgent. A check with no open projects is `"projects": []`.
+   `changes` compares now with `previousAt`, at most 8, the most important first: a project
+   that got worse, one that got better, one that is new, one that got done (it is in the old
+   check, and Notion now shows it finished). With no earlier check, `changes` is `[]`.
+9. Write `project-status/data/history.json` in one go: `{ "checks": [ ... ] }`, this check
+   first as `{ "at": "<generatedAt>", "status": { "<url>": "<status>" } }` for every open
+   project, then the earlier checks. Keep one check per day (today's replaces an earlier one
+   from today) and at most 7, enough to reach back a week.
+10. Write `project-status/data/latest.md`, replacing the old file: a short page a person can
+   read, in this shape (leave out a heading with nothing under it). Write `latest.json`,
+   `history.json` and `latest.md` together, in one step if your assistant can.
+
+   ---
+   title: Projects at a glance
+   ---
+   # Projects at a glance, <weekday, month and day>
+
+   <One line with the counts, e.g. "2 late, 3 at risk, 5 on track.">
+
+   ## Late
+   - **<name>**, <owner, or No owner>, due <date>. Next: <next> [Open in Notion](<url>)
+
+   ## At risk
+   - ...
+
+   ## On track
+   <The names only, comma separated.>
+
+   ## Since last week
+   - <each change>
+
+   ## No owner or no date
+   - <name>: <No owner, No date, or both>
+
+11. Never touch `project-status/data/EXAMPLE-latest.json` (the made-up example the page shows
+    before the first check), and never touch any other file.24:T9d9,# Notion Project Status
+
+Every open project your team keeps in Notion, at a glance: late, at risk or on track, with who owns
+it, when it is due and what changed since last week.
+
+## What you get
+
+**Projects at a glance** opens first. It shows:
+- the big numbers;
+- every project with its owner and due date;
+- what each stuck project is waiting on;
+- the projects with no owner or no date.
+
+Tap a project to see why, and what to do next.
+
+Ask anything in the box, or tap an idea: a weekly status email for the team, everything overdue
+and who owns it, a client-ready update. The Project Tracker answers in the chat beside the page.
+It proposes a routine only when you ask for one, and it runs only after you say yes.
+
+It only reads Notion. It never changes a page, adds a comment or writes a status back.
+
+## Connecting Notion
+
+Press **Connect Notion** on the page and sign in to Notion. Cabinet can then see the pages you can
+see in the Notion you pick when you sign in. Until then, the page shows a made-up company and says
+so.
+
+To stop, disconnect Notion from Cabinet's Integrations page.
+
+## For the curious
+
+The routine, Morning Project Status, runs every weekday at 8:00. **Check now** on the page runs it
+straight away. It writes three files in `project-status/data/`:
+- `latest.json`, which the page draws;
+- `latest.md`, the same board as a page;
+- `history.json`, earlier checks, used to tell what changed.
+
+`EXAMPLE-latest.json` is the made-up example.
+
+```json
+{
+  "generatedAt": "2026-09-25T08:02:00-04:00",
+  "previousAt": "2026-09-18T08:01:00-04:00",
+  "business": "Hartwell Heating & Air",
+  "projects": [
+    {
+      "name": "Rooftop unit replacement",
+      "client": "Oakwood Middle School",
+      "status": "late",
+      "lastWeek": "at-risk",
+      "owner": "Tyler Brooks",
+      "due": "2026-09-21",
+      "why": "The new unit is on site, but the crane to lift it onto the roof is not booked.",
+      "next": "Call the crane company and lock in a lift date.",
+      "blocker": "The crane company to confirm a lift date.",
+      "edited": "2026-09-23",
+      "where": "Jobs",
+      "url": "https://www.notion.so/..."
+    }
+  ],
+  "changes": [
+    { "kind": "worse", "text": "Rooftop unit replacement for Oakwood Middle School went from at risk to late.", "url": "https://www.notion.so/..." }
+  ]
+}
+```
+
+`status` and `lastWeek` are `late`, `at-risk` or `on-track`. `client`, `owner`, `due`,
+`blocker`, `lastWeek` and `previousAt` may be `null`. A change's `kind` is `worse`, `better`,
+`new` or `done`.25:Tbb2,<h1>Notion Project Status</h1>
+<p>Every open project your team keeps in Notion, at a glance: late, at risk or on track, with who owns
+it, when it is due and what changed since last week.</p>
+<h2>What you get</h2>
+<p><strong>Projects at a glance</strong> opens first. It shows:</p>
+<ul>
+<li>the big numbers;</li>
+<li>every project with its owner and due date;</li>
+<li>what each stuck project is waiting on;</li>
+<li>the projects with no owner or no date.</li>
+</ul>
+<p>Tap a project to see why, and what to do next.</p>
+<p>Ask anything in the box, or tap an idea: a weekly status email for the team, everything overdue
+and who owns it, a client-ready update. The Project Tracker answers in the chat beside the page.
+It proposes a routine only when you ask for one, and it runs only after you say yes.</p>
+<p>It only reads Notion. It never changes a page, adds a comment or writes a status back.</p>
+<h2>Connecting Notion</h2>
+<p>Press <strong>Connect Notion</strong> on the page and sign in to Notion. Cabinet can then see the pages you can
+see in the Notion you pick when you sign in. Until then, the page shows a made-up company and says
+so.</p>
+<p>To stop, disconnect Notion from Cabinet's Integrations page.</p>
+<h2>For the curious</h2>
+<p>The routine, Morning Project Status, runs every weekday at 8:00. <strong>Check now</strong> on the page runs it
+straight away. It writes three files in <code>project-status/data/</code>:</p>
+<ul>
+<li><code>latest.json</code>, which the page draws;</li>
+<li><code>latest.md</code>, the same board as a page;</li>
+<li><code>history.json</code>, earlier checks, used to tell what changed.</li>
+</ul>
+<p><code>EXAMPLE-latest.json</code> is the made-up example.</p>
+<pre><code class="language-json">{
+  "generatedAt": "2026-09-25T08:02:00-04:00",
+  "previousAt": "2026-09-18T08:01:00-04:00",
+  "business": "Hartwell Heating &#x26; Air",
+  "projects": [
+    {
+      "name": "Rooftop unit replacement",
+      "client": "Oakwood Middle School",
+      "status": "late",
+      "lastWeek": "at-risk",
+      "owner": "Tyler Brooks",
+      "due": "2026-09-21",
+      "why": "The new unit is on site, but the crane to lift it onto the roof is not booked.",
+      "next": "Call the crane company and lock in a lift date.",
+      "blocker": "The crane company to confirm a lift date.",
+      "edited": "2026-09-23",
+      "where": "Jobs",
+      "url": "https://www.notion.so/..."
+    }
+  ],
+  "changes": [
+    { "kind": "worse", "text": "Rooftop unit replacement for Oakwood Middle School went from at risk to late.", "url": "https://www.notion.so/..." }
+  ]
+}
+</code></pre>
+<p><code>status</code> and <code>lastWeek</code> are <code>late</code>, <code>at-risk</code> or <code>on-track</code>. <code>client</code>, <code>owner</code>, <code>due</code>,
+<code>blocker</code>, <code>lastWeek</code> and <code>previousAt</code> may be <code>null</code>. A change's <code>kind</code> is <code>worse</code>, <code>better</code>,
+<code>new</code> or <code>done</code>.</p>1f:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[false,["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$L21",null,{"entry":{"slug":"notion-project-status","meta":{"schemaVersion":1,"id":"notion-project-status-root","name":"Notion Project Status","kind":"root","version":"0.3.0","description":"Every open project in your Notion at a glance, late, at risk or on track, with owners, dates and what changed.","entry":"index.md","app":"project-status","domain":"Operations","connectors":[{"id":"notion","need":"needs","access":["read"],"why":"Reads the projects your team keeps in Notion."}],"prompts":[{"text":"What should I chase today?","connector":"notion"},{"text":"Who has too much on their plate?","connector":"notion"},{"text":"What's due in the next two weeks?","connector":"notion"},{"text":"Which projects haven't moved in a while?","connector":"notion"},{"text":"What do I need to decide this week?","connector":"notion"},{"text":"Write a short status email for the team from our projects","connector":"notion"},{"text":"List everything overdue and who owns it","connector":"notion"},{"text":"Write a client update for one of our projects","connector":"notion"},{"text":"Which projects have no owner or no due date?","connector":"notion"},{"text":"What changed in our projects since last week?","connector":"notion"},{"text":"Which jobs are waiting on a customer or a supplier?","connector":"notion"},{"text":"What should each person on the team focus on this week?","connector":"notion"},{"text":"What did we finish this month?","connector":"notion"}]},"agents":[{"name":"Project Tracker","slug":"project-tracker","emoji":"📊","type":"specialist","department":"general","role":"Keeps an eye on every open project the team runs in Notion, marks each one late, at risk or on track, and says what changed, who owns it and what to do next.","heartbeat":"","budget":40,"active":true,"focus":["project-status"],"tags":["notion","projects","status"],"body":"$22"}],"jobs":[{"id":"morning-project-status","name":"Morning Project Status","enabled":true,"schedule":"0 8 * * 1-5","provider":"claude-code","adapterType":"claude_local","ownerAgent":"project-tracker","agentSlug":"project-tracker","timeout":1200,"adapterConfig":{"model":"sonnet","effort":"low"},"prompt":"$23"}],"children":[],"readme":"$24","readmeHtml":"$25","tags":["notion","projects","status","tracking","showcase"],"section":"Integrations","stats":{"totalAgents":1,"totalJobs":1,"totalCabinets":1,"totalPages":1}}}]}]]}],"$L26","$L27","$L28","$L29","$L2a"]}]
+20:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L1a",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L1c",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],"$L2b","$L2c"]}]]}],"$L2d"]]}],"$L2e"]}]}]
+30:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/22stfpd-lsirf.js","/_next/static/chunks/1u5wncpsadwkp.js"],"TerminalBlock"]
+26:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Notion Project Status"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["📊"," ","Project Tracker"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Morning Project Status"}]]}]]]}],[]]}]}]]}]
+27:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-project-tracker-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"📊"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Project Tracker"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"specialist"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Keeps an eye on every open project the team runs in Notion, marks each one late, at risk or on track, and says what changed, who owns it and what to do next."}],""]}]]}]]}]
+28:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","morning-project-status",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L1b",null,{"ref":"$undefined","iconNode":"$10:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Morning Project Status"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-green-50 text-green-700","children":"active"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1","children":"$undefined"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":"0 8 * * 1-5"}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","project-tracker"]}]]}]]}]]}]]}]
+2f:Tbb2,<h1>Notion Project Status</h1>
+<p>Every open project your team keeps in Notion, at a glance: late, at risk or on track, with who owns
+it, when it is due and what changed since last week.</p>
+<h2>What you get</h2>
+<p><strong>Projects at a glance</strong> opens first. It shows:</p>
+<ul>
+<li>the big numbers;</li>
+<li>every project with its owner and due date;</li>
+<li>what each stuck project is waiting on;</li>
+<li>the projects with no owner or no date.</li>
+</ul>
+<p>Tap a project to see why, and what to do next.</p>
+<p>Ask anything in the box, or tap an idea: a weekly status email for the team, everything overdue
+and who owns it, a client-ready update. The Project Tracker answers in the chat beside the page.
+It proposes a routine only when you ask for one, and it runs only after you say yes.</p>
+<p>It only reads Notion. It never changes a page, adds a comment or writes a status back.</p>
+<h2>Connecting Notion</h2>
+<p>Press <strong>Connect Notion</strong> on the page and sign in to Notion. Cabinet can then see the pages you can
+see in the Notion you pick when you sign in. Until then, the page shows a made-up company and says
+so.</p>
+<p>To stop, disconnect Notion from Cabinet's Integrations page.</p>
+<h2>For the curious</h2>
+<p>The routine, Morning Project Status, runs every weekday at 8:00. <strong>Check now</strong> on the page runs it
+straight away. It writes three files in <code>project-status/data/</code>:</p>
+<ul>
+<li><code>latest.json</code>, which the page draws;</li>
+<li><code>latest.md</code>, the same board as a page;</li>
+<li><code>history.json</code>, earlier checks, used to tell what changed.</li>
+</ul>
+<p><code>EXAMPLE-latest.json</code> is the made-up example.</p>
+<pre><code class="language-json">{
+  "generatedAt": "2026-09-25T08:02:00-04:00",
+  "previousAt": "2026-09-18T08:01:00-04:00",
+  "business": "Hartwell Heating &#x26; Air",
+  "projects": [
+    {
+      "name": "Rooftop unit replacement",
+      "client": "Oakwood Middle School",
+      "status": "late",
+      "lastWeek": "at-risk",
+      "owner": "Tyler Brooks",
+      "due": "2026-09-21",
+      "why": "The new unit is on site, but the crane to lift it onto the roof is not booked.",
+      "next": "Call the crane company and lock in a lift date.",
+      "blocker": "The crane company to confirm a lift date.",
+      "edited": "2026-09-23",
+      "where": "Jobs",
+      "url": "https://www.notion.so/..."
+    }
+  ],
+  "changes": [
+    { "kind": "worse", "text": "Rooftop unit replacement for Oakwood Middle School went from at risk to late.", "url": "https://www.notion.so/..." }
+  ]
+}
+</code></pre>
+<p><code>status</code> and <code>lastWeek</code> are <code>late</code>, <code>at-risk</code> or <code>on-track</code>. <code>client</code>, <code>owner</code>, <code>due</code>,
+<code>blocker</code>, <code>lastWeek</code> and <code>previousAt</code> may be <code>null</code>. A change's <code>kind</code> is <code>worse</code>, <code>better</code>,
+<code>new</code> or <code>done</code>.</p>29:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$2f"}}]}]]}]
+2a:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L30",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set notion-project-status","label":"Install"}]}]}]]}]
+2b:["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}]
+2c:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+2d:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","target":"$undefined","rel":"$undefined","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+2e:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Self-hosted. Bring your own AI."}]]}]
+16:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+31:I[27201,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"IconMark"]
+13:null
+18:[["$","title","0",{"children":"Notion Project Status template | Cabinet"}],["$","meta","1",{"name":"description","content":"Every open project in your Notion at a glance, late, at risk or on track, with owners, dates and what changed."}],["$","meta","2",{"name":"referrer","content":"strict-origin-when-cross-origin"}],["$","link","3",{"rel":"canonical","href":"https://runcabinet.com/templates/notion-project-status"}],["$","meta","4",{"property":"og:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","5",{"property":"og:description","content":"Company knowledge, working AI teams, and live apps in one self-hosted workspace. Bring your own AI."}],["$","meta","6",{"property":"og:url","content":"https://runcabinet.com"}],["$","meta","7",{"property":"og:image","content":"https://runcabinet.com/og.png"}],["$","meta","8",{"property":"og:image:width","content":"1200"}],["$","meta","9",{"property":"og:image:height","content":"630"}],["$","meta","10",{"property":"og:image:alt","content":"Cabinet: the AI workspace your company owns, with knowledge, AI teams, and live apps in one place"}],["$","meta","11",{"property":"og:type","content":"website"}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"Cabinet: The AI workspace your company owns"}],["$","meta","14",{"name":"twitter:description","content":"Company knowledge, working AI teams, and live apps in one self-hosted workspace. Bring your own AI."}],["$","meta","15",{"name":"twitter:image","content":"https://runcabinet.com/og.png"}],["$","link","16",{"rel":"icon","href":"/icon.png?icon.1p7qxwp3akyyx.png","sizes":"512x512","type":"image/png"}],["$","link","17",{"rel":"apple-touch-icon","href":"/apple-icon.png?apple-icon.1q-r1s9ajzc3v.png","sizes":"180x180","type":"image/png"}],["$","$L31","18",{}]]
