@@ -14,6 +14,8 @@ import {
   recordWaitlistView,
   submitWaitlistEmail,
 } from "@/lib/waitlist-client";
+import { useLocale } from "@/components/locale-provider";
+import type { Locale } from "@/lib/i18n";
 
 type Props = {
   source: WaitlistSource;
@@ -23,6 +25,40 @@ type Props = {
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+type WaitlistCopy = {
+  emailLabel: string;
+  invalidEmail: string;
+  submitFailed: string;
+  already: string;
+  success: string;
+  sending: string;
+  join: string;
+  footnote: string;
+};
+
+const COPY: Record<Locale, WaitlistCopy> = {
+  en: {
+    emailLabel: "Email",
+    invalidEmail: "Enter a valid email.",
+    submitFailed: "Something went wrong. Please try again.",
+    already: "You're already on the list. We'll be in touch as soon as Cabinet Cloud opens up.",
+    success: "You're on the list. We'll email you when Cabinet Cloud opens up.",
+    sending: "Sending…",
+    join: "Join waitlist",
+    footnote: "Connect from anywhere. Your AI team works 24/7.",
+  },
+  hi: {
+    emailLabel: "ईमेल",
+    invalidEmail: "कृपया सही ईमेल पता डालें।",
+    submitFailed: "कुछ गड़बड़ हो गई। कृपया फिर से कोशिश करें।",
+    already: "आप पहले से वेटलिस्ट में हैं। Cabinet Cloud शुरू होते ही हम आपसे संपर्क करेंगे।",
+    success: "आप वेटलिस्ट में शामिल हो गए हैं। Cabinet Cloud शुरू होते ही हम आपको ईमेल करेंगे।",
+    sending: "भेज रहे हैं…",
+    join: "वेटलिस्ट में शामिल हों",
+    footnote: "कहीं से भी जुड़ें। आपकी AI टीम 24/7 काम करती है।",
+  },
+};
+
 function subscribeToWaitlistState() {
   return () => {};
 }
@@ -30,6 +66,7 @@ function subscribeToWaitlistState() {
 // Big centered email field used on the /cloud landing page. Distinct from
 // WaitlistCapture (the two-column card used in the homepage section).
 export function CloudHeroWaitlist({ source, originPage, className = "" }: Props) {
+  const copy = COPY[useLocale()];
   const pathname = usePathname();
   const resolvedOriginPage = originPage ?? pathname;
   const startedRef = useRef(false);
@@ -70,7 +107,7 @@ export function CloudHeroWaitlist({ source, originPage, className = "" }: Props)
     const trimmed = email.trim();
     if (!EMAIL_RE.test(trimmed)) {
       setStatus("error");
-      setErrorMsg("Enter a valid email.");
+      setErrorMsg(copy.invalidEmail);
       return;
     }
     trackEvent("waitlist_cta_click", { source, originPage: resolvedOriginPage });
@@ -79,7 +116,7 @@ export function CloudHeroWaitlist({ source, originPage, className = "" }: Props)
     const result = await submitWaitlistEmail(trimmed, source);
     if (!result.ok) {
       setStatus("error");
-      setErrorMsg("Something went wrong. Please try again.");
+      setErrorMsg(copy.submitFailed);
       return;
     }
     markWaitlistSubmitted(source, "");
@@ -98,9 +135,7 @@ export function CloudHeroWaitlist({ source, originPage, className = "" }: Props)
         <div className="flex items-start gap-3 rounded-3xl border border-accent/40 bg-accent-bg-subtle px-6 py-5 text-text-primary leading-relaxed shadow-[0_8px_30px_rgba(62,43,18,0.08)]">
           <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
           <span className="text-base">
-            {displayStatus === "already"
-              ? "You're already on the list. We'll be in touch as soon as Cabinet Cloud opens up."
-              : "You're on the list. We'll email you when Cabinet Cloud opens up."}
+            {displayStatus === "already" ? copy.already : copy.success}
           </span>
         </div>
       </div>
@@ -111,7 +146,7 @@ export function CloudHeroWaitlist({ source, originPage, className = "" }: Props)
     <form onSubmit={handleSubmit} className={className}>
       <div className="flex flex-col gap-3 rounded-full card-skin/95 p-2 shadow-[0_20px_60px_rgba(62,43,18,0.10)] backdrop-blur-sm sm:flex-row sm:items-center sm:gap-2 sm:p-1.5">
         <label htmlFor="cabinet-cloud-hero-email" className="sr-only">
-          Email
+          {copy.emailLabel}
         </label>
         <input
           id="cabinet-cloud-hero-email"
@@ -133,11 +168,11 @@ export function CloudHeroWaitlist({ source, originPage, className = "" }: Props)
           {status === "submitting" ? (
             <>
               <Loader2 className="h-4 w-4 animate-spin" />
-              Sending…
+              {copy.sending}
             </>
           ) : (
             <>
-              Join waitlist
+              {copy.join}
               <ArrowRight className="h-4 w-4" />
             </>
           )}
@@ -147,7 +182,7 @@ export function CloudHeroWaitlist({ source, originPage, className = "" }: Props)
         <p className="mt-2 text-center text-xs text-red-600">{errorMsg}</p>
       ) : (
         <p className="mt-3 text-center text-xs font-code text-text-tertiary">
-          Connect from anywhere. Your AI team works 24/7.
+          {copy.footnote}
         </p>
       )}
     </form>
