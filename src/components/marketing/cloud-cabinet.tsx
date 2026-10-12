@@ -14,6 +14,7 @@ import {
   Suspense,
   useEffect,
   useLayoutEffect,
+  useMemo,
   useRef,
   useState,
   type CSSProperties,
@@ -22,6 +23,8 @@ import {
 import { CloudHeroWaitlist } from "@/components/cloud-hero-waitlist";
 import { WAITLIST_COPY } from "@/lib/site-config";
 import { ScrollReveal } from "@/components/lightswind/scroll-reveal";
+import { useLocale } from "@/components/locale-provider";
+import type { Locale } from "@/lib/i18n";
 
 // Same wood/brass palette as the hero cabinet in integration-scene.tsx.
 const WOOD = "linear-gradient(135deg, #EDDCBF 0%, #DCC098 45%, #C9A47A 100%)";
@@ -29,20 +32,59 @@ const WOOD_DARK = "linear-gradient(135deg, #C9A47A 0%, #B8905F 60%, #A87F4F 100%
 const BRASS = "linear-gradient(180deg, #F0DCA8 0%, #D9BC7A 55%, #B89A54 100%)";
 const PAPER = "linear-gradient(180deg, #FCF6E8 0%, #F0E4C8 100%)";
 
-const DRAWERS: { title: string; body: string }[] = [
-  {
-    title: "Your own machine",
-    body: "A dedicated container, not a shared slice of someone else's server.",
+type DrawerCopy = { title: string; body: string };
+
+type CloudCopy = {
+  drawers: DrawerCopy[];
+  headline: string;
+  /** follows the italic "Cabinet" wordmark */
+  lead: string;
+  board: string;
+  scarcity: string;
+};
+
+const COPY: Record<Locale, CloudCopy> = {
+  en: {
+    drawers: [
+      {
+        title: "Your own machine",
+        body: "A dedicated container, not a shared slice of someone else's server.",
+      },
+      {
+        title: "Locked down",
+        body: "Encrypted, isolated, and walled off from every other Cabinet.",
+      },
+      {
+        title: "Teams, ready to go",
+        body: "Pick a pre-built AI team and start working on day one.",
+      },
+    ],
+    headline: "Afraid to close your laptop?",
+    lead: "Cloud is your AI team, running on your own machine in the cloud, 24/7.",
+    board: "We are building it now.",
+    scarcity: WAITLIST_COPY.scarcity,
   },
-  {
-    title: "Locked down",
-    body: "Encrypted, isolated, and walled off from every other Cabinet.",
+  hi: {
+    drawers: [
+      {
+        title: "आपकी अपनी मशीन",
+        body: "आपका अपना समर्पित कंटेनर, किसी और के सर्वर का साझा हिस्सा नहीं।",
+      },
+      {
+        title: "पूरी तरह सुरक्षित",
+        body: "एन्क्रिप्टेड, आइसोलेटेड, और हर दूसरे Cabinet से पूरी तरह अलग।",
+      },
+      {
+        title: "तैयार AI टीमें",
+        body: "पहले से बनी AI टीम चुनें और पहले ही दिन से काम शुरू करें।",
+      },
+    ],
+    headline: "लैपटॉप बंद करने से डरते हैं?",
+    lead: "Cloud आपकी AI टीम है, जो क्लाउड में आपकी अपनी मशीन पर 24/7 काम करती है।",
+    board: "हम इसे अभी बना रहे हैं।",
+    scarcity: "शुरुआती 500 समर्थकों को प्राथमिकता से एक्सेस मिलेगा।",
   },
-  {
-    title: "Teams, ready to go",
-    body: "Pick a pre-built AI team and start working on day one.",
-  },
-];
+};
 
 // Geometry, all in px. One wide cabinet, three drawers in a row; the page
 // card rests centered on a fixed-height "desk" below and flies from the
@@ -323,7 +365,7 @@ function Drawer({
 }
 
 // The paper itself: same fiber texture and dog-ear as the hero's task pages.
-function Sheet({ page }: { page: (typeof DRAWERS)[number] }) {
+function Sheet({ page }: { page: DrawerCopy }) {
   return (
     <div
       className="relative flex h-full w-full flex-col items-center justify-center p-6 text-center"
@@ -394,7 +436,7 @@ function GeniePage({
   tilt,
   onDesk,
 }: {
-  page: (typeof DRAWERS)[number];
+  page: DrawerCopy;
   mouth: { x: number; y: number };
   tilt: number;
   onDesk: boolean;
@@ -474,6 +516,27 @@ function GeniePage({
   );
 }
 
+// Splits text into the units the chalk writes one at a time. Code points are
+// wrong for Devanagari: a vowel sign or virama alone in its own span renders
+// as a dotted-circle stub, and Safari will not shape a conjunct across span
+// boundaries. So: grapheme clusters, then glue any cluster ending in a virama
+// (U+094D) to the next, which keeps every conjunct (क्ष, स्थ) in one span.
+const graphemeSegmenter =
+  typeof Intl !== "undefined" && "Segmenter" in Intl
+    ? new Intl.Segmenter(undefined, { granularity: "grapheme" })
+    : null;
+function writingUnits(text: string): string[] {
+  const clusters = graphemeSegmenter
+    ? Array.from(graphemeSegmenter.segment(text), (g) => g.segment)
+    : Array.from(text);
+  const out: string[] = [];
+  for (const c of clusters) {
+    if (out.length > 0 && out[out.length - 1].endsWith("\u094D")) out[out.length - 1] += c;
+    else out.push(c);
+  }
+  return out;
+}
+
 // Writes the board's lines letter by letter, a chalk stick gliding along the
 // text. The full text is laid out from the start (letters only turn opaque),
 // so nothing reflows while it writes.
@@ -487,7 +550,10 @@ function ChalkLines({
   onDone?: () => void;
 }) {
   const reduce = useReducedMotion();
-  const flat = lines.map((l) => l.text).join("");
+  // keyed on the text so a parent re-render does not restart the write timer
+  const textKey = lines.map((l) => l.text).join("\n");
+  const units = useMemo(() => textKey.split("\n").map(writingUnits), [textKey]);
+  const flat = useMemo(() => units.flat(), [units]);
   const [n, setN] = useState(0);
   const chars = useRef<(HTMLSpanElement | null)[]>([]);
   const chalk = useRef<HTMLSpanElement>(null);
@@ -502,7 +568,10 @@ function ChalkLines({
     if (!writing) return;
     const prev = flat[n - 1];
     // ponytail: fixed cadence, a breath after a space, a pause after a sentence
-    const t = setTimeout(() => setN(n + 1), prev === "." ? 420 : prev === " " ? 80 : 42);
+    const t = setTimeout(
+      () => setN(n + 1),
+      prev === "." || prev === "।" ? 420 : prev === " " ? 80 : 42,
+    );
     return () => clearTimeout(t);
   }, [writing, n, flat]);
 
@@ -519,9 +588,9 @@ function ChalkLines({
   let k = 0;
   return (
     <div className="relative" style={{ textShadow: "0 0 2px rgba(255, 255, 255, 0.25)" }}>
-      {lines.map((l) => (
+      {lines.map((l, li) => (
         <p key={l.text} className={l.className}>
-          {[...l.text].map((ch) => {
+          {units[li].map((ch) => {
             const i = k++;
             return (
               <span
@@ -563,6 +632,7 @@ function ChalkLines({
 // until the visitor clicks one.
 export function CloudCabinet() {
   const reduce = useReducedMotion();
+  const copy = COPY[useLocale()];
   const ref = useRef<HTMLDivElement>(null);
   const cabRef = useRef<HTMLDivElement>(null);
   const inView = useInView(cabRef, { amount: 0.5 });
@@ -799,7 +869,7 @@ export function CloudCabinet() {
                   delay={0.15}
                   textClassName="font-display text-4xl leading-tight text-white md:text-5xl"
                 >
-                  Afraid to close your laptop?
+                  {copy.headline}
                 </ScrollReveal>
                 <ScrollReveal
                   baseRotation={0}
@@ -811,7 +881,7 @@ export function CloudCabinet() {
                   <span className="font-brand italic" style={{ WebkitTextFillColor: "#FFFFFF" }}>
                     Cabinet
                   </span>{" "}
-                  Cloud is your AI team, running on your own machine in the cloud, 24/7.
+                  {copy.lead}
                 </ScrollReveal>
               </div>
               <div
@@ -950,9 +1020,9 @@ export function CloudCabinet() {
                   </motion.div>
                 </div>
                 <div className="flex" style={{ gap: DRAWER_GAP }}>
-                  {DRAWERS.map((d, i) => (
+                  {copy.drawers.map((d, i) => (
                     <Drawer
-                      key={d.title}
+                      key={i}
                       label={d.title}
                       open={i === active}
                       buzz={buzz && i === 0}
@@ -997,9 +1067,9 @@ export function CloudCabinet() {
         className="order-2 relative z-10"
         style={{ height: DESK_H }}
       >
-        {DRAWERS.map((d, i) => (
+        {copy.drawers.map((d, i) => (
           <div
-            key={d.title}
+            key={i}
             className="pointer-events-none absolute inset-0 flex items-center justify-center"
           >
             <GeniePage
@@ -1041,11 +1111,11 @@ export function CloudCabinet() {
                     onDone={() => setBoardWritten(true)}
                     lines={[
                       {
-                        text: "We are building it now.",
+                        text: copy.board,
                         className: "font-chalk text-3xl leading-tight text-white",
                       },
                       {
-                        text: WAITLIST_COPY.scarcity,
+                        text: copy.scarcity,
                         className: "font-chalk mt-1 text-xl leading-snug text-white/95",
                       },
                     ]}

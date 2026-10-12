@@ -1,31 +1,11 @@
 import type { Metadata } from "next";
-import { Check } from "lucide-react";
-import { SiteNavbar } from "@/components/site-navbar";
-import { CabinetLibrary } from "@/components/marketing/cabinet-library";
-import { HeroProductReveal } from "@/components/marketing/hero-product-reveal";
-import { KnowledgeNetwork } from "@/components/marketing/knowledge-network";
-import {
-  LegacyByoai,
-  LegacyCloudWaitlist,
-  LegacyCta,
-  LegacyFeaturesGrid,
-  LegacyHero,
-  LegacyIntegrationScene,
-  LegacyIntegrationsMarquee,
-  LegacyOrgBadges,
-  LegacyPrinciples,
-  LegacySocialProofBar,
-  LegacySolutions,
-  LegacyTestimonials,
-  LegacyWhyTriad,
-} from "@/components/marketing/legacy-sections";
-import { MarketingFooter } from "@/components/marketing/marketing-footer";
-import { HeroHeadline, MotionReveal } from "@/components/marketing/motion-primitives";
-import { SectionBadge } from "@/components/marketing/section-badge";
-import { DownloadButtons } from "@/components/marketing/download-buttons";
+import { HomePage } from "@/components/marketing/home-page";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "https://runcabinet.com/" },
+  alternates: {
+    canonical: "https://runcabinet.com/",
+    languages: { en: "https://runcabinet.com/", hi: "https://runcabinet.com/hi" },
+  },
   title: "Cabinet: The AI workspace your company owns",
   description:
     "Cabinet shows your entire knowledge base and files, puts a team of AI specialists to work on it, and renders results as live apps and dashboards. Self-hosted, and connected to the AI providers you already trust.",
@@ -45,125 +25,6 @@ export const metadata: Metadata = {
   },
 };
 
-
-export default function HomePage() {
-  return (
-    <main className="home-scroll-snap overflow-clip bg-bg text-text-primary">
-      <SiteNavbar fixed />
-
-      <SectionBadge n="27" title="Integration scene" origin="main">
-        <LegacyIntegrationScene />
-      </SectionBadge>
-
-      <SectionBadge n="28" title="Cloud waitlist" origin="main">
-        <LegacyCloudWaitlist />
-      </SectionBadge>
-
-      <SectionBadge n="31" title="Testimonials: 10x work" origin="main">
-        <LegacyTestimonials />
-      </SectionBadge>
-
-      <SectionBadge n="01" title="Hero: AI workspace" origin="kimi">
-      <section className="home-snap-section relative isolate flex min-h-[100svh] items-center overflow-hidden px-5 pb-[clamp(3rem,7vh,6rem)] pt-[clamp(7rem,12vh,9rem)] sm:px-6 lg:px-8">
-        <div
-          aria-hidden
-          className="home-hero-wash pointer-events-none absolute inset-0 -z-20"
-        />
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0 -z-10 opacity-50 [mask-image:linear-gradient(to_bottom,black,transparent_72%)] dot-grid"
-        />
-
-        <div className="mx-auto grid w-full max-w-[1500px] items-center gap-10 lg:grid-cols-[0.78fr_1.22fr] lg:gap-12 xl:gap-16">
-          <div className="max-w-2xl">
-            <MotionReveal delay={0.04} amount={0.1}>
-              <p className="section-label mb-5">The AI workspace your company owns</p>
-            </MotionReveal>
-            <HeroHeadline />
-            <MotionReveal delay={0.5} amount={0.1}>
-            <p className="mt-7 max-w-xl text-lg leading-relaxed text-text-secondary sm:text-xl">
-              Cabinet shows your entire knowledge base and files, puts a team of AI specialists
-              to work on it, and renders results as live apps and dashboards. Self-hosted,
-              and connected to the AI providers you already trust.
-            </p>
-            </MotionReveal>
-
-            <MotionReveal delay={0.6} amount={0.1}>
-              <div className="mt-8">
-                <DownloadButtons align="left" />
-              </div>
-            </MotionReveal>
-
-            <MotionReveal delay={0.7} amount={0.1}>
-            <div className="mt-7 flex flex-wrap justify-center gap-x-5 gap-y-2 text-xs font-semibold text-text-tertiary sm:justify-start">
-              <span className="inline-flex items-center gap-1.5">
-                <Check aria-hidden className="h-3.5 w-3.5 text-green" /> Self-hosted
-              </span>
-              <span className="inline-flex items-center gap-1.5">
-                <Check aria-hidden className="h-3.5 w-3.5 text-green" /> Claude, GPT, and Gemini
-              </span>
-            </div>
-            </MotionReveal>
-          </div>
-
-          <div className="min-w-0 lg:-mr-6 lg:pt-2 xl:-mr-10">
-            <HeroProductReveal />
-          </div>
-        </div>
-      </section>
-      </SectionBadge>
-
-      <SectionBadge n="06" title="Outcome explorer" origin="kimi">
-        <div id="product" className="scroll-mt-24">
-          <CabinetLibrary />
-        </div>
-      </SectionBadge>
-
-      <SectionBadge n="02" title="Hero: knowledge base + typing" origin="main">
-        <LegacyHero />
-      </SectionBadge>
-
-      <SectionBadge n="05" title="Why Cabinet: triad" origin="main">
-        <LegacyWhyTriad />
-      </SectionBadge>
-
-      <SectionBadge n="09" title="Features grid: 12 cards" origin="main">
-        <LegacyFeaturesGrid />
-      </SectionBadge>
-
-      <SectionBadge n="17" title="Solutions: every team" origin="main">
-        <LegacySolutions />
-      </SectionBadge>
-
-      <SectionBadge n="18" title="Integrations: directory" origin="kimi">
-        <KnowledgeNetwork />
-      </SectionBadge>
-
-      <SectionBadge n="19" title="Integrations: marquee" origin="main">
-        <LegacyIntegrationsMarquee />
-      </SectionBadge>
-
-      <SectionBadge n="21" title="BYOAI: logo grid" origin="main">
-        <LegacyByoai />
-      </SectionBadge>
-
-      <SectionBadge n="24" title="Built for organizations" origin="main">
-        <LegacyOrgBadges />
-      </SectionBadge>
-
-      <SectionBadge n="25" title="Principles showcase" origin="main">
-        <LegacyPrinciples />
-      </SectionBadge>
-
-      <SectionBadge n="29" title="Social proof bar" origin="main">
-        <LegacySocialProofBar />
-      </SectionBadge>
-
-      <SectionBadge n="34" title="CTA: build your AI team" origin="main">
-        <LegacyCta />
-      </SectionBadge>
-
-      <MarketingFooter />
-    </main>
-  );
+export default function Page() {
+  return <HomePage locale="en" />;
 }
