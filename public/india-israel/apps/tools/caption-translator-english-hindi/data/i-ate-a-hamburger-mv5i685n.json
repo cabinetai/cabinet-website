@@ -1,0 +1,26 @@
+{
+  "id": "i-ate-a-hamburger-mv5i685n",
+  "source": "i ate a hamburger",
+  "style": "everyday",
+  "translations": [
+    {
+      "lang": "hi",
+      "text": "मैंने एक हैमबर्गर खाया",
+      "roman": "maine ek hamburger khaya",
+      "note": "Hamburger stays as the English word because Hindi has no everyday native word for it."
+    },
+    {
+      "lang": "ta",
+      "text": "நான் ஒரு ஹேம்பர்கர் சாப்பிட்டேன்",
+      "roman": "naan oru hamburger saapitten",
+      "note": "Hamburger stays in English, written in Tamil script, as people say it."
+    },
+    {
+      "lang": "kn",
+      "text": "ನಾನು ಒಂದು ಹ್ಯಾಂಬರ್ಗರ್ ತಿಂದೆ",
+      "roman": "naanu ondu hamburger thinde",
+      "note": "Hamburger stays in English, written in Kannada script, as people say it."
+    }
+  ],
+  "createdAt": "2026-10-12T17:05:20Z"
+}

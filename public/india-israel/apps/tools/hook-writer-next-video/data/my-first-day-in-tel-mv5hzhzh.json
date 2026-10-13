@@ -1,0 +1,87 @@
+{
+  "id": "my-first-day-in-tel-mv5hzhzh",
+  "idea": "My first day in Tel Aviv as an Indian vegetarian: what I ate",
+  "platform": "reel",
+  "audience": "",
+  "hooks": [
+    {
+      "style": "question",
+      "en": "Can a pure veg Indian survive Tel Aviv?",
+      "hi": "क्या एक प्योर वेज इंडियन तेल अवीव में टिक पाएगा?",
+      "hinglish": "Kya ek pure veg Indian Tel Aviv mein survive karega?",
+      "highlight_en": "pure veg",
+      "highlight_hi": "प्योर वेज",
+      "highlight_hinglish": "pure veg",
+      "onScreen": "Pure veg in Tel Aviv?",
+      "onScreen_hi": "तेल अवीव में प्योर वेज?",
+      "shot": "You standing on a Tel Aviv street, holding up an empty plate with a worried face.",
+      "why": "Every Indian vegetarian who travels has asked this exact question about a new city."
+    },
+    {
+      "style": "pov",
+      "en": "POV: You're vegetarian and just landed in Tel Aviv",
+      "hi": "POV: आप वेजिटेरियन हैं और अभी तेल अवीव पहुँचे हैं",
+      "hinglish": "POV: Aap vegetarian ho aur abhi Tel Aviv land kiya",
+      "highlight_en": "just landed",
+      "highlight_hi": "अभी तेल अवीव पहुँचे",
+      "highlight_hinglish": "abhi Tel Aviv land kiya",
+      "onScreen": "Day 1. Vegetarian. Tel Aviv.",
+      "onScreen_hi": "पहला दिन। वेजिटेरियन। तेल अवीव।",
+      "shot": "Selfie shot walking out of the airport with your bag, looking around for food.",
+      "why": "The viewer steps into your shoes and wants to see how the first day goes."
+    },
+    {
+      "style": "curiosity gap",
+      "en": "I didn't expect to eat this well in Tel Aviv",
+      "hi": "तेल अवीव में इतना अच्छा खाना मिलेगा, सोचा नहीं था",
+      "hinglish": "Tel Aviv mein itna accha khana milega, socha nahi tha",
+      "highlight_en": "this well",
+      "highlight_hi": "इतना अच्छा खाना",
+      "highlight_hinglish": "itna accha khana",
+      "onScreen": "Veg food in Tel Aviv",
+      "onScreen_hi": "तेल अवीव का वेज खाना",
+      "shot": "Close-up of your first bite, cut before we see the full dish.",
+      "why": "It promises a good surprise and holds back what the food is."
+    },
+    {
+      "style": "story",
+      "en": "First day in Tel Aviv, and I was starving",
+      "hi": "तेल अवीव में पहला दिन, और मुझे ज़ोर की भूख लगी थी",
+      "hinglish": "Tel Aviv mein pehla din, aur bhookh se haal kharab",
+      "highlight_en": "starving",
+      "highlight_hi": "ज़ोर की भूख",
+      "highlight_hinglish": "bhookh se haal kharab",
+      "onScreen": "Day 1: hungry in Tel Aviv",
+      "onScreen_hi": "पहला दिन: भूखा तेल अवीव में",
+      "shot": "You rubbing your stomach outside a busy food stall.",
+      "why": "Hunger in a new country is an instant problem the viewer wants solved."
+    },
+    {
+      "style": "contrarian",
+      "en": "Everyone said I'd go hungry in Tel Aviv",
+      "hi": "सबने कहा था तेल अवीव में भूखा रहूँगा",
+      "hinglish": "Sabne bola tha Tel Aviv mein bhookha rahega",
+      "highlight_en": "go hungry",
+      "highlight_hi": "भूखा रहूँगा",
+      "highlight_hinglish": "bhookha rahega",
+      "onScreen": "Veg in Tel Aviv? They doubted",
+      "onScreen_hi": "तेल अवीव में वेज? सबको शक था",
+      "shot": "You raising an eyebrow at the camera, a full plate just out of frame.",
+      "why": "It pushes back on a fear every Indian vegetarian family has before a trip."
+    },
+    {
+      "style": "mistake",
+      "en": "Don't pack Maggi for Tel Aviv. Here's why",
+      "hi": "तेल अवीव के लिए मैगी मत पैक करना, देखो क्यों",
+      "hinglish": "Tel Aviv ke liye Maggi pack mat karna, dekho kyun",
+      "highlight_en": "Maggi",
+      "highlight_hi": "मैगी",
+      "highlight_hinglish": "Maggi",
+      "onScreen": "Leave the Maggi at home",
+      "onScreen_hi": "मैगी घर पर छोड़ो",
+      "shot": "You taking Maggi packets out of a suitcase and putting them aside.",
+      "why": "Packing instant food abroad is a very Indian habit, so viewers see themselves in it."
+    }
+  ],
+  "createdAt": "2026-10-12T17:00:10Z"
+}

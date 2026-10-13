@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script src="../../readonly.js"></script>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Caption Translator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;800;900&family=Overpass+Mono:wght@400;600&family=Hind:wght@400;600&family=Hind+Madurai:wght@400;600&family=Hind+Mysuru:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --enamel: #1c3d96;
+    --enamel-deep: #12296b;
+    --navy: #0b1640;
+    --wall: #e9edf5;
+    --plate: #ffffff;
+    --saffron: #ff8a1f;
+    --muted: #5a6587;
+    --display: "Overpass", system-ui, sans-serif;
+    --mono: "Overpass Mono", ui-monospace, monospace;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--wall);
+    color: var(--navy);
+    font: 400 16px/1.55 var(--display);
+    min-height: 100vh;
+  }
+  :focus-visible { outline: 3px solid var(--saffron); outline-offset: 3px; }
+  .hi { font-family: "Hind", var(--display); }
+  .ta { font-family: "Hind Madurai", var(--display); }
+  .kn { font-family: "Hind Mysuru", var(--display); }
+
+  .wrap { max-width: 980px; margin: 0 auto; padding: 20px 18px 64px; }
+  .top { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+  .back { font: 600 13px var(--mono); color: var(--enamel); text-decoration: none; letter-spacing: .02em; }
+  .back:hover { text-decoration: underline; }
+
+  /* hero: the title as an enamel street plate */
+  .hero { margin: 26px 0 30px; }
+  .plate {
+    position: relative;
+    background: var(--enamel);
+    color: var(--plate);
+    border-radius: 14px;
+    padding: 22px 26px;
+    box-shadow: 0 1px 0 var(--enamel-deep), 0 10px 24px -14px rgba(11, 22, 64, .55);
+  }
+  .plate::before {
+    content: ""; position: absolute; inset: 7px;
+    border: 2px solid rgba(255, 255, 255, .92); border-radius: 9px; pointer-events: none;
+  }
+  .plate .rivet {
+    position: absolute; width: 7px; height: 7px; border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, #fff, #b9c3dd 60%, #7f8cb4);
+  }
+  .rivet.a { top: 15px; left: 15px; } .rivet.b { top: 15px; right: 15px; }
+  .rivet.c { bottom: 15px; left: 15px; } .rivet.d { bottom: 15px; right: 15px; }
+  .hero .plate { text-align: center; padding: 30px 26px 26px; }
+  .hero h1 {
+    margin: 0; font-weight: 900; text-transform: uppercase;
+    font-size: clamp(30px, 7vw, 58px); line-height: .95; letter-spacing: .01em;
+  }
+  .scripts {
+    display: flex; justify-content: center; flex-wrap: wrap; gap: 6px 22px;
+    margin-top: 12px; font-size: clamp(18px, 3.6vw, 26px); font-weight: 600;
+  }
+  .hero p.sub { margin: 14px auto 0; max-width: 560px; color: var(--muted); text-align: center; }
+
+  /* form */
+  form { background: var(--plate); border-radius: 14px; padding: 20px; border: 1px solid #d3d9e8; }
+  label.big { display: block; font-weight: 800; font-size: 15px; margin-bottom: 8px; }
+  textarea {
+    width: 100%; min-height: 130px; resize: vertical;
+    font: 400 16px/1.5 var(--display); color: var(--navy);
+    border: 2px solid #c6cee2; border-radius: 10px; padding: 12px 14px; background: #fbfcfe;
+  }
+  textarea:focus { border-color: var(--enamel); outline: none; box-shadow: 0 0 0 3px rgba(255, 138, 31, .55); }
+  .count { font: 400 12px var(--mono); color: var(--muted); text-align: right; margin-top: 4px; }
+  .row { display: flex; flex-wrap: wrap; gap: 18px 28px; margin-top: 14px; align-items: flex-start; }
+  fieldset { border: 0; padding: 0; margin: 0; }
+  legend { font-weight: 800; font-size: 13px; margin-bottom: 8px; padding: 0; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip {
+    font: 600 15px var(--display); color: var(--enamel);
+    background: #fff; border: 2px solid var(--enamel); border-radius: 999px;
+    padding: 6px 14px 4px; cursor: pointer;
+  }
+  .chip[aria-pressed="true"] { background: var(--enamel); color: #fff; }
+  .chip small { font: 400 11px var(--mono); opacity: .8; margin-left: 4px; }
+  .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 18px; }
+  .go {
+    font: 800 16px var(--display); color: #fff; background: var(--navy);
+    border: 0; border-radius: 10px; padding: 13px 22px 11px; cursor: pointer;
+  }
+  .go:hover { background: var(--enamel); }
+  .go:disabled { opacity: .5; cursor: wait; }
+  .status { font-size: 14px; color: var(--muted); }
+  .status.warn { color: #a3361a; }
+  .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: var(--saffron); margin-right: 8px; animation: pulse 1.2s ease-in-out infinite; }
+  @keyframes pulse { 50% { opacity: .25; } }
+
+  /* results */
+  .out { margin-top: 34px; }
+  .rhead { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 14px; }
+  .rhead h2 { margin: 0; font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
+  .toggle { font: 600 13px var(--mono); color: var(--enamel); background: none; border: 0; padding: 4px 0; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+  .source {
+    background: var(--plate); border-left: 5px solid var(--navy); border-radius: 4px 10px 10px 4px;
+    padding: 14px 18px; white-space: pre-wrap; margin-bottom: 18px;
+  }
+  .source .tag, .plate .tag { font: 600 11px var(--mono); letter-spacing: .08em; text-transform: uppercase; display: block; margin-bottom: 6px; }
+  .source .tag { color: var(--muted); }
+  .boards { display: grid; gap: 18px; }
+  .board .plate { padding: 26px 30px 22px; }
+  .board .plate .tag { color: #c9d3f0; display: flex; justify-content: space-between; gap: 10px; }
+  .board .name { font-size: 22px; font-weight: 600; letter-spacing: 0; text-transform: none; color: #fff; font-family: inherit; }
+  .board .text { font-size: clamp(18px, 2.6vw, 22px); line-height: 1.7; white-space: pre-wrap; margin: 4px 0 0; overflow-wrap: anywhere; }
+  .board .roman { font: 400 14px/1.6 var(--mono); color: #d7def3; white-space: pre-wrap; margin: 12px 0 0; padding-top: 10px; border-top: 1px dashed rgba(255,255,255,.35); overflow-wrap: anywhere; }
+  .under { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 10px 18px; padding: 10px 6px 0; }
+  .note { font-size: 14px; color: var(--muted); max-width: 640px; }
+  .copy {
+    font: 800 14px var(--display); color: var(--enamel); background: #fff;
+    border: 2px solid var(--enamel); border-radius: 8px; padding: 7px 14px 5px; cursor: pointer; flex-shrink: 0;
+  }
+  .copy:hover { background: var(--enamel); color: #fff; }
+  .empty { color: var(--muted); text-align: center; padding: 30px 10px; border: 2px dashed #c6cee2; border-radius: 14px; }
+
+  .past { margin-top: 40px; }
+  .past h2 { font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: 0 0 10px; }
+  .past ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; }
+  .past button {
+    width: 100%; text-align: left; font: 400 15px var(--display); color: var(--navy);
+    background: #fff; border: 1px solid #d3d9e8; border-radius: 8px; padding: 9px 12px 7px; cursor: pointer;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .past button[aria-current="true"] { border-color: var(--enamel); box-shadow: inset 4px 0 0 var(--enamel); }
+
+  @media (max-width: 520px) {
+    .plate { padding: 20px 20px; }
+    .board .plate { padding: 24px 22px 20px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .dot { animation: none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a href="#" class="back" id="back">&larr; Creator Hub</a>
+  </div>
+
+  <header class="hero">
+    <div class="plate">
+      <span class="rivet a"></span><span class="rivet b"></span><span class="rivet c"></span><span class="rivet d"></span>
+      <h1>Caption translator</h1>
+      <div class="scripts">
+        <span class="hi" lang="hi">हिंदी</span>
+        <span class="ta" lang="ta">தமிழ்</span>
+        <span class="kn" lang="kn">ಕನ್ನಡ</span>
+      </div>
+    </div>
+    <p class="sub">Paste an English caption. Get it back in Hindi, Tamil and Kannada, written the way people there actually talk. Hashtags, handles and emoji stay as they are.</p>
+  </header>
+
+  <form id="brief" novalidate>
+    <label class="big" for="cap">Your English caption</label>
+    <textarea id="cap" maxlength="2200" placeholder="Spent ₹200 on street food at VV Puram in Bengaluru. What should I try next? #bengalurufood"></textarea>
+    <div class="count" id="count">0 / 2200</div>
+
+    <div class="row">
+      <fieldset>
+        <legend>Translate into</legend>
+        <div class="chips" id="langs">
+          <button type="button" class="chip" data-v="hi" aria-pressed="true"><span class="hi" lang="hi">हिंदी</span><small>Hindi</small></button>
+          <button type="button" class="chip" data-v="ta" aria-pressed="true"><span class="ta" lang="ta">தமிழ்</span><small>Tamil</small></button>
+          <button type="button" class="chip" data-v="kn" aria-pressed="true"><span class="kn" lang="kn">ಕನ್ನಡ</span><small>Kannada</small></button>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Style</legend>
+        <div class="chips" id="style">
+          <button type="button" class="chip" data-v="everyday" aria-pressed="true">Everyday</button>
+          <button type="button" class="chip" data-v="pure" aria-pressed="false">Pure</button>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="actions">
+      <button type="submit" class="go" id="go">Translate caption</button>
+      <span class="status" id="status" role="status" aria-live="polite"></span>
+    </div>
+  </form>
+
+  <section class="out" id="out" aria-live="polite"></section>
+
+  <section class="past" id="past" hidden>
+    <h2>Earlier captions</h2>
+    <ul id="pastList"></ul>
+  </section>
+</div>
+
+<script>
+(function () {
+  var SLUG = "caption-translator-english-hindi";
+  var DIR = "tools/" + SLUG + "/data";
+  var PKEY = "india-creators-2026:" + SLUG + ":pending";
+  var LANG = {
+    hi: { name: "Hindi", native: "हिंदी" },
+    ta: { name: "Tamil", native: "தமிழ்" },
+    kn: { name: "Kannada", native: "ಕನ್ನಡ" }
+  };
+  var ORDER = ["hi", "ta", "kn"];
+
+  var results = [], currentId = null, pending = null, timer = null, showRoman = true;
+  var $ = function (id) { return document.getElementById(id); };
+
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+  function each(list, fn) { Array.prototype.forEach.call(list, fn); }
+
+  $("back").addEventListener("click", function (e) {
+    e.preventDefault();
+    var here = window.cabinet && cabinet.here ? cabinet.here() : null;
+    var url = "/workspace/" + (here && here.cabinetPath ? here.cabinetPath : "india-creators-2026");
+    try { window.top.history.pushState(null, "", url); } catch (err) { window.top.location.href = url; }
+  });
+
+  $("cap").addEventListener("input", function () {
+    $("count").textContent = $("cap").value.length + " / 2200";
+  });
+
+  // language chips: any number, at least one
+  each($("langs").querySelectorAll(".chip"), function (b) {
+    b.addEventListener("click", function () {
+      var on = b.getAttribute("aria-pressed") === "true";
+      var count = $("langs").querySelectorAll('[aria-pressed="true"]').length;
+      if (on && count === 1) return;
+      b.setAttribute("aria-pressed", on ? "false" : "true");
+    });
+  });
+  // style chips: one of two
+  each($("style").querySelectorAll(".chip"), function (b) {
+    b.addEventListener("click", function () {
+      each($("style").querySelectorAll(".chip"), function (o) {
+        o.setAttribute("aria-pressed", o === b ? "true" : "false");
+      });
+    });
+  });
+  function picked(id) {
+    var out = [];
+    each($(id).querySelectorAll('[aria-pressed="true"]'), function (b) { out.push(b.getAttribute("data-v")); });
+    return out;
+  }
+
+  // pending state
+  function savePending(p) {
+    pending = p;
+    try { p ? localStorage.setItem(PKEY, JSON.stringify(p)) : localStorage.removeItem(PKEY); } catch (e) {}
+    showPending();
+  }
+  function loadPending() {
+    try { pending = JSON.parse(localStorage.getItem(PKEY) || "null"); } catch (e) { pending = null; }
+  }
+  function showPending(msg) {
+    var st = $("status"), btn = $("go");
+    clearTimeout(timer);
+    if (pending) {
+      if (Date.now() - pending.at > 10 * 60 * 1000) {
+        savePending(null);
+        st.className = "status warn";
+        st.textContent = "No translation came back in 10 minutes. Press Translate caption to try again.";
+        return;
+      }
+      btn.disabled = true;
+      st.className = "status";
+      st.innerHTML = '<span class="dot" aria-hidden="true"></span>Translating your caption. This takes about a minute.';
+      timer = setTimeout(showPending, 15000);
+    } else {
+      btn.disabled = false;
+      st.className = msg ? "status warn" : "status";
+      st.textContent = msg || "";
+    }
+  }
+
+  function makeId(text) {
+    var base = text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").split("-").slice(0, 5).join("-");
+    return (base || "caption") + "-" + Date.now().toString(36);
+  }
+
+  $("brief").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var cap = $("cap").value.trim();
+    if (!cap) { showPending("Paste a caption first."); $("cap").focus(); return; }
+    if (!window.cabinet) { showPending("Open this tool inside Cabinet to translate."); return; }
+    var langs = picked("langs"), style = picked("style")[0] || "everyday";
+    var id = makeId(cap);
+    var text = "Translate this caption.\n\n" +
+      "id: " + id + "\n" +
+      "Languages: " + langs.map(function (l) { return l + " (" + LANG[l].name + ")"; }).join(", ") + "\n" +
+      "Style: " + style + "\n" +
+      "Caption:\n" + cap + "\n\n" +
+      "Write the result to " + DIR + "/" + id + ".json";
+    savePending({ id: id, at: Date.now() });
+    Promise.resolve(cabinet.ask(text, { agent: SLUG })).catch(function () {
+      savePending(null);
+      showPending("Cabinet could not send the request. Press Translate caption again.");
+    });
+  });
+
+  function render() {
+    var r = results.filter(function (x) { return x.id === currentId; })[0] || results[0];
+    var out = $("out");
+    if (!r) {
+      out.innerHTML = '<p class="empty">Your translations show up here, one plate per language.</p>';
+      $("past").hidden = true;
+      return;
+    }
+    currentId = r.id;
+    var tr = (r.translations || []).slice().sort(function (a, b) { return ORDER.indexOf(a.lang) - ORDER.indexOf(b.lang); });
+    var h = '<div class="rhead"><h2>' + (r.style === "pure" ? "Pure" : "Everyday") + " style</h2>" +
+      '<button type="button" class="toggle" id="rom">' + (showRoman ? "Hide Roman letters" : "Show Roman letters") + "</button></div>" +
+      '<div class="source"><span class="tag">English</span>' + esc(r.source) + "</div>" +
+      '<div class="boards">';
+    tr.forEach(function (t, i) {
+      var L = LANG[t.lang] || { name: t.lang, native: t.lang };
+      var cls = LANG[t.lang] ? t.lang : "";
+      var len = String(t.text || "").length;
+      h += '<article class="board">' +
+        '<div class="plate"><span class="rivet a"></span><span class="rivet b"></span><span class="rivet c"></span><span class="rivet d"></span>' +
+          '<span class="tag"><span class="name ' + cls + '" lang="' + esc(t.lang) + '">' + esc(L.native) + "</span><span>" + esc(L.name) + " · " + len + " chars</span></span>" +
+          '<p class="text ' + cls + '" lang="' + esc(t.lang) + '">' + esc(t.text) + "</p>" +
+          (showRoman && t.roman ? '<p class="roman">' + esc(t.roman) + "</p>" : "") +
+        "</div>" +
+        '<div class="under"><span class="note">' + esc(t.note || "") + "</span>" +
+          '<button type="button" class="copy" data-i="' + i + '">Copy ' + esc(L.name) + "</button></div>" +
+      "</article>";
+    });
+    h += "</div>";
+    out.innerHTML = h;
+
+    $("rom").addEventListener("click", function () { showRoman = !showRoman; render(); });
+    each(out.querySelectorAll(".copy"), function (b) {
+      b.addEventListener("click", function () {
+        var t = tr[+b.getAttribute("data-i")];
+        var label = b.textContent;
+        var done = function () { b.textContent = "Copied"; setTimeout(function () { b.textContent = label; }, 1500); };
+        try { navigator.clipboard.writeText(String(t.text || "")).then(done, function () { b.textContent = "Copy failed"; }); }
+        catch (e) { b.textContent = "Copy failed"; }
+      });
+    });
+
+    var list = $("pastList");
+    $("past").hidden = results.length < 2;
+    list.innerHTML = results.map(function (x) {
+      return '<li><button type="button" data-id="' + esc(x.id) + '"' + (x.id === currentId ? ' aria-current="true"' : "") +
+        ' title="' + esc(x.source) + '">' + esc(x.source) + "</button></li>";
+    }).join("");
+    each(list.querySelectorAll("button"), function (b) {
+      b.addEventListener("click", function () {
+        currentId = b.getAttribute("data-id");
+        render();
+        out.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+      });
+    });
+  }
+
+  function refresh() {
+    return cabinet.files.list(DIR).then(function (files) {
+      files = (files || []).filter(function (f) { return !f.isDir && /\.json$/.test(f.name); });
+      return Promise.all(files.map(function (f) {
+        return cabinet.files.read(f.path).then(function (t) {
+          try { var j = JSON.parse(t); j._mod = new Date(f.modified).getTime() || 0; j.id = j.id || f.name.replace(/\.json$/, ""); return j; }
+          catch (e) { return null; }
+        }, function () { return null; });
+      }));
+    }).then(function (list) {
+      results = list.filter(function (x) { return x && x.translations; })
+        .sort(function (a, b) { return (Date.parse(b.createdAt) || b._mod) - (Date.parse(a.createdAt) || a._mod); });
+      if (pending) {
+        var fresh = results.filter(function (x) { return x.id === pending.id || x._mod > pending.at; })[0];
+        if (fresh) { currentId = fresh.id; savePending(null); }
+      }
+      render();
+    }).catch(function () { render(); });
+  }
+
+  loadPending();
+  showPending();
+  if (window.cabinet && cabinet.ready) {
+    cabinet.ready.then(function () {
+      refresh();
+      cabinet.files.onChange(DIR, refresh);
+    });
+  } else {
+    render();
+  }
+})();
+</script>
+</body>
+</html>

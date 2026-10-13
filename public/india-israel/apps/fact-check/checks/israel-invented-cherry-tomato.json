@@ -1,0 +1,42 @@
+{
+  "id": "israel-invented-cherry-tomato",
+  "claim": "Israel invented the cherry tomato.",
+  "verdict": "misleading",
+  "confidence": 85,
+  "headline": "Israel didn't invent it. It made it travel.",
+  "summary": "Small wild tomatoes come from South America (Peru, Ecuador and northern Chile), long before Israel existed. What Israel did is real: in the 1970s and 1980s, Hebrew University professors Nachum Kedar and Haim Rabinowitch bred tomatoes with a long shelf life and better flavour, which helped turn cherry tomatoes into a global supermarket product.",
+  "summary_hi": "चेरी टमाटर का आविष्कार इज़राइल में नहीं हुआ। छोटे जंगली टमाटर दक्षिण अमेरिका (पेरू, इक्वाडोर, उत्तरी चिली) से आते हैं। लेकिन इज़राइल का योगदान असली है: 1970 और 80 के दशक में हिब्रू यूनिवर्सिटी के प्रोफ़ेसर नाहुम केदार और हाइम राबिनोविच ने ऐसे टमाटर विकसित किए जो लंबे समय तक ताज़ा रहते हैं, और इसी से चेरी टमाटर दुनिया भर के सुपरमार्केट तक पहुँचे।",
+  "sources": [
+    {
+      "title": "Cherry Tomatoes Have Surprising Israeli Roots",
+      "publisher": "My Jewish Learning",
+      "url": "https://www.myjewishlearning.com/the-nosher/cherry-tomatoes-have-surprising-israeli-roots/",
+      "stance": "contradicts",
+      "quote": "Did Israel alone create the cherry tomato? No."
+    },
+    {
+      "title": "Israeli Farmers Develop What May Be The World's Tiniest Tomato",
+      "publisher": "NoCamels",
+      "url": "https://nocamels.com/?p=62082",
+      "stance": "contradicts",
+      "quote": "While the cherry tomato was not invented in Israel"
+    },
+    {
+      "title": "6 top tomato innovations from Israeli experts",
+      "publisher": "ISRAEL21c",
+      "url": "https://archive.israel21c.org/6-top-tomato-innovations-from-israeli-experts/",
+      "stance": "context",
+      "quote": "Cherry tomatoes were tasteless and had no shelf life, so they couldn't be made into a commodity"
+    }
+  ],
+  "timeline": [
+    { "date": "Before 1500", "event": "Small wild tomatoes grow in the Andes of Peru, Ecuador and northern Chile." },
+    { "date": "1970s", "event": "Kedar and Rabinowitch at the Hebrew University start breeding tomatoes with an extended shelf life." },
+    { "date": "Late 1900s", "event": "British retailer Marks and Spencer asks the Hebrew University for a tasty tomato that survives shipping, and cherry tomatoes go mainstream." },
+    { "date": "2017-08-31", "event": "My Jewish Learning: the professors refined the fruit, they did not invent it." },
+    { "date": "2018-01-08", "event": "NoCamels repeats it: not invented in Israel, though several strains were developed there." }
+  ],
+  "caption_en": "\"Israel invented the cherry tomato\" is a myth. It's been around for centuries.\nWhat Israeli scientists did: made it last for weeks, so it could reach your supermarket. #FactCheck #Israel #Food",
+  "caption_hi": "\"चेरी टमाटर इज़राइल ने बनाया\" एक मिथक है। यह सदियों पुराना है।\nइज़राइली वैज्ञानिकों ने इसे हफ़्तों तक ताज़ा रहने लायक बनाया, ताकि यह आपकी थाली तक पहुँच सके। #FactCheck",
+  "checkedAt": "2026-10-12T16:12:00Z"
+}

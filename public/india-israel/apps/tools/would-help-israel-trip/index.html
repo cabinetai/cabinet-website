@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script src="../../readonly.js"></script>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Israel Trip Planner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;500;700&family=Noto+Sans+Devanagari:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --glass:#e4efec;      /* sea-glass page */
+  --paper:#f7fbfa;
+  --ink:#0f3534;
+  --soft:#4d6f6c;
+  --line:#c3d8d3;
+  --coast:#1f9a94;      /* Mediterranean */
+  --north:#5b8f3a;      /* Galilee green */
+  --city:#c79a3b;       /* Jerusalem stone */
+  --desert:#c5573f;     /* Negev rock */
+  --pom:#a81e3c;        /* pomegranate */
+  --display:"Bricolage Grotesque","Noto Sans Devanagari",sans-serif;
+  --body:"Figtree","Noto Sans Devanagari",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--glass);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5}
+button,input,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--pom);outline-offset:2px}
+
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 20px;max-width:1080px;margin:0 auto}
+.back{color:var(--ink);font-weight:700;text-decoration:none;border-bottom:2px solid var(--ink)}
+.lang{display:flex;border:2px solid var(--ink);border-radius:999px;overflow:hidden}
+.lang button{border:0;background:transparent;padding:5px 13px;font-weight:700;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+
+.hero{max-width:1080px;margin:0 auto;padding:18px 20px 26px}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(2.3rem,8vw,4.6rem);line-height:.98;letter-spacing:-.03em;margin:0 0 12px;max-width:13ch}
+.lede{max-width:54ch;color:var(--soft);margin:0 0 22px}
+.setup{display:flex;flex-wrap:wrap;gap:14px 28px;align-items:flex-end}
+.setup label{display:block;font-size:.8rem;font-weight:700;margin-bottom:5px}
+.setup input[type=date]{border:2px solid var(--ink);background:var(--paper);border-radius:10px;padding:9px 12px;min-height:44px}
+.count{font-family:var(--display);font-weight:800;font-size:1.6rem;line-height:1}
+.count small{display:block;font-family:var(--body);font-weight:500;font-size:.8rem;color:var(--soft);margin-top:5px}
+
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px 60px;display:grid;grid-template-columns:210px 1fr;gap:34px;align-items:start}
+
+/* The route: one line through the country, coloured by region */
+.route{position:sticky;top:14px;list-style:none;margin:0;padding:0}
+.route li{position:relative;padding:0 0 0 30px}
+.route li::before{content:"";position:absolute;left:8px;top:0;bottom:0;width:6px;background:var(--c)}
+.route li:first-child::before{border-radius:6px 6px 0 0;top:12px}
+.route li:last-child::before{border-radius:0 0 6px 6px;bottom:calc(100% - 26px)}
+.route a{display:block;padding:7px 0;color:var(--ink);text-decoration:none;font-weight:500;font-size:.93rem;line-height:1.25}
+.route a::before{content:"";position:absolute;left:3px;top:11px;width:16px;height:16px;border-radius:50%;background:var(--paper);border:4px solid var(--c)}
+.route li.full a::before{background:var(--c)}
+.route a b{display:block;font-size:.72rem;font-weight:700;color:var(--soft)}
+.route a:hover{color:var(--pom)}
+
+.days{display:grid;gap:18px;min-width:0}
+.day{background:var(--paper);border-radius:18px;padding:20px 22px 20px 26px;border-left:8px solid var(--c);scroll-margin-top:14px}
+.day header{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px 16px;align-items:baseline}
+.when{font-weight:700;font-size:.82rem;color:var(--c);filter:brightness(.8)}
+.day h2{font-family:var(--display);font-weight:800;font-size:clamp(1.5rem,4.4vw,2.1rem);letter-spacing:-.02em;line-height:1.08;margin:2px 0 4px;flex-basis:100%}
+.sleep{color:var(--soft);font-size:.9rem;margin:0 0 12px}
+.shabbat{background:#fbeef0;border:1.5px solid var(--pom);color:#6f0f24;border-radius:10px;padding:8px 12px;font-size:.9rem;margin:0 0 12px}
+.stops{list-style:none;margin:0 0 14px;padding:0}
+.stops label{display:flex;gap:12px;align-items:flex-start;padding:9px 0;border-top:1px solid var(--line);cursor:pointer}
+.stops input{appearance:none;flex:none;width:22px;height:22px;margin:1px 0 0;border:2px solid var(--ink);border-radius:6px;background:var(--paper);cursor:pointer}
+.stops input:checked{background:var(--ink) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3 8.5l3.2 3L13 4.8' fill='none' stroke='%23fff' stroke-width='2.4'/%3E%3C/svg%3E") center/16px no-repeat}
+.stops input:checked + span{color:var(--soft);text-decoration:line-through}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px}
+.note{border-radius:12px;padding:11px 13px;font-size:.92rem;background:var(--glass)}
+.note b{display:block;font-size:.74rem;margin-bottom:2px}
+.day textarea{width:100%;min-height:44px;resize:vertical;border:1.5px dashed var(--soft);border-radius:10px;background:transparent;padding:9px 12px}
+.day textarea::placeholder{color:var(--soft)}
+
+.know{max-width:1080px;margin:0 auto;padding:0 20px 70px}
+.know h2{font-family:var(--display);font-weight:800;font-size:1.5rem;margin:0 0 10px}
+.know ul{margin:0;padding-left:20px;max-width:70ch}
+.know li{margin-bottom:7px}
+
+@media (max-width:760px){
+  .wrap{grid-template-columns:1fr;gap:16px}
+  .route{position:static;display:flex;overflow-x:auto;padding-bottom:6px}
+  .route li{padding:26px 14px 0 0;flex:none;max-width:120px}
+  .route li::before{left:0;right:0;top:8px;bottom:auto;width:auto;height:6px}
+  .route li:first-child::before{top:8px;border-radius:6px 0 0 6px}
+  .route li:last-child::before{bottom:auto;right:60%;border-radius:0}
+  .route a{padding:0}
+  .route a::before{left:0;top:3px}
+  .pair{grid-template-columns:1fr}
+  .day{padding:16px 16px 16px 18px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="top">
+  <a href="#" class="back" id="back"></a>
+  <div class="lang" role="group" aria-label="Language">
+    <button type="button" data-lang="en">English</button>
+    <button type="button" data-lang="hi">हिन्दी</button>
+  </div>
+</div>
+
+<section class="hero">
+  <h1 id="title"></h1>
+  <p class="lede" id="lede"></p>
+  <div class="setup">
+    <div>
+      <label for="start" id="startLabel"></label>
+      <input type="date" id="start">
+    </div>
+    <div class="count" aria-live="polite"><span id="count"></span><small id="countLabel"></small></div>
+  </div>
+</section>
+
+<div class="wrap">
+  <ol class="route" id="route"></ol>
+  <main class="days" id="days"></main>
+</div>
+
+<section class="know">
+  <h2 id="knowTitle"></h2>
+  <ul id="know"></ul>
+</section>
+
+<script>
+var LANG_KEY = "india-creators-2026:lang";
+var SAVE_KEY = "israel-trip";
+var COLORS = { coast: "var(--coast)", north: "var(--north)", city: "var(--city)", desert: "var(--desert)" };
+
+var T = {
+  en: {
+    back: "Back to Creator Hub",
+    title: "Ten days in Israel",
+    lede: "A ready route from the Tel Aviv coast up to the Galilee, across to Jerusalem and down to the desert. Tick stops as you go and keep your own notes for each day.",
+    start: "First day of your trip",
+    countLabel: "stops done",
+    day: "Day",
+    sleep: "Sleep in",
+    shot: "Shot to get",
+    tip: "Good to know",
+    notes: "Your notes for this day",
+    fri: "This is a Friday. Shabbat starts at sunset: buses and trains stop and most shops close until Saturday night. Travel and shop before mid afternoon.",
+    sat: "This is a Saturday. Until nightfall there is almost no public transport and many places are closed. Plan to walk, or book a taxi or a tour.",
+    knowTitle: "Before you fly",
+    know: [
+      "Indian passport holders need a visa for Israel. Apply before you book flights and check the current rules on the official Israeli visa site.",
+      "Read your government's travel advisory before you book and again in the week you fly. Routes in the north and south can change at short notice.",
+      "The currency is the shekel. Cards work almost everywhere, keep some cash for markets.",
+      "Vegetarian food is easy: falafel, hummus, shakshuka, salads. Sabich has egg, and you can ask for it without.",
+      "Cover shoulders and knees at holy sites. Carry a light scarf in your bag.",
+      "Ask before you film people, above all at prayer sites and in religious neighbourhoods."
+    ]
+  },
+  hi: {
+    back: "क्रिएटर हब पर वापस",
+    title: "इज़राइल में दस दिन",
+    lede: "तेल अवीव के समुद्र तट से गलील, फिर यरूशलम और आख़िर में रेगिस्तान तक का तैयार रास्ता। जो जगह देख ली उस पर निशान लगाएँ और हर दिन के अपने नोट्स रखें।",
+    start: "आपकी यात्रा का पहला दिन",
+    countLabel: "जगहें पूरी",
+    day: "दिन",
+    sleep: "रात यहाँ रुकें",
+    shot: "यह शॉट ज़रूर लें",
+    tip: "जानने लायक",
+    notes: "इस दिन के आपके नोट्स",
+    fri: "यह शुक्रवार है। सूर्यास्त से शब्बात शुरू होता है: बसें और ट्रेनें बंद हो जाती हैं और ज़्यादातर दुकानें शनिवार रात तक बंद रहती हैं। सफ़र और ख़रीदारी दोपहर तक निपटा लें।",
+    sat: "यह शनिवार है। रात होने तक सार्वजनिक परिवहन लगभग नहीं चलता और कई जगहें बंद रहती हैं। पैदल घूमने की योजना बनाएँ, या टैक्सी या टूर बुक करें।",
+    knowTitle: "उड़ान से पहले",
+    know: [
+      "भारतीय पासपोर्ट पर इज़राइल के लिए वीज़ा ज़रूरी है। टिकट बुक करने से पहले आवेदन करें और इज़राइल की आधिकारिक वीज़ा साइट पर ताज़ा नियम देखें।",
+      "बुकिंग से पहले और उड़ान वाले हफ़्ते में सरकार की यात्रा सलाह ज़रूर पढ़ें। उत्तर और दक्षिण के रास्ते अचानक बदल सकते हैं।",
+      "यहाँ की मुद्रा शेकेल है। कार्ड लगभग हर जगह चलता है, बाज़ारों के लिए थोड़ा नक़द रखें।",
+      "शाकाहारी खाना आसानी से मिलता है: फ़लाफ़ल, हम्मस, शकशुका, सलाद। सबीख़ में अंडा होता है, बिना अंडे के माँग सकते हैं।",
+      "पवित्र स्थलों पर कंधे और घुटने ढके रखें। बैग में एक हल्का दुपट्टा रखें।",
+      "लोगों को फ़िल्माने से पहले पूछें, ख़ासकर प्रार्थना स्थलों और धार्मिक मोहल्लों में।"
+    ]
+  }
+};
+
+/* Each text is [English, Hindi]. */
+var DAYS = [
+  { r: "coast", place: ["Tel Aviv: land and reach the sea", "तेल अवीव: पहुँचें और समुद्र तक जाएँ"], sleep: ["Tel Aviv", "तेल अवीव"],
+    stops: [["Train or taxi from Ben Gurion Airport to the city", "बेन गुरियन हवाई अड्डे से ट्रेन या टैक्सी से शहर"], ["Walk the beach promenade north to south", "समुद्र किनारे की सैरगाह पर उत्तर से दक्षिण तक पैदल"], ["Sunset at Old Jaffa and its port", "पुराने जाफ़ा और उसके बंदरगाह पर सूर्यास्त"]],
+    shot: ["The Tel Aviv skyline from the Jaffa hilltop as the lights come on.", "जाफ़ा की पहाड़ी से तेल अवीव की स्काईलाइन, जब बत्तियाँ जलने लगें।"],
+    tip: ["Keep day one light. Buy a local SIM or eSIM at the airport.", "पहला दिन हल्का रखें। हवाई अड्डे पर ही लोकल सिम या ई-सिम ले लें।"] },
+  { r: "coast", place: ["Tel Aviv: markets and the White City", "तेल अवीव: बाज़ार और व्हाइट सिटी"], sleep: ["Tel Aviv", "तेल अवीव"],
+    stops: [["Carmel Market in the morning", "सुबह कार्मेल मार्केट"], ["Neve Tzedek lanes", "नेवे त्सेदेक की गलियाँ"], ["Bauhaus buildings on Rothschild Boulevard", "रोथ्सचाइल्ड बुलेवार्ड की बाउहाउस इमारतें"], ["Street art in Florentin", "फ़्लोरेंटीन का स्ट्रीट आर्ट"]],
+    shot: ["A food reel in Carmel Market: one stall, one dish, hands at work.", "कार्मेल मार्केट में फ़ूड रील: एक दुकान, एक पकवान, काम करते हाथ।"],
+    tip: ["Markets are busiest and best before noon.", "बाज़ार दोपहर से पहले सबसे अच्छे और सबसे चहल-पहल वाले होते हैं।"] },
+  { r: "north", place: ["Caesarea and Haifa", "कैसरिया और हाइफ़ा"], sleep: ["Haifa", "हाइफ़ा"],
+    stops: [["Roman theatre and old harbour at Caesarea", "कैसरिया का रोमन थिएटर और पुराना बंदरगाह"], ["Baháʼí Gardens in Haifa, from the top terrace", "हाइफ़ा के बहाई गार्डन, ऊपर की छत से"], ["Evening in the German Colony", "शाम जर्मन कॉलोनी में"]],
+    shot: ["The terraces of the Baháʼí Gardens running down to the bay.", "बहाई गार्डन की सीढ़ीदार छतें, जो खाड़ी तक उतरती हैं।"],
+    tip: ["A hired car makes the north much easier than buses.", "उत्तर में बसों के मुक़ाबले किराये की कार से घूमना कहीं आसान है।"] },
+  { r: "north", place: ["Akko and Rosh HaNikra", "अक्को और रोश हानिक्रा"], sleep: ["Haifa", "हाइफ़ा"],
+    stops: [["Old city walls and port of Akko", "अक्को के पुराने शहर की दीवारें और बंदरगाह"], ["Crusader halls under the old city", "पुराने शहर के नीचे क्रूसेडर हॉल"], ["Sea grottoes at Rosh HaNikra", "रोश हानिक्रा की समुद्री गुफाएँ"]],
+    shot: ["Waves pushing through the white grottoes at Rosh HaNikra.", "रोश हानिक्रा की सफ़ेद गुफाओं से टकराती लहरें।"],
+    tip: ["Rosh HaNikra sits on the northern border. Check it is open that day.", "रोश हानिक्रा उत्तरी सीमा पर है। देख लें कि उस दिन खुला है।"] },
+  { r: "north", place: ["Nazareth and the Sea of Galilee", "नासरत और गलील की झील"], sleep: ["Tiberias", "तिबेरियास"],
+    stops: [["Old city and market of Nazareth", "नासरत का पुराना शहर और बाज़ार"], ["Capernaum on the lake shore", "झील किनारे कफ़रनहूम"], ["Mount of Beatitudes viewpoint", "माउंट ऑफ़ बीटिट्यूड्स से नज़ारा"], ["Evening by the water in Tiberias", "तिबेरियास में पानी के किनारे शाम"]],
+    shot: ["Golden hour over the lake from the Mount of Beatitudes.", "माउंट ऑफ़ बीटिट्यूड्स से झील पर सुनहरी शाम।"],
+    tip: ["Churches close for a midday break. Go early or late afternoon.", "चर्च दोपहर में कुछ देर बंद रहते हैं। सुबह या देर दोपहर जाएँ।"] },
+  { r: "city", place: ["To Jerusalem: market and first view", "यरूशलम की ओर: बाज़ार और पहला नज़ारा"], sleep: ["Jerusalem", "यरूशलम"],
+    stops: [["Drive south to Jerusalem", "दक्षिण की ओर यरूशलम तक सफ़र"], ["Mahane Yehuda market", "महाने येहुदा मार्केट"], ["Sunset from the Mount of Olives", "माउंट ऑफ़ ऑलिव्स से सूर्यास्त"]],
+    shot: ["The whole Old City in one frame from the Mount of Olives.", "माउंट ऑफ़ ऑलिव्स से एक ही फ़्रेम में पूरा पुराना शहर।"],
+    tip: ["Jerusalem is on a hill and cooler at night. Carry a layer.", "यरूशलम पहाड़ी पर है और रात को ठंडा रहता है। एक गरम कपड़ा साथ रखें।"] },
+  { r: "city", place: ["Jerusalem: the Old City", "यरूशलम: पुराना शहर"], sleep: ["Jerusalem", "यरूशलम"],
+    stops: [["Western Wall", "पश्चिमी दीवार"], ["Church of the Holy Sepulchre", "चर्च ऑफ़ द होली सेपल्कर"], ["Walk the four quarters and the souk", "चारों मोहल्लों और बाज़ार में पैदल"], ["Tower of David and the ramparts", "टावर ऑफ़ डेविड और परकोटा"]],
+    shot: ["Morning light in the stone lanes before the shops open.", "दुकानें खुलने से पहले पत्थर की गलियों में सुबह की रोशनी।"],
+    tip: ["Non-Muslim visits to the Temple Mount have short, fixed hours. Check them the day before.", "टेम्पल माउंट पर ग़ैर-मुस्लिम दर्शकों के लिए समय कम और तय है। एक दिन पहले देख लें।"] },
+  { r: "city", place: ["Jerusalem: museums and Ein Karem", "यरूशलम: संग्रहालय और एन करेम"], sleep: ["Jerusalem", "यरूशलम"],
+    stops: [["Yad Vashem", "याद वाशेम"], ["Israel Museum and the Dead Sea Scrolls", "इज़राइल म्यूज़ियम और डेड सी स्क्रॉल"], ["Ein Karem village in the evening", "शाम को एन करेम गाँव"]],
+    shot: ["Slow walking shots through Ein Karem's lanes and gardens.", "एन करेम की गलियों और बाग़ों में धीमे चलते शॉट।"],
+    tip: ["Yad Vashem is a memorial. No photos inside the museum, so put the camera away.", "याद वाशेम एक स्मारक है। संग्रहालय के अंदर फ़ोटो मना है, कैमरा अंदर रख दें।"] },
+  { r: "desert", place: ["Masada and the Dead Sea", "मसादा और मृत सागर"], sleep: ["Ein Bokek", "एन बोकेक"],
+    stops: [["Sunrise on top of Masada", "मसादा के ऊपर सूर्योदय"], ["Short walk to the waterfall at Ein Gedi", "एन गेदी के झरने तक छोटी सैर"], ["Float in the Dead Sea", "मृत सागर में तैरें"]],
+    shot: ["Sunrise from Masada, then the classic float with a newspaper.", "मसादा से सूर्योदय, फिर अख़बार के साथ तैरने वाला मशहूर शॉट।"],
+    tip: ["Do not shave that morning and keep the water out of your eyes. Drink a lot.", "उस सुबह शेव न करें और पानी आँखों में न जाने दें। ख़ूब पानी पिएँ।"] },
+  { r: "desert", place: ["Negev: Ramon Crater, then home", "नेगेव: रामोन क्रेटर, फिर घर"], sleep: ["Fly out from Tel Aviv", "तेल अवीव से उड़ान"],
+    stops: [["Ramon Crater rim at Mitzpe Ramon", "मित्ज़पे रामोन में रामोन क्रेटर का किनारा"], ["Short walk on the crater floor", "क्रेटर की तलहटी में छोटी सैर"], ["Drive back to Ben Gurion Airport", "बेन गुरियन हवाई अड्डे तक वापसी"]],
+    shot: ["A wide shot of you on the crater rim for the trip's closing frame.", "यात्रा के आख़िरी फ़्रेम के लिए क्रेटर के किनारे पर आपका वाइड शॉट।"],
+    tip: ["Leave a wide margin for the airport. Security checks take time.", "हवाई अड्डे के लिए काफ़ी समय रखें। सुरक्षा जाँच में वक़्त लगता है।"] }
+];
+
+var state = { start: "", done: {}, notes: {} };
+var lang = "en";
+var saveTimer = null;
+
+function $(id) { return document.getElementById(id); }
+function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+function readLang() { try { return localStorage.getItem(LANG_KEY) === "hi" ? "hi" : "en"; } catch (e) { return "en"; } }
+function tx(pair) { return pair[lang === "hi" ? 1 : 0]; }
+
+function save() {
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(function () {
+    try { localStorage.setItem("india-creators-2026:" + SAVE_KEY, JSON.stringify(state)); } catch (e) {}
+    if (window.cabinet && cabinet.mine) { try { cabinet.mine.set(SAVE_KEY, state); } catch (e) {} }
+  }, 400);
+}
+function adopt(v) {
+  if (typeof v === "string") { try { v = JSON.parse(v); } catch (e) { v = null; } }
+  if (!v || typeof v !== "object") return false;
+  state.start = typeof v.start === "string" ? v.start : "";
+  state.done = v.done && typeof v.done === "object" ? v.done : {};
+  state.notes = v.notes && typeof v.notes === "object" ? v.notes : {};
+  return true;
+}
+
+function dateFor(i) {
+  var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(state.start);
+  if (!m) return null;
+  return new Date(+m[1], +m[2] - 1, +m[3] + i);
+}
+function doneIn(i) {
+  var n = 0;
+  DAYS[i].stops.forEach(function (s, j) { if (state.done[i + "-" + j]) n++; });
+  return n;
+}
+function paintCount() {
+  var total = 0, done = 0;
+  DAYS.forEach(function (d, i) {
+    total += d.stops.length; done += doneIn(i);
+    var li = $("route").children[i];
+    if (li) li.classList.toggle("full", doneIn(i) === d.stops.length);
+  });
+  $("count").textContent = done + " / " + total;
+}
+
+function paint() {
+  var t = T[lang];
+  document.documentElement.lang = lang;
+  $("back").textContent = "← " + t.back;
+  $("title").textContent = t.title;
+  $("lede").textContent = t.lede;
+  $("startLabel").textContent = t.start;
+  $("countLabel").textContent = t.countLabel;
+  $("knowTitle").textContent = t.knowTitle;
+  $("start").value = state.start;
+  $("know").innerHTML = t.know.map(function (k) { return "<li>" + esc(k) + "</li>"; }).join("");
+  Array.prototype.forEach.call(document.querySelectorAll(".lang button"), function (b) {
+    b.setAttribute("aria-pressed", String(b.getAttribute("data-lang") === lang));
+  });
+
+  var route = "", days = "";
+  DAYS.forEach(function (d, i) {
+    var date = dateFor(i);
+    var when = t.day + " " + (i + 1);
+    var warn = "";
+    if (date) {
+      when += " · " + date.toLocaleDateString(lang === "hi" ? "hi-IN" : "en-IN", { weekday: "long", day: "numeric", month: "short" });
+      if (date.getDay() === 5) warn = t.fri;
+      if (date.getDay() === 6) warn = t.sat;
+    }
+    var c = COLORS[d.r];
+    route += '<li style="--c:' + c + '"><a href="#day' + i + '"><b>' + esc(t.day + " " + (i + 1)) + "</b>" + esc(tx(d.place).split(":")[0]) + "</a></li>";
+    days += '<article class="day" id="day' + i + '" style="--c:' + c + '"><header><span class="when">' + esc(when) + "</span><h2>" + esc(tx(d.place)) + "</h2></header>" +
+      '<p class="sleep">' + esc(t.sleep) + ": " + esc(tx(d.sleep)) + "</p>" +
+      (warn ? '<p class="shabbat">' + esc(warn) + "</p>" : "") +
+      '<ul class="stops">' + d.stops.map(function (s, j) {
+        var k = i + "-" + j;
+        return '<li><label><input type="checkbox" data-k="' + k + '"' + (state.done[k] ? " checked" : "") + "><span>" + esc(tx(s)) + "</span></label></li>";
+      }).join("") + "</ul>" +
+      '<div class="pair"><p class="note"><b>' + esc(t.shot) + "</b>" + esc(tx(d.shot)) + '</p><p class="note"><b>' + esc(t.tip) + "</b>" + esc(tx(d.tip)) + "</p></div>" +
+      '<textarea data-n="' + i + '" rows="1" aria-label="' + esc(t.notes) + '" placeholder="' + esc(t.notes) + '">' + esc(state.notes[i] || "") + "</textarea></article>";
+  });
+  $("route").innerHTML = route;
+  $("days").innerHTML = days;
+  paintCount();
+}
+
+$("days").addEventListener("change", function (e) {
+  var k = e.target.getAttribute("data-k");
+  if (!k) return;
+  if (e.target.checked) state.done[k] = 1; else delete state.done[k];
+  paintCount(); save();
+});
+$("days").addEventListener("input", function (e) {
+  var n = e.target.getAttribute("data-n");
+  if (n === null) return;
+  state.notes[n] = e.target.value;
+  save();
+});
+$("start").addEventListener("change", function (e) { state.start = e.target.value; paint(); save(); });
+
+Array.prototype.forEach.call(document.querySelectorAll(".lang button"), function (b) {
+  b.addEventListener("click", function () {
+    lang = b.getAttribute("data-lang");
+    try { localStorage.setItem(LANG_KEY, lang); } catch (e) {}
+    paint();
+  });
+});
+window.addEventListener("storage", function (e) { if (e.key === LANG_KEY) { lang = readLang(); paint(); } });
+
+$("back").addEventListener("click", function (e) {
+  e.preventDefault();
+  var here = window.cabinet && cabinet.here ? cabinet.here() : null;
+  var url = "/workspace/" + (here && here.cabinetPath ? here.cabinetPath : "india-creators-2026");
+  try { window.top.history.pushState(null, "", url); } catch (err) { window.top.location.href = url; }
+});
+
+lang = readLang();
+try { adopt(localStorage.getItem("india-creators-2026:" + SAVE_KEY)); } catch (e) {}
+paint();
+if (window.cabinet && cabinet.ready) {
+  cabinet.ready.then(function () { return cabinet.mine.get(SAVE_KEY); }).then(function (v) {
+    if (adopt(v)) paint();
+  }).catch(function () {});
+}
+</script>
+</body>
+</html>

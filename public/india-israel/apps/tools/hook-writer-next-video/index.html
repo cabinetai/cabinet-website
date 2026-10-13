@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script src="../../readonly.js"></script>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hook Writer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&family=Hanken+Grotesk:wght@400;500;700;800&family=DM+Mono:wght@500&family=Mukta:wght@500;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bottle:#0e3b35;--deep:#082622;--rani:#ff2e88;--lime:#e6f14a;--chalk:#f4f6ee;--mist:#9db8b1;--line:#1f554d;
+    --display:'Unbounded',system-ui,sans-serif;
+    --sans:'Hanken Grotesk',system-ui,sans-serif;
+    --mono:'DM Mono',ui-monospace,monospace;
+    --hi:'Mukta','Hanken Grotesk',sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{background:var(--bottle);color:var(--chalk);font:16px/1.5 var(--sans);min-height:100vh}
+  a{color:inherit}
+  :focus-visible{outline:3px solid var(--lime);outline-offset:3px}
+  .wrap{max-width:1180px;margin:0 auto;padding:18px 20px 64px}
+
+  .top{display:flex;justify-content:space-between;align-items:center;gap:12px;font:500 13px/1 var(--mono);color:var(--mist)}
+  .top a{text-decoration:none;padding:6px 0}
+  .top a:hover{color:var(--chalk)}
+
+  header.mast{margin:36px 0 28px;display:grid;gap:10px}
+  .mast h1{font:800 clamp(34px,7vw,72px)/.95 var(--display);letter-spacing:-.02em;margin:0}
+  .mast h1 .sec{color:var(--rani)}
+  .mast p{margin:0;max-width:560px;color:var(--mist);font-size:17px}
+  .mast p .hi{font-family:var(--hi);color:var(--chalk)}
+
+  /* the brief */
+  form.brief{background:var(--deep);border:1px solid var(--line);border-radius:18px;padding:20px;display:grid;gap:16px}
+  label.lab{font:500 12px/1 var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--mist);display:block;margin-bottom:8px}
+  textarea,input[type=text]{width:100%;background:var(--bottle);color:var(--chalk);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font:500 17px/1.4 var(--sans)}
+  textarea{min-height:88px;resize:vertical}
+  textarea::placeholder,input::placeholder{color:#6f938b}
+  .row{display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:end}
+  .chips{display:flex;gap:6px;flex-wrap:wrap}
+  .chip{appearance:none;border:1px solid var(--line);background:transparent;color:var(--chalk);border-radius:999px;padding:9px 14px;font:600 14px/1 var(--sans);cursor:pointer}
+  .chip[aria-pressed=true]{background:var(--chalk);color:var(--deep);border-color:var(--chalk)}
+  .go{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  button.write{appearance:none;border:0;background:var(--rani);color:#fff;border-radius:12px;padding:14px 22px;font:800 16px/1 var(--sans);cursor:pointer}
+  button.write:disabled{opacity:.55;cursor:wait}
+  .status{font:500 13px/1.4 var(--mono);color:var(--mist)}
+  .status.warn{color:var(--lime)}
+  .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--rani);margin-right:8px;vertical-align:1px;animation:blink 1s steps(2) infinite}
+  @keyframes blink{50%{opacity:.2}}
+
+  /* result */
+  .result{margin-top:44px}
+  .rhead{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:18px}
+  .rhead .idea{font:500 clamp(18px,2.6vw,24px)/1.3 var(--display);max-width:720px;margin:4px 0 0}
+  .meta{font:500 12px/1 var(--mono);color:var(--mist);text-transform:uppercase;letter-spacing:.08em}
+  .lang{display:inline-flex;background:var(--deep);border:1px solid var(--line);border-radius:999px;padding:3px}
+  .lang button{appearance:none;border:0;background:transparent;color:var(--mist);border-radius:999px;padding:8px 14px;font:700 14px/1 var(--sans);cursor:pointer}
+  .lang button[lang=hi]{font-family:var(--hi);font-size:15px}
+  .lang button[aria-pressed=true]{background:var(--lime);color:var(--deep)}
+
+  .reel{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(232px,260px);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 18px;scrollbar-color:var(--line) transparent}
+  .take{scroll-snap-align:start;display:grid;gap:12px;align-content:start}
+  .frame{position:relative;aspect-ratio:9/16;border-radius:20px;overflow:hidden;background:
+      radial-gradient(120% 70% at 50% 110%,#16584f 0%,transparent 60%),
+      linear-gradient(180deg,#0b302b,#05201c);
+    border:1px solid var(--line);display:flex;flex-direction:column;justify-content:center;padding:18px}
+  .frame .style{position:absolute;top:14px;left:14px;font:500 11px/1 var(--mono);text-transform:uppercase;letter-spacing:.1em;color:var(--mist)}
+  .frame .line{font:800 22px/1.18 var(--sans);text-align:center;text-wrap:balance;color:#fff}
+  .frame .line.hi{font-family:var(--hi);font-size:23px;line-height:1.3}
+  .frame mark{background:var(--lime);color:var(--deep);padding:0 .14em;border-radius:4px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+  .frame .sticker{position:absolute;left:14px;right:14px;bottom:44px;text-align:center}
+  .frame .sticker span{display:inline-block;background:#fff;color:var(--deep);font:700 13px/1.25 var(--sans);padding:6px 10px;border-radius:8px;transform:rotate(-2deg)}
+  .frame .sticker span.hi{font-family:var(--hi);font-size:14px}
+  .clock{position:absolute;left:14px;right:14px;bottom:16px;display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center}
+  .bar{height:4px;background:rgba(255,255,255,.18);border-radius:4px;overflow:hidden}
+  .bar i{display:block;height:100%;background:var(--chalk);border-radius:4px}
+  .clock b{font:500 11px/1 var(--mono);color:var(--chalk)}
+  .over .bar i{background:var(--rani)}
+  .over b{color:var(--rani)}
+  .notes{font-size:14px;line-height:1.45;color:var(--mist);display:grid;gap:6px}
+  .notes strong{color:var(--chalk);font-weight:700}
+  .copy{justify-self:start;appearance:none;background:transparent;border:1px solid var(--line);color:var(--chalk);border-radius:10px;padding:8px 12px;font:700 13px/1 var(--sans);cursor:pointer}
+  .copy:hover{border-color:var(--chalk)}
+
+  .past{margin-top:40px;border-top:1px solid var(--line);padding-top:18px}
+  .past ul{list-style:none;margin:10px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+  .past button{appearance:none;background:transparent;border:1px solid var(--line);color:var(--chalk);border-radius:10px;padding:8px 12px;font:500 14px/1.3 var(--sans);cursor:pointer;max-width:340px;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .past button[aria-current=true]{border-color:var(--lime);color:var(--lime)}
+  .empty{color:var(--mist);margin-top:36px}
+
+  @media (max-width:640px){
+    .row{grid-template-columns:1fr}
+    .reel{grid-auto-columns:78%}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .dot{animation:none}
+    .reel{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a href="#" id="back">← Creator Hub</a>
+    <span>Hook Writer</span>
+  </div>
+
+  <header class="mast">
+    <h1>Win the first <span class="sec">3 seconds</span></h1>
+    <p>Tell it your next video idea. You get six openings to say on camera, with the text on screen and the first shot, in English, <span class="hi">हिंदी</span> and Hinglish.</p>
+  </header>
+
+  <form class="brief" id="brief">
+    <div>
+      <label class="lab" for="idea">Your next video idea</label>
+      <textarea id="idea" required placeholder="I tried living on ₹500 a day in Mumbai for a full week"></textarea>
+    </div>
+    <div class="row">
+      <div>
+        <span class="lab" id="platLab">Posting as</span>
+        <div class="chips" role="group" aria-labelledby="platLab" id="plat">
+          <button type="button" class="chip" data-v="reel" aria-pressed="true">Reel</button>
+          <button type="button" class="chip" data-v="short" aria-pressed="false">Short</button>
+          <button type="button" class="chip" data-v="youtube" aria-pressed="false">YouTube video</button>
+        </div>
+      </div>
+      <div>
+        <label class="lab" for="aud">Who's watching (optional)</label>
+        <input type="text" id="aud" placeholder="College students in metro cities">
+      </div>
+    </div>
+    <div class="go">
+      <button type="submit" class="write" id="write">Write hooks</button>
+      <span class="status" id="status" role="status" aria-live="polite"></span>
+    </div>
+  </form>
+
+  <section id="out" aria-live="polite"></section>
+  <section class="past" id="past" hidden>
+    <span class="meta">Earlier ideas</span>
+    <ul id="pastList"></ul>
+  </section>
+</div>
+
+<script>
+(function () {
+  var SLUG = "hook-writer-next-video";
+  var DIR = "tools/" + SLUG + "/data";
+  var PKEY = "india-creators-2026:" + SLUG + ":pending";
+  var LANGS = [["en", "English"], ["hi", "हिंदी"], ["hinglish", "Hinglish"]];
+  var PLAT = { reel: "Reel", short: "Short", youtube: "YouTube video" };
+
+  var results = [], currentId = null, lang = "en", platform = "reel", pending = null, timer = null;
+  var $ = function (id) { return document.getElementById(id); };
+
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+  function markUp(text, hl) {
+    text = String(text || "");
+    var i = hl ? text.indexOf(hl) : -1;
+    if (i < 0) return esc(text);
+    return esc(text.slice(0, i)) + "<mark>" + esc(hl) + "</mark>" + esc(text.slice(i + hl.length));
+  }
+  function seconds(text) {
+    var words = String(text || "").trim().split(/\s+/).filter(Boolean).length;
+    return Math.max(0.5, words / 2.7);
+  }
+
+  // back to hub
+  $("back").addEventListener("click", function (e) {
+    e.preventDefault();
+    var here = window.cabinet && cabinet.here ? cabinet.here() : null;
+    var url = "/workspace/" + (here && here.cabinetPath ? here.cabinetPath : "india-creators-2026");
+    try { window.top.history.pushState(null, "", url); } catch (err) { window.top.location.href = url; }
+  });
+
+  // platform chips
+  Array.prototype.forEach.call($("plat").querySelectorAll(".chip"), function (b) {
+    b.addEventListener("click", function () {
+      platform = b.getAttribute("data-v");
+      Array.prototype.forEach.call($("plat").querySelectorAll(".chip"), function (o) {
+        o.setAttribute("aria-pressed", o === b ? "true" : "false");
+      });
+    });
+  });
+
+  // pending state
+  function savePending(p) {
+    pending = p;
+    try { p ? localStorage.setItem(PKEY, JSON.stringify(p)) : localStorage.removeItem(PKEY); } catch (e) {}
+    showPending();
+  }
+  function loadPending() {
+    try { pending = JSON.parse(localStorage.getItem(PKEY) || "null"); } catch (e) { pending = null; }
+  }
+  function showPending(msg) {
+    var st = $("status"), btn = $("write");
+    clearTimeout(timer);
+    if (pending) {
+      if (Date.now() - pending.at > 10 * 60 * 1000) {
+        savePending(null);
+        st.className = "status warn";
+        st.textContent = "No hooks came back in 10 minutes. Press Write hooks to try again.";
+        return;
+      }
+      btn.disabled = true;
+      st.className = "status";
+      st.innerHTML = '<span class="dot" aria-hidden="true"></span>Writing your hooks. This takes about a minute.';
+      timer = setTimeout(showPending, 15000);
+    } else {
+      btn.disabled = false;
+      st.className = msg ? "status warn" : "status";
+      st.textContent = msg || "";
+    }
+  }
+
+  function makeId(idea) {
+    var base = idea.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").split("-").slice(0, 5).join("-");
+    return (base || "idea") + "-" + Date.now().toString(36);
+  }
+
+  $("brief").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var idea = $("idea").value.trim();
+    if (!idea) { $("idea").focus(); return; }
+    if (!window.cabinet) { showPending("Open this tool inside Cabinet to write hooks."); return; }
+    var aud = $("aud").value.trim();
+    var id = makeId(idea);
+    var text = "Write hooks for my next video.\n\n" +
+      "id: " + id + "\n" +
+      "Platform: " + platform + " (" + PLAT[platform] + ")\n" +
+      "Audience: " + (aud || "not given") + "\n" +
+      "Idea: " + idea + "\n\n" +
+      "Write the result to " + DIR + "/" + id + ".json";
+    savePending({ id: id, at: Date.now() });
+    Promise.resolve(cabinet.ask(text, { agent: SLUG })).catch(function () {
+      savePending(null);
+      showPending("Cabinet could not send the request. Press Write hooks again.");
+    });
+  });
+
+  // rendering
+  function render() {
+    var r = results.filter(function (x) { return x.id === currentId; })[0] || results[0];
+    var out = $("out");
+    if (!r) {
+      out.innerHTML = '<p class="empty">Your hooks show up here, one phone screen each.</p>';
+      $("past").hidden = true;
+      return;
+    }
+    currentId = r.id;
+    var limit = r.platform === "youtube" ? 5 : 3;
+    var h = '<div class="result"><div class="rhead"><div>' +
+      '<span class="meta">' + esc(PLAT[r.platform] || r.platform || "") + (r.audience ? " · for " + esc(r.audience) : "") + "</span>" +
+      '<p class="idea">' + esc(r.idea) + "</p></div>" +
+      '<div class="lang" role="group" aria-label="Language">';
+    LANGS.forEach(function (l) {
+      h += '<button type="button" data-l="' + l[0] + '"' + (l[0] === "hi" ? ' lang="hi"' : "") +
+        ' aria-pressed="' + (lang === l[0]) + '">' + l[1] + "</button>";
+    });
+    h += '</div></div><div class="reel">';
+    (r.hooks || []).forEach(function (k, i) {
+      var line = k[lang] || k.en || "";
+      var hl = k["highlight_" + lang] || "";
+      var isHi = lang === "hi";
+      var sticker = isHi ? (k.onScreen_hi || k.onScreen) : k.onScreen;
+      var secs = seconds(line);
+      var over = secs > limit;
+      var pct = Math.min(100, secs / limit * 100);
+      h += '<article class="take">' +
+        '<div class="frame' + (over ? " over" : "") + '">' +
+          '<span class="style">' + esc(k.style) + "</span>" +
+          '<p class="line' + (isHi ? ' hi" lang="hi' : "") + '">' + markUp(line, hl) + "</p>" +
+          (sticker ? '<div class="sticker"><span' + (isHi ? ' class="hi" lang="hi"' : "") + ">" + esc(sticker) + "</span></div>" : "") +
+          '<div class="clock" title="Rough time to say it out loud"><div class="bar"><i style="width:' + pct.toFixed(0) + '%"></i></div>' +
+          "<b>" + secs.toFixed(1) + "s / " + limit + "s</b></div>" +
+        "</div>" +
+        '<div class="notes">' +
+          (k.shot ? "<div><strong>First shot:</strong> " + esc(k.shot) + "</div>" : "") +
+          (k.why ? "<div><strong>Why it works:</strong> " + esc(k.why) + "</div>" : "") +
+        "</div>" +
+        '<button type="button" class="copy" data-i="' + i + '">Copy line</button>' +
+      "</article>";
+    });
+    h += "</div></div>";
+    out.innerHTML = h;
+
+    Array.prototype.forEach.call(out.querySelectorAll(".lang button"), function (b) {
+      b.addEventListener("click", function () { lang = b.getAttribute("data-l"); render(); });
+    });
+    Array.prototype.forEach.call(out.querySelectorAll(".copy"), function (b) {
+      b.addEventListener("click", function () {
+        var k = r.hooks[+b.getAttribute("data-i")];
+        var t = (k[lang] || k.en || "") + "\n" + ((lang === "hi" ? k.onScreen_hi : k.onScreen) || "");
+        var done = function () { b.textContent = "Copied"; setTimeout(function () { b.textContent = "Copy line"; }, 1500); };
+        try { navigator.clipboard.writeText(t.trim()).then(done, function () { b.textContent = "Copy failed"; }); }
+        catch (e) { b.textContent = "Copy failed"; }
+      });
+    });
+
+    var list = $("pastList");
+    $("past").hidden = results.length < 2;
+    list.innerHTML = results.map(function (x) {
+      return '<li><button type="button" data-id="' + esc(x.id) + '"' + (x.id === currentId ? ' aria-current="true"' : "") +
+        ' title="' + esc(x.idea) + '">' + esc(x.idea) + "</button></li>";
+    }).join("");
+    Array.prototype.forEach.call(list.querySelectorAll("button"), function (b) {
+      b.addEventListener("click", function () {
+        currentId = b.getAttribute("data-id");
+        render();
+        $("out").scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+      });
+    });
+  }
+
+  function refresh() {
+    return cabinet.files.list(DIR).then(function (files) {
+      files = (files || []).filter(function (f) { return !f.isDir && /\.json$/.test(f.name); });
+      return Promise.all(files.map(function (f) {
+        return cabinet.files.read(f.path).then(function (t) {
+          try { var j = JSON.parse(t); j._mod = new Date(f.modified).getTime() || 0; j.id = j.id || f.name.replace(/\.json$/, ""); return j; }
+          catch (e) { return null; }
+        }, function () { return null; });
+      }));
+    }).then(function (list) {
+      results = list.filter(function (x) { return x && x.hooks; })
+        .sort(function (a, b) { return (Date.parse(b.createdAt) || b._mod) - (Date.parse(a.createdAt) || a._mod); });
+      if (pending) {
+        var fresh = results.filter(function (x) { return x.id === pending.id || x._mod > pending.at; })[0];
+        if (fresh) { currentId = fresh.id; savePending(null); }
+      }
+      render();
+    }).catch(function () { render(); });
+  }
+
+  loadPending();
+  showPending();
+  if (window.cabinet && cabinet.ready) {
+    cabinet.ready.then(function () {
+      refresh();
+      cabinet.files.onChange(DIR, refresh);
+    });
+  } else {
+    render();
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "Top Videos",
+  "name_hi": "टॉप वीडियो",
+  "tagline": "Lists a YouTube channel's most viewed videos, all time and from the last 12 months, with what the hits share",
+  "tagline_hi": "किसी YouTube चैनल के सबसे ज़्यादा देखे गए वीडियो दिखाता है, अब तक के और पिछले 12 महीनों के, और बताता है कि उनमें क्या एक जैसा है",
+  "accent": "#f7b718",
+  "kind": "ai",
+  "agent": "gets-youtube-channel-lists",
+  "request": "a tool that gets a youtube channel and lists top videos",
+  "createdAt": "2026-10-13T06:29:33Z"
+}

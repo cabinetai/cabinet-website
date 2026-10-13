@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script src="../../readonly.js"></script>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Top Videos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Albert+Sans:wght@400;500;700&family=Noto+Sans+Devanagari:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --haldi:#f7b718;
+  --haldi-deep:#e09c00;
+  --oxblood:#3a0d18;
+  --kumkum:#d81e3f;
+  --paper:#fff8e6;
+  --dust:#7a4a3a;
+  --rule:#3a0d1826;
+  --display:"Anton","Noto Sans Devanagari",Impact,sans-serif;
+  --body:"Albert Sans","Noto Sans Devanagari",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--haldi);color:var(--oxblood);font-family:var(--body);font-size:16px;line-height:1.45}
+:focus-visible{outline:3px solid var(--oxblood);outline-offset:3px;border-radius:4px}
+button{font:inherit;color:inherit;cursor:pointer}
+.wrap{max-width:860px;margin:0 auto;padding:16px 16px 64px}
+
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.back{color:var(--oxblood);font-weight:700;text-decoration:none;padding:8px 0}
+.back:hover{text-decoration:underline}
+.langs{display:flex;border:2px solid var(--oxblood);border-radius:999px;overflow:hidden}
+.langs button{background:none;border:0;padding:6px 14px;font-weight:700;font-size:14px}
+.langs button[aria-pressed="true"]{background:var(--oxblood);color:var(--haldi)}
+
+.masthead{margin:28px 0 20px}
+h1{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:clamp(56px,15vw,128px);line-height:.92;margin:0;letter-spacing:.005em}
+html[lang="hi"] h1{font-weight:900;line-height:1.1;font-size:clamp(48px,12vw,104px);text-transform:none}
+.lede{margin:12px 0 0;font-size:18px;max-width:34ch;font-weight:500}
+
+.ask{display:flex;gap:8px;flex-wrap:wrap}
+.ask label{flex:1 0 100%;font-weight:700;font-size:14px}
+.ask input{flex:1 1 240px;min-width:0;font:inherit;color:var(--oxblood);background:var(--paper);border:2px solid var(--oxblood);border-radius:10px;padding:14px}
+.ask input::placeholder{color:var(--dust)}
+.go{background:var(--oxblood);color:var(--paper);border:2px solid var(--oxblood);border-radius:10px;padding:14px 20px;font-weight:700}
+.go:hover:not(:disabled){background:var(--kumkum);border-color:var(--kumkum)}
+.go:disabled{opacity:.55;cursor:default}
+.status{min-height:24px;margin:10px 0 0;font-weight:500}
+.status.warn{background:var(--paper);border-left:6px solid var(--kumkum);padding:10px 12px;border-radius:4px}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--kumkum);margin-right:8px;animation:pulse 1.1s ease-in-out infinite}
+@keyframes pulse{50%{transform:scale(.5);opacity:.5}}
+
+.past{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:22px 0 0;padding:0;list-style:none}
+.past[hidden]{display:none}
+.past .lbl{font-size:14px;font-weight:700}
+.past button{background:none;border:2px solid var(--oxblood);border-radius:999px;padding:5px 12px;font-weight:700;font-size:14px}
+.past button[aria-current="true"]{background:var(--oxblood);color:var(--haldi)}
+
+.board{margin-top:28px;background:var(--paper);border-radius:14px;padding:20px 16px 8px;box-shadow:6px 6px 0 var(--oxblood)}
+.chan{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:8px 20px;padding-bottom:14px;border-bottom:3px solid var(--oxblood)}
+.chan h2{font-family:var(--display);font-weight:400;font-size:clamp(30px,7vw,46px);line-height:1.05;margin:0;text-transform:uppercase;overflow-wrap:anywhere}
+.chan a{color:var(--kumkum);font-weight:700}
+.facts{display:flex;flex-wrap:wrap;gap:6px 18px;margin:0}
+.facts div{display:flex;flex-direction:column-reverse}
+.facts dt{font-size:12px;color:var(--dust);font-weight:700}
+.facts dd{margin:0;font-family:var(--display);font-size:24px;line-height:1.1}
+
+.bar2{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;margin:14px 0 4px}
+.tabs{display:flex;gap:6px}
+.tabs button{background:none;border:0;border-bottom:4px solid transparent;padding:6px 2px;margin-right:12px;font-weight:700}
+.tabs button[aria-pressed="true"]{border-color:var(--kumkum)}
+.copy{background:none;border:2px solid var(--oxblood);border-radius:8px;padding:6px 12px;font-weight:700;font-size:14px}
+.copy:hover{background:var(--oxblood);color:var(--paper)}
+
+.chart{list-style:none;margin:0;padding:0}
+.chart li{border-bottom:1px solid var(--rule)}
+.chart li:last-child{border-bottom:0}
+.row{display:grid;grid-template-columns:44px 112px 1fr;gap:12px;align-items:center;padding:12px 0;color:inherit;text-decoration:none}
+.rank{font-family:var(--display);font-size:38px;line-height:1;text-align:center}
+.chart li:first-child .rank{color:var(--kumkum);font-size:52px}
+.thumb{position:relative;aspect-ratio:16/9;border-radius:6px;overflow:hidden;background:var(--oxblood)}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.len{position:absolute;right:4px;bottom:4px;background:var(--oxblood);color:var(--paper);font-size:11px;font-weight:700;padding:1px 5px;border-radius:3px}
+.info{min-width:0}
+.title{margin:0;font-weight:700;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;overflow-wrap:anywhere}
+.row:hover .title{text-decoration:underline}
+.meter{display:flex;align-items:center;gap:10px;margin-top:6px}
+.track{flex:1;height:8px;background:var(--rule);border-radius:4px;overflow:hidden}
+.track i{display:block;height:100%;background:var(--kumkum);border-radius:4px;transform-origin:left;animation:grow .7s cubic-bezier(.2,.7,.2,1) both}
+@keyframes grow{from{transform:scaleX(0)}}
+.views{font-family:var(--display);font-size:20px;line-height:1;white-space:nowrap}
+.when{font-size:13px;color:var(--dust);white-space:nowrap}
+.none{padding:20px 0;font-weight:500}
+
+.share{margin:8px 0 0;padding:16px 0 8px;border-top:3px solid var(--oxblood)}
+.share h3{font-size:14px;margin:0 0 8px;text-transform:uppercase;letter-spacing:.06em}
+.share ul{margin:0;padding-left:20px}
+.share li{margin:0 0 8px}
+.share li::marker{color:var(--kumkum)}
+.fine{font-size:13px;color:var(--dust);margin:8px 0 12px}
+.empty{margin-top:28px;font-weight:500}
+
+@media (max-width:520px){
+  .row{grid-template-columns:30px 84px 1fr;gap:10px}
+  .rank{font-size:26px}
+  .chart li:first-child .rank{font-size:34px}
+  .when{display:none}
+  .go{flex:1 1 100%}
+}
+@media (prefers-reduced-motion:reduce){
+  .dot,.track i{animation:none}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a href="#" class="back" id="back"></a>
+    <div class="langs" role="group" aria-label="Language">
+      <button type="button" data-lang="en">English</button>
+      <button type="button" data-lang="hi" lang="hi">हिन्दी</button>
+    </div>
+  </header>
+
+  <div class="masthead">
+    <h1 id="h1"></h1>
+    <p class="lede" id="lede"></p>
+  </div>
+
+  <form class="ask" id="ask">
+    <label for="chan" id="chanLbl"></label>
+    <input id="chan" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" required>
+    <button class="go" id="go" type="submit"></button>
+  </form>
+  <p class="status" id="status" role="status" aria-live="polite"></p>
+
+  <ul class="past" id="past" hidden></ul>
+  <main id="out"></main>
+</div>
+
+<script>
+(function () {
+  var SLUG = "gets-youtube-channel-lists";
+  var DIR = "tools/" + SLUG + "/data";
+  var PKEY = "india-creators-2026:" + SLUG + ":pending";
+  var LKEY = "india-creators-2026:lang";
+
+  var T = {
+    en: {
+      back: "← Creator Hub",
+      h1: "Top videos",
+      lede: "Paste a YouTube channel. See which of its videos people watched most.",
+      chanLbl: "YouTube channel",
+      ph: "youtube.com/@channel or @handle",
+      go: "List top videos",
+      working: "Reading the channel. This takes about a minute.",
+      timeout: "No list came back in 10 minutes. Press List top videos to try again.",
+      notInCabinet: "Open this tool inside Cabinet to read a channel.",
+      sendFail: "Cabinet could not send the request. Press List top videos again.",
+      empty: "The channel's most viewed videos show up here, ranked.",
+      subs: "subscribers",
+      scanned: "videos checked",
+      total: "views in all",
+      allTime: "All time",
+      lastYear: "Last 12 months",
+      copy: "Copy list",
+      copied: "Copied",
+      copyFail: "Copy failed",
+      views: "views",
+      noRecent: "This channel has no videos from the last 12 months.",
+      share: "What the top videos share",
+      fine: "View counts are rounded, the way YouTube shows them on the channel page. Shorts and live streams are not counted.",
+      capped: "Only the newest 2,000 videos were checked.",
+      past: "Channels read",
+      open: "Open channel"
+    },
+    hi: {
+      back: "← Creator Hub",
+      h1: "टॉप वीडियो",
+      lede: "कोई YouTube चैनल डालिए। देखिए उसके कौन से वीडियो सबसे ज़्यादा देखे गए।",
+      chanLbl: "YouTube चैनल",
+      ph: "youtube.com/@channel या @handle",
+      go: "टॉप वीडियो दिखाएँ",
+      working: "चैनल पढ़ा जा रहा है। इसमें क़रीब एक मिनट लगता है।",
+      timeout: "10 मिनट में सूची नहीं आई। दोबारा कोशिश के लिए टॉप वीडियो दिखाएँ दबाएँ।",
+      notInCabinet: "चैनल पढ़ने के लिए यह टूल Cabinet के अंदर खोलिए।",
+      sendFail: "Cabinet अनुरोध नहीं भेज पाया। टॉप वीडियो दिखाएँ फिर दबाएँ।",
+      empty: "चैनल के सबसे ज़्यादा देखे गए वीडियो यहाँ क्रम से दिखेंगे।",
+      subs: "सब्सक्राइबर",
+      scanned: "वीडियो जाँचे गए",
+      total: "कुल व्यूज़",
+      allTime: "अब तक",
+      lastYear: "पिछले 12 महीने",
+      copy: "सूची कॉपी करें",
+      copied: "कॉपी हो गई",
+      copyFail: "कॉपी नहीं हुई",
+      views: "व्यूज़",
+      noRecent: "इस चैनल पर पिछले 12 महीनों का कोई वीडियो नहीं है।",
+      share: "टॉप वीडियो में क्या एक जैसा है",
+      fine: "व्यूज़ की गिनती मोटी-मोटी है, जैसी YouTube चैनल पेज पर दिखाता है। Shorts और लाइव स्ट्रीम गिने नहीं गए।",
+      capped: "सिर्फ़ सबसे नए 2,000 वीडियो जाँचे गए।",
+      past: "पढ़े गए चैनल",
+      open: "चैनल खोलें"
+    }
+  };
+
+  var results = [], currentId = null, tab = "allTime", pending = null, timer = null, lang = "en", note = null, animate = true;
+  var $ = function (id) { return document.getElementById(id); };
+  function t(k) { return (T[lang] && T[lang][k]) || T.en[k] || k; }
+
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+  function compact(n) {
+    n = Number(n) || 0;
+    try { return new Intl.NumberFormat(lang === "hi" ? "hi-IN" : "en", { notation: "compact", maximumFractionDigits: 1 }).format(n); }
+    catch (e) { return String(n); }
+  }
+  function clock(s) {
+    s = Math.max(0, Math.round(Number(s) || 0));
+    var h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60), sec = s % 60;
+    return (h ? h + ":" + (m < 10 ? "0" : "") : "") + m + ":" + (sec < 10 ? "0" : "") + sec;
+  }
+  // Dates from the channel page are approximate, so show the year, or month and year for recent ones.
+  function when(iso) {
+    var d = new Date(iso);
+    if (!iso || isNaN(d)) return "";
+    if (Date.now() - d.getTime() > 330 * 86400000) return String(d.getUTCFullYear());
+    try { return d.toLocaleDateString(lang === "hi" ? "hi-IN" : "en", { month: "short", year: "numeric", timeZone: "UTC" }); }
+    catch (e) { return String(d.getUTCFullYear()); }
+  }
+  function okId(id) { return /^[\w-]{6,20}$/.test(String(id || "")); }
+  function safeUrl(u) { return /^https:\/\/(www\.)?youtube\.com\//.test(String(u || "")) ? u : ""; }
+
+  // language
+  function readLang() {
+    var v = null;
+    try { v = localStorage.getItem(LKEY); } catch (e) {}
+    return v === "hi" ? "hi" : "en";
+  }
+  function paintChrome() {
+    document.documentElement.lang = lang;
+    $("back").textContent = t("back");
+    $("h1").textContent = t("h1");
+    $("lede").textContent = t("lede");
+    $("chanLbl").textContent = t("chanLbl");
+    $("chan").placeholder = t("ph");
+    $("go").textContent = t("go");
+    Array.prototype.forEach.call(document.querySelectorAll(".langs button"), function (b) {
+      b.setAttribute("aria-pressed", b.getAttribute("data-lang") === lang ? "true" : "false");
+    });
+  }
+  function setLang(l, write) {
+    lang = l === "hi" ? "hi" : "en";
+    if (write) { try { localStorage.setItem(LKEY, lang); } catch (e) {} }
+    animate = false;
+    paintChrome(); showStatus(); render();
+  }
+  Array.prototype.forEach.call(document.querySelectorAll(".langs button"), function (b) {
+    b.addEventListener("click", function () { setLang(b.getAttribute("data-lang"), true); });
+  });
+  window.addEventListener("storage", function (e) { if (e.key === LKEY) setLang(readLang(), false); });
+
+  // back to hub
+  $("back").addEventListener("click", function (e) {
+    e.preventDefault();
+    var here = window.cabinet && cabinet.here ? cabinet.here() : null;
+    var url = "/workspace/" + (here && here.cabinetPath ? here.cabinetPath : "india-creators-2026");
+    try { window.top.history.pushState(null, "", url); } catch (err) { window.top.location.href = url; }
+  });
+
+  // pending state. note is { key } for an interface message or { en, hi } for one from the agent.
+  function savePending(p) {
+    pending = p;
+    try { p ? localStorage.setItem(PKEY, JSON.stringify(p)) : localStorage.removeItem(PKEY); } catch (e) {}
+    showStatus();
+  }
+  function loadPending() {
+    try { pending = JSON.parse(localStorage.getItem(PKEY) || "null"); } catch (e) { pending = null; }
+    if (pending && (!pending.id || !pending.at)) pending = null;
+  }
+  function showStatus() {
+    var st = $("status"), btn = $("go");
+    clearTimeout(timer);
+    if (pending && Date.now() - pending.at > 10 * 60 * 1000) {
+      note = { key: "timeout" };
+      pending = null;
+      try { localStorage.removeItem(PKEY); } catch (e) {}
+    }
+    if (pending) {
+      btn.disabled = true;
+      st.className = "status";
+      st.innerHTML = '<span class="dot" aria-hidden="true"></span>' + esc(t("working"));
+      timer = setTimeout(showStatus, 15000);
+      return;
+    }
+    btn.disabled = false;
+    st.className = note ? "status warn" : "status";
+    st.textContent = note ? (note.key ? t(note.key) : (lang === "hi" && note.hi) || note.en || "") : "";
+  }
+
+  function makeId(q) {
+    var base = q.toLowerCase().replace(/^https?:\/\//, "").replace(/^(www\.|m\.)?youtube\.com\//, "")
+      .replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").split("-").slice(0, 4).join("-").slice(0, 40);
+    return (base || "channel") + "-" + Date.now().toString(36);
+  }
+
+  $("ask").addEventListener("submit", function (e) {
+    e.preventDefault();
+    var q = $("chan").value.trim();
+    if (!q) { $("chan").focus(); return; }
+    if (!window.cabinet) { note = { key: "notInCabinet" }; showStatus(); return; }
+    var id = makeId(q);
+    var text = "List the top videos of this YouTube channel.\n\n" +
+      "id: " + id + "\n" +
+      "Channel: " + q + "\n\n" +
+      "Write the result to " + DIR + "/" + id + ".json";
+    note = null;
+    savePending({ id: id, at: Date.now() });
+    Promise.resolve(cabinet.ask(text, { agent: SLUG })).catch(function () {
+      note = { key: "sendFail" };
+      savePending(null);
+    });
+  });
+
+  // rendering
+  function rows(list) {
+    var max = list.reduce(function (m, v) { return Math.max(m, Number(v.views) || 0); }, 0) || 1;
+    return list.map(function (v, i) {
+      var id = okId(v.videoId) ? v.videoId : "";
+      var pct = Math.max(2, (Number(v.views) || 0) / max * 100);
+      var w = when(v.published);
+      return "<li><a class=\"row\" " + (id ? 'href="https://www.youtube.com/watch?v=' + id + '" target="_blank" rel="noopener"' : "") + ">" +
+        '<span class="rank">' + (i + 1) + "</span>" +
+        '<span class="thumb">' + (id ? '<img loading="lazy" alt="" src="https://i.ytimg.com/vi/' + id + '/mqdefault.jpg">' : "") +
+          (v.seconds ? '<span class="len">' + clock(v.seconds) + "</span>" : "") + "</span>" +
+        '<span class="info"><p class="title">' + esc(v.title) + "</p>" +
+          '<span class="meter"><span class="track"><i style="width:' + pct.toFixed(1) + "%" +
+            (animate ? ";animation-delay:" + Math.min(i * 40, 600) + "ms" : ";animation:none") + '"></i></span>' +
+          '<span class="views">' + esc(compact(v.views)) + " " + esc(t("views")) + "</span>" +
+          (w ? '<span class="when">' + esc(w) + "</span>" : "") + "</span></span>" +
+        "</a></li>";
+    }).join("");
+  }
+
+  function render() {
+    var out = $("out"), past = $("past");
+    var r = results.filter(function (x) { return x.id === currentId; })[0] || results[0];
+    if (!r) {
+      out.innerHTML = '<p class="empty">' + esc(t("empty")) + "</p>";
+      past.hidden = true;
+      return;
+    }
+    currentId = r.id;
+    var c = r.channel || {};
+    var list = (tab === "lastYear" ? r.lastYear : r.allTime) || [];
+    var url = safeUrl(c.url);
+    var h = '<section class="board"><div class="chan"><div>' +
+      "<h2>" + esc(c.name || r.query) + "</h2>" +
+      (url ? '<a href="' + esc(url) + '" target="_blank" rel="noopener">' + esc(c.handle || t("open")) + "</a>" : esc(c.handle || "")) +
+      '</div><dl class="facts">' +
+      (c.subscribers ? "<div><dt>" + esc(t("subs")) + "</dt><dd>" + esc(compact(c.subscribers)) + "</dd></div>" : "") +
+      (r.scanned ? "<div><dt>" + esc(t("scanned")) + "</dt><dd>" + esc(String(r.scanned)) + "</dd></div>" : "") +
+      (r.totalViews ? "<div><dt>" + esc(t("total")) + "</dt><dd>" + esc(compact(r.totalViews)) + "</dd></div>" : "") +
+      "</dl></div>" +
+      '<div class="bar2"><div class="tabs" role="group">' +
+      ["allTime", "lastYear"].map(function (k) {
+        return '<button type="button" data-tab="' + k + '" aria-pressed="' + (tab === k) + '">' + esc(t(k)) + "</button>";
+      }).join("") + "</div>" +
+      (list.length ? '<button type="button" class="copy" id="copy">' + esc(t("copy")) + "</button>" : "") + "</div>" +
+      (list.length ? '<ol class="chart">' + rows(list) + "</ol>" : '<p class="none">' + esc(t("noRecent")) + "</p>");
+    var tk = (r.takeaways || []).filter(function (x) { return x && (x.en || x.hi); });
+    if (tk.length) {
+      h += '<div class="share"><h3>' + esc(t("share")) + "</h3><ul>" + tk.map(function (x) {
+        return "<li>" + esc((lang === "hi" && x.hi) || x.en || x.hi) + "</li>";
+      }).join("") + "</ul></div>";
+    }
+    h += '<p class="fine">' + esc(t("fine")) + (r.capped ? " " + esc(t("capped")) : "") + "</p></section>";
+    out.innerHTML = h;
+    animate = false;
+
+    Array.prototype.forEach.call(out.querySelectorAll(".tabs button"), function (b) {
+      b.addEventListener("click", function () { tab = b.getAttribute("data-tab"); animate = true; render(); });
+    });
+    var cp = $("copy");
+    if (cp) cp.addEventListener("click", function () {
+      var text = (c.name || r.query) + ", " + t(tab) + "\n" + list.map(function (v, i) {
+        return (i + 1) + ". " + v.title + " (" + compact(v.views) + " " + t("views") + ")" +
+          (okId(v.videoId) ? "\nhttps://youtu.be/" + v.videoId : "");
+      }).join("\n");
+      var done = function (k) { cp.textContent = t(k); setTimeout(function () { cp.textContent = t("copy"); }, 1500); };
+      try { navigator.clipboard.writeText(text).then(function () { done("copied"); }, function () { done("copyFail"); }); }
+      catch (e) { done("copyFail"); }
+    });
+
+    past.hidden = results.length < 2;
+    past.innerHTML = '<li class="lbl">' + esc(t("past")) + "</li>" + results.map(function (x) {
+      return '<li><button type="button" data-id="' + esc(x.id) + '"' + (x.id === currentId ? ' aria-current="true"' : "") + ">" +
+        esc((x.channel && x.channel.name) || x.query) + "</button></li>";
+    }).join("");
+    Array.prototype.forEach.call(past.querySelectorAll("button"), function (b) {
+      b.addEventListener("click", function () { currentId = b.getAttribute("data-id"); tab = "allTime"; animate = true; render(); });
+    });
+  }
+
+  function refresh() {
+    return cabinet.files.list(DIR).then(function (files) {
+      files = (files || []).filter(function (f) { return !f.isDir && /\.json$/.test(f.name); });
+      return Promise.all(files.map(function (f) {
+        return cabinet.files.read(f.path).then(function (txt) {
+          try {
+            var j = JSON.parse(txt);
+            j._mod = new Date(f.modified).getTime() || 0;
+            j.id = j.id || f.name.replace(/\.json$/, "");
+            return j;
+          } catch (e) { return null; }
+        }, function () { return null; });
+      }));
+    }).then(function (all) {
+      all = all.filter(Boolean);
+      var stamp = function (x) { return Date.parse(x.createdAt) || x._mod; };
+      results = all.filter(function (x) { return Array.isArray(x.allTime) && x.allTime.length; })
+        .sort(function (a, b) { return stamp(b) - stamp(a); });
+      if (pending) {
+        var fresh = all.filter(function (x) { return x.id === pending.id; })[0] ||
+          all.filter(function (x) { return x._mod > pending.at; }).sort(function (a, b) { return b._mod - a._mod; })[0];
+        if (fresh) {
+          if (fresh.error) note = { en: fresh.error, hi: fresh.error_hi };
+          else { currentId = fresh.id; tab = "allTime"; animate = true; note = null; }
+          savePending(null);
+        }
+      }
+      render();
+    }).catch(function () { render(); });
+  }
+
+  lang = readLang();
+  paintChrome();
+  loadPending();
+  showStatus();
+  if (window.cabinet && cabinet.ready) {
+    cabinet.ready.then(function () {
+      refresh();
+      cabinet.files.onChange(DIR, refresh);
+    });
+  } else {
+    render();
+  }
+})();
+</script>
+</body>
+</html>
