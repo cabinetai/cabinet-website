@@ -1,0 +1,57 @@
+{
+  "id": "israel-most-startups-per-capita",
+  "claim": "Israel has more startups per person than any other country.",
+  "verdict": "misleading",
+  "confidence": 70,
+  "headline": "World leader on some measures, not a proven fact",
+  "summary": "Israel is near the top of every startup-density ranking, and it leads the world on unicorns per person and cloud startups per person. But no neutral body counts startups the same way in every country, and the 'most per capita' line mostly comes from Israel's own promotional groups. Estonia's official count works out to about one startup per 1,030 people, which is denser than Israel's commonly cited one per 1,400.",
+  "summary_hi": "स्टार्टअप घनत्व की हर रैंकिंग में इज़राइल सबसे ऊपर के देशों में है, और प्रति व्यक्ति यूनिकॉर्न और प्रति व्यक्ति क्लाउड स्टार्टअप में वह दुनिया में पहले नंबर पर है। लेकिन कोई भी निष्पक्ष संस्था हर देश में स्टार्टअप एक ही तरीके से नहीं गिनती, और 'प्रति व्यक्ति सबसे ज़्यादा' वाली बात ज़्यादातर इज़राइल के अपने प्रचार संगठनों से आती है। एस्टोनिया की आधिकारिक गिनती के हिसाब से वहाँ लगभग हर 1,030 लोगों पर एक स्टार्टअप है, जो इज़राइल के अक्सर बताए जाने वाले हर 1,400 लोगों पर एक से ज़्यादा घना है।",
+  "sources": [
+    {
+      "title": "Discover the Israel Technology Innovation Ecosystem DNA",
+      "publisher": "Start-Up Nation Central",
+      "url": "https://startupnationcentral.org/hub/blog/israeli-innovation-ecosystem/",
+      "stance": "supports",
+      "quote": "Israel is five times more startup-dense than any other country, with one startup or tech company for every 1,400 people."
+    },
+    {
+      "title": "World-Leaders in Unicorn Production Per-Capita: Size is Not a Determining Factor in Ecosystem Success",
+      "publisher": "Startup Genome",
+      "url": "https://startupgenome.com/insights/world-leaders-in-unicorn-production-per-capita-size-is-not-a-determining-factor-in-ecosystem-success",
+      "stance": "context",
+      "quote": "With 5.62 unicorns per million, Israel significantly outperforms all other countries, including the U.S."
+    },
+    {
+      "title": "Israel leads world in cloud startups per capita",
+      "publisher": "ISRAEL21c",
+      "url": "https://archive.israel21c.org/israel-leads-world-in-cloud-startups-per-capita/",
+      "stance": "context",
+      "quote": "That comes out to 8.4 startups per million people"
+    },
+    {
+      "title": "The First Half of 2025 for the Estonian Startup Sector: Maturing Through Efficiency and Adaptation",
+      "publisher": "Startup Estonia",
+      "url": "https://startupestonia.ee/the-first-half-of-2025-for-the-estonian-startup-sector-maturing-through-efficiency-and-adaptation/",
+      "stance": "contradicts",
+      "quote": "there are a total of 1,566 startups in the Estonian sector, of which 1,321 (84%) are economically active"
+    },
+    {
+      "title": "Estonia leads Europe in startups, unicorns and investments per capita",
+      "publisher": "Work in Estonia",
+      "url": "https://workinestonia.com/estonia-leads-europe-in-startups-unicorns-and-investments-per-capita/",
+      "stance": "context",
+      "quote": "Estonia has the most startups per capita in Europe"
+    }
+  ],
+  "timeline": [
+    { "date": "2021-02-04", "event": "New Statesman repeats that Israel has the largest number of start-ups per capita in the world." },
+    { "date": "2022-10-18", "event": "A Sage Intacct study puts Israel first for cloud startups per person (8.4 per million), with Estonia close behind at 7.5." },
+    { "date": "2022-12", "event": "Atomico's State of European Tech 2022 names Estonia Europe's most entrepreneurial country for tech startups." },
+    { "date": "2023-04-16", "event": "Start-Up Nation Central publishes its claim that Israel is five times more startup-dense than any other country, one startup per 1,400 people." },
+    { "date": "2025-03-20", "event": "Startup Genome ranks Israel first in the world for unicorns per person (5.62 per million), Estonia second." },
+    { "date": "2025-09-04", "event": "Startup Estonia counts 1,321 active startups, about one for every 1,030 Estonians." }
+  ],
+  "caption_en": "\"Israel has the most startups per person on Earth\"? Half true. It's world #1 for unicorns per person, but Estonia's own count is denser. 🇮🇱🇪🇪\n#FactCheck #Startups #StartupNation",
+  "caption_hi": "\"इज़राइल में प्रति व्यक्ति सबसे ज़्यादा स्टार्टअप\"? आधा सच। प्रति व्यक्ति यूनिकॉर्न में वह दुनिया में नंबर 1 है, पर एस्टोनिया की अपनी गिनती ज़्यादा घनी है। 🇮🇱🇪🇪\n#FactCheck #Startups #StartupNation",
+  "checkedAt": "2026-10-12T00:00:00Z"
+}

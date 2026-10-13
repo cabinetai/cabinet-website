@@ -1,0 +1,11 @@
+{
+  "name": "Israel Trip Planner",
+  "name_hi": "इज़राइल यात्रा प्लानर",
+  "tagline": "Follow a ready 10 day route through Israel and tick off each stop",
+  "tagline_hi": "इज़राइल का तैयार 10 दिन का रास्ता अपनाएँ और हर जगह पर निशान लगाएँ",
+  "accent": "#1f9a94",
+  "kind": "simple",
+  "agent": null,
+  "request": "a tool that would help me in my israel trip. 10 day itinerary for israel",
+  "createdAt": "2026-10-13T07:18:04Z"
+}

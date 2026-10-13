@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="/icon.png" type="image/png">
+<link rel="apple-touch-icon" href="/apple-icon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>India Map</title>
+<link rel="stylesheet" href="app.css?v=12">
+</head>
+<body data-lens="creators">
+<main id="field" aria-label="Map of India">
+  <svg id="map" role="img" aria-label="India, drawn as dots and lines, with all 36 states and territories"></svg>
+  <div id="lamps"></div>
+  <header id="head">
+    <h1 id="greeting" aria-label="Welcome"></h1>
+    <p id="sub">Eight creators. 36 states and territories. Drawn fresh this morning.</p>
+    <nav id="lenses" aria-label="Lens"></nav>
+  </header>
+  <div id="parked" hidden>
+    <p>Tell us where home is and we will put you on the map.</p>
+    <div id="parked-row"></div>
+  </div>
+  <p id="status"><span id="status-text" aria-live="polite"></span> <button id="tour" class="tbtn" type="button">Tour</button></p>
+  <a id="brand" href="https://runcabinet.com" target="_blank" rel="noopener" aria-label="Cabinet, runcabinet.com">
+    <img src="assets/cabinet-logo.png" alt="" width="44" height="44">
+    <span class="bn">cabinet</span>
+    <span class="bu">runcabinet.com</span>
+  </a>
+  <div id="maplabel" hidden></div>
+</main>
+<svg id="seam" aria-hidden="true"></svg>
+<aside id="stage" aria-label="Stage">
+  <div id="stage-main" tabindex="-1"></div>
+  <div id="dossier" hidden tabindex="-1"></div>
+</aside>
+<script src="assets/d3.min.js"></script>
+<script src="assets/topojson-client.min.js"></script>
+<script src="data/states.js"></script>
+<script src="app.js?v=11"></script>
+</body>
+</html>
