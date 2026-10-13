@@ -99,7 +99,7 @@
   }
   function slugOf(name) { return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); }
 
-  var DATA = { creators: {}, regions: {}, ai: null };
+  var DATA = { creators: {}, regions: {}, ai: null }, loaded = false;
   var state = { lens: 'creators', pinned: null, regionSlug: null, clipIdx: 0, hub: null, creator: null, sound: false };
   var M = {};
 
@@ -483,7 +483,7 @@
     var clips = clipsOf(slug), reg = DATA.regions[slug] || {};
     var kids = stateNames(r);
     if (!clips.length) {
-      kids.push(h('p', { class: 'vibe' }, 'No clips from here yet. The trend scout fills this in on its next run.'));
+      kids.push(h('p', { class: 'vibe' }, loaded ? 'No clips from here yet. The trend scout fills this in on its next run.' : 'Loading the clips.'));
       return setStage(kids);
     }
     var i = state.clipIdx % clips.length, c = clips[i];
@@ -930,6 +930,7 @@
   renderRoster();
   $('status-text').textContent = '';
   loadAll().then(function () {
+    loaded = true;
     overlays();
     setLens(state.lens, true);
     var idle = window.requestIdleCallback || function (f) { return setTimeout(f, 600); };
