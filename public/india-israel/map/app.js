@@ -297,14 +297,18 @@
   }
 
   /* ---------- media ---------- */
+  var tubes = [];
   function stopMedia(root) {
     Array.prototype.forEach.call(root.querySelectorAll('video,audio'), function (m) {
       try { m.pause(); m.removeAttribute('src'); m.load(); } catch (e) { /* element already gone */ }
     });
+    tubes.forEach(function (t) { if (root.contains(t.el)) t.stop(); });
   }
   function soloPlay(m) {
     Array.prototype.forEach.call(document.querySelectorAll('video,audio'), function (o) { if (o !== m && !o.paused) o.pause(); });
+    tubes.forEach(function (t) { if (t !== m) t.stop(); });
   }
+  function ytOf(c) { return c && c.platform === 'youtube' ? str(c.id) : ''; }
   function progressBar(m) {
     var fill = h('i'), bar = h('div', { class: 'bar', role: 'slider', 'aria-label': 'Position', 'aria-valuemin': 0, 'aria-valuemax': 100, 'aria-valuenow': 0, tabindex: 0 }, fill);
     m.addEventListener('timeupdate', function () {
@@ -345,10 +349,48 @@
     }
     return el;
   }
+  /* A clip we hold no copy of, played from YouTube in YouTube's own player. The picture stays until it starts.
+     A clip that starts by itself starts muted and loops; one started by hand plays with sound. */
+  function tubePlayer(o) {
+    var img = o.poster ? h('img', { src: o.poster, alt: '' }) : null;
+    var frame = h('div', { class: 'frame tube', role: 'button', tabindex: 0, 'aria-label': 'Play' }, img, h('span', { class: 'go' }, icon('play')));
+    var el = h('div', { class: 'player vert' + (o.short ? ' short' : '') }, frame);
+    var shape = shaper(frame, el, o), fr = null, me = { el: el, stop: stop };
+    if (img) {
+      img.addEventListener('load', function () { shape(img.naturalWidth, img.naturalHeight); });
+      img.addEventListener('error', function () { img.remove(); });
+    }
+    function start(byHand) {
+      if (fr) return;
+      tubes = tubes.filter(function (t) { return t === me || document.contains(t.el); });
+      soloPlay(me);
+      fr = h('iframe', {
+        src: 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(o.yt) + '?autoplay=1&playsinline=1&rel=0' + (byHand ? '' : '&mute=1&loop=1&playlist=' + encodeURIComponent(o.yt)),
+        title: 'YouTube video player', allow: 'autoplay; encrypted-media; picture-in-picture; fullscreen', allowfullscreen: true,
+        referrerpolicy: 'strict-origin-when-cross-origin'
+      });
+      frame.appendChild(fr);
+      frame.classList.add('playing');
+      frame.removeAttribute('tabindex');
+      if (o.onPlaying) o.onPlaying(true);
+    }
+    function stop() {
+      if (!fr) return;
+      fr.remove(); fr = null;
+      frame.classList.remove('playing');
+      frame.setAttribute('tabindex', 0);
+      if (o.onPlaying) o.onPlaying(false);
+    }
+    tubes.push(me);
+    frame.addEventListener('click', function () { start(true); });
+    frame.addEventListener('keydown', function (ev) { if (!fr && (ev.key === 'Enter' || ev.key === ' ')) { ev.preventDefault(); start(true); } });
+    if (o.auto) el._timer = setTimeout(function () { if (document.contains(el)) start(false); }, 450);
+    return el;
+  }
   /* opts: src, poster, auto (muted loop autoplay), short (creator sizing), onShape(isLandscape), onPlaying(bool),
-     link (the original's address, used when there is no src) */
+     and for a clip with no src: yt (its YouTube id), embed (false when YouTube will not play it on other sites), link (the original's address) */
   function player(o) {
-    if (!str(o.src)) return linkPlayer(o);
+    if (!str(o.src)) return str(o.yt) && o.embed !== false ? tubePlayer(o) : linkPlayer(o);
     var v = h('video', { playsinline: true, preload: 'none' });
     var img = o.poster ? h('img', { src: o.poster, alt: '' }) : null;
     var frame = h('div', { class: 'frame' }, v, img);
@@ -448,7 +490,7 @@
     var now = h('span', { class: 'now label' }, 'Playing');
     var wrap = h('div', { class: 'clip' });
     var p = player({
-      src: c.file, poster: c.poster, link: c.url, auto: true,
+      src: c.file, poster: c.poster, link: c.url, yt: ytOf(c), embed: c.embed, auto: true,
       onShape: function (land) { wrap.classList.toggle('land', land); },
       onPlaying: function (on) { now.classList.toggle('on', on); }
     });
@@ -649,7 +691,7 @@
       if (Number(x.views) > 0) stats.push(compact(x.views) + ' views');
       if (Number(x.likes) > 0) stats.push(compact(x.likes) + ' likes');
       if (str(x.uploaded)) stats.push(fmtDate(x.uploaded));
-      var p = player({ src: str(x.file) ? cr.dir + x.file : '', poster: str(x.poster) ? cr.dir + x.poster : null, link: x.url, short: true, onShape: function (land) { wrap.classList.toggle('land', land); } });
+      var p = player({ src: str(x.file) ? cr.dir + x.file : '', poster: str(x.poster) ? cr.dir + x.poster : null, link: x.url, yt: ytOf(x), embed: x.embed, short: true, onShape: function (land) { wrap.classList.toggle('land', land); } });
       add(wrap, [p, h('div', { class: 'info' },
         h('p', { class: 'title' }, clean(x.title)),
         str(x.titleGloss) ? h('p', null, x.titleGloss) : null,
@@ -765,7 +807,7 @@
     var c = arr(x.clips).filter(function (q) { return q && (str(q.file) || str(q.url)); })[0];
     if (c) {
       var wrap = h('div', { class: 'clip' });
-      add(wrap, [player({ src: c.file, poster: str(c.poster) || null, link: c.url, auto: true, onShape: function (land) { wrap.classList.toggle('land', land); } }),
+      add(wrap, [player({ src: c.file, poster: str(c.poster) || null, link: c.url, yt: ytOf(c), embed: c.embed, auto: true, onShape: function (land) { wrap.classList.toggle('land', land); } }),
         h('div', { class: 'info' }, h('p', { class: 'title' }, cleanTitle(c.title)), str(c.channel) ? h('p', null, clean(c.channel)) : null,
           Number(c.views) >= 1000 ? h('p', null, compact(c.views) + ' views') : null, str(c.url) ? h('p', null, ext(c.url, 'Open on YouTube')) : null)]);
       kids.push(h('hr', { class: 'rule' }), wrap);
