@@ -6,11 +6,8 @@ import {
   Fraunces,
   Ms_Madi,
   Pangolin,
-  Noto_Sans_Devanagari,
-  Noto_Serif_Devanagari,
 } from "next/font/google";
 import { LiquidGlassFilter } from "@/components/liquid-glass-filter";
-import { LOCALE_BOOTSTRAP_SCRIPT } from "@/lib/i18n";
 import "./globals.css";
 
 // Body / UI sans (also carries the uppercase labels at 0.08em tracking).
@@ -50,20 +47,6 @@ const pangolin = Pangolin({
   preload: false,
 });
 
-// Devanagari fallbacks for the Hindi pages. Geist and Fraunces have no Hindi
-// glyphs, so these sit after them in every font stack (see globals.css).
-// unicode-range keeps English pages from downloading them.
-const notoSansDevanagari = Noto_Sans_Devanagari({
-  variable: "--font-deva-sans",
-  subsets: ["devanagari"],
-  preload: false,
-});
-
-const notoSerifDevanagari = Noto_Serif_Devanagari({
-  variable: "--font-deva-serif",
-  subsets: ["devanagari"],
-  preload: false,
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://runcabinet.com"),
@@ -103,12 +86,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      // The locale script flips lang to "hi" on Hindi pages before hydration.
-      suppressHydrationWarning
-      className={`${geist.variable} ${fraunces.variable} ${instrumentSerif.variable} ${msMadi.variable} ${pangolin.variable} ${notoSansDevanagari.variable} ${notoSerifDevanagari.variable} h-full antialiased`}
+      className={`${geist.variable} ${fraunces.variable} ${instrumentSerif.variable} ${msMadi.variable} ${pangolin.variable} h-full antialiased`}
     >
       <head>
-        <script dangerouslySetInnerHTML={{ __html: LOCALE_BOOTSTRAP_SCRIPT }} />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-4L81D0BVTP"
           strategy="lazyOnload"

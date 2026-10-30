@@ -6,39 +6,6 @@ import { useState } from "react";
 import { ChevronDown, ArrowRight } from "lucide-react";
 import { SOLUTIONS } from "@/lib/solutions";
 import { INDUSTRIES } from "@/lib/industries";
-import { useLocale } from "@/components/locale-provider";
-
-const COPY = {
-  en: {
-    trigger: "Solutions",
-    byTeam: "By team",
-    byIndustry: "By industry",
-    everyTeam: "Every team",
-    everyIndustry: "Every industry",
-    labels: {} as Record<string, string>,
-  },
-  hi: {
-    trigger: "समाधान",
-    byTeam: "टीम के अनुसार",
-    byIndustry: "उद्योग के अनुसार",
-    everyTeam: "सभी टीमें",
-    everyIndustry: "सभी उद्योग",
-    // Keyed by solution / industry slug; falls back to the English label.
-    labels: {
-      sales: "सेल्स",
-      marketing: "मार्केटिंग",
-      engineering: "इंजीनियरिंग",
-      product: "प्रोडक्ट",
-      operations: "ऑपरेशंस",
-      founders: "फ़ाउंडर्स और एग्ज़ीक्यूटिव",
-      "financial-services": "वित्तीय सेवाएँ",
-      healthcare: "हेल्थकेयर",
-      legal: "लीगल",
-      "professional-services": "प्रोफ़ेशनल सर्विसेज़",
-      startups: "स्टार्टअप और स्केल-अप",
-    } as Record<string, string>,
-  },
-};
 
 /**
  * "Cabinet for…" navbar dropdown. Opens on hover and on keyboard focus so it
@@ -47,7 +14,6 @@ const COPY = {
  */
 export function SolutionsMenu({ triggerClassName = "" }: { triggerClassName?: string }) {
   const [open, setOpen] = useState(false);
-  const t = COPY[useLocale()];
 
   return (
     <div
@@ -67,7 +33,7 @@ export function SolutionsMenu({ triggerClassName = "" }: { triggerClassName?: st
       >
         <span className="liquid-glass__refract" aria-hidden />
         <span className="relative z-10 inline-flex items-center gap-1">
-          {t.trigger}
+          Solutions
           <ChevronDown
             className={`h-3.5 w-3.5 transition-transform ${open ? "rotate-180" : ""}`}
           />
@@ -81,7 +47,7 @@ export function SolutionsMenu({ triggerClassName = "" }: { triggerClassName?: st
               {/* By team */}
               <div>
                 <p className="px-3 pb-1 pt-2 text-[11px] font-medium uppercase tracking-[0.08em] text-text-tertiary">
-                  {t.byTeam}
+                  By team
                 </p>
                 {SOLUTIONS.map((s) => (
                   <Link
@@ -96,7 +62,7 @@ export function SolutionsMenu({ triggerClassName = "" }: { triggerClassName?: st
                       height={72}
                       className="h-9 w-9 shrink-0 object-contain transition-transform duration-200 group-hover:scale-110 group-hover:-rotate-2"
                     />
-                    <span className="text-sm font-semibold text-text-primary">{t.labels[s.slug] ?? s.label}</span>
+                    <span className="text-sm font-semibold text-text-primary">{s.label}</span>
                     <ArrowRight className="ml-auto h-3.5 w-3.5 shrink-0 -translate-x-1 text-text-muted opacity-0 transition-all group-hover:translate-x-0 group-hover:text-accent group-hover:opacity-100" />
                   </Link>
                 ))}
@@ -104,7 +70,7 @@ export function SolutionsMenu({ triggerClassName = "" }: { triggerClassName?: st
               {/* By industry */}
               <div className="border-l border-border-light pl-2">
                 <p className="px-3 pb-1 pt-2 text-[11px] font-medium uppercase tracking-[0.08em] text-text-tertiary">
-                  {t.byIndustry}
+                  By industry
                 </p>
                 {INDUSTRIES.map((i) => (
                   <Link
@@ -119,7 +85,7 @@ export function SolutionsMenu({ triggerClassName = "" }: { triggerClassName?: st
                       height={72}
                       className="h-9 w-9 shrink-0 object-contain transition-transform duration-200 group-hover:scale-110 group-hover:-rotate-2"
                     />
-                    <span className="text-sm font-semibold text-text-primary">{t.labels[i.slug] ?? i.label}</span>
+                    <span className="text-sm font-semibold text-text-primary">{i.label}</span>
                     <ArrowRight className="ml-auto h-3.5 w-3.5 shrink-0 -translate-x-1 text-text-muted opacity-0 transition-all group-hover:translate-x-0 group-hover:text-accent group-hover:opacity-100" />
                   </Link>
                 ))}
@@ -130,13 +96,13 @@ export function SolutionsMenu({ triggerClassName = "" }: { triggerClassName?: st
                 href="/solutions"
                 className="flex items-center justify-between rounded-xl px-3 py-2.5 text-xs font-medium text-accent transition-colors hover:text-accent-warm"
               >
-                {t.everyTeam} <ArrowRight className="h-3.5 w-3.5" />
+                Every team <ArrowRight className="h-3.5 w-3.5" />
               </Link>
               <Link
                 href="/industries"
                 className="flex items-center justify-between rounded-xl px-3 py-2.5 text-xs font-medium text-accent transition-colors hover:text-accent-warm"
               >
-                {t.everyIndustry} <ArrowRight className="h-3.5 w-3.5" />
+                Every industry <ArrowRight className="h-3.5 w-3.5" />
               </Link>
             </div>
           </div>

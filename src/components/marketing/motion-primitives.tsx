@@ -2,7 +2,6 @@
 
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { useEffect, useState, type ReactNode } from "react";
-import { useLocale } from "@/components/locale-provider";
 
 type RevealVariant = "rise" | "pop" | "left" | "right";
 
@@ -40,55 +39,29 @@ export function MotionReveal({
   );
 }
 
-// Hindi possessives agree with the noun's gender (आपका / आपकी), so each
-// rotating word carries its own lead-in.
-const HERO_COPY = {
-  en: {
-    label: "Your knowledge base. Your AI team. Your work. Your AI workspace. Your Cabinet.",
-    sizer: "Knowledge Base",
-    words: [
-      ["Your", "Knowledge Base"],
-      ["Your", "AI team"],
-      ["Your", "Work"],
-      ["Your", "AI Workspace"],
-      ["Your", "Cabinet"],
-    ],
-  },
-  hi: {
-    label: "आपका नॉलेज बेस। आपकी AI टीम। आपका काम। आपका AI वर्कस्पेस। आपका Cabinet।",
-    sizer: "AI वर्कस्पेस",
-    words: [
-      ["आपका", "नॉलेज बेस"],
-      ["आपकी", "AI टीम"],
-      ["आपका", "काम"],
-      ["आपका", "AI वर्कस्पेस"],
-      ["आपका", "Cabinet"],
-    ],
-  },
-} as const;
+const HERO_ROTATING_WORDS = ["Knowledge Base", "AI team", "Work", "AI Workspace", "Cabinet"];
 
 export function HeroHeadline() {
   const reduceMotion = useReducedMotion();
-  const copy = HERO_COPY[useLocale()];
   const [i, setI] = useState(0);
 
   useEffect(() => {
     if (reduceMotion) return;
-    const t = setInterval(() => setI((v) => (v + 1) % copy.words.length), 2200);
+    const t = setInterval(() => setI((v) => (v + 1) % HERO_ROTATING_WORDS.length), 2200);
     return () => clearInterval(t);
-  }, [reduceMotion, copy.words.length]);
+  }, [reduceMotion]);
 
-  const [lead, word] = copy.words[i];
+  const word = HERO_ROTATING_WORDS[i];
 
   return (
     <h1
-      aria-label={copy.label}
+      aria-label="Your knowledge base. Your AI team. Your work. Your AI workspace. Your Cabinet."
       className="max-w-[14ch] font-display text-[clamp(2.55rem,4vw,3.85rem)] leading-[1.02] tracking-[-0.04em] text-text-primary"
     >
-      <span className="block">{lead}</span>
+      <span className="block">Your</span>
       <span className="relative block min-h-[1.02em] whitespace-nowrap">
         <span aria-hidden className="invisible block">
-          {copy.sizer}
+          Knowledge Base
         </span>
         <AnimatePresence mode="wait">
           <motion.span

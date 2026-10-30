@@ -1,27 +1,15 @@
 "use client";
 
 import { Check, Copy } from "lucide-react";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-
-// Split into user-perceived characters so scripts like Devanagari type whole
-// letters (consonant + matra, conjuncts) instead of half-formed glyphs.
-// For plain ASCII this is identical to splitting by code unit.
-function graphemes(text: string): string[] {
-  if (typeof Intl !== "undefined" && "Segmenter" in Intl) {
-    const segmenter = new Intl.Segmenter(undefined, { granularity: "grapheme" });
-    return Array.from(segmenter.segment(text), (s) => s.segment);
-  }
-  return Array.from(text);
-}
+import { useCallback, useEffect, useRef, useState } from "react";
 
 export function TypingText({ texts }: { texts: string[] }) {
   const [textIndex, setTextIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [deleting, setDeleting] = useState(false);
-  const split = useMemo(() => texts.map(graphemes), [texts]);
 
   useEffect(() => {
-    const current = split[textIndex];
+    const current = texts[textIndex];
     const timeout = deleting ? 30 : 60;
 
     if (!deleting && charIndex === current.length) {
@@ -31,7 +19,7 @@ export function TypingText({ texts }: { texts: string[] }) {
     if (deleting && charIndex === 0) {
       const timer = setTimeout(() => {
         setDeleting(false);
-        setTextIndex((index) => (index + 1) % split.length);
+        setTextIndex((index) => (index + 1) % texts.length);
       }, timeout);
       return () => clearTimeout(timer);
     }
@@ -41,11 +29,11 @@ export function TypingText({ texts }: { texts: string[] }) {
     }, timeout);
 
     return () => clearTimeout(timer);
-  }, [charIndex, deleting, textIndex, split]);
+  }, [charIndex, deleting, textIndex, texts]);
 
   return (
     <span className="text-accent">
-      {split[textIndex].slice(0, charIndex).join("")}
+      {texts[textIndex].slice(0, charIndex)}
       <span className="cursor-blink text-accent-light">|</span>
     </span>
   );
