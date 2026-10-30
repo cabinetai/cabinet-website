@@ -2,119 +2,59 @@ import Image from "next/image";
 import { Check, Folder, Link2 } from "lucide-react";
 import { MotionReveal } from "./motion-primitives";
 import { ScatteredIntegrationsFrame } from "./scattered-integrations";
-import type { Locale } from "@/lib/i18n";
 
-type Text = Record<Locale, string>;
-
-const DIRECTORY_ITEMS: Array<{
-  id: string;
-  name: Text;
-  note: Text;
-  src: string;
-  kind: "connected" | "local";
-  status: Text;
-}> = [
+const DIRECTORY_ITEMS = [
   {
-    id: "google-drive",
-    name: { en: "Google Drive", hi: "Google Drive" },
-    note: { en: "Company docs and campaign folders", hi: "कंपनी के दस्तावेज़ और कैंपेन फ़ोल्डर" },
+    name: "Google Drive",
+    note: "Company docs and campaign folders",
     src: "/logos/google-drive.svg",
-    kind: "connected",
-    status: { en: "Connected folder", hi: "कनेक्टेड फ़ोल्डर" },
+    status: "Connected folder",
   },
   {
-    id: "sharepoint",
-    name: { en: "SharePoint", hi: "SharePoint" },
-    note: { en: "Policies, projects, and team sites", hi: "पॉलिसी, प्रोजेक्ट और टीम साइट्स" },
+    name: "SharePoint",
+    note: "Policies, projects, and team sites",
     src: "/logos/sharepoint.svg",
-    kind: "connected",
-    status: { en: "Connected folder", hi: "कनेक्टेड फ़ोल्डर" },
+    status: "Connected folder",
   },
   {
-    id: "office",
-    name: { en: "Office files", hi: "Office फ़ाइलें" },
-    note: {
-      en: "FY27 Plan.docx  ·  Forecast.xlsx  ·  Board.pptx",
-      hi: "FY27 Plan.docx  ·  Forecast.xlsx  ·  Board.pptx",
-    },
+    name: "Office files",
+    note: "FY27 Plan.docx  ·  Forecast.xlsx  ·  Board.pptx",
     src: "/logos/microsoft-365.svg",
-    kind: "local",
-    status: { en: "Local files", hi: "लोकल फ़ाइलें" },
+    status: "Local files",
   },
   {
-    id: "notion",
-    name: { en: "Notion", hi: "Notion" },
-    note: { en: "Team wiki and operating documents", hi: "टीम विकी और ऑपरेटिंग दस्तावेज़" },
+    name: "Notion",
+    note: "Team wiki and operating documents",
     src: "/logos/notion.svg",
-    kind: "connected",
-    status: { en: "Connected space", hi: "कनेक्टेड स्पेस" },
+    status: "Connected space",
   },
   {
-    id: "onedrive",
-    name: { en: "OneDrive", hi: "OneDrive" },
-    note: { en: "Finance, sales, and customer folders", hi: "फ़ाइनेंस, सेल्स और ग्राहकों के फ़ोल्डर" },
+    name: "OneDrive",
+    note: "Finance, sales, and customer folders",
     src: "/logos/onedrive.svg",
-    kind: "connected",
-    status: { en: "Connected folder", hi: "कनेक्टेड फ़ोल्डर" },
+    status: "Connected folder",
   },
-];
+] as const;
 
-const BENEFITS: Array<{ image: string; title: Text; body: Text }> = [
+const BENEFITS = [
   {
     image: "/brand/ui/brain.png",
-    title: { en: "One search surface", hi: "खोज के लिए एक ही जगह" },
-    body: {
-      en: "Find context across the connected company structure.",
-      hi: "कंपनी के हर जुड़े हुए सोर्स में ज़रूरी संदर्भ ढूंढें।",
-    },
+    title: "One search surface",
+    body: "Find context across the connected company structure.",
   },
   {
     image: "/brand/ui/team.png",
-    title: { en: "One shared view", hi: "सबके लिए एक ही व्यू" },
-    body: {
-      en: "People and AI teams work from the same navigable source.",
-      hi: "लोग और AI टीमें एक ही व्यवस्थित सोर्स से काम करती हैं।",
-    },
+    title: "One shared view",
+    body: "People and AI teams work from the same navigable source.",
   },
   {
     image: "/brand/ui/document.png",
-    title: { en: "Results stay useful", hi: "नतीजे काम के बने रहते हैं" },
-    body: {
-      en: "New work returns beside its sources with history intact.",
-      hi: "नया काम अपने सोर्स के पास ही लौटता है, पूरी हिस्ट्री के साथ।",
-    },
+    title: "Results stay useful",
+    body: "New work returns beside its sources with history intact.",
   },
-];
+] as const;
 
-const COPY = {
-  en: {
-    label: "Integrations",
-    heading: "Connect to everything that runs your company.",
-    body: "Your company runs on dozens of tools. Cabinet brings the work scattered across them into one place you own, where your team and its agents can find it, act on it, and keep it moving.",
-    cabinetName: "Company Cabinet",
-    cabinetSubtitle: "one visible company directory",
-    sourcesConnected: "Sources connected",
-    breadcrumb: "Company Cabinet /",
-    sideBySide: "Cloud and local sources, side by side",
-    noteLead: "Cabinet keeps the structure.",
-    noteBody: "AI results, decisions, and live views return to the directory your company owns.",
-  },
-  hi: {
-    label: "इंटीग्रेशन",
-    heading: "आपकी कंपनी जिन टूल्स पर चलती है, उन सबसे जुड़ें।",
-    body: "आपकी कंपनी दर्जनों टूल्स पर चलती है। Cabinet उनमें बिखरे काम को एक ऐसी जगह ले आता है जो पूरी तरह आपकी है। वहां आपकी टीम और उसके एजेंट उसे ढूंढ सकते हैं, उस पर काम कर सकते हैं और उसे आगे बढ़ाते रह सकते हैं।",
-    cabinetName: "कंपनी Cabinet",
-    cabinetSubtitle: "पूरी कंपनी की एक डायरेक्टरी",
-    sourcesConnected: "सोर्स कनेक्टेड",
-    breadcrumb: "कंपनी Cabinet /",
-    sideBySide: "क्लाउड और लोकल सोर्स, साथ-साथ",
-    noteLead: "ढांचा Cabinet संभालता है।",
-    noteBody: "AI के नतीजे, फ़ैसले और लाइव व्यू उसी डायरेक्टरी में लौटते हैं जो आपकी कंपनी की अपनी है।",
-  },
-} satisfies Record<Locale, Record<string, string>>;
-
-export function KnowledgeNetwork({ locale = "en" }: { locale?: Locale }) {
-  const t = COPY[locale];
+export function KnowledgeNetwork() {
   return (
     <section
       id="knowledge"
@@ -123,17 +63,19 @@ export function KnowledgeNetwork({ locale = "en" }: { locale?: Locale }) {
       <ScatteredIntegrationsFrame>
       <div className="mx-auto grid w-full max-w-5xl items-center gap-10 lg:grid-cols-[0.72fr_1.28fr] lg:gap-16">
         <MotionReveal variant="left">
-          <p className="section-label">{t.label}</p>
+          <p className="section-label">Integrations</p>
           <h2 className="mt-5 max-w-[13ch] font-section text-[clamp(2.25rem,3.6vw,3.6rem)] leading-[1.02] text-text-primary">
-            {t.heading}
+            Connect to everything that runs your company.
           </h2>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-text-secondary sm:text-lg">
-            {t.body}
+            Your company runs on dozens of tools. Cabinet brings the work scattered across them
+            into one place you own, where your team and its agents can find it, act on it, and
+            keep it moving.
           </p>
 
           <div className="mt-8 space-y-3">
             {BENEFITS.map((benefit) => (
-              <div key={benefit.image} className="flex items-center gap-4">
+              <div key={benefit.title} className="flex items-center gap-4">
                 <span className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-accent-bg-subtle">
                   <Image
                     src={benefit.image}
@@ -144,9 +86,9 @@ export function KnowledgeNetwork({ locale = "en" }: { locale?: Locale }) {
                   />
                 </span>
                 <span>
-                  <strong className="block text-sm text-text-primary">{benefit.title[locale]}</strong>
+                  <strong className="block text-sm text-text-primary">{benefit.title}</strong>
                   <span className="mt-0.5 block text-xs leading-relaxed text-text-secondary">
-                    {benefit.body[locale]}
+                    {benefit.body}
                   </span>
                 </span>
               </div>
@@ -171,31 +113,31 @@ export function KnowledgeNetwork({ locale = "en" }: { locale?: Locale }) {
                 />
               </span>
               <span>
-                <strong className="block text-sm text-text-primary">{t.cabinetName}</strong>
+                <strong className="block text-sm text-text-primary">Company Cabinet</strong>
                 <span className="mt-1 block font-code text-[10px] text-text-tertiary">
-                  {t.cabinetSubtitle}
+                  one visible company directory
                 </span>
               </span>
             </div>
             <span className="inline-flex items-center gap-2 rounded-full bg-green-bg px-3 py-1.5 text-[10px] font-semibold text-green-warm">
-              <span className="h-1.5 w-1.5 rounded-full bg-green" /> {t.sourcesConnected}
+              <span className="h-1.5 w-1.5 rounded-full bg-green" /> Sources connected
             </span>
           </div>
 
           <div className="bg-bg-warm/55 p-4 sm:p-6">
             <div className="flex items-center justify-between gap-3 px-2 pb-3">
               <span className="inline-flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.11em] text-text-tertiary">
-                <Folder aria-hidden className="h-3.5 w-3.5" /> {t.breadcrumb}
+                <Folder aria-hidden className="h-3.5 w-3.5" /> Company Cabinet /
               </span>
               <span className="hidden text-[10px] text-text-tertiary sm:block">
-                {t.sideBySide}
+                Cloud and local sources, side by side
               </span>
             </div>
 
             <div className="space-y-2.5">
               {DIRECTORY_ITEMS.map((item, index) => (
                 <div
-                  key={item.id}
+                  key={item.name}
                   className="knowledge-directory-row flex items-center gap-3 rounded-2xl bg-bg-card p-3.5 shadow-sm sm:p-4"
                   style={{ animationDelay: `${180 + index * 90}ms` }}
                 >
@@ -209,18 +151,18 @@ export function KnowledgeNetwork({ locale = "en" }: { locale?: Locale }) {
                     />
                   </span>
                   <span className="min-w-0 flex-1">
-                    <strong className="block text-sm text-text-primary">{item.name[locale]}</strong>
+                    <strong className="block text-sm text-text-primary">{item.name}</strong>
                     <span className="mt-1 block truncate text-[10px] text-text-tertiary sm:text-[11px]">
-                      {item.note[locale]}
+                      {item.note}
                     </span>
                   </span>
                   <span className="hidden items-center gap-1.5 rounded-full bg-green-bg px-2.5 py-1.5 text-[9px] font-semibold text-green-warm sm:inline-flex">
-                    {item.kind === "local" ? (
+                    {item.status === "Local files" ? (
                       <Check aria-hidden className="h-3 w-3" />
                     ) : (
                       <Link2 aria-hidden className="h-3 w-3" />
                     )}
-                    {item.status[locale]}
+                    {item.status}
                   </span>
                 </div>
               ))}
@@ -235,8 +177,8 @@ export function KnowledgeNetwork({ locale = "en" }: { locale?: Locale }) {
                 className="h-9 w-9 shrink-0 object-contain"
               />
               <span>
-                <strong className="text-text-primary">{t.noteLead}</strong>
-                {` ${t.noteBody}`}
+                <strong className="text-text-primary">Cabinet keeps the structure.</strong> AI
+                results, decisions, and live views return to the directory your company owns.
               </span>
             </div>
           </div>

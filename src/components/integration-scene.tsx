@@ -19,10 +19,8 @@ import {
   TrendingUp,
   type LucideIcon,
 } from "lucide-react";
-import { useLocale } from "@/components/locale-provider";
 import { DownloadShowcase } from "@/components/marketing/download-showcase";
 import { WoodIcon } from "@/components/wood-icon";
-import type { Locale } from "@/lib/i18n";
 import {
   AnimatePresence,
   animate,
@@ -54,67 +52,6 @@ import { ScrollReveal } from "@/components/lightswind/scroll-reveal";
      • while spread, the tiles magnetically flee the cursor
        (spring-damped), so hovering feels alive.
    ────────────────────────────────────────────────────────────── */
-
-// Copy that appears inside the illustration (drawer labels, card titles, task
-// names) is stored per item in both languages, so the layout data stays in
-// one place.
-type L10n = Record<Locale, string>;
-
-// Captions and labels around the scene.
-const SCENE_COPY: Record<
-  Locale,
-  {
-    eyebrow: string;
-    // "Your work / lives in / a hundred / places." The last two lines are set
-    // in the muted face.
-    title: [string, string, string, string];
-    // "Cabinet / pulls it all / into one / place." after the brand name.
-    capture: [string, string, string];
-    closing: string;
-    scrollHint: string;
-  }
-> = {
-  en: {
-    eyebrow: "One place for your work",
-    title: ["Your work", "lives in", "a hundred", "places."],
-    capture: ["pulls it all", "into one", "place."],
-    closing: "…and your AI team takes it from here, 24/7.",
-    scrollHint: "scroll",
-  },
-  hi: {
-    eyebrow: "आपका सारा काम, एक जगह",
-    title: ["आपका काम", "बिखरा है", "सौ अलग", "जगहों पर।"],
-    capture: ["सब कुछ", "एक जगह", "ले आता है।"],
-    closing: "…और यहाँ से आगे आपकी AI टीम संभाल लेती है, चौबीसों घंटे।",
-    scrollHint: "स्क्रॉल करें",
-  },
-};
-
-// Type settings for the big captions. Instrument Serif has no Devanagari, so
-// Hindi falls back to Noto Serif Devanagari; its vowel signs sit above and
-// below the line, so the tight display leading opens up, and the synthetic
-// italic is dropped because a slanted Devanagari face reads as broken.
-const SCENE_TYPE: Record<
-  Locale,
-  { brandFont: string; brandStack: string; mutedClass: string; title: string; capture: string; closing: string }
-> = {
-  en: {
-    brandFont: "[font-family:var(--font-brand)]",
-    brandStack: "var(--font-brand)",
-    mutedClass: "italic text-text-secondary/75",
-    title: "leading-[0.9]",
-    capture: "leading-[0.98]",
-    closing: "leading-[0.95]",
-  },
-  hi: {
-    brandFont: "[font-family:var(--font-brand),var(--font-deva-serif)]",
-    brandStack: "var(--font-brand), var(--font-deva-serif)",
-    mutedClass: "text-text-secondary/75",
-    title: "leading-[1.2]",
-    capture: "leading-[1.2]",
-    closing: "leading-[1.25]",
-  },
-};
 
 const LOGOS = [
   "slack", "microsoft-teams", "notion", "github", "hubspot", "confluence",
@@ -354,11 +291,7 @@ function FileMark({ name, color, size = 22 }: { name: string; color: string; siz
 /* ─── The wooden cabinet from the launch video, drawn in CSS. The whole
    cabinet buzzes, then the next drawer springs open as the last one shuts,
    cycling through what Cabinet holds. ─── */
-const DRAWERS: L10n[] = [
-  { en: "Knowledge", hi: "नॉलेज" },
-  { en: "Team", hi: "टीम" },
-  { en: "Tasks", hi: "काम" },
-];
+const DRAWERS = ["Knowledge", "Team", "Tasks"];
 // The cabinet is drawn at a native 216px and blown up as ONE piece — every
 // scene-space constant that points at a drawer must carry the same factor.
 const CABINET_SCALE = 1.35;
@@ -463,7 +396,6 @@ function CabinetDrawer({ label, open }: { label: string; open: boolean }) {
 // holdOpen: a drawer index keeps that drawer open, -1 holds every drawer
 // shut, null lets the drawers cycle on their own.
 function AnimatedCabinet({ holdOpen = null }: { holdOpen?: number | null }) {
-  const locale = useLocale();
   const prefersReduced = useReducedMotion();
   const [active, setActive] = useState(holdOpen ?? 0);
   const body = useAnimationControls();
@@ -509,7 +441,7 @@ function AnimatedCabinet({ holdOpen = null }: { holdOpen?: number | null }) {
         }}
       >
         {DRAWERS.map((label, i) => (
-          <CabinetDrawer key={label.en} label={label[locale]} open={!prefersReduced && i === active} />
+          <CabinetDrawer key={label} label={label} open={!prefersReduced && i === active} />
         ))}
       </div>
       {/* legs */}
@@ -649,11 +581,11 @@ function FloatingTile({
 }
 
 type LaneItem =
-  | { kind: "label"; text: L10n }
+  | { kind: "label"; text: string }
   | { kind: "file"; name: string; color: string }
   | {
       kind: "dash";
-      title: L10n;
+      title: string;
       value: string;
       trend: number;
       accent: string;
@@ -663,8 +595,8 @@ type LaneItem =
       offsetX: number;
       offsetY: number;
     }
-  | { kind: "agent"; name: L10n; logo: string; accent: string; figure: string }
-  | { kind: "task"; name: L10n; meta: L10n; icon: LucideIcon; accent: string };
+  | { kind: "agent"; name: string; logo: string; accent: string; figure: string }
+  | { kind: "task"; name: string; meta: string; icon: LucideIcon; accent: string };
 
 // Each category's label + sample items queue through ONE shared reading spot
 // beside the cabinet — a single column, not four clusters scattered across
@@ -720,7 +652,7 @@ const DASH_SLOTS: ScatterSlot[] = [
 ];
 
 const CATEGORIES: {
-  text: L10n;
+  text: string;
   drawer: number;
   // Hand-placed scatter slots (piled like the opening cloud) + where the
   // label sits above that pile. Categories without slots stack as a list.
@@ -729,7 +661,7 @@ const CATEGORIES: {
   items: LaneItem[];
 }[] = [
   {
-    text: { en: "Files", hi: "फ़ाइलें" },
+    text: "Files",
     drawer: 0,
     slots: FILE_SLOTS,
     labelPos: { x: 90, y: -215 },
@@ -748,44 +680,44 @@ const CATEGORIES: {
     ],
   },
   {
-    text: { en: "Dashboards", hi: "डैशबोर्ड" },
+    text: "Dashboards",
     drawer: 0,
     slots: DASH_SLOTS,
     labelPos: { x: 110, y: -265 },
     items: [
-      { kind: "dash", title: { en: "Pipeline", hi: "पाइपलाइन" }, value: "$482K", trend: 12, accent: "#5B8FD6", bars: [45, 60, 72, 55, 80, 68], chartStyle: "bars", rotate: -5, offsetX: -10, offsetY: 4 },
-      { kind: "dash", title: { en: "Usage", hi: "उपयोग" }, value: "94%", trend: 6, accent: "#6FA45A", bars: [60, 85, 45, 92, 65, 78], chartStyle: "line", rotate: 4, offsetX: 12, offsetY: -8 },
-      { kind: "dash", title: { en: "Open tickets", hi: "खुले टिकट" }, value: "23", trend: -8, accent: "#E2725B", bars: [70, 55, 62, 40, 48, 35], chartStyle: "area", rotate: -3, offsetX: -6, offsetY: 12 },
-      { kind: "dash", title: { en: "Revenue", hi: "राजस्व" }, value: "$1.2M", trend: 18, accent: "#E0B23C", bars: [30, 45, 55, 60, 72, 88], chartStyle: "bars", rotate: 3, offsetX: 8, offsetY: -6 },
-      { kind: "dash", title: { en: "NPS", hi: "NPS" }, value: "62", trend: 4, accent: "#4FA39A", bars: [48, 52, 58, 55, 63, 70], chartStyle: "line", rotate: -4, offsetX: -8, offsetY: 8 },
-      { kind: "dash", title: { en: "Signups", hi: "साइनअप" }, value: "1,840", trend: 9, accent: "#E08A3C", bars: [35, 50, 42, 65, 58, 80], chartStyle: "area", rotate: 4, offsetX: 10, offsetY: -4 },
+      { kind: "dash", title: "Pipeline", value: "$482K", trend: 12, accent: "#5B8FD6", bars: [45, 60, 72, 55, 80, 68], chartStyle: "bars", rotate: -5, offsetX: -10, offsetY: 4 },
+      { kind: "dash", title: "Usage", value: "94%", trend: 6, accent: "#6FA45A", bars: [60, 85, 45, 92, 65, 78], chartStyle: "line", rotate: 4, offsetX: 12, offsetY: -8 },
+      { kind: "dash", title: "Open tickets", value: "23", trend: -8, accent: "#E2725B", bars: [70, 55, 62, 40, 48, 35], chartStyle: "area", rotate: -3, offsetX: -6, offsetY: 12 },
+      { kind: "dash", title: "Revenue", value: "$1.2M", trend: 18, accent: "#E0B23C", bars: [30, 45, 55, 60, 72, 88], chartStyle: "bars", rotate: 3, offsetX: 8, offsetY: -6 },
+      { kind: "dash", title: "NPS", value: "62", trend: 4, accent: "#4FA39A", bars: [48, 52, 58, 55, 63, 70], chartStyle: "line", rotate: -4, offsetX: -8, offsetY: 8 },
+      { kind: "dash", title: "Signups", value: "1,840", trend: 9, accent: "#E08A3C", bars: [35, 50, 42, 65, 58, 80], chartStyle: "area", rotate: 4, offsetX: 10, offsetY: -4 },
     ],
   },
   {
-    text: { en: "AI agents", hi: "AI एजेंट" },
+    text: "AI agents",
     drawer: 1,
     slots: AGENT_SLOTS,
     labelPos: { x: 70, y: -205 },
     items: [
       // Wooden mascots from the /agents exploration: the one who picks up
       // the phone, the typewriter, and the scout owl.
-      { kind: "agent", name: { en: "SDR", hi: "SDR" }, logo: PROVIDERS[0], accent: "#5B8FD6", figure: "/brand/agents-office/ring.png" },
-      { kind: "agent", name: { en: "Marketing Expert", hi: "मार्केटिंग एक्सपर्ट" }, logo: PROVIDERS[1], accent: "#E2725B", figure: "/brand/agents-office/type.png" },
-      { kind: "agent", name: { en: "Researcher", hi: "रिसर्चर" }, logo: PROVIDERS[2], accent: "#4FA39A", figure: "/brand/agents/owl.png" },
+      { kind: "agent", name: "SDR", logo: PROVIDERS[0], accent: "#5B8FD6", figure: "/brand/agents-office/ring.png" },
+      { kind: "agent", name: "Marketing Expert", logo: PROVIDERS[1], accent: "#E2725B", figure: "/brand/agents-office/type.png" },
+      { kind: "agent", name: "Researcher", logo: PROVIDERS[2], accent: "#4FA39A", figure: "/brand/agents/owl.png" },
     ],
   },
   {
-    text: { en: "Tasks", hi: "काम" },
+    text: "Tasks",
     drawer: 2,
     slots: TASK_SLOTS,
     // Centered over the zigzag pile, not hanging off its left edge.
     labelPos: { x: 130, y: -265 },
     items: [
-      { kind: "task", name: { en: "Board brief", hi: "बोर्ड ब्रीफ़" }, meta: { en: "Ready every Monday, 7:00", hi: "हर सोमवार सुबह 7 बजे तैयार" }, icon: Calendar, accent: "#E0B23C" },
-      { kind: "task", name: { en: "Competitor watch", hi: "प्रतिस्पर्धियों पर नज़र" }, meta: { en: "Scans the market daily", hi: "रोज़ बाज़ार की पड़ताल" }, icon: Target, accent: "#E2725B" },
-      { kind: "task", name: { en: "Inbox triage", hi: "इनबॉक्स की छँटाई" }, meta: { en: "Sorted before you wake", hi: "आपके उठने से पहले तैयार" }, icon: MessageSquare, accent: "#4FA39A" },
-      { kind: "task", name: { en: "Pipeline digest", hi: "पाइपलाइन सारांश" }, meta: { en: "Every morning at 8", hi: "हर सुबह 8 बजे" }, icon: TrendingUp, accent: "#6FA45A" },
-      { kind: "task", name: { en: "Meeting notes", hi: "मीटिंग नोट्स" }, meta: { en: "Filed right after the call", hi: "कॉल ख़त्म होते ही दर्ज" }, icon: FileText, accent: "#E08A3C" },
+      { kind: "task", name: "Board brief", meta: "Ready every Monday, 7:00", icon: Calendar, accent: "#E0B23C" },
+      { kind: "task", name: "Competitor watch", meta: "Scans the market daily", icon: Target, accent: "#E2725B" },
+      { kind: "task", name: "Inbox triage", meta: "Sorted before you wake", icon: MessageSquare, accent: "#4FA39A" },
+      { kind: "task", name: "Pipeline digest", meta: "Every morning at 8", icon: TrendingUp, accent: "#6FA45A" },
+      { kind: "task", name: "Meeting notes", meta: "Filed right after the call", icon: FileText, accent: "#E08A3C" },
     ],
   },
 ];
@@ -917,7 +849,6 @@ const COLUMN_ROWS = buildColumnRows();
 const COLUMN_END = COLUMN_ROWS[COLUMN_ROWS.length - 1].diveEnd;
 
 function LaneChip({ item }: { item: LaneItem }) {
-  const locale = useLocale();
   switch (item.kind) {
     case "label":
       // Same card-catalog hardware as the drawer labels — brass frame,
@@ -941,7 +872,7 @@ function LaneChip({ item }: { item: LaneItem }) {
               boxShadow: "inset 0 1px 3px rgba(96, 64, 32, 0.28)",
             }}
           >
-            {item.text[locale]}
+            {item.text}
           </span>
         </span>
       );
@@ -1019,7 +950,7 @@ function LaneChip({ item }: { item: LaneItem }) {
         >
           <div className="mb-1.5 flex items-center justify-between gap-2">
             <span className="font-sans text-xs font-semibold uppercase tracking-wide text-text-muted">
-              {item.title[locale]}
+              {item.title}
             </span>
             <span className={`font-code text-xs font-bold ${up ? "text-[#6FA45A]" : "text-[#E2725B]"}`}>
               {up ? "▲" : "▼"} {Math.abs(item.trend)}%
@@ -1127,7 +1058,7 @@ function LaneChip({ item }: { item: LaneItem }) {
                 textShadow: "0 1px 0 rgba(255, 244, 222, 0.65), 0 -1px 1px rgba(60, 36, 16, 0.45)",
               }}
             >
-              {item.name[locale]}
+              {item.name}
             </span>
           </span>
         </span>
@@ -1138,14 +1069,13 @@ function LaneChip({ item }: { item: LaneItem }) {
       // gentle drift, and a dog-eared corner. Padding is inline so a stale
       // Tailwind cache can never strip it and clip the text.
       const fold = 14;
-      // Seeded off the English name so both languages share the same pile.
-      const bow = item.name.en.length % 2 ? -7 : 7;
+      const bow = item.name.length % 2 ? -7 : 7;
       return (
         <span
           className="float-slow inline-block"
           style={{
             filter: "drop-shadow(0 12px 14px rgba(84, 52, 26, 0.28))",
-            animationDelay: `${-((item.name.en.length * 0.9) % 4).toFixed(1)}s`,
+            animationDelay: `${-((item.name.length * 0.9) % 4).toFixed(1)}s`,
           }}
         >
           <span
@@ -1166,8 +1096,8 @@ function LaneChip({ item }: { item: LaneItem }) {
               <WoodIcon icon={item.icon} className="h-8 w-8" />
             </span>
             <span className="flex flex-col text-left leading-snug">
-              <span className="font-sans text-xl font-semibold text-text-primary">{item.name[locale]}</span>
-              <span className="font-code text-sm text-text-secondary">{item.meta[locale]}</span>
+              <span className="font-sans text-xl font-semibold text-text-primary">{item.name}</span>
+              <span className="font-code text-sm text-text-secondary">{item.meta}</span>
             </span>
             {/* folded-back corner */}
             <span
@@ -1282,9 +1212,6 @@ function ColumnItem({
 }
 
 function StaticFallback() {
-  const locale = useLocale();
-  const copy = SCENE_COPY[locale];
-  const type = SCENE_TYPE[locale];
   return (
     <section className="dot-grid relative min-h-screen overflow-hidden bg-[#f2ece4] pt-20">
       <div
@@ -1334,20 +1261,20 @@ function StaticFallback() {
         </div>
         <div className="mx-auto max-w-xl text-center lg:ml-auto lg:text-right">
           <p className="mb-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-accent">
-            {copy.eyebrow}
+            One place for your work
           </p>
           <h2
             className="text-[clamp(3.5rem,6vw,6.5rem)] leading-[0.88] tracking-[-0.045em] text-text-primary"
             style={{
-              fontFamily: type.brandStack,
+              fontFamily: "var(--font-brand)",
               textShadow: "0 1px 18px rgba(250, 246, 241, 0.72)",
             }}
           >
-            {copy.title[0]}
+            Your work
             <br />
-            {copy.title[1]}
+            lives in
             <br />
-            <span className={type.mutedClass}>{`${copy.title[2]} ${copy.title[3]}`}</span>
+            <span className="italic text-text-secondary/75">a hundred places.</span>
           </h2>
         </div>
       </div>
@@ -1359,9 +1286,6 @@ function StaticFallback() {
 
 
 export function IntegrationScene() {
-  const locale = useLocale();
-  const copy = SCENE_COPY[locale];
-  const type = SCENE_TYPE[locale];
   const ref = useRef<HTMLDivElement>(null);
   const stickyRef = useRef<HTMLDivElement>(null);
   const prefersReduced = useReducedMotion();
@@ -1699,16 +1623,16 @@ export function IntegrationScene() {
               baseRotation={0}
               revealed
               staggerDelay={0.08}
-              textClassName={`${type.brandFont} [text-shadow:0_1px_18px_rgba(250,246,241,0.72)] text-[clamp(3.4rem,5.7vw,6.25rem)] ${type.title} tracking-[-0.045em] text-text-primary ${mobile ? "text-center" : "text-right"}`}
+              textClassName={`[font-family:var(--font-brand)] [text-shadow:0_1px_18px_rgba(250,246,241,0.72)] text-[clamp(3.4rem,5.7vw,6.25rem)] leading-[0.9] tracking-[-0.045em] text-text-primary ${mobile ? "text-center" : "text-right"}`}
             >
-              {copy.title[0]}
+              Your work
               <br />
-              {copy.title[1]}
+              lives in
               <br />
-              <span className={type.mutedClass}>
-                {copy.title[2]}
+              <span className="italic text-text-secondary/75">
+                a hundred
                 <br />
-                {copy.title[3]}
+                places.
               </span>
             </ScrollReveal>
           </motion.div>
@@ -1736,7 +1660,7 @@ export function IntegrationScene() {
               baseRotation={0}
               revealed={captureRevealed}
               staggerDelay={0.08}
-              textClassName={`${type.brandFont} ${type.capture} tracking-[-0.045em] text-text-primary ${
+              textClassName={`[font-family:var(--font-brand)] leading-[0.98] tracking-[-0.045em] text-text-primary ${
                 mobile
                   ? "text-[2.35rem] text-center"
                   : "text-[clamp(3rem,4.6vw,5rem)] text-left"
@@ -1746,11 +1670,11 @@ export function IntegrationScene() {
                   outer breaks collapse and the lines run together */}
               <span className="font-brand italic">Cabinet</span>{" "}
               <br className="max-md:hidden" />
-              {copy.capture[0]}
+              pulls it all
               <br />
-              {copy.capture[1]}{" "}
+              into one{" "}
               <br className="max-md:hidden" />
-              {copy.capture[2]}
+              place.
             </ScrollReveal>
           </motion.div>
         </div>
@@ -1765,9 +1689,9 @@ export function IntegrationScene() {
             baseRotation={0}
             revealed={videoCapRevealed}
             staggerDelay={0.08}
-            textClassName={`${type.brandFont} text-3xl sm:text-4xl md:text-5xl lg:text-6xl ${type.closing} tracking-[-0.045em] text-center text-text-primary`}
+            textClassName="[font-family:var(--font-brand)] text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[0.95] tracking-[-0.045em] text-center text-text-primary"
           >
-            {copy.closing}
+            …and your AI team takes it from here, 24/7.
           </ScrollReveal>
         </motion.div>
 
@@ -1777,7 +1701,7 @@ export function IntegrationScene() {
             className="absolute left-1/2 -translate-x-1/2 bottom-8 text-xs font-code text-text-muted uppercase tracking-widest"
             style={{ opacity: hintOpacity }}
           >
-            {copy.scrollHint}
+            scroll
           </motion.div>
         )}
       </div>

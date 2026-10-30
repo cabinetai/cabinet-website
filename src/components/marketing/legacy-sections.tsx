@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import type { ReactElement, ReactNode } from "react";
 import {
   ArrowRight,
   Bot,
@@ -27,10 +26,6 @@ import { DISCORD_URL } from "@/lib/site-config";
 import { DownloadButtons } from "@/components/marketing/download-buttons";
 import { DownloadShowcase } from "@/components/marketing/download-showcase";
 import { SOLUTIONS, SOLUTION_STORIES } from "@/lib/solutions";
-import type { Locale } from "@/lib/i18n";
-
-// The brand name as it is set inside running copy.
-const BRAND = <span className="font-brand italic">Cabinet</span>;
 
 const PROVIDERS = [
   { src: "/providers/claude.svg", name: "Claude" },
@@ -61,186 +56,82 @@ function integrationName(src: string): string {
     .join(" ");
 }
 
-type TrustBadgeText = { label: string; status?: string; desc: string };
-
-const TRUST_BADGES: { img: string; text: Record<Locale, TrustBadgeText> }[] = [
+const TRUST_BADGES = [
   {
     img: "/brand/trust/soc2.png",
-    text: {
-      en: {
-        label: "SOC 2 Type II",
-        status: "In progress",
-        desc: "We're working toward it, and we'll show you the report, not just a badge.",
-      },
-      hi: {
-        label: "SOC 2 Type II",
-        status: "प्रक्रिया जारी",
-        desc: "हम इस पर काम कर रहे हैं। आपको सिर्फ़ बैज नहीं, पूरी रिपोर्ट दिखाएँगे।",
-      },
-    },
+    label: "SOC 2 Type II",
+    status: "In progress",
+    desc: "We're working toward it, and we'll show you the report, not just a badge.",
   },
   {
     img: "/brand/trust/self-hosted.png",
-    text: {
-      en: {
-        label: "Self-hosted",
-        desc: "Runs in your environment, under the controls you already enforce.",
-      },
-      hi: {
-        label: "सेल्फ़-होस्टेड",
-        desc: "आपके अपने एनवायरनमेंट में चलता है, उन्हीं नियंत्रणों के तहत जो आप पहले से लागू करते हैं।",
-      },
-    },
+    label: "Self-hosted",
+    desc: "Runs in your environment, under the controls you already enforce.",
   },
   {
     img: "/brand/trust/not-training.png",
-    text: {
-      en: {
-        label: "Not training data",
-        desc: "Your prompts and content are never used to train a model.",
-      },
-      hi: {
-        label: "ट्रेनिंग में इस्तेमाल नहीं",
-        desc: "आपके प्रॉम्प्ट और कंटेंट से कभी किसी मॉडल को ट्रेन नहीं किया जाता।",
-      },
-    },
+    label: "Not training data",
+    desc: "Your prompts and content are never used to train a model.",
   },
   {
     img: "/brand/trust/byo-keys.png",
-    text: {
-      en: {
-        label: "Bring your own keys",
-        desc: "Your model providers, your API keys. Inference never routes through us.",
-      },
-      hi: {
-        label: "अपनी API कीज़",
-        desc: "मॉडल प्रोवाइडर आपके, API कीज़ आपकी। इन्फ़रेंस कभी हमारे ज़रिए नहीं होता।",
-      },
-    },
+    label: "Bring your own keys",
+    desc: "Your model providers, your API keys. Inference never routes through us.",
   },
   {
     img: "/brand/trust/audit-log.png",
-    text: {
-      en: {
-        label: "Audit log & git history",
-        desc: "Every change to data and agents is versioned, diffable, and attributable.",
-      },
-      hi: {
-        label: "ऑडिट लॉग और Git हिस्ट्री",
-        desc: "डेटा और एजेंटों में हर बदलाव का वर्ज़न दर्ज होता है। आप बदलावों की तुलना कर सकते हैं और देख सकते हैं कि किसने क्या बदला।",
-      },
-    },
+    label: "Audit log & git history",
+    desc: "Every change to data and agents is versioned, diffable, and attributable.",
   },
   {
     img: "/brand/trust/sso-scim.png",
-    text: {
-      en: {
-        label: "SSO & SCIM",
-        status: "Enterprise track",
-        desc: "SAML single sign-on and provisioning for teams that need it.",
-      },
-      hi: {
-        label: "SSO और SCIM",
-        status: "एंटरप्राइज़ के लिए",
-        desc: "जिन टीमों को ज़रूरत है, उनके लिए SAML सिंगल साइन-ऑन और यूज़र प्रोविज़निंग।",
-      },
-    },
+    label: "SSO & SCIM",
+    status: "Enterprise track",
+    desc: "SAML single sign-on and provisioning for teams that need it.",
   },
   {
     img: "/brand/trust/data-residency.png",
-    text: {
-      en: {
-        label: "Your data residency",
-        desc: "Self-hosted means your knowledge lives in your region, under your policies.",
-      },
-      hi: {
-        label: "आपकी डेटा रेज़िडेंसी",
-        desc: "सेल्फ़-होस्टेड होने का मतलब है कि आपकी जानकारी आपके क्षेत्र में, आपकी नीतियों के तहत रहती है।",
-      },
-    },
+    label: "Your data residency",
+    desc: "Self-hosted means your knowledge lives in your region, under your policies.",
   },
 ];
 
-type TestimonialText = { quote: string; context: string; role: string; location: string };
-
-const TESTIMONIALS: {
-  name: string;
-  image: string;
-  linkedin: string;
-  initials: string;
-  text: Record<Locale, TestimonialText>;
-}[] = [
+const TESTIMONIALS = [
   {
+    quote:
+      "Cabinet is a big unlock for how I think about operating a business with AI.",
+    context:
+      "Before Cabinet, AI felt fragmented: great for single tasks, but hard to orchestrate across the business. Every business has different workflows, and Cabinet makes it possible to turn those workflows into an AI team.",
     name: "Collin Davis",
+    role: "Chief Product Officer, Clover",
+    location: "Florida, USA",
     image: "/testimonials/collin-davis.jpg",
     linkedin: "https://www.linkedin.com/in/collinedavis/",
     initials: "CD",
-    text: {
-      en: {
-        quote:
-          "Cabinet is a big unlock for how I think about operating a business with AI.",
-        context:
-          "Before Cabinet, AI felt fragmented: great for single tasks, but hard to orchestrate across the business. Every business has different workflows, and Cabinet makes it possible to turn those workflows into an AI team.",
-        role: "Chief Product Officer, Clover",
-        location: "Florida, USA",
-      },
-      hi: {
-        quote:
-          "AI के साथ बिज़नेस चलाने को लेकर मेरी सोच में Cabinet एक बड़ा बदलाव लाया है।",
-        context:
-          "Cabinet से पहले AI बिखरा हुआ लगता था: अलग-अलग कामों के लिए बढ़िया, पर पूरे बिज़नेस में उसे एक साथ चलाना मुश्किल। हर बिज़नेस के वर्कफ़्लो अलग होते हैं, और Cabinet उन्हीं वर्कफ़्लो को एक AI टीम में बदलना संभव बनाता है।",
-        role: "चीफ़ प्रोडक्ट ऑफ़िसर, Clover",
-        location: "फ़्लोरिडा, अमेरिका",
-      },
-    },
   },
   {
+    quote:
+      "Cabinet is exactly doing what it's strong at: orchestrating structure, standardization, opportunities, and challenges in a digital way.",
+    context:
+      "Cabinet is the missing persistence and memory layer that TOGAF, ISO, and many other framework tools have never had. The framework provides the skeleton; Cabinet provides the living connective tissue.",
     name: "Jean Pierre Traets",
+    role: "Sustainability Solutions Architect",
+    location: "EMEA",
     image: "/testimonials/jean-pierre-traets.jpg",
     linkedin: "https://www.linkedin.com/in/jean-pierre-traets/",
     initials: "JT",
-    text: {
-      en: {
-        quote:
-          "Cabinet is exactly doing what it's strong at: orchestrating structure, standardization, opportunities, and challenges in a digital way.",
-        context:
-          "Cabinet is the missing persistence and memory layer that TOGAF, ISO, and many other framework tools have never had. The framework provides the skeleton; Cabinet provides the living connective tissue.",
-        role: "Sustainability Solutions Architect",
-        location: "EMEA",
-      },
-      hi: {
-        quote:
-          "Cabinet ठीक वही कर रहा है जिसमें वह सबसे मज़बूत है: ढाँचे, मानकीकरण, अवसरों और चुनौतियों को डिजिटल रूप से एक सूत्र में पिरोना।",
-        context:
-          "Cabinet वह स्थायी मेमोरी लेयर है जो TOGAF, ISO और कई दूसरे फ़्रेमवर्क टूल्स में कभी नहीं रही। फ़्रेमवर्क ढाँचा देता है, और Cabinet उसमें जान डालकर सब कुछ आपस में जोड़े रखता है।",
-        role: "सस्टेनेबिलिटी सॉल्यूशंस आर्किटेक्ट",
-        location: "EMEA",
-      },
-    },
   },
   {
+    quote:
+      "As one of the first users of Superhuman, I definitely see the same spark here.",
+    context:
+      "I use Cabinet to manage GTM and send emails through Apollo, and the whole system runs without me touching it, 24/7. The researcher agent built into Cabinet crafted award-winning GTM emails that blew my mind and achieved incredible open rates.",
     name: "Assaf Haski",
+    role: "Strategic narratives for high-stakes systems, from B2B SaaS growth to national public guidance",
+    location: "",
     image: "/testimonials/assaf-haski.jpg",
     linkedin: "https://www.linkedin.com/in/assafhaski/",
     initials: "AH",
-    text: {
-      en: {
-        quote:
-          "As one of the first users of Superhuman, I definitely see the same spark here.",
-        context:
-          "I use Cabinet to manage GTM and send emails through Apollo, and the whole system runs without me touching it, 24/7. The researcher agent built into Cabinet crafted award-winning GTM emails that blew my mind and achieved incredible open rates.",
-        role: "Strategic narratives for high-stakes systems, from B2B SaaS growth to national public guidance",
-        location: "",
-      },
-      hi: {
-        quote:
-          "Superhuman के शुरुआती यूज़र्स में से एक होने के नाते, मुझे यहाँ भी वही चमक साफ़ दिखती है।",
-        context:
-          "मैं Cabinet से GTM संभालता हूँ और Apollo के ज़रिए ईमेल भेजता हूँ। पूरा सिस्टम मेरे हाथ लगाए बिना 24/7 चलता है। Cabinet के रिसर्चर एजेंट ने ऐसे बेहतरीन GTM ईमेल लिखे कि मैं हैरान रह गया, और उनके ओपन रेट शानदार रहे।",
-        role: "बड़े दांव वाले सिस्टम्स के लिए रणनीतिक नैरेटिव: B2B SaaS ग्रोथ से लेकर राष्ट्रीय स्तर के जन-मार्गदर्शन तक",
-        location: "",
-      },
-    },
   },
 ];
 
@@ -354,94 +245,38 @@ export function LegacyInstallTerminal() {
   );
 }
 
-// IntegrationScene and CloudCabinet are client components that read the
-// locale from context, so these wrappers accept the prop for a uniform call
-// site but have no copy of their own.
-type LocaleProps = { locale?: Locale };
+export function LegacyIntegrationScene() {
+  return <IntegrationScene />;
+}
 
-export const LegacyIntegrationScene: (props: LocaleProps) => ReactElement = () => (
-  <IntegrationScene />
-);
-
-const HERO_COPY: Record<
-  Locale,
-  {
-    evaluating: ReactNode;
-    bookDemo: string;
-    titleTop: string;
-    titleBottom: string;
-    logoAlt: string;
-    lede: string;
-    terms: string;
-    typing: string[];
-  }
-> = {
-  en: {
-    evaluating: <>Evaluating {BRAND}{" "}for your team?</>,
-    bookDemo: "Book a demo",
-    titleTop: "Your knowledge base.",
-    titleBottom: "Your AI team.",
-    logoAlt: "Cabinet: your files and knowledge in one drawer, a team of AI agents in the other",
-    lede: "A free AI-first startup OS where everything lives as files on disk. No database. No vendor lock-in.",
-    terms: "No subscription. No trial. No paywall. Clone it, run it, and make it your own.",
-    typing: [
-      "Onboard an AI team in 5 questions",
-      "Ship HTML apps inside your KB",
-      "Cron-scheduled AI agents that work 24/7",
-      "Git-backed version history on every page",
-      "PDF, CSV, markdown: all first-class content",
-    ],
-  },
-  hi: {
-    evaluating: <>अपनी टीम के लिए {BRAND}{" "}पर विचार कर रहे हैं?</>,
-    bookDemo: "डेमो बुक करें",
-    titleTop: "आपका नॉलेज बेस।",
-    titleBottom: "आपकी AI टीम।",
-    logoAlt: "Cabinet: एक दराज़ में आपकी फ़ाइलें और नॉलेज, दूसरी में AI एजेंटों की टीम",
-    lede: "एक मुफ़्त, AI-फ़र्स्ट स्टार्टअप OS, जिसमें सारा काम आपकी अपनी डिस्क पर फ़ाइलों के रूप में रहता है। कोई डेटाबेस नहीं। कोई वेंडर लॉक-इन नहीं।",
-    terms: "न सब्सक्रिप्शन, न ट्रायल, न पेवॉल। क्लोन करें, चलाएँ और अपनी ज़रूरत के हिसाब से ढालें।",
-    typing: [
-      "5 सवालों में अपनी AI टीम तैयार करें",
-      "नॉलेज बेस के भीतर HTML ऐप्स चलाएँ",
-      "तय शेड्यूल पर 24/7 काम करते AI एजेंट",
-      "हर पेज की वर्ज़न हिस्ट्री, Git में सुरक्षित",
-      "PDF, CSV, markdown: सबका पूरा सपोर्ट",
-    ],
-  },
-};
-
-export function LegacyHero({ locale = "en" }: LocaleProps) {
-  const t = HERO_COPY[locale];
-  // The invisible sizer holds the longest phrase so the typing animation
-  // never reflows the content below.
-  const sizer = t.typing.reduce((a, b) => (b.length > a.length ? b : a));
+export function LegacyHero() {
   return (
     <section className="relative flex items-center justify-center dot-grid overflow-hidden">
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center pt-24 pb-12">
         {/* Install Options */}
         <div className="hidden max-w-3xl mx-auto mb-20 lg:block">
-          <DownloadButtons locale={locale} />
-          <p className="mt-4 text-sm font-body-serif text-text-tertiary">{t.evaluating}{" "}
+          <DownloadButtons />
+          <p className="mt-4 text-sm font-body-serif text-text-tertiary">Evaluating <span className="font-brand italic">Cabinet</span>{" "}for your team?{" "}
             <a
               href="/demo"
               className="text-accent underline underline-offset-2 hover:text-accent-warm"
             >
-              {t.bookDemo}
+              Book a demo
             </a>
           </p>
         </div>
 
         <h2 className="text-3xl sm:text-4xl md:text-5xl tracking-tight leading-[1.1] mb-6">
-          <span className="font-display text-text-primary">{t.titleTop}</span>
+          <span className="font-display text-text-primary">Your knowledge base.</span>
           <br />
-          <span className="font-display italic gradient-text">{t.titleBottom}</span>
+          <span className="font-display italic gradient-text">Your AI team.</span>
         </h2>
 
         {/* Hero Illustration */}
         <div className="mx-auto mb-8 w-60 sm:w-72 md:w-80">
           <Image
             src="/brand/cabinet-logo-flip.webp"
-            alt={t.logoAlt}
+            alt="Cabinet: your files and knowledge in one drawer, a team of AI agents in the other"
             width={812}
             height={835}
             className="h-auto w-full drop-shadow-2xl"
@@ -449,21 +284,29 @@ export function LegacyHero({ locale = "en" }: LocaleProps) {
         </div>
 
         <p className="text-lg md:text-xl text-text-secondary max-w-2xl mx-auto mb-4 leading-relaxed font-body-serif">
-          {t.lede}
+          A free AI-first startup OS where everything lives as files on disk. No database. No vendor lock-in.
         </p>
 
         <p className="text-sm md:text-base text-text-tertiary max-w-2xl mx-auto mb-6 font-code">
-          {t.terms}
+          No subscription. No trial. No paywall. Clone it, run it, and make it your own.
         </p>
 
         {/* relative + invisible sizer reserves height for the longest phrase
             so the typing/deleting animation never reflows the border below */}
         <p className="relative text-base font-code text-text-tertiary max-w-xl mx-auto mb-10">
           <span aria-hidden className="invisible">
-            {sizer}
+            PDF, CSV, markdown: all first-class content
           </span>
           <span className="absolute inset-0">
-            <TypingText texts={t.typing} />
+            <TypingText
+              texts={[
+                "Onboard an AI team in 5 questions",
+                "Ship HTML apps inside your KB",
+                "Cron-scheduled AI agents that work 24/7",
+                "Git-backed version history on every page",
+                "PDF, CSV, markdown: all first-class content",
+              ]}
+            />
           </span>
         </p>
       </div>
@@ -471,76 +314,18 @@ export function LegacyHero({ locale = "en" }: LocaleProps) {
   );
 }
 
-const WHY_COPY: Record<
-  Locale,
-  {
-    label: string;
-    title: string;
-    intro: ReactNode;
-    files: { label: string; title: string; body: string; compare: string; compareLink: string; compareEnd: string };
-    byoai: { label: string; title: string; body: string };
-    agents: { label: string; title: string; body: string };
-  }
-> = {
-  en: {
-    label: "Why Cabinet",
-    title: "The only AI workspace you actually own",
-    intro: <>Search tools find. Chatbots answer. {BRAND}{" "}does the work: on your files, your models, your infrastructure.</>,
-    files: {
-      label: "Your work lives on disk",
-      title: "Own your data",
-      body: "Everything is Markdown in a folder you own. Grep it, git it, back it up. No export, no lock-in.",
-      compare: "Compare",
-      compareLink: "Notion alternatives for teams that want to own their data",
-      compareEnd: ".",
-    },
-    byoai: {
-      label: "Bring your own AI",
-      title: "No AI tax",
-      body: "Plug in the model accounts you already pay for: Claude, GPT, Gemini, Grok, local models. No markup, no new vendor.",
-    },
-    agents: {
-      label: "Agents that do the work",
-      title: "Always on",
-      body: "Not just search and chat. A team of agents researches, drafts, and ships on a schedule, 24/7.",
-    },
-  },
-  hi: {
-    label: "Cabinet क्यों",
-    title: "इकलौता AI वर्कस्पेस, जिसके मालिक सच में आप हैं",
-    intro: <>सर्च टूल ढूँढ़ते हैं। चैटबॉट जवाब देते हैं। {BRAND}{" "}काम पूरा करता है: आपकी फ़ाइलों पर, आपके मॉडलों से, आपके इन्फ्रास्ट्रक्चर पर।</>,
-    files: {
-      label: "आपका काम, आपकी डिस्क पर",
-      title: "डेटा पर पूरा अधिकार",
-      body: "सब कुछ आपके अपने फ़ोल्डर में, Markdown फ़ाइलों के रूप में। उसे खोजें, Git में रखें, बैकअप लें। न एक्सपोर्ट की ज़रूरत, न लॉक-इन।",
-      compare: "तुलना करें:",
-      compareLink: "अपने डेटा पर नियंत्रण चाहने वाली टीमों के लिए Notion के विकल्प",
-      compareEnd: "।",
-    },
-    byoai: {
-      label: "अपना AI खुद चुनें",
-      title: "AI पर कोई अतिरिक्त खर्च नहीं",
-      body: "जिन मॉडल अकाउंट्स के लिए आप पहले से भुगतान करते हैं, उन्हें ही जोड़ें: Claude, GPT, Gemini, Grok, लोकल मॉडल। न कोई मार्कअप, न कोई नया वेंडर।",
-    },
-    agents: {
-      label: "एजेंट जो काम पूरा करते हैं",
-      title: "हमेशा सक्रिय",
-      body: "सिर्फ़ सर्च और चैट नहीं। एजेंटों की एक टीम तय शेड्यूल पर, 24/7, रिसर्च करती है, ड्राफ़्ट तैयार करती है और काम पूरा करके देती है।",
-    },
-  },
-};
-
-export function LegacyWhyTriad({ locale = "en" }: LocaleProps) {
-  const t = WHY_COPY[locale];
+export function LegacyWhyTriad() {
   return (
     <section className="py-24 border-t border-border bg-bg">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
-          <p className="section-label mb-3">{t.label}</p>
+          <p className="section-label mb-3">Why Cabinet</p>
           <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
-            {t.title}
+            The only AI workspace you actually own
           </h2>
-          <p className="text-text-secondary max-w-2xl mx-auto font-body-serif leading-relaxed">{t.intro}</p>
+          <p className="text-text-secondary max-w-2xl mx-auto font-body-serif leading-relaxed">Search tools find. Chatbots answer. <span className="font-brand italic">Cabinet</span>{" "}does the work: on your
+                                        files, your models, your infrastructure.
+                                      </p>
         </div>
         <div className="grid gap-5 md:grid-cols-3 max-w-6xl mx-auto">
           {/* Files */}
@@ -550,14 +335,14 @@ export function LegacyWhyTriad({ locale = "en" }: LocaleProps) {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/brand/icons/files.webp" alt="" loading="lazy" decoding="async" className="relative h-36 w-36 object-contain float-slow" />
             </div>
-            <span className="section-label">{t.files.label}</span>
-            <h3 className="mt-2 mb-2 font-display text-xl text-text-primary">{t.files.title}</h3>
-            <p className="text-sm font-body-serif leading-relaxed text-text-secondary">{t.files.body}</p>
+            <span className="section-label">Your work lives on disk</span>
+            <h3 className="mt-2 mb-2 font-display text-xl text-text-primary">Own your data</h3>
+            <p className="text-sm font-body-serif leading-relaxed text-text-secondary">Everything is Markdown in a folder you own. Grep it, git it, back it up. No export, no lock-in.</p>
             <p className="mt-3 text-sm font-body-serif leading-relaxed text-text-secondary">
-              {t.files.compare}{" "}
+              Compare{" "}
               <Link href="/compare/notion-alternatives" className="text-accent underline underline-offset-4 hover:text-accent-warm">
-                {t.files.compareLink}
-              </Link>{t.files.compareEnd}
+                Notion alternatives for teams that want to own their data
+              </Link>.
             </p>
           </div>
 
@@ -579,9 +364,9 @@ export function LegacyWhyTriad({ locale = "en" }: LocaleProps) {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/brand/cabinet-logo-512.png" alt="" loading="lazy" decoding="async" className="absolute left-1/2 top-1/2 h-16 w-16 -translate-x-1/2 -translate-y-1/2 object-contain drop-shadow-lg" />
             </div>
-            <span className="section-label">{t.byoai.label}</span>
-            <h3 className="mt-2 mb-2 font-display text-xl text-text-primary">{t.byoai.title}</h3>
-            <p className="text-sm font-body-serif leading-relaxed text-text-secondary">{t.byoai.body}</p>
+            <span className="section-label">Bring your own AI</span>
+            <h3 className="mt-2 mb-2 font-display text-xl text-text-primary">No AI tax</h3>
+            <p className="text-sm font-body-serif leading-relaxed text-text-secondary">Plug in the model accounts you already pay for: Claude, GPT, Gemini, Grok, local models. No markup, no new vendor.</p>
           </div>
 
           {/* Agents - abstract floating shapes */}
@@ -591,9 +376,9 @@ export function LegacyWhyTriad({ locale = "en" }: LocaleProps) {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/brand/agents-shapes.webp" alt="" loading="lazy" decoding="async" className="relative h-44 w-44 object-contain agent-heartbeat" />
             </div>
-            <span className="section-label">{t.agents.label}</span>
-            <h3 className="mt-2 mb-2 font-display text-xl text-text-primary">{t.agents.title}</h3>
-            <p className="text-sm font-body-serif leading-relaxed text-text-secondary">{t.agents.body}</p>
+            <span className="section-label">Agents that do the work</span>
+            <h3 className="mt-2 mb-2 font-display text-xl text-text-primary">Always on</h3>
+            <p className="text-sm font-body-serif leading-relaxed text-text-secondary">Not just search and chat. A team of agents researches, drafts, and ships on a schedule, 24/7.</p>
           </div>
         </div>
       </div>
@@ -601,24 +386,7 @@ export function LegacyWhyTriad({ locale = "en" }: LocaleProps) {
   );
 }
 
-const TESTIMONIALS_COPY: Record<
-  Locale,
-  { label: string; title: ReactNode; onLinkedIn: (name: string) => string }
-> = {
-  en: {
-    label: "Testimonials",
-    title: <>How teams achieve 10x work with {BRAND}</>,
-    onLinkedIn: (name) => `${name} on LinkedIn`,
-  },
-  hi: {
-    label: "ग्राहकों की राय",
-    title: <>{BRAND}{" "}के साथ टीमें 10 गुना काम कैसे कर रही हैं</>,
-    onLinkedIn: (name) => `LinkedIn पर ${name}`,
-  },
-};
-
-export function LegacyTestimonials({ locale = "en" }: LocaleProps) {
-  const copy = TESTIMONIALS_COPY[locale];
+export function LegacyTestimonials() {
   return (
     <section className="relative overflow-hidden border-t border-border bg-bg-warm py-24">
       {/* soft accent wash */}
@@ -632,8 +400,9 @@ export function LegacyTestimonials({ locale = "en" }: LocaleProps) {
       />
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
-          <p className="section-label mb-3">{copy.label}</p>
-          <h2 className="text-3xl md:text-4xl font-display text-text-primary">{copy.title}</h2>
+          <p className="section-label mb-3">Testimonials</p>
+          <h2 className="text-3xl md:text-4xl font-display text-text-primary">How teams achieve 10x work with <span className="font-brand italic">Cabinet</span>
+          </h2>
         </div>
 
         <div className="testimonial-marquee-viewport relative overflow-hidden">
@@ -647,8 +416,7 @@ export function LegacyTestimonials({ locale = "en" }: LocaleProps) {
             className="pointer-events-none absolute inset-y-0 right-0 z-10 w-12 bg-gradient-to-l from-bg-warm to-transparent sm:w-24"
           />
           <div className="testimonial-marquee flex w-max items-stretch py-2">
-          {[...TESTIMONIALS, ...TESTIMONIALS].map((item, i) => {
-            const t = { ...item, ...item.text[locale] };
+          {[...TESTIMONIALS, ...TESTIMONIALS].map((t, i) => {
             const avatar = t.image ? (
               <Image
                 src={t.image}
@@ -677,7 +445,7 @@ export function LegacyTestimonials({ locale = "en" }: LocaleProps) {
                     href={t.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label={copy.onLinkedIn(t.name)}
+                    aria-label={`${t.name} on LinkedIn`}
                     className="mb-4 inline-block rounded-full transition-transform hover:scale-105"
                   >
                     {avatar}
@@ -770,33 +538,19 @@ export function LegacyCustomerStories() {
   );
 }
 
-const BYOAI_COPY: Record<Locale, { label: string; title: string; intro: ReactNode; more: string }> = {
-  en: {
-    label: "Bring your own AI",
-    title: "Works with the AI you already pay for",
-    intro: <>{BRAND}{" "}runs on your existing model accounts and subscriptions. There&apos;s no bundled inference marked up on top, and no new AI vendor to push through procurement. Point it at what your team already uses.</>,
-    more: "…plus local models, and whatever comes next.",
-  },
-  hi: {
-    label: "अपना AI खुद चुनें",
-    title: "उसी AI के साथ काम करता है, जिसके लिए आप पहले से भुगतान करते हैं",
-    intro: <>{BRAND}{" "}आपके मौजूदा मॉडल अकाउंट्स और सब्सक्रिप्शन पर चलता है। ऊपर से मार्कअप जोड़कर कोई इन्फ़रेंस नहीं बेचा जाता, और प्रोक्योरमेंट में किसी नए AI वेंडर को मंज़ूरी दिलाने की ज़रूरत नहीं पड़ती। आपकी टीम जो पहले से इस्तेमाल करती है, {BRAND}{" "}को उसी से जोड़ दें।</>,
-    more: "…साथ में लोकल मॉडल, और आगे जो भी आए।",
-  },
-};
-
-export function LegacyByoai({ locale = "en" }: LocaleProps) {
-  const t = BYOAI_COPY[locale];
+export function LegacyByoai() {
   return (
     <section id="byoai" className="py-24 border-t border-border bg-bg-card">
       <div className="max-w-5xl mx-auto px-6 text-center">
-        <p className="section-label mb-3">{t.label}</p>
+        <p className="section-label mb-3">Bring your own AI</p>
         <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
-          {t.title}
+          Works with the AI you already pay for
         </h2>
         <p className="text-text-secondary max-w-2xl mx-auto font-body-serif leading-relaxed mb-12">
-          {t.intro}
-        </p>
+          <span className="font-brand italic">Cabinet</span>{" "}runs on your existing model accounts and subscriptions. There&apos;s
+                                  no bundled inference marked up on top, and no new AI vendor to push through
+                                  procurement. Point it at what your team already uses.
+                                </p>
 
         <div className="grid grid-cols-8 gap-2 sm:gap-3 max-w-4xl mx-auto">
           {PROVIDERS.map((p) => (
@@ -818,38 +572,25 @@ export function LegacyByoai({ locale = "en" }: LocaleProps) {
         </div>
 
         <p className="mt-10 text-sm font-code text-text-tertiary">
-          {t.more}
+          …plus local models, and whatever comes next.
         </p>
       </div>
     </section>
   );
 }
 
-const INTEGRATIONS_COPY: Record<Locale, { label: string; title: string; intro: ReactNode; more: string }> = {
-  en: {
-    label: "Integrations",
-    title: "Connect to everything that runs your company",
-    intro: <>Your company runs on dozens of tools. {BRAND}{" "}brings the work scattered across them into one place you own, where your team and its agents can find it, act on it, and keep it moving.</>,
-    more: "…and the rest of the stack your team already uses.",
-  },
-  hi: {
-    label: "इंटीग्रेशन",
-    title: "उन सभी टूल्स से जुड़ें, जिन पर आपकी कंपनी चलती है",
-    intro: <>आपकी कंपनी दर्जनों टूल्स पर चलती है। {BRAND}{" "}उनमें बिखरे काम को एक ऐसी जगह ले आता है जो पूरी तरह आपकी है, जहाँ आपकी टीम और उसके एजेंट उसे ढूँढ़ सकें, उस पर काम कर सकें और उसे आगे बढ़ाते रहें।</>,
-    more: "…और बाकी सभी टूल्स, जो आपकी टीम पहले से इस्तेमाल करती है।",
-  },
-};
-
-export function LegacyIntegrationsMarquee({ locale = "en" }: LocaleProps) {
-  const t = INTEGRATIONS_COPY[locale];
+export function LegacyIntegrationsMarquee() {
   return (
     <section id="integrations" className="overflow-hidden border-t border-border bg-bg-warm py-24">
       <div className="mx-auto max-w-5xl px-6 text-center">
-        <p className="section-label mb-3">{t.label}</p>
+        <p className="section-label mb-3">Integrations</p>
         <h2 className="mb-4 font-display text-3xl text-text-primary md:text-4xl">
-          {t.title}
+          Connect to everything that runs your company
         </h2>
-        <p className="mx-auto max-w-2xl font-body-serif leading-relaxed text-text-secondary">{t.intro}</p>
+        <p className="mx-auto max-w-2xl font-body-serif leading-relaxed text-text-secondary">Your company runs on dozens of tools. <span className="font-brand italic">Cabinet</span>{" "}brings the work scattered
+                                  across them into one place you own, where your team and its agents can find
+                                  it, act on it, and keep it moving.
+                                </p>
       </div>
 
       <div className="mt-14 flex flex-col gap-4">
@@ -894,33 +635,26 @@ export function LegacyIntegrationsMarquee({ locale = "en" }: LocaleProps) {
       </div>
 
       <p className="mx-auto mt-12 max-w-2xl px-6 text-center text-sm font-code text-text-tertiary">
-        {t.more}
+        …and the rest of the stack your team already uses.
       </p>
     </section>
   );
 }
 
-const SOCIAL_PROOF: { icon: typeof FileText; text: Record<Locale, string> }[] = [
-  { icon: FileText, text: { en: "Markdown on disk", hi: "डिस्क पर Markdown" } },
-  { icon: Shield, text: { en: "Self-hosted", hi: "सेल्फ़-होस्टेड" } },
-  { icon: GitBranch, text: { en: "Git-backed", hi: "Git पर आधारित" } },
-  { icon: Bot, text: { en: "AI-native", hi: "AI-नेटिव" } },
-];
-
-export function LegacySocialProofBar({ locale = "en" }: LocaleProps) {
+export function LegacySocialProofBar() {
   return (
     <section className="border-y border-border py-8 bg-bg-card">
       <div className="max-w-6xl mx-auto px-6 flex flex-wrap items-center justify-center gap-8 md:gap-16 text-text-tertiary text-sm font-code">
-        {SOCIAL_PROOF.map((item) => (
-          <div key={item.text.en} className="flex items-center gap-2"><WoodIcon icon={item.icon} className="w-6 h-6" /><span>{item.text[locale]}</span></div>
-        ))}
+        <div className="flex items-center gap-2"><WoodIcon icon={FileText} className="w-6 h-6" /><span>Markdown on disk</span></div>
+        <div className="flex items-center gap-2"><WoodIcon icon={Shield} className="w-6 h-6" /><span>Self-hosted</span></div>
+        <div className="flex items-center gap-2"><WoodIcon icon={GitBranch} className="w-6 h-6" /><span>Git-backed</span></div>
+        <div className="flex items-center gap-2"><WoodIcon icon={Bot} className="w-6 h-6" /><span>AI-native</span></div>
       </div>
     </section>
   );
 }
 
-// See LegacyIntegrationScene: CloudCabinet reads the locale from context.
-export const LegacyCloudWaitlist: (props: LocaleProps) => ReactElement = () => {
+export function LegacyCloudWaitlist() {
   return (
     <section className="relative flex min-h-[100svh] items-end overflow-clip bg-bg py-10">
       <div className="relative mx-auto w-full max-w-6xl px-6 text-center">
@@ -933,20 +667,15 @@ export const LegacyCloudWaitlist: (props: LocaleProps) => ReactElement = () => {
       </div>
     </section>
   );
-};
+}
 
-const PRINCIPLES_FOOTNOTE: Record<Locale, string> = {
-  en: "If a feature would break any of these, it doesn't make it in.",
-  hi: "जो फ़ीचर इनमें से किसी भी सिद्धांत को तोड़ता हो, वह प्रोडक्ट में शामिल नहीं होता।",
-};
-
-export function LegacyPrinciples({ locale = "en" }: LocaleProps) {
+export function LegacyPrinciples() {
   return (
     <section className="py-24 border-t border-border bg-bg-warm">
       <div className="max-w-6xl mx-auto px-6">
-        <PrinciplesShowcase locale={locale} />
+        <PrinciplesShowcase />
         <p className="mt-16 text-center font-body-serif italic text-text-secondary text-lg">
-          {PRINCIPLES_FOOTNOTE[locale]}
+          If a feature would break any of these, it doesn&apos;t make it in.
         </p>
       </div>
     </section>
@@ -1066,131 +795,36 @@ export function LegacyEmbeddedApps() {
   );
 }
 
-type FeatureText = { title: string; description: string };
-
-const FEATURES: {
-  img: string;
-  span: string;
-  featured?: boolean;
-  text: Record<Locale, FeatureText>;
-}[] = [
-  {
-    img: "/brand/feat/agents.png", span: "col-span-2 lg:col-span-3", featured: true,
-    text: {
-      en: { title: "AI Agents", description: "Onboard a CEO, Editor, Marketer. Each has goals, skills, scheduled jobs. Watch them work like a real team." },
-      hi: { title: "AI एजेंट", description: "CEO, एडिटर और मार्केटर को टीम में शामिल करें। हर एक के अपने लक्ष्य, स्किल्स और तय शेड्यूल वाले काम हैं। उन्हें एक असली टीम की तरह काम करते देखें।" },
-    },
-  },
-  {
-    img: "/brand/feat/files.png", span: "col-span-2 lg:col-span-3", featured: true,
-    text: {
-      en: { title: "File-Based Everything", description: "No database. Markdown on disk. Drag-and-drop tree sidebar. Your data is always yours, always portable." },
-      hi: { title: "सब कुछ फ़ाइलों पर आधारित", description: "कोई डेटाबेस नहीं। डिस्क पर Markdown। ड्रैग-एंड-ड्रॉप ट्री साइडबार। आपका डेटा हमेशा आपका, और जहाँ चाहें वहाँ ले जाने लायक।" },
-    },
-  },
-  {
-    img: "/brand/feat/editor.png", span: "lg:col-span-2",
-    text: {
-      en: { title: "WYSIWYG + Markdown", description: "Rich text editing with Tiptap. Tables, code blocks, slash commands. Toggle to raw markdown anytime." },
-      hi: { title: "WYSIWYG + Markdown", description: "Tiptap के साथ रिच टेक्स्ट एडिटिंग। टेबल, कोड ब्लॉक, स्लैश कमांड। जब चाहें, रॉ markdown पर स्विच करें।" },
-    },
-  },
-  {
-    img: "/brand/feat/htmlapp.png", span: "lg:col-span-2",
-    text: {
-      en: { title: "Embedded HTML Apps", description: "Drop an index.html in any folder. It renders as an iframe. Full-screen mode for dashboards." },
-      hi: { title: "एम्बेडेड HTML ऐप्स", description: "किसी भी फ़ोल्डर में index.html रखें, वह iframe में लाइव ऐप की तरह खुलता है। डैशबोर्ड के लिए फ़ुल-स्क्रीन मोड।" },
-    },
-  },
-  {
-    img: "/brand/feat/terminal.png", span: "lg:col-span-2",
-    text: {
-      en: { title: "Web Terminal", description: "Full Claude Code terminal in the browser. xterm.js + node-pty. Run commands without leaving Cabinet." },
-      hi: { title: "वेब टर्मिनल", description: "ब्राउज़र में पूरा Claude Code टर्मिनल। xterm.js + node-pty। Cabinet छोड़े बिना कमांड चलाएँ।" },
-    },
-  },
-  {
-    img: "/brand/feat/git.png", span: "col-span-2 lg:col-span-4", featured: true,
-    text: {
-      en: { title: "Git-Backed History", description: "Every save auto-commits. Full diff viewer. Restore any page to any point in time. Linked repo support." },
-      hi: { title: "Git पर आधारित हिस्ट्री", description: "हर सेव अपने आप कमिट होता है। पूरा डिफ़ व्यूअर। किसी भी पेज को किसी भी पुराने समय की स्थिति में लौटाएँ। लिंक्ड रिपॉज़िटरी का सपोर्ट।" },
-    },
-  },
-  {
-    img: "/brand/feat/schedule.png", span: "lg:col-span-2",
-    text: {
-      en: { title: "Scheduled Jobs", description: "Cron-based agent automation. Reddit scout every 6 hours. Weekly reports on Monday. Your AI team never sleeps." },
-      hi: { title: "शेड्यूल किए गए काम", description: "Cron पर आधारित एजेंट ऑटोमेशन। हर 6 घंटे में Reddit पर नज़र। हर सोमवार साप्ताहिक रिपोर्ट। आपकी AI टीम कभी नहीं सोती।" },
-    },
-  },
-  {
-    img: "/brand/feat/tasks.png", span: "lg:col-span-2",
-    text: {
-      en: { title: "Missions & Tasks", description: "Break goals into missions. Assign tasks to agents. Track progress with Kanban boards." },
-      hi: { title: "मिशन और टास्क", description: "लक्ष्यों को मिशन में बाँटें। एजेंटों को टास्क सौंपें। Kanban बोर्ड पर प्रगति देखें।" },
-    },
-  },
-  {
-    img: "/brand/feat/chat.png", span: "col-span-2 lg:col-span-4", featured: true,
-    text: {
-      en: { title: "Internal Chat", description: "Built-in team channels. Agents and humans communicate. @mention an agent to trigger a response." },
-      hi: { title: "इंटरनल चैट", description: "बिल्ट-इन टीम चैनल, जहाँ एजेंट और लोग आपस में बात करते हैं। किसी एजेंट को @mention करें, वह जवाब देगा।" },
-    },
-  },
-  {
-    img: "/brand/feat/search.png", span: "lg:col-span-2",
-    text: {
-      en: { title: "Full-Text Search", description: "Cmd+K instant search across all pages. Fuzzy matching. FlexSearch index rebuilt on every change." },
-      hi: { title: "फ़ुल-टेक्स्ट सर्च", description: "Cmd+K से सभी पेजों में तुरंत सर्च। फ़ज़ी मैचिंग। हर बदलाव पर FlexSearch इंडेक्स फिर से बनता है।" },
-    },
-  },
-  {
-    img: "/brand/feat/docs.png", span: "lg:col-span-2",
-    text: {
-      en: { title: "PDF & CSV First-Class", description: "PDFs render inline. CSVs open as editable tables with add/delete rows and columns." },
-      hi: { title: "PDF और CSV का पूरा सपोर्ट", description: "PDF पेज के भीतर ही खुलते हैं। CSV एडिट करने लायक टेबल के रूप में खुलते हैं, जिनमें पंक्तियाँ और कॉलम जोड़े या हटाए जा सकते हैं।" },
-    },
-  },
-  {
-    img: "/brand/feat/repos.png", span: "lg:col-span-2",
-    text: {
-      en: { title: "Linked Git Repos", description: "Add .repo.yaml to link KB directories to source code repos. Agents read your codebase." },
-      hi: { title: "लिंक्ड Git रिपॉज़िटरी", description: "नॉलेज बेस के फ़ोल्डरों को सोर्स कोड रिपॉज़िटरी से जोड़ने के लिए .repo.yaml जोड़ें। एजेंट आपका कोडबेस पढ़ते हैं।" },
-    },
-  },
-];
-
-const FEATURES_COPY: Record<Locale, { label: string; title: string; intro: string }> = {
-  en: {
-    label: "Features",
-    title: "Everything you need. Nothing you don't.",
-    intro: "A complete operating system for your startup: knowledge base, AI agents, task management, and team chat in one self-hosted app.",
-  },
-  hi: {
-    label: "फ़ीचर्स",
-    title: "जो ज़रूरी है, वह सब। जो नहीं, वह कुछ नहीं।",
-    intro: "आपके स्टार्टअप के लिए एक पूरा ऑपरेटिंग सिस्टम: नॉलेज बेस, AI एजेंट, टास्क मैनेजमेंट और टीम चैट, सब एक सेल्फ़-होस्टेड ऐप में।",
-  },
-};
-
-export function LegacyFeaturesGrid({ locale = "en" }: LocaleProps) {
-  const t = FEATURES_COPY[locale];
+export function LegacyFeaturesGrid() {
   return (
     <section id="features" className="py-24 border-t border-border bg-bg-warm">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
-          <p className="section-label mb-3">{t.label}</p>
+          <p className="section-label mb-3">Features</p>
           <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
-            {t.title}
+            Everything you need. Nothing you don&apos;t.
           </h2>
           <p className="text-text-secondary max-w-2xl mx-auto font-body-serif">
-            {t.intro}
+            A complete operating system for your startup: knowledge base, AI agents, task management, and team chat in one self-hosted app.
           </p>
         </div>
 
         <div className="grid grid-cols-2 lg:grid-cols-6 gap-4 max-w-6xl mx-auto max-lg:grid-flow-dense lg:auto-rows-fr">
-          {FEATURES.map((f) => (
-            <FeatureCard key={f.img} img={f.img} title={f.text[locale].title} description={f.text[locale].description} featured={f.featured} className={f.span} />
+          {[
+            { img: "/brand/feat/agents.png", span: "col-span-2 lg:col-span-3", featured: true, title: "AI Agents", description: "Onboard a CEO, Editor, Marketer. Each has goals, skills, scheduled jobs. Watch them work like a real team." },
+            { img: "/brand/feat/files.png", span: "col-span-2 lg:col-span-3", featured: true, title: "File-Based Everything", description: "No database. Markdown on disk. Drag-and-drop tree sidebar. Your data is always yours, always portable." },
+            { img: "/brand/feat/editor.png", span: "lg:col-span-2", title: "WYSIWYG + Markdown", description: "Rich text editing with Tiptap. Tables, code blocks, slash commands. Toggle to raw markdown anytime." },
+            { img: "/brand/feat/htmlapp.png", span: "lg:col-span-2", title: "Embedded HTML Apps", description: "Drop an index.html in any folder. It renders as an iframe. Full-screen mode for dashboards." },
+            { img: "/brand/feat/terminal.png", span: "lg:col-span-2", title: "Web Terminal", description: "Full Claude Code terminal in the browser. xterm.js + node-pty. Run commands without leaving Cabinet." },
+            { img: "/brand/feat/git.png", span: "col-span-2 lg:col-span-4", featured: true, title: "Git-Backed History", description: "Every save auto-commits. Full diff viewer. Restore any page to any point in time. Linked repo support." },
+            { img: "/brand/feat/schedule.png", span: "lg:col-span-2", title: "Scheduled Jobs", description: "Cron-based agent automation. Reddit scout every 6 hours. Weekly reports on Monday. Your AI team never sleeps." },
+            { img: "/brand/feat/tasks.png", span: "lg:col-span-2", title: "Missions & Tasks", description: "Break goals into missions. Assign tasks to agents. Track progress with Kanban boards." },
+            { img: "/brand/feat/chat.png", span: "col-span-2 lg:col-span-4", featured: true, title: "Internal Chat", description: "Built-in team channels. Agents and humans communicate. @mention an agent to trigger a response." },
+            { img: "/brand/feat/search.png", span: "lg:col-span-2", title: "Full-Text Search", description: "Cmd+K instant search across all pages. Fuzzy matching. FlexSearch index rebuilt on every change." },
+            { img: "/brand/feat/docs.png", span: "lg:col-span-2", title: "PDF & CSV First-Class", description: "PDFs render inline. CSVs open as editable tables with add/delete rows and columns." },
+            { img: "/brand/feat/repos.png", span: "lg:col-span-2", title: "Linked Git Repos", description: "Add .repo.yaml to link KB directories to source code repos. Agents read your codebase." },
+          ].map((f) => (
+            <FeatureCard key={f.title} img={f.img} title={f.title} description={f.description} featured={f.featured} className={f.span} />
           ))}
         </div>
       </div>
@@ -1262,74 +896,23 @@ export function LegacyHowItWorks() {
   );
 }
 
-const SOLUTIONS_COPY: Record<
-  Locale,
-  { label: string; title: string; intro: string; cardTitle: (label: string) => string; explore: string }
-> = {
-  en: {
-    label: "Solutions",
-    title: "Cabinet for every team",
-    intro: "Same knowledge base: a different AI crew for each function, working on your data, on your infrastructure, around the clock.",
-    cardTitle: (label) => `Cabinet for ${label}`,
-    explore: "Explore",
-  },
-  hi: {
-    label: "समाधान",
-    title: "हर टीम के लिए Cabinet",
-    intro: "नॉलेज बेस एक, पर हर विभाग के लिए अलग AI टीम, जो आपके डेटा पर, आपके इन्फ्रास्ट्रक्चर पर, चौबीसों घंटे काम करती है।",
-    cardTitle: (label) => `${label} के लिए Cabinet`,
-    explore: "और जानें",
-  },
-};
-
-// Hindi text for the SOLUTIONS entries in @/lib/solutions, keyed by slug.
-// Any slug missing here falls back to the English label and blurb.
-const SOLUTIONS_HI: Record<string, { label: string; menuBlurb: string }> = {
-  sales: {
-    label: "सेल्स",
-    menuBlurb: "पाइपलाइन रिसर्च, आउटरीच और CRM की साफ़-सफ़ाई, सब अपने आप।",
-  },
-  marketing: {
-    label: "मार्केटिंग",
-    menuBlurb: "लगातार रिसर्च, कंटेंट ड्राफ़्ट और कैंपेन रिपोर्टिंग।",
-  },
-  engineering: {
-    label: "इंजीनियरिंग",
-    menuBlurb: "हमेशा अपडेट रहने वाले डॉक्स, इंसिडेंट रिपोर्ट और कोडबेस को समझने वाले एजेंट।",
-  },
-  product: {
-    label: "प्रोडक्ट",
-    menuBlurb: "रिसर्च का सार, हमेशा अपडेट PRD और प्रतिस्पर्धियों पर लगातार नज़र।",
-  },
-  operations: {
-    label: "ऑपरेशंस",
-    menuBlurb: "SOP, नियमित रिपोर्ट और अलग-अलग टूल्स के डेटा का मिलान।",
-  },
-  founders: {
-    label: "फ़ाउंडर्स और एग्ज़ीक्यूटिव",
-    menuBlurb: "पूरे बिज़नेस के लिए हर समय उपलब्ध एक चीफ़ ऑफ़ स्टाफ़।",
-  },
-};
-
-export function LegacySolutions({ locale = "en" }: LocaleProps) {
-  const t = SOLUTIONS_COPY[locale];
+export function LegacySolutions() {
   return (
     <section id="solutions" className="py-24 border-t border-border bg-bg-warm">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
-          <p className="section-label mb-3">{t.label}</p>
+          <p className="section-label mb-3">Solutions</p>
           <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
-            {t.title}
-          </h2>
+            Cabinet{" "}for every team
+                                      </h2>
           <p className="text-text-secondary max-w-2xl mx-auto font-body-serif leading-relaxed">
-            {t.intro}
+            Same knowledge base: a different AI crew for each function, working on
+            your data, on your infrastructure, around the clock.
           </p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
-          {SOLUTIONS.map((solution) => {
-            const s = locale === "hi" ? { ...solution, ...SOLUTIONS_HI[solution.slug] } : solution;
-            return (
+          {SOLUTIONS.map((s) => (
             <a
               key={s.slug}
               href={`/solutions/${s.slug}`}
@@ -1344,17 +927,16 @@ export function LegacySolutions({ locale = "en" }: LocaleProps) {
                 className="mb-4 h-20 w-20 object-contain transition-transform duration-200 group-hover:scale-105 group-hover:-rotate-2 max-lg:mx-auto"
               />
               <h3 className="mb-2 font-display text-lg text-text-primary">
-                {t.cardTitle(s.label)}
+                Cabinet{" "}for {s.label}
               </h3>
               <p className="text-sm text-text-secondary font-body-serif leading-relaxed flex-1">
                 {s.menuBlurb}
               </p>
               <span className="mt-4 inline-flex items-center gap-1.5 font-code text-sm text-accent transition-colors group-hover:text-accent-warm">
-                {t.explore} <ArrowRight className="w-4 h-4" />
+                Explore <ArrowRight className="w-4 h-4" />
               </span>
             </a>
-            );
-          })}
+          ))}
         </div>
       </div>
     </section>
@@ -1472,40 +1054,25 @@ export function LegacyBusinessCase() {
   );
 }
 
-const ORG_COPY: Record<Locale, { label: string; title: string; intro: string; questions: string }> = {
-  en: {
-    label: "Built for organizations",
-    title: "Designed to clear a security review",
-    intro: "The people who sign off on new tools (security, legal, platform owners) should come away with less to worry about, not more.",
-    questions: "Questions for a vendor review?",
-  },
-  hi: {
-    label: "संगठनों के लिए बना",
-    title: "सुरक्षा समीक्षा में खरा उतरने के लिए बना",
-    intro: "नए टूल्स को मंज़ूरी देने वालों (सुरक्षा, लीगल और प्लेटफ़ॉर्म टीमों) की चिंताएँ कम होनी चाहिए, बढ़नी नहीं।",
-    questions: "वेंडर समीक्षा से जुड़े सवाल हैं?",
-  },
-};
-
-export function LegacyOrgBadges({ locale = "en" }: LocaleProps) {
-  const t = ORG_COPY[locale];
+export function LegacyOrgBadges() {
   return (
     <section className="py-24 border-t border-border bg-bg">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
-          <p className="section-label mb-3">{t.label}</p>
+          <p className="section-label mb-3">Built for organizations</p>
           <h2 className="text-3xl md:text-4xl font-display text-text-primary mb-4">
-            {t.title}
+            Designed to clear a security review
           </h2>
           <p className="text-text-secondary max-w-2xl mx-auto font-body-serif leading-relaxed">
-            {t.intro}
+            The people who sign off on new tools (security, legal, platform
+            owners) should come away with less to worry about, not more.
           </p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto">
-          {TRUST_BADGES.map(({ img, text }) => ({ img, ...text[locale] })).map((b) => (
+          {TRUST_BADGES.map((b) => (
             <div
-              key={b.img}
+              key={b.label}
               className="group rounded-2xl card-skin p-6 card-hover"
             >
               <div className="flex items-start justify-between gap-3 mb-3">
@@ -1535,7 +1102,7 @@ export function LegacyOrgBadges({ locale = "en" }: LocaleProps) {
         </div>
 
         <p className="mt-10 text-center text-sm text-text-tertiary font-body-serif">
-          {t.questions}{" "}
+          Questions for a vendor review?{" "}
           <a
             href="mailto:hi@runcabinet.com"
             className="text-accent underline underline-offset-2 hover:text-accent-warm"
@@ -1548,30 +1115,7 @@ export function LegacyOrgBadges({ locale = "en" }: LocaleProps) {
   );
 }
 
-const CTA_COPY: Record<
-  Locale,
-  { title: string; body: string; bookDemo: string; learnMore: string; questions: string; discord: string }
-> = {
-  en: {
-    title: "Bringing Cabinet to your company?",
-    body: "Talk to us about rollout, security review, and the workflows your teams run every day.",
-    bookDemo: "Book a demo",
-    learnMore: "Learn more",
-    questions: "Questions?",
-    discord: "Join Discord",
-  },
-  hi: {
-    title: "अपनी कंपनी में Cabinet लाना चाहते हैं?",
-    body: "रोलआउट, सुरक्षा समीक्षा और आपकी टीमों के रोज़मर्रा के वर्कफ़्लो पर हमसे बात करें।",
-    bookDemo: "डेमो बुक करें",
-    learnMore: "और जानें",
-    questions: "कोई सवाल?",
-    discord: "Discord से जुड़ें",
-  },
-};
-
-export function LegacyCta({ locale = "en" }: LocaleProps) {
-  const t = CTA_COPY[locale];
+export function LegacyCta() {
   return (
     <section id="get-started" className="py-24 border-t border-border bg-bg-warm overflow-hidden">
       <DownloadShowcase />
@@ -1585,27 +1129,27 @@ export function LegacyCta({ locale = "en" }: LocaleProps) {
             className="mx-auto mb-4 object-contain"
           />
           <h3 className="text-2xl md:text-3xl font-display text-text-primary mb-3">
-            {t.title}
+            Bringing Cabinet to your company?
           </h3>
           <p className="text-text-secondary mb-8 max-w-xl mx-auto leading-relaxed font-body-serif">
-            {t.body}
+            Talk to us about rollout, security review, and the workflows your teams run every day.
           </p>
           <div className="mt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="/demo"
               className="btn-wood inline-flex h-13 items-center justify-center gap-2 whitespace-nowrap rounded-full px-8 text-base font-semibold"
             >
-              {t.bookDemo}
+              Book a demo
             </a>
             <a
               href="/enterprise/security"
               className="inline-flex h-13 items-center justify-center gap-2 whitespace-nowrap px-3 text-base font-semibold text-text-primary transition-colors hover:text-accent"
             >
-              {t.learnMore} <ArrowRight aria-hidden className="h-4 w-4" />
+              Learn more <ArrowRight aria-hidden className="h-4 w-4" />
             </a>
           </div>
           <p className="mt-6 text-sm text-text-tertiary">
-            {t.questions} <a href="mailto:hi@runcabinet.com" className="text-accent hover:text-accent-warm underline underline-offset-2">hi@runcabinet.com</a>
+            Questions? <a href="mailto:hi@runcabinet.com" className="text-accent hover:text-accent-warm underline underline-offset-2">hi@runcabinet.com</a>
           </p>
         </div>
         <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 mt-12">
@@ -1615,7 +1159,7 @@ export function LegacyCta({ locale = "en" }: LocaleProps) {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-[#5865F2] hover:bg-[#4752C4] text-white font-medium transition-colors shadow-sm shadow-[#5865F2]/20"
           >
-            <DiscordIcon className="w-4 h-4" /> {t.discord}
+            <DiscordIcon className="w-4 h-4" /> Join Discord
           </a>
         </div>
       </div>

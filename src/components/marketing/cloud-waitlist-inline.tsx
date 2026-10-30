@@ -10,45 +10,9 @@ import {
   type WaitlistSource,
 } from "@/lib/waitlist";
 import { recordWaitlistStart, submitWaitlistEmail } from "@/lib/waitlist-client";
-import { useLocale } from "@/components/locale-provider";
-import type { Locale } from "@/lib/i18n";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const subscribe = () => () => {};
-
-type InlineCopy = {
-  prompt: string;
-  emailLabel: string;
-  invalidEmail: string;
-  submitFailed: string;
-  already: string;
-  success: string;
-  sending: string;
-  join: string;
-};
-
-const COPY: Record<Locale, InlineCopy> = {
-  en: {
-    prompt: "Want a team that keeps working after you close your laptop?",
-    emailLabel: "Email",
-    invalidEmail: "Enter a valid email.",
-    submitFailed: "Something went wrong. Please try again.",
-    already: "You're already on the list. We'll be in touch as soon as Cabinet Cloud opens up.",
-    success: "You're on the list. We'll email you when Cabinet Cloud opens up.",
-    sending: "Sending",
-    join: "Join the Cloud waitlist",
-  },
-  hi: {
-    prompt: "ऐसी टीम चाहिए जो लैपटॉप बंद होने के बाद भी काम करती रहे?",
-    emailLabel: "ईमेल",
-    invalidEmail: "कृपया सही ईमेल पता डालें।",
-    submitFailed: "कुछ गड़बड़ हो गई। कृपया फिर से कोशिश करें।",
-    already: "आप पहले से वेटलिस्ट में हैं। Cabinet Cloud शुरू होते ही हम आपसे संपर्क करेंगे।",
-    success: "आप वेटलिस्ट में शामिल हो गए हैं। Cabinet Cloud शुरू होते ही हम आपको ईमेल करेंगे।",
-    sending: "भेज रहे हैं",
-    join: "Cloud वेटलिस्ट में शामिल हों",
-  },
-};
 
 // One-line email capture for Cabinet Cloud, sized to sit under the download
 // button. Same backend and storage as the larger WaitlistCapture card, so a
@@ -60,7 +24,6 @@ export function CloudWaitlistInline({
   source?: WaitlistSource;
   align?: "center" | "left";
 }) {
-  const copy = COPY[useLocale()];
   const pathname = usePathname();
   const startedRef = useRef(false);
   const [email, setEmail] = useState("");
@@ -86,14 +49,14 @@ export function CloudWaitlistInline({
     const trimmed = email.trim();
     if (!EMAIL_RE.test(trimmed)) {
       setStatus("error");
-      setErrorMsg(copy.invalidEmail);
+      setErrorMsg("Enter a valid email.");
       return;
     }
     setStatus("submitting");
     const result = await submitWaitlistEmail(trimmed, source);
     if (!result.ok) {
       setStatus("error");
-      setErrorMsg(copy.submitFailed);
+      setErrorMsg("Something went wrong. Please try again.");
       return;
     }
     markWaitlistSubmitted(source, "");
@@ -113,7 +76,9 @@ export function CloudWaitlistInline({
       >
         <CheckCircle2 aria-hidden className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
         <span>
-          {displayStatus === "already" ? copy.already : copy.success}
+          {displayStatus === "already"
+            ? "You're already on the list. We'll be in touch as soon as Cabinet Cloud opens up."
+            : "You're on the list. We'll email you when Cabinet Cloud opens up."}
         </span>
       </div>
     );
@@ -122,13 +87,13 @@ export function CloudWaitlistInline({
   return (
     <form onSubmit={handleSubmit} noValidate className={centered ? "mx-auto max-w-md" : "max-w-md"}>
       <p className={`mb-4 font-body-serif text-[15px] leading-snug text-text-secondary ${centered ? "text-center" : ""}`}>
-        {copy.prompt}
+        Want a team that keeps working after you close your laptop?
       </p>
       <div
         className={`flex flex-col gap-2 sm:flex-row sm:items-stretch ${status === "error" ? "[&_input]:border-red-500" : ""}`}
       >
         <label className="sr-only" htmlFor={`cloud-waitlist-${source}`}>
-          {copy.emailLabel}
+          Email
         </label>
         <input
           id={`cloud-waitlist-${source}`}
@@ -149,12 +114,12 @@ export function CloudWaitlistInline({
           {status === "submitting" ? (
             <>
               <Loader2 aria-hidden className="h-4 w-4 animate-spin" />
-              {copy.sending}
+              Sending
             </>
           ) : (
             <>
               <Cloud aria-hidden className="h-4 w-4" />
-              {copy.join}
+              Join the Cloud waitlist
             </>
           )}
         </button>
