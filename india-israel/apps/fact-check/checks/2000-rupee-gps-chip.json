@@ -1,0 +1,42 @@
+{
+  "id": "2000-rupee-gps-chip",
+  "claim": "The new ₹2000 note has a GPS nano chip, so the government can track black money even if it is buried underground.",
+  "verdict": "false",
+  "confidence": 97,
+  "headline": "There was never a chip in the note.",
+  "summary": "There is no GPS chip in the ₹2000 note. The rumour spread within hours of the November 2016 demonetisation announcement, and the RBI denied it the same week, saying the technology does not even exist.",
+  "summary_hi": "₹2000 के नोट में कोई GPS चिप नहीं है। नवंबर 2016 में नोटबंदी के ऐलान के कुछ ही घंटों में यह अफ़वाह फैल गई, और RBI ने उसी हफ़्ते इसे ख़ारिज कर दिया। RBI के मुताबिक़ ऐसी तकनीक दुनिया में मौजूद ही नहीं है।",
+  "sources": [
+    {
+      "title": "RBI rubbishes rumours of GPS tracking chip in Rs 2000 note",
+      "publisher": "The News Minute",
+      "url": "https://www.thenewsminute.com/news/rbi-rubbishes-rumours-gps-tracking-chip-rs-2000-note-52652",
+      "stance": "contradicts",
+      "quote": "Such a technology does not exist at the moment in the world, then how can we introduce such a feature?"
+    },
+    {
+      "title": "RBI says no GPS feature in Rs 2,000 notes",
+      "publisher": "The Asian Age",
+      "url": "https://www.asianage.com/business/rbi-says-no-gps-feature-rs-2000-notes-154",
+      "stance": "contradicts",
+      "quote": "We have explained in detail all the security features of the newly minted currency notes on our website."
+    },
+    {
+      "title": "Rs 2000 notes to go out of circulation, but 'chips' will remain, mocks Kerala Tourism",
+      "publisher": "Onmanorama",
+      "url": "https://www.onmanorama.com/news/kerala/2023/05/20/rs-2000-currency-withdrawal-kerala-tourism-banana-chips-meme.html",
+      "stance": "context",
+      "quote": "The Reserve Bank of India (RBI) had rubbished the rumours back then."
+    }
+  ],
+  "timeline": [
+    { "date": "2016-11-08", "event": "Demonetisation of ₹500 and ₹1000 notes is announced. Within hours, a rumour spreads that the new ₹2000 note carries a tracking chip." },
+    { "date": "2016-11-09", "event": "An RBI spokesperson tells News18 the technology does not exist." },
+    { "date": "2016-11-10", "event": "An RBI official calls the reports \"not correct\" and points to the security features on the RBI website." },
+    { "date": "2023-05-19", "event": "The RBI announces it is withdrawing the ₹2000 note from circulation." },
+    { "date": "2023-05-20", "event": "Kerala Tourism jokes that the notes are going but the \"chips\" will remain." }
+  ],
+  "caption_en": "The ₹2000 \"GPS chip\" was never real. The RBI shut it down in November 2016: the technology doesn't even exist.\nSend this to the family group. #FactCheck #RBI #India",
+  "caption_hi": "₹2000 के नोट में \"GPS चिप\" कभी थी ही नहीं। RBI ने नवंबर 2016 में ही साफ़ कर दिया था कि ऐसी तकनीक मौजूद नहीं है।\nफ़ैमिली ग्रुप में भेजिए। #FactCheck #RBI",
+  "checkedAt": "2026-10-12T16:05:00Z"
+}

@@ -1,0 +1,305 @@
+{
+ "id": "drbro-example",
+ "query": "https://www.youtube.com/@DrBro",
+ "channel": {
+  "name": "Dr Bro",
+  "handle": "@DrBro",
+  "url": "https://www.youtube.com/@DrBro",
+  "subscribers": 3090000
+ },
+ "scanned": 178,
+ "capped": false,
+ "totalViews": 379135000,
+ "allTime": [
+  {
+   "videoId": "-mHDSmGkfWk",
+   "title": "ಈ ಚಿಕ್ 🇩🇯ದೇಶಕ್ಕೆ ಯಾಕೆ ಇಷ್ಟು ಡಿಮ್ಯಾಂಡು? Most Expensive Country | Dr Bro",
+   "views": 8300000,
+   "seconds": 1368,
+   "published": "2023-10-13"
+  },
+  {
+   "videoId": "OljlcUP9pwY",
+   "title": "Official Entry to Pakistan 🇵🇰 | Kartarpur Corridor - 1 | Kannada | Dr Bro",
+   "views": 8300000,
+   "seconds": 617,
+   "published": "2022-10-13"
+  },
+  {
+   "videoId": "rMG-tO_mSkg",
+   "title": "ಬಡತನದ ಬೇಗೆಯಲ್ಲಿ ಬೇಯುತ್ತಿರುವ CHINA 😕|  ಅಯ್ಯೋ ದುರ್ವಿಧಿಯೇ.!! | Dr Bro",
+   "views": 7800000,
+   "seconds": 1276,
+   "published": "2024-10-13"
+  },
+  {
+   "videoId": "yR6_orOoNMM",
+   "title": "ರಾವಣನ ಚಿನ್ನದ ಅರಮನೆ😍| ಶ್ರೀಲಂಕಾ | Hampi | Dr Bro",
+   "views": 7100000,
+   "seconds": 1733,
+   "published": "2024-10-13"
+  },
+  {
+   "videoId": "QdQ3gY0IaY8",
+   "title": "India's Largest Cruise 😍  | Cordelia | Casino | Swimming pool | Dr Bro",
+   "views": 6600000,
+   "seconds": 1121,
+   "published": "2022-10-13"
+  },
+  {
+   "videoId": "5lAIfeAym3s",
+   "title": "ಮನುಷ್ಯರನ್ನು ಕೊಂದು ತಿನ್ನೋ ಜನಗಳ ಜೊತೆ ಮುಖಾಮುಖಿ | Dr Bro",
+   "views": 6300000,
+   "seconds": 1713,
+   "published": "2023-10-13"
+  },
+  {
+   "videoId": "As0KUSuYKj0",
+   "title": "ಇನ್ನು ಈ ಕಣ್ಣಲ್ಲಿ ಏನ್ ಏನ್ ನೋಡಬೇಕೋ👀 West Papua | Dani Tribes | Dr Bro",
+   "views": 6200000,
+   "seconds": 1234,
+   "published": "2023-10-13"
+  },
+  {
+   "videoId": "12xigXdowRQ",
+   "title": "ಇವನೇ ಹಿಟ್ಲರ್ ತಮ್ಮ - ಉಗಾಂಡಾದ ರಾಕ್ಷಸ | Equator o’ | Dr Bro",
+   "views": 6100000,
+   "seconds": 1141,
+   "published": "2023-10-13"
+  },
+  {
+   "videoId": "WmvDhALYZ2g",
+   "title": "ಉಗಾಂಡಾದಲ್ಲಿ 44 ಮಕ್ಕಳಿಗೆ ಜನ್ಮ ಕೊಟ್ಟ ಮಹಾತಾಯಿ 😱 | ನಂಬಲು ಅಸಾಧ್ಯ | Dr Bro",
+   "views": 5800000,
+   "seconds": 1127,
+   "published": "2023-10-13"
+  },
+  {
+   "videoId": "SDSApa4C83c",
+   "title": "Money Market In Somaliland 🤑| ಇಲ್ಲಿ ಕಾಸು ತರಕಾರಿಯಂತೆ 🔥| Dr Bro",
+   "views": 5500000,
+   "seconds": 1382,
+   "published": "2023-10-13"
+  },
+  {
+   "videoId": "I6lLnkCqmCg",
+   "title": "ಆಫ್ಘಾನಿಸ್ತಾನದಲ್ಲಿ ತಾಲಿಬಾನ್ ಏನ್ ಮಾಡ್ತಾವ್ರೆ? | Taliban Ruling Country | Afghanistan | Dr Bro",
+   "views": 5300000,
+   "seconds": 1022,
+   "published": "2023-10-13"
+  },
+  {
+   "videoId": "KFAQVijygPM",
+   "title": "ಇವರೇ WORLD FAMOUS ಮುಂಡಾರಿಗಳು 😱| Cow Tribes | South Sudan | Dr Bro",
+   "views": 5000000,
+   "seconds": 1622,
+   "published": "2023-10-13"
+  },
+  {
+   "videoId": "oTMA5aI5Wuo",
+   "title": "ಯಾರು ಹೋಗದ ದೇಶಕ್ಕೆ ಸ್ವಾಗತ🇸🇾 | Syria | Dr Bro",
+   "views": 4900000,
+   "seconds": 950,
+   "published": "2024-10-13"
+  },
+  {
+   "videoId": "-9bNDZmO4Ek",
+   "title": "How Pakistan People Treat An Indian | Shopping in Pakisthan | EP 2 | Dr Bro",
+   "views": 4900000,
+   "seconds": 751,
+   "published": "2022-10-13"
+  },
+  {
+   "videoId": "0kjLKATILjw",
+   "title": "ಶ್ರೀ ರಾಮನ ಜನ್ಮ ಭೂಮಿ🚩 Exploring Ayodhya | Dr Bro",
+   "views": 4800000,
+   "seconds": 1452,
+   "published": "2024-10-13"
+  },
+  {
+   "videoId": "c7b7pR-Ojms",
+   "title": "ಈ ತರ ನಾನು ಯಾವತ್ತೂ ಮಾಡಿರಲಿಲ್ಲ | Africaದಲ್ಲಿ Dr Bro | Tanzania 🇹🇿",
+   "views": 4800000,
+   "seconds": 1122,
+   "published": "2023-10-13"
+  },
+  {
+   "videoId": "SC8IrdGqEJA",
+   "title": "ಅತ್ಯಂತ ಅಪಾಯಕಾರಿ ದೇಶಕ್ಕೆ ಸುಸ್ವಾಗತ 🇸🇸South Sudan | Dr Bro",
+   "views": 4300000,
+   "seconds": 819,
+   "published": "2023-10-13"
+  },
+  {
+   "videoId": "MY8ke-4X-oQ",
+   "title": "ಬೇಕಿತ್ತಾ ಇದು ನನಗೆ..! | Orangutan🤦‍♂️ | Thailand Kannada vlog | Dr Bro",
+   "views": 4300000,
+   "seconds": 958,
+   "published": "2022-10-13"
+  },
+  {
+   "videoId": "cMLLrndp5_E",
+   "title": "Only 7Star Hotel on Planet | Burj Al Arab😱| UAE 6 | Dubai | Dr Bro",
+   "views": 4300000,
+   "seconds": 813,
+   "published": "2022-10-13"
+  },
+  {
+   "videoId": "MWaMoYVZMCA",
+   "title": "ಈಜಿಪ್ಟ್ ಪಿರಮಿಡ್ ಒಳಗೆ ಹೋಗೋಣ ಬನ್ನಿ.! Dr Bro | Egypt 🇪🇬",
+   "views": 4200000,
+   "seconds": 1192,
+   "published": "2023-10-13"
+  }
+ ],
+ "lastYear": [
+  {
+   "videoId": "NFoyfSO0KYo",
+   "title": "Official ಹಿಂದೂ🔥 ದೇಶದಲ್ಲಿರೋ🇳🇵ಈ ಜಾಗ ನೀವು ನೋಡೇ ಇರಲ್ಲ❌ Dr Bro",
+   "views": 3900000,
+   "seconds": 981,
+   "published": "2025-10-13"
+  },
+  {
+   "videoId": "uIpmxucLAH8",
+   "title": "Coldest City -70° 🥶| Everything Frozen❄️ Dr Bro",
+   "views": 3600000,
+   "seconds": 1528,
+   "published": "2026-03-13"
+  },
+  {
+   "videoId": "QreqDoN4mds",
+   "title": "Mad Honey 🫨😵‍💫| ನಶೆ ಏರುವ ಜೇನುತುಪ್ಪ🐝🍯 | Dr Bro",
+   "views": 3200000,
+   "seconds": 1162,
+   "published": "2025-10-13"
+  },
+  {
+   "videoId": "QbvDxn5mCfo",
+   "title": "ಚಿನ್ನ..!😍 ಹೇಗೆ ತಯಾರಿಸುತ್ತಾರೆ ನೋಡಿ😮 Golden Mountain🇵🇭 | Dr Bro",
+   "views": 3000000,
+   "seconds": 1179,
+   "published": "2025-10-13"
+  },
+  {
+   "videoId": "d3KUZ-iDeXA",
+   "title": "The Living Goddes of Nepal | Kumari | Dr Bro",
+   "views": 3000000,
+   "seconds": 729,
+   "published": "2025-10-13"
+  },
+  {
+   "videoId": "RMVwMmmYXi4",
+   "title": "ಅಪಾಯಕಾರಿ ಪ್ರಾಣಿಗಳ ಜೊತೆ ಆಟ 😨ಕರ್ಮ❌ Dr Bro",
+   "views": 2900000,
+   "seconds": 760,
+   "published": "2025-10-13"
+  },
+  {
+   "videoId": "VALxeO1ReGc",
+   "title": "ಚರಂಡಿ😵‍💫 ನೀರಿನ ಮೇಲೆ ಸಾಮ್ರಾಜ್ಯ | Nigeria🇳🇬 | Dr Bro",
+   "views": 2700000,
+   "seconds": 945,
+   "published": "2025-10-13"
+  },
+  {
+   "videoId": "7ZG30L-A9fA",
+   "title": "ವಿಶ್ವದ ಅತಿ ಉದ್ದದ ರೈಲು ಪ್ರಯಾಣ | Dr Bro🚂",
+   "views": 2500000,
+   "seconds": 1342,
+   "published": "2025-12-13"
+  },
+  {
+   "videoId": "TnytfmZIbhM",
+   "title": "Surviving In Dangerous❌ World War 2 Ship | Dr Bro",
+   "views": 2300000,
+   "seconds": 1518,
+   "published": "2025-11-13"
+  },
+  {
+   "videoId": "qGZ8ctlBSuU",
+   "title": "Foreignಅಲ್ಲಿ ನಮ್ಮ ಕಂಬಳ! 😍 Dr Bro",
+   "views": 2200000,
+   "seconds": 2162,
+   "published": "2026-10-03"
+  },
+  {
+   "videoId": "DEz4BXTpmTk",
+   "title": "Divorced Woman Market😵‍💫in Mauritania 🇲🇷 | Dr Bro",
+   "views": 2200000,
+   "seconds": 1462,
+   "published": "2025-11-13"
+  },
+  {
+   "videoId": "F_9TawOB0n8",
+   "title": "Camping In HOT Tent🔥 | ಕನ್ನಡ | Dr Bro",
+   "views": 2100000,
+   "seconds": 1200,
+   "published": "2026-03-13"
+  },
+  {
+   "videoId": "wlbSMhItIAs",
+   "title": "ಜಗತ್ತಿನ ಕೊನೆಯ ಗುಹೆ ಜನರು ಇವರೇನಾ ‼️ ದಟ್ಟ ಕಾಡಿನ ಮಧ್ಯ ಇವರು ಏನು ಮಾಡುತ್ತಿದ್ದಾರೆ❓ 🇵🇭 | Dr Bro",
+   "views": 1900000,
+   "seconds": 1076,
+   "published": "2025-10-13"
+  },
+  {
+   "videoId": "L7n_w3j9InM",
+   "title": "ವರ್ಷಗಳ ನಂತರ ನನ್ನ ಕರುನಾಡಲ್ಲಿ😍 Dr Bro",
+   "views": 1800000,
+   "seconds": 1554,
+   "published": "2026-08-13"
+  },
+  {
+   "videoId": "CYGBiBc6bRY",
+   "title": "ಈ ಪಟ್ಟಣ ಯಾಕೆ ಹೀಗೆ⁉️ 🤯| Dr Bro",
+   "views": 1700000,
+   "seconds": 1351,
+   "published": "2026-02-13"
+  },
+  {
+   "videoId": "6JtpjpHQchU",
+   "title": "Strange village inside Desert🇲🇷",
+   "views": 1700000,
+   "seconds": 1109,
+   "published": "2025-12-13"
+  },
+  {
+   "videoId": "qm55v5Gng9Q",
+   "title": "ಶ್ರೀಮಂತ ಸಂಚಾರಿ ಕುರುಬರು 🤑 ಉತ್ತರ ಕರ್ನಾಟಕ | Dr Bro",
+   "views": 1600000,
+   "seconds": 1399,
+   "published": "2026-09-13"
+  },
+  {
+   "videoId": "u0BU1B3zBTQ",
+   "title": "ಕುಸ್ತಿ ಆಡಿ ಗೆದ್ದೆ😍 ನೈಜೀರಿಯಾದ ಹಳ್ಳಿಯಲ್ಲಿ ಏನಾಗ್ತಾ ಇದೆ⁉️ Dr Bro",
+   "views": 1400000,
+   "seconds": 1018,
+   "published": "2025-10-13"
+  },
+  {
+   "videoId": "lS8QxX5BBoA",
+   "title": "Ather Just Changed the Game🔥ACD 2026 | Dr Bro",
+   "views": 901000,
+   "seconds": 591,
+   "published": "2026-09-13"
+  }
+ ],
+ "takeaways": [
+  {
+   "en": "Places few travellers reach lead the list. 8 of the top 20 are from Africa (Djibouti, Uganda, Somaliland, South Sudan, Tanzania, Egypt), and Pakistan, Afghanistan and Syria are all in there too.",
+   "hi": "जहाँ कम लोग पहुँच पाते हैं, वही जगहें सबसे ऊपर हैं। टॉप 20 में से 8 वीडियो अफ़्रीका के हैं (जिबूती, युगांडा, सोमालीलैंड, दक्षिण सूडान, तंज़ानिया, मिस्र), और पाकिस्तान, अफ़ग़ानिस्तान और सीरिया भी इसी सूची में हैं।"
+  },
+  {
+   "en": "The hits are long videos. The top 20 run from 10 to 29 minutes, about 19 minutes on average.",
+   "hi": "सबसे ज़्यादा देखे गए वीडियो लंबे हैं। टॉप 20 की लंबाई 10 से 29 मिनट के बीच है, औसतन क़रीब 19 मिनट।"
+  },
+  {
+   "en": "Nothing from the last 12 months is in the all-time top 20 yet. The best recent video has 3.9M views, against 8.3M for the leaders, which are from 2022 to 2024.",
+   "hi": "पिछले 12 महीनों का कोई भी वीडियो अभी ऑल-टाइम टॉप 20 में नहीं है। हाल के सबसे अच्छे वीडियो पर 39 लाख व्यूज़ हैं, जबकि सबसे ऊपर वाले वीडियो (2022 से 2024 के) 83 लाख पर हैं।"
+  }
+ ],
+ "createdAt": "2026-10-13T06:27:38Z"
+}

@@ -1,0 +1,87 @@
+{
+  "id": "i-ate-a-very-good-mv5i29mm",
+  "idea": "i ate a very good burger in tel aviv",
+  "platform": "reel",
+  "audience": "",
+  "hooks": [
+    {
+      "style": "bold claim",
+      "en": "Best burger of my life? Tel Aviv.",
+      "hi": "ज़िंदगी का बेस्ट बर्गर? तेल अवीव में मिला।",
+      "hinglish": "Life ka best burger? Tel Aviv mein mila.",
+      "highlight_en": "Tel Aviv",
+      "highlight_hi": "तेल अवीव",
+      "highlight_hinglish": "Tel Aviv",
+      "onScreen": "Best burger? Tel Aviv.",
+      "onScreen_hi": "बेस्ट बर्गर? तेल अवीव।",
+      "shot": "Close-up of the burger being squeezed so the juice drips onto the plate.",
+      "why": "A strong personal claim tied to a city nobody links with burgers makes people want to see the proof."
+    },
+    {
+      "style": "curiosity gap",
+      "en": "I didn't come to Tel Aviv for burgers.",
+      "hi": "मैं तेल अवीव बर्गर खाने नहीं आया था।",
+      "hinglish": "Main Tel Aviv burger khaane nahi aaya tha.",
+      "highlight_en": "burgers",
+      "highlight_hi": "बर्गर",
+      "highlight_hinglish": "burger",
+      "onScreen": "Came for the beach. Stayed for this.",
+      "onScreen_hi": "आया कुछ और, मिला ये",
+      "shot": "Creator walking a Tel Aviv street, then turning to show the burger in hand.",
+      "why": "It sets up a surprise, so viewers stay to find out what changed their mind."
+    },
+    {
+      "style": "question",
+      "en": "Would you fly to Israel for a burger?",
+      "hi": "एक बर्गर के लिए इज़राइल जाओगे?",
+      "hinglish": "Ek burger ke liye Israel jaoge?",
+      "highlight_en": "a burger",
+      "highlight_hi": "एक बर्गर",
+      "highlight_hinglish": "Ek burger",
+      "onScreen": "Worth the flight?",
+      "onScreen_hi": "फ्लाइट के लायक?",
+      "shot": "Creator holding the burger up to the camera with the restaurant behind them.",
+      "why": "A yes-or-no question invites comments and makes viewers judge the burger for themselves."
+    },
+    {
+      "style": "pov",
+      "en": "POV: you bite into a Tel Aviv burger.",
+      "hi": "POV: तेल अवीव का बर्गर पहली बाइट में।",
+      "hinglish": "POV: Tel Aviv ka burger, pehli bite.",
+      "highlight_en": "Tel Aviv burger",
+      "highlight_hi": "पहली बाइट",
+      "highlight_hinglish": "pehli bite",
+      "onScreen": "POV: first bite",
+      "onScreen_hi": "POV: पहली बाइट",
+      "shot": "First-person shot of the burger coming toward the camera for a bite.",
+      "why": "Putting the viewer in the seat makes the first bite feel like theirs."
+    },
+    {
+      "style": "contrarian",
+      "en": "Forget hummus. Tel Aviv's burgers are the move.",
+      "hi": "हम्मस भूल जाओ, तेल अवीव में बर्गर खाओ।",
+      "hinglish": "Hummus bhool jao, Tel Aviv mein burger khao.",
+      "highlight_en": "Forget hummus",
+      "highlight_hi": "हम्मस भूल जाओ",
+      "highlight_hinglish": "Hummus bhool jao",
+      "onScreen": "Skip the hummus. Get this.",
+      "onScreen_hi": "हम्मस नहीं, ये खाओ",
+      "shot": "A hand pushing a plate of hummus aside to reveal the burger.",
+      "why": "It goes against what people expect to eat in Israel, which makes them stop and argue."
+    },
+    {
+      "style": "story",
+      "en": "One bite in Tel Aviv, and I went quiet.",
+      "hi": "तेल अवीव में एक बाइट, और मैं चुप।",
+      "hinglish": "Tel Aviv mein ek bite, aur main chup.",
+      "highlight_en": "went quiet",
+      "highlight_hi": "मैं चुप",
+      "highlight_hinglish": "main chup",
+      "onScreen": "One bite. Silence.",
+      "onScreen_hi": "एक बाइट। चुप।",
+      "shot": "Creator mid-bite, eyes closing, with no talking for a beat.",
+      "why": "A real reaction is more convincing than any adjective, and viewers wait to hear the verdict."
+    }
+  ],
+  "createdAt": "2026-10-12T17:02:17Z"
+}

@@ -1,0 +1,87 @@
+{
+  "id": "500-rupees-mumbai-week",
+  "idea": "I tried living on ₹500 a day in Mumbai for a full week: food, travel, everything",
+  "platform": "reel",
+  "audience": "college students and first-job people in metro cities",
+  "hooks": [
+    {
+      "style": "question",
+      "en": "Can you survive Mumbai on ₹500 a day?",
+      "hi": "क्या ₹500 रोज़ में मुंबई में जी सकते हो?",
+      "hinglish": "Kya ₹500 roz mein Mumbai survive ho sakta hai?",
+      "highlight_en": "₹500 a day",
+      "highlight_hi": "₹500 रोज़",
+      "highlight_hinglish": "₹500 roz",
+      "onScreen": "₹500/day. Mumbai. 7 days.",
+      "onScreen_hi": "₹500 रोज़। मुंबई। 7 दिन।",
+      "shot": "A ₹500 note held up in front of a crowded local train platform.",
+      "why": "Every viewer instantly guesses an answer, and has to watch to see if they were right."
+    },
+    {
+      "style": "bold claim",
+      "en": "₹500 a day in Mumbai is enough. I proved it.",
+      "hi": "मुंबई में ₹500 रोज़ काफ़ी है। मैंने करके दिखाया।",
+      "hinglish": "Mumbai mein ₹500 roz kaafi hai. Maine karke dikhaya.",
+      "highlight_en": "I proved it",
+      "highlight_hi": "करके दिखाया",
+      "highlight_hinglish": "karke dikhaya",
+      "onScreen": "Day 7 receipt inside",
+      "onScreen_hi": "7वें दिन का पूरा हिसाब",
+      "shot": "You on day 7, fanning out a week of small receipts toward the camera.",
+      "why": "Most people believe the opposite, so the claim starts an argument in their head."
+    },
+    {
+      "style": "number",
+      "en": "7 days. ₹3,500 total. Mumbai.",
+      "hi": "7 दिन। कुल ₹3,500। मुंबई।",
+      "hinglish": "7 din. Total ₹3,500. Mumbai.",
+      "highlight_en": "₹3,500",
+      "highlight_hi": "₹3,500",
+      "highlight_hinglish": "₹3,500",
+      "onScreen": "Full week budget breakdown",
+      "onScreen_hi": "पूरे हफ़्ते का बजट",
+      "shot": "A notebook page with ₹3,500 written at the top and seven empty rows.",
+      "why": "One hard number makes the challenge concrete before you say anything else."
+    },
+    {
+      "style": "story",
+      "en": "Day 3, I had ₹42 left and no lunch.",
+      "hi": "तीसरे दिन मेरे पास ₹42 बचे थे, और लंच नहीं हुआ था।",
+      "hinglish": "Day 3 tak sirf ₹42 bache the, aur lunch baaki tha.",
+      "highlight_en": "₹42 left",
+      "highlight_hi": "₹42 बचे",
+      "highlight_hinglish": "₹42 bache",
+      "onScreen": "Day 3: ₹42 left",
+      "onScreen_hi": "तीसरा दिन: ₹42 बचे",
+      "shot": "Coins counted out on your palm next to a vada pav stall.",
+      "why": "Starting in the middle of trouble makes people stay to see how it ends."
+    },
+    {
+      "style": "pov",
+      "en": "POV: your whole day in Mumbai costs ₹500.",
+      "hi": "POV: मुंबई में पूरा दिन सिर्फ़ ₹500 में।",
+      "hinglish": "POV: Mumbai mein poora din sirf ₹500 mein.",
+      "highlight_en": "₹500",
+      "highlight_hi": "₹500",
+      "highlight_hinglish": "₹500",
+      "onScreen": "POV: ₹500 budget day",
+      "onScreen_hi": "POV: ₹500 वाला दिन",
+      "shot": "First-person shot tapping a metro card at the gate.",
+      "why": "Students on a tight budget see their own life, so it feels made for them."
+    },
+    {
+      "style": "mistake",
+      "en": "My biggest mistake was on day one: auto rickshaws.",
+      "hi": "सबसे बड़ी गलती पहले ही दिन हुई: ऑटो।",
+      "hinglish": "Sabse badi galti pehle din hi hui: auto.",
+      "highlight_en": "biggest mistake",
+      "highlight_hi": "सबसे बड़ी गलती",
+      "highlight_hinglish": "Sabse badi galti",
+      "onScreen": "Don't do this on day 1",
+      "onScreen_hi": "पहले दिन ये मत करना",
+      "shot": "An auto meter ticking up, then a cut to your face reacting.",
+      "why": "People watch to avoid a mistake they might make themselves."
+    }
+  ],
+  "createdAt": "2026-10-12T16:57:54Z"
+}
