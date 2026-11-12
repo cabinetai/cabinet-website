@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 const EFFECTIVE_DATE = "April 24, 2026";
-const LAST_UPDATED = "April 24, 2026";
+const LAST_UPDATED = "November 12, 2026";
 
 export default function PrivacyPage() {
   return (
@@ -44,7 +44,9 @@ export default function PrivacyPage() {
               <a href="https://runcabinet.com" className="text-accent hover:underline">
                 runcabinet.com
               </a>{" "}collects limited information: primarily analytics and, if you choose, an email
-                                          address for the waitlist.
+                                          address for the waitlist. If you connect Gmail, Google Calendar,
+                                          or Google Drive, section 3 explains exactly what Cabinet asks Google for and how it is
+                                          used.
                                         </p>
           </div>
 
@@ -86,7 +88,9 @@ export default function PrivacyPage() {
                                                 Your knowledge base files, prompts, source code, credentials, environment
                                                 variables, and other locally stored content remain on the systems you control.{" "}
                 <strong className="text-text-primary">We do not receive, store, or have access to the contents of your local <span className="font-brand italic">Cabinet</span>{" "}knowledge base, and we do not operate servers that collect that data.
-                                                    </strong>
+                                                    </strong>{" "}The exception is Cabinet Cloud. If you choose Cabinet Cloud, your
+                cabinet runs on infrastructure we operate, and we handle its contents only to
+                provide that service to you.
               </p>
               <p>
                 When you configure the Software to communicate with third-party services, such
@@ -100,7 +104,115 @@ export default function PrivacyPage() {
 
             <section>
               <h2 className="text-2xl font-display text-text-primary mb-4">
-                3. Information We Collect Through the Site
+                3. Google User Data
+              </h2>
+              <p className="mb-4">
+                When you connect Gmail, Google Calendar, or Google Drive to{" "}
+                <span className="font-brand italic">Cabinet</span>, the Software asks Google for
+                access to your data on Google&rsquo;s own consent screen. Cabinet reads and
+                changes Google data only for the services you connect, and only to do what you ask
+                your agents to do.
+              </p>
+              <p className="mb-2">
+                <strong className="text-text-primary">What Cabinet asks for</strong>
+              </p>
+              <ul className="list-disc pl-6 space-y-2 mb-4">
+                <li>
+                  <strong className="text-text-primary">Gmail.</strong> Read your mail and settings
+                  (gmail.readonly), and create drafts or send a message (gmail.compose). Cabinet
+                  sends a message only after you approve it.
+                </li>
+                <li>
+                  <strong className="text-text-primary">Google Calendar.</strong> Read your events
+                  and calendar list (calendar.readonly), and add an event you approved
+                  (calendar.events).
+                </li>
+                <li>
+                  <strong className="text-text-primary">Google Drive.</strong> Access only to the
+                  files you pick for Cabinet or that Cabinet creates for you (drive.file),
+                  including uploading a file you approved. Cabinet does not ask to read the rest of
+                  your Drive.
+                </li>
+                <li>
+                  <strong className="text-text-primary">Your account.</strong> Your email address,
+                  so Cabinet can show which Google account is connected (openid and email).
+                </li>
+              </ul>
+              <p className="mb-2">
+                <strong className="text-text-primary">How we use it</strong>
+              </p>
+              <ul className="list-disc pl-6 space-y-2 mb-4">
+                <li>
+                  Only to provide the features you use: for example, summarizing your inbox,
+                  preparing a draft, listing your day, or filing a document.
+                </li>
+                <li>
+                  We do not sell Google user data, and we do not use it for advertising,
+                  including retargeting or interest-based advertising.
+                </li>
+                <li>
+                  We do not use Google user data to develop, improve, or train generalized
+                  artificial intelligence or machine learning models.
+                </li>
+                <li>
+                  When you ask an agent to work on your mail, events, or files, the content it
+                  needs is sent to the AI provider you configured in Cabinet (for example Anthropic
+                  or OpenAI) to produce the answer, under that provider&rsquo;s terms.
+                </li>
+                <li>
+                  No person at Cabinet reads your Google data, except with your permission, where
+                  needed for security or abuse investigation, or where the law requires it.
+                </li>
+              </ul>
+              <p className="mb-2">
+                <strong className="text-text-primary">Where it is kept</strong>
+              </p>
+              <p className="mb-4">
+                Your Google sign-in token is kept sealed inside your own Cabinet: on your computer,
+                or in your cabinet if you use Cabinet Cloud, which runs on infrastructure we
+                operate and is bound by the same limits. Each agent run receives a separate token
+                that expires after one hour, for the services your cabinet declares. Cabinet does
+                not copy your mail or calendar to any other system of ours.
+              </p>
+              <p className="mb-2">
+                <strong className="text-text-primary">Disconnecting and deleting</strong>
+              </p>
+              <p className="mb-4">
+                You can disconnect a Google service at any time in Integrations. When you
+                disconnect the last Google service, Cabinet revokes its access with Google. You
+                can also remove Cabinet at{" "}
+                <a
+                  href="https://myaccount.google.com/permissions"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent hover:underline"
+                >
+                  myaccount.google.com/permissions
+                </a>
+                . To have your Cabinet Cloud data deleted, email{" "}
+                <a href="mailto:hi@runcabinet.com" className="text-accent hover:underline">
+                  hi@runcabinet.com
+                </a>
+                .
+              </p>
+              <p>
+                Cabinet&rsquo;s use and transfer to any other app of information received from
+                Google APIs will adhere to the{" "}
+                <a
+                  href="https://developers.google.com/terms/api-services-user-data-policy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent hover:underline"
+                >
+                  Google API Services User Data Policy
+                </a>
+                , including the Limited Use requirements.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-display text-text-primary mb-4">
+                4. Information We Collect Through the Site
               </h2>
               <p className="mb-4">
                 When you visit the Site, we and our service providers collect the following
@@ -142,7 +254,7 @@ export default function PrivacyPage() {
 
             <section>
               <h2 className="text-2xl font-display text-text-primary mb-4">
-                4. How We Use Information
+                5. How We Use Information
               </h2>
               <ul className="list-disc pl-6 space-y-2">
                 <li>to operate, maintain, secure, and improve the Site;</li>
@@ -161,7 +273,7 @@ export default function PrivacyPage() {
 
             <section>
               <h2 className="text-2xl font-display text-text-primary mb-4">
-                5. Legal Bases (EEA / UK Users)
+                6. Legal Bases (EEA / UK Users)
               </h2>
               <p>
                 If you are in the European Economic Area, United Kingdom, or Switzerland, we process
@@ -179,7 +291,7 @@ export default function PrivacyPage() {
 
             <section>
               <h2 className="text-2xl font-display text-text-primary mb-4">
-                6. Cookies and Similar Technologies
+                7. Cookies and Similar Technologies
               </h2>
               <p className="mb-4">
                 The Site uses cookies and similar technologies for analytics (Google Analytics) and
@@ -202,7 +314,7 @@ export default function PrivacyPage() {
 
             <section>
               <h2 className="text-2xl font-display text-text-primary mb-4">
-                7. How We Share Information
+                8. How We Share Information
               </h2>
               <p className="mb-4">
                 We share information only as follows:
@@ -236,7 +348,7 @@ export default function PrivacyPage() {
 
             <section>
               <h2 className="text-2xl font-display text-text-primary mb-4">
-                8. International Data Transfers
+                9. International Data Transfers
               </h2>
               <p>
                 We are based in the United States, and we and our service providers may process
@@ -248,7 +360,7 @@ export default function PrivacyPage() {
 
             <section>
               <h2 className="text-2xl font-display text-text-primary mb-4">
-                9. Data Retention
+                10. Data Retention
               </h2>
               <p>
                 We retain information only for as long as necessary for the purposes set out in
@@ -261,7 +373,7 @@ export default function PrivacyPage() {
 
             <section>
               <h2 className="text-2xl font-display text-text-primary mb-4">
-                10. Your Rights
+                11. Your Rights
               </h2>
               <p className="mb-4">
                 Depending on where you live, you may have the right to (a) access, correct, or
@@ -284,7 +396,7 @@ export default function PrivacyPage() {
 
             <section>
               <h2 className="text-2xl font-display text-text-primary mb-4">
-                11. Security
+                12. Security
               </h2>
               <p>
                 We use reasonable technical and organizational safeguards designed to protect the
@@ -297,7 +409,7 @@ export default function PrivacyPage() {
 
             <section>
               <h2 className="text-2xl font-display text-text-primary mb-4">
-                12. Children&rsquo;s Privacy
+                13. Children&rsquo;s Privacy
               </h2>
               <p>
                 The Site is not directed to children under 13, and we do not knowingly collect
@@ -308,7 +420,7 @@ export default function PrivacyPage() {
 
             <section>
               <h2 className="text-2xl font-display text-text-primary mb-4">
-                13. Changes to This Policy
+                14. Changes to This Policy
               </h2>
               <p>
                 We may update this Privacy Policy from time to time. Material changes will be
@@ -320,7 +432,7 @@ export default function PrivacyPage() {
 
             <section>
               <h2 className="text-2xl font-display text-text-primary mb-4">
-                14. Contact
+                15. Contact
               </h2>
               <p>
                 Questions, requests, or complaints about this Privacy Policy should be directed
