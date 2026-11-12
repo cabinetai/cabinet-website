@@ -1,0 +1,5 @@
+1:"$Sreact.fragment"
+2:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+3:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"min-h-screen bg-bg flex items-center justify-center px-6 py-16","children":[["$","script",null,{"dangerouslySetInnerHTML":{"__html":"window.location.replace(\"https://app.runcabinet.com/whatsapp\");"}}],["$","div",null,{"className":"max-w-xl w-full text-center","children":["$","p",null,{"className":"text-lg","children":["Taking you to your WhatsApp settings. If nothing happens,"," ",["$","a",null,{"className":"underline","href":"https://app.runcabinet.com/whatsapp","children":"open them here"}],"."]}]}]]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ga1INa6h3DHWE4TqW3uVJ"}
+4:null

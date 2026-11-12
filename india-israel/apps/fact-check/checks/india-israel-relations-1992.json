@@ -1,0 +1,43 @@
+{
+  "id": "india-israel-relations-1992",
+  "claim": "India and Israel have only had full diplomatic relations since 1992.",
+  "verdict": "true",
+  "confidence": 95,
+  "headline": "True. Full ties only since 29 January 1992.",
+  "summary": "India recognised Israel in September 1950 and let it open a consulate in Bombay in 1953, but there were no embassies or ambassadors for four decades. Full diplomatic relations were announced on 29 January 1992, under Prime Minister P. V. Narasimha Rao.",
+  "summary_hi": "भारत ने सितंबर 1950 में इज़राइल को मान्यता दी और 1953 में बॉम्बे में इज़राइली कॉन्सुलेट खोलने की इजाज़त दी, लेकिन चार दशकों तक न दूतावास थे, न राजदूत। पूर्ण राजनयिक संबंध 29 जनवरी 1992 को, प्रधानमंत्री पी. वी. नरसिम्हा राव के समय घोषित हुए।",
+  "sources": [
+    {
+      "title": "India to establish ties with Israel",
+      "publisher": "UPI Archives",
+      "url": "https://www.upi.com/Archives/1992/01/29/India-to-establish-ties-with-Israel/4957696661200/",
+      "stance": "supports",
+      "quote": "He said details for opening embassies and exchanging ambassadors would be worked out through normal diplomatic channels."
+    },
+    {
+      "title": "30 Years Of Full Diplomatic Relations Between India And Israel Very Important: PM Modi",
+      "publisher": "Outlook India",
+      "url": "https://www.outlookindia.com/international/newsflash-30-years-of-full-diplomatic-relations-between-india-and-israel-very-important-pm-modi-news-50221",
+      "stance": "supports",
+      "quote": "full-fledged diplomatic relations between the countries were established on January 29, 1992."
+    },
+    {
+      "title": "India–Israel relations",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/India%E2%80%93Israel_relations",
+      "stance": "context",
+      "quote": "In 1953, Israel was permitted to open a consulate in Bombay (now Mumbai)."
+    }
+  ],
+  "timeline": [
+    { "date": "1948", "event": "The State of Israel is founded." },
+    { "date": "1950-09", "event": "India formally recognises Israel." },
+    { "date": "1953", "event": "Israel is allowed to open a consulate in Bombay. No embassy yet." },
+    { "date": "1992-01-29", "event": "India announces full diplomatic relations: embassies and ambassadors." },
+    { "date": "2017-07", "event": "Narendra Modi becomes the first Indian prime minister to visit Israel." },
+    { "date": "2022-01-29", "event": "30 years of full relations, marked by PM Modi." }
+  ],
+  "caption_en": "India recognised Israel in 1950. But embassies? Only in 1992.\nFor 42 years, the two countries were friends without ambassadors. #FactCheck #IndiaIsrael",
+  "caption_hi": "भारत ने 1950 में इज़राइल को मान्यता दी, लेकिन दूतावास? सिर्फ़ 1992 में।\n42 साल तक दोनों देश बिना राजदूतों के दोस्त रहे। #FactCheck #IndiaIsrael",
+  "checkedAt": "2026-10-12T16:20:00Z"
+}

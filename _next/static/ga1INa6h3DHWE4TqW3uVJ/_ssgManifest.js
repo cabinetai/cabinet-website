@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Fcompare\u002F[slug]","\u002Fcompare\u002F[slug]\u002Fopengraph-image","\u002Findustries\u002F[industry]","\u002Fsolutions\u002F[role]","\u002Ftemplates\u002F[slug]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

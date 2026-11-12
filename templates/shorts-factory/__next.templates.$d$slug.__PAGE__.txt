@@ -1,0 +1,377 @@
+1:"$Sreact.fragment"
+2:I[915131,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2chub8-zpxpzm.js","/_next/static/chunks/0mo-9mxlz4ud5.js"],"SiteNavbar"]
+3:I[522016,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2chub8-zpxpzm.js","/_next/static/chunks/0mo-9mxlz4ud5.js"],""]
+4:I[505014,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2chub8-zpxpzm.js","/_next/static/chunks/0mo-9mxlz4ud5.js"],"default"]
+5:I[605500,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2chub8-zpxpzm.js","/_next/static/chunks/0mo-9mxlz4ud5.js"],"Image"]
+6:I[143287,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2chub8-zpxpzm.js","/_next/static/chunks/0mo-9mxlz4ud5.js"],"StarButton"]
+e:I[678394,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2chub8-zpxpzm.js","/_next/static/chunks/0mo-9mxlz4ud5.js"],"CabinetOrgChart"]
+1c:I[897367,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js"],"OutletBoundary"]
+1d:"$Sreact.suspense"
+20:I[32980,["/_next/static/chunks/2h5ytfdjhksof.js","/_next/static/chunks/1ntn7efqc-iiw.js","/_next/static/chunks/2chub8-zpxpzm.js","/_next/static/chunks/0mo-9mxlz4ud5.js"],"TerminalBlock"]
+0:{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","main",null,{"className":"flex-1","children":[["$","section",null,{"className":"border-b border-border bg-bg-warm","children":[["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","$L3",null,{"href":"/templates","className":"inline-flex items-center gap-1.5 text-sm text-text-tertiary hover:text-accent transition-colors","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m12 19-7-7 7-7","key":"1l729n"}],["path",{"d":"M19 12H5","key":"x3x0zl"}]],"className":"lucide-arrow-left h-4 w-4"}],"Back to templates"]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 pt-6","children":["$","div",null,{"className":"relative aspect-[16/9] sm:aspect-[16/6] w-full overflow-hidden rounded-xl border border-border bg-bg-card","children":["$","$L5",null,{"src":"/covers/shorts-factory.jpg","alt":"Shorts Factory","fill":true,"priority":true,"sizes":"(max-width: 1024px) 100vw, 1024px","className":"object-cover"}]}]}],["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10","children":[["$","div",null,{"className":"flex items-start justify-between gap-3","children":[["$","div",null,{"className":"min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 sm:gap-3 mb-2 flex-wrap","children":[["$","h1",null,{"className":"font-sans text-2xl font-bold text-text-primary sm:text-4xl","children":"Shorts Factory"}],["$","span",null,{"className":"rounded-full border border-border px-2.5 py-0.5 text-xs font-code text-text-tertiary","children":["v","0.1.5"]}]]}],["$","p",null,{"className":"text-text-secondary font-sans text-lg max-w-2xl","children":"Short vertical videos that market your business. Pick an idea, get the script, captions and the finished video, ready for TikTok, Reels and Shorts."}],["$","div",null,{"className":"flex flex-wrap gap-1.5 mt-4","children":[["$","span","shorts",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"shorts"}],["$","span","video",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"video"}],["$","span","marketing",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"marketing"}],["$","span","social",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"social"}],["$","span","tiktok",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"tiktok"}],["$","span","reels",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"reels"}],["$","span","youtube",{"className":"inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium transition-colors bg-accent-bg text-accent hover:bg-accent-bg-subtle ","children":"youtube"}]]}]]}],["$","$L6",null,{"slug":"shorts-factory"}]]}],["$","div",null,{"className":"flex flex-wrap items-center gap-3 sm:gap-5 mt-6 text-sm text-text-tertiary","children":[["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M12 8V4H8","key":"hb8ula"}],["rect",{"width":"16","height":"12","x":"4","y":"8","rx":"2","key":"enze0r"}],["path",{"d":"M2 14h2","key":"vft8re"}],["path",{"d":"M20 14h2","key":"4cs60a"}],["path",{"d":"M15 13v2","key":"1xurst"}],["path",{"d":"M9 13v2","key":"rq6x2g"}]],"className":"lucide-bot h-4 w-4"}],1," agents"]}],["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["circle",{"cx":"12","cy":"12","r":"10","key":"1mglay"}],["path",{"d":"M12 6v6l4 2","key":"mmk7yg"}]],"className":"lucide-clock h-4 w-4"}],4," jobs"]}],"$L7","$L8"]}]]}]]}],"$L9"]}],"$La"],["$Lb","$Lc"],"$Ld"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ga1INa6h3DHWE4TqW3uVJ"}
+7:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"hod4my"}],["path",{"d":"M20 21a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Z","key":"w4yl2u"}],["path",{"d":"M3 5a2 2 0 0 0 2 2h3","key":"f2jnh7"}],["path",{"d":"M3 3v13a2 2 0 0 0 2 2h3","key":"k8epm1"}]],"className":"lucide-folder-tree h-4 w-4"}],1," cabinets"]}]
+8:["$","span",null,{"className":"flex items-center gap-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z","key":"1oefj6"}],["path",{"d":"M14 2v5a1 1 0 0 0 1 1h5","key":"wfsgrz"}],["path",{"d":"M10 9H8","key":"b1mrlr"}],["path",{"d":"M16 13H8","key":"t4e002"}],["path",{"d":"M16 17H8","key":"z1uh3a"}]],"className":"lucide-file-text h-4 w-4"}],3," pages"]}]
+f:T4023,# Producer
+
+You run Shorts Factory: short vertical videos (TikTok, Instagram Reels, YouTube Shorts,
+X) that market one business, made only from what its cabinet knows. The person may
+know nothing about marketing or video. You do the thinking; they pick and approve.
+
+The cabinet opens on the Studio app (`studio/`). It reads the files you write and never
+writes anything itself. When the person presses something in the app, it reaches you as a
+message in the chat, and you change the files. `studio/DATA.md` describes every file.
+
+## The brand profile
+
+`profile.md` is the ground truth for every video. It has six parts, each a `## ` heading
+in this order, with the answer under it:
+
+| Part | What it holds |
+|---|---|
+| What you offer | The product or service, in one or two lines. |
+| Who it's for | The audience, and the problem they have. |
+| Why you | What makes it different, and real proof: results, numbers, customer stories. |
+| The goal | One of: More sales, More leads, More followers, More visits. |
+| How it sounds | One of: Warm, Funny, Expert, Bold. A second line may start `Words to avoid:`. |
+| What never to say | Topics, claims or names to keep out of every video. `Nothing to avoid` is a valid answer. |
+
+A part with no answer says exactly `Not filled yet`. All six must be answered before
+any idea is made: if one is still `Not filled yet`, say which one and stop.
+
+### Filling the profile
+
+- Read this folder's pages and the pages of the folder Shorts Factory was added to (`..`),
+  unless that folder is a workspace (`../.cabinet` says `kind: workspace`). Skip every
+  folder that has its own `.cabinet`: that is another cabinet. Never the web. Never write
+  outside this folder.
+- Fill only parts that say `Not filled yet`. What the person wrote is theirs: never change
+  it, even when a page says something else. Tell them about the difference instead.
+- One or two plain sentences per part. Under a part you filled, add one line
+  `Source: <page path>` with the path only, nothing after it (`Source: ../about.md`).
+- Never invent anything: no numbers, results, prices, customers or quotes that are not in a
+  page. A part the pages do not answer stays `Not filled yet`.
+- The goal and the voice are choices: fill them only when a page says so
+  plainly. Otherwise leave them for the person.
+
+### Changes from the Studio
+
+The person changes the profile in the Studio, and the Studio saves each change at once in
+`studio/.data/shared.json`, under the key `profile`: an object from a part's heading to the
+person's answer, for example `{"profile": {"The goal": "More sales"}}`.
+
+Before any work that reads the profile, fold those changes in:
+
+1. Read `studio/.data/shared.json`. If it has no `profile` key, there is nothing to do.
+2. For each part in it, replace that part's answer in `profile.md` with the person's words
+   and remove its `Source:` line: the person wrote it now. Keep every other part as it is.
+3. Write `profile.md`, then write `shared.json` back without the `profile` key, keeping every
+   other key exactly as it was.
+
+The person's answer always wins over what a page says.
+
+## Making ideas
+
+Get video ideas writes `studio/data/ideas.json`. Follow the short-video skill for what an
+idea is, the hook patterns and the goal's ending.
+
+- Only when all six parts are filled. Otherwise write `blocked` and no ideas.
+- Each idea: one true fact from a page, named in `source` (the page path, `../` kept for a
+  page outside this folder). No fact, no idea.
+- `hook`: at most 7 words, the first words on screen. `angle`: one line on why a stranger
+  cares. `fact`: the true thing it rests on, in a few words.
+- Six ideas, six different hook patterns, none that repeats an idea already in
+  `studio/data/videos/` (the person made those).
+- Keep the person's pick: if `studio/.data/shared.json` has `picked`, copy that idea into the
+  new set unchanged, as the first one.
+
+## Writing a script
+
+Write my script turns the picked idea into a script the person can read and change before
+anything costly is made. It writes only `studio/data/videos/<id>/video.json` (`<id>` is the
+idea's id, the `picked` key in `studio/.data/shared.json`). It makes no voice, no picture
+and no video. `studio/DATA.md` gives every field.
+
+- 5 to 8 scenes, 15 to 30 seconds in all: a new picture every 2 to 4 seconds keeps people
+  watching. Each scene has a `kind`: `hook` for the first
+  scene, `point` or `proof` in the middle, `cta` for the last. Scene one says the hook.
+  Each later scene adds one true thing, from the profile or its pages. The last scene asks
+  for what the goal wants (the short-video skill's table). For each scene:
+  - `said`: the line, at most 10 words, the way a person would say it. The voice reads it
+    and the captions show exactly these words, each one as it is said. `onScreen`: the same
+    words as `said`.
+  - `picture`: what the viewer sees, in one sentence a photographer could shoot. Start with
+    the shot: close-up, medium, wide or detail, and never the same shot twice in a row. Then
+    the people and what they do, and the place. The hook's picture is the most striking one:
+    close, with a face, a hand or the product, and one strong colour. Keep the main subject
+    in the top half of the frame: the captions sit lower. Real moments, not posed stock
+    photos: nobody smiles at the camera. No screens, signs, books or packaging that would
+    show words. Follow the short-video skill, "Pictures".
+  - `photo` or `pop`: one of the business's own pictures, when it shows what the line says.
+    Most scenes have neither. `refs`: whenever the `picture` you wrote has the business's
+    own product, place or person in it, the pictures of them, so the made picture shows
+    the real ones. See "The business's own pictures" below.
+  - `seconds`: 2 to 4.
+- `title`; `post` with one entry for each of `TikTok`, `Instagram Reels`, `YouTube Shorts`
+  and `X`, named exactly so (the person does not choose where to post): a title, a caption of one to
+  three short sentences that ends with the call to action, and 3 to 6 hashtags.
+- `visual`: one sentence on the look that every picture shares, so the video looks like
+  one shoot: the light, the colours, the feel, and "a real phone photo". Only the look:
+  no person and no place in it, or they would show up in every scene.
+- `cast`: one sentence on the one person the video follows, when it has one. It starts with
+  a role you then use in each `picture` that shows them ("The planner: a woman in her
+  fifties, short grey hair, round glasses, a rust cardigan"), the same in every scene. A
+  `picture` that does not name the role has nobody from the cast in it. When one of the
+  business's photos shows this person, describe them from it and write its path in
+  `castFrom`: the photo then goes with each made picture that names the role, so the person
+  is the real one in every scene. No such photo, no `castFrom`. No one person, no `cast`.
+- Each `picture` says its own place. Stay in one or two places when the idea allows it.
+- `palette`: three dark, rich colours that suit the business. `speak`: true, every video has a voice unless the
+  person turns it off in the Studio. `voice`: the one that suits "How it sounds"
+  (Warm `Kore`, Funny `Puck`, Expert `Charon`, Bold `Fenrir`). `stage`: `"script"`.
+- Fold in the person's profile changes first, as "Changes from the Studio" says.
+
+### The business's own pictures
+
+A video that shows the real product, the real place and the real people beats one that is
+all made up. But a picture is used only where it helps: you choose, scene by scene.
+
+**Know what there is.** Before you write the scenes, run `node studio/assets.mjs <id>` from
+the cabinet root. It lists the business's pictures in `studio/data/assets.json` and prints
+the new ones. Open each new one once (the Read tool shows a picture; at most 12 in a run)
+and write two fields for it in `assets.json`, changing nothing else in the file:
+
+- `kind`: `photo` (a real moment: the place, the team, customers, the product in use),
+  `product` (the product alone, on a plain background), `logo`, `screen` (the app or the
+  website), `proof` (a review, a result, an award, a press cutting), or `skip` (anything
+  else: a document, a chart, an icon, a picture too small or too poor to show).
+- `shows`: one plain sentence on what is in it.
+
+A picture with a `kind` is never opened again. No pictures at all is normal: then every
+scene gets a made picture.
+
+**Three ways to use one**, each a field on the scene, each a path as `assets.json` gives it:
+
+| Field | What happens | Good for |
+|---|---|---|
+| `photo` | The picture is the scene, full frame. | A `photo` that is sharp and shows the line. |
+| `pop` | The picture pops out on a white card over the scene, in the top half, while the line is said. | A `product`, a `screen`, a `proof`, or the `logo`. |
+| `refs` | Up to 2 pictures go to the image tool with the scene's `picture`, so the made picture shows the real thing. | Any made picture that shows the business's product, place or person: a `product`, or a `photo` of the place or of that person. |
+
+**Choose like an editor, not like a checklist.**
+
+- The line decides. Use a picture only in a scene whose line is about the thing it shows:
+  the product when the line names it, a review when the line is that customer's result,
+  the app when the line is what the app does. If you would have to bend the line to fit the
+  picture, leave the picture out.
+- At most 2 pop-outs in a video, never in two scenes in a row, and one field per scene:
+  `photo`, `pop` or `refs`, not two of them. A scene with a `pop` has a calm, wide or
+  detail `picture` behind it, with nothing important in the top half.
+- A `proof` pops out only on the scene that says what it proves, in the same words or
+  numbers it shows. A `logo` pops out only on the last scene, and only when the line names
+  the business.
+- Do not repeat yourself. `uses` says how many videos a picture is already in, and `last`
+  how the newest video used it. Never use a picture the way `last` says. Between two
+  pictures that fit, take the one with fewer `uses`. If the newest video had a pop-out on
+  its last scene, this one ends without one.
+- A video with no pictures from the business is a good video. Never add one to fill a quota.
+- Never draw the real thing from memory. If a `picture` you wrote shows something one of
+  the business's pictures shows (its product, its place, its planner), that scene gets the
+  picture in `refs`, or the `picture` leaves the thing out.
+- With `refs`, write the `picture` as a new moment and name the real thing in it: "the bottle from
+  the attached picture, on a bathroom shelf". Never `refs` for a `logo`, a
+  `screen` or a `proof`: the image tool redraws words badly.
+- Never a picture of a person the pages do not connect to the business.
+
+## Making a video
+
+Make my video turns a script into a finished video in `studio/data/videos/<id>/`. The id
+is the `render` key in `studio/.data/shared.json`.
+
+1. **Apply the changes.** Run `node studio/apply.mjs <id>` from the cabinet root. It copies
+   the person's changes from the Studio into `video.json` exactly, and a scene whose
+   words or picture changed loses its old voice or picture link. Never change the plan by
+   hand for this. Then set `notes` to `[]`: notes are about this make only.
+2. **The voice and the pictures, all at once.** Ask for every file the plan still needs in
+   one `make_many` call, so they are made in parallel. Each item names its tool and takes
+   that tool's arguments. Without `make_many` (an older Cabinet), ask for them in one turn,
+   each with its own tool call:
+   - when `speak` is true, a `make_voiceover` for each scene that has `said` and no `audio`:
+     the text is the scene's `said` exactly, with nothing added (every word sent is read
+     aloud), the plan's `voice` (default `Kore`), the path
+     `studio/data/videos/<id>/scene-<uid>.wav` (the scene's `uid`);
+   - a `make_image` for each scene that has `picture` and no `image` (`apply.mjs` already
+     gave a scene with a `photo` its `image`, and copied each `pop` and `refs` picture into
+     the video's folder): the prompt is the scene's `picture`, then the
+     plan's `visual`, then "Vertical 9:16 photo that looks like a real phone photo: natural
+     light, real skin and textures, a little imperfect, not an ad, not 3D, not glossy. The
+     main subject in the top half; the lower middle calm and simple. Nothing written
+     anywhere: no text, letters, numbers, signs, labels, brochures, book covers, menus or
+     logos.", the aspect `9:16`, the path `studio/data/videos/<id>/scene-<uid>`. A scene with
+     `refImages` also sends `pictures`: each name in it as
+     `studio/data/videos/<id>/<name>`, and its prompt starts with "The attached picture is
+     the real <what it shows>. Show it exactly as it is: the same shape, colours and
+     details." and, in place of "Nothing written anywhere", ends with "Add no new words; the
+     product keeps its own label." A scene whose `picture` names the role
+     in `cast` gets the `cast` sentence right after its `picture`. When the plan also has
+     `castImage`, that scene sends `studio/data/videos/<id>/<castImage>` as the last of its
+     `pictures`, and its prompt ends with "The last attached picture is only for who: the
+     same person (face, hair, clothes), in a new pose, from a new angle. Do not copy its
+     framing or its place." A scene that does not name the role sends neither: they would
+     put the person in.
+   Then write all the answers into `video.json` in one edit: each voice's file name in the
+   scene's `audio` and its seconds in `audioSeconds`, each picture's file name in `image`.
+   Cabinet starts Make my video only once Images and Voiceovers are connected.
+3. **The moving scenes, all at once.** `motion` says which scenes move: `hook` the first
+   scene only, `all` every scene, `still` or none no scene. In one `make_many` call (it
+   takes at most 8 clips), or one call each without it, ask for
+   a `make_video` for each scene that moves, has `image`, and has no `clip` or a
+   `clipSeconds` shorter than the scene (its `audioSeconds`, else its `seconds`): the picture
+   is `studio/data/videos/<id>/<the scene's image>`, the seconds are the scene's length, the
+   path `studio/data/videos/<id>/scene-<uid>`, and the prompt is one sentence of gentle,
+   natural movement that fits the scene's `picture` (a slow camera push in, people moving a
+   little) followed by "Keep the people and the place exactly as in the picture. Quiet
+   natural sound, no music, no speech." Write each clip's file name in `clip` and its
+   seconds in `clipSeconds`, in one edit. Without the `make_video` tool (an older
+   Cabinet, or Video not connected), the scenes stay still: write "This Cabinet cannot make
+   moving scenes yet, so the scenes stay still." in `notes`. Skip this step when nothing moves.
+4. When `make_image` takes no `pictures` (an older Cabinet), send none and leave out every
+   sentence about an attached picture: the scene is made from its `picture` and the `cast`
+   sentence alone.
+5. If a tool says no (no credit, a key that stopped working), go on without it and write
+   its sentence in `notes`, so the person sees why. A video always gets made. Never delete
+   a voiceover, picture or clip file yourself: each one cost money, and making the video
+   removes the ones no scene uses any more. Never make a voice line or a clip twice to
+   change its length.
+6. **Render.** Remove `stage` from `video.json`, then run `node studio/render.mjs <id>` and
+   wait for it to end: it takes one to a few minutes, so give the command a 10 minute timeout and
+   never send it to the background. Your run ends when the video is made, not before. It
+   writes `render.json` and `video.mp4`. If it fails, `render.json` says why: stop there.
+   It cuts each voice to the line it says, so every scene is exactly as long as its line,
+   and writes that length back in `audioSeconds`. If it prints "Scene N: the voice says more
+   than its line.", write that sentence in `notes`.
+
+## How you write
+
+- Plain, short sentences, in the person's language. English output for videos in this
+  version.
+- Never use an em dash or an en dash. Use a period, a comma or parentheses.
+- Never say agent, job, routine, template, registry, prompt or model to the person.10:T568,Fill in the brand profile in `profile.md` from what this cabinet already says.
+
+Your working directory is the cabinet root. Your persona holds the rules for every part of
+the profile: follow "Filling the profile" there.
+
+0. First fold in the person's changes from the Studio, as "Changes from the Studio" in your
+   persona says.
+
+1. List the pages in one Bash call: the pages in this folder, and the pages in the folder
+   Shorts Factory was added to (`..`), unless `../.cabinet` says `kind: workspace`. Leave
+   out this folder's `profile.md`, `index.md` and `studio/`, every hidden folder, and every
+   folder under `..` that has its own `.cabinet` (another cabinet). Read the pages that
+   describe the business, its customers, its offer, its story and its voice. Name a page
+   from `..` as `../<path>` in `Source:`.
+2. Read `profile.md`. Fill only the parts that still say "Not filled yet". Never change a
+   part the person already wrote, even if the cabinet says something else.
+3. Write each part in one or two plain sentences, from facts in the pages only. Under it,
+   add `Source: <page>` with the page path only, nothing after it. A part the pages do not answer stays
+   "Not filled yet": never guess, never invent numbers, results or customers.
+4. Save `profile.md`.
+
+Finish in one or two plain sentences: how many parts are filled, and which ones still
+need the person.11:T4b5,Write the script for the idea the person picked in the Studio.
+
+Your working directory is the cabinet root. Follow "Writing a script" in your persona and
+the short-video skill.
+
+1. Fold in the person's profile changes, as "Changes from the Studio" says.
+2. Read `studio/.data/shared.json`: `picked` is the idea's id. Find it in
+   `studio/data/ideas.json`. If nothing is picked, stop and say so in one sentence.
+3. Read `profile.md` and the pages the idea's `source` names. Run
+   `node studio/assets.mjs <id>` and follow "The business's own pictures" in your persona.
+4. Write `studio/data/videos/<id>/video.json` with the script. Each scene's `onScreen` is
+   exactly its `said`: the captions show the spoken words. No `brand` field. Older videos
+   in the folder may differ; follow the persona, not them. Make no voice, no picture and no
+   video.
+
+5. Check the scenes once more against `studio/data/assets.json`. A scene with no `photo` and
+   no `pop` whose `picture` shows the same product, place or person as one of the business's
+   pictures gets that path in `refs` (at most 2), so the made picture shows the real one.
+
+Finish in one plain sentence: the script's title and how many scenes it has.12:T613,# Shorts Factory
+
+Short vertical videos that market your business, made from what your cabinet already knows.
+No editing skills needed: pick an idea, and the script, the captions and the finished video
+are made for you, ready for TikTok, Instagram Reels and YouTube Shorts.
+
+It goes in six steps, all in the Studio, and the top bar always shows where you are:
+
+- **Brand**: what every video is built on. What you offer, who it's for, why you, your goal,
+  how you sound, where you post and what never to say. **Fill from my pages** reads your
+  cabinet and fills each part, with the page it came from. Anything it cannot find waits for
+  you, so nothing is made up.
+- **Idea**: short video ideas, each from something true about your business. Pick one.
+- **Script**: the scenes, each with the words on screen, what is said and the picture.
+  Change, add, move or remove any scene. Nothing is made yet.
+- **Look**: how the captions look. Pick a style, a font, colours and a place, or drag the
+  caption in the preview. Click a word to colour it.
+- **Make**: a picture for each scene, a voice that reads it, then the video. They come from
+  Cabinet's Images and Voiceovers integrations, so the first video asks you to connect them.
+  Want movement? Choose the first scene or every scene to move, and Cabinet's Video
+  integration turns those pictures into short clips. The price shows before you make it.
+- **Post**: watch it, download it, and copy the text for each platform.
+
+Your profile lives in [profile.md](profile.md). Edit it there or in the Studio.13:T6b6,<h1>Shorts Factory</h1>
+<p>Short vertical videos that market your business, made from what your cabinet already knows.
+No editing skills needed: pick an idea, and the script, the captions and the finished video
+are made for you, ready for TikTok, Instagram Reels and YouTube Shorts.</p>
+<p>It goes in six steps, all in the Studio, and the top bar always shows where you are:</p>
+<ul>
+<li><strong>Brand</strong>: what every video is built on. What you offer, who it's for, why you, your goal,
+how you sound, where you post and what never to say. <strong>Fill from my pages</strong> reads your
+cabinet and fills each part, with the page it came from. Anything it cannot find waits for
+you, so nothing is made up.</li>
+<li><strong>Idea</strong>: short video ideas, each from something true about your business. Pick one.</li>
+<li><strong>Script</strong>: the scenes, each with the words on screen, what is said and the picture.
+Change, add, move or remove any scene. Nothing is made yet.</li>
+<li><strong>Look</strong>: how the captions look. Pick a style, a font, colours and a place, or drag the
+caption in the preview. Click a word to colour it.</li>
+<li><strong>Make</strong>: a picture for each scene, a voice that reads it, then the video. They come from
+Cabinet's Images and Voiceovers integrations, so the first video asks you to connect them.
+Want movement? Choose the first scene or every scene to move, and Cabinet's Video
+integration turns those pictures into short clips. The price shows before you make it.</li>
+<li><strong>Post</strong>: watch it, download it, and copy the text for each platform.</li>
+</ul>
+<p>Your profile lives in <a href="profile.md">profile.md</a>. Edit it there or in the Studio.</p>9:["$","div",null,{"className":"mx-auto max-w-5xl px-4 py-10 space-y-12","children":[false,["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Organization"}],["$","div",null,{"className":"mt-4","children":["$","$Le",null,{"entry":{"slug":"shorts-factory","meta":{"schemaVersion":1,"id":"shorts-factory-root","name":"Shorts Factory","kind":"root","version":"0.1.5","description":"Short vertical videos that market your business. Pick an idea, get the script, captions and the finished video, ready for TikTok, Reels and Shorts.","entry":"index.md","domain":"Media","app":"studio","connectors":[{"id":"ai-images","need":"needs","access":["create"],"why":"Makes a picture for each scene of your video.","usedBy":["jobs/make-video"]},{"id":"ai-voice","need":"needs","access":["create"],"why":"Reads each scene of your video aloud.","usedBy":["jobs/make-video"]},{"id":"ai-video","need":"better-with","access":["create"],"why":"Brings scene pictures to life when you choose moving scenes.","usedBy":["jobs/make-video"]}]},"agents":[{"name":"Producer","slug":"producer","emoji":"🎬","type":"lead","department":"marketing","role":"Runs Shorts Factory. Keeps the brand profile true to the cabinet, turns it into short video ideas, and makes each video the person picks.","heartbeat":"","budget":60,"active":true,"focus":["profile","ideas","scripts","videos"],"tags":["marketing","shorts","video"],"body":"$f"}],"jobs":[{"id":"fill-profile","name":"Fill in my profile","enabled":false,"schedule":"","provider":"claude-code","adapterType":"claude_local","adapterConfig":{"model":"sonnet"},"ownerAgent":"producer","agentSlug":"producer","timeout":600,"prompt":"$10"},{"id":"make-ideas","name":"Get video ideas","enabled":false,"schedule":"","provider":"claude-code","adapterType":"claude_local","adapterConfig":{"model":"sonnet"},"ownerAgent":"producer","agentSlug":"producer","timeout":600,"prompt":"Make a new set of short video ideas for the Studio.\n\nYour working directory is the cabinet root. Follow \"Making ideas\" in your persona and the\nshort-video skill.\n\n1. Fold in the person's changes from the Studio, as \"Changes from the Studio\" in your\n   persona says.\n2. Read `profile.md`. If any part says \"Not filled yet\", write\n   `studio/data/ideas.json` with `\"blocked\"` naming those parts and no ideas, and stop.\n3. Read the pages the profile names in its `Source:` lines, and any other page that has\n   facts for a video (customers, services, process, story).\n4. Write exactly 6 ideas to `studio/data/ideas.json` in the shape `studio/DATA.md` gives.\n   Each idea rests on one true fact and names the page it came from. Use a different hook\n   pattern for each idea.\n\nFinish in one plain sentence: how many ideas, and the one you think will do best."},{"id":"make-video","name":"Make my video","enabled":false,"schedule":"","provider":"claude-code","adapterType":"claude_local","adapterConfig":{"model":"sonnet"},"ownerAgent":"producer","agentSlug":"producer","timeout":1500,"prompt":"Make the video for the script the person finished in the Studio.\n\nYour working directory is the cabinet root. Follow \"Making a video\" in your persona.\n\n1. Read `studio/.data/shared.json`: `render` is the video's id. If it is missing, stop and\n   say so in one sentence.\n2. Run `node studio/apply.mjs <id>` to copy the person's changes into the plan.\n3. Make the voices and pictures together in one `make_many` call, then the moving clips in\n   another, only what the plan asks for and does not have yet.\n4. Render with `node studio/render.mjs <id>`, in the foreground with a 10 minute timeout.\n   Wait for it to end before you finish.\n\nFinish in one plain sentence: the video's title, how long it is, and anything that could\nnot be made."},{"id":"write-script","name":"Write my script","enabled":false,"schedule":"","provider":"claude-code","adapterType":"claude_local","adapterConfig":{"model":"sonnet"},"ownerAgent":"producer","agentSlug":"producer","timeout":600,"prompt":"$11"}],"children":[],"readme":"$12","readmeHtml":"$13","tags":["shorts","video","marketing","social","tiktok","reels","youtube"],"section":"Marketing","stats":{"totalAgents":1,"totalJobs":4,"totalCabinets":1,"totalPages":3}}}]}]]}],"$L14","$L15","$L16","$L17","$L18"]}]
+a:["$","footer",null,{"className":"border-t border-border bg-bg-warm","children":["$","div",null,{"className":"mx-auto max-w-7xl px-6 py-14 lg:px-8 lg:py-18","children":[["$","div",null,{"className":"grid gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_repeat(4,1fr)]","children":[["$","div",null,{"className":"max-w-sm","children":[["$","$L3",null,{"href":"/","className":"inline-flex items-center gap-3","aria-label":"Cabinet home","children":[["$","$L5",null,{"src":"/brand/cabinet-drawers-logo.png","alt":"","width":36,"height":38,"className":"h-9 w-auto"}],["$","span",null,{"className":"font-brand text-2xl italic tracking-tight text-text-primary","children":"Cabinet"}]]}],["$","p",null,{"className":"mt-5 text-[15px] leading-relaxed text-text-secondary","children":"Working AI teams, connected company knowledge, and live work in an environment your company controls."}],["$","a",null,{"href":"mailto:hi@runcabinet.com","className":"mt-5 inline-block text-sm font-semibold text-accent hover:text-accent-warm","children":"hi@runcabinet.com"}]]}],[["$","div","Product",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Product"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI teams",{"children":["$","a",null,{"href":"/#product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI teams"}]}],["$","li","Templates",{"children":["$","a",null,{"href":"/templates","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Templates"}]}],["$","li","Connect knowledge",{"children":["$","a",null,{"href":"/#knowledge","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Connect knowledge"}]}],["$","li","Bring your own AI",{"children":["$","a",null,{"href":"/#providers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Bring your own AI"}]}],["$","li","Security",{"children":["$","a",null,{"href":"/enterprise/security","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Security"}]}],["$","li","Pricing",{"children":["$","a",null,{"href":"/pricing","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Pricing"}]}],["$","li","Book a demo",{"children":["$","a",null,{"href":"/demo","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Book a demo"}]}]]}]]}],["$","div","Solutions",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Solutions"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","AI leadership",{"children":["$","a",null,{"href":"/solutions/founders","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"AI leadership"}]}],["$","li","Operations",{"children":["$","a",null,{"href":"/solutions/operations","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Operations"}]}],["$","li","Product",{"children":["$","a",null,{"href":"/solutions/product","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Product"}]}],["$","li","Engineering",{"children":["$","a",null,{"href":"/solutions/engineering","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Engineering"}]}]]}]]}],["$","div","Resources",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Resources"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Documentation",{"children":["$","a",null,{"href":"https://docs.runcabinet.com/","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Documentation"}]}],["$","li","Discord",{"children":["$","a",null,{"href":"https://discord.gg/hJa5TRTbTH","target":"_blank","rel":"noopener noreferrer","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Discord"}]}],"$L19"]}]]}],"$L1a"]]}],"$L1b"]}]}]
+b:["$","script","script-0",{"src":"/_next/static/chunks/2chub8-zpxpzm.js","async":true}]
+c:["$","script","script-1",{"src":"/_next/static/chunks/0mo-9mxlz4ud5.js","async":true}]
+d:["$","$L1c",null,{"children":["$","$1d",null,{"name":"Next.MetadataOutlet","children":"$@1e"}]}]
+14:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Cabinet Structure"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"className":"rounded-xl border border-border bg-bg-card p-5","children":[["$","div",null,{"style":{"paddingLeft":0},"children":[["$","div",null,{"className":"flex items-center gap-2 py-1.5","children":[["$","$L4",null,{"iconNode":[["path",{"d":"m6 14 1.5-2.9A2 2 0 0 1 9.24 10H20a2 2 0 0 1 1.94 2.5l-1.54 6a2 2 0 0 1-1.95 1.5H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h3.9a2 2 0 0 1 1.69.9l.81 1.2a2 2 0 0 0 1.67.9H18a2 2 0 0 1 2 2v2","key":"usdka0"}]],"className":"lucide-folder-open h-4 w-4 text-accent shrink-0"}],["$","span",null,{"className":"text-sm font-medium text-text-primary","children":"Shorts Factory"}],false]}],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:0:props:children:0:props:iconNode","className":"lucide-bot h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":["🎬"," ","Producer"]}]]}]],[["$","div","0",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Fill in my profile"}]]}],["$","div","1",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Get video ideas"}]]}],["$","div","2",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Make my video"}]]}],["$","div","3",{"className":"flex items-center gap-2 py-1","style":{"paddingLeft":20},"children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-3.5 w-3.5 text-text-tertiary shrink-0"}],["$","span",null,{"className":"text-xs text-text-secondary","children":"Write my script"}]]}]]]}],[]]}]}]]}]
+15:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Agents"}],["$","div",null,{"className":"mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3","children":[["$","div","root-producer-0",{"className":"rounded-lg border border-border bg-bg-card p-4 card-hover","children":[["$","div",null,{"className":"flex items-center gap-2 mb-2","children":[["$","span",null,{"className":"text-lg","children":"🎬"}],["$","span",null,{"className":"font-medium text-sm text-text-primary","children":"Producer"}],["$","span",null,{"className":"ml-auto rounded-full px-2 py-0.5 text-[10px] font-medium bg-accent-bg text-accent","children":"lead"}]]}],["$","p",null,{"className":"text-xs text-text-secondary line-clamp-2 font-sans","children":"Runs Shorts Factory. Keeps the brand profile true to the cabinet, turns it into short video ideas, and makes each video the person picks."}],""]}]]}]]}]
+16:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Scheduled Jobs"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card divide-y divide-border","children":[["$","div","fill-profile",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Fill in my profile"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"paused"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":""}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","producer"]}]]}]]}],["$","div","make-ideas",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Get video ideas"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"paused"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":""}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","producer"]}]]}]]}],["$","div","make-video",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Make my video"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"paused"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":""}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","producer"]}]]}]]}],["$","div","write-script",{"className":"flex items-center gap-4 px-5 py-4","children":[["$","$L4",null,{"iconNode":"$0:rsc:props:children:0:1:props:children:0:props:children:2:props:children:1:props:children:1:props:children:0:props:iconNode","className":"lucide-clock h-4 w-4 text-text-tertiary shrink-0"}],["$","div",null,{"className":"flex-1 min-w-0","children":[["$","div",null,{"className":"flex items-center gap-2 mb-0.5","children":[["$","span",null,{"className":"font-sans font-medium text-sm text-text-primary","children":"Write my script"}],["$","span",null,{"className":"shrink-0 rounded-full px-2 py-0.5 text-[10px] font-medium bg-bg-warm text-text-tertiary","children":"paused"}]]}],["$","p",null,{"className":"text-xs text-text-secondary font-sans line-clamp-1"}]]}],["$","div",null,{"className":"hidden sm:flex items-center gap-3 text-[11px] text-text-tertiary shrink-0","children":[["$","span",null,{"className":"font-code","children":""}],["$","span",null,{"className":"text-text-muted","children":"|"}],["$","span",null,{"className":"font-code","children":["@","producer"]}]]}]]}]]}]]}]
+1f:T6b6,<h1>Shorts Factory</h1>
+<p>Short vertical videos that market your business, made from what your cabinet already knows.
+No editing skills needed: pick an idea, and the script, the captions and the finished video
+are made for you, ready for TikTok, Instagram Reels and YouTube Shorts.</p>
+<p>It goes in six steps, all in the Studio, and the top bar always shows where you are:</p>
+<ul>
+<li><strong>Brand</strong>: what every video is built on. What you offer, who it's for, why you, your goal,
+how you sound, where you post and what never to say. <strong>Fill from my pages</strong> reads your
+cabinet and fills each part, with the page it came from. Anything it cannot find waits for
+you, so nothing is made up.</li>
+<li><strong>Idea</strong>: short video ideas, each from something true about your business. Pick one.</li>
+<li><strong>Script</strong>: the scenes, each with the words on screen, what is said and the picture.
+Change, add, move or remove any scene. Nothing is made yet.</li>
+<li><strong>Look</strong>: how the captions look. Pick a style, a font, colours and a place, or drag the
+caption in the preview. Click a word to colour it.</li>
+<li><strong>Make</strong>: a picture for each scene, a voice that reads it, then the video. They come from
+Cabinet's Images and Voiceovers integrations, so the first video asks you to connect them.
+Want movement? Choose the first scene or every scene to move, and Cabinet's Video
+integration turns those pictures into short clips. The price shows before you make it.</li>
+<li><strong>Post</strong>: watch it, download it, and copy the text for each platform.</li>
+</ul>
+<p>Your profile lives in <a href="profile.md">profile.md</a>. Edit it there or in the Studio.</p>17:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"About"}],["$","div",null,{"className":"mt-4 rounded-xl border border-border bg-bg-card p-6","children":["$","div",null,{"className":"prose max-w-none","dangerouslySetInnerHTML":{"__html":"$1f"}}]}]]}]
+18:["$","section",null,{"children":[["$","span",null,{"className":"section-label","children":"Install"}],["$","div",null,{"className":"mt-4","children":["$","div",null,{"children":["$","$L20",null,{"command":"git clone --filter=blob:none --sparse https://github.com/cabinetai/cabinets.git && cd cabinets && git sparse-checkout set shorts-factory","label":"Install"}]}]}]]}]
+19:["$","li","Compare",{"children":["$","a",null,{"href":"/compare","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Compare"}]}]
+1a:["$","div","Company",{"children":[["$","p",null,{"className":"text-[11px] font-semibold uppercase tracking-[0.12em] text-text-tertiary","children":"Company"}],["$","ul",null,{"className":"mt-4 space-y-3","children":[["$","li","Careers",{"children":["$","a",null,{"href":"/careers","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Careers"}]}],["$","li","Media",{"children":["$","a",null,{"href":"/media","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Media"}]}],["$","li","Terms",{"children":["$","a",null,{"href":"/terms","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Terms"}]}],["$","li","Privacy",{"children":["$","a",null,{"href":"/privacy","className":"text-sm text-text-secondary transition-colors hover:text-text-primary","children":"Privacy"}]}]]}]]}]
+1b:["$","div",null,{"className":"mt-12 flex flex-col gap-3 border-t border-border pt-6 text-xs text-text-tertiary sm:flex-row sm:items-center sm:justify-between","children":[["$","p",null,{"children":["© ",2026," Cabinet, Inc."]}],["$","p",null,{"children":"Self-hosted. Bring your own AI."}]]}]
+1e:null

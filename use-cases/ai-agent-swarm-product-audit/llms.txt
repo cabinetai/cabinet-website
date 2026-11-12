@@ -1,0 +1,37 @@
+# Cabinet: AI agent swarm product audit (use case)
+
+> How Hila Shmuel (Founder of Cabinet) pointed an AI agent swarm at her own product, filed 65 UX/UI issues, fixed 60 of them, and approved every change in a review app the agent generated. A step-by-step, reproducible workflow built on the Cabinet "Audits" cabinet.
+
+Canonical page: https://runcabinet.com/use-cases/ai-agent-swarm-product-audit
+
+Key facts:
+- Result: 65 issues filed, 60 fixed and shipped, reviewed in about 60 minutes, no code written by hand.
+- Cabinet runs a swarm of AI agents (70 agents in this account). For the audit, one specialist agent ("Product Senior") leads.
+- The bar: not "matches the spec" but "would a competitor copy this", graded against Linear, Stripe, Duolingo, Netflix.
+- Each issue is one markdown file with a severity (P1 to P3) and an area tag (HOME, NAV, COPY, EDIT, A11Y, STATUS, URL).
+- Fixes are saved one commit per issue; a one-command generator turns the audit into a shareable review app (pass / fail / skip / comment).
+
+The workflow (6 steps):
+1. Point the swarm at your product, install the Audits cabinet, put a product specialist in the lead, open the live product in a browser.
+2. It looks at every screen and writes up the problems, screenshots plus one structured markdown file per issue.
+3. It picks the fixes that matter most, a ranked "top 10", flagging root-cause issues that close several findings at once.
+4. It fixes them, one commit at a time, real code changes with the exact file and line recorded.
+5. It builds an app to approve everything, a generated HTML review app, one card per fix.
+6. You approve, and the rejects loop back, rejected fixes return to the agent with your note as the new instruction.
+
+## Use this if you want to
+- Polish your app before a launch, demo, or investor meeting
+- Catch small UX problems (wording, loud buttons, confusing labels) before users do
+- Ship a big batch of fixes without reading every line of code
+- Run an accessibility audit and fix what it finds
+- Hand a teammate or client a clean report to approve item by item
+
+## Get the cabinet
+- [Audits cabinet on the registry](https://cabinets.sh/cabinet/audits): one-click import; brings the method, the Product Senior agent, the folder skeleton, and the review-app builder.
+- In-app: New Cabinet → From registry → Audits.
+
+## Related
+- [Cabinet](https://runcabinet.com): an AI workspace with AI teammates that run end-to-end workflows like this one.
+- [Hila Shmuel on X](https://x.com/HilaShmuel): author / Cabinet founder.
+
+Note: this file follows the llms.txt convention (llmstxt.org). For site-wide discovery, also publish it at the domain root, e.g. https://runcabinet.com/llms.txt.

@@ -1,0 +1,11 @@
+{
+  "name": "Caption Translator",
+  "tagline": "Turns an English caption into Hindi, Tamil and Kannada that sound the way people talk, hashtags left as they are",
+  "accent": "#1c3d96",
+  "kind": "ai",
+  "agent": "caption-translator-english-hindi",
+  "request": "A caption translator: English to Hindi, Tamil and Kannada",
+  "createdAt": "2026-10-12T17:03:11Z",
+  "name_hi": "Caption Translator",
+  "tagline_hi": "अंग्रेज़ी कैप्शन को वैसी हिंदी, तमिल और कन्नड़ में बदलता है जैसे लोग बोलते हैं; हैशटैग जैसे के तैसे रहते हैं"
+}
